@@ -110,6 +110,7 @@ type annotations stubs module
   - [DvbSubtitleShadowColor](#dvbsubtitleshadowcolor)
   - [DvbSubtitleTeletextSpacing](#dvbsubtitleteletextspacing)
   - [DvbSubtitlingType](#dvbsubtitlingtype)
+  - [DvbddsHandling](#dvbddshandling)
   - [Eac3AtmosBitstreamMode](#eac3atmosbitstreammode)
   - [Eac3AtmosCodingMode](#eac3atmoscodingmode)
   - [Eac3AtmosDialogueIntelligence](#eac3atmosdialogueintelligence)
@@ -213,6 +214,7 @@ type annotations stubs module
   - [InputFilterEnable](#inputfilterenable)
   - [InputPsiControl](#inputpsicontrol)
   - [InputRotate](#inputrotate)
+  - [InputSampleRange](#inputsamplerange)
   - [InputScanType](#inputscantype)
   - [InputTimecodeSource](#inputtimecodesource)
   - [JobPhase](#jobphase)
@@ -1582,6 +1584,18 @@ Values:
 - `HEARING_IMPAIRED`
 - `STANDARD`
 
+## DvbddsHandling
+
+```python
+from mypy_boto3_mediaconvert.literals import DvbddsHandling
+```
+
+Values:
+
+- `NO_DISPLAY_WINDOW`
+- `NONE`
+- `SPECIFIED`
+
 ## Eac3AtmosBitstreamMode
 
 ```python
@@ -2814,6 +2828,18 @@ Values:
 - `DEGREES_180`
 - `DEGREES_270`
 - `DEGREES_90`
+
+## InputSampleRange
+
+```python
+from mypy_boto3_mediaconvert.literals import InputSampleRange
+```
+
+Values:
+
+- `FOLLOW`
+- `FULL_RANGE`
+- `LIMITED_RANGE`
 
 ## InputScanType
 

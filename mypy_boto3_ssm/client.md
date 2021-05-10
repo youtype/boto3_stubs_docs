@@ -12,6 +12,7 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [add_tags_to_resource](#add_tags_to_resource)
+    - [associate_ops_item_related_item](#associate_ops_item_related_item)
     - [can_paginate](#can_paginate)
     - [cancel_command](#cancel_command)
     - [cancel_maintenance_window_execution](#cancel_maintenance_window_execution)
@@ -70,6 +71,7 @@ type annotations stubs module
     - [describe_patch_groups](#describe_patch_groups)
     - [describe_patch_properties](#describe_patch_properties)
     - [describe_sessions](#describe_sessions)
+    - [disassociate_ops_item_related_item](#disassociate_ops_item_related_item)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_automation_execution](#get_automation_execution)
     - [get_calendar_state](#get_calendar_state)
@@ -107,6 +109,7 @@ type annotations stubs module
     - [list_documents](#list_documents)
     - [list_inventory_entries](#list_inventory_entries)
     - [list_ops_item_events](#list_ops_item_events)
+    - [list_ops_item_related_items](#list_ops_item_related_items)
     - [list_ops_metadata](#list_ops_metadata)
     - [list_resource_compliance_summaries](#list_resource_compliance_summaries)
     - [list_resource_data_sync](#list_resource_data_sync)
@@ -263,6 +266,8 @@ Exceptions:
 - `Exceptions.OpsItemInvalidParameterException`
 - `Exceptions.OpsItemLimitExceededException`
 - `Exceptions.OpsItemNotFoundException`
+- `Exceptions.OpsItemRelatedItemAlreadyExistsException`
+- `Exceptions.OpsItemRelatedItemAssociationNotFoundException`
 - `Exceptions.OpsMetadataAlreadyExistsException`
 - `Exceptions.OpsMetadataInvalidArgumentException`
 - `Exceptions.OpsMetadataKeyLimitExceededException`
@@ -320,6 +325,24 @@ Arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### associate_ops_item_related_item
+
+Type annotations for `boto3.client("ssm").associate_ops_item_related_item`
+method.
+
+Boto3 documentation:
+[SSM.Client.associate_ops_item_related_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.associate_ops_item_related_item)
+
+Arguments:
+
+- `OpsItemId`: `str` *(required)*
+- `AssociationType`: `str` *(required)*
+- `ResourceType`: `str` *(required)*
+- `ResourceUri`: `str` *(required)*
+
+Returns
+[AssociateOpsItemRelatedItemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associateopsitemrelateditemresponsetypedef).
 
 ### can_paginate
 
@@ -448,6 +471,7 @@ Arguments:
   `List`\[[DocumentRequiresTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentrequirestypedef)\]
 - `Attachments`:
   `List`\[[AttachmentsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#attachmentssourcetypedef)\]
+- `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentType`:
   [DocumentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenttype)
@@ -1381,6 +1405,21 @@ Arguments:
 Returns
 [DescribeSessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describesessionsresponsetypedef).
 
+### disassociate_ops_item_related_item
+
+Type annotations for `boto3.client("ssm").disassociate_ops_item_related_item`
+method.
+
+Boto3 documentation:
+[SSM.Client.disassociate_ops_item_related_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.disassociate_ops_item_related_item)
+
+Arguments:
+
+- `OpsItemId`: `str` *(required)*
+- `AssociationId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### generate_presigned_url
 
 Type annotations for `boto3.client("ssm").generate_presigned_url` method.
@@ -2001,6 +2040,24 @@ Arguments:
 Returns
 [ListOpsItemEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemeventsresponsetypedef).
 
+### list_ops_item_related_items
+
+Type annotations for `boto3.client("ssm").list_ops_item_related_items` method.
+
+Boto3 documentation:
+[SSM.Client.list_ops_item_related_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_related_items)
+
+Arguments:
+
+- `OpsItemId`: `str`
+- `Filters`:
+  `List`\[[OpsItemRelatedItemsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemrelateditemsfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListOpsItemRelatedItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemrelateditemsresponsetypedef).
+
 ### list_ops_metadata
 
 Type annotations for `boto3.client("ssm").list_ops_metadata` method.
@@ -2536,6 +2593,7 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Attachments`:
   `List`\[[AttachmentsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#attachmentssourcetypedef)\]
+- `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
 - `DocumentFormat`:
@@ -2870,6 +2928,8 @@ Type annotations for `boto3.client("ssm").get_paginator` method with overloads.
   [ListDocumentsPaginator](./paginators.md#listdocumentspaginator)
 - `client.get_paginator("list_ops_item_events")` ->
   [ListOpsItemEventsPaginator](./paginators.md#listopsitemeventspaginator)
+- `client.get_paginator("list_ops_item_related_items")` ->
+  [ListOpsItemRelatedItemsPaginator](./paginators.md#listopsitemrelateditemspaginator)
 - `client.get_paginator("list_ops_metadata")` ->
   [ListOpsMetadataPaginator](./paginators.md#listopsmetadatapaginator)
 - `client.get_paginator("list_resource_compliance_summaries")` ->

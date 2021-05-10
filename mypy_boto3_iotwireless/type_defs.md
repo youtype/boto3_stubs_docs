@@ -621,6 +621,9 @@ Optional fields:
 
 - `GatewayEui`: `str`
 - `RfRegion`: `str`
+- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
+- `NetIdFilters`: `List`\[`str`\]
+- `SubBands`: `List`\[`int`\]
 
 ## LoRaWANGatewayVersionTypeDef
 

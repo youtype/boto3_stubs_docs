@@ -65,6 +65,7 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProviderTypeDef](#providertypedef)
   - [RemoteAccessConfigTypeDef](#remoteaccessconfigtypedef)
+  - [TaintTypeDef](#tainttypedef)
   - [UpdateAddonResponseTypeDef](#updateaddonresponsetypedef)
   - [UpdateClusterConfigResponseTypeDef](#updateclusterconfigresponsetypedef)
   - [UpdateClusterVersionResponseTypeDef](#updateclusterversionresponsetypedef)
@@ -72,6 +73,7 @@ type annotations stubs module
   - [UpdateNodegroupConfigResponseTypeDef](#updatenodegroupconfigresponsetypedef)
   - [UpdateNodegroupVersionResponseTypeDef](#updatenodegroupversionresponsetypedef)
   - [UpdateParamTypeDef](#updateparamtypedef)
+  - [UpdateTaintsPayloadTypeDef](#updatetaintspayloadtypedef)
   - [UpdateTypeDef](#updatetypedef)
   - [VpcConfigRequestTypeDef](#vpcconfigrequesttypedef)
   - [VpcConfigResponseTypeDef](#vpcconfigresponsetypedef)
@@ -710,6 +712,8 @@ Optional fields:
   [AMITypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#amitypes)
 - `nodeRole`: `str`
 - `labels`: `Dict`\[`str`, `str`\]
+- `taints`:
+  `List`\[[TaintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#tainttypedef)\]
 - `resources`:
   [NodegroupResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegroupresourcestypedef)
 - `diskSize`: `int`
@@ -804,6 +808,19 @@ Optional fields:
 - `ec2SshKey`: `str`
 - `sourceSecurityGroups`: `List`\[`str`\]
 
+## TaintTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import TaintTypeDef
+```
+
+Optional fields:
+
+- `key`: `str`
+- `value`: `str`
+- `effect`:
+  [TaintEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#tainteffect)
+
 ## UpdateAddonResponseTypeDef
 
 ```python
@@ -881,6 +898,19 @@ Optional fields:
 - `type`:
   [UpdateParamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/literals.html#updateparamtype)
 - `value`: `str`
+
+## UpdateTaintsPayloadTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import UpdateTaintsPayloadTypeDef
+```
+
+Optional fields:
+
+- `addOrUpdateTaints`:
+  `List`\[[TaintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#tainttypedef)\]
+- `removeTaints`:
+  `List`\[[TaintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#tainttypedef)\]
 
 ## UpdateTypeDef
 

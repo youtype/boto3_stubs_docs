@@ -97,6 +97,7 @@ type annotations stubs module
   - [JobTemplateSettingsTypeDef](#jobtemplatesettingstypedef)
   - [JobTemplateTypeDef](#jobtemplatetypedef)
   - [JobTypeDef](#jobtypedef)
+  - [KantarWatermarkSettingsTypeDef](#kantarwatermarksettingstypedef)
   - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
   - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
   - [ListPresetsResponseTypeDef](#listpresetsresponsetypedef)
@@ -987,6 +988,10 @@ Optional fields:
 - `BackgroundColor`:
   [DvbSubtitleBackgroundColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlebackgroundcolor)
 - `BackgroundOpacity`: `int`
+- `DdsHandling`:
+  [DvbddsHandling](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbddshandling)
+- `DdsXCoordinate`: `int`
+- `DdsYCoordinate`: `int`
 - `FontColor`:
   [DvbSubtitleFontColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlefontcolor)
 - `FontOpacity`: `int`
@@ -994,6 +999,7 @@ Optional fields:
 - `FontScript`:
   [FontScript](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#fontscript)
 - `FontSize`: `int`
+- `Height`: `int`
 - `OutlineColor`:
   [DvbSubtitleOutlineColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitleoutlinecolor)
 - `OutlineSize`: `int`
@@ -1006,6 +1012,7 @@ Optional fields:
   [DvbSubtitlingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlingtype)
 - `TeletextSpacing`:
   [DvbSubtitleTeletextSpacing](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitleteletextspacing)
+- `Width`: `int`
 - `XPosition`: `int`
 - `YPosition`: `int`
 
@@ -1781,6 +1788,8 @@ Optional fields:
   [EsamSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#esamsettingstypedef)
 - `Inputs`:
   `List`\[[InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputtypedef)\]
+- `KantarWatermark`:
+  [KantarWatermarkSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#kantarwatermarksettingstypedef)
 - `MotionImageInserter`:
   [MotionImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#motionimageinsertertypedef)
 - `NielsenConfiguration`:
@@ -1809,6 +1818,8 @@ Optional fields:
   [EsamSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#esamsettingstypedef)
 - `Inputs`:
   `List`\[[InputTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputtemplatetypedef)\]
+- `KantarWatermark`:
+  [KantarWatermarkSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#kantarwatermarksettingstypedef)
 - `MotionImageInserter`:
   [MotionImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#motionimageinsertertypedef)
 - `NielsenConfiguration`:
@@ -1901,6 +1912,28 @@ Optional fields:
 - `Timing`:
   [TimingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timingtypedef)
 - `UserMetadata`: `Dict`\[`str`, `str`\]
+
+## KantarWatermarkSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import KantarWatermarkSettingsTypeDef
+```
+
+Optional fields:
+
+- `ChannelName`: `str`
+- `ContentReference`: `str`
+- `CredentialsSecretName`: `str`
+- `FileOffset`: `float`
+- `KantarLicenseId`: `int`
+- `KantarServerUrl`: `str`
+- `LogDestination`: `str`
+- `Metadata3`: `str`
+- `Metadata4`: `str`
+- `Metadata5`: `str`
+- `Metadata6`: `str`
+- `Metadata7`: `str`
+- `Metadata8`: `str`
 
 ## ListJobTemplatesResponseTypeDef
 
@@ -2046,6 +2079,7 @@ Optional fields:
   [M3u8AudioDuration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m3u8audioduration)
 - `AudioFramesPerPes`: `int`
 - `AudioPids`: `List`\[`int`\]
+- `MaxPcrInterval`: `int`
 - `NielsenId3`:
   [M3u8NielsenId3](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m3u8nielsenid3)
 - `PatInterval`: `int`
@@ -3095,6 +3129,8 @@ Optional fields:
 - `ProgramNumber`: `int`
 - `Rotate`:
   [InputRotate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputrotate)
+- `SampleRange`:
+  [InputSampleRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputsamplerange)
 
 ## VorbisSettingsTypeDef
 

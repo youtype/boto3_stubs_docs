@@ -1643,6 +1643,8 @@ overloads.
 
 - `client.get_paginator("describe_aggregate_compliance_by_config_rules")` ->
   [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
+- `client.get_paginator("describe_aggregate_compliance_by_conformance_packs")` ->
+  [DescribeAggregateComplianceByConformancePacksPaginator](./paginators.md#describeaggregatecompliancebyconformancepackspaginator)
 - `client.get_paginator("describe_aggregation_authorizations")` ->
   [DescribeAggregationAuthorizationsPaginator](./paginators.md#describeaggregationauthorizationspaginator)
 - `client.get_paginator("describe_compliance_by_config_rule")` ->
@@ -1657,6 +1659,18 @@ overloads.
   [DescribeConfigurationAggregatorSourcesStatusPaginator](./paginators.md#describeconfigurationaggregatorsourcesstatuspaginator)
 - `client.get_paginator("describe_configuration_aggregators")` ->
   [DescribeConfigurationAggregatorsPaginator](./paginators.md#describeconfigurationaggregatorspaginator)
+- `client.get_paginator("describe_conformance_pack_status")` ->
+  [DescribeConformancePackStatusPaginator](./paginators.md#describeconformancepackstatuspaginator)
+- `client.get_paginator("describe_conformance_packs")` ->
+  [DescribeConformancePacksPaginator](./paginators.md#describeconformancepackspaginator)
+- `client.get_paginator("describe_organization_config_rule_statuses")` ->
+  [DescribeOrganizationConfigRuleStatusesPaginator](./paginators.md#describeorganizationconfigrulestatusespaginator)
+- `client.get_paginator("describe_organization_config_rules")` ->
+  [DescribeOrganizationConfigRulesPaginator](./paginators.md#describeorganizationconfigrulespaginator)
+- `client.get_paginator("describe_organization_conformance_pack_statuses")` ->
+  [DescribeOrganizationConformancePackStatusesPaginator](./paginators.md#describeorganizationconformancepackstatusespaginator)
+- `client.get_paginator("describe_organization_conformance_packs")` ->
+  [DescribeOrganizationConformancePacksPaginator](./paginators.md#describeorganizationconformancepackspaginator)
 - `client.get_paginator("describe_pending_aggregation_requests")` ->
   [DescribePendingAggregationRequestsPaginator](./paginators.md#describependingaggregationrequestspaginator)
 - `client.get_paginator("describe_remediation_execution_status")` ->
@@ -1669,9 +1683,21 @@ overloads.
   [GetComplianceDetailsByConfigRulePaginator](./paginators.md#getcompliancedetailsbyconfigrulepaginator)
 - `client.get_paginator("get_compliance_details_by_resource")` ->
   [GetComplianceDetailsByResourcePaginator](./paginators.md#getcompliancedetailsbyresourcepaginator)
+- `client.get_paginator("get_conformance_pack_compliance_summary")` ->
+  [GetConformancePackComplianceSummaryPaginator](./paginators.md#getconformancepackcompliancesummarypaginator)
+- `client.get_paginator("get_organization_config_rule_detailed_status")` ->
+  [GetOrganizationConfigRuleDetailedStatusPaginator](./paginators.md#getorganizationconfigruledetailedstatuspaginator)
+- `client.get_paginator("get_organization_conformance_pack_detailed_status")` ->
+  [GetOrganizationConformancePackDetailedStatusPaginator](./paginators.md#getorganizationconformancepackdetailedstatuspaginator)
 - `client.get_paginator("get_resource_config_history")` ->
   [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)
 - `client.get_paginator("list_aggregate_discovered_resources")` ->
   [ListAggregateDiscoveredResourcesPaginator](./paginators.md#listaggregatediscoveredresourcespaginator)
 - `client.get_paginator("list_discovered_resources")` ->
   [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("select_aggregate_resource_config")` ->
+  [SelectAggregateResourceConfigPaginator](./paginators.md#selectaggregateresourceconfigpaginator)
+- `client.get_paginator("select_resource_config")` ->
+  [SelectResourceConfigPaginator](./paginators.md#selectresourceconfigpaginator)

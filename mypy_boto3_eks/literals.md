@@ -32,6 +32,7 @@ type annotations stubs module
   - [NodegroupIssueCode](#nodegroupissuecode)
   - [NodegroupStatus](#nodegroupstatus)
   - [ResolveConflicts](#resolveconflicts)
+  - [TaintEffect](#tainteffect)
   - [UpdateParamType](#updateparamtype)
   - [UpdateStatus](#updatestatus)
   - [UpdateType](#updatetype)
@@ -342,6 +343,18 @@ Values:
 - `NONE`
 - `OVERWRITE`
 
+## TaintEffect
+
+```python
+from mypy_boto3_eks.literals import TaintEffect
+```
+
+Values:
+
+- `NO_EXECUTE`
+- `NO_SCHEDULE`
+- `PREFER_NO_SCHEDULE`
+
 ## UpdateParamType
 
 ```python
@@ -368,6 +381,8 @@ Values:
 - `ReleaseVersion`
 - `ResolveConflicts`
 - `ServiceAccountRoleArn`
+- `TaintsToAdd`
+- `TaintsToRemove`
 - `Version`
 
 ## UpdateStatus

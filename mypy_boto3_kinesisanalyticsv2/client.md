@@ -31,9 +31,11 @@ type annotations stubs module
     - [delete_application_vpc_configuration](#delete_application_vpc_configuration)
     - [describe_application](#describe_application)
     - [describe_application_snapshot](#describe_application_snapshot)
+    - [describe_application_version](#describe_application_version)
     - [discover_input_schema](#discover_input_schema)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_application_snapshots](#list_application_snapshots)
+    - [list_application_versions](#list_application_versions)
     - [list_applications](#list_applications)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [rollback_application](#rollback_application)
@@ -437,6 +439,22 @@ Arguments:
 Returns
 [DescribeApplicationSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#describeapplicationsnapshotresponsetypedef).
 
+### describe_application_version
+
+Type annotations for
+`boto3.client("kinesisanalyticsv2").describe_application_version` method.
+
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.describe_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_version)
+
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `ApplicationVersionId`: `int` *(required)*
+
+Returns
+[DescribeApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#describeapplicationversionresponsetypedef).
+
 ### discover_input_schema
 
 Type annotations for `boto3.client("kinesisanalyticsv2").discover_input_schema`
@@ -492,6 +510,23 @@ Arguments:
 
 Returns
 [ListApplicationSnapshotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listapplicationsnapshotsresponsetypedef).
+
+### list_application_versions
+
+Type annotations for
+`boto3.client("kinesisanalyticsv2").list_application_versions` method.
+
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_application_versions)
+
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `Limit`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListApplicationVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listapplicationversionsresponsetypedef).
 
 ### list_applications
 

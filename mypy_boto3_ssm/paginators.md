@@ -50,6 +50,7 @@ type annotations stubs module
   - [ListDocumentVersionsPaginator](#listdocumentversionspaginator)
   - [ListDocumentsPaginator](#listdocumentspaginator)
   - [ListOpsItemEventsPaginator](#listopsitemeventspaginator)
+  - [ListOpsItemRelatedItemsPaginator](#listopsitemrelateditemspaginator)
   - [ListOpsMetadataPaginator](#listopsmetadatapaginator)
   - [ListResourceComplianceSummariesPaginator](#listresourcecompliancesummariespaginator)
   - [ListResourceDataSyncPaginator](#listresourcedatasyncpaginator)
@@ -1234,6 +1235,34 @@ Arguments for `ListOpsItemEventsPaginator.paginate` method:
 
 `ListOpsItemEventsPaginator.paginate` returns
 `Iterator`\[[ListOpsItemEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemeventsresponsetypedef)\].
+
+## ListOpsItemRelatedItemsPaginator
+
+Type annotations for
+`boto3.client("ssm").get_paginator("list_ops_item_related_items")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ssm.paginator import ListOpsItemRelatedItemsPaginator
+
+def get_list_ops_item_related_items_paginator() -> ListOpsItemRelatedItemsPaginator:
+    return boto3.client("ssm").get_paginator("list_ops_item_related_items")
+```
+
+Boto3 documentation:
+[SSM.Paginator.ListOpsItemRelatedItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemRelatedItems)
+
+Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
+
+- `OpsItemId`: `str`
+- `Filters`:
+  `List`\[[OpsItemRelatedItemsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemrelateditemsfiltertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+
+`ListOpsItemRelatedItemsPaginator.paginate` returns
+`Iterator`\[[ListOpsItemRelatedItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemrelateditemsresponsetypedef)\].
 
 ## ListOpsMetadataPaginator
 

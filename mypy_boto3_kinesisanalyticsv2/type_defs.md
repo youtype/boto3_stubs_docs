@@ -28,6 +28,7 @@ type annotations stubs module
   - [ApplicationSnapshotConfigurationTypeDef](#applicationsnapshotconfigurationtypedef)
   - [ApplicationSnapshotConfigurationUpdateTypeDef](#applicationsnapshotconfigurationupdatetypedef)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
+  - [ApplicationVersionSummaryTypeDef](#applicationversionsummarytypedef)
   - [CSVMappingParametersTypeDef](#csvmappingparameterstypedef)
   - [CheckpointConfigurationDescriptionTypeDef](#checkpointconfigurationdescriptiontypedef)
   - [CheckpointConfigurationTypeDef](#checkpointconfigurationtypedef)
@@ -47,6 +48,7 @@ type annotations stubs module
   - [DeleteApplicationVpcConfigurationResponseTypeDef](#deleteapplicationvpcconfigurationresponsetypedef)
   - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
   - [DescribeApplicationSnapshotResponseTypeDef](#describeapplicationsnapshotresponsetypedef)
+  - [DescribeApplicationVersionResponseTypeDef](#describeapplicationversionresponsetypedef)
   - [DestinationSchemaTypeDef](#destinationschematypedef)
   - [DiscoverInputSchemaResponseTypeDef](#discoverinputschemaresponsetypedef)
   - [EnvironmentPropertiesTypeDef](#environmentpropertiestypedef)
@@ -86,6 +88,7 @@ type annotations stubs module
   - [LambdaOutputTypeDef](#lambdaoutputtypedef)
   - [LambdaOutputUpdateTypeDef](#lambdaoutputupdatetypedef)
   - [ListApplicationSnapshotsResponseTypeDef](#listapplicationsnapshotsresponsetypedef)
+  - [ListApplicationVersionsResponseTypeDef](#listapplicationversionsresponsetypedef)
   - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MappingParametersTypeDef](#mappingparameterstypedef)
@@ -353,6 +356,7 @@ Optional fields:
 - `ApplicationVersionUpdatedFrom`: `int`
 - `ApplicationVersionRolledBackFrom`: `int`
 - `ConditionalToken`: `str`
+- `ApplicationVersionRolledBackTo`: `int`
 
 ## ApplicationMaintenanceConfigurationDescriptionTypeDef
 
@@ -435,6 +439,18 @@ Required fields:
 - `ApplicationVersionId`: `int`
 - `RuntimeEnvironment`:
   [RuntimeEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#runtimeenvironment)
+
+## ApplicationVersionSummaryTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationVersionSummaryTypeDef
+```
+
+Required fields:
+
+- `ApplicationVersionId`: `int`
+- `ApplicationStatus`:
+  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/literals.html#applicationstatus)
 
 ## CSVMappingParametersTypeDef
 
@@ -670,6 +686,17 @@ Required fields:
 
 - `SnapshotDetails`:
   [SnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#snapshotdetailstypedef)
+
+## DescribeApplicationVersionResponseTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionResponseTypeDef
+```
+
+Optional fields:
+
+- `ApplicationVersionDetail`:
+  [ApplicationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationdetailtypedef)
 
 ## DestinationSchemaTypeDef
 
@@ -1164,6 +1191,18 @@ Optional fields:
 
 - `SnapshotSummaries`:
   `List`\[[SnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#snapshotdetailstypedef)\]
+- `NextToken`: `str`
+
+## ListApplicationVersionsResponseTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsResponseTypeDef
+```
+
+Optional fields:
+
+- `ApplicationVersionSummaries`:
+  `List`\[[ApplicationVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationversionsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListApplicationsResponseTypeDef

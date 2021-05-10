@@ -20,6 +20,7 @@ type annotations stubs module
   - [ConformancePackState](#conformancepackstate)
   - [DeliveryStatus](#deliverystatus)
   - [DescribeAggregateComplianceByConfigRulesPaginatorName](#describeaggregatecompliancebyconfigrulespaginatorname)
+  - [DescribeAggregateComplianceByConformancePacksPaginatorName](#describeaggregatecompliancebyconformancepackspaginatorname)
   - [DescribeAggregationAuthorizationsPaginatorName](#describeaggregationauthorizationspaginatorname)
   - [DescribeComplianceByConfigRulePaginatorName](#describecompliancebyconfigrulepaginatorname)
   - [DescribeComplianceByResourcePaginatorName](#describecompliancebyresourcepaginatorname)
@@ -27,6 +28,12 @@ type annotations stubs module
   - [DescribeConfigRulesPaginatorName](#describeconfigrulespaginatorname)
   - [DescribeConfigurationAggregatorSourcesStatusPaginatorName](#describeconfigurationaggregatorsourcesstatuspaginatorname)
   - [DescribeConfigurationAggregatorsPaginatorName](#describeconfigurationaggregatorspaginatorname)
+  - [DescribeConformancePackStatusPaginatorName](#describeconformancepackstatuspaginatorname)
+  - [DescribeConformancePacksPaginatorName](#describeconformancepackspaginatorname)
+  - [DescribeOrganizationConfigRuleStatusesPaginatorName](#describeorganizationconfigrulestatusespaginatorname)
+  - [DescribeOrganizationConfigRulesPaginatorName](#describeorganizationconfigrulespaginatorname)
+  - [DescribeOrganizationConformancePackStatusesPaginatorName](#describeorganizationconformancepackstatusespaginatorname)
+  - [DescribeOrganizationConformancePacksPaginatorName](#describeorganizationconformancepackspaginatorname)
   - [DescribePendingAggregationRequestsPaginatorName](#describependingaggregationrequestspaginatorname)
   - [DescribeRemediationExecutionStatusPaginatorName](#describeremediationexecutionstatuspaginatorname)
   - [DescribeRetentionConfigurationsPaginatorName](#describeretentionconfigurationspaginatorname)
@@ -34,9 +41,13 @@ type annotations stubs module
   - [GetAggregateComplianceDetailsByConfigRulePaginatorName](#getaggregatecompliancedetailsbyconfigrulepaginatorname)
   - [GetComplianceDetailsByConfigRulePaginatorName](#getcompliancedetailsbyconfigrulepaginatorname)
   - [GetComplianceDetailsByResourcePaginatorName](#getcompliancedetailsbyresourcepaginatorname)
+  - [GetConformancePackComplianceSummaryPaginatorName](#getconformancepackcompliancesummarypaginatorname)
+  - [GetOrganizationConfigRuleDetailedStatusPaginatorName](#getorganizationconfigruledetailedstatuspaginatorname)
+  - [GetOrganizationConformancePackDetailedStatusPaginatorName](#getorganizationconformancepackdetailedstatuspaginatorname)
   - [GetResourceConfigHistoryPaginatorName](#getresourceconfighistorypaginatorname)
   - [ListAggregateDiscoveredResourcesPaginatorName](#listaggregatediscoveredresourcespaginatorname)
   - [ListDiscoveredResourcesPaginatorName](#listdiscoveredresourcespaginatorname)
+  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [MaximumExecutionFrequency](#maximumexecutionfrequency)
   - [MemberAccountRuleStatus](#memberaccountrulestatus)
   - [MessageType](#messagetype)
@@ -52,6 +63,8 @@ type annotations stubs module
   - [ResourceCountGroupKey](#resourcecountgroupkey)
   - [ResourceType](#resourcetype)
   - [ResourceValueType](#resourcevaluetype)
+  - [SelectAggregateResourceConfigPaginatorName](#selectaggregateresourceconfigpaginatorname)
+  - [SelectResourceConfigPaginatorName](#selectresourceconfigpaginatorname)
 
 ## AggregateConformancePackComplianceSummaryGroupKey
 
@@ -197,6 +210,16 @@ Values:
 
 - `describe_aggregate_compliance_by_config_rules`
 
+## DescribeAggregateComplianceByConformancePacksPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeAggregateComplianceByConformancePacksPaginatorName
+```
+
+Values:
+
+- `describe_aggregate_compliance_by_conformance_packs`
+
 ## DescribeAggregationAuthorizationsPaginatorName
 
 ```python
@@ -266,6 +289,66 @@ from mypy_boto3_config.literals import DescribeConfigurationAggregatorsPaginator
 Values:
 
 - `describe_configuration_aggregators`
+
+## DescribeConformancePackStatusPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeConformancePackStatusPaginatorName
+```
+
+Values:
+
+- `describe_conformance_pack_status`
+
+## DescribeConformancePacksPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeConformancePacksPaginatorName
+```
+
+Values:
+
+- `describe_conformance_packs`
+
+## DescribeOrganizationConfigRuleStatusesPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeOrganizationConfigRuleStatusesPaginatorName
+```
+
+Values:
+
+- `describe_organization_config_rule_statuses`
+
+## DescribeOrganizationConfigRulesPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeOrganizationConfigRulesPaginatorName
+```
+
+Values:
+
+- `describe_organization_config_rules`
+
+## DescribeOrganizationConformancePackStatusesPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeOrganizationConformancePackStatusesPaginatorName
+```
+
+Values:
+
+- `describe_organization_conformance_pack_statuses`
+
+## DescribeOrganizationConformancePacksPaginatorName
+
+```python
+from mypy_boto3_config.literals import DescribeOrganizationConformancePacksPaginatorName
+```
+
+Values:
+
+- `describe_organization_conformance_packs`
 
 ## DescribePendingAggregationRequestsPaginatorName
 
@@ -337,6 +420,36 @@ Values:
 
 - `get_compliance_details_by_resource`
 
+## GetConformancePackComplianceSummaryPaginatorName
+
+```python
+from mypy_boto3_config.literals import GetConformancePackComplianceSummaryPaginatorName
+```
+
+Values:
+
+- `get_conformance_pack_compliance_summary`
+
+## GetOrganizationConfigRuleDetailedStatusPaginatorName
+
+```python
+from mypy_boto3_config.literals import GetOrganizationConfigRuleDetailedStatusPaginatorName
+```
+
+Values:
+
+- `get_organization_config_rule_detailed_status`
+
+## GetOrganizationConformancePackDetailedStatusPaginatorName
+
+```python
+from mypy_boto3_config.literals import GetOrganizationConformancePackDetailedStatusPaginatorName
+```
+
+Values:
+
+- `get_organization_conformance_pack_detailed_status`
+
 ## GetResourceConfigHistoryPaginatorName
 
 ```python
@@ -366,6 +479,16 @@ from mypy_boto3_config.literals import ListDiscoveredResourcesPaginatorName
 Values:
 
 - `list_discovered_resources`
+
+## ListTagsForResourcePaginatorName
+
+```python
+from mypy_boto3_config.literals import ListTagsForResourcePaginatorName
+```
+
+Values:
+
+- `list_tags_for_resource`
 
 ## MaximumExecutionFrequency
 
@@ -663,3 +786,23 @@ from mypy_boto3_config.literals import ResourceValueType
 Values:
 
 - `RESOURCE_ID`
+
+## SelectAggregateResourceConfigPaginatorName
+
+```python
+from mypy_boto3_config.literals import SelectAggregateResourceConfigPaginatorName
+```
+
+Values:
+
+- `select_aggregate_resource_config`
+
+## SelectResourceConfigPaginatorName
+
+```python
+from mypy_boto3_config.literals import SelectResourceConfigPaginatorName
+```
+
+Values:
+
+- `select_resource_config`

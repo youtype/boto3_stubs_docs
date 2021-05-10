@@ -235,6 +235,8 @@ Arguments:
 - `remoteAccess`:
   [RemoteAccessConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#remoteaccessconfigtypedef)
 - `labels`: `Dict`\[`str`, `str`\]
+- `taints`:
+  `List`\[[TaintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#tainttypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 - `launchTemplate`:
@@ -660,6 +662,8 @@ Arguments:
 - `nodegroupName`: `str` *(required)*
 - `labels`:
   [UpdateLabelsPayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatelabelspayloadtypedef)
+- `taints`:
+  [UpdateTaintsPayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#updatetaintspayloadtypedef)
 - `scalingConfig`:
   [NodegroupScalingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#nodegroupscalingconfigtypedef)
 - `clientRequestToken`: `str`

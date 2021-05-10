@@ -10,6 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 SSM module](#typed-dictionaries-for-boto3-ssm-module)
   - [AccountSharingInfoTypeDef](#accountsharinginfotypedef)
   - [ActivationTypeDef](#activationtypedef)
+  - [AssociateOpsItemRelatedItemResponseTypeDef](#associateopsitemrelateditemresponsetypedef)
   - [AssociationDescriptionTypeDef](#associationdescriptiontypedef)
   - [AssociationExecutionFilterTypeDef](#associationexecutionfiltertypedef)
   - [AssociationExecutionTargetTypeDef](#associationexecutiontargettypedef)
@@ -160,6 +161,7 @@ type annotations stubs module
   - [ListDocumentsResultTypeDef](#listdocumentsresulttypedef)
   - [ListInventoryEntriesResultTypeDef](#listinventoryentriesresulttypedef)
   - [ListOpsItemEventsResponseTypeDef](#listopsitemeventsresponsetypedef)
+  - [ListOpsItemRelatedItemsResponseTypeDef](#listopsitemrelateditemsresponsetypedef)
   - [ListOpsMetadataResultTypeDef](#listopsmetadataresulttypedef)
   - [ListResourceComplianceSummariesResultTypeDef](#listresourcecompliancesummariesresulttypedef)
   - [ListResourceDataSyncResultTypeDef](#listresourcedatasyncresulttypedef)
@@ -192,6 +194,8 @@ type annotations stubs module
   - [OpsItemFilterTypeDef](#opsitemfiltertypedef)
   - [OpsItemIdentityTypeDef](#opsitemidentitytypedef)
   - [OpsItemNotificationTypeDef](#opsitemnotificationtypedef)
+  - [OpsItemRelatedItemSummaryTypeDef](#opsitemrelateditemsummarytypedef)
+  - [OpsItemRelatedItemsFilterTypeDef](#opsitemrelateditemsfiltertypedef)
   - [OpsItemSummaryTypeDef](#opsitemsummarytypedef)
   - [OpsItemTypeDef](#opsitemtypedef)
   - [OpsMetadataFilterTypeDef](#opsmetadatafiltertypedef)
@@ -298,6 +302,16 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `Tags`:
   `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#tagtypedef)\]
+
+## AssociateOpsItemRelatedItemResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemResponseTypeDef
+```
+
+Optional fields:
+
+- `AssociationId`: `str`
 
 ## AssociationDescriptionTypeDef
 
@@ -1497,6 +1511,7 @@ Optional fields:
 - `HashType`:
   [DocumentHashType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#documenthashtype)
 - `Name`: `str`
+- `DisplayName`: `str`
 - `VersionName`: `str`
 - `Owner`: `str`
 - `CreatedDate`: `datetime`
@@ -1552,6 +1567,8 @@ from mypy_boto3_ssm.type_defs import DocumentIdentifierTypeDef
 Optional fields:
 
 - `Name`: `str`
+- `CreatedDate`: `datetime`
+- `DisplayName`: `str`
 - `Owner`: `str`
 - `VersionName`: `str`
 - `PlatformTypes`:
@@ -1673,6 +1690,7 @@ from mypy_boto3_ssm.type_defs import DocumentVersionInfoTypeDef
 Optional fields:
 
 - `Name`: `str`
+- `DisplayName`: `str`
 - `DocumentVersion`: `str`
 - `VersionName`: `str`
 - `CreatedDate`: `datetime`
@@ -1822,6 +1840,8 @@ from mypy_boto3_ssm.type_defs import GetDocumentResultTypeDef
 Optional fields:
 
 - `Name`: `str`
+- `CreatedDate`: `datetime`
+- `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
 - `Status`:
@@ -2598,6 +2618,18 @@ Optional fields:
 - `Summaries`:
   `List`\[[OpsItemEventSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemeventsummarytypedef)\]
 
+## ListOpsItemRelatedItemsResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsResponseTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `Summaries`:
+  `List`\[[OpsItemRelatedItemSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemrelateditemsummarytypedef)\]
+
 ## ListOpsMetadataResultTypeDef
 
 ```python
@@ -3055,6 +3087,39 @@ from mypy_boto3_ssm.type_defs import OpsItemNotificationTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+## OpsItemRelatedItemSummaryTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import OpsItemRelatedItemSummaryTypeDef
+```
+
+Optional fields:
+
+- `OpsItemId`: `str`
+- `AssociationId`: `str`
+- `ResourceType`: `str`
+- `AssociationType`: `str`
+- `ResourceUri`: `str`
+- `CreatedBy`:
+  [OpsItemIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemidentitytypedef)
+- `CreatedTime`: `datetime`
+- `LastModifiedBy`:
+  [OpsItemIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemidentitytypedef)
+- `LastModifiedTime`: `datetime`
+
+## OpsItemRelatedItemsFilterTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import OpsItemRelatedItemsFilterTypeDef
+```
+
+Required fields:
+
+- `Key`:
+  [OpsItemRelatedItemsFilterKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#opsitemrelateditemsfilterkey)
+- `Values`: `List`\[`str`\]
+- `Operator`: `Literal['Equal']`
 
 ## OpsItemSummaryTypeDef
 

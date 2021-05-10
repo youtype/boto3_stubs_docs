@@ -94,6 +94,7 @@ type annotations stubs module
   - [ListDocumentVersionsPaginatorName](#listdocumentversionspaginatorname)
   - [ListDocumentsPaginatorName](#listdocumentspaginatorname)
   - [ListOpsItemEventsPaginatorName](#listopsitemeventspaginatorname)
+  - [ListOpsItemRelatedItemsPaginatorName](#listopsitemrelateditemspaginatorname)
   - [ListOpsMetadataPaginatorName](#listopsmetadatapaginatorname)
   - [ListResourceComplianceSummariesPaginatorName](#listresourcecompliancesummariespaginatorname)
   - [ListResourceDataSyncPaginatorName](#listresourcedatasyncpaginatorname)
@@ -109,6 +110,8 @@ type annotations stubs module
   - [OpsItemEventFilterOperator](#opsitemeventfilteroperator)
   - [OpsItemFilterKey](#opsitemfilterkey)
   - [OpsItemFilterOperator](#opsitemfilteroperator)
+  - [OpsItemRelatedItemsFilterKey](#opsitemrelateditemsfilterkey)
+  - [OpsItemRelatedItemsFilterOperator](#opsitemrelateditemsfilteroperator)
   - [OpsItemStatus](#opsitemstatus)
   - [ParameterTier](#parametertier)
   - [ParameterType](#parametertype)
@@ -874,6 +877,8 @@ Values:
 - `DeploymentStrategy`
 - `Package`
 - `Policy`
+- `ProblemAnalysis`
+- `ProblemAnalysisTemplate`
 - `Session`
 
 ## ExecutionMode
@@ -1129,6 +1134,16 @@ Values:
 
 - `list_ops_item_events`
 
+## ListOpsItemRelatedItemsPaginatorName
+
+```python
+from mypy_boto3_ssm.literals import ListOpsItemRelatedItemsPaginatorName
+```
+
+Values:
+
+- `list_ops_item_related_items`
+
 ## ListOpsMetadataPaginatorName
 
 ```python
@@ -1338,6 +1353,28 @@ Values:
 - `Equal`
 - `GreaterThan`
 - `LessThan`
+
+## OpsItemRelatedItemsFilterKey
+
+```python
+from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterKey
+```
+
+Values:
+
+- `AssociationId`
+- `ResourceType`
+- `ResourceUri`
+
+## OpsItemRelatedItemsFilterOperator
+
+```python
+from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterOperator
+```
+
+Values:
+
+- `Equal`
 
 ## OpsItemStatus
 

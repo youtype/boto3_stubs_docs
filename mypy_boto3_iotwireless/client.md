@@ -965,5 +965,7 @@ Arguments:
 - `Id`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
+- `NetIdFilters`: `List`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
