@@ -1,5 +1,3 @@
-const util = require('util')
-const exec = util.promisify(require('child_process').exec)
 const https = require('https')
 
 function sortVersions(versions) {
@@ -49,6 +47,12 @@ async function getBoto3Version() {
     return sortVersions(versions).pop()
 }
 
+async function getStubsVersions(boto3Version) {
+    const allVersions = await getReleaseVersions('boto3-stubs')
+    const versions = allVersions.filter(v => v === boto3Version || v.startsWith(`${boto3Version}.`))
+    return sortVersions(versions)
+}
+
 function getBotocoreVersion(version) {
     const minor = parseInt(version.match(/\d+\.(\d+)\./)[1]) + 3
     return version.replace(/\.\d+/, `.${minor}`)
@@ -59,5 +63,6 @@ module.exports = {
     getNextPostVersion,
     getReleaseVersions,
     getBoto3Version,
+    getStubsVersions,
     getBotocoreVersion
 }

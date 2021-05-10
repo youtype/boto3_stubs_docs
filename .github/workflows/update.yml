@@ -74,5 +74,5 @@ jobs:
           git config --global user.name ${GITHUB_ACTOR}
           git add -A .
           git commit -m "Update docs to ${BOTO3_VERSION}"
-          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/vemel/boto3_stubs_docs.git --tags
-          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/vemel/boto3_stubs_docs.git HEAD:master
+          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git --tags
+          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git HEAD:master
