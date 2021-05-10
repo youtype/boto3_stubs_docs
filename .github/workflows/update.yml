@@ -26,7 +26,7 @@ jobs:
             core.setOutput('version', '')
 
             const currentBoto3Version = fs.readFileSync('./boto3_version.txt', 'utf8').trim()
-            const force = context.inputs ? context.inputs.force : false
+            const force = context.payload.inputs ? context.payload.inputs.force : false
 
             const boto3Version = await getBoto3Version()
             if (!force && currentBoto3Version === boto3Version) {
