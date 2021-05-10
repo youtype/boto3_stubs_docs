@@ -49,10 +49,15 @@ async function getBoto3Version() {
     return sortVersions(versions).pop()
 }
 
+function getBotocoreVersion(version) {
+    const minor = parseInt(version.match(/\d+\.(\d+)\./)[1]) + 3
+    return version.replace(/\.\d+/, `.${minor}`)
+}
+
 module.exports = {
     sortVersions,
     getNextPostVersion,
     getReleaseVersions,
-    getBoto3Version
-
+    getBoto3Version,
+    getBotocoreVersion
 }
