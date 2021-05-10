@@ -1,0 +1,71 @@
+name: Update docs
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Use to force update
+
+jobs:
+  update-docs:
+    env:
+      PIP_NO_CACHE_DIR: false
+      PIP_USER: 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Extract versions
+        id: vars
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const fs = require('fs')
+
+            const currentBoto3Version = fs.readFileSync('./boto3_version.txt', 'utf8')
+            const force = context.inputs ? context.inputs.force : false
+
+            const { getBoto3Version } = require('./.github/workflows/helpers.js')
+            const boto3Version = await getBoto3Version()
+            if (!force && currentBoto3Version === boto3Version) {
+              core.info(`No updates, ${boto3Version} is still the latest`)
+            }
+
+            core.info(`Updating to ${boto3Version} over ${currentBoto3Version}`)
+            core.setOutput('version', boto3Version)
+      - name: Set up Python
+        if: steps.vars.outputs.version
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install boto3
+        if: steps.vars.outputs.version
+        env:
+          BOTO3_VERSION: ${{ steps.vars.outputs.boto3-version }}
+          BOTOCORE_VERSION: ${{ steps.vars.outputs.botocore-version }}
+        run: |
+          python -m pip install -U boto3==${BOTO3_VERSION} botocore==${BOTOCORE_VERSION}
+      - name: Install builder
+        if: steps.vars.outputs.version
+        run: |
+          python -m pip install -U mypy_boto3_builder
+      - name: Build docs
+        if: steps.vars.outputs.version
+        run: |
+          python -m mypy_boto3_builder . --docs
+      - name: Update marker file
+        if: steps.vars.outputs.version
+        env:
+          BOTO3_VERSION: ${{ steps.vars.outputs.boto3-version }}
+        run: |
+          echo $BOTO3_VERSION > ./boto3_version.txt
+      - name: Commit changes
+        if: steps.vars.outputs.version
+        env:
+          BOTO3_VERSION: ${{ steps.vars.outputs.boto3-version }}
+        run: |
+          git config --global user.email "volshebnyi@gmail.com"
+          git config --global user.name ${GITHUB_ACTOR}
+          git add -A .
+          git commit -m "Update docs to ${BOTO3_VERSION}"
+          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/vemel/boto3_stubs_docs.git --tags
+          git push https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/vemel/boto3_stubs_docs.git HEAD:master
