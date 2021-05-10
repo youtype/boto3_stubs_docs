@@ -342,6 +342,7 @@ from mypy_boto3_chime.literals import PhoneNumberProductType
 Values:
 
 - `BusinessCalling`
+- `SipMediaApplicationDialIn`
 - `VoiceConnector`
 
 ## PhoneNumberStatus

@@ -20,6 +20,7 @@ type annotations stubs module
   - [ExtendedKeyUsageType](#extendedkeyusagetype)
   - [FailureReason](#failurereason)
   - [KeyAlgorithm](#keyalgorithm)
+  - [KeyStorageSecurityStandard](#keystoragesecuritystandard)
   - [ListCertificateAuthoritiesPaginatorName](#listcertificateauthoritiespaginatorname)
   - [ListPermissionsPaginatorName](#listpermissionspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
@@ -175,6 +176,17 @@ Values:
 - `EC_secp384r1`
 - `RSA_2048`
 - `RSA_4096`
+
+## KeyStorageSecurityStandard
+
+```python
+from mypy_boto3_acm_pca.literals import KeyStorageSecurityStandard
+```
+
+Values:
+
+- `FIPS_140_2_LEVEL_2_OR_HIGHER`
+- `FIPS_140_2_LEVEL_3_OR_HIGHER`
 
 ## ListCertificateAuthoritiesPaginatorName
 

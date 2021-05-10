@@ -124,6 +124,8 @@ Arguments:
 - `RevocationConfiguration`:
   [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
 - `IdempotencyToken`: `str`
+- `KeyStorageSecurityStandard`:
+  [KeyStorageSecurityStandard](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#keystoragesecuritystandard)
 - `Tags`:
   `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
 

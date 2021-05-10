@@ -548,9 +548,12 @@ Optional fields:
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkControlSetTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `name`: `str`
+
+Optional fields:
+
 - `controls`:
   `List`\[[CreateAssessmentFrameworkControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkcontroltypedef)\]
 
@@ -1172,10 +1175,13 @@ Optional fields:
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkControlSetTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+
 Optional fields:
 
 - `id`: `str`
-- `name`: `str`
 - `controls`:
   `List`\[[CreateAssessmentFrameworkControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkcontroltypedef)\]
 

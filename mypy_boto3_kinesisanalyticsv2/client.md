@@ -36,6 +36,7 @@ type annotations stubs module
     - [list_application_snapshots](#list_application_snapshots)
     - [list_applications](#list_applications)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [rollback_application](#rollback_application)
     - [start_application](#start_application)
     - [stop_application](#stop_application)
     - [tag_resource](#tag_resource)
@@ -103,10 +104,11 @@ Boto3 documentation:
 Arguments:
 
 - `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
 - `CloudWatchLoggingOption`:
   [CloudWatchLoggingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiontypedef)
   *(required)*
+- `CurrentApplicationVersionId`: `int`
+- `ConditionalToken`: `str`
 
 Returns
 [AddApplicationCloudWatchLoggingOptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationcloudwatchloggingoptionresponsetypedef).
@@ -201,10 +203,11 @@ Boto3 documentation:
 Arguments:
 
 - `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#vpcconfigurationtypedef)
   *(required)*
+- `CurrentApplicationVersionId`: `int`
+- `ConditionalToken`: `str`
 
 Returns
 [AddApplicationVpcConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#addapplicationvpcconfigurationresponsetypedef).
@@ -307,8 +310,9 @@ Boto3 documentation:
 Arguments:
 
 - `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
 - `CloudWatchLoggingOptionId`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int`
+- `ConditionalToken`: `str`
 
 Returns
 [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationcloudwatchloggingoptionresponsetypedef).
@@ -394,8 +398,9 @@ Boto3 documentation:
 Arguments:
 
 - `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
 - `VpcConfigurationId`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int`
+- `ConditionalToken`: `str`
 
 Returns
 [DeleteApplicationVpcConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#deleteapplicationvpcconfigurationresponsetypedef).
@@ -519,6 +524,22 @@ Arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#listtagsforresourceresponsetypedef).
 
+### rollback_application
+
+Type annotations for `boto3.client("kinesisanalyticsv2").rollback_application`
+method.
+
+Boto3 documentation:
+[KinesisAnalyticsV2.Client.rollback_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.rollback_application)
+
+Arguments:
+
+- `ApplicationName`: `str` *(required)*
+- `CurrentApplicationVersionId`: `int` *(required)*
+
+Returns
+[RollbackApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#rollbackapplicationresponsetypedef).
+
 ### start_application
 
 Type annotations for `boto3.client("kinesisanalyticsv2").start_application`
@@ -593,7 +614,7 @@ Boto3 documentation:
 Arguments:
 
 - `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
+- `CurrentApplicationVersionId`: `int`
 - `ApplicationConfigurationUpdate`:
   [ApplicationConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationconfigurationupdatetypedef)
 - `ServiceExecutionRoleUpdate`: `str`
@@ -601,6 +622,7 @@ Arguments:
   [RunConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#runconfigurationupdatetypedef)
 - `CloudWatchLoggingOptionUpdates`:
   `List`\[[CloudWatchLoggingOptionUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptionupdatetypedef)\]
+- `ConditionalToken`: `str`
 
 Returns
 [UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#updateapplicationresponsetypedef).

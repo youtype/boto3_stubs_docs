@@ -470,12 +470,14 @@ Values:
 - `AnalyzingData`
 - `CandidateDefinitionsGenerated`
 - `Completed`
+- `DeployingModel`
 - `ExplainabilityError`
 - `Failed`
 - `FeatureEngineering`
 - `GeneratingExplainabilityReport`
 - `MaxAutoMLJobRuntimeReached`
 - `MaxCandidatesReached`
+- `ModelDeploymentError`
 - `ModelTuning`
 - `Starting`
 - `Stopped`
@@ -2662,6 +2664,7 @@ Values:
 - `MaxRuntimeExceeded`
 - `MaxWaitTimeExceeded`
 - `PreparingTrainingStack`
+- `Restarting`
 - `Starting`
 - `Stopped`
 - `Stopping`

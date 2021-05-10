@@ -13,9 +13,12 @@ type annotations stubs module
   - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)
   - [CloudFormationCollectionFilterTypeDef](#cloudformationcollectionfiltertypedef)
   - [CloudFormationCollectionTypeDef](#cloudformationcollectiontypedef)
+  - [CloudFormationCostEstimationResourceCollectionFilterTypeDef](#cloudformationcostestimationresourcecollectionfiltertypedef)
   - [CloudFormationHealthTypeDef](#cloudformationhealthtypedef)
   - [CloudWatchMetricsDetailTypeDef](#cloudwatchmetricsdetailtypedef)
   - [CloudWatchMetricsDimensionTypeDef](#cloudwatchmetricsdimensiontypedef)
+  - [CostEstimationResourceCollectionFilterTypeDef](#costestimationresourcecollectionfiltertypedef)
+  - [CostEstimationTimeRangeTypeDef](#costestimationtimerangetypedef)
   - [DescribeAccountHealthResponseTypeDef](#describeaccounthealthresponsetypedef)
   - [DescribeAccountOverviewResponseTypeDef](#describeaccountoverviewresponsetypedef)
   - [DescribeAnomalyResponseTypeDef](#describeanomalyresponsetypedef)
@@ -27,6 +30,7 @@ type annotations stubs module
   - [EventResourceTypeDef](#eventresourcetypedef)
   - [EventTimeRangeTypeDef](#eventtimerangetypedef)
   - [EventTypeDef](#eventtypedef)
+  - [GetCostEstimationResponseTypeDef](#getcostestimationresponsetypedef)
   - [GetResourceCollectionResponseTypeDef](#getresourcecollectionresponsetypedef)
   - [InsightFeedbackTypeDef](#insightfeedbacktypedef)
   - [InsightHealthTypeDef](#insighthealthtypedef)
@@ -66,7 +70,11 @@ type annotations stubs module
   - [ResourceCollectionTypeDef](#resourcecollectiontypedef)
   - [SearchInsightsFiltersTypeDef](#searchinsightsfilterstypedef)
   - [SearchInsightsResponseTypeDef](#searchinsightsresponsetypedef)
+  - [ServiceCollectionTypeDef](#servicecollectiontypedef)
+  - [ServiceHealthTypeDef](#servicehealthtypedef)
+  - [ServiceInsightHealthTypeDef](#serviceinsighthealthtypedef)
   - [ServiceIntegrationConfigTypeDef](#serviceintegrationconfigtypedef)
+  - [ServiceResourceCostTypeDef](#serviceresourcecosttypedef)
   - [SnsChannelConfigTypeDef](#snschannelconfigtypedef)
   - [StartTimeRangeTypeDef](#starttimerangetypedef)
   - [UpdateCloudFormationCollectionFilterTypeDef](#updatecloudformationcollectionfiltertypedef)
@@ -128,6 +136,16 @@ Optional fields:
 
 - `StackNames`: `List`\[`str`\]
 
+## CloudFormationCostEstimationResourceCollectionFilterTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import CloudFormationCostEstimationResourceCollectionFilterTypeDef
+```
+
+Optional fields:
+
+- `StackNames`: `List`\[`str`\]
+
 ## CloudFormationHealthTypeDef
 
 ```python
@@ -167,6 +185,28 @@ Optional fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+## CostEstimationResourceCollectionFilterTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import CostEstimationResourceCollectionFilterTypeDef
+```
+
+Optional fields:
+
+- `CloudFormation`:
+  [CloudFormationCostEstimationResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudformationcostestimationresourcecollectionfiltertypedef)
+
+## CostEstimationTimeRangeTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import CostEstimationTimeRangeTypeDef
+```
+
+Optional fields:
+
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
 
 ## DescribeAccountHealthResponseTypeDef
 
@@ -243,6 +283,8 @@ Required fields:
 
 Optional fields:
 
+- `Service`:
+  `List`\[[ServiceHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicehealthtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeServiceIntegrationResponseTypeDef
@@ -310,6 +352,25 @@ Optional fields:
   [EventClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#eventclass)
 - `Resources`:
   `List`\[[EventResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#eventresourcetypedef)\]
+
+## GetCostEstimationResponseTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import GetCostEstimationResponseTypeDef
+```
+
+Optional fields:
+
+- `ResourceCollection`:
+  [CostEstimationResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#costestimationresourcecollectionfiltertypedef)
+- `Status`:
+  [CostEstimationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#costestimationstatus)
+- `Costs`:
+  `List`\[[ServiceResourceCostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#serviceresourcecosttypedef)\]
+- `TimeRange`:
+  [CostEstimationTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#costestimationtimerangetypedef)
+- `TotalCost`: `float`
+- `NextToken`: `str`
 
 ## GetResourceCollectionResponseTypeDef
 
@@ -640,6 +701,8 @@ Optional fields:
   [PredictionTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#predictiontimerangetypedef)
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+- `ServiceCollection`:
+  [ServiceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicecollectiontypedef)
 
 ## ProactiveInsightTypeDef
 
@@ -723,6 +786,8 @@ Optional fields:
   [InsightTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insighttimerangetypedef)
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+- `ServiceCollection`:
+  [ServiceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicecollectiontypedef)
 
 ## ReactiveInsightTypeDef
 
@@ -866,6 +931,8 @@ Optional fields:
   `List`\[[InsightStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightstatus)\]
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+- `ServiceCollection`:
+  [ServiceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicecollectiontypedef)
 
 ## SearchInsightsResponseTypeDef
 
@@ -881,6 +948,41 @@ Optional fields:
   `List`\[[ReactiveInsightSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#reactiveinsightsummarytypedef)\]
 - `NextToken`: `str`
 
+## ServiceCollectionTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ServiceCollectionTypeDef
+```
+
+Optional fields:
+
+- `ServiceNames`:
+  `List`\[[ServiceName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#servicename)\]
+
+## ServiceHealthTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ServiceHealthTypeDef
+```
+
+Optional fields:
+
+- `ServiceName`:
+  [ServiceName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#servicename)
+- `Insight`:
+  [ServiceInsightHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#serviceinsighthealthtypedef)
+
+## ServiceInsightHealthTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ServiceInsightHealthTypeDef
+```
+
+Optional fields:
+
+- `OpenProactiveInsights`: `int`
+- `OpenReactiveInsights`: `int`
+
 ## ServiceIntegrationConfigTypeDef
 
 ```python
@@ -891,6 +993,21 @@ Optional fields:
 
 - `OpsCenter`:
   [OpsCenterIntegrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#opscenterintegrationtypedef)
+
+## ServiceResourceCostTypeDef
+
+```python
+from mypy_boto3_devops_guru.type_defs import ServiceResourceCostTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+- `State`:
+  [CostEstimationServiceResourceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#costestimationserviceresourcestate)
+- `Count`: `int`
+- `UnitCost`: `float`
+- `Cost`: `float`
 
 ## SnsChannelConfigTypeDef
 

@@ -167,6 +167,7 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretResponseTypeDef,
 - [FirehoseTypeDef](./type_defs.md#firehosetypedef)
 - [GetBootstrapBrokersResponseTypeDef](./type_defs.md#getbootstrapbrokersresponsetypedef)
 - [GetCompatibleKafkaVersionsResponseTypeDef](./type_defs.md#getcompatiblekafkaversionsresponsetypedef)
+- [IamTypeDef](./type_defs.md#iamtypedef)
 - [JmxExporterInfoTypeDef](./type_defs.md#jmxexporterinfotypedef)
 - [JmxExporterTypeDef](./type_defs.md#jmxexportertypedef)
 - [KafkaVersionTypeDef](./type_defs.md#kafkaversiontypedef)

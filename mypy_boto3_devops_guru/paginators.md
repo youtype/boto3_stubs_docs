@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 DevopsGuru module](#paginators-for-boto3-devopsguru-module)
   - [DescribeResourceCollectionHealthPaginator](#describeresourcecollectionhealthpaginator)
+  - [GetCostEstimationPaginator](#getcostestimationpaginator)
   - [GetResourceCollectionPaginator](#getresourcecollectionpaginator)
   - [ListAnomaliesForInsightPaginator](#listanomaliesforinsightpaginator)
   - [ListEventsPaginator](#listeventspaginator)
@@ -36,12 +37,39 @@ Boto3 documentation:
 
 Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
 
-- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `ResourceCollectionType`:
+  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
+  *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
 
 `DescribeResourceCollectionHealthPaginator.paginate` returns
 `Iterator`\[[DescribeResourceCollectionHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeresourcecollectionhealthresponsetypedef)\].
+
+## GetCostEstimationPaginator
+
+Type annotations for
+`boto3.client("devops-guru").get_paginator("get_cost_estimation")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_devops_guru.paginator import GetCostEstimationPaginator
+
+def get_get_cost_estimation_paginator() -> GetCostEstimationPaginator:
+    return boto3.client("devops-guru").get_paginator("get_cost_estimation")
+```
+
+Boto3 documentation:
+[DevopsGuru.Paginator.GetCostEstimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Paginator.GetCostEstimation)
+
+Arguments for `GetCostEstimationPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+
+`GetCostEstimationPaginator.paginate` returns
+`Iterator`\[[GetCostEstimationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getcostestimationresponsetypedef)\].
 
 ## GetResourceCollectionPaginator
 
@@ -62,7 +90,9 @@ Boto3 documentation:
 
 Arguments for `GetResourceCollectionPaginator.paginate` method:
 
-- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `ResourceCollectionType`:
+  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
+  *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
 
@@ -198,6 +228,8 @@ Boto3 documentation:
 Arguments for `ListRecommendationsPaginator.paginate` method:
 
 - `InsightId`: `str` *(required)*
+- `Locale`:
+  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#locale)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
 

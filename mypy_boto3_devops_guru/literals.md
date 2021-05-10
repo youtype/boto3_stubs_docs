@@ -11,9 +11,12 @@ type annotations stubs module
   - [AnomalySeverity](#anomalyseverity)
   - [AnomalyStatus](#anomalystatus)
   - [CloudWatchMetricsStat](#cloudwatchmetricsstat)
+  - [CostEstimationServiceResourceState](#costestimationserviceresourcestate)
+  - [CostEstimationStatus](#costestimationstatus)
   - [DescribeResourceCollectionHealthPaginatorName](#describeresourcecollectionhealthpaginatorname)
   - [EventClass](#eventclass)
   - [EventDataSource](#eventdatasource)
+  - [GetCostEstimationPaginatorName](#getcostestimationpaginatorname)
   - [GetResourceCollectionPaginatorName](#getresourcecollectionpaginatorname)
   - [InsightFeedbackOption](#insightfeedbackoption)
   - [InsightSeverity](#insightseverity)
@@ -24,9 +27,11 @@ type annotations stubs module
   - [ListInsightsPaginatorName](#listinsightspaginatorname)
   - [ListNotificationChannelsPaginatorName](#listnotificationchannelspaginatorname)
   - [ListRecommendationsPaginatorName](#listrecommendationspaginatorname)
+  - [Locale](#locale)
   - [OptInStatus](#optinstatus)
   - [ResourceCollectionType](#resourcecollectiontype)
   - [SearchInsightsPaginatorName](#searchinsightspaginatorname)
+  - [ServiceName](#servicename)
   - [UpdateResourceCollectionAction](#updateresourcecollectionaction)
 
 ## AnomalySeverity
@@ -69,6 +74,28 @@ Values:
 - `SampleCount`
 - `Sum`
 
+## CostEstimationServiceResourceState
+
+```python
+from mypy_boto3_devops_guru.literals import CostEstimationServiceResourceState
+```
+
+Values:
+
+- `ACTIVE`
+- `INACTIVE`
+
+## CostEstimationStatus
+
+```python
+from mypy_boto3_devops_guru.literals import CostEstimationStatus
+```
+
+Values:
+
+- `COMPLETED`
+- `ONGOING`
+
 ## DescribeResourceCollectionHealthPaginatorName
 
 ```python
@@ -103,6 +130,16 @@ Values:
 
 - `AWS_CLOUD_TRAIL`
 - `AWS_CODE_DEPLOY`
+
+## GetCostEstimationPaginatorName
+
+```python
+from mypy_boto3_devops_guru.literals import GetCostEstimationPaginatorName
+```
+
+Values:
+
+- `get_cost_estimation`
 
 ## GetResourceCollectionPaginatorName
 
@@ -212,6 +249,26 @@ Values:
 
 - `list_recommendations`
 
+## Locale
+
+```python
+from mypy_boto3_devops_guru.literals import Locale
+```
+
+Values:
+
+- `DE_DE`
+- `EN_GB`
+- `EN_US`
+- `ES_ES`
+- `FR_FR`
+- `IT_IT`
+- `JA_JP`
+- `KO_KR`
+- `PT_BR`
+- `ZH_CN`
+- `ZH_TW`
+
 ## OptInStatus
 
 ```python
@@ -232,6 +289,7 @@ from mypy_boto3_devops_guru.literals import ResourceCollectionType
 Values:
 
 - `AWS_CLOUD_FORMATION`
+- `AWS_SERVICE`
 
 ## SearchInsightsPaginatorName
 
@@ -242,6 +300,40 @@ from mypy_boto3_devops_guru.literals import SearchInsightsPaginatorName
 Values:
 
 - `search_insights`
+
+## ServiceName
+
+```python
+from mypy_boto3_devops_guru.literals import ServiceName
+```
+
+Values:
+
+- `API_GATEWAY`
+- `APPLICATION_ELB`
+- `AUTO_SCALING_GROUP`
+- `CLOUD_FRONT`
+- `DYNAMO_DB`
+- `EC2`
+- `ECS`
+- `EKS`
+- `ELASTI_CACHE`
+- `ELASTIC_BEANSTALK`
+- `ELB`
+- `ES`
+- `KINESIS`
+- `LAMBDA`
+- `NAT_GATEWAY`
+- `NETWORK_ELB`
+- `RDS`
+- `REDSHIFT`
+- `ROUTE_53`
+- `S3`
+- `SAGE_MAKER`
+- `SNS`
+- `SQS`
+- `STEP_FUNCTIONS`
+- `SWF`
 
 ## UpdateResourceCollectionAction
 

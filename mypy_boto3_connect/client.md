@@ -343,6 +343,7 @@ Arguments:
 - `SourceType`:
   [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/literals.html#sourcetype)
   *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
 [CreateIntegrationAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#createintegrationassociationresponsetypedef).
@@ -424,6 +425,7 @@ Arguments:
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
 - `UseCaseType`: `Literal['RULES_EVALUATION']` *(required)*
+- `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
 [CreateUseCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect/type_defs.html#createusecaseresponsetypedef).

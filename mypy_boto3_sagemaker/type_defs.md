@@ -322,6 +322,8 @@ type annotations stubs module
   - [ModelBiasJobInputTypeDef](#modelbiasjobinputtypedef)
   - [ModelClientConfigTypeDef](#modelclientconfigtypedef)
   - [ModelDataQualityTypeDef](#modeldataqualitytypedef)
+  - [ModelDeployConfigTypeDef](#modeldeployconfigtypedef)
+  - [ModelDeployResultTypeDef](#modeldeployresulttypedef)
   - [ModelDigestsTypeDef](#modeldigeststypedef)
   - [ModelExplainabilityAppSpecificationTypeDef](#modelexplainabilityappspecificationtypedef)
   - [ModelExplainabilityBaselineConfigTypeDef](#modelexplainabilitybaselineconfigtypedef)
@@ -427,6 +429,7 @@ type annotations stubs module
   - [ResourceSpecTypeDef](#resourcespectypedef)
   - [ResponseMetadata](#responsemetadata)
   - [RetentionPolicyTypeDef](#retentionpolicytypedef)
+  - [RetryStrategyTypeDef](#retrystrategytypedef)
   - [S3DataSourceTypeDef](#s3datasourcetypedef)
   - [S3StorageConfigTypeDef](#s3storageconfigtypedef)
   - [ScheduleConfigTypeDef](#scheduleconfigtypedef)
@@ -2314,6 +2317,10 @@ Optional fields:
   [AutoMLJobArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobartifactstypedef)
 - `ResolvedAttributes`:
   [ResolvedAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resolvedattributestypedef)
+- `ModelDeployConfig`:
+  [ModelDeployConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modeldeployconfigtypedef)
+- `ModelDeployResult`:
+  [ModelDeployResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modeldeployresulttypedef)
 
 ## DescribeCodeRepositoryOutputTypeDef
 
@@ -3228,6 +3235,8 @@ Optional fields:
   `List`\[[ProfilerRuleEvaluationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleevaluationstatustypedef)\]
 - `ProfilingStatus`:
   [ProfilingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#profilingstatus)
+- `RetryStrategy`:
+  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retrystrategytypedef)
 - `Environment`: `Dict`\[`str`, `str`\]
 
 ## DescribeTransformJobResponseTypeDef
@@ -4129,6 +4138,8 @@ Optional fields:
 - `EnableManagedSpotTraining`: `bool`
 - `CheckpointConfig`:
   [CheckpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#checkpointconfigtypedef)
+- `RetryStrategy`:
+  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retrystrategytypedef)
 
 ## HyperParameterTrainingJobSummaryTypeDef
 
@@ -5482,6 +5493,27 @@ Optional fields:
   [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
 - `Constraints`:
   [MetricsSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metricssourcetypedef)
+
+## ModelDeployConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelDeployConfigTypeDef
+```
+
+Optional fields:
+
+- `AutoGenerateEndpointName`: `bool`
+- `EndpointName`: `str`
+
+## ModelDeployResultTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ModelDeployResultTypeDef
+```
+
+Optional fields:
+
+- `EndpointName`: `str`
 
 ## ModelDigestsTypeDef
 
@@ -7081,6 +7113,16 @@ Optional fields:
 - `HomeEfsFileSystem`:
   [RetentionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#retentiontype)
 
+## RetryStrategyTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import RetryStrategyTypeDef
+```
+
+Required fields:
+
+- `MaximumRetryAttempts`: `int`
+
 ## S3DataSourceTypeDef
 
 ```python
@@ -7541,6 +7583,8 @@ Optional fields:
 - `DebugRuleEvaluationStatuses`:
   `List`\[[DebugRuleEvaluationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleevaluationstatustypedef)\]
 - `Environment`: `Dict`\[`str`, `str`\]
+- `RetryStrategy`:
+  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retrystrategytypedef)
 - `Tags`:
   `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
 

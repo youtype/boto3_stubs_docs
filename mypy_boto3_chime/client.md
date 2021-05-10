@@ -143,6 +143,7 @@ type annotations stubs module
     - [list_rooms](#list_rooms)
     - [list_sip_media_applications](#list_sip_media_applications)
     - [list_sip_rules](#list_sip_rules)
+    - [list_supported_phone_number_countries](#list_supported_phone_number_countries)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_users](#list_users)
     - [list_voice_connector_groups](#list_voice_connector_groups)
@@ -2278,6 +2279,23 @@ Arguments:
 Returns
 [ListSipRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsiprulesresponsetypedef).
 
+### list_supported_phone_number_countries
+
+Type annotations for
+`boto3.client("chime").list_supported_phone_number_countries` method.
+
+Boto3 documentation:
+[Chime.Client.list_supported_phone_number_countries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
+
+Arguments:
+
+- `ProductType`:
+  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+  *(required)*
+
+Returns
+[ListSupportedPhoneNumberCountriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsupportedphonenumbercountriesresponsetypedef).
+
 ### list_tags_for_resource
 
 Type annotations for `boto3.client("chime").list_tags_for_resource` method.
@@ -2687,6 +2705,8 @@ Arguments:
 - `Country`: `str`
 - `State`: `str`
 - `TollFreePrefix`: `str`
+- `PhoneNumberType`:
+  [PhoneNumberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumbertype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
