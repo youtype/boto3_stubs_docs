@@ -1,6 +1,8 @@
 name: Update docs
 
 on:
+  schedule:
+    - cron: "0 0/2 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -22,7 +24,7 @@ jobs:
             const fs = require('fs')
             const { getBoto3Version, getBotocoreVersion } = require('./.github/workflows/helpers.js')
 
-            const currentBoto3Version = fs.readFileSync('./boto3_version.txt', 'utf8')
+            const currentBoto3Version = fs.readFileSync('./boto3_version.txt', 'utf8').trim()
             const force = context.inputs ? context.inputs.force : false
 
             const boto3Version = await getBoto3Version()
