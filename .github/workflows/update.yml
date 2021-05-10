@@ -23,6 +23,7 @@ jobs:
           script: |
             const fs = require('fs')
             const { getBoto3Version, getBotocoreVersion } = require('./.github/workflows/helpers.js')
+            core.setOutput('version', '')
 
             const currentBoto3Version = fs.readFileSync('./boto3_version.txt', 'utf8').trim()
             const force = context.inputs ? context.inputs.force : false
@@ -30,6 +31,7 @@ jobs:
             const boto3Version = await getBoto3Version()
             if (!force && currentBoto3Version === boto3Version) {
               core.info(`No updates, ${boto3Version} is still the latest`)
+              return
             }
 
             const botocoreVersion = getBotocoreVersion(boto3Version)
@@ -37,7 +39,6 @@ jobs:
             core.setOutput('version', boto3Version)
             core.setOutput('boto3-version', boto3Version)
             core.setOutput('botocore-version', botocoreVersion)
-            core.setOutput('version', boto3Version)
       - name: Set up Python
         if: steps.vars.outputs.version
         uses: actions/setup-python@v2
