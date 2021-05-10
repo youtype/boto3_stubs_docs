@@ -1,6 +1,6 @@
 # Type annotations for boto3 WellArchitected module
 
-> [Index](../README.md) > WellArchitected
+> [Index](..) > WellArchitected
 
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
@@ -143,7 +143,7 @@ from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef, ...
 - [PillarDifferenceTypeDef](./type_defs.md#pillardifferencetypedef)
 - [PillarReviewSummaryTypeDef](./type_defs.md#pillarreviewsummarytypedef)
 - [QuestionDifferenceTypeDef](./type_defs.md#questiondifferencetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ShareInvitationSummaryTypeDef](./type_defs.md#shareinvitationsummarytypedef)
 - [ShareInvitationTypeDef](./type_defs.md#shareinvitationtypedef)
 - [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef)

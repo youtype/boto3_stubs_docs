@@ -1,6 +1,6 @@
 # Paginators for boto3 EFS module
 
-> [Index](../README.md) > [EFS](./README.md) > Paginators
+> [Index](..) > [EFS](.) > Paginators
 
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
@@ -34,10 +34,10 @@ Arguments for `DescribeFileSystemsPaginator.paginate` method:
 - `CreationToken`: `str`
 - `FileSystemId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFileSystemsPaginator.paginate` returns
-`Iterator`\[[DescribeFileSystemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describefilesystemsresponsetypedef)\].
+`Iterator`\[[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)\].
 
 ## DescribeMountTargetsPaginator
 
@@ -62,10 +62,10 @@ Arguments for `DescribeMountTargetsPaginator.paginate` method:
 - `MountTargetId`: `str`
 - `AccessPointId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMountTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeMountTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describemounttargetsresponsetypedef)\].
+`Iterator`\[[DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -87,7 +87,7 @@ Arguments for `DescribeTagsPaginator.paginate` method:
 
 - `FileSystemId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[DescribeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describetagsresponsetypedef)\].
+`Iterator`\[[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)\].

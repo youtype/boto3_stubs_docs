@@ -1,6 +1,6 @@
 # WorkMailClient for boto3 WorkMail module
 
-> [Index](../README.md) > [WorkMail](./README.md) > WorkMailClient
+> [Index](..) > [WorkMail](.) > WorkMailClient
 
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
@@ -212,7 +212,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[CreateGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#creategroupresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_mobile_device_access_rule
 
@@ -227,7 +227,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Effect`:
-  [MobileDeviceAccessRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mobiledeviceaccessruleeffect)
+  [MobileDeviceAccessRuleEffect](./literals.md#mobiledeviceaccessruleeffect)
   *(required)*
 - `ClientToken`: `str`
 - `Description`: `str`
@@ -241,7 +241,7 @@ Arguments:
 - `NotDeviceUserAgents`: `List`\[`str`\]
 
 Returns
-[CreateMobileDeviceAccessRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createmobiledeviceaccessruleresponsetypedef).
+[CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef).
 
 ### create_organization
 
@@ -255,13 +255,12 @@ Arguments:
 - `Alias`: `str` *(required)*
 - `DirectoryId`: `str`
 - `ClientToken`: `str`
-- `Domains`:
-  `List`\[[DomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#domaintypedef)\]
+- `Domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
 - `KmsKeyArn`: `str`
 - `EnableInteroperability`: `bool`
 
 Returns
-[CreateOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createorganizationresponsetypedef).
+[CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
 
 ### create_resource
 
@@ -274,12 +273,10 @@ Arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Type`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#resourcetype)
-  *(required)*
+- `Type`: [ResourceType](./literals.md#resourcetype) *(required)*
 
 Returns
-[CreateResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createresourceresponsetypedef).
+[CreateResourceResponseTypeDef](./type_defs.md#createresourceresponsetypedef).
 
 ### create_user
 
@@ -295,8 +292,7 @@ Arguments:
 - `DisplayName`: `str` *(required)*
 - `Password`: `str` *(required)*
 
-Returns
-[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#createuserresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### delete_access_control_rule
 
@@ -387,7 +383,7 @@ Arguments:
 - `ClientToken`: `str`
 
 Returns
-[DeleteOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#deleteorganizationresponsetypedef).
+[DeleteOrganizationResponseTypeDef](./type_defs.md#deleteorganizationresponsetypedef).
 
 ### delete_resource
 
@@ -459,7 +455,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[DescribeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describegroupresponsetypedef).
+[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
 ### describe_mailbox_export_job
 
@@ -475,7 +471,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[DescribeMailboxExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describemailboxexportjobresponsetypedef).
+[DescribeMailboxExportJobResponseTypeDef](./type_defs.md#describemailboxexportjobresponsetypedef).
 
 ### describe_organization
 
@@ -489,7 +485,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[DescribeOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describeorganizationresponsetypedef).
+[DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
 
 ### describe_resource
 
@@ -504,7 +500,7 @@ Arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[DescribeResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describeresourceresponsetypedef).
+[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
 ### describe_user
 
@@ -519,7 +515,7 @@ Arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[DescribeUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#describeuserresponsetypedef).
+[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
 ### disassociate_delegate_from_resource
 
@@ -585,7 +581,7 @@ Arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetAccessControlEffectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getaccesscontroleffectresponsetypedef).
+[GetAccessControlEffectResponseTypeDef](./type_defs.md#getaccesscontroleffectresponsetypedef).
 
 ### get_default_retention_policy
 
@@ -600,7 +596,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[GetDefaultRetentionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getdefaultretentionpolicyresponsetypedef).
+[GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef).
 
 ### get_mailbox_details
 
@@ -615,7 +611,7 @@ Arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetMailboxDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getmailboxdetailsresponsetypedef).
+[GetMailboxDetailsResponseTypeDef](./type_defs.md#getmailboxdetailsresponsetypedef).
 
 ### get_mobile_device_access_effect
 
@@ -634,7 +630,7 @@ Arguments:
 - `DeviceUserAgent`: `str`
 
 Returns
-[GetMobileDeviceAccessEffectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#getmobiledeviceaccesseffectresponsetypedef).
+[GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef).
 
 ### list_access_control_rules
 
@@ -649,7 +645,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[ListAccessControlRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listaccesscontrolrulesresponsetypedef).
+[ListAccessControlRulesResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponsetypedef).
 
 ### list_aliases
 
@@ -666,7 +662,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listaliasesresponsetypedef).
+[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
 ### list_group_members
 
@@ -683,7 +679,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGroupMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listgroupmembersresponsetypedef).
+[ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef).
 
 ### list_groups
 
@@ -698,8 +694,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listgroupsresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_mailbox_export_jobs
 
@@ -716,7 +711,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMailboxExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmailboxexportjobsresponsetypedef).
+[ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef).
 
 ### list_mailbox_permissions
 
@@ -734,7 +729,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMailboxPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmailboxpermissionsresponsetypedef).
+[ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef).
 
 ### list_mobile_device_access_rules
 
@@ -749,7 +744,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 
 Returns
-[ListMobileDeviceAccessRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmobiledeviceaccessrulesresponsetypedef).
+[ListMobileDeviceAccessRulesResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponsetypedef).
 
 ### list_organizations
 
@@ -764,7 +759,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListOrganizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listorganizationsresponsetypedef).
+[ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef).
 
 ### list_resource_delegates
 
@@ -781,7 +776,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListResourceDelegatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listresourcedelegatesresponsetypedef).
+[ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef).
 
 ### list_resources
 
@@ -797,7 +792,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listresourcesresponsetypedef).
+[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -811,7 +806,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_users
 
@@ -826,8 +821,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listusersresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### put_access_control_rule
 
@@ -839,8 +833,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Effect`:
-  [AccessControlRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#accesscontrolruleeffect)
+- `Effect`: [AccessControlRuleEffect](./literals.md#accesscontrolruleeffect)
   *(required)*
 - `Description`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
@@ -865,8 +858,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
 - `GranteeId`: `str` *(required)*
-- `PermissionValues`:
-  `List`\[[PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#permissiontype)\]
+- `PermissionValues`: `List`\[[PermissionType](./literals.md#permissiontype)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -883,7 +875,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `FolderConfigurations`:
-  `List`\[[FolderConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#folderconfigurationtypedef)\]
+  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
   *(required)*
 - `Id`: `str`
 - `Description`: `str`
@@ -940,7 +932,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[StartMailboxExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#startmailboxexportjobresponsetypedef).
+[StartMailboxExportJobResponseTypeDef](./type_defs.md#startmailboxexportjobresponsetypedef).
 
 ### tag_resource
 
@@ -952,9 +944,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1001,7 +991,7 @@ Arguments:
 - `MobileDeviceAccessRuleId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Effect`:
-  [MobileDeviceAccessRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mobiledeviceaccessruleeffect)
+  [MobileDeviceAccessRuleEffect](./literals.md#mobiledeviceaccessruleeffect)
   *(required)*
 - `Description`: `str`
 - `DeviceTypes`: `List`\[`str`\]
@@ -1043,8 +1033,7 @@ Arguments:
 - `OrganizationId`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
 - `Name`: `str`
-- `BookingOptions`:
-  [BookingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#bookingoptionstypedef)
+- `BookingOptions`: [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

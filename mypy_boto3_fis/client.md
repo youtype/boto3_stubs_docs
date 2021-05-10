@@ -1,6 +1,6 @@
 # FISClient for boto3 FIS module
 
-> [Index](../README.md) > [FIS](./README.md) > FISClient
+> [Index](..) > [FIS](.) > FISClient
 
 Auto-generated documentation for
 [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
@@ -91,18 +91,18 @@ Arguments:
 - `clientToken`: `str` *(required)*
 - `description`: `str` *(required)*
 - `stopConditions`:
-  `List`\[[CreateExperimentTemplateStopConditionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplatestopconditioninputtypedef)\]
+  `List`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
   *(required)*
 - `actions`: `Dict`\[`str`,
-  [CreateExperimentTemplateActionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplateactioninputtypedef)\]
+  [CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
 - `targets`: `Dict`\[`str`,
-  [CreateExperimentTemplateTargetInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplatetargetinputtypedef)\]
+  [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#createexperimenttemplateresponsetypedef).
+[CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
 
 ### delete_experiment_template
 
@@ -116,7 +116,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[DeleteExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#deleteexperimenttemplateresponsetypedef).
+[DeleteExperimentTemplateResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponsetypedef).
 
 ### generate_presigned_url
 
@@ -145,8 +145,7 @@ Arguments:
 
 - `id`: `str` *(required)*
 
-Returns
-[GetActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#getactionresponsetypedef).
+Returns [GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef).
 
 ### get_experiment
 
@@ -160,7 +159,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[GetExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#getexperimentresponsetypedef).
+[GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
 
 ### get_experiment_template
 
@@ -174,7 +173,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[GetExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#getexperimenttemplateresponsetypedef).
+[GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
 
 ### list_actions
 
@@ -189,7 +188,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listactionsresponsetypedef).
+[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
 
 ### list_experiment_templates
 
@@ -204,7 +203,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListExperimentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listexperimenttemplatesresponsetypedef).
+[ListExperimentTemplatesResponseTypeDef](./type_defs.md#listexperimenttemplatesresponsetypedef).
 
 ### list_experiments
 
@@ -219,7 +218,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListExperimentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listexperimentsresponsetypedef).
+[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -233,7 +232,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_experiment
 
@@ -249,7 +248,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#startexperimentresponsetypedef).
+[StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
 
 ### stop_experiment
 
@@ -263,7 +262,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[StopExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#stopexperimentresponsetypedef).
+[StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
 
 ### tag_resource
 
@@ -305,12 +304,12 @@ Arguments:
 - `id`: `str` *(required)*
 - `description`: `str`
 - `stopConditions`:
-  `List`\[[UpdateExperimentTemplateStopConditionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplatestopconditioninputtypedef)\]
+  `List`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
 - `targets`: `Dict`\[`str`,
-  [UpdateExperimentTemplateTargetInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplatetargetinputtypedef)\]
+  [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)\]
 - `actions`: `Dict`\[`str`,
-  [UpdateExperimentTemplateActionInputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplateactioninputitemtypedef)\]
+  [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
 - `roleArn`: `str`
 
 Returns
-[UpdateExperimentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fis/type_defs.html#updateexperimenttemplateresponsetypedef).
+[UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef).

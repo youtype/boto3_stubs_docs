@@ -1,6 +1,6 @@
 # ECRClient for boto3 ECR module
 
-> [Index](../README.md) > [ECR](./README.md) > ECRClient
+> [Index](..) > [ECR](.) > ECRClient
 
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
@@ -129,7 +129,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[BatchCheckLayerAvailabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#batchchecklayeravailabilityresponsetypedef).
+[BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef).
 
 ### batch_delete_image
 
@@ -142,12 +142,12 @@ Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
   *(required)*
 - `registryId`: `str`
 
 Returns
-[BatchDeleteImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#batchdeleteimageresponsetypedef).
+[BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef).
 
 ### batch_get_image
 
@@ -160,13 +160,13 @@ Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
   *(required)*
 - `registryId`: `str`
 - `acceptedMediaTypes`: `List`\[`str`\]
 
 Returns
-[BatchGetImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#batchgetimageresponsetypedef).
+[BatchGetImageResponseTypeDef](./type_defs.md#batchgetimageresponsetypedef).
 
 ### can_paginate
 
@@ -196,7 +196,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[CompleteLayerUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#completelayeruploadresponsetypedef).
+[CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
 
 ### create_repository
 
@@ -208,17 +208,15 @@ Boto3 documentation:
 Arguments:
 
 - `repositoryName`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#tagtypedef)\]
-- `imageTagMutability`:
-  [ImageTagMutability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagetagmutability)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `imageTagMutability`: [ImageTagMutability](./literals.md#imagetagmutability)
 - `imageScanningConfiguration`:
-  [ImageScanningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanningconfigurationtypedef)
+  [ImageScanningConfigurationTypeDef](./type_defs.md#imagescanningconfigurationtypedef)
 - `encryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
 Returns
-[CreateRepositoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#createrepositoryresponsetypedef).
+[CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
 
 ### delete_lifecycle_policy
 
@@ -233,7 +231,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[DeleteLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deletelifecyclepolicyresponsetypedef).
+[DeleteLifecyclePolicyResponseTypeDef](./type_defs.md#deletelifecyclepolicyresponsetypedef).
 
 ### delete_registry_policy
 
@@ -243,7 +241,7 @@ Boto3 documentation:
 [ECR.Client.delete_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_registry_policy)
 
 Returns
-[DeleteRegistryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deleteregistrypolicyresponsetypedef).
+[DeleteRegistryPolicyResponseTypeDef](./type_defs.md#deleteregistrypolicyresponsetypedef).
 
 ### delete_repository
 
@@ -259,7 +257,7 @@ Arguments:
 - `force`: `bool`
 
 Returns
-[DeleteRepositoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deleterepositoryresponsetypedef).
+[DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef).
 
 ### delete_repository_policy
 
@@ -274,7 +272,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[DeleteRepositoryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#deleterepositorypolicyresponsetypedef).
+[DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
 
 ### describe_image_scan_findings
 
@@ -286,15 +284,14 @@ Boto3 documentation:
 Arguments:
 
 - `repositoryName`: `str` *(required)*
-- `imageId`:
-  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
   *(required)*
 - `registryId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeImageScanFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagescanfindingsresponsetypedef).
+[DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef).
 
 ### describe_images
 
@@ -308,14 +305,14 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
-  [DescribeImagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagesfiltertypedef)
+  [DescribeImagesFilterTypeDef](./type_defs.md#describeimagesfiltertypedef)
 
 Returns
-[DescribeImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeimagesresponsetypedef).
+[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
 
 ### describe_registry
 
@@ -325,7 +322,7 @@ Boto3 documentation:
 [ECR.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_registry)
 
 Returns
-[DescribeRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describeregistryresponsetypedef).
+[DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
 
 ### describe_repositories
 
@@ -342,7 +339,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeRepositoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#describerepositoriesresponsetypedef).
+[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -372,7 +369,7 @@ Arguments:
 - `registryIds`: `List`\[`str`\]
 
 Returns
-[GetAuthorizationTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getauthorizationtokenresponsetypedef).
+[GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
 
 ### get_download_url_for_layer
 
@@ -388,7 +385,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[GetDownloadUrlForLayerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getdownloadurlforlayerresponsetypedef).
+[GetDownloadUrlForLayerResponseTypeDef](./type_defs.md#getdownloadurlforlayerresponsetypedef).
 
 ### get_lifecycle_policy
 
@@ -403,7 +400,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[GetLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getlifecyclepolicyresponsetypedef).
+[GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
 
 ### get_lifecycle_policy_preview
 
@@ -417,14 +414,14 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
-  [LifecyclePolicyPreviewFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewfiltertypedef)
+  [LifecyclePolicyPreviewFilterTypeDef](./type_defs.md#lifecyclepolicypreviewfiltertypedef)
 
 Returns
-[GetLifecyclePolicyPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getlifecyclepolicypreviewresponsetypedef).
+[GetLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponsetypedef).
 
 ### get_registry_policy
 
@@ -434,7 +431,7 @@ Boto3 documentation:
 [ECR.Client.get_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_policy)
 
 Returns
-[GetRegistryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getregistrypolicyresponsetypedef).
+[GetRegistryPolicyResponseTypeDef](./type_defs.md#getregistrypolicyresponsetypedef).
 
 ### get_repository_policy
 
@@ -449,7 +446,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[GetRepositoryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#getrepositorypolicyresponsetypedef).
+[GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef).
 
 ### initiate_layer_upload
 
@@ -464,7 +461,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[InitiateLayerUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#initiatelayeruploadresponsetypedef).
+[InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef).
 
 ### list_images
 
@@ -479,11 +476,9 @@ Arguments:
 - `registryId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filter`:
-  [ListImagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listimagesfiltertypedef)
+- `filter`: [ListImagesFilterTypeDef](./type_defs.md#listimagesfiltertypedef)
 
-Returns
-[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listimagesresponsetypedef).
+Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -497,7 +492,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_image
 
@@ -515,8 +510,7 @@ Arguments:
 - `imageTag`: `str`
 - `imageDigest`: `str`
 
-Returns
-[PutImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putimageresponsetypedef).
+Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
 
 ### put_image_scanning_configuration
 
@@ -530,12 +524,12 @@ Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageScanningConfiguration`:
-  [ImageScanningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imagescanningconfigurationtypedef)
+  [ImageScanningConfigurationTypeDef](./type_defs.md#imagescanningconfigurationtypedef)
   *(required)*
 - `registryId`: `str`
 
 Returns
-[PutImageScanningConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putimagescanningconfigurationresponsetypedef).
+[PutImageScanningConfigurationResponseTypeDef](./type_defs.md#putimagescanningconfigurationresponsetypedef).
 
 ### put_image_tag_mutability
 
@@ -547,13 +541,12 @@ Boto3 documentation:
 Arguments:
 
 - `repositoryName`: `str` *(required)*
-- `imageTagMutability`:
-  [ImageTagMutability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/literals.html#imagetagmutability)
+- `imageTagMutability`: [ImageTagMutability](./literals.md#imagetagmutability)
   *(required)*
 - `registryId`: `str`
 
 Returns
-[PutImageTagMutabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putimagetagmutabilityresponsetypedef).
+[PutImageTagMutabilityResponseTypeDef](./type_defs.md#putimagetagmutabilityresponsetypedef).
 
 ### put_lifecycle_policy
 
@@ -569,7 +562,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[PutLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putlifecyclepolicyresponsetypedef).
+[PutLifecyclePolicyResponseTypeDef](./type_defs.md#putlifecyclepolicyresponsetypedef).
 
 ### put_registry_policy
 
@@ -583,7 +576,7 @@ Arguments:
 - `policyText`: `str` *(required)*
 
 Returns
-[PutRegistryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putregistrypolicyresponsetypedef).
+[PutRegistryPolicyResponseTypeDef](./type_defs.md#putregistrypolicyresponsetypedef).
 
 ### put_replication_configuration
 
@@ -596,11 +589,11 @@ Boto3 documentation:
 Arguments:
 
 - `replicationConfiguration`:
-  [ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#replicationconfigurationtypedef)
+  [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
   *(required)*
 
 Returns
-[PutReplicationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#putreplicationconfigurationresponsetypedef).
+[PutReplicationConfigurationResponseTypeDef](./type_defs.md#putreplicationconfigurationresponsetypedef).
 
 ### set_repository_policy
 
@@ -617,7 +610,7 @@ Arguments:
 - `force`: `bool`
 
 Returns
-[SetRepositoryPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#setrepositorypolicyresponsetypedef).
+[SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef).
 
 ### start_image_scan
 
@@ -629,13 +622,12 @@ Boto3 documentation:
 Arguments:
 
 - `repositoryName`: `str` *(required)*
-- `imageId`:
-  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
   *(required)*
 - `registryId`: `str`
 
 Returns
-[StartImageScanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#startimagescanresponsetypedef).
+[StartImageScanResponseTypeDef](./type_defs.md#startimagescanresponsetypedef).
 
 ### start_lifecycle_policy_preview
 
@@ -652,7 +644,7 @@ Arguments:
 - `lifecyclePolicyText`: `str`
 
 Returns
-[StartLifecyclePolicyPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#startlifecyclepolicypreviewresponsetypedef).
+[StartLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#startlifecyclepolicypreviewresponsetypedef).
 
 ### tag_resource
 
@@ -664,9 +656,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -701,7 +691,7 @@ Arguments:
 - `registryId`: `str`
 
 Returns
-[UploadLayerPartResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#uploadlayerpartresponsetypedef).
+[UploadLayerPartResponseTypeDef](./type_defs.md#uploadlayerpartresponsetypedef).
 
 ### get_paginator
 

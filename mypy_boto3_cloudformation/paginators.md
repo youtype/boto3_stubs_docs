@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudFormation module
 
-> [Index](../README.md) > [CloudFormation](./README.md) > Paginators
+> [Index](..) > [CloudFormation](.) > Paginators
 
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
@@ -42,10 +42,10 @@ Boto3 documentation:
 Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountLimitsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describeaccountlimitsoutputtypedef)\].
+`Iterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
 
 ## DescribeChangeSetPaginator
 
@@ -69,10 +69,10 @@ Arguments for `DescribeChangeSetPaginator.paginate` method:
 - `ChangeSetName`: `str` *(required)*
 - `StackName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeChangeSetPaginator.paginate` returns
-`Iterator`\[[DescribeChangeSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describechangesetoutputtypedef)\].
+`Iterator`\[[DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef)\].
 
 ## DescribeStackEventsPaginator
 
@@ -95,10 +95,10 @@ Arguments for `DescribeStackEventsPaginator.paginate` method:
 
 - `StackName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStackEventsPaginator.paginate` returns
-`Iterator`\[[DescribeStackEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackeventsoutputtypedef)\].
+`Iterator`\[[DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef)\].
 
 ## DescribeStacksPaginator
 
@@ -121,10 +121,10 @@ Arguments for `DescribeStacksPaginator.paginate` method:
 
 - `StackName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStacksPaginator.paginate` returns
-`Iterator`\[[DescribeStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksoutputtypedef)\].
+`Iterator`\[[DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef)\].
 
 ## ListChangeSetsPaginator
 
@@ -147,10 +147,10 @@ Arguments for `ListChangeSetsPaginator.paginate` method:
 
 - `StackName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChangeSetsPaginator.paginate` returns
-`Iterator`\[[ListChangeSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listchangesetsoutputtypedef)\].
+`Iterator`\[[ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef)\].
 
 ## ListExportsPaginator
 
@@ -172,10 +172,10 @@ Boto3 documentation:
 Arguments for `ListExportsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExportsPaginator.paginate` returns
-`Iterator`\[[ListExportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listexportsoutputtypedef)\].
+`Iterator`\[[ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef)\].
 
 ## ListImportsPaginator
 
@@ -198,10 +198,10 @@ Arguments for `ListImportsPaginator.paginate` method:
 
 - `ExportName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListImportsPaginator.paginate` returns
-`Iterator`\[[ListImportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listimportsoutputtypedef)\].
+`Iterator`\[[ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef)\].
 
 ## ListStackInstancesPaginator
 
@@ -224,16 +224,15 @@ Arguments for `ListStackInstancesPaginator.paginate` method:
 
 - `StackSetName`: `str` *(required)*
 - `Filters`:
-  `List`\[[StackInstanceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stackinstancefiltertypedef)\]
+  `List`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
 - `StackInstanceAccount`: `str`
 - `StackInstanceRegion`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStackInstancesPaginator.paginate` returns
-`Iterator`\[[ListStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackinstancesoutputtypedef)\].
+`Iterator`\[[ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef)\].
 
 ## ListStackResourcesPaginator
 
@@ -256,10 +255,10 @@ Arguments for `ListStackResourcesPaginator.paginate` method:
 
 - `StackName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStackResourcesPaginator.paginate` returns
-`Iterator`\[[ListStackResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackresourcesoutputtypedef)\].
+`Iterator`\[[ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef)\].
 
 ## ListStackSetOperationResultsPaginator
 
@@ -282,13 +281,12 @@ Arguments for `ListStackSetOperationResultsPaginator.paginate` method:
 
 - `StackSetName`: `str` *(required)*
 - `OperationId`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStackSetOperationResultsPaginator.paginate` returns
-`Iterator`\[[ListStackSetOperationResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationresultsoutputtypedef)\].
+`Iterator`\[[ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef)\].
 
 ## ListStackSetOperationsPaginator
 
@@ -310,13 +308,12 @@ Boto3 documentation:
 Arguments for `ListStackSetOperationsPaginator.paginate` method:
 
 - `StackSetName`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStackSetOperationsPaginator.paginate` returns
-`Iterator`\[[ListStackSetOperationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationsoutputtypedef)\].
+`Iterator`\[[ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef)\].
 
 ## ListStackSetsPaginator
 
@@ -337,15 +334,13 @@ Boto3 documentation:
 
 Arguments for `ListStackSetsPaginator.paginate` method:
 
-- `Status`:
-  [StackSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stacksetstatus)
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `Status`: [StackSetStatus](./literals.md#stacksetstatus)
+- `CallAs`: [CallAs](./literals.md#callas)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStackSetsPaginator.paginate` returns
-`Iterator`\[[ListStackSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetsoutputtypedef)\].
+`Iterator`\[[ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef)\].
 
 ## ListStacksPaginator
 
@@ -366,10 +361,9 @@ Boto3 documentation:
 
 Arguments for `ListStacksPaginator.paginate` method:
 
-- `StackStatusFilter`:
-  `List`\[[StackStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stackstatus)\]
+- `StackStatusFilter`: `List`\[[StackStatus](./literals.md#stackstatus)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStacksPaginator.paginate` returns
-`Iterator`\[[ListStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksoutputtypedef)\].
+`Iterator`\[[ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef)\].

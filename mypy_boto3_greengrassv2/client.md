@@ -1,6 +1,6 @@
 # GreengrassV2Client for boto3 GreengrassV2 module
 
-> [Index](../README.md) > [GreengrassV2](./README.md) > GreengrassV2Client
+> [Index](..) > [GreengrassV2](.) > GreengrassV2Client
 
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
@@ -101,7 +101,7 @@ Arguments:
 - `deploymentId`: `str` *(required)*
 
 Returns
-[CancelDeploymentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#canceldeploymentresponsetypedef).
+[CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef).
 
 ### create_component_version
 
@@ -115,11 +115,11 @@ Arguments:
 
 - `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `lambdaFunction`:
-  [LambdaFunctionRecipeSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#lambdafunctionrecipesourcetypedef)
+  [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComponentVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#createcomponentversionresponsetypedef).
+[CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef).
 
 ### create_deployment
 
@@ -133,15 +133,15 @@ Arguments:
 - `targetArn`: `str` *(required)*
 - `deploymentName`: `str`
 - `components`: `Dict`\[`str`,
-  [ComponentDeploymentSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentdeploymentspecificationtypedef)\]
+  [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
 - `iotJobConfiguration`:
-  [DeploymentIoTJobConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymentiotjobconfigurationtypedef)
+  [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
 - `deploymentPolicies`:
-  [DeploymentPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#deploymentpoliciestypedef)
+  [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeploymentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#createdeploymentresponsetypedef).
+[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
 ### delete_component
 
@@ -177,7 +177,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[DescribeComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#describecomponentresponsetypedef).
+[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
 
 ### generate_presigned_url
 
@@ -206,11 +206,10 @@ Boto3 documentation:
 Arguments:
 
 - `arn`: `str` *(required)*
-- `recipeOutputFormat`:
-  [RecipeOutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#recipeoutputformat)
+- `recipeOutputFormat`: [RecipeOutputFormat](./literals.md#recipeoutputformat)
 
 Returns
-[GetComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#getcomponentresponsetypedef).
+[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
 
 ### get_component_version_artifact
 
@@ -226,7 +225,7 @@ Arguments:
 - `artifactName`: `str` *(required)*
 
 Returns
-[GetComponentVersionArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#getcomponentversionartifactresponsetypedef).
+[GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef).
 
 ### get_core_device
 
@@ -240,7 +239,7 @@ Arguments:
 - `coreDeviceThingName`: `str` *(required)*
 
 Returns
-[GetCoreDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#getcoredeviceresponsetypedef).
+[GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef).
 
 ### get_deployment
 
@@ -254,7 +253,7 @@ Arguments:
 - `deploymentId`: `str` *(required)*
 
 Returns
-[GetDeploymentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#getdeploymentresponsetypedef).
+[GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
 
 ### list_component_versions
 
@@ -271,7 +270,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listcomponentversionsresponsetypedef).
+[ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef).
 
 ### list_components
 
@@ -282,13 +281,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `scope`:
-  [ComponentVisibilityScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#componentvisibilityscope)
+- `scope`: [ComponentVisibilityScope](./literals.md#componentvisibilityscope)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listcomponentsresponsetypedef).
+[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
 ### list_core_devices
 
@@ -300,13 +298,12 @@ Boto3 documentation:
 Arguments:
 
 - `thingGroupArn`: `str`
-- `status`:
-  [CoreDeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#coredevicestatus)
+- `status`: [CoreDeviceStatus](./literals.md#coredevicestatus)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListCoreDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listcoredevicesresponsetypedef).
+[ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef).
 
 ### list_deployments
 
@@ -319,12 +316,12 @@ Arguments:
 
 - `targetArn`: `str`
 - `historyFilter`:
-  [DeploymentHistoryFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#deploymenthistoryfilter)
+  [DeploymentHistoryFilter](./literals.md#deploymenthistoryfilter)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listdeploymentsresponsetypedef).
+[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
 
 ### list_effective_deployments
 
@@ -341,7 +338,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEffectiveDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listeffectivedeploymentsresponsetypedef).
+[ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef).
 
 ### list_installed_components
 
@@ -358,7 +355,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInstalledComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listinstalledcomponentsresponsetypedef).
+[ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -373,7 +370,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### resolve_component_candidates
 
@@ -385,15 +382,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `platform`:
-  [ComponentPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentplatformtypedef)
+- `platform`: [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
   *(required)*
 - `componentCandidates`:
-  `List`\[[ComponentCandidateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#componentcandidatetypedef)\]
+  `List`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
   *(required)*
 
 Returns
-[ResolveComponentCandidatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#resolvecomponentcandidatesresponsetypedef).
+[ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef).
 
 ### tag_resource
 

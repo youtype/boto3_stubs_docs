@@ -1,6 +1,6 @@
 # Literals for boto3 CodeDeploy module
 
-> [Index](../README.md) > [CodeDeploy](./README.md) > Literals
+> [Index](..) > [CodeDeploy](.) > Literals
 
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)

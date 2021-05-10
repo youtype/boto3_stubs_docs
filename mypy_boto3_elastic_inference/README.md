@@ -1,6 +1,6 @@
 # Type annotations for boto3 ElasticInference module
 
-> [Index](../README.md) > ElasticInference
+> [Index](..) > ElasticInference
 
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)

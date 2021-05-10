@@ -1,6 +1,6 @@
 # Waiters for boto3 IAM module
 
-> [Index](../README.md) > [IAM](./README.md) > Waiters
+> [Index](..) > [IAM](.) > Waiters
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
@@ -33,8 +33,7 @@ Boto3 documentation:
 Arguments for `InstanceProfileExistsWaiter.wait` method:
 
 - `InstanceProfileName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## PolicyExistsWaiter
 
@@ -55,8 +54,7 @@ Boto3 documentation:
 Arguments for `PolicyExistsWaiter.wait` method:
 
 - `PolicyArn`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## RoleExistsWaiter
 
@@ -77,8 +75,7 @@ Boto3 documentation:
 Arguments for `RoleExistsWaiter.wait` method:
 
 - `RoleName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## UserExistsWaiter
 
@@ -99,5 +96,4 @@ Boto3 documentation:
 Arguments for `UserExistsWaiter.wait` method:
 
 - `UserName`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

@@ -1,6 +1,6 @@
 # Literals for boto3 CodeStarconnections module
 
-> [Index](../README.md) > [CodeStarconnections](./README.md) > Literals
+> [Index](..) > [CodeStarconnections](.) > Literals
 
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)

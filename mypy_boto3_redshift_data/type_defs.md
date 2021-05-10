@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 RedshiftDataAPIService module
 
-> [Index](../README.md) > [RedshiftDataAPIService](./README.md) > Structures
+> [Index](..) > [RedshiftDataAPIService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
@@ -20,7 +20,7 @@ type annotations stubs module
   - [ListStatementsResponseTypeDef](#liststatementsresponsetypedef)
   - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StatementDataTypeDef](#statementdatatypedef)
   - [TableMemberTypeDef](#tablemembertypedef)
 
@@ -81,8 +81,7 @@ Optional fields:
 - `ResultRows`: `int`
 - `ResultSize`: `int`
 - `SecretArn`: `str`
-- `Status`:
-  [StatusString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/literals.html#statusstring)
+- `Status`: [StatusString](./literals.md#statusstring)
 - `UpdatedAt`: `datetime`
 
 ## DescribeTableResponseTypeDef
@@ -94,7 +93,7 @@ from mypy_boto3_redshift_data.type_defs import DescribeTableResponseTypeDef
 Optional fields:
 
 - `ColumnList`:
-  `List`\[[ColumnMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#columnmetadatatypedef)\]
+  `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
 - `NextToken`: `str`
 - `TableName`: `str`
 
@@ -113,7 +112,7 @@ Required fields:
 - `Id`: `str`
 - `SecretArn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FieldTypeDef
 
@@ -138,13 +137,12 @@ from mypy_boto3_redshift_data.type_defs import GetStatementResultResponseTypeDef
 
 Required fields:
 
-- `Records`:
-  `List`\[`List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#fieldtypedef)\]\]
+- `Records`: `List`\[`List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]\]
 
 Optional fields:
 
 - `ColumnMetadata`:
-  `List`\[[ColumnMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#columnmetadatatypedef)\]
+  `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
 - `NextToken`: `str`
 - `TotalNumRows`: `int`
 
@@ -179,7 +177,7 @@ from mypy_boto3_redshift_data.type_defs import ListStatementsResponseTypeDef
 Required fields:
 
 - `Statements`:
-  `List`\[[StatementDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#statementdatatypedef)\]
+  `List`\[[StatementDataTypeDef](./type_defs.md#statementdatatypedef)\]
 
 Optional fields:
 
@@ -194,8 +192,7 @@ from mypy_boto3_redshift_data.type_defs import ListTablesResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Tables`:
-  `List`\[[TableMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#tablemembertypedef)\]
+- `Tables`: `List`\[[TableMemberTypeDef](./type_defs.md#tablemembertypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -209,10 +206,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ResponseMetadata
+from mypy_boto3_redshift_data.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -239,8 +236,7 @@ Optional fields:
 - `QueryString`: `str`
 - `SecretArn`: `str`
 - `StatementName`: `str`
-- `Status`:
-  [StatusString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/literals.html#statusstring)
+- `Status`: [StatusString](./literals.md#statusstring)
 - `UpdatedAt`: `datetime`
 
 ## TableMemberTypeDef

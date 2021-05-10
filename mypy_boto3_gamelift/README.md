@@ -1,6 +1,6 @@
 # Type annotations for boto3 GameLift module
 
-> [Index](../README.md) > GameLift
+> [Index](..) > GameLift
 
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
@@ -367,7 +367,7 @@ from mypy_boto3_gamelift.type_defs import AliasTypeDef, ...
 - [RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef)
 - [ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef)
 - [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef)
 - [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef)
 - [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)

@@ -1,6 +1,6 @@
 # Literals for boto3 MediaConvert module
 
-> [Index](../README.md) > [MediaConvert](./README.md) > Literals
+> [Index](..) > [MediaConvert](.) > Literals
 
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)

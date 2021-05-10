@@ -1,6 +1,6 @@
 # Literals for boto3 CloudWatchLogs module
 
-> [Index](../README.md) > [CloudWatchLogs](./README.md) > Literals
+> [Index](..) > [CloudWatchLogs](.) > Literals
 
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)

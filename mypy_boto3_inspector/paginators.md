@@ -1,6 +1,6 @@
 # Paginators for boto3 Inspector module
 
-> [Index](../README.md) > [Inspector](./README.md) > Paginators
+> [Index](..) > [Inspector](.) > Paginators
 
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
@@ -38,13 +38,12 @@ Boto3 documentation:
 Arguments for `ListAssessmentRunAgentsPaginator.paginate` method:
 
 - `assessmentRunArn`: `str` *(required)*
-- `filter`:
-  [AgentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#agentfiltertypedef)
+- `filter`: [AgentFilterTypeDef](./type_defs.md#agentfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssessmentRunAgentsPaginator.paginate` returns
-`Iterator`\[[ListAssessmentRunAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmentrunagentsresponsetypedef)\].
+`Iterator`\[[ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef)\].
 
 ## ListAssessmentRunsPaginator
 
@@ -67,12 +66,12 @@ Arguments for `ListAssessmentRunsPaginator.paginate` method:
 
 - `assessmentTemplateArns`: `List`\[`str`\]
 - `filter`:
-  [AssessmentRunFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentrunfiltertypedef)
+  [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssessmentRunsPaginator.paginate` returns
-`Iterator`\[[ListAssessmentRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmentrunsresponsetypedef)\].
+`Iterator`\[[ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef)\].
 
 ## ListAssessmentTargetsPaginator
 
@@ -94,12 +93,12 @@ Boto3 documentation:
 Arguments for `ListAssessmentTargetsPaginator.paginate` method:
 
 - `filter`:
-  [AssessmentTargetFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttargetfiltertypedef)
+  [AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssessmentTargetsPaginator.paginate` returns
-`Iterator`\[[ListAssessmentTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmenttargetsresponsetypedef)\].
+`Iterator`\[[ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef)\].
 
 ## ListAssessmentTemplatesPaginator
 
@@ -122,12 +121,12 @@ Arguments for `ListAssessmentTemplatesPaginator.paginate` method:
 
 - `assessmentTargetArns`: `List`\[`str`\]
 - `filter`:
-  [AssessmentTemplateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttemplatefiltertypedef)
+  [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssessmentTemplatesPaginator.paginate` returns
-`Iterator`\[[ListAssessmentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmenttemplatesresponsetypedef)\].
+`Iterator`\[[ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef)\].
 
 ## ListEventSubscriptionsPaginator
 
@@ -150,10 +149,10 @@ Arguments for `ListEventSubscriptionsPaginator.paginate` method:
 
 - `resourceArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[ListEventSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listeventsubscriptionsresponsetypedef)\].
+`Iterator`\[[ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef)\].
 
 ## ListExclusionsPaginator
 
@@ -176,10 +175,10 @@ Arguments for `ListExclusionsPaginator.paginate` method:
 
 - `assessmentRunArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExclusionsPaginator.paginate` returns
-`Iterator`\[[ListExclusionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listexclusionsresponsetypedef)\].
+`Iterator`\[[ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef)\].
 
 ## ListFindingsPaginator
 
@@ -201,13 +200,12 @@ Boto3 documentation:
 Arguments for `ListFindingsPaginator.paginate` method:
 
 - `assessmentRunArns`: `List`\[`str`\]
-- `filter`:
-  [FindingFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#findingfiltertypedef)
+- `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsPaginator.paginate` returns
-`Iterator`\[[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listfindingsresponsetypedef)\].
+`Iterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
 ## ListRulesPackagesPaginator
 
@@ -229,10 +227,10 @@ Boto3 documentation:
 Arguments for `ListRulesPackagesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRulesPackagesPaginator.paginate` returns
-`Iterator`\[[ListRulesPackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listrulespackagesresponsetypedef)\].
+`Iterator`\[[ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef)\].
 
 ## PreviewAgentsPaginator
 
@@ -255,7 +253,7 @@ Arguments for `PreviewAgentsPaginator.paginate` method:
 
 - `previewAgentsArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `PreviewAgentsPaginator.paginate` returns
-`Iterator`\[[PreviewAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#previewagentsresponsetypedef)\].
+`Iterator`\[[PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef)\].

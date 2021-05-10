@@ -1,6 +1,6 @@
 # GlueClient for boto3 Glue module
 
-> [Index](../README.md) > [Glue](./README.md) > GlueClient
+> [Index](..) > [Glue](.) > GlueClient
 
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
@@ -242,12 +242,12 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionInputList`:
-  `List`\[[PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)\]
+  `List`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[BatchCreatePartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchcreatepartitionresponsetypedef).
+[BatchCreatePartitionResponseTypeDef](./type_defs.md#batchcreatepartitionresponsetypedef).
 
 ### batch_delete_connection
 
@@ -262,7 +262,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeleteConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeleteconnectionresponsetypedef).
+[BatchDeleteConnectionResponseTypeDef](./type_defs.md#batchdeleteconnectionresponsetypedef).
 
 ### batch_delete_partition
 
@@ -276,12 +276,12 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionsToDelete`:
-  `List`\[[PartitionValueListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionvaluelisttypedef)\]
+  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[BatchDeletePartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeletepartitionresponsetypedef).
+[BatchDeletePartitionResponseTypeDef](./type_defs.md#batchdeletepartitionresponsetypedef).
 
 ### batch_delete_table
 
@@ -297,7 +297,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeleteTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeletetableresponsetypedef).
+[BatchDeleteTableResponseTypeDef](./type_defs.md#batchdeletetableresponsetypedef).
 
 ### batch_delete_table_version
 
@@ -314,7 +314,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchDeleteTableVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchdeletetableversionresponsetypedef).
+[BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef).
 
 ### batch_get_crawlers
 
@@ -328,7 +328,7 @@ Arguments:
 - `CrawlerNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetcrawlersresponsetypedef).
+[BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef).
 
 ### batch_get_dev_endpoints
 
@@ -342,7 +342,7 @@ Arguments:
 - `DevEndpointNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetdevendpointsresponsetypedef).
+[BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef).
 
 ### batch_get_jobs
 
@@ -356,7 +356,7 @@ Arguments:
 - `JobNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetjobsresponsetypedef).
+[BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef).
 
 ### batch_get_partition
 
@@ -370,12 +370,12 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionsToGet`:
-  `List`\[[PartitionValueListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionvaluelisttypedef)\]
+  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[BatchGetPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetpartitionresponsetypedef).
+[BatchGetPartitionResponseTypeDef](./type_defs.md#batchgetpartitionresponsetypedef).
 
 ### batch_get_triggers
 
@@ -389,7 +389,7 @@ Arguments:
 - `TriggerNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgettriggersresponsetypedef).
+[BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef).
 
 ### batch_get_workflows
 
@@ -404,7 +404,7 @@ Arguments:
 - `IncludeGraph`: `bool`
 
 Returns
-[BatchGetWorkflowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchgetworkflowsresponsetypedef).
+[BatchGetWorkflowsResponseTypeDef](./type_defs.md#batchgetworkflowsresponsetypedef).
 
 ### batch_stop_job_run
 
@@ -419,7 +419,7 @@ Arguments:
 - `JobRunIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchStopJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchstopjobrunresponsetypedef).
+[BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef).
 
 ### batch_update_partition
 
@@ -433,12 +433,12 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `Entries`:
-  `List`\[[BatchUpdatePartitionRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchupdatepartitionrequestentrytypedef)\]
+  `List`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[BatchUpdatePartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchupdatepartitionresponsetypedef).
+[BatchUpdatePartitionResponseTypeDef](./type_defs.md#batchupdatepartitionresponsetypedef).
 
 ### can_paginate
 
@@ -466,7 +466,7 @@ Arguments:
 - `TaskRunId`: `str` *(required)*
 
 Returns
-[CancelMLTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#cancelmltaskrunresponsetypedef).
+[CancelMLTaskRunResponseTypeDef](./type_defs.md#cancelmltaskrunresponsetypedef).
 
 ### check_schema_version_validity
 
@@ -478,11 +478,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `DataFormat`: `Literal['AVRO']` *(required)*
+- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
+  *(required)*
 - `SchemaDefinition`: `str` *(required)*
 
 Returns
-[CheckSchemaVersionValidityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#checkschemaversionvalidityresponsetypedef).
+[CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef).
 
 ### create_classifier
 
@@ -494,13 +495,13 @@ Boto3 documentation:
 Arguments:
 
 - `GrokClassifier`:
-  [CreateGrokClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#creategrokclassifierrequesttypedef)
+  [CreateGrokClassifierRequestTypeDef](./type_defs.md#creategrokclassifierrequesttypedef)
 - `XMLClassifier`:
-  [CreateXMLClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createxmlclassifierrequesttypedef)
+  [CreateXMLClassifierRequestTypeDef](./type_defs.md#createxmlclassifierrequesttypedef)
 - `JsonClassifier`:
-  [CreateJsonClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createjsonclassifierrequesttypedef)
+  [CreateJsonClassifierRequestTypeDef](./type_defs.md#createjsonclassifierrequesttypedef)
 - `CsvClassifier`:
-  [CreateCsvClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createcsvclassifierrequesttypedef)
+  [CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -514,8 +515,7 @@ Boto3 documentation:
 Arguments:
 
 - `ConnectionInput`:
-  [ConnectionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectioninputtypedef)
-  *(required)*
+  [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -531,8 +531,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Role`: `str` *(required)*
-- `Targets`:
-  [CrawlerTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertargetstypedef)
+- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
   *(required)*
 - `DatabaseName`: `str`
 - `Description`: `str`
@@ -540,11 +539,10 @@ Arguments:
 - `Classifiers`: `List`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemachangepolicytypedef)
-- `RecrawlPolicy`:
-  [RecrawlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#recrawlpolicytypedef)
+  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
+- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `LineageConfiguration`:
-  [LineageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#lineageconfigurationtypedef)
+  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -560,8 +558,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `DatabaseInput`:
-  [DatabaseInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databaseinputtypedef)
+- `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -583,8 +580,7 @@ Arguments:
 - `PublicKey`: `str`
 - `PublicKeys`: `List`\[`str`\]
 - `NumberOfNodes`: `int`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `GlueVersion`: `str`
 - `NumberOfWorkers`: `int`
 - `ExtraPythonLibsS3Path`: `str`
@@ -594,7 +590,7 @@ Arguments:
 - `Arguments`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDevEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createdevendpointresponsetypedef).
+[CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef).
 
 ### create_job
 
@@ -607,17 +603,14 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Role`: `str` *(required)*
-- `Command`:
-  [JobCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobcommandtypedef)
-  *(required)*
+- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef) *(required)*
 - `Description`: `str`
 - `LogUri`: `str`
 - `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#executionpropertytypedef)
+  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
 - `DefaultArguments`: `Dict`\[`str`, `str`\]
 - `NonOverridableArguments`: `Dict`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectionslisttypedef)
+- `Connections`: [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
@@ -625,14 +618,12 @@ Arguments:
 - `SecurityConfiguration`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `NotificationProperty`:
-  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
 - `NumberOfWorkers`: `int`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 
-Returns
-[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createjobresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_ml_transform
 
@@ -645,26 +636,24 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gluetabletypedef)\]
-  *(required)*
+  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\] *(required)*
 - `Parameters`:
-  [TransformParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformparameterstypedef)
+  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
   *(required)*
 - `Role`: `str` *(required)*
 - `Description`: `str`
 - `GlueVersion`: `str`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TransformEncryption`:
-  [TransformEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformencryptiontypedef)
+  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
 Returns
-[CreateMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createmltransformresponsetypedef).
+[CreateMLTransformResponseTypeDef](./type_defs.md#createmltransformresponsetypedef).
 
 ### create_partition
 
@@ -677,8 +666,7 @@ Arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionInput`:
-  [PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)
+- `PartitionInput`: [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -695,8 +683,7 @@ Arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionIndex`:
-  [PartitionIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionindextypedef)
+- `PartitionIndex`: [PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -716,7 +703,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createregistryresponsetypedef).
+[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
 
 ### create_schema
 
@@ -728,17 +715,16 @@ Boto3 documentation:
 Arguments:
 
 - `SchemaName`: `str` *(required)*
-- `DataFormat`: `Literal['AVRO']` *(required)*
-- `RegistryId`:
-  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
-- `Compatibility`:
-  [Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#compatibility)
+- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
+  *(required)*
+- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
+- `Compatibility`: [Compatibility](./literals.md#compatibility)
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `SchemaDefinition`: `str`
 
 Returns
-[CreateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createschemaresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### create_script
 
@@ -749,15 +735,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `DagNodes`:
-  `List`\[[CodeGenNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodetypedef)\]
-- `DagEdges`:
-  `List`\[[CodeGenEdgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegenedgetypedef)\]
-- `Language`:
-  [Language](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#language)
+- `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
+- `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
+- `Language`: [Language](./literals.md#language)
 
 Returns
-[CreateScriptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createscriptresponsetypedef).
+[CreateScriptResponseTypeDef](./type_defs.md#createscriptresponsetypedef).
 
 ### create_security_configuration
 
@@ -771,11 +754,11 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
   *(required)*
 
 Returns
-[CreateSecurityConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createsecurityconfigurationresponsetypedef).
+[CreateSecurityConfigurationResponseTypeDef](./type_defs.md#createsecurityconfigurationresponsetypedef).
 
 ### create_table
 
@@ -787,12 +770,11 @@ Boto3 documentation:
 Arguments:
 
 - `DatabaseName`: `str` *(required)*
-- `TableInput`:
-  [TableInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableinputtypedef)
+- `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
   *(required)*
 - `CatalogId`: `str`
 - `PartitionIndexes`:
-  `List`\[[PartitionIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionindextypedef)\]
+  `List`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -806,22 +788,17 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Type`:
-  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#triggertype)
-  *(required)*
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#actiontypedef)\]
-  *(required)*
+- `Type`: [TriggerType](./literals.md#triggertype) *(required)*
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\] *(required)*
 - `WorkflowName`: `str`
 - `Schedule`: `str`
-- `Predicate`:
-  [PredicateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#predicatetypedef)
+- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - `Description`: `str`
 - `StartOnCreation`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createtriggerresponsetypedef).
+[CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef).
 
 ### create_user_defined_function
 
@@ -835,7 +812,7 @@ Arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `FunctionInput`:
-  [UserDefinedFunctionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#userdefinedfunctioninputtypedef)
+  [UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -857,7 +834,7 @@ Arguments:
 - `MaxConcurrentRuns`: `int`
 
 Returns
-[CreateWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#createworkflowresponsetypedef).
+[CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
 
 ### delete_classifier
 
@@ -972,8 +949,7 @@ Arguments:
 
 - `JobName`: `str` *(required)*
 
-Returns
-[DeleteJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deletejobresponsetypedef).
+Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 
 ### delete_ml_transform
 
@@ -987,7 +963,7 @@ Arguments:
 - `TransformId`: `str` *(required)*
 
 Returns
-[DeleteMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deletemltransformresponsetypedef).
+[DeleteMLTransformResponseTypeDef](./type_defs.md#deletemltransformresponsetypedef).
 
 ### delete_partition
 
@@ -1030,12 +1006,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `RegistryId`:
-  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
   *(required)*
 
 Returns
-[DeleteRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteregistryresponsetypedef).
+[DeleteRegistryResponseTypeDef](./type_defs.md#deleteregistryresponsetypedef).
 
 ### delete_resource_policy
 
@@ -1060,12 +1035,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 
 Returns
-[DeleteSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteschemaresponsetypedef).
+[DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
 
 ### delete_schema_versions
 
@@ -1076,13 +1049,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `Versions`: `str` *(required)*
 
 Returns
-[DeleteSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteschemaversionsresponsetypedef).
+[DeleteSchemaVersionsResponseTypeDef](./type_defs.md#deleteschemaversionsresponsetypedef).
 
 ### delete_security_configuration
 
@@ -1141,7 +1112,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deletetriggerresponsetypedef).
+[DeleteTriggerResponseTypeDef](./type_defs.md#deletetriggerresponsetypedef).
 
 ### delete_user_defined_function
 
@@ -1171,7 +1142,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#deleteworkflowresponsetypedef).
+[DeleteWorkflowResponseTypeDef](./type_defs.md#deleteworkflowresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1201,7 +1172,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetCatalogImportStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcatalogimportstatusresponsetypedef).
+[GetCatalogImportStatusResponseTypeDef](./type_defs.md#getcatalogimportstatusresponsetypedef).
 
 ### get_classifier
 
@@ -1215,7 +1186,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetClassifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getclassifierresponsetypedef).
+[GetClassifierResponseTypeDef](./type_defs.md#getclassifierresponsetypedef).
 
 ### get_classifiers
 
@@ -1230,7 +1201,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetClassifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getclassifiersresponsetypedef).
+[GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef).
 
 ### get_column_statistics_for_partition
 
@@ -1249,7 +1220,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetColumnStatisticsForPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcolumnstatisticsforpartitionresponsetypedef).
+[GetColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#getcolumnstatisticsforpartitionresponsetypedef).
 
 ### get_column_statistics_for_table
 
@@ -1267,7 +1238,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetColumnStatisticsForTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcolumnstatisticsfortableresponsetypedef).
+[GetColumnStatisticsForTableResponseTypeDef](./type_defs.md#getcolumnstatisticsfortableresponsetypedef).
 
 ### get_connection
 
@@ -1283,7 +1254,7 @@ Arguments:
 - `HidePassword`: `bool`
 
 Returns
-[GetConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionresponsetypedef).
+[GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
 
 ### get_connections
 
@@ -1296,13 +1267,13 @@ Arguments:
 
 - `CatalogId`: `str`
 - `Filter`:
-  [GetConnectionsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionsfiltertypedef)
+  [GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef)
 - `HidePassword`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[GetConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionsresponsetypedef).
+[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
 
 ### get_crawler
 
@@ -1315,8 +1286,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetCrawlerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlerresponsetypedef).
+Returns [GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef).
 
 ### get_crawler_metrics
 
@@ -1332,7 +1302,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetCrawlerMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlermetricsresponsetypedef).
+[GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef).
 
 ### get_crawlers
 
@@ -1347,7 +1317,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlersresponsetypedef).
+[GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef).
 
 ### get_data_catalog_encryption_settings
 
@@ -1362,7 +1332,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetDataCatalogEncryptionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatacatalogencryptionsettingsresponsetypedef).
+[GetDataCatalogEncryptionSettingsResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponsetypedef).
 
 ### get_database
 
@@ -1377,7 +1347,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatabaseresponsetypedef).
+[GetDatabaseResponseTypeDef](./type_defs.md#getdatabaseresponsetypedef).
 
 ### get_databases
 
@@ -1391,11 +1361,10 @@ Arguments:
 - `CatalogId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ResourceShareType`:
-  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#resourcesharetype)
+- `ResourceShareType`: [ResourceShareType](./literals.md#resourcesharetype)
 
 Returns
-[GetDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatabasesresponsetypedef).
+[GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef).
 
 ### get_dataflow_graph
 
@@ -1409,7 +1378,7 @@ Arguments:
 - `PythonScript`: `str`
 
 Returns
-[GetDataflowGraphResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdataflowgraphresponsetypedef).
+[GetDataflowGraphResponseTypeDef](./type_defs.md#getdataflowgraphresponsetypedef).
 
 ### get_dev_endpoint
 
@@ -1423,7 +1392,7 @@ Arguments:
 - `EndpointName`: `str` *(required)*
 
 Returns
-[GetDevEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdevendpointresponsetypedef).
+[GetDevEndpointResponseTypeDef](./type_defs.md#getdevendpointresponsetypedef).
 
 ### get_dev_endpoints
 
@@ -1438,7 +1407,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdevendpointsresponsetypedef).
+[GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef).
 
 ### get_job
 
@@ -1451,8 +1420,7 @@ Arguments:
 
 - `JobName`: `str` *(required)*
 
-Returns
-[GetJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobresponsetypedef).
+Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
 ### get_job_bookmark
 
@@ -1467,7 +1435,7 @@ Arguments:
 - `RunId`: `str`
 
 Returns
-[GetJobBookmarkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobbookmarkresponsetypedef).
+[GetJobBookmarkResponseTypeDef](./type_defs.md#getjobbookmarkresponsetypedef).
 
 ### get_job_run
 
@@ -1482,8 +1450,7 @@ Arguments:
 - `RunId`: `str` *(required)*
 - `PredecessorsIncluded`: `bool`
 
-Returns
-[GetJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobrunresponsetypedef).
+Returns [GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef).
 
 ### get_job_runs
 
@@ -1498,8 +1465,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobrunsresponsetypedef).
+Returns [GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef).
 
 ### get_jobs
 
@@ -1513,8 +1479,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobsresponsetypedef).
+Returns [GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef).
 
 ### get_mapping
 
@@ -1525,16 +1490,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Source`:
-  [CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)
+- `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
-- `Sinks`:
-  `List`\[[CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)\]
-- `Location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#locationtypedef)
+- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
-Returns
-[GetMappingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmappingresponsetypedef).
+Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
 
 ### get_ml_task_run
 
@@ -1549,7 +1510,7 @@ Arguments:
 - `TaskRunId`: `str` *(required)*
 
 Returns
-[GetMLTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltaskrunresponsetypedef).
+[GetMLTaskRunResponseTypeDef](./type_defs.md#getmltaskrunresponsetypedef).
 
 ### get_ml_task_runs
 
@@ -1564,12 +1525,11 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filter`:
-  [TaskRunFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskrunfiltercriteriatypedef)
-- `Sort`:
-  [TaskRunSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskrunsortcriteriatypedef)
+  [TaskRunFilterCriteriaTypeDef](./type_defs.md#taskrunfiltercriteriatypedef)
+- `Sort`: [TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef)
 
 Returns
-[GetMLTaskRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltaskrunsresponsetypedef).
+[GetMLTaskRunsResponseTypeDef](./type_defs.md#getmltaskrunsresponsetypedef).
 
 ### get_ml_transform
 
@@ -1583,7 +1543,7 @@ Arguments:
 - `TransformId`: `str` *(required)*
 
 Returns
-[GetMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltransformresponsetypedef).
+[GetMLTransformResponseTypeDef](./type_defs.md#getmltransformresponsetypedef).
 
 ### get_ml_transforms
 
@@ -1597,12 +1557,12 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filter`:
-  [TransformFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformfiltercriteriatypedef)
+  [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
 - `Sort`:
-  [TransformSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformsortcriteriatypedef)
+  [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
 
 Returns
-[GetMLTransformsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getmltransformsresponsetypedef).
+[GetMLTransformsResponseTypeDef](./type_defs.md#getmltransformsresponsetypedef).
 
 ### get_partition
 
@@ -1619,7 +1579,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionresponsetypedef).
+[GetPartitionResponseTypeDef](./type_defs.md#getpartitionresponsetypedef).
 
 ### get_partition_indexes
 
@@ -1636,7 +1596,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetPartitionIndexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionindexesresponsetypedef).
+[GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef).
 
 ### get_partitions
 
@@ -1652,13 +1612,12 @@ Arguments:
 - `CatalogId`: `str`
 - `Expression`: `str`
 - `NextToken`: `str`
-- `Segment`:
-  [SegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#segmenttypedef)
+- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
 - `MaxResults`: `int`
 - `ExcludeColumnSchema`: `bool`
 
 Returns
-[GetPartitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionsresponsetypedef).
+[GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef).
 
 ### get_plan
 
@@ -1669,22 +1628,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `Mapping`:
-  `List`\[[MappingEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#mappingentrytypedef)\]
+- `Mapping`: `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
   *(required)*
-- `Source`:
-  [CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)
+- `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
-- `Sinks`:
-  `List`\[[CatalogEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogentrytypedef)\]
-- `Location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#locationtypedef)
-- `Language`:
-  [Language](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#language)
+- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
+- `Language`: [Language](./literals.md#language)
 - `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetPlanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getplanresponsetypedef).
+Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
 
 ### get_registry
 
@@ -1695,12 +1648,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `RegistryId`:
-  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
   *(required)*
 
 Returns
-[GetRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getregistryresponsetypedef).
+[GetRegistryResponseTypeDef](./type_defs.md#getregistryresponsetypedef).
 
 ### get_resource_policies
 
@@ -1715,7 +1667,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getresourcepoliciesresponsetypedef).
+[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
 
 ### get_resource_policy
 
@@ -1729,7 +1681,7 @@ Arguments:
 - `ResourceArn`: `str`
 
 Returns
-[GetResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getresourcepolicyresponsetypedef).
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### get_schema
 
@@ -1740,12 +1692,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 
-Returns
-[GetSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemaresponsetypedef).
+Returns [GetSchemaResponseTypeDef](./type_defs.md#getschemaresponsetypedef).
 
 ### get_schema_by_definition
 
@@ -1756,13 +1705,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `SchemaDefinition`: `str` *(required)*
 
 Returns
-[GetSchemaByDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemabydefinitionresponsetypedef).
+[GetSchemaByDefinitionResponseTypeDef](./type_defs.md#getschemabydefinitionresponsetypedef).
 
 ### get_schema_version
 
@@ -1773,14 +1720,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionId`: `str`
 - `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 
 Returns
-[GetSchemaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemaversionresponsetypedef).
+[GetSchemaVersionResponseTypeDef](./type_defs.md#getschemaversionresponsetypedef).
 
 ### get_schema_versions_diff
 
@@ -1791,19 +1737,18 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `FirstSchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
   *(required)*
 - `SecondSchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
   *(required)*
-- `SchemaDiffType`: `Literal['SYNTAX_DIFF']` *(required)*
+- `SchemaDiffType`: `Literal['SYNTAX_DIFF']` (see
+  [SchemaDiffType](./literals.md#schemadifftype)) *(required)*
 
 Returns
-[GetSchemaVersionsDiffResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getschemaversionsdiffresponsetypedef).
+[GetSchemaVersionsDiffResponseTypeDef](./type_defs.md#getschemaversionsdiffresponsetypedef).
 
 ### get_security_configuration
 
@@ -1817,7 +1762,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetSecurityConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getsecurityconfigurationresponsetypedef).
+[GetSecurityConfigurationResponseTypeDef](./type_defs.md#getsecurityconfigurationresponsetypedef).
 
 ### get_security_configurations
 
@@ -1832,7 +1777,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSecurityConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getsecurityconfigurationsresponsetypedef).
+[GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef).
 
 ### get_table
 
@@ -1847,8 +1792,7 @@ Arguments:
 - `Name`: `str` *(required)*
 - `CatalogId`: `str`
 
-Returns
-[GetTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableresponsetypedef).
+Returns [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef).
 
 ### get_table_version
 
@@ -1865,7 +1809,7 @@ Arguments:
 - `VersionId`: `str`
 
 Returns
-[GetTableVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableversionresponsetypedef).
+[GetTableVersionResponseTypeDef](./type_defs.md#gettableversionresponsetypedef).
 
 ### get_table_versions
 
@@ -1883,7 +1827,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetTableVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableversionsresponsetypedef).
+[GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef).
 
 ### get_tables
 
@@ -1900,8 +1844,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettablesresponsetypedef).
+Returns [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef).
 
 ### get_tags
 
@@ -1914,8 +1857,7 @@ Arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[GetTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettagsresponsetypedef).
+Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
 ### get_trigger
 
@@ -1928,8 +1870,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettriggerresponsetypedef).
+Returns [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef).
 
 ### get_triggers
 
@@ -1945,7 +1886,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettriggersresponsetypedef).
+[GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef).
 
 ### get_user_defined_function
 
@@ -1961,7 +1902,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetUserDefinedFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getuserdefinedfunctionresponsetypedef).
+[GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef).
 
 ### get_user_defined_functions
 
@@ -1979,7 +1920,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetUserDefinedFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getuserdefinedfunctionsresponsetypedef).
+[GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef).
 
 ### get_workflow
 
@@ -1994,7 +1935,7 @@ Arguments:
 - `IncludeGraph`: `bool`
 
 Returns
-[GetWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowresponsetypedef).
+[GetWorkflowResponseTypeDef](./type_defs.md#getworkflowresponsetypedef).
 
 ### get_workflow_run
 
@@ -2010,7 +1951,7 @@ Arguments:
 - `IncludeGraph`: `bool`
 
 Returns
-[GetWorkflowRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowrunresponsetypedef).
+[GetWorkflowRunResponseTypeDef](./type_defs.md#getworkflowrunresponsetypedef).
 
 ### get_workflow_run_properties
 
@@ -2025,7 +1966,7 @@ Arguments:
 - `RunId`: `str` *(required)*
 
 Returns
-[GetWorkflowRunPropertiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowrunpropertiesresponsetypedef).
+[GetWorkflowRunPropertiesResponseTypeDef](./type_defs.md#getworkflowrunpropertiesresponsetypedef).
 
 ### get_workflow_runs
 
@@ -2042,7 +1983,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetWorkflowRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getworkflowrunsresponsetypedef).
+[GetWorkflowRunsResponseTypeDef](./type_defs.md#getworkflowrunsresponsetypedef).
 
 ### import_catalog_to_glue
 
@@ -2071,7 +2012,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listcrawlersresponsetypedef).
+[ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef).
 
 ### list_dev_endpoints
 
@@ -2087,7 +2028,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listdevendpointsresponsetypedef).
+[ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef).
 
 ### list_jobs
 
@@ -2102,8 +2043,7 @@ Arguments:
 - `MaxResults`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listjobsresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_ml_transforms
 
@@ -2117,13 +2057,13 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filter`:
-  [TransformFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformfiltercriteriatypedef)
+  [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
 - `Sort`:
-  [TransformSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformsortcriteriatypedef)
+  [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListMLTransformsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listmltransformsresponsetypedef).
+[ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef).
 
 ### list_registries
 
@@ -2138,7 +2078,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listregistriesresponsetypedef).
+[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
 
 ### list_schema_versions
 
@@ -2149,14 +2089,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listschemaversionsresponsetypedef).
+[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
 ### list_schemas
 
@@ -2167,13 +2105,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `RegistryId`:
-  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listschemasresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_triggers
 
@@ -2190,7 +2127,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ListTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listtriggersresponsetypedef).
+[ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef).
 
 ### list_workflows
 
@@ -2205,7 +2142,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkflowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listworkflowsresponsetypedef).
+[ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
 
 ### put_data_catalog_encryption_settings
 
@@ -2218,7 +2155,7 @@ Boto3 documentation:
 Arguments:
 
 - `DataCatalogEncryptionSettings`:
-  [DataCatalogEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#datacatalogencryptionsettingstypedef)
+  [DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -2236,13 +2173,11 @@ Arguments:
 - `PolicyInJson`: `str` *(required)*
 - `ResourceArn`: `str`
 - `PolicyHashCondition`: `str`
-- `PolicyExistsCondition`:
-  [ExistCondition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#existcondition)
-- `EnableHybrid`:
-  [EnableHybridValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#enablehybridvalues)
+- `PolicyExistsCondition`: [ExistCondition](./literals.md#existcondition)
+- `EnableHybrid`: [EnableHybridValues](./literals.md#enablehybridvalues)
 
 Returns
-[PutResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#putresourcepolicyresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### put_schema_version_metadata
 
@@ -2254,16 +2189,15 @@ Boto3 documentation:
 Arguments:
 
 - `MetadataKeyValue`:
-  [MetadataKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatakeyvaluepairtypedef)
+  [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
   *(required)*
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 
 Returns
-[PutSchemaVersionMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#putschemaversionmetadataresponsetypedef).
+[PutSchemaVersionMetadataResponseTypeDef](./type_defs.md#putschemaversionmetadataresponsetypedef).
 
 ### put_workflow_run_properties
 
@@ -2290,18 +2224,17 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 - `MetadataList`:
-  `List`\[[MetadataKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatakeyvaluepairtypedef)\]
+  `List`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[QuerySchemaVersionMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#queryschemaversionmetadataresponsetypedef).
+[QuerySchemaVersionMetadataResponseTypeDef](./type_defs.md#queryschemaversionmetadataresponsetypedef).
 
 ### register_schema_version
 
@@ -2312,13 +2245,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `SchemaDefinition`: `str` *(required)*
 
 Returns
-[RegisterSchemaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registerschemaversionresponsetypedef).
+[RegisterSchemaVersionResponseTypeDef](./type_defs.md#registerschemaversionresponsetypedef).
 
 ### remove_schema_version_metadata
 
@@ -2331,16 +2262,15 @@ Boto3 documentation:
 Arguments:
 
 - `MetadataKeyValue`:
-  [MetadataKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatakeyvaluepairtypedef)
+  [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
   *(required)*
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 
 Returns
-[RemoveSchemaVersionMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#removeschemaversionmetadataresponsetypedef).
+[RemoveSchemaVersionMetadataResponseTypeDef](./type_defs.md#removeschemaversionmetadataresponsetypedef).
 
 ### reset_job_bookmark
 
@@ -2355,7 +2285,7 @@ Arguments:
 - `RunId`: `str`
 
 Returns
-[ResetJobBookmarkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#resetjobbookmarkresponsetypedef).
+[ResetJobBookmarkResponseTypeDef](./type_defs.md#resetjobbookmarkresponsetypedef).
 
 ### resume_workflow_run
 
@@ -2371,7 +2301,7 @@ Arguments:
 - `NodeIds`: `List`\[`str`\] *(required)*
 
 Returns
-[ResumeWorkflowRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#resumeworkflowrunresponsetypedef).
+[ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
 
 ### search_tables
 
@@ -2385,16 +2315,15 @@ Arguments:
 - `CatalogId`: `str`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[PropertyPredicateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#propertypredicatetypedef)\]
+  `List`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
 - `SearchText`: `str`
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#sortcriteriontypedef)\]
+  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `MaxResults`: `int`
-- `ResourceShareType`:
-  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#resourcesharetype)
+- `ResourceShareType`: [ResourceShareType](./literals.md#resourcesharetype)
 
 Returns
-[SearchTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#searchtablesresponsetypedef).
+[SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef).
 
 ### start_crawler
 
@@ -2436,7 +2365,7 @@ Arguments:
 - `OutputS3Path`: `str` *(required)*
 
 Returns
-[StartExportLabelsTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startexportlabelstaskrunresponsetypedef).
+[StartExportLabelsTaskRunResponseTypeDef](./type_defs.md#startexportlabelstaskrunresponsetypedef).
 
 ### start_import_labels_task_run
 
@@ -2453,7 +2382,7 @@ Arguments:
 - `ReplaceAllLabels`: `bool`
 
 Returns
-[StartImportLabelsTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startimportlabelstaskrunresponsetypedef).
+[StartImportLabelsTaskRunResponseTypeDef](./type_defs.md#startimportlabelstaskrunresponsetypedef).
 
 ### start_job_run
 
@@ -2472,13 +2401,12 @@ Arguments:
 - `MaxCapacity`: `float`
 - `SecurityConfiguration`: `str`
 - `NotificationProperty`:
-  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 
 Returns
-[StartJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startjobrunresponsetypedef).
+[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
 ### start_ml_evaluation_task_run
 
@@ -2493,7 +2421,7 @@ Arguments:
 - `TransformId`: `str` *(required)*
 
 Returns
-[StartMLEvaluationTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startmlevaluationtaskrunresponsetypedef).
+[StartMLEvaluationTaskRunResponseTypeDef](./type_defs.md#startmlevaluationtaskrunresponsetypedef).
 
 ### start_ml_labeling_set_generation_task_run
 
@@ -2509,7 +2437,7 @@ Arguments:
 - `OutputS3Path`: `str` *(required)*
 
 Returns
-[StartMLLabelingSetGenerationTaskRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startmllabelingsetgenerationtaskrunresponsetypedef).
+[StartMLLabelingSetGenerationTaskRunResponseTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunresponsetypedef).
 
 ### start_trigger
 
@@ -2523,7 +2451,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[StartTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#starttriggerresponsetypedef).
+[StartTriggerResponseTypeDef](./type_defs.md#starttriggerresponsetypedef).
 
 ### start_workflow_run
 
@@ -2537,7 +2465,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[StartWorkflowRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#startworkflowrunresponsetypedef).
+[StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef).
 
 ### stop_crawler
 
@@ -2577,7 +2505,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[StopTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#stoptriggerresponsetypedef).
+[StopTriggerResponseTypeDef](./type_defs.md#stoptriggerresponsetypedef).
 
 ### stop_workflow_run
 
@@ -2631,13 +2559,13 @@ Boto3 documentation:
 Arguments:
 
 - `GrokClassifier`:
-  [UpdateGrokClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updategrokclassifierrequesttypedef)
+  [UpdateGrokClassifierRequestTypeDef](./type_defs.md#updategrokclassifierrequesttypedef)
 - `XMLClassifier`:
-  [UpdateXMLClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatexmlclassifierrequesttypedef)
+  [UpdateXMLClassifierRequestTypeDef](./type_defs.md#updatexmlclassifierrequesttypedef)
 - `JsonClassifier`:
-  [UpdateJsonClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatejsonclassifierrequesttypedef)
+  [UpdateJsonClassifierRequestTypeDef](./type_defs.md#updatejsonclassifierrequesttypedef)
 - `CsvClassifier`:
-  [UpdateCsvClassifierRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatecsvclassifierrequesttypedef)
+  [UpdateCsvClassifierRequestTypeDef](./type_defs.md#updatecsvclassifierrequesttypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2655,12 +2583,12 @@ Arguments:
 - `TableName`: `str` *(required)*
 - `PartitionValues`: `List`\[`str`\] *(required)*
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)\]
+  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[UpdateColumnStatisticsForPartitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatecolumnstatisticsforpartitionresponsetypedef).
+[UpdateColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionresponsetypedef).
 
 ### update_column_statistics_for_table
 
@@ -2675,12 +2603,12 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)\]
+  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[UpdateColumnStatisticsForTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatecolumnstatisticsfortableresponsetypedef).
+[UpdateColumnStatisticsForTableResponseTypeDef](./type_defs.md#updatecolumnstatisticsfortableresponsetypedef).
 
 ### update_connection
 
@@ -2693,8 +2621,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `ConnectionInput`:
-  [ConnectionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectioninputtypedef)
-  *(required)*
+  [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -2712,17 +2639,15 @@ Arguments:
 - `Role`: `str`
 - `DatabaseName`: `str`
 - `Description`: `str`
-- `Targets`:
-  [CrawlerTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertargetstypedef)
+- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
 - `Schedule`: `str`
 - `Classifiers`: `List`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemachangepolicytypedef)
-- `RecrawlPolicy`:
-  [RecrawlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#recrawlpolicytypedef)
+  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
+- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `LineageConfiguration`:
-  [LineageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#lineageconfigurationtypedef)
+  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 
@@ -2752,8 +2677,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `DatabaseInput`:
-  [DatabaseInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databaseinputtypedef)
+- `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -2773,7 +2697,7 @@ Arguments:
 - `AddPublicKeys`: `List`\[`str`\]
 - `DeletePublicKeys`: `List`\[`str`\]
 - `CustomLibraries`:
-  [DevEndpointCustomLibrariesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#devendpointcustomlibrariestypedef)
+  [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
 - `UpdateEtlLibraries`: `bool`
 - `DeleteArguments`: `List`\[`str`\]
 - `AddArguments`: `Dict`\[`str`, `str`\]
@@ -2790,12 +2714,9 @@ Boto3 documentation:
 Arguments:
 
 - `JobName`: `str` *(required)*
-- `JobUpdate`:
-  [JobUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobupdatetypedef)
-  *(required)*
+- `JobUpdate`: [JobUpdateTypeDef](./type_defs.md#jobupdatetypedef) *(required)*
 
-Returns
-[UpdateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatejobresponsetypedef).
+Returns [UpdateJobResponseTypeDef](./type_defs.md#updatejobresponsetypedef).
 
 ### update_ml_transform
 
@@ -2810,18 +2731,17 @@ Arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `Parameters`:
-  [TransformParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformparameterstypedef)
+  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
 - `Role`: `str`
 - `GlueVersion`: `str`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
 
 Returns
-[UpdateMLTransformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatemltransformresponsetypedef).
+[UpdateMLTransformResponseTypeDef](./type_defs.md#updatemltransformresponsetypedef).
 
 ### update_partition
 
@@ -2835,8 +2755,7 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionValueList`: `List`\[`str`\] *(required)*
-- `PartitionInput`:
-  [PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)
+- `PartitionInput`: [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -2851,13 +2770,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `RegistryId`:
-  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
   *(required)*
 - `Description`: `str` *(required)*
 
 Returns
-[UpdateRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updateregistryresponsetypedef).
+[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
 
 ### update_schema
 
@@ -2868,17 +2786,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionnumbertypedef)
-- `Compatibility`:
-  [Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#compatibility)
+  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
+- `Compatibility`: [Compatibility](./literals.md#compatibility)
 - `Description`: `str`
 
 Returns
-[UpdateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updateschemaresponsetypedef).
+[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
 ### update_table
 
@@ -2890,8 +2805,7 @@ Boto3 documentation:
 Arguments:
 
 - `DatabaseName`: `str` *(required)*
-- `TableInput`:
-  [TableInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableinputtypedef)
+- `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
   *(required)*
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
@@ -2908,12 +2822,11 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `TriggerUpdate`:
-  [TriggerUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggerupdatetypedef)
+- `TriggerUpdate`: [TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef)
   *(required)*
 
 Returns
-[UpdateTriggerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updatetriggerresponsetypedef).
+[UpdateTriggerResponseTypeDef](./type_defs.md#updatetriggerresponsetypedef).
 
 ### update_user_defined_function
 
@@ -2928,7 +2841,7 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `FunctionName`: `str` *(required)*
 - `FunctionInput`:
-  [UserDefinedFunctionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#userdefinedfunctioninputtypedef)
+  [UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef)
   *(required)*
 - `CatalogId`: `str`
 
@@ -2949,7 +2862,7 @@ Arguments:
 - `MaxConcurrentRuns`: `int`
 
 Returns
-[UpdateWorkflowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#updateworkflowresponsetypedef).
+[UpdateWorkflowResponseTypeDef](./type_defs.md#updateworkflowresponsetypedef).
 
 ### get_paginator
 

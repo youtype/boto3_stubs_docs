@@ -1,6 +1,6 @@
 # GlacierClient for boto3 Glacier module
 
-> [Index](../README.md) > [Glacier](./README.md) > GlacierClient
+> [Index](..) > [Glacier](.) > GlacierClient
 
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
@@ -159,7 +159,7 @@ Arguments:
 - `checksum`: `str`
 
 Returns
-[ArchiveCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#archivecreationoutputtypedef).
+[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
 ### complete_vault_lock
 
@@ -186,8 +186,7 @@ Arguments:
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 
-Returns
-[CreateVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#createvaultoutputtypedef).
+Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 
 ### delete_archive
 
@@ -254,7 +253,7 @@ Arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[GlacierJobDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#glacierjobdescriptiontypedef).
+[GlacierJobDescriptionTypeDef](./type_defs.md#glacierjobdescriptiontypedef).
 
 ### describe_vault
 
@@ -269,7 +268,7 @@ Arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[DescribeVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#describevaultoutputtypedef).
+[DescribeVaultOutputTypeDef](./type_defs.md#describevaultoutputtypedef).
 
 ### generate_presigned_url
 
@@ -300,7 +299,7 @@ Arguments:
 - `accountId`: `str` *(required)*
 
 Returns
-[GetDataRetrievalPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getdataretrievalpolicyoutputtypedef).
+[GetDataRetrievalPolicyOutputTypeDef](./type_defs.md#getdataretrievalpolicyoutputtypedef).
 
 ### get_job_output
 
@@ -316,8 +315,7 @@ Arguments:
 - `jobId`: `str` *(required)*
 - `range`: `str`
 
-Returns
-[GetJobOutputOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getjoboutputoutputtypedef).
+Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 
 ### get_vault_access_policy
 
@@ -332,7 +330,7 @@ Arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[GetVaultAccessPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getvaultaccesspolicyoutputtypedef).
+[GetVaultAccessPolicyOutputTypeDef](./type_defs.md#getvaultaccesspolicyoutputtypedef).
 
 ### get_vault_lock
 
@@ -346,8 +344,7 @@ Arguments:
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 
-Returns
-[GetVaultLockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getvaultlockoutputtypedef).
+Returns [GetVaultLockOutputTypeDef](./type_defs.md#getvaultlockoutputtypedef).
 
 ### get_vault_notifications
 
@@ -362,7 +359,7 @@ Arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[GetVaultNotificationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getvaultnotificationsoutputtypedef).
+[GetVaultNotificationsOutputTypeDef](./type_defs.md#getvaultnotificationsoutputtypedef).
 
 ### initiate_job
 
@@ -375,11 +372,9 @@ Arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
-- `jobParameters`:
-  [JobParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#jobparameterstypedef)
+- `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
-Returns
-[InitiateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#initiatejoboutputtypedef).
+Returns [InitiateJobOutputTypeDef](./type_defs.md#initiatejoboutputtypedef).
 
 ### initiate_multipart_upload
 
@@ -397,7 +392,7 @@ Arguments:
 - `partSize`: `str`
 
 Returns
-[InitiateMultipartUploadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#initiatemultipartuploadoutputtypedef).
+[InitiateMultipartUploadOutputTypeDef](./type_defs.md#initiatemultipartuploadoutputtypedef).
 
 ### initiate_vault_lock
 
@@ -410,11 +405,10 @@ Arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
-- `policy`:
-  [VaultLockPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultlockpolicytypedef)
+- `policy`: [VaultLockPolicyTypeDef](./type_defs.md#vaultlockpolicytypedef)
 
 Returns
-[InitiateVaultLockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#initiatevaultlockoutputtypedef).
+[InitiateVaultLockOutputTypeDef](./type_defs.md#initiatevaultlockoutputtypedef).
 
 ### list_jobs
 
@@ -432,8 +426,7 @@ Arguments:
 - `statuscode`: `str`
 - `completed`: `str`
 
-Returns
-[ListJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listjobsoutputtypedef).
+Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 
 ### list_multipart_uploads
 
@@ -450,7 +443,7 @@ Arguments:
 - `limit`: `str`
 
 Returns
-[ListMultipartUploadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listmultipartuploadsoutputtypedef).
+[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef).
 
 ### list_parts
 
@@ -467,8 +460,7 @@ Arguments:
 - `marker`: `str`
 - `limit`: `str`
 
-Returns
-[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listpartsoutputtypedef).
+Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
 ### list_provisioned_capacity
 
@@ -483,7 +475,7 @@ Arguments:
 - `accountId`: `str` *(required)*
 
 Returns
-[ListProvisionedCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listprovisionedcapacityoutputtypedef).
+[ListProvisionedCapacityOutputTypeDef](./type_defs.md#listprovisionedcapacityoutputtypedef).
 
 ### list_tags_for_vault
 
@@ -498,7 +490,7 @@ Arguments:
 - `vaultName`: `str` *(required)*
 
 Returns
-[ListTagsForVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listtagsforvaultoutputtypedef).
+[ListTagsForVaultOutputTypeDef](./type_defs.md#listtagsforvaultoutputtypedef).
 
 ### list_vaults
 
@@ -513,8 +505,7 @@ Arguments:
 - `marker`: `str`
 - `limit`: `str`
 
-Returns
-[ListVaultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listvaultsoutputtypedef).
+Returns [ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef).
 
 ### purchase_provisioned_capacity
 
@@ -529,7 +520,7 @@ Arguments:
 - `accountId`: `str` *(required)*
 
 Returns
-[PurchaseProvisionedCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#purchaseprovisionedcapacityoutputtypedef).
+[PurchaseProvisionedCapacityOutputTypeDef](./type_defs.md#purchaseprovisionedcapacityoutputtypedef).
 
 ### remove_tags_from_vault
 
@@ -556,7 +547,7 @@ Arguments:
 
 - `accountId`: `str` *(required)*
 - `Policy`:
-  [DataRetrievalPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#dataretrievalpolicytypedef)
+  [DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef)
 
 ### set_vault_access_policy
 
@@ -569,8 +560,7 @@ Arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
-- `policy`:
-  [VaultAccessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultaccesspolicytypedef)
+- `policy`: [VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef)
 
 ### set_vault_notifications
 
@@ -584,7 +574,7 @@ Arguments:
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 - `vaultNotificationConfig`:
-  [VaultNotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultnotificationconfigtypedef)
+  [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
 
 ### upload_archive
 
@@ -602,7 +592,7 @@ Arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Returns
-[ArchiveCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#archivecreationoutputtypedef).
+[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
 ### upload_multipart_part
 
@@ -621,7 +611,7 @@ Arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Returns
-[UploadMultipartPartOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#uploadmultipartpartoutputtypedef).
+[UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
 
 ### get_paginator
 

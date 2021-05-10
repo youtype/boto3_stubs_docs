@@ -1,6 +1,6 @@
 # CloudFormationClient for boto3 CloudFormation module
 
-> [Index](../README.md) > [CloudFormation](./README.md) > CloudFormationClient
+> [Index](..) > [CloudFormation](.) > CloudFormationClient
 
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
@@ -182,27 +182,23 @@ Arguments:
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
 - `UsePreviousTemplate`: `bool`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourceTypes`: `List`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `NotificationARNs`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 - `Description`: `str`
-- `ChangeSetType`:
-  [ChangeSetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#changesettype)
+- `ChangeSetType`: [ChangeSetType](./literals.md#changesettype)
 - `ResourcesToImport`:
-  `List`\[[ResourceToImportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#resourcetoimporttypedef)\]
+  `List`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
 - `IncludeNestedStacks`: `bool`
 
 Returns
-[CreateChangeSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createchangesetoutputtypedef).
+[CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef).
 
 ### create_stack
 
@@ -216,28 +212,23 @@ Arguments:
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `DisableRollback`: `bool`
 - `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `TimeoutInMinutes`: `int`
 - `NotificationARNs`: `List`\[`str`\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourceTypes`: `List`\[`str`\]
 - `RoleARN`: `str`
-- `OnFailure`:
-  [OnFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#onfailure)
+- `OnFailure`: [OnFailure](./literals.md#onfailure)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
-Returns
-[CreateStackOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createstackoutputtypedef).
+Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
 
 ### create_stack_instances
 
@@ -253,17 +244,16 @@ Arguments:
 - `Regions`: `List`\[`str`\] *(required)*
 - `Accounts`: `List`\[`str`\]
 - `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[CreateStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createstackinstancesoutputtypedef).
+[CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef).
 
 ### create_stack_set
 
@@ -278,24 +268,18 @@ Arguments:
 - `Description`: `str`
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AdministrationRoleARN`: `str`
 - `ExecutionRoleName`: `str`
-- `PermissionModel`:
-  [PermissionModels](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#permissionmodels)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#autodeploymenttypedef)
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `PermissionModel`: [PermissionModels](./literals.md#permissionmodels)
+- `AutoDeployment`: [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
+- `CallAs`: [CallAs](./literals.md#callas)
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateStackSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#createstacksetoutputtypedef).
+[CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
 
 ### delete_change_set
 
@@ -340,15 +324,14 @@ Arguments:
 - `RetainStacks`: `bool` *(required)*
 - `Accounts`: `List`\[`str`\]
 - `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[DeleteStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deletestackinstancesoutputtypedef).
+[DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef).
 
 ### delete_stack_set
 
@@ -360,8 +343,7 @@ Boto3 documentation:
 Arguments:
 
 - `StackSetName`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -375,8 +357,7 @@ Boto3 documentation:
 Arguments:
 
 - `Arn`: `str`
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `Type`: [RegistryType](./literals.md#registrytype)
 - `TypeName`: `str`
 - `VersionId`: `str`
 
@@ -395,7 +376,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describeaccountlimitsoutputtypedef).
+[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
 
 ### describe_change_set
 
@@ -412,7 +393,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeChangeSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describechangesetoutputtypedef).
+[DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
 
 ### describe_stack_drift_detection_status
 
@@ -427,7 +408,7 @@ Arguments:
 - `StackDriftDetectionId`: `str` *(required)*
 
 Returns
-[DescribeStackDriftDetectionStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackdriftdetectionstatusoutputtypedef).
+[DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef).
 
 ### describe_stack_events
 
@@ -443,7 +424,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStackEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackeventsoutputtypedef).
+[DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef).
 
 ### describe_stack_instance
 
@@ -458,11 +439,10 @@ Arguments:
 - `StackSetName`: `str` *(required)*
 - `StackInstanceAccount`: `str` *(required)*
 - `StackInstanceRegion`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[DescribeStackInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackinstanceoutputtypedef).
+[DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef).
 
 ### describe_stack_resource
 
@@ -478,7 +458,7 @@ Arguments:
 - `LogicalResourceId`: `str` *(required)*
 
 Returns
-[DescribeStackResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackresourceoutputtypedef).
+[DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef).
 
 ### describe_stack_resource_drifts
 
@@ -492,12 +472,12 @@ Arguments:
 
 - `StackName`: `str` *(required)*
 - `StackResourceDriftStatusFilters`:
-  `List`\[[StackResourceDriftStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stackresourcedriftstatus)\]
+  `List`\[[StackResourceDriftStatus](./literals.md#stackresourcedriftstatus)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[DescribeStackResourceDriftsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackresourcedriftsoutputtypedef).
+[DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef).
 
 ### describe_stack_resources
 
@@ -514,7 +494,7 @@ Arguments:
 - `PhysicalResourceId`: `str`
 
 Returns
-[DescribeStackResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestackresourcesoutputtypedef).
+[DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef).
 
 ### describe_stack_set
 
@@ -527,11 +507,10 @@ Boto3 documentation:
 Arguments:
 
 - `StackSetName`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[DescribeStackSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksetoutputtypedef).
+[DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef).
 
 ### describe_stack_set_operation
 
@@ -545,11 +524,10 @@ Arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationId`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[DescribeStackSetOperationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksetoperationoutputtypedef).
+[DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef).
 
 ### describe_stacks
 
@@ -564,7 +542,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describestacksoutputtypedef).
+[DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef).
 
 ### describe_type
 
@@ -575,14 +553,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `Type`: [RegistryType](./literals.md#registrytype)
 - `TypeName`: `str`
 - `Arn`: `str`
 - `VersionId`: `str`
 
-Returns
-[DescribeTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describetypeoutputtypedef).
+Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
 
 ### describe_type_registration
 
@@ -597,7 +573,7 @@ Arguments:
 - `RegistrationToken`: `str` *(required)*
 
 Returns
-[DescribeTypeRegistrationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#describetyperegistrationoutputtypedef).
+[DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef).
 
 ### detect_stack_drift
 
@@ -613,7 +589,7 @@ Arguments:
 - `LogicalResourceIds`: `List`\[`str`\]
 
 Returns
-[DetectStackDriftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#detectstackdriftoutputtypedef).
+[DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
 
 ### detect_stack_resource_drift
 
@@ -629,7 +605,7 @@ Arguments:
 - `LogicalResourceId`: `str` *(required)*
 
 Returns
-[DetectStackResourceDriftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#detectstackresourcedriftoutputtypedef).
+[DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef).
 
 ### detect_stack_set_drift
 
@@ -643,13 +619,12 @@ Arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[DetectStackSetDriftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#detectstacksetdriftoutputtypedef).
+[DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef).
 
 ### estimate_template_cost
 
@@ -663,11 +638,10 @@ Arguments:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[EstimateTemplateCostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#estimatetemplatecostoutputtypedef).
+[EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
 
 ### execute_change_set
 
@@ -714,7 +688,7 @@ Arguments:
 - `StackName`: `str` *(required)*
 
 Returns
-[GetStackPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#getstackpolicyoutputtypedef).
+[GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef).
 
 ### get_template
 
@@ -727,11 +701,9 @@ Arguments:
 
 - `StackName`: `str`
 - `ChangeSetName`: `str`
-- `TemplateStage`:
-  [TemplateStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#templatestage)
+- `TemplateStage`: [TemplateStage](./literals.md#templatestage)
 
-Returns
-[GetTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#gettemplateoutputtypedef).
+Returns [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef).
 
 ### get_template_summary
 
@@ -747,11 +719,10 @@ Arguments:
 - `TemplateURL`: `str`
 - `StackName`: `str`
 - `StackSetName`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[GetTemplateSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#gettemplatesummaryoutputtypedef).
+[GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
 
 ### list_change_sets
 
@@ -766,7 +737,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChangeSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listchangesetsoutputtypedef).
+[ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef).
 
 ### list_exports
 
@@ -779,8 +750,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListExportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listexportsoutputtypedef).
+Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 
 ### list_imports
 
@@ -794,8 +764,7 @@ Arguments:
 - `ExportName`: `str` *(required)*
 - `NextToken`: `str`
 
-Returns
-[ListImportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listimportsoutputtypedef).
+Returns [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef).
 
 ### list_stack_instances
 
@@ -811,14 +780,13 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[StackInstanceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stackinstancefiltertypedef)\]
+  `List`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
 - `StackInstanceAccount`: `str`
 - `StackInstanceRegion`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[ListStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackinstancesoutputtypedef).
+[ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef).
 
 ### list_stack_resources
 
@@ -834,7 +802,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListStackResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststackresourcesoutputtypedef).
+[ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef).
 
 ### list_stack_set_operation_results
 
@@ -850,11 +818,10 @@ Arguments:
 - `OperationId`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[ListStackSetOperationResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationresultsoutputtypedef).
+[ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef).
 
 ### list_stack_set_operations
 
@@ -869,11 +836,10 @@ Arguments:
 - `StackSetName`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[ListStackSetOperationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetoperationsoutputtypedef).
+[ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef).
 
 ### list_stack_sets
 
@@ -886,13 +852,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Status`:
-  [StackSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stacksetstatus)
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `Status`: [StackSetStatus](./literals.md#stacksetstatus)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[ListStackSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksetsoutputtypedef).
+[ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef).
 
 ### list_stacks
 
@@ -904,11 +868,9 @@ Boto3 documentation:
 Arguments:
 
 - `NextToken`: `str`
-- `StackStatusFilter`:
-  `List`\[[StackStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#stackstatus)\]
+- `StackStatusFilter`: `List`\[[StackStatus](./literals.md#stackstatus)\]
 
-Returns
-[ListStacksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#liststacksoutputtypedef).
+Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
 
 ### list_type_registrations
 
@@ -920,17 +882,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `Type`: [RegistryType](./literals.md#registrytype)
 - `TypeName`: `str`
 - `TypeArn`: `str`
 - `RegistrationStatusFilter`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrationstatus)
+  [RegistrationStatus](./literals.md#registrationstatus)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListTypeRegistrationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listtyperegistrationsoutputtypedef).
+[ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef).
 
 ### list_type_versions
 
@@ -942,17 +903,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `Type`: [RegistryType](./literals.md#registrytype)
 - `TypeName`: `str`
 - `Arn`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `DeprecatedStatus`:
-  [DeprecatedStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#deprecatedstatus)
+- `DeprecatedStatus`: [DeprecatedStatus](./literals.md#deprecatedstatus)
 
 Returns
-[ListTypeVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listtypeversionsoutputtypedef).
+[ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
 
 ### list_types
 
@@ -963,19 +922,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Visibility`:
-  [Visibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#visibility)
-- `ProvisioningType`:
-  [ProvisioningType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#provisioningtype)
-- `DeprecatedStatus`:
-  [DeprecatedStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#deprecatedstatus)
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `Visibility`: [Visibility](./literals.md#visibility)
+- `ProvisioningType`: [ProvisioningType](./literals.md#provisioningtype)
+- `DeprecatedStatus`: [DeprecatedStatus](./literals.md#deprecatedstatus)
+- `Type`: [RegistryType](./literals.md#registrytype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#listtypesoutputtypedef).
+Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
 
 ### record_handler_progress
 
@@ -988,14 +942,11 @@ Boto3 documentation:
 Arguments:
 
 - `BearerToken`: `str` *(required)*
-- `OperationStatus`:
-  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#operationstatus)
+- `OperationStatus`: [OperationStatus](./literals.md#operationstatus)
   *(required)*
-- `CurrentOperationStatus`:
-  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#operationstatus)
+- `CurrentOperationStatus`: [OperationStatus](./literals.md#operationstatus)
 - `StatusMessage`: `str`
-- `ErrorCode`:
-  [HandlerErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#handlererrorcode)
+- `ErrorCode`: [HandlerErrorCode](./literals.md#handlererrorcode)
 - `ResourceModel`: `str`
 - `ClientRequestToken`: `str`
 
@@ -1012,15 +963,12 @@ Arguments:
 
 - `TypeName`: `str` *(required)*
 - `SchemaHandlerPackage`: `str` *(required)*
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
-- `LoggingConfig`:
-  [LoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#loggingconfigtypedef)
+- `Type`: [RegistryType](./literals.md#registrytype)
+- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `ExecutionRoleArn`: `str`
 - `ClientRequestToken`: `str`
 
-Returns
-[RegisterTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#registertypeoutputtypedef).
+Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 
 ### set_stack_policy
 
@@ -1046,8 +994,7 @@ Boto3 documentation:
 Arguments:
 
 - `Arn`: `str`
-- `Type`:
-  [RegistryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#registrytype)
+- `Type`: [RegistryType](./literals.md#registrytype)
 - `TypeName`: `str`
 - `VersionId`: `str`
 
@@ -1065,8 +1012,7 @@ Arguments:
 - `StackName`: `str` *(required)*
 - `LogicalResourceId`: `str` *(required)*
 - `UniqueId`: `str` *(required)*
-- `Status`:
-  [ResourceSignalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#resourcesignalstatus)
+- `Status`: [ResourceSignalStatus](./literals.md#resourcesignalstatus)
   *(required)*
 
 ### stop_stack_set_operation
@@ -1081,8 +1027,7 @@ Arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationId`: `str` *(required)*
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1101,23 +1046,19 @@ Arguments:
 - `UsePreviousTemplate`: `bool`
 - `StackPolicyDuringUpdateBody`: `str`
 - `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourceTypes`: `List`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
 - `NotificationARNs`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
-Returns
-[UpdateStackOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestackoutputtypedef).
+Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
 ### update_stack_instances
 
@@ -1133,17 +1074,16 @@ Arguments:
 - `Regions`: `List`\[`str`\] *(required)*
 - `Accounts`: `List`\[`str`\]
 - `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `OperationId`: `str`
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[UpdateStackInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestackinstancesoutputtypedef).
+[UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef).
 
 ### update_stack_set
 
@@ -1159,30 +1099,24 @@ Arguments:
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
 - `UsePreviousTemplate`: `bool`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#stacksetoperationpreferencestypedef)
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
 - `AdministrationRoleARN`: `str`
 - `ExecutionRoleName`: `str`
 - `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#deploymenttargetstypedef)
-- `PermissionModel`:
-  [PermissionModels](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#permissionmodels)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#autodeploymenttypedef)
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
+- `PermissionModel`: [PermissionModels](./literals.md#permissionmodels)
+- `AutoDeployment`: [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
 - `OperationId`: `str`
 - `Accounts`: `List`\[`str`\]
 - `Regions`: `List`\[`str`\]
-- `CallAs`:
-  [CallAs](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#callas)
+- `CallAs`: [CallAs](./literals.md#callas)
 
 Returns
-[UpdateStackSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestacksetoutputtypedef).
+[UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).
 
 ### update_termination_protection
 
@@ -1198,7 +1132,7 @@ Arguments:
 - `StackName`: `str` *(required)*
 
 Returns
-[UpdateTerminationProtectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updateterminationprotectionoutputtypedef).
+[UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef).
 
 ### validate_template
 
@@ -1213,7 +1147,7 @@ Arguments:
 - `TemplateURL`: `str`
 
 Returns
-[ValidateTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#validatetemplateoutputtypedef).
+[ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef).
 
 ### get_paginator
 

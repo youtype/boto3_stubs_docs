@@ -1,6 +1,6 @@
 # MediaStoreDataClient for boto3 MediaStoreData module
 
-> [Index](../README.md) > [MediaStoreData](./README.md) > MediaStoreDataClient
+> [Index](..) > [MediaStoreData](.) > MediaStoreDataClient
 
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
@@ -96,7 +96,7 @@ Arguments:
 - `Path`: `str` *(required)*
 
 Returns
-[DescribeObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#describeobjectresponsetypedef).
+[DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef).
 
 ### generate_presigned_url
 
@@ -127,8 +127,7 @@ Arguments:
 - `Path`: `str` *(required)*
 - `Range`: `str`
 
-Returns
-[GetObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#getobjectresponsetypedef).
+Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
 
 ### list_items
 
@@ -143,8 +142,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#listitemsresponsetypedef).
+Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
 
 ### put_object
 
@@ -159,12 +157,11 @@ Arguments:
 - `Path`: `str` *(required)*
 - `ContentType`: `str`
 - `CacheControl`: `str`
-- `StorageClass`: `Literal['TEMPORAL']`
-- `UploadAvailability`:
-  [UploadAvailability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/literals.html#uploadavailability)
+- `StorageClass`: `Literal['TEMPORAL']` (see
+  [StorageClass](./literals.md#storageclass))
+- `UploadAvailability`: [UploadAvailability](./literals.md#uploadavailability)
 
-Returns
-[PutObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#putobjectresponsetypedef).
+Returns [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Waiters for boto3 EC2 module
 
-> [Index](../README.md) > [EC2](./README.md) > Waiters
+> [Index](..) > [EC2](.) > Waiters
 
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
@@ -60,11 +60,9 @@ Boto3 documentation:
 Arguments for `BundleTaskCompleteWaiter.wait` method:
 
 - `BundleIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ConversionTaskCancelledWaiter
 
@@ -87,8 +85,7 @@ Arguments for `ConversionTaskCancelledWaiter.wait` method:
 
 - `ConversionTaskIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ConversionTaskCompletedWaiter
 
@@ -111,8 +108,7 @@ Arguments for `ConversionTaskCompletedWaiter.wait` method:
 
 - `ConversionTaskIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ConversionTaskDeletedWaiter
 
@@ -135,8 +131,7 @@ Arguments for `ConversionTaskDeletedWaiter.wait` method:
 
 - `ConversionTaskIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## CustomerGatewayAvailableWaiter
 
@@ -158,11 +153,9 @@ Boto3 documentation:
 Arguments for `CustomerGatewayAvailableWaiter.wait` method:
 
 - `CustomerGatewayIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ExportTaskCancelledWaiter
 
@@ -183,10 +176,8 @@ Boto3 documentation:
 Arguments for `ExportTaskCancelledWaiter.wait` method:
 
 - `ExportTaskIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ExportTaskCompletedWaiter
 
@@ -207,10 +198,8 @@ Boto3 documentation:
 Arguments for `ExportTaskCompletedWaiter.wait` method:
 
 - `ExportTaskIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ImageAvailableWaiter
 
@@ -231,13 +220,11 @@ Boto3 documentation:
 Arguments for `ImageAvailableWaiter.wait` method:
 
 - `ExecutableUsers`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImageIds`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ImageExistsWaiter
 
@@ -258,13 +245,11 @@ Boto3 documentation:
 Arguments for `ImageExistsWaiter.wait` method:
 
 - `ExecutableUsers`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImageIds`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceExistsWaiter
 
@@ -284,14 +269,12 @@ Boto3 documentation:
 
 Arguments for `InstanceExistsWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceRunningWaiter
 
@@ -311,14 +294,12 @@ Boto3 documentation:
 
 Arguments for `InstanceRunningWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceStatusOkWaiter
 
@@ -338,15 +319,13 @@ Boto3 documentation:
 
 Arguments for `InstanceStatusOkWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
 - `IncludeAllInstances`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceStoppedWaiter
 
@@ -366,14 +345,12 @@ Boto3 documentation:
 
 Arguments for `InstanceStoppedWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceTerminatedWaiter
 
@@ -393,14 +370,12 @@ Boto3 documentation:
 
 Arguments for `InstanceTerminatedWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## KeyPairExistsWaiter
 
@@ -420,13 +395,11 @@ Boto3 documentation:
 
 Arguments for `KeyPairExistsWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `KeyNames`: `List`\[`str`\]
 - `KeyPairIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NatGatewayAvailableWaiter
 
@@ -447,13 +420,11 @@ Boto3 documentation:
 Arguments for `NatGatewayAvailableWaiter.wait` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NatGatewayIds`: `List`\[`str`\]
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NetworkInterfaceAvailableWaiter
 
@@ -474,14 +445,12 @@ Boto3 documentation:
 
 Arguments for `NetworkInterfaceAvailableWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `NetworkInterfaceIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## PasswordDataAvailableWaiter
 
@@ -504,8 +473,7 @@ Arguments for `PasswordDataAvailableWaiter.wait` method:
 
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SecurityGroupExistsWaiter
 
@@ -525,15 +493,13 @@ Boto3 documentation:
 
 Arguments for `SecurityGroupExistsWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `GroupIds`: `List`\[`str`\]
 - `GroupNames`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SnapshotCompletedWaiter
 
@@ -553,16 +519,14 @@ Boto3 documentation:
 
 Arguments for `SnapshotCompletedWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `OwnerIds`: `List`\[`str`\]
 - `RestorableByUserIds`: `List`\[`str`\]
 - `SnapshotIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SpotInstanceRequestFulfilledWaiter
 
@@ -583,14 +547,12 @@ Boto3 documentation:
 
 Arguments for `SpotInstanceRequestFulfilledWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `SpotInstanceRequestIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SubnetAvailableWaiter
 
@@ -610,14 +572,12 @@ Boto3 documentation:
 
 Arguments for `SubnetAvailableWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SubnetIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SystemStatusOkWaiter
 
@@ -637,15 +597,13 @@ Boto3 documentation:
 
 Arguments for `SystemStatusOkWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
 - `IncludeAllInstances`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VolumeAvailableWaiter
 
@@ -665,14 +623,12 @@ Boto3 documentation:
 
 Arguments for `VolumeAvailableWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VolumeDeletedWaiter
 
@@ -692,14 +648,12 @@ Boto3 documentation:
 
 Arguments for `VolumeDeletedWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VolumeInUseWaiter
 
@@ -719,14 +673,12 @@ Boto3 documentation:
 
 Arguments for `VolumeInUseWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VpcAvailableWaiter
 
@@ -746,14 +698,12 @@ Boto3 documentation:
 
 Arguments for `VpcAvailableWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpcIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VpcExistsWaiter
 
@@ -773,14 +723,12 @@ Boto3 documentation:
 
 Arguments for `VpcExistsWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpcIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VpcPeeringConnectionDeletedWaiter
 
@@ -801,14 +749,12 @@ Boto3 documentation:
 
 Arguments for `VpcPeeringConnectionDeletedWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `VpcPeeringConnectionIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VpcPeeringConnectionExistsWaiter
 
@@ -829,14 +775,12 @@ Boto3 documentation:
 
 Arguments for `VpcPeeringConnectionExistsWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `VpcPeeringConnectionIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VpnConnectionAvailableWaiter
 
@@ -857,12 +801,10 @@ Boto3 documentation:
 
 Arguments for `VpnConnectionAvailableWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpnConnectionIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VpnConnectionDeletedWaiter
 
@@ -883,9 +825,7 @@ Boto3 documentation:
 
 Arguments for `VpnConnectionDeletedWaiter.wait` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpnConnectionIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

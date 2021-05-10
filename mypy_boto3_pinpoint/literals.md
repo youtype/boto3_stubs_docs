@@ -1,6 +1,6 @@
 # Literals for boto3 Pinpoint module
 
-> [Index](../README.md) > [Pinpoint](./README.md) > Literals
+> [Index](..) > [Pinpoint](.) > Literals
 
 Auto-generated documentation for
 [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)

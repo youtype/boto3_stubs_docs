@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 LocationService module
 
-> [Index](../README.md) > [LocationService](./README.md) > Structures
+> [Index](..) > [LocationService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
@@ -71,8 +71,7 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef
 
 Required fields:
 
-- `Error`:
-  [BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchitemerrortypedef)
+- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `GeofenceId`: `str`
 
 ## BatchDeleteGeofenceResponseTypeDef
@@ -84,7 +83,7 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceResponseTypeDef
 Required fields:
 
 - `Errors`:
-  `List`\[[BatchDeleteGeofenceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchdeletegeofenceerrortypedef)\]
+  `List`\[[BatchDeleteGeofenceErrorTypeDef](./type_defs.md#batchdeletegeofenceerrortypedef)\]
 
 ## BatchEvaluateGeofencesErrorTypeDef
 
@@ -95,8 +94,7 @@ from mypy_boto3_location.type_defs import BatchEvaluateGeofencesErrorTypeDef
 Required fields:
 
 - `DeviceId`: `str`
-- `Error`:
-  [BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchitemerrortypedef)
+- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `SampleTime`: `datetime`
 
 ## BatchEvaluateGeofencesResponseTypeDef
@@ -108,7 +106,7 @@ from mypy_boto3_location.type_defs import BatchEvaluateGeofencesResponseTypeDef
 Required fields:
 
 - `Errors`:
-  `List`\[[BatchEvaluateGeofencesErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchevaluategeofenceserrortypedef)\]
+  `List`\[[BatchEvaluateGeofencesErrorTypeDef](./type_defs.md#batchevaluategeofenceserrortypedef)\]
 
 ## BatchGetDevicePositionErrorTypeDef
 
@@ -119,8 +117,7 @@ from mypy_boto3_location.type_defs import BatchGetDevicePositionErrorTypeDef
 Required fields:
 
 - `DeviceId`: `str`
-- `Error`:
-  [BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchitemerrortypedef)
+- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 
 ## BatchGetDevicePositionResponseTypeDef
 
@@ -131,9 +128,9 @@ from mypy_boto3_location.type_defs import BatchGetDevicePositionResponseTypeDef
 Required fields:
 
 - `DevicePositions`:
-  `List`\[[DevicePositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#devicepositiontypedef)\]
+  `List`\[[DevicePositionTypeDef](./type_defs.md#devicepositiontypedef)\]
 - `Errors`:
-  `List`\[[BatchGetDevicePositionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchgetdevicepositionerrortypedef)\]
+  `List`\[[BatchGetDevicePositionErrorTypeDef](./type_defs.md#batchgetdevicepositionerrortypedef)\]
 
 ## BatchItemErrorTypeDef
 
@@ -143,8 +140,7 @@ from mypy_boto3_location.type_defs import BatchItemErrorTypeDef
 
 Optional fields:
 
-- `Code`:
-  [BatchItemErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#batchitemerrorcode)
+- `Code`: [BatchItemErrorCode](./literals.md#batchitemerrorcode)
 - `Message`: `str`
 
 ## BatchPutGeofenceErrorTypeDef
@@ -155,8 +151,7 @@ from mypy_boto3_location.type_defs import BatchPutGeofenceErrorTypeDef
 
 Required fields:
 
-- `Error`:
-  [BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchitemerrortypedef)
+- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `GeofenceId`: `str`
 
 ## BatchPutGeofenceRequestEntryTypeDef
@@ -168,8 +163,7 @@ from mypy_boto3_location.type_defs import BatchPutGeofenceRequestEntryTypeDef
 Required fields:
 
 - `GeofenceId`: `str`
-- `Geometry`:
-  [GeofenceGeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#geofencegeometrytypedef)
+- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
 
 ## BatchPutGeofenceResponseTypeDef
 
@@ -180,9 +174,9 @@ from mypy_boto3_location.type_defs import BatchPutGeofenceResponseTypeDef
 Required fields:
 
 - `Errors`:
-  `List`\[[BatchPutGeofenceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchputgeofenceerrortypedef)\]
+  `List`\[[BatchPutGeofenceErrorTypeDef](./type_defs.md#batchputgeofenceerrortypedef)\]
 - `Successes`:
-  `List`\[[BatchPutGeofenceSuccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchputgeofencesuccesstypedef)\]
+  `List`\[[BatchPutGeofenceSuccessTypeDef](./type_defs.md#batchputgeofencesuccesstypedef)\]
 
 ## BatchPutGeofenceSuccessTypeDef
 
@@ -205,8 +199,7 @@ from mypy_boto3_location.type_defs import BatchUpdateDevicePositionErrorTypeDef
 Required fields:
 
 - `DeviceId`: `str`
-- `Error`:
-  [BatchItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchitemerrortypedef)
+- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `SampleTime`: `datetime`
 
 ## BatchUpdateDevicePositionResponseTypeDef
@@ -218,7 +211,7 @@ from mypy_boto3_location.type_defs import BatchUpdateDevicePositionResponseTypeD
 Required fields:
 
 - `Errors`:
-  `List`\[[BatchUpdateDevicePositionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchupdatedevicepositionerrortypedef)\]
+  `List`\[[BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef)\]
 
 ## CreateGeofenceCollectionResponseTypeDef
 
@@ -276,8 +269,7 @@ from mypy_boto3_location.type_defs import DataSourceConfigurationTypeDef
 
 Optional fields:
 
-- `IntendedUse`:
-  [IntendedUse](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#intendeduse)
+- `IntendedUse`: [IntendedUse](./literals.md#intendeduse)
 
 ## DescribeGeofenceCollectionResponseTypeDef
 
@@ -291,8 +283,7 @@ Required fields:
 - `CollectionName`: `str`
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `UpdateTime`: `datetime`
 
 Optional fields:
@@ -308,14 +299,13 @@ from mypy_boto3_location.type_defs import DescribeMapResponseTypeDef
 Required fields:
 
 - `Configuration`:
-  [MapConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#mapconfigurationtypedef)
+  [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef)
 - `CreateTime`: `datetime`
 - `DataSource`: `str`
 - `Description`: `str`
 - `MapArn`: `str`
 - `MapName`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `UpdateTime`: `datetime`
 
 ## DescribePlaceIndexResponseTypeDef
@@ -329,12 +319,11 @@ Required fields:
 - `CreateTime`: `datetime`
 - `DataSource`: `str`
 - `DataSourceConfiguration`:
-  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#datasourceconfigurationtypedef)
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
 - `IndexArn`: `str`
 - `IndexName`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `UpdateTime`: `datetime`
 
 ## DescribeTrackerResponseTypeDef
@@ -347,8 +336,7 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `TrackerArn`: `str`
 - `TrackerName`: `str`
 - `UpdateTime`: `datetime`
@@ -404,7 +392,7 @@ from mypy_boto3_location.type_defs import GetDevicePositionHistoryResponseTypeDe
 Required fields:
 
 - `DevicePositions`:
-  `List`\[[DevicePositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#devicepositiontypedef)\]
+  `List`\[[DevicePositionTypeDef](./type_defs.md#devicepositiontypedef)\]
 
 Optional fields:
 
@@ -436,8 +424,7 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `GeofenceId`: `str`
-- `Geometry`:
-  [GeofenceGeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#geofencegeometrytypedef)
+- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
 - `Status`: `str`
 - `UpdateTime`: `datetime`
 
@@ -496,8 +483,7 @@ Required fields:
 - `CollectionName`: `str`
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `UpdateTime`: `datetime`
 
 Optional fields:
@@ -513,7 +499,7 @@ from mypy_boto3_location.type_defs import ListGeofenceCollectionsResponseTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[ListGeofenceCollectionsResponseEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencecollectionsresponseentrytypedef)\]
+  `List`\[[ListGeofenceCollectionsResponseEntryTypeDef](./type_defs.md#listgeofencecollectionsresponseentrytypedef)\]
 
 Optional fields:
 
@@ -529,8 +515,7 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `GeofenceId`: `str`
-- `Geometry`:
-  [GeofenceGeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#geofencegeometrytypedef)
+- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
 - `Status`: `str`
 - `UpdateTime`: `datetime`
 
@@ -543,7 +528,7 @@ from mypy_boto3_location.type_defs import ListGeofencesResponseTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[ListGeofenceResponseEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofenceresponseentrytypedef)\]
+  `List`\[[ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef)\]
 
 Optional fields:
 
@@ -561,8 +546,7 @@ Required fields:
 - `DataSource`: `str`
 - `Description`: `str`
 - `MapName`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `UpdateTime`: `datetime`
 
 ## ListMapsResponseTypeDef
@@ -574,7 +558,7 @@ from mypy_boto3_location.type_defs import ListMapsResponseTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[ListMapsResponseEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listmapsresponseentrytypedef)\]
+  `List`\[[ListMapsResponseEntryTypeDef](./type_defs.md#listmapsresponseentrytypedef)\]
 
 Optional fields:
 
@@ -592,8 +576,7 @@ Required fields:
 - `DataSource`: `str`
 - `Description`: `str`
 - `IndexName`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `UpdateTime`: `datetime`
 
 ## ListPlaceIndexesResponseTypeDef
@@ -605,7 +588,7 @@ from mypy_boto3_location.type_defs import ListPlaceIndexesResponseTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[ListPlaceIndexesResponseEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listplaceindexesresponseentrytypedef)\]
+  `List`\[[ListPlaceIndexesResponseEntryTypeDef](./type_defs.md#listplaceindexesresponseentrytypedef)\]
 
 Optional fields:
 
@@ -635,8 +618,7 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `Description`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `TrackerName`: `str`
 - `UpdateTime`: `datetime`
 
@@ -653,7 +635,7 @@ from mypy_boto3_location.type_defs import ListTrackersResponseTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[ListTrackersResponseEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackersresponseentrytypedef)\]
+  `List`\[[ListTrackersResponseEntryTypeDef](./type_defs.md#listtrackersresponseentrytypedef)\]
 
 Optional fields:
 
@@ -699,8 +681,7 @@ from mypy_boto3_location.type_defs import PlaceTypeDef
 
 Required fields:
 
-- `Geometry`:
-  [PlaceGeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#placegeometrytypedef)
+- `Geometry`: [PlaceGeometryTypeDef](./type_defs.md#placegeometrytypedef)
 
 Optional fields:
 
@@ -734,8 +715,7 @@ from mypy_boto3_location.type_defs import SearchForPositionResultTypeDef
 
 Required fields:
 
-- `Place`:
-  [PlaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#placetypedef)
+- `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
 
 ## SearchForTextResultTypeDef
 
@@ -745,8 +725,7 @@ from mypy_boto3_location.type_defs import SearchForTextResultTypeDef
 
 Required fields:
 
-- `Place`:
-  [PlaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#placetypedef)
+- `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
 
 ## SearchPlaceIndexForPositionResponseTypeDef
 
@@ -757,9 +736,9 @@ from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionResponseTyp
 Required fields:
 
 - `Results`:
-  `List`\[[SearchForPositionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchforpositionresulttypedef)\]
+  `List`\[[SearchForPositionResultTypeDef](./type_defs.md#searchforpositionresulttypedef)\]
 - `Summary`:
-  [SearchPlaceIndexForPositionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchplaceindexforpositionsummarytypedef)
+  [SearchPlaceIndexForPositionSummaryTypeDef](./type_defs.md#searchplaceindexforpositionsummarytypedef)
 
 ## SearchPlaceIndexForPositionSummaryTypeDef
 
@@ -785,9 +764,9 @@ from mypy_boto3_location.type_defs import SearchPlaceIndexForTextResponseTypeDef
 Required fields:
 
 - `Results`:
-  `List`\[[SearchForTextResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchfortextresulttypedef)\]
+  `List`\[[SearchForTextResultTypeDef](./type_defs.md#searchfortextresulttypedef)\]
 - `Summary`:
-  [SearchPlaceIndexForTextSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchplaceindexfortextsummarytypedef)
+  [SearchPlaceIndexForTextSummaryTypeDef](./type_defs.md#searchplaceindexfortextsummarytypedef)
 
 ## SearchPlaceIndexForTextSummaryTypeDef
 

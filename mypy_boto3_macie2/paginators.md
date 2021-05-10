@@ -1,6 +1,6 @@
 # Paginators for boto3 Macie2 module
 
-> [Index](../README.md) > [Macie2](./README.md) > Paginators
+> [Index](..) > [Macie2](.) > Paginators
 
 Auto-generated documentation for
 [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
@@ -38,14 +38,14 @@ Boto3 documentation:
 Arguments for `DescribeBucketsPaginator.paginate` method:
 
 - `criteria`: `Dict`\[`str`,
-  [BucketCriteriaAdditionalPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcriteriaadditionalpropertiestypedef)\]
+  [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
 - `sortCriteria`:
-  [BucketSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketsortcriteriatypedef)
+  [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBucketsPaginator.paginate` returns
-`Iterator`\[[DescribeBucketsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#describebucketsresponsetypedef)\].
+`Iterator`\[[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef)\].
 
 ## GetUsageStatisticsPaginator
 
@@ -67,16 +67,15 @@ Boto3 documentation:
 Arguments for `GetUsageStatisticsPaginator.paginate` method:
 
 - `filterBy`:
-  `List`\[[UsageStatisticsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagestatisticsfiltertypedef)\]
+  `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
 - `sortBy`:
-  [UsageStatisticsSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagestatisticssortbytypedef)
-- `timeRange`:
-  [TimeRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#timerange)
+  [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
+- `timeRange`: [TimeRange](./literals.md#timerange)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsageStatisticsPaginator.paginate` returns
-`Iterator`\[[GetUsageStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getusagestatisticsresponsetypedef)\].
+`Iterator`\[[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef)\].
 
 ## ListClassificationJobsPaginator
 
@@ -98,14 +97,14 @@ Boto3 documentation:
 Arguments for `ListClassificationJobsPaginator.paginate` method:
 
 - `filterCriteria`:
-  [ListJobsFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobsfiltercriteriatypedef)
+  [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
 - `sortCriteria`:
-  [ListJobsSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobssortcriteriatypedef)
+  [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClassificationJobsPaginator.paginate` returns
-`Iterator`\[[ListClassificationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listclassificationjobsresponsetypedef)\].
+`Iterator`\[[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef)\].
 
 ## ListCustomDataIdentifiersPaginator
 
@@ -127,10 +126,10 @@ Boto3 documentation:
 Arguments for `ListCustomDataIdentifiersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomDataIdentifiersPaginator.paginate` returns
-`Iterator`\[[ListCustomDataIdentifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listcustomdataidentifiersresponsetypedef)\].
+`Iterator`\[[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef)\].
 
 ## ListFindingsPaginator
 
@@ -151,14 +150,13 @@ Boto3 documentation:
 Arguments for `ListFindingsPaginator.paginate` method:
 
 - `findingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
-- `sortCriteria`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sortcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsPaginator.paginate` returns
-`Iterator`\[[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listfindingsresponsetypedef)\].
+`Iterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
 ## ListFindingsFiltersPaginator
 
@@ -180,10 +178,10 @@ Boto3 documentation:
 Arguments for `ListFindingsFiltersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsFiltersPaginator.paginate` returns
-`Iterator`\[[ListFindingsFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listfindingsfiltersresponsetypedef)\].
+`Iterator`\[[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef)\].
 
 ## ListInvitationsPaginator
 
@@ -205,10 +203,10 @@ Boto3 documentation:
 Arguments for `ListInvitationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvitationsPaginator.paginate` returns
-`Iterator`\[[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listinvitationsresponsetypedef)\].
+`Iterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
 
 ## ListMembersPaginator
 
@@ -230,10 +228,10 @@ Arguments for `ListMembersPaginator.paginate` method:
 
 - `onlyAssociated`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMembersPaginator.paginate` returns
-`Iterator`\[[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listmembersresponsetypedef)\].
+`Iterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
 
 ## ListOrganizationAdminAccountsPaginator
 
@@ -255,7 +253,7 @@ Boto3 documentation:
 Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOrganizationAdminAccountsPaginator.paginate` returns
-`Iterator`\[[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listorganizationadminaccountsresponsetypedef)\].
+`Iterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].

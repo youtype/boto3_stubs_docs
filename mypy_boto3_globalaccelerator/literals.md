@@ -1,6 +1,6 @@
 # Literals for boto3 GlobalAccelerator module
 
-> [Index](../README.md) > [GlobalAccelerator](./README.md) > Literals
+> [Index](..) > [GlobalAccelerator](.) > Literals
 
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)

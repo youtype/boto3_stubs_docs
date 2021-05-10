@@ -1,6 +1,6 @@
 # Literals for boto3 KinesisAnalyticsV2 module
 
-> [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Literals
+> [Index](..) > [KinesisAnalyticsV2](.) > Literals
 
 Auto-generated documentation for
 [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)

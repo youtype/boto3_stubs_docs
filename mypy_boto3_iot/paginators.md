@@ -1,6 +1,6 @@
 # Paginators for boto3 IoT module
 
-> [Index](../README.md) > [IoT](./README.md) > Paginators
+> [Index](..) > [IoT](.) > Paginators
 
 Auto-generated documentation for
 [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
@@ -82,10 +82,10 @@ Arguments for `GetBehaviorModelTrainingSummariesPaginator.paginate` method:
 
 - `securityProfileName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBehaviorModelTrainingSummariesPaginator.paginate` returns
-`Iterator`\[[GetBehaviorModelTrainingSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#getbehaviormodeltrainingsummariesresponsetypedef)\].
+`Iterator`\[[GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef)\].
 
 ## ListActiveViolationsPaginator
 
@@ -109,13 +109,13 @@ Arguments for `ListActiveViolationsPaginator.paginate` method:
 - `thingName`: `str`
 - `securityProfileName`: `str`
 - `behaviorCriteriaType`:
-  [BehaviorCriteriaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#behaviorcriteriatype)
+  [BehaviorCriteriaType](./literals.md#behaviorcriteriatype)
 - `listSuppressedAlerts`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActiveViolationsPaginator.paginate` returns
-`Iterator`\[[ListActiveViolationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listactiveviolationsresponsetypedef)\].
+`Iterator`\[[ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef)\].
 
 ## ListAttachedPoliciesPaginator
 
@@ -139,10 +139,10 @@ Arguments for `ListAttachedPoliciesPaginator.paginate` method:
 - `target`: `str` *(required)*
 - `recursive`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedPoliciesPaginator.paginate` returns
-`Iterator`\[[ListAttachedPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listattachedpoliciesresponsetypedef)\].
+`Iterator`\[[ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef)\].
 
 ## ListAuditFindingsPaginator
 
@@ -166,15 +166,15 @@ Arguments for `ListAuditFindingsPaginator.paginate` method:
 - `taskId`: `str`
 - `checkName`: `str`
 - `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `listSuppressedFindings`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditFindingsPaginator.paginate` returns
-`Iterator`\[[ListAuditFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditfindingsresponsetypedef)\].
+`Iterator`\[[ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef)\].
 
 ## ListAuditMitigationActionsExecutionsPaginator
 
@@ -198,12 +198,12 @@ Arguments for `ListAuditMitigationActionsExecutionsPaginator.paginate` method:
 - `taskId`: `str` *(required)*
 - `findingId`: `str` *(required)*
 - `actionStatus`:
-  [AuditMitigationActionsExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionsexecutionstatus)
+  [AuditMitigationActionsExecutionStatus](./literals.md#auditmitigationactionsexecutionstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditMitigationActionsExecutionsPaginator.paginate` returns
-`Iterator`\[[ListAuditMitigationActionsExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditmitigationactionsexecutionsresponsetypedef)\].
+`Iterator`\[[ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef)\].
 
 ## ListAuditMitigationActionsTasksPaginator
 
@@ -229,12 +229,12 @@ Arguments for `ListAuditMitigationActionsTasksPaginator.paginate` method:
 - `auditTaskId`: `str`
 - `findingId`: `str`
 - `taskStatus`:
-  [AuditMitigationActionsTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionstaskstatus)
+  [AuditMitigationActionsTaskStatus](./literals.md#auditmitigationactionstaskstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditMitigationActionsTasksPaginator.paginate` returns
-`Iterator`\[[ListAuditMitigationActionsTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditmitigationactionstasksresponsetypedef)\].
+`Iterator`\[[ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef)\].
 
 ## ListAuditSuppressionsPaginator
 
@@ -257,13 +257,13 @@ Arguments for `ListAuditSuppressionsPaginator.paginate` method:
 
 - `checkName`: `str`
 - `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditSuppressionsPaginator.paginate` returns
-`Iterator`\[[ListAuditSuppressionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauditsuppressionsresponsetypedef)\].
+`Iterator`\[[ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef)\].
 
 ## ListAuditTasksPaginator
 
@@ -285,15 +285,13 @@ Arguments for `ListAuditTasksPaginator.paginate` method:
 
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `taskType`:
-  [AuditTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittasktype)
-- `taskStatus`:
-  [AuditTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittaskstatus)
+- `taskType`: [AuditTaskType](./literals.md#audittasktype)
+- `taskStatus`: [AuditTaskStatus](./literals.md#audittaskstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuditTasksPaginator.paginate` returns
-`Iterator`\[[ListAuditTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listaudittasksresponsetypedef)\].
+`Iterator`\[[ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef)\].
 
 ## ListAuthorizersPaginator
 
@@ -314,13 +312,12 @@ Boto3 documentation:
 Arguments for `ListAuthorizersPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
-- `status`:
-  [AuthorizerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#authorizerstatus)
+- `status`: [AuthorizerStatus](./literals.md#authorizerstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAuthorizersPaginator.paginate` returns
-`Iterator`\[[ListAuthorizersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listauthorizersresponsetypedef)\].
+`Iterator`\[[ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef)\].
 
 ## ListBillingGroupsPaginator
 
@@ -343,10 +340,10 @@ Arguments for `ListBillingGroupsPaginator.paginate` method:
 
 - `namePrefixFilter`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBillingGroupsPaginator.paginate` returns
-`Iterator`\[[ListBillingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listbillinggroupsresponsetypedef)\].
+`Iterator`\[[ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef)\].
 
 ## ListCACertificatesPaginator
 
@@ -369,10 +366,10 @@ Arguments for `ListCACertificatesPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCACertificatesPaginator.paginate` returns
-`Iterator`\[[ListCACertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcacertificatesresponsetypedef)\].
+`Iterator`\[[ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef)\].
 
 ## ListCertificatesPaginator
 
@@ -394,10 +391,10 @@ Arguments for `ListCertificatesPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificatesPaginator.paginate` returns
-`Iterator`\[[ListCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcertificatesresponsetypedef)\].
+`Iterator`\[[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)\].
 
 ## ListCertificatesByCAPaginator
 
@@ -421,10 +418,10 @@ Arguments for `ListCertificatesByCAPaginator.paginate` method:
 - `caCertificateId`: `str` *(required)*
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificatesByCAPaginator.paginate` returns
-`Iterator`\[[ListCertificatesByCAResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcertificatesbycaresponsetypedef)\].
+`Iterator`\[[ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef)\].
 
 ## ListCustomMetricsPaginator
 
@@ -446,10 +443,10 @@ Boto3 documentation:
 Arguments for `ListCustomMetricsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomMetricsPaginator.paginate` returns
-`Iterator`\[[ListCustomMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listcustommetricsresponsetypedef)\].
+`Iterator`\[[ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef)\].
 
 ## ListDetectMitigationActionsExecutionsPaginator
 
@@ -476,10 +473,10 @@ Arguments for `ListDetectMitigationActionsExecutionsPaginator.paginate` method:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDetectMitigationActionsExecutionsPaginator.paginate` returns
-`Iterator`\[[ListDetectMitigationActionsExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdetectmitigationactionsexecutionsresponsetypedef)\].
+`Iterator`\[[ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef)\].
 
 ## ListDetectMitigationActionsTasksPaginator
 
@@ -503,10 +500,10 @@ Arguments for `ListDetectMitigationActionsTasksPaginator.paginate` method:
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDetectMitigationActionsTasksPaginator.paginate` returns
-`Iterator`\[[ListDetectMitigationActionsTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdetectmitigationactionstasksresponsetypedef)\].
+`Iterator`\[[ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef)\].
 
 ## ListDimensionsPaginator
 
@@ -527,10 +524,10 @@ Boto3 documentation:
 Arguments for `ListDimensionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDimensionsPaginator.paginate` returns
-`Iterator`\[[ListDimensionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdimensionsresponsetypedef)\].
+`Iterator`\[[ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef)\].
 
 ## ListDomainConfigurationsPaginator
 
@@ -551,13 +548,12 @@ Boto3 documentation:
 
 Arguments for `ListDomainConfigurationsPaginator.paginate` method:
 
-- `serviceType`:
-  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#servicetype)
+- `serviceType`: [ServiceType](./literals.md#servicetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListDomainConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listdomainconfigurationsresponsetypedef)\].
+`Iterator`\[[ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef)\].
 
 ## ListIndicesPaginator
 
@@ -578,10 +574,10 @@ Boto3 documentation:
 Arguments for `ListIndicesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIndicesPaginator.paginate` returns
-`Iterator`\[[ListIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listindicesresponsetypedef)\].
+`Iterator`\[[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef)\].
 
 ## ListJobExecutionsForJobPaginator
 
@@ -603,13 +599,12 @@ Boto3 documentation:
 Arguments for `ListJobExecutionsForJobPaginator.paginate` method:
 
 - `jobId`: `str` *(required)*
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionstatus)
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobExecutionsForJobPaginator.paginate` returns
-`Iterator`\[[ListJobExecutionsForJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listjobexecutionsforjobresponsetypedef)\].
+`Iterator`\[[ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef)\].
 
 ## ListJobExecutionsForThingPaginator
 
@@ -631,14 +626,13 @@ Boto3 documentation:
 Arguments for `ListJobExecutionsForThingPaginator.paginate` method:
 
 - `thingName`: `str` *(required)*
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionstatus)
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
 - `namespaceId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobExecutionsForThingPaginator.paginate` returns
-`Iterator`\[[ListJobExecutionsForThingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listjobexecutionsforthingresponsetypedef)\].
+`Iterator`\[[ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -658,18 +652,16 @@ Boto3 documentation:
 
 Arguments for `ListJobsPaginator.paginate` method:
 
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobstatus)
-- `targetSelection`:
-  [TargetSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#targetselection)
+- `status`: [JobStatus](./literals.md#jobstatus)
+- `targetSelection`: [TargetSelection](./literals.md#targetselection)
 - `thingGroupName`: `str`
 - `thingGroupId`: `str`
 - `namespaceId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listjobsresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListMitigationActionsPaginator
 
@@ -690,13 +682,12 @@ Boto3 documentation:
 
 Arguments for `ListMitigationActionsPaginator.paginate` method:
 
-- `actionType`:
-  [MitigationActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#mitigationactiontype)
+- `actionType`: [MitigationActionType](./literals.md#mitigationactiontype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMitigationActionsPaginator.paginate` returns
-`Iterator`\[[ListMitigationActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listmitigationactionsresponsetypedef)\].
+`Iterator`\[[ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef)\].
 
 ## ListOTAUpdatesPaginator
 
@@ -716,13 +707,12 @@ Boto3 documentation:
 
 Arguments for `ListOTAUpdatesPaginator.paginate` method:
 
-- `otaUpdateStatus`:
-  [OTAUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#otaupdatestatus)
+- `otaUpdateStatus`: [OTAUpdateStatus](./literals.md#otaupdatestatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOTAUpdatesPaginator.paginate` returns
-`Iterator`\[[ListOTAUpdatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listotaupdatesresponsetypedef)\].
+`Iterator`\[[ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef)\].
 
 ## ListOutgoingCertificatesPaginator
 
@@ -745,10 +735,10 @@ Arguments for `ListOutgoingCertificatesPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOutgoingCertificatesPaginator.paginate` returns
-`Iterator`\[[ListOutgoingCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listoutgoingcertificatesresponsetypedef)\].
+`Iterator`\[[ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef)\].
 
 ## ListPoliciesPaginator
 
@@ -770,10 +760,10 @@ Arguments for `ListPoliciesPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listpoliciesresponsetypedef)\].
+`Iterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
 ## ListPolicyPrincipalsPaginator
 
@@ -797,10 +787,10 @@ Arguments for `ListPolicyPrincipalsPaginator.paginate` method:
 - `policyName`: `str` *(required)*
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListPolicyPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listpolicyprincipalsresponsetypedef)\].
+`Iterator`\[[ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef)\].
 
 ## ListPrincipalPoliciesPaginator
 
@@ -824,10 +814,10 @@ Arguments for `ListPrincipalPoliciesPaginator.paginate` method:
 - `principal`: `str` *(required)*
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPrincipalPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprincipalpoliciesresponsetypedef)\].
+`Iterator`\[[ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef)\].
 
 ## ListPrincipalThingsPaginator
 
@@ -850,10 +840,10 @@ Arguments for `ListPrincipalThingsPaginator.paginate` method:
 
 - `principal`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalThingsPaginator.paginate` returns
-`Iterator`\[[ListPrincipalThingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprincipalthingsresponsetypedef)\].
+`Iterator`\[[ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef)\].
 
 ## ListProvisioningTemplateVersionsPaginator
 
@@ -876,10 +866,10 @@ Arguments for `ListProvisioningTemplateVersionsPaginator.paginate` method:
 
 - `templateName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisioningTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[ListProvisioningTemplateVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprovisioningtemplateversionsresponsetypedef)\].
+`Iterator`\[[ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef)\].
 
 ## ListProvisioningTemplatesPaginator
 
@@ -901,10 +891,10 @@ Boto3 documentation:
 Arguments for `ListProvisioningTemplatesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisioningTemplatesPaginator.paginate` returns
-`Iterator`\[[ListProvisioningTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listprovisioningtemplatesresponsetypedef)\].
+`Iterator`\[[ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef)\].
 
 ## ListRoleAliasesPaginator
 
@@ -926,10 +916,10 @@ Arguments for `ListRoleAliasesPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRoleAliasesPaginator.paginate` returns
-`Iterator`\[[ListRoleAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listrolealiasesresponsetypedef)\].
+`Iterator`\[[ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef)\].
 
 ## ListScheduledAuditsPaginator
 
@@ -951,10 +941,10 @@ Boto3 documentation:
 Arguments for `ListScheduledAuditsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListScheduledAuditsPaginator.paginate` returns
-`Iterator`\[[ListScheduledAuditsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listscheduledauditsresponsetypedef)\].
+`Iterator`\[[ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef)\].
 
 ## ListSecurityProfilesPaginator
 
@@ -978,10 +968,10 @@ Arguments for `ListSecurityProfilesPaginator.paginate` method:
 - `dimensionName`: `str`
 - `metricName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSecurityProfilesPaginator.paginate` returns
-`Iterator`\[[ListSecurityProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listsecurityprofilesresponsetypedef)\].
+`Iterator`\[[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef)\].
 
 ## ListSecurityProfilesForTargetPaginator
 
@@ -1005,10 +995,10 @@ Arguments for `ListSecurityProfilesForTargetPaginator.paginate` method:
 - `securityProfileTargetArn`: `str` *(required)*
 - `recursive`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSecurityProfilesForTargetPaginator.paginate` returns
-`Iterator`\[[ListSecurityProfilesForTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listsecurityprofilesfortargetresponsetypedef)\].
+`Iterator`\[[ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef)\].
 
 ## ListStreamsPaginator
 
@@ -1030,10 +1020,10 @@ Arguments for `ListStreamsPaginator.paginate` method:
 
 - `ascendingOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#liststreamsresponsetypedef)\].
+`Iterator`\[[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -1056,10 +1046,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `resourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtagsforresourceresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## ListTargetsForPolicyPaginator
 
@@ -1082,10 +1072,10 @@ Arguments for `ListTargetsForPolicyPaginator.paginate` method:
 
 - `policyName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsForPolicyPaginator.paginate` returns
-`Iterator`\[[ListTargetsForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtargetsforpolicyresponsetypedef)\].
+`Iterator`\[[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef)\].
 
 ## ListTargetsForSecurityProfilePaginator
 
@@ -1108,10 +1098,10 @@ Arguments for `ListTargetsForSecurityProfilePaginator.paginate` method:
 
 - `securityProfileName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsForSecurityProfilePaginator.paginate` returns
-`Iterator`\[[ListTargetsForSecurityProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtargetsforsecurityprofileresponsetypedef)\].
+`Iterator`\[[ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef)\].
 
 ## ListThingGroupsPaginator
 
@@ -1135,10 +1125,10 @@ Arguments for `ListThingGroupsPaginator.paginate` method:
 - `namePrefixFilter`: `str`
 - `recursive`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingGroupsPaginator.paginate` returns
-`Iterator`\[[ListThingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthinggroupsresponsetypedef)\].
+`Iterator`\[[ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef)\].
 
 ## ListThingGroupsForThingPaginator
 
@@ -1161,10 +1151,10 @@ Arguments for `ListThingGroupsForThingPaginator.paginate` method:
 
 - `thingName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingGroupsForThingPaginator.paginate` returns
-`Iterator`\[[ListThingGroupsForThingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthinggroupsforthingresponsetypedef)\].
+`Iterator`\[[ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef)\].
 
 ## ListThingPrincipalsPaginator
 
@@ -1187,10 +1177,10 @@ Arguments for `ListThingPrincipalsPaginator.paginate` method:
 
 - `thingName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListThingPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingprincipalsresponsetypedef)\].
+`Iterator`\[[ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef)\].
 
 ## ListThingRegistrationTaskReportsPaginator
 
@@ -1212,14 +1202,12 @@ Boto3 documentation:
 Arguments for `ListThingRegistrationTaskReportsPaginator.paginate` method:
 
 - `taskId`: `str` *(required)*
-- `reportType`:
-  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#reporttype)
-  *(required)*
+- `reportType`: [ReportType](./literals.md#reporttype) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingRegistrationTaskReportsPaginator.paginate` returns
-`Iterator`\[[ListThingRegistrationTaskReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingregistrationtaskreportsresponsetypedef)\].
+`Iterator`\[[ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef)\].
 
 ## ListThingRegistrationTasksPaginator
 
@@ -1240,13 +1228,12 @@ Boto3 documentation:
 
 Arguments for `ListThingRegistrationTasksPaginator.paginate` method:
 
-- `status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#status)
+- `status`: [Status](./literals.md#status)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingRegistrationTasksPaginator.paginate` returns
-`Iterator`\[[ListThingRegistrationTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingregistrationtasksresponsetypedef)\].
+`Iterator`\[[ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef)\].
 
 ## ListThingTypesPaginator
 
@@ -1268,10 +1255,10 @@ Arguments for `ListThingTypesPaginator.paginate` method:
 
 - `thingTypeName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingTypesPaginator.paginate` returns
-`Iterator`\[[ListThingTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingtypesresponsetypedef)\].
+`Iterator`\[[ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef)\].
 
 ## ListThingsPaginator
 
@@ -1296,10 +1283,10 @@ Arguments for `ListThingsPaginator.paginate` method:
 - `thingTypeName`: `str`
 - `usePrefixAttributeValue`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingsPaginator.paginate` returns
-`Iterator`\[[ListThingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingsresponsetypedef)\].
+`Iterator`\[[ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef)\].
 
 ## ListThingsInBillingGroupPaginator
 
@@ -1322,10 +1309,10 @@ Arguments for `ListThingsInBillingGroupPaginator.paginate` method:
 
 - `billingGroupName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingsInBillingGroupPaginator.paginate` returns
-`Iterator`\[[ListThingsInBillingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingsinbillinggroupresponsetypedef)\].
+`Iterator`\[[ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef)\].
 
 ## ListThingsInThingGroupPaginator
 
@@ -1349,10 +1336,10 @@ Arguments for `ListThingsInThingGroupPaginator.paginate` method:
 - `thingGroupName`: `str` *(required)*
 - `recursive`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThingsInThingGroupPaginator.paginate` returns
-`Iterator`\[[ListThingsInThingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listthingsinthinggroupresponsetypedef)\].
+`Iterator`\[[ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef)\].
 
 ## ListTopicRuleDestinationsPaginator
 
@@ -1374,10 +1361,10 @@ Boto3 documentation:
 Arguments for `ListTopicRuleDestinationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicRuleDestinationsPaginator.paginate` returns
-`Iterator`\[[ListTopicRuleDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtopicruledestinationsresponsetypedef)\].
+`Iterator`\[[ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef)\].
 
 ## ListTopicRulesPaginator
 
@@ -1400,10 +1387,10 @@ Arguments for `ListTopicRulesPaginator.paginate` method:
 - `topic`: `str`
 - `ruleDisabled`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicRulesPaginator.paginate` returns
-`Iterator`\[[ListTopicRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listtopicrulesresponsetypedef)\].
+`Iterator`\[[ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef)\].
 
 ## ListV2LoggingLevelsPaginator
 
@@ -1424,13 +1411,12 @@ Boto3 documentation:
 
 Arguments for `ListV2LoggingLevelsPaginator.paginate` method:
 
-- `targetType`:
-  [LogTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#logtargettype)
+- `targetType`: [LogTargetType](./literals.md#logtargettype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListV2LoggingLevelsPaginator.paginate` returns
-`Iterator`\[[ListV2LoggingLevelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listv2logginglevelsresponsetypedef)\].
+`Iterator`\[[ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef)\].
 
 ## ListViolationEventsPaginator
 
@@ -1456,10 +1442,10 @@ Arguments for `ListViolationEventsPaginator.paginate` method:
 - `thingName`: `str`
 - `securityProfileName`: `str`
 - `behaviorCriteriaType`:
-  [BehaviorCriteriaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#behaviorcriteriatype)
+  [BehaviorCriteriaType](./literals.md#behaviorcriteriatype)
 - `listSuppressedAlerts`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListViolationEventsPaginator.paginate` returns
-`Iterator`\[[ListViolationEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#listviolationeventsresponsetypedef)\].
+`Iterator`\[[ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef)\].

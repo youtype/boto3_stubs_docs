@@ -1,6 +1,6 @@
 # Paginators for boto3 GreengrassV2 module
 
-> [Index](../README.md) > [GreengrassV2](./README.md) > Paginators
+> [Index](..) > [GreengrassV2](.) > Paginators
 
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
@@ -36,10 +36,10 @@ Arguments for `ListComponentVersionsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComponentVersionsPaginator.paginate` returns
-`Iterator`\[[ListComponentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listcomponentversionsresponsetypedef)\].
+`Iterator`\[[ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef)\].
 
 ## ListComponentsPaginator
 
@@ -60,13 +60,12 @@ Boto3 documentation:
 
 Arguments for `ListComponentsPaginator.paginate` method:
 
-- `scope`:
-  [ComponentVisibilityScope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#componentvisibilityscope)
+- `scope`: [ComponentVisibilityScope](./literals.md#componentvisibilityscope)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComponentsPaginator.paginate` returns
-`Iterator`\[[ListComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listcomponentsresponsetypedef)\].
+`Iterator`\[[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)\].
 
 ## ListCoreDevicesPaginator
 
@@ -88,13 +87,12 @@ Boto3 documentation:
 Arguments for `ListCoreDevicesPaginator.paginate` method:
 
 - `thingGroupArn`: `str`
-- `status`:
-  [CoreDeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#coredevicestatus)
+- `status`: [CoreDeviceStatus](./literals.md#coredevicestatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCoreDevicesPaginator.paginate` returns
-`Iterator`\[[ListCoreDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listcoredevicesresponsetypedef)\].
+`Iterator`\[[ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef)\].
 
 ## ListDeploymentsPaginator
 
@@ -117,12 +115,12 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 
 - `targetArn`: `str`
 - `historyFilter`:
-  [DeploymentHistoryFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/literals.html#deploymenthistoryfilter)
+  [DeploymentHistoryFilter](./literals.md#deploymenthistoryfilter)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listdeploymentsresponsetypedef)\].
+`Iterator`\[[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)\].
 
 ## ListEffectiveDeploymentsPaginator
 
@@ -145,10 +143,10 @@ Arguments for `ListEffectiveDeploymentsPaginator.paginate` method:
 
 - `coreDeviceThingName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEffectiveDeploymentsPaginator.paginate` returns
-`Iterator`\[[ListEffectiveDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listeffectivedeploymentsresponsetypedef)\].
+`Iterator`\[[ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef)\].
 
 ## ListInstalledComponentsPaginator
 
@@ -171,7 +169,7 @@ Arguments for `ListInstalledComponentsPaginator.paginate` method:
 
 - `coreDeviceThingName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstalledComponentsPaginator.paginate` returns
-`Iterator`\[[ListInstalledComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrassv2/type_defs.html#listinstalledcomponentsresponsetypedef)\].
+`Iterator`\[[ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef)\].

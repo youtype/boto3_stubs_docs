@@ -1,6 +1,6 @@
 # ServiceQuotasClient for boto3 ServiceQuotas module
 
-> [Index](../README.md) > [ServiceQuotas](./README.md) > ServiceQuotasClient
+> [Index](..) > [ServiceQuotas](.) > ServiceQuotasClient
 
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
@@ -162,7 +162,7 @@ Boto3 documentation:
 [ServiceQuotas.Client.get_association_for_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
 
 Returns
-[GetAssociationForServiceQuotaTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#getassociationforservicequotatemplateresponsetypedef).
+[GetAssociationForServiceQuotaTemplateResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponsetypedef).
 
 ### get_aws_default_service_quota
 
@@ -178,7 +178,7 @@ Arguments:
 - `QuotaCode`: `str` *(required)*
 
 Returns
-[GetAWSDefaultServiceQuotaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#getawsdefaultservicequotaresponsetypedef).
+[GetAWSDefaultServiceQuotaResponseTypeDef](./type_defs.md#getawsdefaultservicequotaresponsetypedef).
 
 ### get_requested_service_quota_change
 
@@ -193,7 +193,7 @@ Arguments:
 - `RequestId`: `str` *(required)*
 
 Returns
-[GetRequestedServiceQuotaChangeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#getrequestedservicequotachangeresponsetypedef).
+[GetRequestedServiceQuotaChangeResponseTypeDef](./type_defs.md#getrequestedservicequotachangeresponsetypedef).
 
 ### get_service_quota
 
@@ -208,7 +208,7 @@ Arguments:
 - `QuotaCode`: `str` *(required)*
 
 Returns
-[GetServiceQuotaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#getservicequotaresponsetypedef).
+[GetServiceQuotaResponseTypeDef](./type_defs.md#getservicequotaresponsetypedef).
 
 ### get_service_quota_increase_request_from_template
 
@@ -226,7 +226,7 @@ Arguments:
 - `AwsRegion`: `str` *(required)*
 
 Returns
-[GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#getservicequotaincreaserequestfromtemplateresponsetypedef).
+[GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplateresponsetypedef).
 
 ### list_aws_default_service_quotas
 
@@ -243,7 +243,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAWSDefaultServiceQuotasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listawsdefaultservicequotasresponsetypedef).
+[ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef).
 
 ### list_requested_service_quota_change_history
 
@@ -257,13 +257,12 @@ Boto3 documentation:
 Arguments:
 
 - `ServiceCode`: `str`
-- `Status`:
-  [RequestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#requeststatus)
+- `Status`: [RequestStatus](./literals.md#requeststatus)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listrequestedservicequotachangehistoryresponsetypedef).
+[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef).
 
 ### list_requested_service_quota_change_history_by_quota
 
@@ -278,13 +277,12 @@ Arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
-- `Status`:
-  [RequestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#requeststatus)
+- `Status`: [RequestStatus](./literals.md#requeststatus)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listrequestedservicequotachangehistorybyquotaresponsetypedef).
+[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef).
 
 ### list_service_quota_increase_requests_in_template
 
@@ -303,7 +301,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listservicequotaincreaserequestsintemplateresponsetypedef).
+[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef).
 
 ### list_service_quotas
 
@@ -320,7 +318,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServiceQuotasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listservicequotasresponsetypedef).
+[ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef).
 
 ### list_services
 
@@ -335,7 +333,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listservicesresponsetypedef).
+[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -350,7 +348,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_service_quota_increase_request_into_template
 
@@ -369,7 +367,7 @@ Arguments:
 - `DesiredValue`: `float` *(required)*
 
 Returns
-[PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#putservicequotaincreaserequestintotemplateresponsetypedef).
+[PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplateresponsetypedef).
 
 ### request_service_quota_increase
 
@@ -386,7 +384,7 @@ Arguments:
 - `DesiredValue`: `float` *(required)*
 
 Returns
-[RequestServiceQuotaIncreaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#requestservicequotaincreaseresponsetypedef).
+[RequestServiceQuotaIncreaseResponseTypeDef](./type_defs.md#requestservicequotaincreaseresponsetypedef).
 
 ### tag_resource
 
@@ -398,9 +396,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

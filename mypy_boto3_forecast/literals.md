@@ -1,6 +1,6 @@
 # Literals for boto3 ForecastService module
 
-> [Index](../README.md) > [ForecastService](./README.md) > Literals
+> [Index](..) > [ForecastService](.) > Literals
 
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)

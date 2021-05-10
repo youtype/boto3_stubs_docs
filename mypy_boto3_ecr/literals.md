@@ -1,6 +1,6 @@
 # Literals for boto3 ECR module
 
-> [Index](../README.md) > [ECR](./README.md) > Literals
+> [Index](..) > [ECR](.) > Literals
 
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)

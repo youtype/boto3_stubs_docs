@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DevopsGuru module
 
-> [Index](../README.md) > [DevopsGuru](./README.md) > Structures
+> [Index](..) > [DevopsGuru](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
@@ -100,7 +100,7 @@ from mypy_boto3_devops_guru.type_defs import AnomalySourceDetailsTypeDef
 Optional fields:
 
 - `CloudWatchMetrics`:
-  `List`\[[CloudWatchMetricsDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudwatchmetricsdetailtypedef)\]
+  `List`\[[CloudWatchMetricsDetailTypeDef](./type_defs.md#cloudwatchmetricsdetailtypedef)\]
 
 ## AnomalyTimeRangeTypeDef
 
@@ -155,8 +155,7 @@ from mypy_boto3_devops_guru.type_defs import CloudFormationHealthTypeDef
 Optional fields:
 
 - `StackName`: `str`
-- `Insight`:
-  [InsightHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insighthealthtypedef)
+- `Insight`: [InsightHealthTypeDef](./type_defs.md#insighthealthtypedef)
 
 ## CloudWatchMetricsDetailTypeDef
 
@@ -169,9 +168,8 @@ Optional fields:
 - `MetricName`: `str`
 - `Namespace`: `str`
 - `Dimensions`:
-  `List`\[[CloudWatchMetricsDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudwatchmetricsdimensiontypedef)\]
-- `Stat`:
-  [CloudWatchMetricsStat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#cloudwatchmetricsstat)
+  `List`\[[CloudWatchMetricsDimensionTypeDef](./type_defs.md#cloudwatchmetricsdimensiontypedef)\]
+- `Stat`: [CloudWatchMetricsStat](./literals.md#cloudwatchmetricsstat)
 - `Unit`: `str`
 - `Period`: `int`
 
@@ -195,7 +193,7 @@ from mypy_boto3_devops_guru.type_defs import CostEstimationResourceCollectionFil
 Optional fields:
 
 - `CloudFormation`:
-  [CloudFormationCostEstimationResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudformationcostestimationresourcecollectionfiltertypedef)
+  [CloudFormationCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#cloudformationcostestimationresourcecollectionfiltertypedef)
 
 ## CostEstimationTimeRangeTypeDef
 
@@ -242,9 +240,9 @@ from mypy_boto3_devops_guru.type_defs import DescribeAnomalyResponseTypeDef
 Optional fields:
 
 - `ProactiveAnomaly`:
-  [ProactiveAnomalyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#proactiveanomalytypedef)
+  [ProactiveAnomalyTypeDef](./type_defs.md#proactiveanomalytypedef)
 - `ReactiveAnomaly`:
-  [ReactiveAnomalyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#reactiveanomalytypedef)
+  [ReactiveAnomalyTypeDef](./type_defs.md#reactiveanomalytypedef)
 
 ## DescribeFeedbackResponseTypeDef
 
@@ -255,7 +253,7 @@ from mypy_boto3_devops_guru.type_defs import DescribeFeedbackResponseTypeDef
 Optional fields:
 
 - `InsightFeedback`:
-  [InsightFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insightfeedbacktypedef)
+  [InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef)
 
 ## DescribeInsightResponseTypeDef
 
@@ -266,9 +264,9 @@ from mypy_boto3_devops_guru.type_defs import DescribeInsightResponseTypeDef
 Optional fields:
 
 - `ProactiveInsight`:
-  [ProactiveInsightTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#proactiveinsighttypedef)
+  [ProactiveInsightTypeDef](./type_defs.md#proactiveinsighttypedef)
 - `ReactiveInsight`:
-  [ReactiveInsightTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#reactiveinsighttypedef)
+  [ReactiveInsightTypeDef](./type_defs.md#reactiveinsighttypedef)
 
 ## DescribeResourceCollectionHealthResponseTypeDef
 
@@ -279,12 +277,12 @@ from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthRes
 Required fields:
 
 - `CloudFormation`:
-  `List`\[[CloudFormationHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudformationhealthtypedef)\]
+  `List`\[[CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef)\]
 
 Optional fields:
 
 - `Service`:
-  `List`\[[ServiceHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicehealthtypedef)\]
+  `List`\[[ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeServiceIntegrationResponseTypeDef
@@ -296,7 +294,7 @@ from mypy_boto3_devops_guru.type_defs import DescribeServiceIntegrationResponseT
 Optional fields:
 
 - `ServiceIntegration`:
-  [ServiceIntegrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#serviceintegrationconfigtypedef)
+  [ServiceIntegrationConfigTypeDef](./type_defs.md#serviceintegrationconfigtypedef)
 
 ## EndTimeRangeTypeDef
 
@@ -341,17 +339,15 @@ from mypy_boto3_devops_guru.type_defs import EventTypeDef
 Optional fields:
 
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `Id`: `str`
 - `Time`: `datetime`
 - `EventSource`: `str`
 - `Name`: `str`
-- `DataSource`:
-  [EventDataSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#eventdatasource)
-- `EventClass`:
-  [EventClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#eventclass)
+- `DataSource`: [EventDataSource](./literals.md#eventdatasource)
+- `EventClass`: [EventClass](./literals.md#eventclass)
 - `Resources`:
-  `List`\[[EventResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#eventresourcetypedef)\]
+  `List`\[[EventResourceTypeDef](./type_defs.md#eventresourcetypedef)\]
 
 ## GetCostEstimationResponseTypeDef
 
@@ -362,13 +358,12 @@ from mypy_boto3_devops_guru.type_defs import GetCostEstimationResponseTypeDef
 Optional fields:
 
 - `ResourceCollection`:
-  [CostEstimationResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#costestimationresourcecollectionfiltertypedef)
-- `Status`:
-  [CostEstimationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#costestimationstatus)
+  [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
+- `Status`: [CostEstimationStatus](./literals.md#costestimationstatus)
 - `Costs`:
-  `List`\[[ServiceResourceCostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#serviceresourcecosttypedef)\]
+  `List`\[[ServiceResourceCostTypeDef](./type_defs.md#serviceresourcecosttypedef)\]
 - `TimeRange`:
-  [CostEstimationTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#costestimationtimerangetypedef)
+  [CostEstimationTimeRangeTypeDef](./type_defs.md#costestimationtimerangetypedef)
 - `TotalCost`: `float`
 - `NextToken`: `str`
 
@@ -381,7 +376,7 @@ from mypy_boto3_devops_guru.type_defs import GetResourceCollectionResponseTypeDe
 Optional fields:
 
 - `ResourceCollection`:
-  [ResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectionfiltertypedef)
+  [ResourceCollectionFilterTypeDef](./type_defs.md#resourcecollectionfiltertypedef)
 - `NextToken`: `str`
 
 ## InsightFeedbackTypeDef
@@ -393,8 +388,7 @@ from mypy_boto3_devops_guru.type_defs import InsightFeedbackTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Feedback`:
-  [InsightFeedbackOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightfeedbackoption)
+- `Feedback`: [InsightFeedbackOption](./literals.md#insightfeedbackoption)
 
 ## InsightHealthTypeDef
 
@@ -431,9 +425,9 @@ from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightResponseType
 Optional fields:
 
 - `ProactiveAnomalies`:
-  `List`\[[ProactiveAnomalySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#proactiveanomalysummarytypedef)\]
+  `List`\[[ProactiveAnomalySummaryTypeDef](./type_defs.md#proactiveanomalysummarytypedef)\]
 - `ReactiveAnomalies`:
-  `List`\[[ReactiveAnomalySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#reactiveanomalysummarytypedef)\]
+  `List`\[[ReactiveAnomalySummaryTypeDef](./type_defs.md#reactiveanomalysummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListEventsFiltersTypeDef
@@ -445,15 +439,12 @@ from mypy_boto3_devops_guru.type_defs import ListEventsFiltersTypeDef
 Optional fields:
 
 - `InsightId`: `str`
-- `EventTimeRange`:
-  [EventTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#eventtimerangetypedef)
-- `EventClass`:
-  [EventClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#eventclass)
+- `EventTimeRange`: [EventTimeRangeTypeDef](./type_defs.md#eventtimerangetypedef)
+- `EventClass`: [EventClass](./literals.md#eventclass)
 - `EventSource`: `str`
-- `DataSource`:
-  [EventDataSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#eventdatasource)
+- `DataSource`: [EventDataSource](./literals.md#eventdatasource)
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 
 ## ListEventsResponseTypeDef
 
@@ -463,8 +454,7 @@ from mypy_boto3_devops_guru.type_defs import ListEventsResponseTypeDef
 
 Required fields:
 
-- `Events`:
-  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#eventtypedef)\]
+- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 Optional fields:
 
@@ -478,10 +468,8 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsAnyStatusFilterTypeDef
 
 Required fields:
 
-- `Type`:
-  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `Type`: [InsightType](./literals.md#insighttype)
+- `StartTimeRange`: [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
 
 ## ListInsightsClosedStatusFilterTypeDef
 
@@ -491,10 +479,8 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsClosedStatusFilterTypeD
 
 Required fields:
 
-- `Type`:
-  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
-- `EndTimeRange`:
-  [EndTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#endtimerangetypedef)
+- `Type`: [InsightType](./literals.md#insighttype)
+- `EndTimeRange`: [EndTimeRangeTypeDef](./type_defs.md#endtimerangetypedef)
 
 ## ListInsightsOngoingStatusFilterTypeDef
 
@@ -504,8 +490,7 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsOngoingStatusFilterType
 
 Required fields:
 
-- `Type`:
-  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
+- `Type`: [InsightType](./literals.md#insighttype)
 
 ## ListInsightsResponseTypeDef
 
@@ -516,9 +501,9 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsResponseTypeDef
 Optional fields:
 
 - `ProactiveInsights`:
-  `List`\[[ProactiveInsightSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#proactiveinsightsummarytypedef)\]
+  `List`\[[ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)\]
 - `ReactiveInsights`:
-  `List`\[[ReactiveInsightSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#reactiveinsightsummarytypedef)\]
+  `List`\[[ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListInsightsStatusFilterTypeDef
@@ -530,11 +515,11 @@ from mypy_boto3_devops_guru.type_defs import ListInsightsStatusFilterTypeDef
 Optional fields:
 
 - `Ongoing`:
-  [ListInsightsOngoingStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsongoingstatusfiltertypedef)
+  [ListInsightsOngoingStatusFilterTypeDef](./type_defs.md#listinsightsongoingstatusfiltertypedef)
 - `Closed`:
-  [ListInsightsClosedStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsclosedstatusfiltertypedef)
+  [ListInsightsClosedStatusFilterTypeDef](./type_defs.md#listinsightsclosedstatusfiltertypedef)
 - `Any`:
-  [ListInsightsAnyStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsanystatusfiltertypedef)
+  [ListInsightsAnyStatusFilterTypeDef](./type_defs.md#listinsightsanystatusfiltertypedef)
 
 ## ListNotificationChannelsResponseTypeDef
 
@@ -545,7 +530,7 @@ from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsResponseTyp
 Optional fields:
 
 - `Channels`:
-  `List`\[[NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#notificationchanneltypedef)\]
+  `List`\[[NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)\]
 - `NextToken`: `str`
 
 ## ListRecommendationsResponseTypeDef
@@ -557,7 +542,7 @@ from mypy_boto3_devops_guru.type_defs import ListRecommendationsResponseTypeDef
 Optional fields:
 
 - `Recommendations`:
-  `List`\[[RecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationtypedef)\]
+  `List`\[[RecommendationTypeDef](./type_defs.md#recommendationtypedef)\]
 - `NextToken`: `str`
 
 ## NotificationChannelConfigTypeDef
@@ -568,8 +553,7 @@ from mypy_boto3_devops_guru.type_defs import NotificationChannelConfigTypeDef
 
 Required fields:
 
-- `Sns`:
-  [SnsChannelConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#snschannelconfigtypedef)
+- `Sns`: [SnsChannelConfigTypeDef](./type_defs.md#snschannelconfigtypedef)
 
 ## NotificationChannelTypeDef
 
@@ -581,7 +565,7 @@ Optional fields:
 
 - `Id`: `str`
 - `Config`:
-  [NotificationChannelConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#notificationchannelconfigtypedef)
+  [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
 
 ## OpsCenterIntegrationConfigTypeDef
 
@@ -591,8 +575,7 @@ from mypy_boto3_devops_guru.type_defs import OpsCenterIntegrationConfigTypeDef
 
 Optional fields:
 
-- `OptInStatus`:
-  [OptInStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#optinstatus)
+- `OptInStatus`: [OptInStatus](./literals.md#optinstatus)
 
 ## OpsCenterIntegrationTypeDef
 
@@ -602,8 +585,7 @@ from mypy_boto3_devops_guru.type_defs import OpsCenterIntegrationTypeDef
 
 Optional fields:
 
-- `OptInStatus`:
-  [OptInStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#optinstatus)
+- `OptInStatus`: [OptInStatus](./literals.md#optinstatus)
 
 ## PaginatorConfigTypeDef
 
@@ -640,20 +622,18 @@ from mypy_boto3_devops_guru.type_defs import ProactiveAnomalySummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`:
-  [AnomalySeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalyseverity)
-- `Status`:
-  [AnomalyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalystatus)
+- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
+- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
 - `UpdateTime`: `datetime`
 - `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalytimerangetypedef)
+  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#predictiontimerangetypedef)
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
 - `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalysourcedetailstypedef)
+  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - `AssociatedInsightId`: `str`
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `Limit`: `float`
 
 ## ProactiveAnomalyTypeDef
@@ -665,20 +645,18 @@ from mypy_boto3_devops_guru.type_defs import ProactiveAnomalyTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`:
-  [AnomalySeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalyseverity)
-- `Status`:
-  [AnomalyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalystatus)
+- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
+- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
 - `UpdateTime`: `datetime`
 - `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalytimerangetypedef)
+  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#predictiontimerangetypedef)
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
 - `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalysourcedetailstypedef)
+  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - `AssociatedInsightId`: `str`
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `Limit`: `float`
 
 ## ProactiveInsightSummaryTypeDef
@@ -691,18 +669,16 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`:
-  [InsightSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightseverity)
-- `Status`:
-  [InsightStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightstatus)
+- `Severity`: [InsightSeverity](./literals.md#insightseverity)
+- `Status`: [InsightStatus](./literals.md#insightstatus)
 - `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insighttimerangetypedef)
+  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#predictiontimerangetypedef)
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
-  [ServiceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicecollectiontypedef)
+  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 
 ## ProactiveInsightTypeDef
 
@@ -714,16 +690,14 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`:
-  [InsightSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightseverity)
-- `Status`:
-  [InsightStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightstatus)
+- `Severity`: [InsightSeverity](./literals.md#insightseverity)
+- `Status`: [InsightStatus](./literals.md#insightstatus)
 - `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insighttimerangetypedef)
+  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#predictiontimerangetypedef)
+  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
 
 ## ReactiveAnomalySummaryTypeDef
@@ -735,17 +709,15 @@ from mypy_boto3_devops_guru.type_defs import ReactiveAnomalySummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`:
-  [AnomalySeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalyseverity)
-- `Status`:
-  [AnomalyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalystatus)
+- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
+- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
 - `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalytimerangetypedef)
+  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalysourcedetailstypedef)
+  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - `AssociatedInsightId`: `str`
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 
 ## ReactiveAnomalyTypeDef
 
@@ -756,17 +728,15 @@ from mypy_boto3_devops_guru.type_defs import ReactiveAnomalyTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Severity`:
-  [AnomalySeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalyseverity)
-- `Status`:
-  [AnomalyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#anomalystatus)
+- `Severity`: [AnomalySeverity](./literals.md#anomalyseverity)
+- `Status`: [AnomalyStatus](./literals.md#anomalystatus)
 - `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalytimerangetypedef)
+  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
 - `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#anomalysourcedetailstypedef)
+  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
 - `AssociatedInsightId`: `str`
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 
 ## ReactiveInsightSummaryTypeDef
 
@@ -778,16 +748,14 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`:
-  [InsightSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightseverity)
-- `Status`:
-  [InsightStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightstatus)
+- `Severity`: [InsightSeverity](./literals.md#insightseverity)
+- `Status`: [InsightStatus](./literals.md#insightstatus)
 - `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insighttimerangetypedef)
+  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
-  [ServiceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicecollectiontypedef)
+  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 
 ## ReactiveInsightTypeDef
 
@@ -799,14 +767,12 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Severity`:
-  [InsightSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightseverity)
-- `Status`:
-  [InsightStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightstatus)
+- `Severity`: [InsightSeverity](./literals.md#insightseverity)
+- `Status`: [InsightStatus](./literals.md#insightstatus)
 - `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insighttimerangetypedef)
+  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
 
 ## RecommendationRelatedAnomalyResourceTypeDef
@@ -829,7 +795,7 @@ from mypy_boto3_devops_guru.type_defs import RecommendationRelatedAnomalySourceD
 Optional fields:
 
 - `CloudWatchMetrics`:
-  `List`\[[RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationrelatedcloudwatchmetricssourcedetailtypedef)\]
+  `List`\[[RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef](./type_defs.md#recommendationrelatedcloudwatchmetricssourcedetailtypedef)\]
 
 ## RecommendationRelatedAnomalyTypeDef
 
@@ -840,9 +806,9 @@ from mypy_boto3_devops_guru.type_defs import RecommendationRelatedAnomalyTypeDef
 Optional fields:
 
 - `Resources`:
-  `List`\[[RecommendationRelatedAnomalyResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationrelatedanomalyresourcetypedef)\]
+  `List`\[[RecommendationRelatedAnomalyResourceTypeDef](./type_defs.md#recommendationrelatedanomalyresourcetypedef)\]
 - `SourceDetails`:
-  `List`\[[RecommendationRelatedAnomalySourceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationrelatedanomalysourcedetailtypedef)\]
+  `List`\[[RecommendationRelatedAnomalySourceDetailTypeDef](./type_defs.md#recommendationrelatedanomalysourcedetailtypedef)\]
 
 ## RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef
 
@@ -876,7 +842,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Resources`:
-  `List`\[[RecommendationRelatedEventResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationrelatedeventresourcetypedef)\]
+  `List`\[[RecommendationRelatedEventResourceTypeDef](./type_defs.md#recommendationrelatedeventresourcetypedef)\]
 
 ## RecommendationTypeDef
 
@@ -891,9 +857,9 @@ Optional fields:
 - `Name`: `str`
 - `Reason`: `str`
 - `RelatedEvents`:
-  `List`\[[RecommendationRelatedEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationrelatedeventtypedef)\]
+  `List`\[[RecommendationRelatedEventTypeDef](./type_defs.md#recommendationrelatedeventtypedef)\]
 - `RelatedAnomalies`:
-  `List`\[[RecommendationRelatedAnomalyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#recommendationrelatedanomalytypedef)\]
+  `List`\[[RecommendationRelatedAnomalyTypeDef](./type_defs.md#recommendationrelatedanomalytypedef)\]
 
 ## ResourceCollectionFilterTypeDef
 
@@ -904,7 +870,7 @@ from mypy_boto3_devops_guru.type_defs import ResourceCollectionFilterTypeDef
 Optional fields:
 
 - `CloudFormation`:
-  [CloudFormationCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudformationcollectionfiltertypedef)
+  [CloudFormationCollectionFilterTypeDef](./type_defs.md#cloudformationcollectionfiltertypedef)
 
 ## ResourceCollectionTypeDef
 
@@ -915,7 +881,7 @@ from mypy_boto3_devops_guru.type_defs import ResourceCollectionTypeDef
 Optional fields:
 
 - `CloudFormation`:
-  [CloudFormationCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#cloudformationcollectiontypedef)
+  [CloudFormationCollectionTypeDef](./type_defs.md#cloudformationcollectiontypedef)
 
 ## SearchInsightsFiltersTypeDef
 
@@ -925,14 +891,12 @@ from mypy_boto3_devops_guru.type_defs import SearchInsightsFiltersTypeDef
 
 Optional fields:
 
-- `Severities`:
-  `List`\[[InsightSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightseverity)\]
-- `Statuses`:
-  `List`\[[InsightStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insightstatus)\]
+- `Severities`: `List`\[[InsightSeverity](./literals.md#insightseverity)\]
+- `Statuses`: `List`\[[InsightStatus](./literals.md#insightstatus)\]
 - `ResourceCollection`:
-  [ResourceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#resourcecollectiontypedef)
+  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `ServiceCollection`:
-  [ServiceCollectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#servicecollectiontypedef)
+  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 
 ## SearchInsightsResponseTypeDef
 
@@ -943,9 +907,9 @@ from mypy_boto3_devops_guru.type_defs import SearchInsightsResponseTypeDef
 Optional fields:
 
 - `ProactiveInsights`:
-  `List`\[[ProactiveInsightSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#proactiveinsightsummarytypedef)\]
+  `List`\[[ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)\]
 - `ReactiveInsights`:
-  `List`\[[ReactiveInsightSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#reactiveinsightsummarytypedef)\]
+  `List`\[[ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ServiceCollectionTypeDef
@@ -956,8 +920,7 @@ from mypy_boto3_devops_guru.type_defs import ServiceCollectionTypeDef
 
 Optional fields:
 
-- `ServiceNames`:
-  `List`\[[ServiceName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#servicename)\]
+- `ServiceNames`: `List`\[[ServiceName](./literals.md#servicename)\]
 
 ## ServiceHealthTypeDef
 
@@ -967,10 +930,9 @@ from mypy_boto3_devops_guru.type_defs import ServiceHealthTypeDef
 
 Optional fields:
 
-- `ServiceName`:
-  [ServiceName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#servicename)
+- `ServiceName`: [ServiceName](./literals.md#servicename)
 - `Insight`:
-  [ServiceInsightHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#serviceinsighthealthtypedef)
+  [ServiceInsightHealthTypeDef](./type_defs.md#serviceinsighthealthtypedef)
 
 ## ServiceInsightHealthTypeDef
 
@@ -992,7 +954,7 @@ from mypy_boto3_devops_guru.type_defs import ServiceIntegrationConfigTypeDef
 Optional fields:
 
 - `OpsCenter`:
-  [OpsCenterIntegrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#opscenterintegrationtypedef)
+  [OpsCenterIntegrationTypeDef](./type_defs.md#opscenterintegrationtypedef)
 
 ## ServiceResourceCostTypeDef
 
@@ -1004,7 +966,7 @@ Optional fields:
 
 - `Type`: `str`
 - `State`:
-  [CostEstimationServiceResourceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#costestimationserviceresourcestate)
+  [CostEstimationServiceResourceState](./literals.md#costestimationserviceresourcestate)
 - `Count`: `int`
 - `UnitCost`: `float`
 - `Cost`: `float`
@@ -1049,7 +1011,7 @@ from mypy_boto3_devops_guru.type_defs import UpdateResourceCollectionFilterTypeD
 Optional fields:
 
 - `CloudFormation`:
-  [UpdateCloudFormationCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#updatecloudformationcollectionfiltertypedef)
+  [UpdateCloudFormationCollectionFilterTypeDef](./type_defs.md#updatecloudformationcollectionfiltertypedef)
 
 ## UpdateServiceIntegrationConfigTypeDef
 
@@ -1060,4 +1022,4 @@ from mypy_boto3_devops_guru.type_defs import UpdateServiceIntegrationConfigTypeD
 Optional fields:
 
 - `OpsCenter`:
-  [OpsCenterIntegrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#opscenterintegrationconfigtypedef)
+  [OpsCenterIntegrationConfigTypeDef](./type_defs.md#opscenterintegrationconfigtypedef)

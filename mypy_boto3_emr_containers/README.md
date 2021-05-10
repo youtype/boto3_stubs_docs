@@ -1,6 +1,6 @@
 # Type annotations for boto3 EMRContainers module
 
-> [Index](../README.md) > EMRContainers
+> [Index](..) > EMRContainers
 
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)

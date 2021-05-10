@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ACM module
 
-> [Index](../README.md) > [ACM](./README.md) > Structures
+> [Index](..) > [ACM](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
@@ -43,39 +43,31 @@ Optional fields:
 - `DomainName`: `str`
 - `SubjectAlternativeNames`: `List`\[`str`\]
 - `DomainValidationOptions`:
-  `List`\[[DomainValidationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#domainvalidationtypedef)\]
+  `List`\[[DomainValidationTypeDef](./type_defs.md#domainvalidationtypedef)\]
 - `Serial`: `str`
 - `Subject`: `str`
 - `Issuer`: `str`
 - `CreatedAt`: `datetime`
 - `IssuedAt`: `datetime`
 - `ImportedAt`: `datetime`
-- `Status`:
-  [CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#certificatestatus)
+- `Status`: [CertificateStatus](./literals.md#certificatestatus)
 - `RevokedAt`: `datetime`
-- `RevocationReason`:
-  [RevocationReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#revocationreason)
+- `RevocationReason`: [RevocationReason](./literals.md#revocationreason)
 - `NotBefore`: `datetime`
 - `NotAfter`: `datetime`
-- `KeyAlgorithm`:
-  [KeyAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#keyalgorithm)
+- `KeyAlgorithm`: [KeyAlgorithm](./literals.md#keyalgorithm)
 - `SignatureAlgorithm`: `str`
 - `InUseBy`: `List`\[`str`\]
-- `FailureReason`:
-  [FailureReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#failurereason)
-- `Type`:
-  [CertificateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#certificatetype)
-- `RenewalSummary`:
-  [RenewalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#renewalsummarytypedef)
-- `KeyUsages`:
-  `List`\[[KeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#keyusagetypedef)\]
+- `FailureReason`: [FailureReason](./literals.md#failurereason)
+- `Type`: [CertificateType](./literals.md#certificatetype)
+- `RenewalSummary`: [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
+- `KeyUsages`: `List`\[[KeyUsageTypeDef](./type_defs.md#keyusagetypedef)\]
 - `ExtendedKeyUsages`:
-  `List`\[[ExtendedKeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#extendedkeyusagetypedef)\]
+  `List`\[[ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)\]
 - `CertificateAuthorityArn`: `str`
-- `RenewalEligibility`:
-  [RenewalEligibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#renewaleligibility)
+- `RenewalEligibility`: [RenewalEligibility](./literals.md#renewaleligibility)
 - `Options`:
-  [CertificateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificateoptionstypedef)
+  [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 
 ## CertificateOptionsTypeDef
 
@@ -86,7 +78,7 @@ from mypy_boto3_acm.type_defs import CertificateOptionsTypeDef
 Optional fields:
 
 - `CertificateTransparencyLoggingPreference`:
-  [CertificateTransparencyLoggingPreference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#certificatetransparencyloggingpreference)
+  [CertificateTransparencyLoggingPreference](./literals.md#certificatetransparencyloggingpreference)
 
 ## CertificateSummaryTypeDef
 
@@ -108,7 +100,7 @@ from mypy_boto3_acm.type_defs import DescribeCertificateResponseTypeDef
 Optional fields:
 
 - `Certificate`:
-  [CertificateDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificatedetailtypedef)
+  [CertificateDetailTypeDef](./type_defs.md#certificatedetailtypedef)
 
 ## DomainValidationOptionTypeDef
 
@@ -135,12 +127,9 @@ Optional fields:
 
 - `ValidationEmails`: `List`\[`str`\]
 - `ValidationDomain`: `str`
-- `ValidationStatus`:
-  [DomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#domainstatus)
-- `ResourceRecord`:
-  [ResourceRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#resourcerecordtypedef)
-- `ValidationMethod`:
-  [ValidationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#validationmethod)
+- `ValidationStatus`: [DomainStatus](./literals.md#domainstatus)
+- `ResourceRecord`: [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
+- `ValidationMethod`: [ValidationMethod](./literals.md#validationmethod)
 
 ## ExpiryEventsConfigurationTypeDef
 
@@ -172,8 +161,7 @@ from mypy_boto3_acm.type_defs import ExtendedKeyUsageTypeDef
 
 Optional fields:
 
-- `Name`:
-  [ExtendedKeyUsageName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#extendedkeyusagename)
+- `Name`: [ExtendedKeyUsageName](./literals.md#extendedkeyusagename)
 - `OID`: `str`
 
 ## FiltersTypeDef
@@ -185,11 +173,9 @@ from mypy_boto3_acm.type_defs import FiltersTypeDef
 Optional fields:
 
 - `extendedKeyUsage`:
-  `List`\[[ExtendedKeyUsageName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#extendedkeyusagename)\]
-- `keyUsage`:
-  `List`\[[KeyUsageName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#keyusagename)\]
-- `keyTypes`:
-  `List`\[[KeyAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#keyalgorithm)\]
+  `List`\[[ExtendedKeyUsageName](./literals.md#extendedkeyusagename)\]
+- `keyUsage`: `List`\[[KeyUsageName](./literals.md#keyusagename)\]
+- `keyTypes`: `List`\[[KeyAlgorithm](./literals.md#keyalgorithm)\]
 
 ## GetAccountConfigurationResponseTypeDef
 
@@ -200,7 +186,7 @@ from mypy_boto3_acm.type_defs import GetAccountConfigurationResponseTypeDef
 Optional fields:
 
 - `ExpiryEvents`:
-  [ExpiryEventsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#expiryeventsconfigurationtypedef)
+  [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 
 ## GetCertificateResponseTypeDef
 
@@ -231,8 +217,7 @@ from mypy_boto3_acm.type_defs import KeyUsageTypeDef
 
 Optional fields:
 
-- `Name`:
-  [KeyUsageName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#keyusagename)
+- `Name`: [KeyUsageName](./literals.md#keyusagename)
 
 ## ListCertificatesResponseTypeDef
 
@@ -244,7 +229,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `CertificateSummaryList`:
-  `List`\[[CertificateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificatesummarytypedef)\]
+  `List`\[[CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef)\]
 
 ## ListTagsForCertificateResponseTypeDef
 
@@ -254,8 +239,7 @@ from mypy_boto3_acm.type_defs import ListTagsForCertificateResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -277,16 +261,14 @@ from mypy_boto3_acm.type_defs import RenewalSummaryTypeDef
 
 Required fields:
 
-- `RenewalStatus`:
-  [RenewalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#renewalstatus)
+- `RenewalStatus`: [RenewalStatus](./literals.md#renewalstatus)
 - `DomainValidationOptions`:
-  `List`\[[DomainValidationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#domainvalidationtypedef)\]
+  `List`\[[DomainValidationTypeDef](./type_defs.md#domainvalidationtypedef)\]
 - `UpdatedAt`: `datetime`
 
 Optional fields:
 
-- `RenewalStatusReason`:
-  [FailureReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#failurereason)
+- `RenewalStatusReason`: [FailureReason](./literals.md#failurereason)
 
 ## RequestCertificateResponseTypeDef
 
@@ -307,7 +289,7 @@ from mypy_boto3_acm.type_defs import ResourceRecordTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`: `Literal['CNAME']`
+- `Type`: `Literal['CNAME']` (see [RecordType](./literals.md#recordtype))
 - `Value`: `str`
 
 ## TagTypeDef

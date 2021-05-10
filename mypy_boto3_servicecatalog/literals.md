@@ -1,6 +1,6 @@
 # Literals for boto3 ServiceCatalog module
 
-> [Index](../README.md) > [ServiceCatalog](./README.md) > Literals
+> [Index](..) > [ServiceCatalog](.) > Literals
 
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)

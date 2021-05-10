@@ -1,6 +1,6 @@
 # QLDBClient for boto3 QLDB module
 
-> [Index](../README.md) > [QLDB](./README.md) > QLDBClient
+> [Index](..) > [QLDB](.) > QLDBClient
 
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
@@ -100,7 +100,7 @@ Arguments:
 - `StreamId`: `str` *(required)*
 
 Returns
-[CancelJournalKinesisStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#canceljournalkinesisstreamresponsetypedef).
+[CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef).
 
 ### create_ledger
 
@@ -112,12 +112,13 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `PermissionsMode`: `Literal['ALLOW_ALL']` *(required)*
+- `PermissionsMode`: `Literal['ALLOW_ALL']` (see
+  [PermissionsMode](./literals.md#permissionsmode)) *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
 
 Returns
-[CreateLedgerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#createledgerresponsetypedef).
+[CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef).
 
 ### delete_ledger
 
@@ -144,7 +145,7 @@ Arguments:
 - `StreamId`: `str` *(required)*
 
 Returns
-[DescribeJournalKinesisStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#describejournalkinesisstreamresponsetypedef).
+[DescribeJournalKinesisStreamResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponsetypedef).
 
 ### describe_journal_s3_export
 
@@ -159,7 +160,7 @@ Arguments:
 - `ExportId`: `str` *(required)*
 
 Returns
-[DescribeJournalS3ExportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#describejournals3exportresponsetypedef).
+[DescribeJournalS3ExportResponseTypeDef](./type_defs.md#describejournals3exportresponsetypedef).
 
 ### describe_ledger
 
@@ -173,7 +174,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeLedgerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#describeledgerresponsetypedef).
+[DescribeLedgerResponseTypeDef](./type_defs.md#describeledgerresponsetypedef).
 
 ### export_journal_to_s3
 
@@ -188,12 +189,12 @@ Arguments:
 - `InclusiveStartTime`: `datetime` *(required)*
 - `ExclusiveEndTime`: `datetime` *(required)*
 - `S3ExportConfiguration`:
-  [S3ExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#s3exportconfigurationtypedef)
+  [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 
 Returns
-[ExportJournalToS3ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#exportjournaltos3responsetypedef).
+[ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef).
 
 ### generate_presigned_url
 
@@ -221,14 +222,11 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `BlockAddress`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
   *(required)*
-- `DigestTipAddress`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
-Returns
-[GetBlockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#getblockresponsetypedef).
+Returns [GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef).
 
 ### get_digest
 
@@ -241,8 +239,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetDigestResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#getdigestresponsetypedef).
+Returns [GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef).
 
 ### get_revision
 
@@ -254,15 +251,13 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `BlockAddress`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
   *(required)*
 - `DocumentId`: `str` *(required)*
-- `DigestTipAddress`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 Returns
-[GetRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#getrevisionresponsetypedef).
+[GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
 
 ### list_journal_kinesis_streams_for_ledger
 
@@ -279,7 +274,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJournalKinesisStreamsForLedgerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#listjournalkinesisstreamsforledgerresponsetypedef).
+[ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef).
 
 ### list_journal_s3_exports
 
@@ -294,7 +289,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJournalS3ExportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#listjournals3exportsresponsetypedef).
+[ListJournalS3ExportsResponseTypeDef](./type_defs.md#listjournals3exportsresponsetypedef).
 
 ### list_journal_s3_exports_for_ledger
 
@@ -311,7 +306,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJournalS3ExportsForLedgerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#listjournals3exportsforledgerresponsetypedef).
+[ListJournalS3ExportsForLedgerResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponsetypedef).
 
 ### list_ledgers
 
@@ -326,7 +321,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLedgersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#listledgersresponsetypedef).
+[ListLedgersResponseTypeDef](./type_defs.md#listledgersresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -340,7 +335,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### stream_journal_to_kinesis
 
@@ -355,14 +350,14 @@ Arguments:
 - `RoleArn`: `str` *(required)*
 - `InclusiveStartTime`: `datetime` *(required)*
 - `KinesisConfiguration`:
-  [KinesisConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#kinesisconfigurationtypedef)
+  [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
   *(required)*
 - `StreamName`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ExclusiveEndTime`: `datetime`
 
 Returns
-[StreamJournalToKinesisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#streamjournaltokinesisresponsetypedef).
+[StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef).
 
 ### tag_resource
 
@@ -405,4 +400,4 @@ Arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[UpdateLedgerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#updateledgerresponsetypedef).
+[UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).

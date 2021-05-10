@@ -1,6 +1,6 @@
 # Paginators for boto3 RoboMaker module
 
-> [Index](../README.md) > [RoboMaker](./README.md) > Paginators
+> [Index](..) > [RoboMaker](.) > Paginators
 
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
@@ -39,13 +39,12 @@ Boto3 documentation:
 
 Arguments for `ListDeploymentJobsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentJobsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listdeploymentjobsresponsetypedef)\].
+`Iterator`\[[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef)\].
 
 ## ListFleetsPaginator
 
@@ -65,13 +64,12 @@ Boto3 documentation:
 
 Arguments for `ListFleetsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFleetsPaginator.paginate` returns
-`Iterator`\[[ListFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listfleetsresponsetypedef)\].
+`Iterator`\[[ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef)\].
 
 ## ListRobotApplicationsPaginator
 
@@ -93,13 +91,12 @@ Boto3 documentation:
 Arguments for `ListRobotApplicationsPaginator.paginate` method:
 
 - `versionQualifier`: `str`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRobotApplicationsPaginator.paginate` returns
-`Iterator`\[[ListRobotApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listrobotapplicationsresponsetypedef)\].
+`Iterator`\[[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef)\].
 
 ## ListRobotsPaginator
 
@@ -119,13 +116,12 @@ Boto3 documentation:
 
 Arguments for `ListRobotsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRobotsPaginator.paginate` returns
-`Iterator`\[[ListRobotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listrobotsresponsetypedef)\].
+`Iterator`\[[ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef)\].
 
 ## ListSimulationApplicationsPaginator
 
@@ -147,13 +143,12 @@ Boto3 documentation:
 Arguments for `ListSimulationApplicationsPaginator.paginate` method:
 
 - `versionQualifier`: `str`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSimulationApplicationsPaginator.paginate` returns
-`Iterator`\[[ListSimulationApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationapplicationsresponsetypedef)\].
+`Iterator`\[[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef)\].
 
 ## ListSimulationJobBatchesPaginator
 
@@ -174,13 +169,12 @@ Boto3 documentation:
 
 Arguments for `ListSimulationJobBatchesPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSimulationJobBatchesPaginator.paginate` returns
-`Iterator`\[[ListSimulationJobBatchesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationjobbatchesresponsetypedef)\].
+`Iterator`\[[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef)\].
 
 ## ListSimulationJobsPaginator
 
@@ -201,13 +195,12 @@ Boto3 documentation:
 
 Arguments for `ListSimulationJobsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSimulationJobsPaginator.paginate` returns
-`Iterator`\[[ListSimulationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationjobsresponsetypedef)\].
+`Iterator`\[[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef)\].
 
 ## ListWorldExportJobsPaginator
 
@@ -228,13 +221,12 @@ Boto3 documentation:
 
 Arguments for `ListWorldExportJobsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldExportJobsPaginator.paginate` returns
-`Iterator`\[[ListWorldExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldexportjobsresponsetypedef)\].
+`Iterator`\[[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef)\].
 
 ## ListWorldGenerationJobsPaginator
 
@@ -255,13 +247,12 @@ Boto3 documentation:
 
 Arguments for `ListWorldGenerationJobsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldGenerationJobsPaginator.paginate` returns
-`Iterator`\[[ListWorldGenerationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldgenerationjobsresponsetypedef)\].
+`Iterator`\[[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef)\].
 
 ## ListWorldTemplatesPaginator
 
@@ -283,10 +274,10 @@ Boto3 documentation:
 Arguments for `ListWorldTemplatesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldTemplatesPaginator.paginate` returns
-`Iterator`\[[ListWorldTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldtemplatesresponsetypedef)\].
+`Iterator`\[[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef)\].
 
 ## ListWorldsPaginator
 
@@ -306,10 +297,9 @@ Boto3 documentation:
 
 Arguments for `ListWorldsPaginator.paginate` method:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorldsPaginator.paginate` returns
-`Iterator`\[[ListWorldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldsresponsetypedef)\].
+`Iterator`\[[ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef)\].

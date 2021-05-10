@@ -1,6 +1,6 @@
 # Paginators for boto3 AppStream module
 
-> [Index](../README.md) > [AppStream](./README.md) > Paginators
+> [Index](..) > [AppStream](.) > Paginators
 
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
@@ -40,10 +40,10 @@ Arguments for `DescribeDirectoryConfigsPaginator.paginate` method:
 
 - `DirectoryNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDirectoryConfigsPaginator.paginate` returns
-`Iterator`\[[DescribeDirectoryConfigsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describedirectoryconfigsresulttypedef)\].
+`Iterator`\[[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef)\].
 
 ## DescribeFleetsPaginator
 
@@ -66,10 +66,10 @@ Arguments for `DescribeFleetsPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describefleetsresulttypedef)\].
+`Iterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
 ## DescribeImageBuildersPaginator
 
@@ -92,10 +92,10 @@ Arguments for `DescribeImageBuildersPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImageBuildersPaginator.paginate` returns
-`Iterator`\[[DescribeImageBuildersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describeimagebuildersresulttypedef)\].
+`Iterator`\[[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef)\].
 
 ## DescribeImagesPaginator
 
@@ -118,13 +118,12 @@ Arguments for `DescribeImagesPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `Arns`: `List`\[`str`\]
-- `Type`:
-  [VisibilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#visibilitytype)
+- `Type`: [VisibilityType](./literals.md#visibilitytype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImagesPaginator.paginate` returns
-`Iterator`\[[DescribeImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describeimagesresulttypedef)\].
+`Iterator`\[[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)\].
 
 ## DescribeSessionsPaginator
 
@@ -148,13 +147,12 @@ Arguments for `DescribeSessionsPaginator.paginate` method:
 - `StackName`: `str` *(required)*
 - `FleetName`: `str` *(required)*
 - `UserId`: `str`
-- `AuthenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#authenticationtype)
+- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeSessionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describesessionsresulttypedef)\].
+`Iterator`\[[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef)\].
 
 ## DescribeStacksPaginator
 
@@ -177,10 +175,10 @@ Arguments for `DescribeStacksPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStacksPaginator.paginate` returns
-`Iterator`\[[DescribeStacksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describestacksresulttypedef)\].
+`Iterator`\[[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef)\].
 
 ## DescribeUserStackAssociationsPaginator
 
@@ -203,13 +201,12 @@ Arguments for `DescribeUserStackAssociationsPaginator.paginate` method:
 
 - `StackName`: `str`
 - `UserName`: `str`
-- `AuthenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#authenticationtype)
+- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUserStackAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeUserStackAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describeuserstackassociationsresulttypedef)\].
+`Iterator`\[[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -230,14 +227,13 @@ Boto3 documentation:
 
 Arguments for `DescribeUsersPaginator.paginate` method:
 
-- `AuthenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#authenticationtype)
+- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#describeusersresulttypedef)\].
+`Iterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
 
 ## ListAssociatedFleetsPaginator
 
@@ -260,10 +256,10 @@ Arguments for `ListAssociatedFleetsPaginator.paginate` method:
 
 - `StackName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedFleetsPaginator.paginate` returns
-`Iterator`\[[ListAssociatedFleetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#listassociatedfleetsresulttypedef)\].
+`Iterator`\[[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef)\].
 
 ## ListAssociatedStacksPaginator
 
@@ -286,7 +282,7 @@ Arguments for `ListAssociatedStacksPaginator.paginate` method:
 
 - `FleetName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedStacksPaginator.paginate` returns
-`Iterator`\[[ListAssociatedStacksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#listassociatedstacksresulttypedef)\].
+`Iterator`\[[ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef)\].

@@ -1,6 +1,6 @@
 # Type annotations for boto3 DynamoDB module
 
-> [Index](../README.md) > DynamoDB
+> [Index](..) > DynamoDB
 
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
@@ -129,7 +129,7 @@ DynamoDBClient [exceptions](./client.md#exceptions)
 ## DynamoDBServiceResource
 
 Type annotations for `boto3.resource("dynamodb")` as
-[DynamoDBServiceResource](./service_resource.md)
+[DynamoDBServiceResource](./service_resource.md#dynamodbserviceresource)
 
 Can be used directly:
 
@@ -147,7 +147,7 @@ Can be used directly:
 from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection, ...
 ```
 
-- [ServiceResourceTablesCollection](./service_resource.md#dynamodbserviceresource.tables)
+- [ServiceResourceTablesCollection](./service_resource.md#dynamodbserviceresourcetables)
 
 ### Resources
 
@@ -363,7 +363,7 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef, ...
 - [ReplicaTypeDef](./type_defs.md#replicatypedef)
 - [ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)
 - [ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RestoreSummaryTypeDef](./type_defs.md#restoresummarytypedef)
 - [RestoreTableFromBackupOutputTypeDef](./type_defs.md#restoretablefrombackupoutputtypedef)
 - [RestoreTableToPointInTimeOutputTypeDef](./type_defs.md#restoretabletopointintimeoutputtypedef)

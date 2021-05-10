@@ -1,6 +1,6 @@
 # MediaConnectClient for boto3 MediaConnect module
 
-> [Index](../README.md) > [MediaConnect](./README.md) > MediaConnectClient
+> [Index](..) > [MediaConnect](.) > MediaConnectClient
 
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
@@ -97,11 +97,11 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 - `Outputs`:
-  `List`\[[AddOutputRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addoutputrequesttypedef)\]
+  `List`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
   *(required)*
 
 Returns
-[AddFlowOutputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addflowoutputsresponsetypedef).
+[AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef).
 
 ### add_flow_sources
 
@@ -114,11 +114,11 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 - `Sources`:
-  `List`\[[SetSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#setsourcerequesttypedef)\]
+  `List`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
   *(required)*
 
 Returns
-[AddFlowSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addflowsourcesresponsetypedef).
+[AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef).
 
 ### add_flow_vpc_interfaces
 
@@ -132,11 +132,11 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 - `VpcInterfaces`:
-  `List`\[[VpcInterfaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#vpcinterfacerequesttypedef)\]
+  `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
   *(required)*
 
 Returns
-[AddFlowVpcInterfacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addflowvpcinterfacesresponsetypedef).
+[AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef).
 
 ### can_paginate
 
@@ -163,20 +163,18 @@ Arguments:
 - `Name`: `str` *(required)*
 - `AvailabilityZone`: `str`
 - `Entitlements`:
-  `List`\[[GrantEntitlementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#grantentitlementrequesttypedef)\]
+  `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
 - `Outputs`:
-  `List`\[[AddOutputRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#addoutputrequesttypedef)\]
-- `Source`:
-  [SetSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#setsourcerequesttypedef)
+  `List`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
+- `Source`: [SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)
 - `SourceFailoverConfig`:
-  [FailoverConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#failoverconfigtypedef)
+  [FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef)
 - `Sources`:
-  `List`\[[SetSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#setsourcerequesttypedef)\]
+  `List`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
 - `VpcInterfaces`:
-  `List`\[[VpcInterfaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#vpcinterfacerequesttypedef)\]
+  `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
-Returns
-[CreateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#createflowresponsetypedef).
+Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
 ### delete_flow
 
@@ -189,8 +187,7 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns
-[DeleteFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#deleteflowresponsetypedef).
+Returns [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef).
 
 ### describe_flow
 
@@ -204,7 +201,7 @@ Arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns
-[DescribeFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#describeflowresponsetypedef).
+[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
 
 ### describe_offering
 
@@ -218,7 +215,7 @@ Arguments:
 - `OfferingArn`: `str` *(required)*
 
 Returns
-[DescribeOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#describeofferingresponsetypedef).
+[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
 
 ### describe_reservation
 
@@ -233,7 +230,7 @@ Arguments:
 - `ReservationArn`: `str` *(required)*
 
 Returns
-[DescribeReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#describereservationresponsetypedef).
+[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -263,12 +260,12 @@ Boto3 documentation:
 Arguments:
 
 - `Entitlements`:
-  `List`\[[GrantEntitlementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#grantentitlementrequesttypedef)\]
+  `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
   *(required)*
 - `FlowArn`: `str` *(required)*
 
 Returns
-[GrantFlowEntitlementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#grantflowentitlementsresponsetypedef).
+[GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef).
 
 ### list_entitlements
 
@@ -283,7 +280,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEntitlementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listentitlementsresponsetypedef).
+[ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef).
 
 ### list_flows
 
@@ -297,8 +294,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListFlowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listflowsresponsetypedef).
+Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 
 ### list_offerings
 
@@ -313,7 +309,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listofferingsresponsetypedef).
+[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
 ### list_reservations
 
@@ -328,7 +324,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListReservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listreservationsresponsetypedef).
+[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -343,7 +339,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### purchase_offering
 
@@ -359,7 +355,7 @@ Arguments:
 - `Start`: `str` *(required)*
 
 Returns
-[PurchaseOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#purchaseofferingresponsetypedef).
+[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
 
 ### remove_flow_output
 
@@ -374,7 +370,7 @@ Arguments:
 - `OutputArn`: `str` *(required)*
 
 Returns
-[RemoveFlowOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#removeflowoutputresponsetypedef).
+[RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef).
 
 ### remove_flow_source
 
@@ -389,7 +385,7 @@ Arguments:
 - `SourceArn`: `str` *(required)*
 
 Returns
-[RemoveFlowSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#removeflowsourceresponsetypedef).
+[RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef).
 
 ### remove_flow_vpc_interface
 
@@ -405,7 +401,7 @@ Arguments:
 - `VpcInterfaceName`: `str` *(required)*
 
 Returns
-[RemoveFlowVpcInterfaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#removeflowvpcinterfaceresponsetypedef).
+[RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef).
 
 ### revoke_flow_entitlement
 
@@ -421,7 +417,7 @@ Arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns
-[RevokeFlowEntitlementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#revokeflowentitlementresponsetypedef).
+[RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef).
 
 ### start_flow
 
@@ -434,8 +430,7 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns
-[StartFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#startflowresponsetypedef).
+Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
 
 ### stop_flow
 
@@ -448,8 +443,7 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns
-[StopFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#stopflowresponsetypedef).
+Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 
 ### tag_resource
 
@@ -486,10 +480,9 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 - `SourceFailoverConfig`:
-  [UpdateFailoverConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updatefailoverconfigtypedef)
+  [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
 
-Returns
-[UpdateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowresponsetypedef).
+Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
 
 ### update_flow_entitlement
 
@@ -504,14 +497,12 @@ Arguments:
 - `EntitlementArn`: `str` *(required)*
 - `FlowArn`: `str` *(required)*
 - `Description`: `str`
-- `Encryption`:
-  [UpdateEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateencryptiontypedef)
-- `EntitlementStatus`:
-  [EntitlementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/literals.html#entitlementstatus)
+- `Encryption`: [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
+- `EntitlementStatus`: [EntitlementStatus](./literals.md#entitlementstatus)
 - `Subscribers`: `List`\[`str`\]
 
 Returns
-[UpdateFlowEntitlementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowentitlementresponsetypedef).
+[UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef).
 
 ### update_flow_output
 
@@ -527,21 +518,19 @@ Arguments:
 - `CidrAllowList`: `List`\[`str`\]
 - `Description`: `str`
 - `Destination`: `str`
-- `Encryption`:
-  [UpdateEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateencryptiontypedef)
+- `Encryption`: [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - `MaxLatency`: `int`
 - `MinLatency`: `int`
 - `Port`: `int`
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/literals.html#protocoltype)
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `RemoteId`: `str`
 - `SmoothingLatency`: `int`
 - `StreamId`: `str`
 - `VpcInterfaceAttachment`:
-  [VpcInterfaceAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#vpcinterfaceattachmenttypedef)
+  [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
 
 Returns
-[UpdateFlowOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowoutputresponsetypedef).
+[UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef).
 
 ### update_flow_source
 
@@ -554,22 +543,20 @@ Arguments:
 
 - `FlowArn`: `str` *(required)*
 - `SourceArn`: `str` *(required)*
-- `Decryption`:
-  [UpdateEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateencryptiontypedef)
+- `Decryption`: [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - `Description`: `str`
 - `EntitlementArn`: `str`
 - `IngestPort`: `int`
 - `MaxBitrate`: `int`
 - `MaxLatency`: `int`
 - `MinLatency`: `int`
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/literals.html#protocoltype)
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `StreamId`: `str`
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
 
 Returns
-[UpdateFlowSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#updateflowsourceresponsetypedef).
+[UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef).
 
 ### get_paginator
 

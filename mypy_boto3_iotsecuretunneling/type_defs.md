@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IoTSecureTunneling module
 
-> [Index](../README.md) > [IoTSecureTunneling](./README.md) > Structures
+> [Index](..) > [IoTSecureTunneling](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
@@ -27,8 +27,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import ConnectionStateTypeDef
 
 Optional fields:
 
-- `status`:
-  [ConnectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/literals.html#connectionstatus)
+- `status`: [ConnectionStatus](./literals.md#connectionstatus)
 - `lastUpdatedAt`: `datetime`
 
 ## DescribeTunnelResponseTypeDef
@@ -39,8 +38,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelResponseTypeDe
 
 Optional fields:
 
-- `tunnel`:
-  [TunnelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tunneltypedef)
+- `tunnel`: [TunnelTypeDef](./type_defs.md#tunneltypedef)
 
 ## DestinationConfigTypeDef
 
@@ -64,8 +62,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceResponseT
 
 Optional fields:
 
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTunnelsResponseTypeDef
 
@@ -76,7 +73,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import ListTunnelsResponseTypeDef
 Optional fields:
 
 - `tunnelSummaries`:
-  `List`\[[TunnelSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tunnelsummarytypedef)\]
+  `List`\[[TunnelSummaryTypeDef](./type_defs.md#tunnelsummarytypedef)\]
 - `nextToken`: `str`
 
 ## OpenTunnelResponseTypeDef
@@ -123,8 +120,7 @@ Optional fields:
 
 - `tunnelId`: `str`
 - `tunnelArn`: `str`
-- `status`:
-  [TunnelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/literals.html#tunnelstatus)
+- `status`: [TunnelStatus](./literals.md#tunnelstatus)
 - `description`: `str`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
@@ -139,18 +135,15 @@ Optional fields:
 
 - `tunnelId`: `str`
 - `tunnelArn`: `str`
-- `status`:
-  [TunnelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/literals.html#tunnelstatus)
+- `status`: [TunnelStatus](./literals.md#tunnelstatus)
 - `sourceConnectionState`:
-  [ConnectionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#connectionstatetypedef)
+  [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
 - `destinationConnectionState`:
-  [ConnectionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#connectionstatetypedef)
+  [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
 - `description`: `str`
 - `destinationConfig`:
-  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#destinationconfigtypedef)
-- `timeoutConfig`:
-  [TimeoutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#timeoutconfigtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tagtypedef)\]
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`

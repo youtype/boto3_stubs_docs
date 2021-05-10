@@ -1,6 +1,6 @@
 # Paginators for boto3 KinesisVideoArchivedMedia module
 
-> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Paginators
+> [Index](..) > [KinesisVideoArchivedMedia](.) > Paginators
 
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
@@ -32,9 +32,9 @@ Arguments for `ListFragmentsPaginator.paginate` method:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 - `FragmentSelector`:
-  [FragmentSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#fragmentselectortypedef)
+  [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFragmentsPaginator.paginate` returns
-`Iterator`\[[ListFragmentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#listfragmentsoutputtypedef)\].
+`Iterator`\[[ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)\].

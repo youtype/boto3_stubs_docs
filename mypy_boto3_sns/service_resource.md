@@ -1,6 +1,6 @@
 # SNSServiceResource for boto3 SNS module
 
-> [Index](../README.md) > [SNS](./README.md) > SNSServiceResource
+> [Index](..) > [SNS](.) > SNSServiceResource
 
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
@@ -201,8 +201,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Attributes`: `Dict`\[`str`, `str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Topic](#topic).
 
@@ -379,12 +378,11 @@ Arguments:
 - `Subject`: `str`
 - `MessageStructure`: `str`
 - `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#messageattributevaluetypedef)\]
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#publishresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 #### PlatformEndpoint.reload method
 
@@ -580,12 +578,11 @@ Arguments:
 - `Subject`: `str`
 - `MessageStructure`: `str`
 - `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#messageattributevaluetypedef)\]
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#publishresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 #### Topic.reload method
 

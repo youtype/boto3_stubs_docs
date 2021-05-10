@@ -1,6 +1,6 @@
 # HealthClient for boto3 Health module
 
-> [Index](../README.md) > [Health](./README.md) > HealthClient
+> [Index](..) > [Health](.) > HealthClient
 
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
@@ -93,7 +93,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedAccountsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedaccountsfororganizationresponsetypedef).
+[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef).
 
 ### describe_affected_entities
 
@@ -105,15 +105,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `filter`:
-  [EntityFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#entityfiltertypedef)
+- `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
   *(required)*
 - `locale`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesresponsetypedef).
+[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef).
 
 ### describe_affected_entities_for_organization
 
@@ -126,14 +125,14 @@ Boto3 documentation:
 Arguments:
 
 - `organizationEntityFilters`:
-  `List`\[[EventAccountFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaccountfiltertypedef)\]
+  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
   *(required)*
 - `locale`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedEntitiesForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesfororganizationresponsetypedef).
+[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef).
 
 ### describe_entity_aggregates
 
@@ -148,7 +147,7 @@ Arguments:
 - `eventArns`: `List`\[`str`\]
 
 Returns
-[DescribeEntityAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeentityaggregatesresponsetypedef).
+[DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
 
 ### describe_event_aggregates
 
@@ -159,14 +158,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `aggregateField`: `Literal['eventTypeCategory']` *(required)*
-- `filter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `aggregateField`: `Literal['eventTypeCategory']` (see
+  [eventAggregateField](./literals.md#eventaggregatefield)) *(required)*
+- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeEventAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventaggregatesresponsetypedef).
+[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef).
 
 ### describe_event_details
 
@@ -181,7 +180,7 @@ Arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventdetailsresponsetypedef).
+[DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef).
 
 ### describe_event_details_for_organization
 
@@ -194,12 +193,12 @@ Boto3 documentation:
 Arguments:
 
 - `organizationEventDetailFilters`:
-  `List`\[[EventAccountFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaccountfiltertypedef)\]
+  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
   *(required)*
 - `locale`: `str`
 
 Returns
-[DescribeEventDetailsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventdetailsfororganizationresponsetypedef).
+[DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef).
 
 ### describe_event_types
 
@@ -210,14 +209,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `filter`:
-  [EventTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypefiltertypedef)
+- `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
 - `locale`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeEventTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventtypesresponsetypedef).
+[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef).
 
 ### describe_events
 
@@ -228,14 +226,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `filter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `locale`: `str`
 
 Returns
-[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsresponsetypedef).
+[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
 ### describe_events_for_organization
 
@@ -248,13 +245,13 @@ Boto3 documentation:
 Arguments:
 
 - `filter`:
-  [OrganizationEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventfiltertypedef)
+  [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `locale`: `str`
 
 Returns
-[DescribeEventsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsfororganizationresponsetypedef).
+[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef).
 
 ### describe_health_service_status_for_organization
 
@@ -266,7 +263,7 @@ Boto3 documentation:
 [Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
 
 Returns
-[DescribeHealthServiceStatusForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describehealthservicestatusfororganizationresponsetypedef).
+[DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
 
 ### disable_health_service_access_for_organization
 

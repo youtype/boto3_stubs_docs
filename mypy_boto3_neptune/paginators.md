@@ -1,6 +1,6 @@
 # Paginators for boto3 Neptune module
 
-> [Index](../README.md) > [Neptune](./README.md) > Paginators
+> [Index](..) > [Neptune](.) > Paginators
 
 Auto-generated documentation for
 [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
@@ -45,13 +45,12 @@ Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterEndpointsPaginator.paginate` returns
-`Iterator`\[[DBClusterEndpointMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbclusterendpointmessagetypedef)\].
+`Iterator`\[[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef)\].
 
 ## DescribeDBClusterParameterGroupsPaginator
 
@@ -73,13 +72,12 @@ Boto3 documentation:
 Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
 
 - `DBClusterParameterGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterParameterGroupsPaginator.paginate` returns
-`Iterator`\[[DBClusterParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbclusterparametergroupsmessagetypedef)\].
+`Iterator`\[[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef)\].
 
 ## DescribeDBClusterParametersPaginator
 
@@ -102,13 +100,12 @@ Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `Source`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterParametersPaginator.paginate` returns
-`Iterator`\[[DBClusterParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbclusterparametergroupdetailstypedef)\].
+`Iterator`\[[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)\].
 
 ## DescribeDBClusterSnapshotsPaginator
 
@@ -132,15 +129,14 @@ Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `IncludeShared`: `bool`
 - `IncludePublic`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterSnapshotsPaginator.paginate` returns
-`Iterator`\[[DBClusterSnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbclustersnapshotmessagetypedef)\].
+`Iterator`\[[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)\].
 
 ## DescribeDBClustersPaginator
 
@@ -162,13 +158,12 @@ Boto3 documentation:
 Arguments for `DescribeDBClustersPaginator.paginate` method:
 
 - `DBClusterIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClustersPaginator.paginate` returns
-`Iterator`\[[DBClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbclustermessagetypedef)\].
+`Iterator`\[[DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)\].
 
 ## DescribeDBEngineVersionsPaginator
 
@@ -192,16 +187,15 @@ Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DefaultOnly`: `bool`
 - `ListSupportedCharacterSets`: `bool`
 - `ListSupportedTimezones`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBEngineVersionsPaginator.paginate` returns
-`Iterator`\[[DBEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbengineversionmessagetypedef)\].
+`Iterator`\[[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)\].
 
 ## DescribeDBInstancesPaginator
 
@@ -223,13 +217,12 @@ Boto3 documentation:
 Arguments for `DescribeDBInstancesPaginator.paginate` method:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBInstancesPaginator.paginate` returns
-`Iterator`\[[DBInstanceMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbinstancemessagetypedef)\].
+`Iterator`\[[DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef)\].
 
 ## DescribeDBParameterGroupsPaginator
 
@@ -251,13 +244,12 @@ Boto3 documentation:
 Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
 
 - `DBParameterGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBParameterGroupsPaginator.paginate` returns
-`Iterator`\[[DBParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbparametergroupsmessagetypedef)\].
+`Iterator`\[[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef)\].
 
 ## DescribeDBParametersPaginator
 
@@ -280,13 +272,12 @@ Arguments for `DescribeDBParametersPaginator.paginate` method:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `Source`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBParametersPaginator.paginate` returns
-`Iterator`\[[DBParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbparametergroupdetailstypedef)\].
+`Iterator`\[[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef)\].
 
 ## DescribeDBSubnetGroupsPaginator
 
@@ -308,13 +299,12 @@ Boto3 documentation:
 Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
 
 - `DBSubnetGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[DBSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#dbsubnetgroupmessagetypedef)\].
+`Iterator`\[[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef)\].
 
 ## DescribeEngineDefaultParametersPaginator
 
@@ -336,13 +326,12 @@ Boto3 documentation:
 Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 
 - `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEngineDefaultParametersPaginator.paginate` returns
-`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#describeenginedefaultparametersresulttypedef)\].
+`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
 
 ## DescribeEventSubscriptionsPaginator
 
@@ -364,13 +353,12 @@ Boto3 documentation:
 Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 
 - `SubscriptionName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[EventSubscriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#eventsubscriptionsmessagetypedef)\].
+`Iterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -392,19 +380,17 @@ Boto3 documentation:
 Arguments for `DescribeEventsPaginator.paginate` method:
 
 - `SourceIdentifier`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
 - `EventCategories`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#eventsmessagetypedef)\].
+`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
 ## DescribeOrderableDBInstanceOptionsPaginator
 
@@ -430,13 +416,12 @@ Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
 - `DBInstanceClass`: `str`
 - `LicenseModel`: `str`
 - `Vpc`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
-`Iterator`\[[OrderableDBInstanceOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#orderabledbinstanceoptionsmessagetypedef)\].
+`Iterator`\[[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)\].
 
 ## DescribePendingMaintenanceActionsPaginator
 
@@ -458,10 +443,9 @@ Boto3 documentation:
 Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
 
 - `ResourceIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePendingMaintenanceActionsPaginator.paginate` returns
-`Iterator`\[[PendingMaintenanceActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_neptune/type_defs.html#pendingmaintenanceactionsmessagetypedef)\].
+`Iterator`\[[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef)\].

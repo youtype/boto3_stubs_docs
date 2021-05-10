@@ -1,6 +1,6 @@
 # Waiters for boto3 AppStream module
 
-> [Index](../README.md) > [AppStream](./README.md) > Waiters
+> [Index](..) > [AppStream](.) > Waiters
 
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
@@ -31,8 +31,7 @@ Arguments for `FleetStartedWaiter.wait` method:
 
 - `Names`: `List`\[`str`\]
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## FleetStoppedWaiter
 
@@ -54,5 +53,4 @@ Arguments for `FleetStoppedWaiter.wait` method:
 
 - `Names`: `List`\[`str`\]
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

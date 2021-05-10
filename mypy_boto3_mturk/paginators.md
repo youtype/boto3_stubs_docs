@@ -1,6 +1,6 @@
 # Paginators for boto3 MTurk module
 
-> [Index](../README.md) > [MTurk](./README.md) > Paginators
+> [Index](..) > [MTurk](.) > Paginators
 
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
@@ -39,12 +39,12 @@ Arguments for `ListAssignmentsForHITPaginator.paginate` method:
 
 - `HITId`: `str` *(required)*
 - `AssignmentStatuses`:
-  `List`\[[AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#assignmentstatus)\]
+  `List`\[[AssignmentStatus](./literals.md#assignmentstatus)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssignmentsForHITPaginator.paginate` returns
-`Iterator`\[[ListAssignmentsForHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listassignmentsforhitresponsetypedef)\].
+`Iterator`\[[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef)\].
 
 ## ListBonusPaymentsPaginator
 
@@ -68,10 +68,10 @@ Arguments for `ListBonusPaymentsPaginator.paginate` method:
 - `HITId`: `str`
 - `AssignmentId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBonusPaymentsPaginator.paginate` returns
-`Iterator`\[[ListBonusPaymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listbonuspaymentsresponsetypedef)\].
+`Iterator`\[[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef)\].
 
 ## ListHITsPaginator
 
@@ -92,10 +92,10 @@ Boto3 documentation:
 Arguments for `ListHITsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHITsPaginator.paginate` returns
-`Iterator`\[[ListHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsresponsetypedef)\].
+`Iterator`\[[ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef)\].
 
 ## ListHITsForQualificationTypePaginator
 
@@ -118,10 +118,10 @@ Arguments for `ListHITsForQualificationTypePaginator.paginate` method:
 
 - `QualificationTypeId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHITsForQualificationTypePaginator.paginate` returns
-`Iterator`\[[ListHITsForQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsforqualificationtyperesponsetypedef)\].
+`Iterator`\[[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef)\].
 
 ## ListQualificationRequestsPaginator
 
@@ -144,10 +144,10 @@ Arguments for `ListQualificationRequestsPaginator.paginate` method:
 
 - `QualificationTypeId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQualificationRequestsPaginator.paginate` returns
-`Iterator`\[[ListQualificationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationrequestsresponsetypedef)\].
+`Iterator`\[[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef)\].
 
 ## ListQualificationTypesPaginator
 
@@ -172,10 +172,10 @@ Arguments for `ListQualificationTypesPaginator.paginate` method:
 - `Query`: `str`
 - `MustBeOwnedByCaller`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQualificationTypesPaginator.paginate` returns
-`Iterator`\[[ListQualificationTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationtypesresponsetypedef)\].
+`Iterator`\[[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef)\].
 
 ## ListReviewableHITsPaginator
 
@@ -197,13 +197,12 @@ Boto3 documentation:
 Arguments for `ListReviewableHITsPaginator.paginate` method:
 
 - `HITTypeId`: `str`
-- `Status`:
-  [ReviewableHITStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#reviewablehitstatus)
+- `Status`: [ReviewableHITStatus](./literals.md#reviewablehitstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReviewableHITsPaginator.paginate` returns
-`Iterator`\[[ListReviewableHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listreviewablehitsresponsetypedef)\].
+`Iterator`\[[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef)\].
 
 ## ListWorkerBlocksPaginator
 
@@ -225,10 +224,10 @@ Boto3 documentation:
 Arguments for `ListWorkerBlocksPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkerBlocksPaginator.paginate` returns
-`Iterator`\[[ListWorkerBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerblocksresponsetypedef)\].
+`Iterator`\[[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef)\].
 
 ## ListWorkersWithQualificationTypePaginator
 
@@ -250,10 +249,9 @@ Boto3 documentation:
 Arguments for `ListWorkersWithQualificationTypePaginator.paginate` method:
 
 - `QualificationTypeId`: `str` *(required)*
-- `Status`:
-  [QualificationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationstatus)
+- `Status`: [QualificationStatus](./literals.md#qualificationstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkersWithQualificationTypePaginator.paginate` returns
-`Iterator`\[[ListWorkersWithQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerswithqualificationtyperesponsetypedef)\].
+`Iterator`\[[ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef)\].

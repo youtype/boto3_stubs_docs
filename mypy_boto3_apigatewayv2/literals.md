@@ -1,6 +1,6 @@
 # Literals for boto3 ApiGatewayV2 module
 
-> [Index](../README.md) > [ApiGatewayV2](./README.md) > Literals
+> [Index](..) > [ApiGatewayV2](.) > Literals
 
 Auto-generated documentation for
 [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)

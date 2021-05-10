@@ -1,6 +1,6 @@
 # Literals for boto3 DeviceFarm module
 
-> [Index](../README.md) > [DeviceFarm](./README.md) > Literals
+> [Index](..) > [DeviceFarm](.) > Literals
 
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)

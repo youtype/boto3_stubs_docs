@@ -1,6 +1,6 @@
 # Literals for boto3 CloudDirectory module
 
-> [Index](../README.md) > [CloudDirectory](./README.md) > Literals
+> [Index](..) > [CloudDirectory](.) > Literals
 
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)

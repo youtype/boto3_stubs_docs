@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 S3 module
 
-> [Index](../README.md) > [S3](./README.md) > Structures
+> [Index](..) > [S3](.) > Typed dictionaries
 
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
@@ -165,7 +165,7 @@ type annotations stubs module
   - [ReplicationTimeValueTypeDef](#replicationtimevaluetypedef)
   - [RequestPaymentConfigurationTypeDef](#requestpaymentconfigurationtypedef)
   - [RequestProgressTypeDef](#requestprogresstypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RestoreObjectOutputTypeDef](#restoreobjectoutputtypedef)
   - [RestoreRequestTypeDef](#restorerequesttypedef)
   - [RoutingRuleTypeDef](#routingruletypedef)
@@ -217,9 +217,10 @@ from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputTypeDef
 
 Required fields:
 
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AccelerateConfigurationTypeDef
 
@@ -229,8 +230,7 @@ from mypy_boto3_s3.type_defs import AccelerateConfigurationTypeDef
 
 Optional fields:
 
-- `Status`:
-  [BucketAccelerateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketacceleratestatus)
+- `Status`: [BucketAccelerateStatus](./literals.md#bucketacceleratestatus)
 
 ## AccessControlPolicyTypeDef
 
@@ -240,10 +240,8 @@ from mypy_boto3_s3.type_defs import AccessControlPolicyTypeDef
 
 Optional fields:
 
-- `Grants`:
-  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#granttypedef)\]
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
+- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
 ## AccessControlTranslationTypeDef
 
@@ -253,7 +251,8 @@ from mypy_boto3_s3.type_defs import AccessControlTranslationTypeDef
 
 Required fields:
 
-- `Owner`: `Literal['Destination']`
+- `Owner`: `Literal['Destination']` (see
+  [OwnerOverride](./literals.md#owneroverride))
 
 ## AnalyticsAndOperatorTypeDef
 
@@ -264,8 +263,7 @@ from mypy_boto3_s3.type_defs import AnalyticsAndOperatorTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AnalyticsConfigurationTypeDef
 
@@ -277,12 +275,11 @@ Required fields:
 
 - `Id`: `str`
 - `StorageClassAnalysis`:
-  [StorageClassAnalysisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#storageclassanalysistypedef)
+  [StorageClassAnalysisTypeDef](./type_defs.md#storageclassanalysistypedef)
 
 Optional fields:
 
-- `Filter`:
-  [AnalyticsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticsfiltertypedef)
+- `Filter`: [AnalyticsFilterTypeDef](./type_defs.md#analyticsfiltertypedef)
 
 ## AnalyticsExportDestinationTypeDef
 
@@ -293,7 +290,7 @@ from mypy_boto3_s3.type_defs import AnalyticsExportDestinationTypeDef
 Required fields:
 
 - `S3BucketDestination`:
-  [AnalyticsS3BucketDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticss3bucketdestinationtypedef)
+  [AnalyticsS3BucketDestinationTypeDef](./type_defs.md#analyticss3bucketdestinationtypedef)
 
 ## AnalyticsFilterTypeDef
 
@@ -304,10 +301,9 @@ from mypy_boto3_s3.type_defs import AnalyticsFilterTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tag`:
-  [TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)
+- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
-  [AnalyticsAndOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticsandoperatortypedef)
+  [AnalyticsAndOperatorTypeDef](./type_defs.md#analyticsandoperatortypedef)
 
 ## AnalyticsS3BucketDestinationTypeDef
 
@@ -317,7 +313,8 @@ from mypy_boto3_s3.type_defs import AnalyticsS3BucketDestinationTypeDef
 
 Required fields:
 
-- `Format`: `Literal['CSV']`
+- `Format`: `Literal['CSV']` (see
+  [AnalyticsS3ExportFileFormat](./literals.md#analyticss3exportfileformat))
 - `Bucket`: `str`
 
 Optional fields:
@@ -333,8 +330,7 @@ from mypy_boto3_s3.type_defs import BucketLifecycleConfigurationTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[LifecycleRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleruletypedef)\]
+- `Rules`: `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 
 ## BucketLoggingStatusTypeDef
 
@@ -344,8 +340,7 @@ from mypy_boto3_s3.type_defs import BucketLoggingStatusTypeDef
 
 Optional fields:
 
-- `LoggingEnabled`:
-  [LoggingEnabledTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#loggingenabledtypedef)
+- `LoggingEnabled`: [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 
 ## BucketTypeDef
 
@@ -366,8 +361,7 @@ from mypy_boto3_s3.type_defs import CORSConfigurationTypeDef
 
 Required fields:
 
-- `CORSRules`:
-  `List`\[[CORSRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#corsruletypedef)\]
+- `CORSRules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
 
 ## CORSRuleTypeDef
 
@@ -395,8 +389,7 @@ from mypy_boto3_s3.type_defs import CSVInputTypeDef
 
 Optional fields:
 
-- `FileHeaderInfo`:
-  [FileHeaderInfo](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#fileheaderinfo)
+- `FileHeaderInfo`: [FileHeaderInfo](./literals.md#fileheaderinfo)
 - `Comments`: `str`
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
@@ -412,14 +405,13 @@ from mypy_boto3_s3.type_defs import CSVOutputTypeDef
 
 Required fields:
 
-- `QuoteFields`:
-  [QuoteFields](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#quotefields)
+- `QuoteFields`: [QuoteFields](./literals.md#quotefields)
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CloudFunctionConfigurationTypeDef
 
@@ -430,10 +422,8 @@ from mypy_boto3_s3.type_defs import CloudFunctionConfigurationTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Event`:
-  [Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)
-- `Events`:
-  `List`\[[Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)\]
+- `Event`: [Event](./literals.md#event)
+- `Events`: `List`\[[Event](./literals.md#event)\]
 - `CloudFunction`: `str`
 - `InvocationRole`: `str`
 
@@ -461,13 +451,14 @@ Required fields:
 - `Expiration`: `str`
 - `ETag`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `VersionId`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CompletedMultipartUploadTypeDef
 
@@ -477,8 +468,7 @@ from mypy_boto3_s3.type_defs import CompletedMultipartUploadTypeDef
 
 Optional fields:
 
-- `Parts`:
-  `List`\[[CompletedPartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#completedparttypedef)\]
+- `Parts`: `List`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
 
 ## CompletedPartTypeDef
 
@@ -511,20 +501,21 @@ from mypy_boto3_s3.type_defs import CopyObjectOutputTypeDef
 Required fields:
 
 - `CopyObjectResult`:
-  [CopyObjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copyobjectresulttypedef)
+  [CopyObjectResultTypeDef](./type_defs.md#copyobjectresulttypedef)
 - `Expiration`: `str`
 - `CopySourceVersionId`: `str`
 - `VersionId`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CopyObjectResultTypeDef
 
@@ -572,7 +563,7 @@ from mypy_boto3_s3.type_defs import CreateBucketConfigurationTypeDef
 Optional fields:
 
 - `LocationConstraint`:
-  [BucketLocationConstraint](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketlocationconstraint)
+  [BucketLocationConstraint](./literals.md#bucketlocationconstraint)
 
 ## CreateBucketOutputTypeDef
 
@@ -584,7 +575,7 @@ Required fields:
 
 - `Location`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateMultipartUploadOutputTypeDef
 
@@ -600,15 +591,16 @@ Required fields:
 - `Key`: `str`
 - `UploadId`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DefaultRetentionTypeDef
 
@@ -618,8 +610,7 @@ from mypy_boto3_s3.type_defs import DefaultRetentionTypeDef
 
 Optional fields:
 
-- `Mode`:
-  [ObjectLockRetentionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockretentionmode)
+- `Mode`: [ObjectLockRetentionMode](./literals.md#objectlockretentionmode)
 - `Days`: `int`
 - `Years`: `int`
 
@@ -631,8 +622,7 @@ from mypy_boto3_s3.type_defs import DeleteMarkerEntryTypeDef
 
 Optional fields:
 
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `Key`: `str`
 - `VersionId`: `str`
 - `IsLatest`: `bool`
@@ -647,7 +637,7 @@ from mypy_boto3_s3.type_defs import DeleteMarkerReplicationTypeDef
 Optional fields:
 
 - `Status`:
-  [DeleteMarkerReplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#deletemarkerreplicationstatus)
+  [DeleteMarkerReplicationStatus](./literals.md#deletemarkerreplicationstatus)
 
 ## DeleteObjectOutputTypeDef
 
@@ -659,9 +649,10 @@ Required fields:
 
 - `DeleteMarker`: `bool`
 - `VersionId`: `str`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteObjectTaggingOutputTypeDef
 
@@ -673,7 +664,7 @@ Required fields:
 
 - `VersionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteObjectsOutputTypeDef
 
@@ -684,12 +675,12 @@ from mypy_boto3_s3.type_defs import DeleteObjectsOutputTypeDef
 Required fields:
 
 - `Deleted`:
-  `List`\[[DeletedObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deletedobjecttypedef)\]
-- `RequestCharged`: `Literal['requester']`
-- `Errors`:
-  `List`\[[ErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#errortypedef)\]
+  `List`\[[DeletedObjectTypeDef](./type_defs.md#deletedobjecttypedef)\]
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
+- `Errors`: `List`\[[ErrorTypeDef](./type_defs.md#errortypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteTypeDef
 
@@ -700,7 +691,7 @@ from mypy_boto3_s3.type_defs import DeleteTypeDef
 Required fields:
 
 - `Objects`:
-  `List`\[[ObjectIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectidentifiertypedef)\]
+  `List`\[[ObjectIdentifierTypeDef](./type_defs.md#objectidentifiertypedef)\]
 
 Optional fields:
 
@@ -732,16 +723,14 @@ Required fields:
 Optional fields:
 
 - `Account`: `str`
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `AccessControlTranslation`:
-  [AccessControlTranslationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#accesscontroltranslationtypedef)
+  [AccessControlTranslationTypeDef](./type_defs.md#accesscontroltranslationtypedef)
 - `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `ReplicationTime`:
-  [ReplicationTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationtimetypedef)
-- `Metrics`:
-  [MetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metricstypedef)
+  [ReplicationTimeTypeDef](./type_defs.md#replicationtimetypedef)
+- `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
 
 ## EncryptionConfigurationTypeDef
 
@@ -761,8 +750,7 @@ from mypy_boto3_s3.type_defs import EncryptionTypeDef
 
 Required fields:
 
-- `EncryptionType`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+- `EncryptionType`: [ServerSideEncryption](./literals.md#serversideencryption)
 
 Optional fields:
 
@@ -801,7 +789,7 @@ from mypy_boto3_s3.type_defs import ExistingObjectReplicationTypeDef
 Required fields:
 
 - `Status`:
-  [ExistingObjectReplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#existingobjectreplicationstatus)
+  [ExistingObjectReplicationStatus](./literals.md#existingobjectreplicationstatus)
 
 ## FilterRuleTypeDef
 
@@ -811,8 +799,7 @@ from mypy_boto3_s3.type_defs import FilterRuleTypeDef
 
 Optional fields:
 
-- `Name`:
-  [FilterRuleName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#filterrulename)
+- `Name`: [FilterRuleName](./literals.md#filterrulename)
 - `Value`: `str`
 
 ## GetBucketAccelerateConfigurationOutputTypeDef
@@ -823,10 +810,9 @@ from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputTypeDe
 
 Required fields:
 
-- `Status`:
-  [BucketAccelerateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketacceleratestatus)
+- `Status`: [BucketAccelerateStatus](./literals.md#bucketacceleratestatus)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketAclOutputTypeDef
 
@@ -836,12 +822,10 @@ from mypy_boto3_s3.type_defs import GetBucketAclOutputTypeDef
 
 Required fields:
 
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
-- `Grants`:
-  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#granttypedef)\]
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
+- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketAnalyticsConfigurationOutputTypeDef
 
@@ -852,9 +836,9 @@ from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputTypeDef
 Required fields:
 
 - `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticsconfigurationtypedef)
+  [AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketCorsOutputTypeDef
 
@@ -864,10 +848,9 @@ from mypy_boto3_s3.type_defs import GetBucketCorsOutputTypeDef
 
 Required fields:
 
-- `CORSRules`:
-  `List`\[[CORSRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#corsruletypedef)\]
+- `CORSRules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketEncryptionOutputTypeDef
 
@@ -878,9 +861,9 @@ from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputTypeDef
 Required fields:
 
 - `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#serversideencryptionconfigurationtypedef)
+  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketIntelligentTieringConfigurationOutputTypeDef
 
@@ -891,9 +874,9 @@ from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutp
 Required fields:
 
 - `IntelligentTieringConfiguration`:
-  [IntelligentTieringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#intelligenttieringconfigurationtypedef)
+  [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketInventoryConfigurationOutputTypeDef
 
@@ -904,9 +887,9 @@ from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputTypeDef
 Required fields:
 
 - `InventoryConfiguration`:
-  [InventoryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventoryconfigurationtypedef)
+  [InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketLifecycleConfigurationOutputTypeDef
 
@@ -916,10 +899,9 @@ from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[LifecycleRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleruletypedef)\]
+- `Rules`: `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketLifecycleOutputTypeDef
 
@@ -929,10 +911,9 @@ from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketLocationOutputTypeDef
 
@@ -943,9 +924,9 @@ from mypy_boto3_s3.type_defs import GetBucketLocationOutputTypeDef
 Required fields:
 
 - `LocationConstraint`:
-  [BucketLocationConstraint](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketlocationconstraint)
+  [BucketLocationConstraint](./literals.md#bucketlocationconstraint)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketLoggingOutputTypeDef
 
@@ -955,10 +936,9 @@ from mypy_boto3_s3.type_defs import GetBucketLoggingOutputTypeDef
 
 Required fields:
 
-- `LoggingEnabled`:
-  [LoggingEnabledTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#loggingenabledtypedef)
+- `LoggingEnabled`: [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketMetricsConfigurationOutputTypeDef
 
@@ -969,9 +949,9 @@ from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputTypeDef
 Required fields:
 
 - `MetricsConfiguration`:
-  [MetricsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metricsconfigurationtypedef)
+  [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketOwnershipControlsOutputTypeDef
 
@@ -982,9 +962,9 @@ from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputTypeDef
 Required fields:
 
 - `OwnershipControls`:
-  [OwnershipControlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownershipcontrolstypedef)
+  [OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketPolicyOutputTypeDef
 
@@ -996,7 +976,7 @@ Required fields:
 
 - `Policy`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketPolicyStatusOutputTypeDef
 
@@ -1006,10 +986,9 @@ from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputTypeDef
 
 Required fields:
 
-- `PolicyStatus`:
-  [PolicyStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#policystatustypedef)
+- `PolicyStatus`: [PolicyStatusTypeDef](./type_defs.md#policystatustypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketReplicationOutputTypeDef
 
@@ -1020,9 +999,9 @@ from mypy_boto3_s3.type_defs import GetBucketReplicationOutputTypeDef
 Required fields:
 
 - `ReplicationConfiguration`:
-  [ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationconfigurationtypedef)
+  [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketRequestPaymentOutputTypeDef
 
@@ -1032,10 +1011,9 @@ from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputTypeDef
 
 Required fields:
 
-- `Payer`:
-  [Payer](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#payer)
+- `Payer`: [Payer](./literals.md#payer)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketTaggingOutputTypeDef
 
@@ -1045,10 +1023,9 @@ from mypy_boto3_s3.type_defs import GetBucketTaggingOutputTypeDef
 
 Required fields:
 
-- `TagSet`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketVersioningOutputTypeDef
 
@@ -1058,12 +1035,10 @@ from mypy_boto3_s3.type_defs import GetBucketVersioningOutputTypeDef
 
 Required fields:
 
-- `Status`:
-  [BucketVersioningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketversioningstatus)
-- `MFADelete`:
-  [MFADeleteStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#mfadeletestatus)
+- `Status`: [BucketVersioningStatus](./literals.md#bucketversioningstatus)
+- `MFADelete`: [MFADeleteStatus](./literals.md#mfadeletestatus)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBucketWebsiteOutputTypeDef
 
@@ -1074,15 +1049,13 @@ from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputTypeDef
 Required fields:
 
 - `RedirectAllRequestsTo`:
-  [RedirectAllRequestsToTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#redirectallrequeststotypedef)
-- `IndexDocument`:
-  [IndexDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#indexdocumenttypedef)
-- `ErrorDocument`:
-  [ErrorDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#errordocumenttypedef)
+  [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
+- `IndexDocument`: [IndexDocumentTypeDef](./type_defs.md#indexdocumenttypedef)
+- `ErrorDocument`: [ErrorDocumentTypeDef](./type_defs.md#errordocumenttypedef)
 - `RoutingRules`:
-  `List`\[[RoutingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#routingruletypedef)\]
+  `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectAclOutputTypeDef
 
@@ -1092,13 +1065,12 @@ from mypy_boto3_s3.type_defs import GetObjectAclOutputTypeDef
 
 Required fields:
 
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
-- `Grants`:
-  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#granttypedef)\]
-- `RequestCharged`: `Literal['requester']`
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
+- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectLegalHoldOutputTypeDef
 
@@ -1109,9 +1081,9 @@ from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputTypeDef
 Required fields:
 
 - `LegalHold`:
-  [ObjectLockLegalHoldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlocklegalholdtypedef)
+  [ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectLockConfigurationOutputTypeDef
 
@@ -1122,9 +1094,9 @@ from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputTypeDef
 Required fields:
 
 - `ObjectLockConfiguration`:
-  [ObjectLockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlockconfigurationtypedef)
+  [ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectOutputTypeDef
 
@@ -1153,26 +1125,24 @@ Required fields:
 - `Expires`: `datetime`
 - `WebsiteRedirectLocation`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
-- `RequestCharged`: `Literal['requester']`
-- `ReplicationStatus`:
-  [ReplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#replicationstatus)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
+- `ReplicationStatus`: [ReplicationStatus](./literals.md#replicationstatus)
 - `PartsCount`: `int`
 - `TagCount`: `int`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectRetentionOutputTypeDef
 
@@ -1183,9 +1153,9 @@ from mypy_boto3_s3.type_defs import GetObjectRetentionOutputTypeDef
 Required fields:
 
 - `Retention`:
-  [ObjectLockRetentionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlockretentiontypedef)
+  [ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectTaggingOutputTypeDef
 
@@ -1196,10 +1166,9 @@ from mypy_boto3_s3.type_defs import GetObjectTaggingOutputTypeDef
 Required fields:
 
 - `VersionId`: `str`
-- `TagSet`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetObjectTorrentOutputTypeDef
 
@@ -1210,9 +1179,10 @@ from mypy_boto3_s3.type_defs import GetObjectTorrentOutputTypeDef
 Required fields:
 
 - `Body`: `StreamingBody`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetPublicAccessBlockOutputTypeDef
 
@@ -1223,9 +1193,9 @@ from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputTypeDef
 Required fields:
 
 - `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#publicaccessblockconfigurationtypedef)
+  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GlacierJobParametersTypeDef
 
@@ -1235,8 +1205,7 @@ from mypy_boto3_s3.type_defs import GlacierJobParametersTypeDef
 
 Required fields:
 
-- `Tier`:
-  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#tier)
+- `Tier`: [Tier](./literals.md#tier)
 
 ## GrantTypeDef
 
@@ -1246,10 +1215,8 @@ from mypy_boto3_s3.type_defs import GrantTypeDef
 
 Optional fields:
 
-- `Grantee`:
-  [GranteeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#granteetypedef)
-- `Permission`:
-  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#permission)
+- `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
+- `Permission`: [Permission](./literals.md#permission)
 
 ## GranteeTypeDef
 
@@ -1259,8 +1226,7 @@ from mypy_boto3_s3.type_defs import GranteeTypeDef
 
 Required fields:
 
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#typetype)
+- `Type`: [TypeType](./literals.md#typetype)
 
 Optional fields:
 
@@ -1281,8 +1247,7 @@ Required fields:
 - `AcceptRanges`: `str`
 - `Expiration`: `str`
 - `Restore`: `str`
-- `ArchiveStatus`:
-  [ArchiveStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#archivestatus)
+- `ArchiveStatus`: [ArchiveStatus](./literals.md#archivestatus)
 - `LastModified`: `datetime`
 - `ContentLength`: `int`
 - `ETag`: `str`
@@ -1296,25 +1261,23 @@ Required fields:
 - `Expires`: `datetime`
 - `WebsiteRedirectLocation`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
-- `RequestCharged`: `Literal['requester']`
-- `ReplicationStatus`:
-  [ReplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#replicationstatus)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
+- `ReplicationStatus`: [ReplicationStatus](./literals.md#replicationstatus)
 - `PartsCount`: `int`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IndexDocumentTypeDef
 
@@ -1345,12 +1308,9 @@ from mypy_boto3_s3.type_defs import InputSerializationTypeDef
 
 Optional fields:
 
-- `CSV`:
-  [CSVInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#csvinputtypedef)
-- `CompressionType`:
-  [CompressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#compressiontype)
-- `JSON`:
-  [JSONInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#jsoninputtypedef)
+- `CSV`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
+- `CompressionType`: [CompressionType](./literals.md#compressiontype)
+- `JSON`: [JSONInputTypeDef](./type_defs.md#jsoninputtypedef)
 - `Parquet`: `Dict`\[`str`, `Any`\]
 
 ## IntelligentTieringAndOperatorTypeDef
@@ -1362,8 +1322,7 @@ from mypy_boto3_s3.type_defs import IntelligentTieringAndOperatorTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## IntelligentTieringConfigurationTypeDef
 
@@ -1374,15 +1333,13 @@ from mypy_boto3_s3.type_defs import IntelligentTieringConfigurationTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Status`:
-  [IntelligentTieringStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#intelligenttieringstatus)
-- `Tierings`:
-  `List`\[[TieringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tieringtypedef)\]
+- `Status`: [IntelligentTieringStatus](./literals.md#intelligenttieringstatus)
+- `Tierings`: `List`\[[TieringTypeDef](./type_defs.md#tieringtypedef)\]
 
 Optional fields:
 
 - `Filter`:
-  [IntelligentTieringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#intelligenttieringfiltertypedef)
+  [IntelligentTieringFilterTypeDef](./type_defs.md#intelligenttieringfiltertypedef)
 
 ## IntelligentTieringFilterTypeDef
 
@@ -1393,10 +1350,9 @@ from mypy_boto3_s3.type_defs import IntelligentTieringFilterTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tag`:
-  [TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)
+- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
-  [IntelligentTieringAndOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#intelligenttieringandoperatortypedef)
+  [IntelligentTieringAndOperatorTypeDef](./type_defs.md#intelligenttieringandoperatortypedef)
 
 ## InventoryConfigurationTypeDef
 
@@ -1407,20 +1363,18 @@ from mypy_boto3_s3.type_defs import InventoryConfigurationTypeDef
 Required fields:
 
 - `Destination`:
-  [InventoryDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventorydestinationtypedef)
+  [InventoryDestinationTypeDef](./type_defs.md#inventorydestinationtypedef)
 - `IsEnabled`: `bool`
 - `Id`: `str`
 - `IncludedObjectVersions`:
-  [InventoryIncludedObjectVersions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#inventoryincludedobjectversions)
-- `Schedule`:
-  [InventoryScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventoryscheduletypedef)
+  [InventoryIncludedObjectVersions](./literals.md#inventoryincludedobjectversions)
+- `Schedule`: [InventoryScheduleTypeDef](./type_defs.md#inventoryscheduletypedef)
 
 Optional fields:
 
-- `Filter`:
-  [InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventoryfiltertypedef)
+- `Filter`: [InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)
 - `OptionalFields`:
-  `List`\[[InventoryOptionalField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#inventoryoptionalfield)\]
+  `List`\[[InventoryOptionalField](./literals.md#inventoryoptionalfield)\]
 
 ## InventoryDestinationTypeDef
 
@@ -1431,7 +1385,7 @@ from mypy_boto3_s3.type_defs import InventoryDestinationTypeDef
 Required fields:
 
 - `S3BucketDestination`:
-  [InventoryS3BucketDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventorys3bucketdestinationtypedef)
+  [InventoryS3BucketDestinationTypeDef](./type_defs.md#inventorys3bucketdestinationtypedef)
 
 ## InventoryEncryptionTypeDef
 
@@ -1442,8 +1396,7 @@ from mypy_boto3_s3.type_defs import InventoryEncryptionTypeDef
 Optional fields:
 
 - `SSES3`: `Dict`\[`str`, `Any`\]
-- `SSEKMS`:
-  [SSEKMSTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ssekmstypedef)
+- `SSEKMS`: [SSEKMSTypeDef](./type_defs.md#ssekmstypedef)
 
 ## InventoryFilterTypeDef
 
@@ -1464,15 +1417,14 @@ from mypy_boto3_s3.type_defs import InventoryS3BucketDestinationTypeDef
 Required fields:
 
 - `Bucket`: `str`
-- `Format`:
-  [InventoryFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#inventoryformat)
+- `Format`: [InventoryFormat](./literals.md#inventoryformat)
 
 Optional fields:
 
 - `AccountId`: `str`
 - `Prefix`: `str`
 - `Encryption`:
-  [InventoryEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventoryencryptiontypedef)
+  [InventoryEncryptionTypeDef](./type_defs.md#inventoryencryptiontypedef)
 
 ## InventoryScheduleTypeDef
 
@@ -1482,8 +1434,7 @@ from mypy_boto3_s3.type_defs import InventoryScheduleTypeDef
 
 Required fields:
 
-- `Frequency`:
-  [InventoryFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#inventoryfrequency)
+- `Frequency`: [InventoryFrequency](./literals.md#inventoryfrequency)
 
 ## JSONInputTypeDef
 
@@ -1493,8 +1444,7 @@ from mypy_boto3_s3.type_defs import JSONInputTypeDef
 
 Optional fields:
 
-- `Type`:
-  [JSONType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#jsontype)
+- `Type`: [JSONType](./literals.md#jsontype)
 
 ## JSONOutputTypeDef
 
@@ -1506,7 +1456,7 @@ Required fields:
 
 - `RecordDelimiter`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LambdaFunctionConfigurationTypeDef
 
@@ -1517,14 +1467,13 @@ from mypy_boto3_s3.type_defs import LambdaFunctionConfigurationTypeDef
 Required fields:
 
 - `LambdaFunctionArn`: `str`
-- `Events`:
-  `List`\[[Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)\]
+- `Events`: `List`\[[Event](./literals.md#event)\]
 
 Optional fields:
 
 - `Id`: `str`
 - `Filter`:
-  [NotificationConfigurationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationfiltertypedef)
+  [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
 
 ## LifecycleConfigurationTypeDef
 
@@ -1534,8 +1483,7 @@ from mypy_boto3_s3.type_defs import LifecycleConfigurationTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## LifecycleExpirationTypeDef
 
@@ -1558,8 +1506,7 @@ from mypy_boto3_s3.type_defs import LifecycleRuleAndOperatorTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LifecycleRuleFilterTypeDef
 
@@ -1570,10 +1517,9 @@ from mypy_boto3_s3.type_defs import LifecycleRuleFilterTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tag`:
-  [TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)
+- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
-  [LifecycleRuleAndOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleruleandoperatortypedef)
+  [LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef)
 
 ## LifecycleRuleTypeDef
 
@@ -1583,25 +1529,23 @@ from mypy_boto3_s3.type_defs import LifecycleRuleTypeDef
 
 Required fields:
 
-- `Status`:
-  [ExpirationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#expirationstatus)
+- `Status`: [ExpirationStatus](./literals.md#expirationstatus)
 
 Optional fields:
 
 - `Expiration`:
-  [LifecycleExpirationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleexpirationtypedef)
+  [LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef)
 - `ID`: `str`
 - `Prefix`: `str`
 - `Filter`:
-  [LifecycleRuleFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecyclerulefiltertypedef)
-- `Transitions`:
-  `List`\[[TransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#transitiontypedef)\]
+  [LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef)
+- `Transitions`: `List`\[[TransitionTypeDef](./type_defs.md#transitiontypedef)\]
 - `NoncurrentVersionTransitions`:
-  `List`\[[NoncurrentVersionTransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#noncurrentversiontransitiontypedef)\]
+  `List`\[[NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef)\]
 - `NoncurrentVersionExpiration`:
-  [NoncurrentVersionExpirationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#noncurrentversionexpirationtypedef)
+  [NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef)
 - `AbortIncompleteMultipartUpload`:
-  [AbortIncompleteMultipartUploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#abortincompletemultipartuploadtypedef)
+  [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
 ## ListBucketAnalyticsConfigurationsOutputTypeDef
 
@@ -1615,9 +1559,9 @@ Required fields:
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `AnalyticsConfigurationList`:
-  `List`\[[AnalyticsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticsconfigurationtypedef)\]
+  `List`\[[AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBucketIntelligentTieringConfigurationsOutputTypeDef
 
@@ -1631,9 +1575,9 @@ Required fields:
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `IntelligentTieringConfigurationList`:
-  `List`\[[IntelligentTieringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#intelligenttieringconfigurationtypedef)\]
+  `List`\[[IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBucketInventoryConfigurationsOutputTypeDef
 
@@ -1645,11 +1589,11 @@ Required fields:
 
 - `ContinuationToken`: `str`
 - `InventoryConfigurationList`:
-  `List`\[[InventoryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inventoryconfigurationtypedef)\]
+  `List`\[[InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)\]
 - `IsTruncated`: `bool`
 - `NextContinuationToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBucketMetricsConfigurationsOutputTypeDef
 
@@ -1663,9 +1607,9 @@ Required fields:
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `MetricsConfigurationList`:
-  `List`\[[MetricsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metricsconfigurationtypedef)\]
+  `List`\[[MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBucketsOutputTypeDef
 
@@ -1675,12 +1619,10 @@ from mypy_boto3_s3.type_defs import ListBucketsOutputTypeDef
 
 Required fields:
 
-- `Buckets`:
-  `List`\[[BucketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#buckettypedef)\]
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
+- `Buckets`: `List`\[[BucketTypeDef](./type_defs.md#buckettypedef)\]
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListMultipartUploadsOutputTypeDef
 
@@ -1700,12 +1642,13 @@ Required fields:
 - `MaxUploads`: `int`
 - `IsTruncated`: `bool`
 - `Uploads`:
-  `List`\[[MultipartUploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#multipartuploadtypedef)\]
+  `List`\[[MultipartUploadTypeDef](./type_defs.md#multipartuploadtypedef)\]
 - `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']`
+  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListObjectVersionsOutputTypeDef
 
@@ -1721,18 +1664,19 @@ Required fields:
 - `NextKeyMarker`: `str`
 - `NextVersionIdMarker`: `str`
 - `Versions`:
-  `List`\[[ObjectVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectversiontypedef)\]
+  `List`\[[ObjectVersionTypeDef](./type_defs.md#objectversiontypedef)\]
 - `DeleteMarkers`:
-  `List`\[[DeleteMarkerEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deletemarkerentrytypedef)\]
+  `List`\[[DeleteMarkerEntryTypeDef](./type_defs.md#deletemarkerentrytypedef)\]
 - `Name`: `str`
 - `Prefix`: `str`
 - `Delimiter`: `str`
 - `MaxKeys`: `int`
 - `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']`
+  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListObjectsOutputTypeDef
 
@@ -1745,17 +1689,17 @@ Required fields:
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 - `NextMarker`: `str`
-- `Contents`:
-  `List`\[[ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objecttypedef)\]
+- `Contents`: `List`\[[ObjectTypeDef](./type_defs.md#objecttypedef)\]
 - `Name`: `str`
 - `Prefix`: `str`
 - `Delimiter`: `str`
 - `MaxKeys`: `int`
 - `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']`
+  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListObjectsV2OutputTypeDef
 
@@ -1766,21 +1710,21 @@ from mypy_boto3_s3.type_defs import ListObjectsV2OutputTypeDef
 Required fields:
 
 - `IsTruncated`: `bool`
-- `Contents`:
-  `List`\[[ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objecttypedef)\]
+- `Contents`: `List`\[[ObjectTypeDef](./type_defs.md#objecttypedef)\]
 - `Name`: `str`
 - `Prefix`: `str`
 - `Delimiter`: `str`
 - `MaxKeys`: `int`
 - `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']`
+  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `KeyCount`: `int`
 - `ContinuationToken`: `str`
 - `NextContinuationToken`: `str`
 - `StartAfter`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListPartsOutputTypeDef
 
@@ -1799,17 +1743,14 @@ Required fields:
 - `NextPartNumberMarker`: `int`
 - `MaxParts`: `int`
 - `IsTruncated`: `bool`
-- `Parts`:
-  `List`\[[PartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#parttypedef)\]
-- `Initiator`:
-  [InitiatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#initiatortypedef)
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
-- `RequestCharged`: `Literal['requester']`
+- `Parts`: `List`\[[PartTypeDef](./type_defs.md#parttypedef)\]
+- `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingEnabledTypeDef
 
@@ -1825,7 +1766,7 @@ Required fields:
 Optional fields:
 
 - `TargetGrants`:
-  `List`\[[TargetGrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#targetgranttypedef)\]
+  `List`\[[TargetGrantTypeDef](./type_defs.md#targetgranttypedef)\]
 
 ## MetadataEntryTypeDef
 
@@ -1847,8 +1788,7 @@ from mypy_boto3_s3.type_defs import MetricsAndOperatorTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## MetricsConfigurationTypeDef
 
@@ -1862,8 +1802,7 @@ Required fields:
 
 Optional fields:
 
-- `Filter`:
-  [MetricsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metricsfiltertypedef)
+- `Filter`: [MetricsFilterTypeDef](./type_defs.md#metricsfiltertypedef)
 
 ## MetricsFilterTypeDef
 
@@ -1874,10 +1813,8 @@ from mypy_boto3_s3.type_defs import MetricsFilterTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tag`:
-  [TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)
-- `And`:
-  [MetricsAndOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metricsandoperatortypedef)
+- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
+- `And`: [MetricsAndOperatorTypeDef](./type_defs.md#metricsandoperatortypedef)
 
 ## MetricsTypeDef
 
@@ -1887,13 +1824,12 @@ from mypy_boto3_s3.type_defs import MetricsTypeDef
 
 Required fields:
 
-- `Status`:
-  [MetricsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#metricsstatus)
+- `Status`: [MetricsStatus](./literals.md#metricsstatus)
 
 Optional fields:
 
 - `EventThreshold`:
-  [ReplicationTimeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationtimevaluetypedef)
+  [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 
 ## MultipartUploadTypeDef
 
@@ -1906,12 +1842,9 @@ Optional fields:
 - `UploadId`: `str`
 - `Key`: `str`
 - `Initiated`: `datetime`
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
-- `Initiator`:
-  [InitiatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#initiatortypedef)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
+- `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
 
 ## NoncurrentVersionExpirationTypeDef
 
@@ -1932,8 +1865,7 @@ from mypy_boto3_s3.type_defs import NoncurrentVersionTransitionTypeDef
 Optional fields:
 
 - `NoncurrentDays`: `int`
-- `StorageClass`:
-  [TransitionStorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#transitionstorageclass)
+- `StorageClass`: [TransitionStorageClass](./literals.md#transitionstorageclass)
 
 ## NotificationConfigurationDeprecatedTypeDef
 
@@ -1944,11 +1876,11 @@ from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedTypeDef
 Optional fields:
 
 - `TopicConfiguration`:
-  [TopicConfigurationDeprecatedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#topicconfigurationdeprecatedtypedef)
+  [TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef)
 - `QueueConfiguration`:
-  [QueueConfigurationDeprecatedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#queueconfigurationdeprecatedtypedef)
+  [QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef)
 - `CloudFunctionConfiguration`:
-  [CloudFunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#cloudfunctionconfigurationtypedef)
+  [CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef)
 
 ## NotificationConfigurationFilterTypeDef
 
@@ -1958,8 +1890,7 @@ from mypy_boto3_s3.type_defs import NotificationConfigurationFilterTypeDef
 
 Optional fields:
 
-- `Key`:
-  [S3KeyFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#s3keyfiltertypedef)
+- `Key`: [S3KeyFilterTypeDef](./type_defs.md#s3keyfiltertypedef)
 
 ## NotificationConfigurationTypeDef
 
@@ -1970,11 +1901,11 @@ from mypy_boto3_s3.type_defs import NotificationConfigurationTypeDef
 Optional fields:
 
 - `TopicConfigurations`:
-  `List`\[[TopicConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#topicconfigurationtypedef)\]
+  `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
 - `QueueConfigurations`:
-  `List`\[[QueueConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#queueconfigurationtypedef)\]
+  `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
 - `LambdaFunctionConfigurations`:
-  `List`\[[LambdaFunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lambdafunctionconfigurationtypedef)\]
+  `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
 
 ## ObjectIdentifierTypeDef
 
@@ -1998,9 +1929,9 @@ from mypy_boto3_s3.type_defs import ObjectLockConfigurationTypeDef
 
 Optional fields:
 
-- `ObjectLockEnabled`: `Literal['Enabled']`
-- `Rule`:
-  [ObjectLockRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#objectlockruletypedef)
+- `ObjectLockEnabled`: `Literal['Enabled']` (see
+  [ObjectLockEnabled](./literals.md#objectlockenabled))
+- `Rule`: [ObjectLockRuleTypeDef](./type_defs.md#objectlockruletypedef)
 
 ## ObjectLockLegalHoldTypeDef
 
@@ -2010,8 +1941,7 @@ from mypy_boto3_s3.type_defs import ObjectLockLegalHoldTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+- `Status`: [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 
 ## ObjectLockRetentionTypeDef
 
@@ -2021,8 +1951,7 @@ from mypy_boto3_s3.type_defs import ObjectLockRetentionTypeDef
 
 Optional fields:
 
-- `Mode`:
-  [ObjectLockRetentionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockretentionmode)
+- `Mode`: [ObjectLockRetentionMode](./literals.md#objectlockretentionmode)
 - `RetainUntilDate`: `datetime`
 
 ## ObjectLockRuleTypeDef
@@ -2034,7 +1963,7 @@ from mypy_boto3_s3.type_defs import ObjectLockRuleTypeDef
 Optional fields:
 
 - `DefaultRetention`:
-  [DefaultRetentionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#defaultretentiontypedef)
+  [DefaultRetentionTypeDef](./type_defs.md#defaultretentiontypedef)
 
 ## ObjectTypeDef
 
@@ -2048,10 +1977,8 @@ Optional fields:
 - `LastModified`: `datetime`
 - `ETag`: `str`
 - `Size`: `int`
-- `StorageClass`:
-  [ObjectStorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectstorageclass)
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
+- `StorageClass`: [ObjectStorageClass](./literals.md#objectstorageclass)
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
 ## ObjectVersionTypeDef
 
@@ -2063,13 +1990,13 @@ Optional fields:
 
 - `ETag`: `str`
 - `Size`: `int`
-- `StorageClass`: `Literal['STANDARD']`
+- `StorageClass`: `Literal['STANDARD']` (see
+  [ObjectVersionStorageClass](./literals.md#objectversionstorageclass))
 - `Key`: `str`
 - `VersionId`: `str`
 - `IsLatest`: `bool`
 - `LastModified`: `datetime`
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownertypedef)
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
 ## OutputLocationTypeDef
 
@@ -2079,8 +2006,7 @@ from mypy_boto3_s3.type_defs import OutputLocationTypeDef
 
 Optional fields:
 
-- `S3`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#s3locationtypedef)
+- `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
 ## OutputSerializationTypeDef
 
@@ -2090,10 +2016,8 @@ from mypy_boto3_s3.type_defs import OutputSerializationTypeDef
 
 Optional fields:
 
-- `CSV`:
-  [CSVOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#csvoutputtypedef)
-- `JSON`:
-  [JSONOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#jsonoutputtypedef)
+- `CSV`: [CSVOutputTypeDef](./type_defs.md#csvoutputtypedef)
+- `JSON`: [JSONOutputTypeDef](./type_defs.md#jsonoutputtypedef)
 
 ## OwnerTypeDef
 
@@ -2114,8 +2038,7 @@ from mypy_boto3_s3.type_defs import OwnershipControlsRuleTypeDef
 
 Required fields:
 
-- `ObjectOwnership`:
-  [ObjectOwnership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectownership)
+- `ObjectOwnership`: [ObjectOwnership](./literals.md#objectownership)
 
 ## OwnershipControlsTypeDef
 
@@ -2126,7 +2049,7 @@ from mypy_boto3_s3.type_defs import OwnershipControlsTypeDef
 Required fields:
 
 - `Rules`:
-  `List`\[[OwnershipControlsRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ownershipcontrolsruletypedef)\]
+  `List`\[[OwnershipControlsRuleTypeDef](./type_defs.md#ownershipcontrolsruletypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -2171,8 +2094,7 @@ from mypy_boto3_s3.type_defs import ProgressEventTypeDef
 
 Optional fields:
 
-- `Details`:
-  [ProgressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#progresstypedef)
+- `Details`: [ProgressTypeDef](./type_defs.md#progresstypedef)
 
 ## ProgressTypeDef
 
@@ -2207,9 +2129,10 @@ from mypy_boto3_s3.type_defs import PutObjectAclOutputTypeDef
 
 Required fields:
 
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutObjectLegalHoldOutputTypeDef
 
@@ -2219,9 +2142,10 @@ from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputTypeDef
 
 Required fields:
 
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutObjectLockConfigurationOutputTypeDef
 
@@ -2231,9 +2155,10 @@ from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputTypeDef
 
 Required fields:
 
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutObjectOutputTypeDef
 
@@ -2246,16 +2171,17 @@ Required fields:
 - `Expiration`: `str`
 - `ETag`: `str`
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `VersionId`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutObjectRetentionOutputTypeDef
 
@@ -2265,9 +2191,10 @@ from mypy_boto3_s3.type_defs import PutObjectRetentionOutputTypeDef
 
 Required fields:
 
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutObjectTaggingOutputTypeDef
 
@@ -2279,7 +2206,7 @@ Required fields:
 
 - `VersionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueueConfigurationDeprecatedTypeDef
 
@@ -2290,10 +2217,8 @@ from mypy_boto3_s3.type_defs import QueueConfigurationDeprecatedTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Event`:
-  [Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)
-- `Events`:
-  `List`\[[Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)\]
+- `Event`: [Event](./literals.md#event)
+- `Events`: `List`\[[Event](./literals.md#event)\]
 - `Queue`: `str`
 
 ## QueueConfigurationTypeDef
@@ -2305,14 +2230,13 @@ from mypy_boto3_s3.type_defs import QueueConfigurationTypeDef
 Required fields:
 
 - `QueueArn`: `str`
-- `Events`:
-  `List`\[[Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)\]
+- `Events`: `List`\[[Event](./literals.md#event)\]
 
 Optional fields:
 
 - `Id`: `str`
 - `Filter`:
-  [NotificationConfigurationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationfiltertypedef)
+  [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
 
 ## RecordsEventTypeDef
 
@@ -2336,8 +2260,7 @@ Required fields:
 
 Optional fields:
 
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#protocoltype)
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
 
 ## RedirectTypeDef
 
@@ -2349,8 +2272,7 @@ Optional fields:
 
 - `HostName`: `str`
 - `HttpRedirectCode`: `str`
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#protocoltype)
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ReplaceKeyPrefixWith`: `str`
 - `ReplaceKeyWith`: `str`
 
@@ -2363,7 +2285,7 @@ from mypy_boto3_s3.type_defs import ReplicaModificationsTypeDef
 Required fields:
 
 - `Status`:
-  [ReplicaModificationsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#replicamodificationsstatus)
+  [ReplicaModificationsStatus](./literals.md#replicamodificationsstatus)
 
 ## ReplicationConfigurationTypeDef
 
@@ -2375,7 +2297,7 @@ Required fields:
 
 - `Role`: `str`
 - `Rules`:
-  `List`\[[ReplicationRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationruletypedef)\]
+  `List`\[[ReplicationRuleTypeDef](./type_defs.md#replicationruletypedef)\]
 
 ## ReplicationRuleAndOperatorTypeDef
 
@@ -2386,8 +2308,7 @@ from mypy_boto3_s3.type_defs import ReplicationRuleAndOperatorTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ReplicationRuleFilterTypeDef
 
@@ -2398,10 +2319,9 @@ from mypy_boto3_s3.type_defs import ReplicationRuleFilterTypeDef
 Optional fields:
 
 - `Prefix`: `str`
-- `Tag`:
-  [TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)
+- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
-  [ReplicationRuleAndOperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationruleandoperatortypedef)
+  [ReplicationRuleAndOperatorTypeDef](./type_defs.md#replicationruleandoperatortypedef)
 
 ## ReplicationRuleTypeDef
 
@@ -2411,10 +2331,8 @@ from mypy_boto3_s3.type_defs import ReplicationRuleTypeDef
 
 Required fields:
 
-- `Status`:
-  [ReplicationRuleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#replicationrulestatus)
-- `Destination`:
-  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#destinationtypedef)
+- `Status`: [ReplicationRuleStatus](./literals.md#replicationrulestatus)
+- `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
 
 Optional fields:
 
@@ -2422,13 +2340,13 @@ Optional fields:
 - `Priority`: `int`
 - `Prefix`: `str`
 - `Filter`:
-  [ReplicationRuleFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationrulefiltertypedef)
+  [ReplicationRuleFilterTypeDef](./type_defs.md#replicationrulefiltertypedef)
 - `SourceSelectionCriteria`:
-  [SourceSelectionCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#sourceselectioncriteriatypedef)
+  [SourceSelectionCriteriaTypeDef](./type_defs.md#sourceselectioncriteriatypedef)
 - `ExistingObjectReplication`:
-  [ExistingObjectReplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#existingobjectreplicationtypedef)
+  [ExistingObjectReplicationTypeDef](./type_defs.md#existingobjectreplicationtypedef)
 - `DeleteMarkerReplication`:
-  [DeleteMarkerReplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deletemarkerreplicationtypedef)
+  [DeleteMarkerReplicationTypeDef](./type_defs.md#deletemarkerreplicationtypedef)
 
 ## ReplicationTimeTypeDef
 
@@ -2438,10 +2356,9 @@ from mypy_boto3_s3.type_defs import ReplicationTimeTypeDef
 
 Required fields:
 
-- `Status`:
-  [ReplicationTimeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#replicationtimestatus)
+- `Status`: [ReplicationTimeStatus](./literals.md#replicationtimestatus)
 - `Time`:
-  [ReplicationTimeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicationtimevaluetypedef)
+  [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 
 ## ReplicationTimeValueTypeDef
 
@@ -2461,8 +2378,7 @@ from mypy_boto3_s3.type_defs import RequestPaymentConfigurationTypeDef
 
 Required fields:
 
-- `Payer`:
-  [Payer](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#payer)
+- `Payer`: [Payer](./literals.md#payer)
 
 ## RequestProgressTypeDef
 
@@ -2474,10 +2390,10 @@ Optional fields:
 
 - `Enabled`: `bool`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ResponseMetadata
+from mypy_boto3_s3.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2496,10 +2412,11 @@ from mypy_boto3_s3.type_defs import RestoreObjectOutputTypeDef
 
 Required fields:
 
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `RestoreOutputPath`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RestoreRequestTypeDef
 
@@ -2511,15 +2428,14 @@ Optional fields:
 
 - `Days`: `int`
 - `GlacierJobParameters`:
-  [GlacierJobParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#glacierjobparameterstypedef)
-- `Type`: `Literal['SELECT']`
-- `Tier`:
-  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#tier)
+  [GlacierJobParametersTypeDef](./type_defs.md#glacierjobparameterstypedef)
+- `Type`: `Literal['SELECT']` (see
+  [RestoreRequestType](./literals.md#restorerequesttype))
+- `Tier`: [Tier](./literals.md#tier)
 - `Description`: `str`
 - `SelectParameters`:
-  [SelectParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#selectparameterstypedef)
-- `OutputLocation`:
-  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#outputlocationtypedef)
+  [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
+- `OutputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
 ## RoutingRuleTypeDef
 
@@ -2529,13 +2445,11 @@ from mypy_boto3_s3.type_defs import RoutingRuleTypeDef
 
 Required fields:
 
-- `Redirect`:
-  [RedirectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#redirecttypedef)
+- `Redirect`: [RedirectTypeDef](./type_defs.md#redirecttypedef)
 
 Optional fields:
 
-- `Condition`:
-  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#conditiontypedef)
+- `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 
 ## RuleTypeDef
 
@@ -2546,22 +2460,20 @@ from mypy_boto3_s3.type_defs import RuleTypeDef
 Required fields:
 
 - `Prefix`: `str`
-- `Status`:
-  [ExpirationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#expirationstatus)
+- `Status`: [ExpirationStatus](./literals.md#expirationstatus)
 
 Optional fields:
 
 - `Expiration`:
-  [LifecycleExpirationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleexpirationtypedef)
+  [LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef)
 - `ID`: `str`
-- `Transition`:
-  [TransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#transitiontypedef)
+- `Transition`: [TransitionTypeDef](./type_defs.md#transitiontypedef)
 - `NoncurrentVersionTransition`:
-  [NoncurrentVersionTransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#noncurrentversiontransitiontypedef)
+  [NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef)
 - `NoncurrentVersionExpiration`:
-  [NoncurrentVersionExpirationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#noncurrentversionexpirationtypedef)
+  [NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef)
 - `AbortIncompleteMultipartUpload`:
-  [AbortIncompleteMultipartUploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#abortincompletemultipartuploadtypedef)
+  [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
 ## S3KeyFilterTypeDef
 
@@ -2571,8 +2483,7 @@ from mypy_boto3_s3.type_defs import S3KeyFilterTypeDef
 
 Optional fields:
 
-- `FilterRules`:
-  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#filterruletypedef)\]
+- `FilterRules`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 ## S3LocationTypeDef
 
@@ -2587,18 +2498,13 @@ Required fields:
 
 Optional fields:
 
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#encryptiontypedef)
-- `CannedACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
-- `AccessControlList`:
-  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#granttypedef)\]
-- `Tagging`:
-  [TaggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#taggingtypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
+- `CannedACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
+- `AccessControlList`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
 - `UserMetadata`:
-  `List`\[[MetadataEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#metadataentrytypedef)\]
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  `List`\[[MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef)\]
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 
 ## SSEKMSTypeDef
 
@@ -2629,12 +2535,9 @@ from mypy_boto3_s3.type_defs import SelectObjectContentEventStreamTypeDef
 
 Optional fields:
 
-- `Records`:
-  [RecordsEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#recordseventtypedef)
-- `Stats`:
-  [StatsEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#statseventtypedef)
-- `Progress`:
-  [ProgressEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#progresseventtypedef)
+- `Records`: [RecordsEventTypeDef](./type_defs.md#recordseventtypedef)
+- `Stats`: [StatsEventTypeDef](./type_defs.md#statseventtypedef)
+- `Progress`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
 - `Cont`: `Dict`\[`str`, `Any`\]
 - `End`: `Dict`\[`str`, `Any`\]
 
@@ -2647,9 +2550,9 @@ from mypy_boto3_s3.type_defs import SelectObjectContentOutputTypeDef
 Required fields:
 
 - `Payload`:
-  [SelectObjectContentEventStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#selectobjectcontenteventstreamtypedef)
+  [SelectObjectContentEventStreamTypeDef](./type_defs.md#selectobjectcontenteventstreamtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SelectParametersTypeDef
 
@@ -2660,11 +2563,12 @@ from mypy_boto3_s3.type_defs import SelectParametersTypeDef
 Required fields:
 
 - `InputSerialization`:
-  [InputSerializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#inputserializationtypedef)
-- `ExpressionType`: `Literal['SQL']`
+  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
+- `ExpressionType`: `Literal['SQL']` (see
+  [ExpressionType](./literals.md#expressiontype))
 - `Expression`: `str`
 - `OutputSerialization`:
-  [OutputSerializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#outputserializationtypedef)
+  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
 
 ## ServerSideEncryptionByDefaultTypeDef
 
@@ -2674,8 +2578,7 @@ from mypy_boto3_s3.type_defs import ServerSideEncryptionByDefaultTypeDef
 
 Required fields:
 
-- `SSEAlgorithm`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+- `SSEAlgorithm`: [ServerSideEncryption](./literals.md#serversideencryption)
 
 Optional fields:
 
@@ -2690,7 +2593,7 @@ from mypy_boto3_s3.type_defs import ServerSideEncryptionConfigurationTypeDef
 Required fields:
 
 - `Rules`:
-  `List`\[[ServerSideEncryptionRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#serversideencryptionruletypedef)\]
+  `List`\[[ServerSideEncryptionRuleTypeDef](./type_defs.md#serversideencryptionruletypedef)\]
 
 ## ServerSideEncryptionRuleTypeDef
 
@@ -2701,7 +2604,7 @@ from mypy_boto3_s3.type_defs import ServerSideEncryptionRuleTypeDef
 Optional fields:
 
 - `ApplyServerSideEncryptionByDefault`:
-  [ServerSideEncryptionByDefaultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#serversideencryptionbydefaulttypedef)
+  [ServerSideEncryptionByDefaultTypeDef](./type_defs.md#serversideencryptionbydefaulttypedef)
 - `BucketKeyEnabled`: `bool`
 
 ## SourceSelectionCriteriaTypeDef
@@ -2713,9 +2616,9 @@ from mypy_boto3_s3.type_defs import SourceSelectionCriteriaTypeDef
 Optional fields:
 
 - `SseKmsEncryptedObjects`:
-  [SseKmsEncryptedObjectsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#ssekmsencryptedobjectstypedef)
+  [SseKmsEncryptedObjectsTypeDef](./type_defs.md#ssekmsencryptedobjectstypedef)
 - `ReplicaModifications`:
-  [ReplicaModificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#replicamodificationstypedef)
+  [ReplicaModificationsTypeDef](./type_defs.md#replicamodificationstypedef)
 
 ## SseKmsEncryptedObjectsTypeDef
 
@@ -2726,7 +2629,7 @@ from mypy_boto3_s3.type_defs import SseKmsEncryptedObjectsTypeDef
 Required fields:
 
 - `Status`:
-  [SseKmsEncryptedObjectsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#ssekmsencryptedobjectsstatus)
+  [SseKmsEncryptedObjectsStatus](./literals.md#ssekmsencryptedobjectsstatus)
 
 ## StatsEventTypeDef
 
@@ -2736,8 +2639,7 @@ from mypy_boto3_s3.type_defs import StatsEventTypeDef
 
 Optional fields:
 
-- `Details`:
-  [StatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#statstypedef)
+- `Details`: [StatsTypeDef](./type_defs.md#statstypedef)
 
 ## StatsTypeDef
 
@@ -2759,9 +2661,10 @@ from mypy_boto3_s3.type_defs import StorageClassAnalysisDataExportTypeDef
 
 Required fields:
 
-- `OutputSchemaVersion`: `Literal['V_1']`
+- `OutputSchemaVersion`: `Literal['V_1']` (see
+  [StorageClassAnalysisSchemaVersion](./literals.md#storageclassanalysisschemaversion))
 - `Destination`:
-  [AnalyticsExportDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#analyticsexportdestinationtypedef)
+  [AnalyticsExportDestinationTypeDef](./type_defs.md#analyticsexportdestinationtypedef)
 
 ## StorageClassAnalysisTypeDef
 
@@ -2772,7 +2675,7 @@ from mypy_boto3_s3.type_defs import StorageClassAnalysisTypeDef
 Optional fields:
 
 - `DataExport`:
-  [StorageClassAnalysisDataExportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#storageclassanalysisdataexporttypedef)
+  [StorageClassAnalysisDataExportTypeDef](./type_defs.md#storageclassanalysisdataexporttypedef)
 
 ## TagTypeDef
 
@@ -2793,8 +2696,7 @@ from mypy_boto3_s3.type_defs import TaggingTypeDef
 
 Required fields:
 
-- `TagSet`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#tagtypedef)\]
+- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TargetGrantTypeDef
 
@@ -2804,10 +2706,8 @@ from mypy_boto3_s3.type_defs import TargetGrantTypeDef
 
 Optional fields:
 
-- `Grantee`:
-  [GranteeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#granteetypedef)
-- `Permission`:
-  [BucketLogsPermission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketlogspermission)
+- `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
+- `Permission`: [BucketLogsPermission](./literals.md#bucketlogspermission)
 
 ## TieringTypeDef
 
@@ -2819,7 +2719,7 @@ Required fields:
 
 - `Days`: `int`
 - `AccessTier`:
-  [IntelligentTieringAccessTier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#intelligenttieringaccesstier)
+  [IntelligentTieringAccessTier](./literals.md#intelligenttieringaccesstier)
 
 ## TopicConfigurationDeprecatedTypeDef
 
@@ -2830,10 +2730,8 @@ from mypy_boto3_s3.type_defs import TopicConfigurationDeprecatedTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Events`:
-  `List`\[[Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)\]
-- `Event`:
-  [Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)
+- `Events`: `List`\[[Event](./literals.md#event)\]
+- `Event`: [Event](./literals.md#event)
 - `Topic`: `str`
 
 ## TopicConfigurationTypeDef
@@ -2845,14 +2743,13 @@ from mypy_boto3_s3.type_defs import TopicConfigurationTypeDef
 Required fields:
 
 - `TopicArn`: `str`
-- `Events`:
-  `List`\[[Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#event)\]
+- `Events`: `List`\[[Event](./literals.md#event)\]
 
 Optional fields:
 
 - `Id`: `str`
 - `Filter`:
-  [NotificationConfigurationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationfiltertypedef)
+  [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
 
 ## TransitionTypeDef
 
@@ -2864,8 +2761,7 @@ Optional fields:
 
 - `Date`: `datetime`
 - `Days`: `int`
-- `StorageClass`:
-  [TransitionStorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#transitionstorageclass)
+- `StorageClass`: [TransitionStorageClass](./literals.md#transitionstorageclass)
 
 ## UploadPartCopyOutputTypeDef
 
@@ -2876,17 +2772,17 @@ from mypy_boto3_s3.type_defs import UploadPartCopyOutputTypeDef
 Required fields:
 
 - `CopySourceVersionId`: `str`
-- `CopyPartResult`:
-  [CopyPartResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copypartresulttypedef)
+- `CopyPartResult`: [CopyPartResultTypeDef](./type_defs.md#copypartresulttypedef)
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UploadPartOutputTypeDef
 
@@ -2897,15 +2793,16 @@ from mypy_boto3_s3.type_defs import UploadPartOutputTypeDef
 Required fields:
 
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
+  [ServerSideEncryption](./literals.md#serversideencryption)
 - `ETag`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']`
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestCharged](./literals.md#requestcharged))
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VersioningConfigurationTypeDef
 
@@ -2915,10 +2812,8 @@ from mypy_boto3_s3.type_defs import VersioningConfigurationTypeDef
 
 Optional fields:
 
-- `MFADelete`:
-  [MFADelete](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#mfadelete)
-- `Status`:
-  [BucketVersioningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketversioningstatus)
+- `MFADelete`: [MFADelete](./literals.md#mfadelete)
+- `Status`: [BucketVersioningStatus](./literals.md#bucketversioningstatus)
 
 ## WaiterConfigTypeDef
 
@@ -2939,11 +2834,9 @@ from mypy_boto3_s3.type_defs import WebsiteConfigurationTypeDef
 
 Optional fields:
 
-- `ErrorDocument`:
-  [ErrorDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#errordocumenttypedef)
-- `IndexDocument`:
-  [IndexDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#indexdocumenttypedef)
+- `ErrorDocument`: [ErrorDocumentTypeDef](./type_defs.md#errordocumenttypedef)
+- `IndexDocument`: [IndexDocumentTypeDef](./type_defs.md#indexdocumenttypedef)
 - `RedirectAllRequestsTo`:
-  [RedirectAllRequestsToTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#redirectallrequeststotypedef)
+  [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
 - `RoutingRules`:
-  `List`\[[RoutingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#routingruletypedef)\]
+  `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]

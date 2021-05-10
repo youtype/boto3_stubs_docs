@@ -1,6 +1,6 @@
 # Literals for boto3 EFS module
 
-> [Index](../README.md) > [EFS](./README.md) > Literals
+> [Index](..) > [EFS](.) > Literals
 
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)

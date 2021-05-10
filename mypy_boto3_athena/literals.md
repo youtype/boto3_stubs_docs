@@ -1,6 +1,6 @@
 # Literals for boto3 Athena module
 
-> [Index](../README.md) > [Athena](./README.md) > Literals
+> [Index](..) > [Athena](.) > Literals
 
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)

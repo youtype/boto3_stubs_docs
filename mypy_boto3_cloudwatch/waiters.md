@@ -1,6 +1,6 @@
 # Waiters for boto3 CloudWatch module
 
-> [Index](../README.md) > [CloudWatch](./README.md) > Waiters
+> [Index](..) > [CloudWatch](.) > Waiters
 
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
@@ -31,17 +31,14 @@ Arguments for `AlarmExistsWaiter.wait` method:
 
 - `AlarmNames`: `List`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`:
-  `List`\[[AlarmType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#alarmtype)\]
+- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
-- `StateValue`:
-  [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
+- `StateValue`: [StateValue](./literals.md#statevalue)
 - `ActionPrefix`: `str`
 - `MaxRecords`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## CompositeAlarmExistsWaiter
 
@@ -64,14 +61,11 @@ Arguments for `CompositeAlarmExistsWaiter.wait` method:
 
 - `AlarmNames`: `List`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`:
-  `List`\[[AlarmType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#alarmtype)\]
+- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
-- `StateValue`:
-  [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
+- `StateValue`: [StateValue](./literals.md#statevalue)
 - `ActionPrefix`: `str`
 - `MaxRecords`: `int`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

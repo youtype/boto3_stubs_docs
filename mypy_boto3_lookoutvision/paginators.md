@@ -1,6 +1,6 @@
 # Paginators for boto3 LookoutforVision module
 
-> [Index](../README.md) > [LookoutforVision](./README.md) > Paginators
+> [Index](..) > [LookoutforVision](.) > Paginators
 
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
@@ -39,10 +39,10 @@ Arguments for `ListDatasetEntriesPaginator.paginate` method:
 - `AfterCreationDate`: `datetime`
 - `SourceRefContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetEntriesPaginator.paginate` returns
-`Iterator`\[[ListDatasetEntriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listdatasetentriesresponsetypedef)\].
+`Iterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
 
 ## ListModelsPaginator
 
@@ -65,10 +65,10 @@ Arguments for `ListModelsPaginator.paginate` method:
 
 - `ProjectName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelsPaginator.paginate` returns
-`Iterator`\[[ListModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listmodelsresponsetypedef)\].
+`Iterator`\[[ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -90,7 +90,7 @@ Boto3 documentation:
 Arguments for `ListProjectsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listprojectsresponsetypedef)\].
+`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].

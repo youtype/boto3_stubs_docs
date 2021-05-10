@@ -1,6 +1,6 @@
 # AthenaClient for boto3 Athena module
 
-> [Index](../README.md) > [Athena](./README.md) > AthenaClient
+> [Index](..) > [Athena](.) > AthenaClient
 
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
@@ -100,7 +100,7 @@ Arguments:
 - `NamedQueryIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetNamedQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#batchgetnamedqueryoutputtypedef).
+[BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef).
 
 ### batch_get_query_execution
 
@@ -114,7 +114,7 @@ Arguments:
 - `QueryExecutionIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetQueryExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#batchgetqueryexecutionoutputtypedef).
+[BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef).
 
 ### can_paginate
 
@@ -139,13 +139,10 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Type`:
-  [DataCatalogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#datacatalogtype)
-  *(required)*
+- `Type`: [DataCatalogType](./literals.md#datacatalogtype) *(required)*
 - `Description`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -166,7 +163,7 @@ Arguments:
 - `WorkGroup`: `str`
 
 Returns
-[CreateNamedQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#createnamedqueryoutputtypedef).
+[CreateNamedQueryOutputTypeDef](./type_defs.md#createnamedqueryoutputtypedef).
 
 ### create_prepared_statement
 
@@ -195,10 +192,9 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Configuration`:
-  [WorkGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgroupconfigurationtypedef)
+  [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -284,7 +280,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetDataCatalogOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getdatacatalogoutputtypedef).
+[GetDataCatalogOutputTypeDef](./type_defs.md#getdatacatalogoutputtypedef).
 
 ### get_database
 
@@ -298,8 +294,7 @@ Arguments:
 - `CatalogName`: `str` *(required)*
 - `DatabaseName`: `str` *(required)*
 
-Returns
-[GetDatabaseOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getdatabaseoutputtypedef).
+Returns [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef).
 
 ### get_named_query
 
@@ -313,7 +308,7 @@ Arguments:
 - `NamedQueryId`: `str` *(required)*
 
 Returns
-[GetNamedQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getnamedqueryoutputtypedef).
+[GetNamedQueryOutputTypeDef](./type_defs.md#getnamedqueryoutputtypedef).
 
 ### get_prepared_statement
 
@@ -328,7 +323,7 @@ Arguments:
 - `WorkGroup`: `str` *(required)*
 
 Returns
-[GetPreparedStatementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getpreparedstatementoutputtypedef).
+[GetPreparedStatementOutputTypeDef](./type_defs.md#getpreparedstatementoutputtypedef).
 
 ### get_query_execution
 
@@ -342,7 +337,7 @@ Arguments:
 - `QueryExecutionId`: `str` *(required)*
 
 Returns
-[GetQueryExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getqueryexecutionoutputtypedef).
+[GetQueryExecutionOutputTypeDef](./type_defs.md#getqueryexecutionoutputtypedef).
 
 ### get_query_results
 
@@ -358,7 +353,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetQueryResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getqueryresultsoutputtypedef).
+[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef).
 
 ### get_table_metadata
 
@@ -374,7 +369,7 @@ Arguments:
 - `TableName`: `str` *(required)*
 
 Returns
-[GetTableMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#gettablemetadataoutputtypedef).
+[GetTableMetadataOutputTypeDef](./type_defs.md#gettablemetadataoutputtypedef).
 
 ### get_work_group
 
@@ -387,8 +382,7 @@ Arguments:
 
 - `WorkGroup`: `str` *(required)*
 
-Returns
-[GetWorkGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getworkgroupoutputtypedef).
+Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
 
 ### list_data_catalogs
 
@@ -403,7 +397,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataCatalogsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listdatacatalogsoutputtypedef).
+[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef).
 
 ### list_databases
 
@@ -419,7 +413,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatabasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listdatabasesoutputtypedef).
+[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef).
 
 ### list_engine_versions
 
@@ -434,7 +428,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEngineVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listengineversionsoutputtypedef).
+[ListEngineVersionsOutputTypeDef](./type_defs.md#listengineversionsoutputtypedef).
 
 ### list_named_queries
 
@@ -450,7 +444,7 @@ Arguments:
 - `WorkGroup`: `str`
 
 Returns
-[ListNamedQueriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listnamedqueriesoutputtypedef).
+[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef).
 
 ### list_prepared_statements
 
@@ -466,7 +460,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPreparedStatementsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listpreparedstatementsoutputtypedef).
+[ListPreparedStatementsOutputTypeDef](./type_defs.md#listpreparedstatementsoutputtypedef).
 
 ### list_query_executions
 
@@ -482,7 +476,7 @@ Arguments:
 - `WorkGroup`: `str`
 
 Returns
-[ListQueryExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listqueryexecutionsoutputtypedef).
+[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef).
 
 ### list_table_metadata
 
@@ -500,7 +494,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTableMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listtablemetadataoutputtypedef).
+[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -516,7 +510,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_work_groups
 
@@ -531,7 +525,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listworkgroupsoutputtypedef).
+[ListWorkGroupsOutputTypeDef](./type_defs.md#listworkgroupsoutputtypedef).
 
 ### start_query_execution
 
@@ -545,13 +539,13 @@ Arguments:
 - `QueryString`: `str` *(required)*
 - `ClientRequestToken`: `str`
 - `QueryExecutionContext`:
-  [QueryExecutionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutioncontexttypedef)
+  [QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef)
 - `ResultConfiguration`:
-  [ResultConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultconfigurationtypedef)
+  [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - `WorkGroup`: `str`
 
 Returns
-[StartQueryExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#startqueryexecutionoutputtypedef).
+[StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef).
 
 ### stop_query_execution
 
@@ -576,9 +570,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -606,9 +598,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Type`:
-  [DataCatalogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#datacatalogtype)
-  *(required)*
+- `Type`: [DataCatalogType](./literals.md#datacatalogtype) *(required)*
 - `Description`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
 
@@ -642,9 +632,8 @@ Arguments:
 - `WorkGroup`: `str` *(required)*
 - `Description`: `str`
 - `ConfigurationUpdates`:
-  [WorkGroupConfigurationUpdatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgroupconfigurationupdatestypedef)
-- `State`:
-  [WorkGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#workgroupstate)
+  [WorkGroupConfigurationUpdatesTypeDef](./type_defs.md#workgroupconfigurationupdatestypedef)
+- `State`: [WorkGroupState](./literals.md#workgroupstate)
 
 Returns `Dict`\[`str`, `Any`\].
 

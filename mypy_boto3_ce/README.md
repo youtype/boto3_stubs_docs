@@ -1,6 +1,6 @@
 # Type annotations for boto3 CostExplorer module
 
-> [Index](../README.md) > CostExplorer
+> [Index](..) > CostExplorer
 
 Auto-generated documentation for
 [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)

@@ -1,6 +1,6 @@
 # InspectorClient for boto3 Inspector module
 
-> [Index](../README.md) > [Inspector](./README.md) > InspectorClient
+> [Index](..) > [Inspector](.) > InspectorClient
 
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
@@ -108,12 +108,11 @@ Boto3 documentation:
 Arguments:
 
 - `findingArns`: `List`\[`str`\] *(required)*
-- `attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
   *(required)*
 
 Returns
-[AddAttributesToFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#addattributestofindingsresponsetypedef).
+[AddAttributesToFindingsResponseTypeDef](./type_defs.md#addattributestofindingsresponsetypedef).
 
 ### can_paginate
 
@@ -142,7 +141,7 @@ Arguments:
 - `resourceGroupArn`: `str`
 
 Returns
-[CreateAssessmentTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createassessmenttargetresponsetypedef).
+[CreateAssessmentTargetResponseTypeDef](./type_defs.md#createassessmenttargetresponsetypedef).
 
 ### create_assessment_template
 
@@ -159,10 +158,10 @@ Arguments:
 - `durationInSeconds`: `int` *(required)*
 - `rulesPackageArns`: `List`\[`str`\] *(required)*
 - `userAttributesForFindings`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
-[CreateAssessmentTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createassessmenttemplateresponsetypedef).
+[CreateAssessmentTemplateResponseTypeDef](./type_defs.md#createassessmenttemplateresponsetypedef).
 
 ### create_exclusions_preview
 
@@ -177,7 +176,7 @@ Arguments:
 - `assessmentTemplateArn`: `str` *(required)*
 
 Returns
-[CreateExclusionsPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createexclusionspreviewresponsetypedef).
+[CreateExclusionsPreviewResponseTypeDef](./type_defs.md#createexclusionspreviewresponsetypedef).
 
 ### create_resource_group
 
@@ -189,11 +188,11 @@ Boto3 documentation:
 Arguments:
 
 - `resourceGroupTags`:
-  `List`\[[ResourceGroupTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#resourcegrouptagtypedef)\]
+  `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
   *(required)*
 
 Returns
-[CreateResourceGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#createresourcegroupresponsetypedef).
+[CreateResourceGroupResponseTypeDef](./type_defs.md#createresourcegroupresponsetypedef).
 
 ### delete_assessment_run
 
@@ -243,7 +242,7 @@ Arguments:
 - `assessmentRunArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeAssessmentRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeassessmentrunsresponsetypedef).
+[DescribeAssessmentRunsResponseTypeDef](./type_defs.md#describeassessmentrunsresponsetypedef).
 
 ### describe_assessment_targets
 
@@ -258,7 +257,7 @@ Arguments:
 - `assessmentTargetArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeAssessmentTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeassessmenttargetsresponsetypedef).
+[DescribeAssessmentTargetsResponseTypeDef](./type_defs.md#describeassessmenttargetsresponsetypedef).
 
 ### describe_assessment_templates
 
@@ -273,7 +272,7 @@ Arguments:
 - `assessmentTemplateArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeAssessmentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeassessmenttemplatesresponsetypedef).
+[DescribeAssessmentTemplatesResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponsetypedef).
 
 ### describe_cross_account_access_role
 
@@ -284,7 +283,7 @@ Boto3 documentation:
 [Inspector.Client.describe_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
 
 Returns
-[DescribeCrossAccountAccessRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describecrossaccountaccessroleresponsetypedef).
+[DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef).
 
 ### describe_exclusions
 
@@ -296,10 +295,10 @@ Boto3 documentation:
 Arguments:
 
 - `exclusionArns`: `List`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']`
+- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
 
 Returns
-[DescribeExclusionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeexclusionsresponsetypedef).
+[DescribeExclusionsResponseTypeDef](./type_defs.md#describeexclusionsresponsetypedef).
 
 ### describe_findings
 
@@ -311,10 +310,10 @@ Boto3 documentation:
 Arguments:
 
 - `findingArns`: `List`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']`
+- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
 
 Returns
-[DescribeFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describefindingsresponsetypedef).
+[DescribeFindingsResponseTypeDef](./type_defs.md#describefindingsresponsetypedef).
 
 ### describe_resource_groups
 
@@ -329,7 +328,7 @@ Arguments:
 - `resourceGroupArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeResourceGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describeresourcegroupsresponsetypedef).
+[DescribeResourceGroupsResponseTypeDef](./type_defs.md#describeresourcegroupsresponsetypedef).
 
 ### describe_rules_packages
 
@@ -342,10 +341,10 @@ Boto3 documentation:
 Arguments:
 
 - `rulesPackageArns`: `List`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']`
+- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
 
 Returns
-[DescribeRulesPackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#describerulespackagesresponsetypedef).
+[DescribeRulesPackagesResponseTypeDef](./type_defs.md#describerulespackagesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -373,15 +372,12 @@ Boto3 documentation:
 Arguments:
 
 - `assessmentRunArn`: `str` *(required)*
-- `reportFileFormat`:
-  [ReportFileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#reportfileformat)
+- `reportFileFormat`: [ReportFileFormat](./literals.md#reportfileformat)
   *(required)*
-- `reportType`:
-  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#reporttype)
-  *(required)*
+- `reportType`: [ReportType](./literals.md#reporttype) *(required)*
 
 Returns
-[GetAssessmentReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#getassessmentreportresponsetypedef).
+[GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef).
 
 ### get_exclusions_preview
 
@@ -396,10 +392,10 @@ Arguments:
 - `previewToken`: `str` *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `locale`: `Literal['EN_US']`
+- `locale`: `Literal['EN_US']` (see [Locale](./literals.md#locale))
 
 Returns
-[GetExclusionsPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#getexclusionspreviewresponsetypedef).
+[GetExclusionsPreviewResponseTypeDef](./type_defs.md#getexclusionspreviewresponsetypedef).
 
 ### get_telemetry_metadata
 
@@ -413,7 +409,7 @@ Arguments:
 - `assessmentRunArn`: `str` *(required)*
 
 Returns
-[GetTelemetryMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#gettelemetrymetadataresponsetypedef).
+[GetTelemetryMetadataResponseTypeDef](./type_defs.md#gettelemetrymetadataresponsetypedef).
 
 ### list_assessment_run_agents
 
@@ -426,13 +422,12 @@ Boto3 documentation:
 Arguments:
 
 - `assessmentRunArn`: `str` *(required)*
-- `filter`:
-  [AgentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#agentfiltertypedef)
+- `filter`: [AgentFilterTypeDef](./type_defs.md#agentfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentRunAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmentrunagentsresponsetypedef).
+[ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef).
 
 ### list_assessment_runs
 
@@ -445,12 +440,12 @@ Arguments:
 
 - `assessmentTemplateArns`: `List`\[`str`\]
 - `filter`:
-  [AssessmentRunFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentrunfiltertypedef)
+  [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmentrunsresponsetypedef).
+[ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef).
 
 ### list_assessment_targets
 
@@ -463,12 +458,12 @@ Boto3 documentation:
 Arguments:
 
 - `filter`:
-  [AssessmentTargetFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttargetfiltertypedef)
+  [AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmenttargetsresponsetypedef).
+[ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef).
 
 ### list_assessment_templates
 
@@ -482,12 +477,12 @@ Arguments:
 
 - `assessmentTargetArns`: `List`\[`str`\]
 - `filter`:
-  [AssessmentTemplateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttemplatefiltertypedef)
+  [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listassessmenttemplatesresponsetypedef).
+[ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef).
 
 ### list_event_subscriptions
 
@@ -504,7 +499,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEventSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listeventsubscriptionsresponsetypedef).
+[ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef).
 
 ### list_exclusions
 
@@ -520,7 +515,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListExclusionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listexclusionsresponsetypedef).
+[ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef).
 
 ### list_findings
 
@@ -532,13 +527,12 @@ Boto3 documentation:
 Arguments:
 
 - `assessmentRunArns`: `List`\[`str`\]
-- `filter`:
-  [FindingFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#findingfiltertypedef)
+- `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listfindingsresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_rules_packages
 
@@ -553,7 +547,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRulesPackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listrulespackagesresponsetypedef).
+[ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -567,7 +561,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### preview_agents
 
@@ -583,7 +577,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[PreviewAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#previewagentsresponsetypedef).
+[PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef).
 
 ### register_cross_account_access_role
 
@@ -611,7 +605,7 @@ Arguments:
 - `attributeKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveAttributesFromFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#removeattributesfromfindingsresponsetypedef).
+[RemoveAttributesFromFindingsResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponsetypedef).
 
 ### set_tags_for_resource
 
@@ -623,8 +617,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### start_assessment_run
 
@@ -639,7 +632,7 @@ Arguments:
 - `assessmentRunName`: `str`
 
 Returns
-[StartAssessmentRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#startassessmentrunresponsetypedef).
+[StartAssessmentRunResponseTypeDef](./type_defs.md#startassessmentrunresponsetypedef).
 
 ### stop_assessment_run
 
@@ -651,8 +644,7 @@ Boto3 documentation:
 Arguments:
 
 - `assessmentRunArn`: `str` *(required)*
-- `stopAction`:
-  [StopAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#stopaction)
+- `stopAction`: [StopAction](./literals.md#stopaction)
 
 ### subscribe_to_event
 
@@ -664,9 +656,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `event`:
-  [InspectorEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#inspectorevent)
-  *(required)*
+- `event`: [InspectorEvent](./literals.md#inspectorevent) *(required)*
 - `topicArn`: `str` *(required)*
 
 ### unsubscribe_from_event
@@ -679,9 +669,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `event`:
-  [InspectorEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#inspectorevent)
-  *(required)*
+- `event`: [InspectorEvent](./literals.md#inspectorevent) *(required)*
 - `topicArn`: `str` *(required)*
 
 ### update_assessment_target

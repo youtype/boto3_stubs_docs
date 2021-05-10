@@ -1,6 +1,6 @@
 # Literals for boto3 IoT1ClickProjects module
 
-> [Index](../README.md) > [IoT1ClickProjects](./README.md) > Literals
+> [Index](..) > [IoT1ClickProjects](.) > Literals
 
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)

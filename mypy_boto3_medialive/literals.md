@@ -1,6 +1,6 @@
 # Literals for boto3 MediaLive module
 
-> [Index](../README.md) > [MediaLive](./README.md) > Literals
+> [Index](..) > [MediaLive](.) > Literals
 
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)

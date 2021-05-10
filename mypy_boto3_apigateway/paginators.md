@@ -1,6 +1,6 @@
 # Paginators for boto3 APIGateway module
 
-> [Index](../README.md) > [APIGateway](./README.md) > Paginators
+> [Index](..) > [APIGateway](.) > Paginators
 
 Auto-generated documentation for
 [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
@@ -50,10 +50,10 @@ Arguments for `GetApiKeysPaginator.paginate` method:
 - `customerId`: `str`
 - `includeValues`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetApiKeysPaginator.paginate` returns
-`Iterator`\[[ApiKeysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#apikeystypedef)\].
+`Iterator`\[[ApiKeysTypeDef](./type_defs.md#apikeystypedef)\].
 
 ## GetAuthorizersPaginator
 
@@ -76,10 +76,10 @@ Arguments for `GetAuthorizersPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAuthorizersPaginator.paginate` returns
-`Iterator`\[[AuthorizersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#authorizerstypedef)\].
+`Iterator`\[[AuthorizersTypeDef](./type_defs.md#authorizerstypedef)\].
 
 ## GetBasePathMappingsPaginator
 
@@ -102,10 +102,10 @@ Arguments for `GetBasePathMappingsPaginator.paginate` method:
 
 - `domainName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBasePathMappingsPaginator.paginate` returns
-`Iterator`\[[BasePathMappingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#basepathmappingstypedef)\].
+`Iterator`\[[BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef)\].
 
 ## GetClientCertificatesPaginator
 
@@ -127,10 +127,10 @@ Boto3 documentation:
 Arguments for `GetClientCertificatesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetClientCertificatesPaginator.paginate` returns
-`Iterator`\[[ClientCertificatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#clientcertificatestypedef)\].
+`Iterator`\[[ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef)\].
 
 ## GetDeploymentsPaginator
 
@@ -153,10 +153,10 @@ Arguments for `GetDeploymentsPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDeploymentsPaginator.paginate` returns
-`Iterator`\[[DeploymentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#deploymentstypedef)\].
+`Iterator`\[[DeploymentsTypeDef](./type_defs.md#deploymentstypedef)\].
 
 ## GetDocumentationPartsPaginator
 
@@ -178,17 +178,15 @@ Boto3 documentation:
 Arguments for `GetDocumentationPartsPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
-- `type`:
-  [DocumentationPartType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/literals.html#documentationparttype)
+- `type`: [DocumentationPartType](./literals.md#documentationparttype)
 - `nameQuery`: `str`
 - `path`: `str`
-- `locationStatus`:
-  [LocationStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/literals.html#locationstatustype)
+- `locationStatus`: [LocationStatusType](./literals.md#locationstatustype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDocumentationPartsPaginator.paginate` returns
-`Iterator`\[[DocumentationPartsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#documentationpartstypedef)\].
+`Iterator`\[[DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef)\].
 
 ## GetDocumentationVersionsPaginator
 
@@ -211,10 +209,10 @@ Arguments for `GetDocumentationVersionsPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDocumentationVersionsPaginator.paginate` returns
-`Iterator`\[[DocumentationVersionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#documentationversionstypedef)\].
+`Iterator`\[[DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef)\].
 
 ## GetDomainNamesPaginator
 
@@ -236,10 +234,10 @@ Boto3 documentation:
 Arguments for `GetDomainNamesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDomainNamesPaginator.paginate` returns
-`Iterator`\[[DomainNamesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#domainnamestypedef)\].
+`Iterator`\[[DomainNamesTypeDef](./type_defs.md#domainnamestypedef)\].
 
 ## GetGatewayResponsesPaginator
 
@@ -262,10 +260,10 @@ Arguments for `GetGatewayResponsesPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGatewayResponsesPaginator.paginate` returns
-`Iterator`\[[GatewayResponsesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#gatewayresponsestypedef)\].
+`Iterator`\[[GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef)\].
 
 ## GetModelsPaginator
 
@@ -287,10 +285,10 @@ Arguments for `GetModelsPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetModelsPaginator.paginate` returns
-`Iterator`\[[ModelsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#modelstypedef)\].
+`Iterator`\[[ModelsTypeDef](./type_defs.md#modelstypedef)\].
 
 ## GetRequestValidatorsPaginator
 
@@ -313,10 +311,10 @@ Arguments for `GetRequestValidatorsPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRequestValidatorsPaginator.paginate` returns
-`Iterator`\[[RequestValidatorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#requestvalidatorstypedef)\].
+`Iterator`\[[RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef)\].
 
 ## GetResourcesPaginator
 
@@ -340,10 +338,10 @@ Arguments for `GetResourcesPaginator.paginate` method:
 - `restApiId`: `str` *(required)*
 - `embed`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcesPaginator.paginate` returns
-`Iterator`\[[ResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#resourcestypedef)\].
+`Iterator`\[[ResourcesTypeDef](./type_defs.md#resourcestypedef)\].
 
 ## GetRestApisPaginator
 
@@ -365,10 +363,10 @@ Boto3 documentation:
 Arguments for `GetRestApisPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRestApisPaginator.paginate` returns
-`Iterator`\[[RestApisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#restapistypedef)\].
+`Iterator`\[[RestApisTypeDef](./type_defs.md#restapistypedef)\].
 
 ## GetSdkTypesPaginator
 
@@ -390,10 +388,10 @@ Boto3 documentation:
 Arguments for `GetSdkTypesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSdkTypesPaginator.paginate` returns
-`Iterator`\[[SdkTypesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#sdktypestypedef)\].
+`Iterator`\[[SdkTypesTypeDef](./type_defs.md#sdktypestypedef)\].
 
 ## GetUsagePaginator
 
@@ -418,10 +416,10 @@ Arguments for `GetUsagePaginator.paginate` method:
 - `endDate`: `str` *(required)*
 - `keyId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsagePaginator.paginate` returns
-`Iterator`\[[UsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#usagetypedef)\].
+`Iterator`\[[UsageTypeDef](./type_defs.md#usagetypedef)\].
 
 ## GetUsagePlanKeysPaginator
 
@@ -445,10 +443,10 @@ Arguments for `GetUsagePlanKeysPaginator.paginate` method:
 - `usagePlanId`: `str` *(required)*
 - `nameQuery`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsagePlanKeysPaginator.paginate` returns
-`Iterator`\[[UsagePlanKeysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#usageplankeystypedef)\].
+`Iterator`\[[UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef)\].
 
 ## GetUsagePlansPaginator
 
@@ -471,10 +469,10 @@ Arguments for `GetUsagePlansPaginator.paginate` method:
 
 - `keyId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsagePlansPaginator.paginate` returns
-`Iterator`\[[UsagePlansTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#usageplanstypedef)\].
+`Iterator`\[[UsagePlansTypeDef](./type_defs.md#usageplanstypedef)\].
 
 ## GetVpcLinksPaginator
 
@@ -496,7 +494,7 @@ Boto3 documentation:
 Arguments for `GetVpcLinksPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetVpcLinksPaginator.paginate` returns
-`Iterator`\[[VpcLinksTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigateway/type_defs.html#vpclinkstypedef)\].
+`Iterator`\[[VpcLinksTypeDef](./type_defs.md#vpclinkstypedef)\].

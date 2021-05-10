@@ -1,6 +1,6 @@
 # Paginators for boto3 Lambda module
 
-> [Index](../README.md) > [Lambda](./README.md) > Paginators
+> [Index](..) > [Lambda](.) > Paginators
 
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
@@ -40,10 +40,10 @@ Arguments for `ListAliasesPaginator.paginate` method:
 - `FunctionName`: `str` *(required)*
 - `FunctionVersion`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listaliasesresponsetypedef)\].
+`Iterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
 ## ListCodeSigningConfigsPaginator
 
@@ -65,10 +65,10 @@ Boto3 documentation:
 Arguments for `ListCodeSigningConfigsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCodeSigningConfigsPaginator.paginate` returns
-`Iterator`\[[ListCodeSigningConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listcodesigningconfigsresponsetypedef)\].
+`Iterator`\[[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef)\].
 
 ## ListEventSourceMappingsPaginator
 
@@ -92,10 +92,10 @@ Arguments for `ListEventSourceMappingsPaginator.paginate` method:
 - `EventSourceArn`: `str`
 - `FunctionName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventSourceMappingsPaginator.paginate` returns
-`Iterator`\[[ListEventSourceMappingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listeventsourcemappingsresponsetypedef)\].
+`Iterator`\[[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef)\].
 
 ## ListFunctionEventInvokeConfigsPaginator
 
@@ -118,10 +118,10 @@ Arguments for `ListFunctionEventInvokeConfigsPaginator.paginate` method:
 
 - `FunctionName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionEventInvokeConfigsPaginator.paginate` returns
-`Iterator`\[[ListFunctionEventInvokeConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctioneventinvokeconfigsresponsetypedef)\].
+`Iterator`\[[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef)\].
 
 ## ListFunctionsPaginator
 
@@ -142,12 +142,13 @@ Boto3 documentation:
 Arguments for `ListFunctionsPaginator.paginate` method:
 
 - `MasterRegion`: `str`
-- `FunctionVersion`: `Literal['ALL']`
+- `FunctionVersion`: `Literal['ALL']` (see
+  [FunctionVersion](./literals.md#functionversion))
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionsPaginator.paginate` returns
-`Iterator`\[[ListFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctionsresponsetypedef)\].
+`Iterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
 
 ## ListFunctionsByCodeSigningConfigPaginator
 
@@ -170,10 +171,10 @@ Arguments for `ListFunctionsByCodeSigningConfigPaginator.paginate` method:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionsByCodeSigningConfigPaginator.paginate` returns
-`Iterator`\[[ListFunctionsByCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctionsbycodesigningconfigresponsetypedef)\].
+`Iterator`\[[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef)\].
 
 ## ListLayerVersionsPaginator
 
@@ -195,13 +196,12 @@ Boto3 documentation:
 Arguments for `ListLayerVersionsPaginator.paginate` method:
 
 - `LayerName`: `str` *(required)*
-- `CompatibleRuntime`:
-  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `CompatibleRuntime`: [Runtime](./literals.md#runtime)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLayerVersionsPaginator.paginate` returns
-`Iterator`\[[ListLayerVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listlayerversionsresponsetypedef)\].
+`Iterator`\[[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef)\].
 
 ## ListLayersPaginator
 
@@ -221,13 +221,12 @@ Boto3 documentation:
 
 Arguments for `ListLayersPaginator.paginate` method:
 
-- `CompatibleRuntime`:
-  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `CompatibleRuntime`: [Runtime](./literals.md#runtime)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLayersPaginator.paginate` returns
-`Iterator`\[[ListLayersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listlayersresponsetypedef)\].
+`Iterator`\[[ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef)\].
 
 ## ListProvisionedConcurrencyConfigsPaginator
 
@@ -250,10 +249,10 @@ Arguments for `ListProvisionedConcurrencyConfigsPaginator.paginate` method:
 
 - `FunctionName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisionedConcurrencyConfigsPaginator.paginate` returns
-`Iterator`\[[ListProvisionedConcurrencyConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listprovisionedconcurrencyconfigsresponsetypedef)\].
+`Iterator`\[[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef)\].
 
 ## ListVersionsByFunctionPaginator
 
@@ -276,7 +275,7 @@ Arguments for `ListVersionsByFunctionPaginator.paginate` method:
 
 - `FunctionName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVersionsByFunctionPaginator.paginate` returns
-`Iterator`\[[ListVersionsByFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listversionsbyfunctionresponsetypedef)\].
+`Iterator`\[[ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef)\].

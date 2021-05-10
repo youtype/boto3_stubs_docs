@@ -1,6 +1,6 @@
 # Literals for boto3 WorkSpaces module
 
-> [Index](../README.md) > [WorkSpaces](./README.md) > Literals
+> [Index](..) > [WorkSpaces](.) > Literals
 
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)

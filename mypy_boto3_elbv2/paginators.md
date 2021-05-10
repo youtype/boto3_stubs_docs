@@ -1,6 +1,6 @@
 # Paginators for boto3 ElasticLoadBalancingv2 module
 
-> [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Paginators
+> [Index](..) > [ElasticLoadBalancingv2](.) > Paginators
 
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
@@ -36,10 +36,10 @@ Boto3 documentation:
 Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountLimitsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describeaccountlimitsoutputtypedef)\].
+`Iterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
 
 ## DescribeListenerCertificatesPaginator
 
@@ -62,10 +62,10 @@ Arguments for `DescribeListenerCertificatesPaginator.paginate` method:
 
 - `ListenerArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeListenerCertificatesPaginator.paginate` returns
-`Iterator`\[[DescribeListenerCertificatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describelistenercertificatesoutputtypedef)\].
+`Iterator`\[[DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef)\].
 
 ## DescribeListenersPaginator
 
@@ -89,10 +89,10 @@ Arguments for `DescribeListenersPaginator.paginate` method:
 - `LoadBalancerArn`: `str`
 - `ListenerArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeListenersPaginator.paginate` returns
-`Iterator`\[[DescribeListenersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describelistenersoutputtypedef)\].
+`Iterator`\[[DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -116,10 +116,10 @@ Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 - `LoadBalancerArns`: `List`\[`str`\]
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describeloadbalancersoutputtypedef)\].
+`Iterator`\[[DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef)\].
 
 ## DescribeRulesPaginator
 
@@ -142,10 +142,10 @@ Arguments for `DescribeRulesPaginator.paginate` method:
 - `ListenerArn`: `str`
 - `RuleArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRulesPaginator.paginate` returns
-`Iterator`\[[DescribeRulesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describerulesoutputtypedef)\].
+`Iterator`\[[DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef)\].
 
 ## DescribeSSLPoliciesPaginator
 
@@ -168,10 +168,10 @@ Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSSLPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeSSLPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describesslpoliciesoutputtypedef)\].
+`Iterator`\[[DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef)\].
 
 ## DescribeTargetGroupsPaginator
 
@@ -196,7 +196,7 @@ Arguments for `DescribeTargetGroupsPaginator.paginate` method:
 - `TargetGroupArns`: `List`\[`str`\]
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTargetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeTargetGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#describetargetgroupsoutputtypedef)\].
+`Iterator`\[[DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef)\].

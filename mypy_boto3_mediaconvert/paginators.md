@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaConvert module
 
-> [Index](../README.md) > [MediaConvert](./README.md) > Paginators
+> [Index](..) > [MediaConvert](.) > Paginators
 
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
@@ -33,13 +33,12 @@ Boto3 documentation:
 
 Arguments for `DescribeEndpointsPaginator.paginate` method:
 
-- `Mode`:
-  [DescribeEndpointsMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#describeendpointsmode)
+- `Mode`: [DescribeEndpointsMode](./literals.md#describeendpointsmode)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#describeendpointsresponsetypedef)\].
+`Iterator`\[[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)\].
 
 ## ListJobTemplatesPaginator
 
@@ -61,15 +60,13 @@ Boto3 documentation:
 Arguments for `ListJobTemplatesPaginator.paginate` method:
 
 - `Category`: `str`
-- `ListBy`:
-  [JobTemplateListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobtemplatelistby)
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `ListBy`: [JobTemplateListBy](./literals.md#jobtemplatelistby)
+- `Order`: [Order](./literals.md#order)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobTemplatesPaginator.paginate` returns
-`Iterator`\[[ListJobTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listjobtemplatesresponsetypedef)\].
+`Iterator`\[[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -89,16 +86,14 @@ Boto3 documentation:
 
 Arguments for `ListJobsPaginator.paginate` method:
 
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `Order`: [Order](./literals.md#order)
 - `Queue`: `str`
-- `Status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobstatus)
+- `Status`: [JobStatus](./literals.md#jobstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listjobsresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListPresetsPaginator
 
@@ -120,15 +115,13 @@ Boto3 documentation:
 Arguments for `ListPresetsPaginator.paginate` method:
 
 - `Category`: `str`
-- `ListBy`:
-  [PresetListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#presetlistby)
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `ListBy`: [PresetListBy](./literals.md#presetlistby)
+- `Order`: [Order](./literals.md#order)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPresetsPaginator.paginate` returns
-`Iterator`\[[ListPresetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listpresetsresponsetypedef)\].
+`Iterator`\[[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)\].
 
 ## ListQueuesPaginator
 
@@ -149,12 +142,10 @@ Boto3 documentation:
 
 Arguments for `ListQueuesPaginator.paginate` method:
 
-- `ListBy`:
-  [QueueListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuelistby)
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `ListBy`: [QueueListBy](./literals.md#queuelistby)
+- `Order`: [Order](./literals.md#order)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueuesPaginator.paginate` returns
-`Iterator`\[[ListQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listqueuesresponsetypedef)\].
+`Iterator`\[[ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef)\].

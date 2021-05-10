@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Batch module
 
-> [Index](../README.md) > [Batch](./README.md) > Structures
+> [Index](..) > [Batch](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
@@ -114,7 +114,7 @@ Optional fields:
 - `reason`: `str`
 - `logStreamName`: `str`
 - `networkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
 ## AttemptDetailTypeDef
 
@@ -125,7 +125,7 @@ from mypy_boto3_batch.type_defs import AttemptDetailTypeDef
 Optional fields:
 
 - `container`:
-  [AttemptContainerDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#attemptcontainerdetailtypedef)
+  [AttemptContainerDetailTypeDef](./type_defs.md#attemptcontainerdetailtypedef)
 - `startedAt`: `int`
 - `stoppedAt`: `int`
 - `statusReason`: `str`
@@ -145,15 +145,12 @@ Required fields:
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
-- `type`:
-  [CEType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cetype)
-- `state`:
-  [CEState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cestate)
-- `status`:
-  [CEStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cestatus)
+- `type`: [CEType](./literals.md#cetype)
+- `state`: [CEState](./literals.md#cestate)
+- `status`: [CEStatus](./literals.md#cestatus)
 - `statusReason`: `str`
 - `computeResources`:
-  [ComputeResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeresourcetypedef)
+  [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
 
 ## ComputeEnvironmentOrderTypeDef
@@ -175,15 +172,14 @@ from mypy_boto3_batch.type_defs import ComputeResourceTypeDef
 
 Required fields:
 
-- `type`:
-  [CRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#crtype)
+- `type`: [CRType](./literals.md#crtype)
 - `maxvCpus`: `int`
 - `subnets`: `List`\[`str`\]
 
 Optional fields:
 
 - `allocationStrategy`:
-  [CRAllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#crallocationstrategy)
+  [CRAllocationStrategy](./literals.md#crallocationstrategy)
 - `minvCpus`: `int`
 - `desiredvCpus`: `int`
 - `instanceTypes`: `List`\[`str`\]
@@ -196,9 +192,9 @@ Optional fields:
 - `bidPercentage`: `int`
 - `spotIamFleetRole`: `str`
 - `launchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#launchtemplatespecificationtypedef)
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `ec2Configuration`:
-  `List`\[[Ec2ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#ec2configurationtypedef)\]
+  `List`\[[Ec2ConfigurationTypeDef](./type_defs.md#ec2configurationtypedef)\]
 
 ## ComputeResourceUpdateTypeDef
 
@@ -228,15 +224,12 @@ Optional fields:
 - `command`: `List`\[`str`\]
 - `jobRoleArn`: `str`
 - `executionRoleArn`: `str`
-- `volumes`:
-  `List`\[[VolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#volumetypedef)\]
+- `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 - `environment`:
-  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#keyvaluepairtypedef)\]
-- `mountPoints`:
-  `List`\[[MountPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#mountpointtypedef)\]
+  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
+- `mountPoints`: `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
 - `readonlyRootFilesystem`: `bool`
-- `ulimits`:
-  `List`\[[UlimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#ulimittypedef)\]
+- `ulimits`: `List`\[[UlimitTypeDef](./type_defs.md#ulimittypedef)\]
 - `privileged`: `bool`
 - `user`: `str`
 - `exitCode`: `int`
@@ -246,19 +239,18 @@ Optional fields:
 - `logStreamName`: `str`
 - `instanceType`: `str`
 - `networkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 - `resourceRequirements`:
-  `List`\[[ResourceRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#resourcerequirementtypedef)\]
+  `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
 - `linuxParameters`:
-  [LinuxParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#linuxparameterstypedef)
+  [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
 - `logConfiguration`:
-  [LogConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#logconfigurationtypedef)
-- `secrets`:
-  `List`\[[SecretTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#secrettypedef)\]
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
+- `secrets`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
 - `networkConfiguration`:
-  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#networkconfigurationtypedef)
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `fargatePlatformConfiguration`:
-  [FargatePlatformConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#fargateplatformconfigurationtypedef)
+  [FargatePlatformConfigurationTypeDef](./type_defs.md#fargateplatformconfigurationtypedef)
 
 ## ContainerOverridesTypeDef
 
@@ -273,9 +265,9 @@ Optional fields:
 - `command`: `List`\[`str`\]
 - `instanceType`: `str`
 - `environment`:
-  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#keyvaluepairtypedef)\]
+  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 - `resourceRequirements`:
-  `List`\[[ResourceRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#resourcerequirementtypedef)\]
+  `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
 
 ## ContainerPropertiesTypeDef
 
@@ -291,30 +283,26 @@ Optional fields:
 - `command`: `List`\[`str`\]
 - `jobRoleArn`: `str`
 - `executionRoleArn`: `str`
-- `volumes`:
-  `List`\[[VolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#volumetypedef)\]
+- `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 - `environment`:
-  `List`\[[KeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#keyvaluepairtypedef)\]
-- `mountPoints`:
-  `List`\[[MountPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#mountpointtypedef)\]
+  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
+- `mountPoints`: `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
 - `readonlyRootFilesystem`: `bool`
 - `privileged`: `bool`
-- `ulimits`:
-  `List`\[[UlimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#ulimittypedef)\]
+- `ulimits`: `List`\[[UlimitTypeDef](./type_defs.md#ulimittypedef)\]
 - `user`: `str`
 - `instanceType`: `str`
 - `resourceRequirements`:
-  `List`\[[ResourceRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#resourcerequirementtypedef)\]
+  `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
 - `linuxParameters`:
-  [LinuxParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#linuxparameterstypedef)
+  [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
 - `logConfiguration`:
-  [LogConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#logconfigurationtypedef)
-- `secrets`:
-  `List`\[[SecretTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#secrettypedef)\]
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
+- `secrets`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
 - `networkConfiguration`:
-  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#networkconfigurationtypedef)
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `fargatePlatformConfiguration`:
-  [FargatePlatformConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#fargateplatformconfigurationtypedef)
+  [FargatePlatformConfigurationTypeDef](./type_defs.md#fargateplatformconfigurationtypedef)
 
 ## ContainerSummaryTypeDef
 
@@ -358,7 +346,7 @@ from mypy_boto3_batch.type_defs import DescribeComputeEnvironmentsResponseTypeDe
 Optional fields:
 
 - `computeEnvironments`:
-  `List`\[[ComputeEnvironmentDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeenvironmentdetailtypedef)\]
+  `List`\[[ComputeEnvironmentDetailTypeDef](./type_defs.md#computeenvironmentdetailtypedef)\]
 - `nextToken`: `str`
 
 ## DescribeJobDefinitionsResponseTypeDef
@@ -370,7 +358,7 @@ from mypy_boto3_batch.type_defs import DescribeJobDefinitionsResponseTypeDef
 Optional fields:
 
 - `jobDefinitions`:
-  `List`\[[JobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobdefinitiontypedef)\]
+  `List`\[[JobDefinitionTypeDef](./type_defs.md#jobdefinitiontypedef)\]
 - `nextToken`: `str`
 
 ## DescribeJobQueuesResponseTypeDef
@@ -382,7 +370,7 @@ from mypy_boto3_batch.type_defs import DescribeJobQueuesResponseTypeDef
 Optional fields:
 
 - `jobQueues`:
-  `List`\[[JobQueueDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobqueuedetailtypedef)\]
+  `List`\[[JobQueueDetailTypeDef](./type_defs.md#jobqueuedetailtypedef)\]
 - `nextToken`: `str`
 
 ## DescribeJobsResponseTypeDef
@@ -393,8 +381,7 @@ from mypy_boto3_batch.type_defs import DescribeJobsResponseTypeDef
 
 Optional fields:
 
-- `jobs`:
-  `List`\[[JobDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobdetailtypedef)\]
+- `jobs`: `List`\[[JobDetailTypeDef](./type_defs.md#jobdetailtypedef)\]
 
 ## DeviceTypeDef
 
@@ -410,7 +397,7 @@ Optional fields:
 
 - `containerPath`: `str`
 - `permissions`:
-  `List`\[[DeviceCgroupPermission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#devicecgrouppermission)\]
+  `List`\[[DeviceCgroupPermission](./literals.md#devicecgrouppermission)\]
 
 ## EFSAuthorizationConfigTypeDef
 
@@ -421,8 +408,7 @@ from mypy_boto3_batch.type_defs import EFSAuthorizationConfigTypeDef
 Optional fields:
 
 - `accessPointId`: `str`
-- `iam`:
-  [EFSAuthorizationConfigIAM](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#efsauthorizationconfigiam)
+- `iam`: [EFSAuthorizationConfigIAM](./literals.md#efsauthorizationconfigiam)
 
 ## EFSVolumeConfigurationTypeDef
 
@@ -437,11 +423,10 @@ Required fields:
 Optional fields:
 
 - `rootDirectory`: `str`
-- `transitEncryption`:
-  [EFSTransitEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#efstransitencryption)
+- `transitEncryption`: [EFSTransitEncryption](./literals.md#efstransitencryption)
 - `transitEncryptionPort`: `int`
 - `authorizationConfig`:
-  [EFSAuthorizationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#efsauthorizationconfigtypedef)
+  [EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef)
 
 ## Ec2ConfigurationTypeDef
 
@@ -465,8 +450,7 @@ from mypy_boto3_batch.type_defs import EvaluateOnExitTypeDef
 
 Required fields:
 
-- `action`:
-  [RetryAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#retryaction)
+- `action`: [RetryAction](./literals.md#retryaction)
 
 Optional fields:
 
@@ -511,18 +495,15 @@ Optional fields:
 
 - `status`: `str`
 - `parameters`: `Dict`\[`str`, `str`\]
-- `retryStrategy`:
-  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#retrystrategytypedef)
+- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `containerProperties`:
-  [ContainerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containerpropertiestypedef)
-- `timeout`:
-  [JobTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobtimeouttypedef)
-- `nodeProperties`:
-  [NodePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodepropertiestypedef)
+  [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
+- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
+- `nodeProperties`: [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `propagateTags`: `bool`
 - `platformCapabilities`:
-  `List`\[[PlatformCapability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#platformcapability)\]
+  `List`\[[PlatformCapability](./literals.md#platformcapability)\]
 
 ## JobDependencyTypeDef
 
@@ -533,8 +514,7 @@ from mypy_boto3_batch.type_defs import JobDependencyTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `type`:
-  [ArrayJobDependency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#arrayjobdependency)
+- `type`: [ArrayJobDependency](./literals.md#arrayjobdependency)
 
 ## JobDetailTypeDef
 
@@ -547,8 +527,7 @@ Required fields:
 - `jobName`: `str`
 - `jobId`: `str`
 - `jobQueue`: `str`
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobstatus)
+- `status`: [JobStatus](./literals.md#jobstatus)
 - `startedAt`: `int`
 - `jobDefinition`: `str`
 
@@ -556,29 +535,24 @@ Optional fields:
 
 - `jobArn`: `str`
 - `attempts`:
-  `List`\[[AttemptDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#attemptdetailtypedef)\]
+  `List`\[[AttemptDetailTypeDef](./type_defs.md#attemptdetailtypedef)\]
 - `statusReason`: `str`
 - `createdAt`: `int`
-- `retryStrategy`:
-  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#retrystrategytypedef)
+- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `stoppedAt`: `int`
 - `dependsOn`:
-  `List`\[[JobDependencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobdependencytypedef)\]
+  `List`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
 - `parameters`: `Dict`\[`str`, `str`\]
-- `container`:
-  [ContainerDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containerdetailtypedef)
-- `nodeDetails`:
-  [NodeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodedetailstypedef)
-- `nodeProperties`:
-  [NodePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodepropertiestypedef)
+- `container`: [ContainerDetailTypeDef](./type_defs.md#containerdetailtypedef)
+- `nodeDetails`: [NodeDetailsTypeDef](./type_defs.md#nodedetailstypedef)
+- `nodeProperties`: [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
 - `arrayProperties`:
-  [ArrayPropertiesDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#arraypropertiesdetailtypedef)
-- `timeout`:
-  [JobTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobtimeouttypedef)
+  [ArrayPropertiesDetailTypeDef](./type_defs.md#arraypropertiesdetailtypedef)
+- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `propagateTags`: `bool`
 - `platformCapabilities`:
-  `List`\[[PlatformCapability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#platformcapability)\]
+  `List`\[[PlatformCapability](./literals.md#platformcapability)\]
 
 ## JobQueueDetailTypeDef
 
@@ -590,16 +564,14 @@ Required fields:
 
 - `jobQueueName`: `str`
 - `jobQueueArn`: `str`
-- `state`:
-  [JQState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jqstate)
+- `state`: [JQState](./literals.md#jqstate)
 - `priority`: `int`
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeenvironmentordertypedef)\]
+  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Optional fields:
 
-- `status`:
-  [JQStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jqstatus)
+- `status`: [JQStatus](./literals.md#jqstatus)
 - `statusReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -618,17 +590,15 @@ Optional fields:
 
 - `jobArn`: `str`
 - `createdAt`: `int`
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobstatus)
+- `status`: [JobStatus](./literals.md#jobstatus)
 - `statusReason`: `str`
 - `startedAt`: `int`
 - `stoppedAt`: `int`
-- `container`:
-  [ContainerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containersummarytypedef)
+- `container`: [ContainerSummaryTypeDef](./type_defs.md#containersummarytypedef)
 - `arrayProperties`:
-  [ArrayPropertiesSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#arraypropertiessummarytypedef)
+  [ArrayPropertiesSummaryTypeDef](./type_defs.md#arraypropertiessummarytypedef)
 - `nodeProperties`:
-  [NodePropertiesSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodepropertiessummarytypedef)
+  [NodePropertiesSummaryTypeDef](./type_defs.md#nodepropertiessummarytypedef)
 
 ## JobTimeoutTypeDef
 
@@ -671,12 +641,10 @@ from mypy_boto3_batch.type_defs import LinuxParametersTypeDef
 
 Optional fields:
 
-- `devices`:
-  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#devicetypedef)\]
+- `devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 - `initProcessEnabled`: `bool`
 - `sharedMemorySize`: `int`
-- `tmpfs`:
-  `List`\[[TmpfsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#tmpfstypedef)\]
+- `tmpfs`: `List`\[[TmpfsTypeDef](./type_defs.md#tmpfstypedef)\]
 - `maxSwap`: `int`
 - `swappiness`: `int`
 
@@ -689,7 +657,7 @@ from mypy_boto3_batch.type_defs import ListJobsResponseTypeDef
 Required fields:
 
 - `jobSummaryList`:
-  `List`\[[JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobsummarytypedef)\]
+  `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
 
 Optional fields:
 
@@ -713,14 +681,12 @@ from mypy_boto3_batch.type_defs import LogConfigurationTypeDef
 
 Required fields:
 
-- `logDriver`:
-  [LogDriver](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#logdriver)
+- `logDriver`: [LogDriver](./literals.md#logdriver)
 
 Optional fields:
 
 - `options`: `Dict`\[`str`, `str`\]
-- `secretOptions`:
-  `List`\[[SecretTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#secrettypedef)\]
+- `secretOptions`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
 
 ## MountPointTypeDef
 
@@ -742,8 +708,7 @@ from mypy_boto3_batch.type_defs import NetworkConfigurationTypeDef
 
 Optional fields:
 
-- `assignPublicIp`:
-  [AssignPublicIp](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#assignpublicip)
+- `assignPublicIp`: [AssignPublicIp](./literals.md#assignpublicip)
 
 ## NetworkInterfaceTypeDef
 
@@ -778,7 +743,7 @@ Optional fields:
 
 - `numNodes`: `int`
 - `nodePropertyOverrides`:
-  `List`\[[NodePropertyOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodepropertyoverridetypedef)\]
+  `List`\[[NodePropertyOverrideTypeDef](./type_defs.md#nodepropertyoverridetypedef)\]
 
 ## NodePropertiesSummaryTypeDef
 
@@ -803,7 +768,7 @@ Required fields:
 - `numNodes`: `int`
 - `mainNode`: `int`
 - `nodeRangeProperties`:
-  `List`\[[NodeRangePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#noderangepropertytypedef)\]
+  `List`\[[NodeRangePropertyTypeDef](./type_defs.md#noderangepropertytypedef)\]
 
 ## NodePropertyOverrideTypeDef
 
@@ -818,7 +783,7 @@ Required fields:
 Optional fields:
 
 - `containerOverrides`:
-  [ContainerOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containeroverridestypedef)
+  [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
 
 ## NodeRangePropertyTypeDef
 
@@ -833,7 +798,7 @@ Required fields:
 Optional fields:
 
 - `container`:
-  [ContainerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containerpropertiestypedef)
+  [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -868,8 +833,7 @@ from mypy_boto3_batch.type_defs import ResourceRequirementTypeDef
 Required fields:
 
 - `value`: `str`
-- `type`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#resourcetype)
+- `type`: [ResourceType](./literals.md#resourcetype)
 
 ## RetryStrategyTypeDef
 
@@ -881,7 +845,7 @@ Optional fields:
 
 - `attempts`: `int`
 - `evaluateOnExit`:
-  `List`\[[EvaluateOnExitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#evaluateonexittypedef)\]
+  `List`\[[EvaluateOnExitTypeDef](./type_defs.md#evaluateonexittypedef)\]
 
 ## SecretTypeDef
 
@@ -966,8 +930,7 @@ from mypy_boto3_batch.type_defs import VolumeTypeDef
 
 Optional fields:
 
-- `host`:
-  [HostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#hosttypedef)
+- `host`: [HostTypeDef](./type_defs.md#hosttypedef)
 - `name`: `str`
 - `efsVolumeConfiguration`:
-  [EFSVolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#efsvolumeconfigurationtypedef)
+  [EFSVolumeConfigurationTypeDef](./type_defs.md#efsvolumeconfigurationtypedef)

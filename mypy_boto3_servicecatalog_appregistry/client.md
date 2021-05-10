@@ -1,6 +1,6 @@
 # AppRegistryClient for boto3 AppRegistry module
 
-> [Index](../README.md) > [AppRegistry](./README.md) > AppRegistryClient
+> [Index](..) > [AppRegistry](.) > AppRegistryClient
 
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
@@ -88,7 +88,7 @@ Arguments:
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[AssociateAttributeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#associateattributegroupresponsetypedef).
+[AssociateAttributeGroupResponseTypeDef](./type_defs.md#associateattributegroupresponsetypedef).
 
 ### associate_resource
 
@@ -101,11 +101,12 @@ Boto3 documentation:
 Arguments:
 
 - `application`: `str` *(required)*
-- `resourceType`: `Literal['CFN_STACK']` *(required)*
+- `resourceType`: `Literal['CFN_STACK']` (see
+  [ResourceType](./literals.md#resourcetype)) *(required)*
 - `resource`: `str` *(required)*
 
 Returns
-[AssociateResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#associateresourceresponsetypedef).
+[AssociateResourceResponseTypeDef](./type_defs.md#associateresourceresponsetypedef).
 
 ### can_paginate
 
@@ -137,7 +138,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#createapplicationresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### create_attribute_group
 
@@ -156,7 +157,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAttributeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#createattributegroupresponsetypedef).
+[CreateAttributeGroupResponseTypeDef](./type_defs.md#createattributegroupresponsetypedef).
 
 ### delete_application
 
@@ -171,7 +172,7 @@ Arguments:
 - `application`: `str` *(required)*
 
 Returns
-[DeleteApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#deleteapplicationresponsetypedef).
+[DeleteApplicationResponseTypeDef](./type_defs.md#deleteapplicationresponsetypedef).
 
 ### delete_attribute_group
 
@@ -186,7 +187,7 @@ Arguments:
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[DeleteAttributeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#deleteattributegroupresponsetypedef).
+[DeleteAttributeGroupResponseTypeDef](./type_defs.md#deleteattributegroupresponsetypedef).
 
 ### disassociate_attribute_group
 
@@ -203,7 +204,7 @@ Arguments:
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[DisassociateAttributeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#disassociateattributegroupresponsetypedef).
+[DisassociateAttributeGroupResponseTypeDef](./type_defs.md#disassociateattributegroupresponsetypedef).
 
 ### disassociate_resource
 
@@ -216,11 +217,12 @@ Boto3 documentation:
 Arguments:
 
 - `application`: `str` *(required)*
-- `resourceType`: `Literal['CFN_STACK']` *(required)*
+- `resourceType`: `Literal['CFN_STACK']` (see
+  [ResourceType](./literals.md#resourcetype)) *(required)*
 - `resource`: `str` *(required)*
 
 Returns
-[DisassociateResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#disassociateresourceresponsetypedef).
+[DisassociateResourceResponseTypeDef](./type_defs.md#disassociateresourceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -252,7 +254,7 @@ Arguments:
 - `application`: `str` *(required)*
 
 Returns
-[GetApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#getapplicationresponsetypedef).
+[GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
 
 ### get_attribute_group
 
@@ -267,7 +269,7 @@ Arguments:
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[GetAttributeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#getattributegroupresponsetypedef).
+[GetAttributeGroupResponseTypeDef](./type_defs.md#getattributegroupresponsetypedef).
 
 ### list_applications
 
@@ -283,7 +285,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listapplicationsresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### list_associated_attribute_groups
 
@@ -301,7 +303,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedAttributeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listassociatedattributegroupsresponsetypedef).
+[ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef).
 
 ### list_associated_resources
 
@@ -318,7 +320,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listassociatedresourcesresponsetypedef).
+[ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef).
 
 ### list_attribute_groups
 
@@ -334,7 +336,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAttributeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listattributegroupsresponsetypedef).
+[ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -349,7 +351,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### sync_resource
 
@@ -361,11 +363,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceType`: `Literal['CFN_STACK']` *(required)*
+- `resourceType`: `Literal['CFN_STACK']` (see
+  [ResourceType](./literals.md#resourcetype)) *(required)*
 - `resource`: `str` *(required)*
 
 Returns
-[SyncResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#syncresourceresponsetypedef).
+[SyncResourceResponseTypeDef](./type_defs.md#syncresourceresponsetypedef).
 
 ### tag_resource
 
@@ -412,7 +415,7 @@ Arguments:
 - `description`: `str`
 
 Returns
-[UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#updateapplicationresponsetypedef).
+[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
 ### update_attribute_group
 
@@ -430,7 +433,7 @@ Arguments:
 - `attributes`: `str`
 
 Returns
-[UpdateAttributeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#updateattributegroupresponsetypedef).
+[UpdateAttributeGroupResponseTypeDef](./type_defs.md#updateattributegroupresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # MediaPackageClient for boto3 MediaPackage module
 
-> [Index](../README.md) > [MediaPackage](./README.md) > MediaPackageClient
+> [Index](..) > [MediaPackage](.) > MediaPackageClient
 
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
@@ -98,12 +98,12 @@ Arguments:
 
 - `Id`: `str` *(required)*
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 
 Returns
-[ConfigureLogsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#configurelogsresponsetypedef).
+[ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
 ### create_channel
 
@@ -119,7 +119,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#createchannelresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_harvest_job
 
@@ -133,13 +133,12 @@ Arguments:
 - `EndTime`: `str` *(required)*
 - `Id`: `str` *(required)*
 - `OriginEndpointId`: `str` *(required)*
-- `S3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#s3destinationtypedef)
+- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
   *(required)*
 - `StartTime`: `str` *(required)*
 
 Returns
-[CreateHarvestJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#createharvestjobresponsetypedef).
+[CreateHarvestJobResponseTypeDef](./type_defs.md#createharvestjobresponsetypedef).
 
 ### create_origin_endpoint
 
@@ -153,27 +152,22 @@ Arguments:
 
 - `ChannelId`: `str` *(required)*
 - `Id`: `str` *(required)*
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `CmafPackage`:
-  [CmafPackageCreateOrUpdateParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafpackagecreateorupdateparameterstypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashpackagetypedef)
+  [CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `Description`: `str`
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlspackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `ManifestName`: `str`
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#msspackagetypedef)
-- `Origination`:
-  [Origination](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#origination)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [Origination](./literals.md#origination)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
 - `Whitelist`: `List`\[`str`\]
 
 Returns
-[CreateOriginEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#createoriginendpointresponsetypedef).
+[CreateOriginEndpointResponseTypeDef](./type_defs.md#createoriginendpointresponsetypedef).
 
 ### delete_channel
 
@@ -214,7 +208,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#describechannelresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_harvest_job
 
@@ -229,7 +223,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeHarvestJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#describeharvestjobresponsetypedef).
+[DescribeHarvestJobResponseTypeDef](./type_defs.md#describeharvestjobresponsetypedef).
 
 ### describe_origin_endpoint
 
@@ -244,7 +238,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeOriginEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#describeoriginendpointresponsetypedef).
+[DescribeOriginEndpointResponseTypeDef](./type_defs.md#describeoriginendpointresponsetypedef).
 
 ### generate_presigned_url
 
@@ -276,7 +270,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listchannelsresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_harvest_jobs
 
@@ -293,7 +287,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListHarvestJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listharvestjobsresponsetypedef).
+[ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef).
 
 ### list_origin_endpoints
 
@@ -310,7 +304,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOriginEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listoriginendpointsresponsetypedef).
+[ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -325,7 +319,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### rotate_channel_credentials
 
@@ -340,7 +334,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[RotateChannelCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#rotatechannelcredentialsresponsetypedef).
+[RotateChannelCredentialsResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponsetypedef).
 
 ### rotate_ingest_endpoint_credentials
 
@@ -356,7 +350,7 @@ Arguments:
 - `IngestEndpointId`: `str` *(required)*
 
 Returns
-[RotateIngestEndpointCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#rotateingestendpointcredentialsresponsetypedef).
+[RotateIngestEndpointCredentialsResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponsetypedef).
 
 ### tag_resource
 
@@ -395,7 +389,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#updatechannelresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_origin_endpoint
 
@@ -408,26 +402,21 @@ Boto3 documentation:
 Arguments:
 
 - `Id`: `str` *(required)*
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `CmafPackage`:
-  [CmafPackageCreateOrUpdateParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafpackagecreateorupdateparameterstypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashpackagetypedef)
+  [CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `Description`: `str`
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlspackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `ManifestName`: `str`
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#msspackagetypedef)
-- `Origination`:
-  [Origination](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#origination)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [Origination](./literals.md#origination)
 - `StartoverWindowSeconds`: `int`
 - `TimeDelaySeconds`: `int`
 - `Whitelist`: `List`\[`str`\]
 
 Returns
-[UpdateOriginEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#updateoriginendpointresponsetypedef).
+[UpdateOriginEndpointResponseTypeDef](./type_defs.md#updateoriginendpointresponsetypedef).
 
 ### get_paginator
 

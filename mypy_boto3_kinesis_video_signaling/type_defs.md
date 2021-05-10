@@ -1,7 +1,6 @@
 # Typed dictionaries for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) >
-> Structures
+> [Index](..) > [KinesisVideoSignalingChannels](.) > Typed dictionaries
 
 Auto-generated documentation for
 [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
@@ -21,8 +20,7 @@ from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRespo
 
 Optional fields:
 
-- `IceServerList`:
-  `List`\[[IceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_signaling/type_defs.html#iceservertypedef)\]
+- `IceServerList`: `List`\[[IceServerTypeDef](./type_defs.md#iceservertypedef)\]
 
 ## IceServerTypeDef
 

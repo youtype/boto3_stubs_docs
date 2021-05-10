@@ -1,6 +1,6 @@
 # Literals for boto3 CustomerProfiles module
 
-> [Index](../README.md) > [CustomerProfiles](./README.md) > Literals
+> [Index](..) > [CustomerProfiles](.) > Literals
 
 Auto-generated documentation for
 [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)

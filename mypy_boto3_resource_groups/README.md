@@ -1,6 +1,6 @@
 # Type annotations for boto3 ResourceGroups module
 
-> [Index](../README.md) > ResourceGroups
+> [Index](..) > ResourceGroups
 
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
@@ -136,7 +136,7 @@ from mypy_boto3_resource_groups.type_defs import CreateGroupOutputTypeDef, ...
 - [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
 - [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef)
 - [TagOutputTypeDef](./type_defs.md#tagoutputtypedef)
 - [UngroupResourcesOutputTypeDef](./type_defs.md#ungroupresourcesoutputtypedef)

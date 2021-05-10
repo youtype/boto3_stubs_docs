@@ -1,6 +1,6 @@
 # Type annotations for boto3 QuickSight module
 
-> [Index](../README.md) > QuickSight
+> [Index](..) > QuickSight
 
 Auto-generated documentation for
 [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)

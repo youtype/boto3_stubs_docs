@@ -1,6 +1,6 @@
 # Paginators for boto3 Comprehend module
 
-> [Index](../README.md) > [Comprehend](./README.md) > Paginators
+> [Index](..) > [Comprehend](.) > Paginators
 
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
@@ -37,12 +37,12 @@ Boto3 documentation:
 Arguments for `ListDocumentClassificationJobsPaginator.paginate` method:
 
 - `Filter`:
-  [DocumentClassificationJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassificationjobfiltertypedef)
+  [DocumentClassificationJobFilterTypeDef](./type_defs.md#documentclassificationjobfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentClassificationJobsPaginator.paginate` returns
-`Iterator`\[[ListDocumentClassificationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listdocumentclassificationjobsresponsetypedef)\].
+`Iterator`\[[ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef)\].
 
 ## ListDocumentClassifiersPaginator
 
@@ -64,12 +64,12 @@ Boto3 documentation:
 Arguments for `ListDocumentClassifiersPaginator.paginate` method:
 
 - `Filter`:
-  [DocumentClassifierFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#documentclassifierfiltertypedef)
+  [DocumentClassifierFilterTypeDef](./type_defs.md#documentclassifierfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentClassifiersPaginator.paginate` returns
-`Iterator`\[[ListDocumentClassifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listdocumentclassifiersresponsetypedef)\].
+`Iterator`\[[ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef)\].
 
 ## ListDominantLanguageDetectionJobsPaginator
 
@@ -91,12 +91,12 @@ Boto3 documentation:
 Arguments for `ListDominantLanguageDetectionJobsPaginator.paginate` method:
 
 - `Filter`:
-  [DominantLanguageDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#dominantlanguagedetectionjobfiltertypedef)
+  [DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDominantLanguageDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListDominantLanguageDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listdominantlanguagedetectionjobsresponsetypedef)\].
+`Iterator`\[[ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef)\].
 
 ## ListEntitiesDetectionJobsPaginator
 
@@ -118,12 +118,12 @@ Boto3 documentation:
 Arguments for `ListEntitiesDetectionJobsPaginator.paginate` method:
 
 - `Filter`:
-  [EntitiesDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entitiesdetectionjobfiltertypedef)
+  [EntitiesDetectionJobFilterTypeDef](./type_defs.md#entitiesdetectionjobfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEntitiesDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListEntitiesDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listentitiesdetectionjobsresponsetypedef)\].
+`Iterator`\[[ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef)\].
 
 ## ListEntityRecognizersPaginator
 
@@ -145,12 +145,12 @@ Boto3 documentation:
 Arguments for `ListEntityRecognizersPaginator.paginate` method:
 
 - `Filter`:
-  [EntityRecognizerFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#entityrecognizerfiltertypedef)
+  [EntityRecognizerFilterTypeDef](./type_defs.md#entityrecognizerfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEntityRecognizersPaginator.paginate` returns
-`Iterator`\[[ListEntityRecognizersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listentityrecognizersresponsetypedef)\].
+`Iterator`\[[ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef)\].
 
 ## ListKeyPhrasesDetectionJobsPaginator
 
@@ -172,12 +172,12 @@ Boto3 documentation:
 Arguments for `ListKeyPhrasesDetectionJobsPaginator.paginate` method:
 
 - `Filter`:
-  [KeyPhrasesDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#keyphrasesdetectionjobfiltertypedef)
+  [KeyPhrasesDetectionJobFilterTypeDef](./type_defs.md#keyphrasesdetectionjobfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKeyPhrasesDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListKeyPhrasesDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listkeyphrasesdetectionjobsresponsetypedef)\].
+`Iterator`\[[ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef)\].
 
 ## ListSentimentDetectionJobsPaginator
 
@@ -199,12 +199,12 @@ Boto3 documentation:
 Arguments for `ListSentimentDetectionJobsPaginator.paginate` method:
 
 - `Filter`:
-  [SentimentDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#sentimentdetectionjobfiltertypedef)
+  [SentimentDetectionJobFilterTypeDef](./type_defs.md#sentimentdetectionjobfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSentimentDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListSentimentDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listsentimentdetectionjobsresponsetypedef)\].
+`Iterator`\[[ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef)\].
 
 ## ListTopicsDetectionJobsPaginator
 
@@ -226,9 +226,9 @@ Boto3 documentation:
 Arguments for `ListTopicsDetectionJobsPaginator.paginate` method:
 
 - `Filter`:
-  [TopicsDetectionJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#topicsdetectionjobfiltertypedef)
+  [TopicsDetectionJobFilterTypeDef](./type_defs.md#topicsdetectionjobfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicsDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListTopicsDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehend/type_defs.html#listtopicsdetectionjobsresponsetypedef)\].
+`Iterator`\[[ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef)\].

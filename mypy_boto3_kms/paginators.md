@@ -1,6 +1,6 @@
 # Paginators for boto3 KMS module
 
-> [Index](../README.md) > [KMS](./README.md) > Paginators
+> [Index](..) > [KMS](.) > Paginators
 
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
@@ -33,10 +33,10 @@ Arguments for `ListAliasesPaginator.paginate` method:
 
 - `KeyId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listaliasesresponsetypedef)\].
+`Iterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
 ## ListGrantsPaginator
 
@@ -60,10 +60,10 @@ Arguments for `ListGrantsPaginator.paginate` method:
 - `GrantId`: `str`
 - `GranteePrincipal`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGrantsPaginator.paginate` returns
-`Iterator`\[[ListGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listgrantsresponsetypedef)\].
+`Iterator`\[[ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef)\].
 
 ## ListKeyPoliciesPaginator
 
@@ -85,10 +85,10 @@ Arguments for `ListKeyPoliciesPaginator.paginate` method:
 
 - `KeyId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKeyPoliciesPaginator.paginate` returns
-`Iterator`\[[ListKeyPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listkeypoliciesresponsetypedef)\].
+`Iterator`\[[ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef)\].
 
 ## ListKeysPaginator
 
@@ -109,7 +109,7 @@ Boto3 documentation:
 Arguments for `ListKeysPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKeysPaginator.paginate` returns
-`Iterator`\[[ListKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listkeysresponsetypedef)\].
+`Iterator`\[[ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef)\].

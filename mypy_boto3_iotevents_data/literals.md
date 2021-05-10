@@ -1,6 +1,6 @@
 # Literals for boto3 IoTEventsData module
 
-> [Index](../README.md) > [IoTEventsData](./README.md) > Literals
+> [Index](..) > [IoTEventsData](.) > Literals
 
 Auto-generated documentation for
 [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)

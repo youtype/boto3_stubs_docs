@@ -1,6 +1,6 @@
 # Paginators for boto3 Signer module
 
-> [Index](../README.md) > [Signer](./README.md) > Paginators
+> [Index](..) > [Signer](.) > Paginators
 
 Auto-generated documentation for
 [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
@@ -31,8 +31,7 @@ Boto3 documentation:
 
 Arguments for `ListSigningJobsPaginator.paginate` method:
 
-- `status`:
-  [SigningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingstatus)
+- `status`: [SigningStatus](./literals.md#signingstatus)
 - `platformId`: `str`
 - `requestedBy`: `str`
 - `isRevoked`: `bool`
@@ -40,10 +39,10 @@ Arguments for `ListSigningJobsPaginator.paginate` method:
 - `signatureExpiresAfter`: `datetime`
 - `jobInvoker`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningJobsPaginator.paginate` returns
-`Iterator`\[[ListSigningJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listsigningjobsresponsetypedef)\].
+`Iterator`\[[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef)\].
 
 ## ListSigningPlatformsPaginator
 
@@ -68,10 +67,10 @@ Arguments for `ListSigningPlatformsPaginator.paginate` method:
 - `partner`: `str`
 - `target`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningPlatformsPaginator.paginate` returns
-`Iterator`\[[ListSigningPlatformsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listsigningplatformsresponsetypedef)\].
+`Iterator`\[[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef)\].
 
 ## ListSigningProfilesPaginator
 
@@ -95,9 +94,9 @@ Arguments for `ListSigningProfilesPaginator.paginate` method:
 - `includeCanceled`: `bool`
 - `platformId`: `str`
 - `statuses`:
-  `List`\[[SigningProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingprofilestatus)\]
+  `List`\[[SigningProfileStatus](./literals.md#signingprofilestatus)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningProfilesPaginator.paginate` returns
-`Iterator`\[[ListSigningProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listsigningprofilesresponsetypedef)\].
+`Iterator`\[[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef)\].

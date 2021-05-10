@@ -1,6 +1,6 @@
 # Paginators for boto3 WorkMail module
 
-> [Index](../README.md) > [WorkMail](./README.md) > Paginators
+> [Index](..) > [WorkMail](.) > Paginators
 
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
@@ -38,10 +38,10 @@ Arguments for `ListAliasesPaginator.paginate` method:
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listaliasesresponsetypedef)\].
+`Iterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
 ## ListGroupMembersPaginator
 
@@ -65,10 +65,10 @@ Arguments for `ListGroupMembersPaginator.paginate` method:
 - `OrganizationId`: `str` *(required)*
 - `GroupId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupMembersPaginator.paginate` returns
-`Iterator`\[[ListGroupMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listgroupmembersresponsetypedef)\].
+`Iterator`\[[ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef)\].
 
 ## ListGroupsPaginator
 
@@ -90,10 +90,10 @@ Arguments for `ListGroupsPaginator.paginate` method:
 
 - `OrganizationId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listgroupsresponsetypedef)\].
+`Iterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
 ## ListMailboxPermissionsPaginator
 
@@ -117,10 +117,10 @@ Arguments for `ListMailboxPermissionsPaginator.paginate` method:
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMailboxPermissionsPaginator.paginate` returns
-`Iterator`\[[ListMailboxPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listmailboxpermissionsresponsetypedef)\].
+`Iterator`\[[ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef)\].
 
 ## ListOrganizationsPaginator
 
@@ -142,10 +142,10 @@ Boto3 documentation:
 Arguments for `ListOrganizationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOrganizationsPaginator.paginate` returns
-`Iterator`\[[ListOrganizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listorganizationsresponsetypedef)\].
+`Iterator`\[[ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef)\].
 
 ## ListResourceDelegatesPaginator
 
@@ -169,10 +169,10 @@ Arguments for `ListResourceDelegatesPaginator.paginate` method:
 - `OrganizationId`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceDelegatesPaginator.paginate` returns
-`Iterator`\[[ListResourceDelegatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listresourcedelegatesresponsetypedef)\].
+`Iterator`\[[ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef)\].
 
 ## ListResourcesPaginator
 
@@ -195,10 +195,10 @@ Arguments for `ListResourcesPaginator.paginate` method:
 
 - `OrganizationId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesPaginator.paginate` returns
-`Iterator`\[[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listresourcesresponsetypedef)\].
+`Iterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].
 
 ## ListUsersPaginator
 
@@ -220,7 +220,7 @@ Arguments for `ListUsersPaginator.paginate` method:
 
 - `OrganizationId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersPaginator.paginate` returns
-`Iterator`\[[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#listusersresponsetypedef)\].
+`Iterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].

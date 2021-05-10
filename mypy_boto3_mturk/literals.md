@@ -1,6 +1,6 @@
 # Literals for boto3 MTurk module
 
-> [Index](../README.md) > [MTurk](./README.md) > Literals
+> [Index](..) > [MTurk](.) > Literals
 
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)

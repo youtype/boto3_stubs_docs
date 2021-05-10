@@ -1,6 +1,6 @@
 # Literals for boto3 Braket module
 
-> [Index](../README.md) > [Braket](./README.md) > Literals
+> [Index](..) > [Braket](.) > Literals
 
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)

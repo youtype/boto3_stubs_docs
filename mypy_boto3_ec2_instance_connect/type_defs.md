@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 EC2InstanceConnect module
 
-> [Index](../README.md) > [EC2InstanceConnect](./README.md) > Structures
+> [Index](..) > [EC2InstanceConnect](.) > Typed dictionaries
 
 Auto-generated documentation for
 [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)

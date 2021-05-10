@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 WorkDocs module
 
-> [Index](../README.md) > [WorkDocs](./README.md) > Structures
+> [Index](..) > [WorkDocs](.) > Typed dictionaries
 
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
@@ -64,8 +64,7 @@ from mypy_boto3_workdocs.type_defs import ActivateUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 
 ## ActivityTypeDef
 
@@ -75,21 +74,18 @@ from mypy_boto3_workdocs.type_defs import ActivityTypeDef
 
 Optional fields:
 
-- `Type`:
-  [ActivityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#activitytype)
+- `Type`: [ActivityType](./literals.md#activitytype)
 - `TimeStamp`: `datetime`
 - `IsIndirectActivity`: `bool`
 - `OrganizationId`: `str`
-- `Initiator`:
-  [UserMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usermetadatatypedef)
-- `Participants`:
-  [ParticipantsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#participantstypedef)
+- `Initiator`: [UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)
+- `Participants`: [ParticipantsTypeDef](./type_defs.md#participantstypedef)
 - `ResourceMetadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#resourcemetadatatypedef)
+  [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
 - `OriginalParent`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#resourcemetadatatypedef)
+  [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
 - `CommentMetadata`:
-  [CommentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#commentmetadatatypedef)
+  [CommentMetadataTypeDef](./type_defs.md#commentmetadatatypedef)
 
 ## AddResourcePermissionsResponseTypeDef
 
@@ -100,7 +96,7 @@ from mypy_boto3_workdocs.type_defs import AddResourcePermissionsResponseTypeDef
 Optional fields:
 
 - `ShareResults`:
-  `List`\[[ShareResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#shareresulttypedef)\]
+  `List`\[[ShareResultTypeDef](./type_defs.md#shareresulttypedef)\]
 
 ## CommentMetadataTypeDef
 
@@ -111,11 +107,9 @@ from mypy_boto3_workdocs.type_defs import CommentMetadataTypeDef
 Optional fields:
 
 - `CommentId`: `str`
-- `Contributor`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)
+- `Contributor`: [UserTypeDef](./type_defs.md#usertypedef)
 - `CreatedTimestamp`: `datetime`
-- `CommentStatus`:
-  [CommentStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#commentstatustype)
+- `CommentStatus`: [CommentStatusType](./literals.md#commentstatustype)
 - `RecipientId`: `str`
 
 ## CommentTypeDef
@@ -133,13 +127,10 @@ Optional fields:
 - `ParentId`: `str`
 - `ThreadId`: `str`
 - `Text`: `str`
-- `Contributor`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)
+- `Contributor`: [UserTypeDef](./type_defs.md#usertypedef)
 - `CreatedTimestamp`: `datetime`
-- `Status`:
-  [CommentStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#commentstatustype)
-- `Visibility`:
-  [CommentVisibilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#commentvisibilitytype)
+- `Status`: [CommentStatusType](./literals.md#commentstatustype)
+- `Visibility`: [CommentVisibilityType](./literals.md#commentvisibilitytype)
 - `RecipientId`: `str`
 
 ## CreateCommentResponseTypeDef
@@ -150,8 +141,7 @@ from mypy_boto3_workdocs.type_defs import CreateCommentResponseTypeDef
 
 Optional fields:
 
-- `Comment`:
-  [CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#commenttypedef)
+- `Comment`: [CommentTypeDef](./type_defs.md#commenttypedef)
 
 ## CreateFolderResponseTypeDef
 
@@ -161,8 +151,7 @@ from mypy_boto3_workdocs.type_defs import CreateFolderResponseTypeDef
 
 Optional fields:
 
-- `Metadata`:
-  [FolderMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#foldermetadatatypedef)
+- `Metadata`: [FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)
 
 ## CreateNotificationSubscriptionResponseTypeDef
 
@@ -172,8 +161,7 @@ from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionResponse
 
 Optional fields:
 
-- `Subscription`:
-  [SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#subscriptiontypedef)
+- `Subscription`: [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
 
 ## CreateUserResponseTypeDef
 
@@ -183,8 +171,7 @@ from mypy_boto3_workdocs.type_defs import CreateUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 
 ## DescribeActivitiesResponseTypeDef
 
@@ -194,8 +181,7 @@ from mypy_boto3_workdocs.type_defs import DescribeActivitiesResponseTypeDef
 
 Optional fields:
 
-- `UserActivities`:
-  `List`\[[ActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#activitytypedef)\]
+- `UserActivities`: `List`\[[ActivityTypeDef](./type_defs.md#activitytypedef)\]
 - `Marker`: `str`
 
 ## DescribeCommentsResponseTypeDef
@@ -206,8 +192,7 @@ from mypy_boto3_workdocs.type_defs import DescribeCommentsResponseTypeDef
 
 Optional fields:
 
-- `Comments`:
-  `List`\[[CommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#commenttypedef)\]
+- `Comments`: `List`\[[CommentTypeDef](./type_defs.md#commenttypedef)\]
 - `Marker`: `str`
 
 ## DescribeDocumentVersionsResponseTypeDef
@@ -219,7 +204,7 @@ from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsResponseTypeDe
 Optional fields:
 
 - `DocumentVersions`:
-  `List`\[[DocumentVersionMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentversionmetadatatypedef)\]
+  `List`\[[DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)\]
 - `Marker`: `str`
 
 ## DescribeFolderContentsResponseTypeDef
@@ -231,9 +216,9 @@ from mypy_boto3_workdocs.type_defs import DescribeFolderContentsResponseTypeDef
 Optional fields:
 
 - `Folders`:
-  `List`\[[FolderMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#foldermetadatatypedef)\]
+  `List`\[[FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)\]
 - `Documents`:
-  `List`\[[DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentmetadatatypedef)\]
+  `List`\[[DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)\]
 - `Marker`: `str`
 
 ## DescribeGroupsResponseTypeDef
@@ -244,8 +229,7 @@ from mypy_boto3_workdocs.type_defs import DescribeGroupsResponseTypeDef
 
 Optional fields:
 
-- `Groups`:
-  `List`\[[GroupMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#groupmetadatatypedef)\]
+- `Groups`: `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
 - `Marker`: `str`
 
 ## DescribeNotificationSubscriptionsResponseTypeDef
@@ -257,7 +241,7 @@ from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsRespo
 Optional fields:
 
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#subscriptiontypedef)\]
+  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 - `Marker`: `str`
 
 ## DescribeResourcePermissionsResponseTypeDef
@@ -268,8 +252,7 @@ from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsResponseTyp
 
 Optional fields:
 
-- `Principals`:
-  `List`\[[PrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#principaltypedef)\]
+- `Principals`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
 - `Marker`: `str`
 
 ## DescribeRootFoldersResponseTypeDef
@@ -281,7 +264,7 @@ from mypy_boto3_workdocs.type_defs import DescribeRootFoldersResponseTypeDef
 Optional fields:
 
 - `Folders`:
-  `List`\[[FolderMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#foldermetadatatypedef)\]
+  `List`\[[FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)\]
 - `Marker`: `str`
 
 ## DescribeUsersResponseTypeDef
@@ -292,8 +275,7 @@ from mypy_boto3_workdocs.type_defs import DescribeUsersResponseTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)\]
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 - `TotalNumberOfUsers`: `int`
 - `Marker`: `str`
 
@@ -311,9 +293,8 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
 - `LatestVersionMetadata`:
-  [DocumentVersionMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentversionmetadatatypedef)
-- `ResourceState`:
-  [ResourceStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcestatetype)
+  [DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)
+- `ResourceState`: [ResourceStateType](./literals.md#resourcestatetype)
 - `Labels`: `List`\[`str`\]
 
 ## DocumentVersionMetadataTypeDef
@@ -329,18 +310,15 @@ Optional fields:
 - `ContentType`: `str`
 - `Size`: `int`
 - `Signature`: `str`
-- `Status`:
-  [DocumentStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#documentstatustype)
+- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
 - `ContentCreatedTimestamp`: `datetime`
 - `ContentModifiedTimestamp`: `datetime`
 - `CreatorId`: `str`
 - `Thumbnail`:
-  `Dict`\[[DocumentThumbnailType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#documentthumbnailtype),
-  `str`\]
-- `Source`:
-  `Dict`\[[DocumentSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#documentsourcetype),
+  `Dict`\[[DocumentThumbnailType](./literals.md#documentthumbnailtype), `str`\]
+- `Source`: `Dict`\[[DocumentSourceType](./literals.md#documentsourcetype),
   `str`\]
 
 ## FolderMetadataTypeDef
@@ -357,8 +335,7 @@ Optional fields:
 - `ParentFolderId`: `str`
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
-- `ResourceState`:
-  [ResourceStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcestatetype)
+- `ResourceState`: [ResourceStateType](./literals.md#resourcestatetype)
 - `Signature`: `str`
 - `Labels`: `List`\[`str`\]
 - `Size`: `int`
@@ -372,8 +349,7 @@ from mypy_boto3_workdocs.type_defs import GetCurrentUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 
 ## GetDocumentPathResponseTypeDef
 
@@ -383,8 +359,7 @@ from mypy_boto3_workdocs.type_defs import GetDocumentPathResponseTypeDef
 
 Optional fields:
 
-- `Path`:
-  [ResourcePathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#resourcepathtypedef)
+- `Path`: [ResourcePathTypeDef](./type_defs.md#resourcepathtypedef)
 
 ## GetDocumentResponseTypeDef
 
@@ -394,8 +369,7 @@ from mypy_boto3_workdocs.type_defs import GetDocumentResponseTypeDef
 
 Optional fields:
 
-- `Metadata`:
-  [DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentmetadatatypedef)
+- `Metadata`: [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
 - `CustomMetadata`: `Dict`\[`str`, `str`\]
 
 ## GetDocumentVersionResponseTypeDef
@@ -407,7 +381,7 @@ from mypy_boto3_workdocs.type_defs import GetDocumentVersionResponseTypeDef
 Optional fields:
 
 - `Metadata`:
-  [DocumentVersionMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentversionmetadatatypedef)
+  [DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)
 - `CustomMetadata`: `Dict`\[`str`, `str`\]
 
 ## GetFolderPathResponseTypeDef
@@ -418,8 +392,7 @@ from mypy_boto3_workdocs.type_defs import GetFolderPathResponseTypeDef
 
 Optional fields:
 
-- `Path`:
-  [ResourcePathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#resourcepathtypedef)
+- `Path`: [ResourcePathTypeDef](./type_defs.md#resourcepathtypedef)
 
 ## GetFolderResponseTypeDef
 
@@ -429,8 +402,7 @@ from mypy_boto3_workdocs.type_defs import GetFolderResponseTypeDef
 
 Optional fields:
 
-- `Metadata`:
-  [FolderMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#foldermetadatatypedef)
+- `Metadata`: [FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)
 - `CustomMetadata`: `Dict`\[`str`, `str`\]
 
 ## GetResourcesResponseTypeDef
@@ -442,9 +414,9 @@ from mypy_boto3_workdocs.type_defs import GetResourcesResponseTypeDef
 Optional fields:
 
 - `Folders`:
-  `List`\[[FolderMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#foldermetadatatypedef)\]
+  `List`\[[FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)\]
 - `Documents`:
-  `List`\[[DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentmetadatatypedef)\]
+  `List`\[[DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)\]
 - `Marker`: `str`
 
 ## GroupMetadataTypeDef
@@ -466,10 +438,8 @@ from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadResponseT
 
 Optional fields:
 
-- `Metadata`:
-  [DocumentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#documentmetadatatypedef)
-- `UploadMetadata`:
-  [UploadMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#uploadmetadatatypedef)
+- `Metadata`: [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
+- `UploadMetadata`: [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
 
 ## NotificationOptionsTypeDef
 
@@ -502,10 +472,8 @@ from mypy_boto3_workdocs.type_defs import ParticipantsTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usermetadatatypedef)\]
-- `Groups`:
-  `List`\[[GroupMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#groupmetadatatypedef)\]
+- `Users`: `List`\[[UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)\]
+- `Groups`: `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
 
 ## PermissionInfoTypeDef
 
@@ -515,10 +483,8 @@ from mypy_boto3_workdocs.type_defs import PermissionInfoTypeDef
 
 Optional fields:
 
-- `Role`:
-  [RoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#roletype)
-- `Type`:
-  [RolePermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#rolepermissiontype)
+- `Role`: [RoleType](./literals.md#roletype)
+- `Type`: [RolePermissionType](./literals.md#rolepermissiontype)
 
 ## PrincipalTypeDef
 
@@ -529,10 +495,9 @@ from mypy_boto3_workdocs.type_defs import PrincipalTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#principaltype)
+- `Type`: [PrincipalType](./literals.md#principaltype)
 - `Roles`:
-  `List`\[[PermissionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#permissioninfotypedef)\]
+  `List`\[[PermissionInfoTypeDef](./type_defs.md#permissioninfotypedef)\]
 
 ## ResourceMetadataTypeDef
 
@@ -542,14 +507,12 @@ from mypy_boto3_workdocs.type_defs import ResourceMetadataTypeDef
 
 Optional fields:
 
-- `Type`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcetype)
+- `Type`: [ResourceType](./literals.md#resourcetype)
 - `Name`: `str`
 - `OriginalName`: `str`
 - `Id`: `str`
 - `VersionId`: `str`
-- `Owner`:
-  [UserMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usermetadatatypedef)
+- `Owner`: [UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)
 - `ParentId`: `str`
 
 ## ResourcePathComponentTypeDef
@@ -572,7 +535,7 @@ from mypy_boto3_workdocs.type_defs import ResourcePathTypeDef
 Optional fields:
 
 - `Components`:
-  `List`\[[ResourcePathComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#resourcepathcomponenttypedef)\]
+  `List`\[[ResourcePathComponentTypeDef](./type_defs.md#resourcepathcomponenttypedef)\]
 
 ## SharePrincipalTypeDef
 
@@ -583,10 +546,8 @@ from mypy_boto3_workdocs.type_defs import SharePrincipalTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#principaltype)
-- `Role`:
-  [RoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#roletype)
+- `Type`: [PrincipalType](./literals.md#principaltype)
+- `Role`: [RoleType](./literals.md#roletype)
 
 ## ShareResultTypeDef
 
@@ -598,10 +559,8 @@ Optional fields:
 
 - `PrincipalId`: `str`
 - `InviteePrincipalId`: `str`
-- `Role`:
-  [RoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#roletype)
-- `Status`:
-  [ShareStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#sharestatustype)
+- `Role`: [RoleType](./literals.md#roletype)
+- `Status`: [ShareStatusType](./literals.md#sharestatustype)
 - `ShareId`: `str`
 - `StatusMessage`: `str`
 
@@ -614,8 +573,7 @@ from mypy_boto3_workdocs.type_defs import StorageRuleTypeTypeDef
 Optional fields:
 
 - `StorageAllocatedInBytes`: `int`
-- `StorageType`:
-  [StorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#storagetype)
+- `StorageType`: [StorageType](./literals.md#storagetype)
 
 ## SubscriptionTypeDef
 
@@ -627,7 +585,8 @@ Optional fields:
 
 - `SubscriptionId`: `str`
 - `EndPoint`: `str`
-- `Protocol`: `Literal['HTTPS']`
+- `Protocol`: `Literal['HTTPS']` (see
+  [SubscriptionProtocolType](./literals.md#subscriptionprotocoltype))
 
 ## UpdateUserResponseTypeDef
 
@@ -637,8 +596,7 @@ from mypy_boto3_workdocs.type_defs import UpdateUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 
 ## UploadMetadataTypeDef
 
@@ -674,8 +632,7 @@ from mypy_boto3_workdocs.type_defs import UserStorageMetadataTypeDef
 Optional fields:
 
 - `StorageUtilizedInBytes`: `int`
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#storageruletypetypedef)
+- `StorageRule`: [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 
 ## UserTypeDef
 
@@ -693,14 +650,11 @@ Optional fields:
 - `OrganizationId`: `str`
 - `RootFolderId`: `str`
 - `RecycleBinFolderId`: `str`
-- `Status`:
-  [UserStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#userstatustype)
-- `Type`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usertype)
+- `Status`: [UserStatusType](./literals.md#userstatustype)
+- `Type`: [UserType](./literals.md#usertype)
 - `CreatedTimestamp`: `datetime`
 - `ModifiedTimestamp`: `datetime`
 - `TimeZoneId`: `str`
-- `Locale`:
-  [LocaleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#localetype)
+- `Locale`: [LocaleType](./literals.md#localetype)
 - `Storage`:
-  [UserStorageMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#userstoragemetadatatypedef)
+  [UserStorageMetadataTypeDef](./type_defs.md#userstoragemetadatatypedef)

@@ -1,6 +1,6 @@
 # LocationServiceClient for boto3 LocationService module
 
-> [Index](../README.md) > [LocationService](./README.md) > LocationServiceClient
+> [Index](..) > [LocationService](.) > LocationServiceClient
 
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
@@ -118,7 +118,7 @@ Arguments:
 - `GeofenceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchdeletegeofenceresponsetypedef).
+[BatchDeleteGeofenceResponseTypeDef](./type_defs.md#batchdeletegeofenceresponsetypedef).
 
 ### batch_evaluate_geofences
 
@@ -132,11 +132,11 @@ Arguments:
 
 - `CollectionName`: `str` *(required)*
 - `DevicePositionUpdates`:
-  `List`\[[DevicePositionUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#devicepositionupdatetypedef)\]
+  `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
   *(required)*
 
 Returns
-[BatchEvaluateGeofencesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchevaluategeofencesresponsetypedef).
+[BatchEvaluateGeofencesResponseTypeDef](./type_defs.md#batchevaluategeofencesresponsetypedef).
 
 ### batch_get_device_position
 
@@ -152,7 +152,7 @@ Arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns
-[BatchGetDevicePositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchgetdevicepositionresponsetypedef).
+[BatchGetDevicePositionResponseTypeDef](./type_defs.md#batchgetdevicepositionresponsetypedef).
 
 ### batch_put_geofence
 
@@ -165,11 +165,11 @@ Arguments:
 
 - `CollectionName`: `str` *(required)*
 - `Entries`:
-  `List`\[[BatchPutGeofenceRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchputgeofencerequestentrytypedef)\]
+  `List`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
   *(required)*
 
 Returns
-[BatchPutGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchputgeofenceresponsetypedef).
+[BatchPutGeofenceResponseTypeDef](./type_defs.md#batchputgeofenceresponsetypedef).
 
 ### batch_update_device_position
 
@@ -183,11 +183,11 @@ Arguments:
 
 - `TrackerName`: `str` *(required)*
 - `Updates`:
-  `List`\[[DevicePositionUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#devicepositionupdatetypedef)\]
+  `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
   *(required)*
 
 Returns
-[BatchUpdateDevicePositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#batchupdatedevicepositionresponsetypedef).
+[BatchUpdateDevicePositionResponseTypeDef](./type_defs.md#batchupdatedevicepositionresponsetypedef).
 
 ### can_paginate
 
@@ -213,14 +213,12 @@ Boto3 documentation:
 Arguments:
 
 - `CollectionName`: `str` *(required)*
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
-  *(required)*
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan) *(required)*
 - `Description`: `str`
 - `PricingPlanDataSource`: `str`
 
 Returns
-[CreateGeofenceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#creategeofencecollectionresponsetypedef).
+[CreateGeofenceCollectionResponseTypeDef](./type_defs.md#creategeofencecollectionresponsetypedef).
 
 ### create_map
 
@@ -232,16 +230,12 @@ Boto3 documentation:
 Arguments:
 
 - `Configuration`:
-  [MapConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#mapconfigurationtypedef)
-  *(required)*
+  [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef) *(required)*
 - `MapName`: `str` *(required)*
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
-  *(required)*
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan) *(required)*
 - `Description`: `str`
 
-Returns
-[CreateMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#createmapresponsetypedef).
+Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
 
 ### create_place_index
 
@@ -254,15 +248,13 @@ Arguments:
 
 - `DataSource`: `str` *(required)*
 - `IndexName`: `str` *(required)*
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
-  *(required)*
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan) *(required)*
 - `DataSourceConfiguration`:
-  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#datasourceconfigurationtypedef)
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
 
 Returns
-[CreatePlaceIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#createplaceindexresponsetypedef).
+[CreatePlaceIndexResponseTypeDef](./type_defs.md#createplaceindexresponsetypedef).
 
 ### create_tracker
 
@@ -273,15 +265,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/literals.html#pricingplan)
-  *(required)*
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan) *(required)*
 - `TrackerName`: `str` *(required)*
 - `Description`: `str`
 - `PricingPlanDataSource`: `str`
 
 Returns
-[CreateTrackerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#createtrackerresponsetypedef).
+[CreateTrackerResponseTypeDef](./type_defs.md#createtrackerresponsetypedef).
 
 ### delete_geofence_collection
 
@@ -349,7 +339,7 @@ Arguments:
 - `CollectionName`: `str` *(required)*
 
 Returns
-[DescribeGeofenceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describegeofencecollectionresponsetypedef).
+[DescribeGeofenceCollectionResponseTypeDef](./type_defs.md#describegeofencecollectionresponsetypedef).
 
 ### describe_map
 
@@ -363,7 +353,7 @@ Arguments:
 - `MapName`: `str` *(required)*
 
 Returns
-[DescribeMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describemapresponsetypedef).
+[DescribeMapResponseTypeDef](./type_defs.md#describemapresponsetypedef).
 
 ### describe_place_index
 
@@ -377,7 +367,7 @@ Arguments:
 - `IndexName`: `str` *(required)*
 
 Returns
-[DescribePlaceIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describeplaceindexresponsetypedef).
+[DescribePlaceIndexResponseTypeDef](./type_defs.md#describeplaceindexresponsetypedef).
 
 ### describe_tracker
 
@@ -391,7 +381,7 @@ Arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns
-[DescribeTrackerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#describetrackerresponsetypedef).
+[DescribeTrackerResponseTypeDef](./type_defs.md#describetrackerresponsetypedef).
 
 ### disassociate_tracker_consumer
 
@@ -437,7 +427,7 @@ Arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns
-[GetDevicePositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getdevicepositionresponsetypedef).
+[GetDevicePositionResponseTypeDef](./type_defs.md#getdevicepositionresponsetypedef).
 
 ### get_device_position_history
 
@@ -456,7 +446,7 @@ Arguments:
 - `StartTimeInclusive`: `datetime`
 
 Returns
-[GetDevicePositionHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getdevicepositionhistoryresponsetypedef).
+[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef).
 
 ### get_geofence
 
@@ -471,7 +461,7 @@ Arguments:
 - `GeofenceId`: `str` *(required)*
 
 Returns
-[GetGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getgeofenceresponsetypedef).
+[GetGeofenceResponseTypeDef](./type_defs.md#getgeofenceresponsetypedef).
 
 ### get_map_glyphs
 
@@ -487,7 +477,7 @@ Arguments:
 - `MapName`: `str` *(required)*
 
 Returns
-[GetMapGlyphsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmapglyphsresponsetypedef).
+[GetMapGlyphsResponseTypeDef](./type_defs.md#getmapglyphsresponsetypedef).
 
 ### get_map_sprites
 
@@ -502,7 +492,7 @@ Arguments:
 - `MapName`: `str` *(required)*
 
 Returns
-[GetMapSpritesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmapspritesresponsetypedef).
+[GetMapSpritesResponseTypeDef](./type_defs.md#getmapspritesresponsetypedef).
 
 ### get_map_style_descriptor
 
@@ -517,7 +507,7 @@ Arguments:
 - `MapName`: `str` *(required)*
 
 Returns
-[GetMapStyleDescriptorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmapstyledescriptorresponsetypedef).
+[GetMapStyleDescriptorResponseTypeDef](./type_defs.md#getmapstyledescriptorresponsetypedef).
 
 ### get_map_tile
 
@@ -533,8 +523,7 @@ Arguments:
 - `Y`: `str` *(required)*
 - `Z`: `str` *(required)*
 
-Returns
-[GetMapTileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getmaptileresponsetypedef).
+Returns [GetMapTileResponseTypeDef](./type_defs.md#getmaptileresponsetypedef).
 
 ### list_geofence_collections
 
@@ -550,7 +539,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGeofenceCollectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencecollectionsresponsetypedef).
+[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef).
 
 ### list_geofences
 
@@ -565,7 +554,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGeofencesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencesresponsetypedef).
+[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef).
 
 ### list_maps
 
@@ -579,8 +568,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListMapsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listmapsresponsetypedef).
+Returns [ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef).
 
 ### list_place_indexes
 
@@ -595,7 +583,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlaceIndexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listplaceindexesresponsetypedef).
+[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef).
 
 ### list_tracker_consumers
 
@@ -611,7 +599,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTrackerConsumersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackerconsumersresponsetypedef).
+[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef).
 
 ### list_trackers
 
@@ -626,7 +614,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTrackersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackersresponsetypedef).
+[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef).
 
 ### put_geofence
 
@@ -639,12 +627,11 @@ Arguments:
 
 - `CollectionName`: `str` *(required)*
 - `GeofenceId`: `str` *(required)*
-- `Geometry`:
-  [GeofenceGeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#geofencegeometrytypedef)
+- `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
   *(required)*
 
 Returns
-[PutGeofenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#putgeofenceresponsetypedef).
+[PutGeofenceResponseTypeDef](./type_defs.md#putgeofenceresponsetypedef).
 
 ### search_place_index_for_position
 
@@ -661,7 +648,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchPlaceIndexForPositionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchplaceindexforpositionresponsetypedef).
+[SearchPlaceIndexForPositionResponseTypeDef](./type_defs.md#searchplaceindexforpositionresponsetypedef).
 
 ### search_place_index_for_text
 
@@ -681,7 +668,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchPlaceIndexForTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#searchplaceindexfortextresponsetypedef).
+[SearchPlaceIndexForTextResponseTypeDef](./type_defs.md#searchplaceindexfortextresponsetypedef).
 
 ### get_paginator
 

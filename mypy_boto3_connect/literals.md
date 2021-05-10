@@ -1,6 +1,6 @@
 # Literals for boto3 Connect module
 
-> [Index](../README.md) > [Connect](./README.md) > Literals
+> [Index](..) > [Connect](.) > Literals
 
 Auto-generated documentation for
 [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)

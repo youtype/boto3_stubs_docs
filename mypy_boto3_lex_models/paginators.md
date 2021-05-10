@@ -1,6 +1,6 @@
 # Paginators for boto3 LexModelBuildingService module
 
-> [Index](../README.md) > [LexModelBuildingService](./README.md) > Paginators
+> [Index](..) > [LexModelBuildingService](.) > Paginators
 
 Auto-generated documentation for
 [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
@@ -41,10 +41,10 @@ Arguments for `GetBotAliasesPaginator.paginate` method:
 - `botName`: `str` *(required)*
 - `nameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotAliasesPaginator.paginate` returns
-`Iterator`\[[GetBotAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotaliasesresponsetypedef)\].
+`Iterator`\[[GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef)\].
 
 ## GetBotChannelAssociationsPaginator
 
@@ -69,10 +69,10 @@ Arguments for `GetBotChannelAssociationsPaginator.paginate` method:
 - `botAlias`: `str` *(required)*
 - `nameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotChannelAssociationsPaginator.paginate` returns
-`Iterator`\[[GetBotChannelAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotchannelassociationsresponsetypedef)\].
+`Iterator`\[[GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef)\].
 
 ## GetBotVersionsPaginator
 
@@ -95,10 +95,10 @@ Arguments for `GetBotVersionsPaginator.paginate` method:
 
 - `name`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotVersionsPaginator.paginate` returns
-`Iterator`\[[GetBotVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotversionsresponsetypedef)\].
+`Iterator`\[[GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef)\].
 
 ## GetBotsPaginator
 
@@ -120,10 +120,10 @@ Arguments for `GetBotsPaginator.paginate` method:
 
 - `nameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotsPaginator.paginate` returns
-`Iterator`\[[GetBotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbotsresponsetypedef)\].
+`Iterator`\[[GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef)\].
 
 ## GetBuiltinIntentsPaginator
 
@@ -144,14 +144,13 @@ Boto3 documentation:
 
 Arguments for `GetBuiltinIntentsPaginator.paginate` method:
 
-- `locale`:
-  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#locale)
+- `locale`: [Locale](./literals.md#locale)
 - `signatureContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBuiltinIntentsPaginator.paginate` returns
-`Iterator`\[[GetBuiltinIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbuiltinintentsresponsetypedef)\].
+`Iterator`\[[GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef)\].
 
 ## GetBuiltinSlotTypesPaginator
 
@@ -172,14 +171,13 @@ Boto3 documentation:
 
 Arguments for `GetBuiltinSlotTypesPaginator.paginate` method:
 
-- `locale`:
-  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/literals.html#locale)
+- `locale`: [Locale](./literals.md#locale)
 - `signatureContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBuiltinSlotTypesPaginator.paginate` returns
-`Iterator`\[[GetBuiltinSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getbuiltinslottypesresponsetypedef)\].
+`Iterator`\[[GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef)\].
 
 ## GetIntentVersionsPaginator
 
@@ -202,10 +200,10 @@ Arguments for `GetIntentVersionsPaginator.paginate` method:
 
 - `name`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetIntentVersionsPaginator.paginate` returns
-`Iterator`\[[GetIntentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getintentversionsresponsetypedef)\].
+`Iterator`\[[GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef)\].
 
 ## GetIntentsPaginator
 
@@ -227,10 +225,10 @@ Arguments for `GetIntentsPaginator.paginate` method:
 
 - `nameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetIntentsPaginator.paginate` returns
-`Iterator`\[[GetIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getintentsresponsetypedef)\].
+`Iterator`\[[GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef)\].
 
 ## GetSlotTypeVersionsPaginator
 
@@ -253,10 +251,10 @@ Arguments for `GetSlotTypeVersionsPaginator.paginate` method:
 
 - `name`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSlotTypeVersionsPaginator.paginate` returns
-`Iterator`\[[GetSlotTypeVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getslottypeversionsresponsetypedef)\].
+`Iterator`\[[GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef)\].
 
 ## GetSlotTypesPaginator
 
@@ -279,7 +277,7 @@ Arguments for `GetSlotTypesPaginator.paginate` method:
 
 - `nameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSlotTypesPaginator.paginate` returns
-`Iterator`\[[GetSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_models/type_defs.html#getslottypesresponsetypedef)\].
+`Iterator`\[[GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef)\].

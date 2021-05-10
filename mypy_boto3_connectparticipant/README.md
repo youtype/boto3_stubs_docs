@@ -1,6 +1,6 @@
 # Type annotations for boto3 ConnectParticipant module
 
-> [Index](../README.md) > ConnectParticipant
+> [Index](..) > ConnectParticipant
 
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CloudSearch module
 
-> [Index](../README.md) > [CloudSearch](./README.md) > Structures
+> [Index](..) > [CloudSearch](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
@@ -75,8 +75,7 @@ from mypy_boto3_cloudsearch.type_defs import AccessPoliciesStatusTypeDef
 Required fields:
 
 - `Options`: `str`
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## AnalysisOptionsTypeDef
 
@@ -90,8 +89,7 @@ Optional fields:
 - `Stopwords`: `str`
 - `StemmingDictionary`: `str`
 - `JapaneseTokenizationDictionary`: `str`
-- `AlgorithmicStemming`:
-  [AlgorithmicStemming](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#algorithmicstemming)
+- `AlgorithmicStemming`: [AlgorithmicStemming](./literals.md#algorithmicstemming)
 
 ## AnalysisSchemeStatusTypeDef
 
@@ -101,10 +99,8 @@ from mypy_boto3_cloudsearch.type_defs import AnalysisSchemeStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [AnalysisSchemeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisschemetypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Options`: [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## AnalysisSchemeTypeDef
 
@@ -116,12 +112,12 @@ Required fields:
 
 - `AnalysisSchemeName`: `str`
 - `AnalysisSchemeLanguage`:
-  [AnalysisSchemeLanguage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#analysisschemelanguage)
+  [AnalysisSchemeLanguage](./literals.md#analysisschemelanguage)
 
 Optional fields:
 
 - `AnalysisOptions`:
-  [AnalysisOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisoptionstypedef)
+  [AnalysisOptionsTypeDef](./type_defs.md#analysisoptionstypedef)
 
 ## AvailabilityOptionsStatusTypeDef
 
@@ -132,8 +128,7 @@ from mypy_boto3_cloudsearch.type_defs import AvailabilityOptionsStatusTypeDef
 Required fields:
 
 - `Options`: `bool`
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## BuildSuggestersResponseTypeDef
 
@@ -153,8 +148,7 @@ from mypy_boto3_cloudsearch.type_defs import CreateDomainResponseTypeDef
 
 Optional fields:
 
-- `DomainStatus`:
-  [DomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainstatustypedef)
+- `DomainStatus`: [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
 
 ## DateArrayOptionsTypeDef
 
@@ -194,7 +188,7 @@ from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeResponseTypeDef
 Required fields:
 
 - `AnalysisScheme`:
-  [AnalysisSchemeStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisschemestatustypedef)
+  [AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)
 
 ## DefineExpressionResponseTypeDef
 
@@ -204,8 +198,7 @@ from mypy_boto3_cloudsearch.type_defs import DefineExpressionResponseTypeDef
 
 Required fields:
 
-- `Expression`:
-  [ExpressionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#expressionstatustypedef)
+- `Expression`: [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
 
 ## DefineIndexFieldResponseTypeDef
 
@@ -215,8 +208,7 @@ from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldResponseTypeDef
 
 Required fields:
 
-- `IndexField`:
-  [IndexFieldStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexfieldstatustypedef)
+- `IndexField`: [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
 
 ## DefineSuggesterResponseTypeDef
 
@@ -226,8 +218,7 @@ from mypy_boto3_cloudsearch.type_defs import DefineSuggesterResponseTypeDef
 
 Required fields:
 
-- `Suggester`:
-  [SuggesterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#suggesterstatustypedef)
+- `Suggester`: [SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)
 
 ## DeleteAnalysisSchemeResponseTypeDef
 
@@ -238,7 +229,7 @@ from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeResponseTypeDef
 Required fields:
 
 - `AnalysisScheme`:
-  [AnalysisSchemeStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisschemestatustypedef)
+  [AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)
 
 ## DeleteDomainResponseTypeDef
 
@@ -248,8 +239,7 @@ from mypy_boto3_cloudsearch.type_defs import DeleteDomainResponseTypeDef
 
 Optional fields:
 
-- `DomainStatus`:
-  [DomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainstatustypedef)
+- `DomainStatus`: [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
 
 ## DeleteExpressionResponseTypeDef
 
@@ -259,8 +249,7 @@ from mypy_boto3_cloudsearch.type_defs import DeleteExpressionResponseTypeDef
 
 Required fields:
 
-- `Expression`:
-  [ExpressionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#expressionstatustypedef)
+- `Expression`: [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
 
 ## DeleteIndexFieldResponseTypeDef
 
@@ -270,8 +259,7 @@ from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldResponseTypeDef
 
 Required fields:
 
-- `IndexField`:
-  [IndexFieldStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexfieldstatustypedef)
+- `IndexField`: [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
 
 ## DeleteSuggesterResponseTypeDef
 
@@ -281,8 +269,7 @@ from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterResponseTypeDef
 
 Required fields:
 
-- `Suggester`:
-  [SuggesterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#suggesterstatustypedef)
+- `Suggester`: [SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)
 
 ## DescribeAnalysisSchemesResponseTypeDef
 
@@ -293,7 +280,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesResponseType
 Required fields:
 
 - `AnalysisSchemes`:
-  `List`\[[AnalysisSchemeStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisschemestatustypedef)\]
+  `List`\[[AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)\]
 
 ## DescribeAvailabilityOptionsResponseTypeDef
 
@@ -304,7 +291,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsResponse
 Optional fields:
 
 - `AvailabilityOptions`:
-  [AvailabilityOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#availabilityoptionsstatustypedef)
+  [AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef)
 
 ## DescribeDomainEndpointOptionsResponseTypeDef
 
@@ -315,7 +302,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsRespon
 Optional fields:
 
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainendpointoptionsstatustypedef)
+  [DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef)
 
 ## DescribeDomainsResponseTypeDef
 
@@ -326,7 +313,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeDomainsResponseTypeDef
 Required fields:
 
 - `DomainStatusList`:
-  `List`\[[DomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainstatustypedef)\]
+  `List`\[[DomainStatusTypeDef](./type_defs.md#domainstatustypedef)\]
 
 ## DescribeExpressionsResponseTypeDef
 
@@ -337,7 +324,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsResponseTypeDef
 Required fields:
 
 - `Expressions`:
-  `List`\[[ExpressionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#expressionstatustypedef)\]
+  `List`\[[ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)\]
 
 ## DescribeIndexFieldsResponseTypeDef
 
@@ -348,7 +335,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsResponseTypeDef
 Required fields:
 
 - `IndexFields`:
-  `List`\[[IndexFieldStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexfieldstatustypedef)\]
+  `List`\[[IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)\]
 
 ## DescribeScalingParametersResponseTypeDef
 
@@ -359,7 +346,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersResponseTy
 Required fields:
 
 - `ScalingParameters`:
-  [ScalingParametersStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#scalingparametersstatustypedef)
+  [ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef)
 
 ## DescribeServiceAccessPoliciesResponseTypeDef
 
@@ -370,7 +357,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesRespon
 Required fields:
 
 - `AccessPolicies`:
-  [AccessPoliciesStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#accesspoliciesstatustypedef)
+  [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
 
 ## DescribeSuggestersResponseTypeDef
 
@@ -381,7 +368,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersResponseTypeDef
 Required fields:
 
 - `Suggesters`:
-  `List`\[[SuggesterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#suggesterstatustypedef)\]
+  `List`\[[SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)\]
 
 ## DocumentSuggesterOptionsTypeDef
 
@@ -395,8 +382,7 @@ Required fields:
 
 Optional fields:
 
-- `FuzzyMatching`:
-  [SuggesterFuzzyMatching](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#suggesterfuzzymatching)
+- `FuzzyMatching`: [SuggesterFuzzyMatching](./literals.md#suggesterfuzzymatching)
 - `SortExpression`: `str`
 
 ## DomainEndpointOptionsStatusTypeDef
@@ -408,9 +394,8 @@ from mypy_boto3_cloudsearch.type_defs import DomainEndpointOptionsStatusTypeDef
 Required fields:
 
 - `Options`:
-  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainendpointoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## DomainEndpointOptionsTypeDef
 
@@ -421,8 +406,7 @@ from mypy_boto3_cloudsearch.type_defs import DomainEndpointOptionsTypeDef
 Optional fields:
 
 - `EnforceHTTPS`: `bool`
-- `TLSSecurityPolicy`:
-  [TLSSecurityPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#tlssecuritypolicy)
+- `TLSSecurityPolicy`: [TLSSecurityPolicy](./literals.md#tlssecuritypolicy)
 
 ## DomainStatusTypeDef
 
@@ -441,16 +425,14 @@ Optional fields:
 - `ARN`: `str`
 - `Created`: `bool`
 - `Deleted`: `bool`
-- `DocService`:
-  [ServiceEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#serviceendpointtypedef)
+- `DocService`: [ServiceEndpointTypeDef](./type_defs.md#serviceendpointtypedef)
 - `SearchService`:
-  [ServiceEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#serviceendpointtypedef)
+  [ServiceEndpointTypeDef](./type_defs.md#serviceendpointtypedef)
 - `Processing`: `bool`
 - `SearchInstanceType`: `str`
 - `SearchPartitionCount`: `int`
 - `SearchInstanceCount`: `int`
-- `Limits`:
-  [LimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#limitstypedef)
+- `Limits`: [LimitsTypeDef](./type_defs.md#limitstypedef)
 
 ## DoubleArrayOptionsTypeDef
 
@@ -489,10 +471,8 @@ from mypy_boto3_cloudsearch.type_defs import ExpressionStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#expressiontypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Options`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## ExpressionTypeDef
 
@@ -523,10 +503,8 @@ from mypy_boto3_cloudsearch.type_defs import IndexFieldStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [IndexFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexfieldtypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Options`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## IndexFieldTypeDef
 
@@ -537,33 +515,26 @@ from mypy_boto3_cloudsearch.type_defs import IndexFieldTypeDef
 Required fields:
 
 - `IndexFieldName`: `str`
-- `IndexFieldType`:
-  [IndexFieldType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#indexfieldtype)
+- `IndexFieldType`: [IndexFieldType](./literals.md#indexfieldtype)
 
 Optional fields:
 
-- `IntOptions`:
-  [IntOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#intoptionstypedef)
-- `DoubleOptions`:
-  [DoubleOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#doubleoptionstypedef)
-- `LiteralOptions`:
-  [LiteralOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#literaloptionstypedef)
-- `TextOptions`:
-  [TextOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#textoptionstypedef)
-- `DateOptions`:
-  [DateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#dateoptionstypedef)
-- `LatLonOptions`:
-  [LatLonOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#latlonoptionstypedef)
+- `IntOptions`: [IntOptionsTypeDef](./type_defs.md#intoptionstypedef)
+- `DoubleOptions`: [DoubleOptionsTypeDef](./type_defs.md#doubleoptionstypedef)
+- `LiteralOptions`: [LiteralOptionsTypeDef](./type_defs.md#literaloptionstypedef)
+- `TextOptions`: [TextOptionsTypeDef](./type_defs.md#textoptionstypedef)
+- `DateOptions`: [DateOptionsTypeDef](./type_defs.md#dateoptionstypedef)
+- `LatLonOptions`: [LatLonOptionsTypeDef](./type_defs.md#latlonoptionstypedef)
 - `IntArrayOptions`:
-  [IntArrayOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#intarrayoptionstypedef)
+  [IntArrayOptionsTypeDef](./type_defs.md#intarrayoptionstypedef)
 - `DoubleArrayOptions`:
-  [DoubleArrayOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#doublearrayoptionstypedef)
+  [DoubleArrayOptionsTypeDef](./type_defs.md#doublearrayoptionstypedef)
 - `LiteralArrayOptions`:
-  [LiteralArrayOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#literalarrayoptionstypedef)
+  [LiteralArrayOptionsTypeDef](./type_defs.md#literalarrayoptionstypedef)
 - `TextArrayOptions`:
-  [TextArrayOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#textarrayoptionstypedef)
+  [TextArrayOptionsTypeDef](./type_defs.md#textarrayoptionstypedef)
 - `DateArrayOptions`:
-  [DateArrayOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#datearrayoptionstypedef)
+  [DateArrayOptionsTypeDef](./type_defs.md#datearrayoptionstypedef)
 
 ## IntArrayOptionsTypeDef
 
@@ -669,8 +640,7 @@ Required fields:
 
 - `CreationDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `State`:
-  [OptionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#optionstate)
+- `State`: [OptionState](./literals.md#optionstate)
 
 Optional fields:
 
@@ -685,10 +655,8 @@ from mypy_boto3_cloudsearch.type_defs import ScalingParametersStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [ScalingParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#scalingparameterstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Options`: [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## ScalingParametersTypeDef
 
@@ -699,7 +667,7 @@ from mypy_boto3_cloudsearch.type_defs import ScalingParametersTypeDef
 Optional fields:
 
 - `DesiredInstanceType`:
-  [PartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/literals.html#partitioninstancetype)
+  [PartitionInstanceType](./literals.md#partitioninstancetype)
 - `DesiredReplicationCount`: `int`
 - `DesiredPartitionCount`: `int`
 
@@ -721,10 +689,8 @@ from mypy_boto3_cloudsearch.type_defs import SuggesterStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [SuggesterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#suggestertypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#optionstatustypedef)
+- `Options`: [SuggesterTypeDef](./type_defs.md#suggestertypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## SuggesterTypeDef
 
@@ -736,7 +702,7 @@ Required fields:
 
 - `SuggesterName`: `str`
 - `DocumentSuggesterOptions`:
-  [DocumentSuggesterOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#documentsuggesteroptionstypedef)
+  [DocumentSuggesterOptionsTypeDef](./type_defs.md#documentsuggesteroptionstypedef)
 
 ## TextArrayOptionsTypeDef
 
@@ -776,7 +742,7 @@ from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsResponseTy
 Optional fields:
 
 - `AvailabilityOptions`:
-  [AvailabilityOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#availabilityoptionsstatustypedef)
+  [AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef)
 
 ## UpdateDomainEndpointOptionsResponseTypeDef
 
@@ -787,7 +753,7 @@ from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsResponse
 Optional fields:
 
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainendpointoptionsstatustypedef)
+  [DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef)
 
 ## UpdateScalingParametersResponseTypeDef
 
@@ -798,7 +764,7 @@ from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersResponseType
 Required fields:
 
 - `ScalingParameters`:
-  [ScalingParametersStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#scalingparametersstatustypedef)
+  [ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef)
 
 ## UpdateServiceAccessPoliciesResponseTypeDef
 
@@ -809,4 +775,4 @@ from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesResponse
 Required fields:
 
 - `AccessPolicies`:
-  [AccessPoliciesStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#accesspoliciesstatustypedef)
+  [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)

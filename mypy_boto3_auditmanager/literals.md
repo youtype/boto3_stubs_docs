@@ -1,6 +1,6 @@
 # Literals for boto3 AuditManager module
 
-> [Index](../README.md) > [AuditManager](./README.md) > Literals
+> [Index](..) > [AuditManager](.) > Literals
 
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)

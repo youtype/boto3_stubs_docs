@@ -1,6 +1,6 @@
 # Type annotations for boto3 NetworkFirewall module
 
-> [Index](../README.md) > NetworkFirewall
+> [Index](..) > NetworkFirewall
 
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)

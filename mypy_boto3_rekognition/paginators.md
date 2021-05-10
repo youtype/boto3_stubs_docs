@@ -1,6 +1,6 @@
 # Paginators for boto3 Rekognition module
 
-> [Index](../README.md) > [Rekognition](./README.md) > Paginators
+> [Index](..) > [Rekognition](.) > Paginators
 
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
@@ -36,10 +36,10 @@ Arguments for `DescribeProjectVersionsPaginator.paginate` method:
 - `ProjectArn`: `str` *(required)*
 - `VersionNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeProjectVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeProjectVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describeprojectversionsresponsetypedef)\].
+`Iterator`\[[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef)\].
 
 ## DescribeProjectsPaginator
 
@@ -61,10 +61,10 @@ Boto3 documentation:
 Arguments for `DescribeProjectsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeProjectsPaginator.paginate` returns
-`Iterator`\[[DescribeProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describeprojectsresponsetypedef)\].
+`Iterator`\[[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef)\].
 
 ## ListCollectionsPaginator
 
@@ -86,10 +86,10 @@ Boto3 documentation:
 Arguments for `ListCollectionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCollectionsPaginator.paginate` returns
-`Iterator`\[[ListCollectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listcollectionsresponsetypedef)\].
+`Iterator`\[[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)\].
 
 ## ListFacesPaginator
 
@@ -111,10 +111,10 @@ Arguments for `ListFacesPaginator.paginate` method:
 
 - `CollectionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacesPaginator.paginate` returns
-`Iterator`\[[ListFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listfacesresponsetypedef)\].
+`Iterator`\[[ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef)\].
 
 ## ListStreamProcessorsPaginator
 
@@ -136,7 +136,7 @@ Boto3 documentation:
 Arguments for `ListStreamProcessorsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamProcessorsPaginator.paginate` returns
-`Iterator`\[[ListStreamProcessorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#liststreamprocessorsresponsetypedef)\].
+`Iterator`\[[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef)\].

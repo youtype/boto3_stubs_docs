@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 RAM module
 
-> [Index](../README.md) > [RAM](./README.md) > Structures
+> [Index](..) > [RAM](.) > Typed dictionaries
 
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
@@ -51,7 +51,7 @@ from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationResponseTypeDe
 Optional fields:
 
 - `resourceShareInvitation`:
-  [ResourceShareInvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareinvitationtypedef)
+  [ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef)
 - `clientToken`: `str`
 
 ## AssociateResourceSharePermissionResponseTypeDef
@@ -74,7 +74,7 @@ from mypy_boto3_ram.type_defs import AssociateResourceShareResponseTypeDef
 Optional fields:
 
 - `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareassociationtypedef)\]
+  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
 - `clientToken`: `str`
 
 ## CreateResourceShareResponseTypeDef
@@ -85,8 +85,7 @@ from mypy_boto3_ram.type_defs import CreateResourceShareResponseTypeDef
 
 Optional fields:
 
-- `resourceShare`:
-  [ResourceShareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcesharetypedef)
+- `resourceShare`: [ResourceShareTypeDef](./type_defs.md#resourcesharetypedef)
 - `clientToken`: `str`
 
 ## DeleteResourceShareResponseTypeDef
@@ -120,7 +119,7 @@ from mypy_boto3_ram.type_defs import DisassociateResourceShareResponseTypeDef
 Optional fields:
 
 - `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareassociationtypedef)\]
+  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
 - `clientToken`: `str`
 
 ## EnableSharingWithAwsOrganizationResponseTypeDef
@@ -142,7 +141,7 @@ from mypy_boto3_ram.type_defs import GetPermissionResponseTypeDef
 Optional fields:
 
 - `permission`:
-  [ResourceSharePermissionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcesharepermissiondetailtypedef)
+  [ResourceSharePermissionDetailTypeDef](./type_defs.md#resourcesharepermissiondetailtypedef)
 
 ## GetResourcePoliciesResponseTypeDef
 
@@ -164,7 +163,7 @@ from mypy_boto3_ram.type_defs import GetResourceShareAssociationsResponseTypeDef
 Optional fields:
 
 - `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareassociationtypedef)\]
+  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
 - `nextToken`: `str`
 
 ## GetResourceShareInvitationsResponseTypeDef
@@ -176,7 +175,7 @@ from mypy_boto3_ram.type_defs import GetResourceShareInvitationsResponseTypeDef
 Optional fields:
 
 - `resourceShareInvitations`:
-  `List`\[[ResourceShareInvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareinvitationtypedef)\]
+  `List`\[[ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef)\]
 - `nextToken`: `str`
 
 ## GetResourceSharesResponseTypeDef
@@ -188,7 +187,7 @@ from mypy_boto3_ram.type_defs import GetResourceSharesResponseTypeDef
 Optional fields:
 
 - `resourceShares`:
-  `List`\[[ResourceShareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcesharetypedef)\]
+  `List`\[[ResourceShareTypeDef](./type_defs.md#resourcesharetypedef)\]
 - `nextToken`: `str`
 
 ## ListPendingInvitationResourcesResponseTypeDef
@@ -199,8 +198,7 @@ from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesResponseTypeD
 
 Optional fields:
 
-- `resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcetypedef)\]
+- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `nextToken`: `str`
 
 ## ListPermissionsResponseTypeDef
@@ -212,7 +210,7 @@ from mypy_boto3_ram.type_defs import ListPermissionsResponseTypeDef
 Optional fields:
 
 - `permissions`:
-  `List`\[[ResourceSharePermissionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcesharepermissionsummarytypedef)\]
+  `List`\[[ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListPrincipalsResponseTypeDef
@@ -223,8 +221,7 @@ from mypy_boto3_ram.type_defs import ListPrincipalsResponseTypeDef
 
 Optional fields:
 
-- `principals`:
-  `List`\[[PrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#principaltypedef)\]
+- `principals`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
 - `nextToken`: `str`
 
 ## ListResourceSharePermissionsResponseTypeDef
@@ -236,7 +233,7 @@ from mypy_boto3_ram.type_defs import ListResourceSharePermissionsResponseTypeDef
 Optional fields:
 
 - `permissions`:
-  `List`\[[ResourceSharePermissionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcesharepermissionsummarytypedef)\]
+  `List`\[[ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListResourceTypesResponseTypeDef
@@ -248,7 +245,7 @@ from mypy_boto3_ram.type_defs import ListResourceTypesResponseTypeDef
 Optional fields:
 
 - `resourceTypes`:
-  `List`\[[ServiceNameAndResourceTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#servicenameandresourcetypetypedef)\]
+  `List`\[[ServiceNameAndResourceTypeTypeDef](./type_defs.md#servicenameandresourcetypetypedef)\]
 - `nextToken`: `str`
 
 ## ListResourcesResponseTypeDef
@@ -259,8 +256,7 @@ from mypy_boto3_ram.type_defs import ListResourcesResponseTypeDef
 
 Optional fields:
 
-- `resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcetypedef)\]
+- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -308,7 +304,7 @@ from mypy_boto3_ram.type_defs import RejectResourceShareInvitationResponseTypeDe
 Optional fields:
 
 - `resourceShareInvitation`:
-  [ResourceShareInvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareinvitationtypedef)
+  [ResourceShareInvitationTypeDef](./type_defs.md#resourceshareinvitationtypedef)
 - `clientToken`: `str`
 
 ## ResourceShareAssociationTypeDef
@@ -323,9 +319,9 @@ Optional fields:
 - `resourceShareName`: `str`
 - `associatedEntity`: `str`
 - `associationType`:
-  [ResourceShareAssociationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationtype)
+  [ResourceShareAssociationType](./literals.md#resourceshareassociationtype)
 - `status`:
-  [ResourceShareAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationstatus)
+  [ResourceShareAssociationStatus](./literals.md#resourceshareassociationstatus)
 - `statusMessage`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
@@ -346,9 +342,9 @@ Optional fields:
 - `receiverAccountId`: `str`
 - `invitationTimestamp`: `datetime`
 - `status`:
-  [ResourceShareInvitationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareinvitationstatus)
+  [ResourceShareInvitationStatus](./literals.md#resourceshareinvitationstatus)
 - `resourceShareAssociations`:
-  `List`\[[ResourceShareAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourceshareassociationtypedef)\]
+  `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
 
 ## ResourceSharePermissionDetailTypeDef
 
@@ -396,15 +392,12 @@ Optional fields:
 - `name`: `str`
 - `owningAccountId`: `str`
 - `allowExternalPrincipals`: `bool`
-- `status`:
-  [ResourceShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourcesharestatus)
+- `status`: [ResourceShareStatus](./literals.md#resourcesharestatus)
 - `statusMessage`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
-- `featureSet`:
-  [ResourceShareFeatureSet](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourcesharefeatureset)
+- `featureSet`: [ResourceShareFeatureSet](./literals.md#resourcesharefeatureset)
 
 ## ResourceTypeDef
 
@@ -418,8 +411,7 @@ Optional fields:
 - `type`: `str`
 - `resourceShareArn`: `str`
 - `resourceGroupArn`: `str`
-- `status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourcestatus)
+- `status`: [ResourceStatus](./literals.md#resourcestatus)
 - `statusMessage`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
@@ -465,6 +457,5 @@ from mypy_boto3_ram.type_defs import UpdateResourceShareResponseTypeDef
 
 Optional fields:
 
-- `resourceShare`:
-  [ResourceShareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#resourcesharetypedef)
+- `resourceShare`: [ResourceShareTypeDef](./type_defs.md#resourcesharetypedef)
 - `clientToken`: `str`

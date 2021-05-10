@@ -1,6 +1,6 @@
 # AccessAnalyzerClient for boto3 AccessAnalyzer module
 
-> [Index](../README.md) > [AccessAnalyzer](./README.md) > AccessAnalyzerClient
+> [Index](..) > [AccessAnalyzer](.) > AccessAnalyzerClient
 
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
@@ -137,12 +137,11 @@ Arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `configurations`: `Dict`\[`str`,
-  [ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#configurationtypedef)\]
-  *(required)*
+  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\] *(required)*
 - `clientToken`: `str`
 
 Returns
-[CreateAccessPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#createaccesspreviewresponsetypedef).
+[CreateAccessPreviewResponseTypeDef](./type_defs.md#createaccesspreviewresponsetypedef).
 
 ### create_analyzer
 
@@ -154,16 +153,14 @@ Boto3 documentation:
 Arguments:
 
 - `analyzerName`: `str` *(required)*
-- `type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#typetype)
-  *(required)*
+- `type`: [TypeType](./literals.md#typetype) *(required)*
 - `archiveRules`:
-  `List`\[[InlineArchiveRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#inlinearchiveruletypedef)\]
+  `List`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
 - `clientToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAnalyzerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#createanalyzerresponsetypedef).
+[CreateAnalyzerResponseTypeDef](./type_defs.md#createanalyzerresponsetypedef).
 
 ### create_archive_rule
 
@@ -176,8 +173,7 @@ Boto3 documentation:
 Arguments:
 
 - `analyzerName`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
   *(required)*
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
@@ -239,7 +235,7 @@ Arguments:
 - `analyzerArn`: `str` *(required)*
 
 Returns
-[GetAccessPreviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getaccesspreviewresponsetypedef).
+[GetAccessPreviewResponseTypeDef](./type_defs.md#getaccesspreviewresponsetypedef).
 
 ### get_analyzed_resource
 
@@ -255,7 +251,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[GetAnalyzedResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getanalyzedresourceresponsetypedef).
+[GetAnalyzedResourceResponseTypeDef](./type_defs.md#getanalyzedresourceresponsetypedef).
 
 ### get_analyzer
 
@@ -269,7 +265,7 @@ Arguments:
 - `analyzerName`: `str` *(required)*
 
 Returns
-[GetAnalyzerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getanalyzerresponsetypedef).
+[GetAnalyzerResponseTypeDef](./type_defs.md#getanalyzerresponsetypedef).
 
 ### get_archive_rule
 
@@ -284,7 +280,7 @@ Arguments:
 - `ruleName`: `str` *(required)*
 
 Returns
-[GetArchiveRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getarchiveruleresponsetypedef).
+[GetArchiveRuleResponseTypeDef](./type_defs.md#getarchiveruleresponsetypedef).
 
 ### get_finding
 
@@ -298,8 +294,7 @@ Arguments:
 - `analyzerArn`: `str` *(required)*
 - `id`: `str` *(required)*
 
-Returns
-[GetFindingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getfindingresponsetypedef).
+Returns [GetFindingResponseTypeDef](./type_defs.md#getfindingresponsetypedef).
 
 ### get_generated_policy
 
@@ -316,7 +311,7 @@ Arguments:
 - `includeServiceLevelTemplate`: `bool`
 
 Returns
-[GetGeneratedPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#getgeneratedpolicyresponsetypedef).
+[GetGeneratedPolicyResponseTypeDef](./type_defs.md#getgeneratedpolicyresponsetypedef).
 
 ### list_access_preview_findings
 
@@ -330,13 +325,12 @@ Arguments:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListAccessPreviewFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listaccesspreviewfindingsresponsetypedef).
+[ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef).
 
 ### list_access_previews
 
@@ -353,7 +347,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListAccessPreviewsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listaccesspreviewsresponsetypedef).
+[ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef).
 
 ### list_analyzed_resources
 
@@ -368,11 +362,10 @@ Arguments:
 - `analyzerArn`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 
 Returns
-[ListAnalyzedResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listanalyzedresourcesresponsetypedef).
+[ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef).
 
 ### list_analyzers
 
@@ -385,11 +378,10 @@ Arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#typetype)
+- `type`: [TypeType](./literals.md#typetype)
 
 Returns
-[ListAnalyzersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listanalyzersresponsetypedef).
+[ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef).
 
 ### list_archive_rules
 
@@ -406,7 +398,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListArchiveRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listarchiverulesresponsetypedef).
+[ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef).
 
 ### list_findings
 
@@ -418,15 +410,13 @@ Boto3 documentation:
 Arguments:
 
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `sort`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#sortcriteriatypedef)
+- `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listfindingsresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_policy_generations
 
@@ -443,7 +433,7 @@ Arguments:
 - `principalArn`: `str`
 
 Returns
-[ListPolicyGenerationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listpolicygenerationsresponsetypedef).
+[ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -458,7 +448,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_policy_generation
 
@@ -471,14 +461,14 @@ Boto3 documentation:
 Arguments:
 
 - `policyGenerationDetails`:
-  [PolicyGenerationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#policygenerationdetailstypedef)
+  [PolicyGenerationDetailsTypeDef](./type_defs.md#policygenerationdetailstypedef)
   *(required)*
 - `clientToken`: `str`
 - `cloudTrailDetails`:
-  [CloudTrailDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#cloudtraildetailstypedef)
+  [CloudTrailDetailsTypeDef](./type_defs.md#cloudtraildetailstypedef)
 
 Returns
-[StartPolicyGenerationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#startpolicygenerationresponsetypedef).
+[StartPolicyGenerationResponseTypeDef](./type_defs.md#startpolicygenerationresponsetypedef).
 
 ### start_resource_scan
 
@@ -532,8 +522,7 @@ Boto3 documentation:
 Arguments:
 
 - `analyzerName`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
   *(required)*
 - `ruleName`: `str` *(required)*
 - `clientToken`: `str`
@@ -548,9 +537,7 @@ Boto3 documentation:
 Arguments:
 
 - `analyzerArn`: `str` *(required)*
-- `status`:
-  [FindingStatusUpdate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatusupdate)
-  *(required)*
+- `status`: [FindingStatusUpdate](./literals.md#findingstatusupdate) *(required)*
 - `clientToken`: `str`
 - `ids`: `List`\[`str`\]
 - `resourceArn`: `str`
@@ -565,16 +552,13 @@ Boto3 documentation:
 Arguments:
 
 - `policyDocument`: `str` *(required)*
-- `policyType`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#policytype)
-  *(required)*
-- `locale`:
-  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#locale)
+- `policyType`: [PolicyType](./literals.md#policytype) *(required)*
+- `locale`: [Locale](./literals.md#locale)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ValidatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#validatepolicyresponsetypedef).
+[ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef).
 
 ### get_paginator
 

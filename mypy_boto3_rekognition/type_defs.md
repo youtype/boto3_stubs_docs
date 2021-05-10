@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Rekognition module
 
-> [Index](../README.md) > [Rekognition](./README.md) > Structures
+> [Index](..) > [Rekognition](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
@@ -102,7 +102,7 @@ type annotations stubs module
   - [ProtectiveEquipmentSummaryTypeDef](#protectiveequipmentsummarytypedef)
   - [RecognizeCelebritiesResponseTypeDef](#recognizecelebritiesresponsetypedef)
   - [RegionOfInterestTypeDef](#regionofinteresttypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ObjectTypeDef](#s3objecttypedef)
   - [SearchFacesByImageResponseTypeDef](#searchfacesbyimageresponsetypedef)
   - [SearchFacesResponseTypeDef](#searchfacesresponsetypedef)
@@ -163,7 +163,7 @@ from mypy_boto3_rekognition.type_defs import AssetTypeDef
 Optional fields:
 
 - `GroundTruthManifest`:
-  [GroundTruthManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#groundtruthmanifesttypedef)
+  [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
 
 ## AudioMetadataTypeDef
 
@@ -214,10 +214,8 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 - `Confidence`: `float`
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
-- `Face`:
-  [FaceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetailtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
+- `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
 ## CelebrityRecognitionTypeDef
 
@@ -228,8 +226,7 @@ from mypy_boto3_rekognition.type_defs import CelebrityRecognitionTypeDef
 Optional fields:
 
 - `Timestamp`: `int`
-- `Celebrity`:
-  [CelebrityDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#celebritydetailtypedef)
+- `Celebrity`: [CelebrityDetailTypeDef](./type_defs.md#celebritydetailtypedef)
 
 ## CelebrityTypeDef
 
@@ -242,8 +239,7 @@ Optional fields:
 - `Urls`: `List`\[`str`\]
 - `Name`: `str`
 - `Id`: `str`
-- `Face`:
-  [ComparedFaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparedfacetypedef)
+- `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
 - `MatchConfidence`: `float`
 
 ## CompareFacesMatchTypeDef
@@ -255,8 +251,7 @@ from mypy_boto3_rekognition.type_defs import CompareFacesMatchTypeDef
 Optional fields:
 
 - `Similarity`: `float`
-- `Face`:
-  [ComparedFaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparedfacetypedef)
+- `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
 
 ## CompareFacesResponseTypeDef
 
@@ -267,15 +262,15 @@ from mypy_boto3_rekognition.type_defs import CompareFacesResponseTypeDef
 Optional fields:
 
 - `SourceImageFace`:
-  [ComparedSourceImageFaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparedsourceimagefacetypedef)
+  [ComparedSourceImageFaceTypeDef](./type_defs.md#comparedsourceimagefacetypedef)
 - `FaceMatches`:
-  `List`\[[CompareFacesMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparefacesmatchtypedef)\]
+  `List`\[[CompareFacesMatchTypeDef](./type_defs.md#comparefacesmatchtypedef)\]
 - `UnmatchedFaces`:
-  `List`\[[ComparedFaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparedfacetypedef)\]
+  `List`\[[ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)\]
 - `SourceImageOrientationCorrection`:
-  [OrientationCorrection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#orientationcorrection)
+  [OrientationCorrection](./literals.md#orientationcorrection)
 - `TargetImageOrientationCorrection`:
-  [OrientationCorrection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#orientationcorrection)
+  [OrientationCorrection](./literals.md#orientationcorrection)
 
 ## ComparedFaceTypeDef
 
@@ -285,15 +280,11 @@ from mypy_boto3_rekognition.type_defs import ComparedFaceTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
-- `Landmarks`:
-  `List`\[[LandmarkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#landmarktypedef)\]
-- `Pose`:
-  [PoseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#posetypedef)
-- `Quality`:
-  [ImageQualityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagequalitytypedef)
+- `Landmarks`: `List`\[[LandmarkTypeDef](./type_defs.md#landmarktypedef)\]
+- `Pose`: [PoseTypeDef](./type_defs.md#posetypedef)
+- `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
 
 ## ComparedSourceImageFaceTypeDef
 
@@ -303,8 +294,7 @@ from mypy_boto3_rekognition.type_defs import ComparedSourceImageFaceTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
 
 ## ContentModerationDetectionTypeDef
@@ -317,7 +307,7 @@ Optional fields:
 
 - `Timestamp`: `int`
 - `ModerationLabel`:
-  [ModerationLabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#moderationlabeltypedef)
+  [ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef)
 
 ## CoversBodyPartTypeDef
 
@@ -382,8 +372,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Confidence`: `float`
-- `Geometry`:
-  [GeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#geometrytypedef)
+- `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 
 ## DeleteCollectionResponseTypeDef
 
@@ -413,8 +402,7 @@ from mypy_boto3_rekognition.type_defs import DeleteProjectResponseTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ProjectStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#projectstatus)
+- `Status`: [ProjectStatus](./literals.md#projectstatus)
 
 ## DeleteProjectVersionResponseTypeDef
 
@@ -424,8 +412,7 @@ from mypy_boto3_rekognition.type_defs import DeleteProjectVersionResponseTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ProjectVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#projectversionstatus)
+- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
 
 ## DescribeCollectionResponseTypeDef
 
@@ -449,7 +436,7 @@ from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsResponseType
 Optional fields:
 
 - `ProjectVersionDescriptions`:
-  `List`\[[ProjectVersionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#projectversiondescriptiontypedef)\]
+  `List`\[[ProjectVersionDescriptionTypeDef](./type_defs.md#projectversiondescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeProjectsResponseTypeDef
@@ -461,7 +448,7 @@ from mypy_boto3_rekognition.type_defs import DescribeProjectsResponseTypeDef
 Optional fields:
 
 - `ProjectDescriptions`:
-  `List`\[[ProjectDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#projectdescriptiontypedef)\]
+  `List`\[[ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeStreamProcessorResponseTypeDef
@@ -474,18 +461,17 @@ Optional fields:
 
 - `Name`: `str`
 - `StreamProcessorArn`: `str`
-- `Status`:
-  [StreamProcessorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#streamprocessorstatus)
+- `Status`: [StreamProcessorStatus](./literals.md#streamprocessorstatus)
 - `StatusMessage`: `str`
 - `CreationTimestamp`: `datetime`
 - `LastUpdateTimestamp`: `datetime`
 - `Input`:
-  [StreamProcessorInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessorinputtypedef)
+  [StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef)
 - `Output`:
-  [StreamProcessorOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessoroutputtypedef)
+  [StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef)
 - `RoleArn`: `str`
 - `Settings`:
-  [StreamProcessorSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessorsettingstypedef)
+  [StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef)
 
 ## DetectCustomLabelsResponseTypeDef
 
@@ -496,7 +482,7 @@ from mypy_boto3_rekognition.type_defs import DetectCustomLabelsResponseTypeDef
 Optional fields:
 
 - `CustomLabels`:
-  `List`\[[CustomLabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#customlabeltypedef)\]
+  `List`\[[CustomLabelTypeDef](./type_defs.md#customlabeltypedef)\]
 
 ## DetectFacesResponseTypeDef
 
@@ -506,10 +492,9 @@ from mypy_boto3_rekognition.type_defs import DetectFacesResponseTypeDef
 
 Optional fields:
 
-- `FaceDetails`:
-  `List`\[[FaceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetailtypedef)\]
+- `FaceDetails`: `List`\[[FaceDetailTypeDef](./type_defs.md#facedetailtypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#orientationcorrection)
+  [OrientationCorrection](./literals.md#orientationcorrection)
 
 ## DetectLabelsResponseTypeDef
 
@@ -519,10 +504,9 @@ from mypy_boto3_rekognition.type_defs import DetectLabelsResponseTypeDef
 
 Optional fields:
 
-- `Labels`:
-  `List`\[[LabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#labeltypedef)\]
+- `Labels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#orientationcorrection)
+  [OrientationCorrection](./literals.md#orientationcorrection)
 - `LabelModelVersion`: `str`
 
 ## DetectModerationLabelsResponseTypeDef
@@ -534,10 +518,10 @@ from mypy_boto3_rekognition.type_defs import DetectModerationLabelsResponseTypeD
 Optional fields:
 
 - `ModerationLabels`:
-  `List`\[[ModerationLabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#moderationlabeltypedef)\]
+  `List`\[[ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef)\]
 - `ModerationModelVersion`: `str`
 - `HumanLoopActivationOutput`:
-  [HumanLoopActivationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#humanloopactivationoutputtypedef)
+  [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 
 ## DetectProtectiveEquipmentResponseTypeDef
 
@@ -549,9 +533,9 @@ Optional fields:
 
 - `ProtectiveEquipmentModelVersion`: `str`
 - `Persons`:
-  `List`\[[ProtectiveEquipmentPersonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#protectiveequipmentpersontypedef)\]
+  `List`\[[ProtectiveEquipmentPersonTypeDef](./type_defs.md#protectiveequipmentpersontypedef)\]
 - `Summary`:
-  [ProtectiveEquipmentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#protectiveequipmentsummarytypedef)
+  [ProtectiveEquipmentSummaryTypeDef](./type_defs.md#protectiveequipmentsummarytypedef)
 
 ## DetectTextFiltersTypeDef
 
@@ -561,10 +545,9 @@ from mypy_boto3_rekognition.type_defs import DetectTextFiltersTypeDef
 
 Optional fields:
 
-- `WordFilter`:
-  [DetectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectionfiltertypedef)
+- `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
-  `List`\[[RegionOfInterestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#regionofinteresttypedef)\]
+  `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
 ## DetectTextResponseTypeDef
 
@@ -575,7 +558,7 @@ from mypy_boto3_rekognition.type_defs import DetectTextResponseTypeDef
 Optional fields:
 
 - `TextDetections`:
-  `List`\[[TextDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#textdetectiontypedef)\]
+  `List`\[[TextDetectionTypeDef](./type_defs.md#textdetectiontypedef)\]
 - `TextModelVersion`: `str`
 
 ## DetectionFilterTypeDef
@@ -598,8 +581,7 @@ from mypy_boto3_rekognition.type_defs import EmotionTypeDef
 
 Optional fields:
 
-- `Type`:
-  [EmotionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#emotionname)
+- `Type`: [EmotionName](./literals.md#emotionname)
 - `Confidence`: `float`
 
 ## EquipmentDetectionTypeDef
@@ -610,13 +592,10 @@ from mypy_boto3_rekognition.type_defs import EquipmentDetectionTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
-- `Type`:
-  [ProtectiveEquipmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#protectiveequipmenttype)
-- `CoversBodyPart`:
-  [CoversBodyPartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#coversbodyparttypedef)
+- `Type`: [ProtectiveEquipmentType](./literals.md#protectiveequipmenttype)
+- `CoversBodyPart`: [CoversBodyPartTypeDef](./type_defs.md#coversbodyparttypedef)
 
 ## EvaluationResultTypeDef
 
@@ -627,8 +606,7 @@ from mypy_boto3_rekognition.type_defs import EvaluationResultTypeDef
 Optional fields:
 
 - `F1Score`: `float`
-- `Summary`:
-  [SummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#summarytypedef)
+- `Summary`: [SummaryTypeDef](./type_defs.md#summarytypedef)
 
 ## EyeOpenTypeDef
 
@@ -660,34 +638,20 @@ from mypy_boto3_rekognition.type_defs import FaceDetailTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
-- `AgeRange`:
-  [AgeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#agerangetypedef)
-- `Smile`:
-  [SmileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#smiletypedef)
-- `Eyeglasses`:
-  [EyeglassesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#eyeglassestypedef)
-- `Sunglasses`:
-  [SunglassesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#sunglassestypedef)
-- `Gender`:
-  [GenderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#gendertypedef)
-- `Beard`:
-  [BeardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#beardtypedef)
-- `Mustache`:
-  [MustacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#mustachetypedef)
-- `EyesOpen`:
-  [EyeOpenTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#eyeopentypedef)
-- `MouthOpen`:
-  [MouthOpenTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#mouthopentypedef)
-- `Emotions`:
-  `List`\[[EmotionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#emotiontypedef)\]
-- `Landmarks`:
-  `List`\[[LandmarkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#landmarktypedef)\]
-- `Pose`:
-  [PoseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#posetypedef)
-- `Quality`:
-  [ImageQualityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagequalitytypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
+- `AgeRange`: [AgeRangeTypeDef](./type_defs.md#agerangetypedef)
+- `Smile`: [SmileTypeDef](./type_defs.md#smiletypedef)
+- `Eyeglasses`: [EyeglassesTypeDef](./type_defs.md#eyeglassestypedef)
+- `Sunglasses`: [SunglassesTypeDef](./type_defs.md#sunglassestypedef)
+- `Gender`: [GenderTypeDef](./type_defs.md#gendertypedef)
+- `Beard`: [BeardTypeDef](./type_defs.md#beardtypedef)
+- `Mustache`: [MustacheTypeDef](./type_defs.md#mustachetypedef)
+- `EyesOpen`: [EyeOpenTypeDef](./type_defs.md#eyeopentypedef)
+- `MouthOpen`: [MouthOpenTypeDef](./type_defs.md#mouthopentypedef)
+- `Emotions`: `List`\[[EmotionTypeDef](./type_defs.md#emotiontypedef)\]
+- `Landmarks`: `List`\[[LandmarkTypeDef](./type_defs.md#landmarktypedef)\]
+- `Pose`: [PoseTypeDef](./type_defs.md#posetypedef)
+- `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
 - `Confidence`: `float`
 
 ## FaceDetectionTypeDef
@@ -699,8 +663,7 @@ from mypy_boto3_rekognition.type_defs import FaceDetectionTypeDef
 Optional fields:
 
 - `Timestamp`: `int`
-- `Face`:
-  [FaceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetailtypedef)
+- `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
 ## FaceMatchTypeDef
 
@@ -711,8 +674,7 @@ from mypy_boto3_rekognition.type_defs import FaceMatchTypeDef
 Optional fields:
 
 - `Similarity`: `float`
-- `Face`:
-  [FaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facetypedef)
+- `Face`: [FaceTypeDef](./type_defs.md#facetypedef)
 
 ## FaceRecordTypeDef
 
@@ -722,10 +684,8 @@ from mypy_boto3_rekognition.type_defs import FaceRecordTypeDef
 
 Optional fields:
 
-- `Face`:
-  [FaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facetypedef)
-- `FaceDetail`:
-  [FaceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetailtypedef)
+- `Face`: [FaceTypeDef](./type_defs.md#facetypedef)
+- `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
 ## FaceSearchSettingsTypeDef
 
@@ -747,8 +707,7 @@ from mypy_boto3_rekognition.type_defs import FaceTypeDef
 Optional fields:
 
 - `FaceId`: `str`
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `ImageId`: `str`
 - `ExternalImageId`: `str`
 - `Confidence`: `float`
@@ -761,8 +720,7 @@ from mypy_boto3_rekognition.type_defs import GenderTypeDef
 
 Optional fields:
 
-- `Value`:
-  [GenderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#gendertype)
+- `Value`: [GenderType](./literals.md#gendertype)
 - `Confidence`: `float`
 
 ## GeometryTypeDef
@@ -773,10 +731,8 @@ from mypy_boto3_rekognition.type_defs import GeometryTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
-- `Polygon`:
-  `List`\[[PointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#pointtypedef)\]
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
+- `Polygon`: `List`\[[PointTypeDef](./type_defs.md#pointtypedef)\]
 
 ## GetCelebrityInfoResponseTypeDef
 
@@ -797,14 +753,12 @@ from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionResponseType
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
 - `Celebrities`:
-  `List`\[[CelebrityRecognitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#celebrityrecognitiontypedef)\]
+  `List`\[[CelebrityRecognitionTypeDef](./type_defs.md#celebrityrecognitiontypedef)\]
 
 ## GetContentModerationResponseTypeDef
 
@@ -814,13 +768,11 @@ from mypy_boto3_rekognition.type_defs import GetContentModerationResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `ModerationLabels`:
-  `List`\[[ContentModerationDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#contentmoderationdetectiontypedef)\]
+  `List`\[[ContentModerationDetectionTypeDef](./type_defs.md#contentmoderationdetectiontypedef)\]
 - `NextToken`: `str`
 - `ModerationModelVersion`: `str`
 
@@ -832,14 +784,11 @@ from mypy_boto3_rekognition.type_defs import GetFaceDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
-- `Faces`:
-  `List`\[[FaceDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetectiontypedef)\]
+- `Faces`: `List`\[[FaceDetectionTypeDef](./type_defs.md#facedetectiontypedef)\]
 
 ## GetFaceSearchResponseTypeDef
 
@@ -849,14 +798,11 @@ from mypy_boto3_rekognition.type_defs import GetFaceSearchResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
 - `NextToken`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
-- `Persons`:
-  `List`\[[PersonMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#personmatchtypedef)\]
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
+- `Persons`: `List`\[[PersonMatchTypeDef](./type_defs.md#personmatchtypedef)\]
 
 ## GetLabelDetectionResponseTypeDef
 
@@ -866,14 +812,12 @@ from mypy_boto3_rekognition.type_defs import GetLabelDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
 - `Labels`:
-  `List`\[[LabelDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#labeldetectiontypedef)\]
+  `List`\[[LabelDetectionTypeDef](./type_defs.md#labeldetectiontypedef)\]
 - `LabelModelVersion`: `str`
 
 ## GetPersonTrackingResponseTypeDef
@@ -884,14 +828,12 @@ from mypy_boto3_rekognition.type_defs import GetPersonTrackingResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `NextToken`: `str`
 - `Persons`:
-  `List`\[[PersonDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#persondetectiontypedef)\]
+  `List`\[[PersonDetectionTypeDef](./type_defs.md#persondetectiontypedef)\]
 
 ## GetSegmentDetectionResponseTypeDef
 
@@ -901,18 +843,17 @@ from mypy_boto3_rekognition.type_defs import GetSegmentDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
 - `VideoMetadata`:
-  `List`\[[VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)\]
+  `List`\[[VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)\]
 - `AudioMetadata`:
-  `List`\[[AudioMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#audiometadatatypedef)\]
+  `List`\[[AudioMetadataTypeDef](./type_defs.md#audiometadatatypedef)\]
 - `NextToken`: `str`
 - `Segments`:
-  `List`\[[SegmentDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#segmentdetectiontypedef)\]
+  `List`\[[SegmentDetectionTypeDef](./type_defs.md#segmentdetectiontypedef)\]
 - `SelectedSegmentTypes`:
-  `List`\[[SegmentTypeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#segmenttypeinfotypedef)\]
+  `List`\[[SegmentTypeInfoTypeDef](./type_defs.md#segmenttypeinfotypedef)\]
 
 ## GetTextDetectionResponseTypeDef
 
@@ -922,13 +863,11 @@ from mypy_boto3_rekognition.type_defs import GetTextDetectionResponseTypeDef
 
 Optional fields:
 
-- `JobStatus`:
-  [VideoJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#videojobstatus)
+- `JobStatus`: [VideoJobStatus](./literals.md#videojobstatus)
 - `StatusMessage`: `str`
-- `VideoMetadata`:
-  [VideoMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videometadatatypedef)
+- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
 - `TextDetections`:
-  `List`\[[TextDetectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#textdetectionresulttypedef)\]
+  `List`\[[TextDetectionResultTypeDef](./type_defs.md#textdetectionresulttypedef)\]
 - `NextToken`: `str`
 - `TextModelVersion`: `str`
 
@@ -940,8 +879,7 @@ from mypy_boto3_rekognition.type_defs import GroundTruthManifestTypeDef
 
 Optional fields:
 
-- `S3Object`:
-  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#s3objecttypedef)
+- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
 ## HumanLoopActivationOutputTypeDef
 
@@ -955,7 +893,7 @@ Required fields:
 - `HumanLoopActivationReasons`: `List`\[`str`\]
 - `HumanLoopActivationConditionsEvaluationResults`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HumanLoopConfigTypeDef
 
@@ -971,7 +909,7 @@ Required fields:
 Optional fields:
 
 - `DataAttributes`:
-  [HumanLoopDataAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#humanloopdataattributestypedef)
+  [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
 ## HumanLoopDataAttributesTypeDef
 
@@ -982,7 +920,7 @@ from mypy_boto3_rekognition.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#contentclassifier)\]
+  `List`\[[ContentClassifier](./literals.md#contentclassifier)\]
 
 ## ImageQualityTypeDef
 
@@ -1004,8 +942,7 @@ from mypy_boto3_rekognition.type_defs import ImageTypeDef
 Optional fields:
 
 - `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `S3Object`:
-  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#s3objecttypedef)
+- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
 ## IndexFacesResponseTypeDef
 
@@ -1015,13 +952,12 @@ from mypy_boto3_rekognition.type_defs import IndexFacesResponseTypeDef
 
 Optional fields:
 
-- `FaceRecords`:
-  `List`\[[FaceRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facerecordtypedef)\]
+- `FaceRecords`: `List`\[[FaceRecordTypeDef](./type_defs.md#facerecordtypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#orientationcorrection)
+  [OrientationCorrection](./literals.md#orientationcorrection)
 - `FaceModelVersion`: `str`
 - `UnindexedFaces`:
-  `List`\[[UnindexedFaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#unindexedfacetypedef)\]
+  `List`\[[UnindexedFaceTypeDef](./type_defs.md#unindexedfacetypedef)\]
 
 ## InstanceTypeDef
 
@@ -1031,8 +967,7 @@ from mypy_boto3_rekognition.type_defs import InstanceTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
 
 ## KinesisDataStreamTypeDef
@@ -1064,8 +999,7 @@ from mypy_boto3_rekognition.type_defs import LabelDetectionTypeDef
 Optional fields:
 
 - `Timestamp`: `int`
-- `Label`:
-  [LabelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#labeltypedef)
+- `Label`: [LabelTypeDef](./type_defs.md#labeltypedef)
 
 ## LabelTypeDef
 
@@ -1077,10 +1011,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Confidence`: `float`
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#instancetypedef)\]
-- `Parents`:
-  `List`\[[ParentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#parenttypedef)\]
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Parents`: `List`\[[ParentTypeDef](./type_defs.md#parenttypedef)\]
 
 ## LandmarkTypeDef
 
@@ -1090,8 +1022,7 @@ from mypy_boto3_rekognition.type_defs import LandmarkTypeDef
 
 Optional fields:
 
-- `Type`:
-  [LandmarkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#landmarktype)
+- `Type`: [LandmarkType](./literals.md#landmarktype)
 - `X`: `float`
 - `Y`: `float`
 
@@ -1115,8 +1046,7 @@ from mypy_boto3_rekognition.type_defs import ListFacesResponseTypeDef
 
 Optional fields:
 
-- `Faces`:
-  `List`\[[FaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facetypedef)\]
+- `Faces`: `List`\[[FaceTypeDef](./type_defs.md#facetypedef)\]
 - `NextToken`: `str`
 - `FaceModelVersion`: `str`
 
@@ -1130,7 +1060,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `StreamProcessors`:
-  `List`\[[StreamProcessorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessortypedef)\]
+  `List`\[[StreamProcessorTypeDef](./type_defs.md#streamprocessortypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1229,10 +1159,8 @@ from mypy_boto3_rekognition.type_defs import PersonDetailTypeDef
 Optional fields:
 
 - `Index`: `int`
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
-- `Face`:
-  [FaceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetailtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
+- `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
 ## PersonDetectionTypeDef
 
@@ -1243,8 +1171,7 @@ from mypy_boto3_rekognition.type_defs import PersonDetectionTypeDef
 Optional fields:
 
 - `Timestamp`: `int`
-- `Person`:
-  [PersonDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#persondetailtypedef)
+- `Person`: [PersonDetailTypeDef](./type_defs.md#persondetailtypedef)
 
 ## PersonMatchTypeDef
 
@@ -1255,10 +1182,8 @@ from mypy_boto3_rekognition.type_defs import PersonMatchTypeDef
 Optional fields:
 
 - `Timestamp`: `int`
-- `Person`:
-  [PersonDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#persondetailtypedef)
-- `FaceMatches`:
-  `List`\[[FaceMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facematchtypedef)\]
+- `Person`: [PersonDetailTypeDef](./type_defs.md#persondetailtypedef)
+- `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
 
 ## PointTypeDef
 
@@ -1293,8 +1218,7 @@ Optional fields:
 
 - `ProjectArn`: `str`
 - `CreationTimestamp`: `datetime`
-- `Status`:
-  [ProjectStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#projectstatus)
+- `Status`: [ProjectStatus](./literals.md#projectstatus)
 
 ## ProjectVersionDescriptionTypeDef
 
@@ -1307,21 +1231,19 @@ Optional fields:
 - `ProjectVersionArn`: `str`
 - `CreationTimestamp`: `datetime`
 - `MinInferenceUnits`: `int`
-- `Status`:
-  [ProjectVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#projectversionstatus)
+- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
 - `StatusMessage`: `str`
 - `BillableTrainingTimeInSeconds`: `int`
 - `TrainingEndTimestamp`: `datetime`
-- `OutputConfig`:
-  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#outputconfigtypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `TrainingDataResult`:
-  [TrainingDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#trainingdataresulttypedef)
+  [TrainingDataResultTypeDef](./type_defs.md#trainingdataresulttypedef)
 - `TestingDataResult`:
-  [TestingDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#testingdataresulttypedef)
+  [TestingDataResultTypeDef](./type_defs.md#testingdataresulttypedef)
 - `EvaluationResult`:
-  [EvaluationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#evaluationresulttypedef)
+  [EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)
 - `ManifestSummary`:
-  [GroundTruthManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#groundtruthmanifesttypedef)
+  [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
 
 ## ProtectiveEquipmentBodyPartTypeDef
 
@@ -1331,11 +1253,10 @@ from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentBodyPartTypeDef
 
 Optional fields:
 
-- `Name`:
-  [BodyPart](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#bodypart)
+- `Name`: [BodyPart](./literals.md#bodypart)
 - `Confidence`: `float`
 - `EquipmentDetections`:
-  `List`\[[EquipmentDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#equipmentdetectiontypedef)\]
+  `List`\[[EquipmentDetectionTypeDef](./type_defs.md#equipmentdetectiontypedef)\]
 
 ## ProtectiveEquipmentPersonTypeDef
 
@@ -1346,9 +1267,8 @@ from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentPersonTypeDef
 Optional fields:
 
 - `BodyParts`:
-  `List`\[[ProtectiveEquipmentBodyPartTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#protectiveequipmentbodyparttypedef)\]
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+  `List`\[[ProtectiveEquipmentBodyPartTypeDef](./type_defs.md#protectiveequipmentbodyparttypedef)\]
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
 - `Id`: `int`
 
@@ -1362,7 +1282,7 @@ Required fields:
 
 - `MinConfidence`: `float`
 - `RequiredEquipmentTypes`:
-  `List`\[[ProtectiveEquipmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#protectiveequipmenttype)\]
+  `List`\[[ProtectiveEquipmentType](./literals.md#protectiveequipmenttype)\]
 
 ## ProtectiveEquipmentSummaryTypeDef
 
@@ -1384,12 +1304,11 @@ from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesResponseTypeDef
 
 Optional fields:
 
-- `CelebrityFaces`:
-  `List`\[[CelebrityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#celebritytypedef)\]
+- `CelebrityFaces`: `List`\[[CelebrityTypeDef](./type_defs.md#celebritytypedef)\]
 - `UnrecognizedFaces`:
-  `List`\[[ComparedFaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparedfacetypedef)\]
+  `List`\[[ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)\]
 - `OrientationCorrection`:
-  [OrientationCorrection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#orientationcorrection)
+  [OrientationCorrection](./literals.md#orientationcorrection)
 
 ## RegionOfInterestTypeDef
 
@@ -1399,13 +1318,12 @@ from mypy_boto3_rekognition.type_defs import RegionOfInterestTypeDef
 
 Optional fields:
 
-- `BoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_rekognition.type_defs import ResponseMetadata
+from mypy_boto3_rekognition.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1437,10 +1355,9 @@ from mypy_boto3_rekognition.type_defs import SearchFacesByImageResponseTypeDef
 Optional fields:
 
 - `SearchedFaceBoundingBox`:
-  [BoundingBoxTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#boundingboxtypedef)
+  [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `SearchedFaceConfidence`: `float`
-- `FaceMatches`:
-  `List`\[[FaceMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facematchtypedef)\]
+- `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
 - `FaceModelVersion`: `str`
 
 ## SearchFacesResponseTypeDef
@@ -1452,8 +1369,7 @@ from mypy_boto3_rekognition.type_defs import SearchFacesResponseTypeDef
 Optional fields:
 
 - `SearchedFaceId`: `str`
-- `FaceMatches`:
-  `List`\[[FaceMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facematchtypedef)\]
+- `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
 - `FaceModelVersion`: `str`
 
 ## SegmentDetectionTypeDef
@@ -1464,8 +1380,7 @@ from mypy_boto3_rekognition.type_defs import SegmentDetectionTypeDef
 
 Optional fields:
 
-- `Type`:
-  [SegmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#segmenttype)
+- `Type`: [SegmentType](./literals.md#segmenttype)
 - `StartTimestampMillis`: `int`
 - `EndTimestampMillis`: `int`
 - `DurationMillis`: `int`
@@ -1473,9 +1388,8 @@ Optional fields:
 - `EndTimecodeSMPTE`: `str`
 - `DurationSMPTE`: `str`
 - `TechnicalCueSegment`:
-  [TechnicalCueSegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#technicalcuesegmenttypedef)
-- `ShotSegment`:
-  [ShotSegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#shotsegmenttypedef)
+  [TechnicalCueSegmentTypeDef](./type_defs.md#technicalcuesegmenttypedef)
+- `ShotSegment`: [ShotSegmentTypeDef](./type_defs.md#shotsegmenttypedef)
 
 ## SegmentTypeInfoTypeDef
 
@@ -1485,8 +1399,7 @@ from mypy_boto3_rekognition.type_defs import SegmentTypeInfoTypeDef
 
 Optional fields:
 
-- `Type`:
-  [SegmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#segmenttype)
+- `Type`: [SegmentType](./literals.md#segmenttype)
 - `ModelVersion`: `str`
 
 ## ShotSegmentTypeDef
@@ -1579,8 +1492,7 @@ from mypy_boto3_rekognition.type_defs import StartProjectVersionResponseTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ProjectVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#projectversionstatus)
+- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
 
 ## StartSegmentDetectionFiltersTypeDef
 
@@ -1591,9 +1503,9 @@ from mypy_boto3_rekognition.type_defs import StartSegmentDetectionFiltersTypeDef
 Optional fields:
 
 - `TechnicalCueFilter`:
-  [StartTechnicalCueDetectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#starttechnicalcuedetectionfiltertypedef)
+  [StartTechnicalCueDetectionFilterTypeDef](./type_defs.md#starttechnicalcuedetectionfiltertypedef)
 - `ShotFilter`:
-  [StartShotDetectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startshotdetectionfiltertypedef)
+  [StartShotDetectionFilterTypeDef](./type_defs.md#startshotdetectionfiltertypedef)
 
 ## StartSegmentDetectionResponseTypeDef
 
@@ -1633,10 +1545,9 @@ from mypy_boto3_rekognition.type_defs import StartTextDetectionFiltersTypeDef
 
 Optional fields:
 
-- `WordFilter`:
-  [DetectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectionfiltertypedef)
+- `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
-  `List`\[[RegionOfInterestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#regionofinteresttypedef)\]
+  `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
 ## StartTextDetectionResponseTypeDef
 
@@ -1656,8 +1567,7 @@ from mypy_boto3_rekognition.type_defs import StopProjectVersionResponseTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ProjectVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#projectversionstatus)
+- `Status`: [ProjectVersionStatus](./literals.md#projectversionstatus)
 
 ## StreamProcessorInputTypeDef
 
@@ -1668,7 +1578,7 @@ from mypy_boto3_rekognition.type_defs import StreamProcessorInputTypeDef
 Optional fields:
 
 - `KinesisVideoStream`:
-  [KinesisVideoStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#kinesisvideostreamtypedef)
+  [KinesisVideoStreamTypeDef](./type_defs.md#kinesisvideostreamtypedef)
 
 ## StreamProcessorOutputTypeDef
 
@@ -1679,9 +1589,9 @@ from mypy_boto3_rekognition.type_defs import StreamProcessorOutputTypeDef
 Required fields:
 
 - `KinesisDataStream`:
-  [KinesisDataStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#kinesisdatastreamtypedef)
+  [KinesisDataStreamTypeDef](./type_defs.md#kinesisdatastreamtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StreamProcessorSettingsTypeDef
 
@@ -1692,7 +1602,7 @@ from mypy_boto3_rekognition.type_defs import StreamProcessorSettingsTypeDef
 Optional fields:
 
 - `FaceSearch`:
-  [FaceSearchSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facesearchsettingstypedef)
+  [FaceSearchSettingsTypeDef](./type_defs.md#facesearchsettingstypedef)
 
 ## StreamProcessorTypeDef
 
@@ -1703,8 +1613,7 @@ from mypy_boto3_rekognition.type_defs import StreamProcessorTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`:
-  [StreamProcessorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#streamprocessorstatus)
+- `Status`: [StreamProcessorStatus](./literals.md#streamprocessorstatus)
 
 ## SummaryTypeDef
 
@@ -1714,8 +1623,7 @@ from mypy_boto3_rekognition.type_defs import SummaryTypeDef
 
 Optional fields:
 
-- `S3Object`:
-  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#s3objecttypedef)
+- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
 ## SunglassesTypeDef
 
@@ -1736,8 +1644,7 @@ from mypy_boto3_rekognition.type_defs import TechnicalCueSegmentTypeDef
 
 Optional fields:
 
-- `Type`:
-  [TechnicalCueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#technicalcuetype)
+- `Type`: [TechnicalCueType](./literals.md#technicalcuetype)
 - `Confidence`: `float`
 
 ## TestingDataResultTypeDef
@@ -1748,12 +1655,9 @@ from mypy_boto3_rekognition.type_defs import TestingDataResultTypeDef
 
 Optional fields:
 
-- `Input`:
-  [TestingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#testingdatatypedef)
-- `Output`:
-  [TestingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#testingdatatypedef)
-- `Validation`:
-  [ValidationDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#validationdatatypedef)
+- `Input`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
+- `Output`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
+- `Validation`: [ValidationDataTypeDef](./type_defs.md#validationdatatypedef)
 
 ## TestingDataTypeDef
 
@@ -1763,8 +1667,7 @@ from mypy_boto3_rekognition.type_defs import TestingDataTypeDef
 
 Optional fields:
 
-- `Assets`:
-  `List`\[[AssetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#assettypedef)\]
+- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 - `AutoCreate`: `bool`
 
 ## TextDetectionResultTypeDef
@@ -1776,8 +1679,7 @@ from mypy_boto3_rekognition.type_defs import TextDetectionResultTypeDef
 Optional fields:
 
 - `Timestamp`: `int`
-- `TextDetection`:
-  [TextDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#textdetectiontypedef)
+- `TextDetection`: [TextDetectionTypeDef](./type_defs.md#textdetectiontypedef)
 
 ## TextDetectionTypeDef
 
@@ -1788,13 +1690,11 @@ from mypy_boto3_rekognition.type_defs import TextDetectionTypeDef
 Optional fields:
 
 - `DetectedText`: `str`
-- `Type`:
-  [TextTypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#texttypes)
+- `Type`: [TextTypes](./literals.md#texttypes)
 - `Id`: `int`
 - `ParentId`: `int`
 - `Confidence`: `float`
-- `Geometry`:
-  [GeometryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#geometrytypedef)
+- `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 
 ## TrainingDataResultTypeDef
 
@@ -1804,12 +1704,9 @@ from mypy_boto3_rekognition.type_defs import TrainingDataResultTypeDef
 
 Optional fields:
 
-- `Input`:
-  [TrainingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#trainingdatatypedef)
-- `Output`:
-  [TrainingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#trainingdatatypedef)
-- `Validation`:
-  [ValidationDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#validationdatatypedef)
+- `Input`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
+- `Output`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
+- `Validation`: [ValidationDataTypeDef](./type_defs.md#validationdatatypedef)
 
 ## TrainingDataTypeDef
 
@@ -1819,8 +1716,7 @@ from mypy_boto3_rekognition.type_defs import TrainingDataTypeDef
 
 Optional fields:
 
-- `Assets`:
-  `List`\[[AssetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#assettypedef)\]
+- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 
 ## UnindexedFaceTypeDef
 
@@ -1830,10 +1726,8 @@ from mypy_boto3_rekognition.type_defs import UnindexedFaceTypeDef
 
 Optional fields:
 
-- `Reasons`:
-  `List`\[[Reason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#reason)\]
-- `FaceDetail`:
-  [FaceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#facedetailtypedef)
+- `Reasons`: `List`\[[Reason](./literals.md#reason)\]
+- `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
 ## ValidationDataTypeDef
 
@@ -1843,8 +1737,7 @@ from mypy_boto3_rekognition.type_defs import ValidationDataTypeDef
 
 Optional fields:
 
-- `Assets`:
-  `List`\[[AssetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#assettypedef)\]
+- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 
 ## VideoMetadataTypeDef
 
@@ -1869,8 +1762,7 @@ from mypy_boto3_rekognition.type_defs import VideoTypeDef
 
 Optional fields:
 
-- `S3Object`:
-  [S3ObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#s3objecttypedef)
+- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
 ## WaiterConfigTypeDef
 

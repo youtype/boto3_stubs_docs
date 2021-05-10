@@ -1,6 +1,6 @@
 # Literals for boto3 EMRContainers module
 
-> [Index](../README.md) > [EMRContainers](./README.md) > Literals
+> [Index](..) > [EMRContainers](.) > Literals
 
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)

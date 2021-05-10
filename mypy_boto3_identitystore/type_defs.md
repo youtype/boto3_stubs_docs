@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IdentityStore module
 
-> [Index](../README.md) > [IdentityStore](./README.md) > Structures
+> [Index](..) > [IdentityStore](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
@@ -68,8 +68,7 @@ from mypy_boto3_identitystore.type_defs import ListGroupsResponseTypeDef
 
 Required fields:
 
-- `Groups`:
-  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#grouptypedef)\]
+- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 
 Optional fields:
 
@@ -83,8 +82,7 @@ from mypy_boto3_identitystore.type_defs import ListUsersResponseTypeDef
 
 Required fields:
 
-- `Users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#usertypedef)\]
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Optional fields:
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CognitoSync module
 
-> [Index](../README.md) > CognitoSync
+> [Index](..) > CognitoSync
 
 Auto-generated documentation for
 [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)

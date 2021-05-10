@@ -1,6 +1,6 @@
 # Paginators for boto3 Translate module
 
-> [Index](../README.md) > [Translate](./README.md) > Paginators
+> [Index](..) > [Translate](.) > Paginators
 
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
@@ -30,7 +30,7 @@ Boto3 documentation:
 Arguments for `ListTerminologiesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTerminologiesPaginator.paginate` returns
-`Iterator`\[[ListTerminologiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#listterminologiesresponsetypedef)\].
+`Iterator`\[[ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef)\].

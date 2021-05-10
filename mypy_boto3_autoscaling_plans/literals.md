@@ -1,6 +1,6 @@
 # Literals for boto3 AutoScalingPlans module
 
-> [Index](../README.md) > [AutoScalingPlans](./README.md) > Literals
+> [Index](..) > [AutoScalingPlans](.) > Literals
 
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)

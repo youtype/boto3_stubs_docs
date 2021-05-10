@@ -1,6 +1,6 @@
 # Paginators for boto3 Budgets module
 
-> [Index](../README.md) > [Budgets](./README.md) > Paginators
+> [Index](..) > [Budgets](.) > Paginators
 
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
@@ -38,13 +38,12 @@ Arguments for `DescribeBudgetActionHistoriesPaginator.paginate` method:
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
 - `ActionId`: `str` *(required)*
-- `TimePeriod`:
-  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetActionHistoriesPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetActionHistoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionhistoriesresponsetypedef)\].
+`Iterator`\[[DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef)\].
 
 ## DescribeBudgetActionsForAccountPaginator
 
@@ -67,10 +66,10 @@ Arguments for `DescribeBudgetActionsForAccountPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetActionsForAccountPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetActionsForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionsforaccountresponsetypedef)\].
+`Iterator`\[[DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef)\].
 
 ## DescribeBudgetActionsForBudgetPaginator
 
@@ -94,10 +93,10 @@ Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetActionsForBudgetPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetactionsforbudgetresponsetypedef)\].
+`Iterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef)\].
 
 ## DescribeBudgetPerformanceHistoryPaginator
 
@@ -120,13 +119,12 @@ Arguments for `DescribeBudgetPerformanceHistoryPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
-- `TimePeriod`:
-  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetPerformanceHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetPerformanceHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetperformancehistoryresponsetypedef)\].
+`Iterator`\[[DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef)\].
 
 ## DescribeBudgetsPaginator
 
@@ -149,10 +147,10 @@ Arguments for `DescribeBudgetsPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetsPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describebudgetsresponsetypedef)\].
+`Iterator`\[[DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef)\].
 
 ## DescribeNotificationsForBudgetPaginator
 
@@ -176,10 +174,10 @@ Arguments for `DescribeNotificationsForBudgetPaginator.paginate` method:
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationsForBudgetPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationsForBudgetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describenotificationsforbudgetresponsetypedef)\].
+`Iterator`\[[DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef)\].
 
 ## DescribeSubscribersForNotificationPaginator
 
@@ -202,11 +200,10 @@ Arguments for `DescribeSubscribersForNotificationPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
-- `Notification`:
-  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubscribersForNotificationPaginator.paginate` returns
-`Iterator`\[[DescribeSubscribersForNotificationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#describesubscribersfornotificationresponsetypedef)\].
+`Iterator`\[[DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef)\].

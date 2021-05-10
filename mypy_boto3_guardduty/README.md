@@ -1,6 +1,6 @@
 # Type annotations for boto3 GuardDuty module
 
-> [Index](../README.md) > GuardDuty
+> [Index](..) > GuardDuty
 
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudWatchLogs module
 
-> [Index](../README.md) > CloudWatchLogs
+> [Index](..) > CloudWatchLogs
 
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 TimestreamQuery module
 
-> [Index](../README.md) > [TimestreamQuery](./README.md) > Structures
+> [Index](..) > [TimestreamQuery](.) > Typed dictionaries
 
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
@@ -38,8 +38,7 @@ from mypy_boto3_timestream_query.type_defs import ColumnInfoTypeDef
 
 Required fields:
 
-- `Type`:
-  [TypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#typetypedef)
+- `Type`: [TypeTypeDef](./type_defs.md#typetypedef)
 
 Optional fields:
 
@@ -55,11 +54,9 @@ Optional fields:
 
 - `ScalarValue`: `str`
 - `TimeSeriesValue`:
-  `List`\[[TimeSeriesDataPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#timeseriesdatapointtypedef)\]
-- `ArrayValue`:
-  `List`\[[DatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#datumtypedef)\]
-- `RowValue`:
-  [RowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#rowtypedef)
+  `List`\[[TimeSeriesDataPointTypeDef](./type_defs.md#timeseriesdatapointtypedef)\]
+- `ArrayValue`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
+- `RowValue`: [RowTypeDef](./type_defs.md#rowtypedef)
 - `NullValue`: `bool`
 
 ## DescribeEndpointsResponseTypeDef
@@ -70,8 +67,7 @@ from mypy_boto3_timestream_query.type_defs import DescribeEndpointsResponseTypeD
 
 Required fields:
 
-- `Endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#endpointtypedef)\]
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 
 ## EndpointTypeDef
 
@@ -105,16 +101,13 @@ from mypy_boto3_timestream_query.type_defs import QueryResponseTypeDef
 Required fields:
 
 - `QueryId`: `str`
-- `Rows`:
-  `List`\[[RowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#rowtypedef)\]
-- `ColumnInfo`:
-  `List`\[[ColumnInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#columninfotypedef)\]
+- `Rows`: `List`\[[RowTypeDef](./type_defs.md#rowtypedef)\]
+- `ColumnInfo`: `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
 
 Optional fields:
 
 - `NextToken`: `str`
-- `QueryStatus`:
-  [QueryStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#querystatustypedef)
+- `QueryStatus`: [QueryStatusTypeDef](./type_defs.md#querystatustypedef)
 
 ## QueryStatusTypeDef
 
@@ -136,8 +129,7 @@ from mypy_boto3_timestream_query.type_defs import RowTypeDef
 
 Required fields:
 
-- `Data`:
-  `List`\[[DatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#datumtypedef)\]
+- `Data`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
 
 ## TimeSeriesDataPointTypeDef
 
@@ -148,8 +140,7 @@ from mypy_boto3_timestream_query.type_defs import TimeSeriesDataPointTypeDef
 Required fields:
 
 - `Time`: `str`
-- `Value`:
-  [DatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#datumtypedef)
+- `Value`: [DatumTypeDef](./type_defs.md#datumtypedef)
 
 ## TypeTypeDef
 
@@ -159,11 +150,9 @@ from mypy_boto3_timestream_query.type_defs import TypeTypeDef
 
 Optional fields:
 
-- `ScalarType`:
-  [ScalarType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/literals.html#scalartype)
-- `ArrayColumnInfo`:
-  [ColumnInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#columninfotypedef)
+- `ScalarType`: [ScalarType](./literals.md#scalartype)
+- `ArrayColumnInfo`: [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
 - `TimeSeriesMeasureValueColumnInfo`:
-  [ColumnInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#columninfotypedef)
+  [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
 - `RowColumnInfo`:
-  `List`\[[ColumnInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#columninfotypedef)\]
+  `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]

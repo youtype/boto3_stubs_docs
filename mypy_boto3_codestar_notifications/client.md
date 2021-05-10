@@ -1,7 +1,6 @@
 # CodeStarNotificationsClient for boto3 CodeStarNotifications module
 
-> [Index](../README.md) > [CodeStarNotifications](./README.md) >
-> CodeStarNotificationsClient
+> [Index](..) > [CodeStarNotifications](.) > CodeStarNotificationsClient
 
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
@@ -98,19 +97,14 @@ Arguments:
 - `Name`: `str` *(required)*
 - `EventTypeIds`: `List`\[`str`\] *(required)*
 - `Resource`: `str` *(required)*
-- `Targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targettypedef)\]
-  *(required)*
-- `DetailType`:
-  [DetailType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#detailtype)
-  *(required)*
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\] *(required)*
+- `DetailType`: [DetailType](./literals.md#detailtype) *(required)*
 - `ClientRequestToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Status`:
-  [NotificationRuleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#notificationrulestatus)
+- `Status`: [NotificationRuleStatus](./literals.md#notificationrulestatus)
 
 Returns
-[CreateNotificationRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#createnotificationruleresulttypedef).
+[CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef).
 
 ### delete_notification_rule
 
@@ -125,7 +119,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[DeleteNotificationRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#deletenotificationruleresulttypedef).
+[DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef).
 
 ### delete_target
 
@@ -155,7 +149,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[DescribeNotificationRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#describenotificationruleresulttypedef).
+[DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef).
 
 ### generate_presigned_url
 
@@ -185,12 +179,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  `List`\[[ListEventTypesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listeventtypesfiltertypedef)\]
+  `List`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListEventTypesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listeventtypesresulttypedef).
+[ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef).
 
 ### list_notification_rules
 
@@ -203,12 +197,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  `List`\[[ListNotificationRulesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listnotificationrulesfiltertypedef)\]
+  `List`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListNotificationRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listnotificationrulesresulttypedef).
+[ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -223,7 +217,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### list_targets
 
@@ -236,12 +230,11 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  `List`\[[ListTargetsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listtargetsfiltertypedef)\]
+  `List`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listtargetsresulttypedef).
+Returns [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef).
 
 ### subscribe
 
@@ -253,13 +246,10 @@ Boto3 documentation:
 Arguments:
 
 - `Arn`: `str` *(required)*
-- `Target`:
-  [TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targettypedef)
-  *(required)*
+- `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
 - `ClientRequestToken`: `str`
 
-Returns
-[SubscribeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#subscriberesulttypedef).
+Returns [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef).
 
 ### tag_resource
 
@@ -274,8 +264,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#tagresourceresulttypedef).
+Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 
 ### unsubscribe
 
@@ -290,8 +279,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 - `TargetAddress`: `str` *(required)*
 
-Returns
-[UnsubscribeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#unsubscriberesulttypedef).
+Returns [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef).
 
 ### untag_resource
 
@@ -320,13 +308,10 @@ Arguments:
 
 - `Arn`: `str` *(required)*
 - `Name`: `str`
-- `Status`:
-  [NotificationRuleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#notificationrulestatus)
+- `Status`: [NotificationRuleStatus](./literals.md#notificationrulestatus)
 - `EventTypeIds`: `List`\[`str`\]
-- `Targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targettypedef)\]
-- `DetailType`:
-  [DetailType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#detailtype)
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `DetailType`: [DetailType](./literals.md#detailtype)
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaLive module
 
-> [Index](../README.md) > [MediaLive](./README.md) > Paginators
+> [Index](..) > [MediaLive](.) > Paginators
 
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
@@ -40,10 +40,10 @@ Arguments for `DescribeSchedulePaginator.paginate` method:
 
 - `ChannelId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSchedulePaginator.paginate` returns
-`Iterator`\[[DescribeScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describescheduleresponsetypedef)\].
+`Iterator`\[[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef)\].
 
 ## ListChannelsPaginator
 
@@ -65,10 +65,10 @@ Boto3 documentation:
 Arguments for `ListChannelsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listchannelsresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListInputDeviceTransfersPaginator
 
@@ -91,10 +91,10 @@ Arguments for `ListInputDeviceTransfersPaginator.paginate` method:
 
 - `TransferType`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputDeviceTransfersPaginator.paginate` returns
-`Iterator`\[[ListInputDeviceTransfersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputdevicetransfersresponsetypedef)\].
+`Iterator`\[[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef)\].
 
 ## ListInputDevicesPaginator
 
@@ -116,10 +116,10 @@ Boto3 documentation:
 Arguments for `ListInputDevicesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputDevicesPaginator.paginate` returns
-`Iterator`\[[ListInputDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputdevicesresponsetypedef)\].
+`Iterator`\[[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef)\].
 
 ## ListInputSecurityGroupsPaginator
 
@@ -141,10 +141,10 @@ Boto3 documentation:
 Arguments for `ListInputSecurityGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[ListInputSecurityGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputsecuritygroupsresponsetypedef)\].
+`Iterator`\[[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef)\].
 
 ## ListInputsPaginator
 
@@ -165,10 +165,10 @@ Boto3 documentation:
 Arguments for `ListInputsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInputsPaginator.paginate` returns
-`Iterator`\[[ListInputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputsresponsetypedef)\].
+`Iterator`\[[ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef)\].
 
 ## ListMultiplexProgramsPaginator
 
@@ -191,10 +191,10 @@ Arguments for `ListMultiplexProgramsPaginator.paginate` method:
 
 - `MultiplexId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMultiplexProgramsPaginator.paginate` returns
-`Iterator`\[[ListMultiplexProgramsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listmultiplexprogramsresponsetypedef)\].
+`Iterator`\[[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef)\].
 
 ## ListMultiplexesPaginator
 
@@ -216,10 +216,10 @@ Boto3 documentation:
 Arguments for `ListMultiplexesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMultiplexesPaginator.paginate` returns
-`Iterator`\[[ListMultiplexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listmultiplexesresponsetypedef)\].
+`Iterator`\[[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef)\].
 
 ## ListOfferingsPaginator
 
@@ -251,10 +251,10 @@ Arguments for `ListOfferingsPaginator.paginate` method:
 - `SpecialFeature`: `str`
 - `VideoQuality`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOfferingsPaginator.paginate` returns
-`Iterator`\[[ListOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listofferingsresponsetypedef)\].
+`Iterator`\[[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)\].
 
 ## ListReservationsPaginator
 
@@ -284,7 +284,7 @@ Arguments for `ListReservationsPaginator.paginate` method:
 - `SpecialFeature`: `str`
 - `VideoQuality`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReservationsPaginator.paginate` returns
-`Iterator`\[[ListReservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listreservationsresponsetypedef)\].
+`Iterator`\[[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef)\].

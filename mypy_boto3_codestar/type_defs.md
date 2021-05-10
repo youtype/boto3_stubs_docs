@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CodeStar module
 
-> [Index](../README.md) > [CodeStar](./README.md) > Structures
+> [Index](..) > [CodeStar](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
@@ -67,9 +67,9 @@ from mypy_boto3_codestar.type_defs import CodeDestinationTypeDef
 Optional fields:
 
 - `codeCommit`:
-  [CodeCommitCodeDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codecommitcodedestinationtypedef)
+  [CodeCommitCodeDestinationTypeDef](./type_defs.md#codecommitcodedestinationtypedef)
 - `gitHub`:
-  [GitHubCodeDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#githubcodedestinationtypedef)
+  [GitHubCodeDestinationTypeDef](./type_defs.md#githubcodedestinationtypedef)
 
 ## CodeSourceTypeDef
 
@@ -79,8 +79,7 @@ from mypy_boto3_codestar.type_defs import CodeSourceTypeDef
 
 Required fields:
 
-- `s3`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#s3locationtypedef)
+- `s3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
 ## CodeTypeDef
 
@@ -90,10 +89,8 @@ from mypy_boto3_codestar.type_defs import CodeTypeDef
 
 Required fields:
 
-- `source`:
-  [CodeSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codesourcetypedef)
-- `destination`:
-  [CodeDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codedestinationtypedef)
+- `source`: [CodeSourceTypeDef](./type_defs.md#codesourcetypedef)
+- `destination`: [CodeDestinationTypeDef](./type_defs.md#codedestinationtypedef)
 
 ## CreateProjectResultTypeDef
 
@@ -166,8 +163,7 @@ Optional fields:
 - `createdTimeStamp`: `datetime`
 - `stackId`: `str`
 - `projectTemplateId`: `str`
-- `status`:
-  [ProjectStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#projectstatustypedef)
+- `status`: [ProjectStatusTypeDef](./type_defs.md#projectstatustypedef)
 
 ## DescribeUserProfileResultTypeDef
 
@@ -215,7 +211,7 @@ from mypy_boto3_codestar.type_defs import ListProjectsResultTypeDef
 Required fields:
 
 - `projects`:
-  `List`\[[ProjectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#projectsummarytypedef)\]
+  `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
 
 Optional fields:
 
@@ -229,8 +225,7 @@ from mypy_boto3_codestar.type_defs import ListResourcesResultTypeDef
 
 Optional fields:
 
-- `resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#resourcetypedef)\]
+- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForProjectResultTypeDef
@@ -252,8 +247,7 @@ from mypy_boto3_codestar.type_defs import ListTeamMembersResultTypeDef
 
 Required fields:
 
-- `teamMembers`:
-  `List`\[[TeamMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#teammembertypedef)\]
+- `teamMembers`: `List`\[[TeamMemberTypeDef](./type_defs.md#teammembertypedef)\]
 
 Optional fields:
 
@@ -268,7 +262,7 @@ from mypy_boto3_codestar.type_defs import ListUserProfilesResultTypeDef
 Required fields:
 
 - `userProfiles`:
-  `List`\[[UserProfileSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#userprofilesummarytypedef)\]
+  `List`\[[UserProfileSummaryTypeDef](./type_defs.md#userprofilesummarytypedef)\]
 
 Optional fields:
 
@@ -365,8 +359,7 @@ from mypy_boto3_codestar.type_defs import ToolchainSourceTypeDef
 
 Required fields:
 
-- `s3`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#s3locationtypedef)
+- `s3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
 ## ToolchainTypeDef
 
@@ -376,8 +369,7 @@ from mypy_boto3_codestar.type_defs import ToolchainTypeDef
 
 Required fields:
 
-- `source`:
-  [ToolchainSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#toolchainsourcetypedef)
+- `source`: [ToolchainSourceTypeDef](./type_defs.md#toolchainsourcetypedef)
 
 Optional fields:
 

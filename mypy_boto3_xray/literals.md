@@ -1,6 +1,6 @@
 # Literals for boto3 XRay module
 
-> [Index](../README.md) > [XRay](./README.md) > Literals
+> [Index](..) > [XRay](.) > Literals
 
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)

@@ -1,7 +1,6 @@
 # CloudSearchDomainClient for boto3 CloudSearchDomain module
 
-> [Index](../README.md) > [CloudSearchDomain](./README.md) >
-> CloudSearchDomainClient
+> [Index](..) > [CloudSearchDomain](.) > CloudSearchDomainClient
 
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
@@ -101,16 +100,14 @@ Arguments:
 - `highlight`: `str`
 - `partial`: `bool`
 - `queryOptions`: `str`
-- `queryParser`:
-  [QueryParser](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/literals.html#queryparser)
+- `queryParser`: [QueryParser](./literals.md#queryparser)
 - `returnFields`: `str`
 - `size`: `int`
 - `sort`: `str`
 - `start`: `int`
 - `stats`: `str`
 
-Returns
-[SearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#searchresponsetypedef).
+Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 
 ### suggest
 
@@ -125,8 +122,7 @@ Arguments:
 - `suggester`: `str` *(required)*
 - `size`: `int`
 
-Returns
-[SuggestResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#suggestresponsetypedef).
+Returns [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef).
 
 ### upload_documents
 
@@ -139,9 +135,7 @@ Boto3 documentation:
 Arguments:
 
 - `documents`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `contentType`:
-  [ContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/literals.html#contenttype)
-  *(required)*
+- `contentType`: [ContentType](./literals.md#contenttype) *(required)*
 
 Returns
-[UploadDocumentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#uploaddocumentsresponsetypedef).
+[UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef).

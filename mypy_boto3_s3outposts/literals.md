@@ -1,6 +1,6 @@
 # Literals for boto3 S3Outposts module
 
-> [Index](../README.md) > [S3Outposts](./README.md) > Literals
+> [Index](..) > [S3Outposts](.) > Literals
 
 Auto-generated documentation for
 [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)

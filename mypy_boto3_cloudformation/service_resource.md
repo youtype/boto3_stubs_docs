@@ -1,7 +1,6 @@
 # CloudFormationServiceResource for boto3 CloudFormation module
 
-> [Index](../README.md) > [CloudFormation](./README.md) >
-> CloudFormationServiceResource
+> [Index](..) > [CloudFormation](.) > CloudFormationServiceResource
 
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
@@ -144,23 +143,19 @@ Arguments:
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `DisableRollback`: `bool`
 - `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `TimeoutInMinutes`: `int`
 - `NotificationARNs`: `List`\[`str`\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourceTypes`: `List`\[`str`\]
 - `RoleARN`: `str`
-- `OnFailure`:
-  [OnFailure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#onfailure)
+- `OnFailure`: [OnFailure](./literals.md#onfailure)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
@@ -383,23 +378,19 @@ Arguments:
 - `UsePreviousTemplate`: `bool`
 - `StackPolicyDuringUpdateBody`: `str`
 - `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#parametertypedef)\]
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/literals.html#capability)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourceTypes`: `List`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#rollbackconfigurationtypedef)
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
 - `NotificationARNs`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
-Returns
-[UpdateStackOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#updatestackoutputtypedef).
+Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
 ## StackResource
 

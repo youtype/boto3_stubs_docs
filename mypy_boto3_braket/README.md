@@ -1,6 +1,6 @@
 # Type annotations for boto3 Braket module
 
-> [Index](../README.md) > Braket
+> [Index](..) > Braket
 
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)

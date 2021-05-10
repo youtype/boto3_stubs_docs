@@ -1,6 +1,6 @@
 # Type annotations for boto3 MigrationHubConfig module
 
-> [Index](../README.md) > MigrationHubConfig
+> [Index](..) > MigrationHubConfig
 
 Auto-generated documentation for
 [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)

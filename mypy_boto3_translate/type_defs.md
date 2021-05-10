@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Translate module
 
-> [Index](../README.md) > [Translate](./README.md) > Structures
+> [Index](..) > [Translate](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
@@ -46,8 +46,7 @@ from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Terms`:
-  `List`\[[TermTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#termtypedef)\]
+- `Terms`: `List`\[[TermTypeDef](./type_defs.md#termtypedef)\]
 
 ## CreateParallelDataResponseTypeDef
 
@@ -58,8 +57,7 @@ from mypy_boto3_translate.type_defs import CreateParallelDataResponseTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`:
-  [ParallelDataStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldatastatus)
+- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
 
 ## DeleteParallelDataResponseTypeDef
 
@@ -70,8 +68,7 @@ from mypy_boto3_translate.type_defs import DeleteParallelDataResponseTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`:
-  [ParallelDataStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldatastatus)
+- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
 
 ## DescribeTextTranslationJobResponseTypeDef
 
@@ -82,7 +79,7 @@ from mypy_boto3_translate.type_defs import DescribeTextTranslationJobResponseTyp
 Optional fields:
 
 - `TextTranslationJobProperties`:
-  [TextTranslationJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#texttranslationjobpropertiestypedef)
+  [TextTranslationJobPropertiesTypeDef](./type_defs.md#texttranslationjobpropertiestypedef)
 
 ## EncryptionKeyTypeDef
 
@@ -92,7 +89,8 @@ from mypy_boto3_translate.type_defs import EncryptionKeyTypeDef
 
 Required fields:
 
-- `Type`: `Literal['KMS']`
+- `Type`: `Literal['KMS']` (see
+  [EncryptionKeyType](./literals.md#encryptionkeytype))
 - `Id`: `str`
 
 ## GetParallelDataResponseTypeDef
@@ -104,13 +102,13 @@ from mypy_boto3_translate.type_defs import GetParallelDataResponseTypeDef
 Optional fields:
 
 - `ParallelDataProperties`:
-  [ParallelDataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldatapropertiestypedef)
+  [ParallelDataPropertiesTypeDef](./type_defs.md#paralleldatapropertiestypedef)
 - `DataLocation`:
-  [ParallelDataDataLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldatadatalocationtypedef)
+  [ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef)
 - `AuxiliaryDataLocation`:
-  [ParallelDataDataLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldatadatalocationtypedef)
+  [ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef)
 - `LatestUpdateAttemptAuxiliaryDataLocation`:
-  [ParallelDataDataLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldatadatalocationtypedef)
+  [ParallelDataDataLocationTypeDef](./type_defs.md#paralleldatadatalocationtypedef)
 
 ## GetTerminologyResponseTypeDef
 
@@ -121,9 +119,9 @@ from mypy_boto3_translate.type_defs import GetTerminologyResponseTypeDef
 Optional fields:
 
 - `TerminologyProperties`:
-  [TerminologyPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#terminologypropertiestypedef)
+  [TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef)
 - `TerminologyDataLocation`:
-  [TerminologyDataLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#terminologydatalocationtypedef)
+  [TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef)
 
 ## ImportTerminologyResponseTypeDef
 
@@ -134,7 +132,7 @@ from mypy_boto3_translate.type_defs import ImportTerminologyResponseTypeDef
 Optional fields:
 
 - `TerminologyProperties`:
-  [TerminologyPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#terminologypropertiestypedef)
+  [TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef)
 
 ## InputDataConfigTypeDef
 
@@ -168,7 +166,7 @@ from mypy_boto3_translate.type_defs import ListParallelDataResponseTypeDef
 Optional fields:
 
 - `ParallelDataPropertiesList`:
-  `List`\[[ParallelDataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldatapropertiestypedef)\]
+  `List`\[[ParallelDataPropertiesTypeDef](./type_defs.md#paralleldatapropertiestypedef)\]
 - `NextToken`: `str`
 
 ## ListTerminologiesResponseTypeDef
@@ -180,7 +178,7 @@ from mypy_boto3_translate.type_defs import ListTerminologiesResponseTypeDef
 Optional fields:
 
 - `TerminologyPropertiesList`:
-  `List`\[[TerminologyPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#terminologypropertiestypedef)\]
+  `List`\[[TerminologyPropertiesTypeDef](./type_defs.md#terminologypropertiestypedef)\]
 - `NextToken`: `str`
 
 ## ListTextTranslationJobsResponseTypeDef
@@ -192,7 +190,7 @@ from mypy_boto3_translate.type_defs import ListTextTranslationJobsResponseTypeDe
 Optional fields:
 
 - `TextTranslationJobPropertiesList`:
-  `List`\[[TextTranslationJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#texttranslationjobpropertiestypedef)\]
+  `List`\[[TextTranslationJobPropertiesTypeDef](./type_defs.md#texttranslationjobpropertiestypedef)\]
 - `NextToken`: `str`
 
 ## OutputDataConfigTypeDef
@@ -226,8 +224,7 @@ from mypy_boto3_translate.type_defs import ParallelDataConfigTypeDef
 Required fields:
 
 - `S3Uri`: `str`
-- `Format`:
-  [ParallelDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldataformat)
+- `Format`: [ParallelDataFormat](./literals.md#paralleldataformat)
 
 ## ParallelDataDataLocationTypeDef
 
@@ -251,23 +248,21 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `Description`: `str`
-- `Status`:
-  [ParallelDataStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldatastatus)
+- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
 - `SourceLanguageCode`: `str`
 - `TargetLanguageCodes`: `List`\[`str`\]
 - `ParallelDataConfig`:
-  [ParallelDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldataconfigtypedef)
+  [ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef)
 - `Message`: `str`
 - `ImportedDataSize`: `int`
 - `ImportedRecordCount`: `int`
 - `FailedRecordCount`: `int`
 - `SkippedRecordCount`: `int`
-- `EncryptionKey`:
-  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#encryptionkeytypedef)
+- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `LatestUpdateAttemptStatus`:
-  [ParallelDataStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldatastatus)
+  [ParallelDataStatus](./literals.md#paralleldatastatus)
 - `LatestUpdateAttemptAt`: `datetime`
 
 ## StartTextTranslationJobResponseTypeDef
@@ -279,8 +274,7 @@ from mypy_boto3_translate.type_defs import StartTextTranslationJobResponseTypeDe
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#jobstatus)
+- `JobStatus`: [JobStatus](./literals.md#jobstatus)
 
 ## StopTextTranslationJobResponseTypeDef
 
@@ -291,8 +285,7 @@ from mypy_boto3_translate.type_defs import StopTextTranslationJobResponseTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `JobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#jobstatus)
+- `JobStatus`: [JobStatus](./literals.md#jobstatus)
 
 ## TermTypeDef
 
@@ -325,8 +318,7 @@ from mypy_boto3_translate.type_defs import TerminologyDataTypeDef
 Required fields:
 
 - `File`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `Format`:
-  [TerminologyDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#terminologydataformat)
+- `Format`: [TerminologyDataFormat](./literals.md#terminologydataformat)
 
 ## TerminologyPropertiesTypeDef
 
@@ -341,8 +333,7 @@ Optional fields:
 - `Arn`: `str`
 - `SourceLanguageCode`: `str`
 - `TargetLanguageCodes`: `List`\[`str`\]
-- `EncryptionKey`:
-  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#encryptionkeytypedef)
+- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 - `SizeBytes`: `int`
 - `TermCount`: `int`
 - `CreatedAt`: `datetime`
@@ -357,8 +348,7 @@ from mypy_boto3_translate.type_defs import TextTranslationJobFilterTypeDef
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#jobstatus)
+- `JobStatus`: [JobStatus](./literals.md#jobstatus)
 - `SubmittedBeforeTime`: `datetime`
 - `SubmittedAfterTime`: `datetime`
 
@@ -372,10 +362,8 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#jobstatus)
-- `JobDetails`:
-  [JobDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#jobdetailstypedef)
+- `JobStatus`: [JobStatus](./literals.md#jobstatus)
+- `JobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
 - `SourceLanguageCode`: `str`
 - `TargetLanguageCodes`: `List`\[`str`\]
 - `TerminologyNames`: `List`\[`str`\]
@@ -384,9 +372,9 @@ Optional fields:
 - `SubmittedTime`: `datetime`
 - `EndTime`: `datetime`
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#inputdataconfigtypedef)
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#outputdataconfigtypedef)
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 
 ## TranslateTextResponseTypeDef
@@ -404,7 +392,7 @@ Required fields:
 Optional fields:
 
 - `AppliedTerminologies`:
-  `List`\[[AppliedTerminologyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#appliedterminologytypedef)\]
+  `List`\[[AppliedTerminologyTypeDef](./type_defs.md#appliedterminologytypedef)\]
 
 ## UpdateParallelDataResponseTypeDef
 
@@ -415,8 +403,7 @@ from mypy_boto3_translate.type_defs import UpdateParallelDataResponseTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Status`:
-  [ParallelDataStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldatastatus)
+- `Status`: [ParallelDataStatus](./literals.md#paralleldatastatus)
 - `LatestUpdateAttemptStatus`:
-  [ParallelDataStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#paralleldatastatus)
+  [ParallelDataStatus](./literals.md#paralleldatastatus)
 - `LatestUpdateAttemptAt`: `datetime`

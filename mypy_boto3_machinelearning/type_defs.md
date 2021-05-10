@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MachineLearning module
 
-> [Index](../README.md) > [MachineLearning](./README.md) > Structures
+> [Index](..) > [MachineLearning](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
@@ -48,7 +48,7 @@ type annotations stubs module
   - [RedshiftDatabaseCredentialsTypeDef](#redshiftdatabasecredentialstypedef)
   - [RedshiftDatabaseTypeDef](#redshiftdatabasetypedef)
   - [RedshiftMetadataTypeDef](#redshiftmetadatatypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DataSpecTypeDef](#s3dataspectypedef)
   - [TagTypeDef](#tagtypedef)
   - [UpdateBatchPredictionOutputTypeDef](#updatebatchpredictionoutputtypedef)
@@ -66,10 +66,9 @@ from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchPredictionTypeDef
 
@@ -87,8 +86,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `OutputUri`: `str`
 - `Message`: `str`
 - `ComputeTime`: `int`
@@ -107,7 +105,7 @@ Required fields:
 
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateDataSourceFromRDSOutputTypeDef
 
@@ -119,7 +117,7 @@ Required fields:
 
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateDataSourceFromRedshiftOutputTypeDef
 
@@ -131,7 +129,7 @@ Required fields:
 
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateDataSourceFromS3OutputTypeDef
 
@@ -143,7 +141,7 @@ Required fields:
 
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateEvaluationOutputTypeDef
 
@@ -155,7 +153,7 @@ Required fields:
 
 - `EvaluationId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateMLModelOutputTypeDef
 
@@ -167,7 +165,7 @@ Required fields:
 
 - `MLModelId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateRealtimeEndpointOutputTypeDef
 
@@ -179,9 +177,9 @@ Required fields:
 
 - `MLModelId`: `str`
 - `RealtimeEndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#realtimeendpointinfotypedef)
+  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DataSourceTypeDef
 
@@ -200,13 +198,11 @@ Optional fields:
 - `DataSizeInBytes`: `int`
 - `NumberOfFiles`: `int`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `Message`: `str`
 - `RedshiftMetadata`:
-  [RedshiftMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftmetadatatypedef)
-- `RDSMetadata`:
-  [RDSMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsmetadatatypedef)
+  [RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef)
+- `RDSMetadata`: [RDSMetadataTypeDef](./type_defs.md#rdsmetadatatypedef)
 - `RoleARN`: `str`
 - `ComputeStatistics`: `bool`
 - `ComputeTime`: `int`
@@ -223,7 +219,7 @@ Required fields:
 
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteDataSourceOutputTypeDef
 
@@ -235,7 +231,7 @@ Required fields:
 
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteEvaluationOutputTypeDef
 
@@ -247,7 +243,7 @@ Required fields:
 
 - `EvaluationId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteMLModelOutputTypeDef
 
@@ -259,7 +255,7 @@ Required fields:
 
 - `MLModelId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteRealtimeEndpointOutputTypeDef
 
@@ -271,9 +267,9 @@ Required fields:
 
 - `MLModelId`: `str`
 - `RealtimeEndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#realtimeendpointinfotypedef)
+  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteTagsOutputTypeDef
 
@@ -284,10 +280,9 @@ from mypy_boto3_machinelearning.type_defs import DeleteTagsOutputTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeBatchPredictionsOutputTypeDef
 
@@ -298,10 +293,10 @@ from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputT
 Required fields:
 
 - `Results`:
-  `List`\[[BatchPredictionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#batchpredictiontypedef)\]
+  `List`\[[BatchPredictionTypeDef](./type_defs.md#batchpredictiontypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeDataSourcesOutputTypeDef
 
@@ -311,11 +306,10 @@ from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesOutputTypeDe
 
 Required fields:
 
-- `Results`:
-  `List`\[[DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#datasourcetypedef)\]
+- `Results`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeEvaluationsOutputTypeDef
 
@@ -325,11 +319,10 @@ from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsOutputTypeDe
 
 Required fields:
 
-- `Results`:
-  `List`\[[EvaluationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#evaluationtypedef)\]
+- `Results`: `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeMLModelsOutputTypeDef
 
@@ -339,11 +332,10 @@ from mypy_boto3_machinelearning.type_defs import DescribeMLModelsOutputTypeDef
 
 Required fields:
 
-- `Results`:
-  `List`\[[MLModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#mlmodeltypedef)\]
+- `Results`: `List`\[[MLModelTypeDef](./type_defs.md#mlmodeltypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTagsOutputTypeDef
 
@@ -354,12 +346,10 @@ from mypy_boto3_machinelearning.type_defs import DescribeTagsOutputTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#tagtypedef)\]
+- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EvaluationTypeDef
 
@@ -377,10 +367,9 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `PerformanceMetrics`:
-  [PerformanceMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#performancemetricstypedef)
+  [PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef)
 - `Message`: `str`
 - `ComputeTime`: `int`
 - `FinishedAt`: `datetime`
@@ -402,8 +391,7 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `OutputUri`: `str`
 - `LogUri`: `str`
 - `Message`: `str`
@@ -413,7 +401,7 @@ Required fields:
 - `TotalRecordCount`: `int`
 - `InvalidRecordCount`: `int`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetDataSourceOutputTypeDef
 
@@ -432,14 +420,12 @@ Required fields:
 - `DataSizeInBytes`: `int`
 - `NumberOfFiles`: `int`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `LogUri`: `str`
 - `Message`: `str`
 - `RedshiftMetadata`:
-  [RedshiftMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftmetadatatypedef)
-- `RDSMetadata`:
-  [RDSMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsmetadatatypedef)
+  [RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef)
+- `RDSMetadata`: [RDSMetadataTypeDef](./type_defs.md#rdsmetadatatypedef)
 - `RoleARN`: `str`
 - `ComputeStatistics`: `bool`
 - `ComputeTime`: `int`
@@ -447,7 +433,7 @@ Required fields:
 - `StartedAt`: `datetime`
 - `DataSourceSchema`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetEvaluationOutputTypeDef
 
@@ -465,17 +451,16 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `PerformanceMetrics`:
-  [PerformanceMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#performancemetricstypedef)
+  [PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef)
 - `LogUri`: `str`
 - `Message`: `str`
 - `ComputeTime`: `int`
 - `FinishedAt`: `datetime`
 - `StartedAt`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetMLModelOutputTypeDef
 
@@ -491,15 +476,13 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `SizeInBytes`: `int`
 - `EndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#realtimeendpointinfotypedef)
+  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `InputDataLocationS3`: `str`
-- `MLModelType`:
-  [MLModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodeltype)
+- `MLModelType`: [MLModelType](./literals.md#mlmodeltype)
 - `ScoreThreshold`: `float`
 - `ScoreThresholdLastUpdatedAt`: `datetime`
 - `LogUri`: `str`
@@ -510,7 +493,7 @@ Required fields:
 - `Recipe`: `str`
 - `Schema`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MLModelTypeDef
 
@@ -526,16 +509,14 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Name`: `str`
-- `Status`:
-  [EntityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#entitystatus)
+- `Status`: [EntityStatus](./literals.md#entitystatus)
 - `SizeInBytes`: `int`
 - `EndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#realtimeendpointinfotypedef)
+  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `InputDataLocationS3`: `str`
-- `Algorithm`: `Literal['sgd']`
-- `MLModelType`:
-  [MLModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodeltype)
+- `Algorithm`: `Literal['sgd']` (see [Algorithm](./literals.md#algorithm))
+- `MLModelType`: [MLModelType](./literals.md#mlmodeltype)
 - `ScoreThreshold`: `float`
 - `ScoreThresholdLastUpdatedAt`: `datetime`
 - `Message`: `str`
@@ -573,10 +554,9 @@ from mypy_boto3_machinelearning.type_defs import PredictOutputTypeDef
 
 Required fields:
 
-- `Prediction`:
-  [PredictionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#predictiontypedef)
+- `Prediction`: [PredictionTypeDef](./type_defs.md#predictiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PredictionTypeDef
 
@@ -589,8 +569,7 @@ Optional fields:
 - `predictedLabel`: `str`
 - `predictedValue`: `float`
 - `predictedScores`: `Dict`\[`str`, `float`\]
-- `details`:
-  `Dict`\[[DetailsAttributes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#detailsattributes),
+- `details`: `Dict`\[[DetailsAttributes](./literals.md#detailsattributes),
   `str`\]
 
 ## RDSDataSpecTypeDef
@@ -601,11 +580,10 @@ from mypy_boto3_machinelearning.type_defs import RDSDataSpecTypeDef
 
 Required fields:
 
-- `DatabaseInformation`:
-  [RDSDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsdatabasetypedef)
+- `DatabaseInformation`: [RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef)
 - `SelectSqlQuery`: `str`
 - `DatabaseCredentials`:
-  [RDSDatabaseCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsdatabasecredentialstypedef)
+  [RDSDatabaseCredentialsTypeDef](./type_defs.md#rdsdatabasecredentialstypedef)
 - `S3StagingLocation`: `str`
 - `ResourceRole`: `str`
 - `ServiceRole`: `str`
@@ -648,8 +626,7 @@ from mypy_boto3_machinelearning.type_defs import RDSMetadataTypeDef
 
 Optional fields:
 
-- `Database`:
-  [RDSDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsdatabasetypedef)
+- `Database`: [RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef)
 - `DatabaseUserName`: `str`
 - `SelectSqlQuery`: `str`
 - `ResourceRole`: `str`
@@ -668,7 +645,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `EndpointUrl`: `str`
 - `EndpointStatus`:
-  [RealtimeEndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#realtimeendpointstatus)
+  [RealtimeEndpointStatus](./literals.md#realtimeendpointstatus)
 
 ## RedshiftDataSpecTypeDef
 
@@ -679,10 +656,10 @@ from mypy_boto3_machinelearning.type_defs import RedshiftDataSpecTypeDef
 Required fields:
 
 - `DatabaseInformation`:
-  [RedshiftDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftdatabasetypedef)
+  [RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef)
 - `SelectSqlQuery`: `str`
 - `DatabaseCredentials`:
-  [RedshiftDatabaseCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftdatabasecredentialstypedef)
+  [RedshiftDatabaseCredentialsTypeDef](./type_defs.md#redshiftdatabasecredentialstypedef)
 - `S3StagingLocation`: `str`
 
 Optional fields:
@@ -722,14 +699,14 @@ from mypy_boto3_machinelearning.type_defs import RedshiftMetadataTypeDef
 Optional fields:
 
 - `RedshiftDatabase`:
-  [RedshiftDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftdatabasetypedef)
+  [RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef)
 - `DatabaseUserName`: `str`
 - `SelectSqlQuery`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import ResponseMetadata
+from mypy_boto3_machinelearning.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -777,7 +754,7 @@ Required fields:
 
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateDataSourceOutputTypeDef
 
@@ -789,7 +766,7 @@ Required fields:
 
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateEvaluationOutputTypeDef
 
@@ -801,7 +778,7 @@ Required fields:
 
 - `EvaluationId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateMLModelOutputTypeDef
 
@@ -813,7 +790,7 @@ Required fields:
 
 - `MLModelId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## WaiterConfigTypeDef
 

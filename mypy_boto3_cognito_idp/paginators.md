@@ -1,6 +1,6 @@
 # Paginators for boto3 CognitoIdentityProvider module
 
-> [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Paginators
+> [Index](..) > [CognitoIdentityProvider](.) > Paginators
 
 Auto-generated documentation for
 [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
@@ -40,10 +40,10 @@ Arguments for `AdminListGroupsForUserPaginator.paginate` method:
 - `Username`: `str` *(required)*
 - `UserPoolId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `AdminListGroupsForUserPaginator.paginate` returns
-`Iterator`\[[AdminListGroupsForUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#adminlistgroupsforuserresponsetypedef)\].
+`Iterator`\[[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef)\].
 
 ## AdminListUserAuthEventsPaginator
 
@@ -67,10 +67,10 @@ Arguments for `AdminListUserAuthEventsPaginator.paginate` method:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `AdminListUserAuthEventsPaginator.paginate` returns
-`Iterator`\[[AdminListUserAuthEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#adminlistuserautheventsresponsetypedef)\].
+`Iterator`\[[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef)\].
 
 ## ListGroupsPaginator
 
@@ -93,10 +93,10 @@ Arguments for `ListGroupsPaginator.paginate` method:
 
 - `UserPoolId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listgroupsresponsetypedef)\].
+`Iterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
 ## ListIdentityProvidersPaginator
 
@@ -119,10 +119,10 @@ Arguments for `ListIdentityProvidersPaginator.paginate` method:
 
 - `UserPoolId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIdentityProvidersPaginator.paginate` returns
-`Iterator`\[[ListIdentityProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listidentityprovidersresponsetypedef)\].
+`Iterator`\[[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef)\].
 
 ## ListResourceServersPaginator
 
@@ -145,10 +145,10 @@ Arguments for `ListResourceServersPaginator.paginate` method:
 
 - `UserPoolId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceServersPaginator.paginate` returns
-`Iterator`\[[ListResourceServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listresourceserversresponsetypedef)\].
+`Iterator`\[[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef)\].
 
 ## ListUserPoolClientsPaginator
 
@@ -171,10 +171,10 @@ Arguments for `ListUserPoolClientsPaginator.paginate` method:
 
 - `UserPoolId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserPoolClientsPaginator.paginate` returns
-`Iterator`\[[ListUserPoolClientsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listuserpoolclientsresponsetypedef)\].
+`Iterator`\[[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef)\].
 
 ## ListUserPoolsPaginator
 
@@ -196,10 +196,10 @@ Boto3 documentation:
 Arguments for `ListUserPoolsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserPoolsPaginator.paginate` returns
-`Iterator`\[[ListUserPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listuserpoolsresponsetypedef)\].
+`Iterator`\[[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef)\].
 
 ## ListUsersPaginator
 
@@ -223,10 +223,10 @@ Arguments for `ListUsersPaginator.paginate` method:
 - `AttributesToGet`: `List`\[`str`\]
 - `Filter`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersPaginator.paginate` returns
-`Iterator`\[[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listusersresponsetypedef)\].
+`Iterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
 
 ## ListUsersInGroupPaginator
 
@@ -250,7 +250,7 @@ Arguments for `ListUsersInGroupPaginator.paginate` method:
 - `UserPoolId`: `str` *(required)*
 - `GroupName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersInGroupPaginator.paginate` returns
-`Iterator`\[[ListUsersInGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#listusersingroupresponsetypedef)\].
+`Iterator`\[[ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef)\].

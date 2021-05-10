@@ -1,7 +1,6 @@
 # Paginators for boto3 ServerlessApplicationRepository module
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
-> Paginators
+> [Index](..) > [ServerlessApplicationRepository](.) > Paginators
 
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
@@ -35,10 +34,10 @@ Arguments for `ListApplicationDependenciesPaginator.paginate` method:
 - `ApplicationId`: `str` *(required)*
 - `SemanticVersion`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationDependenciesPaginator.paginate` returns
-`Iterator`\[[ListApplicationDependenciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationdependenciesresponsetypedef)\].
+`Iterator`\[[ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef)\].
 
 ## ListApplicationVersionsPaginator
 
@@ -61,10 +60,10 @@ Arguments for `ListApplicationVersionsPaginator.paginate` method:
 
 - `ApplicationId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationVersionsPaginator.paginate` returns
-`Iterator`\[[ListApplicationVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationversionsresponsetypedef)\].
+`Iterator`\[[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef)\].
 
 ## ListApplicationsPaginator
 
@@ -86,7 +85,7 @@ Boto3 documentation:
 Arguments for `ListApplicationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationsresponsetypedef)\].
+`Iterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].

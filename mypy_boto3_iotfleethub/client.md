@@ -1,6 +1,6 @@
 # IoTFleetHubClient for boto3 IoTFleetHub module
 
-> [Index](../README.md) > [IoTFleetHub](./README.md) > IoTFleetHubClient
+> [Index](..) > [IoTFleetHub](.) > IoTFleetHubClient
 
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
@@ -92,7 +92,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#createapplicationresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### delete_application
 
@@ -120,7 +120,7 @@ Arguments:
 - `applicationId`: `str` *(required)*
 
 Returns
-[DescribeApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#describeapplicationresponsetypedef).
+[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -151,7 +151,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#listapplicationsresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -166,7 +166,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 

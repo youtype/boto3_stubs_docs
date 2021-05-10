@@ -1,6 +1,6 @@
 # Literals for boto3 SESV2 module
 
-> [Index](../README.md) > [SESV2](./README.md) > Literals
+> [Index](..) > [SESV2](.) > Literals
 
 Auto-generated documentation for
 [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 MQ module
 
-> [Index](../README.md) > MQ
+> [Index](..) > MQ
 
 Auto-generated documentation for
 [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
@@ -144,7 +144,7 @@ from mypy_boto3_mq.type_defs import AvailabilityZoneTypeDef, ...
 - [LogsTypeDef](./type_defs.md#logstypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PendingLogsTypeDef](./type_defs.md#pendinglogstypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SanitizationWarningTypeDef](./type_defs.md#sanitizationwarningtypedef)
 - [UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef)
 - [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef)

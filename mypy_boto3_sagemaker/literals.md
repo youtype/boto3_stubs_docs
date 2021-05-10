@@ -1,6 +1,6 @@
 # Literals for boto3 SageMaker module
 
-> [Index](../README.md) > [SageMaker](./README.md) > Literals
+> [Index](..) > [SageMaker](.) > Literals
 
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)

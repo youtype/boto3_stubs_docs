@@ -1,6 +1,6 @@
 # Type annotations for boto3 MediaStoreData module
 
-> [Index](../README.md) > MediaStoreData
+> [Index](..) > MediaStoreData
 
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)

@@ -1,6 +1,6 @@
 # Paginators for boto3 ImportExport module
 
-> [Index](../README.md) > [ImportExport](./README.md) > Paginators
+> [Index](..) > [ImportExport](.) > Paginators
 
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
@@ -30,7 +30,7 @@ Arguments for `ListJobsPaginator.paginate` method:
 
 - `APIVersion`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#listjobsoutputtypedef)\].
+`Iterator`\[[ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)\].

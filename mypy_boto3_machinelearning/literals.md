@@ -1,6 +1,6 @@
 # Literals for boto3 MachineLearning module
 
-> [Index](../README.md) > [MachineLearning](./README.md) > Literals
+> [Index](..) > [MachineLearning](.) > Literals
 
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)

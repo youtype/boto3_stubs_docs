@@ -1,6 +1,6 @@
 # Literals for boto3 SWF module
 
-> [Index](../README.md) > [SWF](./README.md) > Literals
+> [Index](..) > [SWF](.) > Literals
 
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)

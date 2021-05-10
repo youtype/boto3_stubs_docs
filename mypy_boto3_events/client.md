@@ -1,6 +1,6 @@
 # EventBridgeClient for boto3 EventBridge module
 
-> [Index](../README.md) > [EventBridge](./README.md) > EventBridgeClient
+> [Index](..) > [EventBridge](.) > EventBridgeClient
 
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
@@ -147,7 +147,7 @@ Arguments:
 - `ReplayName`: `str` *(required)*
 
 Returns
-[CancelReplayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#cancelreplayresponsetypedef).
+[CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef).
 
 ### create_api_destination
 
@@ -162,13 +162,12 @@ Arguments:
 - `ConnectionArn`: `str` *(required)*
 - `InvocationEndpoint`: `str` *(required)*
 - `HttpMethod`:
-  [ApiDestinationHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationhttpmethod)
-  *(required)*
+  [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod) *(required)*
 - `Description`: `str`
 - `InvocationRateLimitPerSecond`: `int`
 
 Returns
-[CreateApiDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createapidestinationresponsetypedef).
+[CreateApiDestinationResponseTypeDef](./type_defs.md#createapidestinationresponsetypedef).
 
 ### create_archive
 
@@ -186,7 +185,7 @@ Arguments:
 - `RetentionDays`: `int`
 
 Returns
-[CreateArchiveResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createarchiveresponsetypedef).
+[CreateArchiveResponseTypeDef](./type_defs.md#createarchiveresponsetypedef).
 
 ### create_connection
 
@@ -199,15 +198,15 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `AuthorizationType`:
-  [ConnectionAuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionauthorizationtype)
+  [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
   *(required)*
 - `AuthParameters`:
-  [CreateConnectionAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createconnectionauthrequestparameterstypedef)
+  [CreateConnectionAuthRequestParametersTypeDef](./type_defs.md#createconnectionauthrequestparameterstypedef)
   *(required)*
 - `Description`: `str`
 
 Returns
-[CreateConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createconnectionresponsetypedef).
+[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
 ### create_event_bus
 
@@ -220,11 +219,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `EventSourceName`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventBusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createeventbusresponsetypedef).
+[CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef).
 
 ### create_partner_event_source
 
@@ -240,7 +238,7 @@ Arguments:
 - `Account`: `str` *(required)*
 
 Returns
-[CreatePartnerEventSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createpartnereventsourceresponsetypedef).
+[CreatePartnerEventSourceResponseTypeDef](./type_defs.md#createpartnereventsourceresponsetypedef).
 
 ### deactivate_event_source
 
@@ -265,7 +263,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeauthorizeConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#deauthorizeconnectionresponsetypedef).
+[DeauthorizeConnectionResponseTypeDef](./type_defs.md#deauthorizeconnectionresponsetypedef).
 
 ### delete_api_destination
 
@@ -305,7 +303,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#deleteconnectionresponsetypedef).
+[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
 ### delete_event_bus
 
@@ -356,7 +354,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeApiDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describeapidestinationresponsetypedef).
+[DescribeApiDestinationResponseTypeDef](./type_defs.md#describeapidestinationresponsetypedef).
 
 ### describe_archive
 
@@ -370,7 +368,7 @@ Arguments:
 - `ArchiveName`: `str` *(required)*
 
 Returns
-[DescribeArchiveResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describearchiveresponsetypedef).
+[DescribeArchiveResponseTypeDef](./type_defs.md#describearchiveresponsetypedef).
 
 ### describe_connection
 
@@ -384,7 +382,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describeconnectionresponsetypedef).
+[DescribeConnectionResponseTypeDef](./type_defs.md#describeconnectionresponsetypedef).
 
 ### describe_event_bus
 
@@ -398,7 +396,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[DescribeEventBusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describeeventbusresponsetypedef).
+[DescribeEventBusResponseTypeDef](./type_defs.md#describeeventbusresponsetypedef).
 
 ### describe_event_source
 
@@ -412,7 +410,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeEventSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describeeventsourceresponsetypedef).
+[DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef).
 
 ### describe_partner_event_source
 
@@ -427,7 +425,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribePartnerEventSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describepartnereventsourceresponsetypedef).
+[DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef).
 
 ### describe_replay
 
@@ -441,7 +439,7 @@ Arguments:
 - `ReplayName`: `str` *(required)*
 
 Returns
-[DescribeReplayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describereplayresponsetypedef).
+[DescribeReplayResponseTypeDef](./type_defs.md#describereplayresponsetypedef).
 
 ### describe_rule
 
@@ -456,7 +454,7 @@ Arguments:
 - `EventBusName`: `str`
 
 Returns
-[DescribeRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#describeruleresponsetypedef).
+[DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef).
 
 ### disable_rule
 
@@ -513,7 +511,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListApiDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listapidestinationsresponsetypedef).
+[ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef).
 
 ### list_archives
 
@@ -526,13 +524,12 @@ Arguments:
 
 - `NamePrefix`: `str`
 - `EventSourceArn`: `str`
-- `State`:
-  [ArchiveState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#archivestate)
+- `State`: [ArchiveState](./literals.md#archivestate)
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[ListArchivesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listarchivesresponsetypedef).
+[ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef).
 
 ### list_connections
 
@@ -544,13 +541,12 @@ Boto3 documentation:
 Arguments:
 
 - `NamePrefix`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[ListConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listconnectionsresponsetypedef).
+[ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
 
 ### list_event_buses
 
@@ -566,7 +562,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListEventBusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listeventbusesresponsetypedef).
+[ListEventBusesResponseTypeDef](./type_defs.md#listeventbusesresponsetypedef).
 
 ### list_event_sources
 
@@ -582,7 +578,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListEventSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listeventsourcesresponsetypedef).
+[ListEventSourcesResponseTypeDef](./type_defs.md#listeventsourcesresponsetypedef).
 
 ### list_partner_event_source_accounts
 
@@ -599,7 +595,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListPartnerEventSourceAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listpartnereventsourceaccountsresponsetypedef).
+[ListPartnerEventSourceAccountsResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponsetypedef).
 
 ### list_partner_event_sources
 
@@ -616,7 +612,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListPartnerEventSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listpartnereventsourcesresponsetypedef).
+[ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef).
 
 ### list_replays
 
@@ -628,14 +624,13 @@ Boto3 documentation:
 Arguments:
 
 - `NamePrefix`: `str`
-- `State`:
-  [ReplayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#replaystate)
+- `State`: [ReplayState](./literals.md#replaystate)
 - `EventSourceArn`: `str`
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[ListReplaysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listreplaysresponsetypedef).
+[ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef).
 
 ### list_rule_names_by_target
 
@@ -652,7 +647,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListRuleNamesByTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listrulenamesbytargetresponsetypedef).
+[ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef).
 
 ### list_rules
 
@@ -668,8 +663,7 @@ Arguments:
 - `NextToken`: `str`
 - `Limit`: `int`
 
-Returns
-[ListRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listrulesresponsetypedef).
+Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -683,7 +677,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_targets_by_rule
 
@@ -700,7 +694,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListTargetsByRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listtargetsbyruleresponsetypedef).
+[ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef).
 
 ### put_events
 
@@ -712,11 +706,10 @@ Boto3 documentation:
 Arguments:
 
 - `Entries`:
-  `List`\[[PutEventsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#puteventsrequestentrytypedef)\]
+  `List`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
   *(required)*
 
-Returns
-[PutEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#puteventsresponsetypedef).
+Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
 
 ### put_partner_events
 
@@ -728,11 +721,11 @@ Boto3 documentation:
 Arguments:
 
 - `Entries`:
-  `List`\[[PutPartnerEventsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#putpartnereventsrequestentrytypedef)\]
+  `List`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
   *(required)*
 
 Returns
-[PutPartnerEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#putpartnereventsresponsetypedef).
+[PutPartnerEventsResponseTypeDef](./type_defs.md#putpartnereventsresponsetypedef).
 
 ### put_permission
 
@@ -747,8 +740,7 @@ Arguments:
 - `Action`: `str`
 - `Principal`: `str`
 - `StatementId`: `str`
-- `Condition`:
-  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#conditiontypedef)
+- `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 - `Policy`: `str`
 
 ### put_rule
@@ -763,16 +755,13 @@ Arguments:
 - `Name`: `str` *(required)*
 - `ScheduleExpression`: `str`
 - `EventPattern`: `str`
-- `State`:
-  [RuleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#rulestate)
+- `State`: [RuleState](./literals.md#rulestate)
 - `Description`: `str`
 - `RoleArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EventBusName`: `str`
 
-Returns
-[PutRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#putruleresponsetypedef).
+Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
 
 ### put_targets
 
@@ -784,13 +773,10 @@ Boto3 documentation:
 Arguments:
 
 - `Rule`: `str` *(required)*
-- `Targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#targettypedef)\]
-  *(required)*
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\] *(required)*
 - `EventBusName`: `str`
 
-Returns
-[PutTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#puttargetsresponsetypedef).
+Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 
 ### remove_permission
 
@@ -820,7 +806,7 @@ Arguments:
 - `Force`: `bool`
 
 Returns
-[RemoveTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#removetargetsresponsetypedef).
+[RemoveTargetsResponseTypeDef](./type_defs.md#removetargetsresponsetypedef).
 
 ### start_replay
 
@@ -836,12 +822,12 @@ Arguments:
 - `EventStartTime`: `datetime` *(required)*
 - `EventEndTime`: `datetime` *(required)*
 - `Destination`:
-  [ReplayDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#replaydestinationtypedef)
+  [ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef)
   *(required)*
 - `Description`: `str`
 
 Returns
-[StartReplayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#startreplayresponsetypedef).
+[StartReplayResponseTypeDef](./type_defs.md#startreplayresponsetypedef).
 
 ### tag_resource
 
@@ -853,9 +839,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -872,7 +856,7 @@ Arguments:
 - `Event`: `str` *(required)*
 
 Returns
-[TestEventPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#testeventpatternresponsetypedef).
+[TestEventPatternResponseTypeDef](./type_defs.md#testeventpatternresponsetypedef).
 
 ### untag_resource
 
@@ -902,11 +886,11 @@ Arguments:
 - `ConnectionArn`: `str`
 - `InvocationEndpoint`: `str`
 - `HttpMethod`:
-  [ApiDestinationHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationhttpmethod)
+  [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod)
 - `InvocationRateLimitPerSecond`: `int`
 
 Returns
-[UpdateApiDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateapidestinationresponsetypedef).
+[UpdateApiDestinationResponseTypeDef](./type_defs.md#updateapidestinationresponsetypedef).
 
 ### update_archive
 
@@ -923,7 +907,7 @@ Arguments:
 - `RetentionDays`: `int`
 
 Returns
-[UpdateArchiveResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updatearchiveresponsetypedef).
+[UpdateArchiveResponseTypeDef](./type_defs.md#updatearchiveresponsetypedef).
 
 ### update_connection
 
@@ -937,12 +921,12 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Description`: `str`
 - `AuthorizationType`:
-  [ConnectionAuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionauthorizationtype)
+  [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
 - `AuthParameters`:
-  [UpdateConnectionAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateconnectionauthrequestparameterstypedef)
+  [UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef)
 
 Returns
-[UpdateConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateconnectionresponsetypedef).
+[UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
 
 ### get_paginator
 

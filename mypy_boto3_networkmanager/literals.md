@@ -1,6 +1,6 @@
 # Literals for boto3 NetworkManager module
 
-> [Index](../README.md) > [NetworkManager](./README.md) > Literals
+> [Index](..) > [NetworkManager](.) > Literals
 
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)

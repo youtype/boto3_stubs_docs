@@ -1,6 +1,6 @@
 # IdentityStoreClient for boto3 IdentityStore module
 
-> [Index](../README.md) > [IdentityStore](./README.md) > IdentityStoreClient
+> [Index](..) > [IdentityStore](.) > IdentityStoreClient
 
 Auto-generated documentation for
 [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
@@ -83,7 +83,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[DescribeGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#describegroupresponsetypedef).
+[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
 ### describe_user
 
@@ -98,7 +98,7 @@ Arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[DescribeUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#describeuserresponsetypedef).
+[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
 ### generate_presigned_url
 
@@ -129,11 +129,9 @@ Arguments:
 - `IdentityStoreId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#listgroupsresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_users
 
@@ -147,8 +145,6 @@ Arguments:
 - `IdentityStoreId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_identitystore/type_defs.html#listusersresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).

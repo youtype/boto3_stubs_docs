@@ -1,6 +1,6 @@
 # SavingsPlansClient for boto3 SavingsPlans module
 
-> [Index](../README.md) > [SavingsPlans](./README.md) > SavingsPlansClient
+> [Index](..) > [SavingsPlans](.) > SavingsPlansClient
 
 Auto-generated documentation for
 [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
@@ -91,7 +91,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSavingsPlanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#createsavingsplanresponsetypedef).
+[CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef).
 
 ### delete_queued_savings_plan
 
@@ -119,12 +119,12 @@ Arguments:
 
 - `savingsPlanId`: `str` *(required)*
 - `filters`:
-  `List`\[[SavingsPlanRateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanratefiltertypedef)\]
+  `List`\[[SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeSavingsPlanRatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplanratesresponsetypedef).
+[DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef).
 
 ### describe_savings_plans
 
@@ -140,13 +140,12 @@ Arguments:
 - `savingsPlanIds`: `List`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `states`:
-  `List`\[[SavingsPlanState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanstate)\]
+- `states`: `List`\[[SavingsPlanState](./literals.md#savingsplanstate)\]
 - `filters`:
-  `List`\[[SavingsPlanFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanfiltertypedef)\]
+  `List`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
 
 Returns
-[DescribeSavingsPlansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplansresponsetypedef).
+[DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef).
 
 ### describe_savings_plans_offering_rates
 
@@ -160,22 +159,21 @@ Arguments:
 
 - `savingsPlanOfferingIds`: `List`\[`str`\]
 - `savingsPlanPaymentOptions`:
-  `List`\[[SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)\]
-- `savingsPlanTypes`:
-  `List`\[[SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)\]
+  `List`\[[SavingsPlanPaymentOption](./literals.md#savingsplanpaymentoption)\]
+- `savingsPlanTypes`: `List`\[[SavingsPlanType](./literals.md#savingsplantype)\]
 - `products`:
-  `List`\[[SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)\]
+  `List`\[[SavingsPlanProductType](./literals.md#savingsplanproducttype)\]
 - `serviceCodes`:
-  `List`\[[SavingsPlanRateServiceCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanrateservicecode)\]
+  `List`\[[SavingsPlanRateServiceCode](./literals.md#savingsplanrateservicecode)\]
 - `usageTypes`: `List`\[`str`\]
 - `operations`: `List`\[`str`\]
 - `filters`:
-  `List`\[[SavingsPlanOfferingRateFilterElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingratefilterelementtypedef)\]
+  `List`\[[SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeSavingsPlansOfferingRatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplansofferingratesresponsetypedef).
+[DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef).
 
 ### describe_savings_plans_offerings
 
@@ -189,25 +187,22 @@ Arguments:
 
 - `offeringIds`: `List`\[`str`\]
 - `paymentOptions`:
-  `List`\[[SavingsPlanPaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanpaymentoption)\]
-- `productType`:
-  [SavingsPlanProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplanproducttype)
-- `planTypes`:
-  `List`\[[SavingsPlanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#savingsplantype)\]
+  `List`\[[SavingsPlanPaymentOption](./literals.md#savingsplanpaymentoption)\]
+- `productType`: [SavingsPlanProductType](./literals.md#savingsplanproducttype)
+- `planTypes`: `List`\[[SavingsPlanType](./literals.md#savingsplantype)\]
 - `durations`: `List`\[`int`\]
-- `currencies`:
-  `List`\[[CurrencyCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/literals.html#currencycode)\]
+- `currencies`: `List`\[[CurrencyCode](./literals.md#currencycode)\]
 - `descriptions`: `List`\[`str`\]
 - `serviceCodes`: `List`\[`str`\]
 - `usageTypes`: `List`\[`str`\]
 - `operations`: `List`\[`str`\]
 - `filters`:
-  `List`\[[SavingsPlanOfferingFilterElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#savingsplanofferingfilterelementtypedef)\]
+  `List`\[[SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeSavingsPlansOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#describesavingsplansofferingsresponsetypedef).
+[DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -239,7 +234,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_savingsplans/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 

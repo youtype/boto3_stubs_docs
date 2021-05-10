@@ -1,6 +1,6 @@
 # Type annotations for boto3 Redshift module
 
-> [Index](../README.md) > Redshift
+> [Index](..) > Redshift
 
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)

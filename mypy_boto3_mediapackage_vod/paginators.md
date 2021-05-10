@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaPackageVod module
 
-> [Index](../README.md) > [MediaPackageVod](./README.md) > Paginators
+> [Index](..) > [MediaPackageVod](.) > Paginators
 
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
@@ -33,10 +33,10 @@ Arguments for `ListAssetsPaginator.paginate` method:
 
 - `PackagingGroupId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetsPaginator.paginate` returns
-`Iterator`\[[ListAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listassetsresponsetypedef)\].
+`Iterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
 
 ## ListPackagingConfigurationsPaginator
 
@@ -59,10 +59,10 @@ Arguments for `ListPackagingConfigurationsPaginator.paginate` method:
 
 - `PackagingGroupId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackagingConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListPackagingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listpackagingconfigurationsresponsetypedef)\].
+`Iterator`\[[ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef)\].
 
 ## ListPackagingGroupsPaginator
 
@@ -84,7 +84,7 @@ Boto3 documentation:
 Arguments for `ListPackagingGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackagingGroupsPaginator.paginate` returns
-`Iterator`\[[ListPackagingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listpackaginggroupsresponsetypedef)\].
+`Iterator`\[[ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef)\].

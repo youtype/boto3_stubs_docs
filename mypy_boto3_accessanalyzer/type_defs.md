@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AccessAnalyzer module
 
-> [Index](../README.md) > [AccessAnalyzer](./README.md) > Structures
+> [Index](..) > [AccessAnalyzer](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
@@ -83,15 +83,12 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef
 
 Required fields:
 
-- `changeType`:
-  [FindingChangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingchangetype)
+- `changeType`: [FindingChangeType](./literals.md#findingchangetype)
 - `createdAt`: `datetime`
 - `id`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
-- `status`:
-  [FindingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatus)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `status`: [FindingStatus](./literals.md#findingstatus)
 
 Optional fields:
 
@@ -99,13 +96,12 @@ Optional fields:
 - `condition`: `Dict`\[`str`, `str`\]
 - `error`: `str`
 - `existingFindingId`: `str`
-- `existingFindingStatus`:
-  [FindingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatus)
+- `existingFindingStatus`: [FindingStatus](./literals.md#findingstatus)
 - `isPublic`: `bool`
 - `principal`: `Dict`\[`str`, `str`\]
 - `resource`: `str`
 - `sources`:
-  `List`\[[FindingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#findingsourcetypedef)\]
+  `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
 
 ## AccessPreviewStatusReasonTypeDef
 
@@ -116,7 +112,7 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewStatusReasonTypeDef
 Required fields:
 
 - `code`:
-  [AccessPreviewStatusReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#accesspreviewstatusreasoncode)
+  [AccessPreviewStatusReasonCode](./literals.md#accesspreviewstatusreasoncode)
 
 ## AccessPreviewSummaryTypeDef
 
@@ -129,13 +125,12 @@ Required fields:
 - `analyzerArn`: `str`
 - `createdAt`: `datetime`
 - `id`: `str`
-- `status`:
-  [AccessPreviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#accesspreviewstatus)
+- `status`: [AccessPreviewStatus](./literals.md#accesspreviewstatus)
 
 Optional fields:
 
 - `statusReason`:
-  [AccessPreviewStatusReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#accesspreviewstatusreasontypedef)
+  [AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef)
 
 ## AccessPreviewTypeDef
 
@@ -147,16 +142,15 @@ Required fields:
 
 - `analyzerArn`: `str`
 - `configurations`: `Dict`\[`str`,
-  [ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#configurationtypedef)\]
+  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `createdAt`: `datetime`
 - `id`: `str`
-- `status`:
-  [AccessPreviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#accesspreviewstatus)
+- `status`: [AccessPreviewStatus](./literals.md#accesspreviewstatus)
 
 Optional fields:
 
 - `statusReason`:
-  [AccessPreviewStatusReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#accesspreviewstatusreasontypedef)
+  [AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef)
 
 ## AclGranteeTypeDef
 
@@ -179,8 +173,7 @@ Required fields:
 
 - `resourceArn`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 
 ## AnalyzedResourceTypeDef
 
@@ -195,8 +188,7 @@ Required fields:
 - `isPublic`: `bool`
 - `resourceArn`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `updatedAt`: `datetime`
 
 Optional fields:
@@ -204,8 +196,7 @@ Optional fields:
 - `actions`: `List`\[`str`\]
 - `error`: `str`
 - `sharedVia`: `List`\[`str`\]
-- `status`:
-  [FindingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatus)
+- `status`: [FindingStatus](./literals.md#findingstatus)
 
 ## AnalyzerSummaryTypeDef
 
@@ -218,17 +209,14 @@ Required fields:
 - `arn`: `str`
 - `createdAt`: `datetime`
 - `name`: `str`
-- `status`:
-  [AnalyzerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#analyzerstatus)
-- `type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#typetype)
+- `status`: [AnalyzerStatus](./literals.md#analyzerstatus)
+- `type`: [TypeType](./literals.md#typetype)
 
 Optional fields:
 
 - `lastResourceAnalyzed`: `str`
 - `lastResourceAnalyzedAt`: `datetime`
-- `statusReason`:
-  [StatusReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#statusreasontypedef)
+- `statusReason`: [StatusReasonTypeDef](./type_defs.md#statusreasontypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## ArchiveRuleSummaryTypeDef
@@ -240,8 +228,7 @@ from mypy_boto3_accessanalyzer.type_defs import ArchiveRuleSummaryTypeDef
 Required fields:
 
 - `createdAt`: `datetime`
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 - `updatedAt`: `datetime`
 
@@ -255,8 +242,7 @@ Required fields:
 
 - `accessRole`: `str`
 - `startTime`: `datetime`
-- `trails`:
-  `List`\[[TrailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#trailtypedef)\]
+- `trails`: `List`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
 
 Optional fields:
 
@@ -273,7 +259,7 @@ Required fields:
 - `endTime`: `datetime`
 - `startTime`: `datetime`
 - `trailProperties`:
-  `List`\[[TrailPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#trailpropertiestypedef)\]
+  `List`\[[TrailPropertiesTypeDef](./type_defs.md#trailpropertiestypedef)\]
 
 ## ConfigurationTypeDef
 
@@ -284,15 +270,15 @@ from mypy_boto3_accessanalyzer.type_defs import ConfigurationTypeDef
 Optional fields:
 
 - `iamRole`:
-  [IamRoleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#iamroleconfigurationtypedef)
+  [IamRoleConfigurationTypeDef](./type_defs.md#iamroleconfigurationtypedef)
 - `kmsKey`:
-  [KmsKeyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#kmskeyconfigurationtypedef)
+  [KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef)
 - `s3Bucket`:
-  [S3BucketConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#s3bucketconfigurationtypedef)
+  [S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef)
 - `secretsManagerSecret`:
-  [SecretsManagerSecretConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#secretsmanagersecretconfigurationtypedef)
+  [SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef)
 - `sqsQueue`:
-  [SqsQueueConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#sqsqueueconfigurationtypedef)
+  [SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef)
 
 ## CreateAccessPreviewResponseTypeDef
 
@@ -345,13 +331,12 @@ from mypy_boto3_accessanalyzer.type_defs import FindingSourceTypeDef
 
 Required fields:
 
-- `type`:
-  [FindingSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingsourcetype)
+- `type`: [FindingSourceType](./literals.md#findingsourcetype)
 
 Optional fields:
 
 - `detail`:
-  [FindingSourceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#findingsourcedetailtypedef)
+  [FindingSourceDetailTypeDef](./type_defs.md#findingsourcedetailtypedef)
 
 ## FindingSummaryTypeDef
 
@@ -366,10 +351,8 @@ Required fields:
 - `createdAt`: `datetime`
 - `id`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
-- `status`:
-  [FindingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatus)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `status`: [FindingStatus](./literals.md#findingstatus)
 - `updatedAt`: `datetime`
 
 Optional fields:
@@ -380,7 +363,7 @@ Optional fields:
 - `principal`: `Dict`\[`str`, `str`\]
 - `resource`: `str`
 - `sources`:
-  `List`\[[FindingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#findingsourcetypedef)\]
+  `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
 
 ## FindingTypeDef
 
@@ -395,10 +378,8 @@ Required fields:
 - `createdAt`: `datetime`
 - `id`: `str`
 - `resourceOwnerAccount`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
-- `status`:
-  [FindingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#findingstatus)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `status`: [FindingStatus](./literals.md#findingstatus)
 - `updatedAt`: `datetime`
 
 Optional fields:
@@ -409,7 +390,7 @@ Optional fields:
 - `principal`: `Dict`\[`str`, `str`\]
 - `resource`: `str`
 - `sources`:
-  `List`\[[FindingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#findingsourcetypedef)\]
+  `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
 
 ## GeneratedPolicyPropertiesTypeDef
 
@@ -424,7 +405,7 @@ Required fields:
 Optional fields:
 
 - `cloudTrailProperties`:
-  [CloudTrailPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#cloudtrailpropertiestypedef)
+  [CloudTrailPropertiesTypeDef](./type_defs.md#cloudtrailpropertiestypedef)
 - `isComplete`: `bool`
 
 ## GeneratedPolicyResultTypeDef
@@ -436,12 +417,12 @@ from mypy_boto3_accessanalyzer.type_defs import GeneratedPolicyResultTypeDef
 Required fields:
 
 - `properties`:
-  [GeneratedPolicyPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#generatedpolicypropertiestypedef)
+  [GeneratedPolicyPropertiesTypeDef](./type_defs.md#generatedpolicypropertiestypedef)
 
 Optional fields:
 
 - `generatedPolicies`:
-  `List`\[[GeneratedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#generatedpolicytypedef)\]
+  `List`\[[GeneratedPolicyTypeDef](./type_defs.md#generatedpolicytypedef)\]
 
 ## GeneratedPolicyTypeDef
 
@@ -461,8 +442,7 @@ from mypy_boto3_accessanalyzer.type_defs import GetAccessPreviewResponseTypeDef
 
 Required fields:
 
-- `accessPreview`:
-  [AccessPreviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#accesspreviewtypedef)
+- `accessPreview`: [AccessPreviewTypeDef](./type_defs.md#accesspreviewtypedef)
 
 ## GetAnalyzedResourceResponseTypeDef
 
@@ -472,8 +452,7 @@ from mypy_boto3_accessanalyzer.type_defs import GetAnalyzedResourceResponseTypeD
 
 Optional fields:
 
-- `resource`:
-  [AnalyzedResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#analyzedresourcetypedef)
+- `resource`: [AnalyzedResourceTypeDef](./type_defs.md#analyzedresourcetypedef)
 
 ## GetAnalyzerResponseTypeDef
 
@@ -483,8 +462,7 @@ from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerResponseTypeDef
 
 Required fields:
 
-- `analyzer`:
-  [AnalyzerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#analyzersummarytypedef)
+- `analyzer`: [AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef)
 
 ## GetArchiveRuleResponseTypeDef
 
@@ -495,7 +473,7 @@ from mypy_boto3_accessanalyzer.type_defs import GetArchiveRuleResponseTypeDef
 Required fields:
 
 - `archiveRule`:
-  [ArchiveRuleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#archiverulesummarytypedef)
+  [ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef)
 
 ## GetFindingResponseTypeDef
 
@@ -505,8 +483,7 @@ from mypy_boto3_accessanalyzer.type_defs import GetFindingResponseTypeDef
 
 Optional fields:
 
-- `finding`:
-  [FindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#findingtypedef)
+- `finding`: [FindingTypeDef](./type_defs.md#findingtypedef)
 
 ## GetGeneratedPolicyResponseTypeDef
 
@@ -517,9 +494,8 @@ from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyResponseTypeDe
 Required fields:
 
 - `generatedPolicyResult`:
-  [GeneratedPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#generatedpolicyresulttypedef)
-- `jobDetails`:
-  [JobDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#jobdetailstypedef)
+  [GeneratedPolicyResultTypeDef](./type_defs.md#generatedpolicyresulttypedef)
+- `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
 
 ## IamRoleConfigurationTypeDef
 
@@ -539,8 +515,7 @@ from mypy_boto3_accessanalyzer.type_defs import InlineArchiveRuleTypeDef
 
 Required fields:
 
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 
 ## JobDetailsTypeDef
@@ -553,14 +528,12 @@ Required fields:
 
 - `jobId`: `str`
 - `startedOn`: `datetime`
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#jobstatus)
+- `status`: [JobStatus](./literals.md#jobstatus)
 
 Optional fields:
 
 - `completedOn`: `datetime`
-- `jobError`:
-  [JobErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#joberrortypedef)
+- `jobError`: [JobErrorTypeDef](./type_defs.md#joberrortypedef)
 
 ## JobErrorTypeDef
 
@@ -570,8 +543,7 @@ from mypy_boto3_accessanalyzer.type_defs import JobErrorTypeDef
 
 Required fields:
 
-- `code`:
-  [JobErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#joberrorcode)
+- `code`: [JobErrorCode](./literals.md#joberrorcode)
 - `message`: `str`
 
 ## KmsGrantConfigurationTypeDef
@@ -584,13 +556,12 @@ Required fields:
 
 - `granteePrincipal`: `str`
 - `issuingAccount`: `str`
-- `operations`:
-  `List`\[[KmsGrantOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#kmsgrantoperation)\]
+- `operations`: `List`\[[KmsGrantOperation](./literals.md#kmsgrantoperation)\]
 
 Optional fields:
 
 - `constraints`:
-  [KmsGrantConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#kmsgrantconstraintstypedef)
+  [KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef)
 - `retiringPrincipal`: `str`
 
 ## KmsGrantConstraintsTypeDef
@@ -613,7 +584,7 @@ from mypy_boto3_accessanalyzer.type_defs import KmsKeyConfigurationTypeDef
 Optional fields:
 
 - `grants`:
-  `List`\[[KmsGrantConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#kmsgrantconfigurationtypedef)\]
+  `List`\[[KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)\]
 - `keyPolicies`: `Dict`\[`str`, `str`\]
 
 ## ListAccessPreviewFindingsResponseTypeDef
@@ -625,7 +596,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsRespons
 Required fields:
 
 - `findings`:
-  `List`\[[AccessPreviewFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#accesspreviewfindingtypedef)\]
+  `List`\[[AccessPreviewFindingTypeDef](./type_defs.md#accesspreviewfindingtypedef)\]
 
 Optional fields:
 
@@ -640,7 +611,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsResponseTypeDe
 Required fields:
 
 - `accessPreviews`:
-  `List`\[[AccessPreviewSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#accesspreviewsummarytypedef)\]
+  `List`\[[AccessPreviewSummaryTypeDef](./type_defs.md#accesspreviewsummarytypedef)\]
 
 Optional fields:
 
@@ -655,7 +626,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesResponseTyp
 Required fields:
 
 - `analyzedResources`:
-  `List`\[[AnalyzedResourceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#analyzedresourcesummarytypedef)\]
+  `List`\[[AnalyzedResourceSummaryTypeDef](./type_defs.md#analyzedresourcesummarytypedef)\]
 
 Optional fields:
 
@@ -670,7 +641,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersResponseTypeDef
 Required fields:
 
 - `analyzers`:
-  `List`\[[AnalyzerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#analyzersummarytypedef)\]
+  `List`\[[AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef)\]
 
 Optional fields:
 
@@ -685,7 +656,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesResponseTypeDef
 Required fields:
 
 - `archiveRules`:
-  `List`\[[ArchiveRuleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#archiverulesummarytypedef)\]
+  `List`\[[ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef)\]
 
 Optional fields:
 
@@ -700,7 +671,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListFindingsResponseTypeDef
 Required fields:
 
 - `findings`:
-  `List`\[[FindingSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#findingsummarytypedef)\]
+  `List`\[[FindingSummaryTypeDef](./type_defs.md#findingsummarytypedef)\]
 
 Optional fields:
 
@@ -715,7 +686,7 @@ from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsResponseTyp
 Required fields:
 
 - `policyGenerations`:
-  `List`\[[PolicyGenerationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#policygenerationtypedef)\]
+  `List`\[[PolicyGenerationTypeDef](./type_defs.md#policygenerationtypedef)\]
 
 Optional fields:
 
@@ -739,10 +710,8 @@ from mypy_boto3_accessanalyzer.type_defs import LocationTypeDef
 
 Required fields:
 
-- `path`:
-  `List`\[[PathElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#pathelementtypedef)\]
-- `span`:
-  [SpanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#spantypedef)
+- `path`: `List`\[[PathElementTypeDef](./type_defs.md#pathelementtypedef)\]
+- `span`: [SpanTypeDef](./type_defs.md#spantypedef)
 
 ## NetworkOriginConfigurationTypeDef
 
@@ -754,7 +723,7 @@ Optional fields:
 
 - `internetConfiguration`: `Dict`\[`str`, `Any`\]
 - `vpcConfiguration`:
-  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#vpcconfigurationtypedef)
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -778,8 +747,7 @@ Optional fields:
 
 - `index`: `int`
 - `key`: `str`
-- `substring`:
-  [SubstringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#substringtypedef)
+- `substring`: [SubstringTypeDef](./type_defs.md#substringtypedef)
 - `value`: `str`
 
 ## PolicyGenerationDetailsTypeDef
@@ -803,8 +771,7 @@ Required fields:
 - `jobId`: `str`
 - `principalArn`: `str`
 - `startedOn`: `datetime`
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#jobstatus)
+- `status`: [JobStatus](./literals.md#jobstatus)
 
 Optional fields:
 
@@ -832,9 +799,9 @@ Optional fields:
 
 - `accessPointPolicy`: `str`
 - `networkOrigin`:
-  [NetworkOriginConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#networkoriginconfigurationtypedef)
+  [NetworkOriginConfigurationTypeDef](./type_defs.md#networkoriginconfigurationtypedef)
 - `publicAccessBlock`:
-  [S3PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#s3publicaccessblockconfigurationtypedef)
+  [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
 
 ## S3BucketAclGrantConfigurationTypeDef
 
@@ -844,10 +811,8 @@ from mypy_boto3_accessanalyzer.type_defs import S3BucketAclGrantConfigurationTyp
 
 Required fields:
 
-- `grantee`:
-  [AclGranteeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#aclgranteetypedef)
-- `permission`:
-  [AclPermission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#aclpermission)
+- `grantee`: [AclGranteeTypeDef](./type_defs.md#aclgranteetypedef)
+- `permission`: [AclPermission](./literals.md#aclpermission)
 
 ## S3BucketConfigurationTypeDef
 
@@ -858,12 +823,12 @@ from mypy_boto3_accessanalyzer.type_defs import S3BucketConfigurationTypeDef
 Optional fields:
 
 - `accessPoints`: `Dict`\[`str`,
-  [S3AccessPointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#s3accesspointconfigurationtypedef)\]
+  [S3AccessPointConfigurationTypeDef](./type_defs.md#s3accesspointconfigurationtypedef)\]
 - `bucketAclGrants`:
-  `List`\[[S3BucketAclGrantConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#s3bucketaclgrantconfigurationtypedef)\]
+  `List`\[[S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef)\]
 - `bucketPolicy`: `str`
 - `bucketPublicAccessBlock`:
-  [S3PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#s3publicaccessblockconfigurationtypedef)
+  [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
 
 ## S3PublicAccessBlockConfigurationTypeDef
 
@@ -896,8 +861,7 @@ from mypy_boto3_accessanalyzer.type_defs import SortCriteriaTypeDef
 Optional fields:
 
 - `attributeName`: `str`
-- `orderBy`:
-  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#orderby)
+- `orderBy`: [OrderBy](./literals.md#orderby)
 
 ## SpanTypeDef
 
@@ -907,10 +871,8 @@ from mypy_boto3_accessanalyzer.type_defs import SpanTypeDef
 
 Required fields:
 
-- `end`:
-  [PositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#positiontypedef)
-- `start`:
-  [PositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#positiontypedef)
+- `end`: [PositionTypeDef](./type_defs.md#positiontypedef)
+- `start`: [PositionTypeDef](./type_defs.md#positiontypedef)
 
 ## SqsQueueConfigurationTypeDef
 
@@ -940,8 +902,7 @@ from mypy_boto3_accessanalyzer.type_defs import StatusReasonTypeDef
 
 Required fields:
 
-- `code`:
-  [ReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#reasoncode)
+- `code`: [ReasonCode](./literals.md#reasoncode)
 
 ## SubstringTypeDef
 
@@ -994,11 +955,10 @@ Required fields:
 
 - `findingDetails`: `str`
 - `findingType`:
-  [ValidatePolicyFindingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#validatepolicyfindingtype)
+  [ValidatePolicyFindingType](./literals.md#validatepolicyfindingtype)
 - `issueCode`: `str`
 - `learnMoreLink`: `str`
-- `locations`:
-  `List`\[[LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#locationtypedef)\]
+- `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
 
 ## ValidatePolicyResponseTypeDef
 
@@ -1009,7 +969,7 @@ from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyResponseTypeDef
 Required fields:
 
 - `findings`:
-  `List`\[[ValidatePolicyFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#validatepolicyfindingtypedef)\]
+  `List`\[[ValidatePolicyFindingTypeDef](./type_defs.md#validatepolicyfindingtypedef)\]
 
 Optional fields:
 

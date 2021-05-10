@@ -1,6 +1,6 @@
 # Literals for boto3 AppMesh module
 
-> [Index](../README.md) > [AppMesh](./README.md) > Literals
+> [Index](..) > [AppMesh](.) > Literals
 
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)

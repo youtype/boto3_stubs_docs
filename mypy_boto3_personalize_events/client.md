@@ -1,7 +1,6 @@
 # PersonalizeEventsClient for boto3 PersonalizeEvents module
 
-> [Index](../README.md) > [PersonalizeEvents](./README.md) >
-> PersonalizeEventsClient
+> [Index](..) > [PersonalizeEvents](.) > PersonalizeEventsClient
 
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
@@ -96,9 +95,7 @@ Arguments:
 
 - `trackingId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
-- `eventList`:
-  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_events/type_defs.html#eventtypedef)\]
-  *(required)*
+- `eventList`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\] *(required)*
 - `userId`: `str`
 
 ### put_items
@@ -111,9 +108,7 @@ Boto3 documentation:
 Arguments:
 
 - `datasetArn`: `str` *(required)*
-- `items`:
-  `List`\[[ItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_events/type_defs.html#itemtypedef)\]
-  *(required)*
+- `items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\] *(required)*
 
 ### put_users
 
@@ -125,6 +120,4 @@ Boto3 documentation:
 Arguments:
 
 - `datasetArn`: `str` *(required)*
-- `users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_events/type_defs.html#usertypedef)\]
-  *(required)*
+- `users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*

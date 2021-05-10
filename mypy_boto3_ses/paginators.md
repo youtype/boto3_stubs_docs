@@ -1,6 +1,6 @@
 # Paginators for boto3 SES module
 
-> [Index](../README.md) > [SES](./README.md) > Paginators
+> [Index](..) > [SES](.) > Paginators
 
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
@@ -34,10 +34,10 @@ Boto3 documentation:
 Arguments for `ListConfigurationSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigurationSetsPaginator.paginate` returns
-`Iterator`\[[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listconfigurationsetsresponsetypedef)\].
+`Iterator`\[[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)\].
 
 ## ListCustomVerificationEmailTemplatesPaginator
 
@@ -59,10 +59,10 @@ Boto3 documentation:
 Arguments for `ListCustomVerificationEmailTemplatesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomVerificationEmailTemplatesPaginator.paginate` returns
-`Iterator`\[[ListCustomVerificationEmailTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listcustomverificationemailtemplatesresponsetypedef)\].
+`Iterator`\[[ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef)\].
 
 ## ListIdentitiesPaginator
 
@@ -82,13 +82,12 @@ Boto3 documentation:
 
 Arguments for `ListIdentitiesPaginator.paginate` method:
 
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/literals.html#identitytype)
+- `IdentityType`: [IdentityType](./literals.md#identitytype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIdentitiesPaginator.paginate` returns
-`Iterator`\[[ListIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listidentitiesresponsetypedef)\].
+`Iterator`\[[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef)\].
 
 ## ListReceiptRuleSetsPaginator
 
@@ -110,10 +109,10 @@ Boto3 documentation:
 Arguments for `ListReceiptRuleSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReceiptRuleSetsPaginator.paginate` returns
-`Iterator`\[[ListReceiptRuleSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listreceiptrulesetsresponsetypedef)\].
+`Iterator`\[[ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef)\].
 
 ## ListTemplatesPaginator
 
@@ -134,7 +133,7 @@ Boto3 documentation:
 Arguments for `ListTemplatesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTemplatesPaginator.paginate` returns
-`Iterator`\[[ListTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#listtemplatesresponsetypedef)\].
+`Iterator`\[[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef)\].

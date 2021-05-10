@@ -1,6 +1,6 @@
 # Type annotations for boto3 KMS module
 
-> [Index](../README.md) > KMS
+> [Index](..) > KMS
 
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)

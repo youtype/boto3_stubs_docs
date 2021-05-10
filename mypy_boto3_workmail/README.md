@@ -1,6 +1,6 @@
 # Type annotations for boto3 WorkMail module
 
-> [Index](../README.md) > WorkMail
+> [Index](..) > WorkMail
 
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)

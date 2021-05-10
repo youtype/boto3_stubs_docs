@@ -1,6 +1,6 @@
 # Literals for boto3 MQ module
 
-> [Index](../README.md) > [MQ](./README.md) > Literals
+> [Index](..) > [MQ](.) > Literals
 
 Auto-generated documentation for
 [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)

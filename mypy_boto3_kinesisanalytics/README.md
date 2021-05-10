@@ -1,6 +1,6 @@
 # Type annotations for boto3 KinesisAnalytics module
 
-> [Index](../README.md) > KinesisAnalytics
+> [Index](..) > KinesisAnalytics
 
 Auto-generated documentation for
 [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
@@ -149,7 +149,7 @@ from mypy_boto3_kinesisanalytics.type_defs import ApplicationDetailTypeDef, ...
 - [ReferenceDataSourceDescriptionTypeDef](./type_defs.md#referencedatasourcedescriptiontypedef)
 - [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
 - [ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
 - [S3ReferenceDataSourceDescriptionTypeDef](./type_defs.md#s3referencedatasourcedescriptiontypedef)
 - [S3ReferenceDataSourceTypeDef](./type_defs.md#s3referencedatasourcetypedef)

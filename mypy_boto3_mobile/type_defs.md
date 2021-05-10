@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Mobile module
 
-> [Index](../README.md) > [Mobile](./README.md) > Structures
+> [Index](..) > [Mobile](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
@@ -36,8 +36,7 @@ Optional fields:
 - `version`: `str`
 - `description`: `str`
 - `iconUrl`: `str`
-- `availablePlatforms`:
-  `List`\[[Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/literals.html#platform)\]
+- `availablePlatforms`: `List`\[[Platform](./literals.md#platform)\]
 
 ## CreateProjectResultTypeDef
 
@@ -47,8 +46,7 @@ from mypy_boto3_mobile.type_defs import CreateProjectResultTypeDef
 
 Optional fields:
 
-- `details`:
-  [ProjectDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#projectdetailstypedef)
+- `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
 
 ## DeleteProjectResultTypeDef
 
@@ -58,10 +56,9 @@ from mypy_boto3_mobile.type_defs import DeleteProjectResultTypeDef
 
 Optional fields:
 
-- `deletedResources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#resourcetypedef)\]
+- `deletedResources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `orphanedResources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#resourcetypedef)\]
+  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 ## DescribeBundleResultTypeDef
 
@@ -71,8 +68,7 @@ from mypy_boto3_mobile.type_defs import DescribeBundleResultTypeDef
 
 Optional fields:
 
-- `details`:
-  [BundleDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#bundledetailstypedef)
+- `details`: [BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)
 
 ## DescribeProjectResultTypeDef
 
@@ -82,8 +78,7 @@ from mypy_boto3_mobile.type_defs import DescribeProjectResultTypeDef
 
 Optional fields:
 
-- `details`:
-  [ProjectDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#projectdetailstypedef)
+- `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
 
 ## ExportBundleResultTypeDef
 
@@ -116,7 +111,7 @@ from mypy_boto3_mobile.type_defs import ListBundlesResultTypeDef
 Optional fields:
 
 - `bundleList`:
-  `List`\[[BundleDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#bundledetailstypedef)\]
+  `List`\[[BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)\]
 - `nextToken`: `str`
 
 ## ListProjectsResultTypeDef
@@ -128,7 +123,7 @@ from mypy_boto3_mobile.type_defs import ListProjectsResultTypeDef
 Optional fields:
 
 - `projects`:
-  `List`\[[ProjectSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#projectsummarytypedef)\]
+  `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
 - `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -154,13 +149,11 @@ Optional fields:
 - `name`: `str`
 - `projectId`: `str`
 - `region`: `str`
-- `state`:
-  [ProjectState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/literals.html#projectstate)
+- `state`: [ProjectState](./literals.md#projectstate)
 - `createdDate`: `datetime`
 - `lastUpdatedDate`: `datetime`
 - `consoleUrl`: `str`
-- `resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#resourcetypedef)\]
+- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 ## ProjectSummaryTypeDef
 
@@ -195,5 +188,4 @@ from mypy_boto3_mobile.type_defs import UpdateProjectResultTypeDef
 
 Optional fields:
 
-- `details`:
-  [ProjectDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#projectdetailstypedef)
+- `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)

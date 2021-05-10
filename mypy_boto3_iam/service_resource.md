@@ -1,6 +1,6 @@
 # IAMServiceResource for boto3 IAM module
 
-> [Index](../README.md) > [IAM](./README.md) > IAMServiceResource
+> [Index](..) > [IAM](.) > IAMServiceResource
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
@@ -651,8 +651,7 @@ Arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [InstanceProfile](#instanceprofile).
 
@@ -669,8 +668,7 @@ Arguments:
 - `PolicyDocument`: `str` *(required)*
 - `Path`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Policy](#policy).
 
@@ -689,8 +687,7 @@ Arguments:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Role](#role).
 
@@ -705,8 +702,7 @@ Arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [SamlProvider](#samlprovider).
 
@@ -724,8 +720,7 @@ Arguments:
 - `PrivateKey`: `str` *(required)*
 - `Path`: `str`
 - `CertificateChain`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [ServerCertificate](#servercertificate).
 
@@ -755,8 +750,7 @@ Arguments:
 - `UserName`: `str` *(required)*
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [User](#user).
 
@@ -771,8 +765,7 @@ Arguments:
 
 - `VirtualMFADeviceName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [VirtualMfaDevice](#virtualmfadevice).
 
@@ -829,9 +822,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 #### AccessKey.deactivate method
 
@@ -842,9 +833,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 #### AccessKey.delete method
 
@@ -899,9 +888,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 #### AccessKeyPair.deactivate method
 
@@ -912,9 +899,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 #### AccessKeyPair.delete method
 
@@ -2378,7 +2363,7 @@ Arguments:
 - `SAMLMetadataDocument`: `str` *(required)*
 
 Returns
-[UpdateSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#updatesamlproviderresponsetypedef).
+[UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
 
 ## ServerCertificate
 
@@ -2495,9 +2480,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 #### SigningCertificate.deactivate method
 
@@ -2508,9 +2491,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 #### SigningCertificate.delete method
 
@@ -2778,8 +2759,7 @@ Arguments:
 
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [User](#user).
 

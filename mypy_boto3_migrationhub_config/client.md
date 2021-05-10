@@ -1,7 +1,6 @@
 # MigrationHubConfigClient for boto3 MigrationHubConfig module
 
-> [Index](../README.md) > [MigrationHubConfig](./README.md) >
-> MigrationHubConfigClient
+> [Index](..) > [MigrationHubConfig](.) > MigrationHubConfigClient
 
 Auto-generated documentation for
 [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
@@ -82,13 +81,11 @@ Boto3 documentation:
 Arguments:
 
 - `HomeRegion`: `str` *(required)*
-- `Target`:
-  [TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#targettypedef)
-  *(required)*
+- `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
 - `DryRun`: `bool`
 
 Returns
-[CreateHomeRegionControlResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#createhomeregioncontrolresulttypedef).
+[CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef).
 
 ### describe_home_region_controls
 
@@ -102,13 +99,12 @@ Arguments:
 
 - `ControlId`: `str`
 - `HomeRegion`: `str`
-- `Target`:
-  [TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#targettypedef)
+- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeHomeRegionControlsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#describehomeregioncontrolsresulttypedef).
+[DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef).
 
 ### generate_presigned_url
 
@@ -136,4 +132,4 @@ Boto3 documentation:
 [MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
 
 Returns
-[GetHomeRegionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#gethomeregionresulttypedef).
+[GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef).

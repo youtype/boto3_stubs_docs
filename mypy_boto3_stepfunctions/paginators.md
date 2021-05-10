@@ -1,6 +1,6 @@
 # Paginators for boto3 SFN module
 
-> [Index](../README.md) > [SFN](./README.md) > Paginators
+> [Index](..) > [SFN](.) > Paginators
 
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
@@ -36,10 +36,10 @@ Arguments for `GetExecutionHistoryPaginator.paginate` method:
 - `reverseOrder`: `bool`
 - `includeExecutionData`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetExecutionHistoryPaginator.paginate` returns
-`Iterator`\[[GetExecutionHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#getexecutionhistoryoutputtypedef)\].
+`Iterator`\[[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef)\].
 
 ## ListActivitiesPaginator
 
@@ -61,10 +61,10 @@ Boto3 documentation:
 Arguments for `ListActivitiesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActivitiesPaginator.paginate` returns
-`Iterator`\[[ListActivitiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listactivitiesoutputtypedef)\].
+`Iterator`\[[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef)\].
 
 ## ListExecutionsPaginator
 
@@ -86,13 +86,12 @@ Boto3 documentation:
 Arguments for `ListExecutionsPaginator.paginate` method:
 
 - `stateMachineArn`: `str` *(required)*
-- `statusFilter`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#executionstatus)
+- `statusFilter`: [ExecutionStatus](./literals.md#executionstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExecutionsPaginator.paginate` returns
-`Iterator`\[[ListExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listexecutionsoutputtypedef)\].
+`Iterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
 
 ## ListStateMachinesPaginator
 
@@ -114,7 +113,7 @@ Boto3 documentation:
 Arguments for `ListStateMachinesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStateMachinesPaginator.paginate` returns
-`Iterator`\[[ListStateMachinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#liststatemachinesoutputtypedef)\].
+`Iterator`\[[ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef)\].

@@ -1,6 +1,6 @@
 # Type annotations for boto3 ComprehendMedical module
 
-> [Index](../README.md) > ComprehendMedical
+> [Index](..) > ComprehendMedical
 
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)

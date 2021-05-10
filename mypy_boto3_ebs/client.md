@@ -1,6 +1,6 @@
 # EBSClient for boto3 EBS module
 
-> [Index](../README.md) > [EBS](./README.md) > EBSClient
+> [Index](..) > [EBS](.) > EBSClient
 
 Auto-generated documentation for
 [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
@@ -87,11 +87,13 @@ Arguments:
 - `SnapshotId`: `str` *(required)*
 - `ChangedBlocksCount`: `int` *(required)*
 - `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']`
-- `ChecksumAggregationMethod`: `Literal['LINEAR']`
+- `ChecksumAlgorithm`: `Literal['SHA256']` (see
+  [ChecksumAlgorithm](./literals.md#checksumalgorithm))
+- `ChecksumAggregationMethod`: `Literal['LINEAR']` (see
+  [ChecksumAggregationMethod](./literals.md#checksumaggregationmethod))
 
 Returns
-[CompleteSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#completesnapshotresponsetypedef).
+[CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef).
 
 ### generate_presigned_url
 
@@ -123,7 +125,7 @@ Arguments:
 - `BlockToken`: `str` *(required)*
 
 Returns
-[GetSnapshotBlockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#getsnapshotblockresponsetypedef).
+[GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef).
 
 ### list_changed_blocks
 
@@ -141,7 +143,7 @@ Arguments:
 - `StartingBlockIndex`: `int`
 
 Returns
-[ListChangedBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#listchangedblocksresponsetypedef).
+[ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef).
 
 ### list_snapshot_blocks
 
@@ -158,7 +160,7 @@ Arguments:
 - `StartingBlockIndex`: `int`
 
 Returns
-[ListSnapshotBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#listsnapshotblocksresponsetypedef).
+[ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef).
 
 ### put_snapshot_block
 
@@ -174,11 +176,12 @@ Arguments:
 - `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `DataLength`: `int` *(required)*
 - `Checksum`: `str` *(required)*
-- `ChecksumAlgorithm`: `Literal['SHA256']` *(required)*
+- `ChecksumAlgorithm`: `Literal['SHA256']` (see
+  [ChecksumAlgorithm](./literals.md#checksumalgorithm)) *(required)*
 - `Progress`: `int`
 
 Returns
-[PutSnapshotBlockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#putsnapshotblockresponsetypedef).
+[PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef).
 
 ### start_snapshot
 
@@ -191,8 +194,7 @@ Arguments:
 
 - `VolumeSize`: `int` *(required)*
 - `ParentSnapshotId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
 - `Encrypted`: `bool`
@@ -200,4 +202,4 @@ Arguments:
 - `Timeout`: `int`
 
 Returns
-[StartSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#startsnapshotresponsetypedef).
+[StartSnapshotResponseTypeDef](./type_defs.md#startsnapshotresponsetypedef).

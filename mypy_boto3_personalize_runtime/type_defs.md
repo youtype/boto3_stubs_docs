@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 PersonalizeRuntime module
 
-> [Index](../README.md) > [PersonalizeRuntime](./README.md) > Structures
+> [Index](..) > [PersonalizeRuntime](.) > Typed dictionaries
 
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
@@ -21,7 +21,7 @@ from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRespo
 Optional fields:
 
 - `personalizedRanking`:
-  `List`\[[PredictedItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_runtime/type_defs.html#predicteditemtypedef)\]
+  `List`\[[PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)\]
 - `recommendationId`: `str`
 
 ## GetRecommendationsResponseTypeDef
@@ -33,7 +33,7 @@ from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseT
 Optional fields:
 
 - `itemList`:
-  `List`\[[PredictedItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_runtime/type_defs.html#predicteditemtypedef)\]
+  `List`\[[PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)\]
 - `recommendationId`: `str`
 
 ## PredictedItemTypeDef

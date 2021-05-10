@@ -1,6 +1,6 @@
 # Type annotations for boto3 ElasticLoadBalancingv2 module
 
-> [Index](../README.md) > ElasticLoadBalancingv2
+> [Index](..) > ElasticLoadBalancingv2
 
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
@@ -241,7 +241,7 @@ from mypy_boto3_elbv2.type_defs import ActionTypeDef, ...
 - [QueryStringConditionConfigTypeDef](./type_defs.md#querystringconditionconfigtypedef)
 - [QueryStringKeyValuePairTypeDef](./type_defs.md#querystringkeyvaluepairtypedef)
 - [RedirectActionConfigTypeDef](./type_defs.md#redirectactionconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)
 - [RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)
 - [RuleTypeDef](./type_defs.md#ruletypedef)

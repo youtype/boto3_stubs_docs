@@ -1,6 +1,6 @@
 # Literals for boto3 FraudDetector module
 
-> [Index](../README.md) > [FraudDetector](./README.md) > Literals
+> [Index](..) > [FraudDetector](.) > Literals
 
 Auto-generated documentation for
 [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)

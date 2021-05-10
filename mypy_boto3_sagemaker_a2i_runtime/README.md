@@ -1,6 +1,6 @@
 # Type annotations for boto3 AugmentedAIRuntime module
 
-> [Index](../README.md) > AugmentedAIRuntime
+> [Index](..) > AugmentedAIRuntime
 
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
@@ -99,5 +99,5 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopResponse
 - [HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef)
 - [ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Redshift module
 
-> [Index](../README.md) > [Redshift](./README.md) > Structures
+> [Index](..) > [Redshift](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
@@ -164,7 +164,7 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeOutputMessag
 Optional fields:
 
 - `ExchangedReservedNode`:
-  [ReservedNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodetypedef)
+  [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
 
 ## AccountAttributeListTypeDef
 
@@ -175,7 +175,7 @@ from mypy_boto3_redshift.type_defs import AccountAttributeListTypeDef
 Optional fields:
 
 - `AccountAttributes`:
-  `List`\[[AccountAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#accountattributetypedef)\]
+  `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
 
 ## AccountAttributeTypeDef
 
@@ -187,7 +187,7 @@ Optional fields:
 
 - `AttributeName`: `str`
 - `AttributeValues`:
-  `List`\[[AttributeValueTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#attributevaluetargettypedef)\]
+  `List`\[[AttributeValueTargetTypeDef](./type_defs.md#attributevaluetargettypedef)\]
 
 ## AccountWithRestoreAccessTypeDef
 
@@ -208,10 +208,9 @@ from mypy_boto3_redshift.type_defs import AquaConfigurationTypeDef
 
 Optional fields:
 
-- `AquaStatus`:
-  [AquaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#aquastatus)
+- `AquaStatus`: [AquaStatus](./literals.md#aquastatus)
 - `AquaConfigurationStatus`:
-  [AquaConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#aquaconfigurationstatus)
+  [AquaConfigurationStatus](./literals.md#aquaconfigurationstatus)
 
 ## AttributeValueTargetTypeDef
 
@@ -232,7 +231,7 @@ from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressRe
 Optional fields:
 
 - `ClusterSecurityGroup`:
-  [ClusterSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygrouptypedef)
+  [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
 
 ## AuthorizeSnapshotAccessResultTypeDef
 
@@ -242,8 +241,7 @@ from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessResultTypeDef
 
 Optional fields:
 
-- `Snapshot`:
-  [SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## AvailabilityZoneTypeDef
 
@@ -255,7 +253,7 @@ Optional fields:
 
 - `Name`: `str`
 - `SupportedPlatforms`:
-  `List`\[[SupportedPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#supportedplatformtypedef)\]
+  `List`\[[SupportedPlatformTypeDef](./type_defs.md#supportedplatformtypedef)\]
 
 ## BatchDeleteClusterSnapshotsResultTypeDef
 
@@ -267,7 +265,7 @@ Optional fields:
 
 - `Resources`: `List`\[`str`\]
 - `Errors`:
-  `List`\[[SnapshotErrorMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshoterrormessagetypedef)\]
+  `List`\[[SnapshotErrorMessageTypeDef](./type_defs.md#snapshoterrormessagetypedef)\]
 
 ## BatchModifyClusterSnapshotsOutputMessageTypeDef
 
@@ -279,7 +277,7 @@ Optional fields:
 
 - `Resources`: `List`\[`str`\]
 - `Errors`:
-  `List`\[[SnapshotErrorMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshoterrormessagetypedef)\]
+  `List`\[[SnapshotErrorMessageTypeDef](./type_defs.md#snapshoterrormessagetypedef)\]
 
 ## ClusterAssociatedToScheduleTypeDef
 
@@ -290,8 +288,7 @@ from mypy_boto3_redshift.type_defs import ClusterAssociatedToScheduleTypeDef
 Optional fields:
 
 - `ClusterIdentifier`: `str`
-- `ScheduleAssociationState`:
-  [ScheduleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#schedulestate)
+- `ScheduleAssociationState`: [ScheduleState](./literals.md#schedulestate)
 
 ## ClusterCredentialsTypeDef
 
@@ -317,7 +314,7 @@ Optional fields:
 - `CurrentDatabaseRevision`: `str`
 - `DatabaseRevisionReleaseDate`: `datetime`
 - `RevisionTargets`:
-  `List`\[[RevisionTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#revisiontargettypedef)\]
+  `List`\[[RevisionTargetTypeDef](./type_defs.md#revisiontargettypedef)\]
 
 ## ClusterDbRevisionsMessageTypeDef
 
@@ -329,7 +326,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ClusterDbRevisions`:
-  `List`\[[ClusterDbRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterdbrevisiontypedef)\]
+  `List`\[[ClusterDbRevisionTypeDef](./type_defs.md#clusterdbrevisiontypedef)\]
 
 ## ClusterIamRoleTypeDef
 
@@ -362,8 +359,7 @@ from mypy_boto3_redshift.type_defs import ClusterParameterGroupDetailsTypeDef
 
 Optional fields:
 
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `Marker`: `str`
 
 ## ClusterParameterGroupNameMessageTypeDef
@@ -388,7 +384,7 @@ Optional fields:
 - `ParameterGroupName`: `str`
 - `ParameterApplyStatus`: `str`
 - `ClusterParameterStatusList`:
-  `List`\[[ClusterParameterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparameterstatustypedef)\]
+  `List`\[[ClusterParameterStatusTypeDef](./type_defs.md#clusterparameterstatustypedef)\]
 
 ## ClusterParameterGroupTypeDef
 
@@ -401,8 +397,7 @@ Optional fields:
 - `ParameterGroupName`: `str`
 - `ParameterGroupFamily`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ClusterParameterGroupsMessageTypeDef
 
@@ -414,7 +409,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ParameterGroups`:
-  `List`\[[ClusterParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergrouptypedef)\]
+  `List`\[[ClusterParameterGroupTypeDef](./type_defs.md#clusterparametergrouptypedef)\]
 
 ## ClusterParameterStatusTypeDef
 
@@ -449,7 +444,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ClusterSecurityGroups`:
-  `List`\[[ClusterSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygrouptypedef)\]
+  `List`\[[ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)\]
 
 ## ClusterSecurityGroupTypeDef
 
@@ -462,11 +457,9 @@ Optional fields:
 - `ClusterSecurityGroupName`: `str`
 - `Description`: `str`
 - `EC2SecurityGroups`:
-  `List`\[[EC2SecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#ec2securitygrouptypedef)\]
-- `IPRanges`:
-  `List`\[[IPRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#iprangetypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+  `List`\[[EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef)\]
+- `IPRanges`: `List`\[[IPRangeTypeDef](./type_defs.md#iprangetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ClusterSnapshotCopyStatusTypeDef
 
@@ -491,7 +484,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ClusterSubnetGroups`:
-  `List`\[[ClusterSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersubnetgrouptypedef)\]
+  `List`\[[ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef)\]
 
 ## ClusterSubnetGroupTypeDef
 
@@ -505,10 +498,8 @@ Optional fields:
 - `Description`: `str`
 - `VpcId`: `str`
 - `SubnetGroupStatus`: `str`
-- `Subnets`:
-  `List`\[[SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#subnettypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ClusterTypeDef
 
@@ -525,66 +516,60 @@ Optional fields:
 - `ModifyStatus`: `str`
 - `MasterUsername`: `str`
 - `DBName`: `str`
-- `Endpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointtypedef)
+- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `ClusterCreateTime`: `datetime`
 - `AutomatedSnapshotRetentionPeriod`: `int`
 - `ManualSnapshotRetentionPeriod`: `int`
 - `ClusterSecurityGroups`:
-  `List`\[[ClusterSecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygroupmembershiptypedef)\]
+  `List`\[[ClusterSecurityGroupMembershipTypeDef](./type_defs.md#clustersecuritygroupmembershiptypedef)\]
 - `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#vpcsecuritygroupmembershiptypedef)\]
+  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
 - `ClusterParameterGroups`:
-  `List`\[[ClusterParameterGroupStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupstatustypedef)\]
+  `List`\[[ClusterParameterGroupStatusTypeDef](./type_defs.md#clusterparametergroupstatustypedef)\]
 - `ClusterSubnetGroupName`: `str`
 - `VpcId`: `str`
 - `AvailabilityZone`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `PendingModifiedValues`:
-  [PendingModifiedValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#pendingmodifiedvaluestypedef)
+  [PendingModifiedValuesTypeDef](./type_defs.md#pendingmodifiedvaluestypedef)
 - `ClusterVersion`: `str`
 - `AllowVersionUpgrade`: `bool`
 - `NumberOfNodes`: `int`
 - `PubliclyAccessible`: `bool`
 - `Encrypted`: `bool`
-- `RestoreStatus`:
-  [RestoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#restorestatustypedef)
+- `RestoreStatus`: [RestoreStatusTypeDef](./type_defs.md#restorestatustypedef)
 - `DataTransferProgress`:
-  [DataTransferProgressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#datatransferprogresstypedef)
-- `HsmStatus`:
-  [HsmStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmstatustypedef)
+  [DataTransferProgressTypeDef](./type_defs.md#datatransferprogresstypedef)
+- `HsmStatus`: [HsmStatusTypeDef](./type_defs.md#hsmstatustypedef)
 - `ClusterSnapshotCopyStatus`:
-  [ClusterSnapshotCopyStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersnapshotcopystatustypedef)
+  [ClusterSnapshotCopyStatusTypeDef](./type_defs.md#clustersnapshotcopystatustypedef)
 - `ClusterPublicKey`: `str`
 - `ClusterNodes`:
-  `List`\[[ClusterNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusternodetypedef)\]
+  `List`\[[ClusterNodeTypeDef](./type_defs.md#clusternodetypedef)\]
 - `ElasticIpStatus`:
-  [ElasticIpStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#elasticipstatustypedef)
+  [ElasticIpStatusTypeDef](./type_defs.md#elasticipstatustypedef)
 - `ClusterRevisionNumber`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `IamRoles`:
-  `List`\[[ClusterIamRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusteriamroletypedef)\]
+  `List`\[[ClusterIamRoleTypeDef](./type_defs.md#clusteriamroletypedef)\]
 - `PendingActions`: `List`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `ElasticResizeNumberOfNodeOptions`: `str`
 - `DeferredMaintenanceWindows`:
-  `List`\[[DeferredMaintenanceWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#deferredmaintenancewindowtypedef)\]
+  `List`\[[DeferredMaintenanceWindowTypeDef](./type_defs.md#deferredmaintenancewindowtypedef)\]
 - `SnapshotScheduleIdentifier`: `str`
-- `SnapshotScheduleState`:
-  [ScheduleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#schedulestate)
+- `SnapshotScheduleState`: [ScheduleState](./literals.md#schedulestate)
 - `ExpectedNextSnapshotScheduleTime`: `datetime`
 - `ExpectedNextSnapshotScheduleTimeStatus`: `str`
 - `NextMaintenanceWindowStartTime`: `datetime`
-- `ResizeInfo`:
-  [ResizeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resizeinfotypedef)
+- `ResizeInfo`: [ResizeInfoTypeDef](./type_defs.md#resizeinfotypedef)
 - `AvailabilityZoneRelocationStatus`: `str`
 - `ClusterNamespaceArn`: `str`
 - `TotalStorageCapacityInMegaBytes`: `int`
 - `AquaConfiguration`:
-  [AquaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#aquaconfigurationtypedef)
+  [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
 
 ## ClusterVersionTypeDef
 
@@ -608,7 +593,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ClusterVersions`:
-  `List`\[[ClusterVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterversiontypedef)\]
+  `List`\[[ClusterVersionTypeDef](./type_defs.md#clusterversiontypedef)\]
 
 ## ClustersMessageTypeDef
 
@@ -619,8 +604,7 @@ from mypy_boto3_redshift.type_defs import ClustersMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Clusters`:
-  `List`\[[ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)\]
+- `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
 
 ## CopyClusterSnapshotResultTypeDef
 
@@ -630,8 +614,7 @@ from mypy_boto3_redshift.type_defs import CopyClusterSnapshotResultTypeDef
 
 Optional fields:
 
-- `Snapshot`:
-  [SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## CreateClusterParameterGroupResultTypeDef
 
@@ -642,7 +625,7 @@ from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupResultTypeD
 Optional fields:
 
 - `ClusterParameterGroup`:
-  [ClusterParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergrouptypedef)
+  [ClusterParameterGroupTypeDef](./type_defs.md#clusterparametergrouptypedef)
 
 ## CreateClusterResultTypeDef
 
@@ -652,8 +635,7 @@ from mypy_boto3_redshift.type_defs import CreateClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## CreateClusterSecurityGroupResultTypeDef
 
@@ -664,7 +646,7 @@ from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupResultTypeDe
 Optional fields:
 
 - `ClusterSecurityGroup`:
-  [ClusterSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygrouptypedef)
+  [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
 
 ## CreateClusterSnapshotResultTypeDef
 
@@ -674,8 +656,7 @@ from mypy_boto3_redshift.type_defs import CreateClusterSnapshotResultTypeDef
 
 Optional fields:
 
-- `Snapshot`:
-  [SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## CreateClusterSubnetGroupResultTypeDef
 
@@ -686,7 +667,7 @@ from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupResultTypeDef
 Optional fields:
 
 - `ClusterSubnetGroup`:
-  [ClusterSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersubnetgrouptypedef)
+  [ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef)
 
 ## CreateEventSubscriptionResultTypeDef
 
@@ -697,7 +678,7 @@ from mypy_boto3_redshift.type_defs import CreateEventSubscriptionResultTypeDef
 Optional fields:
 
 - `EventSubscription`:
-  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsubscriptiontypedef)
+  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 
 ## CreateHsmClientCertificateResultTypeDef
 
@@ -708,7 +689,7 @@ from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateResultTypeDe
 Optional fields:
 
 - `HsmClientCertificate`:
-  [HsmClientCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmclientcertificatetypedef)
+  [HsmClientCertificateTypeDef](./type_defs.md#hsmclientcertificatetypedef)
 
 ## CreateHsmConfigurationResultTypeDef
 
@@ -719,7 +700,7 @@ from mypy_boto3_redshift.type_defs import CreateHsmConfigurationResultTypeDef
 Optional fields:
 
 - `HsmConfiguration`:
-  [HsmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmconfigurationtypedef)
+  [HsmConfigurationTypeDef](./type_defs.md#hsmconfigurationtypedef)
 
 ## CreateSnapshotCopyGrantResultTypeDef
 
@@ -730,7 +711,7 @@ from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantResultTypeDef
 Optional fields:
 
 - `SnapshotCopyGrant`:
-  [SnapshotCopyGrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotcopygranttypedef)
+  [SnapshotCopyGrantTypeDef](./type_defs.md#snapshotcopygranttypedef)
 
 ## CustomerStorageMessageTypeDef
 
@@ -768,8 +749,7 @@ Optional fields:
 
 - `ParameterGroupFamily`: `str`
 - `Marker`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## DeferredMaintenanceWindowTypeDef
 
@@ -791,8 +771,7 @@ from mypy_boto3_redshift.type_defs import DeleteClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## DeleteClusterSnapshotMessageTypeDef
 
@@ -816,8 +795,7 @@ from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotResultTypeDef
 
 Optional fields:
 
-- `Snapshot`:
-  [SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## DescribeDefaultClusterParametersResultTypeDef
 
@@ -828,7 +806,7 @@ from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersResult
 Optional fields:
 
 - `DefaultClusterParameters`:
-  [DefaultClusterParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#defaultclusterparameterstypedef)
+  [DefaultClusterParametersTypeDef](./type_defs.md#defaultclusterparameterstypedef)
 
 ## DescribePartnersOutputMessageTypeDef
 
@@ -839,7 +817,7 @@ from mypy_boto3_redshift.type_defs import DescribePartnersOutputMessageTypeDef
 Optional fields:
 
 - `PartnerIntegrationInfoList`:
-  `List`\[[PartnerIntegrationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#partnerintegrationinfotypedef)\]
+  `List`\[[PartnerIntegrationInfoTypeDef](./type_defs.md#partnerintegrationinfotypedef)\]
 
 ## DescribeSnapshotSchedulesOutputMessageTypeDef
 
@@ -850,7 +828,7 @@ from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesOutputMessage
 Optional fields:
 
 - `SnapshotSchedules`:
-  `List`\[[SnapshotScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotscheduletypedef)\]
+  `List`\[[SnapshotScheduleTypeDef](./type_defs.md#snapshotscheduletypedef)\]
 - `Marker`: `str`
 
 ## DisableSnapshotCopyResultTypeDef
@@ -861,8 +839,7 @@ from mypy_boto3_redshift.type_defs import DisableSnapshotCopyResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## EC2SecurityGroupTypeDef
 
@@ -875,8 +852,7 @@ Optional fields:
 - `Status`: `str`
 - `EC2SecurityGroupName`: `str`
 - `EC2SecurityGroupOwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ElasticIpStatusTypeDef
 
@@ -897,8 +873,7 @@ from mypy_boto3_redshift.type_defs import EnableSnapshotCopyResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## EndpointAccessListTypeDef
 
@@ -909,7 +884,7 @@ from mypy_boto3_redshift.type_defs import EndpointAccessListTypeDef
 Optional fields:
 
 - `EndpointAccessList`:
-  `List`\[[EndpointAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesstypedef)\]
+  `List`\[[EndpointAccessTypeDef](./type_defs.md#endpointaccesstypedef)\]
 - `Marker`: `str`
 
 ## EndpointAccessTypeDef
@@ -929,9 +904,8 @@ Optional fields:
 - `Port`: `int`
 - `Address`: `str`
 - `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#vpcsecuritygroupmembershiptypedef)\]
-- `VpcEndpoint`:
-  [VpcEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#vpcendpointtypedef)
+  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
+- `VpcEndpoint`: [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
 
 ## EndpointAuthorizationListTypeDef
 
@@ -942,7 +916,7 @@ from mypy_boto3_redshift.type_defs import EndpointAuthorizationListTypeDef
 Optional fields:
 
 - `EndpointAuthorizationList`:
-  `List`\[[EndpointAuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointauthorizationtypedef)\]
+  `List`\[[EndpointAuthorizationTypeDef](./type_defs.md#endpointauthorizationtypedef)\]
 - `Marker`: `str`
 
 ## EndpointAuthorizationTypeDef
@@ -958,8 +932,7 @@ Optional fields:
 - `ClusterIdentifier`: `str`
 - `AuthorizeTime`: `datetime`
 - `ClusterStatus`: `str`
-- `Status`:
-  [AuthorizationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#authorizationstatus)
+- `Status`: [AuthorizationStatus](./literals.md#authorizationstatus)
 - `AllowedAllVPCs`: `bool`
 - `AllowedVPCs`: `List`\[`str`\]
 - `EndpointCount`: `int`
@@ -975,7 +948,7 @@ Optional fields:
 - `Address`: `str`
 - `Port`: `int`
 - `VpcEndpoints`:
-  `List`\[[VpcEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#vpcendpointtypedef)\]
+  `List`\[[VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)\]
 
 ## EventCategoriesMapTypeDef
 
@@ -986,8 +959,7 @@ from mypy_boto3_redshift.type_defs import EventCategoriesMapTypeDef
 Optional fields:
 
 - `SourceType`: `str`
-- `Events`:
-  `List`\[[EventInfoMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventinfomaptypedef)\]
+- `Events`: `List`\[[EventInfoMapTypeDef](./type_defs.md#eventinfomaptypedef)\]
 
 ## EventCategoriesMessageTypeDef
 
@@ -998,7 +970,7 @@ from mypy_boto3_redshift.type_defs import EventCategoriesMessageTypeDef
 Optional fields:
 
 - `EventCategoriesMapList`:
-  `List`\[[EventCategoriesMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventcategoriesmaptypedef)\]
+  `List`\[[EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef)\]
 
 ## EventInfoMapTypeDef
 
@@ -1031,8 +1003,7 @@ Optional fields:
 - `EventCategoriesList`: `List`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## EventSubscriptionsMessageTypeDef
 
@@ -1044,7 +1015,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `EventSubscriptionsList`:
-  `List`\[[EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsubscriptiontypedef)\]
+  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
 
 ## EventTypeDef
 
@@ -1055,8 +1026,7 @@ from mypy_boto3_redshift.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Severity`: `str`
@@ -1072,8 +1042,7 @@ from mypy_boto3_redshift.type_defs import EventsMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Events`:
-  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventtypedef)\]
+- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 ## GetReservedNodeExchangeOfferingsOutputMessageTypeDef
 
@@ -1085,7 +1054,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReservedNodeOfferings`:
-  `List`\[[ReservedNodeOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodeofferingtypedef)\]
+  `List`\[[ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)\]
 
 ## HsmClientCertificateMessageTypeDef
 
@@ -1097,7 +1066,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `HsmClientCertificates`:
-  `List`\[[HsmClientCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmclientcertificatetypedef)\]
+  `List`\[[HsmClientCertificateTypeDef](./type_defs.md#hsmclientcertificatetypedef)\]
 
 ## HsmClientCertificateTypeDef
 
@@ -1109,8 +1078,7 @@ Optional fields:
 
 - `HsmClientCertificateIdentifier`: `str`
 - `HsmClientCertificatePublicKey`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## HsmConfigurationMessageTypeDef
 
@@ -1122,7 +1090,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `HsmConfigurations`:
-  `List`\[[HsmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmconfigurationtypedef)\]
+  `List`\[[HsmConfigurationTypeDef](./type_defs.md#hsmconfigurationtypedef)\]
 
 ## HsmConfigurationTypeDef
 
@@ -1136,8 +1104,7 @@ Optional fields:
 - `Description`: `str`
 - `HsmIpAddress`: `str`
 - `HsmPartitionName`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## HsmStatusTypeDef
 
@@ -1161,8 +1128,7 @@ Optional fields:
 
 - `Status`: `str`
 - `CIDRIP`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LoggingStatusTypeDef
 
@@ -1190,7 +1156,7 @@ Optional fields:
 - `MaintenanceTrackName`: `str`
 - `DatabaseVersion`: `str`
 - `UpdateTargets`:
-  `List`\[[UpdateTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#updatetargettypedef)\]
+  `List`\[[UpdateTargetTypeDef](./type_defs.md#updatetargettypedef)\]
 
 ## ModifyAquaOutputMessageTypeDef
 
@@ -1201,7 +1167,7 @@ from mypy_boto3_redshift.type_defs import ModifyAquaOutputMessageTypeDef
 Optional fields:
 
 - `AquaConfiguration`:
-  [AquaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#aquaconfigurationtypedef)
+  [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
 
 ## ModifyClusterDbRevisionResultTypeDef
 
@@ -1211,8 +1177,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ModifyClusterIamRolesResultTypeDef
 
@@ -1222,8 +1187,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ModifyClusterMaintenanceResultTypeDef
 
@@ -1233,8 +1197,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ModifyClusterResultTypeDef
 
@@ -1244,8 +1207,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ModifyClusterSnapshotResultTypeDef
 
@@ -1255,8 +1217,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotResultTypeDef
 
 Optional fields:
 
-- `Snapshot`:
-  [SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## ModifyClusterSubnetGroupResultTypeDef
 
@@ -1267,7 +1228,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupResultTypeDef
 Optional fields:
 
 - `ClusterSubnetGroup`:
-  [ClusterSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersubnetgrouptypedef)
+  [ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef)
 
 ## ModifyEventSubscriptionResultTypeDef
 
@@ -1278,7 +1239,7 @@ from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionResultTypeDef
 Optional fields:
 
 - `EventSubscription`:
-  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsubscriptiontypedef)
+  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 
 ## ModifySnapshotCopyRetentionPeriodResultTypeDef
 
@@ -1288,8 +1249,7 @@ from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodResul
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## NetworkInterfaceTypeDef
 
@@ -1315,8 +1275,7 @@ Optional fields:
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
 - `EstimatedDiskUtilizationPercent`: `float`
-- `Mode`:
-  [Mode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#mode)
+- `Mode`: [Mode](./literals.md#mode)
 
 ## NodeConfigurationOptionsFilterTypeDef
 
@@ -1327,9 +1286,8 @@ from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsFilterTypeDef
 Optional fields:
 
 - `Name`:
-  [NodeConfigurationOptionsFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#nodeconfigurationoptionsfiltername)
-- `Operator`:
-  [OperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#operatortype)
+  [NodeConfigurationOptionsFilterName](./literals.md#nodeconfigurationoptionsfiltername)
+- `Operator`: [OperatorType](./literals.md#operatortype)
 - `Values`: `List`\[`str`\]
 
 ## NodeConfigurationOptionsMessageTypeDef
@@ -1341,7 +1299,7 @@ from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsMessageTypeDef
 Optional fields:
 
 - `NodeConfigurationOptionList`:
-  `List`\[[NodeConfigurationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptiontypedef)\]
+  `List`\[[NodeConfigurationOptionTypeDef](./type_defs.md#nodeconfigurationoptiontypedef)\]
 - `Marker`: `str`
 
 ## OrderableClusterOptionTypeDef
@@ -1356,7 +1314,7 @@ Optional fields:
 - `ClusterType`: `str`
 - `NodeType`: `str`
 - `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#availabilityzonetypedef)\]
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 
 ## OrderableClusterOptionsMessageTypeDef
 
@@ -1367,7 +1325,7 @@ from mypy_boto3_redshift.type_defs import OrderableClusterOptionsMessageTypeDef
 Optional fields:
 
 - `OrderableClusterOptions`:
-  `List`\[[OrderableClusterOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#orderableclusteroptiontypedef)\]
+  `List`\[[OrderableClusterOptionTypeDef](./type_defs.md#orderableclusteroptiontypedef)\]
 - `Marker`: `str`
 
 ## PaginatorConfigTypeDef
@@ -1396,8 +1354,7 @@ Optional fields:
 - `Source`: `str`
 - `DataType`: `str`
 - `AllowedValues`: `str`
-- `ApplyType`:
-  [ParameterApplyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#parameterapplytype)
+- `ApplyType`: [ParameterApplyType](./literals.md#parameterapplytype)
 - `IsModifiable`: `bool`
 - `MinimumEngineVersion`: `str`
 
@@ -1411,8 +1368,7 @@ Optional fields:
 
 - `DatabaseName`: `str`
 - `PartnerName`: `str`
-- `Status`:
-  [PartnerIntegrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#partnerintegrationstatus)
+- `Status`: [PartnerIntegrationStatus](./literals.md#partnerintegrationstatus)
 - `StatusMessage`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
@@ -1446,8 +1402,7 @@ from mypy_boto3_redshift.type_defs import PauseClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## PendingModifiedValuesTypeDef
 
@@ -1477,8 +1432,7 @@ from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingResultType
 
 Optional fields:
 
-- `ReservedNode`:
-  [ReservedNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodetypedef)
+- `ReservedNode`: [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
 
 ## RebootClusterResultTypeDef
 
@@ -1488,8 +1442,7 @@ from mypy_boto3_redshift.type_defs import RebootClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## RecurringChargeTypeDef
 
@@ -1518,9 +1471,9 @@ Optional fields:
 - `CurrencyCode`: `str`
 - `OfferingType`: `str`
 - `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#recurringchargetypedef)\]
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 - `ReservedNodeOfferingType`:
-  [ReservedNodeOfferingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#reservednodeofferingtype)
+  [ReservedNodeOfferingType](./literals.md#reservednodeofferingtype)
 
 ## ReservedNodeOfferingsMessageTypeDef
 
@@ -1532,7 +1485,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReservedNodeOfferings`:
-  `List`\[[ReservedNodeOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodeofferingtypedef)\]
+  `List`\[[ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)\]
 
 ## ReservedNodeTypeDef
 
@@ -1554,9 +1507,9 @@ Optional fields:
 - `State`: `str`
 - `OfferingType`: `str`
 - `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#recurringchargetypedef)\]
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 - `ReservedNodeOfferingType`:
-  [ReservedNodeOfferingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#reservednodeofferingtype)
+  [ReservedNodeOfferingType](./literals.md#reservednodeofferingtype)
 
 ## ReservedNodesMessageTypeDef
 
@@ -1568,7 +1521,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReservedNodes`:
-  `List`\[[ReservedNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodetypedef)\]
+  `List`\[[ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)\]
 
 ## ResizeClusterMessageTypeDef
 
@@ -1595,8 +1548,7 @@ from mypy_boto3_redshift.type_defs import ResizeClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ResizeInfoTypeDef
 
@@ -1642,8 +1594,7 @@ from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotResultTypeDe
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## RestoreStatusTypeDef
 
@@ -1669,7 +1620,7 @@ from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotResultT
 Optional fields:
 
 - `TableRestoreStatus`:
-  [TableRestoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tablerestorestatustypedef)
+  [TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef)
 
 ## ResumeClusterMessageTypeDef
 
@@ -1689,8 +1640,7 @@ from mypy_boto3_redshift.type_defs import ResumeClusterResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## RevisionTargetTypeDef
 
@@ -1713,7 +1663,7 @@ from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressResul
 Optional fields:
 
 - `ClusterSecurityGroup`:
-  [ClusterSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygrouptypedef)
+  [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
 
 ## RevokeSnapshotAccessResultTypeDef
 
@@ -1723,8 +1673,7 @@ from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessResultTypeDef
 
 Optional fields:
 
-- `Snapshot`:
-  [SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)
+- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 
 ## RotateEncryptionKeyResultTypeDef
 
@@ -1734,8 +1683,7 @@ from mypy_boto3_redshift.type_defs import RotateEncryptionKeyResultTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ScheduledActionFilterTypeDef
 
@@ -1745,8 +1693,7 @@ from mypy_boto3_redshift.type_defs import ScheduledActionFilterTypeDef
 
 Required fields:
 
-- `Name`:
-  [ScheduledActionFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#scheduledactionfiltername)
+- `Name`: [ScheduledActionFilterName](./literals.md#scheduledactionfiltername)
 - `Values`: `List`\[`str`\]
 
 ## ScheduledActionTypeDef
@@ -1759,12 +1706,11 @@ Optional fields:
 
 - `ScheduledActionName`: `str`
 - `TargetAction`:
-  [ScheduledActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactiontypetypedef)
+  [ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef)
 - `Schedule`: `str`
 - `IamRole`: `str`
 - `ScheduledActionDescription`: `str`
-- `State`:
-  [ScheduledActionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#scheduledactionstate)
+- `State`: [ScheduledActionState](./literals.md#scheduledactionstate)
 - `NextInvocations`: `List`\[`datetime`\]
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -1778,11 +1724,11 @@ from mypy_boto3_redshift.type_defs import ScheduledActionTypeTypeDef
 Optional fields:
 
 - `ResizeCluster`:
-  [ResizeClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resizeclustermessagetypedef)
+  [ResizeClusterMessageTypeDef](./type_defs.md#resizeclustermessagetypedef)
 - `PauseCluster`:
-  [PauseClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#pauseclustermessagetypedef)
+  [PauseClusterMessageTypeDef](./type_defs.md#pauseclustermessagetypedef)
 - `ResumeCluster`:
-  [ResumeClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#resumeclustermessagetypedef)
+  [ResumeClusterMessageTypeDef](./type_defs.md#resumeclustermessagetypedef)
 
 ## ScheduledActionsMessageTypeDef
 
@@ -1794,7 +1740,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ScheduledActions`:
-  `List`\[[ScheduledActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactiontypedef)\]
+  `List`\[[ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef)\]
 
 ## SnapshotCopyGrantMessageTypeDef
 
@@ -1806,7 +1752,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `SnapshotCopyGrants`:
-  `List`\[[SnapshotCopyGrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotcopygranttypedef)\]
+  `List`\[[SnapshotCopyGrantTypeDef](./type_defs.md#snapshotcopygranttypedef)\]
 
 ## SnapshotCopyGrantTypeDef
 
@@ -1818,8 +1764,7 @@ Optional fields:
 
 - `SnapshotCopyGrantName`: `str`
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SnapshotErrorMessageTypeDef
 
@@ -1843,8 +1788,7 @@ from mypy_boto3_redshift.type_defs import SnapshotMessageTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Snapshots`:
-  `List`\[[SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshottypedef)\]
+- `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 
 ## SnapshotScheduleTypeDef
 
@@ -1857,12 +1801,11 @@ Optional fields:
 - `ScheduleDefinitions`: `List`\[`str`\]
 - `ScheduleIdentifier`: `str`
 - `ScheduleDescription`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextInvocations`: `List`\[`datetime`\]
 - `AssociatedClusterCount`: `int`
 - `AssociatedClusters`:
-  `List`\[[ClusterAssociatedToScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterassociatedtoscheduletypedef)\]
+  `List`\[[ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef)\]
 
 ## SnapshotSortingEntityTypeDef
 
@@ -1873,12 +1816,11 @@ from mypy_boto3_redshift.type_defs import SnapshotSortingEntityTypeDef
 Required fields:
 
 - `Attribute`:
-  [SnapshotAttributeToSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#snapshotattributetosortby)
+  [SnapshotAttributeToSortBy](./literals.md#snapshotattributetosortby)
 
 Optional fields:
 
-- `SortOrder`:
-  [SortByOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#sortbyorder)
+- `SortOrder`: [SortByOrder](./literals.md#sortbyorder)
 
 ## SnapshotTypeDef
 
@@ -1907,7 +1849,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `EncryptedWithHSM`: `bool`
 - `AccountsWithRestoreAccess`:
-  `List`\[[AccountWithRestoreAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#accountwithrestoreaccesstypedef)\]
+  `List`\[[AccountWithRestoreAccessTypeDef](./type_defs.md#accountwithrestoreaccesstypedef)\]
 - `OwnerAccount`: `str`
 - `TotalBackupSizeInMegaBytes`: `float`
 - `ActualIncrementalBackupSizeInMegaBytes`: `float`
@@ -1916,8 +1858,7 @@ Optional fields:
 - `EstimatedSecondsToCompletion`: `int`
 - `ElapsedTimeInSeconds`: `int`
 - `SourceRegion`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RestorableNodeTypes`: `List`\[`str`\]
 - `EnhancedVpcRouting`: `bool`
 - `MaintenanceTrackName`: `str`
@@ -1935,7 +1876,7 @@ Optional fields:
 
 - `SubnetIdentifier`: `str`
 - `SubnetAvailabilityZone`:
-  [AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#availabilityzonetypedef)
+  [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - `SubnetStatus`: `str`
 
 ## SupportedOperationTypeDef
@@ -1967,7 +1908,7 @@ from mypy_boto3_redshift.type_defs import TableRestoreStatusMessageTypeDef
 Optional fields:
 
 - `TableRestoreStatusDetails`:
-  `List`\[[TableRestoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tablerestorestatustypedef)\]
+  `List`\[[TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef)\]
 - `Marker`: `str`
 
 ## TableRestoreStatusTypeDef
@@ -1979,8 +1920,7 @@ from mypy_boto3_redshift.type_defs import TableRestoreStatusTypeDef
 Optional fields:
 
 - `TableRestoreRequestId`: `str`
-- `Status`:
-  [TableRestoreStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#tablerestorestatustype)
+- `Status`: [TableRestoreStatusType](./literals.md#tablerestorestatustype)
 - `Message`: `str`
 - `RequestTime`: `datetime`
 - `ProgressInMegaBytes`: `int`
@@ -2014,7 +1954,7 @@ from mypy_boto3_redshift.type_defs import TaggedResourceListMessageTypeDef
 Optional fields:
 
 - `TaggedResources`:
-  `List`\[[TaggedResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#taggedresourcetypedef)\]
+  `List`\[[TaggedResourceTypeDef](./type_defs.md#taggedresourcetypedef)\]
 - `Marker`: `str`
 
 ## TaggedResourceTypeDef
@@ -2025,8 +1965,7 @@ from mypy_boto3_redshift.type_defs import TaggedResourceTypeDef
 
 Optional fields:
 
-- `Tag`:
-  [TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)
+- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `ResourceName`: `str`
 - `ResourceType`: `str`
 
@@ -2039,7 +1978,7 @@ from mypy_boto3_redshift.type_defs import TrackListMessageTypeDef
 Optional fields:
 
 - `MaintenanceTracks`:
-  `List`\[[MaintenanceTrackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#maintenancetracktypedef)\]
+  `List`\[[MaintenanceTrackTypeDef](./type_defs.md#maintenancetracktypedef)\]
 - `Marker`: `str`
 
 ## UpdateTargetTypeDef
@@ -2053,7 +1992,7 @@ Optional fields:
 - `MaintenanceTrackName`: `str`
 - `DatabaseVersion`: `str`
 - `SupportedOperations`:
-  `List`\[[SupportedOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#supportedoperationtypedef)\]
+  `List`\[[SupportedOperationTypeDef](./type_defs.md#supportedoperationtypedef)\]
 
 ## UsageLimitListTypeDef
 
@@ -2063,8 +2002,7 @@ from mypy_boto3_redshift.type_defs import UsageLimitListTypeDef
 
 Optional fields:
 
-- `UsageLimits`:
-  `List`\[[UsageLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#usagelimittypedef)\]
+- `UsageLimits`: `List`\[[UsageLimitTypeDef](./type_defs.md#usagelimittypedef)\]
 - `Marker`: `str`
 
 ## UsageLimitTypeDef
@@ -2077,17 +2015,12 @@ Optional fields:
 
 - `UsageLimitId`: `str`
 - `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitfeaturetype)
-- `LimitType`:
-  [UsageLimitLimitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitlimittype)
+- `FeatureType`: [UsageLimitFeatureType](./literals.md#usagelimitfeaturetype)
+- `LimitType`: [UsageLimitLimitType](./literals.md#usagelimitlimittype)
 - `Amount`: `int`
-- `Period`:
-  [UsageLimitPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitperiod)
-- `BreachAction`:
-  [UsageLimitBreachAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitbreachaction)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tagtypedef)\]
+- `Period`: [UsageLimitPeriod](./literals.md#usagelimitperiod)
+- `BreachAction`: [UsageLimitBreachAction](./literals.md#usagelimitbreachaction)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VpcEndpointTypeDef
 
@@ -2100,7 +2033,7 @@ Optional fields:
 - `VpcEndpointId`: `str`
 - `VpcId`: `str`
 - `NetworkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
 ## VpcSecurityGroupMembershipTypeDef
 

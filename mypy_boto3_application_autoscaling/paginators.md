@@ -1,6 +1,6 @@
 # Paginators for boto3 ApplicationAutoScaling module
 
-> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Paginators
+> [Index](..) > [ApplicationAutoScaling](.) > Paginators
 
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
@@ -32,17 +32,15 @@ Boto3 documentation:
 
 Arguments for `DescribeScalableTargetsPaginator.paginate` method:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceIds`: `List`\[`str`\]
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalableTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeScalableTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescalabletargetsresponsetypedef)\].
+`Iterator`\[[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)\].
 
 ## DescribeScalingActivitiesPaginator
 
@@ -63,17 +61,15 @@ Boto3 documentation:
 
 Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingActivitiesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescalingactivitiesresponsetypedef)\].
+`Iterator`\[[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)\].
 
 ## DescribeScalingPoliciesPaginator
 
@@ -94,18 +90,16 @@ Boto3 documentation:
 
 Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `PolicyNames`: `List`\[`str`\]
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescalingpoliciesresponsetypedef)\].
+`Iterator`\[[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -126,15 +120,13 @@ Boto3 documentation:
 
 Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ScheduledActionNames`: `List`\[`str`\]
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescheduledactionsresponsetypedef)\].
+`Iterator`\[[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef)\].

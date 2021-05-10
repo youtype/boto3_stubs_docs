@@ -1,6 +1,6 @@
 # Type annotations for boto3 EFS module
 
-> [Index](../README.md) > EFS
+> [Index](..) > EFS
 
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)

@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudHSM module
 
-> [Index](../README.md) > [CloudHSM](./README.md) > Paginators
+> [Index](..) > [CloudHSM](.) > Paginators
 
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
@@ -31,10 +31,10 @@ Boto3 documentation:
 Arguments for `ListHapgsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHapgsPaginator.paginate` returns
-`Iterator`\[[ListHapgsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listhapgsresponsetypedef)\].
+`Iterator`\[[ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef)\].
 
 ## ListHsmsPaginator
 
@@ -55,10 +55,10 @@ Boto3 documentation:
 Arguments for `ListHsmsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHsmsPaginator.paginate` returns
-`Iterator`\[[ListHsmsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listhsmsresponsetypedef)\].
+`Iterator`\[[ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef)\].
 
 ## ListLunaClientsPaginator
 
@@ -80,7 +80,7 @@ Boto3 documentation:
 Arguments for `ListLunaClientsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLunaClientsPaginator.paginate` returns
-`Iterator`\[[ListLunaClientsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listlunaclientsresponsetypedef)\].
+`Iterator`\[[ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef)\].

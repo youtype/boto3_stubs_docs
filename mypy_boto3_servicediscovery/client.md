@@ -1,7 +1,6 @@
 # ServiceDiscoveryClient for boto3 ServiceDiscovery module
 
-> [Index](../README.md) > [ServiceDiscovery](./README.md) >
-> ServiceDiscoveryClient
+> [Index](..) > [ServiceDiscovery](.) > ServiceDiscoveryClient
 
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
@@ -113,11 +112,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHttpNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createhttpnamespaceresponsetypedef).
+[CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef).
 
 ### create_private_dns_namespace
 
@@ -133,11 +131,10 @@ Arguments:
 - `Vpc`: `str` *(required)*
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePrivateDnsNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createprivatednsnamespaceresponsetypedef).
+[CreatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponsetypedef).
 
 ### create_public_dns_namespace
 
@@ -152,11 +149,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePublicDnsNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createpublicdnsnamespaceresponsetypedef).
+[CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef).
 
 ### create_service
 
@@ -171,18 +167,17 @@ Arguments:
 - `NamespaceId`: `str`
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `DnsConfig`:
-  [DnsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsconfigtypedef)
+- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
 - `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckconfigtypedef)
+  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckcustomconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
-- `Type`: `Literal['HTTP']`
+  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Type`: `Literal['HTTP']` (see
+  [ServiceTypeOption](./literals.md#servicetypeoption))
 
 Returns
-[CreateServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#createserviceresponsetypedef).
+[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
 ### delete_namespace
 
@@ -197,7 +192,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DeleteNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#deletenamespaceresponsetypedef).
+[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
 
 ### delete_service
 
@@ -226,7 +221,7 @@ Arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[DeregisterInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#deregisterinstanceresponsetypedef).
+[DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef).
 
 ### discover_instances
 
@@ -243,11 +238,10 @@ Arguments:
 - `MaxResults`: `int`
 - `QueryParameters`: `Dict`\[`str`, `str`\]
 - `OptionalParameters`: `Dict`\[`str`, `str`\]
-- `HealthStatus`:
-  [HealthStatusFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#healthstatusfilter)
+- `HealthStatus`: [HealthStatusFilter](./literals.md#healthstatusfilter)
 
 Returns
-[DiscoverInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#discoverinstancesresponsetypedef).
+[DiscoverInstancesResponseTypeDef](./type_defs.md#discoverinstancesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -279,7 +273,7 @@ Arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[GetInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getinstanceresponsetypedef).
+[GetInstanceResponseTypeDef](./type_defs.md#getinstanceresponsetypedef).
 
 ### get_instances_health_status
 
@@ -297,7 +291,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInstancesHealthStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getinstanceshealthstatusresponsetypedef).
+[GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef).
 
 ### get_namespace
 
@@ -311,7 +305,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetNamespaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getnamespaceresponsetypedef).
+[GetNamespaceResponseTypeDef](./type_defs.md#getnamespaceresponsetypedef).
 
 ### get_operation
 
@@ -325,7 +319,7 @@ Arguments:
 - `OperationId`: `str` *(required)*
 
 Returns
-[GetOperationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getoperationresponsetypedef).
+[GetOperationResponseTypeDef](./type_defs.md#getoperationresponsetypedef).
 
 ### get_service
 
@@ -338,8 +332,7 @@ Arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[GetServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#getserviceresponsetypedef).
+Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
 
 ### list_instances
 
@@ -355,7 +348,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listinstancesresponsetypedef).
+[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
 
 ### list_namespaces
 
@@ -369,10 +362,10 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[NamespaceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacefiltertypedef)\]
+  `List`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
 
 Returns
-[ListNamespacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listnamespacesresponsetypedef).
+[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
 
 ### list_operations
 
@@ -386,10 +379,10 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[OperationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#operationfiltertypedef)\]
+  `List`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
 
 Returns
-[ListOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listoperationsresponsetypedef).
+[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
 
 ### list_services
 
@@ -403,10 +396,10 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[ServiceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicefiltertypedef)\]
+  `List`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
 
 Returns
-[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listservicesresponsetypedef).
+[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -421,7 +414,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### register_instance
 
@@ -439,7 +432,7 @@ Arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[RegisterInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#registerinstanceresponsetypedef).
+[RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef).
 
 ### tag_resource
 
@@ -451,9 +444,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -483,9 +474,7 @@ Arguments:
 
 - `ServiceId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
-- `Status`:
-  [CustomHealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#customhealthstatus)
-  *(required)*
+- `Status`: [CustomHealthStatus](./literals.md#customhealthstatus) *(required)*
 
 ### update_service
 
@@ -497,12 +486,11 @@ Boto3 documentation:
 Arguments:
 
 - `Id`: `str` *(required)*
-- `Service`:
-  [ServiceChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicechangetypedef)
+- `Service`: [ServiceChangeTypeDef](./type_defs.md#servicechangetypedef)
   *(required)*
 
 Returns
-[UpdateServiceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#updateserviceresponsetypedef).
+[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
 
 ### get_paginator
 

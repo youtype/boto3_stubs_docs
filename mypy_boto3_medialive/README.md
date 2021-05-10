@@ -1,6 +1,6 @@
 # Type annotations for boto3 MediaLive module
 
-> [Index](../README.md) > MediaLive
+> [Index](..) > MediaLive
 
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
@@ -636,7 +636,7 @@ from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
 - [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
 - [ReservationResourceSpecificationTypeDef](./type_defs.md#reservationresourcespecificationtypedef)
 - [ReservationTypeDef](./type_defs.md#reservationtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RtmpGroupSettingsTypeDef](./type_defs.md#rtmpgroupsettingstypedef)
 - [RtmpOutputSettingsTypeDef](./type_defs.md#rtmpoutputsettingstypedef)
 - [ScheduleActionSettingsTypeDef](./type_defs.md#scheduleactionsettingstypedef)

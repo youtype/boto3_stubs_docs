@@ -1,6 +1,6 @@
 # Type annotations for boto3 ApplicationInsights module
 
-> [Index](../README.md) > ApplicationInsights
+> [Index](..) > ApplicationInsights
 
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)

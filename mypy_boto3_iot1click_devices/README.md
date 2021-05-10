@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoT1ClickDevicesService module
 
-> [Index](../README.md) > IoT1ClickDevicesService
+> [Index](..) > IoT1ClickDevicesService
 
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)

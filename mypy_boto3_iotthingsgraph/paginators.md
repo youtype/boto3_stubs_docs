@@ -1,6 +1,6 @@
 # Paginators for boto3 IoTThingsGraph module
 
-> [Index](../README.md) > [IoTThingsGraph](./README.md) > Paginators
+> [Index](..) > [IoTThingsGraph](.) > Paginators
 
 Auto-generated documentation for
 [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
@@ -40,10 +40,10 @@ Arguments for `GetFlowTemplateRevisionsPaginator.paginate` method:
 
 - `id`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetFlowTemplateRevisionsPaginator.paginate` returns
-`Iterator`\[[GetFlowTemplateRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#getflowtemplaterevisionsresponsetypedef)\].
+`Iterator`\[[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)\].
 
 ## GetSystemTemplateRevisionsPaginator
 
@@ -66,10 +66,10 @@ Arguments for `GetSystemTemplateRevisionsPaginator.paginate` method:
 
 - `id`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSystemTemplateRevisionsPaginator.paginate` returns
-`Iterator`\[[GetSystemTemplateRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#getsystemtemplaterevisionsresponsetypedef)\].
+`Iterator`\[[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)\].
 
 ## ListFlowExecutionMessagesPaginator
 
@@ -92,10 +92,10 @@ Arguments for `ListFlowExecutionMessagesPaginator.paginate` method:
 
 - `flowExecutionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFlowExecutionMessagesPaginator.paginate` returns
-`Iterator`\[[ListFlowExecutionMessagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#listflowexecutionmessagesresponsetypedef)\].
+`Iterator`\[[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -118,10 +118,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `resourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#listtagsforresourceresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## SearchEntitiesPaginator
 
@@ -142,17 +142,14 @@ Boto3 documentation:
 
 Arguments for `SearchEntitiesPaginator.paginate` method:
 
-- `entityTypes`:
-  `List`\[[EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/literals.html#entitytype)\]
-  *(required)*
-- `filters`:
-  `List`\[[EntityFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#entityfiltertypedef)\]
+- `entityTypes`: `List`\[[EntityType](./literals.md#entitytype)\] *(required)*
+- `filters`: `List`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
 - `namespaceVersion`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchEntitiesPaginator.paginate` returns
-`Iterator`\[[SearchEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#searchentitiesresponsetypedef)\].
+`Iterator`\[[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)\].
 
 ## SearchFlowExecutionsPaginator
 
@@ -178,10 +175,10 @@ Arguments for `SearchFlowExecutionsPaginator.paginate` method:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchFlowExecutionsPaginator.paginate` returns
-`Iterator`\[[SearchFlowExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#searchflowexecutionsresponsetypedef)\].
+`Iterator`\[[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)\].
 
 ## SearchFlowTemplatesPaginator
 
@@ -203,12 +200,12 @@ Boto3 documentation:
 Arguments for `SearchFlowTemplatesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[FlowTemplateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#flowtemplatefiltertypedef)\]
+  `List`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchFlowTemplatesPaginator.paginate` returns
-`Iterator`\[[SearchFlowTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#searchflowtemplatesresponsetypedef)\].
+`Iterator`\[[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)\].
 
 ## SearchSystemInstancesPaginator
 
@@ -230,12 +227,12 @@ Boto3 documentation:
 Arguments for `SearchSystemInstancesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[SystemInstanceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systeminstancefiltertypedef)\]
+  `List`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSystemInstancesPaginator.paginate` returns
-`Iterator`\[[SearchSystemInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#searchsysteminstancesresponsetypedef)\].
+`Iterator`\[[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)\].
 
 ## SearchSystemTemplatesPaginator
 
@@ -257,12 +254,12 @@ Boto3 documentation:
 Arguments for `SearchSystemTemplatesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[SystemTemplateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#systemtemplatefiltertypedef)\]
+  `List`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSystemTemplatesPaginator.paginate` returns
-`Iterator`\[[SearchSystemTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#searchsystemtemplatesresponsetypedef)\].
+`Iterator`\[[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)\].
 
 ## SearchThingsPaginator
 
@@ -286,7 +283,7 @@ Arguments for `SearchThingsPaginator.paginate` method:
 - `entityId`: `str` *(required)*
 - `namespaceVersion`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchThingsPaginator.paginate` returns
-`Iterator`\[[SearchThingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotthingsgraph/type_defs.html#searchthingsresponsetypedef)\].
+`Iterator`\[[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef)\].

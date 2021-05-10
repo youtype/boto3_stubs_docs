@@ -1,6 +1,6 @@
 # Literals for boto3 ApplicationAutoScaling module
 
-> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Literals
+> [Index](..) > [ApplicationAutoScaling](.) > Literals
 
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)

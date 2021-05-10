@@ -1,6 +1,6 @@
 # Literals for boto3 Rekognition module
 
-> [Index](../README.md) > [Rekognition](./README.md) > Literals
+> [Index](..) > [Rekognition](.) > Literals
 
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)

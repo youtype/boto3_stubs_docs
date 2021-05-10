@@ -1,6 +1,6 @@
 # Type annotations for boto3 ImportExport module
 
-> [Index](../README.md) > ImportExport
+> [Index](..) > ImportExport
 
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
@@ -113,5 +113,5 @@ from mypy_boto3_importexport.type_defs import ArtifactTypeDef, ...
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [UpdateJobOutputTypeDef](./type_defs.md#updatejoboutputtypedef)

@@ -1,6 +1,6 @@
 # MWAAClient for boto3 MWAA module
 
-> [Index](../README.md) > [MWAA](./README.md) > MWAAClient
+> [Index](..) > [MWAA](.) > MWAAClient
 
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
@@ -89,7 +89,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[CreateCliTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#createclitokenresponsetypedef).
+[CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef).
 
 ### create_environment
 
@@ -104,7 +104,7 @@ Arguments:
 - `ExecutionRoleArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#networkconfigurationtypedef)
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
   *(required)*
 - `SourceBucketArn`: `str` *(required)*
 - `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
@@ -112,7 +112,7 @@ Arguments:
 - `EnvironmentClass`: `str`
 - `KmsKey`: `str`
 - `LoggingConfiguration`:
-  [LoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#loggingconfigurationinputtypedef)
+  [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
 - `MaxWorkers`: `int`
 - `MinWorkers`: `int`
 - `PluginsS3ObjectVersion`: `str`
@@ -120,12 +120,11 @@ Arguments:
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `WebserverAccessMode`:
-  [WebserverAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#webserveraccessmode)
+- `WebserverAccessMode`: [WebserverAccessMode](./literals.md#webserveraccessmode)
 - `WeeklyMaintenanceWindowStart`: `str`
 
 Returns
-[CreateEnvironmentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#createenvironmentoutputtypedef).
+[CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
 
 ### create_web_login_token
 
@@ -139,7 +138,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[CreateWebLoginTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#createweblogintokenresponsetypedef).
+[CreateWebLoginTokenResponseTypeDef](./type_defs.md#createweblogintokenresponsetypedef).
 
 ### delete_environment
 
@@ -182,7 +181,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetEnvironmentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#getenvironmentoutputtypedef).
+[GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
 
 ### list_environments
 
@@ -197,7 +196,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEnvironmentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#listenvironmentsoutputtypedef).
+[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -211,7 +210,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### publish_metrics
 
@@ -223,8 +222,7 @@ Boto3 documentation:
 Arguments:
 
 - `EnvironmentName`: `str` *(required)*
-- `MetricData`:
-  `List`\[[MetricDatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#metricdatumtypedef)\]
+- `MetricData`: `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -273,22 +271,21 @@ Arguments:
 - `EnvironmentClass`: `str`
 - `ExecutionRoleArn`: `str`
 - `LoggingConfiguration`:
-  [LoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#loggingconfigurationinputtypedef)
+  [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
 - `MaxWorkers`: `int`
 - `MinWorkers`: `int`
 - `NetworkConfiguration`:
-  [UpdateNetworkConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#updatenetworkconfigurationinputtypedef)
+  [UpdateNetworkConfigurationInputTypeDef](./type_defs.md#updatenetworkconfigurationinputtypedef)
 - `PluginsS3ObjectVersion`: `str`
 - `PluginsS3Path`: `str`
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
 - `SourceBucketArn`: `str`
-- `WebserverAccessMode`:
-  [WebserverAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#webserveraccessmode)
+- `WebserverAccessMode`: [WebserverAccessMode](./literals.md#webserveraccessmode)
 - `WeeklyMaintenanceWindowStart`: `str`
 
 Returns
-[UpdateEnvironmentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#updateenvironmentoutputtypedef).
+[UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 MachineLearning module
 
-> [Index](../README.md) > MachineLearning
+> [Index](..) > MachineLearning
 
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
@@ -193,7 +193,7 @@ from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef, ...
 - [RedshiftDatabaseCredentialsTypeDef](./type_defs.md#redshiftdatabasecredentialstypedef)
 - [RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef)
 - [RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UpdateBatchPredictionOutputTypeDef](./type_defs.md#updatebatchpredictionoutputtypedef)

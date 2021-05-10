@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 KMS module
 
-> [Index](../README.md) > [KMS](./README.md) > Structures
+> [Index](..) > [KMS](.) > Typed dictionaries
 
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
@@ -96,8 +96,7 @@ from mypy_boto3_kms.type_defs import CreateKeyResponseTypeDef
 
 Optional fields:
 
-- `KeyMetadata`:
-  [KeyMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#keymetadatatypedef)
+- `KeyMetadata`: [KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef)
 
 ## CustomKeyStoresListEntryTypeDef
 
@@ -111,10 +110,9 @@ Optional fields:
 - `CustomKeyStoreName`: `str`
 - `CloudHsmClusterId`: `str`
 - `TrustAnchorCertificate`: `str`
-- `ConnectionState`:
-  [ConnectionStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#connectionstatetype)
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `ConnectionErrorCode`:
-  [ConnectionErrorCodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#connectionerrorcodetype)
+  [ConnectionErrorCodeType](./literals.md#connectionerrorcodetype)
 - `CreationDate`: `datetime`
 
 ## DecryptResponseTypeDef
@@ -128,7 +126,7 @@ Optional fields:
 - `KeyId`: `str`
 - `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 
 ## DescribeCustomKeyStoresResponseTypeDef
 
@@ -139,7 +137,7 @@ from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresResponseTypeDef
 Optional fields:
 
 - `CustomKeyStores`:
-  `List`\[[CustomKeyStoresListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#customkeystoreslistentrytypedef)\]
+  `List`\[[CustomKeyStoresListEntryTypeDef](./type_defs.md#customkeystoreslistentrytypedef)\]
 - `NextMarker`: `str`
 - `Truncated`: `bool`
 
@@ -151,8 +149,7 @@ from mypy_boto3_kms.type_defs import DescribeKeyResponseTypeDef
 
 Optional fields:
 
-- `KeyMetadata`:
-  [KeyMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#keymetadatatypedef)
+- `KeyMetadata`: [KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef)
 
 ## EncryptResponseTypeDef
 
@@ -165,7 +162,7 @@ Optional fields:
 - `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 
 ## GenerateDataKeyPairResponseTypeDef
 
@@ -179,8 +176,7 @@ Optional fields:
 - `PrivateKeyPlaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `KeyId`: `str`
-- `KeyPairSpec`:
-  [DataKeyPairSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeypairspec)
+- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec)
 
 ## GenerateDataKeyPairWithoutPlaintextResponseTypeDef
 
@@ -193,8 +189,7 @@ Optional fields:
 - `PrivateKeyCiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `KeyId`: `str`
-- `KeyPairSpec`:
-  [DataKeyPairSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeypairspec)
+- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec)
 
 ## GenerateDataKeyResponseTypeDef
 
@@ -273,13 +268,12 @@ Optional fields:
 - `KeyId`: `str`
 - `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `CustomerMasterKeySpec`:
-  [CustomerMasterKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#customermasterkeyspec)
-- `KeyUsage`:
-  [KeyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#keyusagetype)
+  [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
+- `KeyUsage`: [KeyUsageType](./literals.md#keyusagetype)
 - `EncryptionAlgorithms`:
-  `List`\[[EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)\]
+  `List`\[[EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)\]
 - `SigningAlgorithms`:
-  `List`\[[SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)\]
+  `List`\[[SigningAlgorithmSpec](./literals.md#signingalgorithmspec)\]
 
 ## GrantConstraintsTypeDef
 
@@ -307,10 +301,9 @@ Optional fields:
 - `GranteePrincipal`: `str`
 - `RetiringPrincipal`: `str`
 - `IssuingAccount`: `str`
-- `Operations`:
-  `List`\[[GrantOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#grantoperation)\]
+- `Operations`: `List`\[[GrantOperation](./literals.md#grantoperation)\]
 - `Constraints`:
-  [GrantConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#grantconstraintstypedef)
+  [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
 
 ## KeyListEntryTypeDef
 
@@ -340,26 +333,21 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `Enabled`: `bool`
 - `Description`: `str`
-- `KeyUsage`:
-  [KeyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#keyusagetype)
-- `KeyState`:
-  [KeyState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#keystate)
+- `KeyUsage`: [KeyUsageType](./literals.md#keyusagetype)
+- `KeyState`: [KeyState](./literals.md#keystate)
 - `DeletionDate`: `datetime`
 - `ValidTo`: `datetime`
-- `Origin`:
-  [OriginType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#origintype)
+- `Origin`: [OriginType](./literals.md#origintype)
 - `CustomKeyStoreId`: `str`
 - `CloudHsmClusterId`: `str`
-- `ExpirationModel`:
-  [ExpirationModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#expirationmodeltype)
-- `KeyManager`:
-  [KeyManagerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#keymanagertype)
+- `ExpirationModel`: [ExpirationModelType](./literals.md#expirationmodeltype)
+- `KeyManager`: [KeyManagerType](./literals.md#keymanagertype)
 - `CustomerMasterKeySpec`:
-  [CustomerMasterKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#customermasterkeyspec)
+  [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
 - `EncryptionAlgorithms`:
-  `List`\[[EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)\]
+  `List`\[[EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)\]
 - `SigningAlgorithms`:
-  `List`\[[SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)\]
+  `List`\[[SigningAlgorithmSpec](./literals.md#signingalgorithmspec)\]
 
 ## ListAliasesResponseTypeDef
 
@@ -370,7 +358,7 @@ from mypy_boto3_kms.type_defs import ListAliasesResponseTypeDef
 Optional fields:
 
 - `Aliases`:
-  `List`\[[AliasListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#aliaslistentrytypedef)\]
+  `List`\[[AliasListEntryTypeDef](./type_defs.md#aliaslistentrytypedef)\]
 - `NextMarker`: `str`
 - `Truncated`: `bool`
 
@@ -383,7 +371,7 @@ from mypy_boto3_kms.type_defs import ListGrantsResponseTypeDef
 Optional fields:
 
 - `Grants`:
-  `List`\[[GrantListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#grantlistentrytypedef)\]
+  `List`\[[GrantListEntryTypeDef](./type_defs.md#grantlistentrytypedef)\]
 - `NextMarker`: `str`
 - `Truncated`: `bool`
 
@@ -407,8 +395,7 @@ from mypy_boto3_kms.type_defs import ListKeysResponseTypeDef
 
 Optional fields:
 
-- `Keys`:
-  `List`\[[KeyListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#keylistentrytypedef)\]
+- `Keys`: `List`\[[KeyListEntryTypeDef](./type_defs.md#keylistentrytypedef)\]
 - `NextMarker`: `str`
 - `Truncated`: `bool`
 
@@ -420,8 +407,7 @@ from mypy_boto3_kms.type_defs import ListResourceTagsResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextMarker`: `str`
 - `Truncated`: `bool`
 
@@ -449,9 +435,9 @@ Optional fields:
 - `SourceKeyId`: `str`
 - `KeyId`: `str`
 - `SourceEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 - `DestinationEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 
 ## ScheduleKeyDeletionResponseTypeDef
 
@@ -474,8 +460,7 @@ Optional fields:
 
 - `KeyId`: `str`
 - `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `SigningAlgorithm`:
-  [SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)
+- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
 
 ## TagTypeDef
 
@@ -498,5 +483,4 @@ Optional fields:
 
 - `KeyId`: `str`
 - `SignatureValid`: `bool`
-- `SigningAlgorithm`:
-  [SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)
+- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)

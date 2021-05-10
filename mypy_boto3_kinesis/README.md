@@ -1,6 +1,6 @@
 # Type annotations for boto3 Kinesis module
 
-> [Index](../README.md) > Kinesis
+> [Index](..) > Kinesis
 
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
@@ -182,7 +182,7 @@ from mypy_boto3_kinesis.type_defs import ChildShardTypeDef, ...
 - [RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef)
 - [ResourceInUseExceptionTypeDef](./type_defs.md#resourceinuseexceptiontypedef)
 - [ResourceNotFoundExceptionTypeDef](./type_defs.md#resourcenotfoundexceptiontypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SequenceNumberRangeTypeDef](./type_defs.md#sequencenumberrangetypedef)
 - [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
 - [ShardTypeDef](./type_defs.md#shardtypedef)

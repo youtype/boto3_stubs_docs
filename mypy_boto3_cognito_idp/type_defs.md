@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CognitoIdentityProvider module
 
-> [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Structures
+> [Index](..) > [CognitoIdentityProvider](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
@@ -143,7 +143,7 @@ from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef
 Optional fields:
 
 - `RecoveryMechanisms`:
-  `List`\[[RecoveryOptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#recoveryoptiontypetypedef)\]
+  `List`\[[RecoveryOptionTypeTypeDef](./type_defs.md#recoveryoptiontypetypedef)\]
 
 ## AccountTakeoverActionTypeTypeDef
 
@@ -155,7 +155,7 @@ Required fields:
 
 - `Notify`: `bool`
 - `EventAction`:
-  [AccountTakeoverEventActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#accounttakeovereventactiontype)
+  [AccountTakeoverEventActionType](./literals.md#accounttakeovereventactiontype)
 
 ## AccountTakeoverActionsTypeTypeDef
 
@@ -166,11 +166,11 @@ from mypy_boto3_cognito_idp.type_defs import AccountTakeoverActionsTypeTypeDef
 Optional fields:
 
 - `LowAction`:
-  [AccountTakeoverActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#accounttakeoveractiontypetypedef)
+  [AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef)
 - `MediumAction`:
-  [AccountTakeoverActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#accounttakeoveractiontypetypedef)
+  [AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef)
 - `HighAction`:
-  [AccountTakeoverActionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#accounttakeoveractiontypetypedef)
+  [AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef)
 
 ## AccountTakeoverRiskConfigurationTypeTypeDef
 
@@ -181,12 +181,12 @@ from mypy_boto3_cognito_idp.type_defs import AccountTakeoverRiskConfigurationTyp
 Required fields:
 
 - `Actions`:
-  [AccountTakeoverActionsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#accounttakeoveractionstypetypedef)
+  [AccountTakeoverActionsTypeTypeDef](./type_defs.md#accounttakeoveractionstypetypedef)
 
 Optional fields:
 
 - `NotifyConfiguration`:
-  [NotifyConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#notifyconfigurationtypetypedef)
+  [NotifyConfigurationTypeTypeDef](./type_defs.md#notifyconfigurationtypetypedef)
 
 ## AdminCreateUserConfigTypeTypeDef
 
@@ -199,7 +199,7 @@ Optional fields:
 - `AllowAdminCreateUserOnly`: `bool`
 - `UnusedAccountValidityDays`: `int`
 - `InviteMessageTemplate`:
-  [MessageTemplateTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#messagetemplatetypetypedef)
+  [MessageTemplateTypeTypeDef](./type_defs.md#messagetemplatetypetypedef)
 
 ## AdminCreateUserResponseTypeDef
 
@@ -209,8 +209,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminCreateUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#usertypetypedef)
+- `User`: [UserTypeTypeDef](./type_defs.md#usertypetypedef)
 
 ## AdminGetDeviceResponseTypeDef
 
@@ -220,8 +219,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminGetDeviceResponseTypeDef
 
 Required fields:
 
-- `Device`:
-  [DeviceTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#devicetypetypedef)
+- `Device`: [DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)
 
 ## AdminGetUserResponseTypeDef
 
@@ -236,14 +234,13 @@ Required fields:
 Optional fields:
 
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#attributetypetypedef)\]
+  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `UserCreateDate`: `datetime`
 - `UserLastModifiedDate`: `datetime`
 - `Enabled`: `bool`
-- `UserStatus`:
-  [UserStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#userstatustype)
+- `UserStatus`: [UserStatusType](./literals.md#userstatustype)
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#mfaoptiontypetypedef)\]
+  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 - `PreferredMfaSetting`: `str`
 - `UserMFASettingList`: `List`\[`str`\]
 
@@ -255,12 +252,11 @@ from mypy_boto3_cognito_idp.type_defs import AdminInitiateAuthResponseTypeDef
 
 Optional fields:
 
-- `ChallengeName`:
-  [ChallengeNameType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#challengenametype)
+- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#authenticationresulttypetypedef)
+  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
 
 ## AdminListDevicesResponseTypeDef
 
@@ -270,8 +266,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminListDevicesResponseTypeDef
 
 Optional fields:
 
-- `Devices`:
-  `List`\[[DeviceTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#devicetypetypedef)\]
+- `Devices`: `List`\[[DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)\]
 - `PaginationToken`: `str`
 
 ## AdminListGroupsForUserResponseTypeDef
@@ -282,8 +277,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminListGroupsForUserResponseTypeD
 
 Optional fields:
 
-- `Groups`:
-  `List`\[[GroupTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#grouptypetypedef)\]
+- `Groups`: `List`\[[GroupTypeTypeDef](./type_defs.md#grouptypetypedef)\]
 - `NextToken`: `str`
 
 ## AdminListUserAuthEventsResponseTypeDef
@@ -295,7 +289,7 @@ from mypy_boto3_cognito_idp.type_defs import AdminListUserAuthEventsResponseType
 Optional fields:
 
 - `AuthEvents`:
-  `List`\[[AuthEventTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#autheventtypetypedef)\]
+  `List`\[[AuthEventTypeTypeDef](./type_defs.md#autheventtypetypedef)\]
 - `NextToken`: `str`
 
 ## AdminRespondToAuthChallengeResponseTypeDef
@@ -306,12 +300,11 @@ from mypy_boto3_cognito_idp.type_defs import AdminRespondToAuthChallengeResponse
 
 Optional fields:
 
-- `ChallengeName`:
-  [ChallengeNameType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#challengenametype)
+- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#authenticationresulttypetypedef)
+  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
 
 ## AnalyticsConfigurationTypeTypeDef
 
@@ -371,19 +364,16 @@ from mypy_boto3_cognito_idp.type_defs import AuthEventTypeTypeDef
 Optional fields:
 
 - `EventId`: `str`
-- `EventType`:
-  [EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#eventtype)
+- `EventType`: [EventType](./literals.md#eventtype)
 - `CreationDate`: `datetime`
-- `EventResponse`:
-  [EventResponseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#eventresponsetype)
-- `EventRisk`:
-  [EventRiskTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#eventrisktypetypedef)
+- `EventResponse`: [EventResponseType](./literals.md#eventresponsetype)
+- `EventRisk`: [EventRiskTypeTypeDef](./type_defs.md#eventrisktypetypedef)
 - `ChallengeResponses`:
-  `List`\[[ChallengeResponseTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#challengeresponsetypetypedef)\]
+  `List`\[[ChallengeResponseTypeTypeDef](./type_defs.md#challengeresponsetypetypedef)\]
 - `EventContextData`:
-  [EventContextDataTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#eventcontextdatatypetypedef)
+  [EventContextDataTypeTypeDef](./type_defs.md#eventcontextdatatypetypedef)
 - `EventFeedback`:
-  [EventFeedbackTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#eventfeedbacktypetypedef)
+  [EventFeedbackTypeTypeDef](./type_defs.md#eventfeedbacktypetypedef)
 
 ## AuthenticationResultTypeTypeDef
 
@@ -399,7 +389,7 @@ Optional fields:
 - `RefreshToken`: `str`
 - `IdToken`: `str`
 - `NewDeviceMetadata`:
-  [NewDeviceMetadataTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#newdevicemetadatatypetypedef)
+  [NewDeviceMetadataTypeTypeDef](./type_defs.md#newdevicemetadatatypetypedef)
 
 ## ChallengeResponseTypeTypeDef
 
@@ -409,10 +399,8 @@ from mypy_boto3_cognito_idp.type_defs import ChallengeResponseTypeTypeDef
 
 Optional fields:
 
-- `ChallengeName`:
-  [ChallengeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#challengename)
-- `ChallengeResponse`:
-  [ChallengeResponse](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#challengeresponse)
+- `ChallengeName`: [ChallengeName](./literals.md#challengename)
+- `ChallengeResponse`: [ChallengeResponse](./literals.md#challengeresponse)
 
 ## CodeDeliveryDetailsTypeTypeDef
 
@@ -423,8 +411,7 @@ from mypy_boto3_cognito_idp.type_defs import CodeDeliveryDetailsTypeTypeDef
 Optional fields:
 
 - `Destination`: `str`
-- `DeliveryMedium`:
-  [DeliveryMediumType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#deliverymediumtype)
+- `DeliveryMedium`: [DeliveryMediumType](./literals.md#deliverymediumtype)
 - `AttributeName`: `str`
 
 ## CompromisedCredentialsActionsTypeTypeDef
@@ -436,7 +423,7 @@ from mypy_boto3_cognito_idp.type_defs import CompromisedCredentialsActionsTypeTy
 Required fields:
 
 - `EventAction`:
-  [CompromisedCredentialsEventActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#compromisedcredentialseventactiontype)
+  [CompromisedCredentialsEventActionType](./literals.md#compromisedcredentialseventactiontype)
 
 ## CompromisedCredentialsRiskConfigurationTypeTypeDef
 
@@ -447,12 +434,11 @@ from mypy_boto3_cognito_idp.type_defs import CompromisedCredentialsRiskConfigura
 Required fields:
 
 - `Actions`:
-  [CompromisedCredentialsActionsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#compromisedcredentialsactionstypetypedef)
+  [CompromisedCredentialsActionsTypeTypeDef](./type_defs.md#compromisedcredentialsactionstypetypedef)
 
 Optional fields:
 
-- `EventFilter`:
-  `List`\[[EventFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#eventfiltertype)\]
+- `EventFilter`: `List`\[[EventFilterType](./literals.md#eventfiltertype)\]
 
 ## ConfirmDeviceResponseTypeDef
 
@@ -475,8 +461,7 @@ Required fields:
 - `IpAddress`: `str`
 - `ServerName`: `str`
 - `ServerPath`: `str`
-- `HttpHeaders`:
-  `List`\[[HttpHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#httpheadertypedef)\]
+- `HttpHeaders`: `List`\[[HttpHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
 
 Optional fields:
 
@@ -490,8 +475,7 @@ from mypy_boto3_cognito_idp.type_defs import CreateGroupResponseTypeDef
 
 Optional fields:
 
-- `Group`:
-  [GroupTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#grouptypetypedef)
+- `Group`: [GroupTypeTypeDef](./type_defs.md#grouptypetypedef)
 
 ## CreateIdentityProviderResponseTypeDef
 
@@ -502,7 +486,7 @@ from mypy_boto3_cognito_idp.type_defs import CreateIdentityProviderResponseTypeD
 Required fields:
 
 - `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#identityprovidertypetypedef)
+  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
 
 ## CreateResourceServerResponseTypeDef
 
@@ -513,7 +497,7 @@ from mypy_boto3_cognito_idp.type_defs import CreateResourceServerResponseTypeDef
 Required fields:
 
 - `ResourceServer`:
-  [ResourceServerTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#resourceservertypetypedef)
+  [ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)
 
 ## CreateUserImportJobResponseTypeDef
 
@@ -524,7 +508,7 @@ from mypy_boto3_cognito_idp.type_defs import CreateUserImportJobResponseTypeDef
 Optional fields:
 
 - `UserImportJob`:
-  [UserImportJobTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userimportjobtypetypedef)
+  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
 
 ## CreateUserPoolClientResponseTypeDef
 
@@ -535,7 +519,7 @@ from mypy_boto3_cognito_idp.type_defs import CreateUserPoolClientResponseTypeDef
 Optional fields:
 
 - `UserPoolClient`:
-  [UserPoolClientTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpoolclienttypetypedef)
+  [UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef)
 
 ## CreateUserPoolDomainResponseTypeDef
 
@@ -555,8 +539,7 @@ from mypy_boto3_cognito_idp.type_defs import CreateUserPoolResponseTypeDef
 
 Optional fields:
 
-- `UserPool`:
-  [UserPoolTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpooltypetypedef)
+- `UserPool`: [UserPoolTypeTypeDef](./type_defs.md#userpooltypetypedef)
 
 ## CustomDomainConfigTypeTypeDef
 
@@ -576,7 +559,8 @@ from mypy_boto3_cognito_idp.type_defs import CustomEmailLambdaVersionConfigTypeT
 
 Required fields:
 
-- `LambdaVersion`: `Literal['V1_0']`
+- `LambdaVersion`: `Literal['V1_0']` (see
+  [CustomEmailSenderLambdaVersionType](./literals.md#customemailsenderlambdaversiontype))
 - `LambdaArn`: `str`
 
 ## CustomSMSLambdaVersionConfigTypeTypeDef
@@ -587,7 +571,8 @@ from mypy_boto3_cognito_idp.type_defs import CustomSMSLambdaVersionConfigTypeTyp
 
 Required fields:
 
-- `LambdaVersion`: `Literal['V1_0']`
+- `LambdaVersion`: `Literal['V1_0']` (see
+  [CustomSMSSenderLambdaVersionType](./literals.md#customsmssenderlambdaversiontype))
 - `LambdaArn`: `str`
 
 ## DescribeIdentityProviderResponseTypeDef
@@ -599,7 +584,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeIdentityProviderResponseTyp
 Required fields:
 
 - `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#identityprovidertypetypedef)
+  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
 
 ## DescribeResourceServerResponseTypeDef
 
@@ -610,7 +595,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeResourceServerResponseTypeD
 Required fields:
 
 - `ResourceServer`:
-  [ResourceServerTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#resourceservertypetypedef)
+  [ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)
 
 ## DescribeRiskConfigurationResponseTypeDef
 
@@ -621,7 +606,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeRiskConfigurationResponseTy
 Required fields:
 
 - `RiskConfiguration`:
-  [RiskConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#riskconfigurationtypetypedef)
+  [RiskConfigurationTypeTypeDef](./type_defs.md#riskconfigurationtypetypedef)
 
 ## DescribeUserImportJobResponseTypeDef
 
@@ -632,7 +617,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeUserImportJobResponseTypeDe
 Optional fields:
 
 - `UserImportJob`:
-  [UserImportJobTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userimportjobtypetypedef)
+  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
 
 ## DescribeUserPoolClientResponseTypeDef
 
@@ -643,7 +628,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolClientResponseTypeD
 Optional fields:
 
 - `UserPoolClient`:
-  [UserPoolClientTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpoolclienttypetypedef)
+  [UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef)
 
 ## DescribeUserPoolDomainResponseTypeDef
 
@@ -654,7 +639,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolDomainResponseTypeD
 Optional fields:
 
 - `DomainDescription`:
-  [DomainDescriptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#domaindescriptiontypetypedef)
+  [DomainDescriptionTypeTypeDef](./type_defs.md#domaindescriptiontypetypedef)
 
 ## DescribeUserPoolResponseTypeDef
 
@@ -664,8 +649,7 @@ from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolResponseTypeDef
 
 Optional fields:
 
-- `UserPool`:
-  [UserPoolTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpooltypetypedef)
+- `UserPool`: [UserPoolTypeTypeDef](./type_defs.md#userpooltypetypedef)
 
 ## DeviceConfigurationTypeTypeDef
 
@@ -699,7 +683,7 @@ Optional fields:
 
 - `DeviceKey`: `str`
 - `DeviceAttributes`:
-  `List`\[[AttributeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#attributetypetypedef)\]
+  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `DeviceCreateDate`: `datetime`
 - `DeviceLastModifiedDate`: `datetime`
 - `DeviceLastAuthenticatedDate`: `datetime`
@@ -718,10 +702,9 @@ Optional fields:
 - `S3Bucket`: `str`
 - `CloudFrontDistribution`: `str`
 - `Version`: `str`
-- `Status`:
-  [DomainStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#domainstatustype)
+- `Status`: [DomainStatusType](./literals.md#domainstatustype)
 - `CustomDomainConfig`:
-  [CustomDomainConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#customdomainconfigtypetypedef)
+  [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
 
 ## EmailConfigurationTypeTypeDef
 
@@ -734,7 +717,7 @@ Optional fields:
 - `SourceArn`: `str`
 - `ReplyToEmailAddress`: `str`
 - `EmailSendingAccount`:
-  [EmailSendingAccountType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#emailsendingaccounttype)
+  [EmailSendingAccountType](./literals.md#emailsendingaccounttype)
 - `From`: `str`
 - `ConfigurationSet`: `str`
 
@@ -760,8 +743,7 @@ from mypy_boto3_cognito_idp.type_defs import EventFeedbackTypeTypeDef
 
 Required fields:
 
-- `FeedbackValue`:
-  [FeedbackValueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#feedbackvaluetype)
+- `FeedbackValue`: [FeedbackValueType](./literals.md#feedbackvaluetype)
 - `Provider`: `str`
 
 Optional fields:
@@ -776,10 +758,8 @@ from mypy_boto3_cognito_idp.type_defs import EventRiskTypeTypeDef
 
 Optional fields:
 
-- `RiskDecision`:
-  [RiskDecisionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#riskdecisiontype)
-- `RiskLevel`:
-  [RiskLevelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#riskleveltype)
+- `RiskDecision`: [RiskDecisionType](./literals.md#riskdecisiontype)
+- `RiskLevel`: [RiskLevelType](./literals.md#riskleveltype)
 - `CompromisedCredentialsDetected`: `bool`
 
 ## ForgotPasswordResponseTypeDef
@@ -791,7 +771,7 @@ from mypy_boto3_cognito_idp.type_defs import ForgotPasswordResponseTypeDef
 Optional fields:
 
 - `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#codedeliverydetailstypetypedef)
+  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
 
 ## GetCSVHeaderResponseTypeDef
 
@@ -812,8 +792,7 @@ from mypy_boto3_cognito_idp.type_defs import GetDeviceResponseTypeDef
 
 Required fields:
 
-- `Device`:
-  [DeviceTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#devicetypetypedef)
+- `Device`: [DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)
 
 ## GetGroupResponseTypeDef
 
@@ -823,8 +802,7 @@ from mypy_boto3_cognito_idp.type_defs import GetGroupResponseTypeDef
 
 Optional fields:
 
-- `Group`:
-  [GroupTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#grouptypetypedef)
+- `Group`: [GroupTypeTypeDef](./type_defs.md#grouptypetypedef)
 
 ## GetIdentityProviderByIdentifierResponseTypeDef
 
@@ -835,7 +813,7 @@ from mypy_boto3_cognito_idp.type_defs import GetIdentityProviderByIdentifierResp
 Required fields:
 
 - `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#identityprovidertypetypedef)
+  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
 
 ## GetSigningCertificateResponseTypeDef
 
@@ -856,7 +834,7 @@ from mypy_boto3_cognito_idp.type_defs import GetUICustomizationResponseTypeDef
 Required fields:
 
 - `UICustomization`:
-  [UICustomizationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#uicustomizationtypetypedef)
+  [UICustomizationTypeTypeDef](./type_defs.md#uicustomizationtypetypedef)
 
 ## GetUserAttributeVerificationCodeResponseTypeDef
 
@@ -867,7 +845,7 @@ from mypy_boto3_cognito_idp.type_defs import GetUserAttributeVerificationCodeRes
 Optional fields:
 
 - `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#codedeliverydetailstypetypedef)
+  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
 
 ## GetUserPoolMfaConfigResponseTypeDef
 
@@ -878,11 +856,10 @@ from mypy_boto3_cognito_idp.type_defs import GetUserPoolMfaConfigResponseTypeDef
 Optional fields:
 
 - `SmsMfaConfiguration`:
-  [SmsMfaConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#smsmfaconfigtypetypedef)
+  [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
 - `SoftwareTokenMfaConfiguration`:
-  [SoftwareTokenMfaConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`:
-  [UserPoolMfaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#userpoolmfatype)
+  [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
+- `MfaConfiguration`: [UserPoolMfaType](./literals.md#userpoolmfatype)
 
 ## GetUserResponseTypeDef
 
@@ -894,12 +871,12 @@ Required fields:
 
 - `Username`: `str`
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#attributetypetypedef)\]
+  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 
 Optional fields:
 
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#mfaoptiontypetypedef)\]
+  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 - `PreferredMfaSetting`: `str`
 - `UserMFASettingList`: `List`\[`str`\]
 
@@ -941,7 +918,7 @@ Optional fields:
 - `UserPoolId`: `str`
 - `ProviderName`: `str`
 - `ProviderType`:
-  [IdentityProviderTypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#identityprovidertypetype)
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `ProviderDetails`: `Dict`\[`str`, `str`\]
 - `AttributeMapping`: `Dict`\[`str`, `str`\]
 - `IdpIdentifiers`: `List`\[`str`\]
@@ -956,12 +933,11 @@ from mypy_boto3_cognito_idp.type_defs import InitiateAuthResponseTypeDef
 
 Optional fields:
 
-- `ChallengeName`:
-  [ChallengeNameType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#challengenametype)
+- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#authenticationresulttypetypedef)
+  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
 
 ## LambdaConfigTypeTypeDef
 
@@ -982,9 +958,9 @@ Optional fields:
 - `PreTokenGeneration`: `str`
 - `UserMigration`: `str`
 - `CustomSMSSender`:
-  [CustomSMSLambdaVersionConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#customsmslambdaversionconfigtypetypedef)
+  [CustomSMSLambdaVersionConfigTypeTypeDef](./type_defs.md#customsmslambdaversionconfigtypetypedef)
 - `CustomEmailSender`:
-  [CustomEmailLambdaVersionConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#customemaillambdaversionconfigtypetypedef)
+  [CustomEmailLambdaVersionConfigTypeTypeDef](./type_defs.md#customemaillambdaversionconfigtypetypedef)
 - `KMSKeyID`: `str`
 
 ## ListDevicesResponseTypeDef
@@ -995,8 +971,7 @@ from mypy_boto3_cognito_idp.type_defs import ListDevicesResponseTypeDef
 
 Optional fields:
 
-- `Devices`:
-  `List`\[[DeviceTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#devicetypetypedef)\]
+- `Devices`: `List`\[[DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)\]
 - `PaginationToken`: `str`
 
 ## ListGroupsResponseTypeDef
@@ -1007,8 +982,7 @@ from mypy_boto3_cognito_idp.type_defs import ListGroupsResponseTypeDef
 
 Optional fields:
 
-- `Groups`:
-  `List`\[[GroupTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#grouptypetypedef)\]
+- `Groups`: `List`\[[GroupTypeTypeDef](./type_defs.md#grouptypetypedef)\]
 - `NextToken`: `str`
 
 ## ListIdentityProvidersResponseTypeDef
@@ -1020,7 +994,7 @@ from mypy_boto3_cognito_idp.type_defs import ListIdentityProvidersResponseTypeDe
 Required fields:
 
 - `Providers`:
-  `List`\[[ProviderDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#providerdescriptiontypedef)\]
+  `List`\[[ProviderDescriptionTypeDef](./type_defs.md#providerdescriptiontypedef)\]
 
 Optional fields:
 
@@ -1035,7 +1009,7 @@ from mypy_boto3_cognito_idp.type_defs import ListResourceServersResponseTypeDef
 Required fields:
 
 - `ResourceServers`:
-  `List`\[[ResourceServerTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#resourceservertypetypedef)\]
+  `List`\[[ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)\]
 
 Optional fields:
 
@@ -1060,7 +1034,7 @@ from mypy_boto3_cognito_idp.type_defs import ListUserImportJobsResponseTypeDef
 Optional fields:
 
 - `UserImportJobs`:
-  `List`\[[UserImportJobTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userimportjobtypetypedef)\]
+  `List`\[[UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)\]
 - `PaginationToken`: `str`
 
 ## ListUserPoolClientsResponseTypeDef
@@ -1072,7 +1046,7 @@ from mypy_boto3_cognito_idp.type_defs import ListUserPoolClientsResponseTypeDef
 Optional fields:
 
 - `UserPoolClients`:
-  `List`\[[UserPoolClientDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpoolclientdescriptiontypedef)\]
+  `List`\[[UserPoolClientDescriptionTypeDef](./type_defs.md#userpoolclientdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListUserPoolsResponseTypeDef
@@ -1084,7 +1058,7 @@ from mypy_boto3_cognito_idp.type_defs import ListUserPoolsResponseTypeDef
 Optional fields:
 
 - `UserPools`:
-  `List`\[[UserPoolDescriptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpooldescriptiontypetypedef)\]
+  `List`\[[UserPoolDescriptionTypeTypeDef](./type_defs.md#userpooldescriptiontypetypedef)\]
 - `NextToken`: `str`
 
 ## ListUsersInGroupResponseTypeDef
@@ -1095,8 +1069,7 @@ from mypy_boto3_cognito_idp.type_defs import ListUsersInGroupResponseTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#usertypetypedef)\]
+- `Users`: `List`\[[UserTypeTypeDef](./type_defs.md#usertypetypedef)\]
 - `NextToken`: `str`
 
 ## ListUsersResponseTypeDef
@@ -1107,8 +1080,7 @@ from mypy_boto3_cognito_idp.type_defs import ListUsersResponseTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#usertypetypedef)\]
+- `Users`: `List`\[[UserTypeTypeDef](./type_defs.md#usertypetypedef)\]
 - `PaginationToken`: `str`
 
 ## MFAOptionTypeTypeDef
@@ -1119,8 +1091,7 @@ from mypy_boto3_cognito_idp.type_defs import MFAOptionTypeTypeDef
 
 Optional fields:
 
-- `DeliveryMedium`:
-  [DeliveryMediumType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#deliverymediumtype)
+- `DeliveryMedium`: [DeliveryMediumType](./literals.md#deliverymediumtype)
 - `AttributeName`: `str`
 
 ## MessageTemplateTypeTypeDef
@@ -1160,12 +1131,10 @@ Optional fields:
 
 - `From`: `str`
 - `ReplyTo`: `str`
-- `BlockEmail`:
-  [NotifyEmailTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#notifyemailtypetypedef)
+- `BlockEmail`: [NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef)
 - `NoActionEmail`:
-  [NotifyEmailTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#notifyemailtypetypedef)
-- `MfaEmail`:
-  [NotifyEmailTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#notifyemailtypetypedef)
+  [NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef)
+- `MfaEmail`: [NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef)
 
 ## NotifyEmailTypeTypeDef
 
@@ -1230,7 +1199,7 @@ Optional fields:
 
 - `ProviderName`: `str`
 - `ProviderType`:
-  [IdentityProviderTypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#identityprovidertypetype)
+  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LastModifiedDate`: `datetime`
 - `CreationDate`: `datetime`
 
@@ -1255,8 +1224,7 @@ from mypy_boto3_cognito_idp.type_defs import RecoveryOptionTypeTypeDef
 Required fields:
 
 - `Priority`: `int`
-- `Name`:
-  [RecoveryOptionNameType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#recoveryoptionnametype)
+- `Name`: [RecoveryOptionNameType](./literals.md#recoveryoptionnametype)
 
 ## ResendConfirmationCodeResponseTypeDef
 
@@ -1267,7 +1235,7 @@ from mypy_boto3_cognito_idp.type_defs import ResendConfirmationCodeResponseTypeD
 Optional fields:
 
 - `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#codedeliverydetailstypetypedef)
+  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
 
 ## ResourceServerScopeTypeTypeDef
 
@@ -1292,7 +1260,7 @@ Optional fields:
 - `Identifier`: `str`
 - `Name`: `str`
 - `Scopes`:
-  `List`\[[ResourceServerScopeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#resourceserverscopetypetypedef)\]
+  `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 ## RespondToAuthChallengeResponseTypeDef
 
@@ -1302,12 +1270,11 @@ from mypy_boto3_cognito_idp.type_defs import RespondToAuthChallengeResponseTypeD
 
 Optional fields:
 
-- `ChallengeName`:
-  [ChallengeNameType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#challengenametype)
+- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
 - `Session`: `str`
 - `ChallengeParameters`: `Dict`\[`str`, `str`\]
 - `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#authenticationresulttypetypedef)
+  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
 
 ## RiskConfigurationTypeTypeDef
 
@@ -1320,11 +1287,11 @@ Optional fields:
 - `UserPoolId`: `str`
 - `ClientId`: `str`
 - `CompromisedCredentialsRiskConfiguration`:
-  [CompromisedCredentialsRiskConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#compromisedcredentialsriskconfigurationtypetypedef)
+  [CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef)
 - `AccountTakeoverRiskConfiguration`:
-  [AccountTakeoverRiskConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#accounttakeoverriskconfigurationtypetypedef)
+  [AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef)
 - `RiskExceptionConfiguration`:
-  [RiskExceptionConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#riskexceptionconfigurationtypetypedef)
+  [RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef)
 - `LastModifiedDate`: `datetime`
 
 ## RiskExceptionConfigurationTypeTypeDef
@@ -1358,15 +1325,14 @@ from mypy_boto3_cognito_idp.type_defs import SchemaAttributeTypeTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `AttributeDataType`:
-  [AttributeDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#attributedatatype)
+- `AttributeDataType`: [AttributeDataType](./literals.md#attributedatatype)
 - `DeveloperOnlyAttribute`: `bool`
 - `Mutable`: `bool`
 - `Required`: `bool`
 - `NumberAttributeConstraints`:
-  [NumberAttributeConstraintsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#numberattributeconstraintstypetypedef)
+  [NumberAttributeConstraintsTypeTypeDef](./type_defs.md#numberattributeconstraintstypetypedef)
 - `StringAttributeConstraints`:
-  [StringAttributeConstraintsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#stringattributeconstraintstypetypedef)
+  [StringAttributeConstraintsTypeTypeDef](./type_defs.md#stringattributeconstraintstypetypedef)
 
 ## SetRiskConfigurationResponseTypeDef
 
@@ -1377,7 +1343,7 @@ from mypy_boto3_cognito_idp.type_defs import SetRiskConfigurationResponseTypeDef
 Required fields:
 
 - `RiskConfiguration`:
-  [RiskConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#riskconfigurationtypetypedef)
+  [RiskConfigurationTypeTypeDef](./type_defs.md#riskconfigurationtypetypedef)
 
 ## SetUICustomizationResponseTypeDef
 
@@ -1388,7 +1354,7 @@ from mypy_boto3_cognito_idp.type_defs import SetUICustomizationResponseTypeDef
 Required fields:
 
 - `UICustomization`:
-  [UICustomizationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#uicustomizationtypetypedef)
+  [UICustomizationTypeTypeDef](./type_defs.md#uicustomizationtypetypedef)
 
 ## SetUserPoolMfaConfigResponseTypeDef
 
@@ -1399,11 +1365,10 @@ from mypy_boto3_cognito_idp.type_defs import SetUserPoolMfaConfigResponseTypeDef
 Optional fields:
 
 - `SmsMfaConfiguration`:
-  [SmsMfaConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#smsmfaconfigtypetypedef)
+  [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
 - `SoftwareTokenMfaConfiguration`:
-  [SoftwareTokenMfaConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`:
-  [UserPoolMfaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#userpoolmfatype)
+  [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
+- `MfaConfiguration`: [UserPoolMfaType](./literals.md#userpoolmfatype)
 
 ## SignUpResponseTypeDef
 
@@ -1419,7 +1384,7 @@ Required fields:
 Optional fields:
 
 - `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#codedeliverydetailstypetypedef)
+  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
 
 ## SmsConfigurationTypeTypeDef
 
@@ -1445,7 +1410,7 @@ Optional fields:
 
 - `SmsAuthenticationMessage`: `str`
 - `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#smsconfigurationtypetypedef)
+  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
 
 ## SoftwareTokenMfaConfigTypeTypeDef
 
@@ -1477,7 +1442,7 @@ from mypy_boto3_cognito_idp.type_defs import StartUserImportJobResponseTypeDef
 Optional fields:
 
 - `UserImportJob`:
-  [UserImportJobTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userimportjobtypetypedef)
+  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
 
 ## StopUserImportJobResponseTypeDef
 
@@ -1488,7 +1453,7 @@ from mypy_boto3_cognito_idp.type_defs import StopUserImportJobResponseTypeDef
 Optional fields:
 
 - `UserImportJob`:
-  [UserImportJobTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userimportjobtypetypedef)
+  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
 
 ## StringAttributeConstraintsTypeTypeDef
 
@@ -1509,12 +1474,9 @@ from mypy_boto3_cognito_idp.type_defs import TokenValidityUnitsTypeTypeDef
 
 Optional fields:
 
-- `AccessToken`:
-  [TimeUnitsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#timeunitstype)
-- `IdToken`:
-  [TimeUnitsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#timeunitstype)
-- `RefreshToken`:
-  [TimeUnitsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#timeunitstype)
+- `AccessToken`: [TimeUnitsType](./literals.md#timeunitstype)
+- `IdToken`: [TimeUnitsType](./literals.md#timeunitstype)
+- `RefreshToken`: [TimeUnitsType](./literals.md#timeunitstype)
 
 ## UICustomizationTypeTypeDef
 
@@ -1540,8 +1502,7 @@ from mypy_boto3_cognito_idp.type_defs import UpdateGroupResponseTypeDef
 
 Optional fields:
 
-- `Group`:
-  [GroupTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#grouptypetypedef)
+- `Group`: [GroupTypeTypeDef](./type_defs.md#grouptypetypedef)
 
 ## UpdateIdentityProviderResponseTypeDef
 
@@ -1552,7 +1513,7 @@ from mypy_boto3_cognito_idp.type_defs import UpdateIdentityProviderResponseTypeD
 Required fields:
 
 - `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#identityprovidertypetypedef)
+  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
 
 ## UpdateResourceServerResponseTypeDef
 
@@ -1563,7 +1524,7 @@ from mypy_boto3_cognito_idp.type_defs import UpdateResourceServerResponseTypeDef
 Required fields:
 
 - `ResourceServer`:
-  [ResourceServerTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#resourceservertypetypedef)
+  [ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)
 
 ## UpdateUserAttributesResponseTypeDef
 
@@ -1574,7 +1535,7 @@ from mypy_boto3_cognito_idp.type_defs import UpdateUserAttributesResponseTypeDef
 Optional fields:
 
 - `CodeDeliveryDetailsList`:
-  `List`\[[CodeDeliveryDetailsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#codedeliverydetailstypetypedef)\]
+  `List`\[[CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)\]
 
 ## UpdateUserPoolClientResponseTypeDef
 
@@ -1585,7 +1546,7 @@ from mypy_boto3_cognito_idp.type_defs import UpdateUserPoolClientResponseTypeDef
 Optional fields:
 
 - `UserPoolClient`:
-  [UserPoolClientTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpoolclienttypetypedef)
+  [UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef)
 
 ## UpdateUserPoolDomainResponseTypeDef
 
@@ -1622,8 +1583,7 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `StartDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `Status`:
-  [UserImportJobStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#userimportjobstatustype)
+- `Status`: [UserImportJobStatusType](./literals.md#userimportjobstatustype)
 - `CloudWatchLogsRoleArn`: `str`
 - `ImportedUsers`: `int`
 - `SkippedUsers`: `int`
@@ -1639,7 +1599,7 @@ from mypy_boto3_cognito_idp.type_defs import UserPoolAddOnsTypeTypeDef
 Required fields:
 
 - `AdvancedSecurityMode`:
-  [AdvancedSecurityModeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#advancedsecuritymodetype)
+  [AdvancedSecurityModeType](./literals.md#advancedsecuritymodetype)
 
 ## UserPoolClientDescriptionTypeDef
 
@@ -1671,23 +1631,22 @@ Optional fields:
 - `AccessTokenValidity`: `int`
 - `IdTokenValidity`: `int`
 - `TokenValidityUnits`:
-  [TokenValidityUnitsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#tokenvalidityunitstypetypedef)
+  [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
 - `ReadAttributes`: `List`\[`str`\]
 - `WriteAttributes`: `List`\[`str`\]
 - `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#explicitauthflowstype)\]
+  `List`\[[ExplicitAuthFlowsType](./literals.md#explicitauthflowstype)\]
 - `SupportedIdentityProviders`: `List`\[`str`\]
 - `CallbackURLs`: `List`\[`str`\]
 - `LogoutURLs`: `List`\[`str`\]
 - `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`:
-  `List`\[[OAuthFlowType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#oauthflowtype)\]
+- `AllowedOAuthFlows`: `List`\[[OAuthFlowType](./literals.md#oauthflowtype)\]
 - `AllowedOAuthScopes`: `List`\[`str`\]
 - `AllowedOAuthFlowsUserPoolClient`: `bool`
 - `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#analyticsconfigurationtypetypedef)
+  [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
 - `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#preventuserexistenceerrortypes)
+  [PreventUserExistenceErrorTypes](./literals.md#preventuserexistenceerrortypes)
 
 ## UserPoolDescriptionTypeTypeDef
 
@@ -1700,9 +1659,8 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#lambdaconfigtypetypedef)
-- `Status`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#statustype)
+  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
+- `Status`: [StatusType](./literals.md#statustype)
 - `LastModifiedDate`: `datetime`
 - `CreationDate`: `datetime`
 
@@ -1715,7 +1673,7 @@ from mypy_boto3_cognito_idp.type_defs import UserPoolPolicyTypeTypeDef
 Optional fields:
 
 - `PasswordPolicy`:
-  [PasswordPolicyTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#passwordpolicytypetypedef)
+  [PasswordPolicyTypeTypeDef](./type_defs.md#passwordpolicytypetypedef)
 
 ## UserPoolTypeTypeDef
 
@@ -1728,50 +1686,48 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Policies`:
-  [UserPoolPolicyTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpoolpolicytypetypedef)
+  [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
 - `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#lambdaconfigtypetypedef)
-- `Status`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#statustype)
+  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
+- `Status`: [StatusType](./literals.md#statustype)
 - `LastModifiedDate`: `datetime`
 - `CreationDate`: `datetime`
 - `SchemaAttributes`:
-  `List`\[[SchemaAttributeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#schemaattributetypetypedef)\]
+  `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
 - `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#verifiedattributetype)\]
+  `List`\[[VerifiedAttributeType](./literals.md#verifiedattributetype)\]
 - `AliasAttributes`:
-  `List`\[[AliasAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#aliasattributetype)\]
+  `List`\[[AliasAttributeType](./literals.md#aliasattributetype)\]
 - `UsernameAttributes`:
-  `List`\[[UsernameAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#usernameattributetype)\]
+  `List`\[[UsernameAttributeType](./literals.md#usernameattributetype)\]
 - `SmsVerificationMessage`: `str`
 - `EmailVerificationMessage`: `str`
 - `EmailVerificationSubject`: `str`
 - `VerificationMessageTemplate`:
-  [VerificationMessageTemplateTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#verificationmessagetemplatetypetypedef)
+  [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
 - `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`:
-  [UserPoolMfaType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#userpoolmfatype)
+- `MfaConfiguration`: [UserPoolMfaType](./literals.md#userpoolmfatype)
 - `DeviceConfiguration`:
-  [DeviceConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#deviceconfigurationtypetypedef)
+  [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
 - `EstimatedNumberOfUsers`: `int`
 - `EmailConfiguration`:
-  [EmailConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#emailconfigurationtypetypedef)
+  [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
 - `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#smsconfigurationtypetypedef)
+  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
 - `UserPoolTags`: `Dict`\[`str`, `str`\]
 - `SmsConfigurationFailure`: `str`
 - `EmailConfigurationFailure`: `str`
 - `Domain`: `str`
 - `CustomDomain`: `str`
 - `AdminCreateUserConfig`:
-  [AdminCreateUserConfigTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#admincreateuserconfigtypetypedef)
+  [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
 - `UserPoolAddOns`:
-  [UserPoolAddOnsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#userpooladdonstypetypedef)
+  [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
 - `UsernameConfiguration`:
-  [UsernameConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#usernameconfigurationtypetypedef)
+  [UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef)
 - `Arn`: `str`
 - `AccountRecoverySetting`:
-  [AccountRecoverySettingTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#accountrecoverysettingtypetypedef)
+  [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
 
 ## UserTypeTypeDef
 
@@ -1783,14 +1739,13 @@ Optional fields:
 
 - `Username`: `str`
 - `Attributes`:
-  `List`\[[AttributeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#attributetypetypedef)\]
+  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `UserCreateDate`: `datetime`
 - `UserLastModifiedDate`: `datetime`
 - `Enabled`: `bool`
-- `UserStatus`:
-  [UserStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#userstatustype)
+- `UserStatus`: [UserStatusType](./literals.md#userstatustype)
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/type_defs.html#mfaoptiontypetypedef)\]
+  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
 
 ## UsernameConfigurationTypeTypeDef
 
@@ -1816,7 +1771,7 @@ Optional fields:
 - `EmailMessageByLink`: `str`
 - `EmailSubjectByLink`: `str`
 - `DefaultEmailOption`:
-  [DefaultEmailOptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#defaultemailoptiontype)
+  [DefaultEmailOptionType](./literals.md#defaultemailoptiontype)
 
 ## VerifySoftwareTokenResponseTypeDef
 
@@ -1827,5 +1782,5 @@ from mypy_boto3_cognito_idp.type_defs import VerifySoftwareTokenResponseTypeDef
 Optional fields:
 
 - `Status`:
-  [VerifySoftwareTokenResponseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_idp/literals.html#verifysoftwaretokenresponsetype)
+  [VerifySoftwareTokenResponseType](./literals.md#verifysoftwaretokenresponsetype)
 - `Session`: `str`

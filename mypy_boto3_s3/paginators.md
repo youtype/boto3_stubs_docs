@@ -1,6 +1,6 @@
 # Paginators for boto3 S3 module
 
-> [Index](../README.md) > [S3](./README.md) > Paginators
+> [Index](..) > [S3](.) > Paginators
 
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
@@ -35,14 +35,15 @@ Arguments for `ListMultipartUploadsPaginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
-- `EncodingType`: `Literal['url']`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `Prefix`: `str`
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMultipartUploadsPaginator.paginate` returns
-`Iterator`\[[ListMultipartUploadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listmultipartuploadsoutputtypedef)\].
+`Iterator`\[[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef)\].
 
 ## ListObjectVersionsPaginator
 
@@ -65,14 +66,15 @@ Arguments for `ListObjectVersionsPaginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
-- `EncodingType`: `Literal['url']`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `Prefix`: `str`
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectVersionsPaginator.paginate` returns
-`Iterator`\[[ListObjectVersionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectversionsoutputtypedef)\].
+`Iterator`\[[ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef)\].
 
 ## ListObjectsPaginator
 
@@ -94,15 +96,17 @@ Arguments for `ListObjectsPaginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
-- `EncodingType`: `Literal['url']`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `Prefix`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectsPaginator.paginate` returns
-`Iterator`\[[ListObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectsoutputtypedef)\].
+`Iterator`\[[ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef)\].
 
 ## ListObjectsV2Paginator
 
@@ -124,17 +128,19 @@ Arguments for `ListObjectsV2Paginator.paginate` method:
 
 - `Bucket`: `str` *(required)*
 - `Delimiter`: `str`
-- `EncodingType`: `Literal['url']`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingType](./literals.md#encodingtype))
 - `Prefix`: `str`
 - `FetchOwner`: `bool`
 - `StartAfter`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectsV2Paginator.paginate` returns
-`Iterator`\[[ListObjectsV2OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listobjectsv2outputtypedef)\].
+`Iterator`\[[ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef)\].
 
 ## ListPartsPaginator
 
@@ -157,10 +163,11 @@ Arguments for `ListPartsPaginator.paginate` method:
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `UploadId`: `str` *(required)*
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPartsPaginator.paginate` returns
-`Iterator`\[[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#listpartsoutputtypedef)\].
+`Iterator`\[[ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef)\].

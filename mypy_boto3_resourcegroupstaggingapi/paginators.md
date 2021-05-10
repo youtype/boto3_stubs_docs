@@ -1,6 +1,6 @@
 # Paginators for boto3 ResourceGroupsTaggingAPI module
 
-> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Paginators
+> [Index](..) > [ResourceGroupsTaggingAPI](.) > Paginators
 
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
@@ -36,13 +36,12 @@ Arguments for `GetComplianceSummaryPaginator.paginate` method:
 - `RegionFilters`: `List`\[`str`\]
 - `ResourceTypeFilters`: `List`\[`str`\]
 - `TagKeyFilters`: `List`\[`str`\]
-- `GroupBy`:
-  `List`\[[GroupByAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/literals.html#groupbyattribute)\]
+- `GroupBy`: `List`\[[GroupByAttribute](./literals.md#groupbyattribute)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetComplianceSummaryPaginator.paginate` returns
-`Iterator`\[[GetComplianceSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getcompliancesummaryoutputtypedef)\].
+`Iterator`\[[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef)\].
 
 ## GetResourcesPaginator
 
@@ -63,18 +62,17 @@ Boto3 documentation:
 
 Arguments for `GetResourcesPaginator.paginate` method:
 
-- `TagFilters`:
-  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagfiltertypedef)\]
+- `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `TagsPerPage`: `int`
 - `ResourceTypeFilters`: `List`\[`str`\]
 - `IncludeComplianceDetails`: `bool`
 - `ExcludeCompliantResources`: `bool`
 - `ResourceARNList`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcesPaginator.paginate` returns
-`Iterator`\[[GetResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getresourcesoutputtypedef)\].
+`Iterator`\[[GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef)\].
 
 ## GetTagKeysPaginator
 
@@ -96,10 +94,10 @@ Boto3 documentation:
 Arguments for `GetTagKeysPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTagKeysPaginator.paginate` returns
-`Iterator`\[[GetTagKeysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagkeysoutputtypedef)\].
+`Iterator`\[[GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef)\].
 
 ## GetTagValuesPaginator
 
@@ -122,7 +120,7 @@ Arguments for `GetTagValuesPaginator.paginate` method:
 
 - `Key`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTagValuesPaginator.paginate` returns
-`Iterator`\[[GetTagValuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagvaluesoutputtypedef)\].
+`Iterator`\[[GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)\].

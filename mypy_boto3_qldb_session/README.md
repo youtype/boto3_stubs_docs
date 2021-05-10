@@ -1,6 +1,6 @@
 # Type annotations for boto3 QLDBSession module
 
-> [Index](../README.md) > QLDBSession
+> [Index](..) > QLDBSession
 
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)

@@ -1,6 +1,6 @@
 # Waiters for boto3 Schemas module
 
-> [Index](../README.md) > [Schemas](./README.md) > Waiters
+> [Index](..) > [Schemas](.) > Waiters
 
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
@@ -33,5 +33,4 @@ Arguments for `CodeBindingExistsWaiter.wait` method:
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
 - `SchemaVersion`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

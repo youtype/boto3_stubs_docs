@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 FinSpaceData module
 
-> [Index](../README.md) > [FinSpaceData](./README.md) > Structures
+> [Index](..) > [FinSpaceData](.) > Typed dictionaries
 
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
@@ -26,18 +26,14 @@ Optional fields:
 - `id`: `str`
 - `changesetArn`: `str`
 - `datasetId`: `str`
-- `changeType`:
-  [ChangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#changetype)
-- `sourceType`: `Literal['S3']`
+- `changeType`: [ChangeType](./literals.md#changetype)
+- `sourceType`: `Literal['S3']` (see [SourceType](./literals.md#sourcetype))
 - `sourceParams`: `Dict`\[`str`, `str`\]
-- `formatType`:
-  [FormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#formattype)
+- `formatType`: [FormatType](./literals.md#formattype)
 - `formatParams`: `Dict`\[`str`, `str`\]
 - `createTimestamp`: `datetime`
-- `status`:
-  [ChangesetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#changesetstatus)
-- `errorInfo`:
-  [ErrorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/type_defs.html#errorinfotypedef)
+- `status`: [ChangesetStatus](./literals.md#changesetstatus)
+- `errorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
 - `changesetLabels`: `Dict`\[`str`, `str`\]
 - `updatesChangesetId`: `str`
 - `updatedByChangesetId`: `str`
@@ -50,8 +46,7 @@ from mypy_boto3_finspace_data.type_defs import CreateChangesetResponseTypeDef
 
 Optional fields:
 
-- `changeset`:
-  [ChangesetInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/type_defs.html#changesetinfotypedef)
+- `changeset`: [ChangesetInfoTypeDef](./type_defs.md#changesetinfotypedef)
 
 ## CredentialsTypeDef
 
@@ -74,8 +69,7 @@ from mypy_boto3_finspace_data.type_defs import ErrorInfoTypeDef
 Optional fields:
 
 - `errorMessage`: `str`
-- `errorCategory`:
-  [ErrorCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#errorcategory)
+- `errorCategory`: [ErrorCategory](./literals.md#errorcategory)
 
 ## GetProgrammaticAccessCredentialsResponseTypeDef
 
@@ -85,8 +79,7 @@ from mypy_boto3_finspace_data.type_defs import GetProgrammaticAccessCredentialsR
 
 Optional fields:
 
-- `credentials`:
-  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/type_defs.html#credentialstypedef)
+- `credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
 - `durationInMinutes`: `int`
 
 ## GetWorkingLocationResponseTypeDef

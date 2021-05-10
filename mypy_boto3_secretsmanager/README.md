@@ -1,6 +1,6 @@
 # Type annotations for boto3 SecretsManager module
 
-> [Index](../README.md) > SecretsManager
+> [Index](..) > SecretsManager
 
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)

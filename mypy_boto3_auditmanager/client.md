@@ -1,6 +1,6 @@
 # AuditManagerClient for boto3 AuditManager module
 
-> [Index](../README.md) > [AuditManager](./README.md) > AuditManagerClient
+> [Index](..) > [AuditManager](.) > AuditManagerClient
 
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
@@ -135,7 +135,7 @@ Arguments:
 - `evidenceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchAssociateAssessmentReportEvidenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchassociateassessmentreportevidenceresponsetypedef).
+[BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef).
 
 ### batch_create_delegation_by_assessment
 
@@ -148,12 +148,12 @@ Boto3 documentation:
 Arguments:
 
 - `createDelegationRequests`:
-  `List`\[[CreateDelegationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createdelegationrequesttypedef)\]
+  `List`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
   *(required)*
 - `assessmentId`: `str` *(required)*
 
 Returns
-[BatchCreateDelegationByAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchcreatedelegationbyassessmentresponsetypedef).
+[BatchCreateDelegationByAssessmentResponseTypeDef](./type_defs.md#batchcreatedelegationbyassessmentresponsetypedef).
 
 ### batch_delete_delegation_by_assessment
 
@@ -169,7 +169,7 @@ Arguments:
 - `assessmentId`: `str` *(required)*
 
 Returns
-[BatchDeleteDelegationByAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchdeletedelegationbyassessmentresponsetypedef).
+[BatchDeleteDelegationByAssessmentResponseTypeDef](./type_defs.md#batchdeletedelegationbyassessmentresponsetypedef).
 
 ### batch_disassociate_assessment_report_evidence
 
@@ -187,7 +187,7 @@ Arguments:
 - `evidenceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisassociateAssessmentReportEvidenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchdisassociateassessmentreportevidenceresponsetypedef).
+[BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef).
 
 ### batch_import_evidence_to_assessment_control
 
@@ -204,11 +204,11 @@ Arguments:
 - `controlSetId`: `str` *(required)*
 - `controlId`: `str` *(required)*
 - `manualEvidence`:
-  `List`\[[ManualEvidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#manualevidencetypedef)\]
+  `List`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
   *(required)*
 
 Returns
-[BatchImportEvidenceToAssessmentControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchimportevidencetoassessmentcontrolresponsetypedef).
+[BatchImportEvidenceToAssessmentControlResponseTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolresponsetypedef).
 
 ### can_paginate
 
@@ -234,20 +234,16 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
+  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
   *(required)*
-- `scope`:
-  [ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#scopetypedef)
-  *(required)*
-- `roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
-  *(required)*
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
+- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\] *(required)*
 - `frameworkId`: `str` *(required)*
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentresponsetypedef).
+[CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef).
 
 ### create_assessment_framework
 
@@ -261,14 +257,14 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `controlSets`:
-  `List`\[[CreateAssessmentFrameworkControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkcontrolsettypedef)\]
+  `List`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
   *(required)*
 - `description`: `str`
 - `complianceType`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssessmentFrameworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkresponsetypedef).
+[CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef).
 
 ### create_assessment_report
 
@@ -285,7 +281,7 @@ Arguments:
 - `description`: `str`
 
 Returns
-[CreateAssessmentReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentreportresponsetypedef).
+[CreateAssessmentReportResponseTypeDef](./type_defs.md#createassessmentreportresponsetypedef).
 
 ### create_control
 
@@ -298,7 +294,7 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `controlMappingSources`:
-  `List`\[[CreateControlMappingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createcontrolmappingsourcetypedef)\]
+  `List`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
   *(required)*
 - `description`: `str`
 - `testingInformation`: `str`
@@ -307,7 +303,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createcontrolresponsetypedef).
+[CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef).
 
 ### delete_assessment
 
@@ -372,7 +368,7 @@ Boto3 documentation:
 [AuditManager.Client.deregister_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
 
 Returns
-[DeregisterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#deregisteraccountresponsetypedef).
+[DeregisterAccountResponseTypeDef](./type_defs.md#deregisteraccountresponsetypedef).
 
 ### deregister_organization_admin_account
 
@@ -429,7 +425,7 @@ Boto3 documentation:
 [AuditManager.Client.get_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
 
 Returns
-[GetAccountStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getaccountstatusresponsetypedef).
+[GetAccountStatusResponseTypeDef](./type_defs.md#getaccountstatusresponsetypedef).
 
 ### get_assessment
 
@@ -443,7 +439,7 @@ Arguments:
 - `assessmentId`: `str` *(required)*
 
 Returns
-[GetAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getassessmentresponsetypedef).
+[GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
 
 ### get_assessment_framework
 
@@ -458,7 +454,7 @@ Arguments:
 - `frameworkId`: `str` *(required)*
 
 Returns
-[GetAssessmentFrameworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getassessmentframeworkresponsetypedef).
+[GetAssessmentFrameworkResponseTypeDef](./type_defs.md#getassessmentframeworkresponsetypedef).
 
 ### get_assessment_report_url
 
@@ -474,7 +470,7 @@ Arguments:
 - `assessmentId`: `str` *(required)*
 
 Returns
-[GetAssessmentReportUrlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getassessmentreporturlresponsetypedef).
+[GetAssessmentReportUrlResponseTypeDef](./type_defs.md#getassessmentreporturlresponsetypedef).
 
 ### get_change_logs
 
@@ -492,7 +488,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetChangeLogsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getchangelogsresponsetypedef).
+[GetChangeLogsResponseTypeDef](./type_defs.md#getchangelogsresponsetypedef).
 
 ### get_control
 
@@ -505,8 +501,7 @@ Arguments:
 
 - `controlId`: `str` *(required)*
 
-Returns
-[GetControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getcontrolresponsetypedef).
+Returns [GetControlResponseTypeDef](./type_defs.md#getcontrolresponsetypedef).
 
 ### get_delegations
 
@@ -521,7 +516,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetDelegationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getdelegationsresponsetypedef).
+[GetDelegationsResponseTypeDef](./type_defs.md#getdelegationsresponsetypedef).
 
 ### get_evidence
 
@@ -538,7 +533,7 @@ Arguments:
 - `evidenceId`: `str` *(required)*
 
 Returns
-[GetEvidenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidenceresponsetypedef).
+[GetEvidenceResponseTypeDef](./type_defs.md#getevidenceresponsetypedef).
 
 ### get_evidence_by_evidence_folder
 
@@ -557,7 +552,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEvidenceByEvidenceFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencebyevidencefolderresponsetypedef).
+[GetEvidenceByEvidenceFolderResponseTypeDef](./type_defs.md#getevidencebyevidencefolderresponsetypedef).
 
 ### get_evidence_folder
 
@@ -573,7 +568,7 @@ Arguments:
 - `evidenceFolderId`: `str` *(required)*
 
 Returns
-[GetEvidenceFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencefolderresponsetypedef).
+[GetEvidenceFolderResponseTypeDef](./type_defs.md#getevidencefolderresponsetypedef).
 
 ### get_evidence_folders_by_assessment
 
@@ -590,7 +585,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEvidenceFoldersByAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencefoldersbyassessmentresponsetypedef).
+[GetEvidenceFoldersByAssessmentResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentresponsetypedef).
 
 ### get_evidence_folders_by_assessment_control
 
@@ -610,7 +605,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEvidenceFoldersByAssessmentControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getevidencefoldersbyassessmentcontrolresponsetypedef).
+[GetEvidenceFoldersByAssessmentControlResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponsetypedef).
 
 ### get_organization_admin_account
 
@@ -621,7 +616,7 @@ Boto3 documentation:
 [AuditManager.Client.get_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
 
 Returns
-[GetOrganizationAdminAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getorganizationadminaccountresponsetypedef).
+[GetOrganizationAdminAccountResponseTypeDef](./type_defs.md#getorganizationadminaccountresponsetypedef).
 
 ### get_services_in_scope
 
@@ -632,7 +627,7 @@ Boto3 documentation:
 [AuditManager.Client.get_services_in_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
 
 Returns
-[GetServicesInScopeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getservicesinscoperesponsetypedef).
+[GetServicesInScopeResponseTypeDef](./type_defs.md#getservicesinscoperesponsetypedef).
 
 ### get_settings
 
@@ -643,12 +638,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `attribute`:
-  [SettingAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#settingattribute)
-  *(required)*
+- `attribute`: [SettingAttribute](./literals.md#settingattribute) *(required)*
 
 Returns
-[GetSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#getsettingsresponsetypedef).
+[GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef).
 
 ### list_assessment_frameworks
 
@@ -660,14 +653,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `frameworkType`:
-  [FrameworkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#frameworktype)
-  *(required)*
+- `frameworkType`: [FrameworkType](./literals.md#frameworktype) *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentFrameworksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listassessmentframeworksresponsetypedef).
+[ListAssessmentFrameworksResponseTypeDef](./type_defs.md#listassessmentframeworksresponsetypedef).
 
 ### list_assessment_reports
 
@@ -683,7 +674,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listassessmentreportsresponsetypedef).
+[ListAssessmentReportsResponseTypeDef](./type_defs.md#listassessmentreportsresponsetypedef).
 
 ### list_assessments
 
@@ -698,7 +689,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listassessmentsresponsetypedef).
+[ListAssessmentsResponseTypeDef](./type_defs.md#listassessmentsresponsetypedef).
 
 ### list_controls
 
@@ -709,14 +700,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `controlType`:
-  [ControlType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controltype)
-  *(required)*
+- `controlType`: [ControlType](./literals.md#controltype) *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListControlsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listcontrolsresponsetypedef).
+[ListControlsResponseTypeDef](./type_defs.md#listcontrolsresponsetypedef).
 
 ### list_keywords_for_data_source
 
@@ -728,14 +717,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `source`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcetype)
-  *(required)*
+- `source`: [SourceType](./literals.md#sourcetype) *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListKeywordsForDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listkeywordsfordatasourceresponsetypedef).
+[ListKeywordsForDataSourceResponseTypeDef](./type_defs.md#listkeywordsfordatasourceresponsetypedef).
 
 ### list_notifications
 
@@ -750,7 +737,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListNotificationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listnotificationsresponsetypedef).
+[ListNotificationsResponseTypeDef](./type_defs.md#listnotificationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -765,7 +752,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### register_account
 
@@ -780,7 +767,7 @@ Arguments:
 - `delegatedAdminAccount`: `str`
 
 Returns
-[RegisterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#registeraccountresponsetypedef).
+[RegisterAccountResponseTypeDef](./type_defs.md#registeraccountresponsetypedef).
 
 ### register_organization_admin_account
 
@@ -795,7 +782,7 @@ Arguments:
 - `adminAccountId`: `str` *(required)*
 
 Returns
-[RegisterOrganizationAdminAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#registerorganizationadminaccountresponsetypedef).
+[RegisterOrganizationAdminAccountResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponsetypedef).
 
 ### tag_resource
 
@@ -835,18 +822,15 @@ Boto3 documentation:
 Arguments:
 
 - `assessmentId`: `str` *(required)*
-- `scope`:
-  [ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#scopetypedef)
-  *(required)*
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
 - `assessmentName`: `str`
 - `assessmentDescription`: `str`
 - `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
-- `roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
+- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 Returns
-[UpdateAssessmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentresponsetypedef).
+[UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef).
 
 ### update_assessment_control
 
@@ -861,12 +845,11 @@ Arguments:
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
 - `controlId`: `str` *(required)*
-- `controlStatus`:
-  [ControlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlstatus)
+- `controlStatus`: [ControlStatus](./literals.md#controlstatus)
 - `commentBody`: `str`
 
 Returns
-[UpdateAssessmentControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentcontrolresponsetypedef).
+[UpdateAssessmentControlResponseTypeDef](./type_defs.md#updateassessmentcontrolresponsetypedef).
 
 ### update_assessment_control_set_status
 
@@ -880,13 +863,11 @@ Arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
-- `status`:
-  [ControlSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlsetstatus)
-  *(required)*
+- `status`: [ControlSetStatus](./literals.md#controlsetstatus) *(required)*
 - `comment`: `str` *(required)*
 
 Returns
-[UpdateAssessmentControlSetStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentcontrolsetstatusresponsetypedef).
+[UpdateAssessmentControlSetStatusResponseTypeDef](./type_defs.md#updateassessmentcontrolsetstatusresponsetypedef).
 
 ### update_assessment_framework
 
@@ -901,13 +882,13 @@ Arguments:
 - `frameworkId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `controlSets`:
-  `List`\[[UpdateAssessmentFrameworkControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentframeworkcontrolsettypedef)\]
+  `List`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
   *(required)*
 - `description`: `str`
 - `complianceType`: `str`
 
 Returns
-[UpdateAssessmentFrameworkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentframeworkresponsetypedef).
+[UpdateAssessmentFrameworkResponseTypeDef](./type_defs.md#updateassessmentframeworkresponsetypedef).
 
 ### update_assessment_status
 
@@ -920,12 +901,10 @@ Boto3 documentation:
 Arguments:
 
 - `assessmentId`: `str` *(required)*
-- `status`:
-  [AssessmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#assessmentstatus)
-  *(required)*
+- `status`: [AssessmentStatus](./literals.md#assessmentstatus) *(required)*
 
 Returns
-[UpdateAssessmentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updateassessmentstatusresponsetypedef).
+[UpdateAssessmentStatusResponseTypeDef](./type_defs.md#updateassessmentstatusresponsetypedef).
 
 ### update_control
 
@@ -939,7 +918,7 @@ Arguments:
 - `controlId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `controlMappingSources`:
-  `List`\[[ControlMappingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controlmappingsourcetypedef)\]
+  `List`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
   *(required)*
 - `description`: `str`
 - `testingInformation`: `str`
@@ -947,7 +926,7 @@ Arguments:
 - `actionPlanInstructions`: `str`
 
 Returns
-[UpdateControlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updatecontrolresponsetypedef).
+[UpdateControlResponseTypeDef](./type_defs.md#updatecontrolresponsetypedef).
 
 ### update_settings
 
@@ -960,13 +939,12 @@ Arguments:
 
 - `snsTopic`: `str`
 - `defaultAssessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
+- `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
 Returns
-[UpdateSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#updatesettingsresponsetypedef).
+[UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef).
 
 ### validate_assessment_report_integrity
 
@@ -981,4 +959,4 @@ Arguments:
 - `s3RelativePath`: `str` *(required)*
 
 Returns
-[ValidateAssessmentReportIntegrityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#validateassessmentreportintegrityresponsetypedef).
+[ValidateAssessmentReportIntegrityResponseTypeDef](./type_defs.md#validateassessmentreportintegrityresponsetypedef).

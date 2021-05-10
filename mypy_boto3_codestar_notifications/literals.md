@@ -1,6 +1,6 @@
 # Literals for boto3 CodeStarNotifications module
 
-> [Index](../README.md) > [CodeStarNotifications](./README.md) > Literals
+> [Index](..) > [CodeStarNotifications](.) > Literals
 
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)

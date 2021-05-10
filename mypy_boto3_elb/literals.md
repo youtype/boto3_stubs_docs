@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticLoadBalancing module
 
-> [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Literals
+> [Index](..) > [ElasticLoadBalancing](.) > Literals
 
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)

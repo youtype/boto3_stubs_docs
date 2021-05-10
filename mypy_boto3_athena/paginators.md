@@ -1,6 +1,6 @@
 # Paginators for boto3 Athena module
 
-> [Index](../README.md) > [Athena](./README.md) > Paginators
+> [Index](..) > [Athena](.) > Paginators
 
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
@@ -37,10 +37,10 @@ Arguments for `GetQueryResultsPaginator.paginate` method:
 
 - `QueryExecutionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetQueryResultsPaginator.paginate` returns
-`Iterator`\[[GetQueryResultsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#getqueryresultsoutputtypedef)\].
+`Iterator`\[[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef)\].
 
 ## ListDataCatalogsPaginator
 
@@ -62,10 +62,10 @@ Boto3 documentation:
 Arguments for `ListDataCatalogsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataCatalogsPaginator.paginate` returns
-`Iterator`\[[ListDataCatalogsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listdatacatalogsoutputtypedef)\].
+`Iterator`\[[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef)\].
 
 ## ListDatabasesPaginator
 
@@ -87,10 +87,10 @@ Arguments for `ListDatabasesPaginator.paginate` method:
 
 - `CatalogName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatabasesPaginator.paginate` returns
-`Iterator`\[[ListDatabasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listdatabasesoutputtypedef)\].
+`Iterator`\[[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef)\].
 
 ## ListNamedQueriesPaginator
 
@@ -113,10 +113,10 @@ Arguments for `ListNamedQueriesPaginator.paginate` method:
 
 - `WorkGroup`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNamedQueriesPaginator.paginate` returns
-`Iterator`\[[ListNamedQueriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listnamedqueriesoutputtypedef)\].
+`Iterator`\[[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef)\].
 
 ## ListQueryExecutionsPaginator
 
@@ -139,10 +139,10 @@ Arguments for `ListQueryExecutionsPaginator.paginate` method:
 
 - `WorkGroup`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueryExecutionsPaginator.paginate` returns
-`Iterator`\[[ListQueryExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listqueryexecutionsoutputtypedef)\].
+`Iterator`\[[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef)\].
 
 ## ListTableMetadataPaginator
 
@@ -167,10 +167,10 @@ Arguments for `ListTableMetadataPaginator.paginate` method:
 - `DatabaseName`: `str` *(required)*
 - `Expression`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTableMetadataPaginator.paginate` returns
-`Iterator`\[[ListTableMetadataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listtablemetadataoutputtypedef)\].
+`Iterator`\[[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -193,7 +193,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `ResourceARN`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].

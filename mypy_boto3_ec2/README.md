@@ -1,6 +1,6 @@
 # Type annotations for boto3 EC2 module
 
-> [Index](../README.md) > EC2
+> [Index](..) > EC2
 
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
@@ -498,7 +498,7 @@ EC2Client [exceptions](./client.md#exceptions)
 ## EC2ServiceResource
 
 Type annotations for `boto3.resource("ec2")` as
-[EC2ServiceResource](./service_resource.md)
+[EC2ServiceResource](./service_resource.md#ec2serviceresource)
 
 Can be used directly:
 
@@ -516,23 +516,23 @@ Can be used directly:
 from mypy_boto3_ec2.service_resource import ServiceResourceClassicAddressesCollection, ...
 ```
 
-- [ServiceResourceClassicAddressesCollection](./service_resource.md#ec2serviceresource.classic-addresses)
-- [ServiceResourceDhcpOptionsSetsCollection](./service_resource.md#ec2serviceresource.dhcp-options-sets)
-- [ServiceResourceImagesCollection](./service_resource.md#ec2serviceresource.images)
-- [ServiceResourceInstancesCollection](./service_resource.md#ec2serviceresource.instances)
-- [ServiceResourceInternetGatewaysCollection](./service_resource.md#ec2serviceresource.internet-gateways)
-- [ServiceResourceKeyPairsCollection](./service_resource.md#ec2serviceresource.key-pairs)
-- [ServiceResourceNetworkAclsCollection](./service_resource.md#ec2serviceresource.network-acls)
-- [ServiceResourceNetworkInterfacesCollection](./service_resource.md#ec2serviceresource.network-interfaces)
-- [ServiceResourcePlacementGroupsCollection](./service_resource.md#ec2serviceresource.placement-groups)
-- [ServiceResourceRouteTablesCollection](./service_resource.md#ec2serviceresource.route-tables)
-- [ServiceResourceSecurityGroupsCollection](./service_resource.md#ec2serviceresource.security-groups)
-- [ServiceResourceSnapshotsCollection](./service_resource.md#ec2serviceresource.snapshots)
-- [ServiceResourceSubnetsCollection](./service_resource.md#ec2serviceresource.subnets)
-- [ServiceResourceVolumesCollection](./service_resource.md#ec2serviceresource.volumes)
-- [ServiceResourceVpcAddressesCollection](./service_resource.md#ec2serviceresource.vpc-addresses)
-- [ServiceResourceVpcPeeringConnectionsCollection](./service_resource.md#ec2serviceresource.vpc-peering-connections)
-- [ServiceResourceVpcsCollection](./service_resource.md#ec2serviceresource.vpcs)
+- [ServiceResourceClassicAddressesCollection](./service_resource.md#ec2serviceresourceclassic-addresses)
+- [ServiceResourceDhcpOptionsSetsCollection](./service_resource.md#ec2serviceresourcedhcp-options-sets)
+- [ServiceResourceImagesCollection](./service_resource.md#ec2serviceresourceimages)
+- [ServiceResourceInstancesCollection](./service_resource.md#ec2serviceresourceinstances)
+- [ServiceResourceInternetGatewaysCollection](./service_resource.md#ec2serviceresourceinternet-gateways)
+- [ServiceResourceKeyPairsCollection](./service_resource.md#ec2serviceresourcekey-pairs)
+- [ServiceResourceNetworkAclsCollection](./service_resource.md#ec2serviceresourcenetwork-acls)
+- [ServiceResourceNetworkInterfacesCollection](./service_resource.md#ec2serviceresourcenetwork-interfaces)
+- [ServiceResourcePlacementGroupsCollection](./service_resource.md#ec2serviceresourceplacement-groups)
+- [ServiceResourceRouteTablesCollection](./service_resource.md#ec2serviceresourceroute-tables)
+- [ServiceResourceSecurityGroupsCollection](./service_resource.md#ec2serviceresourcesecurity-groups)
+- [ServiceResourceSnapshotsCollection](./service_resource.md#ec2serviceresourcesnapshots)
+- [ServiceResourceSubnetsCollection](./service_resource.md#ec2serviceresourcesubnets)
+- [ServiceResourceVolumesCollection](./service_resource.md#ec2serviceresourcevolumes)
+- [ServiceResourceVpcAddressesCollection](./service_resource.md#ec2serviceresourcevpc-addresses)
+- [ServiceResourceVpcPeeringConnectionsCollection](./service_resource.md#ec2serviceresourcevpc-peering-connections)
+- [ServiceResourceVpcsCollection](./service_resource.md#ec2serviceresourcevpcs)
 
 ### Resources
 

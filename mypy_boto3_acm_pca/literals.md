@@ -1,6 +1,6 @@
 # Literals for boto3 ACMPCA module
 
-> [Index](../README.md) > [ACMPCA](./README.md) > Literals
+> [Index](..) > [ACMPCA](.) > Literals
 
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)

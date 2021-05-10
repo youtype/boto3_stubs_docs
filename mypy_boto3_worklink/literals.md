@@ -1,6 +1,6 @@
 # Literals for boto3 WorkLink module
 
-> [Index](../README.md) > [WorkLink](./README.md) > Literals
+> [Index](..) > [WorkLink](.) > Literals
 
 Auto-generated documentation for
 [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)

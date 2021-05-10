@@ -1,6 +1,6 @@
 # Literals for boto3 LexRuntimeV2 module
 
-> [Index](../README.md) > [LexRuntimeV2](./README.md) > Literals
+> [Index](..) > [LexRuntimeV2](.) > Literals
 
 Auto-generated documentation for
 [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)

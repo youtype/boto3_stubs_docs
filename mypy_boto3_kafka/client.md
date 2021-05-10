@@ -1,6 +1,6 @@
 # KafkaClient for boto3 Kafka module
 
-> [Index](../README.md) > [Kafka](./README.md) > KafkaClient
+> [Index](..) > [Kafka](.) > KafkaClient
 
 Auto-generated documentation for
 [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
@@ -101,7 +101,7 @@ Arguments:
 - `SecretArnList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchAssociateScramSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#batchassociatescramsecretresponsetypedef).
+[BatchAssociateScramSecretResponseTypeDef](./type_defs.md#batchassociatescramsecretresponsetypedef).
 
 ### batch_disassociate_scram_secret
 
@@ -117,7 +117,7 @@ Arguments:
 - `SecretArnList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisassociateScramSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#batchdisassociatescramsecretresponsetypedef).
+[BatchDisassociateScramSecretResponseTypeDef](./type_defs.md#batchdisassociatescramsecretresponsetypedef).
 
 ### can_paginate
 
@@ -142,27 +142,24 @@ Boto3 documentation:
 Arguments:
 
 - `BrokerNodeGroupInfo`:
-  [BrokerNodeGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokernodegroupinfotypedef)
+  [BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef)
   *(required)*
 - `ClusterName`: `str` *(required)*
 - `KafkaVersion`: `str` *(required)*
 - `NumberOfBrokerNodes`: `int` *(required)*
 - `ClientAuthentication`:
-  [ClientAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#clientauthenticationtypedef)
+  [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
 - `ConfigurationInfo`:
-  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
-- `EncryptionInfo`:
-  [EncryptionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#encryptioninfotypedef)
-- `EnhancedMonitoring`:
-  [EnhancedMonitoring](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#enhancedmonitoring)
+  [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
+- `EncryptionInfo`: [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+- `EnhancedMonitoring`: [EnhancedMonitoring](./literals.md#enhancedmonitoring)
 - `OpenMonitoring`:
-  [OpenMonitoringInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#openmonitoringinfotypedef)
-- `LoggingInfo`:
-  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#logginginfotypedef)
+  [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
+- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#createclusterresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_configuration
 
@@ -179,7 +176,7 @@ Arguments:
 - `KafkaVersions`: `List`\[`str`\]
 
 Returns
-[CreateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#createconfigurationresponsetypedef).
+[CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
 ### delete_cluster
 
@@ -194,7 +191,7 @@ Arguments:
 - `CurrentVersion`: `str`
 
 Returns
-[DeleteClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#deleteclusterresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_configuration
 
@@ -208,7 +205,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[DeleteConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#deleteconfigurationresponsetypedef).
+[DeleteConfigurationResponseTypeDef](./type_defs.md#deleteconfigurationresponsetypedef).
 
 ### describe_cluster
 
@@ -222,7 +219,7 @@ Arguments:
 - `ClusterArn`: `str` *(required)*
 
 Returns
-[DescribeClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeclusterresponsetypedef).
+[DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
 ### describe_cluster_operation
 
@@ -236,7 +233,7 @@ Arguments:
 - `ClusterOperationArn`: `str` *(required)*
 
 Returns
-[DescribeClusterOperationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeclusteroperationresponsetypedef).
+[DescribeClusterOperationResponseTypeDef](./type_defs.md#describeclusteroperationresponsetypedef).
 
 ### describe_configuration
 
@@ -250,7 +247,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[DescribeConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeconfigurationresponsetypedef).
+[DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
 
 ### describe_configuration_revision
 
@@ -266,7 +263,7 @@ Arguments:
 - `Revision`: `int` *(required)*
 
 Returns
-[DescribeConfigurationRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#describeconfigurationrevisionresponsetypedef).
+[DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -296,7 +293,7 @@ Arguments:
 - `ClusterArn`: `str` *(required)*
 
 Returns
-[GetBootstrapBrokersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#getbootstrapbrokersresponsetypedef).
+[GetBootstrapBrokersResponseTypeDef](./type_defs.md#getbootstrapbrokersresponsetypedef).
 
 ### get_compatible_kafka_versions
 
@@ -311,7 +308,7 @@ Arguments:
 - `ClusterArn`: `str`
 
 Returns
-[GetCompatibleKafkaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#getcompatiblekafkaversionsresponsetypedef).
+[GetCompatibleKafkaVersionsResponseTypeDef](./type_defs.md#getcompatiblekafkaversionsresponsetypedef).
 
 ### list_cluster_operations
 
@@ -327,7 +324,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListClusterOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listclusteroperationsresponsetypedef).
+[ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef).
 
 ### list_clusters
 
@@ -343,7 +340,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listclustersresponsetypedef).
+[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
 ### list_configuration_revisions
 
@@ -360,7 +357,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listconfigurationrevisionsresponsetypedef).
+[ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
 ### list_configurations
 
@@ -375,7 +372,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listconfigurationsresponsetypedef).
+[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
 ### list_kafka_versions
 
@@ -390,7 +387,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListKafkaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listkafkaversionsresponsetypedef).
+[ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef).
 
 ### list_nodes
 
@@ -405,8 +402,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListNodesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listnodesresponsetypedef).
+Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
 
 ### list_scram_secrets
 
@@ -422,7 +418,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListScramSecretsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listscramsecretsresponsetypedef).
+[ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -436,7 +432,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reboot_broker
 
@@ -451,7 +447,7 @@ Arguments:
 - `ClusterArn`: `str` *(required)*
 
 Returns
-[RebootBrokerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#rebootbrokerresponsetypedef).
+[RebootBrokerResponseTypeDef](./type_defs.md#rebootbrokerresponsetypedef).
 
 ### tag_resource
 
@@ -491,7 +487,7 @@ Arguments:
 - `TargetNumberOfBrokerNodes`: `int` *(required)*
 
 Returns
-[UpdateBrokerCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatebrokercountresponsetypedef).
+[UpdateBrokerCountResponseTypeDef](./type_defs.md#updatebrokercountresponsetypedef).
 
 ### update_broker_storage
 
@@ -505,11 +501,11 @@ Arguments:
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
 - `TargetBrokerEBSVolumeInfo`:
-  `List`\[[BrokerEBSVolumeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#brokerebsvolumeinfotypedef)\]
+  `List`\[[BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef)\]
   *(required)*
 
 Returns
-[UpdateBrokerStorageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatebrokerstorageresponsetypedef).
+[UpdateBrokerStorageResponseTypeDef](./type_defs.md#updatebrokerstorageresponsetypedef).
 
 ### update_broker_type
 
@@ -525,7 +521,7 @@ Arguments:
 - `TargetInstanceType`: `str` *(required)*
 
 Returns
-[UpdateBrokerTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatebrokertyperesponsetypedef).
+[UpdateBrokerTypeResponseTypeDef](./type_defs.md#updatebrokertyperesponsetypedef).
 
 ### update_cluster_configuration
 
@@ -539,12 +535,12 @@ Arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `ConfigurationInfo`:
-  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
+  [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
   *(required)*
 - `CurrentVersion`: `str` *(required)*
 
 Returns
-[UpdateClusterConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updateclusterconfigurationresponsetypedef).
+[UpdateClusterConfigurationResponseTypeDef](./type_defs.md#updateclusterconfigurationresponsetypedef).
 
 ### update_cluster_kafka_version
 
@@ -560,10 +556,10 @@ Arguments:
 - `CurrentVersion`: `str` *(required)*
 - `TargetKafkaVersion`: `str` *(required)*
 - `ConfigurationInfo`:
-  [ConfigurationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#configurationinfotypedef)
+  [ConfigurationInfoTypeDef](./type_defs.md#configurationinfotypedef)
 
 Returns
-[UpdateClusterKafkaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updateclusterkafkaversionresponsetypedef).
+[UpdateClusterKafkaVersionResponseTypeDef](./type_defs.md#updateclusterkafkaversionresponsetypedef).
 
 ### update_configuration
 
@@ -579,7 +575,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[UpdateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updateconfigurationresponsetypedef).
+[UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
 
 ### update_monitoring
 
@@ -592,15 +588,13 @@ Arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
-- `EnhancedMonitoring`:
-  [EnhancedMonitoring](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/literals.html#enhancedmonitoring)
+- `EnhancedMonitoring`: [EnhancedMonitoring](./literals.md#enhancedmonitoring)
 - `OpenMonitoring`:
-  [OpenMonitoringInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#openmonitoringinfotypedef)
-- `LoggingInfo`:
-  [LoggingInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#logginginfotypedef)
+  [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
+- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 
 Returns
-[UpdateMonitoringResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#updatemonitoringresponsetypedef).
+[UpdateMonitoringResponseTypeDef](./type_defs.md#updatemonitoringresponsetypedef).
 
 ### get_paginator
 

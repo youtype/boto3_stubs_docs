@@ -1,6 +1,6 @@
 # Waiters for boto3 CloudFormation module
 
-> [Index](../README.md) > [CloudFormation](./README.md) > Waiters
+> [Index](..) > [CloudFormation](.) > Waiters
 
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
@@ -39,8 +39,7 @@ Arguments for `ChangeSetCreateCompleteWaiter.wait` method:
 - `ChangeSetName`: `str` *(required)*
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StackCreateCompleteWaiter
 
@@ -63,8 +62,7 @@ Arguments for `StackCreateCompleteWaiter.wait` method:
 
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StackDeleteCompleteWaiter
 
@@ -87,8 +85,7 @@ Arguments for `StackDeleteCompleteWaiter.wait` method:
 
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StackExistsWaiter
 
@@ -111,8 +108,7 @@ Arguments for `StackExistsWaiter.wait` method:
 
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StackImportCompleteWaiter
 
@@ -135,8 +131,7 @@ Arguments for `StackImportCompleteWaiter.wait` method:
 
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StackRollbackCompleteWaiter
 
@@ -159,8 +154,7 @@ Arguments for `StackRollbackCompleteWaiter.wait` method:
 
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StackUpdateCompleteWaiter
 
@@ -183,8 +177,7 @@ Arguments for `StackUpdateCompleteWaiter.wait` method:
 
 - `StackName`: `str`
 - `NextToken`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TypeRegistrationCompleteWaiter
 
@@ -206,5 +199,4 @@ Boto3 documentation:
 Arguments for `TypeRegistrationCompleteWaiter.wait` method:
 
 - `RegistrationToken`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudformation/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

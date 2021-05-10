@@ -1,6 +1,6 @@
 # Type annotations for boto3 AppStream module
 
-> [Index](../README.md) > AppStream
+> [Index](..) > AppStream
 
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)

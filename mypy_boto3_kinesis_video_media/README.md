@@ -1,6 +1,6 @@
 # Type annotations for boto3 KinesisVideoMedia module
 
-> [Index](../README.md) > KinesisVideoMedia
+> [Index](..) > KinesisVideoMedia
 
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
@@ -71,5 +71,5 @@ from mypy_boto3_kinesis_video_media.type_defs import GetMediaOutputTypeDef, ...
 ```
 
 - [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartSelectorTypeDef](./type_defs.md#startselectortypedef)

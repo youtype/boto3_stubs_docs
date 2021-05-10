@@ -1,6 +1,6 @@
 # Literals for boto3 IoTFleetHub module
 
-> [Index](../README.md) > [IoTFleetHub](./README.md) > Literals
+> [Index](..) > [IoTFleetHub](.) > Literals
 
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)

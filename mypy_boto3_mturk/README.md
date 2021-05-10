@@ -1,6 +1,6 @@
 # Type annotations for boto3 MTurk module
 
-> [Index](../README.md) > MTurk
+> [Index](..) > MTurk
 
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)

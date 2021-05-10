@@ -1,6 +1,6 @@
 # Paginators for boto3 SQS module
 
-> [Index](../README.md) > [SQS](./README.md) > Paginators
+> [Index](..) > [SQS](.) > Paginators
 
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
@@ -32,10 +32,10 @@ Arguments for `ListDeadLetterSourceQueuesPaginator.paginate` method:
 
 - `QueueUrl`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeadLetterSourceQueuesPaginator.paginate` returns
-`Iterator`\[[ListDeadLetterSourceQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listdeadlettersourcequeuesresulttypedef)\].
+`Iterator`\[[ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef)\].
 
 ## ListQueuesPaginator
 
@@ -57,7 +57,7 @@ Arguments for `ListQueuesPaginator.paginate` method:
 
 - `QueueNamePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueuesPaginator.paginate` returns
-`Iterator`\[[ListQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listqueuesresulttypedef)\].
+`Iterator`\[[ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef)\].

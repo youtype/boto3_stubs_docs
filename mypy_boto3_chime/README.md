@@ -1,6 +1,6 @@
 # Type annotations for boto3 Chime module
 
-> [Index](../README.md) > Chime
+> [Index](..) > Chime
 
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)

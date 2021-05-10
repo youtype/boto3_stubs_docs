@@ -1,6 +1,6 @@
 # Literals for boto3 EMR module
 
-> [Index](../README.md) > [EMR](./README.md) > Literals
+> [Index](..) > [EMR](.) > Literals
 
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)

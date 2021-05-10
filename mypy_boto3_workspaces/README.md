@@ -1,6 +1,6 @@
 # Type annotations for boto3 WorkSpaces module
 
-> [Index](../README.md) > WorkSpaces
+> [Index](..) > WorkSpaces
 
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)

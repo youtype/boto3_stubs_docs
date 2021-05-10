@@ -1,6 +1,6 @@
 # Type annotations for boto3 ElasticsearchService module
 
-> [Index](../README.md) > ElasticsearchService
+> [Index](..) > ElasticsearchService
 
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
@@ -248,7 +248,7 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionRes
 - [RejectInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponsetypedef)
 - [ReservedElasticsearchInstanceOfferingTypeDef](./type_defs.md#reservedelasticsearchinstanceofferingtypedef)
 - [ReservedElasticsearchInstanceTypeDef](./type_defs.md#reservedelasticsearchinstancetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SAMLIdpTypeDef](./type_defs.md#samlidptypedef)
 - [SAMLOptionsInputTypeDef](./type_defs.md#samloptionsinputtypedef)
 - [SAMLOptionsOutputTypeDef](./type_defs.md#samloptionsoutputtypedef)

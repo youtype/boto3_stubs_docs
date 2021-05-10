@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 LakeFormation module
 
-> [Index](../README.md) > [LakeFormation](./README.md) > Structures
+> [Index](..) > [LakeFormation](.) > Typed dictionaries
 
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
@@ -55,8 +55,7 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceResponseTypeDe
 
 Optional fields:
 
-- `Failures`:
-  `List`\[[LFTagErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagerrortypedef)\]
+- `Failures`: `List`\[[LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef)\]
 
 ## BatchGrantPermissionsResponseTypeDef
 
@@ -67,7 +66,7 @@ from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsResponseType
 Optional fields:
 
 - `Failures`:
-  `List`\[[BatchPermissionsFailureEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsfailureentrytypedef)\]
+  `List`\[[BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef)\]
 
 ## BatchPermissionsFailureEntryTypeDef
 
@@ -78,9 +77,8 @@ from mypy_boto3_lakeformation.type_defs import BatchPermissionsFailureEntryTypeD
 Optional fields:
 
 - `RequestEntry`:
-  [BatchPermissionsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsrequestentrytypedef)
-- `Error`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#errordetailtypedef)
+  [BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)
+- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## BatchPermissionsRequestEntryTypeDef
 
@@ -95,13 +93,10 @@ Required fields:
 Optional fields:
 
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-- `Permissions`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
-- `PermissionsWithGrantOption`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
+- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
+- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
 
 ## BatchRevokePermissionsResponseTypeDef
 
@@ -112,7 +107,7 @@ from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsResponseTyp
 Optional fields:
 
 - `Failures`:
-  `List`\[[BatchPermissionsFailureEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsfailureentrytypedef)\]
+  `List`\[[BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef)\]
 
 ## ColumnLFTagTypeDef
 
@@ -123,8 +118,7 @@ from mypy_boto3_lakeformation.type_defs import ColumnLFTagTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `LFTags`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 
 ## ColumnWildcardTypeDef
 
@@ -155,11 +149,11 @@ from mypy_boto3_lakeformation.type_defs import DataLakeSettingsTypeDef
 Optional fields:
 
 - `DataLakeAdmins`:
-  `List`\[[DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)\]
+  `List`\[[DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)\]
 - `CreateDatabaseDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#principalpermissionstypedef)\]
+  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
 - `CreateTableDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#principalpermissionstypedef)\]
+  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
 - `TrustedResourceOwners`: `List`\[`str`\]
 
 ## DataLocationResourceTypeDef
@@ -198,8 +192,7 @@ from mypy_boto3_lakeformation.type_defs import DescribeResourceResponseTypeDef
 
 Optional fields:
 
-- `ResourceInfo`:
-  [ResourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourceinfotypedef)
+- `ResourceInfo`: [ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)
 
 ## DetailsMapTypeDef
 
@@ -230,10 +223,8 @@ from mypy_boto3_lakeformation.type_defs import FilterConditionTypeDef
 
 Optional fields:
 
-- `Field`:
-  [FieldNameString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#fieldnamestring)
-- `ComparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#comparisonoperator)
+- `Field`: [FieldNameString](./literals.md#fieldnamestring)
+- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
 - `StringValueList`: `List`\[`str`\]
 
 ## GetDataLakeSettingsResponseTypeDef
@@ -245,7 +236,7 @@ from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsResponseTypeDe
 Optional fields:
 
 - `DataLakeSettings`:
-  [DataLakeSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakesettingstypedef)
+  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef)
 
 ## GetEffectivePermissionsForPathResponseTypeDef
 
@@ -256,7 +247,7 @@ from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathRes
 Optional fields:
 
 - `Permissions`:
-  `List`\[[PrincipalResourcePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#principalresourcepermissionstypedef)\]
+  `List`\[[PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef)\]
 - `NextToken`: `str`
 
 ## GetLFTagResponseTypeDef
@@ -280,11 +271,10 @@ from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsResponseTypeDef
 Optional fields:
 
 - `LFTagOnDatabase`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
-- `LFTagsOnTable`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTagsOnTable`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 - `LFTagsOnColumns`:
-  `List`\[[ColumnLFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#columnlftagtypedef)\]
+  `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
 
 ## LFTagErrorTypeDef
 
@@ -294,10 +284,8 @@ from mypy_boto3_lakeformation.type_defs import LFTagErrorTypeDef
 
 Optional fields:
 
-- `LFTag`:
-  [LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)
-- `Error`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#errordetailtypedef)
+- `LFTag`: [LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)
+- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## LFTagKeyResourceTypeDef
 
@@ -337,10 +325,8 @@ from mypy_boto3_lakeformation.type_defs import LFTagPolicyResourceTypeDef
 
 Required fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#resourcetype)
-- `Expression`:
-  `List`\[[LFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagtypedef)\]
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
 
 Optional fields:
 
@@ -365,8 +351,7 @@ from mypy_boto3_lakeformation.type_defs import ListLFTagsResponseTypeDef
 
 Optional fields:
 
-- `LFTags`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 - `NextToken`: `str`
 
 ## ListPermissionsResponseTypeDef
@@ -378,7 +363,7 @@ from mypy_boto3_lakeformation.type_defs import ListPermissionsResponseTypeDef
 Optional fields:
 
 - `PrincipalResourcePermissions`:
-  `List`\[[PrincipalResourcePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#principalresourcepermissionstypedef)\]
+  `List`\[[PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef)\]
 - `NextToken`: `str`
 
 ## ListResourcesResponseTypeDef
@@ -390,7 +375,7 @@ from mypy_boto3_lakeformation.type_defs import ListResourcesResponseTypeDef
 Optional fields:
 
 - `ResourceInfoList`:
-  `List`\[[ResourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourceinfotypedef)\]
+  `List`\[[ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)\]
 - `NextToken`: `str`
 
 ## PrincipalPermissionsTypeDef
@@ -402,9 +387,8 @@ from mypy_boto3_lakeformation.type_defs import PrincipalPermissionsTypeDef
 Optional fields:
 
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
-- `Permissions`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
+- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
 
 ## PrincipalResourcePermissionsTypeDef
 
@@ -415,15 +399,11 @@ from mypy_boto3_lakeformation.type_defs import PrincipalResourcePermissionsTypeD
 Optional fields:
 
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-- `Permissions`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
-- `PermissionsWithGrantOption`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
-- `AdditionalDetails`:
-  [DetailsMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#detailsmaptypedef)
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
+- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
+- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
+- `AdditionalDetails`: [DetailsMapTypeDef](./type_defs.md#detailsmaptypedef)
 
 ## RemoveLFTagsFromResourceResponseTypeDef
 
@@ -433,8 +413,7 @@ from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceResponseT
 
 Optional fields:
 
-- `Failures`:
-  `List`\[[LFTagErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagerrortypedef)\]
+- `Failures`: `List`\[[LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef)\]
 
 ## ResourceInfoTypeDef
 
@@ -457,18 +436,15 @@ from mypy_boto3_lakeformation.type_defs import ResourceTypeDef
 Optional fields:
 
 - `Catalog`: `Dict`\[`str`, `Any`\]
-- `Database`:
-  [DatabaseResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#databaseresourcetypedef)
-- `Table`:
-  [TableResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#tableresourcetypedef)
+- `Database`: [DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef)
+- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
 - `TableWithColumns`:
-  [TableWithColumnsResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#tablewithcolumnsresourcetypedef)
+  [TableWithColumnsResourceTypeDef](./type_defs.md#tablewithcolumnsresourcetypedef)
 - `DataLocation`:
-  [DataLocationResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalocationresourcetypedef)
-- `LFTag`:
-  [LFTagKeyResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagkeyresourcetypedef)
+  [DataLocationResourceTypeDef](./type_defs.md#datalocationresourcetypedef)
+- `LFTag`: [LFTagKeyResourceTypeDef](./type_defs.md#lftagkeyresourcetypedef)
 - `LFTagPolicy`:
-  [LFTagPolicyResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpolicyresourcetypedef)
+  [LFTagPolicyResourceTypeDef](./type_defs.md#lftagpolicyresourcetypedef)
 
 ## SearchDatabasesByLFTagsResponseTypeDef
 
@@ -480,7 +456,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `DatabaseList`:
-  `List`\[[TaggedDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#taggeddatabasetypedef)\]
+  `List`\[[TaggedDatabaseTypeDef](./type_defs.md#taggeddatabasetypedef)\]
 
 ## SearchTablesByLFTagsResponseTypeDef
 
@@ -491,8 +467,7 @@ from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsResponseTypeD
 Optional fields:
 
 - `NextToken`: `str`
-- `TableList`:
-  `List`\[[TaggedTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#taggedtabletypedef)\]
+- `TableList`: `List`\[[TaggedTableTypeDef](./type_defs.md#taggedtabletypedef)\]
 
 ## TableResourceTypeDef
 
@@ -525,8 +500,7 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `ColumnNames`: `List`\[`str`\]
-- `ColumnWildcard`:
-  [ColumnWildcardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#columnwildcardtypedef)
+- `ColumnWildcard`: [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
 
 ## TaggedDatabaseTypeDef
 
@@ -536,10 +510,8 @@ from mypy_boto3_lakeformation.type_defs import TaggedDatabaseTypeDef
 
 Optional fields:
 
-- `Database`:
-  [DatabaseResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#databaseresourcetypedef)
-- `LFTags`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+- `Database`: [DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef)
+- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 
 ## TaggedTableTypeDef
 
@@ -549,11 +521,9 @@ from mypy_boto3_lakeformation.type_defs import TaggedTableTypeDef
 
 Optional fields:
 
-- `Table`:
-  [TableResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#tableresourcetypedef)
+- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
 - `LFTagOnDatabase`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
-- `LFTagsOnTable`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTagsOnTable`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 - `LFTagsOnColumns`:
-  `List`\[[ColumnLFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#columnlftagtypedef)\]
+  `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]

@@ -1,6 +1,6 @@
 # DataPipelineClient for boto3 DataPipeline module
 
-> [Index](../README.md) > [DataPipeline](./README.md) > DataPipelineClient
+> [Index](..) > [DataPipeline](.) > DataPipelineClient
 
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
@@ -84,7 +84,7 @@ Arguments:
 
 - `pipelineId`: `str` *(required)*
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
+  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `startTimestamp`: `datetime`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -99,9 +99,7 @@ Boto3 documentation:
 Arguments:
 
 - `pipelineId`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -130,11 +128,10 @@ Arguments:
 - `name`: `str` *(required)*
 - `uniqueId`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#createpipelineoutputtypedef).
+[CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
 
 ### deactivate_pipeline
 
@@ -176,7 +173,7 @@ Arguments:
 - `marker`: `str`
 
 Returns
-[DescribeObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#describeobjectsoutputtypedef).
+[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef).
 
 ### describe_pipelines
 
@@ -190,7 +187,7 @@ Arguments:
 - `pipelineIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribePipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#describepipelinesoutputtypedef).
+[DescribePipelinesOutputTypeDef](./type_defs.md#describepipelinesoutputtypedef).
 
 ### evaluate_expression
 
@@ -206,7 +203,7 @@ Arguments:
 - `expression`: `str` *(required)*
 
 Returns
-[EvaluateExpressionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#evaluateexpressionoutputtypedef).
+[EvaluateExpressionOutputTypeDef](./type_defs.md#evaluateexpressionoutputtypedef).
 
 ### generate_presigned_url
 
@@ -239,7 +236,7 @@ Arguments:
 - `version`: `str`
 
 Returns
-[GetPipelineDefinitionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#getpipelinedefinitionoutputtypedef).
+[GetPipelineDefinitionOutputTypeDef](./type_defs.md#getpipelinedefinitionoutputtypedef).
 
 ### list_pipelines
 
@@ -253,7 +250,7 @@ Arguments:
 - `marker`: `str`
 
 Returns
-[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#listpipelinesoutputtypedef).
+[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
 
 ### poll_for_task
 
@@ -267,10 +264,9 @@ Arguments:
 - `workerGroup`: `str` *(required)*
 - `hostname`: `str`
 - `instanceIdentity`:
-  [InstanceIdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#instanceidentitytypedef)
+  [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
-Returns
-[PollForTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pollfortaskoutputtypedef).
+Returns [PollForTaskOutputTypeDef](./type_defs.md#pollfortaskoutputtypedef).
 
 ### put_pipeline_definition
 
@@ -284,15 +280,15 @@ Arguments:
 
 - `pipelineId`: `str` *(required)*
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
   *(required)*
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parameterobjecttypedef)\]
+  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
+  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 Returns
-[PutPipelineDefinitionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#putpipelinedefinitionoutputtypedef).
+[PutPipelineDefinitionOutputTypeDef](./type_defs.md#putpipelinedefinitionoutputtypedef).
 
 ### query_objects
 
@@ -305,13 +301,11 @@ Arguments:
 
 - `pipelineId`: `str` *(required)*
 - `sphere`: `str` *(required)*
-- `query`:
-  [QueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#querytypedef)
+- `query`: [QueryTypeDef](./type_defs.md#querytypedef)
 - `marker`: `str`
 - `limit`: `int`
 
-Returns
-[QueryObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#queryobjectsoutputtypedef).
+Returns [QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef).
 
 ### remove_tags
 
@@ -338,11 +332,10 @@ Boto3 documentation:
 Arguments:
 
 - `taskId`: `str` *(required)*
-- `fields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#fieldtypedef)\]
+- `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 Returns
-[ReportTaskProgressOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#reporttaskprogressoutputtypedef).
+[ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef).
 
 ### report_task_runner_heartbeat
 
@@ -359,7 +352,7 @@ Arguments:
 - `hostname`: `str`
 
 Returns
-[ReportTaskRunnerHeartbeatOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#reporttaskrunnerheartbeatoutputtypedef).
+[ReportTaskRunnerHeartbeatOutputTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputtypedef).
 
 ### set_status
 
@@ -384,9 +377,7 @@ Boto3 documentation:
 Arguments:
 
 - `taskId`: `str` *(required)*
-- `taskStatus`:
-  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/literals.html#taskstatus)
-  *(required)*
+- `taskStatus`: [TaskStatus](./literals.md#taskstatus) *(required)*
 - `errorId`: `str`
 - `errorMessage`: `str`
 - `errorStackTrace`: `str`
@@ -405,15 +396,15 @@ Arguments:
 
 - `pipelineId`: `str` *(required)*
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
   *(required)*
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parameterobjecttypedef)\]
+  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
+  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
 Returns
-[ValidatePipelineDefinitionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#validatepipelinedefinitionoutputtypedef).
+[ValidatePipelineDefinitionOutputTypeDef](./type_defs.md#validatepipelinedefinitionoutputtypedef).
 
 ### get_paginator
 

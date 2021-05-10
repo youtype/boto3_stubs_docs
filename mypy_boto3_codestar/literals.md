@@ -1,6 +1,6 @@
 # Literals for boto3 CodeStar module
 
-> [Index](../README.md) > [CodeStar](./README.md) > Literals
+> [Index](..) > [CodeStar](.) > Literals
 
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)

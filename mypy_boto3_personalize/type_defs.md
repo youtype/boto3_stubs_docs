@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Personalize module
 
-> [Index](../README.md) > [Personalize](./README.md) > Structures
+> [Index](..) > [Personalize](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
@@ -90,7 +90,7 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RecipeSummaryTypeDef](#recipesummarytypedef)
   - [RecipeTypeDef](#recipetypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DataConfigTypeDef](#s3dataconfigtypedef)
   - [SolutionConfigTypeDef](#solutionconfigtypedef)
   - [SolutionSummaryTypeDef](#solutionsummarytypedef)
@@ -124,11 +124,10 @@ Optional fields:
 
 - `name`: `str`
 - `algorithmArn`: `str`
-- `algorithmImage`:
-  [AlgorithmImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#algorithmimagetypedef)
+- `algorithmImage`: [AlgorithmImageTypeDef](./type_defs.md#algorithmimagetypedef)
 - `defaultHyperParameters`: `Dict`\[`str`, `str`\]
 - `defaultHyperParameterRanges`:
-  [DefaultHyperParameterRangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#defaulthyperparameterrangestypedef)
+  [DefaultHyperParameterRangesTypeDef](./type_defs.md#defaulthyperparameterrangestypedef)
 - `defaultResourceConfig`: `Dict`\[`str`, `str`\]
 - `trainingInputMode`: `str`
 - `roleArn`: `str`
@@ -174,8 +173,7 @@ from mypy_boto3_personalize.type_defs import BatchInferenceJobInputTypeDef
 
 Required fields:
 
-- `s3DataSource`:
-  [S3DataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#s3dataconfigtypedef)
+- `s3DataSource`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
 
 ## BatchInferenceJobOutputTypeDef
 
@@ -185,10 +183,9 @@ from mypy_boto3_personalize.type_defs import BatchInferenceJobOutputTypeDef
 
 Required fields:
 
-- `s3DataDestination`:
-  [S3DataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#s3dataconfigtypedef)
+- `s3DataDestination`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchInferenceJobSummaryTypeDef
 
@@ -221,11 +218,11 @@ Optional fields:
 - `solutionVersionArn`: `str`
 - `numResults`: `int`
 - `jobInput`:
-  [BatchInferenceJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejobinputtypedef)
+  [BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef)
 - `jobOutput`:
-  [BatchInferenceJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejoboutputtypedef)
+  [BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef)
 - `batchInferenceJobConfig`:
-  [BatchInferenceJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejobconfigtypedef)
+  [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
 - `roleArn`: `str`
 - `status`: `str`
 - `creationDateTime`: `datetime`
@@ -268,14 +265,13 @@ Optional fields:
 - `campaignArn`: `str`
 - `solutionVersionArn`: `str`
 - `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaignconfigtypedef)
+- `campaignConfig`: [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 - `status`: `str`
 - `failureReason`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `latestCampaignUpdate`:
-  [CampaignUpdateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaignupdatesummarytypedef)
+  [CampaignUpdateSummaryTypeDef](./type_defs.md#campaignupdatesummarytypedef)
 
 ## CampaignUpdateSummaryTypeDef
 
@@ -287,8 +283,7 @@ Optional fields:
 
 - `solutionVersionArn`: `str`
 - `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaignconfigtypedef)
+- `campaignConfig`: [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 - `status`: `str`
 - `failureReason`: `str`
 - `creationDateTime`: `datetime`
@@ -446,10 +441,9 @@ from mypy_boto3_personalize.type_defs import DatasetExportJobOutputTypeDef
 
 Required fields:
 
-- `s3DataDestination`:
-  [S3DataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#s3dataconfigtypedef)
+- `s3DataDestination`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DatasetExportJobSummaryTypeDef
 
@@ -477,12 +471,11 @@ Optional fields:
 - `jobName`: `str`
 - `datasetExportJobArn`: `str`
 - `datasetArn`: `str`
-- `ingestionMode`:
-  [IngestionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/literals.html#ingestionmode)
+- `ingestionMode`: [IngestionMode](./literals.md#ingestionmode)
 - `roleArn`: `str`
 - `status`: `str`
 - `jobOutput`:
-  [DatasetExportJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetexportjoboutputtypedef)
+  [DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef)
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
@@ -545,8 +538,7 @@ Optional fields:
 - `jobName`: `str`
 - `datasetImportJobArn`: `str`
 - `datasetArn`: `str`
-- `dataSource`:
-  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasourcetypedef)
+- `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
 - `roleArn`: `str`
 - `status`: `str`
 - `creationDateTime`: `datetime`
@@ -646,11 +638,11 @@ from mypy_boto3_personalize.type_defs import DefaultHyperParameterRangesTypeDef
 Optional fields:
 
 - `integerHyperParameterRanges`:
-  `List`\[[DefaultIntegerHyperParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#defaultintegerhyperparameterrangetypedef)\]
+  `List`\[[DefaultIntegerHyperParameterRangeTypeDef](./type_defs.md#defaultintegerhyperparameterrangetypedef)\]
 - `continuousHyperParameterRanges`:
-  `List`\[[DefaultContinuousHyperParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#defaultcontinuoushyperparameterrangetypedef)\]
+  `List`\[[DefaultContinuousHyperParameterRangeTypeDef](./type_defs.md#defaultcontinuoushyperparameterrangetypedef)\]
 - `categoricalHyperParameterRanges`:
-  `List`\[[DefaultCategoricalHyperParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#defaultcategoricalhyperparameterrangetypedef)\]
+  `List`\[[DefaultCategoricalHyperParameterRangeTypeDef](./type_defs.md#defaultcategoricalhyperparameterrangetypedef)\]
 
 ## DefaultIntegerHyperParameterRangeTypeDef
 
@@ -673,8 +665,7 @@ from mypy_boto3_personalize.type_defs import DescribeAlgorithmResponseTypeDef
 
 Optional fields:
 
-- `algorithm`:
-  [AlgorithmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#algorithmtypedef)
+- `algorithm`: [AlgorithmTypeDef](./type_defs.md#algorithmtypedef)
 
 ## DescribeBatchInferenceJobResponseTypeDef
 
@@ -685,7 +676,7 @@ from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobResponseTy
 Optional fields:
 
 - `batchInferenceJob`:
-  [BatchInferenceJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejobtypedef)
+  [BatchInferenceJobTypeDef](./type_defs.md#batchinferencejobtypedef)
 
 ## DescribeCampaignResponseTypeDef
 
@@ -695,8 +686,7 @@ from mypy_boto3_personalize.type_defs import DescribeCampaignResponseTypeDef
 
 Optional fields:
 
-- `campaign`:
-  [CampaignTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaigntypedef)
+- `campaign`: [CampaignTypeDef](./type_defs.md#campaigntypedef)
 
 ## DescribeDatasetExportJobResponseTypeDef
 
@@ -707,7 +697,7 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobResponseTyp
 Optional fields:
 
 - `datasetExportJob`:
-  [DatasetExportJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetexportjobtypedef)
+  [DatasetExportJobTypeDef](./type_defs.md#datasetexportjobtypedef)
 
 ## DescribeDatasetGroupResponseTypeDef
 
@@ -717,8 +707,7 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetGroupResponseTypeDef
 
 Optional fields:
 
-- `datasetGroup`:
-  [DatasetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetgrouptypedef)
+- `datasetGroup`: [DatasetGroupTypeDef](./type_defs.md#datasetgrouptypedef)
 
 ## DescribeDatasetImportJobResponseTypeDef
 
@@ -729,7 +718,7 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobResponseTyp
 Optional fields:
 
 - `datasetImportJob`:
-  [DatasetImportJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetimportjobtypedef)
+  [DatasetImportJobTypeDef](./type_defs.md#datasetimportjobtypedef)
 
 ## DescribeDatasetResponseTypeDef
 
@@ -739,8 +728,7 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetResponseTypeDef
 
 Optional fields:
 
-- `dataset`:
-  [DatasetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasettypedef)
+- `dataset`: [DatasetTypeDef](./type_defs.md#datasettypedef)
 
 ## DescribeEventTrackerResponseTypeDef
 
@@ -750,8 +738,7 @@ from mypy_boto3_personalize.type_defs import DescribeEventTrackerResponseTypeDef
 
 Optional fields:
 
-- `eventTracker`:
-  [EventTrackerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#eventtrackertypedef)
+- `eventTracker`: [EventTrackerTypeDef](./type_defs.md#eventtrackertypedef)
 
 ## DescribeFeatureTransformationResponseTypeDef
 
@@ -762,7 +749,7 @@ from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationRespon
 Optional fields:
 
 - `featureTransformation`:
-  [FeatureTransformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#featuretransformationtypedef)
+  [FeatureTransformationTypeDef](./type_defs.md#featuretransformationtypedef)
 
 ## DescribeFilterResponseTypeDef
 
@@ -772,8 +759,7 @@ from mypy_boto3_personalize.type_defs import DescribeFilterResponseTypeDef
 
 Optional fields:
 
-- `filter`:
-  [FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#filtertypedef)
+- `filter`: [FilterTypeDef](./type_defs.md#filtertypedef)
 
 ## DescribeRecipeResponseTypeDef
 
@@ -783,8 +769,7 @@ from mypy_boto3_personalize.type_defs import DescribeRecipeResponseTypeDef
 
 Optional fields:
 
-- `recipe`:
-  [RecipeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#recipetypedef)
+- `recipe`: [RecipeTypeDef](./type_defs.md#recipetypedef)
 
 ## DescribeSchemaResponseTypeDef
 
@@ -794,8 +779,7 @@ from mypy_boto3_personalize.type_defs import DescribeSchemaResponseTypeDef
 
 Optional fields:
 
-- `schema`:
-  [DatasetSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetschematypedef)
+- `schema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
 
 ## DescribeSolutionResponseTypeDef
 
@@ -805,8 +789,7 @@ from mypy_boto3_personalize.type_defs import DescribeSolutionResponseTypeDef
 
 Optional fields:
 
-- `solution`:
-  [SolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutiontypedef)
+- `solution`: [SolutionTypeDef](./type_defs.md#solutiontypedef)
 
 ## DescribeSolutionVersionResponseTypeDef
 
@@ -817,7 +800,7 @@ from mypy_boto3_personalize.type_defs import DescribeSolutionVersionResponseType
 Optional fields:
 
 - `solutionVersion`:
-  [SolutionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionversiontypedef)
+  [SolutionVersionTypeDef](./type_defs.md#solutionversiontypedef)
 
 ## EventTrackerSummaryTypeDef
 
@@ -917,12 +900,11 @@ from mypy_boto3_personalize.type_defs import HPOConfigTypeDef
 
 Optional fields:
 
-- `hpoObjective`:
-  [HPOObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#hpoobjectivetypedef)
+- `hpoObjective`: [HPOObjectiveTypeDef](./type_defs.md#hpoobjectivetypedef)
 - `hpoResourceConfig`:
-  [HPOResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#hporesourceconfigtypedef)
+  [HPOResourceConfigTypeDef](./type_defs.md#hporesourceconfigtypedef)
 - `algorithmHyperParameterRanges`:
-  [HyperParameterRangesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#hyperparameterrangestypedef)
+  [HyperParameterRangesTypeDef](./type_defs.md#hyperparameterrangestypedef)
 
 ## HPOObjectiveTypeDef
 
@@ -956,11 +938,11 @@ from mypy_boto3_personalize.type_defs import HyperParameterRangesTypeDef
 Optional fields:
 
 - `integerHyperParameterRanges`:
-  `List`\[[IntegerHyperParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#integerhyperparameterrangetypedef)\]
+  `List`\[[IntegerHyperParameterRangeTypeDef](./type_defs.md#integerhyperparameterrangetypedef)\]
 - `continuousHyperParameterRanges`:
-  `List`\[[ContinuousHyperParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#continuoushyperparameterrangetypedef)\]
+  `List`\[[ContinuousHyperParameterRangeTypeDef](./type_defs.md#continuoushyperparameterrangetypedef)\]
 - `categoricalHyperParameterRanges`:
-  `List`\[[CategoricalHyperParameterRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#categoricalhyperparameterrangetypedef)\]
+  `List`\[[CategoricalHyperParameterRangeTypeDef](./type_defs.md#categoricalhyperparameterrangetypedef)\]
 
 ## IntegerHyperParameterRangeTypeDef
 
@@ -983,7 +965,7 @@ from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsResponseTypeD
 Optional fields:
 
 - `batchInferenceJobs`:
-  `List`\[[BatchInferenceJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#batchinferencejobsummarytypedef)\]
+  `List`\[[BatchInferenceJobSummaryTypeDef](./type_defs.md#batchinferencejobsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListCampaignsResponseTypeDef
@@ -995,7 +977,7 @@ from mypy_boto3_personalize.type_defs import ListCampaignsResponseTypeDef
 Optional fields:
 
 - `campaigns`:
-  `List`\[[CampaignSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#campaignsummarytypedef)\]
+  `List`\[[CampaignSummaryTypeDef](./type_defs.md#campaignsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListDatasetExportJobsResponseTypeDef
@@ -1007,7 +989,7 @@ from mypy_boto3_personalize.type_defs import ListDatasetExportJobsResponseTypeDe
 Optional fields:
 
 - `datasetExportJobs`:
-  `List`\[[DatasetExportJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetexportjobsummarytypedef)\]
+  `List`\[[DatasetExportJobSummaryTypeDef](./type_defs.md#datasetexportjobsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListDatasetGroupsResponseTypeDef
@@ -1019,7 +1001,7 @@ from mypy_boto3_personalize.type_defs import ListDatasetGroupsResponseTypeDef
 Optional fields:
 
 - `datasetGroups`:
-  `List`\[[DatasetGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetgroupsummarytypedef)\]
+  `List`\[[DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListDatasetImportJobsResponseTypeDef
@@ -1031,7 +1013,7 @@ from mypy_boto3_personalize.type_defs import ListDatasetImportJobsResponseTypeDe
 Optional fields:
 
 - `datasetImportJobs`:
-  `List`\[[DatasetImportJobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetimportjobsummarytypedef)\]
+  `List`\[[DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListDatasetsResponseTypeDef
@@ -1043,7 +1025,7 @@ from mypy_boto3_personalize.type_defs import ListDatasetsResponseTypeDef
 Optional fields:
 
 - `datasets`:
-  `List`\[[DatasetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetsummarytypedef)\]
+  `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListEventTrackersResponseTypeDef
@@ -1055,7 +1037,7 @@ from mypy_boto3_personalize.type_defs import ListEventTrackersResponseTypeDef
 Optional fields:
 
 - `eventTrackers`:
-  `List`\[[EventTrackerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#eventtrackersummarytypedef)\]
+  `List`\[[EventTrackerSummaryTypeDef](./type_defs.md#eventtrackersummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListFiltersResponseTypeDef
@@ -1067,7 +1049,7 @@ from mypy_boto3_personalize.type_defs import ListFiltersResponseTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[FilterSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#filtersummarytypedef)\]
+  `List`\[[FilterSummaryTypeDef](./type_defs.md#filtersummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListRecipesResponseTypeDef
@@ -1079,7 +1061,7 @@ from mypy_boto3_personalize.type_defs import ListRecipesResponseTypeDef
 Optional fields:
 
 - `recipes`:
-  `List`\[[RecipeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#recipesummarytypedef)\]
+  `List`\[[RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListSchemasResponseTypeDef
@@ -1091,7 +1073,7 @@ from mypy_boto3_personalize.type_defs import ListSchemasResponseTypeDef
 Optional fields:
 
 - `schemas`:
-  `List`\[[DatasetSchemaSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#datasetschemasummarytypedef)\]
+  `List`\[[DatasetSchemaSummaryTypeDef](./type_defs.md#datasetschemasummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListSolutionVersionsResponseTypeDef
@@ -1103,7 +1085,7 @@ from mypy_boto3_personalize.type_defs import ListSolutionVersionsResponseTypeDef
 Optional fields:
 
 - `solutionVersions`:
-  `List`\[[SolutionVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionversionsummarytypedef)\]
+  `List`\[[SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListSolutionsResponseTypeDef
@@ -1115,7 +1097,7 @@ from mypy_boto3_personalize.type_defs import ListSolutionsResponseTypeDef
 Optional fields:
 
 - `solutions`:
-  `List`\[[SolutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionsummarytypedef)\]
+  `List`\[[SolutionSummaryTypeDef](./type_defs.md#solutionsummarytypedef)\]
 - `nextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -1162,10 +1144,10 @@ Optional fields:
 - `recipeType`: `str`
 - `lastUpdatedDateTime`: `datetime`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ResponseMetadata
+from mypy_boto3_personalize.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1199,12 +1181,10 @@ from mypy_boto3_personalize.type_defs import SolutionConfigTypeDef
 Optional fields:
 
 - `eventValueThreshold`: `str`
-- `hpoConfig`:
-  [HPOConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#hpoconfigtypedef)
+- `hpoConfig`: [HPOConfigTypeDef](./type_defs.md#hpoconfigtypedef)
 - `algorithmHyperParameters`: `Dict`\[`str`, `str`\]
 - `featureTransformationParameters`: `Dict`\[`str`, `str`\]
-- `autoMLConfig`:
-  [AutoMLConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#automlconfigtypedef)
+- `autoMLConfig`: [AutoMLConfigTypeDef](./type_defs.md#automlconfigtypedef)
 
 ## SolutionSummaryTypeDef
 
@@ -1235,15 +1215,13 @@ Optional fields:
 - `recipeArn`: `str`
 - `datasetGroupArn`: `str`
 - `eventType`: `str`
-- `solutionConfig`:
-  [SolutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionconfigtypedef)
-- `autoMLResult`:
-  [AutoMLResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#automlresulttypedef)
+- `solutionConfig`: [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
+- `autoMLResult`: [AutoMLResultTypeDef](./type_defs.md#automlresulttypedef)
 - `status`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `latestSolutionVersion`:
-  [SolutionVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionversionsummarytypedef)
+  [SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef)
 
 ## SolutionVersionSummaryTypeDef
 
@@ -1274,13 +1252,10 @@ Optional fields:
 - `recipeArn`: `str`
 - `eventType`: `str`
 - `datasetGroupArn`: `str`
-- `solutionConfig`:
-  [SolutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#solutionconfigtypedef)
+- `solutionConfig`: [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 - `trainingHours`: `float`
-- `trainingMode`:
-  [TrainingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/literals.html#trainingmode)
-- `tunedHPOParams`:
-  [TunedHPOParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize/type_defs.html#tunedhpoparamstypedef)
+- `trainingMode`: [TrainingMode](./literals.md#trainingmode)
+- `tunedHPOParams`: [TunedHPOParamsTypeDef](./type_defs.md#tunedhpoparamstypedef)
 - `status`: `str`
 - `failureReason`: `str`
 - `creationDateTime`: `datetime`

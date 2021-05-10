@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudTrail module
 
-> [Index](../README.md) > CloudTrail
+> [Index](..) > CloudTrail
 
 Auto-generated documentation for
 [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)

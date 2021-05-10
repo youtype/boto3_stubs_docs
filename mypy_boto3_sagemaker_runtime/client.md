@@ -1,7 +1,6 @@
 # SageMakerRuntimeClient for boto3 SageMakerRuntime module
 
-> [Index](../README.md) > [SageMakerRuntime](./README.md) >
-> SageMakerRuntimeClient
+> [Index](..) > [SageMakerRuntime](.) > SageMakerRuntimeClient
 
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
@@ -105,4 +104,4 @@ Arguments:
 - `InferenceId`: `str`
 
 Returns
-[InvokeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_runtime/type_defs.html#invokeendpointoutputtypedef).
+[InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef).

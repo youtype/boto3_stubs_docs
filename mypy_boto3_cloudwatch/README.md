@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudWatch module
 
-> [Index](../README.md) > CloudWatch
+> [Index](..) > CloudWatch
 
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
@@ -99,7 +99,7 @@ CloudWatchClient [exceptions](./client.md#exceptions)
 ## CloudWatchServiceResource
 
 Type annotations for `boto3.resource("cloudwatch")` as
-[CloudWatchServiceResource](./service_resource.md)
+[CloudWatchServiceResource](./service_resource.md#cloudwatchserviceresource)
 
 Can be used directly:
 
@@ -117,8 +117,8 @@ Can be used directly:
 from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection, ...
 ```
 
-- [ServiceResourceAlarmsCollection](./service_resource.md#cloudwatchserviceresource.alarms)
-- [ServiceResourceMetricsCollection](./service_resource.md#cloudwatchserviceresource.metrics)
+- [ServiceResourceAlarmsCollection](./service_resource.md#cloudwatchserviceresourcealarms)
+- [ServiceResourceMetricsCollection](./service_resource.md#cloudwatchserviceresourcemetrics)
 
 ### Resources
 
@@ -251,7 +251,7 @@ from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef, ...
 - [PutDashboardOutputTypeDef](./type_defs.md#putdashboardoutputtypedef)
 - [PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef)
 - [RangeTypeDef](./type_defs.md#rangetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

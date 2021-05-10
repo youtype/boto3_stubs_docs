@@ -1,6 +1,6 @@
 # WAFV2Client for boto3 WAFV2 module
 
-> [Index](../README.md) > [WAFV2](./README.md) > WAFV2Client
+> [Index](..) > [WAFV2](.) > WAFV2Client
 
 Auto-generated documentation for
 [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
@@ -139,15 +139,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 
 Returns
-[CheckCapacityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#checkcapacityresponsetypedef).
+[CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef).
 
 ### create_ip_set
 
@@ -159,19 +155,15 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
-- `IPAddressVersion`:
-  [IPAddressVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#ipaddressversion)
+- `Scope`: [Scope](./literals.md#scope) *(required)*
+- `IPAddressVersion`: [IPAddressVersion](./literals.md#ipaddressversion)
   *(required)*
 - `Addresses`: `List`\[`str`\] *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createipsetresponsetypedef).
+[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
 
 ### create_regex_pattern_set
 
@@ -183,18 +175,14 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
-- `RegularExpressionList`:
-  `List`\[[RegexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regextypedef)\]
+- `Scope`: [Scope](./literals.md#scope) *(required)*
+- `RegularExpressionList`: `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
   *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createregexpatternsetresponsetypedef).
+[CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
 
 ### create_rule_group
 
@@ -206,23 +194,18 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Capacity`: `int` *(required)*
 - `VisibilityConfig`:
-  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
-  *(required)*
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) *(required)*
 - `Description`: `str`
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CustomResponseBodies`: `Dict`\[`str`,
-  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[CreateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createrulegroupresponsetypedef).
+[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
 
 ### create_web_acl
 
@@ -234,25 +217,19 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
-- `DefaultAction`:
-  [DefaultActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#defaultactiontypedef)
+- `Scope`: [Scope](./literals.md#scope) *(required)*
+- `DefaultAction`: [DefaultActionTypeDef](./type_defs.md#defaultactiontypedef)
   *(required)*
 - `VisibilityConfig`:
-  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
-  *(required)*
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) *(required)*
 - `Description`: `str`
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CustomResponseBodies`: `Dict`\[`str`,
-  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[CreateWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#createwebaclresponsetypedef).
+[CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
 
 ### delete_firewall_manager_rule_groups
 
@@ -268,7 +245,7 @@ Arguments:
 - `WebACLLockToken`: `str` *(required)*
 
 Returns
-[DeleteFirewallManagerRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#deletefirewallmanagerrulegroupsresponsetypedef).
+[DeleteFirewallManagerRuleGroupsResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponsetypedef).
 
 ### delete_ip_set
 
@@ -280,9 +257,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 - `LockToken`: `str` *(required)*
 
@@ -325,9 +300,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 - `LockToken`: `str` *(required)*
 
@@ -343,9 +316,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 - `LockToken`: `str` *(required)*
 
@@ -361,9 +332,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 - `LockToken`: `str` *(required)*
 
@@ -381,12 +350,10 @@ Arguments:
 
 - `VendorName`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 
 Returns
-[DescribeManagedRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#describemanagedrulegroupresponsetypedef).
+[DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef).
 
 ### disassociate_web_acl
 
@@ -427,13 +394,10 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 
-Returns
-[GetIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getipsetresponsetypedef).
+Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 
 ### get_logging_configuration
 
@@ -447,7 +411,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getloggingconfigurationresponsetypedef).
+[GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
 
 ### get_permission_policy
 
@@ -461,7 +425,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetPermissionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getpermissionpolicyresponsetypedef).
+[GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
 
 ### get_rate_based_statement_managed_keys
 
@@ -473,15 +437,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `WebACLName`: `str` *(required)*
 - `WebACLId`: `str` *(required)*
 - `RuleName`: `str` *(required)*
 
 Returns
-[GetRateBasedStatementManagedKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getratebasedstatementmanagedkeysresponsetypedef).
+[GetRateBasedStatementManagedKeysResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponsetypedef).
 
 ### get_regex_pattern_set
 
@@ -493,13 +455,11 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 
 Returns
-[GetRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getregexpatternsetresponsetypedef).
+[GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
 
 ### get_rule_group
 
@@ -511,13 +471,11 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 
 Returns
-[GetRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getrulegroupresponsetypedef).
+[GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
 
 ### get_sampled_requests
 
@@ -530,16 +488,13 @@ Arguments:
 
 - `WebAclArn`: `str` *(required)*
 - `RuleMetricName`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
-- `TimeWindow`:
-  [TimeWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#timewindowtypedef)
+- `Scope`: [Scope](./literals.md#scope) *(required)*
+- `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
   *(required)*
 - `MaxItems`: `int` *(required)*
 
 Returns
-[GetSampledRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getsampledrequestsresponsetypedef).
+[GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
 
 ### get_web_acl
 
@@ -551,13 +506,10 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 
-Returns
-[GetWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getwebaclresponsetypedef).
+Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
 
 ### get_web_acl_for_resource
 
@@ -571,7 +523,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetWebACLForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#getwebaclforresourceresponsetypedef).
+[GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
 
 ### list_available_managed_rule_groups
 
@@ -583,14 +535,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListAvailableManagedRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listavailablemanagedrulegroupsresponsetypedef).
+[ListAvailableManagedRuleGroupsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupsresponsetypedef).
 
 ### list_ip_sets
 
@@ -601,14 +551,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-Returns
-[ListIPSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listipsetsresponsetypedef).
+Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
 
 ### list_logging_configurations
 
@@ -620,13 +567,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
+- `Scope`: [Scope](./literals.md#scope)
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListLoggingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listloggingconfigurationsresponsetypedef).
+[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
 
 ### list_regex_pattern_sets
 
@@ -637,14 +583,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListRegexPatternSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listregexpatternsetsresponsetypedef).
+[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
 
 ### list_resources_for_web_acl
 
@@ -656,11 +600,10 @@ Boto3 documentation:
 Arguments:
 
 - `WebACLArn`: `str` *(required)*
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 
 Returns
-[ListResourcesForWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listresourcesforwebaclresponsetypedef).
+[ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef).
 
 ### list_rule_groups
 
@@ -671,14 +614,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listrulegroupsresponsetypedef).
+[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -694,7 +635,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_web_acls
 
@@ -705,14 +646,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListWebACLsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#listwebaclsresponsetypedef).
+[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
 
 ### put_logging_configuration
 
@@ -724,11 +663,11 @@ Boto3 documentation:
 Arguments:
 
 - `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#loggingconfigurationtypedef)
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
   *(required)*
 
 Returns
-[PutLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#putloggingconfigurationresponsetypedef).
+[PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
 
 ### put_permission_policy
 
@@ -754,9 +693,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -784,16 +721,14 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 - `Addresses`: `List`\[`str`\] *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
 
 Returns
-[UpdateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updateipsetresponsetypedef).
+[UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
 
 ### update_regex_pattern_set
 
@@ -805,18 +740,15 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
-- `RegularExpressionList`:
-  `List`\[[RegexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#regextypedef)\]
+- `RegularExpressionList`: `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
   *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
 
 Returns
-[UpdateRegexPatternSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updateregexpatternsetresponsetypedef).
+[UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
 
 ### update_rule_group
 
@@ -828,22 +760,18 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
 - `VisibilityConfig`:
-  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
-  *(required)*
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `CustomResponseBodies`: `Dict`\[`str`,
-  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[UpdateRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updaterulegroupresponsetypedef).
+[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
 
 ### update_web_acl
 
@@ -855,22 +783,17 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Scope`:
-  [Scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/literals.html#scope)
-  *(required)*
+- `Scope`: [Scope](./literals.md#scope) *(required)*
 - `Id`: `str` *(required)*
-- `DefaultAction`:
-  [DefaultActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#defaultactiontypedef)
+- `DefaultAction`: [DefaultActionTypeDef](./type_defs.md#defaultactiontypedef)
   *(required)*
 - `VisibilityConfig`:
-  [VisibilityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#visibilityconfigtypedef)
-  *(required)*
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `CustomResponseBodies`: `Dict`\[`str`,
-  [CustomResponseBodyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#customresponsebodytypedef)\]
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[UpdateWebACLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wafv2/type_defs.html#updatewebaclresponsetypedef).
+[UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).

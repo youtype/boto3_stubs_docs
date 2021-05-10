@@ -1,6 +1,6 @@
 # Literals for boto3 Signer module
 
-> [Index](../README.md) > [Signer](./README.md) > Literals
+> [Index](..) > [Signer](.) > Literals
 
 Auto-generated documentation for
 [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)

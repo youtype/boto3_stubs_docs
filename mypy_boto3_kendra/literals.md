@@ -1,6 +1,6 @@
 # Literals for boto3 Kendra module
 
-> [Index](../README.md) > [Kendra](./README.md) > Literals
+> [Index](..) > [Kendra](.) > Literals
 
 Auto-generated documentation for
 [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)

@@ -1,6 +1,6 @@
 # CloudFrontClient for boto3 CloudFront module
 
-> [Index](../README.md) > [CloudFront](./README.md) > CloudFrontClient
+> [Index](..) > [CloudFront](.) > CloudFrontClient
 
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
@@ -277,11 +277,11 @@ Boto3 documentation:
 Arguments:
 
 - `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cachepolicyconfigtypedef)
+  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
   *(required)*
 
 Returns
-[CreateCachePolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createcachepolicyresulttypedef).
+[CreateCachePolicyResultTypeDef](./type_defs.md#createcachepolicyresulttypedef).
 
 ### create_cloud_front_origin_access_identity
 
@@ -294,11 +294,11 @@ Boto3 documentation:
 Arguments:
 
 - `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cloudfrontoriginaccessidentityconfigtypedef)
+  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
   *(required)*
 
 Returns
-[CreateCloudFrontOriginAccessIdentityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createcloudfrontoriginaccessidentityresulttypedef).
+[CreateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityresulttypedef).
 
 ### create_distribution
 
@@ -310,11 +310,11 @@ Boto3 documentation:
 Arguments:
 
 - `DistributionConfig`:
-  [DistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#distributionconfigtypedef)
+  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
   *(required)*
 
 Returns
-[CreateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createdistributionresulttypedef).
+[CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
 
 ### create_distribution_with_tags
 
@@ -327,11 +327,11 @@ Boto3 documentation:
 Arguments:
 
 - `DistributionConfigWithTags`:
-  [DistributionConfigWithTagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#distributionconfigwithtagstypedef)
+  [DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef)
   *(required)*
 
 Returns
-[CreateDistributionWithTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createdistributionwithtagsresulttypedef).
+[CreateDistributionWithTagsResultTypeDef](./type_defs.md#createdistributionwithtagsresulttypedef).
 
 ### create_field_level_encryption_config
 
@@ -344,11 +344,11 @@ Boto3 documentation:
 Arguments:
 
 - `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionconfigtypedef)
+  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
   *(required)*
 
 Returns
-[CreateFieldLevelEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createfieldlevelencryptionconfigresulttypedef).
+[CreateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#createfieldlevelencryptionconfigresulttypedef).
 
 ### create_field_level_encryption_profile
 
@@ -361,11 +361,11 @@ Boto3 documentation:
 Arguments:
 
 - `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionprofileconfigtypedef)
+  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
   *(required)*
 
 Returns
-[CreateFieldLevelEncryptionProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createfieldlevelencryptionprofileresulttypedef).
+[CreateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#createfieldlevelencryptionprofileresulttypedef).
 
 ### create_function
 
@@ -377,13 +377,12 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#functionconfigtypedef)
+- `FunctionConfig`: [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
   *(required)*
 - `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 
 Returns
-[CreateFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createfunctionresulttypedef).
+[CreateFunctionResultTypeDef](./type_defs.md#createfunctionresulttypedef).
 
 ### create_invalidation
 
@@ -396,11 +395,11 @@ Arguments:
 
 - `DistributionId`: `str` *(required)*
 - `InvalidationBatch`:
-  [InvalidationBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#invalidationbatchtypedef)
+  [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
   *(required)*
 
 Returns
-[CreateInvalidationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createinvalidationresulttypedef).
+[CreateInvalidationResultTypeDef](./type_defs.md#createinvalidationresulttypedef).
 
 ### create_key_group
 
@@ -411,12 +410,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#keygroupconfigtypedef)
+- `KeyGroupConfig`: [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
   *(required)*
 
 Returns
-[CreateKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createkeygroupresulttypedef).
+[CreateKeyGroupResultTypeDef](./type_defs.md#createkeygroupresulttypedef).
 
 ### create_monitoring_subscription
 
@@ -430,11 +428,11 @@ Arguments:
 
 - `DistributionId`: `str` *(required)*
 - `MonitoringSubscription`:
-  [MonitoringSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#monitoringsubscriptiontypedef)
+  [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
   *(required)*
 
 Returns
-[CreateMonitoringSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createmonitoringsubscriptionresulttypedef).
+[CreateMonitoringSubscriptionResultTypeDef](./type_defs.md#createmonitoringsubscriptionresulttypedef).
 
 ### create_origin_request_policy
 
@@ -447,11 +445,11 @@ Boto3 documentation:
 Arguments:
 
 - `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#originrequestpolicyconfigtypedef)
+  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
   *(required)*
 
 Returns
-[CreateOriginRequestPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createoriginrequestpolicyresulttypedef).
+[CreateOriginRequestPolicyResultTypeDef](./type_defs.md#createoriginrequestpolicyresulttypedef).
 
 ### create_public_key
 
@@ -463,11 +461,10 @@ Boto3 documentation:
 Arguments:
 
 - `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#publickeyconfigtypedef)
-  *(required)*
+  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
 
 Returns
-[CreatePublicKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createpublickeyresulttypedef).
+[CreatePublicKeyResultTypeDef](./type_defs.md#createpublickeyresulttypedef).
 
 ### create_realtime_log_config
 
@@ -479,15 +476,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `EndPoints`:
-  `List`\[[EndPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#endpointtypedef)\]
+- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
   *(required)*
 - `Fields`: `List`\[`str`\] *(required)*
 - `Name`: `str` *(required)*
 - `SamplingRate`: `int` *(required)*
 
 Returns
-[CreateRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createrealtimelogconfigresulttypedef).
+[CreateRealtimeLogConfigResultTypeDef](./type_defs.md#createrealtimelogconfigresulttypedef).
 
 ### create_streaming_distribution
 
@@ -500,11 +496,11 @@ Boto3 documentation:
 Arguments:
 
 - `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#streamingdistributionconfigtypedef)
+  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
   *(required)*
 
 Returns
-[CreateStreamingDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createstreamingdistributionresulttypedef).
+[CreateStreamingDistributionResultTypeDef](./type_defs.md#createstreamingdistributionresulttypedef).
 
 ### create_streaming_distribution_with_tags
 
@@ -517,11 +513,11 @@ Boto3 documentation:
 Arguments:
 
 - `StreamingDistributionConfigWithTags`:
-  [StreamingDistributionConfigWithTagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#streamingdistributionconfigwithtagstypedef)
+  [StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef)
   *(required)*
 
 Returns
-[CreateStreamingDistributionWithTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#createstreamingdistributionwithtagsresulttypedef).
+[CreateStreamingDistributionWithTagsResultTypeDef](./type_defs.md#createstreamingdistributionwithtagsresulttypedef).
 
 ### delete_cache_policy
 
@@ -685,11 +681,10 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Stage`:
-  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+- `Stage`: [FunctionStage](./literals.md#functionstage)
 
 Returns
-[DescribeFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#describefunctionresulttypedef).
+[DescribeFunctionResultTypeDef](./type_defs.md#describefunctionresulttypedef).
 
 ### generate_presigned_url
 
@@ -720,7 +715,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetCachePolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcachepolicyresulttypedef).
+[GetCachePolicyResultTypeDef](./type_defs.md#getcachepolicyresulttypedef).
 
 ### get_cache_policy_config
 
@@ -735,7 +730,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetCachePolicyConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcachepolicyconfigresulttypedef).
+[GetCachePolicyConfigResultTypeDef](./type_defs.md#getcachepolicyconfigresulttypedef).
 
 ### get_cloud_front_origin_access_identity
 
@@ -750,7 +745,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetCloudFrontOriginAccessIdentityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcloudfrontoriginaccessidentityresulttypedef).
+[GetCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityresulttypedef).
 
 ### get_cloud_front_origin_access_identity_config
 
@@ -766,7 +761,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetCloudFrontOriginAccessIdentityConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getcloudfrontoriginaccessidentityconfigresulttypedef).
+[GetCloudFrontOriginAccessIdentityConfigResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigresulttypedef).
 
 ### get_distribution
 
@@ -780,7 +775,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getdistributionresulttypedef).
+[GetDistributionResultTypeDef](./type_defs.md#getdistributionresulttypedef).
 
 ### get_distribution_config
 
@@ -795,7 +790,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetDistributionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getdistributionconfigresulttypedef).
+[GetDistributionConfigResultTypeDef](./type_defs.md#getdistributionconfigresulttypedef).
 
 ### get_field_level_encryption
 
@@ -810,7 +805,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionresulttypedef).
+[GetFieldLevelEncryptionResultTypeDef](./type_defs.md#getfieldlevelencryptionresulttypedef).
 
 ### get_field_level_encryption_config
 
@@ -825,7 +820,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionconfigresulttypedef).
+[GetFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionconfigresulttypedef).
 
 ### get_field_level_encryption_profile
 
@@ -840,7 +835,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionprofileresulttypedef).
+[GetFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileresulttypedef).
 
 ### get_field_level_encryption_profile_config
 
@@ -855,7 +850,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionProfileConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfieldlevelencryptionprofileconfigresulttypedef).
+[GetFieldLevelEncryptionProfileConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigresulttypedef).
 
 ### get_function
 
@@ -867,11 +862,9 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Stage`:
-  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+- `Stage`: [FunctionStage](./literals.md#functionstage)
 
-Returns
-[GetFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getfunctionresulttypedef).
+Returns [GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef).
 
 ### get_invalidation
 
@@ -886,7 +879,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetInvalidationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getinvalidationresulttypedef).
+[GetInvalidationResultTypeDef](./type_defs.md#getinvalidationresulttypedef).
 
 ### get_key_group
 
@@ -899,8 +892,7 @@ Arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[GetKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getkeygroupresulttypedef).
+Returns [GetKeyGroupResultTypeDef](./type_defs.md#getkeygroupresulttypedef).
 
 ### get_key_group_config
 
@@ -914,7 +906,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetKeyGroupConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getkeygroupconfigresulttypedef).
+[GetKeyGroupConfigResultTypeDef](./type_defs.md#getkeygroupconfigresulttypedef).
 
 ### get_monitoring_subscription
 
@@ -929,7 +921,7 @@ Arguments:
 - `DistributionId`: `str` *(required)*
 
 Returns
-[GetMonitoringSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getmonitoringsubscriptionresulttypedef).
+[GetMonitoringSubscriptionResultTypeDef](./type_defs.md#getmonitoringsubscriptionresulttypedef).
 
 ### get_origin_request_policy
 
@@ -944,7 +936,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetOriginRequestPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getoriginrequestpolicyresulttypedef).
+[GetOriginRequestPolicyResultTypeDef](./type_defs.md#getoriginrequestpolicyresulttypedef).
 
 ### get_origin_request_policy_config
 
@@ -959,7 +951,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetOriginRequestPolicyConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getoriginrequestpolicyconfigresulttypedef).
+[GetOriginRequestPolicyConfigResultTypeDef](./type_defs.md#getoriginrequestpolicyconfigresulttypedef).
 
 ### get_public_key
 
@@ -972,8 +964,7 @@ Arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[GetPublicKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getpublickeyresulttypedef).
+Returns [GetPublicKeyResultTypeDef](./type_defs.md#getpublickeyresulttypedef).
 
 ### get_public_key_config
 
@@ -987,7 +978,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetPublicKeyConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getpublickeyconfigresulttypedef).
+[GetPublicKeyConfigResultTypeDef](./type_defs.md#getpublickeyconfigresulttypedef).
 
 ### get_realtime_log_config
 
@@ -1003,7 +994,7 @@ Arguments:
 - `ARN`: `str`
 
 Returns
-[GetRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getrealtimelogconfigresulttypedef).
+[GetRealtimeLogConfigResultTypeDef](./type_defs.md#getrealtimelogconfigresulttypedef).
 
 ### get_streaming_distribution
 
@@ -1018,7 +1009,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetStreamingDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getstreamingdistributionresulttypedef).
+[GetStreamingDistributionResultTypeDef](./type_defs.md#getstreamingdistributionresulttypedef).
 
 ### get_streaming_distribution_config
 
@@ -1033,7 +1024,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetStreamingDistributionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#getstreamingdistributionconfigresulttypedef).
+[GetStreamingDistributionConfigResultTypeDef](./type_defs.md#getstreamingdistributionconfigresulttypedef).
 
 ### list_cache_policies
 
@@ -1044,13 +1035,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [CachePolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#cachepolicytype)
+- `Type`: [CachePolicyType](./literals.md#cachepolicytype)
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListCachePoliciesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listcachepoliciesresulttypedef).
+[ListCachePoliciesResultTypeDef](./type_defs.md#listcachepoliciesresulttypedef).
 
 ### list_cloud_front_origin_access_identities
 
@@ -1066,7 +1056,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListCloudFrontOriginAccessIdentitiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listcloudfrontoriginaccessidentitiesresulttypedef).
+[ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef).
 
 ### list_distributions
 
@@ -1081,7 +1071,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsresulttypedef).
+[ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef).
 
 ### list_distributions_by_cache_policy_id
 
@@ -1098,7 +1088,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByCachePolicyIdResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbycachepolicyidresulttypedef).
+[ListDistributionsByCachePolicyIdResultTypeDef](./type_defs.md#listdistributionsbycachepolicyidresulttypedef).
 
 ### list_distributions_by_key_group
 
@@ -1115,7 +1105,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbykeygroupresulttypedef).
+[ListDistributionsByKeyGroupResultTypeDef](./type_defs.md#listdistributionsbykeygroupresulttypedef).
 
 ### list_distributions_by_origin_request_policy_id
 
@@ -1133,7 +1123,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByOriginRequestPolicyIdResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbyoriginrequestpolicyidresulttypedef).
+[ListDistributionsByOriginRequestPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidresulttypedef).
 
 ### list_distributions_by_realtime_log_config
 
@@ -1151,7 +1141,7 @@ Arguments:
 - `RealtimeLogConfigArn`: `str`
 
 Returns
-[ListDistributionsByRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbyrealtimelogconfigresulttypedef).
+[ListDistributionsByRealtimeLogConfigResultTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresulttypedef).
 
 ### list_distributions_by_web_acl_id
 
@@ -1168,7 +1158,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByWebACLIdResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsbywebaclidresulttypedef).
+[ListDistributionsByWebACLIdResultTypeDef](./type_defs.md#listdistributionsbywebaclidresulttypedef).
 
 ### list_field_level_encryption_configs
 
@@ -1184,7 +1174,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListFieldLevelEncryptionConfigsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listfieldlevelencryptionconfigsresulttypedef).
+[ListFieldLevelEncryptionConfigsResultTypeDef](./type_defs.md#listfieldlevelencryptionconfigsresulttypedef).
 
 ### list_field_level_encryption_profiles
 
@@ -1200,7 +1190,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListFieldLevelEncryptionProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listfieldlevelencryptionprofilesresulttypedef).
+[ListFieldLevelEncryptionProfilesResultTypeDef](./type_defs.md#listfieldlevelencryptionprofilesresulttypedef).
 
 ### list_functions
 
@@ -1213,11 +1203,10 @@ Arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
-- `Stage`:
-  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+- `Stage`: [FunctionStage](./literals.md#functionstage)
 
 Returns
-[ListFunctionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listfunctionsresulttypedef).
+[ListFunctionsResultTypeDef](./type_defs.md#listfunctionsresulttypedef).
 
 ### list_invalidations
 
@@ -1233,7 +1222,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListInvalidationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listinvalidationsresulttypedef).
+[ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef).
 
 ### list_key_groups
 
@@ -1248,7 +1237,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListKeyGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listkeygroupsresulttypedef).
+[ListKeyGroupsResultTypeDef](./type_defs.md#listkeygroupsresulttypedef).
 
 ### list_origin_request_policies
 
@@ -1260,13 +1249,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [OriginRequestPolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#originrequestpolicytype)
+- `Type`: [OriginRequestPolicyType](./literals.md#originrequestpolicytype)
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListOriginRequestPoliciesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listoriginrequestpoliciesresulttypedef).
+[ListOriginRequestPoliciesResultTypeDef](./type_defs.md#listoriginrequestpoliciesresulttypedef).
 
 ### list_public_keys
 
@@ -1281,7 +1269,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListPublicKeysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listpublickeysresulttypedef).
+[ListPublicKeysResultTypeDef](./type_defs.md#listpublickeysresulttypedef).
 
 ### list_realtime_log_configs
 
@@ -1297,7 +1285,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListRealtimeLogConfigsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listrealtimelogconfigsresulttypedef).
+[ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef).
 
 ### list_streaming_distributions
 
@@ -1313,7 +1301,7 @@ Arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListStreamingDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#liststreamingdistributionsresulttypedef).
+[ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef).
 
 ### list_tags_for_resource
 
@@ -1328,7 +1316,7 @@ Arguments:
 - `Resource`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### publish_function
 
@@ -1343,7 +1331,7 @@ Arguments:
 - `IfMatch`: `str` *(required)*
 
 Returns
-[PublishFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#publishfunctionresulttypedef).
+[PublishFunctionResultTypeDef](./type_defs.md#publishfunctionresulttypedef).
 
 ### tag_resource
 
@@ -1355,9 +1343,7 @@ Boto3 documentation:
 Arguments:
 
 - `Resource`: `str` *(required)*
-- `Tags`:
-  [TagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#tagstypedef)
-  *(required)*
+- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef) *(required)*
 
 ### test_function
 
@@ -1371,11 +1357,9 @@ Arguments:
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
 - `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `Stage`:
-  [FunctionStage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/literals.html#functionstage)
+- `Stage`: [FunctionStage](./literals.md#functionstage)
 
-Returns
-[TestFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#testfunctionresulttypedef).
+Returns [TestFunctionResultTypeDef](./type_defs.md#testfunctionresulttypedef).
 
 ### untag_resource
 
@@ -1387,9 +1371,7 @@ Boto3 documentation:
 Arguments:
 
 - `Resource`: `str` *(required)*
-- `TagKeys`:
-  [TagKeysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#tagkeystypedef)
-  *(required)*
+- `TagKeys`: [TagKeysTypeDef](./type_defs.md#tagkeystypedef) *(required)*
 
 ### update_cache_policy
 
@@ -1401,13 +1383,13 @@ Boto3 documentation:
 Arguments:
 
 - `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cachepolicyconfigtypedef)
+  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateCachePolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatecachepolicyresulttypedef).
+[UpdateCachePolicyResultTypeDef](./type_defs.md#updatecachepolicyresulttypedef).
 
 ### update_cloud_front_origin_access_identity
 
@@ -1420,13 +1402,13 @@ Boto3 documentation:
 Arguments:
 
 - `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#cloudfrontoriginaccessidentityconfigtypedef)
+  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateCloudFrontOriginAccessIdentityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatecloudfrontoriginaccessidentityresulttypedef).
+[UpdateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityresulttypedef).
 
 ### update_distribution
 
@@ -1438,13 +1420,13 @@ Boto3 documentation:
 Arguments:
 
 - `DistributionConfig`:
-  [DistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#distributionconfigtypedef)
+  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatedistributionresulttypedef).
+[UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef).
 
 ### update_field_level_encryption_config
 
@@ -1457,13 +1439,13 @@ Boto3 documentation:
 Arguments:
 
 - `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionconfigtypedef)
+  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateFieldLevelEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatefieldlevelencryptionconfigresulttypedef).
+[UpdateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#updatefieldlevelencryptionconfigresulttypedef).
 
 ### update_field_level_encryption_profile
 
@@ -1476,13 +1458,13 @@ Boto3 documentation:
 Arguments:
 
 - `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#fieldlevelencryptionprofileconfigtypedef)
+  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateFieldLevelEncryptionProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatefieldlevelencryptionprofileresulttypedef).
+[UpdateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#updatefieldlevelencryptionprofileresulttypedef).
 
 ### update_function
 
@@ -1495,13 +1477,12 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#functionconfigtypedef)
+- `FunctionConfig`: [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
   *(required)*
 - `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 
 Returns
-[UpdateFunctionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatefunctionresulttypedef).
+[UpdateFunctionResultTypeDef](./type_defs.md#updatefunctionresulttypedef).
 
 ### update_key_group
 
@@ -1512,14 +1493,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#keygroupconfigtypedef)
+- `KeyGroupConfig`: [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateKeyGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatekeygroupresulttypedef).
+[UpdateKeyGroupResultTypeDef](./type_defs.md#updatekeygroupresulttypedef).
 
 ### update_origin_request_policy
 
@@ -1532,13 +1512,13 @@ Boto3 documentation:
 Arguments:
 
 - `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#originrequestpolicyconfigtypedef)
+  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateOriginRequestPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updateoriginrequestpolicyresulttypedef).
+[UpdateOriginRequestPolicyResultTypeDef](./type_defs.md#updateoriginrequestpolicyresulttypedef).
 
 ### update_public_key
 
@@ -1550,13 +1530,12 @@ Boto3 documentation:
 Arguments:
 
 - `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#publickeyconfigtypedef)
-  *(required)*
+  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdatePublicKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatepublickeyresulttypedef).
+[UpdatePublicKeyResultTypeDef](./type_defs.md#updatepublickeyresulttypedef).
 
 ### update_realtime_log_config
 
@@ -1568,15 +1547,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `EndPoints`:
-  `List`\[[EndPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#endpointtypedef)\]
+- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
 - `Fields`: `List`\[`str`\]
 - `Name`: `str`
 - `ARN`: `str`
 - `SamplingRate`: `int`
 
 Returns
-[UpdateRealtimeLogConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updaterealtimelogconfigresulttypedef).
+[UpdateRealtimeLogConfigResultTypeDef](./type_defs.md#updaterealtimelogconfigresulttypedef).
 
 ### update_streaming_distribution
 
@@ -1589,13 +1567,13 @@ Boto3 documentation:
 Arguments:
 
 - `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#streamingdistributionconfigtypedef)
+  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
   *(required)*
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
 
 Returns
-[UpdateStreamingDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#updatestreamingdistributionresulttypedef).
+[UpdateStreamingDistributionResultTypeDef](./type_defs.md#updatestreamingdistributionresulttypedef).
 
 ### get_paginator
 

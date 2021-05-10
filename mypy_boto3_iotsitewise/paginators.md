@@ -1,6 +1,6 @@
 # Paginators for boto3 IoTSiteWise module
 
-> [Index](../README.md) > [IoTSiteWise](./README.md) > Paginators
+> [Index](..) > [IoTSiteWise](.) > Paginators
 
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
@@ -41,8 +41,7 @@ Boto3 documentation:
 
 Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
 
-- `aggregateTypes`:
-  `List`\[[AggregateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#aggregatetype)\]
+- `aggregateTypes`: `List`\[[AggregateType](./literals.md#aggregatetype)\]
   *(required)*
 - `resolution`: `str` *(required)*
 - `startDate`: `datetime` *(required)*
@@ -50,15 +49,13 @@ Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`:
-  `List`\[[Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)\]
-- `timeOrdering`:
-  [TimeOrdering](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#timeordering)
+- `qualities`: `List`\[[Quality](./literals.md#quality)\]
+- `timeOrdering`: [TimeOrdering](./literals.md#timeordering)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssetPropertyAggregatesPaginator.paginate` returns
-`Iterator`\[[GetAssetPropertyAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyaggregatesresponsetypedef)\].
+`Iterator`\[[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef)\].
 
 ## GetAssetPropertyValueHistoryPaginator
 
@@ -84,15 +81,13 @@ Arguments for `GetAssetPropertyValueHistoryPaginator.paginate` method:
 - `propertyAlias`: `str`
 - `startDate`: `datetime`
 - `endDate`: `datetime`
-- `qualities`:
-  `List`\[[Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)\]
-- `timeOrdering`:
-  [TimeOrdering](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#timeordering)
+- `qualities`: `List`\[[Quality](./literals.md#quality)\]
+- `timeOrdering`: [TimeOrdering](./literals.md#timeordering)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssetPropertyValueHistoryPaginator.paginate` returns
-`Iterator`\[[GetAssetPropertyValueHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyvaluehistoryresponsetypedef)\].
+`Iterator`\[[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef)\].
 
 ## GetInterpolatedAssetPropertyValuesPaginator
 
@@ -115,9 +110,7 @@ Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
 
 - `startTimeInSeconds`: `int` *(required)*
 - `endTimeInSeconds`: `int` *(required)*
-- `quality`:
-  [Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)
-  *(required)*
+- `quality`: [Quality](./literals.md#quality) *(required)*
 - `intervalInSeconds`: `int` *(required)*
 - `type`: `str` *(required)*
 - `assetId`: `str`
@@ -126,10 +119,10 @@ Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
 - `startTimeOffsetInNanos`: `int`
 - `endTimeOffsetInNanos`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInterpolatedAssetPropertyValuesPaginator.paginate` returns
-`Iterator`\[[GetInterpolatedAssetPropertyValuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getinterpolatedassetpropertyvaluesresponsetypedef)\].
+`Iterator`\[[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef)\].
 
 ## ListAccessPoliciesPaginator
 
@@ -150,18 +143,16 @@ Boto3 documentation:
 
 Arguments for `ListAccessPoliciesPaginator.paginate` method:
 
-- `identityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#identitytype)
+- `identityType`: [IdentityType](./literals.md#identitytype)
 - `identityId`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `resourceId`: `str`
 - `iamArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPoliciesPaginator.paginate` returns
-`Iterator`\[[ListAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listaccesspoliciesresponsetypedef)\].
+`Iterator`\[[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef)\].
 
 ## ListAssetModelsPaginator
 
@@ -183,10 +174,10 @@ Boto3 documentation:
 Arguments for `ListAssetModelsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetModelsPaginator.paginate` returns
-`Iterator`\[[ListAssetModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetmodelsresponsetypedef)\].
+`Iterator`\[[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef)\].
 
 ## ListAssetRelationshipsPaginator
 
@@ -208,12 +199,13 @@ Boto3 documentation:
 Arguments for `ListAssetRelationshipsPaginator.paginate` method:
 
 - `assetId`: `str` *(required)*
-- `traversalType`: `Literal['PATH_TO_ROOT']` *(required)*
+- `traversalType`: `Literal['PATH_TO_ROOT']` (see
+  [TraversalType](./literals.md#traversaltype)) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetRelationshipsPaginator.paginate` returns
-`Iterator`\[[ListAssetRelationshipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetrelationshipsresponsetypedef)\].
+`Iterator`\[[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef)\].
 
 ## ListAssetsPaginator
 
@@ -235,13 +227,12 @@ Boto3 documentation:
 Arguments for `ListAssetsPaginator.paginate` method:
 
 - `assetModelId`: `str`
-- `filter`:
-  [ListAssetsFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#listassetsfilter)
+- `filter`: [ListAssetsFilter](./literals.md#listassetsfilter)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetsPaginator.paginate` returns
-`Iterator`\[[ListAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetsresponsetypedef)\].
+`Iterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
 
 ## ListAssociatedAssetsPaginator
 
@@ -264,13 +255,12 @@ Arguments for `ListAssociatedAssetsPaginator.paginate` method:
 
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str`
-- `traversalDirection`:
-  [TraversalDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#traversaldirection)
+- `traversalDirection`: [TraversalDirection](./literals.md#traversaldirection)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedAssetsPaginator.paginate` returns
-`Iterator`\[[ListAssociatedAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassociatedassetsresponsetypedef)\].
+`Iterator`\[[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef)\].
 
 ## ListDashboardsPaginator
 
@@ -293,10 +283,10 @@ Arguments for `ListDashboardsPaginator.paginate` method:
 
 - `projectId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDashboardsPaginator.paginate` returns
-`Iterator`\[[ListDashboardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listdashboardsresponsetypedef)\].
+`Iterator`\[[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)\].
 
 ## ListGatewaysPaginator
 
@@ -318,10 +308,10 @@ Boto3 documentation:
 Arguments for `ListGatewaysPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGatewaysPaginator.paginate` returns
-`Iterator`\[[ListGatewaysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listgatewaysresponsetypedef)\].
+`Iterator`\[[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef)\].
 
 ## ListPortalsPaginator
 
@@ -343,10 +333,10 @@ Boto3 documentation:
 Arguments for `ListPortalsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPortalsPaginator.paginate` returns
-`Iterator`\[[ListPortalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listportalsresponsetypedef)\].
+`Iterator`\[[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef)\].
 
 ## ListProjectAssetsPaginator
 
@@ -369,10 +359,10 @@ Arguments for `ListProjectAssetsPaginator.paginate` method:
 
 - `projectId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectAssetsPaginator.paginate` returns
-`Iterator`\[[ListProjectAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listprojectassetsresponsetypedef)\].
+`Iterator`\[[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -395,7 +385,7 @@ Arguments for `ListProjectsPaginator.paginate` method:
 
 - `portalId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listprojectsresponsetypedef)\].
+`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].

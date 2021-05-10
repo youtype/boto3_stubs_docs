@@ -1,7 +1,6 @@
 # AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module
 
-> [Index](../README.md) > [AugmentedAIRuntime](./README.md) >
-> AugmentedAIRuntimeClient
+> [Index](..) > [AugmentedAIRuntime](.) > AugmentedAIRuntimeClient
 
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
@@ -102,7 +101,7 @@ Arguments:
 - `HumanLoopName`: `str` *(required)*
 
 Returns
-[DescribeHumanLoopResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#describehumanloopresponsetypedef).
+[DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef).
 
 ### generate_presigned_url
 
@@ -134,13 +133,12 @@ Arguments:
 - `FlowDefinitionArn`: `str` *(required)*
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListHumanLoopsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#listhumanloopsresponsetypedef).
+[ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef).
 
 ### start_human_loop
 
@@ -154,14 +152,13 @@ Arguments:
 
 - `HumanLoopName`: `str` *(required)*
 - `FlowDefinitionArn`: `str` *(required)*
-- `HumanLoopInput`:
-  [HumanLoopInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#humanloopinputtypedef)
+- `HumanLoopInput`: [HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef)
   *(required)*
 - `DataAttributes`:
-  [HumanLoopDataAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#humanloopdataattributestypedef)
+  [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
 Returns
-[StartHumanLoopResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#starthumanloopresponsetypedef).
+[StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef).
 
 ### stop_human_loop
 

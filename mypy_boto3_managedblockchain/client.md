@@ -1,7 +1,6 @@
 # ManagedBlockchainClient for boto3 ManagedBlockchain module
 
-> [Index](../README.md) > [ManagedBlockchain](./README.md) >
-> ManagedBlockchainClient
+> [Index](..) > [ManagedBlockchain](.) > ManagedBlockchainClient
 
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
@@ -108,11 +107,10 @@ Arguments:
 - `InvitationId`: `str` *(required)*
 - `NetworkId`: `str` *(required)*
 - `MemberConfiguration`:
-  [MemberConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberconfigurationtypedef)
+  [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
   *(required)*
 
-Returns
-[CreateMemberOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#creatememberoutputtypedef).
+Returns [CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef).
 
 ### create_network
 
@@ -125,23 +123,20 @@ Arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Framework`:
-  [Framework](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#framework)
-  *(required)*
+- `Framework`: [Framework](./literals.md#framework) *(required)*
 - `FrameworkVersion`: `str` *(required)*
-- `VotingPolicy`:
-  [VotingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#votingpolicytypedef)
+- `VotingPolicy`: [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
   *(required)*
 - `MemberConfiguration`:
-  [MemberConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberconfigurationtypedef)
+  [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
   *(required)*
 - `Description`: `str`
 - `FrameworkConfiguration`:
-  [NetworkFrameworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networkframeworkconfigurationtypedef)
+  [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateNetworkOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#createnetworkoutputtypedef).
+[CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef).
 
 ### create_node
 
@@ -155,13 +150,12 @@ Arguments:
 - `ClientRequestToken`: `str` *(required)*
 - `NetworkId`: `str` *(required)*
 - `NodeConfiguration`:
-  [NodeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodeconfigurationtypedef)
+  [NodeConfigurationTypeDef](./type_defs.md#nodeconfigurationtypedef)
   *(required)*
 - `MemberId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#createnodeoutputtypedef).
+Returns [CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef).
 
 ### create_proposal
 
@@ -176,14 +170,13 @@ Arguments:
 - `ClientRequestToken`: `str` *(required)*
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
-- `Actions`:
-  [ProposalActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#proposalactionstypedef)
+- `Actions`: [ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef)
   *(required)*
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProposalOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#createproposaloutputtypedef).
+[CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef).
 
 ### delete_member
 
@@ -243,8 +236,7 @@ Arguments:
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
 
-Returns
-[GetMemberOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#getmemberoutputtypedef).
+Returns [GetMemberOutputTypeDef](./type_defs.md#getmemberoutputtypedef).
 
 ### get_network
 
@@ -257,8 +249,7 @@ Arguments:
 
 - `NetworkId`: `str` *(required)*
 
-Returns
-[GetNetworkOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#getnetworkoutputtypedef).
+Returns [GetNetworkOutputTypeDef](./type_defs.md#getnetworkoutputtypedef).
 
 ### get_node
 
@@ -273,8 +264,7 @@ Arguments:
 - `NodeId`: `str` *(required)*
 - `MemberId`: `str`
 
-Returns
-[GetNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#getnodeoutputtypedef).
+Returns [GetNodeOutputTypeDef](./type_defs.md#getnodeoutputtypedef).
 
 ### get_proposal
 
@@ -288,8 +278,7 @@ Arguments:
 - `NetworkId`: `str` *(required)*
 - `ProposalId`: `str` *(required)*
 
-Returns
-[GetProposalOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#getproposaloutputtypedef).
+Returns [GetProposalOutputTypeDef](./type_defs.md#getproposaloutputtypedef).
 
 ### list_invitations
 
@@ -305,7 +294,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInvitationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listinvitationsoutputtypedef).
+[ListInvitationsOutputTypeDef](./type_defs.md#listinvitationsoutputtypedef).
 
 ### list_members
 
@@ -318,14 +307,12 @@ Arguments:
 
 - `NetworkId`: `str` *(required)*
 - `Name`: `str`
-- `Status`:
-  [MemberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#memberstatus)
+- `Status`: [MemberStatus](./literals.md#memberstatus)
 - `IsOwned`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListMembersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listmembersoutputtypedef).
+Returns [ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef).
 
 ### list_networks
 
@@ -337,15 +324,12 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str`
-- `Framework`:
-  [Framework](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#framework)
-- `Status`:
-  [NetworkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#networkstatus)
+- `Framework`: [Framework](./literals.md#framework)
+- `Status`: [NetworkStatus](./literals.md#networkstatus)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListNetworksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listnetworksoutputtypedef).
+Returns [ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef).
 
 ### list_nodes
 
@@ -358,13 +342,11 @@ Arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str`
-- `Status`:
-  [NodeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#nodestatus)
+- `Status`: [NodeStatus](./literals.md#nodestatus)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListNodesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listnodesoutputtypedef).
+Returns [ListNodesOutputTypeDef](./type_defs.md#listnodesoutputtypedef).
 
 ### list_proposal_votes
 
@@ -382,7 +364,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProposalVotesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listproposalvotesoutputtypedef).
+[ListProposalVotesOutputTypeDef](./type_defs.md#listproposalvotesoutputtypedef).
 
 ### list_proposals
 
@@ -398,7 +380,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProposalsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listproposalsoutputtypedef).
+[ListProposalsOutputTypeDef](./type_defs.md#listproposalsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -413,7 +395,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reject_invitation
 
@@ -469,7 +451,7 @@ Arguments:
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
 - `LogPublishingConfiguration`:
-  [MemberLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberlogpublishingconfigurationtypedef)
+  [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -486,7 +468,7 @@ Arguments:
 - `NodeId`: `str` *(required)*
 - `MemberId`: `str`
 - `LogPublishingConfiguration`:
-  [NodeLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodelogpublishingconfigurationtypedef)
+  [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -503,8 +485,6 @@ Arguments:
 - `NetworkId`: `str` *(required)*
 - `ProposalId`: `str` *(required)*
 - `VoterMemberId`: `str` *(required)*
-- `Vote`:
-  [VoteValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#votevalue)
-  *(required)*
+- `Vote`: [VoteValue](./literals.md#votevalue) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

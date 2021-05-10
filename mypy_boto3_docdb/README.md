@@ -1,6 +1,6 @@
 # Type annotations for boto3 DocDB module
 
-> [Index](../README.md) > DocDB
+> [Index](..) > DocDB
 
 Auto-generated documentation for
 [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)

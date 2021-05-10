@@ -1,6 +1,6 @@
 # Type annotations for boto3 IAM module
 
-> [Index](../README.md) > IAM
+> [Index](..) > IAM
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
@@ -234,7 +234,7 @@ IAMClient [exceptions](./client.md#exceptions)
 ## IAMServiceResource
 
 Type annotations for `boto3.resource("iam")` as
-[IAMServiceResource](./service_resource.md)
+[IAMServiceResource](./service_resource.md#iamserviceresource)
 
 Can be used directly:
 
@@ -252,14 +252,14 @@ Can be used directly:
 from mypy_boto3_iam.service_resource import ServiceResourceGroupsCollection, ...
 ```
 
-- [ServiceResourceGroupsCollection](./service_resource.md#iamserviceresource.groups)
-- [ServiceResourceInstanceProfilesCollection](./service_resource.md#iamserviceresource.instance-profiles)
-- [ServiceResourcePoliciesCollection](./service_resource.md#iamserviceresource.policies)
-- [ServiceResourceRolesCollection](./service_resource.md#iamserviceresource.roles)
-- [ServiceResourceSamlProvidersCollection](./service_resource.md#iamserviceresource.saml-providers)
-- [ServiceResourceServerCertificatesCollection](./service_resource.md#iamserviceresource.server-certificates)
-- [ServiceResourceUsersCollection](./service_resource.md#iamserviceresource.users)
-- [ServiceResourceVirtualMfaDevicesCollection](./service_resource.md#iamserviceresource.virtual-mfa-devices)
+- [ServiceResourceGroupsCollection](./service_resource.md#iamserviceresourcegroups)
+- [ServiceResourceInstanceProfilesCollection](./service_resource.md#iamserviceresourceinstance-profiles)
+- [ServiceResourcePoliciesCollection](./service_resource.md#iamserviceresourcepolicies)
+- [ServiceResourceRolesCollection](./service_resource.md#iamserviceresourceroles)
+- [ServiceResourceSamlProvidersCollection](./service_resource.md#iamserviceresourcesaml-providers)
+- [ServiceResourceServerCertificatesCollection](./service_resource.md#iamserviceresourceserver-certificates)
+- [ServiceResourceUsersCollection](./service_resource.md#iamserviceresourceusers)
+- [ServiceResourceVirtualMfaDevicesCollection](./service_resource.md#iamserviceresourcevirtual-mfa-devices)
 
 ### Resources
 

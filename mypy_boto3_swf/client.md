@@ -1,6 +1,6 @@
 # SWFClient for boto3 SWF module
 
-> [Index](../README.md) > [SWF](./README.md) > SWFClient
+> [Index](..) > [SWF](.) > SWFClient
 
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
@@ -121,20 +121,19 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
 - `closeTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
 - `executionFilter`:
-  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+  [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 - `typeFilter`:
-  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
-- `tagFilter`:
-  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+  [WorkflowTypeFilterTypeDef](./type_defs.md#workflowtypefiltertypedef)
+- `tagFilter`: [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - `closeStatusFilter`:
-  [CloseStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#closestatusfiltertypedef)
+  [CloseStatusFilterTypeDef](./type_defs.md#closestatusfiltertypedef)
 
 Returns
-[WorkflowExecutionCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncounttypedef).
+[WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
 ### count_open_workflow_executions
 
@@ -148,17 +147,16 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
   *(required)*
 - `typeFilter`:
-  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
-- `tagFilter`:
-  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+  [WorkflowTypeFilterTypeDef](./type_defs.md#workflowtypefiltertypedef)
+- `tagFilter`: [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - `executionFilter`:
-  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+  [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
 Returns
-[WorkflowExecutionCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncounttypedef).
+[WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
 ### count_pending_activity_tasks
 
@@ -170,12 +168,9 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-  *(required)*
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
-Returns
-[PendingTaskCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#pendingtaskcounttypedef).
+Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
 ### count_pending_decision_tasks
 
@@ -187,12 +182,9 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-  *(required)*
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
-Returns
-[PendingTaskCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#pendingtaskcounttypedef).
+Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
 ### deprecate_activity_type
 
@@ -204,8 +196,7 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
 ### deprecate_domain
@@ -229,8 +220,7 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
 ### describe_activity_type
@@ -243,12 +233,10 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
-Returns
-[ActivityTypeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypedetailtypedef).
+Returns [ActivityTypeDetailTypeDef](./type_defs.md#activitytypedetailtypedef).
 
 ### describe_domain
 
@@ -261,8 +249,7 @@ Arguments:
 
 - `name`: `str` *(required)*
 
-Returns
-[DomainDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaindetailtypedef).
+Returns [DomainDetailTypeDef](./type_defs.md#domaindetailtypedef).
 
 ### describe_workflow_execution
 
@@ -275,11 +262,11 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `execution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
   *(required)*
 
 Returns
-[WorkflowExecutionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiondetailtypedef).
+[WorkflowExecutionDetailTypeDef](./type_defs.md#workflowexecutiondetailtypedef).
 
 ### describe_workflow_type
 
@@ -291,12 +278,10 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
-Returns
-[WorkflowTypeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypedetailtypedef).
+Returns [WorkflowTypeDetailTypeDef](./type_defs.md#workflowtypedetailtypedef).
 
 ### generate_presigned_url
 
@@ -326,14 +311,13 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `execution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
   *(required)*
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[HistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#historytypedef).
+Returns [HistoryTypeDef](./type_defs.md#historytypedef).
 
 ### list_activity_types
 
@@ -345,16 +329,14 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
   *(required)*
 - `name`: `str`
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[ActivityTypeInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypeinfostypedef).
+Returns [ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef).
 
 ### list_closed_workflow_executions
 
@@ -368,23 +350,22 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
 - `closeTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
 - `executionFilter`:
-  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+  [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 - `closeStatusFilter`:
-  [CloseStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#closestatusfiltertypedef)
+  [CloseStatusFilterTypeDef](./type_defs.md#closestatusfiltertypedef)
 - `typeFilter`:
-  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
-- `tagFilter`:
-  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+  [WorkflowTypeFilterTypeDef](./type_defs.md#workflowtypefiltertypedef)
+- `tagFilter`: [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
 Returns
-[WorkflowExecutionInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfostypedef).
+[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
 ### list_domains
 
@@ -395,15 +376,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
   *(required)*
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[DomainInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaininfostypedef).
+Returns [DomainInfosTypeDef](./type_defs.md#domaininfostypedef).
 
 ### list_open_workflow_executions
 
@@ -417,20 +396,19 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
   *(required)*
 - `typeFilter`:
-  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
-- `tagFilter`:
-  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+  [WorkflowTypeFilterTypeDef](./type_defs.md#workflowtypefiltertypedef)
+- `tagFilter`: [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 - `executionFilter`:
-  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+  [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
 Returns
-[WorkflowExecutionInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfostypedef).
+[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
 ### list_tags_for_resource
 
@@ -444,7 +422,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_workflow_types
 
@@ -456,16 +434,14 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
   *(required)*
 - `name`: `str`
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[WorkflowTypeInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypeinfostypedef).
+Returns [WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef).
 
 ### poll_for_activity_task
 
@@ -477,13 +453,10 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-  *(required)*
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 - `identity`: `str`
 
-Returns
-[ActivityTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytasktypedef).
+Returns [ActivityTaskTypeDef](./type_defs.md#activitytasktypedef).
 
 ### poll_for_decision_task
 
@@ -495,16 +468,13 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-  *(required)*
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 - `identity`: `str`
 - `nextPageToken`: `str`
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[DecisionTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontasktypedef).
+Returns [DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef).
 
 ### record_activity_task_heartbeat
 
@@ -519,8 +489,7 @@ Arguments:
 - `taskToken`: `str` *(required)*
 - `details`: `str`
 
-Returns
-[ActivityTaskStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskstatustypedef).
+Returns [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef).
 
 ### register_activity_type
 
@@ -537,8 +506,7 @@ Arguments:
 - `description`: `str`
 - `defaultTaskStartToCloseTimeout`: `str`
 - `defaultTaskHeartbeatTimeout`: `str`
-- `defaultTaskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `defaultTaskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `defaultTaskPriority`: `str`
 - `defaultTaskScheduleToStartTimeout`: `str`
 - `defaultTaskScheduleToCloseTimeout`: `str`
@@ -555,8 +523,7 @@ Arguments:
 - `name`: `str` *(required)*
 - `workflowExecutionRetentionPeriodInDays`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#resourcetagtypedef)\]
+- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 ### register_workflow_type
 
@@ -573,11 +540,9 @@ Arguments:
 - `description`: `str`
 - `defaultTaskStartToCloseTimeout`: `str`
 - `defaultExecutionStartToCloseTimeout`: `str`
-- `defaultTaskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `defaultTaskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `defaultTaskPriority`: `str`
-- `defaultChildPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `defaultChildPolicy`: [ChildPolicy](./literals.md#childpolicy)
 - `defaultLambdaRole`: `str`
 
 ### request_cancel_workflow_execution
@@ -644,8 +609,7 @@ Boto3 documentation:
 Arguments:
 
 - `taskToken`: `str` *(required)*
-- `decisions`:
-  `List`\[[DecisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontypedef)\]
+- `decisions`: `List`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
 - `executionContext`: `str`
 
 ### signal_workflow_execution
@@ -674,22 +638,18 @@ Arguments:
 
 - `domain`: `str` *(required)*
 - `workflowId`: `str` *(required)*
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `taskPriority`: `str`
 - `input`: `str`
 - `executionStartToCloseTimeout`: `str`
 - `tagList`: `List`\[`str`\]
 - `taskStartToCloseTimeout`: `str`
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 - `lambdaRole`: `str`
 
-Returns
-[RunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#runtypedef).
+Returns [RunTypeDef](./type_defs.md#runtypedef).
 
 ### tag_resource
 
@@ -701,8 +661,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#resourcetagtypedef)\]
+- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
   *(required)*
 
 ### terminate_workflow_execution
@@ -719,8 +678,7 @@ Arguments:
 - `runId`: `str`
 - `reason`: `str`
 - `details`: `str`
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 
 ### undeprecate_activity_type
 
@@ -732,8 +690,7 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
 ### undeprecate_domain
@@ -757,8 +714,7 @@ Boto3 documentation:
 Arguments:
 
 - `domain`: `str` *(required)*
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
 ### untag_resource

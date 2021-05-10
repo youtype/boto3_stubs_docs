@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Route53 module
 
-> [Index](../README.md) > [Route53](./README.md) > Structures
+> [Index](..) > [Route53](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
@@ -109,8 +109,7 @@ from mypy_boto3_route53.type_defs import AccountLimitTypeDef
 
 Required fields:
 
-- `Type`:
-  [AccountLimitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#accountlimittype)
+- `Type`: [AccountLimitType](./literals.md#accountlimittype)
 - `Value`: `int`
 
 ## ActivateKeySigningKeyResponseTypeDef
@@ -121,8 +120,7 @@ from mypy_boto3_route53.type_defs import ActivateKeySigningKeyResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## AlarmIdentifierTypeDef
 
@@ -132,8 +130,7 @@ from mypy_boto3_route53.type_defs import AlarmIdentifierTypeDef
 
 Required fields:
 
-- `Region`:
-  [CloudWatchRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#cloudwatchregion)
+- `Region`: [CloudWatchRegion](./literals.md#cloudwatchregion)
 - `Name`: `str`
 
 ## AliasTargetTypeDef
@@ -156,8 +153,7 @@ from mypy_boto3_route53.type_defs import AssociateVPCWithHostedZoneResponseTypeD
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## ChangeBatchTypeDef
 
@@ -167,8 +163,7 @@ from mypy_boto3_route53.type_defs import ChangeBatchTypeDef
 
 Required fields:
 
-- `Changes`:
-  `List`\[[ChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changetypedef)\]
+- `Changes`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
 
 Optional fields:
 
@@ -183,8 +178,7 @@ from mypy_boto3_route53.type_defs import ChangeInfoTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Status`:
-  [ChangeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#changestatus)
+- `Status`: [ChangeStatus](./literals.md#changestatus)
 - `SubmittedAt`: `datetime`
 
 Optional fields:
@@ -199,8 +193,7 @@ from mypy_boto3_route53.type_defs import ChangeResourceRecordSetsResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## ChangeTypeDef
 
@@ -210,10 +203,9 @@ from mypy_boto3_route53.type_defs import ChangeTypeDef
 
 Required fields:
 
-- `Action`:
-  [ChangeAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#changeaction)
+- `Action`: [ChangeAction](./literals.md#changeaction)
 - `ResourceRecordSet`:
-  [ResourceRecordSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#resourcerecordsettypedef)
+  [ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef)
 
 ## CloudWatchAlarmConfigurationTypeDef
 
@@ -225,18 +217,15 @@ Required fields:
 
 - `EvaluationPeriods`: `int`
 - `Threshold`: `float`
-- `ComparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#comparisonoperator)
+- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
 - `Period`: `int`
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`:
-  [Statistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#statistic)
+- `Statistic`: [Statistic](./literals.md#statistic)
 
 Optional fields:
 
-- `Dimensions`:
-  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#dimensiontypedef)\]
+- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 ## CreateHealthCheckResponseTypeDef
 
@@ -246,8 +235,7 @@ from mypy_boto3_route53.type_defs import CreateHealthCheckResponseTypeDef
 
 Required fields:
 
-- `HealthCheck`:
-  [HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthchecktypedef)
+- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
 - `Location`: `str`
 
 ## CreateHostedZoneResponseTypeDef
@@ -258,18 +246,14 @@ from mypy_boto3_route53.type_defs import CreateHostedZoneResponseTypeDef
 
 Required fields:
 
-- `HostedZone`:
-  [HostedZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonetypedef)
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
-- `DelegationSet`:
-  [DelegationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#delegationsettypedef)
+- `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
 - `Location`: `str`
 
 Optional fields:
 
-- `VPC`:
-  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
 
 ## CreateKeySigningKeyResponseTypeDef
 
@@ -279,10 +263,8 @@ from mypy_boto3_route53.type_defs import CreateKeySigningKeyResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
-- `KeySigningKey`:
-  [KeySigningKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#keysigningkeytypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `KeySigningKey`: [KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef)
 - `Location`: `str`
 
 ## CreateQueryLoggingConfigResponseTypeDef
@@ -294,7 +276,7 @@ from mypy_boto3_route53.type_defs import CreateQueryLoggingConfigResponseTypeDef
 Required fields:
 
 - `QueryLoggingConfig`:
-  [QueryLoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#queryloggingconfigtypedef)
+  [QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)
 - `Location`: `str`
 
 ## CreateReusableDelegationSetResponseTypeDef
@@ -305,8 +287,7 @@ from mypy_boto3_route53.type_defs import CreateReusableDelegationSetResponseType
 
 Required fields:
 
-- `DelegationSet`:
-  [DelegationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#delegationsettypedef)
+- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
 - `Location`: `str`
 
 ## CreateTrafficPolicyInstanceResponseTypeDef
@@ -318,7 +299,7 @@ from mypy_boto3_route53.type_defs import CreateTrafficPolicyInstanceResponseType
 Required fields:
 
 - `TrafficPolicyInstance`:
-  [TrafficPolicyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicyinstancetypedef)
+  [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
 - `Location`: `str`
 
 ## CreateTrafficPolicyResponseTypeDef
@@ -329,8 +310,7 @@ from mypy_boto3_route53.type_defs import CreateTrafficPolicyResponseTypeDef
 
 Required fields:
 
-- `TrafficPolicy`:
-  [TrafficPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicytypedef)
+- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
 - `Location`: `str`
 
 ## CreateTrafficPolicyVersionResponseTypeDef
@@ -341,8 +321,7 @@ from mypy_boto3_route53.type_defs import CreateTrafficPolicyVersionResponseTypeD
 
 Required fields:
 
-- `TrafficPolicy`:
-  [TrafficPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicytypedef)
+- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
 - `Location`: `str`
 
 ## CreateVPCAssociationAuthorizationResponseTypeDef
@@ -354,8 +333,7 @@ from mypy_boto3_route53.type_defs import CreateVPCAssociationAuthorizationRespon
 Required fields:
 
 - `HostedZoneId`: `str`
-- `VPC`:
-  [VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
 
 ## DNSSECStatusTypeDef
 
@@ -376,8 +354,7 @@ from mypy_boto3_route53.type_defs import DeactivateKeySigningKeyResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## DelegationSetTypeDef
 
@@ -402,8 +379,7 @@ from mypy_boto3_route53.type_defs import DeleteHostedZoneResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## DeleteKeySigningKeyResponseTypeDef
 
@@ -413,8 +389,7 @@ from mypy_boto3_route53.type_defs import DeleteKeySigningKeyResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## DimensionTypeDef
 
@@ -435,8 +410,7 @@ from mypy_boto3_route53.type_defs import DisableHostedZoneDNSSECResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## DisassociateVPCFromHostedZoneResponseTypeDef
 
@@ -446,8 +420,7 @@ from mypy_boto3_route53.type_defs import DisassociateVPCFromHostedZoneResponseTy
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## EnableHostedZoneDNSSECResponseTypeDef
 
@@ -457,8 +430,7 @@ from mypy_boto3_route53.type_defs import EnableHostedZoneDNSSECResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## GeoLocationDetailsTypeDef
 
@@ -495,8 +467,7 @@ from mypy_boto3_route53.type_defs import GetAccountLimitResponseTypeDef
 
 Required fields:
 
-- `Limit`:
-  [AccountLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#accountlimittypedef)
+- `Limit`: [AccountLimitTypeDef](./type_defs.md#accountlimittypedef)
 - `Count`: `int`
 
 ## GetChangeResponseTypeDef
@@ -507,8 +478,7 @@ from mypy_boto3_route53.type_defs import GetChangeResponseTypeDef
 
 Required fields:
 
-- `ChangeInfo`:
-  [ChangeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#changeinfotypedef)
+- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 
 ## GetCheckerIpRangesResponseTypeDef
 
@@ -528,10 +498,9 @@ from mypy_boto3_route53.type_defs import GetDNSSECResponseTypeDef
 
 Required fields:
 
-- `Status`:
-  [DNSSECStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#dnssecstatustypedef)
+- `Status`: [DNSSECStatusTypeDef](./type_defs.md#dnssecstatustypedef)
 - `KeySigningKeys`:
-  `List`\[[KeySigningKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#keysigningkeytypedef)\]
+  `List`\[[KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef)\]
 
 ## GetGeoLocationResponseTypeDef
 
@@ -542,7 +511,7 @@ from mypy_boto3_route53.type_defs import GetGeoLocationResponseTypeDef
 Required fields:
 
 - `GeoLocationDetails`:
-  [GeoLocationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#geolocationdetailstypedef)
+  [GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef)
 
 ## GetHealthCheckCountResponseTypeDef
 
@@ -563,7 +532,7 @@ from mypy_boto3_route53.type_defs import GetHealthCheckLastFailureReasonResponse
 Required fields:
 
 - `HealthCheckObservations`:
-  `List`\[[HealthCheckObservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthcheckobservationtypedef)\]
+  `List`\[[HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef)\]
 
 ## GetHealthCheckResponseTypeDef
 
@@ -573,8 +542,7 @@ from mypy_boto3_route53.type_defs import GetHealthCheckResponseTypeDef
 
 Required fields:
 
-- `HealthCheck`:
-  [HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthchecktypedef)
+- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
 
 ## GetHealthCheckStatusResponseTypeDef
 
@@ -585,7 +553,7 @@ from mypy_boto3_route53.type_defs import GetHealthCheckStatusResponseTypeDef
 Required fields:
 
 - `HealthCheckObservations`:
-  `List`\[[HealthCheckObservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthcheckobservationtypedef)\]
+  `List`\[[HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef)\]
 
 ## GetHostedZoneCountResponseTypeDef
 
@@ -605,8 +573,7 @@ from mypy_boto3_route53.type_defs import GetHostedZoneLimitResponseTypeDef
 
 Required fields:
 
-- `Limit`:
-  [HostedZoneLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonelimittypedef)
+- `Limit`: [HostedZoneLimitTypeDef](./type_defs.md#hostedzonelimittypedef)
 - `Count`: `int`
 
 ## GetHostedZoneResponseTypeDef
@@ -617,15 +584,12 @@ from mypy_boto3_route53.type_defs import GetHostedZoneResponseTypeDef
 
 Required fields:
 
-- `HostedZone`:
-  [HostedZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonetypedef)
+- `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
 
 Optional fields:
 
-- `DelegationSet`:
-  [DelegationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#delegationsettypedef)
-- `VPCs`:
-  `List`\[[VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)\]
+- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
+- `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
 
 ## GetQueryLoggingConfigResponseTypeDef
 
@@ -636,7 +600,7 @@ from mypy_boto3_route53.type_defs import GetQueryLoggingConfigResponseTypeDef
 Required fields:
 
 - `QueryLoggingConfig`:
-  [QueryLoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#queryloggingconfigtypedef)
+  [QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)
 
 ## GetReusableDelegationSetLimitResponseTypeDef
 
@@ -647,7 +611,7 @@ from mypy_boto3_route53.type_defs import GetReusableDelegationSetLimitResponseTy
 Required fields:
 
 - `Limit`:
-  [ReusableDelegationSetLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#reusabledelegationsetlimittypedef)
+  [ReusableDelegationSetLimitTypeDef](./type_defs.md#reusabledelegationsetlimittypedef)
 - `Count`: `int`
 
 ## GetReusableDelegationSetResponseTypeDef
@@ -658,8 +622,7 @@ from mypy_boto3_route53.type_defs import GetReusableDelegationSetResponseTypeDef
 
 Required fields:
 
-- `DelegationSet`:
-  [DelegationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#delegationsettypedef)
+- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
 
 ## GetTrafficPolicyInstanceCountResponseTypeDef
 
@@ -680,7 +643,7 @@ from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceResponseTypeDef
 Required fields:
 
 - `TrafficPolicyInstance`:
-  [TrafficPolicyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicyinstancetypedef)
+  [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
 
 ## GetTrafficPolicyResponseTypeDef
 
@@ -690,8 +653,7 @@ from mypy_boto3_route53.type_defs import GetTrafficPolicyResponseTypeDef
 
 Required fields:
 
-- `TrafficPolicy`:
-  [TrafficPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicytypedef)
+- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
 
 ## HealthCheckConfigTypeDef
 
@@ -701,8 +663,7 @@ from mypy_boto3_route53.type_defs import HealthCheckConfigTypeDef
 
 Required fields:
 
-- `Type`:
-  [HealthCheckType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#healthchecktype)
+- `Type`: [HealthCheckType](./literals.md#healthchecktype)
 
 Optional fields:
 
@@ -719,12 +680,11 @@ Optional fields:
 - `HealthThreshold`: `int`
 - `ChildHealthChecks`: `List`\[`str`\]
 - `EnableSNI`: `bool`
-- `Regions`:
-  `List`\[[HealthCheckRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#healthcheckregion)\]
+- `Regions`: `List`\[[HealthCheckRegion](./literals.md#healthcheckregion)\]
 - `AlarmIdentifier`:
-  [AlarmIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#alarmidentifiertypedef)
+  [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
 - `InsufficientDataHealthStatus`:
-  [InsufficientDataHealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#insufficientdatahealthstatus)
+  [InsufficientDataHealthStatus](./literals.md#insufficientdatahealthstatus)
 
 ## HealthCheckObservationTypeDef
 
@@ -734,11 +694,9 @@ from mypy_boto3_route53.type_defs import HealthCheckObservationTypeDef
 
 Optional fields:
 
-- `Region`:
-  [HealthCheckRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#healthcheckregion)
+- `Region`: [HealthCheckRegion](./literals.md#healthcheckregion)
 - `IPAddress`: `str`
-- `StatusReport`:
-  [StatusReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#statusreporttypedef)
+- `StatusReport`: [StatusReportTypeDef](./type_defs.md#statusreporttypedef)
 
 ## HealthCheckTypeDef
 
@@ -751,15 +709,14 @@ Required fields:
 - `Id`: `str`
 - `CallerReference`: `str`
 - `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthcheckconfigtypedef)
+  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckVersion`: `int`
 
 Optional fields:
 
-- `LinkedService`:
-  [LinkedServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#linkedservicetypedef)
+- `LinkedService`: [LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef)
 - `CloudWatchAlarmConfiguration`:
-  [CloudWatchAlarmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#cloudwatchalarmconfigurationtypedef)
+  [CloudWatchAlarmConfigurationTypeDef](./type_defs.md#cloudwatchalarmconfigurationtypedef)
 
 ## HostedZoneConfigTypeDef
 
@@ -780,8 +737,7 @@ from mypy_boto3_route53.type_defs import HostedZoneLimitTypeDef
 
 Required fields:
 
-- `Type`:
-  [HostedZoneLimitType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#hostedzonelimittype)
+- `Type`: [HostedZoneLimitType](./literals.md#hostedzonelimittype)
 - `Value`: `int`
 
 ## HostedZoneOwnerTypeDef
@@ -805,8 +761,7 @@ Required fields:
 
 - `HostedZoneId`: `str`
 - `Name`: `str`
-- `Owner`:
-  [HostedZoneOwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzoneownertypedef)
+- `Owner`: [HostedZoneOwnerTypeDef](./type_defs.md#hostedzoneownertypedef)
 
 ## HostedZoneTypeDef
 
@@ -822,11 +777,9 @@ Required fields:
 
 Optional fields:
 
-- `Config`:
-  [HostedZoneConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzoneconfigtypedef)
+- `Config`: [HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef)
 - `ResourceRecordSetCount`: `int`
-- `LinkedService`:
-  [LinkedServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#linkedservicetypedef)
+- `LinkedService`: [LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef)
 
 ## KeySigningKeyTypeDef
 
@@ -873,7 +826,7 @@ from mypy_boto3_route53.type_defs import ListGeoLocationsResponseTypeDef
 Required fields:
 
 - `GeoLocationDetailsList`:
-  `List`\[[GeoLocationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#geolocationdetailstypedef)\]
+  `List`\[[GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
@@ -892,7 +845,7 @@ from mypy_boto3_route53.type_defs import ListHealthChecksResponseTypeDef
 Required fields:
 
 - `HealthChecks`:
-  `List`\[[HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthchecktypedef)\]
+  `List`\[[HealthCheckTypeDef](./type_defs.md#healthchecktypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
@@ -909,8 +862,7 @@ from mypy_boto3_route53.type_defs import ListHostedZonesByNameResponseTypeDef
 
 Required fields:
 
-- `HostedZones`:
-  `List`\[[HostedZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonetypedef)\]
+- `HostedZones`: `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
@@ -930,7 +882,7 @@ from mypy_boto3_route53.type_defs import ListHostedZonesByVPCResponseTypeDef
 Required fields:
 
 - `HostedZoneSummaries`:
-  `List`\[[HostedZoneSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonesummarytypedef)\]
+  `List`\[[HostedZoneSummaryTypeDef](./type_defs.md#hostedzonesummarytypedef)\]
 - `MaxItems`: `str`
 
 Optional fields:
@@ -945,8 +897,7 @@ from mypy_boto3_route53.type_defs import ListHostedZonesResponseTypeDef
 
 Required fields:
 
-- `HostedZones`:
-  `List`\[[HostedZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonetypedef)\]
+- `HostedZones`: `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
@@ -964,7 +915,7 @@ from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsResponseTypeDef
 Required fields:
 
 - `QueryLoggingConfigs`:
-  `List`\[[QueryLoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#queryloggingconfigtypedef)\]
+  `List`\[[QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)\]
 
 Optional fields:
 
@@ -979,15 +930,14 @@ from mypy_boto3_route53.type_defs import ListResourceRecordSetsResponseTypeDef
 Required fields:
 
 - `ResourceRecordSets`:
-  `List`\[[ResourceRecordSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#resourcerecordsettypedef)\]
+  `List`\[[ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
 Optional fields:
 
 - `NextRecordName`: `str`
-- `NextRecordType`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `NextRecordType`: [RRType](./literals.md#rrtype)
 - `NextRecordIdentifier`: `str`
 
 ## ListReusableDelegationSetsResponseTypeDef
@@ -999,7 +949,7 @@ from mypy_boto3_route53.type_defs import ListReusableDelegationSetsResponseTypeD
 Required fields:
 
 - `DelegationSets`:
-  `List`\[[DelegationSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#delegationsettypedef)\]
+  `List`\[[DelegationSetTypeDef](./type_defs.md#delegationsettypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
@@ -1016,8 +966,7 @@ from mypy_boto3_route53.type_defs import ListTagsForResourceResponseTypeDef
 
 Required fields:
 
-- `ResourceTagSet`:
-  [ResourceTagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#resourcetagsettypedef)
+- `ResourceTagSet`: [ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)
 
 ## ListTagsForResourcesResponseTypeDef
 
@@ -1028,7 +977,7 @@ from mypy_boto3_route53.type_defs import ListTagsForResourcesResponseTypeDef
 Required fields:
 
 - `ResourceTagSets`:
-  `List`\[[ResourceTagSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#resourcetagsettypedef)\]
+  `List`\[[ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)\]
 
 ## ListTrafficPoliciesResponseTypeDef
 
@@ -1039,7 +988,7 @@ from mypy_boto3_route53.type_defs import ListTrafficPoliciesResponseTypeDef
 Required fields:
 
 - `TrafficPolicySummaries`:
-  `List`\[[TrafficPolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicysummarytypedef)\]
+  `List`\[[TrafficPolicySummaryTypeDef](./type_defs.md#trafficpolicysummarytypedef)\]
 - `IsTruncated`: `bool`
 - `TrafficPolicyIdMarker`: `str`
 - `MaxItems`: `str`
@@ -1053,15 +1002,14 @@ from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByHostedZoneR
 Required fields:
 
 - `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicyinstancetypedef)\]
+  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
 Optional fields:
 
 - `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `TrafficPolicyInstanceTypeMarker`: [RRType](./literals.md#rrtype)
 
 ## ListTrafficPolicyInstancesByPolicyResponseTypeDef
 
@@ -1072,7 +1020,7 @@ from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByPolicyRespo
 Required fields:
 
 - `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicyinstancetypedef)\]
+  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
@@ -1080,8 +1028,7 @@ Optional fields:
 
 - `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `TrafficPolicyInstanceTypeMarker`: [RRType](./literals.md#rrtype)
 
 ## ListTrafficPolicyInstancesResponseTypeDef
 
@@ -1092,7 +1039,7 @@ from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesResponseTypeD
 Required fields:
 
 - `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicyinstancetypedef)\]
+  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
 - `IsTruncated`: `bool`
 - `MaxItems`: `str`
 
@@ -1100,8 +1047,7 @@ Optional fields:
 
 - `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `TrafficPolicyInstanceTypeMarker`: [RRType](./literals.md#rrtype)
 
 ## ListTrafficPolicyVersionsResponseTypeDef
 
@@ -1112,7 +1058,7 @@ from mypy_boto3_route53.type_defs import ListTrafficPolicyVersionsResponseTypeDe
 Required fields:
 
 - `TrafficPolicies`:
-  `List`\[[TrafficPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicytypedef)\]
+  `List`\[[TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)\]
 - `IsTruncated`: `bool`
 - `TrafficPolicyVersionMarker`: `str`
 - `MaxItems`: `str`
@@ -1126,8 +1072,7 @@ from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsRespons
 Required fields:
 
 - `HostedZoneId`: `str`
-- `VPCs`:
-  `List`\[[VPCTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#vpctypedef)\]
+- `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
 
 Optional fields:
 
@@ -1166,25 +1111,21 @@ from mypy_boto3_route53.type_defs import ResourceRecordSetTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `Type`: [RRType](./literals.md#rrtype)
 
 Optional fields:
 
 - `SetIdentifier`: `str`
 - `Weight`: `int`
-- `Region`:
-  [ResourceRecordSetRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#resourcerecordsetregion)
-- `GeoLocation`:
-  [GeoLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#geolocationtypedef)
+- `Region`: [ResourceRecordSetRegion](./literals.md#resourcerecordsetregion)
+- `GeoLocation`: [GeoLocationTypeDef](./type_defs.md#geolocationtypedef)
 - `Failover`:
-  [ResourceRecordSetFailover](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#resourcerecordsetfailover)
+  [ResourceRecordSetFailover](./literals.md#resourcerecordsetfailover)
 - `MultiValueAnswer`: `bool`
 - `TTL`: `int`
 - `ResourceRecords`:
-  `List`\[[ResourceRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#resourcerecordtypedef)\]
-- `AliasTarget`:
-  [AliasTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#aliastargettypedef)
+  `List`\[[ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)\]
+- `AliasTarget`: [AliasTargetTypeDef](./type_defs.md#aliastargettypedef)
 - `HealthCheckId`: `str`
 - `TrafficPolicyInstanceId`: `str`
 
@@ -1206,11 +1147,9 @@ from mypy_boto3_route53.type_defs import ResourceTagSetTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [TagResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#tagresourcetype)
+- `ResourceType`: [TagResourceType](./literals.md#tagresourcetype)
 - `ResourceId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ReusableDelegationSetLimitTypeDef
 
@@ -1220,7 +1159,8 @@ from mypy_boto3_route53.type_defs import ReusableDelegationSetLimitTypeDef
 
 Required fields:
 
-- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']`
+- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
+  [ReusableDelegationSetLimitType](./literals.md#reusabledelegationsetlimittype))
 - `Value`: `int`
 
 ## StatusReportTypeDef
@@ -1255,8 +1195,7 @@ Required fields:
 
 - `Nameserver`: `str`
 - `RecordName`: `str`
-- `RecordType`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `RecordType`: [RRType](./literals.md#rrtype)
 - `RecordData`: `List`\[`str`\]
 - `ResponseCode`: `str`
 - `Protocol`: `str`
@@ -1277,8 +1216,7 @@ Required fields:
 - `Message`: `str`
 - `TrafficPolicyId`: `str`
 - `TrafficPolicyVersion`: `int`
-- `TrafficPolicyType`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `TrafficPolicyType`: [RRType](./literals.md#rrtype)
 
 ## TrafficPolicySummaryTypeDef
 
@@ -1290,8 +1228,7 @@ Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Type`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `Type`: [RRType](./literals.md#rrtype)
 - `LatestVersion`: `int`
 - `TrafficPolicyCount`: `int`
 
@@ -1306,8 +1243,7 @@ Required fields:
 - `Id`: `str`
 - `Version`: `int`
 - `Name`: `str`
-- `Type`:
-  [RRType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#rrtype)
+- `Type`: [RRType](./literals.md#rrtype)
 - `Document`: `str`
 
 Optional fields:
@@ -1322,8 +1258,7 @@ from mypy_boto3_route53.type_defs import UpdateHealthCheckResponseTypeDef
 
 Required fields:
 
-- `HealthCheck`:
-  [HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#healthchecktypedef)
+- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
 
 ## UpdateHostedZoneCommentResponseTypeDef
 
@@ -1333,8 +1268,7 @@ from mypy_boto3_route53.type_defs import UpdateHostedZoneCommentResponseTypeDef
 
 Required fields:
 
-- `HostedZone`:
-  [HostedZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#hostedzonetypedef)
+- `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
 
 ## UpdateTrafficPolicyCommentResponseTypeDef
 
@@ -1344,8 +1278,7 @@ from mypy_boto3_route53.type_defs import UpdateTrafficPolicyCommentResponseTypeD
 
 Required fields:
 
-- `TrafficPolicy`:
-  [TrafficPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicytypedef)
+- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
 
 ## UpdateTrafficPolicyInstanceResponseTypeDef
 
@@ -1356,7 +1289,7 @@ from mypy_boto3_route53.type_defs import UpdateTrafficPolicyInstanceResponseType
 Required fields:
 
 - `TrafficPolicyInstance`:
-  [TrafficPolicyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#trafficpolicyinstancetypedef)
+  [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
 
 ## VPCTypeDef
 
@@ -1366,8 +1299,7 @@ from mypy_boto3_route53.type_defs import VPCTypeDef
 
 Optional fields:
 
-- `VPCRegion`:
-  [VPCRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/literals.html#vpcregion)
+- `VPCRegion`: [VPCRegion](./literals.md#vpcregion)
 - `VPCId`: `str`
 
 ## WaiterConfigTypeDef

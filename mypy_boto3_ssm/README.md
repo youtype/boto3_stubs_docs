@@ -1,6 +1,6 @@
 # Type annotations for boto3 SSM module
 
-> [Index](../README.md) > SSM
+> [Index](..) > SSM
 
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)

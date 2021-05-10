@@ -1,6 +1,6 @@
 # Literals for boto3 RoboMaker module
 
-> [Index](../README.md) > [RoboMaker](./README.md) > Literals
+> [Index](..) > [RoboMaker](.) > Literals
 
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)

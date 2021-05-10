@@ -1,6 +1,6 @@
 # ChimeClient for boto3 Chime module
 
-> [Index](../README.md) > [Chime](./README.md) > ChimeClient
+> [Index](..) > [Chime](.) > ChimeClient
 
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
@@ -274,7 +274,7 @@ Arguments:
 - `ForceAssociate`: `bool`
 
 Returns
-[AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#associatephonenumberswithvoiceconnectorresponsetypedef).
+[AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef).
 
 ### associate_phone_numbers_with_voice_connector_group
 
@@ -292,7 +292,7 @@ Arguments:
 - `ForceAssociate`: `bool`
 
 Returns
-[AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
+[AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
 
 ### associate_signin_delegate_groups_with_account
 
@@ -306,7 +306,7 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `SigninDelegateGroups`:
-  `List`\[[SigninDelegateGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#signindelegategrouptypedef)\]
+  `List`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -322,11 +322,11 @@ Arguments:
 
 - `MeetingId`: `str` *(required)*
 - `Attendees`:
-  `List`\[[CreateAttendeeRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createattendeerequestitemtypedef)\]
+  `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
   *(required)*
 
 Returns
-[BatchCreateAttendeeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchcreateattendeeresponsetypedef).
+[BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
 
 ### batch_create_channel_membership
 
@@ -340,12 +340,11 @@ Arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArns`: `List`\[`str`\] *(required)*
-- `Type`:
-  [ChannelMembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmembershiptype)
+- `Type`: [ChannelMembershipType](./literals.md#channelmembershiptype)
 - `ChimeBearer`: `str`
 
 Returns
-[BatchCreateChannelMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchcreatechannelmembershipresponsetypedef).
+[BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
 
 ### batch_create_room_membership
 
@@ -360,11 +359,11 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 - `MembershipItemList`:
-  `List`\[[MembershipItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#membershipitemtypedef)\]
+  `List`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
   *(required)*
 
 Returns
-[BatchCreateRoomMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchcreateroommembershipresponsetypedef).
+[BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef).
 
 ### batch_delete_phone_number
 
@@ -378,7 +377,7 @@ Arguments:
 - `PhoneNumberIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeletePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchdeletephonenumberresponsetypedef).
+[BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef).
 
 ### batch_suspend_user
 
@@ -393,7 +392,7 @@ Arguments:
 - `UserIdList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchSuspendUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchsuspenduserresponsetypedef).
+[BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef).
 
 ### batch_unsuspend_user
 
@@ -408,7 +407,7 @@ Arguments:
 - `UserIdList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchUnsuspendUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchunsuspenduserresponsetypedef).
+[BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef).
 
 ### batch_update_phone_number
 
@@ -420,11 +419,11 @@ Boto3 documentation:
 Arguments:
 
 - `UpdatePhoneNumberRequestItems`:
-  `List`\[[UpdatePhoneNumberRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatephonenumberrequestitemtypedef)\]
+  `List`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
   *(required)*
 
 Returns
-[BatchUpdatePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchupdatephonenumberresponsetypedef).
+[BatchUpdatePhoneNumberResponseTypeDef](./type_defs.md#batchupdatephonenumberresponsetypedef).
 
 ### batch_update_user
 
@@ -437,11 +436,11 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `UpdateUserRequestItems`:
-  `List`\[[UpdateUserRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateuserrequestitemtypedef)\]
+  `List`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
   *(required)*
 
 Returns
-[BatchUpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#batchupdateuserresponsetypedef).
+[BatchUpdateUserResponseTypeDef](./type_defs.md#batchupdateuserresponsetypedef).
 
 ### can_paginate
 
@@ -468,7 +467,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[CreateAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createaccountresponsetypedef).
+[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
 
 ### create_app_instance
 
@@ -482,11 +481,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAppInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createappinstanceresponsetypedef).
+[CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
 
 ### create_app_instance_admin
 
@@ -501,7 +499,7 @@ Arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[CreateAppInstanceAdminResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createappinstanceadminresponsetypedef).
+[CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
 
 ### create_app_instance_user
 
@@ -517,11 +515,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createappinstanceuserresponsetypedef).
+[CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
 
 ### create_attendee
 
@@ -534,11 +531,10 @@ Arguments:
 
 - `MeetingId`: `str` *(required)*
 - `ExternalUserId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAttendeeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createattendeeresponsetypedef).
+[CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
 
 ### create_bot
 
@@ -553,8 +549,7 @@ Arguments:
 - `DisplayName`: `str` *(required)*
 - `Domain`: `str`
 
-Returns
-[CreateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createbotresponsetypedef).
+Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 
 ### create_channel
 
@@ -568,17 +563,14 @@ Arguments:
 - `AppInstanceArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
-- `Mode`:
-  [ChannelMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmode)
-- `Privacy`:
-  [ChannelPrivacy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelprivacy)
+- `Mode`: [ChannelMode](./literals.md#channelmode)
+- `Privacy`: [ChannelPrivacy](./literals.md#channelprivacy)
 - `Metadata`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_channel_ban
 
@@ -594,7 +586,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelBanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelbanresponsetypedef).
+[CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
 
 ### create_channel_membership
 
@@ -607,13 +599,12 @@ Arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
-- `Type`:
-  [ChannelMembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmembershiptype)
+- `Type`: [ChannelMembershipType](./literals.md#channelmembershiptype)
   *(required)*
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelmembershipresponsetypedef).
+[CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
 
 ### create_channel_moderator
 
@@ -629,7 +620,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelModeratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createchannelmoderatorresponsetypedef).
+[CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
 
 ### create_meeting
 
@@ -644,13 +635,12 @@ Arguments:
 - `ExternalMeetingId`: `str`
 - `MeetingHostId`: `str`
 - `MediaRegion`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationsConfiguration`:
-  [MeetingNotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#meetingnotificationconfigurationtypedef)
+  [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 
 Returns
-[CreateMeetingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createmeetingresponsetypedef).
+[CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
 
 ### create_meeting_dial_out
 
@@ -667,7 +657,7 @@ Arguments:
 - `JoinToken`: `str` *(required)*
 
 Returns
-[CreateMeetingDialOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createmeetingdialoutresponsetypedef).
+[CreateMeetingDialOutResponseTypeDef](./type_defs.md#createmeetingdialoutresponsetypedef).
 
 ### create_meeting_with_attendees
 
@@ -683,15 +673,14 @@ Arguments:
 - `ExternalMeetingId`: `str`
 - `MeetingHostId`: `str`
 - `MediaRegion`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationsConfiguration`:
-  [MeetingNotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#meetingnotificationconfigurationtypedef)
+  [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 - `Attendees`:
-  `List`\[[CreateAttendeeRequestItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createattendeerequestitemtypedef)\]
+  `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
 Returns
-[CreateMeetingWithAttendeesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createmeetingwithattendeesresponsetypedef).
+[CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
 
 ### create_phone_number_order
 
@@ -702,13 +691,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `ProductType`:
-  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
   *(required)*
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[CreatePhoneNumberOrderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createphonenumberorderresponsetypedef).
+[CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef).
 
 ### create_proxy_session
 
@@ -721,20 +709,16 @@ Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `ParticipantPhoneNumbers`: `List`\[`str`\] *(required)*
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#capability)\]
-  *(required)*
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\] *(required)*
 - `Name`: `str`
 - `ExpiryMinutes`: `int`
 - `NumberSelectionBehavior`:
-  [NumberSelectionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#numberselectionbehavior)
-- `GeoMatchLevel`:
-  [GeoMatchLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#geomatchlevel)
-- `GeoMatchParams`:
-  [GeoMatchParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#geomatchparamstypedef)
+  [NumberSelectionBehavior](./literals.md#numberselectionbehavior)
+- `GeoMatchLevel`: [GeoMatchLevel](./literals.md#geomatchlevel)
+- `GeoMatchParams`: [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
 
 Returns
-[CreateProxySessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createproxysessionresponsetypedef).
+[CreateProxySessionResponseTypeDef](./type_defs.md#createproxysessionresponsetypedef).
 
 ### create_room
 
@@ -749,8 +733,7 @@ Arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str`
 
-Returns
-[CreateRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createroomresponsetypedef).
+Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
 
 ### create_room_membership
 
@@ -764,11 +747,10 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
-- `Role`:
-  [RoomMembershipRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#roommembershiprole)
+- `Role`: [RoomMembershipRole](./literals.md#roommembershiprole)
 
 Returns
-[CreateRoomMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createroommembershipresponsetypedef).
+[CreateRoomMembershipResponseTypeDef](./type_defs.md#createroommembershipresponsetypedef).
 
 ### create_sip_media_application
 
@@ -783,11 +765,11 @@ Arguments:
 - `AwsRegion`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Endpoints`:
-  `List`\[[SipMediaApplicationEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipmediaapplicationendpointtypedef)\]
+  `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
   *(required)*
 
 Returns
-[CreateSipMediaApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createsipmediaapplicationresponsetypedef).
+[CreateSipMediaApplicationResponseTypeDef](./type_defs.md#createsipmediaapplicationresponsetypedef).
 
 ### create_sip_media_application_call
 
@@ -804,7 +786,7 @@ Arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[CreateSipMediaApplicationCallResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createsipmediaapplicationcallresponsetypedef).
+[CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
 
 ### create_sip_rule
 
@@ -816,17 +798,16 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `TriggerType`:
-  [SipRuleTriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#sipruletriggertype)
+- `TriggerType`: [SipRuleTriggerType](./literals.md#sipruletriggertype)
   *(required)*
 - `TriggerValue`: `str` *(required)*
 - `TargetApplications`:
-  `List`\[[SipRuleTargetApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipruletargetapplicationtypedef)\]
+  `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
   *(required)*
 - `Disabled`: `bool`
 
 Returns
-[CreateSipRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createsipruleresponsetypedef).
+[CreateSipRuleResponseTypeDef](./type_defs.md#createsipruleresponsetypedef).
 
 ### create_user
 
@@ -840,11 +821,9 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `Username`: `str`
 - `Email`: `str`
-- `UserType`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `UserType`: [UserType](./literals.md#usertype)
 
-Returns
-[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createuserresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_voice_connector
 
@@ -857,11 +836,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `RequireEncryption`: `bool` *(required)*
-- `AwsRegion`:
-  [VoiceConnectorAwsRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#voiceconnectorawsregion)
+- `AwsRegion`: [VoiceConnectorAwsRegion](./literals.md#voiceconnectorawsregion)
 
 Returns
-[CreateVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createvoiceconnectorresponsetypedef).
+[CreateVoiceConnectorResponseTypeDef](./type_defs.md#createvoiceconnectorresponsetypedef).
 
 ### create_voice_connector_group
 
@@ -875,10 +853,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `VoiceConnectorItems`:
-  `List`\[[VoiceConnectorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#voiceconnectoritemtypedef)\]
+  `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
 Returns
-[CreateVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#createvoiceconnectorgroupresponsetypedef).
+[CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef).
 
 ### delete_account
 
@@ -1219,7 +1197,7 @@ Arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describeappinstanceresponsetypedef).
+[DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
 
 ### describe_app_instance_admin
 
@@ -1235,7 +1213,7 @@ Arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceAdminResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describeappinstanceadminresponsetypedef).
+[DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
 
 ### describe_app_instance_user
 
@@ -1249,7 +1227,7 @@ Arguments:
 - `AppInstanceUserArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describeappinstanceuserresponsetypedef).
+[DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
 
 ### describe_channel
 
@@ -1264,7 +1242,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_channel_ban
 
@@ -1280,7 +1258,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelBanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelbanresponsetypedef).
+[DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
 
 ### describe_channel_membership
 
@@ -1297,7 +1275,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmembershipresponsetypedef).
+[DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
 
 ### describe_channel_membership_for_app_instance_user
 
@@ -1315,7 +1293,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmembershipforappinstanceuserresponsetypedef).
+[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
 
 ### describe_channel_moderated_by_app_instance_user
 
@@ -1332,7 +1310,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmoderatedbyappinstanceuserresponsetypedef).
+[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
 
 ### describe_channel_moderator
 
@@ -1348,7 +1326,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelModeratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#describechannelmoderatorresponsetypedef).
+[DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
 
 ### disassociate_phone_number_from_user
 
@@ -1379,7 +1357,7 @@ Arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
 
 ### disassociate_phone_numbers_from_voice_connector_group
 
@@ -1396,7 +1374,7 @@ Arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
 
 ### disassociate_signin_delegate_groups_from_account
 
@@ -1441,8 +1419,7 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 
-Returns
-[GetAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getaccountresponsetypedef).
+Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
 
 ### get_account_settings
 
@@ -1456,7 +1433,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetAccountSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getaccountsettingsresponsetypedef).
+[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
 
 ### get_app_instance_retention_settings
 
@@ -1471,7 +1448,7 @@ Arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[GetAppInstanceRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getappinstanceretentionsettingsresponsetypedef).
+[GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
 
 ### get_app_instance_streaming_configurations
 
@@ -1486,7 +1463,7 @@ Arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[GetAppInstanceStreamingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getappinstancestreamingconfigurationsresponsetypedef).
+[GetAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponsetypedef).
 
 ### get_attendee
 
@@ -1501,7 +1478,7 @@ Arguments:
 - `AttendeeId`: `str` *(required)*
 
 Returns
-[GetAttendeeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getattendeeresponsetypedef).
+[GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
 
 ### get_bot
 
@@ -1515,8 +1492,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
 
-Returns
-[GetBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getbotresponsetypedef).
+Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
 
 ### get_channel_message
 
@@ -1532,7 +1508,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[GetChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getchannelmessageresponsetypedef).
+[GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
 
 ### get_events_configuration
 
@@ -1547,7 +1523,7 @@ Arguments:
 - `BotId`: `str` *(required)*
 
 Returns
-[GetEventsConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#geteventsconfigurationresponsetypedef).
+[GetEventsConfigurationResponseTypeDef](./type_defs.md#geteventsconfigurationresponsetypedef).
 
 ### get_global_settings
 
@@ -1557,7 +1533,7 @@ Boto3 documentation:
 [Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
 
 Returns
-[GetGlobalSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getglobalsettingsresponsetypedef).
+[GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
 
 ### get_meeting
 
@@ -1570,8 +1546,7 @@ Arguments:
 
 - `MeetingId`: `str` *(required)*
 
-Returns
-[GetMeetingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getmeetingresponsetypedef).
+Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
 
 ### get_messaging_session_endpoint
 
@@ -1582,7 +1557,7 @@ Boto3 documentation:
 [Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
 
 Returns
-[GetMessagingSessionEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getmessagingsessionendpointresponsetypedef).
+[GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
 
 ### get_phone_number
 
@@ -1596,7 +1571,7 @@ Arguments:
 - `PhoneNumberId`: `str` *(required)*
 
 Returns
-[GetPhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getphonenumberresponsetypedef).
+[GetPhoneNumberResponseTypeDef](./type_defs.md#getphonenumberresponsetypedef).
 
 ### get_phone_number_order
 
@@ -1610,7 +1585,7 @@ Arguments:
 - `PhoneNumberOrderId`: `str` *(required)*
 
 Returns
-[GetPhoneNumberOrderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getphonenumberorderresponsetypedef).
+[GetPhoneNumberOrderResponseTypeDef](./type_defs.md#getphonenumberorderresponsetypedef).
 
 ### get_phone_number_settings
 
@@ -1620,7 +1595,7 @@ Boto3 documentation:
 [Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
 
 Returns
-[GetPhoneNumberSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getphonenumbersettingsresponsetypedef).
+[GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef).
 
 ### get_proxy_session
 
@@ -1635,7 +1610,7 @@ Arguments:
 - `ProxySessionId`: `str` *(required)*
 
 Returns
-[GetProxySessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getproxysessionresponsetypedef).
+[GetProxySessionResponseTypeDef](./type_defs.md#getproxysessionresponsetypedef).
 
 ### get_retention_settings
 
@@ -1649,7 +1624,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getretentionsettingsresponsetypedef).
+[GetRetentionSettingsResponseTypeDef](./type_defs.md#getretentionsettingsresponsetypedef).
 
 ### get_room
 
@@ -1663,8 +1638,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 
-Returns
-[GetRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getroomresponsetypedef).
+Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
 
 ### get_sip_media_application
 
@@ -1678,7 +1652,7 @@ Arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[GetSipMediaApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getsipmediaapplicationresponsetypedef).
+[GetSipMediaApplicationResponseTypeDef](./type_defs.md#getsipmediaapplicationresponsetypedef).
 
 ### get_sip_media_application_logging_configuration
 
@@ -1693,7 +1667,7 @@ Arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[GetSipMediaApplicationLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getsipmediaapplicationloggingconfigurationresponsetypedef).
+[GetSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponsetypedef).
 
 ### get_sip_rule
 
@@ -1706,8 +1680,7 @@ Arguments:
 
 - `SipRuleId`: `str` *(required)*
 
-Returns
-[GetSipRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getsipruleresponsetypedef).
+Returns [GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef).
 
 ### get_user
 
@@ -1721,8 +1694,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
 
-Returns
-[GetUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getuserresponsetypedef).
+Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 
 ### get_user_settings
 
@@ -1737,7 +1709,7 @@ Arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[GetUserSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getusersettingsresponsetypedef).
+[GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
 
 ### get_voice_connector
 
@@ -1751,7 +1723,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorresponsetypedef).
+[GetVoiceConnectorResponseTypeDef](./type_defs.md#getvoiceconnectorresponsetypedef).
 
 ### get_voice_connector_emergency_calling_configuration
 
@@ -1767,7 +1739,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
+[GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
 ### get_voice_connector_group
 
@@ -1781,7 +1753,7 @@ Arguments:
 - `VoiceConnectorGroupId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorgroupresponsetypedef).
+[GetVoiceConnectorGroupResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponsetypedef).
 
 ### get_voice_connector_logging_configuration
 
@@ -1796,7 +1768,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorloggingconfigurationresponsetypedef).
+[GetVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponsetypedef).
 
 ### get_voice_connector_origination
 
@@ -1811,7 +1783,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorOriginationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectororiginationresponsetypedef).
+[GetVoiceConnectorOriginationResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponsetypedef).
 
 ### get_voice_connector_proxy
 
@@ -1825,7 +1797,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorproxyresponsetypedef).
+[GetVoiceConnectorProxyResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponsetypedef).
 
 ### get_voice_connector_streaming_configuration
 
@@ -1840,7 +1812,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorStreamingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorstreamingconfigurationresponsetypedef).
+[GetVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponsetypedef).
 
 ### get_voice_connector_termination
 
@@ -1855,7 +1827,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorTerminationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorterminationresponsetypedef).
+[GetVoiceConnectorTerminationResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponsetypedef).
 
 ### get_voice_connector_termination_health
 
@@ -1870,7 +1842,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorTerminationHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#getvoiceconnectorterminationhealthresponsetypedef).
+[GetVoiceConnectorTerminationHealthResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponsetypedef).
 
 ### invite_users
 
@@ -1883,11 +1855,10 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserEmailList`: `List`\[`str`\] *(required)*
-- `UserType`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `UserType`: [UserType](./literals.md#usertype)
 
 Returns
-[InviteUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#inviteusersresponsetypedef).
+[InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef).
 
 ### list_accounts
 
@@ -1904,7 +1875,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listaccountsresponsetypedef).
+[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
 ### list_app_instance_admins
 
@@ -1920,7 +1891,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstanceAdminsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listappinstanceadminsresponsetypedef).
+[ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
 
 ### list_app_instance_users
 
@@ -1936,7 +1907,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstanceUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listappinstanceusersresponsetypedef).
+[ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
 
 ### list_app_instances
 
@@ -1951,7 +1922,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listappinstancesresponsetypedef).
+[ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
 
 ### list_attendee_tags
 
@@ -1966,7 +1937,7 @@ Arguments:
 - `AttendeeId`: `str` *(required)*
 
 Returns
-[ListAttendeeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listattendeetagsresponsetypedef).
+[ListAttendeeTagsResponseTypeDef](./type_defs.md#listattendeetagsresponsetypedef).
 
 ### list_attendees
 
@@ -1982,7 +1953,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAttendeesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listattendeesresponsetypedef).
+[ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
 
 ### list_bots
 
@@ -1997,8 +1968,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListBotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listbotsresponsetypedef).
+Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
 
 ### list_channel_bans
 
@@ -2015,7 +1985,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelBansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelbansresponsetypedef).
+[ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
 
 ### list_channel_memberships
 
@@ -2027,14 +1997,13 @@ Boto3 documentation:
 Arguments:
 
 - `ChannelArn`: `str` *(required)*
-- `Type`:
-  [ChannelMembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmembershiptype)
+- `Type`: [ChannelMembershipType](./literals.md#channelmembershiptype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMembershipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmembershipsresponsetypedef).
+[ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
 
 ### list_channel_memberships_for_app_instance_user
 
@@ -2052,7 +2021,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMembershipsForAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmembershipsforappinstanceuserresponsetypedef).
+[ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
 
 ### list_channel_messages
 
@@ -2064,8 +2033,7 @@ Boto3 documentation:
 Arguments:
 
 - `ChannelArn`: `str` *(required)*
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NotBefore`: `datetime`
 - `NotAfter`: `datetime`
 - `MaxResults`: `int`
@@ -2073,7 +2041,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMessagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmessagesresponsetypedef).
+[ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
 
 ### list_channel_moderators
 
@@ -2090,7 +2058,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelModeratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelmoderatorsresponsetypedef).
+[ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
 
 ### list_channels
 
@@ -2102,14 +2070,13 @@ Boto3 documentation:
 Arguments:
 
 - `AppInstanceArn`: `str` *(required)*
-- `Privacy`:
-  [ChannelPrivacy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelprivacy)
+- `Privacy`: [ChannelPrivacy](./literals.md#channelprivacy)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelsresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_channels_moderated_by_app_instance_user
 
@@ -2127,7 +2094,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelsModeratedByAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listchannelsmoderatedbyappinstanceuserresponsetypedef).
+[ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
 
 ### list_meeting_tags
 
@@ -2141,7 +2108,7 @@ Arguments:
 - `MeetingId`: `str` *(required)*
 
 Returns
-[ListMeetingTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listmeetingtagsresponsetypedef).
+[ListMeetingTagsResponseTypeDef](./type_defs.md#listmeetingtagsresponsetypedef).
 
 ### list_meetings
 
@@ -2156,7 +2123,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMeetingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listmeetingsresponsetypedef).
+[ListMeetingsResponseTypeDef](./type_defs.md#listmeetingsresponsetypedef).
 
 ### list_phone_number_orders
 
@@ -2171,7 +2138,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPhoneNumberOrdersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listphonenumberordersresponsetypedef).
+[ListPhoneNumberOrdersResponseTypeDef](./type_defs.md#listphonenumberordersresponsetypedef).
 
 ### list_phone_numbers
 
@@ -2182,18 +2149,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [PhoneNumberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberstatus)
-- `ProductType`:
-  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+- `Status`: [PhoneNumberStatus](./literals.md#phonenumberstatus)
+- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
 - `FilterName`:
-  [PhoneNumberAssociationName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberassociationname)
+  [PhoneNumberAssociationName](./literals.md#phonenumberassociationname)
 - `FilterValue`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListPhoneNumbersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listphonenumbersresponsetypedef).
+[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
 
 ### list_proxy_sessions
 
@@ -2205,13 +2170,12 @@ Boto3 documentation:
 Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `Status`:
-  [ProxySessionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#proxysessionstatus)
+- `Status`: [ProxySessionStatus](./literals.md#proxysessionstatus)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListProxySessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listproxysessionsresponsetypedef).
+[ListProxySessionsResponseTypeDef](./type_defs.md#listproxysessionsresponsetypedef).
 
 ### list_room_memberships
 
@@ -2228,7 +2192,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRoomMembershipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listroommembershipsresponsetypedef).
+[ListRoomMembershipsResponseTypeDef](./type_defs.md#listroommembershipsresponsetypedef).
 
 ### list_rooms
 
@@ -2244,8 +2208,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListRoomsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listroomsresponsetypedef).
+Returns [ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef).
 
 ### list_sip_media_applications
 
@@ -2261,7 +2224,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSipMediaApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsipmediaapplicationsresponsetypedef).
+[ListSipMediaApplicationsResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponsetypedef).
 
 ### list_sip_rules
 
@@ -2277,7 +2240,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSipRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsiprulesresponsetypedef).
+[ListSipRulesResponseTypeDef](./type_defs.md#listsiprulesresponsetypedef).
 
 ### list_supported_phone_number_countries
 
@@ -2289,12 +2252,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `ProductType`:
-  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
   *(required)*
 
 Returns
-[ListSupportedPhoneNumberCountriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listsupportedphonenumbercountriesresponsetypedef).
+[ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -2308,7 +2270,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_users
 
@@ -2321,13 +2283,11 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserEmail`: `str`
-- `UserType`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `UserType`: [UserType](./literals.md#usertype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listusersresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_voice_connector_groups
 
@@ -2343,7 +2303,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListVoiceConnectorGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listvoiceconnectorgroupsresponsetypedef).
+[ListVoiceConnectorGroupsResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponsetypedef).
 
 ### list_voice_connector_termination_credentials
 
@@ -2358,7 +2318,7 @@ Arguments:
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[ListVoiceConnectorTerminationCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listvoiceconnectorterminationcredentialsresponsetypedef).
+[ListVoiceConnectorTerminationCredentialsResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponsetypedef).
 
 ### list_voice_connectors
 
@@ -2373,7 +2333,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListVoiceConnectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listvoiceconnectorsresponsetypedef).
+[ListVoiceConnectorsResponseTypeDef](./type_defs.md#listvoiceconnectorsresponsetypedef).
 
 ### logout_user
 
@@ -2401,11 +2361,11 @@ Arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `AppInstanceRetentionSettings`:
-  [AppInstanceRetentionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#appinstanceretentionsettingstypedef)
+  [AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef)
   *(required)*
 
 Returns
-[PutAppInstanceRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putappinstanceretentionsettingsresponsetypedef).
+[PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
 
 ### put_app_instance_streaming_configurations
 
@@ -2419,11 +2379,11 @@ Arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `AppInstanceStreamingConfigurations`:
-  `List`\[[AppInstanceStreamingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#appinstancestreamingconfigurationtypedef)\]
+  `List`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
   *(required)*
 
 Returns
-[PutAppInstanceStreamingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putappinstancestreamingconfigurationsresponsetypedef).
+[PutAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponsetypedef).
 
 ### put_events_configuration
 
@@ -2440,7 +2400,7 @@ Arguments:
 - `LambdaFunctionArn`: `str`
 
 Returns
-[PutEventsConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#puteventsconfigurationresponsetypedef).
+[PutEventsConfigurationResponseTypeDef](./type_defs.md#puteventsconfigurationresponsetypedef).
 
 ### put_retention_settings
 
@@ -2453,11 +2413,11 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `RetentionSettings`:
-  [RetentionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#retentionsettingstypedef)
+  [RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef)
   *(required)*
 
 Returns
-[PutRetentionSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putretentionsettingsresponsetypedef).
+[PutRetentionSettingsResponseTypeDef](./type_defs.md#putretentionsettingsresponsetypedef).
 
 ### put_sip_media_application_logging_configuration
 
@@ -2471,10 +2431,10 @@ Arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 - `SipMediaApplicationLoggingConfiguration`:
-  [SipMediaApplicationLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipmediaapplicationloggingconfigurationtypedef)
+  [SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef)
 
 Returns
-[PutSipMediaApplicationLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putsipmediaapplicationloggingconfigurationresponsetypedef).
+[PutSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponsetypedef).
 
 ### put_voice_connector_emergency_calling_configuration
 
@@ -2489,11 +2449,11 @@ Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `EmergencyCallingConfiguration`:
-  [EmergencyCallingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#emergencycallingconfigurationtypedef)
+  [EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef)
   *(required)*
 
 Returns
-[PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
+[PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
 ### put_voice_connector_logging_configuration
 
@@ -2507,11 +2467,11 @@ Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#loggingconfigurationtypedef)
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
   *(required)*
 
 Returns
-[PutVoiceConnectorLoggingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorloggingconfigurationresponsetypedef).
+[PutVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponsetypedef).
 
 ### put_voice_connector_origination
 
@@ -2524,12 +2484,11 @@ Boto3 documentation:
 Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `Origination`:
-  [OriginationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#originationtypedef)
+- `Origination`: [OriginationTypeDef](./type_defs.md#originationtypedef)
   *(required)*
 
 Returns
-[PutVoiceConnectorOriginationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectororiginationresponsetypedef).
+[PutVoiceConnectorOriginationResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponsetypedef).
 
 ### put_voice_connector_proxy
 
@@ -2547,7 +2506,7 @@ Arguments:
 - `Disabled`: `bool`
 
 Returns
-[PutVoiceConnectorProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorproxyresponsetypedef).
+[PutVoiceConnectorProxyResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponsetypedef).
 
 ### put_voice_connector_streaming_configuration
 
@@ -2561,11 +2520,11 @@ Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `StreamingConfiguration`:
-  [StreamingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#streamingconfigurationtypedef)
+  [StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef)
   *(required)*
 
 Returns
-[PutVoiceConnectorStreamingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorstreamingconfigurationresponsetypedef).
+[PutVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponsetypedef).
 
 ### put_voice_connector_termination
 
@@ -2578,12 +2537,11 @@ Boto3 documentation:
 Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `Termination`:
-  [TerminationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#terminationtypedef)
+- `Termination`: [TerminationTypeDef](./type_defs.md#terminationtypedef)
   *(required)*
 
 Returns
-[PutVoiceConnectorTerminationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#putvoiceconnectorterminationresponsetypedef).
+[PutVoiceConnectorTerminationResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponsetypedef).
 
 ### put_voice_connector_termination_credentials
 
@@ -2596,8 +2554,7 @@ Boto3 documentation:
 Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `Credentials`:
-  `List`\[[CredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#credentialtypedef)\]
+- `Credentials`: `List`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
 
 ### redact_channel_message
 
@@ -2613,7 +2570,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[RedactChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#redactchannelmessageresponsetypedef).
+[RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
 
 ### redact_conversation_message
 
@@ -2659,7 +2616,7 @@ Arguments:
 - `BotId`: `str` *(required)*
 
 Returns
-[RegenerateSecurityTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#regeneratesecuritytokenresponsetypedef).
+[RegenerateSecurityTokenResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponsetypedef).
 
 ### reset_personal_pin
 
@@ -2674,7 +2631,7 @@ Arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[ResetPersonalPINResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#resetpersonalpinresponsetypedef).
+[ResetPersonalPINResponseTypeDef](./type_defs.md#resetpersonalpinresponsetypedef).
 
 ### restore_phone_number
 
@@ -2688,7 +2645,7 @@ Arguments:
 - `PhoneNumberId`: `str` *(required)*
 
 Returns
-[RestorePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#restorephonenumberresponsetypedef).
+[RestorePhoneNumberResponseTypeDef](./type_defs.md#restorephonenumberresponsetypedef).
 
 ### search_available_phone_numbers
 
@@ -2705,13 +2662,12 @@ Arguments:
 - `Country`: `str`
 - `State`: `str`
 - `TollFreePrefix`: `str`
-- `PhoneNumberType`:
-  [PhoneNumberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumbertype)
+- `PhoneNumberType`: [PhoneNumberType](./literals.md#phonenumbertype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[SearchAvailablePhoneNumbersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#searchavailablephonenumbersresponsetypedef).
+[SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef).
 
 ### send_channel_message
 
@@ -2724,18 +2680,16 @@ Arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `Content`: `str` *(required)*
-- `Type`:
-  [ChannelMessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmessagetype)
-  *(required)*
+- `Type`: [ChannelMessageType](./literals.md#channelmessagetype) *(required)*
 - `Persistence`:
-  [ChannelMessagePersistenceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmessagepersistencetype)
+  [ChannelMessagePersistenceType](./literals.md#channelmessagepersistencetype)
   *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
 - `ChimeBearer`: `str`
 
 Returns
-[SendChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sendchannelmessageresponsetypedef).
+[SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
 
 ### tag_attendee
 
@@ -2748,9 +2702,7 @@ Arguments:
 
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_meeting
 
@@ -2762,9 +2714,7 @@ Boto3 documentation:
 Arguments:
 
 - `MeetingId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_resource
 
@@ -2776,9 +2726,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_attendee
 
@@ -2830,7 +2778,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[UpdateAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateaccountresponsetypedef).
+[UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef).
 
 ### update_account_settings
 
@@ -2843,8 +2791,7 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `AccountSettings`:
-  [AccountSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#accountsettingstypedef)
-  *(required)*
+  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2862,7 +2809,7 @@ Arguments:
 - `Metadata`: `str`
 
 Returns
-[UpdateAppInstanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateappinstanceresponsetypedef).
+[UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
 
 ### update_app_instance_user
 
@@ -2878,7 +2825,7 @@ Arguments:
 - `Metadata`: `str`
 
 Returns
-[UpdateAppInstanceUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateappinstanceuserresponsetypedef).
+[UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
 
 ### update_bot
 
@@ -2893,8 +2840,7 @@ Arguments:
 - `BotId`: `str` *(required)*
 - `Disabled`: `bool`
 
-Returns
-[UpdateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatebotresponsetypedef).
+Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
 
 ### update_channel
 
@@ -2907,14 +2853,12 @@ Arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Mode`:
-  [ChannelMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#channelmode)
-  *(required)*
+- `Mode`: [ChannelMode](./literals.md#channelmode) *(required)*
 - `Metadata`: `str`
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatechannelresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_channel_message
 
@@ -2932,7 +2876,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatechannelmessageresponsetypedef).
+[UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
 
 ### update_channel_read_marker
 
@@ -2947,7 +2891,7 @@ Arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelReadMarkerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatechannelreadmarkerresponsetypedef).
+[UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef).
 
 ### update_global_settings
 
@@ -2959,10 +2903,10 @@ Boto3 documentation:
 Arguments:
 
 - `BusinessCalling`:
-  [BusinessCallingSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#businesscallingsettingstypedef)
+  [BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef)
   *(required)*
 - `VoiceConnector`:
-  [VoiceConnectorSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#voiceconnectorsettingstypedef)
+  [VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef)
   *(required)*
 
 ### update_phone_number
@@ -2975,12 +2919,11 @@ Boto3 documentation:
 Arguments:
 
 - `PhoneNumberId`: `str` *(required)*
-- `ProductType`:
-  [PhoneNumberProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumberproducttype)
+- `ProductType`: [PhoneNumberProductType](./literals.md#phonenumberproducttype)
 - `CallingName`: `str`
 
 Returns
-[UpdatePhoneNumberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatephonenumberresponsetypedef).
+[UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef).
 
 ### update_phone_number_settings
 
@@ -3005,13 +2948,11 @@ Arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `ProxySessionId`: `str` *(required)*
-- `Capabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#capability)\]
-  *(required)*
+- `Capabilities`: `List`\[[Capability](./literals.md#capability)\] *(required)*
 - `ExpiryMinutes`: `int`
 
 Returns
-[UpdateProxySessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateproxysessionresponsetypedef).
+[UpdateProxySessionResponseTypeDef](./type_defs.md#updateproxysessionresponsetypedef).
 
 ### update_room
 
@@ -3026,8 +2967,7 @@ Arguments:
 - `RoomId`: `str` *(required)*
 - `Name`: `str`
 
-Returns
-[UpdateRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateroomresponsetypedef).
+Returns [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef).
 
 ### update_room_membership
 
@@ -3041,11 +2981,10 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
-- `Role`:
-  [RoomMembershipRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#roommembershiprole)
+- `Role`: [RoomMembershipRole](./literals.md#roommembershiprole)
 
 Returns
-[UpdateRoomMembershipResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateroommembershipresponsetypedef).
+[UpdateRoomMembershipResponseTypeDef](./type_defs.md#updateroommembershipresponsetypedef).
 
 ### update_sip_media_application
 
@@ -3060,10 +2999,10 @@ Arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 - `Name`: `str`
 - `Endpoints`:
-  `List`\[[SipMediaApplicationEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipmediaapplicationendpointtypedef)\]
+  `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
 Returns
-[UpdateSipMediaApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatesipmediaapplicationresponsetypedef).
+[UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
 
 ### update_sip_rule
 
@@ -3078,10 +3017,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Disabled`: `bool`
 - `TargetApplications`:
-  `List`\[[SipRuleTargetApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipruletargetapplicationtypedef)\]
+  `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
 Returns
-[UpdateSipRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatesipruleresponsetypedef).
+[UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef).
 
 ### update_user
 
@@ -3094,15 +3033,12 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
-- `LicenseType`:
-  [License](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#license)
-- `UserType`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `LicenseType`: [License](./literals.md#license)
+- `UserType`: [UserType](./literals.md#usertype)
 - `AlexaForBusinessMetadata`:
-  [AlexaForBusinessMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#alexaforbusinessmetadatatypedef)
+  [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 
-Returns
-[UpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updateuserresponsetypedef).
+Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 
 ### update_user_settings
 
@@ -3115,8 +3051,7 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
-- `UserSettings`:
-  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#usersettingstypedef)
+- `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
   *(required)*
 
 ### update_voice_connector
@@ -3133,7 +3068,7 @@ Arguments:
 - `RequireEncryption`: `bool` *(required)*
 
 Returns
-[UpdateVoiceConnectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatevoiceconnectorresponsetypedef).
+[UpdateVoiceConnectorResponseTypeDef](./type_defs.md#updatevoiceconnectorresponsetypedef).
 
 ### update_voice_connector_group
 
@@ -3148,11 +3083,11 @@ Arguments:
 - `VoiceConnectorGroupId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `VoiceConnectorItems`:
-  `List`\[[VoiceConnectorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#voiceconnectoritemtypedef)\]
+  `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
   *(required)*
 
 Returns
-[UpdateVoiceConnectorGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#updatevoiceconnectorgroupresponsetypedef).
+[UpdateVoiceConnectorGroupResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponsetypedef).
 
 ### get_paginator
 

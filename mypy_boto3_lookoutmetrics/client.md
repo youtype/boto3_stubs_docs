@@ -1,6 +1,6 @@
 # LookoutMetricsClient for boto3 LookoutMetrics module
 
-> [Index](../README.md) > [LookoutMetrics](./README.md) > LookoutMetricsClient
+> [Index](..) > [LookoutMetrics](.) > LookoutMetricsClient
 
 Auto-generated documentation for
 [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
@@ -133,14 +133,12 @@ Arguments:
 - `AlertName`: `str` *(required)*
 - `AlertSensitivityThreshold`: `int` *(required)*
 - `AnomalyDetectorArn`: `str` *(required)*
-- `Action`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#actiontypedef)
-  *(required)*
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef) *(required)*
 - `AlertDescription`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAlertResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#createalertresponsetypedef).
+[CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef).
 
 ### create_anomaly_detector
 
@@ -154,14 +152,14 @@ Arguments:
 
 - `AnomalyDetectorName`: `str` *(required)*
 - `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalydetectorconfigtypedef)
+  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
   *(required)*
 - `AnomalyDetectorDescription`: `str`
 - `KmsKeyArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAnomalyDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#createanomalydetectorresponsetypedef).
+[CreateAnomalyDetectorResponseTypeDef](./type_defs.md#createanomalydetectorresponsetypedef).
 
 ### create_metric_set
 
@@ -174,24 +172,21 @@ Arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `MetricSetName`: `str` *(required)*
-- `MetricList`:
-  `List`\[[MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metrictypedef)\]
+- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
   *(required)*
-- `MetricSource`:
-  [MetricSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metricsourcetypedef)
+- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
   *(required)*
 - `MetricSetDescription`: `str`
 - `Offset`: `int`
 - `TimestampColumn`:
-  [TimestampColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timestampcolumntypedef)
+  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
 - `DimensionList`: `List`\[`str`\]
-- `MetricSetFrequency`:
-  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
+- `MetricSetFrequency`: [Frequency](./literals.md#frequency)
 - `Timezone`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMetricSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#createmetricsetresponsetypedef).
+[CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef).
 
 ### delete_alert
 
@@ -232,7 +227,7 @@ Arguments:
 - `AlertArn`: `str` *(required)*
 
 Returns
-[DescribeAlertResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describealertresponsetypedef).
+[DescribeAlertResponseTypeDef](./type_defs.md#describealertresponsetypedef).
 
 ### describe_anomaly_detection_executions
 
@@ -250,7 +245,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAnomalyDetectionExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describeanomalydetectionexecutionsresponsetypedef).
+[DescribeAnomalyDetectionExecutionsResponseTypeDef](./type_defs.md#describeanomalydetectionexecutionsresponsetypedef).
 
 ### describe_anomaly_detector
 
@@ -265,7 +260,7 @@ Arguments:
 - `AnomalyDetectorArn`: `str` *(required)*
 
 Returns
-[DescribeAnomalyDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describeanomalydetectorresponsetypedef).
+[DescribeAnomalyDetectorResponseTypeDef](./type_defs.md#describeanomalydetectorresponsetypedef).
 
 ### describe_metric_set
 
@@ -280,7 +275,7 @@ Arguments:
 - `MetricSetArn`: `str` *(required)*
 
 Returns
-[DescribeMetricSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#describemetricsetresponsetypedef).
+[DescribeMetricSetResponseTypeDef](./type_defs.md#describemetricsetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -312,7 +307,7 @@ Arguments:
 - `AnomalyDetectorArn`: `str` *(required)*
 
 Returns
-[GetAnomalyGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#getanomalygroupresponsetypedef).
+[GetAnomalyGroupResponseTypeDef](./type_defs.md#getanomalygroupresponsetypedef).
 
 ### get_feedback
 
@@ -325,13 +320,13 @@ Arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `AnomalyGroupTimeSeriesFeedback`:
-  [AnomalyGroupTimeSeriesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygrouptimeseriestypedef)
+  [AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef)
   *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetFeedbackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#getfeedbackresponsetypedef).
+[GetFeedbackResponseTypeDef](./type_defs.md#getfeedbackresponsetypedef).
 
 ### get_sample_data
 
@@ -343,10 +338,10 @@ Boto3 documentation:
 Arguments:
 
 - `S3SourceConfig`:
-  [SampleDataS3SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#sampledatas3sourceconfigtypedef)
+  [SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef)
 
 Returns
-[GetSampleDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#getsampledataresponsetypedef).
+[GetSampleDataResponseTypeDef](./type_defs.md#getsampledataresponsetypedef).
 
 ### list_alerts
 
@@ -361,8 +356,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListAlertsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listalertsresponsetypedef).
+Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
 
 ### list_anomaly_detectors
 
@@ -378,7 +372,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomalyDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listanomalydetectorsresponsetypedef).
+[ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef).
 
 ### list_anomaly_group_summaries
 
@@ -396,7 +390,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomalyGroupSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listanomalygroupsummariesresponsetypedef).
+[ListAnomalyGroupSummariesResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponsetypedef).
 
 ### list_anomaly_group_time_series
 
@@ -415,7 +409,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomalyGroupTimeSeriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listanomalygrouptimeseriesresponsetypedef).
+[ListAnomalyGroupTimeSeriesResponseTypeDef](./type_defs.md#listanomalygrouptimeseriesresponsetypedef).
 
 ### list_metric_sets
 
@@ -431,7 +425,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMetricSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listmetricsetsresponsetypedef).
+[ListMetricSetsResponseTypeDef](./type_defs.md#listmetricsetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -446,7 +440,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_feedback
 
@@ -459,7 +453,7 @@ Arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `AnomalyGroupTimeSeriesFeedback`:
-  [AnomalyGroupTimeSeriesFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalygrouptimeseriesfeedbacktypedef)
+  [AnomalyGroupTimeSeriesFeedbackTypeDef](./type_defs.md#anomalygrouptimeseriesfeedbacktypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -506,10 +500,10 @@ Arguments:
 - `KmsKeyArn`: `str`
 - `AnomalyDetectorDescription`: `str`
 - `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#anomalydetectorconfigtypedef)
+  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
 
 Returns
-[UpdateAnomalyDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#updateanomalydetectorresponsetypedef).
+[UpdateAnomalyDetectorResponseTypeDef](./type_defs.md#updateanomalydetectorresponsetypedef).
 
 ### update_metric_set
 
@@ -522,16 +516,13 @@ Arguments:
 
 - `MetricSetArn`: `str` *(required)*
 - `MetricSetDescription`: `str`
-- `MetricList`:
-  `List`\[[MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metrictypedef)\]
+- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
 - `Offset`: `int`
 - `TimestampColumn`:
-  [TimestampColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#timestampcolumntypedef)
+  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
 - `DimensionList`: `List`\[`str`\]
-- `MetricSetFrequency`:
-  [Frequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/literals.html#frequency)
-- `MetricSource`:
-  [MetricSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#metricsourcetypedef)
+- `MetricSetFrequency`: [Frequency](./literals.md#frequency)
+- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 
 Returns
-[UpdateMetricSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutmetrics/type_defs.html#updatemetricsetresponsetypedef).
+[UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef).

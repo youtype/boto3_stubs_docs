@@ -1,6 +1,6 @@
 # Literals for boto3 SavingsPlans module
 
-> [Index](../README.md) > [SavingsPlans](./README.md) > Literals
+> [Index](..) > [SavingsPlans](.) > Literals
 
 Auto-generated documentation for
 [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)

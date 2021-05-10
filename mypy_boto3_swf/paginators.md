@@ -1,6 +1,6 @@
 # Paginators for boto3 SWF module
 
-> [Index](../README.md) > [SWF](./README.md) > Paginators
+> [Index](..) > [SWF](.) > Paginators
 
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
@@ -37,14 +37,14 @@ Arguments for `GetWorkflowExecutionHistoryPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
 - `execution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
   *(required)*
 - `reverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetWorkflowExecutionHistoryPaginator.paginate` returns
-`Iterator`\[[HistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#historytypedef)\].
+`Iterator`\[[HistoryTypeDef](./type_defs.md#historytypedef)\].
 
 ## ListActivityTypesPaginator
 
@@ -66,16 +66,15 @@ Boto3 documentation:
 Arguments for `ListActivityTypesPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
   *(required)*
 - `name`: `str`
 - `reverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActivityTypesPaginator.paginate` returns
-`Iterator`\[[ActivityTypeInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypeinfostypedef)\].
+`Iterator`\[[ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef)\].
 
 ## ListClosedWorkflowExecutionsPaginator
 
@@ -98,23 +97,22 @@ Arguments for `ListClosedWorkflowExecutionsPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
 - `closeTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
 - `executionFilter`:
-  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+  [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 - `closeStatusFilter`:
-  [CloseStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#closestatusfiltertypedef)
+  [CloseStatusFilterTypeDef](./type_defs.md#closestatusfiltertypedef)
 - `typeFilter`:
-  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
-- `tagFilter`:
-  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+  [WorkflowTypeFilterTypeDef](./type_defs.md#workflowtypefiltertypedef)
+- `tagFilter`: [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - `reverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClosedWorkflowExecutionsPaginator.paginate` returns
-`Iterator`\[[WorkflowExecutionInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfostypedef)\].
+`Iterator`\[[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef)\].
 
 ## ListDomainsPaginator
 
@@ -134,15 +132,14 @@ Boto3 documentation:
 
 Arguments for `ListDomainsPaginator.paginate` method:
 
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
   *(required)*
 - `reverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[DomainInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaininfostypedef)\].
+`Iterator`\[[DomainInfosTypeDef](./type_defs.md#domaininfostypedef)\].
 
 ## ListOpenWorkflowExecutionsPaginator
 
@@ -165,20 +162,19 @@ Arguments for `ListOpenWorkflowExecutionsPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
-  [ExecutionTimeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#executiontimefiltertypedef)
+  [ExecutionTimeFilterTypeDef](./type_defs.md#executiontimefiltertypedef)
   *(required)*
 - `typeFilter`:
-  [WorkflowTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypefiltertypedef)
-- `tagFilter`:
-  [TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tagfiltertypedef)
+  [WorkflowTypeFilterTypeDef](./type_defs.md#workflowtypefiltertypedef)
+- `tagFilter`: [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - `reverseOrder`: `bool`
 - `executionFilter`:
-  [WorkflowExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfiltertypedef)
+  [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpenWorkflowExecutionsPaginator.paginate` returns
-`Iterator`\[[WorkflowExecutionInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfostypedef)\].
+`Iterator`\[[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef)\].
 
 ## ListWorkflowTypesPaginator
 
@@ -200,16 +196,15 @@ Boto3 documentation:
 Arguments for `ListWorkflowTypesPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
   *(required)*
 - `name`: `str`
 - `reverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkflowTypesPaginator.paginate` returns
-`Iterator`\[[WorkflowTypeInfosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypeinfostypedef)\].
+`Iterator`\[[WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef)\].
 
 ## PollForDecisionTaskPaginator
 
@@ -231,13 +226,11 @@ Boto3 documentation:
 Arguments for `PollForDecisionTaskPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-  *(required)*
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 - `identity`: `str`
 - `reverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `PollForDecisionTaskPaginator.paginate` returns
-`Iterator`\[[DecisionTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontasktypedef)\].
+`Iterator`\[[DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef)\].

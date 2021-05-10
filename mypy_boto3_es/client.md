@@ -1,7 +1,6 @@
 # ElasticsearchServiceClient for boto3 ElasticsearchService module
 
-> [Index](../README.md) > [ElasticsearchService](./README.md) >
-> ElasticsearchServiceClient
+> [Index](..) > [ElasticsearchService](.) > ElasticsearchServiceClient
 
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
@@ -114,7 +113,7 @@ Arguments:
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[AcceptInboundCrossClusterSearchConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#acceptinboundcrossclustersearchconnectionresponsetypedef).
+[AcceptInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponsetypedef).
 
 ### add_tags
 
@@ -126,9 +125,7 @@ Boto3 documentation:
 Arguments:
 
 - `ARN`: `str` *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#tagtypedef)\]
-  *(required)*
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### associate_package
 
@@ -143,7 +140,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[AssociatePackageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#associatepackageresponsetypedef).
+[AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef).
 
 ### can_paginate
 
@@ -171,7 +168,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#cancelelasticsearchservicesoftwareupdateresponsetypedef).
+[CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdateresponsetypedef).
 
 ### create_elasticsearch_domain
 
@@ -185,35 +182,30 @@ Arguments:
 - `DomainName`: `str` *(required)*
 - `ElasticsearchVersion`: `str`
 - `ElasticsearchClusterConfig`:
-  [ElasticsearchClusterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchclusterconfigtypedef)
-- `EBSOptions`:
-  [EBSOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#ebsoptionstypedef)
+  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
+- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
 - `AccessPolicies`: `str`
 - `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#snapshotoptionstypedef)
-- `VPCOptions`:
-  [VPCOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#vpcoptionstypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#cognitooptionstypedef)
+  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+- `CognitoOptions`: [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
 - `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#encryptionatrestoptionstypedef)
+  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#nodetonodeencryptionoptionstypedef)
+  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
 - `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `LogPublishingOptions`:
-  `Dict`\[[LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#logtype),
-  [LogPublishingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#logpublishingoptiontypedef)\]
+- `LogPublishingOptions`: `Dict`\[[LogType](./literals.md#logtype),
+  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainendpointoptionstypedef)
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#advancedsecurityoptionsinputtypedef)
+  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
 - `AutoTuneOptions`:
-  [AutoTuneOptionsInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotuneoptionsinputtypedef)
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#tagtypedef)\]
+  [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateElasticsearchDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#createelasticsearchdomainresponsetypedef).
+[CreateElasticsearchDomainResponseTypeDef](./type_defs.md#createelasticsearchdomainresponsetypedef).
 
 ### create_outbound_cross_cluster_search_connection
 
@@ -226,15 +218,15 @@ Boto3 documentation:
 Arguments:
 
 - `SourceDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
   *(required)*
 - `DestinationDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
   *(required)*
 - `ConnectionAlias`: `str` *(required)*
 
 Returns
-[CreateOutboundCrossClusterSearchConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#createoutboundcrossclustersearchconnectionresponsetypedef).
+[CreateOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionresponsetypedef).
 
 ### create_package
 
@@ -246,14 +238,14 @@ Boto3 documentation:
 Arguments:
 
 - `PackageName`: `str` *(required)*
-- `PackageType`: `Literal['TXT-DICTIONARY']` *(required)*
-- `PackageSource`:
-  [PackageSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packagesourcetypedef)
+- `PackageType`: `Literal['TXT-DICTIONARY']` (see
+  [PackageType](./literals.md#packagetype)) *(required)*
+- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
   *(required)*
 - `PackageDescription`: `str`
 
 Returns
-[CreatePackageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#createpackageresponsetypedef).
+[CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
 
 ### delete_elasticsearch_domain
 
@@ -267,7 +259,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteElasticsearchDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#deleteelasticsearchdomainresponsetypedef).
+[DeleteElasticsearchDomainResponseTypeDef](./type_defs.md#deleteelasticsearchdomainresponsetypedef).
 
 ### delete_elasticsearch_service_role
 
@@ -290,7 +282,7 @@ Arguments:
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[DeleteInboundCrossClusterSearchConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#deleteinboundcrossclustersearchconnectionresponsetypedef).
+[DeleteInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionresponsetypedef).
 
 ### delete_outbound_cross_cluster_search_connection
 
@@ -305,7 +297,7 @@ Arguments:
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#deleteoutboundcrossclustersearchconnectionresponsetypedef).
+[DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionresponsetypedef).
 
 ### delete_package
 
@@ -319,7 +311,7 @@ Arguments:
 - `PackageID`: `str` *(required)*
 
 Returns
-[DeletePackageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#deletepackageresponsetypedef).
+[DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef).
 
 ### describe_domain_auto_tunes
 
@@ -335,7 +327,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDomainAutoTunesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describedomainautotunesresponsetypedef).
+[DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
 
 ### describe_elasticsearch_domain
 
@@ -349,7 +341,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeElasticsearchDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describeelasticsearchdomainresponsetypedef).
+[DescribeElasticsearchDomainResponseTypeDef](./type_defs.md#describeelasticsearchdomainresponsetypedef).
 
 ### describe_elasticsearch_domain_config
 
@@ -364,7 +356,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeElasticsearchDomainConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describeelasticsearchdomainconfigresponsetypedef).
+[DescribeElasticsearchDomainConfigResponseTypeDef](./type_defs.md#describeelasticsearchdomainconfigresponsetypedef).
 
 ### describe_elasticsearch_domains
 
@@ -379,7 +371,7 @@ Arguments:
 - `DomainNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeElasticsearchDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describeelasticsearchdomainsresponsetypedef).
+[DescribeElasticsearchDomainsResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponsetypedef).
 
 ### describe_elasticsearch_instance_type_limits
 
@@ -392,13 +384,12 @@ Boto3 documentation:
 Arguments:
 
 - `InstanceType`:
-  [ESPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#espartitioninstancetype)
-  *(required)*
+  [ESPartitionInstanceType](./literals.md#espartitioninstancetype) *(required)*
 - `ElasticsearchVersion`: `str` *(required)*
 - `DomainName`: `str`
 
 Returns
-[DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describeelasticsearchinstancetypelimitsresponsetypedef).
+[DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsresponsetypedef).
 
 ### describe_inbound_cross_cluster_search_connections
 
@@ -410,13 +401,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describeinboundcrossclustersearchconnectionsresponsetypedef).
+[DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsresponsetypedef).
 
 ### describe_outbound_cross_cluster_search_connections
 
@@ -428,13 +418,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describeoutboundcrossclustersearchconnectionsresponsetypedef).
+[DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsresponsetypedef).
 
 ### describe_packages
 
@@ -446,12 +435,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  `List`\[[DescribePackagesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describepackagesfiltertypedef)\]
+  `List`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribePackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describepackagesresponsetypedef).
+[DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef).
 
 ### describe_reserved_elasticsearch_instance_offerings
 
@@ -468,7 +457,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describereservedelasticsearchinstanceofferingsresponsetypedef).
+[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef).
 
 ### describe_reserved_elasticsearch_instances
 
@@ -485,7 +474,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReservedElasticsearchInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describereservedelasticsearchinstancesresponsetypedef).
+[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef).
 
 ### dissociate_package
 
@@ -500,7 +489,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DissociatePackageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#dissociatepackageresponsetypedef).
+[DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef).
 
 ### generate_presigned_url
 
@@ -531,7 +520,7 @@ Arguments:
 - `DomainName`: `str`
 
 Returns
-[GetCompatibleElasticsearchVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#getcompatibleelasticsearchversionsresponsetypedef).
+[GetCompatibleElasticsearchVersionsResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponsetypedef).
 
 ### get_package_version_history
 
@@ -547,7 +536,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetPackageVersionHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#getpackageversionhistoryresponsetypedef).
+[GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef).
 
 ### get_upgrade_history
 
@@ -563,7 +552,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetUpgradeHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#getupgradehistoryresponsetypedef).
+[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef).
 
 ### get_upgrade_status
 
@@ -577,7 +566,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[GetUpgradeStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#getupgradestatusresponsetypedef).
+[GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef).
 
 ### list_domain_names
 
@@ -587,7 +576,7 @@ Boto3 documentation:
 [ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
 
 Returns
-[ListDomainNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listdomainnamesresponsetypedef).
+[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 
 ### list_domains_for_package
 
@@ -603,7 +592,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDomainsForPackageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listdomainsforpackageresponsetypedef).
+[ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef).
 
 ### list_elasticsearch_instance_types
 
@@ -621,7 +610,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListElasticsearchInstanceTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listelasticsearchinstancetypesresponsetypedef).
+[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef).
 
 ### list_elasticsearch_versions
 
@@ -636,7 +625,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListElasticsearchVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listelasticsearchversionsresponsetypedef).
+[ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef).
 
 ### list_packages_for_domain
 
@@ -652,7 +641,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPackagesForDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listpackagesfordomainresponsetypedef).
+[ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef).
 
 ### list_tags
 
@@ -665,8 +654,7 @@ Arguments:
 
 - `ARN`: `str` *(required)*
 
-Returns
-[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listtagsresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### purchase_reserved_elasticsearch_instance_offering
 
@@ -683,7 +671,7 @@ Arguments:
 - `InstanceCount`: `int`
 
 Returns
-[PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#purchasereservedelasticsearchinstanceofferingresponsetypedef).
+[PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingresponsetypedef).
 
 ### reject_inbound_cross_cluster_search_connection
 
@@ -698,7 +686,7 @@ Arguments:
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[RejectInboundCrossClusterSearchConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#rejectinboundcrossclustersearchconnectionresponsetypedef).
+[RejectInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponsetypedef).
 
 ### remove_tags
 
@@ -725,7 +713,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[StartElasticsearchServiceSoftwareUpdateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#startelasticsearchservicesoftwareupdateresponsetypedef).
+[StartElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdateresponsetypedef).
 
 ### update_elasticsearch_domain_config
 
@@ -739,33 +727,29 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `ElasticsearchClusterConfig`:
-  [ElasticsearchClusterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchclusterconfigtypedef)
-- `EBSOptions`:
-  [EBSOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#ebsoptionstypedef)
+  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
+- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
 - `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#snapshotoptionstypedef)
-- `VPCOptions`:
-  [VPCOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#vpcoptionstypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#cognitooptionstypedef)
+  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+- `CognitoOptions`: [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
 - `AdvancedOptions`: `Dict`\[`str`, `str`\]
 - `AccessPolicies`: `str`
-- `LogPublishingOptions`:
-  `Dict`\[[LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#logtype),
-  [LogPublishingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#logpublishingoptiontypedef)\]
+- `LogPublishingOptions`: `Dict`\[[LogType](./literals.md#logtype),
+  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainendpointoptionstypedef)
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#advancedsecurityoptionsinputtypedef)
+  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
 - `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#nodetonodeencryptionoptionstypedef)
+  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
 - `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#encryptionatrestoptionstypedef)
+  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `AutoTuneOptions`:
-  [AutoTuneOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotuneoptionstypedef)
+  [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
 
 Returns
-[UpdateElasticsearchDomainConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#updateelasticsearchdomainconfigresponsetypedef).
+[UpdateElasticsearchDomainConfigResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponsetypedef).
 
 ### update_package
 
@@ -777,14 +761,13 @@ Boto3 documentation:
 Arguments:
 
 - `PackageID`: `str` *(required)*
-- `PackageSource`:
-  [PackageSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packagesourcetypedef)
+- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
   *(required)*
 - `PackageDescription`: `str`
 - `CommitMessage`: `str`
 
 Returns
-[UpdatePackageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#updatepackageresponsetypedef).
+[UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef).
 
 ### upgrade_elasticsearch_domain
 
@@ -800,7 +783,7 @@ Arguments:
 - `PerformCheckOnly`: `bool`
 
 Returns
-[UpgradeElasticsearchDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#upgradeelasticsearchdomainresponsetypedef).
+[UpgradeElasticsearchDomainResponseTypeDef](./type_defs.md#upgradeelasticsearchdomainresponsetypedef).
 
 ### get_paginator
 

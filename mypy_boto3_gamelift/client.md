@@ -1,6 +1,6 @@
 # GameLiftClient for boto3 GameLift module
 
-> [Index](../README.md) > [GameLift](./README.md) > GameLiftClient
+> [Index](..) > [GameLift](.) > GameLiftClient
 
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
@@ -170,9 +170,7 @@ Arguments:
 
 - `TicketId`: `str` *(required)*
 - `PlayerIds`: `List`\[`str`\] *(required)*
-- `AcceptanceType`:
-  [AcceptanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#acceptancetype)
-  *(required)*
+- `AcceptanceType`: [AcceptanceType](./literals.md#acceptancetype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -203,7 +201,7 @@ Arguments:
 - `GameServerData`: `str`
 
 Returns
-[ClaimGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#claimgameserveroutputtypedef).
+[ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef).
 
 ### create_alias
 
@@ -216,14 +214,11 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `RoutingStrategy`:
-  [RoutingStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#routingstrategytypedef)
-  *(required)*
+  [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef) *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createaliasoutputtypedef).
+Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
 
 ### create_build
 
@@ -236,15 +231,11 @@ Arguments:
 
 - `Name`: `str`
 - `Version`: `str`
-- `StorageLocation`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#s3locationtypedef)
-- `OperatingSystem`:
-  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#operatingsystem)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createbuildoutputtypedef).
+Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
 
 ### create_fleet
 
@@ -256,8 +247,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `EC2InstanceType`:
-  [EC2InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#ec2instancetype)
+- `EC2InstanceType`: [EC2InstanceType](./literals.md#ec2instancetype)
   *(required)*
 - `Description`: `str`
 - `BuildId`: `str`
@@ -266,28 +256,25 @@ Arguments:
 - `ServerLaunchParameters`: `str`
 - `LogPaths`: `List`\[`str`\]
 - `EC2InboundPermissions`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#ippermissiontypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `NewGameSessionProtectionPolicy`:
-  [ProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#protectionpolicy)
+  [ProtectionPolicy](./literals.md#protectionpolicy)
 - `RuntimeConfiguration`:
-  [RuntimeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#runtimeconfigurationtypedef)
+  [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
 - `ResourceCreationLimitPolicy`:
-  [ResourceCreationLimitPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resourcecreationlimitpolicytypedef)
+  [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
 - `MetricGroups`: `List`\[`str`\]
 - `PeerVpcAwsAccountId`: `str`
 - `PeerVpcId`: `str`
-- `FleetType`:
-  [FleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#fleettype)
+- `FleetType`: [FleetType](./literals.md#fleettype)
 - `InstanceRoleArn`: `str`
 - `CertificateConfiguration`:
-  [CertificateConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#certificateconfigurationtypedef)
+  [CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef)
 - `Locations`:
-  `List`\[[LocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#locationconfigurationtypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+  `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateFleetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createfleetoutputtypedef).
+Returns [CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef).
 
 ### create_fleet_locations
 
@@ -300,11 +287,11 @@ Arguments:
 
 - `FleetId`: `str` *(required)*
 - `Locations`:
-  `List`\[[LocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#locationconfigurationtypedef)\]
+  `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
   *(required)*
 
 Returns
-[CreateFleetLocationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createfleetlocationsoutputtypedef).
+[CreateFleetLocationsOutputTypeDef](./type_defs.md#createfleetlocationsoutputtypedef).
 
 ### create_game_server_group
 
@@ -321,23 +308,21 @@ Arguments:
 - `MinSize`: `int` *(required)*
 - `MaxSize`: `int` *(required)*
 - `LaunchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#launchtemplatespecificationtypedef)
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
   *(required)*
 - `InstanceDefinitions`:
-  `List`\[[InstanceDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#instancedefinitiontypedef)\]
+  `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
   *(required)*
 - `AutoScalingPolicy`:
-  [GameServerGroupAutoScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gameservergroupautoscalingpolicytypedef)
-- `BalancingStrategy`:
-  [BalancingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#balancingstrategy)
+  [GameServerGroupAutoScalingPolicyTypeDef](./type_defs.md#gameservergroupautoscalingpolicytypedef)
+- `BalancingStrategy`: [BalancingStrategy](./literals.md#balancingstrategy)
 - `GameServerProtectionPolicy`:
-  [GameServerProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameserverprotectionpolicy)
+  [GameServerProtectionPolicy](./literals.md#gameserverprotectionpolicy)
 - `VpcSubnets`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creategameservergroupoutputtypedef).
+[CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef).
 
 ### create_game_session
 
@@ -353,7 +338,7 @@ Arguments:
 - `AliasId`: `str`
 - `Name`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `CreatorId`: `str`
 - `GameSessionId`: `str`
 - `IdempotencyToken`: `str`
@@ -361,7 +346,7 @@ Arguments:
 - `Location`: `str`
 
 Returns
-[CreateGameSessionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creategamesessionoutputtypedef).
+[CreateGameSessionOutputTypeDef](./type_defs.md#creategamesessionoutputtypedef).
 
 ### create_game_session_queue
 
@@ -376,20 +361,19 @@ Arguments:
 - `Name`: `str` *(required)*
 - `TimeoutInSeconds`: `int`
 - `PlayerLatencyPolicies`:
-  `List`\[[PlayerLatencyPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playerlatencypolicytypedef)\]
+  `List`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
 - `Destinations`:
-  `List`\[[GameSessionQueueDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamesessionqueuedestinationtypedef)\]
+  `List`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
 - `FilterConfiguration`:
-  [FilterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#filterconfigurationtypedef)
+  [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
 - `PriorityConfiguration`:
-  [PriorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#priorityconfigurationtypedef)
+  [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGameSessionQueueOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creategamesessionqueueoutputtypedef).
+[CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef).
 
 ### create_matchmaking_configuration
 
@@ -412,17 +396,14 @@ Arguments:
 - `AdditionalPlayerCount`: `int`
 - `CustomEventData`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
-- `BackfillMode`:
-  [BackfillMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#backfillmode)
-- `FlexMatchMode`:
-  [FlexMatchMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#flexmatchmode)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `BackfillMode`: [BackfillMode](./literals.md#backfillmode)
+- `FlexMatchMode`: [FlexMatchMode](./literals.md#flexmatchmode)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMatchmakingConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creatematchmakingconfigurationoutputtypedef).
+[CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef).
 
 ### create_matchmaking_rule_set
 
@@ -436,11 +417,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `RuleSetBody`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMatchmakingRuleSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#creatematchmakingrulesetoutputtypedef).
+[CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef).
 
 ### create_player_session
 
@@ -456,7 +436,7 @@ Arguments:
 - `PlayerData`: `str`
 
 Returns
-[CreatePlayerSessionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createplayersessionoutputtypedef).
+[CreatePlayerSessionOutputTypeDef](./type_defs.md#createplayersessionoutputtypedef).
 
 ### create_player_sessions
 
@@ -472,7 +452,7 @@ Arguments:
 - `PlayerDataMap`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePlayerSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createplayersessionsoutputtypedef).
+[CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef).
 
 ### create_script
 
@@ -485,14 +465,11 @@ Arguments:
 
 - `Name`: `str`
 - `Version`: `str`
-- `StorageLocation`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#s3locationtypedef)
+- `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateScriptOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createscriptoutputtypedef).
+Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
 
 ### create_vpc_peering_authorization
 
@@ -508,7 +485,7 @@ Arguments:
 - `PeerVpcId`: `str` *(required)*
 
 Returns
-[CreateVpcPeeringAuthorizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#createvpcpeeringauthorizationoutputtypedef).
+[CreateVpcPeeringAuthorizationOutputTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputtypedef).
 
 ### create_vpc_peering_connection
 
@@ -572,7 +549,7 @@ Arguments:
 - `Locations`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteFleetLocationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#deletefleetlocationsoutputtypedef).
+[DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef).
 
 ### delete_game_server_group
 
@@ -586,10 +563,10 @@ Arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `DeleteOption`:
-  [GameServerGroupDeleteOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameservergroupdeleteoption)
+  [GameServerGroupDeleteOption](./literals.md#gameservergroupdeleteoption)
 
 Returns
-[DeleteGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#deletegameservergroupoutputtypedef).
+[DeleteGameServerGroupOutputTypeDef](./type_defs.md#deletegameservergroupoutputtypedef).
 
 ### delete_game_session_queue
 
@@ -710,7 +687,7 @@ Arguments:
 - `AliasId`: `str` *(required)*
 
 Returns
-[DescribeAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describealiasoutputtypedef).
+[DescribeAliasOutputTypeDef](./type_defs.md#describealiasoutputtypedef).
 
 ### describe_build
 
@@ -724,7 +701,7 @@ Arguments:
 - `BuildId`: `str` *(required)*
 
 Returns
-[DescribeBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describebuildoutputtypedef).
+[DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef).
 
 ### describe_ec2_instance_limits
 
@@ -736,12 +713,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `EC2InstanceType`:
-  [EC2InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#ec2instancetype)
+- `EC2InstanceType`: [EC2InstanceType](./literals.md#ec2instancetype)
 - `Location`: `str`
 
 Returns
-[DescribeEC2InstanceLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeec2instancelimitsoutputtypedef).
+[DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef).
 
 ### describe_fleet_attributes
 
@@ -758,7 +734,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetattributesoutputtypedef).
+[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef).
 
 ### describe_fleet_capacity
 
@@ -774,7 +750,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetcapacityoutputtypedef).
+[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef).
 
 ### describe_fleet_events
 
@@ -792,7 +768,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleeteventsoutputtypedef).
+[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef).
 
 ### describe_fleet_location_attributes
 
@@ -810,7 +786,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetLocationAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetlocationattributesoutputtypedef).
+[DescribeFleetLocationAttributesOutputTypeDef](./type_defs.md#describefleetlocationattributesoutputtypedef).
 
 ### describe_fleet_location_capacity
 
@@ -826,7 +802,7 @@ Arguments:
 - `Location`: `str` *(required)*
 
 Returns
-[DescribeFleetLocationCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetlocationcapacityoutputtypedef).
+[DescribeFleetLocationCapacityOutputTypeDef](./type_defs.md#describefleetlocationcapacityoutputtypedef).
 
 ### describe_fleet_location_utilization
 
@@ -842,7 +818,7 @@ Arguments:
 - `Location`: `str` *(required)*
 
 Returns
-[DescribeFleetLocationUtilizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetlocationutilizationoutputtypedef).
+[DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef).
 
 ### describe_fleet_port_settings
 
@@ -858,7 +834,7 @@ Arguments:
 - `Location`: `str`
 
 Returns
-[DescribeFleetPortSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetportsettingsoutputtypedef).
+[DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef).
 
 ### describe_fleet_utilization
 
@@ -875,7 +851,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetUtilizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetutilizationoutputtypedef).
+[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef).
 
 ### describe_game_server
 
@@ -890,7 +866,7 @@ Arguments:
 - `GameServerId`: `str` *(required)*
 
 Returns
-[DescribeGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameserveroutputtypedef).
+[DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef).
 
 ### describe_game_server_group
 
@@ -905,7 +881,7 @@ Arguments:
 - `GameServerGroupName`: `str` *(required)*
 
 Returns
-[DescribeGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameservergroupoutputtypedef).
+[DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef).
 
 ### describe_game_server_instances
 
@@ -923,7 +899,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameServerInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameserverinstancesoutputtypedef).
+[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef).
 
 ### describe_game_session_details
 
@@ -944,7 +920,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameSessionDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessiondetailsoutputtypedef).
+[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef).
 
 ### describe_game_session_placement
 
@@ -959,7 +935,7 @@ Arguments:
 - `PlacementId`: `str` *(required)*
 
 Returns
-[DescribeGameSessionPlacementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionplacementoutputtypedef).
+[DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef).
 
 ### describe_game_session_queues
 
@@ -976,7 +952,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameSessionQueuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionqueuesoutputtypedef).
+[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef).
 
 ### describe_game_sessions
 
@@ -996,7 +972,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionsoutputtypedef).
+[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef).
 
 ### describe_instances
 
@@ -1014,7 +990,7 @@ Arguments:
 - `Location`: `str`
 
 Returns
-[DescribeInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeinstancesoutputtypedef).
+[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef).
 
 ### describe_matchmaking
 
@@ -1028,7 +1004,7 @@ Arguments:
 - `TicketIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeMatchmakingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingoutputtypedef).
+[DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef).
 
 ### describe_matchmaking_configurations
 
@@ -1046,7 +1022,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeMatchmakingConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingconfigurationsoutputtypedef).
+[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef).
 
 ### describe_matchmaking_rule_sets
 
@@ -1063,7 +1039,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeMatchmakingRuleSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingrulesetsoutputtypedef).
+[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef).
 
 ### describe_player_sessions
 
@@ -1083,7 +1059,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribePlayerSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeplayersessionsoutputtypedef).
+[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef).
 
 ### describe_runtime_configuration
 
@@ -1098,7 +1074,7 @@ Arguments:
 - `FleetId`: `str` *(required)*
 
 Returns
-[DescribeRuntimeConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeruntimeconfigurationoutputtypedef).
+[DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef).
 
 ### describe_scaling_policies
 
@@ -1111,14 +1087,13 @@ Boto3 documentation:
 Arguments:
 
 - `FleetId`: `str` *(required)*
-- `StatusFilter`:
-  [ScalingStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#scalingstatustype)
+- `StatusFilter`: [ScalingStatusType](./literals.md#scalingstatustype)
 - `Limit`: `int`
 - `NextToken`: `str`
 - `Location`: `str`
 
 Returns
-[DescribeScalingPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describescalingpoliciesoutputtypedef).
+[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef).
 
 ### describe_script
 
@@ -1132,7 +1107,7 @@ Arguments:
 - `ScriptId`: `str` *(required)*
 
 Returns
-[DescribeScriptOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describescriptoutputtypedef).
+[DescribeScriptOutputTypeDef](./type_defs.md#describescriptoutputtypedef).
 
 ### describe_vpc_peering_authorizations
 
@@ -1143,7 +1118,7 @@ Boto3 documentation:
 [GameLift.Client.describe_vpc_peering_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations)
 
 Returns
-[DescribeVpcPeeringAuthorizationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describevpcpeeringauthorizationsoutputtypedef).
+[DescribeVpcPeeringAuthorizationsOutputTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputtypedef).
 
 ### describe_vpc_peering_connections
 
@@ -1158,7 +1133,7 @@ Arguments:
 - `FleetId`: `str`
 
 Returns
-[DescribeVpcPeeringConnectionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describevpcpeeringconnectionsoutputtypedef).
+[DescribeVpcPeeringConnectionsOutputTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputtypedef).
 
 ### generate_presigned_url
 
@@ -1189,7 +1164,7 @@ Arguments:
 - `GameSessionId`: `str` *(required)*
 
 Returns
-[GetGameSessionLogUrlOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#getgamesessionlogurloutputtypedef).
+[GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef).
 
 ### get_instance_access
 
@@ -1204,7 +1179,7 @@ Arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[GetInstanceAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#getinstanceaccessoutputtypedef).
+[GetInstanceAccessOutputTypeDef](./type_defs.md#getinstanceaccessoutputtypedef).
 
 ### list_aliases
 
@@ -1215,14 +1190,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `RoutingStrategyType`:
-  [RoutingStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#routingstrategytype)
+- `RoutingStrategyType`: [RoutingStrategyType](./literals.md#routingstrategytype)
 - `Name`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListAliasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listaliasesoutputtypedef).
+Returns [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef).
 
 ### list_builds
 
@@ -1233,13 +1206,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [BuildStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#buildstatus)
+- `Status`: [BuildStatus](./literals.md#buildstatus)
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listbuildsoutputtypedef).
+Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
 
 ### list_fleets
 
@@ -1255,8 +1226,7 @@ Arguments:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListFleetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listfleetsoutputtypedef).
+Returns [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef).
 
 ### list_game_server_groups
 
@@ -1271,7 +1241,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGameServerGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameservergroupsoutputtypedef).
+[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef).
 
 ### list_game_servers
 
@@ -1283,13 +1253,12 @@ Boto3 documentation:
 Arguments:
 
 - `GameServerGroupName`: `str` *(required)*
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListGameServersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameserversoutputtypedef).
+[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef).
 
 ### list_scripts
 
@@ -1303,8 +1272,7 @@ Arguments:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListScriptsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listscriptsoutputtypedef).
+Returns [ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -1318,7 +1286,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_scaling_policy
 
@@ -1331,23 +1299,20 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `FleetId`: `str` *(required)*
-- `MetricName`:
-  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#metricname)
-  *(required)*
+- `MetricName`: [MetricName](./literals.md#metricname) *(required)*
 - `ScalingAdjustment`: `int`
 - `ScalingAdjustmentType`:
-  [ScalingAdjustmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#scalingadjustmenttype)
+  [ScalingAdjustmentType](./literals.md#scalingadjustmenttype)
 - `Threshold`: `float`
 - `ComparisonOperator`:
-  [ComparisonOperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#comparisonoperatortype)
+  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `EvaluationPeriods`: `int`
-- `PolicyType`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#policytype)
+- `PolicyType`: [PolicyType](./literals.md#policytype)
 - `TargetConfiguration`:
-  [TargetConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#targetconfigurationtypedef)
+  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 
 Returns
-[PutScalingPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#putscalingpolicyoutputtypedef).
+[PutScalingPolicyOutputTypeDef](./type_defs.md#putscalingpolicyoutputtypedef).
 
 ### register_game_server
 
@@ -1365,7 +1330,7 @@ Arguments:
 - `GameServerData`: `str`
 
 Returns
-[RegisterGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#registergameserveroutputtypedef).
+[RegisterGameServerOutputTypeDef](./type_defs.md#registergameserveroutputtypedef).
 
 ### request_upload_credentials
 
@@ -1380,7 +1345,7 @@ Arguments:
 - `BuildId`: `str` *(required)*
 
 Returns
-[RequestUploadCredentialsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#requestuploadcredentialsoutputtypedef).
+[RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef).
 
 ### resolve_alias
 
@@ -1393,8 +1358,7 @@ Arguments:
 
 - `AliasId`: `str` *(required)*
 
-Returns
-[ResolveAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resolvealiasoutputtypedef).
+Returns [ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef).
 
 ### resume_game_server_group
 
@@ -1407,10 +1371,11 @@ Boto3 documentation:
 Arguments:
 
 - `GameServerGroupName`: `str` *(required)*
-- `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']`\] *(required)*
+- `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
+  [GameServerGroupAction](./literals.md#gameservergroupaction))\] *(required)*
 
 Returns
-[ResumeGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resumegameservergroupoutputtypedef).
+[ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef).
 
 ### search_game_sessions
 
@@ -1430,7 +1395,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#searchgamesessionsoutputtypedef).
+[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef).
 
 ### start_fleet_actions
 
@@ -1442,11 +1407,12 @@ Boto3 documentation:
 Arguments:
 
 - `FleetId`: `str` *(required)*
-- `Actions`: `List`\[`Literal['AUTO_SCALING']`\] *(required)*
+- `Actions`: `List`\[`Literal['AUTO_SCALING']` (see
+  [FleetAction](./literals.md#fleetaction))\] *(required)*
 - `Location`: `str`
 
 Returns
-[StartFleetActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startfleetactionsoutputtypedef).
+[StartFleetActionsOutputTypeDef](./type_defs.md#startfleetactionsoutputtypedef).
 
 ### start_game_session_placement
 
@@ -1462,16 +1428,16 @@ Arguments:
 - `GameSessionQueueName`: `str` *(required)*
 - `MaximumPlayerSessionCount`: `int` *(required)*
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionName`: `str`
 - `PlayerLatencies`:
-  `List`\[[PlayerLatencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playerlatencytypedef)\]
+  `List`\[[PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef)\]
 - `DesiredPlayerSessions`:
-  `List`\[[DesiredPlayerSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#desiredplayersessiontypedef)\]
+  `List`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
 - `GameSessionData`: `str`
 
 Returns
-[StartGameSessionPlacementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startgamesessionplacementoutputtypedef).
+[StartGameSessionPlacementOutputTypeDef](./type_defs.md#startgamesessionplacementoutputtypedef).
 
 ### start_match_backfill
 
@@ -1483,14 +1449,12 @@ Boto3 documentation:
 Arguments:
 
 - `ConfigurationName`: `str` *(required)*
-- `Players`:
-  `List`\[[PlayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playertypedef)\]
-  *(required)*
+- `Players`: `List`\[[PlayerTypeDef](./type_defs.md#playertypedef)\] *(required)*
 - `TicketId`: `str`
 - `GameSessionArn`: `str`
 
 Returns
-[StartMatchBackfillOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startmatchbackfilloutputtypedef).
+[StartMatchBackfillOutputTypeDef](./type_defs.md#startmatchbackfilloutputtypedef).
 
 ### start_matchmaking
 
@@ -1502,13 +1466,11 @@ Boto3 documentation:
 Arguments:
 
 - `ConfigurationName`: `str` *(required)*
-- `Players`:
-  `List`\[[PlayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playertypedef)\]
-  *(required)*
+- `Players`: `List`\[[PlayerTypeDef](./type_defs.md#playertypedef)\] *(required)*
 - `TicketId`: `str`
 
 Returns
-[StartMatchmakingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#startmatchmakingoutputtypedef).
+[StartMatchmakingOutputTypeDef](./type_defs.md#startmatchmakingoutputtypedef).
 
 ### stop_fleet_actions
 
@@ -1520,11 +1482,12 @@ Boto3 documentation:
 Arguments:
 
 - `FleetId`: `str` *(required)*
-- `Actions`: `List`\[`Literal['AUTO_SCALING']`\] *(required)*
+- `Actions`: `List`\[`Literal['AUTO_SCALING']` (see
+  [FleetAction](./literals.md#fleetaction))\] *(required)*
 - `Location`: `str`
 
 Returns
-[StopFleetActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#stopfleetactionsoutputtypedef).
+[StopFleetActionsOutputTypeDef](./type_defs.md#stopfleetactionsoutputtypedef).
 
 ### stop_game_session_placement
 
@@ -1539,7 +1502,7 @@ Arguments:
 - `PlacementId`: `str` *(required)*
 
 Returns
-[StopGameSessionPlacementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#stopgamesessionplacementoutputtypedef).
+[StopGameSessionPlacementOutputTypeDef](./type_defs.md#stopgamesessionplacementoutputtypedef).
 
 ### stop_matchmaking
 
@@ -1565,10 +1528,11 @@ Boto3 documentation:
 Arguments:
 
 - `GameServerGroupName`: `str` *(required)*
-- `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']`\] *(required)*
+- `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
+  [GameServerGroupAction](./literals.md#gameservergroupaction))\] *(required)*
 
 Returns
-[SuspendGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#suspendgameservergroupoutputtypedef).
+[SuspendGameServerGroupOutputTypeDef](./type_defs.md#suspendgameservergroupoutputtypedef).
 
 ### tag_resource
 
@@ -1580,9 +1544,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1613,10 +1575,9 @@ Arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `RoutingStrategy`:
-  [RoutingStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#routingstrategytypedef)
+  [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef)
 
-Returns
-[UpdateAliasOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatealiasoutputtypedef).
+Returns [UpdateAliasOutputTypeDef](./type_defs.md#updatealiasoutputtypedef).
 
 ### update_build
 
@@ -1631,8 +1592,7 @@ Arguments:
 - `Name`: `str`
 - `Version`: `str`
 
-Returns
-[UpdateBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatebuildoutputtypedef).
+Returns [UpdateBuildOutputTypeDef](./type_defs.md#updatebuildoutputtypedef).
 
 ### update_fleet_attributes
 
@@ -1647,13 +1607,13 @@ Arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `NewGameSessionProtectionPolicy`:
-  [ProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#protectionpolicy)
+  [ProtectionPolicy](./literals.md#protectionpolicy)
 - `ResourceCreationLimitPolicy`:
-  [ResourceCreationLimitPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#resourcecreationlimitpolicytypedef)
+  [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
 - `MetricGroups`: `List`\[`str`\]
 
 Returns
-[UpdateFleetAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatefleetattributesoutputtypedef).
+[UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef).
 
 ### update_fleet_capacity
 
@@ -1671,7 +1631,7 @@ Arguments:
 - `Location`: `str`
 
 Returns
-[UpdateFleetCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatefleetcapacityoutputtypedef).
+[UpdateFleetCapacityOutputTypeDef](./type_defs.md#updatefleetcapacityoutputtypedef).
 
 ### update_fleet_port_settings
 
@@ -1685,12 +1645,12 @@ Arguments:
 
 - `FleetId`: `str` *(required)*
 - `InboundPermissionAuthorizations`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#ippermissiontypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `InboundPermissionRevocations`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#ippermissiontypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 Returns
-[UpdateFleetPortSettingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatefleetportsettingsoutputtypedef).
+[UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef).
 
 ### update_game_server
 
@@ -1705,11 +1665,12 @@ Arguments:
 - `GameServerId`: `str` *(required)*
 - `GameServerData`: `str`
 - `UtilizationStatus`:
-  [GameServerUtilizationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameserverutilizationstatus)
-- `HealthCheck`: `Literal['HEALTHY']`
+  [GameServerUtilizationStatus](./literals.md#gameserverutilizationstatus)
+- `HealthCheck`: `Literal['HEALTHY']` (see
+  [GameServerHealthCheck](./literals.md#gameserverhealthcheck))
 
 Returns
-[UpdateGameServerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategameserveroutputtypedef).
+[UpdateGameServerOutputTypeDef](./type_defs.md#updategameserveroutputtypedef).
 
 ### update_game_server_group
 
@@ -1724,14 +1685,13 @@ Arguments:
 - `GameServerGroupName`: `str` *(required)*
 - `RoleArn`: `str`
 - `InstanceDefinitions`:
-  `List`\[[InstanceDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#instancedefinitiontypedef)\]
+  `List`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
 - `GameServerProtectionPolicy`:
-  [GameServerProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#gameserverprotectionpolicy)
-- `BalancingStrategy`:
-  [BalancingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#balancingstrategy)
+  [GameServerProtectionPolicy](./literals.md#gameserverprotectionpolicy)
+- `BalancingStrategy`: [BalancingStrategy](./literals.md#balancingstrategy)
 
 Returns
-[UpdateGameServerGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategameservergroupoutputtypedef).
+[UpdateGameServerGroupOutputTypeDef](./type_defs.md#updategameservergroupoutputtypedef).
 
 ### update_game_session
 
@@ -1746,12 +1706,11 @@ Arguments:
 - `MaximumPlayerSessionCount`: `int`
 - `Name`: `str`
 - `PlayerSessionCreationPolicy`:
-  [PlayerSessionCreationPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#playersessioncreationpolicy)
-- `ProtectionPolicy`:
-  [ProtectionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#protectionpolicy)
+  [PlayerSessionCreationPolicy](./literals.md#playersessioncreationpolicy)
+- `ProtectionPolicy`: [ProtectionPolicy](./literals.md#protectionpolicy)
 
 Returns
-[UpdateGameSessionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategamesessionoutputtypedef).
+[UpdateGameSessionOutputTypeDef](./type_defs.md#updategamesessionoutputtypedef).
 
 ### update_game_session_queue
 
@@ -1766,18 +1725,18 @@ Arguments:
 - `Name`: `str` *(required)*
 - `TimeoutInSeconds`: `int`
 - `PlayerLatencyPolicies`:
-  `List`\[[PlayerLatencyPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#playerlatencypolicytypedef)\]
+  `List`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
 - `Destinations`:
-  `List`\[[GameSessionQueueDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamesessionqueuedestinationtypedef)\]
+  `List`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
 - `FilterConfiguration`:
-  [FilterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#filterconfigurationtypedef)
+  [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
 - `PriorityConfiguration`:
-  [PriorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#priorityconfigurationtypedef)
+  [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
 - `CustomEventData`: `str`
 - `NotificationTarget`: `str`
 
 Returns
-[UpdateGameSessionQueueOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updategamesessionqueueoutputtypedef).
+[UpdateGameSessionQueueOutputTypeDef](./type_defs.md#updategamesessionqueueoutputtypedef).
 
 ### update_matchmaking_configuration
 
@@ -1800,15 +1759,13 @@ Arguments:
 - `AdditionalPlayerCount`: `int`
 - `CustomEventData`: `str`
 - `GameProperties`:
-  `List`\[[GamePropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#gamepropertytypedef)\]
+  `List`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
 - `GameSessionData`: `str`
-- `BackfillMode`:
-  [BackfillMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#backfillmode)
-- `FlexMatchMode`:
-  [FlexMatchMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#flexmatchmode)
+- `BackfillMode`: [BackfillMode](./literals.md#backfillmode)
+- `FlexMatchMode`: [FlexMatchMode](./literals.md#flexmatchmode)
 
 Returns
-[UpdateMatchmakingConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatematchmakingconfigurationoutputtypedef).
+[UpdateMatchmakingConfigurationOutputTypeDef](./type_defs.md#updatematchmakingconfigurationoutputtypedef).
 
 ### update_runtime_configuration
 
@@ -1822,11 +1779,11 @@ Arguments:
 
 - `FleetId`: `str` *(required)*
 - `RuntimeConfiguration`:
-  [RuntimeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#runtimeconfigurationtypedef)
+  [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
   *(required)*
 
 Returns
-[UpdateRuntimeConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updateruntimeconfigurationoutputtypedef).
+[UpdateRuntimeConfigurationOutputTypeDef](./type_defs.md#updateruntimeconfigurationoutputtypedef).
 
 ### update_script
 
@@ -1840,12 +1797,10 @@ Arguments:
 - `ScriptId`: `str` *(required)*
 - `Name`: `str`
 - `Version`: `str`
-- `StorageLocation`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#s3locationtypedef)
+- `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
-Returns
-[UpdateScriptOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#updatescriptoutputtypedef).
+Returns [UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef).
 
 ### validate_matchmaking_rule_set
 
@@ -1860,7 +1815,7 @@ Arguments:
 - `RuleSetBody`: `str` *(required)*
 
 Returns
-[ValidateMatchmakingRuleSetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#validatematchmakingrulesetoutputtypedef).
+[ValidateMatchmakingRuleSetOutputTypeDef](./type_defs.md#validatematchmakingrulesetoutputtypedef).
 
 ### get_paginator
 

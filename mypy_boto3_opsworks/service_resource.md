@@ -1,6 +1,6 @@
 # OpsWorksServiceResource for boto3 OpsWorks module
 
-> [Index](../README.md) > [OpsWorks](./README.md) > OpsWorksServiceResource
+> [Index](..) > [OpsWorks](.) > OpsWorksServiceResource
 
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
@@ -125,23 +125,22 @@ Arguments:
 - `ServiceRoleArn`: `str` *(required)*
 - `DefaultInstanceProfileArn`: `str` *(required)*
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']`, `str`\]
+- `Attributes`: `Dict`\[`Literal['Color']` (see
+  [StackAttributesKeys](./literals.md#stackattributeskeys)), `str`\]
 - `DefaultOs`: `str`
 - `HostnameTheme`: `str`
 - `DefaultAvailabilityZone`: `str`
 - `DefaultSubnetId`: `str`
 - `CustomJson`: `str`
 - `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
 - `ChefConfiguration`:
-  [ChefConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#chefconfigurationtypedef)
+  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
 - `UseCustomCookbooks`: `bool`
 - `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`:
-  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `DefaultSshKeyName`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `DefaultRootDeviceType`: [RootDeviceType](./literals.md#rootdevicetype)
 - `AgentVersion`: `str`
 
 Returns [Stack](#stack).
@@ -317,31 +316,27 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [LayerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layertype)
-  *(required)*
+- `Type`: [LayerType](./literals.md#layertype) *(required)*
 - `Name`: `str` *(required)*
 - `Shortname`: `str` *(required)*
-- `Attributes`:
-  `Dict`\[[LayerAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layerattributeskeys),
+- `Attributes`: `Dict`\[[LayerAttributesKeys](./literals.md#layerattributeskeys),
   `str`\]
 - `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#cloudwatchlogsconfigurationtypedef)
+  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
 - `CustomSecurityGroupIds`: `List`\[`str`\]
 - `Packages`: `List`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#volumeconfigurationtypedef)\]
+  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
-- `CustomRecipes`:
-  [RecipesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#recipestypedef)
+- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
 - `InstallUpdatesOnBoot`: `bool`
 - `UseEbsOptimizedInstances`: `bool`
 - `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#lifecycleeventconfigurationtypedef)
+  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
 Returns [Layer](#layer).
 

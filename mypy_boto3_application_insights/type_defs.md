@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ApplicationInsights module
 
-> [Index](../README.md) > [ApplicationInsights](./README.md) > Structures
+> [Index](..) > [ApplicationInsights](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
@@ -47,14 +47,11 @@ Optional fields:
 - `ComponentName`: `str`
 - `ComponentRemarks`: `str`
 - `ResourceType`: `str`
-- `OsType`:
-  [OsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#ostype)
-- `Tier`:
-  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier)
+- `OsType`: [OsType](./literals.md#ostype)
+- `Tier`: [Tier](./literals.md#tier)
 - `Monitor`: `bool`
-- `DetectedWorkload`:
-  `Dict`\[[Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier),
-  `Dict`\[`str`, `str`\]\]
+- `DetectedWorkload`: `Dict`\[[Tier](./literals.md#tier), `Dict`\[`str`,
+  `str`\]\]
 
 ## ApplicationInfoTypeDef
 
@@ -81,9 +78,9 @@ Optional fields:
 
 - `MonitoredResourceARN`: `str`
 - `EventStatus`:
-  [ConfigurationEventStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#configurationeventstatus)
+  [ConfigurationEventStatus](./literals.md#configurationeventstatus)
 - `EventResourceType`:
-  [ConfigurationEventResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#configurationeventresourcetype)
+  [ConfigurationEventResourceType](./literals.md#configurationeventresourcetype)
 - `EventTime`: `datetime`
 - `EventDetail`: `str`
 - `EventResourceName`: `str`
@@ -97,7 +94,7 @@ from mypy_boto3_application_insights.type_defs import CreateApplicationResponseT
 Optional fields:
 
 - `ApplicationInfo`:
-  [ApplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#applicationinfotypedef)
+  [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
 
 ## CreateLogPatternResponseTypeDef
 
@@ -107,8 +104,7 @@ from mypy_boto3_application_insights.type_defs import CreateLogPatternResponseTy
 
 Optional fields:
 
-- `LogPattern`:
-  [LogPatternTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#logpatterntypedef)
+- `LogPattern`: [LogPatternTypeDef](./type_defs.md#logpatterntypedef)
 - `ResourceGroupName`: `str`
 
 ## DescribeApplicationResponseTypeDef
@@ -120,7 +116,7 @@ from mypy_boto3_application_insights.type_defs import DescribeApplicationRespons
 Optional fields:
 
 - `ApplicationInfo`:
-  [ApplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#applicationinfotypedef)
+  [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
 
 ## DescribeComponentConfigurationRecommendationResponseTypeDef
 
@@ -141,8 +137,7 @@ from mypy_boto3_application_insights.type_defs import DescribeComponentConfigura
 Optional fields:
 
 - `Monitor`: `bool`
-- `Tier`:
-  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier)
+- `Tier`: [Tier](./literals.md#tier)
 - `ComponentConfiguration`: `str`
 
 ## DescribeComponentResponseTypeDef
@@ -154,7 +149,7 @@ from mypy_boto3_application_insights.type_defs import DescribeComponentResponseT
 Optional fields:
 
 - `ApplicationComponent`:
-  [ApplicationComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#applicationcomponenttypedef)
+  [ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef)
 - `ResourceList`: `List`\[`str`\]
 
 ## DescribeLogPatternResponseTypeDef
@@ -166,8 +161,7 @@ from mypy_boto3_application_insights.type_defs import DescribeLogPatternResponse
 Optional fields:
 
 - `ResourceGroupName`: `str`
-- `LogPattern`:
-  [LogPatternTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#logpatterntypedef)
+- `LogPattern`: [LogPatternTypeDef](./type_defs.md#logpatterntypedef)
 
 ## DescribeObservationResponseTypeDef
 
@@ -177,8 +171,7 @@ from mypy_boto3_application_insights.type_defs import DescribeObservationRespons
 
 Optional fields:
 
-- `Observation`:
-  [ObservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#observationtypedef)
+- `Observation`: [ObservationTypeDef](./type_defs.md#observationtypedef)
 
 ## DescribeProblemObservationsResponseTypeDef
 
@@ -189,7 +182,7 @@ from mypy_boto3_application_insights.type_defs import DescribeProblemObservation
 Optional fields:
 
 - `RelatedObservations`:
-  [RelatedObservationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#relatedobservationstypedef)
+  [RelatedObservationsTypeDef](./type_defs.md#relatedobservationstypedef)
 
 ## DescribeProblemResponseTypeDef
 
@@ -199,8 +192,7 @@ from mypy_boto3_application_insights.type_defs import DescribeProblemResponseTyp
 
 Optional fields:
 
-- `Problem`:
-  [ProblemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#problemtypedef)
+- `Problem`: [ProblemTypeDef](./type_defs.md#problemtypedef)
 
 ## ListApplicationsResponseTypeDef
 
@@ -211,7 +203,7 @@ from mypy_boto3_application_insights.type_defs import ListApplicationsResponseTy
 Optional fields:
 
 - `ApplicationInfoList`:
-  `List`\[[ApplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#applicationinfotypedef)\]
+  `List`\[[ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)\]
 - `NextToken`: `str`
 
 ## ListComponentsResponseTypeDef
@@ -223,7 +215,7 @@ from mypy_boto3_application_insights.type_defs import ListComponentsResponseType
 Optional fields:
 
 - `ApplicationComponentList`:
-  `List`\[[ApplicationComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#applicationcomponenttypedef)\]
+  `List`\[[ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef)\]
 - `NextToken`: `str`
 
 ## ListConfigurationHistoryResponseTypeDef
@@ -235,7 +227,7 @@ from mypy_boto3_application_insights.type_defs import ListConfigurationHistoryRe
 Optional fields:
 
 - `EventList`:
-  `List`\[[ConfigurationEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#configurationeventtypedef)\]
+  `List`\[[ConfigurationEventTypeDef](./type_defs.md#configurationeventtypedef)\]
 - `NextToken`: `str`
 
 ## ListLogPatternSetsResponseTypeDef
@@ -259,8 +251,7 @@ from mypy_boto3_application_insights.type_defs import ListLogPatternsResponseTyp
 Optional fields:
 
 - `ResourceGroupName`: `str`
-- `LogPatterns`:
-  `List`\[[LogPatternTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#logpatterntypedef)\]
+- `LogPatterns`: `List`\[[LogPatternTypeDef](./type_defs.md#logpatterntypedef)\]
 - `NextToken`: `str`
 
 ## ListProblemsResponseTypeDef
@@ -271,8 +262,7 @@ from mypy_boto3_application_insights.type_defs import ListProblemsResponseTypeDe
 
 Optional fields:
 
-- `ProblemList`:
-  `List`\[[ProblemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#problemtypedef)\]
+- `ProblemList`: `List`\[[ProblemTypeDef](./type_defs.md#problemtypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -283,8 +273,7 @@ from mypy_boto3_application_insights.type_defs import ListTagsForResourceRespons
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LogPatternTypeDef
 
@@ -315,15 +304,14 @@ Optional fields:
 - `LogGroup`: `str`
 - `LineTime`: `datetime`
 - `LogText`: `str`
-- `LogFilter`:
-  [LogFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#logfilter)
+- `LogFilter`: [LogFilter](./literals.md#logfilter)
 - `MetricNamespace`: `str`
 - `MetricName`: `str`
 - `Unit`: `str`
 - `Value`: `float`
 - `CloudWatchEventId`: `str`
 - `CloudWatchEventSource`:
-  [CloudWatchEventSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#cloudwatcheventsource)
+  [CloudWatchEventSource](./literals.md#cloudwatcheventsource)
 - `CloudWatchEventDetailType`: `str`
 - `HealthEventArn`: `str`
 - `HealthService`: `str`
@@ -366,16 +354,15 @@ Optional fields:
 - `Id`: `str`
 - `Title`: `str`
 - `Insights`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 - `AffectedResource`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `SeverityLevel`:
-  [SeverityLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#severitylevel)
+- `SeverityLevel`: [SeverityLevel](./literals.md#severitylevel)
 - `ResourceGroupName`: `str`
-- `Feedback`: `Dict`\[`Literal['INSIGHTS_FEEDBACK']`,
-  [FeedbackValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#feedbackvalue)\]
+- `Feedback`: `Dict`\[`Literal['INSIGHTS_FEEDBACK']` (see
+  [FeedbackKey](./literals.md#feedbackkey)),
+  [FeedbackValue](./literals.md#feedbackvalue)\]
 
 ## RelatedObservationsTypeDef
 
@@ -386,7 +373,7 @@ from mypy_boto3_application_insights.type_defs import RelatedObservationsTypeDef
 Optional fields:
 
 - `ObservationList`:
-  `List`\[[ObservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#observationtypedef)\]
+  `List`\[[ObservationTypeDef](./type_defs.md#observationtypedef)\]
 
 ## TagTypeDef
 
@@ -408,7 +395,7 @@ from mypy_boto3_application_insights.type_defs import UpdateApplicationResponseT
 Optional fields:
 
 - `ApplicationInfo`:
-  [ApplicationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#applicationinfotypedef)
+  [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
 
 ## UpdateLogPatternResponseTypeDef
 
@@ -419,5 +406,4 @@ from mypy_boto3_application_insights.type_defs import UpdateLogPatternResponseTy
 Optional fields:
 
 - `ResourceGroupName`: `str`
-- `LogPattern`:
-  [LogPatternTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#logpatterntypedef)
+- `LogPattern`: [LogPatternTypeDef](./type_defs.md#logpatterntypedef)

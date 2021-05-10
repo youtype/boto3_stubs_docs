@@ -1,7 +1,6 @@
 # PersonalizeRuntimeClient for boto3 PersonalizeRuntime module
 
-> [Index](../README.md) > [PersonalizeRuntime](./README.md) >
-> PersonalizeRuntimeClient
+> [Index](..) > [PersonalizeRuntime](.) > PersonalizeRuntimeClient
 
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
@@ -101,7 +100,7 @@ Arguments:
 - `filterValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetPersonalizedRankingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_runtime/type_defs.html#getpersonalizedrankingresponsetypedef).
+[GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef).
 
 ### get_recommendations
 
@@ -122,4 +121,4 @@ Arguments:
 - `filterValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_personalize_runtime/type_defs.html#getrecommendationsresponsetypedef).
+[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).

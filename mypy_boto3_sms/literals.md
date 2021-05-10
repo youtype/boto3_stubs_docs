@@ -1,6 +1,6 @@
 # Literals for boto3 SMS module
 
-> [Index](../README.md) > [SMS](./README.md) > Literals
+> [Index](..) > [SMS](.) > Literals
 
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)

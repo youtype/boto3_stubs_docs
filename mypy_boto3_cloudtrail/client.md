@@ -1,6 +1,6 @@
 # CloudTrailClient for boto3 CloudTrail module
 
-> [Index](../README.md) > [CloudTrail](./README.md) > CloudTrailClient
+> [Index](..) > [CloudTrail](.) > CloudTrailClient
 
 Auto-generated documentation for
 [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
@@ -121,8 +121,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagsList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#tagtypedef)\]
+- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -159,11 +158,10 @@ Arguments:
 - `CloudWatchLogsRoleArn`: `str`
 - `KmsKeyId`: `str`
 - `IsOrganizationTrail`: `bool`
-- `TagsList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#tagtypedef)\]
+- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#createtrailresponsetypedef).
+[CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
 
 ### delete_trail
 
@@ -191,7 +189,7 @@ Arguments:
 - `includeShadowTrails`: `bool`
 
 Returns
-[DescribeTrailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#describetrailsresponsetypedef).
+[DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -222,7 +220,7 @@ Arguments:
 - `TrailName`: `str` *(required)*
 
 Returns
-[GetEventSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#geteventselectorsresponsetypedef).
+[GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef).
 
 ### get_insight_selectors
 
@@ -236,7 +234,7 @@ Arguments:
 - `TrailName`: `str` *(required)*
 
 Returns
-[GetInsightSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#getinsightselectorsresponsetypedef).
+[GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
 
 ### get_trail
 
@@ -249,8 +247,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetTrailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#gettrailresponsetypedef).
+Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
 
 ### get_trail_status
 
@@ -264,7 +261,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetTrailStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#gettrailstatusresponsetypedef).
+[GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
 
 ### list_public_keys
 
@@ -280,7 +277,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPublicKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#listpublickeysresponsetypedef).
+[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
 
 ### list_tags
 
@@ -294,8 +291,7 @@ Arguments:
 - `ResourceIdList`: `List`\[`str`\] *(required)*
 - `NextToken`: `str`
 
-Returns
-[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#listtagsresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### list_trails
 
@@ -308,8 +304,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListTrailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#listtrailsresponsetypedef).
+Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
 
 ### lookup_events
 
@@ -321,15 +316,16 @@ Boto3 documentation:
 Arguments:
 
 - `LookupAttributes`:
-  `List`\[[LookupAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#lookupattributetypedef)\]
+  `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `EventCategory`: `Literal['insight']`
+- `EventCategory`: `Literal['insight']` (see
+  [EventCategory](./literals.md#eventcategory))
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[LookupEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#lookupeventsresponsetypedef).
+[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef).
 
 ### put_event_selectors
 
@@ -342,12 +338,12 @@ Arguments:
 
 - `TrailName`: `str` *(required)*
 - `EventSelectors`:
-  `List`\[[EventSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#eventselectortypedef)\]
+  `List`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
 - `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#advancedeventselectortypedef)\]
+  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
 Returns
-[PutEventSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#puteventselectorsresponsetypedef).
+[PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
 
 ### put_insight_selectors
 
@@ -360,11 +356,11 @@ Arguments:
 
 - `TrailName`: `str` *(required)*
 - `InsightSelectors`:
-  `List`\[[InsightSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#insightselectortypedef)\]
+  `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
   *(required)*
 
 Returns
-[PutInsightSelectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#putinsightselectorsresponsetypedef).
+[PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef).
 
 ### remove_tags
 
@@ -376,8 +372,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagsList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#tagtypedef)\]
+- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -429,7 +424,7 @@ Arguments:
 - `IsOrganizationTrail`: `bool`
 
 Returns
-[UpdateTrailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudtrail/type_defs.html#updatetrailresponsetypedef).
+[UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef).
 
 ### get_paginator
 

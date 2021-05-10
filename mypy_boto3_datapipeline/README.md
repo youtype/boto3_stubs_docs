@@ -1,6 +1,6 @@
 # Type annotations for boto3 DataPipeline module
 
-> [Index](../README.md) > DataPipeline
+> [Index](..) > DataPipeline
 
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
@@ -130,7 +130,7 @@ from mypy_boto3_datapipeline.type_defs import CreatePipelineOutputTypeDef, ...
 - [QueryTypeDef](./type_defs.md#querytypedef)
 - [ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef)
 - [ReportTaskRunnerHeartbeatOutputTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SelectorTypeDef](./type_defs.md#selectortypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TaskObjectTypeDef](./type_defs.md#taskobjecttypedef)

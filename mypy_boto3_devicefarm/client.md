@@ -1,6 +1,6 @@
 # DeviceFarmClient for boto3 DeviceFarm module
 
-> [Index](../README.md) > [DeviceFarm](./README.md) > DeviceFarmClient
+> [Index](..) > [DeviceFarm](.) > DeviceFarmClient
 
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
@@ -162,14 +162,12 @@ Arguments:
 
 - `projectArn`: `str` *(required)*
 - `name`: `str` *(required)*
-- `rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#ruletypedef)\]
-  *(required)*
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 - `description`: `str`
 - `maxDevices`: `int`
 
 Returns
-[CreateDevicePoolResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createdevicepoolresulttypedef).
+[CreateDevicePoolResultTypeDef](./type_defs.md#createdevicepoolresulttypedef).
 
 ### create_instance_profile
 
@@ -188,7 +186,7 @@ Arguments:
 - `rebootAfterUse`: `bool`
 
 Returns
-[CreateInstanceProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createinstanceprofileresulttypedef).
+[CreateInstanceProfileResultTypeDef](./type_defs.md#createinstanceprofileresulttypedef).
 
 ### create_network_profile
 
@@ -203,8 +201,7 @@ Arguments:
 - `projectArn`: `str` *(required)*
 - `name`: `str` *(required)*
 - `description`: `str`
-- `type`:
-  [NetworkProfileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#networkprofiletype)
+- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
 - `uplinkBandwidthBits`: `int`
 - `downlinkBandwidthBits`: `int`
 - `uplinkDelayMs`: `int`
@@ -215,7 +212,7 @@ Arguments:
 - `downlinkLossPercent`: `int`
 
 Returns
-[CreateNetworkProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createnetworkprofileresulttypedef).
+[CreateNetworkProfileResultTypeDef](./type_defs.md#createnetworkprofileresulttypedef).
 
 ### create_project
 
@@ -230,7 +227,7 @@ Arguments:
 - `defaultJobTimeoutMinutes`: `int`
 
 Returns
-[CreateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createprojectresulttypedef).
+[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
 ### create_remote_access_session
 
@@ -252,13 +249,12 @@ Arguments:
 - `name`: `str`
 - `clientId`: `str`
 - `configuration`:
-  [CreateRemoteAccessSessionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createremoteaccesssessionconfigurationtypedef)
-- `interactionMode`:
-  [InteractionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#interactionmode)
+  [CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef)
+- `interactionMode`: [InteractionMode](./literals.md#interactionmode)
 - `skipAppResign`: `bool`
 
 Returns
-[CreateRemoteAccessSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createremoteaccesssessionresulttypedef).
+[CreateRemoteAccessSessionResultTypeDef](./type_defs.md#createremoteaccesssessionresulttypedef).
 
 ### create_test_grid_project
 
@@ -274,7 +270,7 @@ Arguments:
 - `description`: `str`
 
 Returns
-[CreateTestGridProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createtestgridprojectresulttypedef).
+[CreateTestGridProjectResultTypeDef](./type_defs.md#createtestgridprojectresulttypedef).
 
 ### create_test_grid_url
 
@@ -289,7 +285,7 @@ Arguments:
 - `expiresInSeconds`: `int` *(required)*
 
 Returns
-[CreateTestGridUrlResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createtestgridurlresulttypedef).
+[CreateTestGridUrlResultTypeDef](./type_defs.md#createtestgridurlresulttypedef).
 
 ### create_upload
 
@@ -302,13 +298,10 @@ Arguments:
 
 - `projectArn`: `str` *(required)*
 - `name`: `str` *(required)*
-- `type`:
-  [UploadType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#uploadtype)
-  *(required)*
+- `type`: [UploadType](./literals.md#uploadtype) *(required)*
 - `contentType`: `str`
 
-Returns
-[CreateUploadResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createuploadresulttypedef).
+Returns [CreateUploadResultTypeDef](./type_defs.md#createuploadresulttypedef).
 
 ### create_vpce_configuration
 
@@ -326,7 +319,7 @@ Arguments:
 - `vpceConfigurationDescription`: `str`
 
 Returns
-[CreateVPCEConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#createvpceconfigurationresulttypedef).
+[CreateVPCEConfigurationResultTypeDef](./type_defs.md#createvpceconfigurationresulttypedef).
 
 ### delete_device_pool
 
@@ -475,7 +468,7 @@ Boto3 documentation:
 [DeviceFarm.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
 
 Returns
-[GetAccountSettingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getaccountsettingsresulttypedef).
+[GetAccountSettingsResultTypeDef](./type_defs.md#getaccountsettingsresulttypedef).
 
 ### get_device
 
@@ -488,8 +481,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetDeviceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getdeviceresulttypedef).
+Returns [GetDeviceResultTypeDef](./type_defs.md#getdeviceresulttypedef).
 
 ### get_device_instance
 
@@ -503,7 +495,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetDeviceInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getdeviceinstanceresulttypedef).
+[GetDeviceInstanceResultTypeDef](./type_defs.md#getdeviceinstanceresulttypedef).
 
 ### get_device_pool
 
@@ -517,7 +509,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetDevicePoolResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getdevicepoolresulttypedef).
+[GetDevicePoolResultTypeDef](./type_defs.md#getdevicepoolresulttypedef).
 
 ### get_device_pool_compatibility
 
@@ -531,15 +523,13 @@ Arguments:
 
 - `devicePoolArn`: `str` *(required)*
 - `appArn`: `str`
-- `testType`:
-  [TestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testtype)
-- `test`:
-  [ScheduleRunTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#scheduleruntesttypedef)
+- `testType`: [TestType](./literals.md#testtype)
+- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
 - `configuration`:
-  [ScheduleRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#schedulerunconfigurationtypedef)
+  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
 
 Returns
-[GetDevicePoolCompatibilityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getdevicepoolcompatibilityresulttypedef).
+[GetDevicePoolCompatibilityResultTypeDef](./type_defs.md#getdevicepoolcompatibilityresulttypedef).
 
 ### get_instance_profile
 
@@ -553,7 +543,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetInstanceProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getinstanceprofileresulttypedef).
+[GetInstanceProfileResultTypeDef](./type_defs.md#getinstanceprofileresulttypedef).
 
 ### get_job
 
@@ -566,8 +556,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getjobresulttypedef).
+Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
 
 ### get_network_profile
 
@@ -581,7 +570,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetNetworkProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getnetworkprofileresulttypedef).
+[GetNetworkProfileResultTypeDef](./type_defs.md#getnetworkprofileresulttypedef).
 
 ### get_offering_status
 
@@ -595,7 +584,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[GetOfferingStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getofferingstatusresulttypedef).
+[GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef).
 
 ### get_project
 
@@ -608,8 +597,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getprojectresulttypedef).
+Returns [GetProjectResultTypeDef](./type_defs.md#getprojectresulttypedef).
 
 ### get_remote_access_session
 
@@ -624,7 +612,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetRemoteAccessSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getremoteaccesssessionresulttypedef).
+[GetRemoteAccessSessionResultTypeDef](./type_defs.md#getremoteaccesssessionresulttypedef).
 
 ### get_run
 
@@ -637,8 +625,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetRunResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getrunresulttypedef).
+Returns [GetRunResultTypeDef](./type_defs.md#getrunresulttypedef).
 
 ### get_suite
 
@@ -651,8 +638,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetSuiteResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getsuiteresulttypedef).
+Returns [GetSuiteResultTypeDef](./type_defs.md#getsuiteresulttypedef).
 
 ### get_test
 
@@ -665,8 +651,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetTestResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#gettestresulttypedef).
+Returns [GetTestResultTypeDef](./type_defs.md#gettestresulttypedef).
 
 ### get_test_grid_project
 
@@ -680,7 +665,7 @@ Arguments:
 - `projectArn`: `str` *(required)*
 
 Returns
-[GetTestGridProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#gettestgridprojectresulttypedef).
+[GetTestGridProjectResultTypeDef](./type_defs.md#gettestgridprojectresulttypedef).
 
 ### get_test_grid_session
 
@@ -696,7 +681,7 @@ Arguments:
 - `sessionArn`: `str`
 
 Returns
-[GetTestGridSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#gettestgridsessionresulttypedef).
+[GetTestGridSessionResultTypeDef](./type_defs.md#gettestgridsessionresulttypedef).
 
 ### get_upload
 
@@ -709,8 +694,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetUploadResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getuploadresulttypedef).
+Returns [GetUploadResultTypeDef](./type_defs.md#getuploadresulttypedef).
 
 ### get_vpce_configuration
 
@@ -725,7 +709,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetVPCEConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getvpceconfigurationresulttypedef).
+[GetVPCEConfigurationResultTypeDef](./type_defs.md#getvpceconfigurationresulttypedef).
 
 ### install_to_remote_access_session
 
@@ -741,7 +725,7 @@ Arguments:
 - `appArn`: `str` *(required)*
 
 Returns
-[InstallToRemoteAccessSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#installtoremoteaccesssessionresulttypedef).
+[InstallToRemoteAccessSessionResultTypeDef](./type_defs.md#installtoremoteaccesssessionresulttypedef).
 
 ### list_artifacts
 
@@ -753,13 +737,11 @@ Boto3 documentation:
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [ArtifactCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#artifactcategory)
-  *(required)*
+- `type`: [ArtifactCategory](./literals.md#artifactcategory) *(required)*
 - `nextToken`: `str`
 
 Returns
-[ListArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listartifactsresulttypedef).
+[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef).
 
 ### list_device_instances
 
@@ -774,7 +756,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDeviceInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listdeviceinstancesresulttypedef).
+[ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef).
 
 ### list_device_pools
 
@@ -786,12 +768,11 @@ Boto3 documentation:
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [DevicePoolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#devicepooltype)
+- `type`: [DevicePoolType](./literals.md#devicepooltype)
 - `nextToken`: `str`
 
 Returns
-[ListDevicePoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listdevicepoolsresulttypedef).
+[ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef).
 
 ### list_devices
 
@@ -804,11 +785,9 @@ Arguments:
 
 - `arn`: `str`
 - `nextToken`: `str`
-- `filters`:
-  `List`\[[DeviceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicefiltertypedef)\]
+- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 
-Returns
-[ListDevicesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listdevicesresulttypedef).
+Returns [ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef).
 
 ### list_instance_profiles
 
@@ -824,7 +803,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInstanceProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listinstanceprofilesresulttypedef).
+[ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef).
 
 ### list_jobs
 
@@ -838,8 +817,7 @@ Arguments:
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listjobsresulttypedef).
+Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 
 ### list_network_profiles
 
@@ -851,12 +829,11 @@ Boto3 documentation:
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [NetworkProfileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#networkprofiletype)
+- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
 - `nextToken`: `str`
 
 Returns
-[ListNetworkProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listnetworkprofilesresulttypedef).
+[ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef).
 
 ### list_offering_promotions
 
@@ -871,7 +848,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListOfferingPromotionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listofferingpromotionsresulttypedef).
+[ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef).
 
 ### list_offering_transactions
 
@@ -886,7 +863,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListOfferingTransactionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listofferingtransactionsresulttypedef).
+[ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef).
 
 ### list_offerings
 
@@ -900,7 +877,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listofferingsresulttypedef).
+[ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef).
 
 ### list_projects
 
@@ -914,8 +891,7 @@ Arguments:
 - `arn`: `str`
 - `nextToken`: `str`
 
-Returns
-[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listprojectsresulttypedef).
+Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 
 ### list_remote_access_sessions
 
@@ -931,7 +907,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListRemoteAccessSessionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listremoteaccesssessionsresulttypedef).
+[ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef).
 
 ### list_runs
 
@@ -945,8 +921,7 @@ Arguments:
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListRunsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listrunsresulttypedef).
+Returns [ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef).
 
 ### list_samples
 
@@ -960,8 +935,7 @@ Arguments:
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListSamplesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listsamplesresulttypedef).
+Returns [ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef).
 
 ### list_suites
 
@@ -975,8 +949,7 @@ Arguments:
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListSuitesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listsuitesresulttypedef).
+Returns [ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -991,7 +964,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_test_grid_projects
 
@@ -1007,7 +980,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtestgridprojectsresulttypedef).
+[ListTestGridProjectsResultTypeDef](./type_defs.md#listtestgridprojectsresulttypedef).
 
 ### list_test_grid_session_actions
 
@@ -1024,7 +997,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridSessionActionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtestgridsessionactionsresulttypedef).
+[ListTestGridSessionActionsResultTypeDef](./type_defs.md#listtestgridsessionactionsresulttypedef).
 
 ### list_test_grid_session_artifacts
 
@@ -1038,12 +1011,12 @@ Arguments:
 
 - `sessionArn`: `str` *(required)*
 - `type`:
-  [TestGridSessionArtifactCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testgridsessionartifactcategory)
+  [TestGridSessionArtifactCategory](./literals.md#testgridsessionartifactcategory)
 - `maxResult`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListTestGridSessionArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtestgridsessionartifactsresulttypedef).
+[ListTestGridSessionArtifactsResultTypeDef](./type_defs.md#listtestgridsessionartifactsresulttypedef).
 
 ### list_test_grid_sessions
 
@@ -1056,8 +1029,7 @@ Boto3 documentation:
 Arguments:
 
 - `projectArn`: `str` *(required)*
-- `status`:
-  [TestGridSessionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testgridsessionstatus)
+- `status`: [TestGridSessionStatus](./literals.md#testgridsessionstatus)
 - `creationTimeAfter`: `datetime`
 - `creationTimeBefore`: `datetime`
 - `endTimeAfter`: `datetime`
@@ -1066,7 +1038,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestGridSessionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtestgridsessionsresulttypedef).
+[ListTestGridSessionsResultTypeDef](./type_defs.md#listtestgridsessionsresulttypedef).
 
 ### list_tests
 
@@ -1080,8 +1052,7 @@ Arguments:
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListTestsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtestsresulttypedef).
+Returns [ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef).
 
 ### list_unique_problems
 
@@ -1096,7 +1067,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListUniqueProblemsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listuniqueproblemsresulttypedef).
+[ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef).
 
 ### list_uploads
 
@@ -1108,12 +1079,10 @@ Boto3 documentation:
 Arguments:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [UploadType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#uploadtype)
+- `type`: [UploadType](./literals.md#uploadtype)
 - `nextToken`: `str`
 
-Returns
-[ListUploadsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listuploadsresulttypedef).
+Returns [ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef).
 
 ### list_vpce_configurations
 
@@ -1129,7 +1098,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVPCEConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listvpceconfigurationsresulttypedef).
+[ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef).
 
 ### purchase_offering
 
@@ -1145,7 +1114,7 @@ Arguments:
 - `offeringPromotionId`: `str`
 
 Returns
-[PurchaseOfferingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#purchaseofferingresulttypedef).
+[PurchaseOfferingResultTypeDef](./type_defs.md#purchaseofferingresulttypedef).
 
 ### renew_offering
 
@@ -1160,7 +1129,7 @@ Arguments:
 - `quantity`: `int`
 
 Returns
-[RenewOfferingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#renewofferingresulttypedef).
+[RenewOfferingResultTypeDef](./type_defs.md#renewofferingresulttypedef).
 
 ### schedule_run
 
@@ -1172,21 +1141,19 @@ Boto3 documentation:
 Arguments:
 
 - `projectArn`: `str` *(required)*
-- `test`:
-  [ScheduleRunTestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#scheduleruntesttypedef)
+- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
   *(required)*
 - `appArn`: `str`
 - `devicePoolArn`: `str`
 - `deviceSelectionConfiguration`:
-  [DeviceSelectionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceselectionconfigurationtypedef)
+  [DeviceSelectionConfigurationTypeDef](./type_defs.md#deviceselectionconfigurationtypedef)
 - `name`: `str`
 - `configuration`:
-  [ScheduleRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#schedulerunconfigurationtypedef)
+  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
 - `executionConfiguration`:
-  [ExecutionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#executionconfigurationtypedef)
+  [ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef)
 
-Returns
-[ScheduleRunResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#schedulerunresulttypedef).
+Returns [ScheduleRunResultTypeDef](./type_defs.md#schedulerunresulttypedef).
 
 ### stop_job
 
@@ -1199,8 +1166,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[StopJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#stopjobresulttypedef).
+Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
 
 ### stop_remote_access_session
 
@@ -1215,7 +1181,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[StopRemoteAccessSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#stopremoteaccesssessionresulttypedef).
+[StopRemoteAccessSessionResultTypeDef](./type_defs.md#stopremoteaccesssessionresulttypedef).
 
 ### stop_run
 
@@ -1228,8 +1194,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[StopRunResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#stoprunresulttypedef).
+Returns [StopRunResultTypeDef](./type_defs.md#stoprunresulttypedef).
 
 ### tag_resource
 
@@ -1241,9 +1206,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1276,7 +1239,7 @@ Arguments:
 - `labels`: `List`\[`str`\]
 
 Returns
-[UpdateDeviceInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updatedeviceinstanceresulttypedef).
+[UpdateDeviceInstanceResultTypeDef](./type_defs.md#updatedeviceinstanceresulttypedef).
 
 ### update_device_pool
 
@@ -1290,13 +1253,12 @@ Arguments:
 - `arn`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
-- `rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#ruletypedef)\]
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `maxDevices`: `int`
 - `clearMaxDevices`: `bool`
 
 Returns
-[UpdateDevicePoolResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updatedevicepoolresulttypedef).
+[UpdateDevicePoolResultTypeDef](./type_defs.md#updatedevicepoolresulttypedef).
 
 ### update_instance_profile
 
@@ -1316,7 +1278,7 @@ Arguments:
 - `rebootAfterUse`: `bool`
 
 Returns
-[UpdateInstanceProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updateinstanceprofileresulttypedef).
+[UpdateInstanceProfileResultTypeDef](./type_defs.md#updateinstanceprofileresulttypedef).
 
 ### update_network_profile
 
@@ -1331,8 +1293,7 @@ Arguments:
 - `arn`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
-- `type`:
-  [NetworkProfileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#networkprofiletype)
+- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
 - `uplinkBandwidthBits`: `int`
 - `downlinkBandwidthBits`: `int`
 - `uplinkDelayMs`: `int`
@@ -1343,7 +1304,7 @@ Arguments:
 - `downlinkLossPercent`: `int`
 
 Returns
-[UpdateNetworkProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updatenetworkprofileresulttypedef).
+[UpdateNetworkProfileResultTypeDef](./type_defs.md#updatenetworkprofileresulttypedef).
 
 ### update_project
 
@@ -1359,7 +1320,7 @@ Arguments:
 - `defaultJobTimeoutMinutes`: `int`
 
 Returns
-[UpdateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updateprojectresulttypedef).
+[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
 
 ### update_test_grid_project
 
@@ -1376,7 +1337,7 @@ Arguments:
 - `description`: `str`
 
 Returns
-[UpdateTestGridProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updatetestgridprojectresulttypedef).
+[UpdateTestGridProjectResultTypeDef](./type_defs.md#updatetestgridprojectresulttypedef).
 
 ### update_upload
 
@@ -1392,8 +1353,7 @@ Arguments:
 - `contentType`: `str`
 - `editContent`: `bool`
 
-Returns
-[UpdateUploadResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updateuploadresulttypedef).
+Returns [UpdateUploadResultTypeDef](./type_defs.md#updateuploadresulttypedef).
 
 ### update_vpce_configuration
 
@@ -1412,7 +1372,7 @@ Arguments:
 - `vpceConfigurationDescription`: `str`
 
 Returns
-[UpdateVPCEConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#updatevpceconfigurationresulttypedef).
+[UpdateVPCEConfigurationResultTypeDef](./type_defs.md#updatevpceconfigurationresulttypedef).
 
 ### get_paginator
 

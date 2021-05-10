@@ -1,6 +1,6 @@
 # Paginators for boto3 SecretsManager module
 
-> [Index](../README.md) > [SecretsManager](./README.md) > Paginators
+> [Index](..) > [SecretsManager](.) > Paginators
 
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
@@ -29,12 +29,10 @@ Boto3 documentation:
 
 Arguments for `ListSecretsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#filtertypedef)\]
-- `SortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/literals.html#sortordertype)
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSecretsPaginator.paginate` returns
-`Iterator`\[[ListSecretsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#listsecretsresponsetypedef)\].
+`Iterator`\[[ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef)\].

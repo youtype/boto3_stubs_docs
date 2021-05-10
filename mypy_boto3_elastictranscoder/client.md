@@ -1,7 +1,6 @@
 # ElasticTranscoderClient for boto3 ElasticTranscoder module
 
-> [Index](../README.md) > [ElasticTranscoder](./README.md) >
-> ElasticTranscoderClient
+> [Index](..) > [ElasticTranscoder](.) > ElasticTranscoderClient
 
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
@@ -111,21 +110,17 @@ Boto3 documentation:
 Arguments:
 
 - `PipelineId`: `str` *(required)*
-- `Input`:
-  [JobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobinputtypedef)
-- `Inputs`:
-  `List`\[[JobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobinputtypedef)\]
-- `Output`:
-  [CreateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjoboutputtypedef)
+- `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
+- `Inputs`: `List`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
+- `Output`: [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)
 - `Outputs`:
-  `List`\[[CreateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjoboutputtypedef)\]
+  `List`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
 - `OutputKeyPrefix`: `str`
 - `Playlists`:
-  `List`\[[CreateJobPlaylistTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjobplaylisttypedef)\]
+  `List`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createjobresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_pipeline
 
@@ -142,15 +137,14 @@ Arguments:
 - `Role`: `str` *(required)*
 - `OutputBucket`: `str`
 - `AwsKmsKeyArn`: `str`
-- `Notifications`:
-  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
 - `ContentConfig`:
-  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 - `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
 Returns
-[CreatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createpipelineresponsetypedef).
+[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
 ### create_preset
 
@@ -164,15 +158,12 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Container`: `str` *(required)*
 - `Description`: `str`
-- `Video`:
-  [VideoParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#videoparameterstypedef)
-- `Audio`:
-  [AudioParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#audioparameterstypedef)
-- `Thumbnails`:
-  [ThumbnailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#thumbnailstypedef)
+- `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
+- `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
+- `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
 
 Returns
-[CreatePresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#createpresetresponsetypedef).
+[CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
 
 ### delete_pipeline
 
@@ -233,7 +224,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListJobsByPipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listjobsbypipelineresponsetypedef).
+[ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef).
 
 ### list_jobs_by_status
 
@@ -250,7 +241,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListJobsByStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listjobsbystatusresponsetypedef).
+[ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef).
 
 ### list_pipelines
 
@@ -265,7 +256,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listpipelinesresponsetypedef).
+[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
 ### list_presets
 
@@ -280,7 +271,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListPresetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#listpresetsresponsetypedef).
+[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
 
 ### read_job
 
@@ -293,8 +284,7 @@ Arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[ReadJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#readjobresponsetypedef).
+Returns [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef).
 
 ### read_pipeline
 
@@ -308,7 +298,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[ReadPipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#readpipelineresponsetypedef).
+[ReadPipelineResponseTypeDef](./type_defs.md#readpipelineresponsetypedef).
 
 ### read_preset
 
@@ -321,8 +311,7 @@ Arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[ReadPresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#readpresetresponsetypedef).
+Returns [ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef).
 
 ### test_role
 
@@ -338,8 +327,7 @@ Arguments:
 - `OutputBucket`: `str` *(required)*
 - `Topics`: `List`\[`str`\] *(required)*
 
-Returns
-[TestRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#testroleresponsetypedef).
+Returns [TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef).
 
 ### update_pipeline
 
@@ -356,15 +344,14 @@ Arguments:
 - `InputBucket`: `str`
 - `Role`: `str`
 - `AwsKmsKeyArn`: `str`
-- `Notifications`:
-  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
 - `ContentConfig`:
-  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 - `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
 Returns
-[UpdatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#updatepipelineresponsetypedef).
+[UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
 
 ### update_pipeline_notifications
 
@@ -377,12 +364,11 @@ Boto3 documentation:
 Arguments:
 
 - `Id`: `str` *(required)*
-- `Notifications`:
-  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
   *(required)*
 
 Returns
-[UpdatePipelineNotificationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#updatepipelinenotificationsresponsetypedef).
+[UpdatePipelineNotificationsResponseTypeDef](./type_defs.md#updatepipelinenotificationsresponsetypedef).
 
 ### update_pipeline_status
 
@@ -398,7 +384,7 @@ Arguments:
 - `Status`: `str` *(required)*
 
 Returns
-[UpdatePipelineStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#updatepipelinestatusresponsetypedef).
+[UpdatePipelineStatusResponseTypeDef](./type_defs.md#updatepipelinestatusresponsetypedef).
 
 ### get_paginator
 

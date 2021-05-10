@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTAnalytics module
 
-> [Index](../README.md) > IoTAnalytics
+> [Index](..) > IoTAnalytics
 
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)

@@ -1,6 +1,6 @@
 # ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
+> [Index](..) > [ServerlessApplicationRepository](.) >
 > ServerlessApplicationRepositoryClient
 
 Auto-generated documentation for
@@ -110,7 +110,7 @@ Arguments:
 - `TemplateUrl`: `str`
 
 Returns
-[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createapplicationresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### create_application_version
 
@@ -130,7 +130,7 @@ Arguments:
 - `TemplateUrl`: `str`
 
 Returns
-[CreateApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createapplicationversionresponsetypedef).
+[CreateApplicationVersionResponseTypeDef](./type_defs.md#createapplicationversionresponsetypedef).
 
 ### create_cloud_formation_change_set
 
@@ -150,17 +150,16 @@ Arguments:
 - `Description`: `str`
 - `NotificationArns`: `List`\[`str`\]
 - `ParameterOverrides`:
-  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#parametervaluetypedef)\]
+  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `ResourceTypes`: `List`\[`str`\]
 - `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#rollbackconfigurationtypedef)
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `SemanticVersion`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TemplateId`: `str`
 
 Returns
-[CreateCloudFormationChangeSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createcloudformationchangesetresponsetypedef).
+[CreateCloudFormationChangeSetResponseTypeDef](./type_defs.md#createcloudformationchangesetresponsetypedef).
 
 ### create_cloud_formation_template
 
@@ -176,7 +175,7 @@ Arguments:
 - `SemanticVersion`: `str`
 
 Returns
-[CreateCloudFormationTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#createcloudformationtemplateresponsetypedef).
+[CreateCloudFormationTemplateResponseTypeDef](./type_defs.md#createcloudformationtemplateresponsetypedef).
 
 ### delete_application
 
@@ -220,7 +219,7 @@ Arguments:
 - `SemanticVersion`: `str`
 
 Returns
-[GetApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#getapplicationresponsetypedef).
+[GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
 
 ### get_application_policy
 
@@ -235,7 +234,7 @@ Arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApplicationPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#getapplicationpolicyresponsetypedef).
+[GetApplicationPolicyResponseTypeDef](./type_defs.md#getapplicationpolicyresponsetypedef).
 
 ### get_cloud_formation_template
 
@@ -251,7 +250,7 @@ Arguments:
 - `TemplateId`: `str` *(required)*
 
 Returns
-[GetCloudFormationTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#getcloudformationtemplateresponsetypedef).
+[GetCloudFormationTemplateResponseTypeDef](./type_defs.md#getcloudformationtemplateresponsetypedef).
 
 ### list_application_dependencies
 
@@ -269,7 +268,7 @@ Arguments:
 - `SemanticVersion`: `str`
 
 Returns
-[ListApplicationDependenciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationdependenciesresponsetypedef).
+[ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef).
 
 ### list_application_versions
 
@@ -286,7 +285,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationversionsresponsetypedef).
+[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
 
 ### list_applications
 
@@ -301,7 +300,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#listapplicationsresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### put_application_policy
 
@@ -315,11 +314,11 @@ Arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#applicationpolicystatementtypedef)\]
+  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
   *(required)*
 
 Returns
-[PutApplicationPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#putapplicationpolicyresponsetypedef).
+[PutApplicationPolicyResponseTypeDef](./type_defs.md#putapplicationpolicyresponsetypedef).
 
 ### unshare_application
 
@@ -353,7 +352,7 @@ Arguments:
 - `ReadmeUrl`: `str`
 
 Returns
-[UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#updateapplicationresponsetypedef).
+[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
 ### get_paginator
 

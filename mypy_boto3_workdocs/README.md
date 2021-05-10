@@ -1,6 +1,6 @@
 # Type annotations for boto3 WorkDocs module
 
-> [Index](../README.md) > WorkDocs
+> [Index](..) > WorkDocs
 
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)

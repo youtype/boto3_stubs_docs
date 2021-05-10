@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 OpsWorksCM module
 
-> [Index](../README.md) > [OpsWorksCM](./README.md) > Structures
+> [Index](..) > [OpsWorksCM](.) > Typed dictionaries
 
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
@@ -63,8 +63,7 @@ Optional fields:
 
 - `BackupArn`: `str`
 - `BackupId`: `str`
-- `BackupType`:
-  [BackupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/literals.html#backuptype)
+- `BackupType`: [BackupType](./literals.md#backuptype)
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Engine`: `str`
@@ -81,8 +80,7 @@ Optional fields:
 - `SecurityGroupIds`: `List`\[`str`\]
 - `ServerName`: `str`
 - `ServiceRoleArn`: `str`
-- `Status`:
-  [BackupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/literals.html#backupstatus)
+- `Status`: [BackupStatus](./literals.md#backupstatus)
 - `StatusDescription`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `ToolsVersion`: `str`
@@ -96,8 +94,7 @@ from mypy_boto3_opsworkscm.type_defs import CreateBackupResponseTypeDef
 
 Optional fields:
 
-- `Backup`:
-  [BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#backuptypedef)
+- `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
 
 ## CreateServerResponseTypeDef
 
@@ -107,8 +104,7 @@ from mypy_boto3_opsworkscm.type_defs import CreateServerResponseTypeDef
 
 Optional fields:
 
-- `Server`:
-  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#servertypedef)
+- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
 
 ## DescribeAccountAttributesResponseTypeDef
 
@@ -119,7 +115,7 @@ from mypy_boto3_opsworkscm.type_defs import DescribeAccountAttributesResponseTyp
 Optional fields:
 
 - `Attributes`:
-  `List`\[[AccountAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#accountattributetypedef)\]
+  `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
 
 ## DescribeBackupsResponseTypeDef
 
@@ -129,8 +125,7 @@ from mypy_boto3_opsworkscm.type_defs import DescribeBackupsResponseTypeDef
 
 Optional fields:
 
-- `Backups`:
-  `List`\[[BackupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#backuptypedef)\]
+- `Backups`: `List`\[[BackupTypeDef](./type_defs.md#backuptypedef)\]
 - `NextToken`: `str`
 
 ## DescribeEventsResponseTypeDef
@@ -142,7 +137,7 @@ from mypy_boto3_opsworkscm.type_defs import DescribeEventsResponseTypeDef
 Optional fields:
 
 - `ServerEvents`:
-  `List`\[[ServerEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#servereventtypedef)\]
+  `List`\[[ServerEventTypeDef](./type_defs.md#servereventtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNodeAssociationStatusResponseTypeDef
@@ -154,9 +149,9 @@ from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusRespons
 Optional fields:
 
 - `NodeAssociationStatus`:
-  [NodeAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/literals.html#nodeassociationstatus)
+  [NodeAssociationStatus](./literals.md#nodeassociationstatus)
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 ## DescribeServersResponseTypeDef
 
@@ -166,8 +161,7 @@ from mypy_boto3_opsworkscm.type_defs import DescribeServersResponseTypeDef
 
 Optional fields:
 
-- `Servers`:
-  `List`\[[ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#servertypedef)\]
+- `Servers`: `List`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
 - `NextToken`: `str`
 
 ## DisassociateNodeResponseTypeDef
@@ -200,7 +194,7 @@ from mypy_boto3_opsworkscm.type_defs import ExportServerEngineAttributeResponseT
 Optional fields:
 
 - `EngineAttribute`:
-  [EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)
+  [EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)
 - `ServerName`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -211,8 +205,7 @@ from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -259,19 +252,17 @@ Optional fields:
 - `Engine`: `str`
 - `EngineModel`: `str`
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 - `EngineVersion`: `str`
 - `InstanceProfileArn`: `str`
 - `InstanceType`: `str`
 - `KeyPair`: `str`
-- `MaintenanceStatus`:
-  [MaintenanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/literals.html#maintenancestatus)
+- `MaintenanceStatus`: [MaintenanceStatus](./literals.md#maintenancestatus)
 - `PreferredMaintenanceWindow`: `str`
 - `PreferredBackupWindow`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `ServiceRoleArn`: `str`
-- `Status`:
-  [ServerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/literals.html#serverstatus)
+- `Status`: [ServerStatus](./literals.md#serverstatus)
 - `StatusReason`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `ServerArn`: `str`
@@ -284,8 +275,7 @@ from mypy_boto3_opsworkscm.type_defs import StartMaintenanceResponseTypeDef
 
 Optional fields:
 
-- `Server`:
-  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#servertypedef)
+- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
 
 ## TagTypeDef
 
@@ -306,8 +296,7 @@ from mypy_boto3_opsworkscm.type_defs import UpdateServerEngineAttributesResponse
 
 Optional fields:
 
-- `Server`:
-  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#servertypedef)
+- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
 
 ## UpdateServerResponseTypeDef
 
@@ -317,8 +306,7 @@ from mypy_boto3_opsworkscm.type_defs import UpdateServerResponseTypeDef
 
 Optional fields:
 
-- `Server`:
-  [ServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#servertypedef)
+- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
 
 ## WaiterConfigTypeDef
 

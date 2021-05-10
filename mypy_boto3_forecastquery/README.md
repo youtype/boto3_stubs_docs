@@ -1,6 +1,6 @@
 # Type annotations for boto3 ForecastQueryService module
 
-> [Index](../README.md) > ForecastQueryService
+> [Index](..) > ForecastQueryService
 
 Auto-generated documentation for
 [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)

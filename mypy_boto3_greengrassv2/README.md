@@ -1,6 +1,6 @@
 # Type annotations for boto3 GreengrassV2 module
 
-> [Index](../README.md) > GreengrassV2
+> [Index](..) > GreengrassV2
 
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)

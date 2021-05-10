@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Budgets module
 
-> [Index](../README.md) > [Budgets](./README.md) > Structures
+> [Index](..) > [Budgets](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
@@ -50,8 +50,7 @@ from mypy_boto3_budgets.type_defs import ActionHistoryDetailsTypeDef
 Required fields:
 
 - `Message`: `str`
-- `Action`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 
 ## ActionHistoryTypeDef
 
@@ -62,12 +61,10 @@ from mypy_boto3_budgets.type_defs import ActionHistoryTypeDef
 Required fields:
 
 - `Timestamp`: `datetime`
-- `Status`:
-  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#actionstatus)
-- `EventType`:
-  [EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#eventtype)
+- `Status`: [ActionStatus](./literals.md#actionstatus)
+- `EventType`: [EventType](./literals.md#eventtype)
 - `ActionHistoryDetails`:
-  [ActionHistoryDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actionhistorydetailstypedef)
+  [ActionHistoryDetailsTypeDef](./type_defs.md#actionhistorydetailstypedef)
 
 ## ActionThresholdTypeDef
 
@@ -78,8 +75,7 @@ from mypy_boto3_budgets.type_defs import ActionThresholdTypeDef
 Required fields:
 
 - `ActionThresholdValue`: `float`
-- `ActionThresholdType`:
-  [ThresholdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#thresholdtype)
+- `ActionThresholdType`: [ThresholdType](./literals.md#thresholdtype)
 
 ## ActionTypeDef
 
@@ -91,21 +87,15 @@ Required fields:
 
 - `ActionId`: `str`
 - `BudgetName`: `str`
-- `NotificationType`:
-  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#notificationtype)
-- `ActionType`:
-  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#actiontype)
+- `NotificationType`: [NotificationType](./literals.md#notificationtype)
+- `ActionType`: [ActionType](./literals.md#actiontype)
 - `ActionThreshold`:
-  [ActionThresholdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actionthresholdtypedef)
-- `Definition`:
-  [DefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#definitiontypedef)
+  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
+- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
 - `ExecutionRoleArn`: `str`
-- `ApprovalModel`:
-  [ApprovalModel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#approvalmodel)
-- `Status`:
-  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#actionstatus)
-- `Subscribers`:
-  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)\]
+- `ApprovalModel`: [ApprovalModel](./literals.md#approvalmodel)
+- `Status`: [ActionStatus](./literals.md#actionstatus)
+- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## BudgetPerformanceHistoryTypeDef
 
@@ -116,15 +106,12 @@ from mypy_boto3_budgets.type_defs import BudgetPerformanceHistoryTypeDef
 Optional fields:
 
 - `BudgetName`: `str`
-- `BudgetType`:
-  [BudgetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#budgettype)
+- `BudgetType`: [BudgetType](./literals.md#budgettype)
 - `CostFilters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `CostTypes`:
-  [CostTypesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#costtypestypedef)
-- `TimeUnit`:
-  [TimeUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#timeunit)
+- `CostTypes`: [CostTypesTypeDef](./type_defs.md#costtypestypedef)
+- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
 - `BudgetedAndActualAmountsList`:
-  `List`\[[BudgetedAndActualAmountsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#budgetedandactualamountstypedef)\]
+  `List`\[[BudgetedAndActualAmountsTypeDef](./type_defs.md#budgetedandactualamountstypedef)\]
 
 ## BudgetTypeDef
 
@@ -135,24 +122,19 @@ from mypy_boto3_budgets.type_defs import BudgetTypeDef
 Required fields:
 
 - `BudgetName`: `str`
-- `TimeUnit`:
-  [TimeUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#timeunit)
-- `BudgetType`:
-  [BudgetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#budgettype)
+- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
+- `BudgetType`: [BudgetType](./literals.md#budgettype)
 
 Optional fields:
 
-- `BudgetLimit`:
-  [SpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#spendtypedef)
+- `BudgetLimit`: [SpendTypeDef](./type_defs.md#spendtypedef)
 - `PlannedBudgetLimits`: `Dict`\[`str`,
-  [SpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#spendtypedef)\]
+  [SpendTypeDef](./type_defs.md#spendtypedef)\]
 - `CostFilters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `CostTypes`:
-  [CostTypesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#costtypestypedef)
-- `TimePeriod`:
-  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `CostTypes`: [CostTypesTypeDef](./type_defs.md#costtypestypedef)
+- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
 - `CalculatedSpend`:
-  [CalculatedSpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#calculatedspendtypedef)
+  [CalculatedSpendTypeDef](./type_defs.md#calculatedspendtypedef)
 - `LastUpdatedTime`: `datetime`
 
 ## BudgetedAndActualAmountsTypeDef
@@ -163,12 +145,9 @@ from mypy_boto3_budgets.type_defs import BudgetedAndActualAmountsTypeDef
 
 Optional fields:
 
-- `BudgetedAmount`:
-  [SpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#spendtypedef)
-- `ActualAmount`:
-  [SpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#spendtypedef)
-- `TimePeriod`:
-  [TimePeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#timeperiodtypedef)
+- `BudgetedAmount`: [SpendTypeDef](./type_defs.md#spendtypedef)
+- `ActualAmount`: [SpendTypeDef](./type_defs.md#spendtypedef)
+- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
 
 ## CalculatedSpendTypeDef
 
@@ -178,13 +157,11 @@ from mypy_boto3_budgets.type_defs import CalculatedSpendTypeDef
 
 Required fields:
 
-- `ActualSpend`:
-  [SpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#spendtypedef)
+- `ActualSpend`: [SpendTypeDef](./type_defs.md#spendtypedef)
 
 Optional fields:
 
-- `ForecastedSpend`:
-  [SpendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#spendtypedef)
+- `ForecastedSpend`: [SpendTypeDef](./type_defs.md#spendtypedef)
 
 ## CostTypesTypeDef
 
@@ -227,11 +204,11 @@ from mypy_boto3_budgets.type_defs import DefinitionTypeDef
 Optional fields:
 
 - `IamActionDefinition`:
-  [IamActionDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#iamactiondefinitiontypedef)
+  [IamActionDefinitionTypeDef](./type_defs.md#iamactiondefinitiontypedef)
 - `ScpActionDefinition`:
-  [ScpActionDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#scpactiondefinitiontypedef)
+  [ScpActionDefinitionTypeDef](./type_defs.md#scpactiondefinitiontypedef)
 - `SsmActionDefinition`:
-  [SsmActionDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#ssmactiondefinitiontypedef)
+  [SsmActionDefinitionTypeDef](./type_defs.md#ssmactiondefinitiontypedef)
 
 ## DeleteBudgetActionResponseTypeDef
 
@@ -243,8 +220,7 @@ Required fields:
 
 - `AccountId`: `str`
 - `BudgetName`: `str`
-- `Action`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 
 ## DescribeBudgetActionHistoriesResponseTypeDef
 
@@ -255,7 +231,7 @@ from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesResponseTy
 Required fields:
 
 - `ActionHistories`:
-  `List`\[[ActionHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actionhistorytypedef)\]
+  `List`\[[ActionHistoryTypeDef](./type_defs.md#actionhistorytypedef)\]
 
 Optional fields:
 
@@ -271,8 +247,7 @@ Required fields:
 
 - `AccountId`: `str`
 - `BudgetName`: `str`
-- `Action`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 
 ## DescribeBudgetActionsForAccountResponseTypeDef
 
@@ -282,8 +257,7 @@ from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountResponse
 
 Required fields:
 
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)\]
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
@@ -297,8 +271,7 @@ from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetResponseT
 
 Required fields:
 
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)\]
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
@@ -313,7 +286,7 @@ from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryRespons
 Optional fields:
 
 - `BudgetPerformanceHistory`:
-  [BudgetPerformanceHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#budgetperformancehistorytypedef)
+  [BudgetPerformanceHistoryTypeDef](./type_defs.md#budgetperformancehistorytypedef)
 - `NextToken`: `str`
 
 ## DescribeBudgetResponseTypeDef
@@ -324,8 +297,7 @@ from mypy_boto3_budgets.type_defs import DescribeBudgetResponseTypeDef
 
 Optional fields:
 
-- `Budget`:
-  [BudgetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#budgettypedef)
+- `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
 
 ## DescribeBudgetsResponseTypeDef
 
@@ -335,8 +307,7 @@ from mypy_boto3_budgets.type_defs import DescribeBudgetsResponseTypeDef
 
 Optional fields:
 
-- `Budgets`:
-  `List`\[[BudgetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#budgettypedef)\]
+- `Budgets`: `List`\[[BudgetTypeDef](./type_defs.md#budgettypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNotificationsForBudgetResponseTypeDef
@@ -348,7 +319,7 @@ from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetResponseT
 Optional fields:
 
 - `Notifications`:
-  `List`\[[NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)\]
+  `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeSubscribersForNotificationResponseTypeDef
@@ -359,8 +330,7 @@ from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationRespo
 
 Optional fields:
 
-- `Subscribers`:
-  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)\]
+- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `NextToken`: `str`
 
 ## ExecuteBudgetActionResponseTypeDef
@@ -374,8 +344,7 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `ActionId`: `str`
-- `ExecutionType`:
-  [ExecutionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#executiontype)
+- `ExecutionType`: [ExecutionType](./literals.md#executiontype)
 
 ## IamActionDefinitionTypeDef
 
@@ -401,18 +370,14 @@ from mypy_boto3_budgets.type_defs import NotificationTypeDef
 
 Required fields:
 
-- `NotificationType`:
-  [NotificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#notificationtype)
-- `ComparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#comparisonoperator)
+- `NotificationType`: [NotificationType](./literals.md#notificationtype)
+- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
 - `Threshold`: `float`
 
 Optional fields:
 
-- `ThresholdType`:
-  [ThresholdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#thresholdtype)
-- `NotificationState`:
-  [NotificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#notificationstate)
+- `ThresholdType`: [ThresholdType](./literals.md#thresholdtype)
+- `NotificationState`: [NotificationState](./literals.md#notificationstate)
 
 ## NotificationWithSubscribersTypeDef
 
@@ -422,10 +387,8 @@ from mypy_boto3_budgets.type_defs import NotificationWithSubscribersTypeDef
 
 Required fields:
 
-- `Notification`:
-  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#notificationtypedef)
-- `Subscribers`:
-  `List`\[[SubscriberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#subscribertypedef)\]
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- `Subscribers`: `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -469,8 +432,7 @@ from mypy_boto3_budgets.type_defs import SsmActionDefinitionTypeDef
 
 Required fields:
 
-- `ActionSubType`:
-  [ActionSubType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#actionsubtype)
+- `ActionSubType`: [ActionSubType](./literals.md#actionsubtype)
 - `Region`: `str`
 - `InstanceIds`: `List`\[`str`\]
 
@@ -482,8 +444,7 @@ from mypy_boto3_budgets.type_defs import SubscriberTypeDef
 
 Required fields:
 
-- `SubscriptionType`:
-  [SubscriptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/literals.html#subscriptiontype)
+- `SubscriptionType`: [SubscriptionType](./literals.md#subscriptiontype)
 - `Address`: `str`
 
 ## TimePeriodTypeDef
@@ -507,7 +468,5 @@ Required fields:
 
 - `AccountId`: `str`
 - `BudgetName`: `str`
-- `OldAction`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)
-- `NewAction`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_budgets/type_defs.html#actiontypedef)
+- `OldAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `NewAction`: [ActionTypeDef](./type_defs.md#actiontypedef)

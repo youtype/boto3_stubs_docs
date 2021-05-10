@@ -1,7 +1,6 @@
 # PrometheusServiceClient for boto3 PrometheusService module
 
-> [Index](../README.md) > [PrometheusService](./README.md) >
-> PrometheusServiceClient
+> [Index](..) > [PrometheusService](.) > PrometheusServiceClient
 
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
@@ -88,7 +87,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[CreateWorkspaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#createworkspaceresponsetypedef).
+[CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
 ### delete_workspace
 
@@ -114,7 +113,7 @@ Arguments:
 - `workspaceId`: `str` *(required)*
 
 Returns
-[DescribeWorkspaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#describeworkspaceresponsetypedef).
+[DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -146,7 +145,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListWorkspacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#listworkspacesresponsetypedef).
+[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
 
 ### update_workspace_alias
 

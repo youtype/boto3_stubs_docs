@@ -1,6 +1,6 @@
 # Literals for boto3 Inspector module
 
-> [Index](../README.md) > [Inspector](./README.md) > Literals
+> [Index](..) > [Inspector](.) > Literals
 
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)

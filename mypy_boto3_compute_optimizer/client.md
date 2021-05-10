@@ -1,7 +1,6 @@
 # ComputeOptimizerClient for boto3 ComputeOptimizer module
 
-> [Index](../README.md) > [ComputeOptimizer](./README.md) >
-> ComputeOptimizerClient
+> [Index](..) > [ComputeOptimizer](.) > ComputeOptimizerClient
 
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
@@ -93,13 +92,12 @@ Boto3 documentation:
 Arguments:
 
 - `jobIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[JobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#jobfiltertypedef)\]
+- `filters`: `List`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeRecommendationExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#describerecommendationexportjobsresponsetypedef).
+[DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef).
 
 ### export_auto_scaling_group_recommendations
 
@@ -113,18 +111,17 @@ Boto3 documentation:
 Arguments:
 
 - `s3DestinationConfig`:
-  [S3DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationconfigtypedef)
+  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
 - `accountIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableAutoScalingGroupField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#exportableautoscalinggroupfield)\]
-- `fileFormat`: `Literal['Csv']`
+  `List`\[[ExportableAutoScalingGroupField](./literals.md#exportableautoscalinggroupfield)\]
+- `fileFormat`: `Literal['Csv']` (see [FileFormat](./literals.md#fileformat))
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportAutoScalingGroupRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#exportautoscalinggrouprecommendationsresponsetypedef).
+[ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
 
 ### export_ec2_instance_recommendations
 
@@ -137,18 +134,17 @@ Boto3 documentation:
 Arguments:
 
 - `s3DestinationConfig`:
-  [S3DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationconfigtypedef)
+  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
 - `accountIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableInstanceField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#exportableinstancefield)\]
-- `fileFormat`: `Literal['Csv']`
+  `List`\[[ExportableInstanceField](./literals.md#exportableinstancefield)\]
+- `fileFormat`: `Literal['Csv']` (see [FileFormat](./literals.md#fileformat))
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportEC2InstanceRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#exportec2instancerecommendationsresponsetypedef).
+[ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -182,11 +178,10 @@ Arguments:
 - `autoScalingGroupArns`: `List`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[GetAutoScalingGroupRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getautoscalinggrouprecommendationsresponsetypedef).
+[GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
 
 ### get_ebs_volume_recommendations
 
@@ -201,12 +196,11 @@ Arguments:
 - `volumeArns`: `List`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[EBSFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#ebsfiltertypedef)\]
+- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
 - `accountIds`: `List`\[`str`\]
 
 Returns
-[GetEBSVolumeRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getebsvolumerecommendationsresponsetypedef).
+[GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
 
 ### get_ec2_instance_recommendations
 
@@ -221,12 +215,11 @@ Arguments:
 - `instanceArns`: `List`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `accountIds`: `List`\[`str`\]
 
 Returns
-[GetEC2InstanceRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getec2instancerecommendationsresponsetypedef).
+[GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
 
 ### get_ec2_recommendation_projected_metrics
 
@@ -240,15 +233,13 @@ Boto3 documentation:
 Arguments:
 
 - `instanceArn`: `str` *(required)*
-- `stat`:
-  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#metricstatistic)
-  *(required)*
+- `stat`: [MetricStatistic](./literals.md#metricstatistic) *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
 
 Returns
-[GetEC2RecommendationProjectedMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getec2recommendationprojectedmetricsresponsetypedef).
+[GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
 ### get_enrollment_status
 
@@ -259,7 +250,7 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status)
 
 Returns
-[GetEnrollmentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getenrollmentstatusresponsetypedef).
+[GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
 
 ### get_lambda_function_recommendations
 
@@ -274,12 +265,12 @@ Arguments:
 - `functionArns`: `List`\[`str`\]
 - `accountIds`: `List`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#lambdafunctionrecommendationfiltertypedef)\]
+  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[GetLambdaFunctionRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getlambdafunctionrecommendationsresponsetypedef).
+[GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef).
 
 ### get_recommendation_summaries
 
@@ -296,7 +287,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetRecommendationSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getrecommendationsummariesresponsetypedef).
+[GetRecommendationSummariesResponseTypeDef](./type_defs.md#getrecommendationsummariesresponsetypedef).
 
 ### update_enrollment_status
 
@@ -308,10 +299,8 @@ Boto3 documentation:
 
 Arguments:
 
-- `status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#status)
-  *(required)*
+- `status`: [Status](./literals.md#status) *(required)*
 - `includeMemberAccounts`: `bool`
 
 Returns
-[UpdateEnrollmentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#updateenrollmentstatusresponsetypedef).
+[UpdateEnrollmentStatusResponseTypeDef](./type_defs.md#updateenrollmentstatusresponsetypedef).

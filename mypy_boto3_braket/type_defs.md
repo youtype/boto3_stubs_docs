@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Braket module
 
-> [Index](../README.md) > [Braket](./README.md) > Structures
+> [Index](..) > [Braket](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
@@ -29,8 +29,7 @@ from mypy_boto3_braket.type_defs import CancelQuantumTaskResponseTypeDef
 
 Required fields:
 
-- `cancellationStatus`:
-  [CancellationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#cancellationstatus)
+- `cancellationStatus`: [CancellationStatus](./literals.md#cancellationstatus)
 - `quantumTaskArn`: `str`
 
 ## CreateQuantumTaskResponseTypeDef
@@ -53,10 +52,8 @@ Required fields:
 
 - `deviceArn`: `str`
 - `deviceName`: `str`
-- `deviceStatus`:
-  [DeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#devicestatus)
-- `deviceType`:
-  [DeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#devicetype)
+- `deviceStatus`: [DeviceStatus](./literals.md#devicestatus)
+- `deviceType`: [DeviceType](./literals.md#devicetype)
 - `providerName`: `str`
 
 ## GetDeviceResponseTypeDef
@@ -70,10 +67,8 @@ Required fields:
 - `deviceArn`: `str`
 - `deviceCapabilities`: `str`
 - `deviceName`: `str`
-- `deviceStatus`:
-  [DeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#devicestatus)
-- `deviceType`:
-  [DeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#devicetype)
+- `deviceStatus`: [DeviceStatus](./literals.md#devicestatus)
+- `deviceType`: [DeviceType](./literals.md#devicetype)
 - `providerName`: `str`
 
 ## GetQuantumTaskResponseTypeDef
@@ -91,8 +86,7 @@ Required fields:
 - `outputS3Directory`: `str`
 - `quantumTaskArn`: `str`
 - `shots`: `int`
-- `status`:
-  [QuantumTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#quantumtaskstatus)
+- `status`: [QuantumTaskStatus](./literals.md#quantumtaskstatus)
 
 Optional fields:
 
@@ -136,8 +130,7 @@ Required fields:
 - `outputS3Directory`: `str`
 - `quantumTaskArn`: `str`
 - `shots`: `int`
-- `status`:
-  [QuantumTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#quantumtaskstatus)
+- `status`: [QuantumTaskStatus](./literals.md#quantumtaskstatus)
 
 Optional fields:
 
@@ -164,7 +157,7 @@ from mypy_boto3_braket.type_defs import SearchDevicesResponseTypeDef
 Required fields:
 
 - `devices`:
-  `List`\[[DeviceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#devicesummarytypedef)\]
+  `List`\[[DeviceSummaryTypeDef](./type_defs.md#devicesummarytypedef)\]
 
 Optional fields:
 
@@ -180,7 +173,7 @@ Required fields:
 
 - `name`: `str`
 - `operator`:
-  [SearchQuantumTasksFilterOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/literals.html#searchquantumtasksfilteroperator)
+  [SearchQuantumTasksFilterOperator](./literals.md#searchquantumtasksfilteroperator)
 - `values`: `List`\[`str`\]
 
 ## SearchQuantumTasksResponseTypeDef
@@ -192,7 +185,7 @@ from mypy_boto3_braket.type_defs import SearchQuantumTasksResponseTypeDef
 Required fields:
 
 - `quantumTasks`:
-  `List`\[[QuantumTaskSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#quantumtasksummarytypedef)\]
+  `List`\[[QuantumTaskSummaryTypeDef](./type_defs.md#quantumtasksummarytypedef)\]
 
 Optional fields:
 

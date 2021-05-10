@@ -1,6 +1,6 @@
 # GroundStationClient for boto3 GroundStation module
 
-> [Index](../README.md) > [GroundStation](./README.md) > GroundStationClient
+> [Index](..) > [GroundStation](.) > GroundStationClient
 
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
@@ -102,8 +102,7 @@ Arguments:
 
 - `contactId`: `str` *(required)*
 
-Returns
-[ContactIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#contactidresponsetypedef).
+Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 
 ### create_config
 
@@ -114,14 +113,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `configData`:
-  [ConfigTypeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configtypedatatypedef)
+- `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
   *(required)*
 - `name`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ConfigIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configidresponsetypedef).
+Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
 ### create_dataflow_endpoint_group
 
@@ -134,12 +131,12 @@ Boto3 documentation:
 Arguments:
 
 - `endpointDetails`:
-  `List`\[[EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#endpointdetailstypedef)\]
+  `List`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
   *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[DataflowEndpointGroupIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointgroupidresponsetypedef).
+[DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
 
 ### create_mission_profile
 
@@ -160,7 +157,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[MissionProfileIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofileidresponsetypedef).
+[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
 ### delete_config
 
@@ -172,12 +169,10 @@ Boto3 documentation:
 Arguments:
 
 - `configId`: `str` *(required)*
-- `configType`:
-  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
   *(required)*
 
-Returns
-[ConfigIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configidresponsetypedef).
+Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
 ### delete_dataflow_endpoint_group
 
@@ -192,7 +187,7 @@ Arguments:
 - `dataflowEndpointGroupId`: `str` *(required)*
 
 Returns
-[DataflowEndpointGroupIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#dataflowendpointgroupidresponsetypedef).
+[DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
 
 ### delete_mission_profile
 
@@ -207,7 +202,7 @@ Arguments:
 - `missionProfileId`: `str` *(required)*
 
 Returns
-[MissionProfileIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofileidresponsetypedef).
+[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
 ### describe_contact
 
@@ -221,7 +216,7 @@ Arguments:
 - `contactId`: `str` *(required)*
 
 Returns
-[DescribeContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#describecontactresponsetypedef).
+[DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
 
 ### generate_presigned_url
 
@@ -250,12 +245,10 @@ Boto3 documentation:
 Arguments:
 
 - `configId`: `str` *(required)*
-- `configType`:
-  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
   *(required)*
 
-Returns
-[GetConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getconfigresponsetypedef).
+Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
 ### get_dataflow_endpoint_group
 
@@ -270,7 +263,7 @@ Arguments:
 - `dataflowEndpointGroupId`: `str` *(required)*
 
 Returns
-[GetDataflowEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getdataflowendpointgroupresponsetypedef).
+[GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef).
 
 ### get_minute_usage
 
@@ -285,7 +278,7 @@ Arguments:
 - `year`: `int` *(required)*
 
 Returns
-[GetMinuteUsageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getminuteusageresponsetypedef).
+[GetMinuteUsageResponseTypeDef](./type_defs.md#getminuteusageresponsetypedef).
 
 ### get_mission_profile
 
@@ -300,7 +293,7 @@ Arguments:
 - `missionProfileId`: `str` *(required)*
 
 Returns
-[GetMissionProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getmissionprofileresponsetypedef).
+[GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef).
 
 ### get_satellite
 
@@ -314,7 +307,7 @@ Arguments:
 - `satelliteId`: `str` *(required)*
 
 Returns
-[GetSatelliteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#getsatelliteresponsetypedef).
+[GetSatelliteResponseTypeDef](./type_defs.md#getsatelliteresponsetypedef).
 
 ### list_configs
 
@@ -329,7 +322,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listconfigsresponsetypedef).
+[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef).
 
 ### list_contacts
 
@@ -342,8 +335,7 @@ Arguments:
 
 - `endTime`: `datetime` *(required)*
 - `startTime`: `datetime` *(required)*
-- `statusList`:
-  `List`\[[ContactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#contactstatus)\]
+- `statusList`: `List`\[[ContactStatus](./literals.md#contactstatus)\]
   *(required)*
 - `groundStation`: `str`
 - `maxResults`: `int`
@@ -352,7 +344,7 @@ Arguments:
 - `satelliteArn`: `str`
 
 Returns
-[ListContactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listcontactsresponsetypedef).
+[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
 
 ### list_dataflow_endpoint_groups
 
@@ -368,7 +360,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDataflowEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listdataflowendpointgroupsresponsetypedef).
+[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef).
 
 ### list_ground_stations
 
@@ -385,7 +377,7 @@ Arguments:
 - `satelliteId`: `str`
 
 Returns
-[ListGroundStationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listgroundstationsresponsetypedef).
+[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef).
 
 ### list_mission_profiles
 
@@ -401,7 +393,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListMissionProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listmissionprofilesresponsetypedef).
+[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef).
 
 ### list_satellites
 
@@ -416,7 +408,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSatellitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listsatellitesresponsetypedef).
+[ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -431,7 +423,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reserve_contact
 
@@ -449,8 +441,7 @@ Arguments:
 - `startTime`: `datetime` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ContactIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#contactidresponsetypedef).
+Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 
 ### tag_resource
 
@@ -489,17 +480,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `configData`:
-  [ConfigTypeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configtypedatatypedef)
+- `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
   *(required)*
 - `configId`: `str` *(required)*
-- `configType`:
-  [ConfigCapabilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#configcapabilitytype)
+- `configType`: [ConfigCapabilityType](./literals.md#configcapabilitytype)
   *(required)*
 - `name`: `str` *(required)*
 
-Returns
-[ConfigIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#configidresponsetypedef).
+Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
 ### update_mission_profile
 
@@ -520,7 +508,7 @@ Arguments:
 - `trackingConfigArn`: `str`
 
 Returns
-[MissionProfileIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#missionprofileidresponsetypedef).
+[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
 ### get_paginator
 

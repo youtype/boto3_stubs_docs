@@ -1,6 +1,6 @@
 # Waiters for boto3 ACM module
 
-> [Index](../README.md) > [ACM](./README.md) > Waiters
+> [Index](..) > [ACM](.) > Waiters
 
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
@@ -29,5 +29,4 @@ Boto3 documentation:
 Arguments for `CertificateValidatedWaiter.wait` method:
 
 - `CertificateArn`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

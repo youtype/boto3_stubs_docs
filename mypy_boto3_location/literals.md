@@ -1,6 +1,6 @@
 # Literals for boto3 LocationService module
 
-> [Index](../README.md) > [LocationService](./README.md) > Literals
+> [Index](..) > [LocationService](.) > Literals
 
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)

@@ -1,6 +1,6 @@
 # GlueDataBrewClient for boto3 GlueDataBrew module
 
-> [Index](../README.md) > [GlueDataBrew](./README.md) > GlueDataBrewClient
+> [Index](..) > [GlueDataBrew](.) > GlueDataBrewClient
 
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
@@ -108,7 +108,7 @@ Arguments:
 - `RecipeVersions`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteRecipeVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#batchdeleterecipeversionresponsetypedef).
+[BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef).
 
 ### can_paginate
 
@@ -133,19 +133,14 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Input`:
-  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#inputtypedef)
-  *(required)*
-- `Format`:
-  [InputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#inputformat)
-- `FormatOptions`:
-  [FormatOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#formatoptionstypedef)
-- `PathOptions`:
-  [PathOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#pathoptionstypedef)
+- `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
+- `Format`: [InputFormat](./literals.md#inputformat)
+- `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
+- `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#createdatasetresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_profile_job
 
@@ -158,24 +153,20 @@ Arguments:
 
 - `DatasetName`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `OutputLocation`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#s3locationtypedef)
+- `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`:
-  [EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#encryptionmode)
-- `LogSubscription`:
-  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
+- `EncryptionMode`: [EncryptionMode](./literals.md#encryptionmode)
+- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Timeout`: `int`
-- `JobSample`:
-  [JobSampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobsampletypedef)
+- `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
 Returns
-[CreateProfileJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#createprofilejobresponsetypedef).
+[CreateProfileJobResponseTypeDef](./type_defs.md#createprofilejobresponsetypedef).
 
 ### create_project
 
@@ -190,12 +181,11 @@ Arguments:
 - `Name`: `str` *(required)*
 - `RecipeName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `Sample`:
-  [SampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#sampletypedef)
+- `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#createprojectresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### create_recipe
 
@@ -207,14 +197,13 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Steps`:
-  `List`\[[RecipeStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipesteptypedef)\]
+- `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
   *(required)*
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#createreciperesponsetypedef).
+[CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef).
 
 ### create_recipe_job
 
@@ -226,26 +215,22 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Outputs`:
-  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputtypedef)\]
-  *(required)*
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\] *(required)*
 - `RoleArn`: `str` *(required)*
 - `DatasetName`: `str`
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`:
-  [EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#encryptionmode)
-- `LogSubscription`:
-  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
+- `EncryptionMode`: [EncryptionMode](./literals.md#encryptionmode)
+- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `ProjectName`: `str`
 - `RecipeReference`:
-  [RecipeReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipereferencetypedef)
+  [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Timeout`: `int`
 
 Returns
-[CreateRecipeJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#createrecipejobresponsetypedef).
+[CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef).
 
 ### create_schedule
 
@@ -262,7 +247,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#createscheduleresponsetypedef).
+[CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef).
 
 ### delete_dataset
 
@@ -276,7 +261,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#deletedatasetresponsetypedef).
+[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
 ### delete_job
 
@@ -289,8 +274,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[DeleteJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#deletejobresponsetypedef).
+Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
 
 ### delete_project
 
@@ -304,7 +288,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#deleteprojectresponsetypedef).
+[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
 ### delete_recipe_version
 
@@ -319,7 +303,7 @@ Arguments:
 - `RecipeVersion`: `str` *(required)*
 
 Returns
-[DeleteRecipeVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#deleterecipeversionresponsetypedef).
+[DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef).
 
 ### delete_schedule
 
@@ -333,7 +317,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#deletescheduleresponsetypedef).
+[DeleteScheduleResponseTypeDef](./type_defs.md#deletescheduleresponsetypedef).
 
 ### describe_dataset
 
@@ -347,7 +331,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#describedatasetresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_job
 
@@ -361,7 +345,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#describejobresponsetypedef).
+[DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
 
 ### describe_job_run
 
@@ -376,7 +360,7 @@ Arguments:
 - `RunId`: `str` *(required)*
 
 Returns
-[DescribeJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#describejobrunresponsetypedef).
+[DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
 
 ### describe_project
 
@@ -390,7 +374,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#describeprojectresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
 ### describe_recipe
 
@@ -405,7 +389,7 @@ Arguments:
 - `RecipeVersion`: `str`
 
 Returns
-[DescribeRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#describereciperesponsetypedef).
+[DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
 
 ### describe_schedule
 
@@ -419,7 +403,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#describescheduleresponsetypedef).
+[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
 ### generate_presigned_url
 
@@ -450,7 +434,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listdatasetsresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_job_runs
 
@@ -466,7 +450,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listjobrunsresponsetypedef).
+[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
 
 ### list_jobs
 
@@ -482,8 +466,7 @@ Arguments:
 - `NextToken`: `str`
 - `ProjectName`: `str`
 
-Returns
-[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listjobsresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_projects
 
@@ -498,7 +481,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listprojectsresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_recipe_versions
 
@@ -514,7 +497,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRecipeVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listrecipeversionsresponsetypedef).
+[ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef).
 
 ### list_recipes
 
@@ -530,7 +513,7 @@ Arguments:
 - `RecipeVersion`: `str`
 
 Returns
-[ListRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listrecipesresponsetypedef).
+[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
 
 ### list_schedules
 
@@ -546,7 +529,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listschedulesresponsetypedef).
+[ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -560,7 +543,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### publish_recipe
 
@@ -575,7 +558,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[PublishRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#publishreciperesponsetypedef).
+[PublishRecipeResponseTypeDef](./type_defs.md#publishreciperesponsetypedef).
 
 ### send_project_session_action
 
@@ -589,15 +572,13 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Preview`: `bool`
-- `RecipeStep`:
-  [RecipeStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipesteptypedef)
+- `RecipeStep`: [RecipeStepTypeDef](./type_defs.md#recipesteptypedef)
 - `StepIndex`: `int`
 - `ClientSessionId`: `str`
-- `ViewFrame`:
-  [ViewFrameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#viewframetypedef)
+- `ViewFrame`: [ViewFrameTypeDef](./type_defs.md#viewframetypedef)
 
 Returns
-[SendProjectSessionActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#sendprojectsessionactionresponsetypedef).
+[SendProjectSessionActionResponseTypeDef](./type_defs.md#sendprojectsessionactionresponsetypedef).
 
 ### start_job_run
 
@@ -611,7 +592,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[StartJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#startjobrunresponsetypedef).
+[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
 ### start_project_session
 
@@ -626,7 +607,7 @@ Arguments:
 - `AssumeControl`: `bool`
 
 Returns
-[StartProjectSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#startprojectsessionresponsetypedef).
+[StartProjectSessionResponseTypeDef](./type_defs.md#startprojectsessionresponsetypedef).
 
 ### stop_job_run
 
@@ -640,8 +621,7 @@ Arguments:
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
 
-Returns
-[StopJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#stopjobrunresponsetypedef).
+Returns [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef).
 
 ### tag_resource
 
@@ -681,18 +661,13 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Input`:
-  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#inputtypedef)
-  *(required)*
-- `Format`:
-  [InputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#inputformat)
-- `FormatOptions`:
-  [FormatOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#formatoptionstypedef)
-- `PathOptions`:
-  [PathOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#pathoptionstypedef)
+- `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
+- `Format`: [InputFormat](./literals.md#inputformat)
+- `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
+- `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 
 Returns
-[UpdateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#updatedatasetresponsetypedef).
+[UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
 ### update_profile_job
 
@@ -704,23 +679,19 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `OutputLocation`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#s3locationtypedef)
+- `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`:
-  [EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#encryptionmode)
-- `LogSubscription`:
-  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
+- `EncryptionMode`: [EncryptionMode](./literals.md#encryptionmode)
+- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Timeout`: `int`
-- `JobSample`:
-  [JobSampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#jobsampletypedef)
+- `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
 Returns
-[UpdateProfileJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#updateprofilejobresponsetypedef).
+[UpdateProfileJobResponseTypeDef](./type_defs.md#updateprofilejobresponsetypedef).
 
 ### update_project
 
@@ -733,11 +704,10 @@ Arguments:
 
 - `RoleArn`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Sample`:
-  [SampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#sampletypedef)
+- `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 
 Returns
-[UpdateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#updateprojectresponsetypedef).
+[UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
 
 ### update_recipe
 
@@ -750,11 +720,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `Steps`:
-  `List`\[[RecipeStepTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#recipesteptypedef)\]
+- `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
 Returns
-[UpdateRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#updatereciperesponsetypedef).
+[UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef).
 
 ### update_recipe_job
 
@@ -766,21 +735,17 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Outputs`:
-  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#outputtypedef)\]
-  *(required)*
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\] *(required)*
 - `RoleArn`: `str` *(required)*
 - `EncryptionKeyArn`: `str`
-- `EncryptionMode`:
-  [EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#encryptionmode)
-- `LogSubscription`:
-  [LogSubscription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/literals.html#logsubscription)
+- `EncryptionMode`: [EncryptionMode](./literals.md#encryptionmode)
+- `LogSubscription`: [LogSubscription](./literals.md#logsubscription)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
 - `Timeout`: `int`
 
 Returns
-[UpdateRecipeJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#updaterecipejobresponsetypedef).
+[UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef).
 
 ### update_schedule
 
@@ -796,7 +761,7 @@ Arguments:
 - `JobNames`: `List`\[`str`\]
 
 Returns
-[UpdateScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_databrew/type_defs.html#updatescheduleresponsetypedef).
+[UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef).
 
 ### get_paginator
 

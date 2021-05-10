@@ -1,6 +1,6 @@
 # CognitoSyncClient for boto3 CognitoSync module
 
-> [Index](../README.md) > [CognitoSync](./README.md) > CognitoSyncClient
+> [Index](..) > [CognitoSync](.) > CognitoSyncClient
 
 Auto-generated documentation for
 [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
@@ -90,7 +90,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[BulkPublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#bulkpublishresponsetypedef).
+[BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef).
 
 ### can_paginate
 
@@ -119,7 +119,7 @@ Arguments:
 - `DatasetName`: `str` *(required)*
 
 Returns
-[DeleteDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#deletedatasetresponsetypedef).
+[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
 ### describe_dataset
 
@@ -135,7 +135,7 @@ Arguments:
 - `DatasetName`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#describedatasetresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_identity_pool_usage
 
@@ -150,7 +150,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[DescribeIdentityPoolUsageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#describeidentitypoolusageresponsetypedef).
+[DescribeIdentityPoolUsageResponseTypeDef](./type_defs.md#describeidentitypoolusageresponsetypedef).
 
 ### describe_identity_usage
 
@@ -166,7 +166,7 @@ Arguments:
 - `IdentityId`: `str` *(required)*
 
 Returns
-[DescribeIdentityUsageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#describeidentityusageresponsetypedef).
+[DescribeIdentityUsageResponseTypeDef](./type_defs.md#describeidentityusageresponsetypedef).
 
 ### generate_presigned_url
 
@@ -198,7 +198,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetBulkPublishDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#getbulkpublishdetailsresponsetypedef).
+[GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef).
 
 ### get_cognito_events
 
@@ -212,7 +212,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetCognitoEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#getcognitoeventsresponsetypedef).
+[GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef).
 
 ### get_identity_pool_configuration
 
@@ -227,7 +227,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetIdentityPoolConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#getidentitypoolconfigurationresponsetypedef).
+[GetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponsetypedef).
 
 ### list_datasets
 
@@ -244,7 +244,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#listdatasetsresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_identity_pool_usage
 
@@ -260,7 +260,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIdentityPoolUsageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#listidentitypoolusageresponsetypedef).
+[ListIdentityPoolUsageResponseTypeDef](./type_defs.md#listidentitypoolusageresponsetypedef).
 
 ### list_records
 
@@ -280,7 +280,7 @@ Arguments:
 - `SyncSessionToken`: `str`
 
 Returns
-[ListRecordsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#listrecordsresponsetypedef).
+[ListRecordsResponseTypeDef](./type_defs.md#listrecordsresponsetypedef).
 
 ### register_device
 
@@ -293,13 +293,11 @@ Arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityId`: `str` *(required)*
-- `Platform`:
-  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/literals.html#platform)
-  *(required)*
+- `Platform`: [Platform](./literals.md#platform) *(required)*
 - `Token`: `str` *(required)*
 
 Returns
-[RegisterDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#registerdeviceresponsetypedef).
+[RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef).
 
 ### set_cognito_events
 
@@ -324,13 +322,11 @@ Boto3 documentation:
 Arguments:
 
 - `IdentityPoolId`: `str` *(required)*
-- `PushSync`:
-  [PushSyncTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#pushsynctypedef)
-- `CognitoStreams`:
-  [CognitoStreamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#cognitostreamstypedef)
+- `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
+- `CognitoStreams`: [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
 
 Returns
-[SetIdentityPoolConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#setidentitypoolconfigurationresponsetypedef).
+[SetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponsetypedef).
 
 ### subscribe_to_dataset
 
@@ -381,8 +377,8 @@ Arguments:
 - `SyncSessionToken`: `str` *(required)*
 - `DeviceId`: `str`
 - `RecordPatches`:
-  `List`\[[RecordPatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#recordpatchtypedef)\]
+  `List`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
 - `ClientContext`: `str`
 
 Returns
-[UpdateRecordsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_sync/type_defs.html#updaterecordsresponsetypedef).
+[UpdateRecordsResponseTypeDef](./type_defs.md#updaterecordsresponsetypedef).

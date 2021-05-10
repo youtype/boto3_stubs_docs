@@ -1,6 +1,6 @@
 # Paginators for boto3 AccessAnalyzer module
 
-> [Index](../README.md) > [AccessAnalyzer](./README.md) > Paginators
+> [Index](..) > [AccessAnalyzer](.) > Paginators
 
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
@@ -38,13 +38,12 @@ Arguments for `ListAccessPreviewFindingsPaginator.paginate` method:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPreviewFindingsPaginator.paginate` returns
-`Iterator`\[[ListAccessPreviewFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listaccesspreviewfindingsresponsetypedef)\].
+`Iterator`\[[ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef)\].
 
 ## ListAccessPreviewsPaginator
 
@@ -67,10 +66,10 @@ Arguments for `ListAccessPreviewsPaginator.paginate` method:
 
 - `analyzerArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPreviewsPaginator.paginate` returns
-`Iterator`\[[ListAccessPreviewsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listaccesspreviewsresponsetypedef)\].
+`Iterator`\[[ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef)\].
 
 ## ListAnalyzedResourcesPaginator
 
@@ -92,13 +91,12 @@ Boto3 documentation:
 Arguments for `ListAnalyzedResourcesPaginator.paginate` method:
 
 - `analyzerArn`: `str` *(required)*
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAnalyzedResourcesPaginator.paginate` returns
-`Iterator`\[[ListAnalyzedResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listanalyzedresourcesresponsetypedef)\].
+`Iterator`\[[ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef)\].
 
 ## ListAnalyzersPaginator
 
@@ -119,13 +117,12 @@ Boto3 documentation:
 
 Arguments for `ListAnalyzersPaginator.paginate` method:
 
-- `type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#typetype)
+- `type`: [TypeType](./literals.md#typetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAnalyzersPaginator.paginate` returns
-`Iterator`\[[ListAnalyzersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listanalyzersresponsetypedef)\].
+`Iterator`\[[ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef)\].
 
 ## ListArchiveRulesPaginator
 
@@ -148,10 +145,10 @@ Arguments for `ListArchiveRulesPaginator.paginate` method:
 
 - `analyzerName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListArchiveRulesPaginator.paginate` returns
-`Iterator`\[[ListArchiveRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listarchiverulesresponsetypedef)\].
+`Iterator`\[[ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef)\].
 
 ## ListFindingsPaginator
 
@@ -173,15 +170,13 @@ Boto3 documentation:
 Arguments for `ListFindingsPaginator.paginate` method:
 
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#criteriontypedef)\]
-- `sort`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#sortcriteriatypedef)
+- `filter`: `Dict`\[`str`, [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsPaginator.paginate` returns
-`Iterator`\[[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listfindingsresponsetypedef)\].
+`Iterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
 ## ListPolicyGenerationsPaginator
 
@@ -204,10 +199,10 @@ Arguments for `ListPolicyGenerationsPaginator.paginate` method:
 
 - `principalArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyGenerationsPaginator.paginate` returns
-`Iterator`\[[ListPolicyGenerationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#listpolicygenerationsresponsetypedef)\].
+`Iterator`\[[ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef)\].
 
 ## ValidatePolicyPaginator
 
@@ -229,13 +224,10 @@ Boto3 documentation:
 Arguments for `ValidatePolicyPaginator.paginate` method:
 
 - `policyDocument`: `str` *(required)*
-- `policyType`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#policytype)
-  *(required)*
-- `locale`:
-  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/literals.html#locale)
+- `policyType`: [PolicyType](./literals.md#policytype) *(required)*
+- `locale`: [Locale](./literals.md#locale)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ValidatePolicyPaginator.paginate` returns
-`Iterator`\[[ValidatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_accessanalyzer/type_defs.html#validatepolicyresponsetypedef)\].
+`Iterator`\[[ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef)\].

@@ -1,6 +1,6 @@
 # ElastiCacheClient for boto3 ElastiCache module
 
-> [Index](../README.md) > [ElastiCache](./README.md) > ElastiCacheClient
+> [Index](..) > [ElastiCache](.) > ElastiCacheClient
 
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
@@ -192,12 +192,9 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-Returns
-[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#taglistmessagetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### authorize_cache_security_group_ingress
 
@@ -214,7 +211,7 @@ Arguments:
 - `EC2SecurityGroupOwnerId`: `str` *(required)*
 
 Returns
-[AuthorizeCacheSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#authorizecachesecuritygroupingressresulttypedef).
+[AuthorizeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#authorizecachesecuritygroupingressresulttypedef).
 
 ### batch_apply_update_action
 
@@ -231,7 +228,7 @@ Arguments:
 - `CacheClusterIds`: `List`\[`str`\]
 
 Returns
-[UpdateActionResultsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionresultsmessagetypedef).
+[UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
 ### batch_stop_update_action
 
@@ -248,7 +245,7 @@ Arguments:
 - `CacheClusterIds`: `List`\[`str`\]
 
 Returns
-[UpdateActionResultsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionresultsmessagetypedef).
+[UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
 ### can_paginate
 
@@ -276,7 +273,7 @@ Arguments:
 - `Force`: `bool`
 
 Returns
-[CompleteMigrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#completemigrationresponsetypedef).
+[CompleteMigrationResponseTypeDef](./type_defs.md#completemigrationresponsetypedef).
 
 ### copy_snapshot
 
@@ -291,11 +288,9 @@ Arguments:
 - `TargetSnapshotName`: `str` *(required)*
 - `TargetBucket`: `str`
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CopySnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#copysnapshotresulttypedef).
+Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
 ### create_cache_cluster
 
@@ -308,8 +303,7 @@ Arguments:
 
 - `CacheClusterId`: `str` *(required)*
 - `ReplicationGroupId`: `str`
-- `AZMode`:
-  [AZMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#azmode)
+- `AZMode`: [AZMode](./literals.md#azmode)
 - `PreferredAvailabilityZone`: `str`
 - `PreferredAvailabilityZones`: `List`\[`str`\]
 - `NumCacheNodes`: `int`
@@ -320,8 +314,7 @@ Arguments:
 - `CacheSubnetGroupName`: `str`
 - `CacheSecurityGroupNames`: `List`\[`str`\]
 - `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SnapshotArns`: `List`\[`str`\]
 - `SnapshotName`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -331,15 +324,14 @@ Arguments:
 - `SnapshotRetentionLimit`: `int`
 - `SnapshotWindow`: `str`
 - `AuthToken`: `str`
-- `OutpostMode`:
-  [OutpostMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#outpostmode)
+- `OutpostMode`: [OutpostMode](./literals.md#outpostmode)
 - `PreferredOutpostArn`: `str`
 - `PreferredOutpostArns`: `List`\[`str`\]
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[CreateCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcacheclusterresulttypedef).
+[CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef).
 
 ### create_cache_parameter_group
 
@@ -354,11 +346,10 @@ Arguments:
 - `CacheParameterGroupName`: `str` *(required)*
 - `CacheParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCacheParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcacheparametergroupresulttypedef).
+[CreateCacheParameterGroupResultTypeDef](./type_defs.md#createcacheparametergroupresulttypedef).
 
 ### create_cache_security_group
 
@@ -372,11 +363,10 @@ Arguments:
 
 - `CacheSecurityGroupName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCacheSecurityGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcachesecuritygroupresulttypedef).
+[CreateCacheSecurityGroupResultTypeDef](./type_defs.md#createcachesecuritygroupresulttypedef).
 
 ### create_cache_subnet_group
 
@@ -391,11 +381,10 @@ Arguments:
 - `CacheSubnetGroupName`: `str` *(required)*
 - `CacheSubnetGroupDescription`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCacheSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createcachesubnetgroupresulttypedef).
+[CreateCacheSubnetGroupResultTypeDef](./type_defs.md#createcachesubnetgroupresulttypedef).
 
 ### create_global_replication_group
 
@@ -412,7 +401,7 @@ Arguments:
 - `GlobalReplicationGroupDescription`: `str`
 
 Returns
-[CreateGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createglobalreplicationgroupresulttypedef).
+[CreateGlobalReplicationGroupResultTypeDef](./type_defs.md#createglobalreplicationgroupresulttypedef).
 
 ### create_replication_group
 
@@ -435,7 +424,7 @@ Arguments:
 - `NumNodeGroups`: `int`
 - `ReplicasPerNodeGroup`: `int`
 - `NodeGroupConfiguration`:
-  `List`\[[NodeGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#nodegroupconfigurationtypedef)\]
+  `List`\[[NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef)\]
 - `CacheNodeType`: `str`
 - `Engine`: `str`
 - `EngineVersion`: `str`
@@ -443,8 +432,7 @@ Arguments:
 - `CacheSubnetGroupName`: `str`
 - `CacheSecurityGroupNames`: `List`\[`str`\]
 - `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SnapshotArns`: `List`\[`str`\]
 - `SnapshotName`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -459,10 +447,10 @@ Arguments:
 - `KmsKeyId`: `str`
 - `UserGroupIds`: `List`\[`str`\]
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[CreateReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createreplicationgroupresulttypedef).
+[CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef).
 
 ### create_snapshot
 
@@ -477,11 +465,10 @@ Arguments:
 - `ReplicationGroupId`: `str`
 - `CacheClusterId`: `str`
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#createsnapshotresulttypedef).
+[CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
 
 ### create_user
 
@@ -498,11 +485,9 @@ Arguments:
 - `AccessString`: `str` *(required)*
 - `Passwords`: `List`\[`str`\]
 - `NoPasswordRequired`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usertypedef).
+Returns [UserTypeDef](./type_defs.md#usertypedef).
 
 ### create_user_group
 
@@ -516,11 +501,9 @@ Arguments:
 - `UserGroupId`: `str` *(required)*
 - `Engine`: `str` *(required)*
 - `UserIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[UserGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usergrouptypedef).
+Returns [UserGroupTypeDef](./type_defs.md#usergrouptypedef).
 
 ### decrease_node_groups_in_global_replication_group
 
@@ -540,7 +523,7 @@ Arguments:
 - `GlobalNodeGroupsToRetain`: `List`\[`str`\]
 
 Returns
-[DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#decreasenodegroupsinglobalreplicationgroupresulttypedef).
+[DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupresulttypedef).
 
 ### decrease_replica_count
 
@@ -556,11 +539,11 @@ Arguments:
 - `ApplyImmediately`: `bool` *(required)*
 - `NewReplicaCount`: `int`
 - `ReplicaConfiguration`:
-  `List`\[[ConfigureShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#configureshardtypedef)\]
+  `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 - `ReplicasToRemove`: `List`\[`str`\]
 
 Returns
-[DecreaseReplicaCountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#decreasereplicacountresulttypedef).
+[DecreaseReplicaCountResultTypeDef](./type_defs.md#decreasereplicacountresulttypedef).
 
 ### delete_cache_cluster
 
@@ -575,7 +558,7 @@ Arguments:
 - `FinalSnapshotIdentifier`: `str`
 
 Returns
-[DeleteCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deletecacheclusterresulttypedef).
+[DeleteCacheClusterResultTypeDef](./type_defs.md#deletecacheclusterresulttypedef).
 
 ### delete_cache_parameter_group
 
@@ -627,7 +610,7 @@ Arguments:
 - `RetainPrimaryReplicationGroup`: `bool` *(required)*
 
 Returns
-[DeleteGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deleteglobalreplicationgroupresulttypedef).
+[DeleteGlobalReplicationGroupResultTypeDef](./type_defs.md#deleteglobalreplicationgroupresulttypedef).
 
 ### delete_replication_group
 
@@ -644,7 +627,7 @@ Arguments:
 - `FinalSnapshotIdentifier`: `str`
 
 Returns
-[DeleteReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deletereplicationgroupresulttypedef).
+[DeleteReplicationGroupResultTypeDef](./type_defs.md#deletereplicationgroupresulttypedef).
 
 ### delete_snapshot
 
@@ -658,7 +641,7 @@ Arguments:
 - `SnapshotName`: `str` *(required)*
 
 Returns
-[DeleteSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#deletesnapshotresulttypedef).
+[DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
 
 ### delete_user
 
@@ -671,8 +654,7 @@ Arguments:
 
 - `UserId`: `str` *(required)*
 
-Returns
-[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usertypedef).
+Returns [UserTypeDef](./type_defs.md#usertypedef).
 
 ### delete_user_group
 
@@ -685,8 +667,7 @@ Arguments:
 
 - `UserGroupId`: `str` *(required)*
 
-Returns
-[UserGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usergrouptypedef).
+Returns [UserGroupTypeDef](./type_defs.md#usergrouptypedef).
 
 ### describe_cache_clusters
 
@@ -705,7 +686,7 @@ Arguments:
 - `ShowCacheClustersNotInReplicationGroups`: `bool`
 
 Returns
-[CacheClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheclustermessagetypedef).
+[CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef).
 
 ### describe_cache_engine_versions
 
@@ -725,7 +706,7 @@ Arguments:
 - `DefaultOnly`: `bool`
 
 Returns
-[CacheEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheengineversionmessagetypedef).
+[CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef).
 
 ### describe_cache_parameter_groups
 
@@ -742,7 +723,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[CacheParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupsmessagetypedef).
+[CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef).
 
 ### describe_cache_parameters
 
@@ -760,7 +741,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[CacheParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupdetailstypedef).
+[CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef).
 
 ### describe_cache_security_groups
 
@@ -777,7 +758,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[CacheSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesecuritygroupmessagetypedef).
+[CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef).
 
 ### describe_cache_subnet_groups
 
@@ -794,7 +775,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[CacheSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesubnetgroupmessagetypedef).
+[CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef).
 
 ### describe_engine_default_parameters
 
@@ -811,7 +792,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeenginedefaultparametersresulttypedef).
+[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
 ### describe_events
 
@@ -823,16 +804,14 @@ Boto3 documentation:
 Arguments:
 
 - `SourceIdentifier`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#eventsmessagetypedef).
+Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
 ### describe_global_replication_groups
 
@@ -850,7 +829,7 @@ Arguments:
 - `ShowMemberInfo`: `bool`
 
 Returns
-[DescribeGlobalReplicationGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeglobalreplicationgroupsresulttypedef).
+[DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef).
 
 ### describe_replication_groups
 
@@ -867,7 +846,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ReplicationGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#replicationgroupmessagetypedef).
+[ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef).
 
 ### describe_reserved_cache_nodes
 
@@ -889,7 +868,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedCacheNodeMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodemessagetypedef).
+[ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef).
 
 ### describe_reserved_cache_nodes_offerings
 
@@ -910,7 +889,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedCacheNodesOfferingMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodesofferingmessagetypedef).
+[ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef).
 
 ### describe_service_updates
 
@@ -924,12 +903,12 @@ Arguments:
 
 - `ServiceUpdateName`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+  `List`\[[ServiceUpdateStatus](./literals.md#serviceupdatestatus)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[ServiceUpdatesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#serviceupdatesmessagetypedef).
+[ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef).
 
 ### describe_snapshots
 
@@ -949,7 +928,7 @@ Arguments:
 - `ShowNodeGroupConfig`: `bool`
 
 Returns
-[DescribeSnapshotsListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describesnapshotslistmessagetypedef).
+[DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef).
 
 ### describe_update_actions
 
@@ -966,17 +945,17 @@ Arguments:
 - `CacheClusterIds`: `List`\[`str`\]
 - `Engine`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+  `List`\[[ServiceUpdateStatus](./literals.md#serviceupdatestatus)\]
 - `ServiceUpdateTimeRange`:
-  [TimeRangeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#timerangefiltertypedef)
+  [TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef)
 - `UpdateActionStatus`:
-  `List`\[[UpdateActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#updateactionstatus)\]
+  `List`\[[UpdateActionStatus](./literals.md#updateactionstatus)\]
 - `ShowNodeLevelUpdateStatus`: `bool`
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[UpdateActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionsmessagetypedef).
+[UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef).
 
 ### describe_user_groups
 
@@ -992,7 +971,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeUserGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusergroupsresulttypedef).
+[DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef).
 
 ### describe_users
 
@@ -1005,13 +984,12 @@ Arguments:
 
 - `Engine`: `str`
 - `UserId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DescribeUsersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusersresulttypedef).
+[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
 
 ### disassociate_global_replication_group
 
@@ -1028,7 +1006,7 @@ Arguments:
 - `ReplicationGroupRegion`: `str` *(required)*
 
 Returns
-[DisassociateGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#disassociateglobalreplicationgroupresulttypedef).
+[DisassociateGlobalReplicationGroupResultTypeDef](./type_defs.md#disassociateglobalreplicationgroupresulttypedef).
 
 ### failover_global_replication_group
 
@@ -1045,7 +1023,7 @@ Arguments:
 - `PrimaryReplicationGroupId`: `str` *(required)*
 
 Returns
-[FailoverGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#failoverglobalreplicationgroupresulttypedef).
+[FailoverGlobalReplicationGroupResultTypeDef](./type_defs.md#failoverglobalreplicationgroupresulttypedef).
 
 ### generate_presigned_url
 
@@ -1079,10 +1057,10 @@ Arguments:
 - `NodeGroupCount`: `int` *(required)*
 - `ApplyImmediately`: `bool` *(required)*
 - `RegionalConfigurations`:
-  `List`\[[RegionalConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#regionalconfigurationtypedef)\]
+  `List`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
 
 Returns
-[IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#increasenodegroupsinglobalreplicationgroupresulttypedef).
+[IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupresulttypedef).
 
 ### increase_replica_count
 
@@ -1098,10 +1076,10 @@ Arguments:
 - `ApplyImmediately`: `bool` *(required)*
 - `NewReplicaCount`: `int`
 - `ReplicaConfiguration`:
-  `List`\[[ConfigureShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#configureshardtypedef)\]
+  `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 
 Returns
-[IncreaseReplicaCountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#increasereplicacountresulttypedef).
+[IncreaseReplicaCountResultTypeDef](./type_defs.md#increasereplicacountresulttypedef).
 
 ### list_allowed_node_type_modifications
 
@@ -1117,7 +1095,7 @@ Arguments:
 - `ReplicationGroupId`: `str`
 
 Returns
-[AllowedNodeTypeModificationsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#allowednodetypemodificationsmessagetypedef).
+[AllowedNodeTypeModificationsMessageTypeDef](./type_defs.md#allowednodetypemodificationsmessagetypedef).
 
 ### list_tags_for_resource
 
@@ -1131,8 +1109,7 @@ Arguments:
 
 - `ResourceName`: `str` *(required)*
 
-Returns
-[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#taglistmessagetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### modify_cache_cluster
 
@@ -1146,8 +1123,7 @@ Arguments:
 - `CacheClusterId`: `str` *(required)*
 - `NumCacheNodes`: `int`
 - `CacheNodeIdsToRemove`: `List`\[`str`\]
-- `AZMode`:
-  [AZMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#azmode)
+- `AZMode`: [AZMode](./literals.md#azmode)
 - `NewAvailabilityZones`: `List`\[`str`\]
 - `CacheSecurityGroupNames`: `List`\[`str`\]
 - `SecurityGroupIds`: `List`\[`str`\]
@@ -1163,12 +1139,12 @@ Arguments:
 - `CacheNodeType`: `str`
 - `AuthToken`: `str`
 - `AuthTokenUpdateStrategy`:
-  [AuthTokenUpdateStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#authtokenupdatestrategytype)
+  [AuthTokenUpdateStrategyType](./literals.md#authtokenupdatestrategytype)
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[ModifyCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifycacheclusterresulttypedef).
+[ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef).
 
 ### modify_cache_parameter_group
 
@@ -1182,11 +1158,11 @@ Arguments:
 
 - `CacheParameterGroupName`: `str` *(required)*
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#parameternamevaluetypedef)\]
+  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
   *(required)*
 
 Returns
-[CacheParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupnamemessagetypedef).
+[CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
 ### modify_cache_subnet_group
 
@@ -1203,7 +1179,7 @@ Arguments:
 - `SubnetIds`: `List`\[`str`\]
 
 Returns
-[ModifyCacheSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifycachesubnetgroupresulttypedef).
+[ModifyCacheSubnetGroupResultTypeDef](./type_defs.md#modifycachesubnetgroupresulttypedef).
 
 ### modify_global_replication_group
 
@@ -1224,7 +1200,7 @@ Arguments:
 - `AutomaticFailoverEnabled`: `bool`
 
 Returns
-[ModifyGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifyglobalreplicationgroupresulttypedef).
+[ModifyGlobalReplicationGroupResultTypeDef](./type_defs.md#modifyglobalreplicationgroupresulttypedef).
 
 ### modify_replication_group
 
@@ -1257,15 +1233,15 @@ Arguments:
 - `CacheNodeType`: `str`
 - `AuthToken`: `str`
 - `AuthTokenUpdateStrategy`:
-  [AuthTokenUpdateStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#authtokenupdatestrategytype)
+  [AuthTokenUpdateStrategyType](./literals.md#authtokenupdatestrategytype)
 - `UserGroupIdsToAdd`: `List`\[`str`\]
 - `UserGroupIdsToRemove`: `List`\[`str`\]
 - `RemoveUserGroups`: `bool`
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#logdeliveryconfigurationrequesttypedef)\]
+  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[ModifyReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifyreplicationgroupresulttypedef).
+[ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef).
 
 ### modify_replication_group_shard_configuration
 
@@ -1282,12 +1258,12 @@ Arguments:
 - `NodeGroupCount`: `int` *(required)*
 - `ApplyImmediately`: `bool` *(required)*
 - `ReshardingConfiguration`:
-  `List`\[[ReshardingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reshardingconfigurationtypedef)\]
+  `List`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
 - `NodeGroupsToRemove`: `List`\[`str`\]
 - `NodeGroupsToRetain`: `List`\[`str`\]
 
 Returns
-[ModifyReplicationGroupShardConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#modifyreplicationgroupshardconfigurationresulttypedef).
+[ModifyReplicationGroupShardConfigurationResultTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationresulttypedef).
 
 ### modify_user
 
@@ -1304,8 +1280,7 @@ Arguments:
 - `Passwords`: `List`\[`str`\]
 - `NoPasswordRequired`: `bool`
 
-Returns
-[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usertypedef).
+Returns [UserTypeDef](./type_defs.md#usertypedef).
 
 ### modify_user_group
 
@@ -1320,8 +1295,7 @@ Arguments:
 - `UserIdsToAdd`: `List`\[`str`\]
 - `UserIdsToRemove`: `List`\[`str`\]
 
-Returns
-[UserGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#usergrouptypedef).
+Returns [UserGroupTypeDef](./type_defs.md#usergrouptypedef).
 
 ### purchase_reserved_cache_nodes_offering
 
@@ -1336,11 +1310,10 @@ Arguments:
 - `ReservedCacheNodesOfferingId`: `str` *(required)*
 - `ReservedCacheNodeId`: `str`
 - `CacheNodeCount`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PurchaseReservedCacheNodesOfferingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#purchasereservedcachenodesofferingresulttypedef).
+[PurchaseReservedCacheNodesOfferingResultTypeDef](./type_defs.md#purchasereservedcachenodesofferingresulttypedef).
 
 ### rebalance_slots_in_global_replication_group
 
@@ -1357,7 +1330,7 @@ Arguments:
 - `ApplyImmediately`: `bool` *(required)*
 
 Returns
-[RebalanceSlotsInGlobalReplicationGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#rebalanceslotsinglobalreplicationgroupresulttypedef).
+[RebalanceSlotsInGlobalReplicationGroupResultTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupresulttypedef).
 
 ### reboot_cache_cluster
 
@@ -1372,7 +1345,7 @@ Arguments:
 - `CacheNodeIdsToReboot`: `List`\[`str`\] *(required)*
 
 Returns
-[RebootCacheClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#rebootcacheclusterresulttypedef).
+[RebootCacheClusterResultTypeDef](./type_defs.md#rebootcacheclusterresulttypedef).
 
 ### remove_tags_from_resource
 
@@ -1387,8 +1360,7 @@ Arguments:
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
 
-Returns
-[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#taglistmessagetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### reset_cache_parameter_group
 
@@ -1403,10 +1375,10 @@ Arguments:
 - `CacheParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#parameternamevaluetypedef)\]
+  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 Returns
-[CacheParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupnamemessagetypedef).
+[CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
 ### revoke_cache_security_group_ingress
 
@@ -1423,7 +1395,7 @@ Arguments:
 - `EC2SecurityGroupOwnerId`: `str` *(required)*
 
 Returns
-[RevokeCacheSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#revokecachesecuritygroupingressresulttypedef).
+[RevokeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#revokecachesecuritygroupingressresulttypedef).
 
 ### start_migration
 
@@ -1436,11 +1408,11 @@ Arguments:
 
 - `ReplicationGroupId`: `str` *(required)*
 - `CustomerNodeEndpointList`:
-  `List`\[[CustomerNodeEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#customernodeendpointtypedef)\]
+  `List`\[[CustomerNodeEndpointTypeDef](./type_defs.md#customernodeendpointtypedef)\]
   *(required)*
 
 Returns
-[StartMigrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#startmigrationresponsetypedef).
+[StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
 
 ### test_failover
 
@@ -1454,8 +1426,7 @@ Arguments:
 - `ReplicationGroupId`: `str` *(required)*
 - `NodeGroupId`: `str` *(required)*
 
-Returns
-[TestFailoverResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#testfailoverresulttypedef).
+Returns [TestFailoverResultTypeDef](./type_defs.md#testfailoverresulttypedef).
 
 ### get_paginator
 

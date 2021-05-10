@@ -1,6 +1,6 @@
 # Literals for boto3 DataPipeline module
 
-> [Index](../README.md) > [DataPipeline](./README.md) > Literals
+> [Index](..) > [DataPipeline](.) > Literals
 
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)

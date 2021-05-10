@@ -1,6 +1,6 @@
 # Waiters for boto3 Glacier module
 
-> [Index](../README.md) > [Glacier](./README.md) > Waiters
+> [Index](..) > [Glacier](.) > Waiters
 
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
@@ -31,8 +31,7 @@ Arguments for `VaultExistsWaiter.wait` method:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## VaultNotExistsWaiter
 
@@ -54,5 +53,4 @@ Arguments for `VaultNotExistsWaiter.wait` method:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

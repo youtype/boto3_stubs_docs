@@ -1,6 +1,6 @@
 # MediaConvertClient for boto3 MediaConvert module
 
-> [Index](../README.md) > [MediaConvert](./README.md) > MediaConvertClient
+> [Index](..) > [MediaConvert](.) > MediaConvertClient
 
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
@@ -130,28 +130,25 @@ Boto3 documentation:
 Arguments:
 
 - `Role`: `str` *(required)*
-- `Settings`:
-  [JobSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobsettingstypedef)
+- `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
   *(required)*
 - `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
-- `BillingTagsSource`:
-  [BillingTagsSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#billingtagssource)
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
+- `BillingTagsSource`: [BillingTagsSource](./literals.md#billingtagssource)
 - `ClientRequestToken`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `JobTemplate`: `str`
 - `Priority`: `int`
 - `Queue`: `str`
 - `SimulateReservedQueue`:
-  [SimulateReservedQueue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#simulatereservedqueue)
+  [SimulateReservedQueue](./literals.md#simulatereservedqueue)
 - `StatusUpdateInterval`:
-  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
+  [StatusUpdateInterval](./literals.md#statusupdateinterval)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createjobresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_job_template
 
@@ -164,22 +161,22 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Settings`:
-  [JobTemplateSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatesettingstypedef)
+  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
   *(required)*
 - `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `StatusUpdateInterval`:
-  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
+  [StatusUpdateInterval](./literals.md#statusupdateinterval)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateJobTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createjobtemplateresponsetypedef).
+[CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
 
 ### create_preset
 
@@ -191,15 +188,14 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Settings`:
-  [PresetSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presetsettingstypedef)
+- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
   *(required)*
 - `Category`: `str`
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createpresetresponsetypedef).
+[CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
 
 ### create_queue
 
@@ -212,16 +208,14 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `ReservationPlanSettings`:
-  [ReservationPlanSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#reservationplansettingstypedef)
-- `Status`:
-  [QueueStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuestatus)
+  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
+- `Status`: [QueueStatus](./literals.md#queuestatus)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#createqueueresponsetypedef).
+[CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
 
 ### delete_job_template
 
@@ -272,12 +266,11 @@ Boto3 documentation:
 Arguments:
 
 - `MaxResults`: `int`
-- `Mode`:
-  [DescribeEndpointsMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#describeendpointsmode)
+- `Mode`: [DescribeEndpointsMode](./literals.md#describeendpointsmode)
 - `NextToken`: `str`
 
 Returns
-[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#describeendpointsresponsetypedef).
+[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
 ### disassociate_certificate
 
@@ -321,8 +314,7 @@ Arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[GetJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getjobresponsetypedef).
+Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
 ### get_job_template
 
@@ -336,7 +328,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetJobTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getjobtemplateresponsetypedef).
+[GetJobTemplateResponseTypeDef](./type_defs.md#getjobtemplateresponsetypedef).
 
 ### get_preset
 
@@ -349,8 +341,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetPresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getpresetresponsetypedef).
+Returns [GetPresetResponseTypeDef](./type_defs.md#getpresetresponsetypedef).
 
 ### get_queue
 
@@ -363,8 +354,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#getqueueresponsetypedef).
+Returns [GetQueueResponseTypeDef](./type_defs.md#getqueueresponsetypedef).
 
 ### list_job_templates
 
@@ -376,15 +366,13 @@ Boto3 documentation:
 Arguments:
 
 - `Category`: `str`
-- `ListBy`:
-  [JobTemplateListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobtemplatelistby)
+- `ListBy`: [JobTemplateListBy](./literals.md#jobtemplatelistby)
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `Order`: [Order](./literals.md#order)
 
 Returns
-[ListJobTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listjobtemplatesresponsetypedef).
+[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
 
 ### list_jobs
 
@@ -397,14 +385,11 @@ Arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `Order`: [Order](./literals.md#order)
 - `Queue`: `str`
-- `Status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobstatus)
+- `Status`: [JobStatus](./literals.md#jobstatus)
 
-Returns
-[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listjobsresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_presets
 
@@ -416,15 +401,13 @@ Boto3 documentation:
 Arguments:
 
 - `Category`: `str`
-- `ListBy`:
-  [PresetListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#presetlistby)
+- `ListBy`: [PresetListBy](./literals.md#presetlistby)
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `Order`: [Order](./literals.md#order)
 
 Returns
-[ListPresetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listpresetsresponsetypedef).
+[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
 
 ### list_queues
 
@@ -435,15 +418,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `ListBy`:
-  [QueueListBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuelistby)
+- `ListBy`: [QueueListBy](./literals.md#queuelistby)
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Order`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#order)
+- `Order`: [Order](./literals.md#order)
 
-Returns
-[ListQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listqueuesresponsetypedef).
+Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -458,7 +438,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -499,20 +479,20 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `Settings`:
-  [JobTemplateSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatesettingstypedef)
+  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
 - `StatusUpdateInterval`:
-  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
+  [StatusUpdateInterval](./literals.md#statusupdateinterval)
 
 Returns
-[UpdateJobTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#updatejobtemplateresponsetypedef).
+[UpdateJobTemplateResponseTypeDef](./type_defs.md#updatejobtemplateresponsetypedef).
 
 ### update_preset
 
@@ -526,11 +506,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Category`: `str`
 - `Description`: `str`
-- `Settings`:
-  [PresetSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presetsettingstypedef)
+- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
 
 Returns
-[UpdatePresetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#updatepresetresponsetypedef).
+[UpdatePresetResponseTypeDef](./type_defs.md#updatepresetresponsetypedef).
 
 ### update_queue
 
@@ -544,12 +523,11 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Description`: `str`
 - `ReservationPlanSettings`:
-  [ReservationPlanSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#reservationplansettingstypedef)
-- `Status`:
-  [QueueStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuestatus)
+  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
+- `Status`: [QueueStatus](./literals.md#queuestatus)
 
 Returns
-[UpdateQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#updatequeueresponsetypedef).
+[UpdateQueueResponseTypeDef](./type_defs.md#updatequeueresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DatabaseMigrationService module
 
-> [Index](../README.md) > [DatabaseMigrationService](./README.md) > Structures
+> [Index](..) > [DatabaseMigrationService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
@@ -130,7 +130,7 @@ from mypy_boto3_dms.type_defs import ApplyPendingMaintenanceActionResponseTypeDe
 Optional fields:
 
 - `ResourcePendingMaintenanceActions`:
-  [ResourcePendingMaintenanceActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#resourcependingmaintenanceactionstypedef)
+  [ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)
 
 ## AvailabilityZoneTypeDef
 
@@ -151,7 +151,7 @@ from mypy_boto3_dms.type_defs import CancelReplicationTaskAssessmentRunResponseT
 Optional fields:
 
 - `ReplicationTaskAssessmentRun`:
-  [ReplicationTaskAssessmentRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskassessmentruntypedef)
+  [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
 
 ## CertificateTypeDef
 
@@ -195,8 +195,7 @@ from mypy_boto3_dms.type_defs import CreateEndpointResponseTypeDef
 
 Optional fields:
 
-- `Endpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#endpointtypedef)
+- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 
 ## CreateEventSubscriptionResponseTypeDef
 
@@ -207,7 +206,7 @@ from mypy_boto3_dms.type_defs import CreateEventSubscriptionResponseTypeDef
 Optional fields:
 
 - `EventSubscription`:
-  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#eventsubscriptiontypedef)
+  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 
 ## CreateReplicationInstanceResponseTypeDef
 
@@ -218,7 +217,7 @@ from mypy_boto3_dms.type_defs import CreateReplicationInstanceResponseTypeDef
 Optional fields:
 
 - `ReplicationInstance`:
-  [ReplicationInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationinstancetypedef)
+  [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 
 ## CreateReplicationSubnetGroupResponseTypeDef
 
@@ -229,7 +228,7 @@ from mypy_boto3_dms.type_defs import CreateReplicationSubnetGroupResponseTypeDef
 Optional fields:
 
 - `ReplicationSubnetGroup`:
-  [ReplicationSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationsubnetgrouptypedef)
+  [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
 
 ## CreateReplicationTaskResponseTypeDef
 
@@ -240,7 +239,7 @@ from mypy_boto3_dms.type_defs import CreateReplicationTaskResponseTypeDef
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## DeleteCertificateResponseTypeDef
 
@@ -250,8 +249,7 @@ from mypy_boto3_dms.type_defs import DeleteCertificateResponseTypeDef
 
 Optional fields:
 
-- `Certificate`:
-  [CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#certificatetypedef)
+- `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
 
 ## DeleteConnectionResponseTypeDef
 
@@ -261,8 +259,7 @@ from mypy_boto3_dms.type_defs import DeleteConnectionResponseTypeDef
 
 Optional fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 
 ## DeleteEndpointResponseTypeDef
 
@@ -272,8 +269,7 @@ from mypy_boto3_dms.type_defs import DeleteEndpointResponseTypeDef
 
 Optional fields:
 
-- `Endpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#endpointtypedef)
+- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 
 ## DeleteEventSubscriptionResponseTypeDef
 
@@ -284,7 +280,7 @@ from mypy_boto3_dms.type_defs import DeleteEventSubscriptionResponseTypeDef
 Optional fields:
 
 - `EventSubscription`:
-  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#eventsubscriptiontypedef)
+  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 
 ## DeleteReplicationInstanceResponseTypeDef
 
@@ -295,7 +291,7 @@ from mypy_boto3_dms.type_defs import DeleteReplicationInstanceResponseTypeDef
 Optional fields:
 
 - `ReplicationInstance`:
-  [ReplicationInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationinstancetypedef)
+  [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 
 ## DeleteReplicationTaskAssessmentRunResponseTypeDef
 
@@ -306,7 +302,7 @@ from mypy_boto3_dms.type_defs import DeleteReplicationTaskAssessmentRunResponseT
 Optional fields:
 
 - `ReplicationTaskAssessmentRun`:
-  [ReplicationTaskAssessmentRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskassessmentruntypedef)
+  [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
 
 ## DeleteReplicationTaskResponseTypeDef
 
@@ -317,7 +313,7 @@ from mypy_boto3_dms.type_defs import DeleteReplicationTaskResponseTypeDef
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## DescribeAccountAttributesResponseTypeDef
 
@@ -328,7 +324,7 @@ from mypy_boto3_dms.type_defs import DescribeAccountAttributesResponseTypeDef
 Optional fields:
 
 - `AccountQuotas`:
-  `List`\[[AccountQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#accountquotatypedef)\]
+  `List`\[[AccountQuotaTypeDef](./type_defs.md#accountquotatypedef)\]
 - `UniqueAccountIdentifier`: `str`
 
 ## DescribeApplicableIndividualAssessmentsResponseTypeDef
@@ -352,7 +348,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#certificatetypedef)\]
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 
 ## DescribeConnectionsResponseTypeDef
 
@@ -363,8 +359,7 @@ from mypy_boto3_dms.type_defs import DescribeConnectionsResponseTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Connections`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#connectiontypedef)\]
+- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 
 ## DescribeEndpointSettingsResponseTypeDef
 
@@ -376,7 +371,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `EndpointSettings`:
-  `List`\[[EndpointSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#endpointsettingtypedef)\]
+  `List`\[[EndpointSettingTypeDef](./type_defs.md#endpointsettingtypedef)\]
 
 ## DescribeEndpointTypesResponseTypeDef
 
@@ -388,7 +383,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `SupportedEndpointTypes`:
-  `List`\[[SupportedEndpointTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#supportedendpointtypetypedef)\]
+  `List`\[[SupportedEndpointTypeTypeDef](./type_defs.md#supportedendpointtypetypedef)\]
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -399,8 +394,7 @@ from mypy_boto3_dms.type_defs import DescribeEndpointsResponseTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#endpointtypedef)\]
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 
 ## DescribeEventCategoriesResponseTypeDef
 
@@ -411,7 +405,7 @@ from mypy_boto3_dms.type_defs import DescribeEventCategoriesResponseTypeDef
 Optional fields:
 
 - `EventCategoryGroupList`:
-  `List`\[[EventCategoryGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#eventcategorygrouptypedef)\]
+  `List`\[[EventCategoryGroupTypeDef](./type_defs.md#eventcategorygrouptypedef)\]
 
 ## DescribeEventSubscriptionsResponseTypeDef
 
@@ -423,7 +417,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `EventSubscriptionsList`:
-  `List`\[[EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#eventsubscriptiontypedef)\]
+  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
 
 ## DescribeEventsResponseTypeDef
 
@@ -434,8 +428,7 @@ from mypy_boto3_dms.type_defs import DescribeEventsResponseTypeDef
 Optional fields:
 
 - `Marker`: `str`
-- `Events`:
-  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#eventtypedef)\]
+- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 ## DescribeOrderableReplicationInstancesResponseTypeDef
 
@@ -446,7 +439,7 @@ from mypy_boto3_dms.type_defs import DescribeOrderableReplicationInstancesRespon
 Optional fields:
 
 - `OrderableReplicationInstances`:
-  `List`\[[OrderableReplicationInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#orderablereplicationinstancetypedef)\]
+  `List`\[[OrderableReplicationInstanceTypeDef](./type_defs.md#orderablereplicationinstancetypedef)\]
 - `Marker`: `str`
 
 ## DescribePendingMaintenanceActionsResponseTypeDef
@@ -458,7 +451,7 @@ from mypy_boto3_dms.type_defs import DescribePendingMaintenanceActionsResponseTy
 Optional fields:
 
 - `PendingMaintenanceActions`:
-  `List`\[[ResourcePendingMaintenanceActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#resourcependingmaintenanceactionstypedef)\]
+  `List`\[[ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)\]
 - `Marker`: `str`
 
 ## DescribeRefreshSchemasStatusResponseTypeDef
@@ -470,7 +463,7 @@ from mypy_boto3_dms.type_defs import DescribeRefreshSchemasStatusResponseTypeDef
 Optional fields:
 
 - `RefreshSchemasStatus`:
-  [RefreshSchemasStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#refreshschemasstatustypedef)
+  [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
 
 ## DescribeReplicationInstanceTaskLogsResponseTypeDef
 
@@ -482,7 +475,7 @@ Optional fields:
 
 - `ReplicationInstanceArn`: `str`
 - `ReplicationInstanceTaskLogs`:
-  `List`\[[ReplicationInstanceTaskLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationinstancetasklogtypedef)\]
+  `List`\[[ReplicationInstanceTaskLogTypeDef](./type_defs.md#replicationinstancetasklogtypedef)\]
 - `Marker`: `str`
 
 ## DescribeReplicationInstancesResponseTypeDef
@@ -495,7 +488,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReplicationInstances`:
-  `List`\[[ReplicationInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationinstancetypedef)\]
+  `List`\[[ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)\]
 
 ## DescribeReplicationSubnetGroupsResponseTypeDef
 
@@ -507,7 +500,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReplicationSubnetGroups`:
-  `List`\[[ReplicationSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationsubnetgrouptypedef)\]
+  `List`\[[ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)\]
 
 ## DescribeReplicationTaskAssessmentResultsResponseTypeDef
 
@@ -520,7 +513,7 @@ Optional fields:
 - `Marker`: `str`
 - `BucketName`: `str`
 - `ReplicationTaskAssessmentResults`:
-  `List`\[[ReplicationTaskAssessmentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskassessmentresulttypedef)\]
+  `List`\[[ReplicationTaskAssessmentResultTypeDef](./type_defs.md#replicationtaskassessmentresulttypedef)\]
 
 ## DescribeReplicationTaskAssessmentRunsResponseTypeDef
 
@@ -532,7 +525,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReplicationTaskAssessmentRuns`:
-  `List`\[[ReplicationTaskAssessmentRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskassessmentruntypedef)\]
+  `List`\[[ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)\]
 
 ## DescribeReplicationTaskIndividualAssessmentsResponseTypeDef
 
@@ -544,7 +537,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReplicationTaskIndividualAssessments`:
-  `List`\[[ReplicationTaskIndividualAssessmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskindividualassessmenttypedef)\]
+  `List`\[[ReplicationTaskIndividualAssessmentTypeDef](./type_defs.md#replicationtaskindividualassessmenttypedef)\]
 
 ## DescribeReplicationTasksResponseTypeDef
 
@@ -556,7 +549,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `ReplicationTasks`:
-  `List`\[[ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)\]
+  `List`\[[ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)\]
 
 ## DescribeSchemasResponseTypeDef
 
@@ -579,7 +572,7 @@ Optional fields:
 
 - `ReplicationTaskArn`: `str`
 - `TableStatistics`:
-  `List`\[[TableStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tablestatisticstypedef)\]
+  `List`\[[TableStatisticsTypeDef](./type_defs.md#tablestatisticstypedef)\]
 - `Marker`: `str`
 
 ## DmsTransferSettingsTypeDef
@@ -606,8 +599,7 @@ Optional fields:
 - `ServerName`: `str`
 - `Port`: `int`
 - `DatabaseName`: `str`
-- `NestingLevel`:
-  [NestingLevelValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#nestinglevelvalue)
+- `NestingLevel`: [NestingLevelValue](./literals.md#nestinglevelvalue)
 - `ExtractDocId`: `bool`
 - `DocsToInvestigate`: `int`
 - `KmsKeyId`: `str`
@@ -649,8 +641,7 @@ from mypy_boto3_dms.type_defs import EndpointSettingTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`:
-  [EndpointSettingTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#endpointsettingtypevalue)
+- `Type`: [EndpointSettingTypeValue](./literals.md#endpointsettingtypevalue)
 - `EnumValues`: `List`\[`str`\]
 - `Sensitive`: `bool`
 - `Units`: `str`
@@ -668,7 +659,7 @@ Optional fields:
 
 - `EndpointIdentifier`: `str`
 - `EndpointType`:
-  [ReplicationEndpointTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#replicationendpointtypevalue)
+  [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
 - `EngineName`: `str`
 - `EngineDisplayName`: `str`
 - `Username`: `str`
@@ -680,43 +671,35 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `EndpointArn`: `str`
 - `CertificateArn`: `str`
-- `SslMode`:
-  [DmsSslModeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#dmssslmodevalue)
+- `SslMode`: [DmsSslModeValue](./literals.md#dmssslmodevalue)
 - `ServiceAccessRoleArn`: `str`
 - `ExternalTableDefinition`: `str`
 - `ExternalId`: `str`
 - `DynamoDbSettings`:
-  [DynamoDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#dynamodbsettingstypedef)
-- `S3Settings`:
-  [S3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#s3settingstypedef)
+  [DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef)
+- `S3Settings`: [S3SettingsTypeDef](./type_defs.md#s3settingstypedef)
 - `DmsTransferSettings`:
-  [DmsTransferSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#dmstransfersettingstypedef)
+  [DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef)
 - `MongoDbSettings`:
-  [MongoDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#mongodbsettingstypedef)
+  [MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef)
 - `KinesisSettings`:
-  [KinesisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#kinesissettingstypedef)
-- `KafkaSettings`:
-  [KafkaSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#kafkasettingstypedef)
+  [KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef)
+- `KafkaSettings`: [KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef)
 - `ElasticsearchSettings`:
-  [ElasticsearchSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#elasticsearchsettingstypedef)
+  [ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef)
 - `NeptuneSettings`:
-  [NeptuneSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#neptunesettingstypedef)
+  [NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef)
 - `RedshiftSettings`:
-  [RedshiftSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#redshiftsettingstypedef)
+  [RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef)
 - `PostgreSQLSettings`:
-  [PostgreSQLSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#postgresqlsettingstypedef)
-- `MySQLSettings`:
-  [MySQLSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#mysqlsettingstypedef)
-- `OracleSettings`:
-  [OracleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#oraclesettingstypedef)
-- `SybaseSettings`:
-  [SybaseSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#sybasesettingstypedef)
+  [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
+- `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
+- `OracleSettings`: [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
+- `SybaseSettings`: [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
 - `MicrosoftSQLServerSettings`:
-  [MicrosoftSQLServerSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#microsoftsqlserversettingstypedef)
-- `IBMDb2Settings`:
-  [IBMDb2SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#ibmdb2settingstypedef)
-- `DocDbSettings`:
-  [DocDbSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#docdbsettingstypedef)
+  [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
+- `IBMDb2Settings`: [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
+- `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
 
 ## EventCategoryGroupTypeDef
 
@@ -756,7 +739,8 @@ from mypy_boto3_dms.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceIdentifier`: `str`
-- `SourceType`: `Literal['replication-instance']`
+- `SourceType`: `Literal['replication-instance']` (see
+  [SourceType](./literals.md#sourcetype))
 - `Message`: `str`
 - `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
@@ -799,8 +783,7 @@ from mypy_boto3_dms.type_defs import ImportCertificateResponseTypeDef
 
 Optional fields:
 
-- `Certificate`:
-  [CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#certificatetypedef)
+- `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
 
 ## KafkaSettingsTypeDef
 
@@ -812,8 +795,7 @@ Optional fields:
 
 - `Broker`: `str`
 - `Topic`: `str`
-- `MessageFormat`:
-  [MessageFormatValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#messageformatvalue)
+- `MessageFormat`: [MessageFormatValue](./literals.md#messageformatvalue)
 - `IncludeTransactionDetails`: `bool`
 - `IncludePartitionValue`: `bool`
 - `PartitionIncludeSchemaTable`: `bool`
@@ -822,7 +804,7 @@ Optional fields:
 - `MessageMaxBytes`: `int`
 - `IncludeNullAndEmpty`: `bool`
 - `SecurityProtocol`:
-  [KafkaSecurityProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#kafkasecurityprotocol)
+  [KafkaSecurityProtocol](./literals.md#kafkasecurityprotocol)
 - `SslClientCertificateArn`: `str`
 - `SslClientKeyArn`: `str`
 - `SslClientKeyPassword`: `str`
@@ -839,8 +821,7 @@ from mypy_boto3_dms.type_defs import KinesisSettingsTypeDef
 Optional fields:
 
 - `StreamArn`: `str`
-- `MessageFormat`:
-  [MessageFormatValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#messageformatvalue)
+- `MessageFormat`: [MessageFormatValue](./literals.md#messageformatvalue)
 - `ServiceAccessRoleArn`: `str`
 - `IncludeTransactionDetails`: `bool`
 - `IncludePartitionValue`: `bool`
@@ -857,8 +838,7 @@ from mypy_boto3_dms.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## MicrosoftSQLServerSettingsTypeDef
 
@@ -875,8 +855,7 @@ Optional fields:
 - `Password`: `str`
 - `QuerySingleAlwaysOnNode`: `bool`
 - `ReadBackupOnly`: `bool`
-- `SafeguardPolicy`:
-  [SafeguardPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#safeguardpolicy)
+- `SafeguardPolicy`: [SafeguardPolicy](./literals.md#safeguardpolicy)
 - `ServerName`: `str`
 - `Username`: `str`
 - `UseBcpFullLoad`: `bool`
@@ -892,8 +871,7 @@ from mypy_boto3_dms.type_defs import ModifyEndpointResponseTypeDef
 
 Optional fields:
 
-- `Endpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#endpointtypedef)
+- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 
 ## ModifyEventSubscriptionResponseTypeDef
 
@@ -904,7 +882,7 @@ from mypy_boto3_dms.type_defs import ModifyEventSubscriptionResponseTypeDef
 Optional fields:
 
 - `EventSubscription`:
-  [EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#eventsubscriptiontypedef)
+  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 
 ## ModifyReplicationInstanceResponseTypeDef
 
@@ -915,7 +893,7 @@ from mypy_boto3_dms.type_defs import ModifyReplicationInstanceResponseTypeDef
 Optional fields:
 
 - `ReplicationInstance`:
-  [ReplicationInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationinstancetypedef)
+  [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 
 ## ModifyReplicationSubnetGroupResponseTypeDef
 
@@ -926,7 +904,7 @@ from mypy_boto3_dms.type_defs import ModifyReplicationSubnetGroupResponseTypeDef
 Optional fields:
 
 - `ReplicationSubnetGroup`:
-  [ReplicationSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationsubnetgrouptypedef)
+  [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
 
 ## ModifyReplicationTaskResponseTypeDef
 
@@ -937,7 +915,7 @@ from mypy_boto3_dms.type_defs import ModifyReplicationTaskResponseTypeDef
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## MongoDbSettingsTypeDef
 
@@ -952,12 +930,9 @@ Optional fields:
 - `ServerName`: `str`
 - `Port`: `int`
 - `DatabaseName`: `str`
-- `AuthType`:
-  [AuthTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#authtypevalue)
-- `AuthMechanism`:
-  [AuthMechanismValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#authmechanismvalue)
-- `NestingLevel`:
-  [NestingLevelValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#nestinglevelvalue)
+- `AuthType`: [AuthTypeValue](./literals.md#authtypevalue)
+- `AuthMechanism`: [AuthMechanismValue](./literals.md#authmechanismvalue)
+- `NestingLevel`: [NestingLevelValue](./literals.md#nestinglevelvalue)
 - `ExtractDocId`: `str`
 - `DocsToInvestigate`: `str`
 - `AuthSource`: `str`
@@ -974,7 +949,7 @@ from mypy_boto3_dms.type_defs import MoveReplicationTaskResponseTypeDef
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## MySQLSettingsTypeDef
 
@@ -988,8 +963,7 @@ Optional fields:
 - `CleanSourceMetadataOnMismatch`: `bool`
 - `DatabaseName`: `str`
 - `EventsPollInterval`: `int`
-- `TargetDbType`:
-  [TargetDbType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#targetdbtype)
+- `TargetDbType`: [TargetDbType](./literals.md#targetdbtype)
 - `MaxFileSize`: `int`
 - `ParallelLoadThreads`: `int`
 - `Password`: `str`
@@ -1044,8 +1018,7 @@ Optional fields:
 - `AsmPassword`: `str`
 - `AsmServer`: `str`
 - `AsmUser`: `str`
-- `CharLengthSemantics`:
-  [CharLengthSemantics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#charlengthsemantics)
+- `CharLengthSemantics`: [CharLengthSemantics](./literals.md#charlengthsemantics)
 - `DatabaseName`: `str`
 - `DirectPathParallelLoad`: `bool`
 - `FailTasksOnLobTruncation`: `bool`
@@ -1080,7 +1053,8 @@ Optional fields:
 - `DefaultAllocatedStorage`: `int`
 - `IncludedAllocatedStorage`: `int`
 - `AvailabilityZones`: `List`\[`str`\]
-- `ReleaseStatus`: `Literal['beta']`
+- `ReleaseStatus`: `Literal['beta']` (see
+  [ReleaseStatusValues](./literals.md#releasestatusvalues))
 
 ## PaginatorConfigTypeDef
 
@@ -1141,7 +1115,7 @@ from mypy_boto3_dms.type_defs import RebootReplicationInstanceResponseTypeDef
 Optional fields:
 
 - `ReplicationInstance`:
-  [ReplicationInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationinstancetypedef)
+  [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 
 ## RedshiftSettingsTypeDef
 
@@ -1161,8 +1135,7 @@ Optional fields:
 - `DatabaseName`: `str`
 - `DateFormat`: `str`
 - `EmptyAsNull`: `bool`
-- `EncryptionMode`:
-  [EncryptionModeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#encryptionmodevalue)
+- `EncryptionMode`: [EncryptionModeValue](./literals.md#encryptionmodevalue)
 - `ExplicitIds`: `bool`
 - `FileTransferUploadStreams`: `int`
 - `LoadTimeout`: `int`
@@ -1192,7 +1165,7 @@ from mypy_boto3_dms.type_defs import RefreshSchemasResponseTypeDef
 Optional fields:
 
 - `RefreshSchemasStatus`:
-  [RefreshSchemasStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#refreshschemasstatustypedef)
+  [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
 
 ## RefreshSchemasStatusTypeDef
 
@@ -1205,7 +1178,7 @@ Optional fields:
 - `EndpointArn`: `str`
 - `ReplicationInstanceArn`: `str`
 - `Status`:
-  [RefreshSchemasStatusTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#refreshschemasstatustypevalue)
+  [RefreshSchemasStatusTypeValue](./literals.md#refreshschemasstatustypevalue)
 - `LastRefreshDate`: `datetime`
 - `LastFailureMessage`: `str`
 
@@ -1245,13 +1218,13 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `InstanceCreateTime`: `datetime`
 - `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#vpcsecuritygroupmembershiptypedef)\]
+  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
 - `AvailabilityZone`: `str`
 - `ReplicationSubnetGroup`:
-  [ReplicationSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationsubnetgrouptypedef)
+  [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
 - `PreferredMaintenanceWindow`: `str`
 - `PendingModifiedValues`:
-  [ReplicationPendingModifiedValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationpendingmodifiedvaluestypedef)
+  [ReplicationPendingModifiedValuesTypeDef](./type_defs.md#replicationpendingmodifiedvaluestypedef)
 - `MultiAZ`: `bool`
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
@@ -1291,8 +1264,7 @@ Optional fields:
 - `ReplicationSubnetGroupDescription`: `str`
 - `VpcId`: `str`
 - `SubnetGroupStatus`: `str`
-- `Subnets`:
-  `List`\[[SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#subnettypedef)\]
+- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 
 ## ReplicationTaskAssessmentResultTypeDef
 
@@ -1334,7 +1306,7 @@ Optional fields:
 - `Status`: `str`
 - `ReplicationTaskAssessmentRunCreationDate`: `datetime`
 - `AssessmentProgress`:
-  [ReplicationTaskAssessmentRunProgressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskassessmentrunprogresstypedef)
+  [ReplicationTaskAssessmentRunProgressTypeDef](./type_defs.md#replicationtaskassessmentrunprogresstypedef)
 - `LastFailureMessage`: `str`
 - `ServiceAccessRoleArn`: `str`
 - `ResultLocationBucket`: `str`
@@ -1389,8 +1361,7 @@ Optional fields:
 - `SourceEndpointArn`: `str`
 - `TargetEndpointArn`: `str`
 - `ReplicationInstanceArn`: `str`
-- `MigrationType`:
-  [MigrationTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#migrationtypevalue)
+- `MigrationType`: [MigrationTypeValue](./literals.md#migrationtypevalue)
 - `TableMappings`: `str`
 - `ReplicationTaskSettings`: `str`
 - `Status`: `str`
@@ -1403,7 +1374,7 @@ Optional fields:
 - `RecoveryCheckpoint`: `str`
 - `ReplicationTaskArn`: `str`
 - `ReplicationTaskStats`:
-  [ReplicationTaskStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskstatstypedef)
+  [ReplicationTaskStatsTypeDef](./type_defs.md#replicationtaskstatstypedef)
 - `TaskData`: `str`
 - `TargetReplicationInstanceArn`: `str`
 
@@ -1417,7 +1388,7 @@ Optional fields:
 
 - `ResourceIdentifier`: `str`
 - `PendingMaintenanceActionDetails`:
-  `List`\[[PendingMaintenanceActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#pendingmaintenanceactiontypedef)\]
+  `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
 
 ## S3SettingsTypeDef
 
@@ -1433,20 +1404,15 @@ Optional fields:
 - `CsvDelimiter`: `str`
 - `BucketFolder`: `str`
 - `BucketName`: `str`
-- `CompressionType`:
-  [CompressionTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#compressiontypevalue)
-- `EncryptionMode`:
-  [EncryptionModeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#encryptionmodevalue)
+- `CompressionType`: [CompressionTypeValue](./literals.md#compressiontypevalue)
+- `EncryptionMode`: [EncryptionModeValue](./literals.md#encryptionmodevalue)
 - `ServerSideEncryptionKmsKeyId`: `str`
-- `DataFormat`:
-  [DataFormatValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#dataformatvalue)
-- `EncodingType`:
-  [EncodingTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#encodingtypevalue)
+- `DataFormat`: [DataFormatValue](./literals.md#dataformatvalue)
+- `EncodingType`: [EncodingTypeValue](./literals.md#encodingtypevalue)
 - `DictPageSizeLimit`: `int`
 - `RowGroupLength`: `int`
 - `DataPageSize`: `int`
-- `ParquetVersion`:
-  [ParquetVersionValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#parquetversionvalue)
+- `ParquetVersion`: [ParquetVersionValue](./literals.md#parquetversionvalue)
 - `EnableStatistics`: `bool`
 - `IncludeOpForFullLoad`: `bool`
 - `CdcInsertsOnly`: `bool`
@@ -1455,9 +1421,9 @@ Optional fields:
 - `CdcInsertsAndUpdates`: `bool`
 - `DatePartitionEnabled`: `bool`
 - `DatePartitionSequence`:
-  [DatePartitionSequenceValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#datepartitionsequencevalue)
+  [DatePartitionSequenceValue](./literals.md#datepartitionsequencevalue)
 - `DatePartitionDelimiter`:
-  [DatePartitionDelimiterValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#datepartitiondelimitervalue)
+  [DatePartitionDelimiterValue](./literals.md#datepartitiondelimitervalue)
 - `UseCsvNoSupValue`: `bool`
 - `CsvNoSupValue`: `str`
 - `PreserveTransactions`: `bool`
@@ -1472,7 +1438,7 @@ from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentResponseTypeD
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## StartReplicationTaskAssessmentRunResponseTypeDef
 
@@ -1483,7 +1449,7 @@ from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentRunResponseTy
 Optional fields:
 
 - `ReplicationTaskAssessmentRun`:
-  [ReplicationTaskAssessmentRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtaskassessmentruntypedef)
+  [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
 
 ## StartReplicationTaskResponseTypeDef
 
@@ -1494,7 +1460,7 @@ from mypy_boto3_dms.type_defs import StartReplicationTaskResponseTypeDef
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## StopReplicationTaskResponseTypeDef
 
@@ -1505,7 +1471,7 @@ from mypy_boto3_dms.type_defs import StopReplicationTaskResponseTypeDef
 Optional fields:
 
 - `ReplicationTask`:
-  [ReplicationTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#replicationtasktypedef)
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 
 ## SubnetTypeDef
 
@@ -1517,7 +1483,7 @@ Optional fields:
 
 - `SubnetIdentifier`: `str`
 - `SubnetAvailabilityZone`:
-  [AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#availabilityzonetypedef)
+  [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - `SubnetStatus`: `str`
 
 ## SupportedEndpointTypeTypeDef
@@ -1531,7 +1497,7 @@ Optional fields:
 - `EngineName`: `str`
 - `SupportsCDC`: `bool`
 - `EndpointType`:
-  [ReplicationEndpointTypeValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/literals.html#replicationendpointtypevalue)
+  [ReplicationEndpointTypeValue](./literals.md#replicationendpointtypevalue)
 - `ReplicationInstanceEngineMinimumVersion`: `str`
 - `EngineDisplayName`: `str`
 
@@ -1609,8 +1575,7 @@ from mypy_boto3_dms.type_defs import TestConnectionResponseTypeDef
 
 Optional fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dms/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 
 ## VpcSecurityGroupMembershipTypeDef
 

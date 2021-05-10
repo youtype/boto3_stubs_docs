@@ -1,6 +1,6 @@
 # Type annotations for boto3 LookoutEquipment module
 
-> [Index](../README.md) > LookoutEquipment
+> [Index](..) > LookoutEquipment
 
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)

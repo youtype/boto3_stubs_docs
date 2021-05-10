@@ -1,6 +1,6 @@
 # Literals for boto3 GlueDataBrew module
 
-> [Index](../README.md) > [GlueDataBrew](./README.md) > Literals
+> [Index](..) > [GlueDataBrew](.) > Literals
 
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)

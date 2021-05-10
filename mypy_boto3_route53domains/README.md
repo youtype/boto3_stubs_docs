@@ -1,6 +1,6 @@
 # Type annotations for boto3 Route53Domains module
 
-> [Index](../README.md) > Route53Domains
+> [Index](..) > Route53Domains
 
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)

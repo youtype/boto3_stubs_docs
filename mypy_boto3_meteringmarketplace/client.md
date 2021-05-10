@@ -1,7 +1,6 @@
 # MarketplaceMeteringClient for boto3 MarketplaceMetering module
 
-> [Index](../README.md) > [MarketplaceMetering](./README.md) >
-> MarketplaceMeteringClient
+> [Index](..) > [MarketplaceMetering](.) > MarketplaceMeteringClient
 
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
@@ -81,12 +80,11 @@ Boto3 documentation:
 Arguments:
 
 - `UsageRecords`:
-  `List`\[[UsageRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usagerecordtypedef)\]
-  *(required)*
+  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\] *(required)*
 - `ProductCode`: `str` *(required)*
 
 Returns
-[BatchMeterUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#batchmeterusageresulttypedef).
+[BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef).
 
 ### can_paginate
 
@@ -133,10 +131,9 @@ Arguments:
 - `UsageQuantity`: `int`
 - `DryRun`: `bool`
 - `UsageAllocations`:
-  `List`\[[UsageAllocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usageallocationtypedef)\]
+  `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
-Returns
-[MeterUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#meterusageresulttypedef).
+Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
 
 ### register_usage
 
@@ -153,7 +150,7 @@ Arguments:
 - `Nonce`: `str`
 
 Returns
-[RegisterUsageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#registerusageresulttypedef).
+[RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef).
 
 ### resolve_customer
 
@@ -168,4 +165,4 @@ Arguments:
 - `RegistrationToken`: `str` *(required)*
 
 Returns
-[ResolveCustomerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#resolvecustomerresulttypedef).
+[ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef).

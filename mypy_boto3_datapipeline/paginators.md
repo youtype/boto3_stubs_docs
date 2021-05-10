@@ -1,6 +1,6 @@
 # Paginators for boto3 DataPipeline module
 
-> [Index](../README.md) > [DataPipeline](./README.md) > Paginators
+> [Index](..) > [DataPipeline](.) > Paginators
 
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
@@ -35,10 +35,10 @@ Arguments for `DescribeObjectsPaginator.paginate` method:
 - `objectIds`: `List`\[`str`\] *(required)*
 - `evaluateExpressions`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeObjectsPaginator.paginate` returns
-`Iterator`\[[DescribeObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#describeobjectsoutputtypedef)\].
+`Iterator`\[[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -60,10 +60,10 @@ Boto3 documentation:
 Arguments for `ListPipelinesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#listpipelinesoutputtypedef)\].
+`Iterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
 
 ## QueryObjectsPaginator
 
@@ -86,10 +86,9 @@ Arguments for `QueryObjectsPaginator.paginate` method:
 
 - `pipelineId`: `str` *(required)*
 - `sphere`: `str` *(required)*
-- `query`:
-  [QueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#querytypedef)
+- `query`: [QueryTypeDef](./type_defs.md#querytypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryObjectsPaginator.paginate` returns
-`Iterator`\[[QueryObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#queryobjectsoutputtypedef)\].
+`Iterator`\[[QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef)\].

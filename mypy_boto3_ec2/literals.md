@@ -1,6 +1,6 @@
 # Literals for boto3 EC2 module
 
-> [Index](../README.md) > [EC2](./README.md) > Literals
+> [Index](..) > [EC2](.) > Literals
 
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)

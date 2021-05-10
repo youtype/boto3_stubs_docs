@@ -1,6 +1,6 @@
 # Type annotations for boto3 SagemakerFeatureStoreRuntime module
 
-> [Index](../README.md) > SagemakerFeatureStoreRuntime
+> [Index](..) > SagemakerFeatureStoreRuntime
 
 Auto-generated documentation for
 [SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)

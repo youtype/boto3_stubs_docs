@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticBeanstalk module
 
-> [Index](../README.md) > [ElasticBeanstalk](./README.md) > Literals
+> [Index](..) > [ElasticBeanstalk](.) > Literals
 
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)

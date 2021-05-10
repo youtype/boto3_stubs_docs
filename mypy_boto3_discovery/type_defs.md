@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ApplicationDiscoveryService module
 
-> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) > Structures
+> [Index](..) > [ApplicationDiscoveryService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
@@ -69,11 +69,10 @@ Optional fields:
 - `agentId`: `str`
 - `hostName`: `str`
 - `agentNetworkInfoList`:
-  `List`\[[AgentNetworkInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#agentnetworkinfotypedef)\]
+  `List`\[[AgentNetworkInfoTypeDef](./type_defs.md#agentnetworkinfotypedef)\]
 - `connectorId`: `str`
 - `version`: `str`
-- `health`:
-  [AgentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#agentstatus)
+- `health`: [AgentStatus](./literals.md#agentstatus)
 - `lastHealthPingTime`: `str`
 - `collectionStatus`: `str`
 - `agentType`: `str`
@@ -100,7 +99,7 @@ Optional fields:
 
 - `importTaskId`: `str`
 - `errorCode`:
-  [BatchDeleteImportDataErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#batchdeleteimportdataerrorcode)
+  [BatchDeleteImportDataErrorCode](./literals.md#batchdeleteimportdataerrorcode)
 - `errorDescription`: `str`
 
 ## BatchDeleteImportDataResponseTypeDef
@@ -112,7 +111,7 @@ from mypy_boto3_discovery.type_defs import BatchDeleteImportDataResponseTypeDef
 Optional fields:
 
 - `errors`:
-  `List`\[[BatchDeleteImportDataErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#batchdeleteimportdataerrortypedef)\]
+  `List`\[[BatchDeleteImportDataErrorTypeDef](./type_defs.md#batchdeleteimportdataerrortypedef)\]
 
 ## ConfigurationTagTypeDef
 
@@ -123,7 +122,7 @@ from mypy_boto3_discovery.type_defs import ConfigurationTagTypeDef
 Optional fields:
 
 - `configurationType`:
-  [ConfigurationItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#configurationitemtype)
+  [ConfigurationItemType](./literals.md#configurationitemtype)
 - `configurationId`: `str`
 - `key`: `str`
 - `value`: `str`
@@ -138,13 +137,12 @@ from mypy_boto3_discovery.type_defs import ContinuousExportDescriptionTypeDef
 Optional fields:
 
 - `exportId`: `str`
-- `status`:
-  [ContinuousExportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#continuousexportstatus)
+- `status`: [ContinuousExportStatus](./literals.md#continuousexportstatus)
 - `statusDetail`: `str`
 - `s3Bucket`: `str`
 - `startTime`: `datetime`
 - `stopTime`: `datetime`
-- `dataSource`: `Literal['AGENT']`
+- `dataSource`: `Literal['AGENT']` (see [DataSource](./literals.md#datasource))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
 
 ## CreateApplicationResponseTypeDef
@@ -197,8 +195,7 @@ from mypy_boto3_discovery.type_defs import DescribeAgentsResponseTypeDef
 
 Optional fields:
 
-- `agentsInfo`:
-  `List`\[[AgentInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#agentinfotypedef)\]
+- `agentsInfo`: `List`\[[AgentInfoTypeDef](./type_defs.md#agentinfotypedef)\]
 - `nextToken`: `str`
 
 ## DescribeConfigurationsResponseTypeDef
@@ -220,7 +217,7 @@ from mypy_boto3_discovery.type_defs import DescribeContinuousExportsResponseType
 Optional fields:
 
 - `descriptions`:
-  `List`\[[ContinuousExportDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#continuousexportdescriptiontypedef)\]
+  `List`\[[ContinuousExportDescriptionTypeDef](./type_defs.md#continuousexportdescriptiontypedef)\]
 - `nextToken`: `str`
 
 ## DescribeExportConfigurationsResponseTypeDef
@@ -231,8 +228,7 @@ from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsResponseT
 
 Optional fields:
 
-- `exportsInfo`:
-  `List`\[[ExportInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#exportinfotypedef)\]
+- `exportsInfo`: `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
 - `nextToken`: `str`
 
 ## DescribeExportTasksResponseTypeDef
@@ -243,8 +239,7 @@ from mypy_boto3_discovery.type_defs import DescribeExportTasksResponseTypeDef
 
 Optional fields:
 
-- `exportsInfo`:
-  `List`\[[ExportInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#exportinfotypedef)\]
+- `exportsInfo`: `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
 - `nextToken`: `str`
 
 ## DescribeImportTasksResponseTypeDef
@@ -256,8 +251,7 @@ from mypy_boto3_discovery.type_defs import DescribeImportTasksResponseTypeDef
 Optional fields:
 
 - `nextToken`: `str`
-- `tasks`:
-  `List`\[[ImportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#importtasktypedef)\]
+- `tasks`: `List`\[[ImportTaskTypeDef](./type_defs.md#importtasktypedef)\]
 
 ## DescribeTagsResponseTypeDef
 
@@ -268,7 +262,7 @@ from mypy_boto3_discovery.type_defs import DescribeTagsResponseTypeDef
 Optional fields:
 
 - `tags`:
-  `List`\[[ConfigurationTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#configurationtagtypedef)\]
+  `List`\[[ConfigurationTagTypeDef](./type_defs.md#configurationtagtypedef)\]
 - `nextToken`: `str`
 
 ## ExportConfigurationsResponseTypeDef
@@ -302,8 +296,7 @@ from mypy_boto3_discovery.type_defs import ExportInfoTypeDef
 Required fields:
 
 - `exportId`: `str`
-- `exportStatus`:
-  [ExportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#exportstatus)
+- `exportStatus`: [ExportStatus](./literals.md#exportstatus)
 - `statusMessage`: `str`
 - `exportRequestTime`: `datetime`
 
@@ -339,9 +332,9 @@ Optional fields:
 - `serversMappedToApplications`: `int`
 - `serversMappedtoTags`: `int`
 - `agentSummary`:
-  [CustomerAgentInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#customeragentinfotypedef)
+  [CustomerAgentInfoTypeDef](./type_defs.md#customeragentinfotypedef)
 - `connectorSummary`:
-  [CustomerConnectorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#customerconnectorinfotypedef)
+  [CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef)
 
 ## ImportTaskFilterTypeDef
 
@@ -351,8 +344,7 @@ from mypy_boto3_discovery.type_defs import ImportTaskFilterTypeDef
 
 Optional fields:
 
-- `name`:
-  [ImportTaskFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#importtaskfiltername)
+- `name`: [ImportTaskFilterName](./literals.md#importtaskfiltername)
 - `values`: `List`\[`str`\]
 
 ## ImportTaskTypeDef
@@ -367,8 +359,7 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `name`: `str`
 - `importUrl`: `str`
-- `status`:
-  [ImportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#importstatus)
+- `status`: [ImportStatus](./literals.md#importstatus)
 - `importRequestTime`: `datetime`
 - `importCompletionTime`: `datetime`
 - `importDeletedTime`: `datetime`
@@ -398,7 +389,7 @@ from mypy_boto3_discovery.type_defs import ListServerNeighborsResponseTypeDef
 Required fields:
 
 - `neighbors`:
-  `List`\[[NeighborConnectionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#neighborconnectiondetailtypedef)\]
+  `List`\[[NeighborConnectionDetailTypeDef](./type_defs.md#neighborconnectiondetailtypedef)\]
 
 Optional fields:
 
@@ -434,8 +425,7 @@ Required fields:
 
 Optional fields:
 
-- `sortOrder`:
-  [orderString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#orderstring)
+- `sortOrder`: [orderString](./literals.md#orderstring)
 
 ## PaginatorConfigTypeDef
 
@@ -460,7 +450,7 @@ Optional fields:
 - `exportId`: `str`
 - `s3Bucket`: `str`
 - `startTime`: `datetime`
-- `dataSource`: `Literal['AGENT']`
+- `dataSource`: `Literal['AGENT']` (see [DataSource](./literals.md#datasource))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
 
 ## StartDataCollectionByAgentIdsResponseTypeDef
@@ -472,7 +462,7 @@ from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsResponse
 Optional fields:
 
 - `agentsConfigurationStatus`:
-  `List`\[[AgentConfigurationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#agentconfigurationstatustypedef)\]
+  `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
 
 ## StartExportTaskResponseTypeDef
 
@@ -492,8 +482,7 @@ from mypy_boto3_discovery.type_defs import StartImportTaskResponseTypeDef
 
 Optional fields:
 
-- `task`:
-  [ImportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#importtasktypedef)
+- `task`: [ImportTaskTypeDef](./type_defs.md#importtasktypedef)
 
 ## StopContinuousExportResponseTypeDef
 
@@ -515,7 +504,7 @@ from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsResponseT
 Optional fields:
 
 - `agentsConfigurationStatus`:
-  `List`\[[AgentConfigurationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#agentconfigurationstatustypedef)\]
+  `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
 
 ## TagFilterTypeDef
 

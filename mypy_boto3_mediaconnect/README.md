@@ -1,6 +1,6 @@
 # Type annotations for boto3 MediaConnect module
 
-> [Index](../README.md) > MediaConnect
+> [Index](..) > MediaConnect
 
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
@@ -183,7 +183,7 @@ from mypy_boto3_mediaconnect.type_defs import AddFlowOutputsResponseTypeDef, ...
 - [RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef)
 - [ReservationTypeDef](./type_defs.md#reservationtypedef)
 - [ResourceSpecificationTypeDef](./type_defs.md#resourcespecificationtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef)
 - [SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)
 - [SourceTypeDef](./type_defs.md#sourcetypedef)

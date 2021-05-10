@@ -1,6 +1,6 @@
 # CognitoIdentityClient for boto3 CognitoIdentity module
 
-> [Index](../README.md) > [CognitoIdentity](./README.md) > CognitoIdentityClient
+> [Index](..) > [CognitoIdentity](.) > CognitoIdentityClient
 
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
@@ -113,12 +113,11 @@ Arguments:
 - `DeveloperProviderName`: `str`
 - `OpenIdConnectProviderARNs`: `List`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#cognitoidentityprovidertypedef)\]
+  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
 - `SamlProviderARNs`: `List`\[`str`\]
 - `IdentityPoolTags`: `Dict`\[`str`, `str`\]
 
-Returns
-[IdentityPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypooltypedef).
+Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
 ### delete_identities
 
@@ -133,7 +132,7 @@ Arguments:
 - `IdentityIdsToDelete`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#deleteidentitiesresponsetypedef).
+[DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef).
 
 ### delete_identity_pool
 
@@ -160,7 +159,7 @@ Arguments:
 - `IdentityId`: `str` *(required)*
 
 Returns
-[IdentityDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitydescriptiontypedef).
+[IdentityDescriptionTypeDef](./type_defs.md#identitydescriptiontypedef).
 
 ### describe_identity_pool
 
@@ -174,8 +173,7 @@ Arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
-Returns
-[IdentityPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypooltypedef).
+Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
 ### generate_presigned_url
 
@@ -209,7 +207,7 @@ Arguments:
 - `CustomRoleArn`: `str`
 
 Returns
-[GetCredentialsForIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getcredentialsforidentityresponsetypedef).
+[GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef).
 
 ### get_id
 
@@ -224,8 +222,7 @@ Arguments:
 - `AccountId`: `str`
 - `Logins`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetIdResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getidresponsetypedef).
+Returns [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef).
 
 ### get_identity_pool_roles
 
@@ -240,7 +237,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetIdentityPoolRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getidentitypoolrolesresponsetypedef).
+[GetIdentityPoolRolesResponseTypeDef](./type_defs.md#getidentitypoolrolesresponsetypedef).
 
 ### get_open_id_token
 
@@ -256,7 +253,7 @@ Arguments:
 - `Logins`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetOpenIdTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getopenidtokenresponsetypedef).
+[GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef).
 
 ### get_open_id_token_for_developer_identity
 
@@ -276,7 +273,7 @@ Arguments:
 - `TokenDuration`: `int`
 
 Returns
-[GetOpenIdTokenForDeveloperIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getopenidtokenfordeveloperidentityresponsetypedef).
+[GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef).
 
 ### get_principal_tag_attribute_map
 
@@ -292,7 +289,7 @@ Arguments:
 - `IdentityProviderName`: `str` *(required)*
 
 Returns
-[GetPrincipalTagAttributeMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#getprincipaltagattributemapresponsetypedef).
+[GetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponsetypedef).
 
 ### list_identities
 
@@ -309,7 +306,7 @@ Arguments:
 - `HideDisabled`: `bool`
 
 Returns
-[ListIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#listidentitiesresponsetypedef).
+[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
 
 ### list_identity_pools
 
@@ -325,7 +322,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListIdentityPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#listidentitypoolsresponsetypedef).
+[ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -340,7 +337,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### lookup_developer_identity
 
@@ -359,7 +356,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[LookupDeveloperIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#lookupdeveloperidentityresponsetypedef).
+[LookupDeveloperIdentityResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponsetypedef).
 
 ### merge_developer_identities
 
@@ -377,7 +374,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[MergeDeveloperIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#mergedeveloperidentitiesresponsetypedef).
+[MergeDeveloperIdentitiesResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponsetypedef).
 
 ### set_identity_pool_roles
 
@@ -392,7 +389,7 @@ Arguments:
 - `IdentityPoolId`: `str` *(required)*
 - `Roles`: `Dict`\[`str`, `str`\] *(required)*
 - `RoleMappings`: `Dict`\[`str`,
-  [RoleMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#rolemappingtypedef)\]
+  [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 
 ### set_principal_tag_attribute_map
 
@@ -410,7 +407,7 @@ Arguments:
 - `PrincipalTags`: `Dict`\[`str`, `str`\]
 
 Returns
-[SetPrincipalTagAttributeMapResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#setprincipaltagattributemapresponsetypedef).
+[SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef).
 
 ### tag_resource
 
@@ -486,12 +483,11 @@ Arguments:
 - `DeveloperProviderName`: `str`
 - `OpenIdConnectProviderARNs`: `List`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#cognitoidentityprovidertypedef)\]
+  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
 - `SamlProviderARNs`: `List`\[`str`\]
 - `IdentityPoolTags`: `Dict`\[`str`, `str`\]
 
-Returns
-[IdentityPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypooltypedef).
+Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
 ### get_paginator
 

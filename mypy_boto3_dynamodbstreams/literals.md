@@ -1,6 +1,6 @@
 # Literals for boto3 DynamoDBStreams module
 
-> [Index](../README.md) > [DynamoDBStreams](./README.md) > Literals
+> [Index](..) > [DynamoDBStreams](.) > Literals
 
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)

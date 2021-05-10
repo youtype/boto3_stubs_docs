@@ -1,6 +1,6 @@
 # Literals for boto3 AugmentedAIRuntime module
 
-> [Index](../README.md) > [AugmentedAIRuntime](./README.md) > Literals
+> [Index](..) > [AugmentedAIRuntime](.) > Literals
 
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)

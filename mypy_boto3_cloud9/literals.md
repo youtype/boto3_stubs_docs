@@ -1,6 +1,6 @@
 # Literals for boto3 Cloud9 module
 
-> [Index](../README.md) > [Cloud9](./README.md) > Literals
+> [Index](..) > [Cloud9](.) > Literals
 
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)

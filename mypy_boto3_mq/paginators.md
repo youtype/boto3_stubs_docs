@@ -1,6 +1,6 @@
 # Paginators for boto3 MQ module
 
-> [Index](../README.md) > [MQ](./README.md) > Paginators
+> [Index](..) > [MQ](.) > Paginators
 
 Auto-generated documentation for
 [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
@@ -29,7 +29,7 @@ Boto3 documentation:
 Arguments for `ListBrokersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBrokersPaginator.paginate` returns
-`Iterator`\[[ListBrokersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mq/type_defs.html#listbrokersresponsetypedef)\].
+`Iterator`\[[ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef)\].

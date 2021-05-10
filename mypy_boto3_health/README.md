@@ -1,6 +1,6 @@
 # Type annotations for boto3 Health module
 
-> [Index](../README.md) > Health
+> [Index](..) > Health
 
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)

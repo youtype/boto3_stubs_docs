@@ -1,6 +1,6 @@
 # Literals for boto3 Amplify module
 
-> [Index](../README.md) > [Amplify](./README.md) > Literals
+> [Index](..) > [Amplify](.) > Literals
 
 Auto-generated documentation for
 [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)

@@ -1,6 +1,6 @@
 # Waiters for boto3 MediaLive module
 
-> [Index](../README.md) > [MediaLive](./README.md) > Waiters
+> [Index](..) > [MediaLive](.) > Waiters
 
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
@@ -39,8 +39,7 @@ Boto3 documentation:
 Arguments for `ChannelCreatedWaiter.wait` method:
 
 - `ChannelId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ChannelDeletedWaiter
 
@@ -61,8 +60,7 @@ Boto3 documentation:
 Arguments for `ChannelDeletedWaiter.wait` method:
 
 - `ChannelId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ChannelRunningWaiter
 
@@ -83,8 +81,7 @@ Boto3 documentation:
 Arguments for `ChannelRunningWaiter.wait` method:
 
 - `ChannelId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ChannelStoppedWaiter
 
@@ -105,8 +102,7 @@ Boto3 documentation:
 Arguments for `ChannelStoppedWaiter.wait` method:
 
 - `ChannelId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InputAttachedWaiter
 
@@ -127,8 +123,7 @@ Boto3 documentation:
 Arguments for `InputAttachedWaiter.wait` method:
 
 - `InputId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InputDeletedWaiter
 
@@ -149,8 +144,7 @@ Boto3 documentation:
 Arguments for `InputDeletedWaiter.wait` method:
 
 - `InputId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InputDetachedWaiter
 
@@ -171,8 +165,7 @@ Boto3 documentation:
 Arguments for `InputDetachedWaiter.wait` method:
 
 - `InputId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## MultiplexCreatedWaiter
 
@@ -194,8 +187,7 @@ Boto3 documentation:
 Arguments for `MultiplexCreatedWaiter.wait` method:
 
 - `MultiplexId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## MultiplexDeletedWaiter
 
@@ -217,8 +209,7 @@ Boto3 documentation:
 Arguments for `MultiplexDeletedWaiter.wait` method:
 
 - `MultiplexId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## MultiplexRunningWaiter
 
@@ -240,8 +231,7 @@ Boto3 documentation:
 Arguments for `MultiplexRunningWaiter.wait` method:
 
 - `MultiplexId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## MultiplexStoppedWaiter
 
@@ -263,5 +253,4 @@ Boto3 documentation:
 Arguments for `MultiplexStoppedWaiter.wait` method:
 
 - `MultiplexId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

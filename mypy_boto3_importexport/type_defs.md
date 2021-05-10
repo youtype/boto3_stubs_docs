@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ImportExport module
 
-> [Index](../README.md) > [ImportExport](./README.md) > Structures
+> [Index](..) > [ImportExport](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
@@ -16,7 +16,7 @@ type annotations stubs module
   - [JobTypeDef](#jobtypedef)
   - [ListJobsOutputTypeDef](#listjobsoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [UpdateJobOutputTypeDef](#updatejoboutputtypedef)
 
 ## ArtifactTypeDef
@@ -40,7 +40,7 @@ Required fields:
 
 - `Success`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateJobOutputTypeDef
 
@@ -51,15 +51,13 @@ from mypy_boto3_importexport.type_defs import CreateJobOutputTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
+- `JobType`: [JobType](./literals.md#jobtype)
 - `Signature`: `str`
 - `SignatureFileContents`: `str`
 - `WarningMessage`: `str`
-- `ArtifactList`:
-  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#artifacttypedef)\]
+- `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetShippingLabelOutputTypeDef
 
@@ -72,7 +70,7 @@ Required fields:
 - `ShippingLabelURL`: `str`
 - `Warning`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetStatusOutputTypeDef
 
@@ -83,8 +81,7 @@ from mypy_boto3_importexport.type_defs import GetStatusOutputTypeDef
 Required fields:
 
 - `JobId`: `str`
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
+- `JobType`: [JobType](./literals.md#jobtype)
 - `LocationCode`: `str`
 - `LocationMessage`: `str`
 - `ProgressCode`: `str`
@@ -98,10 +95,9 @@ Required fields:
 - `SignatureFileContents`: `str`
 - `CurrentManifest`: `str`
 - `CreationDate`: `datetime`
-- `ArtifactList`:
-  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#artifacttypedef)\]
+- `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## JobTypeDef
 
@@ -114,8 +110,7 @@ Optional fields:
 - `JobId`: `str`
 - `CreationDate`: `datetime`
 - `IsCanceled`: `bool`
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
+- `JobType`: [JobType](./literals.md#jobtype)
 
 ## ListJobsOutputTypeDef
 
@@ -125,11 +120,10 @@ from mypy_boto3_importexport.type_defs import ListJobsOutputTypeDef
 
 Required fields:
 
-- `Jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#jobtypedef)\]
+- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `IsTruncated`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -143,10 +137,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_importexport.type_defs import ResponseMetadata
+from mypy_boto3_importexport.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -167,7 +161,6 @@ Required fields:
 
 - `Success`: `bool`
 - `WarningMessage`: `str`
-- `ArtifactList`:
-  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#artifacttypedef)\]
+- `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

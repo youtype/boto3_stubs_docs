@@ -1,7 +1,6 @@
 # IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module
 
-> [Index](../README.md) > [IoTDeviceAdvisor](./README.md) >
-> IoTDeviceAdvisorClient
+> [Index](..) > [IoTDeviceAdvisor](.) > IoTDeviceAdvisorClient
 
 Auto-generated documentation for
 [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
@@ -90,11 +89,11 @@ Boto3 documentation:
 Arguments:
 
 - `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suitedefinitionconfigurationtypedef)
+  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSuiteDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#createsuitedefinitionresponsetypedef).
+[CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef).
 
 ### delete_suite_definition
 
@@ -141,7 +140,7 @@ Arguments:
 - `suiteDefinitionVersion`: `str`
 
 Returns
-[GetSuiteDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#getsuitedefinitionresponsetypedef).
+[GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef).
 
 ### get_suite_run
 
@@ -156,7 +155,7 @@ Arguments:
 - `suiteRunId`: `str` *(required)*
 
 Returns
-[GetSuiteRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#getsuiterunresponsetypedef).
+[GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef).
 
 ### get_suite_run_report
 
@@ -172,7 +171,7 @@ Arguments:
 - `suiteRunId`: `str` *(required)*
 
 Returns
-[GetSuiteRunReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#getsuiterunreportresponsetypedef).
+[GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef).
 
 ### list_suite_definitions
 
@@ -188,7 +187,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSuiteDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listsuitedefinitionsresponsetypedef).
+[ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef).
 
 ### list_suite_runs
 
@@ -205,7 +204,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSuiteRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listsuiterunsresponsetypedef).
+[ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -220,7 +219,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_test_cases
 
@@ -236,7 +235,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTestCasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#listtestcasesresponsetypedef).
+[ListTestCasesResponseTypeDef](./type_defs.md#listtestcasesresponsetypedef).
 
 ### start_suite_run
 
@@ -250,11 +249,11 @@ Arguments:
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteDefinitionVersion`: `str`
 - `suiteRunConfiguration`:
-  [SuiteRunConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suiterunconfigurationtypedef)
+  [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSuiteRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#startsuiterunresponsetypedef).
+[StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef).
 
 ### tag_resource
 
@@ -296,7 +295,7 @@ Arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#suitedefinitionconfigurationtypedef)
+  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
 
 Returns
-[UpdateSuiteDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotdeviceadvisor/type_defs.html#updatesuitedefinitionresponsetypedef).
+[UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef).

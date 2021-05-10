@@ -1,6 +1,6 @@
 # CloudWatchServiceResource for boto3 CloudWatch module
 
-> [Index](../README.md) > [CloudWatch](./README.md) > CloudWatchServiceResource
+> [Index](..) > [CloudWatch](.) > CloudWatchServiceResource
 
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
@@ -192,19 +192,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `AlarmTypes`:
-  `List`\[[AlarmType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#alarmtype)\]
-- `HistoryItemType`:
-  [HistoryItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#historyitemtype)
+- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
+- `HistoryItemType`: [HistoryItemType](./literals.md#historyitemtype)
 - `StartDate`: `datetime`
 - `EndDate`: `datetime`
 - `MaxRecords`: `int`
 - `NextToken`: `str`
-- `ScanBy`:
-  [ScanBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#scanby)
+- `ScanBy`: [ScanBy](./literals.md#scanby)
 
 Returns
-[DescribeAlarmHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#describealarmhistoryoutputtypedef).
+[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
 
 #### Alarm.disable_actions method
 
@@ -253,9 +250,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `StateValue`:
-  [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
-  *(required)*
+- `StateValue`: [StateValue](./literals.md#statevalue) *(required)*
 - `StateReason`: `str` *(required)*
 - `StateReasonData`: `str`
 
@@ -329,16 +324,13 @@ Arguments:
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
 - `Period`: `int` *(required)*
-- `Dimensions`:
-  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensiontypedef)\]
-- `Statistics`:
-  `List`\[[Statistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statistic)\]
+- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Statistics`: `List`\[[Statistic](./literals.md#statistic)\]
 - `ExtendedStatistics`: `List`\[`str`\]
-- `Unit`:
-  [StandardUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#standardunit)
+- `Unit`: [StandardUnit](./literals.md#standardunit)
 
 Returns
-[GetMetricStatisticsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#getmetricstatisticsoutputtypedef).
+[GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
 
 #### Metric.load method
 
@@ -358,30 +350,25 @@ Arguments:
 
 - `AlarmName`: `str` *(required)*
 - `EvaluationPeriods`: `int` *(required)*
-- `ComparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#comparisonoperator)
+- `ComparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
   *(required)*
 - `AlarmDescription`: `str`
 - `ActionsEnabled`: `bool`
 - `OKActions`: `List`\[`str`\]
 - `AlarmActions`: `List`\[`str`\]
 - `InsufficientDataActions`: `List`\[`str`\]
-- `Statistic`:
-  [Statistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statistic)
+- `Statistic`: [Statistic](./literals.md#statistic)
 - `ExtendedStatistic`: `str`
-- `Dimensions`:
-  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensiontypedef)\]
+- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
-- `Unit`:
-  [StandardUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#standardunit)
+- `Unit`: [StandardUnit](./literals.md#standardunit)
 - `DatapointsToAlarm`: `int`
 - `Threshold`: `float`
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
 - `Metrics`:
-  `List`\[[MetricDataQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricdataquerytypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#tagtypedef)\]
+  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
 Returns [Alarm](#alarm).

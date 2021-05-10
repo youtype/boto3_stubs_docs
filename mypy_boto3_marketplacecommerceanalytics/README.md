@@ -1,6 +1,6 @@
 # Type annotations for boto3 MarketplaceCommerceAnalytics module
 
-> [Index](../README.md) > MarketplaceCommerceAnalytics
+> [Index](..) > MarketplaceCommerceAnalytics
 
 Auto-generated documentation for
 [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)

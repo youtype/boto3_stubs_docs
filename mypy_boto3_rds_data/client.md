@@ -1,6 +1,6 @@
 # RDSDataServiceClient for boto3 RDSDataService module
 
-> [Index](../README.md) > [RDSDataService](./README.md) > RDSDataServiceClient
+> [Index](..) > [RDSDataService](.) > RDSDataServiceClient
 
 Auto-generated documentation for
 [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
@@ -74,12 +74,12 @@ Arguments:
 - `sql`: `str` *(required)*
 - `database`: `str`
 - `parameterSets`:
-  `List`\[`List`\[[SqlParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#sqlparametertypedef)\]\]
+  `List`\[`List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]\]
 - `schema`: `str`
 - `transactionId`: `str`
 
 Returns
-[BatchExecuteStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#batchexecutestatementresponsetypedef).
+[BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef).
 
 ### begin_transaction
 
@@ -96,7 +96,7 @@ Arguments:
 - `schema`: `str`
 
 Returns
-[BeginTransactionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#begintransactionresponsetypedef).
+[BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef).
 
 ### can_paginate
 
@@ -125,7 +125,7 @@ Arguments:
 - `transactionId`: `str` *(required)*
 
 Returns
-[CommitTransactionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#committransactionresponsetypedef).
+[CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
 
 ### execute_sql
 
@@ -142,8 +142,7 @@ Arguments:
 - `database`: `str`
 - `schema`: `str`
 
-Returns
-[ExecuteSqlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#executesqlresponsetypedef).
+Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
 
 ### execute_statement
 
@@ -161,14 +160,14 @@ Arguments:
 - `database`: `str`
 - `includeResultMetadata`: `bool`
 - `parameters`:
-  `List`\[[SqlParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#sqlparametertypedef)\]
+  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `resultSetOptions`:
-  [ResultSetOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#resultsetoptionstypedef)
+  [ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef)
 - `schema`: `str`
 - `transactionId`: `str`
 
 Returns
-[ExecuteStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#executestatementresponsetypedef).
+[ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef).
 
 ### generate_presigned_url
 
@@ -200,4 +199,4 @@ Arguments:
 - `transactionId`: `str` *(required)*
 
 Returns
-[RollbackTransactionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds_data/type_defs.html#rollbacktransactionresponsetypedef).
+[RollbackTransactionResponseTypeDef](./type_defs.md#rollbacktransactionresponsetypedef).

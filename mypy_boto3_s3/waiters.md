@@ -1,6 +1,6 @@
 # Waiters for boto3 S3 module
 
-> [Index](../README.md) > [S3](./README.md) > Waiters
+> [Index](..) > [S3](.) > Waiters
 
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
@@ -33,8 +33,7 @@ Arguments for `BucketExistsWaiter.wait` method:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## BucketNotExistsWaiter
 
@@ -56,8 +55,7 @@ Arguments for `BucketNotExistsWaiter.wait` method:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ObjectExistsWaiter
 
@@ -88,11 +86,11 @@ Arguments for `ObjectExistsWaiter.wait` method:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ObjectNotExistsWaiter
 
@@ -123,8 +121,8 @@ Arguments for `ObjectNotExistsWaiter.wait` method:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

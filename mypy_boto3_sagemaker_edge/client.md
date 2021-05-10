@@ -1,7 +1,6 @@
 # SagemakerEdgeManagerClient for boto3 SagemakerEdgeManager module
 
-> [Index](../README.md) > [SagemakerEdgeManager](./README.md) >
-> SagemakerEdgeManagerClient
+> [Index](..) > [SagemakerEdgeManager](.) > SagemakerEdgeManagerClient
 
 Auto-generated documentation for
 [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
@@ -96,7 +95,7 @@ Arguments:
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[GetDeviceRegistrationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_edge/type_defs.html#getdeviceregistrationresulttypedef).
+[GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef).
 
 ### send_heartbeat
 
@@ -110,7 +109,5 @@ Arguments:
 - `AgentVersion`: `str` *(required)*
 - `DeviceName`: `str` *(required)*
 - `DeviceFleetName`: `str` *(required)*
-- `AgentMetrics`:
-  `List`\[[EdgeMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_edge/type_defs.html#edgemetrictypedef)\]
-- `Models`:
-  `List`\[[ModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_edge/type_defs.html#modeltypedef)\]
+- `AgentMetrics`: `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
+- `Models`: `List`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]

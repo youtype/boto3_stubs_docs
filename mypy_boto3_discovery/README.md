@@ -1,6 +1,6 @@
 # Type annotations for boto3 ApplicationDiscoveryService module
 
-> [Index](../README.md) > ApplicationDiscoveryService
+> [Index](..) > ApplicationDiscoveryService
 
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 SageMakerRuntime module
 
-> [Index](../README.md) > SageMakerRuntime
+> [Index](..) > SageMakerRuntime
 
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
@@ -56,4 +56,4 @@ from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef, 
 ```
 
 - [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

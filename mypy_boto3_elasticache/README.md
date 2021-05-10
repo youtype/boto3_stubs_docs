@@ -1,6 +1,6 @@
 # Type annotations for boto3 ElastiCache module
 
-> [Index](../README.md) > ElastiCache
+> [Index](..) > ElastiCache
 
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)

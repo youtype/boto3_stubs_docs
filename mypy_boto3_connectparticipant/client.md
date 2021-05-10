@@ -1,7 +1,6 @@
 # ConnectParticipantClient for boto3 ConnectParticipant module
 
-> [Index](../README.md) > [ConnectParticipant](./README.md) >
-> ConnectParticipantClient
+> [Index](..) > [ConnectParticipant](.) > ConnectParticipantClient
 
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
@@ -102,13 +101,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  `List`\[[ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#connectiontype)\]
-  *(required)*
+- `Type`: `List`\[[ConnectionType](./literals.md#connectiontype)\] *(required)*
 - `ParticipantToken`: `str` *(required)*
 
 Returns
-[CreateParticipantConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#createparticipantconnectionresponsetypedef).
+[CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
 
 ### disconnect_participant
 
@@ -156,7 +153,7 @@ Arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns
-[GetAttachmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#getattachmentresponsetypedef).
+[GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef).
 
 ### get_transcript
 
@@ -172,15 +169,12 @@ Arguments:
 - `ContactId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ScanDirection`:
-  [ScanDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#scandirection)
-- `SortOrder`:
-  [SortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#sortkey)
-- `StartPosition`:
-  [StartPositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#startpositiontypedef)
+- `ScanDirection`: [ScanDirection](./literals.md#scandirection)
+- `SortOrder`: [SortKey](./literals.md#sortkey)
+- `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
 
 Returns
-[GetTranscriptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#gettranscriptresponsetypedef).
+[GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef).
 
 ### send_event
 
@@ -196,8 +190,7 @@ Arguments:
 - `Content`: `str`
 - `ClientToken`: `str`
 
-Returns
-[SendEventResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#sendeventresponsetypedef).
+Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
 
 ### send_message
 
@@ -214,7 +207,7 @@ Arguments:
 - `ClientToken`: `str`
 
 Returns
-[SendMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#sendmessageresponsetypedef).
+[SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef).
 
 ### start_attachment_upload
 
@@ -233,4 +226,4 @@ Arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns
-[StartAttachmentUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#startattachmentuploadresponsetypedef).
+[StartAttachmentUploadResponseTypeDef](./type_defs.md#startattachmentuploadresponsetypedef).

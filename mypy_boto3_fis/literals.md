@@ -1,6 +1,6 @@
 # Literals for boto3 FIS module
 
-> [Index](../README.md) > [FIS](./README.md) > Literals
+> [Index](..) > [FIS](.) > Literals
 
 Auto-generated documentation for
 [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)

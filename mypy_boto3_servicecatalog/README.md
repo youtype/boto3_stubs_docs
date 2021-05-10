@@ -1,6 +1,6 @@
 # Type annotations for boto3 ServiceCatalog module
 
-> [Index](../README.md) > ServiceCatalog
+> [Index](..) > ServiceCatalog
 
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
@@ -331,7 +331,7 @@ from mypy_boto3_servicecatalog.type_defs import AccessLevelFilterTypeDef, ...
 - [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
 - [ResourceDetailTypeDef](./type_defs.md#resourcedetailtypedef)
 - [ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef)
 - [SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef)
 - [SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef)

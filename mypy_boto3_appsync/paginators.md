@@ -1,6 +1,6 @@
 # Paginators for boto3 AppSync module
 
-> [Index](../README.md) > [AppSync](./README.md) > Paginators
+> [Index](..) > [AppSync](.) > Paginators
 
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
@@ -36,10 +36,10 @@ Arguments for `ListApiKeysPaginator.paginate` method:
 
 - `apiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApiKeysPaginator.paginate` returns
-`Iterator`\[[ListApiKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listapikeysresponsetypedef)\].
+`Iterator`\[[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef)\].
 
 ## ListDataSourcesPaginator
 
@@ -62,10 +62,10 @@ Arguments for `ListDataSourcesPaginator.paginate` method:
 
 - `apiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSourcesPaginator.paginate` returns
-`Iterator`\[[ListDataSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listdatasourcesresponsetypedef)\].
+`Iterator`\[[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)\].
 
 ## ListFunctionsPaginator
 
@@ -87,10 +87,10 @@ Arguments for `ListFunctionsPaginator.paginate` method:
 
 - `apiId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionsPaginator.paginate` returns
-`Iterator`\[[ListFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listfunctionsresponsetypedef)\].
+`Iterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
 
 ## ListGraphqlApisPaginator
 
@@ -112,10 +112,10 @@ Boto3 documentation:
 Arguments for `ListGraphqlApisPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGraphqlApisPaginator.paginate` returns
-`Iterator`\[[ListGraphqlApisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listgraphqlapisresponsetypedef)\].
+`Iterator`\[[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef)\].
 
 ## ListResolversPaginator
 
@@ -138,10 +138,10 @@ Arguments for `ListResolversPaginator.paginate` method:
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolversPaginator.paginate` returns
-`Iterator`\[[ListResolversResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listresolversresponsetypedef)\].
+`Iterator`\[[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef)\].
 
 ## ListResolversByFunctionPaginator
 
@@ -165,10 +165,10 @@ Arguments for `ListResolversByFunctionPaginator.paginate` method:
 - `apiId`: `str` *(required)*
 - `functionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolversByFunctionPaginator.paginate` returns
-`Iterator`\[[ListResolversByFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listresolversbyfunctionresponsetypedef)\].
+`Iterator`\[[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef)\].
 
 ## ListTypesPaginator
 
@@ -189,11 +189,10 @@ Boto3 documentation:
 Arguments for `ListTypesPaginator.paginate` method:
 
 - `apiId`: `str` *(required)*
-- `format`:
-  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+- `format`: [TypeDefinitionFormat](./literals.md#typedefinitionformat)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTypesPaginator.paginate` returns
-`Iterator`\[[ListTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listtypesresponsetypedef)\].
+`Iterator`\[[ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef)\].

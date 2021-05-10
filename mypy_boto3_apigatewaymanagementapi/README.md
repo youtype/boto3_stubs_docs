@@ -1,6 +1,6 @@
 # Type annotations for boto3 ApiGatewayManagementApi module
 
-> [Index](../README.md) > ApiGatewayManagementApi
+> [Index](..) > ApiGatewayManagementApi
 
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)

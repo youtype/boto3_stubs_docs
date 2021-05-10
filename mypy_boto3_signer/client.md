@@ -1,6 +1,6 @@
 # SignerClient for boto3 Signer module
 
-> [Index](../README.md) > [Signer](./README.md) > SignerClient
+> [Index](..) > [Signer](.) > SignerClient
 
 Auto-generated documentation for
 [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
@@ -94,7 +94,7 @@ Arguments:
 - `revisionId`: `str`
 
 Returns
-[AddProfilePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#addprofilepermissionresponsetypedef).
+[AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef).
 
 ### can_paginate
 
@@ -132,7 +132,7 @@ Arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeSigningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#describesigningjobresponsetypedef).
+[DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -162,7 +162,7 @@ Arguments:
 - `platformId`: `str` *(required)*
 
 Returns
-[GetSigningPlatformResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#getsigningplatformresponsetypedef).
+[GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef).
 
 ### get_signing_profile
 
@@ -177,7 +177,7 @@ Arguments:
 - `profileOwner`: `str`
 
 Returns
-[GetSigningProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#getsigningprofileresponsetypedef).
+[GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef).
 
 ### list_profile_permissions
 
@@ -192,7 +192,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProfilePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listprofilepermissionsresponsetypedef).
+[ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef).
 
 ### list_signing_jobs
 
@@ -203,8 +203,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `status`:
-  [SigningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingstatus)
+- `status`: [SigningStatus](./literals.md#signingstatus)
 - `platformId`: `str`
 - `requestedBy`: `str`
 - `maxResults`: `int`
@@ -215,7 +214,7 @@ Arguments:
 - `jobInvoker`: `str`
 
 Returns
-[ListSigningJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listsigningjobsresponsetypedef).
+[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef).
 
 ### list_signing_platforms
 
@@ -233,7 +232,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSigningPlatformsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listsigningplatformsresponsetypedef).
+[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef).
 
 ### list_signing_profiles
 
@@ -249,10 +248,10 @@ Arguments:
 - `nextToken`: `str`
 - `platformId`: `str`
 - `statuses`:
-  `List`\[[SigningProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingprofilestatus)\]
+  `List`\[[SigningProfileStatus](./literals.md#signingprofilestatus)\]
 
 Returns
-[ListSigningProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listsigningprofilesresponsetypedef).
+[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -266,7 +265,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_signing_profile
 
@@ -280,16 +279,16 @@ Arguments:
 - `profileName`: `str` *(required)*
 - `platformId`: `str` *(required)*
 - `signingMaterial`:
-  [SigningMaterialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingmaterialtypedef)
+  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
 - `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signaturevalidityperiodtypedef)
+  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
 - `overrides`:
-  [SigningPlatformOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingplatformoverridestypedef)
+  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
 - `signingParameters`: `Dict`\[`str`, `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PutSigningProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#putsigningprofileresponsetypedef).
+[PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
 
 ### remove_profile_permission
 
@@ -305,7 +304,7 @@ Arguments:
 - `statementId`: `str` *(required)*
 
 Returns
-[RemoveProfilePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#removeprofilepermissionresponsetypedef).
+[RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef).
 
 ### revoke_signature
 
@@ -343,18 +342,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `source`:
-  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#sourcetypedef)
-  *(required)*
-- `destination`:
-  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#destinationtypedef)
+- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef) *(required)*
+- `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
   *(required)*
 - `profileName`: `str` *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `profileOwner`: `str`
 
 Returns
-[StartSigningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#startsigningjobresponsetypedef).
+[StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef).
 
 ### tag_resource
 

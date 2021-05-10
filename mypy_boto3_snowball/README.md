@@ -1,6 +1,6 @@
 # Type annotations for boto3 Snowball module
 
-> [Index](../README.md) > Snowball
+> [Index](..) > Snowball
 
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)

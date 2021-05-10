@@ -1,6 +1,6 @@
 # Waiters for boto3 ElasticLoadBalancing module
 
-> [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Waiters
+> [Index](..) > [ElasticLoadBalancing](.) > Waiters
 
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
@@ -32,10 +32,8 @@ Boto3 documentation:
 Arguments for `AnyInstanceInServiceWaiter.wait` method:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#waiterconfigtypedef)
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceDeregisteredWaiter
 
@@ -56,10 +54,8 @@ Boto3 documentation:
 Arguments for `InstanceDeregisteredWaiter.wait` method:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#waiterconfigtypedef)
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceInServiceWaiter
 
@@ -80,7 +76,5 @@ Boto3 documentation:
 Arguments for `InstanceInServiceWaiter.wait` method:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#waiterconfigtypedef)
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

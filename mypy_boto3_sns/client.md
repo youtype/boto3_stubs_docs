@@ -1,6 +1,6 @@
 # SNSClient for boto3 SNS module
 
-> [Index](../README.md) > [SNS](./README.md) > SNSClient
+> [Index](..) > [SNS](.) > SNSClient
 
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
@@ -145,7 +145,7 @@ Arguments:
 - `phoneNumber`: `str` *(required)*
 
 Returns
-[CheckIfPhoneNumberIsOptedOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#checkifphonenumberisoptedoutresponsetypedef).
+[CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef).
 
 ### confirm_subscription
 
@@ -161,7 +161,7 @@ Arguments:
 - `AuthenticateOnUnsubscribe`: `str`
 
 Returns
-[ConfirmSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#confirmsubscriptionresponsetypedef).
+[ConfirmSubscriptionResponseTypeDef](./type_defs.md#confirmsubscriptionresponsetypedef).
 
 ### create_platform_application
 
@@ -177,7 +177,7 @@ Arguments:
 - `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
 Returns
-[CreatePlatformApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#createplatformapplicationresponsetypedef).
+[CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef).
 
 ### create_platform_endpoint
 
@@ -194,7 +194,7 @@ Arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#createendpointresponsetypedef).
+[CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
 ### create_topic
 
@@ -207,11 +207,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Attributes`: `Dict`\[`str`, `str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTopicResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#createtopicresponsetypedef).
+[CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef).
 
 ### delete_endpoint
 
@@ -274,7 +273,7 @@ Arguments:
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[GetEndpointAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getendpointattributesresponsetypedef).
+[GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef).
 
 ### get_platform_application_attributes
 
@@ -289,7 +288,7 @@ Arguments:
 - `PlatformApplicationArn`: `str` *(required)*
 
 Returns
-[GetPlatformApplicationAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getplatformapplicationattributesresponsetypedef).
+[GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef).
 
 ### get_sms_attributes
 
@@ -303,7 +302,7 @@ Arguments:
 - `attributes`: `List`\[`str`\]
 
 Returns
-[GetSMSAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getsmsattributesresponsetypedef).
+[GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
 
 ### get_subscription_attributes
 
@@ -317,7 +316,7 @@ Arguments:
 - `SubscriptionArn`: `str` *(required)*
 
 Returns
-[GetSubscriptionAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#getsubscriptionattributesresponsetypedef).
+[GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef).
 
 ### get_topic_attributes
 
@@ -331,7 +330,7 @@ Arguments:
 - `TopicArn`: `str` *(required)*
 
 Returns
-[GetTopicAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#gettopicattributesresponsetypedef).
+[GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef).
 
 ### list_endpoints_by_platform_application
 
@@ -347,7 +346,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEndpointsByPlatformApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listendpointsbyplatformapplicationresponsetypedef).
+[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef).
 
 ### list_phone_numbers_opted_out
 
@@ -361,7 +360,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListPhoneNumbersOptedOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listphonenumbersoptedoutresponsetypedef).
+[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef).
 
 ### list_platform_applications
 
@@ -375,7 +374,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlatformApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listplatformapplicationsresponsetypedef).
+[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef).
 
 ### list_subscriptions
 
@@ -389,7 +388,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsresponsetypedef).
+[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef).
 
 ### list_subscriptions_by_topic
 
@@ -404,7 +403,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionsByTopicResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsbytopicresponsetypedef).
+[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -418,7 +417,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_topics
 
@@ -431,8 +430,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListTopicsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listtopicsresponsetypedef).
+Returns [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef).
 
 ### opt_in_phone_number
 
@@ -463,12 +461,11 @@ Arguments:
 - `Subject`: `str`
 - `MessageStructure`: `str`
 - `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#messageattributevaluetypedef)\]
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#publishresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 ### remove_permission
 
@@ -561,8 +558,7 @@ Arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
-Returns
-[SubscribeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#subscriberesponsetypedef).
+Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
 
 ### tag_resource
 
@@ -574,9 +570,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

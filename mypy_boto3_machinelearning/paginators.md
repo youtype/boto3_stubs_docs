@@ -1,6 +1,6 @@
 # Paginators for boto3 MachineLearning module
 
-> [Index](../README.md) > [MachineLearning](./README.md) > Paginators
+> [Index](..) > [MachineLearning](.) > Paginators
 
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
@@ -33,7 +33,7 @@ Boto3 documentation:
 Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
 
 - `FilterVariable`:
-  [BatchPredictionFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#batchpredictionfiltervariable)
+  [BatchPredictionFilterVariable](./literals.md#batchpredictionfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -41,13 +41,12 @@ Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBatchPredictionsPaginator.paginate` returns
-`Iterator`\[[DescribeBatchPredictionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describebatchpredictionsoutputtypedef)\].
+`Iterator`\[[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef)\].
 
 ## DescribeDataSourcesPaginator
 
@@ -69,7 +68,7 @@ Boto3 documentation:
 Arguments for `DescribeDataSourcesPaginator.paginate` method:
 
 - `FilterVariable`:
-  [DataSourceFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#datasourcefiltervariable)
+  [DataSourceFilterVariable](./literals.md#datasourcefiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -77,13 +76,12 @@ Arguments for `DescribeDataSourcesPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDataSourcesPaginator.paginate` returns
-`Iterator`\[[DescribeDataSourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describedatasourcesoutputtypedef)\].
+`Iterator`\[[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef)\].
 
 ## DescribeEvaluationsPaginator
 
@@ -105,7 +103,7 @@ Boto3 documentation:
 Arguments for `DescribeEvaluationsPaginator.paginate` method:
 
 - `FilterVariable`:
-  [EvaluationFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#evaluationfiltervariable)
+  [EvaluationFilterVariable](./literals.md#evaluationfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -113,13 +111,12 @@ Arguments for `DescribeEvaluationsPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEvaluationsPaginator.paginate` returns
-`Iterator`\[[DescribeEvaluationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describeevaluationsoutputtypedef)\].
+`Iterator`\[[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef)\].
 
 ## DescribeMLModelsPaginator
 
@@ -140,8 +137,7 @@ Boto3 documentation:
 
 Arguments for `DescribeMLModelsPaginator.paginate` method:
 
-- `FilterVariable`:
-  [MLModelFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodelfiltervariable)
+- `FilterVariable`: [MLModelFilterVariable](./literals.md#mlmodelfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -149,10 +145,9 @@ Arguments for `DescribeMLModelsPaginator.paginate` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMLModelsPaginator.paginate` returns
-`Iterator`\[[DescribeMLModelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describemlmodelsoutputtypedef)\].
+`Iterator`\[[DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef)\].

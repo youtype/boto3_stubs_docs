@@ -1,6 +1,6 @@
 # Waiters for boto3 ECS module
 
-> [Index](../README.md) > [ECS](./README.md) > Waiters
+> [Index](..) > [ECS](.) > Waiters
 
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
@@ -33,9 +33,9 @@ Arguments for `ServicesInactiveWaiter.wait` method:
 
 - `services`: `List`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+- `include`: `List`\[`Literal['TAGS']` (see
+  [ServiceField](./literals.md#servicefield))\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ServicesStableWaiter
 
@@ -57,9 +57,9 @@ Arguments for `ServicesStableWaiter.wait` method:
 
 - `services`: `List`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+- `include`: `List`\[`Literal['TAGS']` (see
+  [ServiceField](./literals.md#servicefield))\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TasksRunningWaiter
 
@@ -81,9 +81,9 @@ Arguments for `TasksRunningWaiter.wait` method:
 
 - `tasks`: `List`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+- `include`: `List`\[`Literal['TAGS']` (see
+  [TaskField](./literals.md#taskfield))\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TasksStoppedWaiter
 
@@ -105,6 +105,6 @@ Arguments for `TasksStoppedWaiter.wait` method:
 
 - `tasks`: `List`\[`str`\] *(required)*
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#waiterconfigtypedef)
+- `include`: `List`\[`Literal['TAGS']` (see
+  [TaskField](./literals.md#taskfield))\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

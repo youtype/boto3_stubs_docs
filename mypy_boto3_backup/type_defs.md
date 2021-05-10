@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Backup module
 
-> [Index](../README.md) > [Backup](./README.md) > Structures
+> [Index](..) > [Backup](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
@@ -61,7 +61,7 @@ type annotations stubs module
   - [RecoveryPointByBackupVaultTypeDef](#recoverypointbybackupvaulttypedef)
   - [RecoveryPointByResourceTypeDef](#recoverypointbyresourcetypedef)
   - [RecoveryPointCreatorTypeDef](#recoverypointcreatortypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RestoreJobsListMemberTypeDef](#restorejobslistmembertypedef)
   - [StartBackupJobOutputTypeDef](#startbackupjoboutputtypedef)
   - [StartCopyJobOutputTypeDef](#startcopyjoboutputtypedef)
@@ -96,14 +96,13 @@ Optional fields:
 - `ResourceArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `State`:
-  [BackupJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#backupjobstate)
+- `State`: [BackupJobState](./literals.md#backupjobstate)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
 - `IamRoleArn`: `str`
 - `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointcreatortypedef)
+  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `ExpectedCompletionDate`: `datetime`
 - `StartBy`: `datetime`
 - `ResourceType`: `str`
@@ -121,12 +120,12 @@ Required fields:
 
 - `BackupPlanName`: `str`
 - `Rules`:
-  `List`\[[BackupRuleInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupruleinputtypedef)\]
+  `List`\[[BackupRuleInputTypeDef](./type_defs.md#backupruleinputtypedef)\]
 
 Optional fields:
 
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#advancedbackupsettingtypedef)\]
+  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 
 ## BackupPlanTemplatesListMemberTypeDef
 
@@ -148,13 +147,12 @@ from mypy_boto3_backup.type_defs import BackupPlanTypeDef
 Required fields:
 
 - `BackupPlanName`: `str`
-- `Rules`:
-  `List`\[[BackupRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupruletypedef)\]
+- `Rules`: `List`\[[BackupRuleTypeDef](./type_defs.md#backupruletypedef)\]
 
 Optional fields:
 
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#advancedbackupsettingtypedef)\]
+  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 
 ## BackupPlansListMemberTypeDef
 
@@ -173,7 +171,7 @@ Optional fields:
 - `CreatorRequestId`: `str`
 - `LastExecutionDate`: `datetime`
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#advancedbackupsettingtypedef)\]
+  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 
 ## BackupRuleInputTypeDef
 
@@ -191,11 +189,9 @@ Optional fields:
 - `ScheduleExpression`: `str`
 - `StartWindowMinutes`: `int`
 - `CompletionWindowMinutes`: `int`
-- `Lifecycle`:
-  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `RecoveryPointTags`: `Dict`\[`str`, `str`\]
-- `CopyActions`:
-  `List`\[[CopyActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#copyactiontypedef)\]
+- `CopyActions`: `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
 
 ## BackupRuleTypeDef
@@ -214,12 +210,10 @@ Optional fields:
 - `ScheduleExpression`: `str`
 - `StartWindowMinutes`: `int`
 - `CompletionWindowMinutes`: `int`
-- `Lifecycle`:
-  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `RecoveryPointTags`: `Dict`\[`str`, `str`\]
 - `RuleId`: `str`
-- `CopyActions`:
-  `List`\[[CopyActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#copyactiontypedef)\]
+- `CopyActions`: `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
 
 ## BackupSelectionTypeDef
@@ -236,8 +230,7 @@ Required fields:
 Optional fields:
 
 - `Resources`: `List`\[`str`\]
-- `ListOfTags`:
-  `List`\[[ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#conditiontypedef)\]
+- `ListOfTags`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## BackupSelectionsListMemberTypeDef
 
@@ -288,7 +281,8 @@ from mypy_boto3_backup.type_defs import ConditionTypeDef
 
 Required fields:
 
-- `ConditionType`: `Literal['STRINGEQUALS']`
+- `ConditionType`: `Literal['STRINGEQUALS']` (see
+  [ConditionType](./literals.md#conditiontype))
 - `ConditionKey`: `str`
 - `ConditionValue`: `str`
 
@@ -304,8 +298,7 @@ Required fields:
 
 Optional fields:
 
-- `Lifecycle`:
-  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 
 ## CopyJobTypeDef
 
@@ -324,13 +317,12 @@ Optional fields:
 - `ResourceArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `State`:
-  [CopyJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#copyjobstate)
+- `State`: [CopyJobState](./literals.md#copyjobstate)
 - `StatusMessage`: `str`
 - `BackupSizeInBytes`: `int`
 - `IamRoleArn`: `str`
 - `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointcreatortypedef)
+  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `ResourceType`: `str`
 
 ## CreateBackupPlanOutputTypeDef
@@ -346,9 +338,9 @@ Required fields:
 - `CreationDate`: `datetime`
 - `VersionId`: `str`
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#advancedbackupsettingtypedef)\]
+  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateBackupSelectionOutputTypeDef
 
@@ -362,7 +354,7 @@ Required fields:
 - `BackupPlanId`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateBackupVaultOutputTypeDef
 
@@ -376,7 +368,7 @@ Required fields:
 - `BackupVaultArn`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteBackupPlanOutputTypeDef
 
@@ -391,7 +383,7 @@ Required fields:
 - `DeletionDate`: `datetime`
 - `VersionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeBackupJobOutputTypeDef
 
@@ -409,14 +401,13 @@ Required fields:
 - `ResourceArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `State`:
-  [BackupJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#backupjobstate)
+- `State`: [BackupJobState](./literals.md#backupjobstate)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
 - `IamRoleArn`: `str`
 - `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointcreatortypedef)
+  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `ResourceType`: `str`
 - `BytesTransferred`: `int`
 - `ExpectedCompletionDate`: `datetime`
@@ -424,7 +415,7 @@ Required fields:
 - `BackupOptions`: `Dict`\[`str`, `str`\]
 - `BackupType`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeBackupVaultOutputTypeDef
 
@@ -441,7 +432,7 @@ Required fields:
 - `CreatorRequestId`: `str`
 - `NumberOfRecoveryPoints`: `int`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeCopyJobOutputTypeDef
 
@@ -451,10 +442,9 @@ from mypy_boto3_backup.type_defs import DescribeCopyJobOutputTypeDef
 
 Required fields:
 
-- `CopyJob`:
-  [CopyJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#copyjobtypedef)
+- `CopyJob`: [CopyJobTypeDef](./type_defs.md#copyjobtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeGlobalSettingsOutputTypeDef
 
@@ -467,7 +457,7 @@ Required fields:
 - `GlobalSettings`: `Dict`\[`str`, `str`\]
 - `LastUpdateTime`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeProtectedResourceOutputTypeDef
 
@@ -481,7 +471,7 @@ Required fields:
 - `ResourceType`: `str`
 - `LastBackupTime`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeRecoveryPointOutputTypeDef
 
@@ -498,24 +488,21 @@ Required fields:
 - `ResourceArn`: `str`
 - `ResourceType`: `str`
 - `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointcreatortypedef)
+  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `IamRoleArn`: `str`
-- `Status`:
-  [RecoveryPointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#recoverypointstatus)
+- `Status`: [RecoveryPointStatus](./literals.md#recoverypointstatus)
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
 - `BackupSizeInBytes`: `int`
 - `CalculatedLifecycle`:
-  [CalculatedLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#calculatedlifecycletypedef)
-- `Lifecycle`:
-  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+  [CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef)
+- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `EncryptionKeyArn`: `str`
 - `IsEncrypted`: `bool`
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#storageclass)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `LastRestoreTime`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeRegionSettingsOutputTypeDef
 
@@ -527,7 +514,7 @@ Required fields:
 
 - `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeRestoreJobOutputTypeDef
 
@@ -542,8 +529,7 @@ Required fields:
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `Status`:
-  [RestoreJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#restorejobstatus)
+- `Status`: [RestoreJobStatus](./literals.md#restorejobstatus)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
@@ -552,7 +538,7 @@ Required fields:
 - `CreatedResourceArn`: `str`
 - `ResourceType`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ExportBackupPlanTemplateOutputTypeDef
 
@@ -564,7 +550,7 @@ Required fields:
 
 - `BackupPlanTemplateJson`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBackupPlanFromJSONOutputTypeDef
 
@@ -574,10 +560,9 @@ from mypy_boto3_backup.type_defs import GetBackupPlanFromJSONOutputTypeDef
 
 Required fields:
 
-- `BackupPlan`:
-  [BackupPlanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplantypedef)
+- `BackupPlan`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBackupPlanFromTemplateOutputTypeDef
 
@@ -587,10 +572,9 @@ from mypy_boto3_backup.type_defs import GetBackupPlanFromTemplateOutputTypeDef
 
 Required fields:
 
-- `BackupPlanDocument`:
-  [BackupPlanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplantypedef)
+- `BackupPlanDocument`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBackupPlanOutputTypeDef
 
@@ -600,8 +584,7 @@ from mypy_boto3_backup.type_defs import GetBackupPlanOutputTypeDef
 
 Required fields:
 
-- `BackupPlan`:
-  [BackupPlanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplantypedef)
+- `BackupPlan`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
 - `BackupPlanId`: `str`
 - `BackupPlanArn`: `str`
 - `VersionId`: `str`
@@ -610,9 +593,9 @@ Required fields:
 - `DeletionDate`: `datetime`
 - `LastExecutionDate`: `datetime`
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#advancedbackupsettingtypedef)\]
+  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBackupSelectionOutputTypeDef
 
@@ -623,13 +606,13 @@ from mypy_boto3_backup.type_defs import GetBackupSelectionOutputTypeDef
 Required fields:
 
 - `BackupSelection`:
-  [BackupSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupselectiontypedef)
+  [BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef)
 - `SelectionId`: `str`
 - `BackupPlanId`: `str`
 - `CreationDate`: `datetime`
 - `CreatorRequestId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBackupVaultAccessPolicyOutputTypeDef
 
@@ -643,7 +626,7 @@ Required fields:
 - `BackupVaultArn`: `str`
 - `Policy`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBackupVaultNotificationsOutputTypeDef
 
@@ -657,9 +640,9 @@ Required fields:
 - `BackupVaultArn`: `str`
 - `SNSTopicArn`: `str`
 - `BackupVaultEvents`:
-  `List`\[[BackupVaultEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#backupvaultevent)\]
+  `List`\[[BackupVaultEvent](./literals.md#backupvaultevent)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetRecoveryPointRestoreMetadataOutputTypeDef
 
@@ -673,7 +656,7 @@ Required fields:
 - `RecoveryPointArn`: `str`
 - `RestoreMetadata`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetSupportedResourceTypesOutputTypeDef
 
@@ -685,7 +668,7 @@ Required fields:
 
 - `ResourceTypes`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LifecycleTypeDef
 
@@ -706,11 +689,10 @@ from mypy_boto3_backup.type_defs import ListBackupJobsOutputTypeDef
 
 Required fields:
 
-- `BackupJobs`:
-  `List`\[[BackupJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupjobtypedef)\]
+- `BackupJobs`: `List`\[[BackupJobTypeDef](./type_defs.md#backupjobtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBackupPlanTemplatesOutputTypeDef
 
@@ -722,9 +704,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `BackupPlanTemplatesList`:
-  `List`\[[BackupPlanTemplatesListMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplantemplateslistmembertypedef)\]
+  `List`\[[BackupPlanTemplatesListMemberTypeDef](./type_defs.md#backupplantemplateslistmembertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBackupPlanVersionsOutputTypeDef
 
@@ -736,9 +718,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `BackupPlanVersionsList`:
-  `List`\[[BackupPlansListMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplanslistmembertypedef)\]
+  `List`\[[BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBackupPlansOutputTypeDef
 
@@ -750,9 +732,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `BackupPlansList`:
-  `List`\[[BackupPlansListMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupplanslistmembertypedef)\]
+  `List`\[[BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBackupSelectionsOutputTypeDef
 
@@ -764,9 +746,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `BackupSelectionsList`:
-  `List`\[[BackupSelectionsListMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupselectionslistmembertypedef)\]
+  `List`\[[BackupSelectionsListMemberTypeDef](./type_defs.md#backupselectionslistmembertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBackupVaultsOutputTypeDef
 
@@ -777,10 +759,10 @@ from mypy_boto3_backup.type_defs import ListBackupVaultsOutputTypeDef
 Required fields:
 
 - `BackupVaultList`:
-  `List`\[[BackupVaultListMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#backupvaultlistmembertypedef)\]
+  `List`\[[BackupVaultListMemberTypeDef](./type_defs.md#backupvaultlistmembertypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListCopyJobsOutputTypeDef
 
@@ -790,11 +772,10 @@ from mypy_boto3_backup.type_defs import ListCopyJobsOutputTypeDef
 
 Required fields:
 
-- `CopyJobs`:
-  `List`\[[CopyJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#copyjobtypedef)\]
+- `CopyJobs`: `List`\[[CopyJobTypeDef](./type_defs.md#copyjobtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListProtectedResourcesOutputTypeDef
 
@@ -805,10 +786,10 @@ from mypy_boto3_backup.type_defs import ListProtectedResourcesOutputTypeDef
 Required fields:
 
 - `Results`:
-  `List`\[[ProtectedResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#protectedresourcetypedef)\]
+  `List`\[[ProtectedResourceTypeDef](./type_defs.md#protectedresourcetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListRecoveryPointsByBackupVaultOutputTypeDef
 
@@ -820,9 +801,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `RecoveryPoints`:
-  `List`\[[RecoveryPointByBackupVaultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointbybackupvaulttypedef)\]
+  `List`\[[RecoveryPointByBackupVaultTypeDef](./type_defs.md#recoverypointbybackupvaulttypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListRecoveryPointsByResourceOutputTypeDef
 
@@ -834,9 +815,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `RecoveryPoints`:
-  `List`\[[RecoveryPointByResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointbyresourcetypedef)\]
+  `List`\[[RecoveryPointByResourceTypeDef](./type_defs.md#recoverypointbyresourcetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListRestoreJobsOutputTypeDef
 
@@ -847,10 +828,10 @@ from mypy_boto3_backup.type_defs import ListRestoreJobsOutputTypeDef
 Required fields:
 
 - `RestoreJobs`:
-  `List`\[[RestoreJobsListMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#restorejobslistmembertypedef)\]
+  `List`\[[RestoreJobsListMemberTypeDef](./type_defs.md#restorejobslistmembertypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsOutputTypeDef
 
@@ -863,7 +844,7 @@ Required fields:
 - `NextToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ProtectedResourceTypeDef
 
@@ -892,17 +873,15 @@ Optional fields:
 - `ResourceArn`: `str`
 - `ResourceType`: `str`
 - `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#recoverypointcreatortypedef)
+  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
 - `IamRoleArn`: `str`
-- `Status`:
-  [RecoveryPointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#recoverypointstatus)
+- `Status`: [RecoveryPointStatus](./literals.md#recoverypointstatus)
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
 - `BackupSizeInBytes`: `int`
 - `CalculatedLifecycle`:
-  [CalculatedLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#calculatedlifecycletypedef)
-- `Lifecycle`:
-  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+  [CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef)
+- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `EncryptionKeyArn`: `str`
 - `IsEncrypted`: `bool`
 - `LastRestoreTime`: `datetime`
@@ -917,8 +896,7 @@ Optional fields:
 
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
-- `Status`:
-  [RecoveryPointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#recoverypointstatus)
+- `Status`: [RecoveryPointStatus](./literals.md#recoverypointstatus)
 - `EncryptionKeyArn`: `str`
 - `BackupSizeBytes`: `int`
 - `BackupVaultName`: `str`
@@ -936,10 +914,10 @@ Optional fields:
 - `BackupPlanVersion`: `str`
 - `BackupRuleId`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_backup.type_defs import ResponseMetadata
+from mypy_boto3_backup.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -963,8 +941,7 @@ Optional fields:
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
 - `CompletionDate`: `datetime`
-- `Status`:
-  [RestoreJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/literals.html#restorejobstatus)
+- `Status`: [RestoreJobStatus](./literals.md#restorejobstatus)
 - `StatusMessage`: `str`
 - `PercentDone`: `str`
 - `BackupSizeInBytes`: `int`
@@ -985,7 +962,7 @@ Required fields:
 - `RecoveryPointArn`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartCopyJobOutputTypeDef
 
@@ -998,7 +975,7 @@ Required fields:
 - `CopyJobId`: `str`
 - `CreationDate`: `datetime`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartRestoreJobOutputTypeDef
 
@@ -1010,7 +987,7 @@ Required fields:
 
 - `RestoreJobId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateBackupPlanOutputTypeDef
 
@@ -1025,9 +1002,9 @@ Required fields:
 - `CreationDate`: `datetime`
 - `VersionId`: `str`
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#advancedbackupsettingtypedef)\]
+  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateRecoveryPointLifecycleOutputTypeDef
 
@@ -1039,9 +1016,8 @@ Required fields:
 
 - `BackupVaultArn`: `str`
 - `RecoveryPointArn`: `str`
-- `Lifecycle`:
-  [LifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#lifecycletypedef)
+- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 - `CalculatedLifecycle`:
-  [CalculatedLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#calculatedlifecycletypedef)
+  [CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_backup/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

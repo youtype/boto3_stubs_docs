@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Health module
 
-> [Index](../README.md) > [Health](./README.md) > Structures
+> [Index](..) > [Health](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
@@ -53,8 +53,7 @@ Optional fields:
 - `entityUrl`: `str`
 - `awsAccountId`: `str`
 - `lastUpdatedTime`: `datetime`
-- `statusCode`:
-  [entityStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#entitystatuscode)
+- `statusCode`: [entityStatusCode](./literals.md#entitystatuscode)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## DateTimeRangeTypeDef
@@ -77,8 +76,7 @@ from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationR
 Optional fields:
 
 - `affectedAccounts`: `List`\[`str`\]
-- `eventScopeCode`:
-  [eventScopeCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventscopecode)
+- `eventScopeCode`: [eventScopeCode](./literals.md#eventscopecode)
 - `nextToken`: `str`
 
 ## DescribeAffectedEntitiesForOrganizationResponseTypeDef
@@ -90,9 +88,9 @@ from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationR
 Optional fields:
 
 - `entities`:
-  `List`\[[AffectedEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#affectedentitytypedef)\]
+  `List`\[[AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)\]
 - `failedSet`:
-  `List`\[[OrganizationAffectedEntitiesErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationaffectedentitieserroritemtypedef)\]
+  `List`\[[OrganizationAffectedEntitiesErrorItemTypeDef](./type_defs.md#organizationaffectedentitieserroritemtypedef)\]
 - `nextToken`: `str`
 
 ## DescribeAffectedEntitiesResponseTypeDef
@@ -104,7 +102,7 @@ from mypy_boto3_health.type_defs import DescribeAffectedEntitiesResponseTypeDef
 Optional fields:
 
 - `entities`:
-  `List`\[[AffectedEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#affectedentitytypedef)\]
+  `List`\[[AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)\]
 - `nextToken`: `str`
 
 ## DescribeEntityAggregatesResponseTypeDef
@@ -116,7 +114,7 @@ from mypy_boto3_health.type_defs import DescribeEntityAggregatesResponseTypeDef
 Optional fields:
 
 - `entityAggregates`:
-  `List`\[[EntityAggregateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#entityaggregatetypedef)\]
+  `List`\[[EntityAggregateTypeDef](./type_defs.md#entityaggregatetypedef)\]
 
 ## DescribeEventAggregatesResponseTypeDef
 
@@ -127,7 +125,7 @@ from mypy_boto3_health.type_defs import DescribeEventAggregatesResponseTypeDef
 Optional fields:
 
 - `eventAggregates`:
-  `List`\[[EventAggregateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaggregatetypedef)\]
+  `List`\[[EventAggregateTypeDef](./type_defs.md#eventaggregatetypedef)\]
 - `nextToken`: `str`
 
 ## DescribeEventDetailsForOrganizationResponseTypeDef
@@ -139,9 +137,9 @@ from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationRespo
 Optional fields:
 
 - `successfulSet`:
-  `List`\[[OrganizationEventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventdetailstypedef)\]
+  `List`\[[OrganizationEventDetailsTypeDef](./type_defs.md#organizationeventdetailstypedef)\]
 - `failedSet`:
-  `List`\[[OrganizationEventDetailsErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventdetailserroritemtypedef)\]
+  `List`\[[OrganizationEventDetailsErrorItemTypeDef](./type_defs.md#organizationeventdetailserroritemtypedef)\]
 
 ## DescribeEventDetailsResponseTypeDef
 
@@ -152,9 +150,9 @@ from mypy_boto3_health.type_defs import DescribeEventDetailsResponseTypeDef
 Optional fields:
 
 - `successfulSet`:
-  `List`\[[EventDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventdetailstypedef)\]
+  `List`\[[EventDetailsTypeDef](./type_defs.md#eventdetailstypedef)\]
 - `failedSet`:
-  `List`\[[EventDetailsErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventdetailserroritemtypedef)\]
+  `List`\[[EventDetailsErrorItemTypeDef](./type_defs.md#eventdetailserroritemtypedef)\]
 
 ## DescribeEventTypesResponseTypeDef
 
@@ -164,8 +162,7 @@ from mypy_boto3_health.type_defs import DescribeEventTypesResponseTypeDef
 
 Optional fields:
 
-- `eventTypes`:
-  `List`\[[EventTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypetypedef)\]
+- `eventTypes`: `List`\[[EventTypeTypeDef](./type_defs.md#eventtypetypedef)\]
 - `nextToken`: `str`
 
 ## DescribeEventsForOrganizationResponseTypeDef
@@ -177,7 +174,7 @@ from mypy_boto3_health.type_defs import DescribeEventsForOrganizationResponseTyp
 Optional fields:
 
 - `events`:
-  `List`\[[OrganizationEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventtypedef)\]
+  `List`\[[OrganizationEventTypeDef](./type_defs.md#organizationeventtypedef)\]
 - `nextToken`: `str`
 
 ## DescribeEventsResponseTypeDef
@@ -188,8 +185,7 @@ from mypy_boto3_health.type_defs import DescribeEventsResponseTypeDef
 
 Optional fields:
 
-- `events`:
-  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypedef)\]
+- `events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 - `nextToken`: `str`
 
 ## DescribeHealthServiceStatusForOrganizationResponseTypeDef
@@ -228,10 +224,9 @@ Optional fields:
 - `entityArns`: `List`\[`str`\]
 - `entityValues`: `List`\[`str`\]
 - `lastUpdatedTimes`:
-  `List`\[[DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)\]
+  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `tags`: `List`\[`Dict`\[`str`, `str`\]\]
-- `statusCodes`:
-  `List`\[[entityStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#entitystatuscode)\]
+- `statusCodes`: `List`\[[entityStatusCode](./literals.md#entitystatuscode)\]
 
 ## EventAccountFilterTypeDef
 
@@ -288,10 +283,9 @@ from mypy_boto3_health.type_defs import EventDetailsTypeDef
 
 Optional fields:
 
-- `event`:
-  [EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypedef)
+- `event`: [EventTypeDef](./type_defs.md#eventtypedef)
 - `eventDescription`:
-  [EventDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventdescriptiontypedef)
+  [EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)
 - `eventMetadata`: `Dict`\[`str`, `str`\]
 
 ## EventFilterTypeDef
@@ -308,18 +302,17 @@ Optional fields:
 - `regions`: `List`\[`str`\]
 - `availabilityZones`: `List`\[`str`\]
 - `startTimes`:
-  `List`\[[DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)\]
+  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `endTimes`:
-  `List`\[[DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)\]
+  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `lastUpdatedTimes`:
-  `List`\[[DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)\]
+  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `entityArns`: `List`\[`str`\]
 - `entityValues`: `List`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventtypecategory)\]
+  `List`\[[eventTypeCategory](./literals.md#eventtypecategory)\]
 - `tags`: `List`\[`Dict`\[`str`, `str`\]\]
-- `eventStatusCodes`:
-  `List`\[[eventStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventstatuscode)\]
+- `eventStatusCodes`: `List`\[[eventStatusCode](./literals.md#eventstatuscode)\]
 
 ## EventTypeDef
 
@@ -332,17 +325,14 @@ Optional fields:
 - `arn`: `str`
 - `service`: `str`
 - `eventTypeCode`: `str`
-- `eventTypeCategory`:
-  [eventTypeCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventtypecategory)
+- `eventTypeCategory`: [eventTypeCategory](./literals.md#eventtypecategory)
 - `region`: `str`
 - `availabilityZone`: `str`
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
-- `statusCode`:
-  [eventStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventstatuscode)
-- `eventScopeCode`:
-  [eventScopeCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventscopecode)
+- `statusCode`: [eventStatusCode](./literals.md#eventstatuscode)
+- `eventScopeCode`: [eventScopeCode](./literals.md#eventscopecode)
 
 ## EventTypeFilterTypeDef
 
@@ -355,7 +345,7 @@ Optional fields:
 - `eventTypeCodes`: `List`\[`str`\]
 - `services`: `List`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventtypecategory)\]
+  `List`\[[eventTypeCategory](./literals.md#eventtypecategory)\]
 
 ## EventTypeTypeDef
 
@@ -367,8 +357,7 @@ Optional fields:
 
 - `service`: `str`
 - `code`: `str`
-- `category`:
-  [eventTypeCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventtypecategory)
+- `category`: [eventTypeCategory](./literals.md#eventtypecategory)
 
 ## OrganizationAffectedEntitiesErrorItemTypeDef
 
@@ -405,10 +394,9 @@ from mypy_boto3_health.type_defs import OrganizationEventDetailsTypeDef
 Optional fields:
 
 - `awsAccountId`: `str`
-- `event`:
-  [EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypedef)
+- `event`: [EventTypeDef](./type_defs.md#eventtypedef)
 - `eventDescription`:
-  [EventDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventdescriptiontypedef)
+  [EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)
 - `eventMetadata`: `Dict`\[`str`, `str`\]
 
 ## OrganizationEventFilterTypeDef
@@ -423,18 +411,14 @@ Optional fields:
 - `awsAccountIds`: `List`\[`str`\]
 - `services`: `List`\[`str`\]
 - `regions`: `List`\[`str`\]
-- `startTime`:
-  [DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)
-- `endTime`:
-  [DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)
-- `lastUpdatedTime`:
-  [DateTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#datetimerangetypedef)
+- `startTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
+- `endTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
+- `lastUpdatedTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `entityArns`: `List`\[`str`\]
 - `entityValues`: `List`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventtypecategory)\]
-- `eventStatusCodes`:
-  `List`\[[eventStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventstatuscode)\]
+  `List`\[[eventTypeCategory](./literals.md#eventtypecategory)\]
+- `eventStatusCodes`: `List`\[[eventStatusCode](./literals.md#eventstatuscode)\]
 
 ## OrganizationEventTypeDef
 
@@ -447,16 +431,13 @@ Optional fields:
 - `arn`: `str`
 - `service`: `str`
 - `eventTypeCode`: `str`
-- `eventTypeCategory`:
-  [eventTypeCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventtypecategory)
-- `eventScopeCode`:
-  [eventScopeCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventscopecode)
+- `eventTypeCategory`: [eventTypeCategory](./literals.md#eventtypecategory)
+- `eventScopeCode`: [eventScopeCode](./literals.md#eventscopecode)
 - `region`: `str`
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
-- `statusCode`:
-  [eventStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/literals.html#eventstatuscode)
+- `statusCode`: [eventStatusCode](./literals.md#eventstatuscode)
 
 ## PaginatorConfigTypeDef
 

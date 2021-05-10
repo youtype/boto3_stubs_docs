@@ -1,6 +1,6 @@
 # BatchClient for boto3 Batch module
 
-> [Index](../README.md) > [Batch](./README.md) > BatchClient
+> [Index](..) > [Batch](.) > BatchClient
 
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
@@ -107,18 +107,15 @@ Boto3 documentation:
 Arguments:
 
 - `computeEnvironmentName`: `str` *(required)*
-- `type`:
-  [CEType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cetype)
-  *(required)*
-- `state`:
-  [CEState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cestate)
+- `type`: [CEType](./literals.md#cetype) *(required)*
+- `state`: [CEState](./literals.md#cestate)
 - `computeResources`:
-  [ComputeResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeresourcetypedef)
+  [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComputeEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#createcomputeenvironmentresponsetypedef).
+[CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
 
 ### create_job_queue
 
@@ -132,14 +129,13 @@ Arguments:
 - `jobQueueName`: `str` *(required)*
 - `priority`: `int` *(required)*
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeenvironmentordertypedef)\]
+  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
   *(required)*
-- `state`:
-  [JQState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jqstate)
+- `state`: [JQState](./literals.md#jqstate)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateJobQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#createjobqueueresponsetypedef).
+[CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
 
 ### delete_compute_environment
 
@@ -195,7 +191,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeComputeEnvironmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describecomputeenvironmentsresponsetypedef).
+[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef).
 
 ### describe_job_definitions
 
@@ -213,7 +209,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobdefinitionsresponsetypedef).
+[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef).
 
 ### describe_job_queues
 
@@ -229,7 +225,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobqueuesresponsetypedef).
+[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef).
 
 ### describe_jobs
 
@@ -243,7 +239,7 @@ Arguments:
 - `jobs`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobsresponsetypedef).
+[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -273,13 +269,11 @@ Arguments:
 - `jobQueue`: `str`
 - `arrayJobId`: `str`
 - `multiNodeJobId`: `str`
-- `jobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobstatus)
+- `jobStatus`: [JobStatus](./literals.md#jobstatus)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#listjobsresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -293,7 +287,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### register_job_definition
 
@@ -305,25 +299,20 @@ Boto3 documentation:
 Arguments:
 
 - `jobDefinitionName`: `str` *(required)*
-- `type`:
-  [JobDefinitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobdefinitiontype)
-  *(required)*
+- `type`: [JobDefinitionType](./literals.md#jobdefinitiontype) *(required)*
 - `parameters`: `Dict`\[`str`, `str`\]
 - `containerProperties`:
-  [ContainerPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containerpropertiestypedef)
-- `nodeProperties`:
-  [NodePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodepropertiestypedef)
-- `retryStrategy`:
-  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#retrystrategytypedef)
+  [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
+- `nodeProperties`: [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
+- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
-- `timeout`:
-  [JobTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobtimeouttypedef)
+- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `platformCapabilities`:
-  `List`\[[PlatformCapability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#platformcapability)\]
+  `List`\[[PlatformCapability](./literals.md#platformcapability)\]
 
 Returns
-[RegisterJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#registerjobdefinitionresponsetypedef).
+[RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
 
 ### submit_job
 
@@ -338,23 +327,19 @@ Arguments:
 - `jobQueue`: `str` *(required)*
 - `jobDefinition`: `str` *(required)*
 - `arrayProperties`:
-  [ArrayPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#arraypropertiestypedef)
+  [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
 - `dependsOn`:
-  `List`\[[JobDependencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobdependencytypedef)\]
+  `List`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
 - `parameters`: `Dict`\[`str`, `str`\]
 - `containerOverrides`:
-  [ContainerOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#containeroverridestypedef)
-- `nodeOverrides`:
-  [NodeOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#nodeoverridestypedef)
-- `retryStrategy`:
-  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#retrystrategytypedef)
+  [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
+- `nodeOverrides`: [NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef)
+- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
-- `timeout`:
-  [JobTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#jobtimeouttypedef)
+- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[SubmitJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#submitjobresponsetypedef).
+Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
 
 ### tag_resource
 
@@ -408,14 +393,13 @@ Boto3 documentation:
 Arguments:
 
 - `computeEnvironment`: `str` *(required)*
-- `state`:
-  [CEState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#cestate)
+- `state`: [CEState](./literals.md#cestate)
 - `computeResources`:
-  [ComputeResourceUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeresourceupdatetypedef)
+  [ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef)
 - `serviceRole`: `str`
 
 Returns
-[UpdateComputeEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#updatecomputeenvironmentresponsetypedef).
+[UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef).
 
 ### update_job_queue
 
@@ -427,14 +411,13 @@ Boto3 documentation:
 Arguments:
 
 - `jobQueue`: `str` *(required)*
-- `state`:
-  [JQState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jqstate)
+- `state`: [JQState](./literals.md#jqstate)
 - `priority`: `int`
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#computeenvironmentordertypedef)\]
+  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Returns
-[UpdateJobQueueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#updatejobqueueresponsetypedef).
+[UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).
 
 ### get_paginator
 

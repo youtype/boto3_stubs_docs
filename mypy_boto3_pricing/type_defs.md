@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Pricing module
 
-> [Index](../README.md) > [Pricing](./README.md) > Structures
+> [Index](..) > [Pricing](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
@@ -34,8 +34,7 @@ from mypy_boto3_pricing.type_defs import DescribeServicesResponseTypeDef
 
 Optional fields:
 
-- `Services`:
-  `List`\[[ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#servicetypedef)\]
+- `Services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
 - `FormatVersion`: `str`
 - `NextToken`: `str`
 
@@ -47,7 +46,7 @@ from mypy_boto3_pricing.type_defs import FilterTypeDef
 
 Required fields:
 
-- `Type`: `Literal['TERM_MATCH']`
+- `Type`: `Literal['TERM_MATCH']` (see [FilterType](./literals.md#filtertype))
 - `Field`: `str`
 - `Value`: `str`
 
@@ -60,7 +59,7 @@ from mypy_boto3_pricing.type_defs import GetAttributeValuesResponseTypeDef
 Optional fields:
 
 - `AttributeValues`:
-  `List`\[[AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#attributevaluetypedef)\]
+  `List`\[[AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `NextToken`: `str`
 
 ## GetProductsResponseTypeDef

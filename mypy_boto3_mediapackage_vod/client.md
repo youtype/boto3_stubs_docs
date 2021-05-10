@@ -1,6 +1,6 @@
 # MediaPackageVodClient for boto3 MediaPackageVod module
 
-> [Index](../README.md) > [MediaPackageVod](./README.md) > MediaPackageVodClient
+> [Index](..) > [MediaPackageVod](.) > MediaPackageVodClient
 
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
@@ -96,10 +96,10 @@ Arguments:
 
 - `Id`: `str` *(required)*
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#egressaccesslogstypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 
 Returns
-[ConfigureLogsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#configurelogsresponsetypedef).
+[ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
 ### create_asset
 
@@ -118,7 +118,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#createassetresponsetypedef).
+[CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
 
 ### create_packaging_configuration
 
@@ -132,18 +132,14 @@ Arguments:
 
 - `Id`: `str` *(required)*
 - `PackagingGroupId`: `str` *(required)*
-- `CmafPackage`:
-  [CmafPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#cmafpackagetypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#dashpackagetypedef)
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#hlspackagetypedef)
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#msspackagetypedef)
+- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePackagingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#createpackagingconfigurationresponsetypedef).
+[CreatePackagingConfigurationResponseTypeDef](./type_defs.md#createpackagingconfigurationresponsetypedef).
 
 ### create_packaging_group
 
@@ -156,14 +152,13 @@ Boto3 documentation:
 Arguments:
 
 - `Id`: `str` *(required)*
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#egressaccesslogstypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePackagingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#createpackaginggroupresponsetypedef).
+[CreatePackagingGroupResponseTypeDef](./type_defs.md#createpackaginggroupresponsetypedef).
 
 ### delete_asset
 
@@ -218,7 +213,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#describeassetresponsetypedef).
+[DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
 
 ### describe_packaging_configuration
 
@@ -233,7 +228,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribePackagingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#describepackagingconfigurationresponsetypedef).
+[DescribePackagingConfigurationResponseTypeDef](./type_defs.md#describepackagingconfigurationresponsetypedef).
 
 ### describe_packaging_group
 
@@ -248,7 +243,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribePackagingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#describepackaginggroupresponsetypedef).
+[DescribePackagingGroupResponseTypeDef](./type_defs.md#describepackaginggroupresponsetypedef).
 
 ### generate_presigned_url
 
@@ -280,8 +275,7 @@ Arguments:
 - `NextToken`: `str`
 - `PackagingGroupId`: `str`
 
-Returns
-[ListAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listassetsresponsetypedef).
+Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
 
 ### list_packaging_configurations
 
@@ -298,7 +292,7 @@ Arguments:
 - `PackagingGroupId`: `str`
 
 Returns
-[ListPackagingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listpackagingconfigurationsresponsetypedef).
+[ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef).
 
 ### list_packaging_groups
 
@@ -314,7 +308,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPackagingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listpackaginggroupsresponsetypedef).
+[ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -329,7 +323,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -366,11 +360,10 @@ Boto3 documentation:
 Arguments:
 
 - `Id`: `str` *(required)*
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 
 Returns
-[UpdatePackagingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage_vod/type_defs.html#updatepackaginggroupresponsetypedef).
+[UpdatePackagingGroupResponseTypeDef](./type_defs.md#updatepackaginggroupresponsetypedef).
 
 ### get_paginator
 

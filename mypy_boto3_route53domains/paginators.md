@@ -1,6 +1,6 @@
 # Paginators for boto3 Route53Domains module
 
-> [Index](../README.md) > [Route53Domains](./README.md) > Paginators
+> [Index](..) > [Route53Domains](.) > Paginators
 
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
@@ -32,10 +32,10 @@ Boto3 documentation:
 Arguments for `ListDomainsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listdomainsresponsetypedef)\].
+`Iterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
 
 ## ListOperationsPaginator
 
@@ -58,10 +58,10 @@ Arguments for `ListOperationsPaginator.paginate` method:
 
 - `SubmittedSince`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOperationsPaginator.paginate` returns
-`Iterator`\[[ListOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listoperationsresponsetypedef)\].
+`Iterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
 
 ## ViewBillingPaginator
 
@@ -85,7 +85,7 @@ Arguments for `ViewBillingPaginator.paginate` method:
 - `Start`: `datetime`
 - `End`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ViewBillingPaginator.paginate` returns
-`Iterator`\[[ViewBillingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#viewbillingresponsetypedef)\].
+`Iterator`\[[ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef)\].

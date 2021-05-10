@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CognitoIdentity module
 
-> [Index](../README.md) > [CognitoIdentity](./README.md) > Structures
+> [Index](..) > [CognitoIdentity](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
@@ -66,7 +66,7 @@ from mypy_boto3_cognito_identity.type_defs import DeleteIdentitiesResponseTypeDe
 Optional fields:
 
 - `UnprocessedIdentityIds`:
-  `List`\[[UnprocessedIdentityIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#unprocessedidentityidtypedef)\]
+  `List`\[[UnprocessedIdentityIdTypeDef](./type_defs.md#unprocessedidentityidtypedef)\]
 
 ## GetCredentialsForIdentityResponseTypeDef
 
@@ -77,8 +77,7 @@ from mypy_boto3_cognito_identity.type_defs import GetCredentialsForIdentityRespo
 Optional fields:
 
 - `IdentityId`: `str`
-- `Credentials`:
-  [CredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#credentialstypedef)
+- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
 
 ## GetIdResponseTypeDef
 
@@ -101,7 +100,7 @@ Optional fields:
 - `IdentityPoolId`: `str`
 - `Roles`: `Dict`\[`str`, `str`\]
 - `RoleMappings`: `Dict`\[`str`,
-  [RoleMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#rolemappingtypedef)\]
+  [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 
 ## GetOpenIdTokenForDeveloperIdentityResponseTypeDef
 
@@ -181,7 +180,7 @@ Optional fields:
 - `DeveloperProviderName`: `str`
 - `OpenIdConnectProviderARNs`: `List`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#cognitoidentityprovidertypedef)\]
+  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
 - `SamlProviderARNs`: `List`\[`str`\]
 - `IdentityPoolTags`: `Dict`\[`str`, `str`\]
 
@@ -195,7 +194,7 @@ Optional fields:
 
 - `IdentityPoolId`: `str`
 - `Identities`:
-  `List`\[[IdentityDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitydescriptiontypedef)\]
+  `List`\[[IdentityDescriptionTypeDef](./type_defs.md#identitydescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListIdentityPoolsResponseTypeDef
@@ -207,7 +206,7 @@ from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsResponseTypeD
 Optional fields:
 
 - `IdentityPools`:
-  `List`\[[IdentityPoolShortDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#identitypoolshortdescriptiontypedef)\]
+  `List`\[[IdentityPoolShortDescriptionTypeDef](./type_defs.md#identitypoolshortdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -241,8 +240,7 @@ from mypy_boto3_cognito_identity.type_defs import MappingRuleTypeDef
 Required fields:
 
 - `Claim`: `str`
-- `MatchType`:
-  [MappingRuleMatchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/literals.html#mappingrulematchtype)
+- `MatchType`: [MappingRuleMatchType](./literals.md#mappingrulematchtype)
 - `Value`: `str`
 - `RoleARN`: `str`
 
@@ -276,15 +274,14 @@ from mypy_boto3_cognito_identity.type_defs import RoleMappingTypeDef
 
 Required fields:
 
-- `Type`:
-  [RoleMappingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/literals.html#rolemappingtype)
+- `Type`: [RoleMappingType](./literals.md#rolemappingtype)
 
 Optional fields:
 
 - `AmbiguousRoleResolution`:
-  [AmbiguousRoleResolutionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/literals.html#ambiguousroleresolutiontype)
+  [AmbiguousRoleResolutionType](./literals.md#ambiguousroleresolutiontype)
 - `RulesConfiguration`:
-  [RulesConfigurationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#rulesconfigurationtypetypedef)
+  [RulesConfigurationTypeTypeDef](./type_defs.md#rulesconfigurationtypetypedef)
 
 ## RulesConfigurationTypeTypeDef
 
@@ -294,8 +291,7 @@ from mypy_boto3_cognito_identity.type_defs import RulesConfigurationTypeTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[MappingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/type_defs.html#mappingruletypedef)\]
+- `Rules`: `List`\[[MappingRuleTypeDef](./type_defs.md#mappingruletypedef)\]
 
 ## SetPrincipalTagAttributeMapResponseTypeDef
 
@@ -319,5 +315,4 @@ from mypy_boto3_cognito_identity.type_defs import UnprocessedIdentityIdTypeDef
 Optional fields:
 
 - `IdentityId`: `str`
-- `ErrorCode`:
-  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cognito_identity/literals.html#errorcode)
+- `ErrorCode`: [ErrorCode](./literals.md#errorcode)

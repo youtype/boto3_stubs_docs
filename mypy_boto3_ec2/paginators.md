@@ -1,6 +1,6 @@
 # Paginators for boto3 EC2 module
 
-> [Index](../README.md) > [EC2](./README.md) > Paginators
+> [Index](..) > [EC2](.) > Paginators
 
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
@@ -129,13 +129,14 @@ Boto3 documentation:
 Arguments for `DescribeAddressesAttributePaginator.paginate` method:
 
 - `AllocationIds`: `List`\[`str`\]
-- `Attribute`: `Literal['domain-name']`
+- `Attribute`: `Literal['domain-name']` (see
+  [AddressAttributeName](./literals.md#addressattributename))
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesAttributePaginator.paginate` returns
-`Iterator`\[[DescribeAddressesAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeaddressesattributeresulttypedef)\].
+`Iterator`\[[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)\].
 
 ## DescribeByoipCidrsPaginator
 
@@ -158,10 +159,10 @@ Arguments for `DescribeByoipCidrsPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeByoipCidrsPaginator.paginate` returns
-`Iterator`\[[DescribeByoipCidrsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describebyoipcidrsresulttypedef)\].
+`Iterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
 
 ## DescribeCapacityReservationsPaginator
 
@@ -183,14 +184,13 @@ Boto3 documentation:
 Arguments for `DescribeCapacityReservationsPaginator.paginate` method:
 
 - `CapacityReservationIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCapacityReservationsPaginator.paginate` returns
-`Iterator`\[[DescribeCapacityReservationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describecapacityreservationsresulttypedef)\].
+`Iterator`\[[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)\].
 
 ## DescribeCarrierGatewaysPaginator
 
@@ -212,14 +212,13 @@ Boto3 documentation:
 Arguments for `DescribeCarrierGatewaysPaginator.paginate` method:
 
 - `CarrierGatewayIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCarrierGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeCarrierGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describecarriergatewaysresulttypedef)\].
+`Iterator`\[[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)\].
 
 ## DescribeClassicLinkInstancesPaginator
 
@@ -240,15 +239,14 @@ Boto3 documentation:
 
 Arguments for `DescribeClassicLinkInstancesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `InstanceIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClassicLinkInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeClassicLinkInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclassiclinkinstancesresulttypedef)\].
+`Iterator`\[[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)\].
 
 ## DescribeClientVpnAuthorizationRulesPaginator
 
@@ -271,13 +269,12 @@ Arguments for `DescribeClientVpnAuthorizationRulesPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnAuthorizationRulesPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnauthorizationrulesresulttypedef)\].
+`Iterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)\].
 
 ## DescribeClientVpnConnectionsPaginator
 
@@ -299,14 +296,13 @@ Boto3 documentation:
 Arguments for `DescribeClientVpnConnectionsPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnConnectionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnconnectionsresulttypedef)\].
+`Iterator`\[[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)\].
 
 ## DescribeClientVpnEndpointsPaginator
 
@@ -328,14 +324,13 @@ Boto3 documentation:
 Arguments for `DescribeClientVpnEndpointsPaginator.paginate` method:
 
 - `ClientVpnEndpointIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnEndpointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnendpointsresulttypedef)\].
+`Iterator`\[[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)\].
 
 ## DescribeClientVpnRoutesPaginator
 
@@ -357,14 +352,13 @@ Boto3 documentation:
 Arguments for `DescribeClientVpnRoutesPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnRoutesPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpnroutesresulttypedef)\].
+`Iterator`\[[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)\].
 
 ## DescribeClientVpnTargetNetworksPaginator
 
@@ -387,14 +381,13 @@ Arguments for `DescribeClientVpnTargetNetworksPaginator.paginate` method:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `AssociationIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClientVpnTargetNetworksPaginator.paginate` returns
-`Iterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeclientvpntargetnetworksresulttypedef)\].
+`Iterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)\].
 
 ## DescribeCoipPoolsPaginator
 
@@ -416,14 +409,13 @@ Boto3 documentation:
 Arguments for `DescribeCoipPoolsPaginator.paginate` method:
 
 - `PoolIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCoipPoolsPaginator.paginate` returns
-`Iterator`\[[DescribeCoipPoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describecoippoolsresulttypedef)\].
+`Iterator`\[[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)\].
 
 ## DescribeDhcpOptionsPaginator
 
@@ -445,14 +437,13 @@ Boto3 documentation:
 Arguments for `DescribeDhcpOptionsPaginator.paginate` method:
 
 - `DhcpOptionsIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDhcpOptionsPaginator.paginate` returns
-`Iterator`\[[DescribeDhcpOptionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describedhcpoptionsresulttypedef)\].
+`Iterator`\[[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)\].
 
 ## DescribeEgressOnlyInternetGatewaysPaginator
 
@@ -475,13 +466,12 @@ Arguments for `DescribeEgressOnlyInternetGatewaysPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEgressOnlyInternetGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeegressonlyinternetgatewaysresulttypedef)\].
+`Iterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)\].
 
 ## DescribeExportImageTasksPaginator
 
@@ -503,14 +493,13 @@ Boto3 documentation:
 Arguments for `DescribeExportImageTasksPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ExportImageTaskIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportImageTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeexportimagetasksresulttypedef)\].
+`Iterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
 
 ## DescribeFastSnapshotRestoresPaginator
 
@@ -531,14 +520,13 @@ Boto3 documentation:
 
 Arguments for `DescribeFastSnapshotRestoresPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFastSnapshotRestoresPaginator.paginate` returns
-`Iterator`\[[DescribeFastSnapshotRestoresResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefastsnapshotrestoresresulttypedef)\].
+`Iterator`\[[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)\].
 
 ## DescribeFleetsPaginator
 
@@ -560,13 +548,12 @@ Arguments for `DescribeFleetsPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `FleetIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefleetsresulttypedef)\].
+`Iterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
 ## DescribeFlowLogsPaginator
 
@@ -587,14 +574,13 @@ Boto3 documentation:
 Arguments for `DescribeFlowLogsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `FlowLogIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFlowLogsPaginator.paginate` returns
-`Iterator`\[[DescribeFlowLogsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeflowlogsresulttypedef)\].
+`Iterator`\[[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)\].
 
 ## DescribeFpgaImagesPaginator
 
@@ -618,13 +604,12 @@ Arguments for `DescribeFpgaImagesPaginator.paginate` method:
 - `DryRun`: `bool`
 - `FpgaImageIds`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFpgaImagesPaginator.paginate` returns
-`Iterator`\[[DescribeFpgaImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefpgaimagesresulttypedef)\].
+`Iterator`\[[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)\].
 
 ## DescribeHostReservationOfferingsPaginator
 
@@ -645,16 +630,15 @@ Boto3 documentation:
 
 Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxDuration`: `int`
 - `MinDuration`: `int`
 - `OfferingId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostReservationOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeHostReservationOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describehostreservationofferingsresulttypedef)\].
+`Iterator`\[[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)\].
 
 ## DescribeHostReservationsPaginator
 
@@ -675,14 +659,13 @@ Boto3 documentation:
 
 Arguments for `DescribeHostReservationsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `HostReservationIdSet`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostReservationsPaginator.paginate` returns
-`Iterator`\[[DescribeHostReservationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describehostreservationsresulttypedef)\].
+`Iterator`\[[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)\].
 
 ## DescribeHostsPaginator
 
@@ -702,14 +685,13 @@ Boto3 documentation:
 
 Arguments for `DescribeHostsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `HostIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHostsPaginator.paginate` returns
-`Iterator`\[[DescribeHostsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describehostsresulttypedef)\].
+`Iterator`\[[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)\].
 
 ## DescribeIamInstanceProfileAssociationsPaginator
 
@@ -732,13 +714,12 @@ Arguments for `DescribeIamInstanceProfileAssociationsPaginator.paginate`
 method:
 
 - `AssociationIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIamInstanceProfileAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeiaminstanceprofileassociationsresulttypedef)\].
+`Iterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)\].
 
 ## DescribeImportImageTasksPaginator
 
@@ -760,14 +741,13 @@ Boto3 documentation:
 Arguments for `DescribeImportImageTasksPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImportTaskIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImportImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeImportImageTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeimportimagetasksresulttypedef)\].
+`Iterator`\[[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)\].
 
 ## DescribeImportSnapshotTasksPaginator
 
@@ -789,14 +769,13 @@ Boto3 documentation:
 Arguments for `DescribeImportSnapshotTasksPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImportTaskIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImportSnapshotTasksPaginator.paginate` returns
-`Iterator`\[[DescribeImportSnapshotTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeimportsnapshottasksresulttypedef)\].
+`Iterator`\[[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)\].
 
 ## DescribeInstanceCreditSpecificationsPaginator
 
@@ -818,14 +797,13 @@ Boto3 documentation:
 Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceCreditSpecificationsPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancecreditspecificationsresulttypedef)\].
+`Iterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
 
 ## DescribeInstanceStatusPaginator
 
@@ -846,16 +824,15 @@ Boto3 documentation:
 
 Arguments for `DescribeInstanceStatusPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `IncludeAllInstances`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceStatusPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancestatusresulttypedef)\].
+`Iterator`\[[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)\].
 
 ## DescribeInstanceTypeOfferingsPaginator
 
@@ -877,15 +854,13 @@ Boto3 documentation:
 Arguments for `DescribeInstanceTypeOfferingsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `LocationType`:
-  [LocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#locationtype)
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `LocationType`: [LocationType](./literals.md#locationtype)
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceTypeOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancetypeofferingsresulttypedef)\].
+`Iterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)\].
 
 ## DescribeInstanceTypesPaginator
 
@@ -907,15 +882,13 @@ Boto3 documentation:
 Arguments for `DescribeInstanceTypesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `InstanceTypes`:
-  `List`\[[InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `InstanceTypes`: `List`\[[InstanceType](./literals.md#instancetype)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceTypesPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceTypesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancetypesresulttypedef)\].
+`Iterator`\[[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)\].
 
 ## DescribeInstancesPaginator
 
@@ -935,15 +908,14 @@ Boto3 documentation:
 
 Arguments for `DescribeInstancesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinstancesresulttypedef)\].
+`Iterator`\[[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)\].
 
 ## DescribeInternetGatewaysPaginator
 
@@ -964,15 +936,14 @@ Boto3 documentation:
 
 Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `InternetGatewayIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInternetGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeInternetGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeinternetgatewaysresulttypedef)\].
+`Iterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
 
 ## DescribeIpv6PoolsPaginator
 
@@ -995,13 +966,12 @@ Arguments for `DescribeIpv6PoolsPaginator.paginate` method:
 
 - `PoolIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIpv6PoolsPaginator.paginate` returns
-`Iterator`\[[DescribeIpv6PoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeipv6poolsresulttypedef)\].
+`Iterator`\[[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)\].
 
 ## DescribeLaunchTemplateVersionsPaginator
 
@@ -1028,13 +998,12 @@ Arguments for `DescribeLaunchTemplateVersionsPaginator.paginate` method:
 - `Versions`: `List`\[`str`\]
 - `MinVersion`: `str`
 - `MaxVersion`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelaunchtemplateversionsresulttypedef)\].
+`Iterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)\].
 
 ## DescribeLaunchTemplatesPaginator
 
@@ -1058,13 +1027,12 @@ Arguments for `DescribeLaunchTemplatesPaginator.paginate` method:
 - `DryRun`: `bool`
 - `LaunchTemplateIds`: `List`\[`str`\]
 - `LaunchTemplateNames`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchTemplatesPaginator.paginate` returns
-`Iterator`\[[DescribeLaunchTemplatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelaunchtemplatesresulttypedef)\].
+`Iterator`\[[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
@@ -1088,15 +1056,14 @@ Arguments for
 method:
 
 - `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator.paginate`
 returns
-`Iterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
+`Iterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
@@ -1119,14 +1086,13 @@ Arguments for `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate`
 method:
 
 - `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
+`Iterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
 
 ## DescribeLocalGatewayRouteTablesPaginator
 
@@ -1148,14 +1114,13 @@ Boto3 documentation:
 Arguments for `DescribeLocalGatewayRouteTablesPaginator.paginate` method:
 
 - `LocalGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayroutetablesresulttypedef)\].
+`Iterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)\].
 
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
@@ -1178,14 +1143,13 @@ Arguments for `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate`
 method:
 
 - `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
+`Iterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
 
 ## DescribeLocalGatewayVirtualInterfacesPaginator
 
@@ -1207,14 +1171,13 @@ Boto3 documentation:
 Arguments for `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method:
 
 - `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewayvirtualinterfacesresulttypedef)\].
+`Iterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)\].
 
 ## DescribeLocalGatewaysPaginator
 
@@ -1236,14 +1199,13 @@ Boto3 documentation:
 Arguments for `DescribeLocalGatewaysPaginator.paginate` method:
 
 - `LocalGatewayIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLocalGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeLocalGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describelocalgatewaysresulttypedef)\].
+`Iterator`\[[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)\].
 
 ## DescribeManagedPrefixListsPaginator
 
@@ -1265,14 +1227,13 @@ Boto3 documentation:
 Arguments for `DescribeManagedPrefixListsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PrefixListIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeManagedPrefixListsPaginator.paginate` returns
-`Iterator`\[[DescribeManagedPrefixListsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describemanagedprefixlistsresulttypedef)\].
+`Iterator`\[[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)\].
 
 ## DescribeMovingAddressesPaginator
 
@@ -1293,15 +1254,14 @@ Boto3 documentation:
 
 Arguments for `DescribeMovingAddressesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PublicIps`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMovingAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeMovingAddressesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describemovingaddressesresulttypedef)\].
+`Iterator`\[[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)\].
 
 ## DescribeNatGatewaysPaginator
 
@@ -1323,14 +1283,13 @@ Boto3 documentation:
 Arguments for `DescribeNatGatewaysPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NatGatewayIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNatGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeNatGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenatgatewaysresulttypedef)\].
+`Iterator`\[[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)\].
 
 ## DescribeNetworkAclsPaginator
 
@@ -1351,15 +1310,14 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkAclsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `NetworkAclIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkAclsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkAclsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkaclsresulttypedef)\].
+`Iterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
 
 ## DescribeNetworkInsightsAnalysesPaginator
 
@@ -1384,14 +1342,13 @@ Arguments for `DescribeNetworkInsightsAnalysesPaginator.paginate` method:
 - `NetworkInsightsPathId`: `str`
 - `AnalysisStartTime`: `datetime`
 - `AnalysisEndTime`: `datetime`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInsightsAnalysesPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinsightsanalysesresulttypedef)\].
+`Iterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)\].
 
 ## DescribeNetworkInsightsPathsPaginator
 
@@ -1413,14 +1370,13 @@ Boto3 documentation:
 Arguments for `DescribeNetworkInsightsPathsPaginator.paginate` method:
 
 - `NetworkInsightsPathIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInsightsPathsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInsightsPathsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinsightspathsresulttypedef)\].
+`Iterator`\[[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)\].
 
 ## DescribeNetworkInterfacePermissionsPaginator
 
@@ -1442,13 +1398,12 @@ Boto3 documentation:
 Arguments for `DescribeNetworkInterfacePermissionsPaginator.paginate` method:
 
 - `NetworkInterfacePermissionIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInterfacePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinterfacepermissionsresulttypedef)\].
+`Iterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)\].
 
 ## DescribeNetworkInterfacesPaginator
 
@@ -1469,15 +1424,14 @@ Boto3 documentation:
 
 Arguments for `DescribeNetworkInterfacesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `NetworkInterfaceIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNetworkInterfacesPaginator.paginate` returns
-`Iterator`\[[DescribeNetworkInterfacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describenetworkinterfacesresulttypedef)\].
+`Iterator`\[[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)\].
 
 ## DescribePrefixListsPaginator
 
@@ -1499,14 +1453,13 @@ Boto3 documentation:
 Arguments for `DescribePrefixListsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PrefixListIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePrefixListsPaginator.paginate` returns
-`Iterator`\[[DescribePrefixListsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeprefixlistsresulttypedef)\].
+`Iterator`\[[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)\].
 
 ## DescribePrincipalIdFormatPaginator
 
@@ -1530,10 +1483,10 @@ Arguments for `DescribePrincipalIdFormatPaginator.paginate` method:
 - `DryRun`: `bool`
 - `Resources`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePrincipalIdFormatPaginator.paginate` returns
-`Iterator`\[[DescribePrincipalIdFormatResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeprincipalidformatresulttypedef)\].
+`Iterator`\[[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)\].
 
 ## DescribePublicIpv4PoolsPaginator
 
@@ -1555,13 +1508,12 @@ Boto3 documentation:
 Arguments for `DescribePublicIpv4PoolsPaginator.paginate` method:
 
 - `PoolIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePublicIpv4PoolsPaginator.paginate` returns
-`Iterator`\[[DescribePublicIpv4PoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describepublicipv4poolsresulttypedef)\].
+`Iterator`\[[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)\].
 
 ## DescribeReplaceRootVolumeTasksPaginator
 
@@ -1583,14 +1535,13 @@ Boto3 documentation:
 Arguments for `DescribeReplaceRootVolumeTasksPaginator.paginate` method:
 
 - `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplaceRootVolumeTasksPaginator.paginate` returns
-`Iterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describereplacerootvolumetasksresulttypedef)\].
+`Iterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)\].
 
 ## DescribeReservedInstancesModificationsPaginator
 
@@ -1612,14 +1563,13 @@ Boto3 documentation:
 Arguments for `DescribeReservedInstancesModificationsPaginator.paginate`
 method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ReservedInstancesModificationIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedInstancesModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedInstancesModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describereservedinstancesmodificationsresulttypedef)\].
+`Iterator`\[[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)\].
 
 ## DescribeReservedInstancesOfferingsPaginator
 
@@ -1641,29 +1591,24 @@ Boto3 documentation:
 Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
 
 - `AvailabilityZone`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `IncludeMarketplace`: `bool`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `MaxDuration`: `int`
 - `MaxInstanceCount`: `int`
 - `MinDuration`: `int`
-- `OfferingClass`:
-  [OfferingClassType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringclasstype)
+- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
 - `ProductDescription`:
-  [RIProductDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#riproductdescription)
+  [RIProductDescription](./literals.md#riproductdescription)
 - `ReservedInstancesOfferingIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `InstanceTenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
-- `OfferingType`:
-  [OfferingTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringtypevalues)
+- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
+- `OfferingType`: [OfferingTypeValues](./literals.md#offeringtypevalues)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedInstancesOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describereservedinstancesofferingsresulttypedef)\].
+`Iterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)\].
 
 ## DescribeRouteTablesPaginator
 
@@ -1684,15 +1629,14 @@ Boto3 documentation:
 
 Arguments for `DescribeRouteTablesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `RouteTableIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeRouteTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describeroutetablesresulttypedef)\].
+`Iterator`\[[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)\].
 
 ## DescribeScheduledInstanceAvailabilityPaginator
 
@@ -1714,21 +1658,20 @@ Boto3 documentation:
 Arguments for `DescribeScheduledInstanceAvailabilityPaginator.paginate` method:
 
 - `FirstSlotStartTimeRange`:
-  [SlotDateTimeRangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#slotdatetimerangerequesttypedef)
+  [SlotDateTimeRangeRequestTypeDef](./type_defs.md#slotdatetimerangerequesttypedef)
   *(required)*
 - `Recurrence`:
-  [ScheduledInstanceRecurrenceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancerecurrencerequesttypedef)
+  [ScheduledInstanceRecurrenceRequestTypeDef](./type_defs.md#scheduledinstancerecurrencerequesttypedef)
   *(required)*
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxSlotDurationInHours`: `int`
 - `MinSlotDurationInHours`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledInstanceAvailabilityPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describescheduledinstanceavailabilityresulttypedef)\].
+`Iterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)\].
 
 ## DescribeScheduledInstancesPaginator
 
@@ -1750,16 +1693,15 @@ Boto3 documentation:
 Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ScheduledInstanceIds`: `List`\[`str`\]
 - `SlotStartTimeRange`:
-  [SlotStartTimeRangeRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#slotstarttimerangerequesttypedef)
+  [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describescheduledinstancesresulttypedef)\].
+`Iterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
 
 ## DescribeSecurityGroupsPaginator
 
@@ -1780,16 +1722,15 @@ Boto3 documentation:
 
 Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `GroupIds`: `List`\[`str`\]
 - `GroupNames`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeSecurityGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesecuritygroupsresulttypedef)\].
+`Iterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
 
 ## DescribeSnapshotsPaginator
 
@@ -1809,17 +1750,16 @@ Boto3 documentation:
 
 Arguments for `DescribeSnapshotsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `OwnerIds`: `List`\[`str`\]
 - `RestorableByUserIds`: `List`\[`str`\]
 - `SnapshotIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotsPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesnapshotsresulttypedef)\].
+`Iterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
 
 ## DescribeSpotFleetInstancesPaginator
 
@@ -1843,10 +1783,10 @@ Arguments for `DescribeSpotFleetInstancesPaginator.paginate` method:
 - `SpotFleetRequestId`: `str` *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotFleetInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeSpotFleetInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotfleetinstancesresponsetypedef)\].
+`Iterator`\[[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)\].
 
 ## DescribeSpotFleetRequestsPaginator
 
@@ -1870,10 +1810,10 @@ Arguments for `DescribeSpotFleetRequestsPaginator.paginate` method:
 - `DryRun`: `bool`
 - `SpotFleetRequestIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotFleetRequestsPaginator.paginate` returns
-`Iterator`\[[DescribeSpotFleetRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotfleetrequestsresponsetypedef)\].
+`Iterator`\[[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)\].
 
 ## DescribeSpotInstanceRequestsPaginator
 
@@ -1894,15 +1834,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSpotInstanceRequestsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `SpotInstanceRequestIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotInstanceRequestsPaginator.paginate` returns
-`Iterator`\[[DescribeSpotInstanceRequestsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotinstancerequestsresulttypedef)\].
+`Iterator`\[[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)\].
 
 ## DescribeSpotPriceHistoryPaginator
 
@@ -1923,20 +1862,18 @@ Boto3 documentation:
 
 Arguments for `DescribeSpotPriceHistoryPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `AvailabilityZone`: `str`
 - `DryRun`: `bool`
 - `EndTime`: `datetime`
-- `InstanceTypes`:
-  `List`\[[InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)\]
+- `InstanceTypes`: `List`\[[InstanceType](./literals.md#instancetype)\]
 - `ProductDescriptions`: `List`\[`str`\]
 - `StartTime`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSpotPriceHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeSpotPriceHistoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describespotpricehistoryresulttypedef)\].
+`Iterator`\[[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)\].
 
 ## DescribeStaleSecurityGroupsPaginator
 
@@ -1960,10 +1897,10 @@ Arguments for `DescribeStaleSecurityGroupsPaginator.paginate` method:
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStaleSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeStaleSecurityGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describestalesecuritygroupsresulttypedef)\].
+`Iterator`\[[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)\].
 
 ## DescribeStoreImageTasksPaginator
 
@@ -1986,13 +1923,12 @@ Arguments for `DescribeStoreImageTasksPaginator.paginate` method:
 
 - `ImageIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStoreImageTasksPaginator.paginate` returns
-`Iterator`\[[DescribeStoreImageTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describestoreimagetasksresulttypedef)\].
+`Iterator`\[[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)\].
 
 ## DescribeSubnetsPaginator
 
@@ -2012,15 +1948,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSubnetsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SubnetIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubnetsPaginator.paginate` returns
-`Iterator`\[[DescribeSubnetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describesubnetsresulttypedef)\].
+`Iterator`\[[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -2041,13 +1976,12 @@ Boto3 documentation:
 Arguments for `DescribeTagsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[DescribeTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetagsresulttypedef)\].
+`Iterator`\[[DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)\].
 
 ## DescribeTrafficMirrorFiltersPaginator
 
@@ -2070,13 +2004,12 @@ Arguments for `DescribeTrafficMirrorFiltersPaginator.paginate` method:
 
 - `TrafficMirrorFilterIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetrafficmirrorfiltersresulttypedef)\].
+`Iterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)\].
 
 ## DescribeTrafficMirrorSessionsPaginator
 
@@ -2099,13 +2032,12 @@ Arguments for `DescribeTrafficMirrorSessionsPaginator.paginate` method:
 
 - `TrafficMirrorSessionIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetrafficmirrorsessionsresulttypedef)\].
+`Iterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)\].
 
 ## DescribeTrafficMirrorTargetsPaginator
 
@@ -2128,13 +2060,12 @@ Arguments for `DescribeTrafficMirrorTargetsPaginator.paginate` method:
 
 - `TrafficMirrorTargetIds`: `List`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrafficMirrorTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetrafficmirrortargetsresulttypedef)\].
+`Iterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)\].
 
 ## DescribeTransitGatewayAttachmentsPaginator
 
@@ -2156,14 +2087,13 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayAttachmentsPaginator.paginate` method:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayattachmentsresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewayConnectPeersPaginator
 
@@ -2185,14 +2115,13 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayConnectPeersPaginator.paginate` method:
 
 - `TransitGatewayConnectPeerIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayConnectPeersPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayconnectpeersresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)\].
 
 ## DescribeTransitGatewayConnectsPaginator
 
@@ -2214,14 +2143,13 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayConnectsPaginator.paginate` method:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayConnectsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayConnectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayconnectsresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)\].
 
 ## DescribeTransitGatewayMulticastDomainsPaginator
 
@@ -2244,14 +2172,13 @@ Arguments for `DescribeTransitGatewayMulticastDomainsPaginator.paginate`
 method:
 
 - `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayMulticastDomainsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewaymulticastdomainsresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)\].
 
 ## DescribeTransitGatewayPeeringAttachmentsPaginator
 
@@ -2274,14 +2201,13 @@ Arguments for `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate`
 method:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewaypeeringattachmentsresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewayRouteTablesPaginator
 
@@ -2303,14 +2229,13 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayRouteTablesPaginator.paginate` method:
 
 - `TransitGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayRouteTablesPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayroutetablesresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)\].
 
 ## DescribeTransitGatewayVpcAttachmentsPaginator
 
@@ -2332,14 +2257,13 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewayvpcattachmentsresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)\].
 
 ## DescribeTransitGatewaysPaginator
 
@@ -2361,14 +2285,13 @@ Boto3 documentation:
 Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
 
 - `TransitGatewayIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTransitGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeTransitGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describetransitgatewaysresulttypedef)\].
+`Iterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
 
 ## DescribeVolumeStatusPaginator
 
@@ -2389,15 +2312,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVolumeStatusPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumeStatusPaginator.paginate` returns
-`Iterator`\[[DescribeVolumeStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumestatusresulttypedef)\].
+`Iterator`\[[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)\].
 
 ## DescribeVolumesPaginator
 
@@ -2417,15 +2339,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVolumesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VolumeIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumesPaginator.paginate` returns
-`Iterator`\[[DescribeVolumesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumesresulttypedef)\].
+`Iterator`\[[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)\].
 
 ## DescribeVolumesModificationsPaginator
 
@@ -2448,13 +2369,12 @@ Arguments for `DescribeVolumesModificationsPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `VolumeIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVolumesModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeVolumesModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevolumesmodificationsresulttypedef)\].
+`Iterator`\[[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)\].
 
 ## DescribeVpcClassicLinkDnsSupportPaginator
 
@@ -2477,10 +2397,10 @@ Arguments for `DescribeVpcClassicLinkDnsSupportPaginator.paginate` method:
 
 - `VpcIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcClassicLinkDnsSupportPaginator.paginate` returns
-`Iterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcclassiclinkdnssupportresulttypedef)\].
+`Iterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)\].
 
 ## DescribeVpcEndpointConnectionNotificationsPaginator
 
@@ -2504,13 +2424,12 @@ method:
 
 - `DryRun`: `bool`
 - `ConnectionNotificationId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointConnectionNotificationsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointconnectionnotificationsresulttypedef)\].
+`Iterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)\].
 
 ## DescribeVpcEndpointConnectionsPaginator
 
@@ -2532,13 +2451,12 @@ Boto3 documentation:
 Arguments for `DescribeVpcEndpointConnectionsPaginator.paginate` method:
 
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointconnectionsresulttypedef)\].
+`Iterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)\].
 
 ## DescribeVpcEndpointServiceConfigurationsPaginator
 
@@ -2562,13 +2480,12 @@ method:
 
 - `DryRun`: `bool`
 - `ServiceIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServiceConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointserviceconfigurationsresulttypedef)\].
+`Iterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)\].
 
 ## DescribeVpcEndpointServicePermissionsPaginator
 
@@ -2591,13 +2508,12 @@ Arguments for `DescribeVpcEndpointServicePermissionsPaginator.paginate` method:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServicePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointservicepermissionsresulttypedef)\].
+`Iterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)\].
 
 ## DescribeVpcEndpointServicesPaginator
 
@@ -2620,13 +2536,12 @@ Arguments for `DescribeVpcEndpointServicesPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `ServiceNames`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointServicesPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointServicesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointservicesresulttypedef)\].
+`Iterator`\[[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)\].
 
 ## DescribeVpcEndpointsPaginator
 
@@ -2649,13 +2564,12 @@ Arguments for `DescribeVpcEndpointsPaginator.paginate` method:
 
 - `DryRun`: `bool`
 - `VpcEndpointIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcEndpointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcendpointsresulttypedef)\].
+`Iterator`\[[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)\].
 
 ## DescribeVpcPeeringConnectionsPaginator
 
@@ -2676,15 +2590,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVpcPeeringConnectionsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `VpcPeeringConnectionIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcPeeringConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcpeeringconnectionsresulttypedef)\].
+`Iterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)\].
 
 ## DescribeVpcsPaginator
 
@@ -2704,15 +2617,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVpcsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpcIds`: `List`\[`str`\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVpcsPaginator.paginate` returns
-`Iterator`\[[DescribeVpcsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describevpcsresulttypedef)\].
+`Iterator`\[[DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)\].
 
 ## GetAssociatedIpv6PoolCidrsPaginator
 
@@ -2736,10 +2648,10 @@ Arguments for `GetAssociatedIpv6PoolCidrsPaginator.paginate` method:
 - `PoolId`: `str` *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAssociatedIpv6PoolCidrsPaginator.paginate` returns
-`Iterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getassociatedipv6poolcidrsresulttypedef)\].
+`Iterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)\].
 
 ## GetGroupsForCapacityReservationPaginator
 
@@ -2763,10 +2675,10 @@ Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
 - `CapacityReservationId`: `str` *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupsForCapacityReservationPaginator.paginate` returns
-`Iterator`\[[GetGroupsForCapacityReservationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getgroupsforcapacityreservationresulttypedef)\].
+`Iterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
 
 ## GetManagedPrefixListAssociationsPaginator
 
@@ -2790,10 +2702,10 @@ Arguments for `GetManagedPrefixListAssociationsPaginator.paginate` method:
 - `PrefixListId`: `str` *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetManagedPrefixListAssociationsPaginator.paginate` returns
-`Iterator`\[[GetManagedPrefixListAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getmanagedprefixlistassociationsresulttypedef)\].
+`Iterator`\[[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)\].
 
 ## GetManagedPrefixListEntriesPaginator
 
@@ -2818,10 +2730,10 @@ Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
 - `DryRun`: `bool`
 - `TargetVersion`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetManagedPrefixListEntriesPaginator.paginate` returns
-`Iterator`\[[GetManagedPrefixListEntriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#getmanagedprefixlistentriesresulttypedef)\].
+`Iterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
 
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
@@ -2844,14 +2756,13 @@ Arguments for `GetTransitGatewayAttachmentPropagationsPaginator.paginate`
 method:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayAttachmentPropagationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayattachmentpropagationsresulttypedef)\].
+`Iterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)\].
 
 ## GetTransitGatewayMulticastDomainAssociationsPaginator
 
@@ -2874,14 +2785,13 @@ Arguments for `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate`
 method:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
+`Iterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
 
 ## GetTransitGatewayPrefixListReferencesPaginator
 
@@ -2903,14 +2813,13 @@ Boto3 documentation:
 Arguments for `GetTransitGatewayPrefixListReferencesPaginator.paginate` method:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayPrefixListReferencesPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayprefixlistreferencesresulttypedef)\].
+`Iterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)\].
 
 ## GetTransitGatewayRouteTableAssociationsPaginator
 
@@ -2933,14 +2842,13 @@ Arguments for `GetTransitGatewayRouteTableAssociationsPaginator.paginate`
 method:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRouteTableAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayroutetableassociationsresulttypedef)\].
+`Iterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)\].
 
 ## GetTransitGatewayRouteTablePropagationsPaginator
 
@@ -2963,14 +2871,13 @@ Arguments for `GetTransitGatewayRouteTablePropagationsPaginator.paginate`
 method:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gettransitgatewayroutetablepropagationsresulttypedef)\].
+`Iterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
 
 ## SearchLocalGatewayRoutesPaginator
 
@@ -2992,15 +2899,13 @@ Boto3 documentation:
 Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
-  *(required)*
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\] *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchLocalGatewayRoutesPaginator.paginate` returns
-`Iterator`\[[SearchLocalGatewayRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#searchlocalgatewayroutesresulttypedef)\].
+`Iterator`\[[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)\].
 
 ## SearchTransitGatewayMulticastGroupsPaginator
 
@@ -3022,11 +2927,10 @@ Boto3 documentation:
 Arguments for `SearchTransitGatewayMulticastGroupsPaginator.paginate` method:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchTransitGatewayMulticastGroupsPaginator.paginate` returns
-`Iterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#searchtransitgatewaymulticastgroupsresulttypedef)\].
+`Iterator`\[[SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef)\].

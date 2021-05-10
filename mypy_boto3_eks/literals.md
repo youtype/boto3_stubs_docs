@@ -1,6 +1,6 @@
 # Literals for boto3 EKS module
 
-> [Index](../README.md) > [EKS](./README.md) > Literals
+> [Index](..) > [EKS](.) > Literals
 
 Auto-generated documentation for
 [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)

@@ -1,6 +1,6 @@
 # CodeStarClient for boto3 CodeStar module
 
-> [Index](../README.md) > [CodeStar](./README.md) > CodeStarClient
+> [Index](..) > [CodeStar](.) > CodeStarClient
 
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
@@ -96,7 +96,7 @@ Arguments:
 - `remoteAccessAllowed`: `bool`
 
 Returns
-[AssociateTeamMemberResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#associateteammemberresulttypedef).
+[AssociateTeamMemberResultTypeDef](./type_defs.md#associateteammemberresulttypedef).
 
 ### can_paginate
 
@@ -124,14 +124,12 @@ Arguments:
 - `id`: `str` *(required)*
 - `description`: `str`
 - `clientRequestToken`: `str`
-- `sourceCode`:
-  `List`\[[CodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#codetypedef)\]
-- `toolchain`:
-  [ToolchainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#toolchaintypedef)
+- `sourceCode`: `List`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
+- `toolchain`: [ToolchainTypeDef](./type_defs.md#toolchaintypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#createprojectresulttypedef).
+[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
 ### create_user_profile
 
@@ -148,7 +146,7 @@ Arguments:
 - `sshPublicKey`: `str`
 
 Returns
-[CreateUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#createuserprofileresulttypedef).
+[CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef).
 
 ### delete_project
 
@@ -164,7 +162,7 @@ Arguments:
 - `deleteStack`: `bool`
 
 Returns
-[DeleteProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#deleteprojectresulttypedef).
+[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
 
 ### delete_user_profile
 
@@ -178,7 +176,7 @@ Arguments:
 - `userArn`: `str` *(required)*
 
 Returns
-[DeleteUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#deleteuserprofileresulttypedef).
+[DeleteUserProfileResultTypeDef](./type_defs.md#deleteuserprofileresulttypedef).
 
 ### describe_project
 
@@ -192,7 +190,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[DescribeProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#describeprojectresulttypedef).
+[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
 
 ### describe_user_profile
 
@@ -206,7 +204,7 @@ Arguments:
 - `userArn`: `str` *(required)*
 
 Returns
-[DescribeUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#describeuserprofileresulttypedef).
+[DescribeUserProfileResultTypeDef](./type_defs.md#describeuserprofileresulttypedef).
 
 ### disassociate_team_member
 
@@ -251,8 +249,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listprojectsresulttypedef).
+Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 
 ### list_resources
 
@@ -268,7 +265,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listresourcesresulttypedef).
+[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef).
 
 ### list_tags_for_project
 
@@ -284,7 +281,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listtagsforprojectresulttypedef).
+[ListTagsForProjectResultTypeDef](./type_defs.md#listtagsforprojectresulttypedef).
 
 ### list_team_members
 
@@ -300,7 +297,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTeamMembersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listteammembersresulttypedef).
+[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef).
 
 ### list_user_profiles
 
@@ -315,7 +312,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListUserProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listuserprofilesresulttypedef).
+[ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef).
 
 ### tag_project
 
@@ -329,8 +326,7 @@ Arguments:
 - `id`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#tagprojectresulttypedef).
+Returns [TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef).
 
 ### untag_project
 
@@ -376,7 +372,7 @@ Arguments:
 - `remoteAccessAllowed`: `bool`
 
 Returns
-[UpdateTeamMemberResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#updateteammemberresulttypedef).
+[UpdateTeamMemberResultTypeDef](./type_defs.md#updateteammemberresulttypedef).
 
 ### update_user_profile
 
@@ -393,7 +389,7 @@ Arguments:
 - `sshPublicKey`: `str`
 
 Returns
-[UpdateUserProfileResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#updateuserprofileresulttypedef).
+[UpdateUserProfileResultTypeDef](./type_defs.md#updateuserprofileresulttypedef).
 
 ### get_paginator
 

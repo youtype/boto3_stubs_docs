@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticTranscoder module
 
-> [Index](../README.md) > [ElasticTranscoder](./README.md) > Literals
+> [Index](..) > [ElasticTranscoder](.) > Literals
 
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)

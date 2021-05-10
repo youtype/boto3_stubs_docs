@@ -1,6 +1,6 @@
 # Waiters for boto3 CloudFront module
 
-> [Index](../README.md) > [CloudFront](./README.md) > Waiters
+> [Index](..) > [CloudFront](.) > Waiters
 
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
@@ -32,8 +32,7 @@ Boto3 documentation:
 Arguments for `DistributionDeployedWaiter.wait` method:
 
 - `Id`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InvalidationCompletedWaiter
 
@@ -56,8 +55,7 @@ Arguments for `InvalidationCompletedWaiter.wait` method:
 
 - `DistributionId`: `str` *(required)*
 - `Id`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StreamingDistributionDeployedWaiter
 
@@ -79,5 +77,4 @@ Boto3 documentation:
 Arguments for `StreamingDistributionDeployedWaiter.wait` method:
 
 - `Id`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

@@ -1,6 +1,6 @@
 # Paginators for boto3 Glue module
 
-> [Index](../README.md) > [Glue](./README.md) > Paginators
+> [Index](..) > [Glue](.) > Paginators
 
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
@@ -47,10 +47,10 @@ Boto3 documentation:
 Arguments for `GetClassifiersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetClassifiersPaginator.paginate` returns
-`Iterator`\[[GetClassifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getclassifiersresponsetypedef)\].
+`Iterator`\[[GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef)\].
 
 ## GetConnectionsPaginator
 
@@ -72,13 +72,13 @@ Arguments for `GetConnectionsPaginator.paginate` method:
 
 - `CatalogId`: `str`
 - `Filter`:
-  [GetConnectionsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionsfiltertypedef)
+  [GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef)
 - `HidePassword`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectionsPaginator.paginate` returns
-`Iterator`\[[GetConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getconnectionsresponsetypedef)\].
+`Iterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
 
 ## GetCrawlerMetricsPaginator
 
@@ -101,10 +101,10 @@ Arguments for `GetCrawlerMetricsPaginator.paginate` method:
 
 - `CrawlerNameList`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCrawlerMetricsPaginator.paginate` returns
-`Iterator`\[[GetCrawlerMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlermetricsresponsetypedef)\].
+`Iterator`\[[GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef)\].
 
 ## GetCrawlersPaginator
 
@@ -125,10 +125,10 @@ Boto3 documentation:
 Arguments for `GetCrawlersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCrawlersPaginator.paginate` returns
-`Iterator`\[[GetCrawlersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getcrawlersresponsetypedef)\].
+`Iterator`\[[GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef)\].
 
 ## GetDatabasesPaginator
 
@@ -149,13 +149,12 @@ Boto3 documentation:
 Arguments for `GetDatabasesPaginator.paginate` method:
 
 - `CatalogId`: `str`
-- `ResourceShareType`:
-  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#resourcesharetype)
+- `ResourceShareType`: [ResourceShareType](./literals.md#resourcesharetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDatabasesPaginator.paginate` returns
-`Iterator`\[[GetDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdatabasesresponsetypedef)\].
+`Iterator`\[[GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef)\].
 
 ## GetDevEndpointsPaginator
 
@@ -176,10 +175,10 @@ Boto3 documentation:
 Arguments for `GetDevEndpointsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevEndpointsPaginator.paginate` returns
-`Iterator`\[[GetDevEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getdevendpointsresponsetypedef)\].
+`Iterator`\[[GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef)\].
 
 ## GetJobRunsPaginator
 
@@ -201,10 +200,10 @@ Arguments for `GetJobRunsPaginator.paginate` method:
 
 - `JobName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetJobRunsPaginator.paginate` returns
-`Iterator`\[[GetJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobrunsresponsetypedef)\].
+`Iterator`\[[GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef)\].
 
 ## GetJobsPaginator
 
@@ -225,10 +224,10 @@ Boto3 documentation:
 Arguments for `GetJobsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetJobsPaginator.paginate` returns
-`Iterator`\[[GetJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getjobsresponsetypedef)\].
+`Iterator`\[[GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef)\].
 
 ## GetPartitionIndexesPaginator
 
@@ -253,10 +252,10 @@ Arguments for `GetPartitionIndexesPaginator.paginate` method:
 - `TableName`: `str` *(required)*
 - `CatalogId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetPartitionIndexesPaginator.paginate` returns
-`Iterator`\[[GetPartitionIndexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionindexesresponsetypedef)\].
+`Iterator`\[[GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef)\].
 
 ## GetPartitionsPaginator
 
@@ -280,14 +279,13 @@ Arguments for `GetPartitionsPaginator.paginate` method:
 - `TableName`: `str` *(required)*
 - `CatalogId`: `str`
 - `Expression`: `str`
-- `Segment`:
-  [SegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#segmenttypedef)
+- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
 - `ExcludeColumnSchema`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetPartitionsPaginator.paginate` returns
-`Iterator`\[[GetPartitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getpartitionsresponsetypedef)\].
+`Iterator`\[[GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef)\].
 
 ## GetResourcePoliciesPaginator
 
@@ -309,10 +307,10 @@ Boto3 documentation:
 Arguments for `GetResourcePoliciesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[GetResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getresourcepoliciesresponsetypedef)\].
+`Iterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
 
 ## GetSecurityConfigurationsPaginator
 
@@ -334,10 +332,10 @@ Boto3 documentation:
 Arguments for `GetSecurityConfigurationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSecurityConfigurationsPaginator.paginate` returns
-`Iterator`\[[GetSecurityConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getsecurityconfigurationsresponsetypedef)\].
+`Iterator`\[[GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef)\].
 
 ## GetTableVersionsPaginator
 
@@ -362,10 +360,10 @@ Arguments for `GetTableVersionsPaginator.paginate` method:
 - `TableName`: `str` *(required)*
 - `CatalogId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTableVersionsPaginator.paginate` returns
-`Iterator`\[[GetTableVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettableversionsresponsetypedef)\].
+`Iterator`\[[GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef)\].
 
 ## GetTablesPaginator
 
@@ -389,10 +387,10 @@ Arguments for `GetTablesPaginator.paginate` method:
 - `CatalogId`: `str`
 - `Expression`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTablesPaginator.paginate` returns
-`Iterator`\[[GetTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettablesresponsetypedef)\].
+`Iterator`\[[GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef)\].
 
 ## GetTriggersPaginator
 
@@ -414,10 +412,10 @@ Arguments for `GetTriggersPaginator.paginate` method:
 
 - `DependentJobName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTriggersPaginator.paginate` returns
-`Iterator`\[[GetTriggersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gettriggersresponsetypedef)\].
+`Iterator`\[[GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef)\].
 
 ## GetUserDefinedFunctionsPaginator
 
@@ -442,10 +440,10 @@ Arguments for `GetUserDefinedFunctionsPaginator.paginate` method:
 - `CatalogId`: `str`
 - `DatabaseName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUserDefinedFunctionsPaginator.paginate` returns
-`Iterator`\[[GetUserDefinedFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#getuserdefinedfunctionsresponsetypedef)\].
+`Iterator`\[[GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef)\].
 
 ## ListRegistriesPaginator
 
@@ -466,10 +464,10 @@ Boto3 documentation:
 Arguments for `ListRegistriesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegistriesPaginator.paginate` returns
-`Iterator`\[[ListRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listregistriesresponsetypedef)\].
+`Iterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
 
 ## ListSchemaVersionsPaginator
 
@@ -490,14 +488,12 @@ Boto3 documentation:
 
 Arguments for `ListSchemaVersionsPaginator.paginate` method:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
-  *(required)*
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemaVersionsPaginator.paginate` returns
-`Iterator`\[[ListSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listschemaversionsresponsetypedef)\].
+`Iterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
 
 ## ListSchemasPaginator
 
@@ -517,10 +513,9 @@ Boto3 documentation:
 
 Arguments for `ListSchemasPaginator.paginate` method:
 
-- `RegistryId`:
-  [RegistryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registryidtypedef)
+- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemasPaginator.paginate` returns
-`Iterator`\[[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#listschemasresponsetypedef)\].
+`Iterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].

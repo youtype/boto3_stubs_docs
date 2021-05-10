@@ -1,6 +1,6 @@
 # Type annotations for boto3 EMR module
 
-> [Index](../README.md) > EMR
+> [Index](..) > EMR
 
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
@@ -296,7 +296,7 @@ from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef, ...
 - [PlacementTypeTypeDef](./type_defs.md#placementtypetypedef)
 - [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - [PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef)
 - [ScalingActionTypeDef](./type_defs.md#scalingactiontypedef)
 - [ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef)

@@ -1,6 +1,6 @@
 # AmplifyBackendClient for boto3 AmplifyBackend module
 
-> [Index](../README.md) > [AmplifyBackend](./README.md) > AmplifyBackendClient
+> [Index](..) > [AmplifyBackend](.) > AmplifyBackendClient
 
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
@@ -104,7 +104,7 @@ Arguments:
 - `TargetEnvironmentName`: `str` *(required)*
 
 Returns
-[CloneBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#clonebackendresponsetypedef).
+[CloneBackendResponseTypeDef](./type_defs.md#clonebackendresponsetypedef).
 
 ### create_backend
 
@@ -122,7 +122,7 @@ Arguments:
 - `ResourceName`: `str`
 
 Returns
-[CreateBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendresponsetypedef).
+[CreateBackendResponseTypeDef](./type_defs.md#createbackendresponsetypedef).
 
 ### create_backend_api
 
@@ -137,12 +137,12 @@ Arguments:
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
 - `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
   *(required)*
 - `ResourceName`: `str` *(required)*
 
 Returns
-[CreateBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendapiresponsetypedef).
+[CreateBackendAPIResponseTypeDef](./type_defs.md#createbackendapiresponsetypedef).
 
 ### create_backend_auth
 
@@ -157,12 +157,12 @@ Arguments:
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
 - `ResourceConfig`:
-  [CreateBackendAuthResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthresourceconfigtypedef)
+  [CreateBackendAuthResourceConfigTypeDef](./type_defs.md#createbackendauthresourceconfigtypedef)
   *(required)*
 - `ResourceName`: `str` *(required)*
 
 Returns
-[CreateBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendauthresponsetypedef).
+[CreateBackendAuthResponseTypeDef](./type_defs.md#createbackendauthresponsetypedef).
 
 ### create_backend_config
 
@@ -178,7 +178,7 @@ Arguments:
 - `BackendManagerAppId`: `str`
 
 Returns
-[CreateBackendConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createbackendconfigresponsetypedef).
+[CreateBackendConfigResponseTypeDef](./type_defs.md#createbackendconfigresponsetypedef).
 
 ### create_token
 
@@ -192,7 +192,7 @@ Arguments:
 - `AppId`: `str` *(required)*
 
 Returns
-[CreateTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#createtokenresponsetypedef).
+[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
 ### delete_backend
 
@@ -207,7 +207,7 @@ Arguments:
 - `BackendEnvironmentName`: `str` *(required)*
 
 Returns
-[DeleteBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletebackendresponsetypedef).
+[DeleteBackendResponseTypeDef](./type_defs.md#deletebackendresponsetypedef).
 
 ### delete_backend_api
 
@@ -223,10 +223,10 @@ Arguments:
 - `BackendEnvironmentName`: `str` *(required)*
 - `ResourceName`: `str` *(required)*
 - `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
 Returns
-[DeleteBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletebackendapiresponsetypedef).
+[DeleteBackendAPIResponseTypeDef](./type_defs.md#deletebackendapiresponsetypedef).
 
 ### delete_backend_auth
 
@@ -243,7 +243,7 @@ Arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[DeleteBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletebackendauthresponsetypedef).
+[DeleteBackendAuthResponseTypeDef](./type_defs.md#deletebackendauthresponsetypedef).
 
 ### delete_token
 
@@ -258,7 +258,7 @@ Arguments:
 - `SessionId`: `str` *(required)*
 
 Returns
-[DeleteTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#deletetokenresponsetypedef).
+[DeleteTokenResponseTypeDef](./type_defs.md#deletetokenresponsetypedef).
 
 ### generate_backend_api_models
 
@@ -275,7 +275,7 @@ Arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[GenerateBackendAPIModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#generatebackendapimodelsresponsetypedef).
+[GenerateBackendAPIModelsResponseTypeDef](./type_defs.md#generatebackendapimodelsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -306,8 +306,7 @@ Arguments:
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str`
 
-Returns
-[GetBackendResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendresponsetypedef).
+Returns [GetBackendResponseTypeDef](./type_defs.md#getbackendresponsetypedef).
 
 ### get_backend_api
 
@@ -322,10 +321,10 @@ Arguments:
 - `BackendEnvironmentName`: `str` *(required)*
 - `ResourceName`: `str` *(required)*
 - `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
 Returns
-[GetBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendapiresponsetypedef).
+[GetBackendAPIResponseTypeDef](./type_defs.md#getbackendapiresponsetypedef).
 
 ### get_backend_api_models
 
@@ -342,7 +341,7 @@ Arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[GetBackendAPIModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendapimodelsresponsetypedef).
+[GetBackendAPIModelsResponseTypeDef](./type_defs.md#getbackendapimodelsresponsetypedef).
 
 ### get_backend_auth
 
@@ -358,7 +357,7 @@ Arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[GetBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendauthresponsetypedef).
+[GetBackendAuthResponseTypeDef](./type_defs.md#getbackendauthresponsetypedef).
 
 ### get_backend_job
 
@@ -374,7 +373,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[GetBackendJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#getbackendjobresponsetypedef).
+[GetBackendJobResponseTypeDef](./type_defs.md#getbackendjobresponsetypedef).
 
 ### get_token
 
@@ -388,8 +387,7 @@ Arguments:
 - `AppId`: `str` *(required)*
 - `SessionId`: `str` *(required)*
 
-Returns
-[GetTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#gettokenresponsetypedef).
+Returns [GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef).
 
 ### list_backend_jobs
 
@@ -409,7 +407,7 @@ Arguments:
 - `Status`: `str`
 
 Returns
-[ListBackendJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#listbackendjobsresponsetypedef).
+[ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef).
 
 ### remove_all_backends
 
@@ -425,7 +423,7 @@ Arguments:
 - `CleanAmplifyApp`: `bool`
 
 Returns
-[RemoveAllBackendsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#removeallbackendsresponsetypedef).
+[RemoveAllBackendsResponseTypeDef](./type_defs.md#removeallbackendsresponsetypedef).
 
 ### remove_backend_config
 
@@ -440,7 +438,7 @@ Arguments:
 - `AppId`: `str` *(required)*
 
 Returns
-[RemoveBackendConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#removebackendconfigresponsetypedef).
+[RemoveBackendConfigResponseTypeDef](./type_defs.md#removebackendconfigresponsetypedef).
 
 ### update_backend_api
 
@@ -456,10 +454,10 @@ Arguments:
 - `BackendEnvironmentName`: `str` *(required)*
 - `ResourceName`: `str` *(required)*
 - `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#backendapiresourceconfigtypedef)
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
 Returns
-[UpdateBackendAPIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendapiresponsetypedef).
+[UpdateBackendAPIResponseTypeDef](./type_defs.md#updatebackendapiresponsetypedef).
 
 ### update_backend_auth
 
@@ -474,12 +472,12 @@ Arguments:
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
 - `ResourceConfig`:
-  [UpdateBackendAuthResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthresourceconfigtypedef)
+  [UpdateBackendAuthResourceConfigTypeDef](./type_defs.md#updatebackendauthresourceconfigtypedef)
   *(required)*
 - `ResourceName`: `str` *(required)*
 
 Returns
-[UpdateBackendAuthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendauthresponsetypedef).
+[UpdateBackendAuthResponseTypeDef](./type_defs.md#updatebackendauthresponsetypedef).
 
 ### update_backend_config
 
@@ -493,10 +491,10 @@ Arguments:
 
 - `AppId`: `str` *(required)*
 - `LoginAuthConfig`:
-  [LoginAuthConfigReqObjTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#loginauthconfigreqobjtypedef)
+  [LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef)
 
 Returns
-[UpdateBackendConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendconfigresponsetypedef).
+[UpdateBackendConfigResponseTypeDef](./type_defs.md#updatebackendconfigresponsetypedef).
 
 ### update_backend_job
 
@@ -515,7 +513,7 @@ Arguments:
 - `Status`: `str`
 
 Returns
-[UpdateBackendJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#updatebackendjobresponsetypedef).
+[UpdateBackendJobResponseTypeDef](./type_defs.md#updatebackendjobresponsetypedef).
 
 ### get_paginator
 

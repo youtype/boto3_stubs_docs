@@ -1,6 +1,6 @@
 # Type annotations for boto3 Translate module
 
-> [Index](../README.md) > Translate
+> [Index](..) > Translate
 
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)

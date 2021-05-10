@@ -1,6 +1,6 @@
 # Type annotations for boto3 HealthLake module
 
-> [Index](../README.md) > HealthLake
+> [Index](..) > HealthLake
 
 Auto-generated documentation for
 [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)

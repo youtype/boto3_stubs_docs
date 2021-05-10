@@ -1,6 +1,6 @@
 # Literals for boto3 Firehose module
 
-> [Index](../README.md) > [Firehose](./README.md) > Literals
+> [Index](..) > [Firehose](.) > Literals
 
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)

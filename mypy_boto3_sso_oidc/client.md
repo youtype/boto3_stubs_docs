@@ -1,6 +1,6 @@
 # SSOOIDCClient for boto3 SSOOIDC module
 
-> [Index](../README.md) > [SSOOIDC](./README.md) > SSOOIDCClient
+> [Index](..) > [SSOOIDC](.) > SSOOIDCClient
 
 Auto-generated documentation for
 [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
@@ -95,7 +95,7 @@ Arguments:
 - `redirectUri`: `str`
 
 Returns
-[CreateTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_oidc/type_defs.html#createtokenresponsetypedef).
+[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
 ### generate_presigned_url
 
@@ -127,7 +127,7 @@ Arguments:
 - `scopes`: `List`\[`str`\]
 
 Returns
-[RegisterClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_oidc/type_defs.html#registerclientresponsetypedef).
+[RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).
 
 ### start_device_authorization
 
@@ -144,4 +144,4 @@ Arguments:
 - `startUrl`: `str` *(required)*
 
 Returns
-[StartDeviceAuthorizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_oidc/type_defs.html#startdeviceauthorizationresponsetypedef).
+[StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef).

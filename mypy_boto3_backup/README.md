@@ -1,6 +1,6 @@
 # Type annotations for boto3 Backup module
 
-> [Index](../README.md) > Backup
+> [Index](..) > Backup
 
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
@@ -181,7 +181,7 @@ from mypy_boto3_backup.type_defs import AdvancedBackupSettingTypeDef, ...
 - [RecoveryPointByBackupVaultTypeDef](./type_defs.md#recoverypointbybackupvaulttypedef)
 - [RecoveryPointByResourceTypeDef](./type_defs.md#recoverypointbyresourcetypedef)
 - [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RestoreJobsListMemberTypeDef](./type_defs.md#restorejobslistmembertypedef)
 - [StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef)
 - [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef)

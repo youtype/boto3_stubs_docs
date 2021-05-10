@@ -1,6 +1,6 @@
 # SSOClient for boto3 SSO module
 
-> [Index](../README.md) > [SSO](./README.md) > SSOClient
+> [Index](..) > [SSO](.) > SSOClient
 
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
@@ -100,7 +100,7 @@ Arguments:
 - `accessToken`: `str` *(required)*
 
 Returns
-[GetRoleCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#getrolecredentialsresponsetypedef).
+[GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef).
 
 ### list_account_roles
 
@@ -117,7 +117,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountrolesresponsetypedef).
+[ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef).
 
 ### list_accounts
 
@@ -133,7 +133,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountsresponsetypedef).
+[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
 ### logout
 

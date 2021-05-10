@@ -1,6 +1,6 @@
 # Literals for boto3 mgn module
 
-> [Index](../README.md) > [mgn](./README.md) > Literals
+> [Index](..) > [mgn](.) > Literals
 
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)

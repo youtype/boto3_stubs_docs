@@ -1,6 +1,6 @@
 # Literals for boto3 Textract module
 
-> [Index](../README.md) > [Textract](./README.md) > Literals
+> [Index](..) > [Textract](.) > Literals
 
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)

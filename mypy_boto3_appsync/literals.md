@@ -1,6 +1,6 @@
 # Literals for boto3 AppSync module
 
-> [Index](../README.md) > [AppSync](./README.md) > Literals
+> [Index](..) > [AppSync](.) > Literals
 
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)

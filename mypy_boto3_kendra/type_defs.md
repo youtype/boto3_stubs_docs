@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Kendra module
 
-> [Index](../README.md) > [Kendra](./README.md) > Structures
+> [Index](..) > [Kendra](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
@@ -132,9 +132,10 @@ from mypy_boto3_kendra.type_defs import AdditionalResultAttributeTypeDef
 Required fields:
 
 - `Key`: `str`
-- `ValueType`: `Literal['TEXT_WITH_HIGHLIGHTS_VALUE']`
+- `ValueType`: `Literal['TEXT_WITH_HIGHLIGHTS_VALUE']` (see
+  [AdditionalResultAttributeValueType](./literals.md#additionalresultattributevaluetype))
 - `Value`:
-  [AdditionalResultAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#additionalresultattributevaluetypedef)
+  [AdditionalResultAttributeValueTypeDef](./type_defs.md#additionalresultattributevaluetypedef)
 
 ## AdditionalResultAttributeValueTypeDef
 
@@ -145,7 +146,7 @@ from mypy_boto3_kendra.type_defs import AdditionalResultAttributeValueTypeDef
 Optional fields:
 
 - `TextWithHighlightsValue`:
-  [TextWithHighlightsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#textwithhighlightstypedef)
+  [TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef)
 
 ## AttributeFilterTypeDef
 
@@ -156,25 +157,22 @@ from mypy_boto3_kendra.type_defs import AttributeFilterTypeDef
 Optional fields:
 
 - `AndAllFilters`:
-  `List`\[[AttributeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#attributefiltertypedef)\]
+  `List`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
 - `OrAllFilters`:
-  `List`\[[AttributeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#attributefiltertypedef)\]
-- `NotFilter`:
-  [AttributeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#attributefiltertypedef)
-- `EqualsTo`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
+  `List`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
+- `NotFilter`: [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
+- `EqualsTo`: [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `ContainsAll`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `ContainsAny`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `GreaterThan`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `GreaterThanOrEquals`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
-- `LessThan`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
+- `LessThan`: [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `LessThanOrEquals`:
-  [DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)
+  [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 
 ## BatchDeleteDocumentResponseFailedDocumentTypeDef
 
@@ -185,8 +183,7 @@ from mypy_boto3_kendra.type_defs import BatchDeleteDocumentResponseFailedDocumen
 Optional fields:
 
 - `Id`: `str`
-- `ErrorCode`:
-  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#errorcode)
+- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
 - `ErrorMessage`: `str`
 
 ## BatchDeleteDocumentResponseTypeDef
@@ -198,7 +195,7 @@ from mypy_boto3_kendra.type_defs import BatchDeleteDocumentResponseTypeDef
 Optional fields:
 
 - `FailedDocuments`:
-  `List`\[[BatchDeleteDocumentResponseFailedDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#batchdeletedocumentresponsefaileddocumenttypedef)\]
+  `List`\[[BatchDeleteDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchdeletedocumentresponsefaileddocumenttypedef)\]
 
 ## BatchPutDocumentResponseFailedDocumentTypeDef
 
@@ -209,8 +206,7 @@ from mypy_boto3_kendra.type_defs import BatchPutDocumentResponseFailedDocumentTy
 Optional fields:
 
 - `Id`: `str`
-- `ErrorCode`:
-  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#errorcode)
+- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
 - `ErrorMessage`: `str`
 
 ## BatchPutDocumentResponseTypeDef
@@ -222,7 +218,7 @@ from mypy_boto3_kendra.type_defs import BatchPutDocumentResponseTypeDef
 Optional fields:
 
 - `FailedDocuments`:
-  `List`\[[BatchPutDocumentResponseFailedDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#batchputdocumentresponsefaileddocumenttypedef)\]
+  `List`\[[BatchPutDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchputdocumentresponsefaileddocumenttypedef)\]
 
 ## CapacityUnitsConfigurationTypeDef
 
@@ -262,7 +258,7 @@ Optional fields:
 
 - `DocumentTitleColumnName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## ConfluenceAttachmentConfigurationTypeDef
 
@@ -274,7 +270,7 @@ Optional fields:
 
 - `CrawlAttachments`: `bool`
 - `AttachmentFieldMappings`:
-  `List`\[[ConfluenceAttachmentToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluenceattachmenttoindexfieldmappingtypedef)\]
+  `List`\[[ConfluenceAttachmentToIndexFieldMappingTypeDef](./type_defs.md#confluenceattachmenttoindexfieldmappingtypedef)\]
 
 ## ConfluenceAttachmentToIndexFieldMappingTypeDef
 
@@ -285,7 +281,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceAttachmentToIndexFieldMappingT
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluenceAttachmentFieldName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#confluenceattachmentfieldname)
+  [ConfluenceAttachmentFieldName](./literals.md#confluenceattachmentfieldname)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -298,7 +294,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceBlogConfigurationTypeDef
 Optional fields:
 
 - `BlogFieldMappings`:
-  `List`\[[ConfluenceBlogToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluenceblogtoindexfieldmappingtypedef)\]
+  `List`\[[ConfluenceBlogToIndexFieldMappingTypeDef](./type_defs.md#confluenceblogtoindexfieldmappingtypedef)\]
 
 ## ConfluenceBlogToIndexFieldMappingTypeDef
 
@@ -309,7 +305,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceBlogToIndexFieldMappingTypeDef
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluenceBlogFieldName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#confluenceblogfieldname)
+  [ConfluenceBlogFieldName](./literals.md#confluenceblogfieldname)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -323,21 +319,20 @@ Required fields:
 
 - `ServerUrl`: `str`
 - `SecretArn`: `str`
-- `Version`:
-  [ConfluenceVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#confluenceversion)
+- `Version`: [ConfluenceVersion](./literals.md#confluenceversion)
 
 Optional fields:
 
 - `SpaceConfiguration`:
-  [ConfluenceSpaceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluencespaceconfigurationtypedef)
+  [ConfluenceSpaceConfigurationTypeDef](./type_defs.md#confluencespaceconfigurationtypedef)
 - `PageConfiguration`:
-  [ConfluencePageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluencepageconfigurationtypedef)
+  [ConfluencePageConfigurationTypeDef](./type_defs.md#confluencepageconfigurationtypedef)
 - `BlogConfiguration`:
-  [ConfluenceBlogConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluenceblogconfigurationtypedef)
+  [ConfluenceBlogConfigurationTypeDef](./type_defs.md#confluenceblogconfigurationtypedef)
 - `AttachmentConfiguration`:
-  [ConfluenceAttachmentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluenceattachmentconfigurationtypedef)
+  [ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef)
 - `VpcConfiguration`:
-  [DataSourceVpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcevpcconfigurationtypedef)
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
 - `InclusionPatterns`: `List`\[`str`\]
 - `ExclusionPatterns`: `List`\[`str`\]
 
@@ -350,7 +345,7 @@ from mypy_boto3_kendra.type_defs import ConfluencePageConfigurationTypeDef
 Optional fields:
 
 - `PageFieldMappings`:
-  `List`\[[ConfluencePageToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluencepagetoindexfieldmappingtypedef)\]
+  `List`\[[ConfluencePageToIndexFieldMappingTypeDef](./type_defs.md#confluencepagetoindexfieldmappingtypedef)\]
 
 ## ConfluencePageToIndexFieldMappingTypeDef
 
@@ -361,7 +356,7 @@ from mypy_boto3_kendra.type_defs import ConfluencePageToIndexFieldMappingTypeDef
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluencePageFieldName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#confluencepagefieldname)
+  [ConfluencePageFieldName](./literals.md#confluencepagefieldname)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -378,7 +373,7 @@ Optional fields:
 - `IncludeSpaces`: `List`\[`str`\]
 - `ExcludeSpaces`: `List`\[`str`\]
 - `SpaceFieldMappings`:
-  `List`\[[ConfluenceSpaceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluencespacetoindexfieldmappingtypedef)\]
+  `List`\[[ConfluenceSpaceToIndexFieldMappingTypeDef](./type_defs.md#confluencespacetoindexfieldmappingtypedef)\]
 
 ## ConfluenceSpaceToIndexFieldMappingTypeDef
 
@@ -389,7 +384,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceSpaceToIndexFieldMappingTypeDe
 Optional fields:
 
 - `DataSourceFieldName`:
-  [ConfluenceSpaceFieldName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#confluencespacefieldname)
+  [ConfluenceSpaceFieldName](./literals.md#confluencespacefieldname)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
@@ -456,21 +451,21 @@ from mypy_boto3_kendra.type_defs import DataSourceConfigurationTypeDef
 Optional fields:
 
 - `S3Configuration`:
-  [S3DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3datasourceconfigurationtypedef)
+  [S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef)
 - `SharePointConfiguration`:
-  [SharePointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#sharepointconfigurationtypedef)
+  [SharePointConfigurationTypeDef](./type_defs.md#sharepointconfigurationtypedef)
 - `DatabaseConfiguration`:
-  [DatabaseConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#databaseconfigurationtypedef)
+  [DatabaseConfigurationTypeDef](./type_defs.md#databaseconfigurationtypedef)
 - `SalesforceConfiguration`:
-  [SalesforceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforceconfigurationtypedef)
+  [SalesforceConfigurationTypeDef](./type_defs.md#salesforceconfigurationtypedef)
 - `OneDriveConfiguration`:
-  [OneDriveConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#onedriveconfigurationtypedef)
+  [OneDriveConfigurationTypeDef](./type_defs.md#onedriveconfigurationtypedef)
 - `ServiceNowConfiguration`:
-  [ServiceNowConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#servicenowconfigurationtypedef)
+  [ServiceNowConfigurationTypeDef](./type_defs.md#servicenowconfigurationtypedef)
 - `ConfluenceConfiguration`:
-  [ConfluenceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#confluenceconfigurationtypedef)
+  [ConfluenceConfigurationTypeDef](./type_defs.md#confluenceconfigurationtypedef)
 - `GoogleDriveConfiguration`:
-  [GoogleDriveConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#googledriveconfigurationtypedef)
+  [GoogleDriveConfigurationTypeDef](./type_defs.md#googledriveconfigurationtypedef)
 
 ## DataSourceSummaryTypeDef
 
@@ -482,12 +477,10 @@ Optional fields:
 
 - `Name`: `str`
 - `Id`: `str`
-- `Type`:
-  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcetype)
+- `Type`: [DataSourceType](./literals.md#datasourcetype)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `Status`:
-  [DataSourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcestatus)
+- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
 
 ## DataSourceSyncJobMetricTargetTypeDef
 
@@ -525,14 +518,12 @@ Optional fields:
 - `ExecutionId`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
-- `Status`:
-  [DataSourceSyncJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcesyncjobstatus)
+- `Status`: [DataSourceSyncJobStatus](./literals.md#datasourcesyncjobstatus)
 - `ErrorMessage`: `str`
-- `ErrorCode`:
-  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#errorcode)
+- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
 - `DataSourceErrorCode`: `str`
 - `Metrics`:
-  [DataSourceSyncJobMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcesyncjobmetricstypedef)
+  [DataSourceSyncJobMetricsTypeDef](./type_defs.md#datasourcesyncjobmetricstypedef)
 
 ## DataSourceToIndexFieldMappingTypeDef
 
@@ -568,21 +559,20 @@ from mypy_boto3_kendra.type_defs import DatabaseConfigurationTypeDef
 
 Required fields:
 
-- `DatabaseEngineType`:
-  [DatabaseEngineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#databaseenginetype)
+- `DatabaseEngineType`: [DatabaseEngineType](./literals.md#databaseenginetype)
 - `ConnectionConfiguration`:
-  [ConnectionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#connectionconfigurationtypedef)
+  [ConnectionConfigurationTypeDef](./type_defs.md#connectionconfigurationtypedef)
 - `ColumnConfiguration`:
-  [ColumnConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#columnconfigurationtypedef)
+  [ColumnConfigurationTypeDef](./type_defs.md#columnconfigurationtypedef)
 
 Optional fields:
 
 - `VpcConfiguration`:
-  [DataSourceVpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcevpcconfigurationtypedef)
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
 - `AclConfiguration`:
-  [AclConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#aclconfigurationtypedef)
+  [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
 - `SqlConfiguration`:
-  [SqlConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#sqlconfigurationtypedef)
+  [SqlConfigurationTypeDef](./type_defs.md#sqlconfigurationtypedef)
 
 ## DescribeDataSourceResponseTypeDef
 
@@ -595,15 +585,13 @@ Optional fields:
 - `Id`: `str`
 - `IndexId`: `str`
 - `Name`: `str`
-- `Type`:
-  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcetype)
+- `Type`: [DataSourceType](./literals.md#datasourcetype)
 - `Configuration`:
-  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourceconfigurationtypedef)
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `Description`: `str`
-- `Status`:
-  [DataSourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcestatus)
+- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
 - `Schedule`: `str`
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
@@ -622,14 +610,11 @@ Optional fields:
 - `Description`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `S3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
-- `Status`:
-  [FaqStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#faqstatus)
+- `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- `Status`: [FaqStatus](./literals.md#faqstatus)
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
-- `FileFormat`:
-  [FaqFileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#faqfileformat)
+- `FileFormat`: [FaqFileFormat](./literals.md#faqfileformat)
 
 ## DescribeIndexResponseTypeDef
 
@@ -641,27 +626,24 @@ Optional fields:
 
 - `Name`: `str`
 - `Id`: `str`
-- `Edition`:
-  [IndexEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#indexedition)
+- `Edition`: [IndexEdition](./literals.md#indexedition)
 - `RoleArn`: `str`
 - `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#serversideencryptionconfigurationtypedef)
-- `Status`:
-  [IndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#indexstatus)
+  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
+- `Status`: [IndexStatus](./literals.md#indexstatus)
 - `Description`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `DocumentMetadataConfigurations`:
-  `List`\[[DocumentMetadataConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentmetadataconfigurationtypedef)\]
+  `List`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
 - `IndexStatistics`:
-  [IndexStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#indexstatisticstypedef)
+  [IndexStatisticsTypeDef](./type_defs.md#indexstatisticstypedef)
 - `ErrorMessage`: `str`
 - `CapacityUnits`:
-  [CapacityUnitsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#capacityunitsconfigurationtypedef)
+  [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usertokenconfigurationtypedef)\]
-- `UserContextPolicy`:
-  [UserContextPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#usercontextpolicy)
+  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`: [UserContextPolicy](./literals.md#usercontextpolicy)
 
 ## DescribeThesaurusResponseTypeDef
 
@@ -675,14 +657,12 @@ Optional fields:
 - `IndexId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`:
-  [ThesaurusStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#thesaurusstatus)
+- `Status`: [ThesaurusStatus](./literals.md#thesaurusstatus)
 - `ErrorMessage`: `str`
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `RoleArn`: `str`
-- `SourceS3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `FileSizeBytes`: `int`
 - `TermCount`: `int`
 - `SynonymRuleCount`: `int`
@@ -697,7 +677,7 @@ Required fields:
 
 - `Key`: `str`
 - `Value`:
-  [DocumentAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributevaluetypedef)
+  [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
 
 ## DocumentAttributeValueCountPairTypeDef
 
@@ -708,7 +688,7 @@ from mypy_boto3_kendra.type_defs import DocumentAttributeValueCountPairTypeDef
 Optional fields:
 
 - `DocumentAttributeValue`:
-  [DocumentAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributevaluetypedef)
+  [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
 - `Count`: `int`
 
 ## DocumentAttributeValueTypeDef
@@ -733,15 +713,12 @@ from mypy_boto3_kendra.type_defs import DocumentMetadataConfigurationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`:
-  [DocumentAttributeValueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#documentattributevaluetype)
+- `Type`: [DocumentAttributeValueType](./literals.md#documentattributevaluetype)
 
 Optional fields:
 
-- `Relevance`:
-  [RelevanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#relevancetypedef)
-- `Search`:
-  [SearchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#searchtypedef)
+- `Relevance`: [RelevanceTypeDef](./type_defs.md#relevancetypedef)
+- `Search`: [SearchTypeDef](./type_defs.md#searchtypedef)
 
 ## DocumentRelevanceConfigurationTypeDef
 
@@ -752,8 +729,7 @@ from mypy_boto3_kendra.type_defs import DocumentRelevanceConfigurationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Relevance`:
-  [RelevanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#relevancetypedef)
+- `Relevance`: [RelevanceTypeDef](./type_defs.md#relevancetypedef)
 
 ## DocumentTypeDef
 
@@ -769,14 +745,12 @@ Optional fields:
 
 - `Title`: `str`
 - `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `S3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
+- `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `Attributes`:
-  `List`\[[DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)\]
+  `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 - `AccessControlList`:
-  `List`\[[PrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#principaltypedef)\]
-- `ContentType`:
-  [ContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#contenttype)
+  `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+- `ContentType`: [ContentType](./literals.md#contenttype)
 
 ## DocumentsMetadataConfigurationTypeDef
 
@@ -798,9 +772,9 @@ Optional fields:
 
 - `DocumentAttributeKey`: `str`
 - `DocumentAttributeValueType`:
-  [DocumentAttributeValueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#documentattributevaluetype)
+  [DocumentAttributeValueType](./literals.md#documentattributevaluetype)
 - `DocumentAttributeValueCountPairs`:
-  `List`\[[DocumentAttributeValueCountPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributevaluecountpairtypedef)\]
+  `List`\[[DocumentAttributeValueCountPairTypeDef](./type_defs.md#documentattributevaluecountpairtypedef)\]
 
 ## FacetTypeDef
 
@@ -832,12 +806,10 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Status`:
-  [FaqStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#faqstatus)
+- `Status`: [FaqStatus](./literals.md#faqstatus)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `FileFormat`:
-  [FaqFileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#faqfileformat)
+- `FileFormat`: [FaqFileFormat](./literals.md#faqfileformat)
 
 ## GoogleDriveConfigurationTypeDef
 
@@ -854,7 +826,7 @@ Optional fields:
 - `InclusionPatterns`: `List`\[`str`\]
 - `ExclusionPatterns`: `List`\[`str`\]
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `ExcludeMimeTypes`: `List`\[`str`\]
 - `ExcludeUserAccounts`: `List`\[`str`\]
 - `ExcludeSharedDrives`: `List`\[`str`\]
@@ -873,8 +845,7 @@ Required fields:
 Optional fields:
 
 - `TopAnswer`: `bool`
-- `Type`:
-  [HighlightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#highlighttype)
+- `Type`: [HighlightType](./literals.md#highlighttype)
 
 ## IndexConfigurationSummaryTypeDef
 
@@ -886,15 +857,13 @@ Required fields:
 
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
-- `Status`:
-  [IndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#indexstatus)
+- `Status`: [IndexStatus](./literals.md#indexstatus)
 
 Optional fields:
 
 - `Name`: `str`
 - `Id`: `str`
-- `Edition`:
-  [IndexEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#indexedition)
+- `Edition`: [IndexEdition](./literals.md#indexedition)
 
 ## IndexStatisticsTypeDef
 
@@ -904,10 +873,9 @@ from mypy_boto3_kendra.type_defs import IndexStatisticsTypeDef
 
 Required fields:
 
-- `FaqStatistics`:
-  [FaqStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#faqstatisticstypedef)
+- `FaqStatistics`: [FaqStatisticsTypeDef](./type_defs.md#faqstatisticstypedef)
 - `TextDocumentStatistics`:
-  [TextDocumentStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#textdocumentstatisticstypedef)
+  [TextDocumentStatisticsTypeDef](./type_defs.md#textdocumentstatisticstypedef)
 
 ## JsonTokenTypeConfigurationTypeDef
 
@@ -928,8 +896,7 @@ from mypy_boto3_kendra.type_defs import JwtTokenTypeConfigurationTypeDef
 
 Required fields:
 
-- `KeyLocation`:
-  [KeyLocation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#keylocation)
+- `KeyLocation`: [KeyLocation](./literals.md#keylocation)
 
 Optional fields:
 
@@ -949,7 +916,7 @@ from mypy_boto3_kendra.type_defs import ListDataSourceSyncJobsResponseTypeDef
 Optional fields:
 
 - `History`:
-  `List`\[[DataSourceSyncJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcesyncjobtypedef)\]
+  `List`\[[DataSourceSyncJobTypeDef](./type_defs.md#datasourcesyncjobtypedef)\]
 - `NextToken`: `str`
 
 ## ListDataSourcesResponseTypeDef
@@ -961,7 +928,7 @@ from mypy_boto3_kendra.type_defs import ListDataSourcesResponseTypeDef
 Optional fields:
 
 - `SummaryItems`:
-  `List`\[[DataSourceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcesummarytypedef)\]
+  `List`\[[DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListFaqsResponseTypeDef
@@ -974,7 +941,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `FaqSummaryItems`:
-  `List`\[[FaqSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#faqsummarytypedef)\]
+  `List`\[[FaqSummaryTypeDef](./type_defs.md#faqsummarytypedef)\]
 
 ## ListIndicesResponseTypeDef
 
@@ -985,7 +952,7 @@ from mypy_boto3_kendra.type_defs import ListIndicesResponseTypeDef
 Optional fields:
 
 - `IndexConfigurationSummaryItems`:
-  `List`\[[IndexConfigurationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#indexconfigurationsummarytypedef)\]
+  `List`\[[IndexConfigurationSummaryTypeDef](./type_defs.md#indexconfigurationsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -996,8 +963,7 @@ from mypy_boto3_kendra.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListThesauriResponseTypeDef
 
@@ -1009,7 +975,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ThesaurusSummaryItems`:
-  `List`\[[ThesaurusSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#thesaurussummarytypedef)\]
+  `List`\[[ThesaurusSummaryTypeDef](./type_defs.md#thesaurussummarytypedef)\]
 
 ## OneDriveConfigurationTypeDef
 
@@ -1021,15 +987,14 @@ Required fields:
 
 - `TenantDomain`: `str`
 - `SecretArn`: `str`
-- `OneDriveUsers`:
-  [OneDriveUsersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#onedriveuserstypedef)
+- `OneDriveUsers`: [OneDriveUsersTypeDef](./type_defs.md#onedriveuserstypedef)
 
 Optional fields:
 
 - `InclusionPatterns`: `List`\[`str`\]
 - `ExclusionPatterns`: `List`\[`str`\]
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DisableLocalGroups`: `bool`
 
 ## OneDriveUsersTypeDef
@@ -1041,8 +1006,7 @@ from mypy_boto3_kendra.type_defs import OneDriveUsersTypeDef
 Optional fields:
 
 - `OneDriveUserList`: `List`\[`str`\]
-- `OneDriveUserS3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
+- `OneDriveUserS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
 ## PrincipalTypeDef
 
@@ -1053,10 +1017,8 @@ from mypy_boto3_kendra.type_defs import PrincipalTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#principaltype)
-- `Access`:
-  [ReadAccessType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#readaccesstype)
+- `Type`: [PrincipalType](./literals.md#principaltype)
+- `Access`: [ReadAccessType](./literals.md#readaccesstype)
 
 ## QueryResultItemTypeDef
 
@@ -1067,20 +1029,19 @@ from mypy_boto3_kendra.type_defs import QueryResultItemTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`:
-  [QueryResultType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#queryresulttype)
+- `Type`: [QueryResultType](./literals.md#queryresulttype)
 - `AdditionalAttributes`:
-  `List`\[[AdditionalResultAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#additionalresultattributetypedef)\]
+  `List`\[[AdditionalResultAttributeTypeDef](./type_defs.md#additionalresultattributetypedef)\]
 - `DocumentId`: `str`
 - `DocumentTitle`:
-  [TextWithHighlightsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#textwithhighlightstypedef)
+  [TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef)
 - `DocumentExcerpt`:
-  [TextWithHighlightsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#textwithhighlightstypedef)
+  [TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef)
 - `DocumentURI`: `str`
 - `DocumentAttributes`:
-  `List`\[[DocumentAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentattributetypedef)\]
+  `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 - `ScoreAttributes`:
-  [ScoreAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#scoreattributestypedef)
+  [ScoreAttributesTypeDef](./type_defs.md#scoreattributestypedef)
 - `FeedbackToken`: `str`
 
 ## QueryResultTypeDef
@@ -1093,9 +1054,9 @@ Optional fields:
 
 - `QueryId`: `str`
 - `ResultItems`:
-  `List`\[[QueryResultItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#queryresultitemtypedef)\]
+  `List`\[[QueryResultItemTypeDef](./type_defs.md#queryresultitemtypedef)\]
 - `FacetResults`:
-  `List`\[[FacetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#facetresulttypedef)\]
+  `List`\[[FacetResultTypeDef](./type_defs.md#facetresulttypedef)\]
 - `TotalNumberOfResults`: `int`
 
 ## RelevanceFeedbackTypeDef
@@ -1107,8 +1068,7 @@ from mypy_boto3_kendra.type_defs import RelevanceFeedbackTypeDef
 Required fields:
 
 - `ResultId`: `str`
-- `RelevanceValue`:
-  [RelevanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#relevancetype)
+- `RelevanceValue`: [RelevanceType](./literals.md#relevancetype)
 
 ## RelevanceTypeDef
 
@@ -1121,8 +1081,7 @@ Optional fields:
 - `Freshness`: `bool`
 - `Importance`: `int`
 - `Duration`: `str`
-- `RankOrder`:
-  [Order](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#order)
+- `RankOrder`: [Order](./literals.md#order)
 - `ValueImportanceMap`: `Dict`\[`str`, `int`\]
 
 ## S3DataSourceConfigurationTypeDef
@@ -1141,9 +1100,9 @@ Optional fields:
 - `InclusionPatterns`: `List`\[`str`\]
 - `ExclusionPatterns`: `List`\[`str`\]
 - `DocumentsMetadataConfiguration`:
-  [DocumentsMetadataConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentsmetadataconfigurationtypedef)
+  [DocumentsMetadataConfigurationTypeDef](./type_defs.md#documentsmetadataconfigurationtypedef)
 - `AccessControlListConfiguration`:
-  [AccessControlListConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#accesscontrollistconfigurationtypedef)
+  [AccessControlListConfigurationTypeDef](./type_defs.md#accesscontrollistconfigurationtypedef)
 
 ## S3PathTypeDef
 
@@ -1170,9 +1129,9 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `IncludeFilterTypes`:
-  `List`\[[SalesforceChatterFeedIncludeFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#salesforcechatterfeedincludefiltertype)\]
+  `List`\[[SalesforceChatterFeedIncludeFilterType](./literals.md#salesforcechatterfeedincludefiltertype)\]
 
 ## SalesforceConfigurationTypeDef
 
@@ -1188,14 +1147,14 @@ Required fields:
 Optional fields:
 
 - `StandardObjectConfigurations`:
-  `List`\[[SalesforceStandardObjectConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforcestandardobjectconfigurationtypedef)\]
+  `List`\[[SalesforceStandardObjectConfigurationTypeDef](./type_defs.md#salesforcestandardobjectconfigurationtypedef)\]
 - `KnowledgeArticleConfiguration`:
-  [SalesforceKnowledgeArticleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforceknowledgearticleconfigurationtypedef)
+  [SalesforceKnowledgeArticleConfigurationTypeDef](./type_defs.md#salesforceknowledgearticleconfigurationtypedef)
 - `ChatterFeedConfiguration`:
-  [SalesforceChatterFeedConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforcechatterfeedconfigurationtypedef)
+  [SalesforceChatterFeedConfigurationTypeDef](./type_defs.md#salesforcechatterfeedconfigurationtypedef)
 - `CrawlAttachments`: `bool`
 - `StandardObjectAttachmentConfiguration`:
-  [SalesforceStandardObjectAttachmentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforcestandardobjectattachmentconfigurationtypedef)
+  [SalesforceStandardObjectAttachmentConfigurationTypeDef](./type_defs.md#salesforcestandardobjectattachmentconfigurationtypedef)
 - `IncludeAttachmentFilePatterns`: `List`\[`str`\]
 - `ExcludeAttachmentFilePatterns`: `List`\[`str`\]
 
@@ -1214,7 +1173,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SalesforceKnowledgeArticleConfigurationTypeDef
 
@@ -1225,14 +1184,14 @@ from mypy_boto3_kendra.type_defs import SalesforceKnowledgeArticleConfigurationT
 Required fields:
 
 - `IncludedStates`:
-  `List`\[[SalesforceKnowledgeArticleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#salesforceknowledgearticlestate)\]
+  `List`\[[SalesforceKnowledgeArticleState](./literals.md#salesforceknowledgearticlestate)\]
 
 Optional fields:
 
 - `StandardKnowledgeArticleTypeConfiguration`:
-  [SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforcestandardknowledgearticletypeconfigurationtypedef)
+  [SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcestandardknowledgearticletypeconfigurationtypedef)
 - `CustomKnowledgeArticleTypeConfigurations`:
-  `List`\[[SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#salesforcecustomknowledgearticletypeconfigurationtypedef)\]
+  `List`\[[SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcecustomknowledgearticletypeconfigurationtypedef)\]
 
 ## SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef
 
@@ -1248,7 +1207,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SalesforceStandardObjectAttachmentConfigurationTypeDef
 
@@ -1260,7 +1219,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SalesforceStandardObjectConfigurationTypeDef
 
@@ -1271,14 +1230,14 @@ from mypy_boto3_kendra.type_defs import SalesforceStandardObjectConfigurationTyp
 Required fields:
 
 - `Name`:
-  [SalesforceStandardObjectName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#salesforcestandardobjectname)
+  [SalesforceStandardObjectName](./literals.md#salesforcestandardobjectname)
 - `DocumentDataFieldName`: `str`
 
 Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## ScoreAttributesTypeDef
 
@@ -1288,8 +1247,7 @@ from mypy_boto3_kendra.type_defs import ScoreAttributesTypeDef
 
 Optional fields:
 
-- `ScoreConfidence`:
-  [ScoreConfidence](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#scoreconfidence)
+- `ScoreConfidence`: [ScoreConfidence](./literals.md#scoreconfidence)
 
 ## SearchTypeDef
 
@@ -1325,16 +1283,16 @@ Required fields:
 - `HostUrl`: `str`
 - `SecretArn`: `str`
 - `ServiceNowBuildVersion`:
-  [ServiceNowBuildVersionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#servicenowbuildversiontype)
+  [ServiceNowBuildVersionType](./literals.md#servicenowbuildversiontype)
 
 Optional fields:
 
 - `KnowledgeArticleConfiguration`:
-  [ServiceNowKnowledgeArticleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#servicenowknowledgearticleconfigurationtypedef)
+  [ServiceNowKnowledgeArticleConfigurationTypeDef](./type_defs.md#servicenowknowledgearticleconfigurationtypedef)
 - `ServiceCatalogConfiguration`:
-  [ServiceNowServiceCatalogConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#servicenowservicecatalogconfigurationtypedef)
+  [ServiceNowServiceCatalogConfigurationTypeDef](./type_defs.md#servicenowservicecatalogconfigurationtypedef)
 - `AuthenticationType`:
-  [ServiceNowAuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#servicenowauthenticationtype)
+  [ServiceNowAuthenticationType](./literals.md#servicenowauthenticationtype)
 
 ## ServiceNowKnowledgeArticleConfigurationTypeDef
 
@@ -1353,7 +1311,7 @@ Optional fields:
 - `ExcludeAttachmentFilePatterns`: `List`\[`str`\]
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `FilterQuery`: `str`
 
 ## ServiceNowServiceCatalogConfigurationTypeDef
@@ -1373,7 +1331,7 @@ Optional fields:
 - `ExcludeAttachmentFilePatterns`: `List`\[`str`\]
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SharePointConfigurationTypeDef
 
@@ -1383,7 +1341,8 @@ from mypy_boto3_kendra.type_defs import SharePointConfigurationTypeDef
 
 Required fields:
 
-- `SharePointVersion`: `Literal['SHAREPOINT_ONLINE']`
+- `SharePointVersion`: `Literal['SHAREPOINT_ONLINE']` (see
+  [SharePointVersion](./literals.md#sharepointversion))
 - `Urls`: `List`\[`str`\]
 - `SecretArn`: `str`
 
@@ -1394,9 +1353,9 @@ Optional fields:
 - `InclusionPatterns`: `List`\[`str`\]
 - `ExclusionPatterns`: `List`\[`str`\]
 - `VpcConfiguration`:
-  [DataSourceVpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcevpcconfigurationtypedef)
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcetoindexfieldmappingtypedef)\]
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DocumentTitleFieldName`: `str`
 - `DisableLocalGroups`: `bool`
 
@@ -1409,8 +1368,7 @@ from mypy_boto3_kendra.type_defs import SortingConfigurationTypeDef
 Required fields:
 
 - `DocumentAttributeKey`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 ## SqlConfigurationTypeDef
 
@@ -1421,7 +1379,7 @@ from mypy_boto3_kendra.type_defs import SqlConfigurationTypeDef
 Optional fields:
 
 - `QueryIdentifiersEnclosingOption`:
-  [QueryIdentifiersEnclosingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#queryidentifiersenclosingoption)
+  [QueryIdentifiersEnclosingOption](./literals.md#queryidentifiersenclosingoption)
 
 ## StartDataSourceSyncJobResponseTypeDef
 
@@ -1464,8 +1422,7 @@ from mypy_boto3_kendra.type_defs import TextWithHighlightsTypeDef
 Optional fields:
 
 - `Text`: `str`
-- `Highlights`:
-  `List`\[[HighlightTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#highlighttypedef)\]
+- `Highlights`: `List`\[[HighlightTypeDef](./type_defs.md#highlighttypedef)\]
 
 ## ThesaurusSummaryTypeDef
 
@@ -1477,8 +1434,7 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Status`:
-  [ThesaurusStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#thesaurusstatus)
+- `Status`: [ThesaurusStatus](./literals.md#thesaurusstatus)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 
@@ -1512,6 +1468,6 @@ from mypy_boto3_kendra.type_defs import UserTokenConfigurationTypeDef
 Optional fields:
 
 - `JwtTokenTypeConfiguration`:
-  [JwtTokenTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#jwttokentypeconfigurationtypedef)
+  [JwtTokenTypeConfigurationTypeDef](./type_defs.md#jwttokentypeconfigurationtypedef)
 - `JsonTokenTypeConfiguration`:
-  [JsonTokenTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#jsontokentypeconfigurationtypedef)
+  [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)

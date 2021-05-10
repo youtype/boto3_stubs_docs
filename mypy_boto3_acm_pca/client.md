@@ -1,6 +1,6 @@
 # ACMPCAClient for boto3 ACMPCA module
 
-> [Index](../README.md) > [ACMPCA](./README.md) > ACMPCAClient
+> [Index](..) > [ACMPCA](.) > ACMPCAClient
 
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
@@ -116,21 +116,19 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateAuthorityConfiguration`:
-  [CertificateAuthorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#certificateauthorityconfigurationtypedef)
+  [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
   *(required)*
 - `CertificateAuthorityType`:
-  [CertificateAuthorityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#certificateauthoritytype)
-  *(required)*
+  [CertificateAuthorityType](./literals.md#certificateauthoritytype) *(required)*
 - `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
+  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
 - `IdempotencyToken`: `str`
 - `KeyStorageSecurityStandard`:
-  [KeyStorageSecurityStandard](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#keystoragesecuritystandard)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
+  [KeyStorageSecurityStandard](./literals.md#keystoragesecuritystandard)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#createcertificateauthorityresponsetypedef).
+[CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef).
 
 ### create_certificate_authority_audit_report
 
@@ -145,11 +143,11 @@ Arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 - `S3BucketName`: `str` *(required)*
 - `AuditReportResponseFormat`:
-  [AuditReportResponseFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#auditreportresponseformat)
+  [AuditReportResponseFormat](./literals.md#auditreportresponseformat)
   *(required)*
 
 Returns
-[CreateCertificateAuthorityAuditReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#createcertificateauthorityauditreportresponsetypedef).
+[CreateCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponsetypedef).
 
 ### create_permission
 
@@ -162,9 +160,7 @@ Arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Principal`: `str` *(required)*
-- `Actions`:
-  `List`\[[ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#actiontype)\]
-  *(required)*
+- `Actions`: `List`\[[ActionType](./literals.md#actiontype)\] *(required)*
 - `SourceAccount`: `str`
 
 ### delete_certificate_authority
@@ -217,7 +213,7 @@ Arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 
 Returns
-[DescribeCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#describecertificateauthorityresponsetypedef).
+[DescribeCertificateAuthorityResponseTypeDef](./type_defs.md#describecertificateauthorityresponsetypedef).
 
 ### describe_certificate_authority_audit_report
 
@@ -233,7 +229,7 @@ Arguments:
 - `AuditReportId`: `str` *(required)*
 
 Returns
-[DescribeCertificateAuthorityAuditReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#describecertificateauthorityauditreportresponsetypedef).
+[DescribeCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponsetypedef).
 
 ### generate_presigned_url
 
@@ -264,7 +260,7 @@ Arguments:
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[GetCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getcertificateresponsetypedef).
+[GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
 
 ### get_certificate_authority_certificate
 
@@ -279,7 +275,7 @@ Arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 
 Returns
-[GetCertificateAuthorityCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getcertificateauthoritycertificateresponsetypedef).
+[GetCertificateAuthorityCertificateResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponsetypedef).
 
 ### get_certificate_authority_csr
 
@@ -294,7 +290,7 @@ Arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 
 Returns
-[GetCertificateAuthorityCsrResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getcertificateauthoritycsrresponsetypedef).
+[GetCertificateAuthorityCsrResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponsetypedef).
 
 ### get_policy
 
@@ -307,8 +303,7 @@ Arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#getpolicyresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### import_certificate_authority_certificate
 
@@ -335,21 +330,16 @@ Arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `SigningAlgorithm`:
-  [SigningAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#signingalgorithm)
+- `SigningAlgorithm`: [SigningAlgorithm](./literals.md#signingalgorithm)
   *(required)*
-- `Validity`:
-  [ValidityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#validitytypedef)
-  *(required)*
-- `ApiPassthrough`:
-  [ApiPassthroughTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#apipassthroughtypedef)
+- `Validity`: [ValidityTypeDef](./type_defs.md#validitytypedef) *(required)*
+- `ApiPassthrough`: [ApiPassthroughTypeDef](./type_defs.md#apipassthroughtypedef)
 - `TemplateArn`: `str`
-- `ValidityNotBefore`:
-  [ValidityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#validitytypedef)
+- `ValidityNotBefore`: [ValidityTypeDef](./type_defs.md#validitytypedef)
 - `IdempotencyToken`: `str`
 
 Returns
-[IssueCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#issuecertificateresponsetypedef).
+[IssueCertificateResponseTypeDef](./type_defs.md#issuecertificateresponsetypedef).
 
 ### list_certificate_authorities
 
@@ -363,11 +353,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ResourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#resourceowner)
+- `ResourceOwner`: [ResourceOwner](./literals.md#resourceowner)
 
 Returns
-[ListCertificateAuthoritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listcertificateauthoritiesresponsetypedef).
+[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef).
 
 ### list_permissions
 
@@ -383,7 +372,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listpermissionsresponsetypedef).
+[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
 ### list_tags
 
@@ -398,8 +387,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listtagsresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### put_policy
 
@@ -436,8 +424,7 @@ Arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `CertificateSerial`: `str` *(required)*
-- `RevocationReason`:
-  [RevocationReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#revocationreason)
+- `RevocationReason`: [RevocationReason](./literals.md#revocationreason)
   *(required)*
 
 ### tag_certificate_authority
@@ -451,9 +438,7 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_certificate_authority
 
@@ -466,9 +451,7 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### update_certificate_authority
 
@@ -482,9 +465,9 @@ Arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
+  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
 - `Status`:
-  [CertificateAuthorityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#certificateauthoritystatus)
+  [CertificateAuthorityStatus](./literals.md#certificateauthoritystatus)
 
 ### get_paginator
 

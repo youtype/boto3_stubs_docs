@@ -1,7 +1,6 @@
 # ApplicationAutoScalingClient for boto3 ApplicationAutoScaling module
 
-> [Index](../README.md) > [ApplicationAutoScaling](./README.md) >
-> ApplicationAutoScalingClient
+> [Index](..) > [ApplicationAutoScaling](.) > ApplicationAutoScalingClient
 
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
@@ -92,12 +91,10 @@ Boto3 documentation:
 Arguments:
 
 - `PolicyName`: `str` *(required)*
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -112,13 +109,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ScheduledActionName`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -133,12 +128,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -153,17 +146,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceIds`: `List`\[`str`\]
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeScalableTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescalabletargetsresponsetypedef).
+[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef).
 
 ### describe_scaling_activities
 
@@ -175,17 +166,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescalingactivitiesresponsetypedef).
+[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef).
 
 ### describe_scaling_policies
 
@@ -197,18 +186,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `PolicyNames`: `List`\[`str`\]
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescalingpoliciesresponsetypedef).
+[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef).
 
 ### describe_scheduled_actions
 
@@ -220,18 +207,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ScheduledActionNames`: `List`\[`str`\]
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeScheduledActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#describescheduledactionsresponsetypedef).
+[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -261,22 +246,19 @@ Boto3 documentation:
 Arguments:
 
 - `PolicyName`: `str` *(required)*
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
-- `PolicyType`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#policytype)
+- `PolicyType`: [PolicyType](./literals.md#policytype)
 - `StepScalingPolicyConfiguration`:
-  [StepScalingPolicyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#stepscalingpolicyconfigurationtypedef)
+  [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
 - `TargetTrackingScalingPolicyConfiguration`:
-  [TargetTrackingScalingPolicyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#targettrackingscalingpolicyconfigurationtypedef)
+  [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
 
 Returns
-[PutScalingPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#putscalingpolicyresponsetypedef).
+[PutScalingPolicyResponseTypeDef](./type_defs.md#putscalingpolicyresponsetypedef).
 
 ### put_scheduled_action
 
@@ -288,20 +270,18 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ScheduledActionName`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
 - `Schedule`: `str`
 - `Timezone`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ScalableTargetAction`:
-  [ScalableTargetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#scalabletargetactiontypedef)
+  [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -315,18 +295,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
 - `RoleARN`: `str`
-- `SuspendedState`:
-  [SuspendedStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#suspendedstatetypedef)
+- `SuspendedState`: [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

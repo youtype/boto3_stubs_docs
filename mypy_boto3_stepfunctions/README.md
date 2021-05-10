@@ -1,6 +1,6 @@
 # Type annotations for boto3 SFN module
 
-> [Index](../README.md) > SFN
+> [Index](..) > SFN
 
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
@@ -178,7 +178,7 @@ from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
 - [MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef)
 - [MapStateStartedEventDetailsTypeDef](./type_defs.md#mapstatestartedeventdetailstypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartExecutionOutputTypeDef](./type_defs.md#startexecutionoutputtypedef)
 - [StartSyncExecutionOutputTypeDef](./type_defs.md#startsyncexecutionoutputtypedef)
 - [StateEnteredEventDetailsTypeDef](./type_defs.md#stateenteredeventdetailstypedef)

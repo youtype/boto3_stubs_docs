@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTThingsGraph module
 
-> [Index](../README.md) > IoTThingsGraph
+> [Index](..) > IoTThingsGraph
 
 Auto-generated documentation for
 [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)

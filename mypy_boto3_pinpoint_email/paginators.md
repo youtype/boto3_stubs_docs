@@ -1,6 +1,6 @@
 # Paginators for boto3 PinpointEmail module
 
-> [Index](../README.md) > [PinpointEmail](./README.md) > Paginators
+> [Index](..) > [PinpointEmail](.) > Paginators
 
 Auto-generated documentation for
 [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
@@ -35,10 +35,10 @@ Arguments for `GetDedicatedIpsPaginator.paginate` method:
 
 - `PoolName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDedicatedIpsPaginator.paginate` returns
-`Iterator`\[[GetDedicatedIpsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#getdedicatedipsresponsetypedef)\].
+`Iterator`\[[GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef)\].
 
 ## ListConfigurationSetsPaginator
 
@@ -60,10 +60,10 @@ Boto3 documentation:
 Arguments for `ListConfigurationSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigurationSetsPaginator.paginate` returns
-`Iterator`\[[ListConfigurationSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listconfigurationsetsresponsetypedef)\].
+`Iterator`\[[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)\].
 
 ## ListDedicatedIpPoolsPaginator
 
@@ -85,10 +85,10 @@ Boto3 documentation:
 Arguments for `ListDedicatedIpPoolsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDedicatedIpPoolsPaginator.paginate` returns
-`Iterator`\[[ListDedicatedIpPoolsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdedicatedippoolsresponsetypedef)\].
+`Iterator`\[[ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef)\].
 
 ## ListDeliverabilityTestReportsPaginator
 
@@ -110,10 +110,10 @@ Boto3 documentation:
 Arguments for `ListDeliverabilityTestReportsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeliverabilityTestReportsPaginator.paginate` returns
-`Iterator`\[[ListDeliverabilityTestReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listdeliverabilitytestreportsresponsetypedef)\].
+`Iterator`\[[ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef)\].
 
 ## ListEmailIdentitiesPaginator
 
@@ -135,7 +135,7 @@ Boto3 documentation:
 Arguments for `ListEmailIdentitiesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEmailIdentitiesPaginator.paginate` returns
-`Iterator`\[[ListEmailIdentitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_email/type_defs.html#listemailidentitiesresponsetypedef)\].
+`Iterator`\[[ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef)\].

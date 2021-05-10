@@ -1,6 +1,6 @@
 # Literals for boto3 Pricing module
 
-> [Index](../README.md) > [Pricing](./README.md) > Literals
+> [Index](..) > [Pricing](.) > Literals
 
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)

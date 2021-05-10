@@ -1,6 +1,6 @@
 # Paginators for boto3 ElasticsearchService module
 
-> [Index](../README.md) > [ElasticsearchService](./README.md) > Paginators
+> [Index](..) > [ElasticsearchService](.) > Paginators
 
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
@@ -36,10 +36,10 @@ Arguments for
 
 - `ReservedElasticsearchInstanceOfferingId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describereservedelasticsearchinstanceofferingsresponsetypedef)\].
+`Iterator`\[[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef)\].
 
 ## DescribeReservedElasticsearchInstancesPaginator
 
@@ -63,10 +63,10 @@ method:
 
 - `ReservedElasticsearchInstanceId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedElasticsearchInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeReservedElasticsearchInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#describereservedelasticsearchinstancesresponsetypedef)\].
+`Iterator`\[[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef)\].
 
 ## GetUpgradeHistoryPaginator
 
@@ -88,10 +88,10 @@ Arguments for `GetUpgradeHistoryPaginator.paginate` method:
 
 - `DomainName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUpgradeHistoryPaginator.paginate` returns
-`Iterator`\[[GetUpgradeHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#getupgradehistoryresponsetypedef)\].
+`Iterator`\[[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef)\].
 
 ## ListElasticsearchInstanceTypesPaginator
 
@@ -115,10 +115,10 @@ Arguments for `ListElasticsearchInstanceTypesPaginator.paginate` method:
 - `ElasticsearchVersion`: `str` *(required)*
 - `DomainName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListElasticsearchInstanceTypesPaginator.paginate` returns
-`Iterator`\[[ListElasticsearchInstanceTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listelasticsearchinstancetypesresponsetypedef)\].
+`Iterator`\[[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef)\].
 
 ## ListElasticsearchVersionsPaginator
 
@@ -140,7 +140,7 @@ Boto3 documentation:
 Arguments for `ListElasticsearchVersionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListElasticsearchVersionsPaginator.paginate` returns
-`Iterator`\[[ListElasticsearchVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#listelasticsearchversionsresponsetypedef)\].
+`Iterator`\[[ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef)\].

@@ -1,6 +1,6 @@
 # Paginators for boto3 IoTAnalytics module
 
-> [Index](../README.md) > [IoTAnalytics](./README.md) > Paginators
+> [Index](..) > [IoTAnalytics](.) > Paginators
 
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
@@ -34,10 +34,10 @@ Boto3 documentation:
 Arguments for `ListChannelsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listchannelsresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListDatasetContentsPaginator
 
@@ -62,10 +62,10 @@ Arguments for `ListDatasetContentsPaginator.paginate` method:
 - `scheduledOnOrAfter`: `datetime`
 - `scheduledBefore`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetContentsPaginator.paginate` returns
-`Iterator`\[[ListDatasetContentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listdatasetcontentsresponsetypedef)\].
+`Iterator`\[[ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef)\].
 
 ## ListDatasetsPaginator
 
@@ -87,10 +87,10 @@ Boto3 documentation:
 Arguments for `ListDatasetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetsPaginator.paginate` returns
-`Iterator`\[[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listdatasetsresponsetypedef)\].
+`Iterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
 ## ListDatastoresPaginator
 
@@ -112,10 +112,10 @@ Boto3 documentation:
 Arguments for `ListDatastoresPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatastoresPaginator.paginate` returns
-`Iterator`\[[ListDatastoresResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listdatastoresresponsetypedef)\].
+`Iterator`\[[ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -137,7 +137,7 @@ Boto3 documentation:
 Arguments for `ListPipelinesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listpipelinesresponsetypedef)\].
+`Iterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].

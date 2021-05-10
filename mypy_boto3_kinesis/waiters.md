@@ -1,6 +1,6 @@
 # Waiters for boto3 Kinesis module
 
-> [Index](../README.md) > [Kinesis](./README.md) > Waiters
+> [Index](..) > [Kinesis](.) > Waiters
 
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
@@ -32,8 +32,7 @@ Arguments for `StreamExistsWaiter.wait` method:
 - `StreamName`: `str` *(required)*
 - `Limit`: `int`
 - `ExclusiveStartShardId`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StreamNotExistsWaiter
 
@@ -56,5 +55,4 @@ Arguments for `StreamNotExistsWaiter.wait` method:
 - `StreamName`: `str` *(required)*
 - `Limit`: `int`
 - `ExclusiveStartShardId`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

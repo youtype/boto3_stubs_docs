@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ConnectParticipant module
 
-> [Index](../README.md) > [ConnectParticipant](./README.md) > Structures
+> [Index](..) > [ConnectParticipant](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
@@ -32,8 +32,7 @@ Optional fields:
 - `ContentType`: `str`
 - `AttachmentId`: `str`
 - `AttachmentName`: `str`
-- `Status`:
-  [ArtifactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#artifactstatus)
+- `Status`: [ArtifactStatus](./literals.md#artifactstatus)
 
 ## ConnectionCredentialsTypeDef
 
@@ -54,10 +53,9 @@ from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionR
 
 Optional fields:
 
-- `Websocket`:
-  [WebsocketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#websockettypedef)
+- `Websocket`: [WebsocketTypeDef](./type_defs.md#websockettypedef)
 - `ConnectionCredentials`:
-  [ConnectionCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#connectioncredentialstypedef)
+  [ConnectionCredentialsTypeDef](./type_defs.md#connectioncredentialstypedef)
 
 ## GetAttachmentResponseTypeDef
 
@@ -79,8 +77,7 @@ from mypy_boto3_connectparticipant.type_defs import GetTranscriptResponseTypeDef
 Optional fields:
 
 - `InitialContactId`: `str`
-- `Transcript`:
-  `List`\[[ItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#itemtypedef)\]
+- `Transcript`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 - `NextToken`: `str`
 
 ## ItemTypeDef
@@ -95,14 +92,12 @@ Optional fields:
 - `Content`: `str`
 - `ContentType`: `str`
 - `Id`: `str`
-- `Type`:
-  [ChatItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#chatitemtype)
+- `Type`: [ChatItemType](./literals.md#chatitemtype)
 - `ParticipantId`: `str`
 - `DisplayName`: `str`
-- `ParticipantRole`:
-  [ParticipantRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/literals.html#participantrole)
+- `ParticipantRole`: [ParticipantRole](./literals.md#participantrole)
 - `Attachments`:
-  `List`\[[AttachmentItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#attachmentitemtypedef)\]
+  `List`\[[AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef)\]
 
 ## SendEventResponseTypeDef
 
@@ -135,8 +130,7 @@ from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadRespons
 Optional fields:
 
 - `AttachmentId`: `str`
-- `UploadMetadata`:
-  [UploadMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connectparticipant/type_defs.html#uploadmetadatatypedef)
+- `UploadMetadata`: [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
 
 ## StartPositionTypeDef
 

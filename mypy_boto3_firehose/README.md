@@ -1,6 +1,6 @@
 # Type annotations for boto3 Firehose module
 
-> [Index](../README.md) > Firehose
+> [Index](..) > Firehose
 
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
@@ -154,7 +154,7 @@ from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef, ...
 - [RedshiftDestinationDescriptionTypeDef](./type_defs.md#redshiftdestinationdescriptiontypedef)
 - [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
 - [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)

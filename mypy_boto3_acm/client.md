@@ -1,6 +1,6 @@
 # ACMClient for boto3 ACM module
 
-> [Index](../README.md) > [ACM](./README.md) > ACMClient
+> [Index](..) > [ACM](.) > ACMClient
 
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
@@ -91,9 +91,7 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### can_paginate
 
@@ -131,7 +129,7 @@ Arguments:
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[DescribeCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#describecertificateresponsetypedef).
+[DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
 
 ### export_certificate
 
@@ -146,7 +144,7 @@ Arguments:
 - `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 
 Returns
-[ExportCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#exportcertificateresponsetypedef).
+[ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef).
 
 ### generate_presigned_url
 
@@ -172,7 +170,7 @@ Boto3 documentation:
 [ACM.Client.get_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
 
 Returns
-[GetAccountConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#getaccountconfigurationresponsetypedef).
+[GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef).
 
 ### get_certificate
 
@@ -186,7 +184,7 @@ Arguments:
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[GetCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#getcertificateresponsetypedef).
+[GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
 
 ### import_certificate
 
@@ -201,11 +199,10 @@ Arguments:
 - `PrivateKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `CertificateArn`: `str`
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ImportCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#importcertificateresponsetypedef).
+[ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
 
 ### list_certificates
 
@@ -217,14 +214,13 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#certificatestatus)\]
-- `Includes`:
-  [FiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#filterstypedef)
+  `List`\[[CertificateStatus](./literals.md#certificatestatus)\]
+- `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#listcertificatesresponsetypedef).
+[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
 
 ### list_tags_for_certificate
 
@@ -238,7 +234,7 @@ Arguments:
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[ListTagsForCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#listtagsforcertificateresponsetypedef).
+[ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef).
 
 ### put_account_configuration
 
@@ -251,7 +247,7 @@ Arguments:
 
 - `IdempotencyToken`: `str` *(required)*
 - `ExpiryEvents`:
-  [ExpiryEventsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#expiryeventsconfigurationtypedef)
+  [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 
 ### remove_tags_from_certificate
 
@@ -263,9 +259,7 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### renew_certificate
 
@@ -288,20 +282,18 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `ValidationMethod`:
-  [ValidationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#validationmethod)
+- `ValidationMethod`: [ValidationMethod](./literals.md#validationmethod)
 - `SubjectAlternativeNames`: `List`\[`str`\]
 - `IdempotencyToken`: `str`
 - `DomainValidationOptions`:
-  `List`\[[DomainValidationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#domainvalidationoptiontypedef)\]
+  `List`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
 - `Options`:
-  [CertificateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificateoptionstypedef)
+  [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 - `CertificateAuthorityArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RequestCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#requestcertificateresponsetypedef).
+[RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).
 
 ### resend_validation_email
 
@@ -327,7 +319,7 @@ Arguments:
 
 - `CertificateArn`: `str` *(required)*
 - `Options`:
-  [CertificateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#certificateoptionstypedef)
+  [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
   *(required)*
 
 ### get_paginator

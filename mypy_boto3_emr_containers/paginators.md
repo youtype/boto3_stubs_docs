@@ -1,6 +1,6 @@
 # Paginators for boto3 EMRContainers module
 
-> [Index](../README.md) > [EMRContainers](./README.md) > Paginators
+> [Index](..) > [EMRContainers](.) > Paginators
 
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
@@ -35,13 +35,12 @@ Arguments for `ListJobRunsPaginator.paginate` method:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `name`: `str`
-- `states`:
-  `List`\[[JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#jobrunstate)\]
+- `states`: `List`\[[JobRunState](./literals.md#jobrunstate)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobRunsPaginator.paginate` returns
-`Iterator`\[[ListJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listjobrunsresponsetypedef)\].
+`Iterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
 
 ## ListManagedEndpointsPaginator
 
@@ -66,13 +65,12 @@ Arguments for `ListManagedEndpointsPaginator.paginate` method:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `types`: `List`\[`str`\]
-- `states`:
-  `List`\[[EndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#endpointstate)\]
+- `states`: `List`\[[EndpointState](./literals.md#endpointstate)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedEndpointsPaginator.paginate` returns
-`Iterator`\[[ListManagedEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listmanagedendpointsresponsetypedef)\].
+`Iterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
 
 ## ListVirtualClustersPaginator
 
@@ -94,13 +92,13 @@ Boto3 documentation:
 Arguments for `ListVirtualClustersPaginator.paginate` method:
 
 - `containerProviderId`: `str`
-- `containerProviderType`: `Literal['EKS']`
+- `containerProviderType`: `Literal['EKS']` (see
+  [ContainerProviderType](./literals.md#containerprovidertype))
 - `createdAfter`: `datetime`
 - `createdBefore`: `datetime`
-- `states`:
-  `List`\[[VirtualClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#virtualclusterstate)\]
+- `states`: `List`\[[VirtualClusterState](./literals.md#virtualclusterstate)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualClustersPaginator.paginate` returns
-`Iterator`\[[ListVirtualClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listvirtualclustersresponsetypedef)\].
+`Iterator`\[[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)\].

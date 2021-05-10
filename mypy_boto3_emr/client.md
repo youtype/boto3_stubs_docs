@@ -1,6 +1,6 @@
 # EMRClient for boto3 EMR module
 
-> [Index](../README.md) > [EMR](./README.md) > EMRClient
+> [Index](..) > [EMR](.) > EMRClient
 
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
@@ -111,11 +111,11 @@ Arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceFleet`:
-  [InstanceFleetConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetconfigtypedef)
+  [InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)
   *(required)*
 
 Returns
-[AddInstanceFleetOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#addinstancefleetoutputtypedef).
+[AddInstanceFleetOutputTypeDef](./type_defs.md#addinstancefleetoutputtypedef).
 
 ### add_instance_groups
 
@@ -127,12 +127,12 @@ Boto3 documentation:
 Arguments:
 
 - `InstanceGroups`:
-  `List`\[[InstanceGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupconfigtypedef)\]
+  `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
   *(required)*
 - `JobFlowId`: `str` *(required)*
 
 Returns
-[AddInstanceGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#addinstancegroupsoutputtypedef).
+[AddInstanceGroupsOutputTypeDef](./type_defs.md#addinstancegroupsoutputtypedef).
 
 ### add_job_flow_steps
 
@@ -144,12 +144,11 @@ Boto3 documentation:
 Arguments:
 
 - `JobFlowId`: `str` *(required)*
-- `Steps`:
-  `List`\[[StepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepconfigtypedef)\]
+- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
   *(required)*
 
 Returns
-[AddJobFlowStepsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#addjobflowstepsoutputtypedef).
+[AddJobFlowStepsOutputTypeDef](./type_defs.md#addjobflowstepsoutputtypedef).
 
 ### add_tags
 
@@ -161,9 +160,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -192,10 +189,9 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 - `StepIds`: `List`\[`str`\] *(required)*
 - `StepCancellationOption`:
-  [StepCancellationOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#stepcancellationoption)
+  [StepCancellationOption](./literals.md#stepcancellationoption)
 
-Returns
-[CancelStepsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#cancelstepsoutputtypedef).
+Returns [CancelStepsOutputTypeDef](./type_defs.md#cancelstepsoutputtypedef).
 
 ### create_security_configuration
 
@@ -211,7 +207,7 @@ Arguments:
 - `SecurityConfiguration`: `str` *(required)*
 
 Returns
-[CreateSecurityConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#createsecurityconfigurationoutputtypedef).
+[CreateSecurityConfigurationOutputTypeDef](./type_defs.md#createsecurityconfigurationoutputtypedef).
 
 ### create_studio
 
@@ -223,9 +219,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `AuthMode`:
-  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#authmode)
-  *(required)*
+- `AuthMode`: [AuthMode](./literals.md#authmode) *(required)*
 - `VpcId`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `ServiceRole`: `str` *(required)*
@@ -234,11 +228,9 @@ Arguments:
 - `EngineSecurityGroupId`: `str` *(required)*
 - `DefaultS3Location`: `str` *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateStudioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#createstudiooutputtypedef).
+Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
 
 ### create_studio_session_mapping
 
@@ -251,9 +243,7 @@ Boto3 documentation:
 Arguments:
 
 - `StudioId`: `str` *(required)*
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
-  *(required)*
+- `IdentityType`: [IdentityType](./literals.md#identitytype) *(required)*
 - `SessionPolicyArn`: `str` *(required)*
 - `IdentityId`: `str`
 - `IdentityName`: `str`
@@ -294,9 +284,7 @@ Boto3 documentation:
 Arguments:
 
 - `StudioId`: `str` *(required)*
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
-  *(required)*
+- `IdentityType`: [IdentityType](./literals.md#identitytype) *(required)*
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
@@ -312,7 +300,7 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DescribeClusterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describeclusteroutputtypedef).
+[DescribeClusterOutputTypeDef](./type_defs.md#describeclusteroutputtypedef).
 
 ### describe_job_flows
 
@@ -327,10 +315,10 @@ Arguments:
 - `CreatedBefore`: `datetime`
 - `JobFlowIds`: `List`\[`str`\]
 - `JobFlowStates`:
-  `List`\[[JobFlowExecutionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#jobflowexecutionstate)\]
+  `List`\[[JobFlowExecutionState](./literals.md#jobflowexecutionstate)\]
 
 Returns
-[DescribeJobFlowsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describejobflowsoutputtypedef).
+[DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef).
 
 ### describe_notebook_execution
 
@@ -344,7 +332,7 @@ Arguments:
 - `NotebookExecutionId`: `str` *(required)*
 
 Returns
-[DescribeNotebookExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describenotebookexecutionoutputtypedef).
+[DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef).
 
 ### describe_security_configuration
 
@@ -359,7 +347,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeSecurityConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describesecurityconfigurationoutputtypedef).
+[DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef).
 
 ### describe_step
 
@@ -373,8 +361,7 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 - `StepId`: `str` *(required)*
 
-Returns
-[DescribeStepOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describestepoutputtypedef).
+Returns [DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef).
 
 ### describe_studio
 
@@ -388,7 +375,7 @@ Arguments:
 - `StudioId`: `str` *(required)*
 
 Returns
-[DescribeStudioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#describestudiooutputtypedef).
+[DescribeStudioOutputTypeDef](./type_defs.md#describestudiooutputtypedef).
 
 ### generate_presigned_url
 
@@ -415,7 +402,7 @@ Boto3 documentation:
 [EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
 
 Returns
-[GetBlockPublicAccessConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#getblockpublicaccessconfigurationoutputtypedef).
+[GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef).
 
 ### get_managed_scaling_policy
 
@@ -429,7 +416,7 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 
 Returns
-[GetManagedScalingPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#getmanagedscalingpolicyoutputtypedef).
+[GetManagedScalingPolicyOutputTypeDef](./type_defs.md#getmanagedscalingpolicyoutputtypedef).
 
 ### get_studio_session_mapping
 
@@ -441,14 +428,12 @@ Boto3 documentation:
 Arguments:
 
 - `StudioId`: `str` *(required)*
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
-  *(required)*
+- `IdentityType`: [IdentityType](./literals.md#identitytype) *(required)*
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
 Returns
-[GetStudioSessionMappingOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#getstudiosessionmappingoutputtypedef).
+[GetStudioSessionMappingOutputTypeDef](./type_defs.md#getstudiosessionmappingoutputtypedef).
 
 ### list_bootstrap_actions
 
@@ -463,7 +448,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListBootstrapActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listbootstrapactionsoutputtypedef).
+[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef).
 
 ### list_clusters
 
@@ -476,12 +461,10 @@ Arguments:
 
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `ClusterStates`:
-  `List`\[[ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#clusterstate)\]
+- `ClusterStates`: `List`\[[ClusterState](./literals.md#clusterstate)\]
 - `Marker`: `str`
 
-Returns
-[ListClustersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listclustersoutputtypedef).
+Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
 
 ### list_instance_fleets
 
@@ -496,7 +479,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListInstanceFleetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listinstancefleetsoutputtypedef).
+[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef).
 
 ### list_instance_groups
 
@@ -511,7 +494,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListInstanceGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listinstancegroupsoutputtypedef).
+[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef).
 
 ### list_instances
 
@@ -525,16 +508,14 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str`
 - `InstanceGroupTypes`:
-  `List`\[[InstanceGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancegrouptype)\]
+  `List`\[[InstanceGroupType](./literals.md#instancegrouptype)\]
 - `InstanceFleetId`: `str`
-- `InstanceFleetType`:
-  [InstanceFleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancefleettype)
-- `InstanceStates`:
-  `List`\[[InstanceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#instancestate)\]
+- `InstanceFleetType`: [InstanceFleetType](./literals.md#instancefleettype)
+- `InstanceStates`: `List`\[[InstanceState](./literals.md#instancestate)\]
 - `Marker`: `str`
 
 Returns
-[ListInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listinstancesoutputtypedef).
+[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef).
 
 ### list_notebook_executions
 
@@ -546,14 +527,13 @@ Boto3 documentation:
 Arguments:
 
 - `EditorId`: `str`
-- `Status`:
-  [NotebookExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#notebookexecutionstatus)
+- `Status`: [NotebookExecutionStatus](./literals.md#notebookexecutionstatus)
 - `From`: `datetime`
 - `To`: `datetime`
 - `Marker`: `str`
 
 Returns
-[ListNotebookExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listnotebookexecutionsoutputtypedef).
+[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef).
 
 ### list_security_configurations
 
@@ -567,7 +547,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListSecurityConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#listsecurityconfigurationsoutputtypedef).
+[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef).
 
 ### list_steps
 
@@ -579,13 +559,11 @@ Boto3 documentation:
 Arguments:
 
 - `ClusterId`: `str` *(required)*
-- `StepStates`:
-  `List`\[[StepState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#stepstate)\]
+- `StepStates`: `List`\[[StepState](./literals.md#stepstate)\]
 - `StepIds`: `List`\[`str`\]
 - `Marker`: `str`
 
-Returns
-[ListStepsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#liststepsoutputtypedef).
+Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
 
 ### list_studio_session_mappings
 
@@ -597,12 +575,11 @@ Boto3 documentation:
 Arguments:
 
 - `StudioId`: `str`
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
+- `IdentityType`: [IdentityType](./literals.md#identitytype)
 - `Marker`: `str`
 
 Returns
-[ListStudioSessionMappingsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#liststudiosessionmappingsoutputtypedef).
+[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef).
 
 ### list_studios
 
@@ -615,8 +592,7 @@ Arguments:
 
 - `Marker`: `str`
 
-Returns
-[ListStudiosOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#liststudiosoutputtypedef).
+Returns [ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef).
 
 ### modify_cluster
 
@@ -631,7 +607,7 @@ Arguments:
 - `StepConcurrencyLevel`: `int`
 
 Returns
-[ModifyClusterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#modifyclusteroutputtypedef).
+[ModifyClusterOutputTypeDef](./type_defs.md#modifyclusteroutputtypedef).
 
 ### modify_instance_fleet
 
@@ -644,7 +620,7 @@ Arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceFleet`:
-  [InstanceFleetModifyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancefleetmodifyconfigtypedef)
+  [InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef)
   *(required)*
 
 ### modify_instance_groups
@@ -658,7 +634,7 @@ Arguments:
 
 - `ClusterId`: `str`
 - `InstanceGroups`:
-  `List`\[[InstanceGroupModifyConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#instancegroupmodifyconfigtypedef)\]
+  `List`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
 
 ### put_auto_scaling_policy
 
@@ -672,11 +648,11 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str` *(required)*
 - `AutoScalingPolicy`:
-  [AutoScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#autoscalingpolicytypedef)
+  [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
   *(required)*
 
 Returns
-[PutAutoScalingPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#putautoscalingpolicyoutputtypedef).
+[PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef).
 
 ### put_block_public_access_configuration
 
@@ -689,7 +665,7 @@ Boto3 documentation:
 Arguments:
 
 - `BlockPublicAccessConfiguration`:
-  [BlockPublicAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#blockpublicaccessconfigurationtypedef)
+  [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -705,7 +681,7 @@ Arguments:
 
 - `ClusterId`: `str` *(required)*
 - `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#managedscalingpolicytypedef)
+  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -763,47 +739,42 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Instances`:
-  [JobFlowInstancesConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#jobflowinstancesconfigtypedef)
+  [JobFlowInstancesConfigTypeDef](./type_defs.md#jobflowinstancesconfigtypedef)
   *(required)*
 - `LogUri`: `str`
 - `LogEncryptionKmsKeyId`: `str`
 - `AdditionalInfo`: `str`
 - `AmiVersion`: `str`
 - `ReleaseLabel`: `str`
-- `Steps`:
-  `List`\[[StepConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#stepconfigtypedef)\]
+- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
 - `BootstrapActions`:
-  `List`\[[BootstrapActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#bootstrapactionconfigtypedef)\]
+  `List`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
 - `SupportedProducts`: `List`\[`str`\]
 - `NewSupportedProducts`:
-  `List`\[[SupportedProductConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#supportedproductconfigtypedef)\]
+  `List`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
 - `Applications`:
-  `List`\[[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#applicationtypedef)\]
+  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#configurationtypedef)\]
+  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `VisibleToAllUsers`: `bool`
 - `JobFlowRole`: `str`
 - `ServiceRole`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
-- `ScaleDownBehavior`:
-  [ScaleDownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#scaledownbehavior)
+- `ScaleDownBehavior`: [ScaleDownBehavior](./literals.md#scaledownbehavior)
 - `CustomAmiId`: `str`
 - `EbsRootVolumeSize`: `int`
-- `RepoUpgradeOnBoot`:
-  [RepoUpgradeOnBoot](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#repoupgradeonboot)
+- `RepoUpgradeOnBoot`: [RepoUpgradeOnBoot](./literals.md#repoupgradeonboot)
 - `KerberosAttributes`:
-  [KerberosAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#kerberosattributestypedef)
+  [KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef)
 - `StepConcurrencyLevel`: `int`
 - `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#managedscalingpolicytypedef)
+  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `PlacementGroupConfigs`:
-  `List`\[[PlacementGroupConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#placementgroupconfigtypedef)\]
+  `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 
-Returns
-[RunJobFlowOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#runjobflowoutputtypedef).
+Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
 
 ### set_termination_protection
 
@@ -841,17 +812,16 @@ Arguments:
 - `EditorId`: `str` *(required)*
 - `RelativePath`: `str` *(required)*
 - `ExecutionEngine`:
-  [ExecutionEngineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#executionengineconfigtypedef)
+  [ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef)
   *(required)*
 - `ServiceRole`: `str` *(required)*
 - `NotebookExecutionName`: `str`
 - `NotebookParams`: `str`
 - `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[StartNotebookExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#startnotebookexecutionoutputtypedef).
+[StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef).
 
 ### stop_notebook_execution
 
@@ -901,9 +871,7 @@ Boto3 documentation:
 Arguments:
 
 - `StudioId`: `str` *(required)*
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/literals.html#identitytype)
-  *(required)*
+- `IdentityType`: [IdentityType](./literals.md#identitytype) *(required)*
 - `SessionPolicyArn`: `str` *(required)*
 - `IdentityId`: `str`
 - `IdentityName`: `str`

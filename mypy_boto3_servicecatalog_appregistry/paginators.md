@@ -1,6 +1,6 @@
 # Paginators for boto3 AppRegistry module
 
-> [Index](../README.md) > [AppRegistry](./README.md) > Paginators
+> [Index](..) > [AppRegistry](.) > Paginators
 
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
@@ -33,10 +33,10 @@ Boto3 documentation:
 Arguments for `ListApplicationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listapplicationsresponsetypedef)\].
+`Iterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
 
 ## ListAssociatedAttributeGroupsPaginator
 
@@ -59,10 +59,10 @@ Arguments for `ListAssociatedAttributeGroupsPaginator.paginate` method:
 
 - `application`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedAttributeGroupsPaginator.paginate` returns
-`Iterator`\[[ListAssociatedAttributeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listassociatedattributegroupsresponsetypedef)\].
+`Iterator`\[[ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef)\].
 
 ## ListAssociatedResourcesPaginator
 
@@ -85,10 +85,10 @@ Arguments for `ListAssociatedResourcesPaginator.paginate` method:
 
 - `application`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedResourcesPaginator.paginate` returns
-`Iterator`\[[ListAssociatedResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listassociatedresourcesresponsetypedef)\].
+`Iterator`\[[ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)\].
 
 ## ListAttributeGroupsPaginator
 
@@ -110,7 +110,7 @@ Boto3 documentation:
 Arguments for `ListAttributeGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttributeGroupsPaginator.paginate` returns
-`Iterator`\[[ListAttributeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#listattributegroupsresponsetypedef)\].
+`Iterator`\[[ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef)\].

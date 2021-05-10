@@ -1,6 +1,6 @@
 # Type annotations for boto3 TimestreamWrite module
 
-> [Index](../README.md) > TimestreamWrite
+> [Index](..) > TimestreamWrite
 
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)

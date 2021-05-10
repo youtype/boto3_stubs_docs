@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 EBS module
 
-> [Index](../README.md) > [EBS](./README.md) > Structures
+> [Index](..) > [EBS](.) > Typed dictionaries
 
 Auto-generated documentation for
 [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
@@ -49,8 +49,7 @@ from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
 
 Optional fields:
 
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## GetSnapshotBlockResponseTypeDef
 
@@ -63,7 +62,8 @@ Optional fields:
 - `DataLength`: `int`
 - `BlockData`: `StreamingBody`
 - `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']`
+- `ChecksumAlgorithm`: `Literal['SHA256']` (see
+  [ChecksumAlgorithm](./literals.md#checksumalgorithm))
 
 ## ListChangedBlocksResponseTypeDef
 
@@ -74,7 +74,7 @@ from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseTypeDef
 Optional fields:
 
 - `ChangedBlocks`:
-  `List`\[[ChangedBlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#changedblocktypedef)\]
+  `List`\[[ChangedBlockTypeDef](./type_defs.md#changedblocktypedef)\]
 - `ExpiryTime`: `datetime`
 - `VolumeSize`: `int`
 - `BlockSize`: `int`
@@ -88,8 +88,7 @@ from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseTypeDef
 
 Optional fields:
 
-- `Blocks`:
-  `List`\[[BlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#blocktypedef)\]
+- `Blocks`: `List`\[[BlockTypeDef](./type_defs.md#blocktypedef)\]
 - `ExpiryTime`: `datetime`
 - `VolumeSize`: `int`
 - `BlockSize`: `int`
@@ -104,7 +103,8 @@ from mypy_boto3_ebs.type_defs import PutSnapshotBlockResponseTypeDef
 Optional fields:
 
 - `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']`
+- `ChecksumAlgorithm`: `Literal['SHA256']` (see
+  [ChecksumAlgorithm](./literals.md#checksumalgorithm))
 
 ## StartSnapshotResponseTypeDef
 
@@ -117,13 +117,11 @@ Optional fields:
 - `Description`: `str`
 - `SnapshotId`: `str`
 - `OwnerId`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 - `StartTime`: `datetime`
 - `VolumeSize`: `int`
 - `BlockSize`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ebs/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ParentSnapshotId`: `str`
 - `KmsKeyArn`: `str`
 

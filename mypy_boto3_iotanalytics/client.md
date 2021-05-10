@@ -1,6 +1,6 @@
 # IoTAnalyticsClient for boto3 IoTAnalytics module
 
-> [Index](../README.md) > [IoTAnalytics](./README.md) > IoTAnalyticsClient
+> [Index](..) > [IoTAnalytics](.) > IoTAnalyticsClient
 
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
@@ -100,12 +100,11 @@ Boto3 documentation:
 Arguments:
 
 - `channelName`: `str` *(required)*
-- `messages`:
-  `List`\[[MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#messagetypedef)\]
+- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
   *(required)*
 
 Returns
-[BatchPutMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#batchputmessageresponsetypedef).
+[BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
 ### can_paginate
 
@@ -145,15 +144,13 @@ Boto3 documentation:
 Arguments:
 
 - `channelName`: `str` *(required)*
-- `channelStorage`:
-  [ChannelStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelstoragetypedef)
+- `channelStorage`: [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `retentionPeriod`:
-  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#tagtypedef)\]
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#createchannelresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_dataset
 
@@ -166,23 +163,22 @@ Arguments:
 
 - `datasetName`: `str` *(required)*
 - `actions`:
-  `List`\[[DatasetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetactiontypedef)\]
+  `List`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
   *(required)*
 - `triggers`:
-  `List`\[[DatasetTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasettriggertypedef)\]
+  `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
-  `List`\[[DatasetContentDeliveryRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentdeliveryruletypedef)\]
+  `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
 - `retentionPeriod`:
-  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `versioningConfiguration`:
-  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#versioningconfigurationtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#tagtypedef)\]
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `lateDataRules`:
-  `List`\[[LateDataRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#latedataruletypedef)\]
+  `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 Returns
-[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#createdatasetresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_dataset_content
 
@@ -198,7 +194,7 @@ Arguments:
 - `versionId`: `str`
 
 Returns
-[CreateDatasetContentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#createdatasetcontentresponsetypedef).
+[CreateDatasetContentResponseTypeDef](./type_defs.md#createdatasetcontentresponsetypedef).
 
 ### create_datastore
 
@@ -211,16 +207,15 @@ Arguments:
 
 - `datastoreName`: `str` *(required)*
 - `datastoreStorage`:
-  [DatastoreStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastorestoragetypedef)
+  [DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef)
 - `retentionPeriod`:
-  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#tagtypedef)\]
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `fileFormatConfiguration`:
-  [FileFormatConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#fileformatconfigurationtypedef)
+  [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 
 Returns
-[CreateDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#createdatastoreresponsetypedef).
+[CreateDatastoreResponseTypeDef](./type_defs.md#createdatastoreresponsetypedef).
 
 ### create_pipeline
 
@@ -233,13 +228,12 @@ Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineActivities`:
-  `List`\[[PipelineActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#pipelineactivitytypedef)\]
+  `List`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
   *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#createpipelineresponsetypedef).
+[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
 ### delete_channel
 
@@ -311,7 +305,7 @@ Arguments:
 - `includeStatistics`: `bool`
 
 Returns
-[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#describechannelresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_dataset
 
@@ -325,7 +319,7 @@ Arguments:
 - `datasetName`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#describedatasetresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_datastore
 
@@ -340,7 +334,7 @@ Arguments:
 - `includeStatistics`: `bool`
 
 Returns
-[DescribeDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#describedatastoreresponsetypedef).
+[DescribeDatastoreResponseTypeDef](./type_defs.md#describedatastoreresponsetypedef).
 
 ### describe_logging_options
 
@@ -351,7 +345,7 @@ Boto3 documentation:
 [IoTAnalytics.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_logging_options)
 
 Returns
-[DescribeLoggingOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#describeloggingoptionsresponsetypedef).
+[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
 ### describe_pipeline
 
@@ -365,7 +359,7 @@ Arguments:
 - `pipelineName`: `str` *(required)*
 
 Returns
-[DescribePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#describepipelineresponsetypedef).
+[DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
 
 ### generate_presigned_url
 
@@ -397,7 +391,7 @@ Arguments:
 - `versionId`: `str`
 
 Returns
-[GetDatasetContentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#getdatasetcontentresponsetypedef).
+[GetDatasetContentResponseTypeDef](./type_defs.md#getdatasetcontentresponsetypedef).
 
 ### list_channels
 
@@ -412,7 +406,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listchannelsresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_dataset_contents
 
@@ -431,7 +425,7 @@ Arguments:
 - `scheduledBefore`: `datetime`
 
 Returns
-[ListDatasetContentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listdatasetcontentsresponsetypedef).
+[ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef).
 
 ### list_datasets
 
@@ -446,7 +440,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listdatasetsresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_datastores
 
@@ -461,7 +455,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatastoresResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listdatastoresresponsetypedef).
+[ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef).
 
 ### list_pipelines
 
@@ -476,7 +470,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listpipelinesresponsetypedef).
+[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -491,7 +485,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_logging_options
 
@@ -502,8 +496,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#loggingoptionstypedef)
+- `loggingOptions`: [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
   *(required)*
 
 ### run_pipeline_activity
@@ -517,12 +510,11 @@ Boto3 documentation:
 Arguments:
 
 - `pipelineActivity`:
-  [PipelineActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#pipelineactivitytypedef)
-  *(required)*
+  [PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef) *(required)*
 - `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\] *(required)*
 
 Returns
-[RunPipelineActivityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#runpipelineactivityresponsetypedef).
+[RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef).
 
 ### sample_channel_data
 
@@ -539,7 +531,7 @@ Arguments:
 - `endTime`: `datetime`
 
 Returns
-[SampleChannelDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#samplechanneldataresponsetypedef).
+[SampleChannelDataResponseTypeDef](./type_defs.md#samplechanneldataresponsetypedef).
 
 ### start_pipeline_reprocessing
 
@@ -555,10 +547,10 @@ Arguments:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `channelMessages`:
-  [ChannelMessagesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelmessagestypedef)
+  [ChannelMessagesTypeDef](./type_defs.md#channelmessagestypedef)
 
 Returns
-[StartPipelineReprocessingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#startpipelinereprocessingresponsetypedef).
+[StartPipelineReprocessingResponseTypeDef](./type_defs.md#startpipelinereprocessingresponsetypedef).
 
 ### tag_resource
 
@@ -570,9 +562,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -600,10 +590,9 @@ Boto3 documentation:
 Arguments:
 
 - `channelName`: `str` *(required)*
-- `channelStorage`:
-  [ChannelStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#channelstoragetypedef)
+- `channelStorage`: [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `retentionPeriod`:
-  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 
 ### update_dataset
 
@@ -616,18 +605,18 @@ Arguments:
 
 - `datasetName`: `str` *(required)*
 - `actions`:
-  `List`\[[DatasetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetactiontypedef)\]
+  `List`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
   *(required)*
 - `triggers`:
-  `List`\[[DatasetTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasettriggertypedef)\]
+  `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
-  `List`\[[DatasetContentDeliveryRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datasetcontentdeliveryruletypedef)\]
+  `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
 - `retentionPeriod`:
-  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `versioningConfiguration`:
-  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#versioningconfigurationtypedef)
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
 - `lateDataRules`:
-  `List`\[[LateDataRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#latedataruletypedef)\]
+  `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 ### update_datastore
 
@@ -640,11 +629,11 @@ Arguments:
 
 - `datastoreName`: `str` *(required)*
 - `retentionPeriod`:
-  [RetentionPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#retentionperiodtypedef)
+  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `datastoreStorage`:
-  [DatastoreStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#datastorestoragetypedef)
+  [DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef)
 - `fileFormatConfiguration`:
-  [FileFormatConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#fileformatconfigurationtypedef)
+  [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 
 ### update_pipeline
 
@@ -657,7 +646,7 @@ Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineActivities`:
-  `List`\[[PipelineActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotanalytics/type_defs.html#pipelineactivitytypedef)\]
+  `List`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
   *(required)*
 
 ### get_paginator

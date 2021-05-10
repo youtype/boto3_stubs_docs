@@ -1,6 +1,6 @@
 # KinesisVideoSignalingChannelsClient for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) >
+> [Index](..) > [KinesisVideoSignalingChannels](.) >
 > KinesisVideoSignalingChannelsClient
 
 Auto-generated documentation for
@@ -100,11 +100,11 @@ Arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `ClientId`: `str`
-- `Service`: `Literal['TURN']`
+- `Service`: `Literal['TURN']` (see [Service](./literals.md#service))
 - `Username`: `str`
 
 Returns
-[GetIceServerConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_signaling/type_defs.html#geticeserverconfigresponsetypedef).
+[GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef).
 
 ### send_alexa_offer_to_master
 
@@ -121,4 +121,4 @@ Arguments:
 - `MessagePayload`: `str` *(required)*
 
 Returns
-[SendAlexaOfferToMasterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_signaling/type_defs.html#sendalexaoffertomasterresponsetypedef).
+[SendAlexaOfferToMasterResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponsetypedef).

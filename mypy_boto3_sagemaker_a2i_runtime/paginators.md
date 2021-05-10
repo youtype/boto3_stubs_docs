@@ -1,6 +1,6 @@
 # Paginators for boto3 AugmentedAIRuntime module
 
-> [Index](../README.md) > [AugmentedAIRuntime](./README.md) > Paginators
+> [Index](..) > [AugmentedAIRuntime](.) > Paginators
 
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
@@ -32,10 +32,9 @@ Arguments for `ListHumanLoopsPaginator.paginate` method:
 - `FlowDefinitionArn`: `str` *(required)*
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHumanLoopsPaginator.paginate` returns
-`Iterator`\[[ListHumanLoopsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#listhumanloopsresponsetypedef)\].
+`Iterator`\[[ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef)\].

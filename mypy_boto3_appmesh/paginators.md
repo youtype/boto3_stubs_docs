@@ -1,6 +1,6 @@
 # Paginators for boto3 AppMesh module
 
-> [Index](../README.md) > [AppMesh](./README.md) > Paginators
+> [Index](..) > [AppMesh](.) > Paginators
 
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
@@ -40,10 +40,10 @@ Arguments for `ListGatewayRoutesPaginator.paginate` method:
 - `virtualGatewayName`: `str` *(required)*
 - `meshOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGatewayRoutesPaginator.paginate` returns
-`Iterator`\[[ListGatewayRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listgatewayroutesoutputtypedef)\].
+`Iterator`\[[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef)\].
 
 ## ListMeshesPaginator
 
@@ -64,10 +64,10 @@ Boto3 documentation:
 Arguments for `ListMeshesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMeshesPaginator.paginate` returns
-`Iterator`\[[ListMeshesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listmeshesoutputtypedef)\].
+`Iterator`\[[ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef)\].
 
 ## ListRoutesPaginator
 
@@ -91,10 +91,10 @@ Arguments for `ListRoutesPaginator.paginate` method:
 - `virtualRouterName`: `str` *(required)*
 - `meshOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRoutesPaginator.paginate` returns
-`Iterator`\[[ListRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listroutesoutputtypedef)\].
+`Iterator`\[[ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -117,10 +117,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `resourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
 
 ## ListVirtualGatewaysPaginator
 
@@ -144,10 +144,10 @@ Arguments for `ListVirtualGatewaysPaginator.paginate` method:
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualGatewaysPaginator.paginate` returns
-`Iterator`\[[ListVirtualGatewaysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualgatewaysoutputtypedef)\].
+`Iterator`\[[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef)\].
 
 ## ListVirtualNodesPaginator
 
@@ -171,10 +171,10 @@ Arguments for `ListVirtualNodesPaginator.paginate` method:
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualNodesPaginator.paginate` returns
-`Iterator`\[[ListVirtualNodesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualnodesoutputtypedef)\].
+`Iterator`\[[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef)\].
 
 ## ListVirtualRoutersPaginator
 
@@ -198,10 +198,10 @@ Arguments for `ListVirtualRoutersPaginator.paginate` method:
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualRoutersPaginator.paginate` returns
-`Iterator`\[[ListVirtualRoutersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualroutersoutputtypedef)\].
+`Iterator`\[[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef)\].
 
 ## ListVirtualServicesPaginator
 
@@ -225,7 +225,7 @@ Arguments for `ListVirtualServicesPaginator.paginate` method:
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualServicesPaginator.paginate` returns
-`Iterator`\[[ListVirtualServicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualservicesoutputtypedef)\].
+`Iterator`\[[ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef)\].

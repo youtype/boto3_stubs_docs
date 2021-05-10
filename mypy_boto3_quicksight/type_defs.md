@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 QuickSight module
 
-> [Index](../README.md) > [QuickSight](./README.md) > Structures
+> [Index](..) > [QuickSight](.) > Typed dictionaries
 
 Auto-generated documentation for
 [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
@@ -254,8 +254,7 @@ from mypy_boto3_quicksight.type_defs import AccountSettingsTypeDef
 Optional fields:
 
 - `AccountName`: `str`
-- `Edition`:
-  [Edition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#edition)
+- `Edition`: [Edition](./literals.md#edition)
 - `DefaultNamespace`: `str`
 - `NotificationEmail`: `str`
 
@@ -278,8 +277,7 @@ from mypy_boto3_quicksight.type_defs import AdHocFilteringOptionTypeDef
 
 Optional fields:
 
-- `AvailabilityStatus`:
-  [DashboardBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#dashboardbehavior)
+- `AvailabilityStatus`: [DashboardBehavior](./literals.md#dashboardbehavior)
 
 ## AmazonElasticsearchParametersTypeDef
 
@@ -299,8 +297,7 @@ from mypy_boto3_quicksight.type_defs import AnalysisErrorTypeDef
 
 Optional fields:
 
-- `Type`:
-  [AnalysisErrorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#analysiserrortype)
+- `Type`: [AnalysisErrorType](./literals.md#analysiserrortype)
 - `Message`: `str`
 
 ## AnalysisSearchFilterTypeDef
@@ -311,8 +308,10 @@ from mypy_boto3_quicksight.type_defs import AnalysisSearchFilterTypeDef
 
 Optional fields:
 
-- `Operator`: `Literal['StringEquals']`
-- `Name`: `Literal['QUICKSIGHT_USER']`
+- `Operator`: `Literal['StringEquals']` (see
+  [FilterOperator](./literals.md#filteroperator))
+- `Name`: `Literal['QUICKSIGHT_USER']` (see
+  [AnalysisFilterAttribute](./literals.md#analysisfilterattribute))
 - `Value`: `str`
 
 ## AnalysisSourceEntityTypeDef
@@ -324,7 +323,7 @@ from mypy_boto3_quicksight.type_defs import AnalysisSourceEntityTypeDef
 Optional fields:
 
 - `SourceTemplate`:
-  [AnalysisSourceTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#analysissourcetemplatetypedef)
+  [AnalysisSourceTemplateTypeDef](./type_defs.md#analysissourcetemplatetypedef)
 
 ## AnalysisSourceTemplateTypeDef
 
@@ -335,7 +334,7 @@ from mypy_boto3_quicksight.type_defs import AnalysisSourceTemplateTypeDef
 Required fields:
 
 - `DataSetReferences`:
-  `List`\[[DataSetReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasetreferencetypedef)\]
+  `List`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
 - `Arn`: `str`
 
 ## AnalysisSummaryTypeDef
@@ -349,8 +348,7 @@ Optional fields:
 - `Arn`: `str`
 - `AnalysisId`: `str`
 - `Name`: `str`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
@@ -365,16 +363,13 @@ Optional fields:
 - `AnalysisId`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
-- `Errors`:
-  `List`\[[AnalysisErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#analysiserrortypedef)\]
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
+- `Errors`: `List`\[[AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef)\]
 - `DataSetArns`: `List`\[`str`\]
 - `ThemeArn`: `str`
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
-- `Sheets`:
-  `List`\[[SheetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sheettypedef)\]
+- `Sheets`: `List`\[[SheetTypeDef](./type_defs.md#sheettypedef)\]
 
 ## AthenaParametersTypeDef
 
@@ -464,8 +459,7 @@ from mypy_boto3_quicksight.type_defs import CastColumnTypeOperationTypeDef
 Required fields:
 
 - `ColumnName`: `str`
-- `NewColumnType`:
-  [ColumnDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#columndatatype)
+- `NewColumnType`: [ColumnDataType](./literals.md#columndatatype)
 
 Optional fields:
 
@@ -501,7 +495,7 @@ Optional fields:
 
 - `Name`: `str`
 - `ColumnGroupColumnSchemaList`:
-  `List`\[[ColumnGroupColumnSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columngroupcolumnschematypedef)\]
+  `List`\[[ColumnGroupColumnSchemaTypeDef](./type_defs.md#columngroupcolumnschematypedef)\]
 
 ## ColumnGroupTypeDef
 
@@ -512,7 +506,7 @@ from mypy_boto3_quicksight.type_defs import ColumnGroupTypeDef
 Optional fields:
 
 - `GeoSpatialColumnGroup`:
-  [GeoSpatialColumnGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#geospatialcolumngrouptypedef)
+  [GeoSpatialColumnGroupTypeDef](./type_defs.md#geospatialcolumngrouptypedef)
 
 ## ColumnLevelPermissionRuleTypeDef
 
@@ -545,10 +539,9 @@ from mypy_boto3_quicksight.type_defs import ColumnTagTypeDef
 
 Optional fields:
 
-- `ColumnGeographicRole`:
-  [GeoSpatialDataRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#geospatialdatarole)
+- `ColumnGeographicRole`: [GeoSpatialDataRole](./literals.md#geospatialdatarole)
 - `ColumnDescription`:
-  [ColumnDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columndescriptiontypedef)
+  [ColumnDescriptionTypeDef](./type_defs.md#columndescriptiontypedef)
 
 ## CreateAccountCustomizationResponseTypeDef
 
@@ -562,7 +555,7 @@ Optional fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 - `AccountCustomization`:
-  [AccountCustomizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#accountcustomizationtypedef)
+  [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -576,8 +569,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `AnalysisId`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -590,7 +582,7 @@ from mypy_boto3_quicksight.type_defs import CreateColumnsOperationTypeDef
 Required fields:
 
 - `Columns`:
-  `List`\[[CalculatedColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#calculatedcolumntypedef)\]
+  `List`\[[CalculatedColumnTypeDef](./type_defs.md#calculatedcolumntypedef)\]
 
 ## CreateDashboardResponseTypeDef
 
@@ -603,8 +595,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `DashboardId`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -633,8 +624,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `DataSourceId`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -646,8 +636,7 @@ from mypy_boto3_quicksight.type_defs import CreateGroupMembershipResponseTypeDef
 
 Optional fields:
 
-- `GroupMember`:
-  [GroupMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#groupmembertypedef)
+- `GroupMember`: [GroupMemberTypeDef](./type_defs.md#groupmembertypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -659,8 +648,7 @@ from mypy_boto3_quicksight.type_defs import CreateGroupResponseTypeDef
 
 Optional fields:
 
-- `Group`:
-  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#grouptypedef)
+- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -674,8 +662,7 @@ Optional fields:
 
 - `AssignmentName`: `str`
 - `AssignmentId`: `str`
-- `AssignmentStatus`:
-  [AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#assignmentstatus)
+- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 - `RequestId`: `str`
@@ -691,8 +678,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `IngestionId`: `str`
-- `IngestionStatus`:
-  [IngestionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#ingestionstatus)
+- `IngestionStatus`: [IngestionStatus](./literals.md#ingestionstatus)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -707,9 +693,9 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `CapacityRegion`: `str`
-- `CreationStatus`:
-  [NamespaceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#namespacestatus)
-- `IdentityStore`: `Literal['QUICKSIGHT']`
+- `CreationStatus`: [NamespaceStatus](./literals.md#namespacestatus)
+- `IdentityStore`: `Literal['QUICKSIGHT']` (see
+  [IdentityStore](./literals.md#identitystore))
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -721,8 +707,7 @@ from mypy_boto3_quicksight.type_defs import CreateTemplateAliasResponseTypeDef
 
 Optional fields:
 
-- `TemplateAlias`:
-  [TemplateAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatealiastypedef)
+- `TemplateAlias`: [TemplateAliasTypeDef](./type_defs.md#templatealiastypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -737,8 +722,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `TemplateId`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -750,8 +734,7 @@ from mypy_boto3_quicksight.type_defs import CreateThemeAliasResponseTypeDef
 
 Optional fields:
 
-- `ThemeAlias`:
-  [ThemeAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themealiastypedef)
+- `ThemeAlias`: [ThemeAliasTypeDef](./type_defs.md#themealiastypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -766,8 +749,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `ThemeId`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -785,7 +767,7 @@ Required fields:
 Optional fields:
 
 - `AlternateDataSourceParameters`:
-  `List`\[[DataSourceParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasourceparameterstypedef)\]
+  `List`\[[DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)\]
 
 ## CustomSqlTypeDef
 
@@ -801,8 +783,7 @@ Required fields:
 
 Optional fields:
 
-- `Columns`:
-  `List`\[[InputColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#inputcolumntypedef)\]
+- `Columns`: `List`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
 
 ## DashboardErrorTypeDef
 
@@ -812,8 +793,7 @@ from mypy_boto3_quicksight.type_defs import DashboardErrorTypeDef
 
 Optional fields:
 
-- `Type`:
-  [DashboardErrorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#dashboarderrortype)
+- `Type`: [DashboardErrorType](./literals.md#dashboarderrortype)
 - `Message`: `str`
 
 ## DashboardPublishOptionsTypeDef
@@ -825,11 +805,11 @@ from mypy_boto3_quicksight.type_defs import DashboardPublishOptionsTypeDef
 Optional fields:
 
 - `AdHocFilteringOption`:
-  [AdHocFilteringOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#adhocfilteringoptiontypedef)
+  [AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef)
 - `ExportToCSVOption`:
-  [ExportToCSVOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#exporttocsvoptiontypedef)
+  [ExportToCSVOptionTypeDef](./type_defs.md#exporttocsvoptiontypedef)
 - `SheetControlsOption`:
-  [SheetControlsOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sheetcontrolsoptiontypedef)
+  [SheetControlsOptionTypeDef](./type_defs.md#sheetcontrolsoptiontypedef)
 
 ## DashboardSearchFilterTypeDef
 
@@ -839,11 +819,13 @@ from mypy_boto3_quicksight.type_defs import DashboardSearchFilterTypeDef
 
 Required fields:
 
-- `Operator`: `Literal['StringEquals']`
+- `Operator`: `Literal['StringEquals']` (see
+  [FilterOperator](./literals.md#filteroperator))
 
 Optional fields:
 
-- `Name`: `Literal['QUICKSIGHT_USER']`
+- `Name`: `Literal['QUICKSIGHT_USER']` (see
+  [DashboardFilterAttribute](./literals.md#dashboardfilterattribute))
 - `Value`: `str`
 
 ## DashboardSourceEntityTypeDef
@@ -855,7 +837,7 @@ from mypy_boto3_quicksight.type_defs import DashboardSourceEntityTypeDef
 Optional fields:
 
 - `SourceTemplate`:
-  [DashboardSourceTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboardsourcetemplatetypedef)
+  [DashboardSourceTemplateTypeDef](./type_defs.md#dashboardsourcetemplatetypedef)
 
 ## DashboardSourceTemplateTypeDef
 
@@ -866,7 +848,7 @@ from mypy_boto3_quicksight.type_defs import DashboardSourceTemplateTypeDef
 Required fields:
 
 - `DataSetReferences`:
-  `List`\[[DataSetReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasetreferencetypedef)\]
+  `List`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
 - `Arn`: `str`
 
 ## DashboardSummaryTypeDef
@@ -896,8 +878,7 @@ Optional fields:
 - `DashboardId`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Version`:
-  [DashboardVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboardversiontypedef)
+- `Version`: [DashboardVersionTypeDef](./type_defs.md#dashboardversiontypedef)
 - `CreatedTime`: `datetime`
 - `LastPublishedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
@@ -913,8 +894,7 @@ Optional fields:
 - `Arn`: `str`
 - `CreatedTime`: `datetime`
 - `VersionNumber`: `int`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 - `SourceEntityArn`: `str`
 - `Description`: `str`
 
@@ -928,17 +908,15 @@ Optional fields:
 
 - `CreatedTime`: `datetime`
 - `Errors`:
-  `List`\[[DashboardErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboarderrortypedef)\]
+  `List`\[[DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef)\]
 - `VersionNumber`: `int`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 - `Arn`: `str`
 - `SourceEntityArn`: `str`
 - `DataSetArns`: `List`\[`str`\]
 - `Description`: `str`
 - `ThemeArn`: `str`
-- `Sheets`:
-  `List`\[[SheetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sheettypedef)\]
+- `Sheets`: `List`\[[SheetTypeDef](./type_defs.md#sheettypedef)\]
 
 ## DataColorPaletteTypeDef
 
@@ -961,10 +939,9 @@ from mypy_boto3_quicksight.type_defs import DataSetConfigurationTypeDef
 Optional fields:
 
 - `Placeholder`: `str`
-- `DataSetSchema`:
-  [DataSetSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasetschematypedef)
+- `DataSetSchema`: [DataSetSchemaTypeDef](./type_defs.md#datasetschematypedef)
 - `ColumnGroupSchemaList`:
-  `List`\[[ColumnGroupSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columngroupschematypedef)\]
+  `List`\[[ColumnGroupSchemaTypeDef](./type_defs.md#columngroupschematypedef)\]
 
 ## DataSetReferenceTypeDef
 
@@ -986,7 +963,7 @@ from mypy_boto3_quicksight.type_defs import DataSetSchemaTypeDef
 Optional fields:
 
 - `ColumnSchemaList`:
-  `List`\[[ColumnSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columnschematypedef)\]
+  `List`\[[ColumnSchemaTypeDef](./type_defs.md#columnschematypedef)\]
 
 ## DataSetSummaryTypeDef
 
@@ -1001,10 +978,9 @@ Optional fields:
 - `Name`: `str`
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
-- `ImportMode`:
-  [DataSetImportMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#datasetimportmode)
+- `ImportMode`: [DataSetImportMode](./literals.md#datasetimportmode)
 - `RowLevelPermissionDataSet`:
-  [RowLevelPermissionDataSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#rowlevelpermissiondatasettypedef)
+  [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `ColumnLevelPermissionRulesApplied`: `bool`
 
 ## DataSetTypeDef
@@ -1021,22 +997,21 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `PhysicalTableMap`: `Dict`\[`str`,
-  [PhysicalTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#physicaltabletypedef)\]
+  [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\]
 - `LogicalTableMap`: `Dict`\[`str`,
-  [LogicalTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#logicaltabletypedef)\]
+  [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `OutputColumns`:
-  `List`\[[OutputColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#outputcolumntypedef)\]
-- `ImportMode`:
-  [DataSetImportMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#datasetimportmode)
+  `List`\[[OutputColumnTypeDef](./type_defs.md#outputcolumntypedef)\]
+- `ImportMode`: [DataSetImportMode](./literals.md#datasetimportmode)
 - `ConsumedSpiceCapacityInBytes`: `int`
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columngrouptypedef)\]
+  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
 - `FieldFolders`: `Dict`\[`str`,
-  [FieldFolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#fieldfoldertypedef)\]
+  [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
-  [RowLevelPermissionDataSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#rowlevelpermissiondatasettypedef)
+  [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columnlevelpermissionruletypedef)\]
+  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 
 ## DataSourceCredentialsTypeDef
 
@@ -1046,8 +1021,7 @@ from mypy_boto3_quicksight.type_defs import DataSourceCredentialsTypeDef
 
 Optional fields:
 
-- `CredentialPair`:
-  [CredentialPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#credentialpairtypedef)
+- `CredentialPair`: [CredentialPairTypeDef](./type_defs.md#credentialpairtypedef)
 - `CopySourceArn`: `str`
 
 ## DataSourceErrorInfoTypeDef
@@ -1058,8 +1032,7 @@ from mypy_boto3_quicksight.type_defs import DataSourceErrorInfoTypeDef
 
 Optional fields:
 
-- `Type`:
-  [DataSourceErrorInfoType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#datasourceerrorinfotype)
+- `Type`: [DataSourceErrorInfoType](./literals.md#datasourceerrorinfotype)
 - `Message`: `str`
 
 ## DataSourceParametersTypeDef
@@ -1071,45 +1044,42 @@ from mypy_boto3_quicksight.type_defs import DataSourceParametersTypeDef
 Optional fields:
 
 - `AmazonElasticsearchParameters`:
-  [AmazonElasticsearchParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#amazonelasticsearchparameterstypedef)
+  [AmazonElasticsearchParametersTypeDef](./type_defs.md#amazonelasticsearchparameterstypedef)
 - `AthenaParameters`:
-  [AthenaParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#athenaparameterstypedef)
+  [AthenaParametersTypeDef](./type_defs.md#athenaparameterstypedef)
 - `AuroraParameters`:
-  [AuroraParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#auroraparameterstypedef)
+  [AuroraParametersTypeDef](./type_defs.md#auroraparameterstypedef)
 - `AuroraPostgreSqlParameters`:
-  [AuroraPostgreSqlParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#aurorapostgresqlparameterstypedef)
+  [AuroraPostgreSqlParametersTypeDef](./type_defs.md#aurorapostgresqlparameterstypedef)
 - `AwsIotAnalyticsParameters`:
-  [AwsIotAnalyticsParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#awsiotanalyticsparameterstypedef)
-- `JiraParameters`:
-  [JiraParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#jiraparameterstypedef)
+  [AwsIotAnalyticsParametersTypeDef](./type_defs.md#awsiotanalyticsparameterstypedef)
+- `JiraParameters`: [JiraParametersTypeDef](./type_defs.md#jiraparameterstypedef)
 - `MariaDbParameters`:
-  [MariaDbParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#mariadbparameterstypedef)
+  [MariaDbParametersTypeDef](./type_defs.md#mariadbparameterstypedef)
 - `MySqlParameters`:
-  [MySqlParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#mysqlparameterstypedef)
+  [MySqlParametersTypeDef](./type_defs.md#mysqlparameterstypedef)
 - `OracleParameters`:
-  [OracleParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#oracleparameterstypedef)
+  [OracleParametersTypeDef](./type_defs.md#oracleparameterstypedef)
 - `PostgreSqlParameters`:
-  [PostgreSqlParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#postgresqlparameterstypedef)
+  [PostgreSqlParametersTypeDef](./type_defs.md#postgresqlparameterstypedef)
 - `PrestoParameters`:
-  [PrestoParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#prestoparameterstypedef)
-- `RdsParameters`:
-  [RdsParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#rdsparameterstypedef)
+  [PrestoParametersTypeDef](./type_defs.md#prestoparameterstypedef)
+- `RdsParameters`: [RdsParametersTypeDef](./type_defs.md#rdsparameterstypedef)
 - `RedshiftParameters`:
-  [RedshiftParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#redshiftparameterstypedef)
-- `S3Parameters`:
-  [S3ParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#s3parameterstypedef)
+  [RedshiftParametersTypeDef](./type_defs.md#redshiftparameterstypedef)
+- `S3Parameters`: [S3ParametersTypeDef](./type_defs.md#s3parameterstypedef)
 - `ServiceNowParameters`:
-  [ServiceNowParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#servicenowparameterstypedef)
+  [ServiceNowParametersTypeDef](./type_defs.md#servicenowparameterstypedef)
 - `SnowflakeParameters`:
-  [SnowflakeParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#snowflakeparameterstypedef)
+  [SnowflakeParametersTypeDef](./type_defs.md#snowflakeparameterstypedef)
 - `SparkParameters`:
-  [SparkParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sparkparameterstypedef)
+  [SparkParametersTypeDef](./type_defs.md#sparkparameterstypedef)
 - `SqlServerParameters`:
-  [SqlServerParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sqlserverparameterstypedef)
+  [SqlServerParametersTypeDef](./type_defs.md#sqlserverparameterstypedef)
 - `TeradataParameters`:
-  [TeradataParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#teradataparameterstypedef)
+  [TeradataParametersTypeDef](./type_defs.md#teradataparameterstypedef)
 - `TwitterParameters`:
-  [TwitterParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#twitterparameterstypedef)
+  [TwitterParametersTypeDef](./type_defs.md#twitterparameterstypedef)
 
 ## DataSourceTypeDef
 
@@ -1122,22 +1092,19 @@ Optional fields:
 - `Arn`: `str`
 - `DataSourceId`: `str`
 - `Name`: `str`
-- `Type`:
-  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#datasourcetype)
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Type`: [DataSourceType](./literals.md#datasourcetype)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `DataSourceParameters`:
-  [DataSourceParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasourceparameterstypedef)
+  [DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)
 - `AlternateDataSourceParameters`:
-  `List`\[[DataSourceParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasourceparameterstypedef)\]
+  `List`\[[DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)\]
 - `VpcConnectionProperties`:
-  [VpcConnectionPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#vpcconnectionpropertiestypedef)
-- `SslProperties`:
-  [SslPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sslpropertiestypedef)
+  [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
+- `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
 - `ErrorInfo`:
-  [DataSourceErrorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasourceerrorinfotypedef)
+  [DataSourceErrorInfoTypeDef](./type_defs.md#datasourceerrorinfotypedef)
 
 ## DateTimeParameterTypeDef
 
@@ -1358,7 +1325,7 @@ Optional fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 - `AccountCustomization`:
-  [AccountCustomizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#accountcustomizationtypedef)
+  [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1371,7 +1338,7 @@ from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsResponseTypeD
 Optional fields:
 
 - `AccountSettings`:
-  [AccountSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#accountsettingstypedef)
+  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1386,7 +1353,7 @@ Optional fields:
 - `AnalysisId`: `str`
 - `AnalysisArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1398,8 +1365,7 @@ from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseTypeDef
 
 Optional fields:
 
-- `Analysis`:
-  [AnalysisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#analysistypedef)
+- `Analysis`: [AnalysisTypeDef](./type_defs.md#analysistypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1414,7 +1380,7 @@ Optional fields:
 - `DashboardId`: `str`
 - `DashboardArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1426,8 +1392,7 @@ from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseTypeDef
 
 Optional fields:
 
-- `Dashboard`:
-  [DashboardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboardtypedef)
+- `Dashboard`: [DashboardTypeDef](./type_defs.md#dashboardtypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1442,7 +1407,7 @@ Optional fields:
 - `DataSetArn`: `str`
 - `DataSetId`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1454,8 +1419,7 @@ from mypy_boto3_quicksight.type_defs import DescribeDataSetResponseTypeDef
 
 Optional fields:
 
-- `DataSet`:
-  [DataSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasettypedef)
+- `DataSet`: [DataSetTypeDef](./type_defs.md#datasettypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1470,7 +1434,7 @@ Optional fields:
 - `DataSourceArn`: `str`
 - `DataSourceId`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1482,8 +1446,7 @@ from mypy_boto3_quicksight.type_defs import DescribeDataSourceResponseTypeDef
 
 Optional fields:
 
-- `DataSource`:
-  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasourcetypedef)
+- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1495,8 +1458,7 @@ from mypy_boto3_quicksight.type_defs import DescribeGroupResponseTypeDef
 
 Optional fields:
 
-- `Group`:
-  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#grouptypedef)
+- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1509,7 +1471,7 @@ from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentResponseT
 Optional fields:
 
 - `IAMPolicyAssignment`:
-  [IAMPolicyAssignmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#iampolicyassignmenttypedef)
+  [IAMPolicyAssignmentTypeDef](./type_defs.md#iampolicyassignmenttypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1521,8 +1483,7 @@ from mypy_boto3_quicksight.type_defs import DescribeIngestionResponseTypeDef
 
 Optional fields:
 
-- `Ingestion`:
-  [IngestionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#ingestiontypedef)
+- `Ingestion`: [IngestionTypeDef](./type_defs.md#ingestiontypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1534,8 +1495,7 @@ from mypy_boto3_quicksight.type_defs import DescribeNamespaceResponseTypeDef
 
 Optional fields:
 
-- `Namespace`:
-  [NamespaceInfoV2TypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#namespaceinfov2typedef)
+- `Namespace`: [NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1547,8 +1507,7 @@ from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasResponseTypeDef
 
 Optional fields:
 
-- `TemplateAlias`:
-  [TemplateAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatealiastypedef)
+- `TemplateAlias`: [TemplateAliasTypeDef](./type_defs.md#templatealiastypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1563,7 +1522,7 @@ Optional fields:
 - `TemplateId`: `str`
 - `TemplateArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1575,8 +1534,7 @@ from mypy_boto3_quicksight.type_defs import DescribeTemplateResponseTypeDef
 
 Optional fields:
 
-- `Template`:
-  [TemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatetypedef)
+- `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1588,8 +1546,7 @@ from mypy_boto3_quicksight.type_defs import DescribeThemeAliasResponseTypeDef
 
 Optional fields:
 
-- `ThemeAlias`:
-  [ThemeAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themealiastypedef)
+- `ThemeAlias`: [ThemeAliasTypeDef](./type_defs.md#themealiastypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1604,7 +1561,7 @@ Optional fields:
 - `ThemeId`: `str`
 - `ThemeArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1616,8 +1573,7 @@ from mypy_boto3_quicksight.type_defs import DescribeThemeResponseTypeDef
 
 Optional fields:
 
-- `Theme`:
-  [ThemeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themetypedef)
+- `Theme`: [ThemeTypeDef](./type_defs.md#themetypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -1629,8 +1585,7 @@ from mypy_boto3_quicksight.type_defs import DescribeUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -1642,8 +1597,7 @@ from mypy_boto3_quicksight.type_defs import ErrorInfoTypeDef
 
 Optional fields:
 
-- `Type`:
-  [IngestionErrorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#ingestionerrortype)
+- `Type`: [IngestionErrorType](./literals.md#ingestionerrortype)
 - `Message`: `str`
 
 ## ExportToCSVOptionTypeDef
@@ -1654,8 +1608,7 @@ from mypy_boto3_quicksight.type_defs import ExportToCSVOptionTypeDef
 
 Optional fields:
 
-- `AvailabilityStatus`:
-  [DashboardBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#dashboardbehavior)
+- `AvailabilityStatus`: [DashboardBehavior](./literals.md#dashboardbehavior)
 
 ## FieldFolderTypeDef
 
@@ -1687,7 +1640,8 @@ from mypy_boto3_quicksight.type_defs import GeoSpatialColumnGroupTypeDef
 Required fields:
 
 - `Name`: `str`
-- `CountryCode`: `Literal['US']`
+- `CountryCode`: `Literal['US']` (see
+  [GeoSpatialCountryCode](./literals.md#geospatialcountrycode))
 - `Columns`: `List`\[`str`\]
 
 ## GetDashboardEmbedUrlResponseTypeDef
@@ -1757,8 +1711,7 @@ from mypy_boto3_quicksight.type_defs import IAMPolicyAssignmentSummaryTypeDef
 Optional fields:
 
 - `AssignmentName`: `str`
-- `AssignmentStatus`:
-  [AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#assignmentstatus)
+- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
 
 ## IAMPolicyAssignmentTypeDef
 
@@ -1773,8 +1726,7 @@ Optional fields:
 - `AssignmentName`: `str`
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
-- `AssignmentStatus`:
-  [AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#assignmentstatus)
+- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
 
 ## IngestionTypeDef
 
@@ -1785,25 +1737,19 @@ from mypy_boto3_quicksight.type_defs import IngestionTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `IngestionStatus`:
-  [IngestionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#ingestionstatus)
+- `IngestionStatus`: [IngestionStatus](./literals.md#ingestionstatus)
 - `CreatedTime`: `datetime`
 
 Optional fields:
 
 - `IngestionId`: `str`
-- `ErrorInfo`:
-  [ErrorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#errorinfotypedef)
-- `RowInfo`:
-  [RowInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#rowinfotypedef)
-- `QueueInfo`:
-  [QueueInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#queueinfotypedef)
+- `ErrorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
+- `RowInfo`: [RowInfoTypeDef](./type_defs.md#rowinfotypedef)
+- `QueueInfo`: [QueueInfoTypeDef](./type_defs.md#queueinfotypedef)
 - `IngestionTimeInSeconds`: `int`
 - `IngestionSizeInBytes`: `int`
-- `RequestSource`:
-  [IngestionRequestSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#ingestionrequestsource)
-- `RequestType`:
-  [IngestionRequestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#ingestionrequesttype)
+- `RequestSource`: [IngestionRequestSource](./literals.md#ingestionrequestsource)
+- `RequestType`: [IngestionRequestType](./literals.md#ingestionrequesttype)
 
 ## InputColumnTypeDef
 
@@ -1814,8 +1760,7 @@ from mypy_boto3_quicksight.type_defs import InputColumnTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`:
-  [InputColumnDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#inputcolumndatatype)
+- `Type`: [InputColumnDataType](./literals.md#inputcolumndatatype)
 
 ## IntegerParameterTypeDef
 
@@ -1848,16 +1793,15 @@ Required fields:
 
 - `LeftOperand`: `str`
 - `RightOperand`: `str`
-- `Type`:
-  [JoinType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#jointype)
+- `Type`: [JoinType](./literals.md#jointype)
 - `OnClause`: `str`
 
 Optional fields:
 
 - `LeftJoinKeyProperties`:
-  [JoinKeyPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#joinkeypropertiestypedef)
+  [JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef)
 - `RightJoinKeyProperties`:
-  [JoinKeyPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#joinkeypropertiestypedef)
+  [JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef)
 
 ## JoinKeyPropertiesTypeDef
 
@@ -1878,7 +1822,7 @@ from mypy_boto3_quicksight.type_defs import ListAnalysesResponseTypeDef
 Optional fields:
 
 - `AnalysisSummaryList`:
-  `List`\[[AnalysisSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#analysissummarytypedef)\]
+  `List`\[[AnalysisSummaryTypeDef](./type_defs.md#analysissummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -1892,7 +1836,7 @@ from mypy_boto3_quicksight.type_defs import ListDashboardVersionsResponseTypeDef
 Optional fields:
 
 - `DashboardVersionSummaryList`:
-  `List`\[[DashboardVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboardversionsummarytypedef)\]
+  `List`\[[DashboardVersionSummaryTypeDef](./type_defs.md#dashboardversionsummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -1906,7 +1850,7 @@ from mypy_boto3_quicksight.type_defs import ListDashboardsResponseTypeDef
 Optional fields:
 
 - `DashboardSummaryList`:
-  `List`\[[DashboardSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboardsummarytypedef)\]
+  `List`\[[DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -1920,7 +1864,7 @@ from mypy_boto3_quicksight.type_defs import ListDataSetsResponseTypeDef
 Optional fields:
 
 - `DataSetSummaries`:
-  `List`\[[DataSetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasetsummarytypedef)\]
+  `List`\[[DataSetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -1933,8 +1877,7 @@ from mypy_boto3_quicksight.type_defs import ListDataSourcesResponseTypeDef
 
 Optional fields:
 
-- `DataSources`:
-  `List`\[[DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasourcetypedef)\]
+- `DataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -1948,7 +1891,7 @@ from mypy_boto3_quicksight.type_defs import ListGroupMembershipsResponseTypeDef
 Optional fields:
 
 - `GroupMemberList`:
-  `List`\[[GroupMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#groupmembertypedef)\]
+  `List`\[[GroupMemberTypeDef](./type_defs.md#groupmembertypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -1961,8 +1904,7 @@ from mypy_boto3_quicksight.type_defs import ListGroupsResponseTypeDef
 
 Optional fields:
 
-- `GroupList`:
-  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#grouptypedef)\]
+- `GroupList`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -1976,7 +1918,7 @@ from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserRespo
 Optional fields:
 
 - `ActiveAssignments`:
-  `List`\[[ActiveIAMPolicyAssignmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#activeiampolicyassignmenttypedef)\]
+  `List`\[[ActiveIAMPolicyAssignmentTypeDef](./type_defs.md#activeiampolicyassignmenttypedef)\]
 - `RequestId`: `str`
 - `NextToken`: `str`
 - `Status`: `int`
@@ -1990,7 +1932,7 @@ from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsResponseType
 Optional fields:
 
 - `IAMPolicyAssignments`:
-  `List`\[[IAMPolicyAssignmentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#iampolicyassignmentsummarytypedef)\]
+  `List`\[[IAMPolicyAssignmentSummaryTypeDef](./type_defs.md#iampolicyassignmentsummarytypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2003,8 +1945,7 @@ from mypy_boto3_quicksight.type_defs import ListIngestionsResponseTypeDef
 
 Optional fields:
 
-- `Ingestions`:
-  `List`\[[IngestionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#ingestiontypedef)\]
+- `Ingestions`: `List`\[[IngestionTypeDef](./type_defs.md#ingestiontypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2018,7 +1959,7 @@ from mypy_boto3_quicksight.type_defs import ListNamespacesResponseTypeDef
 Optional fields:
 
 - `Namespaces`:
-  `List`\[[NamespaceInfoV2TypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#namespaceinfov2typedef)\]
+  `List`\[[NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2031,8 +1972,7 @@ from mypy_boto3_quicksight.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -2045,7 +1985,7 @@ from mypy_boto3_quicksight.type_defs import ListTemplateAliasesResponseTypeDef
 Optional fields:
 
 - `TemplateAliasList`:
-  `List`\[[TemplateAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatealiastypedef)\]
+  `List`\[[TemplateAliasTypeDef](./type_defs.md#templatealiastypedef)\]
 - `Status`: `int`
 - `RequestId`: `str`
 - `NextToken`: `str`
@@ -2059,7 +1999,7 @@ from mypy_boto3_quicksight.type_defs import ListTemplateVersionsResponseTypeDef
 Optional fields:
 
 - `TemplateVersionSummaryList`:
-  `List`\[[TemplateVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templateversionsummarytypedef)\]
+  `List`\[[TemplateVersionSummaryTypeDef](./type_defs.md#templateversionsummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -2073,7 +2013,7 @@ from mypy_boto3_quicksight.type_defs import ListTemplatesResponseTypeDef
 Optional fields:
 
 - `TemplateSummaryList`:
-  `List`\[[TemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatesummarytypedef)\]
+  `List`\[[TemplateSummaryTypeDef](./type_defs.md#templatesummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -2087,7 +2027,7 @@ from mypy_boto3_quicksight.type_defs import ListThemeAliasesResponseTypeDef
 Optional fields:
 
 - `ThemeAliasList`:
-  `List`\[[ThemeAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themealiastypedef)\]
+  `List`\[[ThemeAliasTypeDef](./type_defs.md#themealiastypedef)\]
 - `Status`: `int`
 - `RequestId`: `str`
 - `NextToken`: `str`
@@ -2101,7 +2041,7 @@ from mypy_boto3_quicksight.type_defs import ListThemeVersionsResponseTypeDef
 Optional fields:
 
 - `ThemeVersionSummaryList`:
-  `List`\[[ThemeVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themeversionsummarytypedef)\]
+  `List`\[[ThemeVersionSummaryTypeDef](./type_defs.md#themeversionsummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -2115,7 +2055,7 @@ from mypy_boto3_quicksight.type_defs import ListThemesResponseTypeDef
 Optional fields:
 
 - `ThemeSummaryList`:
-  `List`\[[ThemeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themesummarytypedef)\]
+  `List`\[[ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -2128,8 +2068,7 @@ from mypy_boto3_quicksight.type_defs import ListUserGroupsResponseTypeDef
 
 Optional fields:
 
-- `GroupList`:
-  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#grouptypedef)\]
+- `GroupList`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2142,8 +2081,7 @@ from mypy_boto3_quicksight.type_defs import ListUsersResponseTypeDef
 
 Optional fields:
 
-- `UserList`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#usertypedef)\]
+- `UserList`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2157,7 +2095,7 @@ from mypy_boto3_quicksight.type_defs import LogicalTableSourceTypeDef
 Optional fields:
 
 - `JoinInstruction`:
-  [JoinInstructionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#joininstructiontypedef)
+  [JoinInstructionTypeDef](./type_defs.md#joininstructiontypedef)
 - `PhysicalTableId`: `str`
 
 ## LogicalTableTypeDef
@@ -2169,13 +2107,12 @@ from mypy_boto3_quicksight.type_defs import LogicalTableTypeDef
 Required fields:
 
 - `Alias`: `str`
-- `Source`:
-  [LogicalTableSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#logicaltablesourcetypedef)
+- `Source`: [LogicalTableSourceTypeDef](./type_defs.md#logicaltablesourcetypedef)
 
 Optional fields:
 
 - `DataTransforms`:
-  `List`\[[TransformOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#transformoperationtypedef)\]
+  `List`\[[TransformOperationTypeDef](./type_defs.md#transformoperationtypedef)\]
 
 ## ManifestFileLocationTypeDef
 
@@ -2230,8 +2167,7 @@ from mypy_boto3_quicksight.type_defs import NamespaceErrorTypeDef
 
 Optional fields:
 
-- `Type`:
-  [NamespaceErrorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#namespaceerrortype)
+- `Type`: [NamespaceErrorType](./literals.md#namespaceerrortype)
 - `Message`: `str`
 
 ## NamespaceInfoV2TypeDef
@@ -2245,11 +2181,10 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `CapacityRegion`: `str`
-- `CreationStatus`:
-  [NamespaceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#namespacestatus)
-- `IdentityStore`: `Literal['QUICKSIGHT']`
-- `NamespaceError`:
-  [NamespaceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#namespaceerrortypedef)
+- `CreationStatus`: [NamespaceStatus](./literals.md#namespacestatus)
+- `IdentityStore`: `Literal['QUICKSIGHT']` (see
+  [IdentityStore](./literals.md#identitystore))
+- `NamespaceError`: [NamespaceErrorTypeDef](./type_defs.md#namespaceerrortypedef)
 
 ## OracleParametersTypeDef
 
@@ -2273,8 +2208,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `Type`:
-  [ColumnDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#columndatatype)
+- `Type`: [ColumnDataType](./literals.md#columndatatype)
 
 ## PaginatorConfigTypeDef
 
@@ -2297,13 +2231,13 @@ from mypy_boto3_quicksight.type_defs import ParametersTypeDef
 Optional fields:
 
 - `StringParameters`:
-  `List`\[[StringParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#stringparametertypedef)\]
+  `List`\[[StringParameterTypeDef](./type_defs.md#stringparametertypedef)\]
 - `IntegerParameters`:
-  `List`\[[IntegerParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#integerparametertypedef)\]
+  `List`\[[IntegerParameterTypeDef](./type_defs.md#integerparametertypedef)\]
 - `DecimalParameters`:
-  `List`\[[DecimalParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#decimalparametertypedef)\]
+  `List`\[[DecimalParameterTypeDef](./type_defs.md#decimalparametertypedef)\]
 - `DateTimeParameters`:
-  `List`\[[DateTimeParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datetimeparametertypedef)\]
+  `List`\[[DateTimeParameterTypeDef](./type_defs.md#datetimeparametertypedef)\]
 
 ## PhysicalTableTypeDef
 
@@ -2314,11 +2248,9 @@ from mypy_boto3_quicksight.type_defs import PhysicalTableTypeDef
 Optional fields:
 
 - `RelationalTable`:
-  [RelationalTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#relationaltabletypedef)
-- `CustomSql`:
-  [CustomSqlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#customsqltypedef)
-- `S3Source`:
-  [S3SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#s3sourcetypedef)
+  [RelationalTableTypeDef](./type_defs.md#relationaltabletypedef)
+- `CustomSql`: [CustomSqlTypeDef](./type_defs.md#customsqltypedef)
+- `S3Source`: [S3SourceTypeDef](./type_defs.md#s3sourcetypedef)
 
 ## PostgreSqlParametersTypeDef
 
@@ -2400,8 +2332,7 @@ from mypy_boto3_quicksight.type_defs import RegisterUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `UserInvitationUrl`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
@@ -2417,7 +2348,7 @@ Required fields:
 - `DataSourceArn`: `str`
 - `Name`: `str`
 - `InputColumns`:
-  `List`\[[InputColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#inputcolumntypedef)\]
+  `List`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
 
 Optional fields:
 
@@ -2480,7 +2411,7 @@ Required fields:
 
 - `Arn`: `str`
 - `PermissionPolicy`:
-  [RowLevelPermissionPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#rowlevelpermissionpolicy)
+  [RowLevelPermissionPolicy](./literals.md#rowlevelpermissionpolicy)
 
 Optional fields:
 
@@ -2495,7 +2426,7 @@ from mypy_boto3_quicksight.type_defs import S3ParametersTypeDef
 Required fields:
 
 - `ManifestFileLocation`:
-  [ManifestFileLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#manifestfilelocationtypedef)
+  [ManifestFileLocationTypeDef](./type_defs.md#manifestfilelocationtypedef)
 
 ## S3SourceTypeDef
 
@@ -2507,12 +2438,11 @@ Required fields:
 
 - `DataSourceArn`: `str`
 - `InputColumns`:
-  `List`\[[InputColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#inputcolumntypedef)\]
+  `List`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
 
 Optional fields:
 
-- `UploadSettings`:
-  [UploadSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#uploadsettingstypedef)
+- `UploadSettings`: [UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef)
 
 ## SearchAnalysesResponseTypeDef
 
@@ -2523,7 +2453,7 @@ from mypy_boto3_quicksight.type_defs import SearchAnalysesResponseTypeDef
 Optional fields:
 
 - `AnalysisSummaryList`:
-  `List`\[[AnalysisSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#analysissummarytypedef)\]
+  `List`\[[AnalysisSummaryTypeDef](./type_defs.md#analysissummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -2537,7 +2467,7 @@ from mypy_boto3_quicksight.type_defs import SearchDashboardsResponseTypeDef
 Optional fields:
 
 - `DashboardSummaryList`:
-  `List`\[[DashboardSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#dashboardsummarytypedef)\]
+  `List`\[[DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
 - `RequestId`: `str`
@@ -2560,8 +2490,7 @@ from mypy_boto3_quicksight.type_defs import SheetControlsOptionTypeDef
 
 Optional fields:
 
-- `VisibilityState`:
-  [DashboardUIState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#dashboarduistate)
+- `VisibilityState`: [DashboardUIState](./literals.md#dashboarduistate)
 
 ## SheetStyleTypeDef
 
@@ -2571,10 +2500,8 @@ from mypy_boto3_quicksight.type_defs import SheetStyleTypeDef
 
 Optional fields:
 
-- `Tile`:
-  [TileStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#tilestyletypedef)
-- `TileLayout`:
-  [TileLayoutStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#tilelayoutstyletypedef)
+- `Tile`: [TileStyleTypeDef](./type_defs.md#tilestyletypedef)
+- `TileLayout`: [TileLayoutStyleTypeDef](./type_defs.md#tilelayoutstyletypedef)
 
 ## SheetTypeDef
 
@@ -2652,8 +2579,7 @@ from mypy_boto3_quicksight.type_defs import TagColumnOperationTypeDef
 Required fields:
 
 - `ColumnName`: `str`
-- `Tags`:
-  `List`\[[ColumnTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#columntagtypedef)\]
+- `Tags`: `List`\[[ColumnTagTypeDef](./type_defs.md#columntagtypedef)\]
 
 ## TagResourceResponseTypeDef
 
@@ -2697,8 +2623,7 @@ from mypy_boto3_quicksight.type_defs import TemplateErrorTypeDef
 
 Optional fields:
 
-- `Type`:
-  [TemplateErrorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#templateerrortype)
+- `Type`: [TemplateErrorType](./literals.md#templateerrortype)
 - `Message`: `str`
 
 ## TemplateSourceAnalysisTypeDef
@@ -2711,7 +2636,7 @@ Required fields:
 
 - `Arn`: `str`
 - `DataSetReferences`:
-  `List`\[[DataSetReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasetreferencetypedef)\]
+  `List`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
 
 ## TemplateSourceEntityTypeDef
 
@@ -2722,9 +2647,9 @@ from mypy_boto3_quicksight.type_defs import TemplateSourceEntityTypeDef
 Optional fields:
 
 - `SourceAnalysis`:
-  [TemplateSourceAnalysisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatesourceanalysistypedef)
+  [TemplateSourceAnalysisTypeDef](./type_defs.md#templatesourceanalysistypedef)
 - `SourceTemplate`:
-  [TemplateSourceTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatesourcetemplatetypedef)
+  [TemplateSourceTemplateTypeDef](./type_defs.md#templatesourcetemplatetypedef)
 
 ## TemplateSourceTemplateTypeDef
 
@@ -2761,8 +2686,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `Version`:
-  [TemplateVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templateversiontypedef)
+- `Version`: [TemplateVersionTypeDef](./type_defs.md#templateversiontypedef)
 - `TemplateId`: `str`
 - `LastUpdatedTime`: `datetime`
 - `CreatedTime`: `datetime`
@@ -2778,8 +2702,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionNumber`: `int`
 - `CreatedTime`: `datetime`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 - `Description`: `str`
 
 ## TemplateVersionTypeDef
@@ -2791,18 +2714,15 @@ from mypy_boto3_quicksight.type_defs import TemplateVersionTypeDef
 Optional fields:
 
 - `CreatedTime`: `datetime`
-- `Errors`:
-  `List`\[[TemplateErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templateerrortypedef)\]
+- `Errors`: `List`\[[TemplateErrorTypeDef](./type_defs.md#templateerrortypedef)\]
 - `VersionNumber`: `int`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 - `DataSetConfigurations`:
-  `List`\[[DataSetConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datasetconfigurationtypedef)\]
+  `List`\[[DataSetConfigurationTypeDef](./type_defs.md#datasetconfigurationtypedef)\]
 - `Description`: `str`
 - `SourceEntityArn`: `str`
 - `ThemeArn`: `str`
-- `Sheets`:
-  `List`\[[SheetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sheettypedef)\]
+- `Sheets`: `List`\[[SheetTypeDef](./type_defs.md#sheettypedef)\]
 
 ## TeradataParametersTypeDef
 
@@ -2837,11 +2757,9 @@ from mypy_boto3_quicksight.type_defs import ThemeConfigurationTypeDef
 Optional fields:
 
 - `DataColorPalette`:
-  [DataColorPaletteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#datacolorpalettetypedef)
-- `UIColorPalette`:
-  [UIColorPaletteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#uicolorpalettetypedef)
-- `Sheet`:
-  [SheetStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#sheetstyletypedef)
+  [DataColorPaletteTypeDef](./type_defs.md#datacolorpalettetypedef)
+- `UIColorPalette`: [UIColorPaletteTypeDef](./type_defs.md#uicolorpalettetypedef)
+- `Sheet`: [SheetStyleTypeDef](./type_defs.md#sheetstyletypedef)
 
 ## ThemeErrorTypeDef
 
@@ -2851,7 +2769,8 @@ from mypy_boto3_quicksight.type_defs import ThemeErrorTypeDef
 
 Optional fields:
 
-- `Type`: `Literal['INTERNAL_FAILURE']`
+- `Type`: `Literal['INTERNAL_FAILURE']` (see
+  [ThemeErrorType](./literals.md#themeerrortype))
 - `Message`: `str`
 
 ## ThemeSummaryTypeDef
@@ -2880,12 +2799,10 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `ThemeId`: `str`
-- `Version`:
-  [ThemeVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themeversiontypedef)
+- `Version`: [ThemeVersionTypeDef](./type_defs.md#themeversiontypedef)
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
-- `Type`:
-  [ThemeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#themetype)
+- `Type`: [ThemeType](./literals.md#themetype)
 
 ## ThemeVersionSummaryTypeDef
 
@@ -2899,8 +2816,7 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `CreatedTime`: `datetime`
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 
 ## ThemeVersionTypeDef
 
@@ -2916,11 +2832,9 @@ Optional fields:
 - `BaseThemeId`: `str`
 - `CreatedTime`: `datetime`
 - `Configuration`:
-  [ThemeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themeconfigurationtypedef)
-- `Errors`:
-  `List`\[[ThemeErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themeerrortypedef)\]
-- `Status`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+  [ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef)
+- `Errors`: `List`\[[ThemeErrorTypeDef](./type_defs.md#themeerrortypedef)\]
+- `Status`: [ResourceStatus](./literals.md#resourcestatus)
 
 ## TileLayoutStyleTypeDef
 
@@ -2930,10 +2844,8 @@ from mypy_boto3_quicksight.type_defs import TileLayoutStyleTypeDef
 
 Optional fields:
 
-- `Gutter`:
-  [GutterStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#gutterstyletypedef)
-- `Margin`:
-  [MarginStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#marginstyletypedef)
+- `Gutter`: [GutterStyleTypeDef](./type_defs.md#gutterstyletypedef)
+- `Margin`: [MarginStyleTypeDef](./type_defs.md#marginstyletypedef)
 
 ## TileStyleTypeDef
 
@@ -2943,8 +2855,7 @@ from mypy_boto3_quicksight.type_defs import TileStyleTypeDef
 
 Optional fields:
 
-- `Border`:
-  [BorderStyleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#borderstyletypedef)
+- `Border`: [BorderStyleTypeDef](./type_defs.md#borderstyletypedef)
 
 ## TransformOperationTypeDef
 
@@ -2955,17 +2866,17 @@ from mypy_boto3_quicksight.type_defs import TransformOperationTypeDef
 Optional fields:
 
 - `ProjectOperation`:
-  [ProjectOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#projectoperationtypedef)
+  [ProjectOperationTypeDef](./type_defs.md#projectoperationtypedef)
 - `FilterOperation`:
-  [FilterOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#filteroperationtypedef)
+  [FilterOperationTypeDef](./type_defs.md#filteroperationtypedef)
 - `CreateColumnsOperation`:
-  [CreateColumnsOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#createcolumnsoperationtypedef)
+  [CreateColumnsOperationTypeDef](./type_defs.md#createcolumnsoperationtypedef)
 - `RenameColumnOperation`:
-  [RenameColumnOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#renamecolumnoperationtypedef)
+  [RenameColumnOperationTypeDef](./type_defs.md#renamecolumnoperationtypedef)
 - `CastColumnTypeOperation`:
-  [CastColumnTypeOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#castcolumntypeoperationtypedef)
+  [CastColumnTypeOperationTypeDef](./type_defs.md#castcolumntypeoperationtypedef)
 - `TagColumnOperation`:
-  [TagColumnOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#tagcolumnoperationtypedef)
+  [TagColumnOperationTypeDef](./type_defs.md#tagcolumnoperationtypedef)
 
 ## TwitterParametersTypeDef
 
@@ -3026,7 +2937,7 @@ Optional fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 - `AccountCustomization`:
-  [AccountCustomizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#accountcustomizationtypedef)
+  [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3052,7 +2963,7 @@ Optional fields:
 - `AnalysisArn`: `str`
 - `AnalysisId`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3066,8 +2977,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `AnalysisId`: `str`
-- `UpdateStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `UpdateStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3082,7 +2992,7 @@ Optional fields:
 - `DashboardArn`: `str`
 - `DashboardId`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3110,8 +3020,7 @@ Optional fields:
 - `Arn`: `str`
 - `VersionArn`: `str`
 - `DashboardId`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3166,8 +3075,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `DataSourceId`: `str`
-- `UpdateStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `UpdateStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3179,8 +3087,7 @@ from mypy_boto3_quicksight.type_defs import UpdateGroupResponseTypeDef
 
 Optional fields:
 
-- `Group`:
-  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#grouptypedef)
+- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3196,8 +3103,7 @@ Optional fields:
 - `AssignmentId`: `str`
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
-- `AssignmentStatus`:
-  [AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#assignmentstatus)
+- `AssignmentStatus`: [AssignmentStatus](./literals.md#assignmentstatus)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3209,8 +3115,7 @@ from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasResponseTypeDef
 
 Optional fields:
 
-- `TemplateAlias`:
-  [TemplateAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#templatealiastypedef)
+- `TemplateAlias`: [TemplateAliasTypeDef](./type_defs.md#templatealiastypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3225,7 +3130,7 @@ Optional fields:
 - `TemplateId`: `str`
 - `TemplateArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3240,8 +3145,7 @@ Optional fields:
 - `TemplateId`: `str`
 - `Arn`: `str`
 - `VersionArn`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3253,8 +3157,7 @@ from mypy_boto3_quicksight.type_defs import UpdateThemeAliasResponseTypeDef
 
 Optional fields:
 
-- `ThemeAlias`:
-  [ThemeAliasTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#themealiastypedef)
+- `ThemeAlias`: [ThemeAliasTypeDef](./type_defs.md#themealiastypedef)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3269,7 +3172,7 @@ Optional fields:
 - `ThemeId`: `str`
 - `ThemeArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#resourcepermissiontypedef)\]
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3284,8 +3187,7 @@ Optional fields:
 - `ThemeId`: `str`
 - `Arn`: `str`
 - `VersionArn`: `str`
-- `CreationStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#resourcestatus)
+- `CreationStatus`: [ResourceStatus](./literals.md#resourcestatus)
 - `Status`: `int`
 - `RequestId`: `str`
 
@@ -3297,8 +3199,7 @@ from mypy_boto3_quicksight.type_defs import UpdateUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `RequestId`: `str`
 - `Status`: `int`
 
@@ -3310,12 +3211,10 @@ from mypy_boto3_quicksight.type_defs import UploadSettingsTypeDef
 
 Optional fields:
 
-- `Format`:
-  [FileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#fileformat)
+- `Format`: [FileFormat](./literals.md#fileformat)
 - `StartFromRow`: `int`
 - `ContainsHeader`: `bool`
-- `TextQualifier`:
-  [TextQualifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#textqualifier)
+- `TextQualifier`: [TextQualifier](./literals.md#textqualifier)
 - `Delimiter`: `str`
 
 ## UserTypeDef
@@ -3329,10 +3228,8 @@ Optional fields:
 - `Arn`: `str`
 - `UserName`: `str`
 - `Email`: `str`
-- `Role`:
-  [UserRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#userrole)
-- `IdentityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_quicksight/literals.html#identitytype)
+- `Role`: [UserRole](./literals.md#userrole)
+- `IdentityType`: [IdentityType](./literals.md#identitytype)
 - `Active`: `bool`
 - `PrincipalId`: `str`
 - `CustomPermissionsName`: `str`

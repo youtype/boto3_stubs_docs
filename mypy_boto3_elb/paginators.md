@@ -1,6 +1,6 @@
 # Paginators for boto3 ElasticLoadBalancing module
 
-> [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Paginators
+> [Index](..) > [ElasticLoadBalancing](.) > Paginators
 
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
@@ -31,10 +31,10 @@ Boto3 documentation:
 Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountLimitsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeaccountlimitsoutputtypedef)\].
+`Iterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -57,7 +57,7 @@ Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
 - `LoadBalancerNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeAccessPointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeaccesspointsoutputtypedef)\].
+`Iterator`\[[DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef)\].

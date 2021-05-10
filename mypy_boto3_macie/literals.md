@@ -1,6 +1,6 @@
 # Literals for boto3 Macie module
 
-> [Index](../README.md) > [Macie](./README.md) > Literals
+> [Index](..) > [Macie](.) > Literals
 
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)

@@ -1,6 +1,6 @@
 # Paginators for boto3 ForecastService module
 
-> [Index](../README.md) > [ForecastService](./README.md) > Paginators
+> [Index](..) > [ForecastService](.) > Paginators
 
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
@@ -36,10 +36,10 @@ Boto3 documentation:
 Arguments for `ListDatasetGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetGroupsPaginator.paginate` returns
-`Iterator`\[[ListDatasetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listdatasetgroupsresponsetypedef)\].
+`Iterator`\[[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)\].
 
 ## ListDatasetImportJobsPaginator
 
@@ -60,13 +60,12 @@ Boto3 documentation:
 
 Arguments for `ListDatasetImportJobsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetImportJobsPaginator.paginate` returns
-`Iterator`\[[ListDatasetImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listdatasetimportjobsresponsetypedef)\].
+`Iterator`\[[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)\].
 
 ## ListDatasetsPaginator
 
@@ -87,10 +86,10 @@ Boto3 documentation:
 Arguments for `ListDatasetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetsPaginator.paginate` returns
-`Iterator`\[[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listdatasetsresponsetypedef)\].
+`Iterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
 ## ListForecastExportJobsPaginator
 
@@ -111,13 +110,12 @@ Boto3 documentation:
 
 Arguments for `ListForecastExportJobsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListForecastExportJobsPaginator.paginate` returns
-`Iterator`\[[ListForecastExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listforecastexportjobsresponsetypedef)\].
+`Iterator`\[[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)\].
 
 ## ListForecastsPaginator
 
@@ -138,13 +136,12 @@ Boto3 documentation:
 
 Arguments for `ListForecastsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListForecastsPaginator.paginate` returns
-`Iterator`\[[ListForecastsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listforecastsresponsetypedef)\].
+`Iterator`\[[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)\].
 
 ## ListPredictorBacktestExportJobsPaginator
 
@@ -165,13 +162,12 @@ Boto3 documentation:
 
 Arguments for `ListPredictorBacktestExportJobsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPredictorBacktestExportJobsPaginator.paginate` returns
-`Iterator`\[[ListPredictorBacktestExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listpredictorbacktestexportjobsresponsetypedef)\].
+`Iterator`\[[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)\].
 
 ## ListPredictorsPaginator
 
@@ -192,10 +188,9 @@ Boto3 documentation:
 
 Arguments for `ListPredictorsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPredictorsPaginator.paginate` returns
-`Iterator`\[[ListPredictorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listpredictorsresponsetypedef)\].
+`Iterator`\[[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef)\].

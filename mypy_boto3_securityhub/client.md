@@ -1,6 +1,6 @@
 # SecurityHubClient for boto3 SecurityHub module
 
-> [Index](../README.md) > [SecurityHub](./README.md) > SecurityHubClient
+> [Index](..) > [SecurityHub](.) > SecurityHubClient
 
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
@@ -149,7 +149,7 @@ Arguments:
 - `StandardsSubscriptionArns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisableStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchdisablestandardsresponsetypedef).
+[BatchDisableStandardsResponseTypeDef](./type_defs.md#batchdisablestandardsresponsetypedef).
 
 ### batch_enable_standards
 
@@ -162,11 +162,11 @@ Boto3 documentation:
 Arguments:
 
 - `StandardsSubscriptionRequests`:
-  `List`\[[StandardsSubscriptionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardssubscriptionrequesttypedef)\]
+  `List`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
   *(required)*
 
 Returns
-[BatchEnableStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchenablestandardsresponsetypedef).
+[BatchEnableStandardsResponseTypeDef](./type_defs.md#batchenablestandardsresponsetypedef).
 
 ### batch_import_findings
 
@@ -179,11 +179,11 @@ Boto3 documentation:
 Arguments:
 
 - `Findings`:
-  `List`\[[AwsSecurityFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingtypedef)\]
+  `List`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
   *(required)*
 
 Returns
-[BatchImportFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchimportfindingsresponsetypedef).
+[BatchImportFindingsResponseTypeDef](./type_defs.md#batchimportfindingsresponsetypedef).
 
 ### batch_update_findings
 
@@ -196,25 +196,21 @@ Boto3 documentation:
 Arguments:
 
 - `FindingIdentifiers`:
-  `List`\[[AwsSecurityFindingIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingidentifiertypedef)\]
+  `List`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
   *(required)*
-- `Note`:
-  [NoteUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#noteupdatetypedef)
-- `Severity`:
-  [SeverityUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#severityupdatetypedef)
-- `VerificationState`:
-  [VerificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#verificationstate)
+- `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
+- `Severity`: [SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef)
+- `VerificationState`: [VerificationState](./literals.md#verificationstate)
 - `Confidence`: `int`
 - `Criticality`: `int`
 - `Types`: `List`\[`str`\]
 - `UserDefinedFields`: `Dict`\[`str`, `str`\]
-- `Workflow`:
-  [WorkflowUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#workflowupdatetypedef)
+- `Workflow`: [WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef)
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#relatedfindingtypedef)\]
+  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 
 Returns
-[BatchUpdateFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchupdatefindingsresponsetypedef).
+[BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef).
 
 ### can_paginate
 
@@ -243,7 +239,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[CreateActionTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#createactiontargetresponsetypedef).
+[CreateActionTargetResponseTypeDef](./type_defs.md#createactiontargetresponsetypedef).
 
 ### create_insight
 
@@ -256,12 +252,12 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
   *(required)*
 - `GroupByAttribute`: `str` *(required)*
 
 Returns
-[CreateInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#createinsightresponsetypedef).
+[CreateInsightResponseTypeDef](./type_defs.md#createinsightresponsetypedef).
 
 ### create_members
 
@@ -273,11 +269,11 @@ Boto3 documentation:
 Arguments:
 
 - `AccountDetails`:
-  `List`\[[AccountDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#accountdetailstypedef)\]
+  `List`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
   *(required)*
 
 Returns
-[CreateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#createmembersresponsetypedef).
+[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
 
 ### decline_invitations
 
@@ -291,7 +287,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#declineinvitationsresponsetypedef).
+[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
 ### delete_action_target
 
@@ -305,7 +301,7 @@ Arguments:
 - `ActionTargetArn`: `str` *(required)*
 
 Returns
-[DeleteActionTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deleteactiontargetresponsetypedef).
+[DeleteActionTargetResponseTypeDef](./type_defs.md#deleteactiontargetresponsetypedef).
 
 ### delete_insight
 
@@ -319,7 +315,7 @@ Arguments:
 - `InsightArn`: `str` *(required)*
 
 Returns
-[DeleteInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deleteinsightresponsetypedef).
+[DeleteInsightResponseTypeDef](./type_defs.md#deleteinsightresponsetypedef).
 
 ### delete_invitations
 
@@ -333,7 +329,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deleteinvitationsresponsetypedef).
+[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
 ### delete_members
 
@@ -347,7 +343,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#deletemembersresponsetypedef).
+[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
 ### describe_action_targets
 
@@ -364,7 +360,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeActionTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describeactiontargetsresponsetypedef).
+[DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef).
 
 ### describe_hub
 
@@ -378,7 +374,7 @@ Arguments:
 - `HubArn`: `str`
 
 Returns
-[DescribeHubResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describehubresponsetypedef).
+[DescribeHubResponseTypeDef](./type_defs.md#describehubresponsetypedef).
 
 ### describe_organization_configuration
 
@@ -389,7 +385,7 @@ Boto3 documentation:
 [SecurityHub.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
 
 Returns
-[DescribeOrganizationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describeorganizationconfigurationresponsetypedef).
+[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
 ### describe_products
 
@@ -405,7 +401,7 @@ Arguments:
 - `ProductArn`: `str`
 
 Returns
-[DescribeProductsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describeproductsresponsetypedef).
+[DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef).
 
 ### describe_standards
 
@@ -420,7 +416,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describestandardsresponsetypedef).
+[DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef).
 
 ### describe_standards_controls
 
@@ -437,7 +433,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStandardsControlsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#describestandardscontrolsresponsetypedef).
+[DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef).
 
 ### disable_import_findings_for_product
 
@@ -522,7 +518,7 @@ Arguments:
 - `ProductArn`: `str` *(required)*
 
 Returns
-[EnableImportFindingsForProductResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#enableimportfindingsforproductresponsetypedef).
+[EnableImportFindingsForProductResponseTypeDef](./type_defs.md#enableimportfindingsforproductresponsetypedef).
 
 ### enable_organization_admin_account
 
@@ -578,7 +574,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
 
 Returns
-[GetAdministratorAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getadministratoraccountresponsetypedef).
+[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
 
 ### get_enabled_standards
 
@@ -595,7 +591,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEnabledStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getenabledstandardsresponsetypedef).
+[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef).
 
 ### get_findings
 
@@ -607,14 +603,14 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#sortcriteriontypedef)\]
+  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[GetFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getfindingsresponsetypedef).
+[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
 
 ### get_insight_results
 
@@ -628,7 +624,7 @@ Arguments:
 - `InsightArn`: `str` *(required)*
 
 Returns
-[GetInsightResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinsightresultsresponsetypedef).
+[GetInsightResultsResponseTypeDef](./type_defs.md#getinsightresultsresponsetypedef).
 
 ### get_insights
 
@@ -644,7 +640,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinsightsresponsetypedef).
+[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef).
 
 ### get_invitations_count
 
@@ -655,7 +651,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinvitationscountresponsetypedef).
+[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
 
 ### get_master_account
 
@@ -665,7 +661,7 @@ Boto3 documentation:
 [SecurityHub.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
 
 Returns
-[GetMasterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getmasteraccountresponsetypedef).
+[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
 
 ### get_members
 
@@ -678,8 +674,7 @@ Arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
-Returns
-[GetMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getmembersresponsetypedef).
+Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### invite_members
 
@@ -693,7 +688,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[InviteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#invitemembersresponsetypedef).
+[InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
 
 ### list_enabled_products_for_import
 
@@ -709,7 +704,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEnabledProductsForImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listenabledproductsforimportresponsetypedef).
+[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef).
 
 ### list_invitations
 
@@ -724,7 +719,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listinvitationsresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_members
 
@@ -740,7 +735,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listmembersresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
@@ -756,7 +751,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listorganizationadminaccountsresponsetypedef).
+[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -771,7 +766,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -826,12 +821,10 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
   *(required)*
-- `Note`:
-  [NoteUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#noteupdatetypedef)
-- `RecordState`:
-  [RecordState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#recordstate)
+- `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
+- `RecordState`: [RecordState](./literals.md#recordstate)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -847,7 +840,7 @@ Arguments:
 - `InsightArn`: `str` *(required)*
 - `Name`: `str`
 - `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `GroupByAttribute`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -891,8 +884,7 @@ Boto3 documentation:
 Arguments:
 
 - `StandardsControlArn`: `str` *(required)*
-- `ControlStatus`:
-  [ControlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#controlstatus)
+- `ControlStatus`: [ControlStatus](./literals.md#controlstatus)
 - `DisabledReason`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

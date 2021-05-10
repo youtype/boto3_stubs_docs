@@ -1,6 +1,6 @@
 # Paginators for boto3 SSOAdmin module
 
-> [Index](../README.md) > [SSOAdmin](./README.md) > Paginators
+> [Index](..) > [SSOAdmin](.) > Paginators
 
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
@@ -40,12 +40,12 @@ Arguments for `ListAccountAssignmentCreationStatusPaginator.paginate` method:
 
 - `InstanceArn`: `str` *(required)*
 - `Filter`:
-  [OperationStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#operationstatusfiltertypedef)
+  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAssignmentCreationStatusPaginator.paginate` returns
-`Iterator`\[[ListAccountAssignmentCreationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountassignmentcreationstatusresponsetypedef)\].
+`Iterator`\[[ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef)\].
 
 ## ListAccountAssignmentDeletionStatusPaginator
 
@@ -68,12 +68,12 @@ Arguments for `ListAccountAssignmentDeletionStatusPaginator.paginate` method:
 
 - `InstanceArn`: `str` *(required)*
 - `Filter`:
-  [OperationStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#operationstatusfiltertypedef)
+  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAssignmentDeletionStatusPaginator.paginate` returns
-`Iterator`\[[ListAccountAssignmentDeletionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountassignmentdeletionstatusresponsetypedef)\].
+`Iterator`\[[ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef)\].
 
 ## ListAccountAssignmentsPaginator
 
@@ -98,10 +98,10 @@ Arguments for `ListAccountAssignmentsPaginator.paginate` method:
 - `AccountId`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAssignmentsPaginator.paginate` returns
-`Iterator`\[[ListAccountAssignmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountassignmentsresponsetypedef)\].
+`Iterator`\[[ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef)\].
 
 ## ListAccountsForProvisionedPermissionSetPaginator
 
@@ -125,13 +125,12 @@ method:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
-- `ProvisioningStatus`:
-  [ProvisioningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#provisioningstatus)
+- `ProvisioningStatus`: [ProvisioningStatus](./literals.md#provisioningstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountsForProvisionedPermissionSetPaginator.paginate` returns
-`Iterator`\[[ListAccountsForProvisionedPermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listaccountsforprovisionedpermissionsetresponsetypedef)\].
+`Iterator`\[[ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef)\].
 
 ## ListInstancesPaginator
 
@@ -153,10 +152,10 @@ Boto3 documentation:
 Arguments for `ListInstancesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstancesPaginator.paginate` returns
-`Iterator`\[[ListInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listinstancesresponsetypedef)\].
+`Iterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
 
 ## ListManagedPoliciesInPermissionSetPaginator
 
@@ -180,10 +179,10 @@ Arguments for `ListManagedPoliciesInPermissionSetPaginator.paginate` method:
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedPoliciesInPermissionSetPaginator.paginate` returns
-`Iterator`\[[ListManagedPoliciesInPermissionSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listmanagedpoliciesinpermissionsetresponsetypedef)\].
+`Iterator`\[[ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef)\].
 
 ## ListPermissionSetProvisioningStatusPaginator
 
@@ -206,12 +205,12 @@ Arguments for `ListPermissionSetProvisioningStatusPaginator.paginate` method:
 
 - `InstanceArn`: `str` *(required)*
 - `Filter`:
-  [OperationStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#operationstatusfiltertypedef)
+  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionSetProvisioningStatusPaginator.paginate` returns
-`Iterator`\[[ListPermissionSetProvisioningStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listpermissionsetprovisioningstatusresponsetypedef)\].
+`Iterator`\[[ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef)\].
 
 ## ListPermissionSetsPaginator
 
@@ -234,10 +233,10 @@ Arguments for `ListPermissionSetsPaginator.paginate` method:
 
 - `InstanceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionSetsPaginator.paginate` returns
-`Iterator`\[[ListPermissionSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listpermissionsetsresponsetypedef)\].
+`Iterator`\[[ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef)\].
 
 ## ListPermissionSetsProvisionedToAccountPaginator
 
@@ -261,13 +260,12 @@ method:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
-- `ProvisioningStatus`:
-  [ProvisioningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#provisioningstatus)
+- `ProvisioningStatus`: [ProvisioningStatus](./literals.md#provisioningstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionSetsProvisionedToAccountPaginator.paginate` returns
-`Iterator`\[[ListPermissionSetsProvisionedToAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listpermissionsetsprovisionedtoaccountresponsetypedef)\].
+`Iterator`\[[ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -291,7 +289,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 - `InstanceArn`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#listtagsforresourceresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].

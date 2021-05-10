@@ -1,6 +1,6 @@
 # DataSyncClient for boto3 DataSync module
 
-> [Index](../README.md) > [DataSync](./README.md) > DataSyncClient
+> [Index](..) > [DataSync](.) > DataSyncClient
 
 Auto-generated documentation for
 [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
@@ -123,14 +123,13 @@ Arguments:
 
 - `ActivationKey`: `str` *(required)*
 - `AgentName`: `str`
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `VpcEndpointId`: `str`
 - `SubnetArns`: `List`\[`str`\]
 - `SecurityGroupArns`: `List`\[`str`\]
 
 Returns
-[CreateAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createagentresponsetypedef).
+[CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef).
 
 ### create_location_efs
 
@@ -142,15 +141,12 @@ Boto3 documentation:
 Arguments:
 
 - `EfsFilesystemArn`: `str` *(required)*
-- `Ec2Config`:
-  [Ec2ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#ec2configtypedef)
-  *(required)*
+- `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) *(required)*
 - `Subdirectory`: `str`
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationEfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationefsresponsetypedef).
+[CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
 
 ### create_location_fsx_windows
 
@@ -167,12 +163,11 @@ Arguments:
 - `User`: `str` *(required)*
 - `Password`: `str` *(required)*
 - `Subdirectory`: `str`
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `Domain`: `str`
 
 Returns
-[CreateLocationFsxWindowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationfsxwindowsresponsetypedef).
+[CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef).
 
 ### create_location_nfs
 
@@ -185,16 +180,13 @@ Arguments:
 
 - `Subdirectory`: `str` *(required)*
 - `ServerHostname`: `str` *(required)*
-- `OnPremConfig`:
-  [OnPremConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#onpremconfigtypedef)
+- `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
   *(required)*
-- `MountOptions`:
-  [NfsMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#nfsmountoptionstypedef)
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `MountOptions`: [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationNfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationnfsresponsetypedef).
+[CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef).
 
 ### create_location_object_storage
 
@@ -211,15 +203,14 @@ Arguments:
 - `AgentArns`: `List`\[`str`\] *(required)*
 - `ServerPort`: `int`
 - `ServerProtocol`:
-  [ObjectStorageServerProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#objectstorageserverprotocol)
+  [ObjectStorageServerProtocol](./literals.md#objectstorageserverprotocol)
 - `Subdirectory`: `str`
 - `AccessKey`: `str`
 - `SecretKey`: `str`
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationObjectStorageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationobjectstorageresponsetypedef).
+[CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef).
 
 ### create_location_s3
 
@@ -231,18 +222,14 @@ Boto3 documentation:
 Arguments:
 
 - `S3BucketArn`: `str` *(required)*
-- `S3Config`:
-  [S3ConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#s3configtypedef)
-  *(required)*
+- `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef) *(required)*
 - `Subdirectory`: `str`
-- `S3StorageClass`:
-  [S3StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#s3storageclass)
+- `S3StorageClass`: [S3StorageClass](./literals.md#s3storageclass)
 - `AgentArns`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationS3ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocations3responsetypedef).
+[CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef).
 
 ### create_location_smb
 
@@ -259,13 +246,11 @@ Arguments:
 - `Password`: `str` *(required)*
 - `AgentArns`: `List`\[`str`\] *(required)*
 - `Domain`: `str`
-- `MountOptions`:
-  [SmbMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#smbmountoptionstypedef)
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `MountOptions`: [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationSmbResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createlocationsmbresponsetypedef).
+[CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef).
 
 ### create_task
 
@@ -280,17 +265,12 @@ Arguments:
 - `DestinationLocationArn`: `str` *(required)*
 - `CloudWatchLogGroupArn`: `str`
 - `Name`: `str`
-- `Options`:
-  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
-- `Excludes`:
-  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
-- `Schedule`:
-  [TaskScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskscheduletypedef)
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
-Returns
-[CreateTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#createtaskresponsetypedef).
+Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
 
 ### delete_agent
 
@@ -343,7 +323,7 @@ Arguments:
 - `AgentArn`: `str` *(required)*
 
 Returns
-[DescribeAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describeagentresponsetypedef).
+[DescribeAgentResponseTypeDef](./type_defs.md#describeagentresponsetypedef).
 
 ### describe_location_efs
 
@@ -357,7 +337,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationEfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationefsresponsetypedef).
+[DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef).
 
 ### describe_location_fsx_windows
 
@@ -372,7 +352,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationFsxWindowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationfsxwindowsresponsetypedef).
+[DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef).
 
 ### describe_location_nfs
 
@@ -386,7 +366,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationNfsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationnfsresponsetypedef).
+[DescribeLocationNfsResponseTypeDef](./type_defs.md#describelocationnfsresponsetypedef).
 
 ### describe_location_object_storage
 
@@ -401,7 +381,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationObjectStorageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationobjectstorageresponsetypedef).
+[DescribeLocationObjectStorageResponseTypeDef](./type_defs.md#describelocationobjectstorageresponsetypedef).
 
 ### describe_location_s3
 
@@ -415,7 +395,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationS3ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocations3responsetypedef).
+[DescribeLocationS3ResponseTypeDef](./type_defs.md#describelocations3responsetypedef).
 
 ### describe_location_smb
 
@@ -429,7 +409,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationSmbResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describelocationsmbresponsetypedef).
+[DescribeLocationSmbResponseTypeDef](./type_defs.md#describelocationsmbresponsetypedef).
 
 ### describe_task
 
@@ -443,7 +423,7 @@ Arguments:
 - `TaskArn`: `str` *(required)*
 
 Returns
-[DescribeTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describetaskresponsetypedef).
+[DescribeTaskResponseTypeDef](./type_defs.md#describetaskresponsetypedef).
 
 ### describe_task_execution
 
@@ -457,7 +437,7 @@ Arguments:
 - `TaskExecutionArn`: `str` *(required)*
 
 Returns
-[DescribeTaskExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#describetaskexecutionresponsetypedef).
+[DescribeTaskExecutionResponseTypeDef](./type_defs.md#describetaskexecutionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -487,8 +467,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listagentsresponsetypedef).
+Returns [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef).
 
 ### list_locations
 
@@ -502,10 +481,10 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[LocationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#locationfiltertypedef)\]
+  `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
 
 Returns
-[ListLocationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listlocationsresponsetypedef).
+[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -521,7 +500,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_task_executions
 
@@ -537,7 +516,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTaskExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtaskexecutionsresponsetypedef).
+[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef).
 
 ### list_tasks
 
@@ -550,11 +529,9 @@ Arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`:
-  `List`\[[TaskFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskfiltertypedef)\]
+- `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 
-Returns
-[ListTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#listtasksresponsetypedef).
+Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 
 ### start_task_execution
 
@@ -566,13 +543,11 @@ Boto3 documentation:
 Arguments:
 
 - `TaskArn`: `str` *(required)*
-- `OverrideOptions`:
-  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
-- `Includes`:
-  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
+- `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns
-[StartTaskExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#starttaskexecutionresponsetypedef).
+[StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
 
 ### tag_resource
 
@@ -584,8 +559,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taglistentrytypedef)\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -629,10 +603,8 @@ Arguments:
 
 - `LocationArn`: `str` *(required)*
 - `Subdirectory`: `str`
-- `OnPremConfig`:
-  [OnPremConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#onpremconfigtypedef)
-- `MountOptions`:
-  [NfsMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#nfsmountoptionstypedef)
+- `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
+- `MountOptions`: [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -649,7 +621,7 @@ Arguments:
 - `LocationArn`: `str` *(required)*
 - `ServerPort`: `int`
 - `ServerProtocol`:
-  [ObjectStorageServerProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/literals.html#objectstorageserverprotocol)
+  [ObjectStorageServerProtocol](./literals.md#objectstorageserverprotocol)
 - `Subdirectory`: `str`
 - `AccessKey`: `str`
 - `SecretKey`: `str`
@@ -672,8 +644,7 @@ Arguments:
 - `Domain`: `str`
 - `Password`: `str`
 - `AgentArns`: `List`\[`str`\]
-- `MountOptions`:
-  [SmbMountOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#smbmountoptionstypedef)
+- `MountOptions`: [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -687,12 +658,9 @@ Boto3 documentation:
 Arguments:
 
 - `TaskArn`: `str` *(required)*
-- `Options`:
-  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
-- `Excludes`:
-  `List`\[[FilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#filterruletypedef)\]
-- `Schedule`:
-  [TaskScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#taskscheduletypedef)
+- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Name`: `str`
 - `CloudWatchLogGroupArn`: `str`
 
@@ -708,9 +676,7 @@ Boto3 documentation:
 Arguments:
 
 - `TaskExecutionArn`: `str` *(required)*
-- `Options`:
-  [OptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datasync/type_defs.html#optionstypedef)
-  *(required)*
+- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

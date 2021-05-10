@@ -1,6 +1,6 @@
 # CodeCommitClient for boto3 CodeCommit module
 
-> [Index](../README.md) > [CodeCommit](./README.md) > CodeCommitClient
+> [Index](..) > [CodeCommit](.) > CodeCommitClient
 
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
@@ -340,7 +340,7 @@ Arguments:
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
+[BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
 
 ### batch_describe_merge_conflicts
 
@@ -355,20 +355,19 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
-- `mergeOption`:
-  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
   *(required)*
 - `maxMergeHunks`: `int`
 - `maxConflictFiles`: `int`
 - `filePaths`: `List`\[`str`\]
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `nextToken`: `str`
 
 Returns
-[BatchDescribeMergeConflictsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchdescribemergeconflictsoutputtypedef).
+[BatchDescribeMergeConflictsOutputTypeDef](./type_defs.md#batchdescribemergeconflictsoutputtypedef).
 
 ### batch_disassociate_approval_rule_template_from_repositories
 
@@ -385,7 +384,7 @@ Arguments:
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
+[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
 
 ### batch_get_commits
 
@@ -400,7 +399,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 
 Returns
-[BatchGetCommitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchgetcommitsoutputtypedef).
+[BatchGetCommitsOutputTypeDef](./type_defs.md#batchgetcommitsoutputtypedef).
 
 ### batch_get_repositories
 
@@ -415,7 +414,7 @@ Arguments:
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#batchgetrepositoriesoutputtypedef).
+[BatchGetRepositoriesOutputTypeDef](./type_defs.md#batchgetrepositoriesoutputtypedef).
 
 ### can_paginate
 
@@ -445,7 +444,7 @@ Arguments:
 - `approvalRuleTemplateDescription`: `str`
 
 Returns
-[CreateApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createapprovalruletemplateoutputtypedef).
+[CreateApprovalRuleTemplateOutputTypeDef](./type_defs.md#createapprovalruletemplateoutputtypedef).
 
 ### create_branch
 
@@ -476,15 +475,13 @@ Arguments:
 - `email`: `str`
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
-- `putFiles`:
-  `List`\[[PutFileEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#putfileentrytypedef)\]
+- `putFiles`: `List`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
 - `deleteFiles`:
-  `List`\[[DeleteFileEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletefileentrytypedef)\]
+  `List`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
 - `setFileModes`:
-  `List`\[[SetFileModeEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#setfilemodeentrytypedef)\]
+  `List`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
-Returns
-[CreateCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createcommitoutputtypedef).
+Returns [CreateCommitOutputTypeDef](./type_defs.md#createcommitoutputtypedef).
 
 ### create_pull_request
 
@@ -496,14 +493,12 @@ Boto3 documentation:
 Arguments:
 
 - `title`: `str` *(required)*
-- `targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#targettypedef)\]
-  *(required)*
+- `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\] *(required)*
 - `description`: `str`
 - `clientRequestToken`: `str`
 
 Returns
-[CreatePullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createpullrequestoutputtypedef).
+[CreatePullRequestOutputTypeDef](./type_defs.md#createpullrequestoutputtypedef).
 
 ### create_pull_request_approval_rule
 
@@ -520,7 +515,7 @@ Arguments:
 - `approvalRuleContent`: `str` *(required)*
 
 Returns
-[CreatePullRequestApprovalRuleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createpullrequestapprovalruleoutputtypedef).
+[CreatePullRequestApprovalRuleOutputTypeDef](./type_defs.md#createpullrequestapprovalruleoutputtypedef).
 
 ### create_repository
 
@@ -536,7 +531,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createrepositoryoutputtypedef).
+[CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
 
 ### create_unreferenced_merge_commit
 
@@ -551,22 +546,21 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
-- `mergeOption`:
-  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
   *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `authorName`: `str`
 - `email`: `str`
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
 - `conflictResolution`:
-  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[CreateUnreferencedMergeCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#createunreferencedmergecommitoutputtypedef).
+[CreateUnreferencedMergeCommitOutputTypeDef](./type_defs.md#createunreferencedmergecommitoutputtypedef).
 
 ### delete_approval_rule_template
 
@@ -581,7 +575,7 @@ Arguments:
 - `approvalRuleTemplateName`: `str` *(required)*
 
 Returns
-[DeleteApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deleteapprovalruletemplateoutputtypedef).
+[DeleteApprovalRuleTemplateOutputTypeDef](./type_defs.md#deleteapprovalruletemplateoutputtypedef).
 
 ### delete_branch
 
@@ -595,8 +589,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
 
-Returns
-[DeleteBranchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletebranchoutputtypedef).
+Returns [DeleteBranchOutputTypeDef](./type_defs.md#deletebranchoutputtypedef).
 
 ### delete_comment_content
 
@@ -611,7 +604,7 @@ Arguments:
 - `commentId`: `str` *(required)*
 
 Returns
-[DeleteCommentContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletecommentcontentoutputtypedef).
+[DeleteCommentContentOutputTypeDef](./type_defs.md#deletecommentcontentoutputtypedef).
 
 ### delete_file
 
@@ -631,8 +624,7 @@ Arguments:
 - `name`: `str`
 - `email`: `str`
 
-Returns
-[DeleteFileOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletefileoutputtypedef).
+Returns [DeleteFileOutputTypeDef](./type_defs.md#deletefileoutputtypedef).
 
 ### delete_pull_request_approval_rule
 
@@ -648,7 +640,7 @@ Arguments:
 - `approvalRuleName`: `str` *(required)*
 
 Returns
-[DeletePullRequestApprovalRuleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deletepullrequestapprovalruleoutputtypedef).
+[DeletePullRequestApprovalRuleOutputTypeDef](./type_defs.md#deletepullrequestapprovalruleoutputtypedef).
 
 ### delete_repository
 
@@ -662,7 +654,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 
 Returns
-[DeleteRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#deleterepositoryoutputtypedef).
+[DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
 
 ### describe_merge_conflicts
 
@@ -677,19 +669,18 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
-- `mergeOption`:
-  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
   *(required)*
 - `filePath`: `str` *(required)*
 - `maxMergeHunks`: `int`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `nextToken`: `str`
 
 Returns
-[DescribeMergeConflictsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#describemergeconflictsoutputtypedef).
+[DescribeMergeConflictsOutputTypeDef](./type_defs.md#describemergeconflictsoutputtypedef).
 
 ### describe_pull_request_events
 
@@ -703,13 +694,13 @@ Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestEventType`:
-  [PullRequestEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequesteventtype)
+  [PullRequestEventType](./literals.md#pullrequesteventtype)
 - `actorArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribePullRequestEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#describepullrequesteventsoutputtypedef).
+[DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef).
 
 ### disassociate_approval_rule_template_from_repository
 
@@ -739,7 +730,7 @@ Arguments:
 - `revisionId`: `str` *(required)*
 
 Returns
-[EvaluatePullRequestApprovalRulesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#evaluatepullrequestapprovalrulesoutputtypedef).
+[EvaluatePullRequestApprovalRulesOutputTypeDef](./type_defs.md#evaluatepullrequestapprovalrulesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -771,7 +762,7 @@ Arguments:
 - `approvalRuleTemplateName`: `str` *(required)*
 
 Returns
-[GetApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getapprovalruletemplateoutputtypedef).
+[GetApprovalRuleTemplateOutputTypeDef](./type_defs.md#getapprovalruletemplateoutputtypedef).
 
 ### get_blob
 
@@ -785,8 +776,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `blobId`: `str` *(required)*
 
-Returns
-[GetBlobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getbloboutputtypedef).
+Returns [GetBlobOutputTypeDef](./type_defs.md#getbloboutputtypedef).
 
 ### get_branch
 
@@ -800,8 +790,7 @@ Arguments:
 - `repositoryName`: `str`
 - `branchName`: `str`
 
-Returns
-[GetBranchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getbranchoutputtypedef).
+Returns [GetBranchOutputTypeDef](./type_defs.md#getbranchoutputtypedef).
 
 ### get_comment
 
@@ -814,8 +803,7 @@ Arguments:
 
 - `commentId`: `str` *(required)*
 
-Returns
-[GetCommentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentoutputtypedef).
+Returns [GetCommentOutputTypeDef](./type_defs.md#getcommentoutputtypedef).
 
 ### get_comment_reactions
 
@@ -832,7 +820,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetCommentReactionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentreactionsoutputtypedef).
+[GetCommentReactionsOutputTypeDef](./type_defs.md#getcommentreactionsoutputtypedef).
 
 ### get_comments_for_compared_commit
 
@@ -851,7 +839,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetCommentsForComparedCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforcomparedcommitoutputtypedef).
+[GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef).
 
 ### get_comments_for_pull_request
 
@@ -871,7 +859,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetCommentsForPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforpullrequestoutputtypedef).
+[GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef).
 
 ### get_commit
 
@@ -885,8 +873,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `commitId`: `str` *(required)*
 
-Returns
-[GetCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommitoutputtypedef).
+Returns [GetCommitOutputTypeDef](./type_defs.md#getcommitoutputtypedef).
 
 ### get_differences
 
@@ -906,7 +893,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDifferencesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getdifferencesoutputtypedef).
+[GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef).
 
 ### get_file
 
@@ -921,8 +908,7 @@ Arguments:
 - `filePath`: `str` *(required)*
 - `commitSpecifier`: `str`
 
-Returns
-[GetFileOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getfileoutputtypedef).
+Returns [GetFileOutputTypeDef](./type_defs.md#getfileoutputtypedef).
 
 ### get_folder
 
@@ -937,8 +923,7 @@ Arguments:
 - `folderPath`: `str` *(required)*
 - `commitSpecifier`: `str`
 
-Returns
-[GetFolderOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getfolderoutputtypedef).
+Returns [GetFolderOutputTypeDef](./type_defs.md#getfolderoutputtypedef).
 
 ### get_merge_commit
 
@@ -953,12 +938,12 @@ Arguments:
 - `sourceCommitSpecifier`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 
 Returns
-[GetMergeCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getmergecommitoutputtypedef).
+[GetMergeCommitOutputTypeDef](./type_defs.md#getmergecommitoutputtypedef).
 
 ### get_merge_conflicts
 
@@ -972,18 +957,17 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
-- `mergeOption`:
-  [MergeOptionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#mergeoptiontypeenum)
+- `mergeOption`: [MergeOptionTypeEnum](./literals.md#mergeoptiontypeenum)
   *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `maxConflictFiles`: `int`
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `nextToken`: `str`
 
 Returns
-[GetMergeConflictsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getmergeconflictsoutputtypedef).
+[GetMergeConflictsOutputTypeDef](./type_defs.md#getmergeconflictsoutputtypedef).
 
 ### get_merge_options
 
@@ -998,12 +982,12 @@ Arguments:
 - `sourceCommitSpecifier`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 
 Returns
-[GetMergeOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getmergeoptionsoutputtypedef).
+[GetMergeOptionsOutputTypeDef](./type_defs.md#getmergeoptionsoutputtypedef).
 
 ### get_pull_request
 
@@ -1017,7 +1001,7 @@ Arguments:
 - `pullRequestId`: `str` *(required)*
 
 Returns
-[GetPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getpullrequestoutputtypedef).
+[GetPullRequestOutputTypeDef](./type_defs.md#getpullrequestoutputtypedef).
 
 ### get_pull_request_approval_states
 
@@ -1033,7 +1017,7 @@ Arguments:
 - `revisionId`: `str` *(required)*
 
 Returns
-[GetPullRequestApprovalStatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getpullrequestapprovalstatesoutputtypedef).
+[GetPullRequestApprovalStatesOutputTypeDef](./type_defs.md#getpullrequestapprovalstatesoutputtypedef).
 
 ### get_pull_request_override_state
 
@@ -1049,7 +1033,7 @@ Arguments:
 - `revisionId`: `str` *(required)*
 
 Returns
-[GetPullRequestOverrideStateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getpullrequestoverridestateoutputtypedef).
+[GetPullRequestOverrideStateOutputTypeDef](./type_defs.md#getpullrequestoverridestateoutputtypedef).
 
 ### get_repository
 
@@ -1063,7 +1047,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 
 Returns
-[GetRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getrepositoryoutputtypedef).
+[GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
 
 ### get_repository_triggers
 
@@ -1078,7 +1062,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 
 Returns
-[GetRepositoryTriggersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getrepositorytriggersoutputtypedef).
+[GetRepositoryTriggersOutputTypeDef](./type_defs.md#getrepositorytriggersoutputtypedef).
 
 ### list_approval_rule_templates
 
@@ -1094,7 +1078,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListApprovalRuleTemplatesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listapprovalruletemplatesoutputtypedef).
+[ListApprovalRuleTemplatesOutputTypeDef](./type_defs.md#listapprovalruletemplatesoutputtypedef).
 
 ### list_associated_approval_rule_templates_for_repository
 
@@ -1112,7 +1096,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listassociatedapprovalruletemplatesforrepositoryoutputtypedef).
+[ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](./type_defs.md#listassociatedapprovalruletemplatesforrepositoryoutputtypedef).
 
 ### list_branches
 
@@ -1126,8 +1110,7 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns
-[ListBranchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listbranchesoutputtypedef).
+Returns [ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef).
 
 ### list_pull_requests
 
@@ -1141,12 +1124,12 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `authorArn`: `str`
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
+  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListPullRequestsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listpullrequestsoutputtypedef).
+[ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef).
 
 ### list_repositories
 
@@ -1158,13 +1141,11 @@ Boto3 documentation:
 Arguments:
 
 - `nextToken`: `str`
-- `sortBy`:
-  [SortByEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#sortbyenum)
-- `order`:
-  [OrderEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#orderenum)
+- `sortBy`: [SortByEnum](./literals.md#sortbyenum)
+- `order`: [OrderEnum](./literals.md#orderenum)
 
 Returns
-[ListRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listrepositoriesoutputtypedef).
+[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
 
 ### list_repositories_for_approval_rule_template
 
@@ -1182,7 +1163,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRepositoriesForApprovalRuleTemplateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listrepositoriesforapprovalruletemplateoutputtypedef).
+[ListRepositoriesForApprovalRuleTemplateOutputTypeDef](./type_defs.md#listrepositoriesforapprovalruletemplateoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -1198,7 +1179,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### merge_branches_by_fast_forward
 
@@ -1216,7 +1197,7 @@ Arguments:
 - `targetBranch`: `str`
 
 Returns
-[MergeBranchesByFastForwardOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergebranchesbyfastforwardoutputtypedef).
+[MergeBranchesByFastForwardOutputTypeDef](./type_defs.md#mergebranchesbyfastforwardoutputtypedef).
 
 ### merge_branches_by_squash
 
@@ -1233,18 +1214,18 @@ Arguments:
 - `destinationCommitSpecifier`: `str` *(required)*
 - `targetBranch`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `authorName`: `str`
 - `email`: `str`
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
 - `conflictResolution`:
-  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergeBranchesBySquashOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergebranchesbysquashoutputtypedef).
+[MergeBranchesBySquashOutputTypeDef](./type_defs.md#mergebranchesbysquashoutputtypedef).
 
 ### merge_branches_by_three_way
 
@@ -1261,18 +1242,18 @@ Arguments:
 - `destinationCommitSpecifier`: `str` *(required)*
 - `targetBranch`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `authorName`: `str`
 - `email`: `str`
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
 - `conflictResolution`:
-  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergeBranchesByThreeWayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergebranchesbythreewayoutputtypedef).
+[MergeBranchesByThreeWayOutputTypeDef](./type_defs.md#mergebranchesbythreewayoutputtypedef).
 
 ### merge_pull_request_by_fast_forward
 
@@ -1289,7 +1270,7 @@ Arguments:
 - `sourceCommitId`: `str`
 
 Returns
-[MergePullRequestByFastForwardOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergepullrequestbyfastforwardoutputtypedef).
+[MergePullRequestByFastForwardOutputTypeDef](./type_defs.md#mergepullrequestbyfastforwardoutputtypedef).
 
 ### merge_pull_request_by_squash
 
@@ -1305,18 +1286,18 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `sourceCommitId`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `commitMessage`: `str`
 - `authorName`: `str`
 - `email`: `str`
 - `keepEmptyFolders`: `bool`
 - `conflictResolution`:
-  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergePullRequestBySquashOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergepullrequestbysquashoutputtypedef).
+[MergePullRequestBySquashOutputTypeDef](./type_defs.md#mergepullrequestbysquashoutputtypedef).
 
 ### merge_pull_request_by_three_way
 
@@ -1332,18 +1313,18 @@ Arguments:
 - `repositoryName`: `str` *(required)*
 - `sourceCommitId`: `str`
 - `conflictDetailLevel`:
-  [ConflictDetailLevelTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictdetailleveltypeenum)
+  [ConflictDetailLevelTypeEnum](./literals.md#conflictdetailleveltypeenum)
 - `conflictResolutionStrategy`:
-  [ConflictResolutionStrategyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#conflictresolutionstrategytypeenum)
+  [ConflictResolutionStrategyTypeEnum](./literals.md#conflictresolutionstrategytypeenum)
 - `commitMessage`: `str`
 - `authorName`: `str`
 - `email`: `str`
 - `keepEmptyFolders`: `bool`
 - `conflictResolution`:
-  [ConflictResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#conflictresolutiontypedef)
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergePullRequestByThreeWayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#mergepullrequestbythreewayoutputtypedef).
+[MergePullRequestByThreeWayOutputTypeDef](./type_defs.md#mergepullrequestbythreewayoutputtypedef).
 
 ### override_pull_request_approval_rules
 
@@ -1357,9 +1338,7 @@ Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
-- `overrideStatus`:
-  [OverrideStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#overridestatus)
-  *(required)*
+- `overrideStatus`: [OverrideStatus](./literals.md#overridestatus) *(required)*
 
 ### post_comment_for_compared_commit
 
@@ -1375,12 +1354,11 @@ Arguments:
 - `afterCommitId`: `str` *(required)*
 - `content`: `str` *(required)*
 - `beforeCommitId`: `str`
-- `location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `clientRequestToken`: `str`
 
 Returns
-[PostCommentForComparedCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#postcommentforcomparedcommitoutputtypedef).
+[PostCommentForComparedCommitOutputTypeDef](./type_defs.md#postcommentforcomparedcommitoutputtypedef).
 
 ### post_comment_for_pull_request
 
@@ -1397,12 +1375,11 @@ Arguments:
 - `beforeCommitId`: `str` *(required)*
 - `afterCommitId`: `str` *(required)*
 - `content`: `str` *(required)*
-- `location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#locationtypedef)
+- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `clientRequestToken`: `str`
 
 Returns
-[PostCommentForPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#postcommentforpullrequestoutputtypedef).
+[PostCommentForPullRequestOutputTypeDef](./type_defs.md#postcommentforpullrequestoutputtypedef).
 
 ### post_comment_reply
 
@@ -1418,7 +1395,7 @@ Arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[PostCommentReplyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#postcommentreplyoutputtypedef).
+[PostCommentReplyOutputTypeDef](./type_defs.md#postcommentreplyoutputtypedef).
 
 ### put_comment_reaction
 
@@ -1445,15 +1422,13 @@ Arguments:
 - `branchName`: `str` *(required)*
 - `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `filePath`: `str` *(required)*
-- `fileMode`:
-  [FileModeTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#filemodetypeenum)
+- `fileMode`: [FileModeTypeEnum](./literals.md#filemodetypeenum)
 - `parentCommitId`: `str`
 - `commitMessage`: `str`
 - `name`: `str`
 - `email`: `str`
 
-Returns
-[PutFileOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#putfileoutputtypedef).
+Returns [PutFileOutputTypeDef](./type_defs.md#putfileoutputtypedef).
 
 ### put_repository_triggers
 
@@ -1467,11 +1442,11 @@ Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `triggers`:
-  `List`\[[RepositoryTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorytriggertypedef)\]
+  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
   *(required)*
 
 Returns
-[PutRepositoryTriggersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#putrepositorytriggersoutputtypedef).
+[PutRepositoryTriggersOutputTypeDef](./type_defs.md#putrepositorytriggersoutputtypedef).
 
 ### tag_resource
 
@@ -1497,11 +1472,11 @@ Arguments:
 
 - `repositoryName`: `str` *(required)*
 - `triggers`:
-  `List`\[[RepositoryTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#repositorytriggertypedef)\]
+  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
   *(required)*
 
 Returns
-[TestRepositoryTriggersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#testrepositorytriggersoutputtypedef).
+[TestRepositoryTriggersOutputTypeDef](./type_defs.md#testrepositorytriggersoutputtypedef).
 
 ### untag_resource
 
@@ -1530,7 +1505,7 @@ Arguments:
 - `existingRuleContentSha256`: `str`
 
 Returns
-[UpdateApprovalRuleTemplateContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updateapprovalruletemplatecontentoutputtypedef).
+[UpdateApprovalRuleTemplateContentOutputTypeDef](./type_defs.md#updateapprovalruletemplatecontentoutputtypedef).
 
 ### update_approval_rule_template_description
 
@@ -1546,7 +1521,7 @@ Arguments:
 - `approvalRuleTemplateDescription`: `str` *(required)*
 
 Returns
-[UpdateApprovalRuleTemplateDescriptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updateapprovalruletemplatedescriptionoutputtypedef).
+[UpdateApprovalRuleTemplateDescriptionOutputTypeDef](./type_defs.md#updateapprovalruletemplatedescriptionoutputtypedef).
 
 ### update_approval_rule_template_name
 
@@ -1562,7 +1537,7 @@ Arguments:
 - `newApprovalRuleTemplateName`: `str` *(required)*
 
 Returns
-[UpdateApprovalRuleTemplateNameOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updateapprovalruletemplatenameoutputtypedef).
+[UpdateApprovalRuleTemplateNameOutputTypeDef](./type_defs.md#updateapprovalruletemplatenameoutputtypedef).
 
 ### update_comment
 
@@ -1577,7 +1552,7 @@ Arguments:
 - `content`: `str` *(required)*
 
 Returns
-[UpdateCommentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatecommentoutputtypedef).
+[UpdateCommentOutputTypeDef](./type_defs.md#updatecommentoutputtypedef).
 
 ### update_default_branch
 
@@ -1607,7 +1582,7 @@ Arguments:
 - `existingRuleContentSha256`: `str`
 
 Returns
-[UpdatePullRequestApprovalRuleContentOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequestapprovalrulecontentoutputtypedef).
+[UpdatePullRequestApprovalRuleContentOutputTypeDef](./type_defs.md#updatepullrequestapprovalrulecontentoutputtypedef).
 
 ### update_pull_request_approval_state
 
@@ -1621,9 +1596,7 @@ Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
-- `approvalState`:
-  [ApprovalState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#approvalstate)
-  *(required)*
+- `approvalState`: [ApprovalState](./literals.md#approvalstate) *(required)*
 
 ### update_pull_request_description
 
@@ -1639,7 +1612,7 @@ Arguments:
 - `description`: `str` *(required)*
 
 Returns
-[UpdatePullRequestDescriptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequestdescriptionoutputtypedef).
+[UpdatePullRequestDescriptionOutputTypeDef](./type_defs.md#updatepullrequestdescriptionoutputtypedef).
 
 ### update_pull_request_status
 
@@ -1653,11 +1626,10 @@ Arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
-  *(required)*
+  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum) *(required)*
 
 Returns
-[UpdatePullRequestStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequeststatusoutputtypedef).
+[UpdatePullRequestStatusOutputTypeDef](./type_defs.md#updatepullrequeststatusoutputtypedef).
 
 ### update_pull_request_title
 
@@ -1673,7 +1645,7 @@ Arguments:
 - `title`: `str` *(required)*
 
 Returns
-[UpdatePullRequestTitleOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#updatepullrequesttitleoutputtypedef).
+[UpdatePullRequestTitleOutputTypeDef](./type_defs.md#updatepullrequesttitleoutputtypedef).
 
 ### update_repository_description
 

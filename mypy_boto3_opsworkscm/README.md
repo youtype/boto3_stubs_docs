@@ -1,6 +1,6 @@
 # Type annotations for boto3 OpsWorksCM module
 
-> [Index](../README.md) > OpsWorksCM
+> [Index](..) > OpsWorksCM
 
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)

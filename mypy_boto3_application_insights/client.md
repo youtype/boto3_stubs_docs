@@ -1,7 +1,6 @@
 # ApplicationInsightsClient for boto3 ApplicationInsights module
 
-> [Index](../README.md) > [ApplicationInsights](./README.md) >
-> ApplicationInsightsClient
+> [Index](..) > [ApplicationInsights](.) > ApplicationInsightsClient
 
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
@@ -112,11 +111,10 @@ Arguments:
 - `OpsCenterEnabled`: `bool`
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#createapplicationresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### create_component
 
@@ -151,7 +149,7 @@ Arguments:
 - `Rank`: `int` *(required)*
 
 Returns
-[CreateLogPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#createlogpatternresponsetypedef).
+[CreateLogPatternResponseTypeDef](./type_defs.md#createlogpatternresponsetypedef).
 
 ### delete_application
 
@@ -211,7 +209,7 @@ Arguments:
 - `ResourceGroupName`: `str` *(required)*
 
 Returns
-[DescribeApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeapplicationresponsetypedef).
+[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
 ### describe_component
 
@@ -227,7 +225,7 @@ Arguments:
 - `ComponentName`: `str` *(required)*
 
 Returns
-[DescribeComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describecomponentresponsetypedef).
+[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
 
 ### describe_component_configuration
 
@@ -243,7 +241,7 @@ Arguments:
 - `ComponentName`: `str` *(required)*
 
 Returns
-[DescribeComponentConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describecomponentconfigurationresponsetypedef).
+[DescribeComponentConfigurationResponseTypeDef](./type_defs.md#describecomponentconfigurationresponsetypedef).
 
 ### describe_component_configuration_recommendation
 
@@ -258,12 +256,10 @@ Arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
-- `Tier`:
-  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier)
-  *(required)*
+- `Tier`: [Tier](./literals.md#tier) *(required)*
 
 Returns
-[DescribeComponentConfigurationRecommendationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describecomponentconfigurationrecommendationresponsetypedef).
+[DescribeComponentConfigurationRecommendationResponseTypeDef](./type_defs.md#describecomponentconfigurationrecommendationresponsetypedef).
 
 ### describe_log_pattern
 
@@ -280,7 +276,7 @@ Arguments:
 - `PatternName`: `str` *(required)*
 
 Returns
-[DescribeLogPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describelogpatternresponsetypedef).
+[DescribeLogPatternResponseTypeDef](./type_defs.md#describelogpatternresponsetypedef).
 
 ### describe_observation
 
@@ -295,7 +291,7 @@ Arguments:
 - `ObservationId`: `str` *(required)*
 
 Returns
-[DescribeObservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeobservationresponsetypedef).
+[DescribeObservationResponseTypeDef](./type_defs.md#describeobservationresponsetypedef).
 
 ### describe_problem
 
@@ -310,7 +306,7 @@ Arguments:
 - `ProblemId`: `str` *(required)*
 
 Returns
-[DescribeProblemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeproblemresponsetypedef).
+[DescribeProblemResponseTypeDef](./type_defs.md#describeproblemresponsetypedef).
 
 ### describe_problem_observations
 
@@ -325,7 +321,7 @@ Arguments:
 - `ProblemId`: `str` *(required)*
 
 Returns
-[DescribeProblemObservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#describeproblemobservationsresponsetypedef).
+[DescribeProblemObservationsResponseTypeDef](./type_defs.md#describeproblemobservationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -358,7 +354,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listapplicationsresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### list_components
 
@@ -375,7 +371,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listcomponentsresponsetypedef).
+[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
 ### list_configuration_history
 
@@ -391,12 +387,12 @@ Arguments:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `EventStatus`:
-  [ConfigurationEventStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#configurationeventstatus)
+  [ConfigurationEventStatus](./literals.md#configurationeventstatus)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listconfigurationhistoryresponsetypedef).
+[ListConfigurationHistoryResponseTypeDef](./type_defs.md#listconfigurationhistoryresponsetypedef).
 
 ### list_log_pattern_sets
 
@@ -413,7 +409,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLogPatternSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listlogpatternsetsresponsetypedef).
+[ListLogPatternSetsResponseTypeDef](./type_defs.md#listlogpatternsetsresponsetypedef).
 
 ### list_log_patterns
 
@@ -431,7 +427,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLogPatternsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listlogpatternsresponsetypedef).
+[ListLogPatternsResponseTypeDef](./type_defs.md#listlogpatternsresponsetypedef).
 
 ### list_problems
 
@@ -450,7 +446,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProblemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listproblemsresponsetypedef).
+[ListProblemsResponseTypeDef](./type_defs.md#listproblemsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -465,7 +461,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -478,9 +474,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -516,7 +510,7 @@ Arguments:
 - `RemoveSNSTopic`: `bool`
 
 Returns
-[UpdateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#updateapplicationresponsetypedef).
+[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
 ### update_component
 
@@ -548,8 +542,7 @@ Arguments:
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
 - `Monitor`: `bool`
-- `Tier`:
-  [Tier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/literals.html#tier)
+- `Tier`: [Tier](./literals.md#tier)
 - `ComponentConfiguration`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -571,4 +564,4 @@ Arguments:
 - `Rank`: `int`
 
 Returns
-[UpdateLogPatternResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_insights/type_defs.html#updatelogpatternresponsetypedef).
+[UpdateLogPatternResponseTypeDef](./type_defs.md#updatelogpatternresponsetypedef).

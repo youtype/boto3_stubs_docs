@@ -1,6 +1,6 @@
 # Type annotations for boto3 ServiceQuotas module
 
-> [Index](../README.md) > ServiceQuotas
+> [Index](..) > ServiceQuotas
 
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)

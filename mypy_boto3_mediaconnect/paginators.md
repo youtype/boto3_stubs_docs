@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaConnect module
 
-> [Index](../README.md) > [MediaConnect](./README.md) > Paginators
+> [Index](..) > [MediaConnect](.) > Paginators
 
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
@@ -33,10 +33,10 @@ Boto3 documentation:
 Arguments for `ListEntitlementsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEntitlementsPaginator.paginate` returns
-`Iterator`\[[ListEntitlementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listentitlementsresponsetypedef)\].
+`Iterator`\[[ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef)\].
 
 ## ListFlowsPaginator
 
@@ -58,10 +58,10 @@ Boto3 documentation:
 Arguments for `ListFlowsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFlowsPaginator.paginate` returns
-`Iterator`\[[ListFlowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listflowsresponsetypedef)\].
+`Iterator`\[[ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef)\].
 
 ## ListOfferingsPaginator
 
@@ -83,10 +83,10 @@ Boto3 documentation:
 Arguments for `ListOfferingsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOfferingsPaginator.paginate` returns
-`Iterator`\[[ListOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listofferingsresponsetypedef)\].
+`Iterator`\[[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)\].
 
 ## ListReservationsPaginator
 
@@ -108,7 +108,7 @@ Boto3 documentation:
 Arguments for `ListReservationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReservationsPaginator.paginate` returns
-`Iterator`\[[ListReservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconnect/type_defs.html#listreservationsresponsetypedef)\].
+`Iterator`\[[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef)\].

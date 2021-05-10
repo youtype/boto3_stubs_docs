@@ -1,7 +1,6 @@
 # CostandUsageReportServiceClient for boto3 CostandUsageReportService module
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) >
-> CostandUsageReportServiceClient
+> [Index](..) > [CostandUsageReportService](.) > CostandUsageReportServiceClient
 
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
@@ -83,7 +82,7 @@ Arguments:
 - `ReportName`: `str`
 
 Returns
-[DeleteReportDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#deletereportdefinitionresponsetypedef).
+[DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef).
 
 ### describe_report_definitions
 
@@ -98,7 +97,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReportDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#describereportdefinitionsresponsetypedef).
+[DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -127,8 +126,7 @@ Arguments:
 
 - `ReportName`: `str` *(required)*
 - `ReportDefinition`:
-  [ReportDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#reportdefinitiontypedef)
-  *(required)*
+  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -142,8 +140,7 @@ Boto3 documentation:
 Arguments:
 
 - `ReportDefinition`:
-  [ReportDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#reportdefinitiontypedef)
-  *(required)*
+  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

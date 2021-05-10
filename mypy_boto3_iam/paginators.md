@@ -1,6 +1,6 @@
 # Paginators for boto3 IAM module
 
-> [Index](../README.md) > [IAM](./README.md) > Paginators
+> [Index](..) > [IAM](.) > Paginators
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
@@ -54,13 +54,12 @@ Boto3 documentation:
 
 Arguments for `GetAccountAuthorizationDetailsPaginator.paginate` method:
 
-- `Filter`:
-  `List`\[[EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#entitytype)\]
+- `Filter`: `List`\[[EntityType](./literals.md#entitytype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAccountAuthorizationDetailsPaginator.paginate` returns
-`Iterator`\[[GetAccountAuthorizationDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountauthorizationdetailsresponsetypedef)\].
+`Iterator`\[[GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef)\].
 
 ## GetGroupPaginator
 
@@ -82,10 +81,10 @@ Arguments for `GetGroupPaginator.paginate` method:
 
 - `GroupName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupPaginator.paginate` returns
-`Iterator`\[[GetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getgroupresponsetypedef)\].
+`Iterator`\[[GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef)\].
 
 ## ListAccessKeysPaginator
 
@@ -107,10 +106,10 @@ Arguments for `ListAccessKeysPaginator.paginate` method:
 
 - `UserName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessKeysPaginator.paginate` returns
-`Iterator`\[[ListAccessKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listaccesskeysresponsetypedef)\].
+`Iterator`\[[ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef)\].
 
 ## ListAccountAliasesPaginator
 
@@ -132,10 +131,10 @@ Boto3 documentation:
 Arguments for `ListAccountAliasesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAliasesPaginator.paginate` returns
-`Iterator`\[[ListAccountAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listaccountaliasesresponsetypedef)\].
+`Iterator`\[[ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef)\].
 
 ## ListAttachedGroupPoliciesPaginator
 
@@ -159,10 +158,10 @@ Arguments for `ListAttachedGroupPoliciesPaginator.paginate` method:
 - `GroupName`: `str` *(required)*
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedGroupPoliciesPaginator.paginate` returns
-`Iterator`\[[ListAttachedGroupPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattachedgrouppoliciesresponsetypedef)\].
+`Iterator`\[[ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef)\].
 
 ## ListAttachedRolePoliciesPaginator
 
@@ -186,10 +185,10 @@ Arguments for `ListAttachedRolePoliciesPaginator.paginate` method:
 - `RoleName`: `str` *(required)*
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedRolePoliciesPaginator.paginate` returns
-`Iterator`\[[ListAttachedRolePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattachedrolepoliciesresponsetypedef)\].
+`Iterator`\[[ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef)\].
 
 ## ListAttachedUserPoliciesPaginator
 
@@ -213,10 +212,10 @@ Arguments for `ListAttachedUserPoliciesPaginator.paginate` method:
 - `UserName`: `str` *(required)*
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedUserPoliciesPaginator.paginate` returns
-`Iterator`\[[ListAttachedUserPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattacheduserpoliciesresponsetypedef)\].
+`Iterator`\[[ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef)\].
 
 ## ListEntitiesForPolicyPaginator
 
@@ -238,16 +237,14 @@ Boto3 documentation:
 Arguments for `ListEntitiesForPolicyPaginator.paginate` method:
 
 - `PolicyArn`: `str` *(required)*
-- `EntityFilter`:
-  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#entitytype)
+- `EntityFilter`: [EntityType](./literals.md#entitytype)
 - `PathPrefix`: `str`
-- `PolicyUsageFilter`:
-  [PolicyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyusagetype)
+- `PolicyUsageFilter`: [PolicyUsageType](./literals.md#policyusagetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEntitiesForPolicyPaginator.paginate` returns
-`Iterator`\[[ListEntitiesForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listentitiesforpolicyresponsetypedef)\].
+`Iterator`\[[ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef)\].
 
 ## ListGroupPoliciesPaginator
 
@@ -270,10 +267,10 @@ Arguments for `ListGroupPoliciesPaginator.paginate` method:
 
 - `GroupName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupPoliciesPaginator.paginate` returns
-`Iterator`\[[ListGroupPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgrouppoliciesresponsetypedef)\].
+`Iterator`\[[ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef)\].
 
 ## ListGroupsPaginator
 
@@ -295,10 +292,10 @@ Arguments for `ListGroupsPaginator.paginate` method:
 
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgroupsresponsetypedef)\].
+`Iterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
 ## ListGroupsForUserPaginator
 
@@ -321,10 +318,10 @@ Arguments for `ListGroupsForUserPaginator.paginate` method:
 
 - `UserName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsForUserPaginator.paginate` returns
-`Iterator`\[[ListGroupsForUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgroupsforuserresponsetypedef)\].
+`Iterator`\[[ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef)\].
 
 ## ListInstanceProfilesPaginator
 
@@ -347,10 +344,10 @@ Arguments for `ListInstanceProfilesPaginator.paginate` method:
 
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstanceProfilesPaginator.paginate` returns
-`Iterator`\[[ListInstanceProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofilesresponsetypedef)\].
+`Iterator`\[[ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef)\].
 
 ## ListInstanceProfilesForRolePaginator
 
@@ -373,10 +370,10 @@ Arguments for `ListInstanceProfilesForRolePaginator.paginate` method:
 
 - `RoleName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstanceProfilesForRolePaginator.paginate` returns
-`Iterator`\[[ListInstanceProfilesForRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofilesforroleresponsetypedef)\].
+`Iterator`\[[ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef)\].
 
 ## ListMFADevicesPaginator
 
@@ -398,10 +395,10 @@ Arguments for `ListMFADevicesPaginator.paginate` method:
 
 - `UserName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMFADevicesPaginator.paginate` returns
-`Iterator`\[[ListMFADevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listmfadevicesresponsetypedef)\].
+`Iterator`\[[ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef)\].
 
 ## ListPoliciesPaginator
 
@@ -421,17 +418,15 @@ Boto3 documentation:
 
 Arguments for `ListPoliciesPaginator.paginate` method:
 
-- `Scope`:
-  [policyScopeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyscopetype)
+- `Scope`: [policyScopeType](./literals.md#policyscopetype)
 - `OnlyAttached`: `bool`
 - `PathPrefix`: `str`
-- `PolicyUsageFilter`:
-  [PolicyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyusagetype)
+- `PolicyUsageFilter`: [PolicyUsageType](./literals.md#policyusagetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpoliciesresponsetypedef)\].
+`Iterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
 ## ListPolicyVersionsPaginator
 
@@ -454,10 +449,10 @@ Arguments for `ListPolicyVersionsPaginator.paginate` method:
 
 - `PolicyArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyVersionsPaginator.paginate` returns
-`Iterator`\[[ListPolicyVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpolicyversionsresponsetypedef)\].
+`Iterator`\[[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef)\].
 
 ## ListRolePoliciesPaginator
 
@@ -479,10 +474,10 @@ Arguments for `ListRolePoliciesPaginator.paginate` method:
 
 - `RoleName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRolePoliciesPaginator.paginate` returns
-`Iterator`\[[ListRolePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listrolepoliciesresponsetypedef)\].
+`Iterator`\[[ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef)\].
 
 ## ListRolesPaginator
 
@@ -504,10 +499,10 @@ Arguments for `ListRolesPaginator.paginate` method:
 
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRolesPaginator.paginate` returns
-`Iterator`\[[ListRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listrolesresponsetypedef)\].
+`Iterator`\[[ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef)\].
 
 ## ListSSHPublicKeysPaginator
 
@@ -530,10 +525,10 @@ Arguments for `ListSSHPublicKeysPaginator.paginate` method:
 
 - `UserName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSSHPublicKeysPaginator.paginate` returns
-`Iterator`\[[ListSSHPublicKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsshpublickeysresponsetypedef)\].
+`Iterator`\[[ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef)\].
 
 ## ListServerCertificatesPaginator
 
@@ -556,10 +551,10 @@ Arguments for `ListServerCertificatesPaginator.paginate` method:
 
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServerCertificatesPaginator.paginate` returns
-`Iterator`\[[ListServerCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservercertificatesresponsetypedef)\].
+`Iterator`\[[ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef)\].
 
 ## ListSigningCertificatesPaginator
 
@@ -582,10 +577,10 @@ Arguments for `ListSigningCertificatesPaginator.paginate` method:
 
 - `UserName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningCertificatesPaginator.paginate` returns
-`Iterator`\[[ListSigningCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsigningcertificatesresponsetypedef)\].
+`Iterator`\[[ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef)\].
 
 ## ListUserPoliciesPaginator
 
@@ -607,10 +602,10 @@ Arguments for `ListUserPoliciesPaginator.paginate` method:
 
 - `UserName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserPoliciesPaginator.paginate` returns
-`Iterator`\[[ListUserPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listuserpoliciesresponsetypedef)\].
+`Iterator`\[[ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef)\].
 
 ## ListUsersPaginator
 
@@ -632,10 +627,10 @@ Arguments for `ListUsersPaginator.paginate` method:
 
 - `PathPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersPaginator.paginate` returns
-`Iterator`\[[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listusersresponsetypedef)\].
+`Iterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
 
 ## ListVirtualMFADevicesPaginator
 
@@ -656,13 +651,12 @@ Boto3 documentation:
 
 Arguments for `ListVirtualMFADevicesPaginator.paginate` method:
 
-- `AssignmentStatus`:
-  [assignmentStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#assignmentstatustype)
+- `AssignmentStatus`: [assignmentStatusType](./literals.md#assignmentstatustype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualMFADevicesPaginator.paginate` returns
-`Iterator`\[[ListVirtualMFADevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listvirtualmfadevicesresponsetypedef)\].
+`Iterator`\[[ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef)\].
 
 ## SimulateCustomPolicyPaginator
 
@@ -691,13 +685,13 @@ Arguments for `SimulateCustomPolicyPaginator.paginate` method:
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#contextentrytypedef)\]
+  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SimulateCustomPolicyPaginator.paginate` returns
-`Iterator`\[[SimulatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#simulatepolicyresponsetypedef)\].
+`Iterator`\[[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef)\].
 
 ## SimulatePrincipalPolicyPaginator
 
@@ -727,10 +721,10 @@ Arguments for `SimulatePrincipalPolicyPaginator.paginate` method:
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#contextentrytypedef)\]
+  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SimulatePrincipalPolicyPaginator.paginate` returns
-`Iterator`\[[SimulatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#simulatepolicyresponsetypedef)\].
+`Iterator`\[[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef)\].

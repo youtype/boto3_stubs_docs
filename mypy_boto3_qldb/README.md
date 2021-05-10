@@ -1,6 +1,6 @@
 # Type annotations for boto3 QLDB module
 
-> [Index](../README.md) > QLDB
+> [Index](..) > QLDB
 
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)

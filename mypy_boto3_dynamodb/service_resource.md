@@ -1,6 +1,6 @@
 # DynamoDBServiceResource for boto3 DynamoDB module
 
-> [Index](../README.md) > [DynamoDB](./README.md) > DynamoDBServiceResource
+> [Index](..) > [DynamoDB](.) > DynamoDBServiceResource
 
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
@@ -88,13 +88,12 @@ Boto3 documentation:
 Arguments:
 
 - `RequestItems`: `Dict`\[`str`,
-  [KeysAndAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keysandattributestypedef)\]
+  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 
-Returns
-[BatchGetItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchgetitemoutputtypedef).
+Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
 ### DynamoDBServiceResource.batch_write_item method
 
@@ -106,15 +105,15 @@ Boto3 documentation:
 Arguments:
 
 - `RequestItems`: `Dict`\[`str`,
-  `List`\[[WriteRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#writerequesttypedef)\]\]
+  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
   *(required)*
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
 
 Returns
-[BatchWriteItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#batchwriteitemoutputtypedef).
+[BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
 
 ### DynamoDBServiceResource.create_table method
 
@@ -126,26 +125,24 @@ Boto3 documentation:
 Arguments:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributedefinitiontypedef)\]
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
   *(required)*
 - `TableName`: `str` *(required)*
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#keyschemaelementtypedef)\]
+  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
   *(required)*
 - `LocalSecondaryIndexes`:
-  `List`\[[LocalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#localsecondaryindextypedef)\]
+  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `GlobalSecondaryIndexes`:
-  `List`\[[GlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindextypedef)\]
-- `BillingMode`:
-  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+- `BillingMode`: [BillingMode](./literals.md#billingmode)
 - `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `StreamSpecification`:
-  [StreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#streamspecificationtypedef)
+  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
-  [SSESpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssespecificationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#tagtypedef)\]
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Table](#table).
 
@@ -222,8 +219,7 @@ Type annotations for `boto3.resource("dynamodb").delete` method.
 Boto3 documentation:
 [DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete)
 
-Returns
-[DeleteTableOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deletetableoutputtypedef).
+Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
 #### Table.delete_item method
 
@@ -239,15 +235,13 @@ Arguments:
   `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
   *(required)*
 - `Expected`: `Dict`\[`str`,
-  [ExpectedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
-- `ReturnValues`:
-  [ReturnValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvalue)
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 - `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
@@ -255,8 +249,7 @@ Arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[DeleteItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#deleteitemoutputtypedef).
+Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
 #### Table.get_available_subresources method
 
@@ -284,12 +277,11 @@ Arguments:
 - `AttributesToGet`: `List`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#getitemoutputtypedef).
+Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
 #### Table.load method
 
@@ -312,15 +304,13 @@ Arguments:
   `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
   *(required)*
 - `Expected`: `Dict`\[`str`,
-  [ExpectedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#expectedattributevaluetypedef)\]
-- `ReturnValues`:
-  [ReturnValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvalue)
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
-- `ConditionalOperator`:
-  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
+- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 - `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
@@ -328,8 +318,7 @@ Arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[PutItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#putitemoutputtypedef).
+Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 
 #### Table.query method
 
@@ -341,24 +330,22 @@ Boto3 documentation:
 Arguments:
 
 - `IndexName`: `str`
-- `Select`:
-  [Select](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#select)
+- `Select`: [Select](./literals.md#select)
 - `AttributesToGet`: `List`\[`str`\]
 - `Limit`: `int`
 - `ConsistentRead`: `bool`
 - `KeyConditions`: `Dict`\[`str`,
-  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `QueryFilter`: `Dict`\[`str`,
-  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
 - `ScanIndexForward`: `bool`
 - `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
 - `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
@@ -368,8 +355,7 @@ Arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[QueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#queryoutputtypedef).
+Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 
 #### Table.reload method
 
@@ -390,18 +376,16 @@ Arguments:
 - `IndexName`: `str`
 - `AttributesToGet`: `List`\[`str`\]
 - `Limit`: `int`
-- `Select`:
-  [Select](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#select)
+- `Select`: [Select](./literals.md#select)
 - `ScanFilter`: `Dict`\[`str`,
-  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
 - `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
@@ -413,8 +397,7 @@ Arguments:
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
-Returns
-[ScanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#scanoutputtypedef).
+Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 
 #### Table.update method
 
@@ -426,19 +409,18 @@ Boto3 documentation:
 Arguments:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributedefinitiontypedef)\]
-- `BillingMode`:
-  [BillingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#billingmode)
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+- `BillingMode`: [BillingMode](./literals.md#billingmode)
 - `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#provisionedthroughputtypedef)
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `GlobalSecondaryIndexUpdates`:
-  `List`\[[GlobalSecondaryIndexUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#globalsecondaryindexupdatetypedef)\]
+  `List`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
 - `StreamSpecification`:
-  [StreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#streamspecificationtypedef)
+  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
-  [SSESpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#ssespecificationtypedef)
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
-  `List`\[[ReplicationGroupUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#replicationgroupupdatetypedef)\]
+  `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 
 Returns [Table](#table).
 
@@ -456,17 +438,15 @@ Arguments:
   `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
   *(required)*
 - `AttributeUpdates`: `Dict`\[`str`,
-  [AttributeValueUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#attributevalueupdatetypedef)\]
+  [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
 - `Expected`: `Dict`\[`str`,
-  [ExpectedAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#conditionaloperator)
-- `ReturnValues`:
-  [ReturnValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnvalue)
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ConditionalOperator`: [ConditionalOperator](./literals.md#conditionaloperator)
+- `ReturnValues`: [ReturnValue](./literals.md#returnvalue)
 - `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnconsumedcapacity)
+  [ReturnConsumedCapacity](./literals.md#returnconsumedcapacity)
 - `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetrics](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/literals.html#returnitemcollectionmetrics)
+  [ReturnItemCollectionMetrics](./literals.md#returnitemcollectionmetrics)
 - `UpdateExpression`: `str`
 - `ConditionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
@@ -475,8 +455,7 @@ Arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[UpdateItemOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#updateitemoutputtypedef).
+Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 
 #### Table.wait_until_exists method
 

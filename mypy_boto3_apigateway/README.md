@@ -1,6 +1,6 @@
 # Type annotations for boto3 APIGateway module
 
-> [Index](../README.md) > APIGateway
+> [Index](..) > APIGateway
 
 Auto-generated documentation for
 [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)

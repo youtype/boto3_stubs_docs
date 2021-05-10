@@ -1,6 +1,6 @@
 # Literals for boto3 AlexaForBusiness module
 
-> [Index](../README.md) > [AlexaForBusiness](./README.md) > Literals
+> [Index](..) > [AlexaForBusiness](.) > Literals
 
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)

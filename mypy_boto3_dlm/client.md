@@ -1,6 +1,6 @@
 # DLMClient for boto3 DLM module
 
-> [Index](../README.md) > [DLM](./README.md) > DLMClient
+> [Index](..) > [DLM](.) > DLMClient
 
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
@@ -84,16 +84,14 @@ Arguments:
 
 - `ExecutionRoleArn`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `State`:
-  [SettablePolicyStateValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#settablepolicystatevalues)
+- `State`: [SettablePolicyStateValues](./literals.md#settablepolicystatevalues)
   *(required)*
-- `PolicyDetails`:
-  [PolicyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#policydetailstypedef)
+- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
   *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#createlifecyclepolicyresponsetypedef).
+[CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
 
 ### delete_lifecycle_policy
 
@@ -134,15 +132,14 @@ Boto3 documentation:
 Arguments:
 
 - `PolicyIds`: `List`\[`str`\]
-- `State`:
-  [GettablePolicyStateValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#gettablepolicystatevalues)
+- `State`: [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#resourcetypevalues)\]
+  `List`\[[ResourceTypeValues](./literals.md#resourcetypevalues)\]
 - `TargetTags`: `List`\[`str`\]
 - `TagsToAdd`: `List`\[`str`\]
 
 Returns
-[GetLifecyclePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#getlifecyclepoliciesresponsetypedef).
+[GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
 
 ### get_lifecycle_policy
 
@@ -156,7 +153,7 @@ Arguments:
 - `PolicyId`: `str` *(required)*
 
 Returns
-[GetLifecyclePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#getlifecyclepolicyresponsetypedef).
+[GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -170,7 +167,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -211,10 +208,8 @@ Arguments:
 
 - `PolicyId`: `str` *(required)*
 - `ExecutionRoleArn`: `str`
-- `State`:
-  [SettablePolicyStateValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#settablepolicystatevalues)
+- `State`: [SettablePolicyStateValues](./literals.md#settablepolicystatevalues)
 - `Description`: `str`
-- `PolicyDetails`:
-  [PolicyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#policydetailstypedef)
+- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
 
 Returns `Dict`\[`str`, `Any`\].

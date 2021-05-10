@@ -1,6 +1,6 @@
 # PollyClient for boto3 Polly module
 
-> [Index](../README.md) > [Polly](./README.md) > PollyClient
+> [Index](..) > [Polly](.) > PollyClient
 
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
@@ -114,15 +114,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Engine`:
-  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `Engine`: [Engine](./literals.md#engine)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `IncludeAdditionalLanguageCodes`: `bool`
 - `NextToken`: `str`
 
 Returns
-[DescribeVoicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#describevoicesoutputtypedef).
+[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -151,8 +149,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetLexiconOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#getlexiconoutputtypedef).
+Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
 
 ### get_speech_synthesis_task
 
@@ -166,7 +163,7 @@ Arguments:
 - `TaskId`: `str` *(required)*
 
 Returns
-[GetSpeechSynthesisTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#getspeechsynthesistaskoutputtypedef).
+[GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef).
 
 ### list_lexicons
 
@@ -179,8 +176,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListLexiconsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#listlexiconsoutputtypedef).
+Returns [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef).
 
 ### list_speech_synthesis_tasks
 
@@ -194,11 +190,10 @@ Arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Status`:
-  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#taskstatus)
+- `Status`: [TaskStatus](./literals.md#taskstatus)
 
 Returns
-[ListSpeechSynthesisTasksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#listspeechsynthesistasksoutputtypedef).
+[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
 
 ### put_lexicon
 
@@ -224,29 +219,21 @@ Boto3 documentation:
 
 Arguments:
 
-- `OutputFormat`:
-  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#outputformat)
-  *(required)*
+- `OutputFormat`: [OutputFormat](./literals.md#outputformat) *(required)*
 - `OutputS3BucketName`: `str` *(required)*
 - `Text`: `str` *(required)*
-- `VoiceId`:
-  [VoiceId](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#voiceid)
-  *(required)*
-- `Engine`:
-  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `VoiceId`: [VoiceId](./literals.md#voiceid) *(required)*
+- `Engine`: [Engine](./literals.md#engine)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LexiconNames`: `List`\[`str`\]
 - `OutputS3KeyPrefix`: `str`
 - `SampleRate`: `str`
 - `SnsTopicArn`: `str`
-- `SpeechMarkTypes`:
-  `List`\[[SpeechMarkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#speechmarktype)\]
-- `TextType`:
-  [TextType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#texttype)
+- `SpeechMarkTypes`: `List`\[[SpeechMarkType](./literals.md#speechmarktype)\]
+- `TextType`: [TextType](./literals.md#texttype)
 
 Returns
-[StartSpeechSynthesisTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#startspeechsynthesistaskoutputtypedef).
+[StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
 
 ### synthesize_speech
 
@@ -257,26 +244,18 @@ Boto3 documentation:
 
 Arguments:
 
-- `OutputFormat`:
-  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#outputformat)
-  *(required)*
+- `OutputFormat`: [OutputFormat](./literals.md#outputformat) *(required)*
 - `Text`: `str` *(required)*
-- `VoiceId`:
-  [VoiceId](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#voiceid)
-  *(required)*
-- `Engine`:
-  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `VoiceId`: [VoiceId](./literals.md#voiceid) *(required)*
+- `Engine`: [Engine](./literals.md#engine)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LexiconNames`: `List`\[`str`\]
 - `SampleRate`: `str`
-- `SpeechMarkTypes`:
-  `List`\[[SpeechMarkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#speechmarktype)\]
-- `TextType`:
-  [TextType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#texttype)
+- `SpeechMarkTypes`: `List`\[[SpeechMarkType](./literals.md#speechmarktype)\]
+- `TextType`: [TextType](./literals.md#texttype)
 
 Returns
-[SynthesizeSpeechOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#synthesizespeechoutputtypedef).
+[SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef).
 
 ### get_paginator
 

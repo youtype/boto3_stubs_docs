@@ -1,6 +1,6 @@
 # Type annotations for boto3 ResourceGroupsTaggingAPI module
 
-> [Index](../README.md) > ResourceGroupsTaggingAPI
+> [Index](..) > ResourceGroupsTaggingAPI
 
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
@@ -110,7 +110,7 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import ComplianceDetailsTypeD
 - [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResourceTagMappingTypeDef](./type_defs.md#resourcetagmappingtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SummaryTypeDef](./type_defs.md#summarytypedef)
 - [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef)

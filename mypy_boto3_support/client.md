@@ -1,6 +1,6 @@
 # SupportClient for boto3 Support module
 
-> [Index](../README.md) > [Support](./README.md) > SupportClient
+> [Index](..) > [Support](.) > SupportClient
 
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
@@ -81,13 +81,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `attachments`:
-  `List`\[[AttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#attachmenttypedef)\]
+- `attachments`: `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
   *(required)*
 - `attachmentSetId`: `str`
 
 Returns
-[AddAttachmentsToSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#addattachmentstosetresponsetypedef).
+[AddAttachmentsToSetResponseTypeDef](./type_defs.md#addattachmentstosetresponsetypedef).
 
 ### add_communication_to_case
 
@@ -105,7 +104,7 @@ Arguments:
 - `attachmentSetId`: `str`
 
 Returns
-[AddCommunicationToCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#addcommunicationtocaseresponsetypedef).
+[AddCommunicationToCaseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponsetypedef).
 
 ### can_paginate
 
@@ -139,8 +138,7 @@ Arguments:
 - `issueType`: `str`
 - `attachmentSetId`: `str`
 
-Returns
-[CreateCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#createcaseresponsetypedef).
+Returns [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef).
 
 ### describe_attachment
 
@@ -154,7 +152,7 @@ Arguments:
 - `attachmentId`: `str` *(required)*
 
 Returns
-[DescribeAttachmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describeattachmentresponsetypedef).
+[DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef).
 
 ### describe_cases
 
@@ -176,7 +174,7 @@ Arguments:
 - `includeCommunications`: `bool`
 
 Returns
-[DescribeCasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecasesresponsetypedef).
+[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef).
 
 ### describe_communications
 
@@ -194,7 +192,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeCommunicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecommunicationsresponsetypedef).
+[DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef).
 
 ### describe_services
 
@@ -209,7 +207,7 @@ Arguments:
 - `language`: `str`
 
 Returns
-[DescribeServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describeservicesresponsetypedef).
+[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
 ### describe_severity_levels
 
@@ -223,7 +221,7 @@ Arguments:
 - `language`: `str`
 
 Returns
-[DescribeSeverityLevelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describeseveritylevelsresponsetypedef).
+[DescribeSeverityLevelsResponseTypeDef](./type_defs.md#describeseveritylevelsresponsetypedef).
 
 ### describe_trusted_advisor_check_refresh_statuses
 
@@ -239,7 +237,7 @@ Arguments:
 - `checkIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
+[DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
 
 ### describe_trusted_advisor_check_result
 
@@ -255,7 +253,7 @@ Arguments:
 - `language`: `str`
 
 Returns
-[DescribeTrustedAdvisorCheckResultResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorcheckresultresponsetypedef).
+[DescribeTrustedAdvisorCheckResultResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponsetypedef).
 
 ### describe_trusted_advisor_check_summaries
 
@@ -270,7 +268,7 @@ Arguments:
 - `checkIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTrustedAdvisorCheckSummariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorchecksummariesresponsetypedef).
+[DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef).
 
 ### describe_trusted_advisor_checks
 
@@ -285,7 +283,7 @@ Arguments:
 - `language`: `str` *(required)*
 
 Returns
-[DescribeTrustedAdvisorChecksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describetrustedadvisorchecksresponsetypedef).
+[DescribeTrustedAdvisorChecksResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponsetypedef).
 
 ### generate_presigned_url
 
@@ -316,7 +314,7 @@ Arguments:
 - `checkId`: `str` *(required)*
 
 Returns
-[RefreshTrustedAdvisorCheckResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#refreshtrustedadvisorcheckresponsetypedef).
+[RefreshTrustedAdvisorCheckResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponsetypedef).
 
 ### resolve_case
 
@@ -330,7 +328,7 @@ Arguments:
 - `caseId`: `str`
 
 Returns
-[ResolveCaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#resolvecaseresponsetypedef).
+[ResolveCaseResponseTypeDef](./type_defs.md#resolvecaseresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 SecurityHub module
 
-> [Index](../README.md) > SecurityHub
+> [Index](..) > SecurityHub
 
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)

@@ -1,6 +1,6 @@
 # DynamoDBStreamsClient for boto3 DynamoDBStreams module
 
-> [Index](../README.md) > [DynamoDBStreams](./README.md) > DynamoDBStreamsClient
+> [Index](..) > [DynamoDBStreams](.) > DynamoDBStreamsClient
 
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
@@ -84,7 +84,7 @@ Arguments:
 - `ExclusiveStartShardId`: `str`
 
 Returns
-[DescribeStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#describestreamoutputtypedef).
+[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
 ### generate_presigned_url
 
@@ -115,8 +115,7 @@ Arguments:
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`
 
-Returns
-[GetRecordsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#getrecordsoutputtypedef).
+Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 
 ### get_shard_iterator
 
@@ -130,13 +129,12 @@ Arguments:
 
 - `StreamArn`: `str` *(required)*
 - `ShardId`: `str` *(required)*
-- `ShardIteratorType`:
-  [ShardIteratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#sharditeratortype)
+- `ShardIteratorType`: [ShardIteratorType](./literals.md#sharditeratortype)
   *(required)*
 - `SequenceNumber`: `str`
 
 Returns
-[GetShardIteratorOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#getsharditeratoroutputtypedef).
+[GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
 ### list_streams
 
@@ -151,5 +149,4 @@ Arguments:
 - `Limit`: `int`
 - `ExclusiveStartStreamArn`: `str`
 
-Returns
-[ListStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#liststreamsoutputtypedef).
+Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).

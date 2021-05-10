@@ -1,6 +1,6 @@
 # GreengrassClient for boto3 Greengrass module
 
-> [Index](../README.md) > [Greengrass](./README.md) > GreengrassClient
+> [Index](..) > [Greengrass](.) > GreengrassClient
 
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
@@ -157,7 +157,7 @@ Arguments:
 - `RoleArn`: `str` *(required)*
 
 Returns
-[AssociateRoleToGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#associateroletogroupresponsetypedef).
+[AssociateRoleToGroupResponseTypeDef](./type_defs.md#associateroletogroupresponsetypedef).
 
 ### associate_service_role_to_account
 
@@ -172,7 +172,7 @@ Arguments:
 - `RoleArn`: `str` *(required)*
 
 Returns
-[AssociateServiceRoleToAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#associateserviceroletoaccountresponsetypedef).
+[AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
 
 ### can_paginate
 
@@ -199,12 +199,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [ConnectorDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#connectordefinitionversiontypedef)
+  [ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateConnectorDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createconnectordefinitionresponsetypedef).
+[CreateConnectorDefinitionResponseTypeDef](./type_defs.md#createconnectordefinitionresponsetypedef).
 
 ### create_connector_definition_version
 
@@ -218,11 +218,10 @@ Arguments:
 
 - `ConnectorDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Connectors`:
-  `List`\[[ConnectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#connectortypedef)\]
+- `Connectors`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 
 Returns
-[CreateConnectorDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createconnectordefinitionversionresponsetypedef).
+[CreateConnectorDefinitionVersionResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponsetypedef).
 
 ### create_core_definition
 
@@ -236,12 +235,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [CoreDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#coredefinitionversiontypedef)
+  [CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCoreDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createcoredefinitionresponsetypedef).
+[CreateCoreDefinitionResponseTypeDef](./type_defs.md#createcoredefinitionresponsetypedef).
 
 ### create_core_definition_version
 
@@ -255,11 +254,10 @@ Arguments:
 
 - `CoreDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Cores`:
-  `List`\[[CoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#coretypedef)\]
+- `Cores`: `List`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
 
 Returns
-[CreateCoreDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createcoredefinitionversionresponsetypedef).
+[CreateCoreDefinitionVersionResponseTypeDef](./type_defs.md#createcoredefinitionversionresponsetypedef).
 
 ### create_deployment
 
@@ -270,16 +268,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `DeploymentType`:
-  [DeploymentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#deploymenttype)
-  *(required)*
+- `DeploymentType`: [DeploymentType](./literals.md#deploymenttype) *(required)*
 - `GroupId`: `str` *(required)*
 - `AmznClientToken`: `str`
 - `DeploymentId`: `str`
 - `GroupVersionId`: `str`
 
 Returns
-[CreateDeploymentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createdeploymentresponsetypedef).
+[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
 ### create_device_definition
 
@@ -293,12 +289,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [DeviceDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#devicedefinitionversiontypedef)
+  [DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeviceDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createdevicedefinitionresponsetypedef).
+[CreateDeviceDefinitionResponseTypeDef](./type_defs.md#createdevicedefinitionresponsetypedef).
 
 ### create_device_definition_version
 
@@ -312,11 +308,10 @@ Arguments:
 
 - `DeviceDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Devices`:
-  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#devicetypedef)\]
+- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 Returns
-[CreateDeviceDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createdevicedefinitionversionresponsetypedef).
+[CreateDeviceDefinitionVersionResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponsetypedef).
 
 ### create_function_definition
 
@@ -330,12 +325,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [FunctionDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiondefinitionversiontypedef)
+  [FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFunctionDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createfunctiondefinitionresponsetypedef).
+[CreateFunctionDefinitionResponseTypeDef](./type_defs.md#createfunctiondefinitionresponsetypedef).
 
 ### create_function_definition_version
 
@@ -350,12 +345,11 @@ Arguments:
 - `FunctionDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
 - `DefaultConfig`:
-  [FunctionDefaultConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiondefaultconfigtypedef)
-- `Functions`:
-  `List`\[[FunctionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#functiontypedef)\]
+  [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
+- `Functions`: `List`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
 
 Returns
-[CreateFunctionDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createfunctiondefinitionversionresponsetypedef).
+[CreateFunctionDefinitionVersionResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponsetypedef).
 
 ### create_group
 
@@ -368,12 +362,11 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `InitialVersion`:
-  [GroupVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#groupversiontypedef)
+- `InitialVersion`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#creategroupresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_group_certificate_authority
 
@@ -389,7 +382,7 @@ Arguments:
 - `AmznClientToken`: `str`
 
 Returns
-[CreateGroupCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#creategroupcertificateauthorityresponsetypedef).
+[CreateGroupCertificateAuthorityResponseTypeDef](./type_defs.md#creategroupcertificateauthorityresponsetypedef).
 
 ### create_group_version
 
@@ -411,7 +404,7 @@ Arguments:
 - `SubscriptionDefinitionVersionArn`: `str`
 
 Returns
-[CreateGroupVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#creategroupversionresponsetypedef).
+[CreateGroupVersionResponseTypeDef](./type_defs.md#creategroupversionresponsetypedef).
 
 ### create_logger_definition
 
@@ -425,12 +418,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [LoggerDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#loggerdefinitionversiontypedef)
+  [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLoggerDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createloggerdefinitionresponsetypedef).
+[CreateLoggerDefinitionResponseTypeDef](./type_defs.md#createloggerdefinitionresponsetypedef).
 
 ### create_logger_definition_version
 
@@ -444,11 +437,10 @@ Arguments:
 
 - `LoggerDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Loggers`:
-  `List`\[[LoggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#loggertypedef)\]
+- `Loggers`: `List`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
 
 Returns
-[CreateLoggerDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createloggerdefinitionversionresponsetypedef).
+[CreateLoggerDefinitionVersionResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponsetypedef).
 
 ### create_resource_definition
 
@@ -462,12 +454,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [ResourceDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcedefinitionversiontypedef)
+  [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateResourceDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createresourcedefinitionresponsetypedef).
+[CreateResourceDefinitionResponseTypeDef](./type_defs.md#createresourcedefinitionresponsetypedef).
 
 ### create_resource_definition_version
 
@@ -481,11 +473,10 @@ Arguments:
 
 - `ResourceDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
-- `Resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resourcetypedef)\]
+- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 Returns
-[CreateResourceDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createresourcedefinitionversionresponsetypedef).
+[CreateResourceDefinitionVersionResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponsetypedef).
 
 ### create_software_update_job
 
@@ -498,22 +489,20 @@ Boto3 documentation:
 Arguments:
 
 - `S3UrlSignerRole`: `str` *(required)*
-- `SoftwareToUpdate`:
-  [SoftwareToUpdate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#softwaretoupdate)
+- `SoftwareToUpdate`: [SoftwareToUpdate](./literals.md#softwaretoupdate)
   *(required)*
 - `UpdateTargets`: `List`\[`str`\] *(required)*
 - `UpdateTargetsArchitecture`:
-  [UpdateTargetsArchitecture](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#updatetargetsarchitecture)
+  [UpdateTargetsArchitecture](./literals.md#updatetargetsarchitecture)
   *(required)*
 - `UpdateTargetsOperatingSystem`:
-  [UpdateTargetsOperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#updatetargetsoperatingsystem)
+  [UpdateTargetsOperatingSystem](./literals.md#updatetargetsoperatingsystem)
   *(required)*
 - `AmznClientToken`: `str`
-- `UpdateAgentLogLevel`:
-  [UpdateAgentLogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/literals.html#updateagentloglevel)
+- `UpdateAgentLogLevel`: [UpdateAgentLogLevel](./literals.md#updateagentloglevel)
 
 Returns
-[CreateSoftwareUpdateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createsoftwareupdatejobresponsetypedef).
+[CreateSoftwareUpdateJobResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponsetypedef).
 
 ### create_subscription_definition
 
@@ -527,12 +516,12 @@ Arguments:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`:
-  [SubscriptionDefinitionVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#subscriptiondefinitionversiontypedef)
+  [SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSubscriptionDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createsubscriptiondefinitionresponsetypedef).
+[CreateSubscriptionDefinitionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponsetypedef).
 
 ### create_subscription_definition_version
 
@@ -547,10 +536,10 @@ Arguments:
 - `SubscriptionDefinitionId`: `str` *(required)*
 - `AmznClientToken`: `str`
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#subscriptiontypedef)\]
+  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
 Returns
-[CreateSubscriptionDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#createsubscriptiondefinitionversionresponsetypedef).
+[CreateSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponsetypedef).
 
 ### delete_connector_definition
 
@@ -676,7 +665,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[DisassociateRoleFromGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#disassociaterolefromgroupresponsetypedef).
+[DisassociateRoleFromGroupResponseTypeDef](./type_defs.md#disassociaterolefromgroupresponsetypedef).
 
 ### disassociate_service_role_from_account
 
@@ -687,7 +676,7 @@ Boto3 documentation:
 [Greengrass.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_service_role_from_account)
 
 Returns
-[DisassociateServiceRoleFromAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#disassociateservicerolefromaccountresponsetypedef).
+[DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
 
 ### generate_presigned_url
 
@@ -718,7 +707,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetAssociatedRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getassociatedroleresponsetypedef).
+[GetAssociatedRoleResponseTypeDef](./type_defs.md#getassociatedroleresponsetypedef).
 
 ### get_bulk_deployment_status
 
@@ -733,7 +722,7 @@ Arguments:
 - `BulkDeploymentId`: `str` *(required)*
 
 Returns
-[GetBulkDeploymentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getbulkdeploymentstatusresponsetypedef).
+[GetBulkDeploymentStatusResponseTypeDef](./type_defs.md#getbulkdeploymentstatusresponsetypedef).
 
 ### get_connectivity_info
 
@@ -747,7 +736,7 @@ Arguments:
 - `ThingName`: `str` *(required)*
 
 Returns
-[GetConnectivityInfoResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getconnectivityinforesponsetypedef).
+[GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
 
 ### get_connector_definition
 
@@ -762,7 +751,7 @@ Arguments:
 - `ConnectorDefinitionId`: `str` *(required)*
 
 Returns
-[GetConnectorDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getconnectordefinitionresponsetypedef).
+[GetConnectorDefinitionResponseTypeDef](./type_defs.md#getconnectordefinitionresponsetypedef).
 
 ### get_connector_definition_version
 
@@ -779,7 +768,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConnectorDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getconnectordefinitionversionresponsetypedef).
+[GetConnectorDefinitionVersionResponseTypeDef](./type_defs.md#getconnectordefinitionversionresponsetypedef).
 
 ### get_core_definition
 
@@ -793,7 +782,7 @@ Arguments:
 - `CoreDefinitionId`: `str` *(required)*
 
 Returns
-[GetCoreDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getcoredefinitionresponsetypedef).
+[GetCoreDefinitionResponseTypeDef](./type_defs.md#getcoredefinitionresponsetypedef).
 
 ### get_core_definition_version
 
@@ -809,7 +798,7 @@ Arguments:
 - `CoreDefinitionVersionId`: `str` *(required)*
 
 Returns
-[GetCoreDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getcoredefinitionversionresponsetypedef).
+[GetCoreDefinitionVersionResponseTypeDef](./type_defs.md#getcoredefinitionversionresponsetypedef).
 
 ### get_deployment_status
 
@@ -824,7 +813,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetDeploymentStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getdeploymentstatusresponsetypedef).
+[GetDeploymentStatusResponseTypeDef](./type_defs.md#getdeploymentstatusresponsetypedef).
 
 ### get_device_definition
 
@@ -838,7 +827,7 @@ Arguments:
 - `DeviceDefinitionId`: `str` *(required)*
 
 Returns
-[GetDeviceDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getdevicedefinitionresponsetypedef).
+[GetDeviceDefinitionResponseTypeDef](./type_defs.md#getdevicedefinitionresponsetypedef).
 
 ### get_device_definition_version
 
@@ -855,7 +844,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDeviceDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getdevicedefinitionversionresponsetypedef).
+[GetDeviceDefinitionVersionResponseTypeDef](./type_defs.md#getdevicedefinitionversionresponsetypedef).
 
 ### get_function_definition
 
@@ -870,7 +859,7 @@ Arguments:
 - `FunctionDefinitionId`: `str` *(required)*
 
 Returns
-[GetFunctionDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getfunctiondefinitionresponsetypedef).
+[GetFunctionDefinitionResponseTypeDef](./type_defs.md#getfunctiondefinitionresponsetypedef).
 
 ### get_function_definition_version
 
@@ -887,7 +876,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetFunctionDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getfunctiondefinitionversionresponsetypedef).
+[GetFunctionDefinitionVersionResponseTypeDef](./type_defs.md#getfunctiondefinitionversionresponsetypedef).
 
 ### get_group
 
@@ -900,8 +889,7 @@ Arguments:
 
 - `GroupId`: `str` *(required)*
 
-Returns
-[GetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getgroupresponsetypedef).
+Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
 
 ### get_group_certificate_authority
 
@@ -917,7 +905,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetGroupCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getgroupcertificateauthorityresponsetypedef).
+[GetGroupCertificateAuthorityResponseTypeDef](./type_defs.md#getgroupcertificateauthorityresponsetypedef).
 
 ### get_group_certificate_configuration
 
@@ -932,7 +920,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetGroupCertificateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getgroupcertificateconfigurationresponsetypedef).
+[GetGroupCertificateConfigurationResponseTypeDef](./type_defs.md#getgroupcertificateconfigurationresponsetypedef).
 
 ### get_group_version
 
@@ -947,7 +935,7 @@ Arguments:
 - `GroupVersionId`: `str` *(required)*
 
 Returns
-[GetGroupVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getgroupversionresponsetypedef).
+[GetGroupVersionResponseTypeDef](./type_defs.md#getgroupversionresponsetypedef).
 
 ### get_logger_definition
 
@@ -961,7 +949,7 @@ Arguments:
 - `LoggerDefinitionId`: `str` *(required)*
 
 Returns
-[GetLoggerDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getloggerdefinitionresponsetypedef).
+[GetLoggerDefinitionResponseTypeDef](./type_defs.md#getloggerdefinitionresponsetypedef).
 
 ### get_logger_definition_version
 
@@ -978,7 +966,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetLoggerDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getloggerdefinitionversionresponsetypedef).
+[GetLoggerDefinitionVersionResponseTypeDef](./type_defs.md#getloggerdefinitionversionresponsetypedef).
 
 ### get_resource_definition
 
@@ -993,7 +981,7 @@ Arguments:
 - `ResourceDefinitionId`: `str` *(required)*
 
 Returns
-[GetResourceDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getresourcedefinitionresponsetypedef).
+[GetResourceDefinitionResponseTypeDef](./type_defs.md#getresourcedefinitionresponsetypedef).
 
 ### get_resource_definition_version
 
@@ -1009,7 +997,7 @@ Arguments:
 - `ResourceDefinitionVersionId`: `str` *(required)*
 
 Returns
-[GetResourceDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getresourcedefinitionversionresponsetypedef).
+[GetResourceDefinitionVersionResponseTypeDef](./type_defs.md#getresourcedefinitionversionresponsetypedef).
 
 ### get_service_role_for_account
 
@@ -1020,7 +1008,7 @@ Boto3 documentation:
 [Greengrass.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_service_role_for_account)
 
 Returns
-[GetServiceRoleForAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getserviceroleforaccountresponsetypedef).
+[GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
 
 ### get_subscription_definition
 
@@ -1035,7 +1023,7 @@ Arguments:
 - `SubscriptionDefinitionId`: `str` *(required)*
 
 Returns
-[GetSubscriptionDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getsubscriptiondefinitionresponsetypedef).
+[GetSubscriptionDefinitionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionresponsetypedef).
 
 ### get_subscription_definition_version
 
@@ -1052,7 +1040,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSubscriptionDefinitionVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getsubscriptiondefinitionversionresponsetypedef).
+[GetSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionversionresponsetypedef).
 
 ### get_thing_runtime_configuration
 
@@ -1067,7 +1055,7 @@ Arguments:
 - `ThingName`: `str` *(required)*
 
 Returns
-[GetThingRuntimeConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#getthingruntimeconfigurationresponsetypedef).
+[GetThingRuntimeConfigurationResponseTypeDef](./type_defs.md#getthingruntimeconfigurationresponsetypedef).
 
 ### list_bulk_deployment_detailed_reports
 
@@ -1084,7 +1072,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListBulkDeploymentDetailedReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listbulkdeploymentdetailedreportsresponsetypedef).
+[ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef).
 
 ### list_bulk_deployments
 
@@ -1099,7 +1087,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListBulkDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listbulkdeploymentsresponsetypedef).
+[ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef).
 
 ### list_connector_definition_versions
 
@@ -1116,7 +1104,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectorDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listconnectordefinitionversionsresponsetypedef).
+[ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef).
 
 ### list_connector_definitions
 
@@ -1132,7 +1120,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectorDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listconnectordefinitionsresponsetypedef).
+[ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef).
 
 ### list_core_definition_versions
 
@@ -1149,7 +1137,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCoreDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listcoredefinitionversionsresponsetypedef).
+[ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef).
 
 ### list_core_definitions
 
@@ -1164,7 +1152,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCoreDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listcoredefinitionsresponsetypedef).
+[ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef).
 
 ### list_deployments
 
@@ -1180,7 +1168,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listdeploymentsresponsetypedef).
+[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
 
 ### list_device_definition_versions
 
@@ -1197,7 +1185,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeviceDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listdevicedefinitionversionsresponsetypedef).
+[ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef).
 
 ### list_device_definitions
 
@@ -1213,7 +1201,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeviceDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listdevicedefinitionsresponsetypedef).
+[ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef).
 
 ### list_function_definition_versions
 
@@ -1230,7 +1218,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFunctionDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listfunctiondefinitionversionsresponsetypedef).
+[ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef).
 
 ### list_function_definitions
 
@@ -1246,7 +1234,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFunctionDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listfunctiondefinitionsresponsetypedef).
+[ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef).
 
 ### list_group_certificate_authorities
 
@@ -1261,7 +1249,7 @@ Arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[ListGroupCertificateAuthoritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listgroupcertificateauthoritiesresponsetypedef).
+[ListGroupCertificateAuthoritiesResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponsetypedef).
 
 ### list_group_versions
 
@@ -1277,7 +1265,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGroupVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listgroupversionsresponsetypedef).
+[ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef).
 
 ### list_groups
 
@@ -1291,8 +1279,7 @@ Arguments:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
-Returns
-[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listgroupsresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_logger_definition_versions
 
@@ -1309,7 +1296,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLoggerDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listloggerdefinitionversionsresponsetypedef).
+[ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef).
 
 ### list_logger_definitions
 
@@ -1325,7 +1312,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLoggerDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listloggerdefinitionsresponsetypedef).
+[ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef).
 
 ### list_resource_definition_versions
 
@@ -1342,7 +1329,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourceDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listresourcedefinitionversionsresponsetypedef).
+[ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef).
 
 ### list_resource_definitions
 
@@ -1358,7 +1345,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourceDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listresourcedefinitionsresponsetypedef).
+[ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef).
 
 ### list_subscription_definition_versions
 
@@ -1375,7 +1362,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listsubscriptiondefinitionversionsresponsetypedef).
+[ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef).
 
 ### list_subscription_definitions
 
@@ -1391,7 +1378,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listsubscriptiondefinitionsresponsetypedef).
+[ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1406,7 +1393,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reset_deployments
 
@@ -1422,7 +1409,7 @@ Arguments:
 - `Force`: `bool`
 
 Returns
-[ResetDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#resetdeploymentsresponsetypedef).
+[ResetDeploymentsResponseTypeDef](./type_defs.md#resetdeploymentsresponsetypedef).
 
 ### start_bulk_deployment
 
@@ -1439,7 +1426,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartBulkDeploymentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#startbulkdeploymentresponsetypedef).
+[StartBulkDeploymentResponseTypeDef](./type_defs.md#startbulkdeploymentresponsetypedef).
 
 ### stop_bulk_deployment
 
@@ -1490,10 +1477,10 @@ Arguments:
 
 - `ThingName`: `str` *(required)*
 - `ConnectivityInfo`:
-  `List`\[[ConnectivityInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#connectivityinfotypedef)\]
+  `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
 
 Returns
-[UpdateConnectivityInfoResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#updateconnectivityinforesponsetypedef).
+[UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
 
 ### update_connector_definition
 
@@ -1583,7 +1570,7 @@ Arguments:
 - `CertificateExpiryInMilliseconds`: `str`
 
 Returns
-[UpdateGroupCertificateConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#updategroupcertificateconfigurationresponsetypedef).
+[UpdateGroupCertificateConfigurationResponseTypeDef](./type_defs.md#updategroupcertificateconfigurationresponsetypedef).
 
 ### update_logger_definition
 
@@ -1642,7 +1629,7 @@ Arguments:
 
 - `ThingName`: `str` *(required)*
 - `TelemetryConfiguration`:
-  [TelemetryConfigurationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#telemetryconfigurationupdatetypedef)
+  [TelemetryConfigurationUpdateTypeDef](./type_defs.md#telemetryconfigurationupdatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

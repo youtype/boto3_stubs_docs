@@ -1,6 +1,6 @@
 # Type annotations for boto3 LookoutforVision module
 
-> [Index](../README.md) > LookoutforVision
+> [Index](..) > LookoutforVision
 
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)

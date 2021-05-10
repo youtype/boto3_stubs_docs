@@ -1,6 +1,6 @@
 # Type annotations for boto3 SagemakerEdgeManager module
 
-> [Index](../README.md) > SagemakerEdgeManager
+> [Index](..) > SagemakerEdgeManager
 
 Auto-generated documentation for
 [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)

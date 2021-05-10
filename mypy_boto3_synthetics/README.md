@@ -1,6 +1,6 @@
 # Type annotations for boto3 Synthetics module
 
-> [Index](../README.md) > Synthetics
+> [Index](..) > Synthetics
 
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
@@ -103,7 +103,7 @@ from mypy_boto3_synthetics.type_defs import CanaryCodeInputTypeDef, ...
 - [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef)
 - [GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RuntimeVersionTypeDef](./type_defs.md#runtimeversiontypedef)
 - [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)

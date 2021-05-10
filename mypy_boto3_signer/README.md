@@ -1,6 +1,6 @@
 # Type annotations for boto3 Signer module
 
-> [Index](../README.md) > Signer
+> [Index](..) > Signer
 
 Auto-generated documentation for
 [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)

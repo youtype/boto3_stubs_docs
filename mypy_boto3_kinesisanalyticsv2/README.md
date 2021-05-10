@@ -1,6 +1,6 @@
 # Type annotations for boto3 KinesisAnalyticsV2 module
 
-> [Index](../README.md) > KinesisAnalyticsV2
+> [Index](..) > KinesisAnalyticsV2
 
 Auto-generated documentation for
 [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
@@ -235,7 +235,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [ReferenceDataSourceDescriptionTypeDef](./type_defs.md#referencedatasourcedescriptiontypedef)
 - [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
 - [ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RollbackApplicationResponseTypeDef](./type_defs.md#rollbackapplicationresponsetypedef)
 - [RunConfigurationDescriptionTypeDef](./type_defs.md#runconfigurationdescriptiontypedef)
 - [RunConfigurationTypeDef](./type_defs.md#runconfigurationtypedef)

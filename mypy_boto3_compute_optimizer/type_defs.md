@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ComputeOptimizer module
 
-> [Index](../README.md) > [ComputeOptimizer](./README.md) > Structures
+> [Index](..) > [ComputeOptimizer](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
@@ -71,9 +71,9 @@ from mypy_boto3_compute_optimizer.type_defs import AutoScalingGroupRecommendatio
 Optional fields:
 
 - `configuration`:
-  [AutoScalingGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#autoscalinggroupconfigurationtypedef)
+  [AutoScalingGroupConfigurationTypeDef](./type_defs.md#autoscalinggroupconfigurationtypedef)
 - `projectedUtilizationMetrics`:
-  `List`\[[UtilizationMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#utilizationmetrictypedef)\]
+  `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `performanceRisk`: `float`
 - `rank`: `int`
 
@@ -88,15 +88,14 @@ Optional fields:
 - `accountId`: `str`
 - `autoScalingGroupArn`: `str`
 - `autoScalingGroupName`: `str`
-- `finding`:
-  [Finding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#finding)
+- `finding`: [Finding](./literals.md#finding)
 - `utilizationMetrics`:
-  `List`\[[UtilizationMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#utilizationmetrictypedef)\]
+  `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`
 - `currentConfiguration`:
-  [AutoScalingGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#autoscalinggroupconfigurationtypedef)
+  [AutoScalingGroupConfigurationTypeDef](./type_defs.md#autoscalinggroupconfigurationtypedef)
 - `recommendationOptions`:
-  `List`\[[AutoScalingGroupRecommendationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#autoscalinggrouprecommendationoptiontypedef)\]
+  `List`\[[AutoScalingGroupRecommendationOptionTypeDef](./type_defs.md#autoscalinggrouprecommendationoptiontypedef)\]
 - `lastRefreshTimestamp`: `datetime`
 
 ## DescribeRecommendationExportJobsResponseTypeDef
@@ -108,7 +107,7 @@ from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJ
 Optional fields:
 
 - `recommendationExportJobs`:
-  `List`\[[RecommendationExportJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#recommendationexportjobtypedef)\]
+  `List`\[[RecommendationExportJobTypeDef](./type_defs.md#recommendationexportjobtypedef)\]
 - `nextToken`: `str`
 
 ## EBSFilterTypeDef
@@ -119,7 +118,7 @@ from mypy_boto3_compute_optimizer.type_defs import EBSFilterTypeDef
 
 Optional fields:
 
-- `name`: `Literal['Finding']`
+- `name`: `Literal['Finding']` (see [EBSFilterName](./literals.md#ebsfiltername))
 - `values`: `List`\[`str`\]
 
 ## EBSUtilizationMetricTypeDef
@@ -130,10 +129,8 @@ from mypy_boto3_compute_optimizer.type_defs import EBSUtilizationMetricTypeDef
 
 Optional fields:
 
-- `name`:
-  [EBSMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#ebsmetricname)
-- `statistic`:
-  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#metricstatistic)
+- `name`: [EBSMetricName](./literals.md#ebsmetricname)
+- `statistic`: [MetricStatistic](./literals.md#metricstatistic)
 - `value`: `float`
 
 ## ExportAutoScalingGroupRecommendationsResponseTypeDef
@@ -145,8 +142,7 @@ from mypy_boto3_compute_optimizer.type_defs import ExportAutoScalingGroupRecomme
 Optional fields:
 
 - `jobId`: `str`
-- `s3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationtypedef)
+- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
 ## ExportDestinationTypeDef
 
@@ -156,8 +152,7 @@ from mypy_boto3_compute_optimizer.type_defs import ExportDestinationTypeDef
 
 Optional fields:
 
-- `s3`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationtypedef)
+- `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
 ## ExportEC2InstanceRecommendationsResponseTypeDef
 
@@ -168,8 +163,7 @@ from mypy_boto3_compute_optimizer.type_defs import ExportEC2InstanceRecommendati
 Optional fields:
 
 - `jobId`: `str`
-- `s3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#s3destinationtypedef)
+- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
 ## FilterTypeDef
 
@@ -179,8 +173,7 @@ from mypy_boto3_compute_optimizer.type_defs import FilterTypeDef
 
 Optional fields:
 
-- `name`:
-  [FilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#filtername)
+- `name`: [FilterName](./literals.md#filtername)
 - `values`: `List`\[`str`\]
 
 ## GetAutoScalingGroupRecommendationsResponseTypeDef
@@ -193,9 +186,9 @@ Optional fields:
 
 - `nextToken`: `str`
 - `autoScalingGroupRecommendations`:
-  `List`\[[AutoScalingGroupRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#autoscalinggrouprecommendationtypedef)\]
+  `List`\[[AutoScalingGroupRecommendationTypeDef](./type_defs.md#autoscalinggrouprecommendationtypedef)\]
 - `errors`:
-  `List`\[[GetRecommendationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getrecommendationerrortypedef)\]
+  `List`\[[GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef)\]
 
 ## GetEBSVolumeRecommendationsResponseTypeDef
 
@@ -207,9 +200,9 @@ Optional fields:
 
 - `nextToken`: `str`
 - `volumeRecommendations`:
-  `List`\[[VolumeRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#volumerecommendationtypedef)\]
+  `List`\[[VolumeRecommendationTypeDef](./type_defs.md#volumerecommendationtypedef)\]
 - `errors`:
-  `List`\[[GetRecommendationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getrecommendationerrortypedef)\]
+  `List`\[[GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef)\]
 
 ## GetEC2InstanceRecommendationsResponseTypeDef
 
@@ -221,9 +214,9 @@ Optional fields:
 
 - `nextToken`: `str`
 - `instanceRecommendations`:
-  `List`\[[InstanceRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#instancerecommendationtypedef)\]
+  `List`\[[InstanceRecommendationTypeDef](./type_defs.md#instancerecommendationtypedef)\]
 - `errors`:
-  `List`\[[GetRecommendationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#getrecommendationerrortypedef)\]
+  `List`\[[GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef)\]
 
 ## GetEC2RecommendationProjectedMetricsResponseTypeDef
 
@@ -234,7 +227,7 @@ from mypy_boto3_compute_optimizer.type_defs import GetEC2RecommendationProjected
 Optional fields:
 
 - `recommendedOptionProjectedMetrics`:
-  `List`\[[RecommendedOptionProjectedMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#recommendedoptionprojectedmetrictypedef)\]
+  `List`\[[RecommendedOptionProjectedMetricTypeDef](./type_defs.md#recommendedoptionprojectedmetrictypedef)\]
 
 ## GetEnrollmentStatusResponseTypeDef
 
@@ -244,8 +237,7 @@ from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusResponseTy
 
 Optional fields:
 
-- `status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#status)
+- `status`: [Status](./literals.md#status)
 - `statusReason`: `str`
 - `memberAccountsEnrolled`: `bool`
 
@@ -259,7 +251,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `lambdaFunctionRecommendations`:
-  `List`\[[LambdaFunctionRecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#lambdafunctionrecommendationtypedef)\]
+  `List`\[[LambdaFunctionRecommendationTypeDef](./type_defs.md#lambdafunctionrecommendationtypedef)\]
 
 ## GetRecommendationErrorTypeDef
 
@@ -283,7 +275,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `recommendationSummaries`:
-  `List`\[[RecommendationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#recommendationsummarytypedef)\]
+  `List`\[[RecommendationSummaryTypeDef](./type_defs.md#recommendationsummarytypedef)\]
 
 ## InstanceRecommendationOptionTypeDef
 
@@ -295,7 +287,7 @@ Optional fields:
 
 - `instanceType`: `str`
 - `projectedUtilizationMetrics`:
-  `List`\[[UtilizationMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#utilizationmetrictypedef)\]
+  `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `performanceRisk`: `float`
 - `rank`: `int`
 
@@ -311,15 +303,14 @@ Optional fields:
 - `accountId`: `str`
 - `instanceName`: `str`
 - `currentInstanceType`: `str`
-- `finding`:
-  [Finding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#finding)
+- `finding`: [Finding](./literals.md#finding)
 - `utilizationMetrics`:
-  `List`\[[UtilizationMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#utilizationmetrictypedef)\]
+  `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`
 - `recommendationOptions`:
-  `List`\[[InstanceRecommendationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#instancerecommendationoptiontypedef)\]
+  `List`\[[InstanceRecommendationOptionTypeDef](./type_defs.md#instancerecommendationoptiontypedef)\]
 - `recommendationSources`:
-  `List`\[[RecommendationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#recommendationsourcetypedef)\]
+  `List`\[[RecommendationSourceTypeDef](./type_defs.md#recommendationsourcetypedef)\]
 - `lastRefreshTimestamp`: `datetime`
 
 ## JobFilterTypeDef
@@ -330,8 +321,7 @@ from mypy_boto3_compute_optimizer.type_defs import JobFilterTypeDef
 
 Optional fields:
 
-- `name`:
-  [JobFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#jobfiltername)
+- `name`: [JobFilterName](./literals.md#jobfiltername)
 - `values`: `List`\[`str`\]
 
 ## LambdaFunctionMemoryProjectedMetricTypeDef
@@ -342,9 +332,10 @@ from mypy_boto3_compute_optimizer.type_defs import LambdaFunctionMemoryProjected
 
 Optional fields:
 
-- `name`: `Literal['Duration']`
+- `name`: `Literal['Duration']` (see
+  [LambdaFunctionMemoryMetricName](./literals.md#lambdafunctionmemorymetricname))
 - `statistic`:
-  [LambdaFunctionMemoryMetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#lambdafunctionmemorymetricstatistic)
+  [LambdaFunctionMemoryMetricStatistic](./literals.md#lambdafunctionmemorymetricstatistic)
 - `value`: `float`
 
 ## LambdaFunctionMemoryRecommendationOptionTypeDef
@@ -358,7 +349,7 @@ Optional fields:
 - `rank`: `int`
 - `memorySize`: `int`
 - `projectedUtilizationMetrics`:
-  `List`\[[LambdaFunctionMemoryProjectedMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#lambdafunctionmemoryprojectedmetrictypedef)\]
+  `List`\[[LambdaFunctionMemoryProjectedMetricTypeDef](./type_defs.md#lambdafunctionmemoryprojectedmetrictypedef)\]
 
 ## LambdaFunctionRecommendationFilterTypeDef
 
@@ -369,7 +360,7 @@ from mypy_boto3_compute_optimizer.type_defs import LambdaFunctionRecommendationF
 Optional fields:
 
 - `name`:
-  [LambdaFunctionRecommendationFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#lambdafunctionrecommendationfiltername)
+  [LambdaFunctionRecommendationFilterName](./literals.md#lambdafunctionrecommendationfiltername)
 - `values`: `List`\[`str`\]
 
 ## LambdaFunctionRecommendationTypeDef
@@ -386,15 +377,15 @@ Optional fields:
 - `currentMemorySize`: `int`
 - `numberOfInvocations`: `int`
 - `utilizationMetrics`:
-  `List`\[[LambdaFunctionUtilizationMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#lambdafunctionutilizationmetrictypedef)\]
+  `List`\[[LambdaFunctionUtilizationMetricTypeDef](./type_defs.md#lambdafunctionutilizationmetrictypedef)\]
 - `lookbackPeriodInDays`: `float`
 - `lastRefreshTimestamp`: `datetime`
 - `finding`:
-  [LambdaFunctionRecommendationFinding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#lambdafunctionrecommendationfinding)
+  [LambdaFunctionRecommendationFinding](./literals.md#lambdafunctionrecommendationfinding)
 - `findingReasonCodes`:
-  `List`\[[LambdaFunctionRecommendationFindingReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#lambdafunctionrecommendationfindingreasoncode)\]
+  `List`\[[LambdaFunctionRecommendationFindingReasonCode](./literals.md#lambdafunctionrecommendationfindingreasoncode)\]
 - `memorySizeRecommendationOptions`:
-  `List`\[[LambdaFunctionMemoryRecommendationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#lambdafunctionmemoryrecommendationoptiontypedef)\]
+  `List`\[[LambdaFunctionMemoryRecommendationOptionTypeDef](./type_defs.md#lambdafunctionmemoryrecommendationoptiontypedef)\]
 
 ## LambdaFunctionUtilizationMetricTypeDef
 
@@ -404,10 +395,9 @@ from mypy_boto3_compute_optimizer.type_defs import LambdaFunctionUtilizationMetr
 
 Optional fields:
 
-- `name`:
-  [LambdaFunctionMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#lambdafunctionmetricname)
+- `name`: [LambdaFunctionMetricName](./literals.md#lambdafunctionmetricname)
 - `statistic`:
-  [LambdaFunctionMetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#lambdafunctionmetricstatistic)
+  [LambdaFunctionMetricStatistic](./literals.md#lambdafunctionmetricstatistic)
 - `value`: `float`
 
 ## ProjectedMetricTypeDef
@@ -418,8 +408,7 @@ from mypy_boto3_compute_optimizer.type_defs import ProjectedMetricTypeDef
 
 Optional fields:
 
-- `name`:
-  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#metricname)
+- `name`: [MetricName](./literals.md#metricname)
 - `timestamps`: `List`\[`datetime`\]
 - `values`: `List`\[`float`\]
 
@@ -431,8 +420,7 @@ from mypy_boto3_compute_optimizer.type_defs import ReasonCodeSummaryTypeDef
 
 Optional fields:
 
-- `name`:
-  [FindingReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#findingreasoncode)
+- `name`: [FindingReasonCode](./literals.md#findingreasoncode)
 - `value`: `float`
 
 ## RecommendationExportJobTypeDef
@@ -445,11 +433,9 @@ Optional fields:
 
 - `jobId`: `str`
 - `destination`:
-  [ExportDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#exportdestinationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#resourcetype)
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#jobstatus)
+  [ExportDestinationTypeDef](./type_defs.md#exportdestinationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `status`: [JobStatus](./literals.md#jobstatus)
 - `creationTimestamp`: `datetime`
 - `lastUpdatedTimestamp`: `datetime`
 - `failureReason`: `str`
@@ -464,7 +450,7 @@ Optional fields:
 
 - `recommendationSourceArn`: `str`
 - `recommendationSourceType`:
-  [RecommendationSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#recommendationsourcetype)
+  [RecommendationSourceType](./literals.md#recommendationsourcetype)
 
 ## RecommendationSummaryTypeDef
 
@@ -474,10 +460,9 @@ from mypy_boto3_compute_optimizer.type_defs import RecommendationSummaryTypeDef
 
 Optional fields:
 
-- `summaries`:
-  `List`\[[SummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#summarytypedef)\]
+- `summaries`: `List`\[[SummaryTypeDef](./type_defs.md#summarytypedef)\]
 - `recommendationResourceType`:
-  [RecommendationSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#recommendationsourcetype)
+  [RecommendationSourceType](./literals.md#recommendationsourcetype)
 - `accountId`: `str`
 
 ## RecommendedOptionProjectedMetricTypeDef
@@ -491,7 +476,7 @@ Optional fields:
 - `recommendedInstanceType`: `str`
 - `rank`: `int`
 - `projectedMetrics`:
-  `List`\[[ProjectedMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#projectedmetrictypedef)\]
+  `List`\[[ProjectedMetricTypeDef](./type_defs.md#projectedmetrictypedef)\]
 
 ## S3DestinationConfigTypeDef
 
@@ -524,11 +509,10 @@ from mypy_boto3_compute_optimizer.type_defs import SummaryTypeDef
 
 Optional fields:
 
-- `name`:
-  [Finding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#finding)
+- `name`: [Finding](./literals.md#finding)
 - `value`: `float`
 - `reasonCodeSummaries`:
-  `List`\[[ReasonCodeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#reasoncodesummarytypedef)\]
+  `List`\[[ReasonCodeSummaryTypeDef](./type_defs.md#reasoncodesummarytypedef)\]
 
 ## UpdateEnrollmentStatusResponseTypeDef
 
@@ -538,8 +522,7 @@ from mypy_boto3_compute_optimizer.type_defs import UpdateEnrollmentStatusRespons
 
 Optional fields:
 
-- `status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#status)
+- `status`: [Status](./literals.md#status)
 - `statusReason`: `str`
 
 ## UtilizationMetricTypeDef
@@ -550,10 +533,8 @@ from mypy_boto3_compute_optimizer.type_defs import UtilizationMetricTypeDef
 
 Optional fields:
 
-- `name`:
-  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#metricname)
-- `statistic`:
-  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#metricstatistic)
+- `name`: [MetricName](./literals.md#metricname)
+- `statistic`: [MetricStatistic](./literals.md#metricstatistic)
 - `value`: `float`
 
 ## VolumeConfigurationTypeDef
@@ -580,7 +561,7 @@ from mypy_boto3_compute_optimizer.type_defs import VolumeRecommendationOptionTyp
 Optional fields:
 
 - `configuration`:
-  [VolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#volumeconfigurationtypedef)
+  [VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)
 - `performanceRisk`: `float`
 - `rank`: `int`
 
@@ -595,12 +576,11 @@ Optional fields:
 - `volumeArn`: `str`
 - `accountId`: `str`
 - `currentConfiguration`:
-  [VolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#volumeconfigurationtypedef)
-- `finding`:
-  [EBSFinding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/literals.html#ebsfinding)
+  [VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)
+- `finding`: [EBSFinding](./literals.md#ebsfinding)
 - `utilizationMetrics`:
-  `List`\[[EBSUtilizationMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#ebsutilizationmetrictypedef)\]
+  `List`\[[EBSUtilizationMetricTypeDef](./type_defs.md#ebsutilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`
 - `volumeRecommendationOptions`:
-  `List`\[[VolumeRecommendationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_compute_optimizer/type_defs.html#volumerecommendationoptiontypedef)\]
+  `List`\[[VolumeRecommendationOptionTypeDef](./type_defs.md#volumerecommendationoptiontypedef)\]
 - `lastRefreshTimestamp`: `datetime`

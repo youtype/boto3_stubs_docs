@@ -1,7 +1,6 @@
 # LexRuntimeServiceClient for boto3 LexRuntimeService module
 
-> [Index](../README.md) > [LexRuntimeService](./README.md) >
-> LexRuntimeServiceClient
+> [Index](..) > [LexRuntimeService](.) > LexRuntimeServiceClient
 
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
@@ -92,7 +91,7 @@ Arguments:
 - `userId`: `str` *(required)*
 
 Returns
-[DeleteSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#deletesessionresponsetypedef).
+[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -125,8 +124,7 @@ Arguments:
 - `userId`: `str` *(required)*
 - `checkpointLabelFilter`: `str`
 
-Returns
-[GetSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#getsessionresponsetypedef).
+Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
 ### post_content
 
@@ -148,7 +146,7 @@ Arguments:
 - `activeContexts`: `str`
 
 Returns
-[PostContentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#postcontentresponsetypedef).
+[PostContentResponseTypeDef](./type_defs.md#postcontentresponsetypedef).
 
 ### post_text
 
@@ -166,10 +164,9 @@ Arguments:
 - `sessionAttributes`: `Dict`\[`str`, `str`\]
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#activecontexttypedef)\]
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
-Returns
-[PostTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#posttextresponsetypedef).
+Returns [PostTextResponseTypeDef](./type_defs.md#posttextresponsetypedef).
 
 ### put_session
 
@@ -184,13 +181,11 @@ Arguments:
 - `botAlias`: `str` *(required)*
 - `userId`: `str` *(required)*
 - `sessionAttributes`: `Dict`\[`str`, `str`\]
-- `dialogAction`:
-  [DialogActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#dialogactiontypedef)
+- `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
 - `recentIntentSummaryView`:
-  `List`\[[IntentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#intentsummarytypedef)\]
+  `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
 - `accept`: `str`
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#activecontexttypedef)\]
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
-Returns
-[PutSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#putsessionresponsetypedef).
+Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CognitoIdentity module
 
-> [Index](../README.md) > CognitoIdentity
+> [Index](..) > CognitoIdentity
 
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)

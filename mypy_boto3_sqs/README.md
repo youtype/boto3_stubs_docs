@@ -1,6 +1,6 @@
 # Type annotations for boto3 SQS module
 
-> [Index](../README.md) > SQS
+> [Index](..) > SQS
 
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
@@ -83,7 +83,7 @@ SQSClient [exceptions](./client.md#exceptions)
 ## SQSServiceResource
 
 Type annotations for `boto3.resource("sqs")` as
-[SQSServiceResource](./service_resource.md)
+[SQSServiceResource](./service_resource.md#sqsserviceresource)
 
 Can be used directly:
 
@@ -101,7 +101,7 @@ Can be used directly:
 from mypy_boto3_sqs.service_resource import ServiceResourceQueuesCollection, ...
 ```
 
-- [ServiceResourceQueuesCollection](./service_resource.md#sqsserviceresource.queues)
+- [ServiceResourceQueuesCollection](./service_resource.md#sqsserviceresourcequeues)
 
 ### Resources
 

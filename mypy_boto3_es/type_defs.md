@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ElasticsearchService module
 
-> [Index](../README.md) > [ElasticsearchService](./README.md) > Structures
+> [Index](..) > [ElasticsearchService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
@@ -96,7 +96,7 @@ type annotations stubs module
   - [RejectInboundCrossClusterSearchConnectionResponseTypeDef](#rejectinboundcrossclustersearchconnectionresponsetypedef)
   - [ReservedElasticsearchInstanceOfferingTypeDef](#reservedelasticsearchinstanceofferingtypedef)
   - [ReservedElasticsearchInstanceTypeDef](#reservedelasticsearchinstancetypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SAMLIdpTypeDef](#samlidptypedef)
   - [SAMLOptionsInputTypeDef](#samloptionsinputtypedef)
   - [SAMLOptionsOutputTypeDef](#samloptionsoutputtypedef)
@@ -127,7 +127,7 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionRes
 Optional fields:
 
 - `CrossClusterSearchConnection`:
-  [InboundCrossClusterSearchConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#inboundcrossclustersearchconnectiontypedef)
+  [InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)
 
 ## AccessPoliciesStatusTypeDef
 
@@ -138,8 +138,7 @@ from mypy_boto3_es.type_defs import AccessPoliciesStatusTypeDef
 Required fields:
 
 - `Options`: `str`
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## AdditionalLimitTypeDef
 
@@ -161,8 +160,7 @@ from mypy_boto3_es.type_defs import AdvancedOptionsStatusTypeDef
 Required fields:
 
 - `Options`: `Dict`\[`str`, `str`\]
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## AdvancedSecurityOptionsInputTypeDef
 
@@ -175,9 +173,9 @@ Optional fields:
 - `Enabled`: `bool`
 - `InternalUserDatabaseEnabled`: `bool`
 - `MasterUserOptions`:
-  [MasterUserOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#masteruseroptionstypedef)
+  [MasterUserOptionsTypeDef](./type_defs.md#masteruseroptionstypedef)
 - `SAMLOptions`:
-  [SAMLOptionsInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#samloptionsinputtypedef)
+  [SAMLOptionsInputTypeDef](./type_defs.md#samloptionsinputtypedef)
 
 ## AdvancedSecurityOptionsStatusTypeDef
 
@@ -188,9 +186,8 @@ from mypy_boto3_es.type_defs import AdvancedSecurityOptionsStatusTypeDef
 Required fields:
 
 - `Options`:
-  [AdvancedSecurityOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#advancedsecurityoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+  [AdvancedSecurityOptionsTypeDef](./type_defs.md#advancedsecurityoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## AdvancedSecurityOptionsTypeDef
 
@@ -203,7 +200,7 @@ Optional fields:
 - `Enabled`: `bool`
 - `InternalUserDatabaseEnabled`: `bool`
 - `SAMLOptions`:
-  [SAMLOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#samloptionsoutputtypedef)
+  [SAMLOptionsOutputTypeDef](./type_defs.md#samloptionsoutputtypedef)
 
 ## AssociatePackageResponseTypeDef
 
@@ -214,7 +211,7 @@ from mypy_boto3_es.type_defs import AssociatePackageResponseTypeDef
 Optional fields:
 
 - `DomainPackageDetails`:
-  [DomainPackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainpackagedetailstypedef)
+  [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
 
 ## AutoTuneDetailsTypeDef
 
@@ -225,7 +222,7 @@ from mypy_boto3_es.type_defs import AutoTuneDetailsTypeDef
 Optional fields:
 
 - `ScheduledAutoTuneDetails`:
-  [ScheduledAutoTuneDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#scheduledautotunedetailstypedef)
+  [ScheduledAutoTuneDetailsTypeDef](./type_defs.md#scheduledautotunedetailstypedef)
 
 ## AutoTuneMaintenanceScheduleTypeDef
 
@@ -236,8 +233,7 @@ from mypy_boto3_es.type_defs import AutoTuneMaintenanceScheduleTypeDef
 Optional fields:
 
 - `StartAt`: `datetime`
-- `Duration`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#durationtypedef)
+- `Duration`: [DurationTypeDef](./type_defs.md#durationtypedef)
 - `CronExpressionForRecurrence`: `str`
 
 ## AutoTuneOptionsInputTypeDef
@@ -248,10 +244,9 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsInputTypeDef
 
 Optional fields:
 
-- `DesiredState`:
-  [AutoTuneDesiredState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#autotunedesiredstate)
+- `DesiredState`: [AutoTuneDesiredState](./literals.md#autotunedesiredstate)
 - `MaintenanceSchedules`:
-  `List`\[[AutoTuneMaintenanceScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotunemaintenancescheduletypedef)\]
+  `List`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
 
 ## AutoTuneOptionsOutputTypeDef
 
@@ -261,11 +256,10 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsOutputTypeDef
 
 Required fields:
 
-- `State`:
-  [AutoTuneState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#autotunestate)
+- `State`: [AutoTuneState](./literals.md#autotunestate)
 - `ErrorMessage`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AutoTuneOptionsStatusTypeDef
 
@@ -275,10 +269,8 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsStatusTypeDef
 
 Optional fields:
 
-- `Options`:
-  [AutoTuneOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotuneoptionstypedef)
-- `Status`:
-  [AutoTuneStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotunestatustypedef)
+- `Options`: [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
+- `Status`: [AutoTuneStatusTypeDef](./type_defs.md#autotunestatustypedef)
 
 ## AutoTuneOptionsTypeDef
 
@@ -288,12 +280,10 @@ from mypy_boto3_es.type_defs import AutoTuneOptionsTypeDef
 
 Optional fields:
 
-- `DesiredState`:
-  [AutoTuneDesiredState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#autotunedesiredstate)
-- `RollbackOnDisable`:
-  [RollbackOnDisable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#rollbackondisable)
+- `DesiredState`: [AutoTuneDesiredState](./literals.md#autotunedesiredstate)
+- `RollbackOnDisable`: [RollbackOnDisable](./literals.md#rollbackondisable)
 - `MaintenanceSchedules`:
-  `List`\[[AutoTuneMaintenanceScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotunemaintenancescheduletypedef)\]
+  `List`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
 
 ## AutoTuneStatusTypeDef
 
@@ -305,8 +295,7 @@ Required fields:
 
 - `CreationDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `State`:
-  [AutoTuneState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#autotunestate)
+- `State`: [AutoTuneState](./literals.md#autotunestate)
 
 Optional fields:
 
@@ -322,9 +311,10 @@ from mypy_boto3_es.type_defs import AutoTuneTypeDef
 
 Optional fields:
 
-- `AutoTuneType`: `Literal['SCHEDULED_ACTION']`
+- `AutoTuneType`: `Literal['SCHEDULED_ACTION']` (see
+  [AutoTuneType](./literals.md#autotunetype))
 - `AutoTuneDetails`:
-  [AutoTuneDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotunedetailstypedef)
+  [AutoTuneDetailsTypeDef](./type_defs.md#autotunedetailstypedef)
 
 ## CancelElasticsearchServiceSoftwareUpdateResponseTypeDef
 
@@ -335,7 +325,7 @@ from mypy_boto3_es.type_defs import CancelElasticsearchServiceSoftwareUpdateResp
 Optional fields:
 
 - `ServiceSoftwareOptions`:
-  [ServiceSoftwareOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#servicesoftwareoptionstypedef)
+  [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
 
 ## CognitoOptionsStatusTypeDef
 
@@ -345,10 +335,8 @@ from mypy_boto3_es.type_defs import CognitoOptionsStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [CognitoOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#cognitooptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Options`: [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## CognitoOptionsTypeDef
 
@@ -383,7 +371,7 @@ from mypy_boto3_es.type_defs import CreateElasticsearchDomainResponseTypeDef
 Optional fields:
 
 - `DomainStatus`:
-  [ElasticsearchDomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchdomainstatustypedef)
+  [ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)
 
 ## CreateOutboundCrossClusterSearchConnectionResponseTypeDef
 
@@ -394,12 +382,12 @@ from mypy_boto3_es.type_defs import CreateOutboundCrossClusterSearchConnectionRe
 Optional fields:
 
 - `SourceDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - `DestinationDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - `ConnectionAlias`: `str`
 - `ConnectionStatus`:
-  [OutboundCrossClusterSearchConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#outboundcrossclustersearchconnectionstatustypedef)
+  [OutboundCrossClusterSearchConnectionStatusTypeDef](./type_defs.md#outboundcrossclustersearchconnectionstatustypedef)
 - `CrossClusterSearchConnectionId`: `str`
 
 ## CreatePackageResponseTypeDef
@@ -410,8 +398,7 @@ from mypy_boto3_es.type_defs import CreatePackageResponseTypeDef
 
 Optional fields:
 
-- `PackageDetails`:
-  [PackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packagedetailstypedef)
+- `PackageDetails`: [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 
 ## DeleteElasticsearchDomainResponseTypeDef
 
@@ -422,7 +409,7 @@ from mypy_boto3_es.type_defs import DeleteElasticsearchDomainResponseTypeDef
 Optional fields:
 
 - `DomainStatus`:
-  [ElasticsearchDomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchdomainstatustypedef)
+  [ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)
 
 ## DeleteInboundCrossClusterSearchConnectionResponseTypeDef
 
@@ -433,7 +420,7 @@ from mypy_boto3_es.type_defs import DeleteInboundCrossClusterSearchConnectionRes
 Optional fields:
 
 - `CrossClusterSearchConnection`:
-  [InboundCrossClusterSearchConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#inboundcrossclustersearchconnectiontypedef)
+  [InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)
 
 ## DeleteOutboundCrossClusterSearchConnectionResponseTypeDef
 
@@ -444,7 +431,7 @@ from mypy_boto3_es.type_defs import DeleteOutboundCrossClusterSearchConnectionRe
 Optional fields:
 
 - `CrossClusterSearchConnection`:
-  [OutboundCrossClusterSearchConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#outboundcrossclustersearchconnectiontypedef)
+  [OutboundCrossClusterSearchConnectionTypeDef](./type_defs.md#outboundcrossclustersearchconnectiontypedef)
 
 ## DeletePackageResponseTypeDef
 
@@ -454,8 +441,7 @@ from mypy_boto3_es.type_defs import DeletePackageResponseTypeDef
 
 Optional fields:
 
-- `PackageDetails`:
-  [PackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packagedetailstypedef)
+- `PackageDetails`: [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 
 ## DescribeDomainAutoTunesResponseTypeDef
 
@@ -465,8 +451,7 @@ from mypy_boto3_es.type_defs import DescribeDomainAutoTunesResponseTypeDef
 
 Optional fields:
 
-- `AutoTunes`:
-  `List`\[[AutoTuneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotunetypedef)\]
+- `AutoTunes`: `List`\[[AutoTuneTypeDef](./type_defs.md#autotunetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeElasticsearchDomainConfigResponseTypeDef
@@ -478,7 +463,7 @@ from mypy_boto3_es.type_defs import DescribeElasticsearchDomainConfigResponseTyp
 Required fields:
 
 - `DomainConfig`:
-  [ElasticsearchDomainConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchdomainconfigtypedef)
+  [ElasticsearchDomainConfigTypeDef](./type_defs.md#elasticsearchdomainconfigtypedef)
 
 ## DescribeElasticsearchDomainResponseTypeDef
 
@@ -489,7 +474,7 @@ from mypy_boto3_es.type_defs import DescribeElasticsearchDomainResponseTypeDef
 Required fields:
 
 - `DomainStatus`:
-  [ElasticsearchDomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchdomainstatustypedef)
+  [ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)
 
 ## DescribeElasticsearchDomainsResponseTypeDef
 
@@ -500,7 +485,7 @@ from mypy_boto3_es.type_defs import DescribeElasticsearchDomainsResponseTypeDef
 Required fields:
 
 - `DomainStatusList`:
-  `List`\[[ElasticsearchDomainStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchdomainstatustypedef)\]
+  `List`\[[ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)\]
 
 ## DescribeElasticsearchInstanceTypeLimitsResponseTypeDef
 
@@ -510,8 +495,7 @@ from mypy_boto3_es.type_defs import DescribeElasticsearchInstanceTypeLimitsRespo
 
 Optional fields:
 
-- `LimitsByRole`: `Dict`\[`str`,
-  [LimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#limitstypedef)\]
+- `LimitsByRole`: `Dict`\[`str`, [LimitsTypeDef](./type_defs.md#limitstypedef)\]
 
 ## DescribeInboundCrossClusterSearchConnectionsResponseTypeDef
 
@@ -522,7 +506,7 @@ from mypy_boto3_es.type_defs import DescribeInboundCrossClusterSearchConnections
 Optional fields:
 
 - `CrossClusterSearchConnections`:
-  `List`\[[InboundCrossClusterSearchConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#inboundcrossclustersearchconnectiontypedef)\]
+  `List`\[[InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef
@@ -534,7 +518,7 @@ from mypy_boto3_es.type_defs import DescribeOutboundCrossClusterSearchConnection
 Optional fields:
 
 - `CrossClusterSearchConnections`:
-  `List`\[[OutboundCrossClusterSearchConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#outboundcrossclustersearchconnectiontypedef)\]
+  `List`\[[OutboundCrossClusterSearchConnectionTypeDef](./type_defs.md#outboundcrossclustersearchconnectiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribePackagesFilterTypeDef
@@ -545,8 +529,7 @@ from mypy_boto3_es.type_defs import DescribePackagesFilterTypeDef
 
 Optional fields:
 
-- `Name`:
-  [DescribePackagesFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#describepackagesfiltername)
+- `Name`: [DescribePackagesFilterName](./literals.md#describepackagesfiltername)
 - `Value`: `List`\[`str`\]
 
 ## DescribePackagesResponseTypeDef
@@ -558,7 +541,7 @@ from mypy_boto3_es.type_defs import DescribePackagesResponseTypeDef
 Optional fields:
 
 - `PackageDetailsList`:
-  `List`\[[PackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packagedetailstypedef)\]
+  `List`\[[PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)\]
 - `NextToken`: `str`
 
 ## DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
@@ -571,7 +554,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ReservedElasticsearchInstanceOfferings`:
-  `List`\[[ReservedElasticsearchInstanceOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#reservedelasticsearchinstanceofferingtypedef)\]
+  `List`\[[ReservedElasticsearchInstanceOfferingTypeDef](./type_defs.md#reservedelasticsearchinstanceofferingtypedef)\]
 
 ## DescribeReservedElasticsearchInstancesResponseTypeDef
 
@@ -583,7 +566,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ReservedElasticsearchInstances`:
-  `List`\[[ReservedElasticsearchInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#reservedelasticsearchinstancetypedef)\]
+  `List`\[[ReservedElasticsearchInstanceTypeDef](./type_defs.md#reservedelasticsearchinstancetypedef)\]
 
 ## DissociatePackageResponseTypeDef
 
@@ -594,7 +577,7 @@ from mypy_boto3_es.type_defs import DissociatePackageResponseTypeDef
 Optional fields:
 
 - `DomainPackageDetails`:
-  [DomainPackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainpackagedetailstypedef)
+  [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
 
 ## DomainEndpointOptionsStatusTypeDef
 
@@ -605,9 +588,8 @@ from mypy_boto3_es.type_defs import DomainEndpointOptionsStatusTypeDef
 Required fields:
 
 - `Options`:
-  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainendpointoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## DomainEndpointOptionsTypeDef
 
@@ -618,8 +600,7 @@ from mypy_boto3_es.type_defs import DomainEndpointOptionsTypeDef
 Optional fields:
 
 - `EnforceHTTPS`: `bool`
-- `TLSSecurityPolicy`:
-  [TLSSecurityPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#tlssecuritypolicy)
+- `TLSSecurityPolicy`: [TLSSecurityPolicy](./literals.md#tlssecuritypolicy)
 - `CustomEndpointEnabled`: `bool`
 - `CustomEndpoint`: `str`
 - `CustomEndpointCertificateArn`: `str`
@@ -659,15 +640,14 @@ Optional fields:
 
 - `PackageID`: `str`
 - `PackageName`: `str`
-- `PackageType`: `Literal['TXT-DICTIONARY']`
+- `PackageType`: `Literal['TXT-DICTIONARY']` (see
+  [PackageType](./literals.md#packagetype))
 - `LastUpdated`: `datetime`
 - `DomainName`: `str`
-- `DomainPackageStatus`:
-  [DomainPackageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#domainpackagestatus)
+- `DomainPackageStatus`: [DomainPackageStatus](./literals.md#domainpackagestatus)
 - `PackageVersion`: `str`
 - `ReferencePath`: `str`
-- `ErrorDetails`:
-  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#errordetailstypedef)
+- `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
 ## DurationTypeDef
 
@@ -678,7 +658,7 @@ from mypy_boto3_es.type_defs import DurationTypeDef
 Optional fields:
 
 - `Value`: `int`
-- `Unit`: `Literal['HOURS']`
+- `Unit`: `Literal['HOURS']` (see [TimeUnit](./literals.md#timeunit))
 
 ## EBSOptionsStatusTypeDef
 
@@ -688,10 +668,8 @@ from mypy_boto3_es.type_defs import EBSOptionsStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [EBSOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#ebsoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Options`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## EBSOptionsTypeDef
 
@@ -702,8 +680,7 @@ from mypy_boto3_es.type_defs import EBSOptionsTypeDef
 Optional fields:
 
 - `EBSEnabled`: `bool`
-- `VolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#volumetype)
+- `VolumeType`: [VolumeType](./literals.md#volumetype)
 - `VolumeSize`: `int`
 - `Iops`: `int`
 
@@ -716,9 +693,8 @@ from mypy_boto3_es.type_defs import ElasticsearchClusterConfigStatusTypeDef
 Required fields:
 
 - `Options`:
-  [ElasticsearchClusterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchclusterconfigtypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## ElasticsearchClusterConfigTypeDef
 
@@ -729,18 +705,18 @@ from mypy_boto3_es.type_defs import ElasticsearchClusterConfigTypeDef
 Optional fields:
 
 - `InstanceType`:
-  [ESPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#espartitioninstancetype)
+  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
 - `InstanceCount`: `int`
 - `DedicatedMasterEnabled`: `bool`
 - `ZoneAwarenessEnabled`: `bool`
 - `ZoneAwarenessConfig`:
-  [ZoneAwarenessConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#zoneawarenessconfigtypedef)
+  [ZoneAwarenessConfigTypeDef](./type_defs.md#zoneawarenessconfigtypedef)
 - `DedicatedMasterType`:
-  [ESPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#espartitioninstancetype)
+  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
 - `DedicatedMasterCount`: `int`
 - `WarmEnabled`: `bool`
 - `WarmType`:
-  [ESWarmPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#eswarmpartitioninstancetype)
+  [ESWarmPartitionInstanceType](./literals.md#eswarmpartitioninstancetype)
 - `WarmCount`: `int`
 
 ## ElasticsearchDomainConfigTypeDef
@@ -752,33 +728,32 @@ from mypy_boto3_es.type_defs import ElasticsearchDomainConfigTypeDef
 Optional fields:
 
 - `ElasticsearchVersion`:
-  [ElasticsearchVersionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchversionstatustypedef)
+  [ElasticsearchVersionStatusTypeDef](./type_defs.md#elasticsearchversionstatustypedef)
 - `ElasticsearchClusterConfig`:
-  [ElasticsearchClusterConfigStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchclusterconfigstatustypedef)
-- `EBSOptions`:
-  [EBSOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#ebsoptionsstatustypedef)
+  [ElasticsearchClusterConfigStatusTypeDef](./type_defs.md#elasticsearchclusterconfigstatustypedef)
+- `EBSOptions`: [EBSOptionsStatusTypeDef](./type_defs.md#ebsoptionsstatustypedef)
 - `AccessPolicies`:
-  [AccessPoliciesStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#accesspoliciesstatustypedef)
+  [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
 - `SnapshotOptions`:
-  [SnapshotOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#snapshotoptionsstatustypedef)
+  [SnapshotOptionsStatusTypeDef](./type_defs.md#snapshotoptionsstatustypedef)
 - `VPCOptions`:
-  [VPCDerivedInfoStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#vpcderivedinfostatustypedef)
+  [VPCDerivedInfoStatusTypeDef](./type_defs.md#vpcderivedinfostatustypedef)
 - `CognitoOptions`:
-  [CognitoOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#cognitooptionsstatustypedef)
+  [CognitoOptionsStatusTypeDef](./type_defs.md#cognitooptionsstatustypedef)
 - `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#encryptionatrestoptionsstatustypedef)
+  [EncryptionAtRestOptionsStatusTypeDef](./type_defs.md#encryptionatrestoptionsstatustypedef)
 - `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#nodetonodeencryptionoptionsstatustypedef)
+  [NodeToNodeEncryptionOptionsStatusTypeDef](./type_defs.md#nodetonodeencryptionoptionsstatustypedef)
 - `AdvancedOptions`:
-  [AdvancedOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#advancedoptionsstatustypedef)
+  [AdvancedOptionsStatusTypeDef](./type_defs.md#advancedoptionsstatustypedef)
 - `LogPublishingOptions`:
-  [LogPublishingOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#logpublishingoptionsstatustypedef)
+  [LogPublishingOptionsStatusTypeDef](./type_defs.md#logpublishingoptionsstatustypedef)
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainendpointoptionsstatustypedef)
+  [DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef)
 - `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#advancedsecurityoptionsstatustypedef)
+  [AdvancedSecurityOptionsStatusTypeDef](./type_defs.md#advancedsecurityoptionsstatustypedef)
 - `AutoTuneOptions`:
-  [AutoTuneOptionsStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotuneoptionsstatustypedef)
+  [AutoTuneOptionsStatusTypeDef](./type_defs.md#autotuneoptionsstatustypedef)
 
 ## ElasticsearchDomainStatusTypeDef
 
@@ -792,7 +767,7 @@ Required fields:
 - `DomainName`: `str`
 - `ARN`: `str`
 - `ElasticsearchClusterConfig`:
-  [ElasticsearchClusterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchclusterconfigtypedef)
+  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
 
 Optional fields:
 
@@ -803,31 +778,27 @@ Optional fields:
 - `Processing`: `bool`
 - `UpgradeProcessing`: `bool`
 - `ElasticsearchVersion`: `str`
-- `EBSOptions`:
-  [EBSOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#ebsoptionstypedef)
+- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
 - `AccessPolicies`: `str`
 - `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#snapshotoptionstypedef)
-- `VPCOptions`:
-  [VPCDerivedInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#vpcderivedinfotypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#cognitooptionstypedef)
+  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- `VPCOptions`: [VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef)
+- `CognitoOptions`: [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
 - `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#encryptionatrestoptionstypedef)
+  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#nodetonodeencryptionoptionstypedef)
+  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
 - `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `LogPublishingOptions`:
-  `Dict`\[[LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#logtype),
-  [LogPublishingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#logpublishingoptiontypedef)\]
+- `LogPublishingOptions`: `Dict`\[[LogType](./literals.md#logtype),
+  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `ServiceSoftwareOptions`:
-  [ServiceSoftwareOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#servicesoftwareoptionstypedef)
+  [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainendpointoptionstypedef)
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#advancedsecurityoptionstypedef)
+  [AdvancedSecurityOptionsTypeDef](./type_defs.md#advancedsecurityoptionstypedef)
 - `AutoTuneOptions`:
-  [AutoTuneOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#autotuneoptionsoutputtypedef)
+  [AutoTuneOptionsOutputTypeDef](./type_defs.md#autotuneoptionsoutputtypedef)
 
 ## ElasticsearchVersionStatusTypeDef
 
@@ -838,8 +809,7 @@ from mypy_boto3_es.type_defs import ElasticsearchVersionStatusTypeDef
 Required fields:
 
 - `Options`: `str`
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## EncryptionAtRestOptionsStatusTypeDef
 
@@ -850,9 +820,8 @@ from mypy_boto3_es.type_defs import EncryptionAtRestOptionsStatusTypeDef
 Required fields:
 
 - `Options`:
-  [EncryptionAtRestOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#encryptionatrestoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## EncryptionAtRestOptionsTypeDef
 
@@ -896,7 +865,7 @@ from mypy_boto3_es.type_defs import GetCompatibleElasticsearchVersionsResponseTy
 Optional fields:
 
 - `CompatibleElasticsearchVersions`:
-  `List`\[[CompatibleVersionsMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#compatibleversionsmaptypedef)\]
+  `List`\[[CompatibleVersionsMapTypeDef](./type_defs.md#compatibleversionsmaptypedef)\]
 
 ## GetPackageVersionHistoryResponseTypeDef
 
@@ -908,7 +877,7 @@ Optional fields:
 
 - `PackageID`: `str`
 - `PackageVersionHistoryList`:
-  `List`\[[PackageVersionHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packageversionhistorytypedef)\]
+  `List`\[[PackageVersionHistoryTypeDef](./type_defs.md#packageversionhistorytypedef)\]
 - `NextToken`: `str`
 
 ## GetUpgradeHistoryResponseTypeDef
@@ -920,7 +889,7 @@ from mypy_boto3_es.type_defs import GetUpgradeHistoryResponseTypeDef
 Optional fields:
 
 - `UpgradeHistories`:
-  `List`\[[UpgradeHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#upgradehistorytypedef)\]
+  `List`\[[UpgradeHistoryTypeDef](./type_defs.md#upgradehistorytypedef)\]
 - `NextToken`: `str`
 
 ## GetUpgradeStatusResponseTypeDef
@@ -931,10 +900,8 @@ from mypy_boto3_es.type_defs import GetUpgradeStatusResponseTypeDef
 
 Optional fields:
 
-- `UpgradeStep`:
-  [UpgradeStep](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#upgradestep)
-- `StepStatus`:
-  [UpgradeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#upgradestatus)
+- `UpgradeStep`: [UpgradeStep](./literals.md#upgradestep)
+- `StepStatus`: [UpgradeStatus](./literals.md#upgradestatus)
 - `UpgradeName`: `str`
 
 ## InboundCrossClusterSearchConnectionStatusTypeDef
@@ -946,7 +913,7 @@ from mypy_boto3_es.type_defs import InboundCrossClusterSearchConnectionStatusTyp
 Optional fields:
 
 - `StatusCode`:
-  [InboundCrossClusterSearchConnectionStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#inboundcrossclustersearchconnectionstatuscode)
+  [InboundCrossClusterSearchConnectionStatusCode](./literals.md#inboundcrossclustersearchconnectionstatuscode)
 - `Message`: `str`
 
 ## InboundCrossClusterSearchConnectionTypeDef
@@ -958,12 +925,12 @@ from mypy_boto3_es.type_defs import InboundCrossClusterSearchConnectionTypeDef
 Optional fields:
 
 - `SourceDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - `DestinationDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - `CrossClusterSearchConnectionId`: `str`
 - `ConnectionStatus`:
-  [InboundCrossClusterSearchConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#inboundcrossclustersearchconnectionstatustypedef)
+  [InboundCrossClusterSearchConnectionStatusTypeDef](./type_defs.md#inboundcrossclustersearchconnectionstatustypedef)
 
 ## InstanceCountLimitsTypeDef
 
@@ -985,7 +952,7 @@ from mypy_boto3_es.type_defs import InstanceLimitsTypeDef
 Optional fields:
 
 - `InstanceCountLimits`:
-  [InstanceCountLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#instancecountlimitstypedef)
+  [InstanceCountLimitsTypeDef](./type_defs.md#instancecountlimitstypedef)
 
 ## LimitsTypeDef
 
@@ -996,11 +963,10 @@ from mypy_boto3_es.type_defs import LimitsTypeDef
 Optional fields:
 
 - `StorageTypes`:
-  `List`\[[StorageTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#storagetypetypedef)\]
-- `InstanceLimits`:
-  [InstanceLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#instancelimitstypedef)
+  `List`\[[StorageTypeTypeDef](./type_defs.md#storagetypetypedef)\]
+- `InstanceLimits`: [InstanceLimitsTypeDef](./type_defs.md#instancelimitstypedef)
 - `AdditionalLimits`:
-  `List`\[[AdditionalLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#additionallimittypedef)\]
+  `List`\[[AdditionalLimitTypeDef](./type_defs.md#additionallimittypedef)\]
 
 ## ListDomainNamesResponseTypeDef
 
@@ -1010,8 +976,7 @@ from mypy_boto3_es.type_defs import ListDomainNamesResponseTypeDef
 
 Optional fields:
 
-- `DomainNames`:
-  `List`\[[DomainInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininfotypedef)\]
+- `DomainNames`: `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
 
 ## ListDomainsForPackageResponseTypeDef
 
@@ -1022,7 +987,7 @@ from mypy_boto3_es.type_defs import ListDomainsForPackageResponseTypeDef
 Optional fields:
 
 - `DomainPackageDetailsList`:
-  `List`\[[DomainPackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainpackagedetailstypedef)\]
+  `List`\[[DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)\]
 - `NextToken`: `str`
 
 ## ListElasticsearchInstanceTypesResponseTypeDef
@@ -1034,7 +999,7 @@ from mypy_boto3_es.type_defs import ListElasticsearchInstanceTypesResponseTypeDe
 Optional fields:
 
 - `ElasticsearchInstanceTypes`:
-  `List`\[[ESPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#espartitioninstancetype)\]
+  `List`\[[ESPartitionInstanceType](./literals.md#espartitioninstancetype)\]
 - `NextToken`: `str`
 
 ## ListElasticsearchVersionsResponseTypeDef
@@ -1057,7 +1022,7 @@ from mypy_boto3_es.type_defs import ListPackagesForDomainResponseTypeDef
 Optional fields:
 
 - `DomainPackageDetailsList`:
-  `List`\[[DomainPackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domainpackagedetailstypedef)\]
+  `List`\[[DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsResponseTypeDef
@@ -1068,8 +1033,7 @@ from mypy_boto3_es.type_defs import ListTagsResponseTypeDef
 
 Optional fields:
 
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LogPublishingOptionTypeDef
 
@@ -1090,11 +1054,9 @@ from mypy_boto3_es.type_defs import LogPublishingOptionsStatusTypeDef
 
 Optional fields:
 
-- `Options`:
-  `Dict`\[[LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#logtype),
-  [LogPublishingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#logpublishingoptiontypedef)\]
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Options`: `Dict`\[[LogType](./literals.md#logtype),
+  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## MasterUserOptionsTypeDef
 
@@ -1117,9 +1079,8 @@ from mypy_boto3_es.type_defs import NodeToNodeEncryptionOptionsStatusTypeDef
 Required fields:
 
 - `Options`:
-  [NodeToNodeEncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#nodetonodeencryptionoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## NodeToNodeEncryptionOptionsTypeDef
 
@@ -1141,8 +1102,7 @@ Required fields:
 
 - `CreationDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `State`:
-  [OptionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#optionstate)
+- `State`: [OptionState](./literals.md#optionstate)
 
 Optional fields:
 
@@ -1158,7 +1118,7 @@ from mypy_boto3_es.type_defs import OutboundCrossClusterSearchConnectionStatusTy
 Optional fields:
 
 - `StatusCode`:
-  [OutboundCrossClusterSearchConnectionStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#outboundcrossclustersearchconnectionstatuscode)
+  [OutboundCrossClusterSearchConnectionStatusCode](./literals.md#outboundcrossclustersearchconnectionstatuscode)
 - `Message`: `str`
 
 ## OutboundCrossClusterSearchConnectionTypeDef
@@ -1170,13 +1130,13 @@ from mypy_boto3_es.type_defs import OutboundCrossClusterSearchConnectionTypeDef
 Optional fields:
 
 - `SourceDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - `DestinationDomainInfo`:
-  [DomainInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#domaininformationtypedef)
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
 - `CrossClusterSearchConnectionId`: `str`
 - `ConnectionAlias`: `str`
 - `ConnectionStatus`:
-  [OutboundCrossClusterSearchConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#outboundcrossclustersearchconnectionstatustypedef)
+  [OutboundCrossClusterSearchConnectionStatusTypeDef](./type_defs.md#outboundcrossclustersearchconnectionstatustypedef)
 
 ## PackageDetailsTypeDef
 
@@ -1188,15 +1148,14 @@ Optional fields:
 
 - `PackageID`: `str`
 - `PackageName`: `str`
-- `PackageType`: `Literal['TXT-DICTIONARY']`
+- `PackageType`: `Literal['TXT-DICTIONARY']` (see
+  [PackageType](./literals.md#packagetype))
 - `PackageDescription`: `str`
-- `PackageStatus`:
-  [PackageStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#packagestatus)
+- `PackageStatus`: [PackageStatus](./literals.md#packagestatus)
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `AvailablePackageVersion`: `str`
-- `ErrorDetails`:
-  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#errordetailstypedef)
+- `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
 ## PackageSourceTypeDef
 
@@ -1264,7 +1223,7 @@ from mypy_boto3_es.type_defs import RejectInboundCrossClusterSearchConnectionRes
 Optional fields:
 
 - `CrossClusterSearchConnection`:
-  [InboundCrossClusterSearchConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#inboundcrossclustersearchconnectiontypedef)
+  [InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)
 
 ## ReservedElasticsearchInstanceOfferingTypeDef
 
@@ -1276,15 +1235,15 @@ Optional fields:
 
 - `ReservedElasticsearchInstanceOfferingId`: `str`
 - `ElasticsearchInstanceType`:
-  [ESPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#espartitioninstancetype)
+  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
 - `Duration`: `int`
 - `FixedPrice`: `float`
 - `UsagePrice`: `float`
 - `CurrencyCode`: `str`
 - `PaymentOption`:
-  [ReservedElasticsearchInstancePaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#reservedelasticsearchinstancepaymentoption)
+  [ReservedElasticsearchInstancePaymentOption](./literals.md#reservedelasticsearchinstancepaymentoption)
 - `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#recurringchargetypedef)\]
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
 ## ReservedElasticsearchInstanceTypeDef
 
@@ -1298,7 +1257,7 @@ Optional fields:
 - `ReservedElasticsearchInstanceId`: `str`
 - `ReservedElasticsearchInstanceOfferingId`: `str`
 - `ElasticsearchInstanceType`:
-  [ESPartitionInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#espartitioninstancetype)
+  [ESPartitionInstanceType](./literals.md#espartitioninstancetype)
 - `StartTime`: `datetime`
 - `Duration`: `int`
 - `FixedPrice`: `float`
@@ -1307,14 +1266,14 @@ Optional fields:
 - `ElasticsearchInstanceCount`: `int`
 - `State`: `str`
 - `PaymentOption`:
-  [ReservedElasticsearchInstancePaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#reservedelasticsearchinstancepaymentoption)
+  [ReservedElasticsearchInstancePaymentOption](./literals.md#reservedelasticsearchinstancepaymentoption)
 - `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#recurringchargetypedef)\]
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ResponseMetadata
+from mypy_boto3_es.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1345,8 +1304,7 @@ from mypy_boto3_es.type_defs import SAMLOptionsInputTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
-- `Idp`:
-  [SAMLIdpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#samlidptypedef)
+- `Idp`: [SAMLIdpTypeDef](./type_defs.md#samlidptypedef)
 - `MasterUserName`: `str`
 - `MasterBackendRole`: `str`
 - `SubjectKey`: `str`
@@ -1362,13 +1320,12 @@ from mypy_boto3_es.type_defs import SAMLOptionsOutputTypeDef
 Required fields:
 
 - `Enabled`: `bool`
-- `Idp`:
-  [SAMLIdpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#samlidptypedef)
+- `Idp`: [SAMLIdpTypeDef](./type_defs.md#samlidptypedef)
 - `SubjectKey`: `str`
 - `RolesKey`: `str`
 - `SessionTimeoutMinutes`: `int`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ScheduledAutoTuneDetailsTypeDef
 
@@ -1380,10 +1337,10 @@ Optional fields:
 
 - `Date`: `datetime`
 - `ActionType`:
-  [ScheduledAutoTuneActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#scheduledautotuneactiontype)
+  [ScheduledAutoTuneActionType](./literals.md#scheduledautotuneactiontype)
 - `Action`: `str`
 - `Severity`:
-  [ScheduledAutoTuneSeverityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#scheduledautotuneseveritytype)
+  [ScheduledAutoTuneSeverityType](./literals.md#scheduledautotuneseveritytype)
 
 ## ServiceSoftwareOptionsTypeDef
 
@@ -1397,8 +1354,7 @@ Optional fields:
 - `NewVersion`: `str`
 - `UpdateAvailable`: `bool`
 - `Cancellable`: `bool`
-- `UpdateStatus`:
-  [DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#deploymentstatus)
+- `UpdateStatus`: [DeploymentStatus](./literals.md#deploymentstatus)
 - `Description`: `str`
 - `AutomatedUpdateDate`: `datetime`
 - `OptionalDeployment`: `bool`
@@ -1411,10 +1367,8 @@ from mypy_boto3_es.type_defs import SnapshotOptionsStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [SnapshotOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#snapshotoptionstypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Options`: [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## SnapshotOptionsTypeDef
 
@@ -1435,7 +1389,7 @@ from mypy_boto3_es.type_defs import StartElasticsearchServiceSoftwareUpdateRespo
 Optional fields:
 
 - `ServiceSoftwareOptions`:
-  [ServiceSoftwareOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#servicesoftwareoptionstypedef)
+  [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
 
 ## StorageTypeLimitTypeDef
 
@@ -1459,7 +1413,7 @@ Optional fields:
 - `StorageTypeName`: `str`
 - `StorageSubTypeName`: `str`
 - `StorageTypeLimits`:
-  `List`\[[StorageTypeLimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#storagetypelimittypedef)\]
+  `List`\[[StorageTypeLimitTypeDef](./type_defs.md#storagetypelimittypedef)\]
 
 ## TagTypeDef
 
@@ -1481,7 +1435,7 @@ from mypy_boto3_es.type_defs import UpdateElasticsearchDomainConfigResponseTypeD
 Required fields:
 
 - `DomainConfig`:
-  [ElasticsearchDomainConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#elasticsearchdomainconfigtypedef)
+  [ElasticsearchDomainConfigTypeDef](./type_defs.md#elasticsearchdomainconfigtypedef)
 
 ## UpdatePackageResponseTypeDef
 
@@ -1491,8 +1445,7 @@ from mypy_boto3_es.type_defs import UpdatePackageResponseTypeDef
 
 Optional fields:
 
-- `PackageDetails`:
-  [PackageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#packagedetailstypedef)
+- `PackageDetails`: [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
 
 ## UpgradeElasticsearchDomainResponseTypeDef
 
@@ -1516,10 +1469,9 @@ Optional fields:
 
 - `UpgradeName`: `str`
 - `StartTimestamp`: `datetime`
-- `UpgradeStatus`:
-  [UpgradeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#upgradestatus)
+- `UpgradeStatus`: [UpgradeStatus](./literals.md#upgradestatus)
 - `StepsList`:
-  `List`\[[UpgradeStepItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#upgradestepitemtypedef)\]
+  `List`\[[UpgradeStepItemTypeDef](./type_defs.md#upgradestepitemtypedef)\]
 
 ## UpgradeStepItemTypeDef
 
@@ -1529,10 +1481,8 @@ from mypy_boto3_es.type_defs import UpgradeStepItemTypeDef
 
 Optional fields:
 
-- `UpgradeStep`:
-  [UpgradeStep](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#upgradestep)
-- `UpgradeStepStatus`:
-  [UpgradeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/literals.html#upgradestatus)
+- `UpgradeStep`: [UpgradeStep](./literals.md#upgradestep)
+- `UpgradeStepStatus`: [UpgradeStatus](./literals.md#upgradestatus)
 - `Issues`: `List`\[`str`\]
 - `ProgressPercent`: `float`
 
@@ -1544,10 +1494,8 @@ from mypy_boto3_es.type_defs import VPCDerivedInfoStatusTypeDef
 
 Required fields:
 
-- `Options`:
-  [VPCDerivedInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#vpcderivedinfotypedef)
-- `Status`:
-  [OptionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_es/type_defs.html#optionstatustypedef)
+- `Options`: [VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef)
+- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
 ## VPCDerivedInfoTypeDef
 

@@ -1,7 +1,6 @@
 # KinesisAnalyticsClient for boto3 KinesisAnalytics module
 
-> [Index](../README.md) > [KinesisAnalytics](./README.md) >
-> KinesisAnalyticsClient
+> [Index](..) > [KinesisAnalytics](.) > KinesisAnalyticsClient
 
 Auto-generated documentation for
 [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
@@ -95,7 +94,7 @@ Arguments:
 - `ApplicationName`: `str` *(required)*
 - `CurrentApplicationVersionId`: `int` *(required)*
 - `CloudWatchLoggingOption`:
-  [CloudWatchLoggingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#cloudwatchloggingoptiontypedef)
+  [CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -112,9 +111,7 @@ Arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `CurrentApplicationVersionId`: `int` *(required)*
-- `Input`:
-  [InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#inputtypedef)
-  *(required)*
+- `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -133,7 +130,7 @@ Arguments:
 - `CurrentApplicationVersionId`: `int` *(required)*
 - `InputId`: `str` *(required)*
 - `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#inputprocessingconfigurationtypedef)
+  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -150,9 +147,7 @@ Arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `CurrentApplicationVersionId`: `int` *(required)*
-- `Output`:
-  [OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#outputtypedef)
-  *(required)*
+- `Output`: [OutputTypeDef](./type_defs.md#outputtypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -170,7 +165,7 @@ Arguments:
 - `ApplicationName`: `str` *(required)*
 - `CurrentApplicationVersionId`: `int` *(required)*
 - `ReferenceDataSource`:
-  [ReferenceDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#referencedatasourcetypedef)
+  [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -200,18 +195,15 @@ Arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `ApplicationDescription`: `str`
-- `Inputs`:
-  `List`\[[InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#inputtypedef)\]
-- `Outputs`:
-  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#outputtypedef)\]
+- `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `CloudWatchLoggingOptions`:
-  `List`\[[CloudWatchLoggingOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#cloudwatchloggingoptiontypedef)\]
+  `List`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
 - `ApplicationCode`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#createapplicationresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### delete_application
 
@@ -308,7 +300,7 @@ Arguments:
 - `ApplicationName`: `str` *(required)*
 
 Returns
-[DescribeApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#describeapplicationresponsetypedef).
+[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
 ### discover_input_schema
 
@@ -323,14 +315,14 @@ Arguments:
 - `ResourceARN`: `str`
 - `RoleARN`: `str`
 - `InputStartingPositionConfiguration`:
-  [InputStartingPositionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#inputstartingpositionconfigurationtypedef)
+  [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
 - `S3Configuration`:
-  [S3ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#s3configurationtypedef)
+  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
 - `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#inputprocessingconfigurationtypedef)
+  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
 
 Returns
-[DiscoverInputSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#discoverinputschemaresponsetypedef).
+[DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef).
 
 ### generate_presigned_url
 
@@ -363,7 +355,7 @@ Arguments:
 - `ExclusiveStartApplicationName`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#listapplicationsresponsetypedef).
+[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -378,7 +370,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_application
 
@@ -392,7 +384,7 @@ Arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `InputConfigurations`:
-  `List`\[[InputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#inputconfigurationtypedef)\]
+  `List`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -421,9 +413,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -454,7 +444,7 @@ Arguments:
 - `ApplicationName`: `str` *(required)*
 - `CurrentApplicationVersionId`: `int` *(required)*
 - `ApplicationUpdate`:
-  [ApplicationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalytics/type_defs.html#applicationupdatetypedef)
+  [ApplicationUpdateTypeDef](./type_defs.md#applicationupdatetypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

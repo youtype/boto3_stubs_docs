@@ -1,6 +1,6 @@
 # Literals for boto3 SimpleDB module
 
-> [Index](../README.md) > [SimpleDB](./README.md) > Literals
+> [Index](..) > [SimpleDB](.) > Literals
 
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)

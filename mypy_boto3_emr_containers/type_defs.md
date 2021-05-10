@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 EMRContainers module
 
-> [Index](../README.md) > [EMRContainers](./README.md) > Structures
+> [Index](..) > [EMRContainers](.) > Typed dictionaries
 
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
@@ -70,9 +70,9 @@ from mypy_boto3_emr_containers.type_defs import ConfigurationOverridesTypeDef
 Optional fields:
 
 - `applicationConfiguration`:
-  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationtypedef)\]
+  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `monitoringConfiguration`:
-  [MonitoringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#monitoringconfigurationtypedef)
+  [MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef)
 
 ## ConfigurationTypeDef
 
@@ -88,7 +88,7 @@ Optional fields:
 
 - `properties`: `Dict`\[`str`, `str`\]
 - `configurations`:
-  `List`\[[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationtypedef)\]
+  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 ## ContainerInfoTypeDef
 
@@ -98,8 +98,7 @@ from mypy_boto3_emr_containers.type_defs import ContainerInfoTypeDef
 
 Optional fields:
 
-- `eksInfo`:
-  [EksInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#eksinfotypedef)
+- `eksInfo`: [EksInfoTypeDef](./type_defs.md#eksinfotypedef)
 
 ## ContainerProviderTypeDef
 
@@ -109,13 +108,13 @@ from mypy_boto3_emr_containers.type_defs import ContainerProviderTypeDef
 
 Required fields:
 
-- `type`: `Literal['EKS']`
+- `type`: `Literal['EKS']` (see
+  [ContainerProviderType](./literals.md#containerprovidertype))
 - `id`: `str`
 
 Optional fields:
 
-- `info`:
-  [ContainerInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#containerinfotypedef)
+- `info`: [ContainerInfoTypeDef](./type_defs.md#containerinfotypedef)
 
 ## CreateManagedEndpointResponseTypeDef
 
@@ -171,8 +170,7 @@ from mypy_boto3_emr_containers.type_defs import DescribeJobRunResponseTypeDef
 
 Optional fields:
 
-- `jobRun`:
-  [JobRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#jobruntypedef)
+- `jobRun`: [JobRunTypeDef](./type_defs.md#jobruntypedef)
 
 ## DescribeManagedEndpointResponseTypeDef
 
@@ -182,8 +180,7 @@ from mypy_boto3_emr_containers.type_defs import DescribeManagedEndpointResponseT
 
 Optional fields:
 
-- `endpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#endpointtypedef)
+- `endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 
 ## DescribeVirtualClusterResponseTypeDef
 
@@ -193,8 +190,7 @@ from mypy_boto3_emr_containers.type_defs import DescribeVirtualClusterResponseTy
 
 Optional fields:
 
-- `virtualCluster`:
-  [VirtualClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#virtualclustertypedef)
+- `virtualCluster`: [VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)
 
 ## EksInfoTypeDef
 
@@ -219,13 +215,12 @@ Optional fields:
 - `arn`: `str`
 - `virtualClusterId`: `str`
 - `type`: `str`
-- `state`:
-  [EndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#endpointstate)
+- `state`: [EndpointState](./literals.md#endpointstate)
 - `releaseLabel`: `str`
 - `executionRoleArn`: `str`
 - `certificateArn`: `str`
 - `configurationOverrides`:
-  [ConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationoverridestypedef)
+  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `serverUrl`: `str`
 - `createdAt`: `datetime`
 - `securityGroup`: `str`
@@ -241,7 +236,7 @@ from mypy_boto3_emr_containers.type_defs import JobDriverTypeDef
 Optional fields:
 
 - `sparkSubmitJobDriver`:
-  [SparkSubmitJobDriverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#sparksubmitjobdrivertypedef)
+  [SparkSubmitJobDriverTypeDef](./type_defs.md#sparksubmitjobdrivertypedef)
 
 ## JobRunTypeDef
 
@@ -255,21 +250,18 @@ Optional fields:
 - `name`: `str`
 - `virtualClusterId`: `str`
 - `arn`: `str`
-- `state`:
-  [JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#jobrunstate)
+- `state`: [JobRunState](./literals.md#jobrunstate)
 - `clientToken`: `str`
 - `executionRoleArn`: `str`
 - `releaseLabel`: `str`
 - `configurationOverrides`:
-  [ConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationoverridestypedef)
-- `jobDriver`:
-  [JobDriverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#jobdrivertypedef)
+  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
+- `jobDriver`: [JobDriverTypeDef](./type_defs.md#jobdrivertypedef)
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 - `finishedAt`: `datetime`
 - `stateDetails`: `str`
-- `failureReason`:
-  [FailureReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#failurereason)
+- `failureReason`: [FailureReason](./literals.md#failurereason)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## ListJobRunsResponseTypeDef
@@ -280,8 +272,7 @@ from mypy_boto3_emr_containers.type_defs import ListJobRunsResponseTypeDef
 
 Optional fields:
 
-- `jobRuns`:
-  `List`\[[JobRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#jobruntypedef)\]
+- `jobRuns`: `List`\[[JobRunTypeDef](./type_defs.md#jobruntypedef)\]
 - `nextToken`: `str`
 
 ## ListManagedEndpointsResponseTypeDef
@@ -292,8 +283,7 @@ from mypy_boto3_emr_containers.type_defs import ListManagedEndpointsResponseType
 
 Optional fields:
 
-- `endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#endpointtypedef)\]
+- `endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -315,7 +305,7 @@ from mypy_boto3_emr_containers.type_defs import ListVirtualClustersResponseTypeD
 Optional fields:
 
 - `virtualClusters`:
-  `List`\[[VirtualClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#virtualclustertypedef)\]
+  `List`\[[VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)\]
 - `nextToken`: `str`
 
 ## MonitoringConfigurationTypeDef
@@ -326,12 +316,11 @@ from mypy_boto3_emr_containers.type_defs import MonitoringConfigurationTypeDef
 
 Optional fields:
 
-- `persistentAppUI`:
-  [PersistentAppUI](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#persistentappui)
+- `persistentAppUI`: [PersistentAppUI](./literals.md#persistentappui)
 - `cloudWatchMonitoringConfiguration`:
-  [CloudWatchMonitoringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#cloudwatchmonitoringconfigurationtypedef)
+  [CloudWatchMonitoringConfigurationTypeDef](./type_defs.md#cloudwatchmonitoringconfigurationtypedef)
 - `s3MonitoringConfiguration`:
-  [S3MonitoringConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#s3monitoringconfigurationtypedef)
+  [S3MonitoringConfigurationTypeDef](./type_defs.md#s3monitoringconfigurationtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -394,9 +383,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `arn`: `str`
-- `state`:
-  [VirtualClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#virtualclusterstate)
+- `state`: [VirtualClusterState](./literals.md#virtualclusterstate)
 - `containerProvider`:
-  [ContainerProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#containerprovidertypedef)
+  [ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef)
 - `createdAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]

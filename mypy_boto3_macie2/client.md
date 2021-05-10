@@ -1,6 +1,6 @@
 # Macie2Client for boto3 Macie2 module
 
-> [Index](../README.md) > [Macie2](./README.md) > Macie2Client
+> [Index](..) > [Macie2](.) > Macie2Client
 
 Auto-generated documentation for
 [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
@@ -139,7 +139,7 @@ Arguments:
 - `ids`: `List`\[`str`\]
 
 Returns
-[BatchGetCustomDataIdentifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#batchgetcustomdataidentifiersresponsetypedef).
+[BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef).
 
 ### can_paginate
 
@@ -164,23 +164,20 @@ Boto3 documentation:
 Arguments:
 
 - `clientToken`: `str` *(required)*
-- `jobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobtype)
-  *(required)*
+- `jobType`: [JobType](./literals.md#jobtype) *(required)*
 - `name`: `str` *(required)*
 - `s3JobDefinition`:
-  [S3JobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#s3jobdefinitiontypedef)
-  *(required)*
+  [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef) *(required)*
 - `customDataIdentifierIds`: `List`\[`str`\]
 - `description`: `str`
 - `initialRun`: `bool`
 - `samplingPercentage`: `int`
 - `scheduleFrequency`:
-  [JobScheduleFrequencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#jobschedulefrequencytypedef)
+  [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateClassificationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#createclassificationjobresponsetypedef).
+[CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef).
 
 ### create_custom_data_identifier
 
@@ -202,7 +199,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCustomDataIdentifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#createcustomdataidentifierresponsetypedef).
+[CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef).
 
 ### create_findings_filter
 
@@ -213,12 +210,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `action`:
-  [FindingsFilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingsfilteraction)
+- `action`: [FindingsFilterAction](./literals.md#findingsfilteraction)
   *(required)*
 - `findingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
-  *(required)*
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) *(required)*
 - `name`: `str` *(required)*
 - `clientToken`: `str`
 - `description`: `str`
@@ -226,7 +221,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFindingsFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#createfindingsfilterresponsetypedef).
+[CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef).
 
 ### create_invitations
 
@@ -242,7 +237,7 @@ Arguments:
 - `message`: `str`
 
 Returns
-[CreateInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#createinvitationsresponsetypedef).
+[CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef).
 
 ### create_member
 
@@ -253,13 +248,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `account`:
-  [AccountDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#accountdetailtypedef)
+- `account`: [AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)
   *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMemberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#creatememberresponsetypedef).
+[CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef).
 
 ### create_sample_findings
 
@@ -270,8 +264,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `findingTypes`:
-  `List`\[[FindingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingtype)\]
+- `findingTypes`: `List`\[[FindingType](./literals.md#findingtype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -287,7 +280,7 @@ Arguments:
 - `accountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#declineinvitationsresponsetypedef).
+[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
 ### delete_custom_data_identifier
 
@@ -328,7 +321,7 @@ Arguments:
 - `accountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#deleteinvitationsresponsetypedef).
+[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
 ### delete_member
 
@@ -353,14 +346,14 @@ Boto3 documentation:
 Arguments:
 
 - `criteria`: `Dict`\[`str`,
-  [BucketCriteriaAdditionalPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketcriteriaadditionalpropertiestypedef)\]
+  [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortCriteria`:
-  [BucketSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#bucketsortcriteriatypedef)
+  [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
 
 Returns
-[DescribeBucketsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#describebucketsresponsetypedef).
+[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef).
 
 ### describe_classification_job
 
@@ -375,7 +368,7 @@ Arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeClassificationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#describeclassificationjobresponsetypedef).
+[DescribeClassificationJobResponseTypeDef](./type_defs.md#describeclassificationjobresponsetypedef).
 
 ### describe_organization_configuration
 
@@ -386,7 +379,7 @@ Boto3 documentation:
 [Macie2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
 
 Returns
-[DescribeOrganizationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#describeorganizationconfigurationresponsetypedef).
+[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
 ### disable_macie
 
@@ -455,9 +448,8 @@ Arguments:
 
 - `clientToken`: `str`
 - `findingPublishingFrequency`:
-  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingpublishingfrequency)
-- `status`:
-  [MacieStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#maciestatus)
+  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
+- `status`: [MacieStatus](./literals.md#maciestatus)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -500,7 +492,7 @@ Boto3 documentation:
 [Macie2.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account)
 
 Returns
-[GetAdministratorAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getadministratoraccountresponsetypedef).
+[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
 
 ### get_bucket_statistics
 
@@ -514,7 +506,7 @@ Arguments:
 - `accountId`: `str`
 
 Returns
-[GetBucketStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getbucketstatisticsresponsetypedef).
+[GetBucketStatisticsResponseTypeDef](./type_defs.md#getbucketstatisticsresponsetypedef).
 
 ### get_classification_export_configuration
 
@@ -525,7 +517,7 @@ Boto3 documentation:
 [Macie2.Client.get_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
 
 Returns
-[GetClassificationExportConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getclassificationexportconfigurationresponsetypedef).
+[GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef).
 
 ### get_custom_data_identifier
 
@@ -540,7 +532,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[GetCustomDataIdentifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getcustomdataidentifierresponsetypedef).
+[GetCustomDataIdentifierResponseTypeDef](./type_defs.md#getcustomdataidentifierresponsetypedef).
 
 ### get_finding_statistics
 
@@ -551,17 +543,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `groupBy`:
-  [GroupBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#groupby)
-  *(required)*
+- `groupBy`: [GroupBy](./literals.md#groupby) *(required)*
 - `findingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 - `size`: `int`
 - `sortCriteria`:
-  [FindingStatisticsSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingstatisticssortcriteriatypedef)
+  [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
 
 Returns
-[GetFindingStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getfindingstatisticsresponsetypedef).
+[GetFindingStatisticsResponseTypeDef](./type_defs.md#getfindingstatisticsresponsetypedef).
 
 ### get_findings
 
@@ -573,11 +563,10 @@ Boto3 documentation:
 Arguments:
 
 - `findingIds`: `List`\[`str`\] *(required)*
-- `sortCriteria`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sortcriteriatypedef)
+- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[GetFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getfindingsresponsetypedef).
+[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
 
 ### get_findings_filter
 
@@ -591,7 +580,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[GetFindingsFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getfindingsfilterresponsetypedef).
+[GetFindingsFilterResponseTypeDef](./type_defs.md#getfindingsfilterresponsetypedef).
 
 ### get_findings_publication_configuration
 
@@ -602,7 +591,7 @@ Boto3 documentation:
 [Macie2.Client.get_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
 
 Returns
-[GetFindingsPublicationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getfindingspublicationconfigurationresponsetypedef).
+[GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef).
 
 ### get_invitations_count
 
@@ -612,7 +601,7 @@ Boto3 documentation:
 [Macie2.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getinvitationscountresponsetypedef).
+[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
 
 ### get_macie_session
 
@@ -622,7 +611,7 @@ Boto3 documentation:
 [Macie2.Client.get_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session)
 
 Returns
-[GetMacieSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getmaciesessionresponsetypedef).
+[GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef).
 
 ### get_master_account
 
@@ -632,7 +621,7 @@ Boto3 documentation:
 [Macie2.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account)
 
 Returns
-[GetMasterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getmasteraccountresponsetypedef).
+[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
 
 ### get_member
 
@@ -645,8 +634,7 @@ Arguments:
 
 - `id`: `str` *(required)*
 
-Returns
-[GetMemberResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getmemberresponsetypedef).
+Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
 
 ### get_usage_statistics
 
@@ -658,16 +646,15 @@ Boto3 documentation:
 Arguments:
 
 - `filterBy`:
-  `List`\[[UsageStatisticsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagestatisticsfiltertypedef)\]
+  `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortBy`:
-  [UsageStatisticsSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#usagestatisticssortbytypedef)
-- `timeRange`:
-  [TimeRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#timerange)
+  [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
+- `timeRange`: [TimeRange](./literals.md#timerange)
 
 Returns
-[GetUsageStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getusagestatisticsresponsetypedef).
+[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
 
 ### get_usage_totals
 
@@ -681,7 +668,7 @@ Arguments:
 - `timeRange`: `str`
 
 Returns
-[GetUsageTotalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#getusagetotalsresponsetypedef).
+[GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef).
 
 ### list_classification_jobs
 
@@ -693,14 +680,14 @@ Boto3 documentation:
 Arguments:
 
 - `filterCriteria`:
-  [ListJobsFilterCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobsfiltercriteriatypedef)
+  [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortCriteria`:
-  [ListJobsSortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listjobssortcriteriatypedef)
+  [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
 
 Returns
-[ListClassificationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listclassificationjobsresponsetypedef).
+[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef).
 
 ### list_custom_data_identifiers
 
@@ -716,7 +703,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListCustomDataIdentifiersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listcustomdataidentifiersresponsetypedef).
+[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef).
 
 ### list_findings
 
@@ -728,14 +715,13 @@ Boto3 documentation:
 Arguments:
 
 - `findingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `sortCriteria`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#sortcriteriatypedef)
+- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listfindingsresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_findings_filters
 
@@ -750,7 +736,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListFindingsFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listfindingsfiltersresponsetypedef).
+[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef).
 
 ### list_invitations
 
@@ -765,7 +751,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listinvitationsresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_members
 
@@ -781,7 +767,7 @@ Arguments:
 - `onlyAssociated`: `str`
 
 Returns
-[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listmembersresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
@@ -797,7 +783,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listorganizationadminaccountsresponsetypedef).
+[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -811,7 +797,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_classification_export_configuration
 
@@ -824,11 +810,11 @@ Boto3 documentation:
 Arguments:
 
 - `configuration`:
-  [ClassificationExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#classificationexportconfigurationtypedef)
+  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
   *(required)*
 
 Returns
-[PutClassificationExportConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#putclassificationexportconfigurationresponsetypedef).
+[PutClassificationExportConfigurationResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponsetypedef).
 
 ### put_findings_publication_configuration
 
@@ -842,7 +828,7 @@ Arguments:
 
 - `clientToken`: `str`
 - `securityHubConfiguration`:
-  [SecurityHubConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#securityhubconfigurationtypedef)
+  [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -877,7 +863,7 @@ Arguments:
 - `maximumMatchDistance`: `int`
 
 Returns
-[TestCustomDataIdentifierResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#testcustomdataidentifierresponsetypedef).
+[TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef).
 
 ### untag_resource
 
@@ -903,9 +889,7 @@ Boto3 documentation:
 Arguments:
 
 - `jobId`: `str` *(required)*
-- `jobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#jobstatus)
-  *(required)*
+- `jobStatus`: [JobStatus](./literals.md#jobstatus) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -919,16 +903,15 @@ Boto3 documentation:
 Arguments:
 
 - `id`: `str` *(required)*
-- `action`:
-  [FindingsFilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingsfilteraction)
+- `action`: [FindingsFilterAction](./literals.md#findingsfilteraction)
 - `description`: `str`
 - `findingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#findingcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 - `name`: `str`
 - `position`: `int`
 
 Returns
-[UpdateFindingsFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/type_defs.html#updatefindingsfilterresponsetypedef).
+[UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef).
 
 ### update_macie_session
 
@@ -940,9 +923,8 @@ Boto3 documentation:
 Arguments:
 
 - `findingPublishingFrequency`:
-  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#findingpublishingfrequency)
-- `status`:
-  [MacieStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#maciestatus)
+  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
+- `status`: [MacieStatus](./literals.md#maciestatus)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -956,9 +938,7 @@ Boto3 documentation:
 Arguments:
 
 - `id`: `str` *(required)*
-- `status`:
-  [MacieStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie2/literals.html#maciestatus)
-  *(required)*
+- `status`: [MacieStatus](./literals.md#maciestatus) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

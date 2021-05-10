@@ -1,7 +1,6 @@
 # CodeGuruProfilerClient for boto3 CodeGuruProfiler module
 
-> [Index](../README.md) > [CodeGuruProfiler](./README.md) >
-> CodeGuruProfilerClient
+> [Index](..) > [CodeGuruProfiler](.) > CodeGuruProfilerClient
 
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
@@ -89,13 +88,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `channels`:
-  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#channeltypedef)\]
+- `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
   *(required)*
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[AddNotificationChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#addnotificationchannelsresponsetypedef).
+[AddNotificationChannelsResponseTypeDef](./type_defs.md#addnotificationchannelsresponsetypedef).
 
 ### batch_get_frame_metric_data
 
@@ -110,14 +108,13 @@ Arguments:
 - `profilingGroupName`: `str` *(required)*
 - `endTime`: `datetime`
 - `frameMetrics`:
-  `List`\[[FrameMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#framemetrictypedef)\]
+  `List`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
 - `period`: `str`
 - `startTime`: `datetime`
-- `targetResolution`:
-  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
+- `targetResolution`: [AggregationPeriod](./literals.md#aggregationperiod)
 
 Returns
-[BatchGetFrameMetricDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#batchgetframemetricdataresponsetypedef).
+[BatchGetFrameMetricDataResponseTypeDef](./type_defs.md#batchgetframemetricdataresponsetypedef).
 
 ### can_paginate
 
@@ -143,12 +140,10 @@ Arguments:
 
 - `profilingGroupName`: `str` *(required)*
 - `fleetInstanceId`: `str`
-- `metadata`:
-  `Dict`\[[MetadataField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#metadatafield),
-  `str`\]
+- `metadata`: `Dict`\[[MetadataField](./literals.md#metadatafield), `str`\]
 
 Returns
-[ConfigureAgentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#configureagentresponsetypedef).
+[ConfigureAgentResponseTypeDef](./type_defs.md#configureagentresponsetypedef).
 
 ### create_profiling_group
 
@@ -163,13 +158,12 @@ Arguments:
 - `clientToken`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `agentOrchestrationConfig`:
-  [AgentOrchestrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#agentorchestrationconfigtypedef)
-- `computePlatform`:
-  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#computeplatform)
+  [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
+- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProfilingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#createprofilinggroupresponsetypedef).
+[CreateProfilingGroupResponseTypeDef](./type_defs.md#createprofilinggroupresponsetypedef).
 
 ### delete_profiling_group
 
@@ -198,7 +192,7 @@ Arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[DescribeProfilingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#describeprofilinggroupresponsetypedef).
+[DescribeProfilingGroupResponseTypeDef](./type_defs.md#describeprofilinggroupresponsetypedef).
 
 ### generate_presigned_url
 
@@ -232,7 +226,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[GetFindingsReportAccountSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getfindingsreportaccountsummaryresponsetypedef).
+[GetFindingsReportAccountSummaryResponseTypeDef](./type_defs.md#getfindingsreportaccountsummaryresponsetypedef).
 
 ### get_notification_configuration
 
@@ -247,7 +241,7 @@ Arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[GetNotificationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getnotificationconfigurationresponsetypedef).
+[GetNotificationConfigurationResponseTypeDef](./type_defs.md#getnotificationconfigurationresponsetypedef).
 
 ### get_policy
 
@@ -260,8 +254,7 @@ Arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
-Returns
-[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getpolicyresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_profile
 
@@ -279,8 +272,7 @@ Arguments:
 - `period`: `str`
 - `startTime`: `datetime`
 
-Returns
-[GetProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getprofileresponsetypedef).
+Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 
 ### get_recommendations
 
@@ -298,7 +290,7 @@ Arguments:
 - `locale`: `str`
 
 Returns
-[GetRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#getrecommendationsresponsetypedef).
+[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
 
 ### list_findings_reports
 
@@ -318,7 +310,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListFindingsReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listfindingsreportsresponsetypedef).
+[ListFindingsReportsResponseTypeDef](./type_defs.md#listfindingsreportsresponsetypedef).
 
 ### list_profile_times
 
@@ -331,18 +323,15 @@ Boto3 documentation:
 Arguments:
 
 - `endTime`: `datetime` *(required)*
-- `period`:
-  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
-  *(required)*
+- `period`: [AggregationPeriod](./literals.md#aggregationperiod) *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `startTime`: `datetime` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `orderBy`:
-  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#orderby)
+- `orderBy`: [OrderBy](./literals.md#orderby)
 
 Returns
-[ListProfileTimesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listprofiletimesresponsetypedef).
+[ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef).
 
 ### list_profiling_groups
 
@@ -359,7 +348,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProfilingGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listprofilinggroupsresponsetypedef).
+[ListProfilingGroupsResponseTypeDef](./type_defs.md#listprofilinggroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -374,7 +363,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### post_agent_profile
 
@@ -402,13 +391,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `actionGroup`: `Literal['agentPermissions']` *(required)*
+- `actionGroup`: `Literal['agentPermissions']` (see
+  [ActionGroup](./literals.md#actiongroup)) *(required)*
 - `principals`: `List`\[`str`\] *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `revisionId`: `str`
 
 Returns
-[PutPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#putpermissionresponsetypedef).
+[PutPermissionResponseTypeDef](./type_defs.md#putpermissionresponsetypedef).
 
 ### remove_notification_channel
 
@@ -424,7 +414,7 @@ Arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[RemoveNotificationChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#removenotificationchannelresponsetypedef).
+[RemoveNotificationChannelResponseTypeDef](./type_defs.md#removenotificationchannelresponsetypedef).
 
 ### remove_permission
 
@@ -436,12 +426,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `actionGroup`: `Literal['agentPermissions']` *(required)*
+- `actionGroup`: `Literal['agentPermissions']` (see
+  [ActionGroup](./literals.md#actiongroup)) *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `revisionId`: `str` *(required)*
 
 Returns
-[RemovePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#removepermissionresponsetypedef).
+[RemovePermissionResponseTypeDef](./type_defs.md#removepermissionresponsetypedef).
 
 ### submit_feedback
 
@@ -454,9 +445,7 @@ Arguments:
 
 - `anomalyInstanceId`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*
-- `type`:
-  [FeedbackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#feedbacktype)
-  *(required)*
+- `type`: [FeedbackType](./literals.md#feedbacktype) *(required)*
 - `comment`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -500,12 +489,12 @@ Boto3 documentation:
 Arguments:
 
 - `agentOrchestrationConfig`:
-  [AgentOrchestrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#agentorchestrationconfigtypedef)
+  [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
   *(required)*
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[UpdateProfilingGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#updateprofilinggroupresponsetypedef).
+[UpdateProfilingGroupResponseTypeDef](./type_defs.md#updateprofilinggroupresponsetypedef).
 
 ### get_paginator
 

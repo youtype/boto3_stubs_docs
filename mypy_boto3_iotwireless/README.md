@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTWireless module
 
-> [Index](../README.md) > IoTWireless
+> [Index](..) > IoTWireless
 
 Auto-generated documentation for
 [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)

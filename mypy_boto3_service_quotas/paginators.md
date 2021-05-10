@@ -1,6 +1,6 @@
 # Paginators for boto3 ServiceQuotas module
 
-> [Index](../README.md) > [ServiceQuotas](./README.md) > Paginators
+> [Index](..) > [ServiceQuotas](.) > Paginators
 
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
@@ -36,10 +36,10 @@ Arguments for `ListAWSDefaultServiceQuotasPaginator.paginate` method:
 
 - `ServiceCode`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAWSDefaultServiceQuotasPaginator.paginate` returns
-`Iterator`\[[ListAWSDefaultServiceQuotasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listawsdefaultservicequotasresponsetypedef)\].
+`Iterator`\[[ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef)\].
 
 ## ListRequestedServiceQuotaChangeHistoryPaginator
 
@@ -62,13 +62,12 @@ Arguments for `ListRequestedServiceQuotaChangeHistoryPaginator.paginate`
 method:
 
 - `ServiceCode`: `str`
-- `Status`:
-  [RequestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#requeststatus)
+- `Status`: [RequestStatus](./literals.md#requeststatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRequestedServiceQuotaChangeHistoryPaginator.paginate` returns
-`Iterator`\[[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listrequestedservicequotachangehistoryresponsetypedef)\].
+`Iterator`\[[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef)\].
 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaPaginator
 
@@ -92,13 +91,12 @@ method:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
-- `Status`:
-  [RequestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#requeststatus)
+- `Status`: [RequestStatus](./literals.md#requeststatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRequestedServiceQuotaChangeHistoryByQuotaPaginator.paginate` returns
-`Iterator`\[[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listrequestedservicequotachangehistorybyquotaresponsetypedef)\].
+`Iterator`\[[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef)\].
 
 ## ListServiceQuotaIncreaseRequestsInTemplatePaginator
 
@@ -123,10 +121,10 @@ method:
 - `ServiceCode`: `str`
 - `AwsRegion`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceQuotaIncreaseRequestsInTemplatePaginator.paginate` returns
-`Iterator`\[[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listservicequotaincreaserequestsintemplateresponsetypedef)\].
+`Iterator`\[[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef)\].
 
 ## ListServiceQuotasPaginator
 
@@ -149,10 +147,10 @@ Arguments for `ListServiceQuotasPaginator.paginate` method:
 
 - `ServiceCode`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceQuotasPaginator.paginate` returns
-`Iterator`\[[ListServiceQuotasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listservicequotasresponsetypedef)\].
+`Iterator`\[[ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef)\].
 
 ## ListServicesPaginator
 
@@ -174,7 +172,7 @@ Boto3 documentation:
 Arguments for `ListServicesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServicesPaginator.paginate` returns
-`Iterator`\[[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#listservicesresponsetypedef)\].
+`Iterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].

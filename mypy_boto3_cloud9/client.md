@@ -1,6 +1,6 @@
 # Cloud9Client for boto3 Cloud9 module
 
-> [Index](../README.md) > [Cloud9](./README.md) > Cloud9Client
+> [Index](..) > [Cloud9](.) > Cloud9Client
 
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
@@ -100,13 +100,11 @@ Arguments:
 - `imageId`: `str`
 - `automaticStopTimeMinutes`: `int`
 - `ownerArn`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#tagtypedef)\]
-- `connectionType`:
-  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#connectiontype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `connectionType`: [ConnectionType](./literals.md#connectiontype)
 
 Returns
-[CreateEnvironmentEC2ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#createenvironmentec2resulttypedef).
+[CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
 
 ### create_environment_membership
 
@@ -120,12 +118,11 @@ Arguments:
 
 - `environmentId`: `str` *(required)*
 - `userArn`: `str` *(required)*
-- `permissions`:
-  [MemberPermissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#memberpermissions)
+- `permissions`: [MemberPermissions](./literals.md#memberpermissions)
   *(required)*
 
 Returns
-[CreateEnvironmentMembershipResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#createenvironmentmembershipresulttypedef).
+[CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef).
 
 ### delete_environment
 
@@ -167,13 +164,12 @@ Arguments:
 
 - `userArn`: `str`
 - `environmentId`: `str`
-- `permissions`:
-  `List`\[[Permissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#permissions)\]
+- `permissions`: `List`\[[Permissions](./literals.md#permissions)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeEnvironmentMembershipsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentmembershipsresulttypedef).
+[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef).
 
 ### describe_environment_status
 
@@ -188,7 +184,7 @@ Arguments:
 - `environmentId`: `str` *(required)*
 
 Returns
-[DescribeEnvironmentStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentstatusresulttypedef).
+[DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef).
 
 ### describe_environments
 
@@ -202,7 +198,7 @@ Arguments:
 - `environmentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeEnvironmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentsresulttypedef).
+[DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef).
 
 ### generate_presigned_url
 
@@ -233,7 +229,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEnvironmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#listenvironmentsresulttypedef).
+[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef).
 
 ### list_tags_for_resource
 
@@ -247,7 +243,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -259,9 +255,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -306,12 +300,11 @@ Arguments:
 
 - `environmentId`: `str` *(required)*
 - `userArn`: `str` *(required)*
-- `permissions`:
-  [MemberPermissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#memberpermissions)
+- `permissions`: [MemberPermissions](./literals.md#memberpermissions)
   *(required)*
 
 Returns
-[UpdateEnvironmentMembershipResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#updateenvironmentmembershipresulttypedef).
+[UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef).
 
 ### get_paginator
 

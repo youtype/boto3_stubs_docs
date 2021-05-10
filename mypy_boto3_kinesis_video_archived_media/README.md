@@ -1,6 +1,6 @@
 # Type annotations for boto3 KinesisVideoArchivedMedia module
 
-> [Index](../README.md) > KinesisVideoArchivedMedia
+> [Index](..) > KinesisVideoArchivedMedia
 
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
@@ -117,5 +117,5 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelect
 - [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
 - [ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)

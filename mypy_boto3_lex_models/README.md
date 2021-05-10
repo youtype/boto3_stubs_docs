@@ -1,6 +1,6 @@
 # Type annotations for boto3 LexModelBuildingService module
 
-> [Index](../README.md) > LexModelBuildingService
+> [Index](..) > LexModelBuildingService
 
 Auto-generated documentation for
 [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)

@@ -1,6 +1,6 @@
 # Paginators for boto3 Amplify module
 
-> [Index](../README.md) > [Amplify](./README.md) > Paginators
+> [Index](..) > [Amplify](.) > Paginators
 
 Auto-generated documentation for
 [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
@@ -32,10 +32,10 @@ Boto3 documentation:
 Arguments for `ListAppsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listappsresulttypedef)\].
+`Iterator`\[[ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef)\].
 
 ## ListBranchesPaginator
 
@@ -57,10 +57,10 @@ Arguments for `ListBranchesPaginator.paginate` method:
 
 - `appId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBranchesPaginator.paginate` returns
-`Iterator`\[[ListBranchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listbranchesresulttypedef)\].
+`Iterator`\[[ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef)\].
 
 ## ListDomainAssociationsPaginator
 
@@ -83,10 +83,10 @@ Arguments for `ListDomainAssociationsPaginator.paginate` method:
 
 - `appId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainAssociationsPaginator.paginate` returns
-`Iterator`\[[ListDomainAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listdomainassociationsresulttypedef)\].
+`Iterator`\[[ListDomainAssociationsResultTypeDef](./type_defs.md#listdomainassociationsresulttypedef)\].
 
 ## ListJobsPaginator
 
@@ -109,7 +109,7 @@ Arguments for `ListJobsPaginator.paginate` method:
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplify/type_defs.html#listjobsresulttypedef)\].
+`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].

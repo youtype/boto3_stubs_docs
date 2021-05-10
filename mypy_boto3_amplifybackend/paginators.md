@@ -1,6 +1,6 @@
 # Paginators for boto3 AmplifyBackend module
 
-> [Index](../README.md) > [AmplifyBackend](./README.md) > Paginators
+> [Index](..) > [AmplifyBackend](.) > Paginators
 
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
@@ -35,7 +35,7 @@ Arguments for `ListBackendJobsPaginator.paginate` method:
 - `Operation`: `str`
 - `Status`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBackendJobsPaginator.paginate` returns
-`Iterator`\[[ListBackendJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amplifybackend/type_defs.html#listbackendjobsresponsetypedef)\].
+`Iterator`\[[ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef)\].

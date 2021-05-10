@@ -1,6 +1,6 @@
 # Literals for boto3 CodeArtifact module
 
-> [Index](../README.md) > [CodeArtifact](./README.md) > Literals
+> [Index](..) > [CodeArtifact](.) > Literals
 
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 IdentityStore module
 
-> [Index](../README.md) > IdentityStore
+> [Index](..) > IdentityStore
 
 Auto-generated documentation for
 [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)

@@ -1,6 +1,6 @@
 # Paginators for boto3 ServiceDiscovery module
 
-> [Index](../README.md) > [ServiceDiscovery](./README.md) > Paginators
+> [Index](..) > [ServiceDiscovery](.) > Paginators
 
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
@@ -34,10 +34,10 @@ Arguments for `ListInstancesPaginator.paginate` method:
 
 - `ServiceId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstancesPaginator.paginate` returns
-`Iterator`\[[ListInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listinstancesresponsetypedef)\].
+`Iterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
 
 ## ListNamespacesPaginator
 
@@ -59,12 +59,12 @@ Boto3 documentation:
 Arguments for `ListNamespacesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[NamespaceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacefiltertypedef)\]
+  `List`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNamespacesPaginator.paginate` returns
-`Iterator`\[[ListNamespacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listnamespacesresponsetypedef)\].
+`Iterator`\[[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef)\].
 
 ## ListOperationsPaginator
 
@@ -86,12 +86,12 @@ Boto3 documentation:
 Arguments for `ListOperationsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[OperationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#operationfiltertypedef)\]
+  `List`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOperationsPaginator.paginate` returns
-`Iterator`\[[ListOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listoperationsresponsetypedef)\].
+`Iterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
 
 ## ListServicesPaginator
 
@@ -113,9 +113,9 @@ Boto3 documentation:
 Arguments for `ListServicesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ServiceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicefiltertypedef)\]
+  `List`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServicesPaginator.paginate` returns
-`Iterator`\[[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#listservicesresponsetypedef)\].
+`Iterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].

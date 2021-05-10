@@ -1,6 +1,6 @@
 # Type annotations for boto3 Rekognition module
 
-> [Index](../README.md) > Rekognition
+> [Index](..) > Rekognition
 
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
@@ -290,7 +290,7 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [ProtectiveEquipmentSummaryTypeDef](./type_defs.md#protectiveequipmentsummarytypedef)
 - [RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef)
 - [RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 - [SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef)
 - [SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef)

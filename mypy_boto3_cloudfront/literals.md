@@ -1,6 +1,6 @@
 # Literals for boto3 CloudFront module
 
-> [Index](../README.md) > [CloudFront](./README.md) > Literals
+> [Index](..) > [CloudFront](.) > Literals
 
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)

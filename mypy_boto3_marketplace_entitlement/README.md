@@ -1,6 +1,6 @@
 # Type annotations for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > MarketplaceEntitlementService
+> [Index](..) > MarketplaceEntitlementService
 
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)

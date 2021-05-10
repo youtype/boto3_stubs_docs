@@ -1,6 +1,6 @@
 # Type annotations for boto3 ConnectContactLens module
 
-> [Index](../README.md) > ConnectContactLens
+> [Index](..) > ConnectContactLens
 
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)

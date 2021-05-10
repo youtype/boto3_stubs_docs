@@ -1,6 +1,6 @@
 # Literals for boto3 DocDB module
 
-> [Index](../README.md) > [DocDB](./README.md) > Literals
+> [Index](..) > [DocDB](.) > Literals
 
 Auto-generated documentation for
 [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)

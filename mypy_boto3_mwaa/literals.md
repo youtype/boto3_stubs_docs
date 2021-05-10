@@ -1,6 +1,6 @@
 # Literals for boto3 MWAA module
 
-> [Index](../README.md) > [MWAA](./README.md) > Literals
+> [Index](..) > [MWAA](.) > Literals
 
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)

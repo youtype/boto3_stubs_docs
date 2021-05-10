@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ResourceGroupsTaggingAPI module
 
-> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Structures
+> [Index](..) > [ResourceGroupsTaggingAPI](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
@@ -17,7 +17,7 @@ type annotations stubs module
   - [GetTagValuesOutputTypeDef](#gettagvaluesoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceTagMappingTypeDef](#resourcetagmappingtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SummaryTypeDef](#summarytypedef)
   - [TagFilterTypeDef](#tagfiltertypedef)
   - [TagResourcesOutputTypeDef](#tagresourcesoutputtypedef)
@@ -48,7 +48,7 @@ Required fields:
 - `S3Location`: `str`
 - `ErrorMessage`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FailureInfoTypeDef
 
@@ -59,8 +59,7 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import FailureInfoTypeDef
 Optional fields:
 
 - `StatusCode`: `int`
-- `ErrorCode`:
-  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/literals.html#errorcode)
+- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
 - `ErrorMessage`: `str`
 
 ## GetComplianceSummaryOutputTypeDef
@@ -71,11 +70,10 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOu
 
 Required fields:
 
-- `SummaryList`:
-  `List`\[[SummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#summarytypedef)\]
+- `SummaryList`: `List`\[[SummaryTypeDef](./type_defs.md#summarytypedef)\]
 - `PaginationToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetResourcesOutputTypeDef
 
@@ -87,9 +85,9 @@ Required fields:
 
 - `PaginationToken`: `str`
 - `ResourceTagMappingList`:
-  `List`\[[ResourceTagMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#resourcetagmappingtypedef)\]
+  `List`\[[ResourceTagMappingTypeDef](./type_defs.md#resourcetagmappingtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetTagKeysOutputTypeDef
 
@@ -102,7 +100,7 @@ Required fields:
 - `PaginationToken`: `str`
 - `TagKeys`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetTagValuesOutputTypeDef
 
@@ -115,7 +113,7 @@ Required fields:
 - `PaginationToken`: `str`
 - `TagValues`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -138,15 +136,14 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import ResourceTagMappingType
 Optional fields:
 
 - `ResourceARN`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ComplianceDetails`:
-  [ComplianceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#compliancedetailstypedef)
+  [ComplianceDetailsTypeDef](./type_defs.md#compliancedetailstypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import ResponseMetadata
+from mypy_boto3_resourcegroupstaggingapi.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -167,8 +164,7 @@ Optional fields:
 
 - `LastUpdated`: `str`
 - `TargetId`: `str`
-- `TargetIdType`:
-  [TargetIdType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/literals.html#targetidtype)
+- `TargetIdType`: [TargetIdType](./literals.md#targetidtype)
 - `Region`: `str`
 - `ResourceType`: `str`
 - `NonCompliantResources`: `int`
@@ -193,9 +189,9 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesOutputType
 Required fields:
 
 - `FailedResourcesMap`: `Dict`\[`str`,
-  [FailureInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#failureinfotypedef)\]
+  [FailureInfoTypeDef](./type_defs.md#failureinfotypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 
@@ -217,6 +213,6 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesOutputTy
 Required fields:
 
 - `FailedResourcesMap`: `Dict`\[`str`,
-  [FailureInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#failureinfotypedef)\]
+  [FailureInfoTypeDef](./type_defs.md#failureinfotypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

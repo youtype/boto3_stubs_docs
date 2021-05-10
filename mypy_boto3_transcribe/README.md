@@ -1,6 +1,6 @@
 # Type annotations for boto3 TranscribeService module
 
-> [Index](../README.md) > TranscribeService
+> [Index](..) > TranscribeService
 
 Auto-generated documentation for
 [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)

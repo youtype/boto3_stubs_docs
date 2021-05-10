@@ -1,6 +1,6 @@
 # Paginators for boto3 Braket module
 
-> [Index](../README.md) > [Braket](./README.md) > Paginators
+> [Index](..) > [Braket](.) > Paginators
 
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
@@ -30,13 +30,13 @@ Boto3 documentation:
 Arguments for `SearchDevicesPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[SearchDevicesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesfiltertypedef)\]
+  `List`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchDevicesPaginator.paginate` returns
-`Iterator`\[[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesresponsetypedef)\].
+`Iterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
 
 ## SearchQuantumTasksPaginator
 
@@ -58,10 +58,10 @@ Boto3 documentation:
 Arguments for `SearchQuantumTasksPaginator.paginate` method:
 
 - `filters`:
-  `List`\[[SearchQuantumTasksFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksfiltertypedef)\]
+  `List`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchQuantumTasksPaginator.paginate` returns
-`Iterator`\[[SearchQuantumTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksresponsetypedef)\].
+`Iterator`\[[SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef)\].

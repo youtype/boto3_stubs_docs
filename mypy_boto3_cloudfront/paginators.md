@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudFront module
 
-> [Index](../README.md) > [CloudFront](./README.md) > Paginators
+> [Index](..) > [CloudFront](.) > Paginators
 
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
@@ -33,10 +33,10 @@ Boto3 documentation:
 Arguments for `ListCloudFrontOriginAccessIdentitiesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCloudFrontOriginAccessIdentitiesPaginator.paginate` returns
-`Iterator`\[[ListCloudFrontOriginAccessIdentitiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listcloudfrontoriginaccessidentitiesresulttypedef)\].
+`Iterator`\[[ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef)\].
 
 ## ListDistributionsPaginator
 
@@ -58,10 +58,10 @@ Boto3 documentation:
 Arguments for `ListDistributionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDistributionsPaginator.paginate` returns
-`Iterator`\[[ListDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listdistributionsresulttypedef)\].
+`Iterator`\[[ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef)\].
 
 ## ListInvalidationsPaginator
 
@@ -84,10 +84,10 @@ Arguments for `ListInvalidationsPaginator.paginate` method:
 
 - `DistributionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvalidationsPaginator.paginate` returns
-`Iterator`\[[ListInvalidationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#listinvalidationsresulttypedef)\].
+`Iterator`\[[ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef)\].
 
 ## ListStreamingDistributionsPaginator
 
@@ -109,7 +109,7 @@ Boto3 documentation:
 Arguments for `ListStreamingDistributionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamingDistributionsPaginator.paginate` returns
-`Iterator`\[[ListStreamingDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudfront/type_defs.html#liststreamingdistributionsresulttypedef)\].
+`Iterator`\[[ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef)\].

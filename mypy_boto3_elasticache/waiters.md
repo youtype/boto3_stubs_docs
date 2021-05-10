@@ -1,6 +1,6 @@
 # Waiters for boto3 ElastiCache module
 
-> [Index](../README.md) > [ElastiCache](./README.md) > Waiters
+> [Index](..) > [ElastiCache](.) > Waiters
 
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
@@ -37,8 +37,7 @@ Arguments for `CacheClusterAvailableWaiter.wait` method:
 - `Marker`: `str`
 - `ShowCacheNodeInfo`: `bool`
 - `ShowCacheClustersNotInReplicationGroups`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## CacheClusterDeletedWaiter
 
@@ -64,8 +63,7 @@ Arguments for `CacheClusterDeletedWaiter.wait` method:
 - `Marker`: `str`
 - `ShowCacheNodeInfo`: `bool`
 - `ShowCacheClustersNotInReplicationGroups`: `bool`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ReplicationGroupAvailableWaiter
 
@@ -89,8 +87,7 @@ Arguments for `ReplicationGroupAvailableWaiter.wait` method:
 - `ReplicationGroupId`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ReplicationGroupDeletedWaiter
 
@@ -114,5 +111,4 @@ Arguments for `ReplicationGroupDeletedWaiter.wait` method:
 - `ReplicationGroupId`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

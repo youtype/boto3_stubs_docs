@@ -1,6 +1,6 @@
 # Type annotations for boto3 Lambda module
 
-> [Index](../README.md) > Lambda
+> [Index](..) > Lambda
 
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
@@ -282,7 +282,7 @@ from mypy_boto3_lambda.type_defs import AccountLimitTypeDef, ...
 - [PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef)
 - [PutFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponsetypedef)
 - [PutProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponsetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
 - [SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)
 - [TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef)

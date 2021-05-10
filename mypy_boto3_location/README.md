@@ -1,6 +1,6 @@
 # Type annotations for boto3 LocationService module
 
-> [Index](../README.md) > LocationService
+> [Index](..) > LocationService
 
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)

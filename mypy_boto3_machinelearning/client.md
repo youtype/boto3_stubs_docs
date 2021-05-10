@@ -1,6 +1,6 @@
 # MachineLearningClient for boto3 MachineLearning module
 
-> [Index](../README.md) > [MachineLearning](./README.md) > MachineLearningClient
+> [Index](..) > [MachineLearning](.) > MachineLearningClient
 
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
@@ -95,16 +95,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `ResourceId`: `str` *(required)*
-- `ResourceType`:
-  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
   *(required)*
 
-Returns
-[AddTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#addtagsoutputtypedef).
+Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 
 ### can_paginate
 
@@ -136,7 +132,7 @@ Arguments:
 - `BatchPredictionName`: `str`
 
 Returns
-[CreateBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createbatchpredictionoutputtypedef).
+[CreateBatchPredictionOutputTypeDef](./type_defs.md#createbatchpredictionoutputtypedef).
 
 ### create_data_source_from_rds
 
@@ -149,15 +145,13 @@ Boto3 documentation:
 Arguments:
 
 - `DataSourceId`: `str` *(required)*
-- `RDSData`:
-  [RDSDataSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#rdsdataspectypedef)
-  *(required)*
+- `RDSData`: [RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef) *(required)*
 - `RoleARN`: `str` *(required)*
 - `DataSourceName`: `str`
 - `ComputeStatistics`: `bool`
 
 Returns
-[CreateDataSourceFromRDSOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createdatasourcefromrdsoutputtypedef).
+[CreateDataSourceFromRDSOutputTypeDef](./type_defs.md#createdatasourcefromrdsoutputtypedef).
 
 ### create_data_source_from_redshift
 
@@ -170,15 +164,14 @@ Boto3 documentation:
 Arguments:
 
 - `DataSourceId`: `str` *(required)*
-- `DataSpec`:
-  [RedshiftDataSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#redshiftdataspectypedef)
+- `DataSpec`: [RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef)
   *(required)*
 - `RoleARN`: `str` *(required)*
 - `DataSourceName`: `str`
 - `ComputeStatistics`: `bool`
 
 Returns
-[CreateDataSourceFromRedshiftOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createdatasourcefromredshiftoutputtypedef).
+[CreateDataSourceFromRedshiftOutputTypeDef](./type_defs.md#createdatasourcefromredshiftoutputtypedef).
 
 ### create_data_source_from_s3
 
@@ -191,14 +184,12 @@ Boto3 documentation:
 Arguments:
 
 - `DataSourceId`: `str` *(required)*
-- `DataSpec`:
-  [S3DataSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#s3dataspectypedef)
-  *(required)*
+- `DataSpec`: [S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef) *(required)*
 - `DataSourceName`: `str`
 - `ComputeStatistics`: `bool`
 
 Returns
-[CreateDataSourceFromS3OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createdatasourcefroms3outputtypedef).
+[CreateDataSourceFromS3OutputTypeDef](./type_defs.md#createdatasourcefroms3outputtypedef).
 
 ### create_evaluation
 
@@ -216,7 +207,7 @@ Arguments:
 - `EvaluationName`: `str`
 
 Returns
-[CreateEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createevaluationoutputtypedef).
+[CreateEvaluationOutputTypeDef](./type_defs.md#createevaluationoutputtypedef).
 
 ### create_ml_model
 
@@ -228,9 +219,7 @@ Boto3 documentation:
 Arguments:
 
 - `MLModelId`: `str` *(required)*
-- `MLModelType`:
-  [MLModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodeltype)
-  *(required)*
+- `MLModelType`: [MLModelType](./literals.md#mlmodeltype) *(required)*
 - `TrainingDataSourceId`: `str` *(required)*
 - `MLModelName`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
@@ -238,7 +227,7 @@ Arguments:
 - `RecipeUri`: `str`
 
 Returns
-[CreateMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createmlmodeloutputtypedef).
+[CreateMLModelOutputTypeDef](./type_defs.md#createmlmodeloutputtypedef).
 
 ### create_realtime_endpoint
 
@@ -253,7 +242,7 @@ Arguments:
 - `MLModelId`: `str` *(required)*
 
 Returns
-[CreateRealtimeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#createrealtimeendpointoutputtypedef).
+[CreateRealtimeEndpointOutputTypeDef](./type_defs.md#createrealtimeendpointoutputtypedef).
 
 ### delete_batch_prediction
 
@@ -268,7 +257,7 @@ Arguments:
 - `BatchPredictionId`: `str` *(required)*
 
 Returns
-[DeleteBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletebatchpredictionoutputtypedef).
+[DeleteBatchPredictionOutputTypeDef](./type_defs.md#deletebatchpredictionoutputtypedef).
 
 ### delete_data_source
 
@@ -283,7 +272,7 @@ Arguments:
 - `DataSourceId`: `str` *(required)*
 
 Returns
-[DeleteDataSourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletedatasourceoutputtypedef).
+[DeleteDataSourceOutputTypeDef](./type_defs.md#deletedatasourceoutputtypedef).
 
 ### delete_evaluation
 
@@ -298,7 +287,7 @@ Arguments:
 - `EvaluationId`: `str` *(required)*
 
 Returns
-[DeleteEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deleteevaluationoutputtypedef).
+[DeleteEvaluationOutputTypeDef](./type_defs.md#deleteevaluationoutputtypedef).
 
 ### delete_ml_model
 
@@ -312,7 +301,7 @@ Arguments:
 - `MLModelId`: `str` *(required)*
 
 Returns
-[DeleteMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletemlmodeloutputtypedef).
+[DeleteMLModelOutputTypeDef](./type_defs.md#deletemlmodeloutputtypedef).
 
 ### delete_realtime_endpoint
 
@@ -327,7 +316,7 @@ Arguments:
 - `MLModelId`: `str` *(required)*
 
 Returns
-[DeleteRealtimeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deleterealtimeendpointoutputtypedef).
+[DeleteRealtimeEndpointOutputTypeDef](./type_defs.md#deleterealtimeendpointoutputtypedef).
 
 ### delete_tags
 
@@ -340,12 +329,10 @@ Arguments:
 
 - `TagKeys`: `List`\[`str`\] *(required)*
 - `ResourceId`: `str` *(required)*
-- `ResourceType`:
-  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
   *(required)*
 
-Returns
-[DeleteTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#deletetagsoutputtypedef).
+Returns [DeleteTagsOutputTypeDef](./type_defs.md#deletetagsoutputtypedef).
 
 ### describe_batch_predictions
 
@@ -358,7 +345,7 @@ Boto3 documentation:
 Arguments:
 
 - `FilterVariable`:
-  [BatchPredictionFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#batchpredictionfiltervariable)
+  [BatchPredictionFilterVariable](./literals.md#batchpredictionfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -366,13 +353,12 @@ Arguments:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[DescribeBatchPredictionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describebatchpredictionsoutputtypedef).
+[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef).
 
 ### describe_data_sources
 
@@ -385,7 +371,7 @@ Boto3 documentation:
 Arguments:
 
 - `FilterVariable`:
-  [DataSourceFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#datasourcefiltervariable)
+  [DataSourceFilterVariable](./literals.md#datasourcefiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -393,13 +379,12 @@ Arguments:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[DescribeDataSourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describedatasourcesoutputtypedef).
+[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef).
 
 ### describe_evaluations
 
@@ -412,7 +397,7 @@ Boto3 documentation:
 Arguments:
 
 - `FilterVariable`:
-  [EvaluationFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#evaluationfiltervariable)
+  [EvaluationFilterVariable](./literals.md#evaluationfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -420,13 +405,12 @@ Arguments:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[DescribeEvaluationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describeevaluationsoutputtypedef).
+[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef).
 
 ### describe_ml_models
 
@@ -438,8 +422,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `FilterVariable`:
-  [MLModelFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodelfiltervariable)
+- `FilterVariable`: [MLModelFilterVariable](./literals.md#mlmodelfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -447,13 +430,12 @@ Arguments:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[DescribeMLModelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describemlmodelsoutputtypedef).
+[DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef).
 
 ### describe_tags
 
@@ -465,12 +447,10 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `ResourceType`:
-  [TaggableResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#taggableresourcetype)
+- `ResourceType`: [TaggableResourceType](./literals.md#taggableresourcetype)
   *(required)*
 
-Returns
-[DescribeTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#describetagsoutputtypedef).
+Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
 ### generate_presigned_url
 
@@ -502,7 +482,7 @@ Arguments:
 - `BatchPredictionId`: `str` *(required)*
 
 Returns
-[GetBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getbatchpredictionoutputtypedef).
+[GetBatchPredictionOutputTypeDef](./type_defs.md#getbatchpredictionoutputtypedef).
 
 ### get_data_source
 
@@ -517,7 +497,7 @@ Arguments:
 - `Verbose`: `bool`
 
 Returns
-[GetDataSourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getdatasourceoutputtypedef).
+[GetDataSourceOutputTypeDef](./type_defs.md#getdatasourceoutputtypedef).
 
 ### get_evaluation
 
@@ -531,7 +511,7 @@ Arguments:
 - `EvaluationId`: `str` *(required)*
 
 Returns
-[GetEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getevaluationoutputtypedef).
+[GetEvaluationOutputTypeDef](./type_defs.md#getevaluationoutputtypedef).
 
 ### get_ml_model
 
@@ -545,8 +525,7 @@ Arguments:
 - `MLModelId`: `str` *(required)*
 - `Verbose`: `bool`
 
-Returns
-[GetMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#getmlmodeloutputtypedef).
+Returns [GetMLModelOutputTypeDef](./type_defs.md#getmlmodeloutputtypedef).
 
 ### predict
 
@@ -561,8 +540,7 @@ Arguments:
 - `Record`: `Dict`\[`str`, `str`\] *(required)*
 - `PredictEndpoint`: `str` *(required)*
 
-Returns
-[PredictOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#predictoutputtypedef).
+Returns [PredictOutputTypeDef](./type_defs.md#predictoutputtypedef).
 
 ### update_batch_prediction
 
@@ -578,7 +556,7 @@ Arguments:
 - `BatchPredictionName`: `str` *(required)*
 
 Returns
-[UpdateBatchPredictionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updatebatchpredictionoutputtypedef).
+[UpdateBatchPredictionOutputTypeDef](./type_defs.md#updatebatchpredictionoutputtypedef).
 
 ### update_data_source
 
@@ -594,7 +572,7 @@ Arguments:
 - `DataSourceName`: `str` *(required)*
 
 Returns
-[UpdateDataSourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updatedatasourceoutputtypedef).
+[UpdateDataSourceOutputTypeDef](./type_defs.md#updatedatasourceoutputtypedef).
 
 ### update_evaluation
 
@@ -610,7 +588,7 @@ Arguments:
 - `EvaluationName`: `str` *(required)*
 
 Returns
-[UpdateEvaluationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updateevaluationoutputtypedef).
+[UpdateEvaluationOutputTypeDef](./type_defs.md#updateevaluationoutputtypedef).
 
 ### update_ml_model
 
@@ -626,7 +604,7 @@ Arguments:
 - `ScoreThreshold`: `float`
 
 Returns
-[UpdateMLModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#updatemlmodeloutputtypedef).
+[UpdateMLModelOutputTypeDef](./type_defs.md#updatemlmodeloutputtypedef).
 
 ### get_paginator
 

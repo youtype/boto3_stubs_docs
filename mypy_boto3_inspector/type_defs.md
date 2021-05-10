@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Inspector module
 
-> [Index](../README.md) > [Inspector](./README.md) > Structures
+> [Index](..) > [Inspector](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
@@ -79,7 +79,7 @@ from mypy_boto3_inspector.type_defs import AddAttributesToFindingsResponseTypeDe
 Required fields:
 
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## AgentFilterTypeDef
 
@@ -89,10 +89,8 @@ from mypy_boto3_inspector.type_defs import AgentFilterTypeDef
 
 Required fields:
 
-- `agentHealths`:
-  `List`\[[AgentHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#agenthealth)\]
-- `agentHealthCodes`:
-  `List`\[[AgentHealthCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#agenthealthcode)\]
+- `agentHealths`: `List`\[[AgentHealth](./literals.md#agenthealth)\]
+- `agentHealthCodes`: `List`\[[AgentHealthCode](./literals.md#agenthealthcode)\]
 
 ## AgentPreviewTypeDef
 
@@ -108,8 +106,7 @@ Optional fields:
 
 - `hostname`: `str`
 - `autoScalingGroup`: `str`
-- `agentHealth`:
-  [AgentHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#agenthealth)
+- `agentHealth`: [AgentHealth](./literals.md#agenthealth)
 - `agentVersion`: `str`
 - `operatingSystem`: `str`
 - `kernelVersion`: `str`
@@ -125,12 +122,10 @@ Required fields:
 
 - `agentId`: `str`
 - `assessmentRunArn`: `str`
-- `agentHealth`:
-  [AgentHealth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#agenthealth)
-- `agentHealthCode`:
-  [AgentHealthCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#agenthealthcode)
+- `agentHealth`: [AgentHealth](./literals.md#agenthealth)
+- `agentHealthCode`: [AgentHealthCode](./literals.md#agenthealthcode)
 - `telemetryMetadata`:
-  `List`\[[TelemetryMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#telemetrymetadatatypedef)\]
+  `List`\[[TelemetryMetadataTypeDef](./type_defs.md#telemetrymetadatatypedef)\]
 
 Optional fields:
 
@@ -146,17 +141,14 @@ from mypy_boto3_inspector.type_defs import AssessmentRunFilterTypeDef
 Optional fields:
 
 - `namePattern`: `str`
-- `states`:
-  `List`\[[AssessmentRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#assessmentrunstate)\]
-- `durationRange`:
-  [DurationRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#durationrangetypedef)
+- `states`: `List`\[[AssessmentRunState](./literals.md#assessmentrunstate)\]
+- `durationRange`: [DurationRangeTypeDef](./type_defs.md#durationrangetypedef)
 - `rulesPackageArns`: `List`\[`str`\]
-- `startTimeRange`:
-  [TimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#timestamprangetypedef)
+- `startTimeRange`: [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - `completionTimeRange`:
-  [TimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#timestamprangetypedef)
+  [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - `stateChangeTimeRange`:
-  [TimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#timestamprangetypedef)
+  [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
 ## AssessmentRunNotificationTypeDef
 
@@ -167,8 +159,7 @@ from mypy_boto3_inspector.type_defs import AssessmentRunNotificationTypeDef
 Required fields:
 
 - `date`: `datetime`
-- `event`:
-  [InspectorEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#inspectorevent)
+- `event`: [InspectorEvent](./literals.md#inspectorevent)
 - `error`: `bool`
 
 Optional fields:
@@ -176,7 +167,7 @@ Optional fields:
 - `message`: `str`
 - `snsTopicArn`: `str`
 - `snsPublishStatusCode`:
-  [AssessmentRunNotificationSnsStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#assessmentrunnotificationsnsstatuscode)
+  [AssessmentRunNotificationSnsStatusCode](./literals.md#assessmentrunnotificationsnsstatuscode)
 
 ## AssessmentRunStateChangeTypeDef
 
@@ -187,8 +178,7 @@ from mypy_boto3_inspector.type_defs import AssessmentRunStateChangeTypeDef
 Required fields:
 
 - `stateChangedAt`: `datetime`
-- `state`:
-  [AssessmentRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#assessmentrunstate)
+- `state`: [AssessmentRunState](./literals.md#assessmentrunstate)
 
 ## AssessmentRunTypeDef
 
@@ -201,22 +191,19 @@ Required fields:
 - `arn`: `str`
 - `name`: `str`
 - `assessmentTemplateArn`: `str`
-- `state`:
-  [AssessmentRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#assessmentrunstate)
+- `state`: [AssessmentRunState](./literals.md#assessmentrunstate)
 - `durationInSeconds`: `int`
 - `rulesPackageArns`: `List`\[`str`\]
 - `userAttributesForFindings`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `createdAt`: `datetime`
 - `stateChangedAt`: `datetime`
 - `dataCollected`: `bool`
 - `stateChanges`:
-  `List`\[[AssessmentRunStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentrunstatechangetypedef)\]
+  `List`\[[AssessmentRunStateChangeTypeDef](./type_defs.md#assessmentrunstatechangetypedef)\]
 - `notifications`:
-  `List`\[[AssessmentRunNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentrunnotificationtypedef)\]
-- `findingCounts`:
-  `Dict`\[[Severity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#severity),
-  `int`\]
+  `List`\[[AssessmentRunNotificationTypeDef](./type_defs.md#assessmentrunnotificationtypedef)\]
+- `findingCounts`: `Dict`\[[Severity](./literals.md#severity), `int`\]
 
 Optional fields:
 
@@ -259,8 +246,7 @@ from mypy_boto3_inspector.type_defs import AssessmentTemplateFilterTypeDef
 Optional fields:
 
 - `namePattern`: `str`
-- `durationRange`:
-  [DurationRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#durationrangetypedef)
+- `durationRange`: [DurationRangeTypeDef](./type_defs.md#durationrangetypedef)
 - `rulesPackageArns`: `List`\[`str`\]
 
 ## AssessmentTemplateTypeDef
@@ -277,7 +263,7 @@ Required fields:
 - `durationInSeconds`: `int`
 - `rulesPackageArns`: `List`\[`str`\]
 - `userAttributesForFindings`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `assessmentRunCount`: `int`
 - `createdAt`: `datetime`
 
@@ -302,10 +288,9 @@ Optional fields:
 - `amiId`: `str`
 - `hostname`: `str`
 - `ipv4Addresses`: `List`\[`str`\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `networkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
 ## AttributeTypeDef
 
@@ -370,9 +355,9 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsResponseTypeDef
 Required fields:
 
 - `assessmentRuns`:
-  `List`\[[AssessmentRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentruntypedef)\]
+  `List`\[[AssessmentRunTypeDef](./type_defs.md#assessmentruntypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DescribeAssessmentTargetsResponseTypeDef
 
@@ -383,9 +368,9 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsResponseType
 Required fields:
 
 - `assessmentTargets`:
-  `List`\[[AssessmentTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttargettypedef)\]
+  `List`\[[AssessmentTargetTypeDef](./type_defs.md#assessmenttargettypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DescribeAssessmentTemplatesResponseTypeDef
 
@@ -396,9 +381,9 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesResponseTy
 Required fields:
 
 - `assessmentTemplates`:
-  `List`\[[AssessmentTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmenttemplatetypedef)\]
+  `List`\[[AssessmentTemplateTypeDef](./type_defs.md#assessmenttemplatetypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DescribeCrossAccountAccessRoleResponseTypeDef
 
@@ -421,9 +406,9 @@ from mypy_boto3_inspector.type_defs import DescribeExclusionsResponseTypeDef
 Required fields:
 
 - `exclusions`: `Dict`\[`str`,
-  [ExclusionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#exclusiontypedef)\]
+  [ExclusionTypeDef](./type_defs.md#exclusiontypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DescribeFindingsResponseTypeDef
 
@@ -433,10 +418,9 @@ from mypy_boto3_inspector.type_defs import DescribeFindingsResponseTypeDef
 
 Required fields:
 
-- `findings`:
-  `List`\[[FindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#findingtypedef)\]
+- `findings`: `List`\[[FindingTypeDef](./type_defs.md#findingtypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DescribeResourceGroupsResponseTypeDef
 
@@ -447,9 +431,9 @@ from mypy_boto3_inspector.type_defs import DescribeResourceGroupsResponseTypeDef
 Required fields:
 
 - `resourceGroups`:
-  `List`\[[ResourceGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#resourcegrouptypedef)\]
+  `List`\[[ResourceGroupTypeDef](./type_defs.md#resourcegrouptypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DescribeRulesPackagesResponseTypeDef
 
@@ -460,9 +444,9 @@ from mypy_boto3_inspector.type_defs import DescribeRulesPackagesResponseTypeDef
 Required fields:
 
 - `rulesPackages`:
-  `List`\[[RulesPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#rulespackagetypedef)\]
+  `List`\[[RulesPackageTypeDef](./type_defs.md#rulespackagetypedef)\]
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## DurationRangeTypeDef
 
@@ -483,8 +467,7 @@ from mypy_boto3_inspector.type_defs import EventSubscriptionTypeDef
 
 Required fields:
 
-- `event`:
-  [InspectorEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#inspectorevent)
+- `event`: [InspectorEvent](./literals.md#inspectorevent)
 - `subscribedAt`: `datetime`
 
 ## ExclusionPreviewTypeDef
@@ -498,13 +481,11 @@ Required fields:
 - `title`: `str`
 - `description`: `str`
 - `recommendation`: `str`
-- `scopes`:
-  `List`\[[ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#scopetypedef)\]
+- `scopes`: `List`\[[ScopeTypeDef](./type_defs.md#scopetypedef)\]
 
 Optional fields:
 
-- `attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## ExclusionTypeDef
 
@@ -518,13 +499,11 @@ Required fields:
 - `title`: `str`
 - `description`: `str`
 - `recommendation`: `str`
-- `scopes`:
-  `List`\[[ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#scopetypedef)\]
+- `scopes`: `List`\[[ScopeTypeDef](./type_defs.md#scopetypedef)\]
 
 Optional fields:
 
-- `attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## FailedItemDetailsTypeDef
 
@@ -534,8 +513,7 @@ from mypy_boto3_inspector.type_defs import FailedItemDetailsTypeDef
 
 Required fields:
 
-- `failureCode`:
-  [FailedItemErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#faileditemerrorcode)
+- `failureCode`: [FailedItemErrorCode](./literals.md#faileditemerrorcode)
 - `retryable`: `bool`
 
 ## FindingFilterTypeDef
@@ -549,15 +527,12 @@ Optional fields:
 - `agentIds`: `List`\[`str`\]
 - `autoScalingGroups`: `List`\[`str`\]
 - `ruleNames`: `List`\[`str`\]
-- `severities`:
-  `List`\[[Severity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#severity)\]
+- `severities`: `List`\[[Severity](./literals.md#severity)\]
 - `rulesPackageArns`: `List`\[`str`\]
-- `attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
-- `userAttributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `userAttributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `creationTimeRange`:
-  [TimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#timestamprangetypedef)
+  [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
 ## FindingTypeDef
 
@@ -568,10 +543,8 @@ from mypy_boto3_inspector.type_defs import FindingTypeDef
 Required fields:
 
 - `arn`: `str`
-- `attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
-- `userAttributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#attributetypedef)\]
+- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `userAttributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `createdAt`: `datetime`
 - `updatedAt`: `datetime`
 
@@ -580,16 +553,16 @@ Optional fields:
 - `schemaVersion`: `int`
 - `service`: `str`
 - `serviceAttributes`:
-  [InspectorServiceAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#inspectorserviceattributestypedef)
-- `assetType`: `Literal['ec2-instance']`
+  [InspectorServiceAttributesTypeDef](./type_defs.md#inspectorserviceattributestypedef)
+- `assetType`: `Literal['ec2-instance']` (see
+  [AssetType](./literals.md#assettype))
 - `assetAttributes`:
-  [AssetAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assetattributestypedef)
+  [AssetAttributesTypeDef](./type_defs.md#assetattributestypedef)
 - `id`: `str`
 - `title`: `str`
 - `description`: `str`
 - `recommendation`: `str`
-- `severity`:
-  [Severity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#severity)
+- `severity`: [Severity](./literals.md#severity)
 - `numericSeverity`: `float`
 - `confidence`: `int`
 - `indicatorOfCompromise`: `bool`
@@ -602,8 +575,7 @@ from mypy_boto3_inspector.type_defs import GetAssessmentReportResponseTypeDef
 
 Required fields:
 
-- `status`:
-  [ReportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#reportstatus)
+- `status`: [ReportStatus](./literals.md#reportstatus)
 
 Optional fields:
 
@@ -617,13 +589,12 @@ from mypy_boto3_inspector.type_defs import GetExclusionsPreviewResponseTypeDef
 
 Required fields:
 
-- `previewStatus`:
-  [PreviewStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#previewstatus)
+- `previewStatus`: [PreviewStatus](./literals.md#previewstatus)
 
 Optional fields:
 
 - `exclusionPreviews`:
-  `List`\[[ExclusionPreviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#exclusionpreviewtypedef)\]
+  `List`\[[ExclusionPreviewTypeDef](./type_defs.md#exclusionpreviewtypedef)\]
 - `nextToken`: `str`
 
 ## GetTelemetryMetadataResponseTypeDef
@@ -635,7 +606,7 @@ from mypy_boto3_inspector.type_defs import GetTelemetryMetadataResponseTypeDef
 Required fields:
 
 - `telemetryMetadata`:
-  `List`\[[TelemetryMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#telemetrymetadatatypedef)\]
+  `List`\[[TelemetryMetadataTypeDef](./type_defs.md#telemetrymetadatatypedef)\]
 
 ## InspectorServiceAttributesTypeDef
 
@@ -661,7 +632,7 @@ from mypy_boto3_inspector.type_defs import ListAssessmentRunAgentsResponseTypeDe
 Required fields:
 
 - `assessmentRunAgents`:
-  `List`\[[AssessmentRunAgentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#assessmentrunagenttypedef)\]
+  `List`\[[AssessmentRunAgentTypeDef](./type_defs.md#assessmentrunagenttypedef)\]
 
 Optional fields:
 
@@ -718,7 +689,7 @@ from mypy_boto3_inspector.type_defs import ListEventSubscriptionsResponseTypeDef
 Required fields:
 
 - `subscriptions`:
-  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#subscriptiontypedef)\]
+  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
 Optional fields:
 
@@ -774,8 +745,7 @@ from mypy_boto3_inspector.type_defs import ListTagsForResourceResponseTypeDef
 
 Required fields:
 
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NetworkInterfaceTypeDef
 
@@ -791,12 +761,12 @@ Optional fields:
 - `privateDnsName`: `str`
 - `privateIpAddress`: `str`
 - `privateIpAddresses`:
-  `List`\[[PrivateIpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#privateiptypedef)\]
+  `List`\[[PrivateIpTypeDef](./type_defs.md#privateiptypedef)\]
 - `publicDnsName`: `str`
 - `publicIp`: `str`
 - `ipv6Addresses`: `List`\[`str`\]
 - `securityGroups`:
-  `List`\[[SecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#securitygrouptypedef)\]
+  `List`\[[SecurityGroupTypeDef](./type_defs.md#securitygrouptypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -819,7 +789,7 @@ from mypy_boto3_inspector.type_defs import PreviewAgentsResponseTypeDef
 Required fields:
 
 - `agentPreviews`:
-  `List`\[[AgentPreviewTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#agentpreviewtypedef)\]
+  `List`\[[AgentPreviewTypeDef](./type_defs.md#agentpreviewtypedef)\]
 
 Optional fields:
 
@@ -845,7 +815,7 @@ from mypy_boto3_inspector.type_defs import RemoveAttributesFromFindingsResponseT
 Required fields:
 
 - `failedItems`: `Dict`\[`str`,
-  [FailedItemDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#faileditemdetailstypedef)\]
+  [FailedItemDetailsTypeDef](./type_defs.md#faileditemdetailstypedef)\]
 
 ## ResourceGroupTagTypeDef
 
@@ -871,7 +841,7 @@ Required fields:
 
 - `arn`: `str`
 - `tags`:
-  `List`\[[ResourceGroupTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#resourcegrouptagtypedef)\]
+  `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
 - `createdAt`: `datetime`
 
 ## RulesPackageTypeDef
@@ -899,8 +869,7 @@ from mypy_boto3_inspector.type_defs import ScopeTypeDef
 
 Optional fields:
 
-- `key`:
-  [ScopeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/literals.html#scopetype)
+- `key`: [ScopeType](./literals.md#scopetype)
 - `value`: `str`
 
 ## SecurityGroupTypeDef
@@ -935,7 +904,7 @@ Required fields:
 - `resourceArn`: `str`
 - `topicArn`: `str`
 - `eventSubscriptions`:
-  `List`\[[EventSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_inspector/type_defs.html#eventsubscriptiontypedef)\]
+  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
 
 ## TagTypeDef
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 Outposts module
 
-> [Index](../README.md) > Outposts
+> [Index](..) > Outposts
 
 Auto-generated documentation for
 [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
@@ -73,5 +73,5 @@ from mypy_boto3_outposts.type_defs import CreateOutpostOutputTypeDef, ...
 - [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [OutpostTypeDef](./type_defs.md#outposttypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SiteTypeDef](./type_defs.md#sitetypedef)

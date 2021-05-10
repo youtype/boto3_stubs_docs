@@ -1,6 +1,6 @@
 # WorkSpacesClient for boto3 WorkSpaces module
 
-> [Index](../README.md) > [WorkSpaces](./README.md) > WorkSpacesClient
+> [Index](..) > [WorkSpaces](.) > WorkSpacesClient
 
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
@@ -130,7 +130,7 @@ Arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[AssociateConnectionAliasResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#associateconnectionaliasresulttypedef).
+[AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef).
 
 ### associate_ip_groups
 
@@ -156,8 +156,7 @@ Boto3 documentation:
 Arguments:
 
 - `GroupId`: `str` *(required)*
-- `UserRules`:
-  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]
+- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -188,11 +187,10 @@ Arguments:
 - `SourceImageId`: `str` *(required)*
 - `SourceRegion`: `str` *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyWorkspaceImageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#copyworkspaceimageresulttypedef).
+[CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
 
 ### create_connection_alias
 
@@ -205,11 +203,10 @@ Boto3 documentation:
 Arguments:
 
 - `ConnectionString`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConnectionAliasResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createconnectionaliasresulttypedef).
+[CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
 
 ### create_ip_group
 
@@ -222,13 +219,11 @@ Arguments:
 
 - `GroupName`: `str` *(required)*
 - `GroupDesc`: `str`
-- `UserRules`:
-  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateIpGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createipgroupresulttypedef).
+[CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
 
 ### create_tags
 
@@ -240,9 +235,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -259,19 +252,15 @@ Arguments:
 - `BundleName`: `str` *(required)*
 - `BundleDescription`: `str` *(required)*
 - `ImageId`: `str` *(required)*
-- `ComputeType`:
-  [ComputeTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#computetypetypedef)
+- `ComputeType`: [ComputeTypeTypeDef](./type_defs.md#computetypetypedef)
   *(required)*
-- `UserStorage`:
-  [UserStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#userstoragetypedef)
+- `UserStorage`: [UserStorageTypeDef](./type_defs.md#userstoragetypedef)
   *(required)*
-- `RootStorage`:
-  [RootStorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rootstoragetypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+- `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkspaceBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createworkspacebundleresulttypedef).
+[CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
 
 ### create_workspaces
 
@@ -283,11 +272,11 @@ Boto3 documentation:
 Arguments:
 
 - `Workspaces`:
-  `List`\[[WorkspaceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacerequesttypedef)\]
+  `List`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
   *(required)*
 
 Returns
-[CreateWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#createworkspacesresulttypedef).
+[CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
 
 ### delete_connection_alias
 
@@ -380,7 +369,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
 
 Returns
-[DescribeAccountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeaccountresulttypedef).
+[DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
 
 ### describe_account_modifications
 
@@ -395,7 +384,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAccountModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeaccountmodificationsresulttypedef).
+[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef).
 
 ### describe_client_properties
 
@@ -410,7 +399,7 @@ Arguments:
 - `ResourceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeClientPropertiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeclientpropertiesresulttypedef).
+[DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
 
 ### describe_connection_alias_permissions
 
@@ -427,7 +416,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeConnectionAliasPermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeconnectionaliaspermissionsresulttypedef).
+[DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef).
 
 ### describe_connection_aliases
 
@@ -445,7 +434,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConnectionAliasesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeconnectionaliasesresulttypedef).
+[DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef).
 
 ### describe_ip_groups
 
@@ -461,7 +450,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeIpGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeipgroupsresulttypedef).
+[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef).
 
 ### describe_tags
 
@@ -474,8 +463,7 @@ Arguments:
 
 - `ResourceId`: `str` *(required)*
 
-Returns
-[DescribeTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describetagsresulttypedef).
+Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
 
 ### describe_workspace_bundles
 
@@ -492,7 +480,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspaceBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacebundlesresulttypedef).
+[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef).
 
 ### describe_workspace_directories
 
@@ -509,7 +497,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspaceDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacedirectoriesresulttypedef).
+[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef).
 
 ### describe_workspace_image_permissions
 
@@ -526,7 +514,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeWorkspaceImagePermissionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspaceimagepermissionsresulttypedef).
+[DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef).
 
 ### describe_workspace_images
 
@@ -539,13 +527,12 @@ Boto3 documentation:
 Arguments:
 
 - `ImageIds`: `List`\[`str`\]
-- `ImageType`:
-  [ImageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#imagetype)
+- `ImageType`: [ImageType](./literals.md#imagetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[DescribeWorkspaceImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspaceimagesresulttypedef).
+[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef).
 
 ### describe_workspace_snapshots
 
@@ -560,7 +547,7 @@ Arguments:
 - `WorkspaceId`: `str` *(required)*
 
 Returns
-[DescribeWorkspaceSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesnapshotsresulttypedef).
+[DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef).
 
 ### describe_workspaces
 
@@ -579,7 +566,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesresulttypedef).
+[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef).
 
 ### describe_workspaces_connection_status
 
@@ -595,7 +582,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspacesConnectionStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesconnectionstatusresulttypedef).
+[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef).
 
 ### disassociate_connection_alias
 
@@ -655,17 +642,15 @@ Arguments:
 
 - `Ec2ImageId`: `str` *(required)*
 - `IngestionProcess`:
-  [WorkspaceImageIngestionProcess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#workspaceimageingestionprocess)
+  [WorkspaceImageIngestionProcess](./literals.md#workspaceimageingestionprocess)
   *(required)*
 - `ImageName`: `str` *(required)*
 - `ImageDescription`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
-- `Applications`:
-  `List`\[[Application](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#application)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Applications`: `List`\[[Application](./literals.md#application)\]
 
 Returns
-[ImportWorkspaceImageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#importworkspaceimageresulttypedef).
+[ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
 
 ### list_available_management_cidr_ranges
 
@@ -682,7 +667,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAvailableManagementCidrRangesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#listavailablemanagementcidrrangesresulttypedef).
+[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef).
 
 ### migrate_workspace
 
@@ -697,7 +682,7 @@ Arguments:
 - `BundleId`: `str` *(required)*
 
 Returns
-[MigrateWorkspaceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#migrateworkspaceresulttypedef).
+[MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef).
 
 ### modify_account
 
@@ -708,7 +693,8 @@ Boto3 documentation:
 
 Arguments:
 
-- `DedicatedTenancySupport`: `Literal['ENABLED']`
+- `DedicatedTenancySupport`: `Literal['ENABLED']` (see
+  [DedicatedTenancySupportEnum](./literals.md#dedicatedtenancysupportenum))
 - `DedicatedTenancyManagementCidrRange`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -725,8 +711,7 @@ Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `ClientProperties`:
-  [ClientPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#clientpropertiestypedef)
-  *(required)*
+  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -742,7 +727,7 @@ Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `SelfservicePermissions`:
-  [SelfservicePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#selfservicepermissionstypedef)
+  [SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -759,7 +744,7 @@ Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `WorkspaceAccessProperties`:
-  [WorkspaceAccessPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspaceaccesspropertiestypedef)
+  [WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -776,7 +761,7 @@ Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `WorkspaceCreationProperties`:
-  [WorkspaceCreationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacecreationpropertiestypedef)
+  [WorkspaceCreationPropertiesTypeDef](./type_defs.md#workspacecreationpropertiestypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -793,7 +778,7 @@ Arguments:
 
 - `WorkspaceId`: `str` *(required)*
 - `WorkspaceProperties`:
-  [WorkspacePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#workspacepropertiestypedef)
+  [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -809,8 +794,7 @@ Boto3 documentation:
 Arguments:
 
 - `WorkspaceId`: `str` *(required)*
-- `WorkspaceState`:
-  [TargetWorkspaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#targetworkspacestate)
+- `WorkspaceState`: [TargetWorkspaceState](./literals.md#targetworkspacestate)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -825,11 +809,11 @@ Boto3 documentation:
 Arguments:
 
 - `RebootWorkspaceRequests`:
-  `List`\[[RebootRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebootrequesttypedef)\]
+  `List`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
   *(required)*
 
 Returns
-[RebootWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebootworkspacesresulttypedef).
+[RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef).
 
 ### rebuild_workspaces
 
@@ -841,11 +825,11 @@ Boto3 documentation:
 Arguments:
 
 - `RebuildWorkspaceRequests`:
-  `List`\[[RebuildRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebuildrequesttypedef)\]
+  `List`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
   *(required)*
 
 Returns
-[RebuildWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#rebuildworkspacesresulttypedef).
+[RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef).
 
 ### register_workspace_directory
 
@@ -861,10 +845,8 @@ Arguments:
 - `EnableWorkDocs`: `bool` *(required)*
 - `SubnetIds`: `List`\[`str`\]
 - `EnableSelfService`: `bool`
-- `Tenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#tenancy)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#tagtypedef)\]
+- `Tenancy`: [Tenancy](./literals.md#tenancy)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -905,11 +887,11 @@ Boto3 documentation:
 Arguments:
 
 - `StartWorkspaceRequests`:
-  `List`\[[StartRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#startrequesttypedef)\]
+  `List`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
   *(required)*
 
 Returns
-[StartWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#startworkspacesresulttypedef).
+[StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef).
 
 ### stop_workspaces
 
@@ -921,11 +903,10 @@ Boto3 documentation:
 Arguments:
 
 - `StopWorkspaceRequests`:
-  `List`\[[StopRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#stoprequesttypedef)\]
-  *(required)*
+  `List`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\] *(required)*
 
 Returns
-[StopWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#stopworkspacesresulttypedef).
+[StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
 
 ### terminate_workspaces
 
@@ -937,11 +918,11 @@ Boto3 documentation:
 Arguments:
 
 - `TerminateWorkspaceRequests`:
-  `List`\[[TerminateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#terminaterequesttypedef)\]
+  `List`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
   *(required)*
 
 Returns
-[TerminateWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#terminateworkspacesresulttypedef).
+[TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
 
 ### update_connection_alias_permission
 
@@ -955,7 +936,7 @@ Arguments:
 
 - `AliasId`: `str` *(required)*
 - `ConnectionAliasPermission`:
-  [ConnectionAliasPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#connectionaliaspermissiontypedef)
+  [ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -971,8 +952,7 @@ Boto3 documentation:
 Arguments:
 
 - `GroupId`: `str` *(required)*
-- `UserRules`:
-  `List`\[[IpRuleItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#ipruleitemtypedef)\]
+- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

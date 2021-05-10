@@ -1,6 +1,6 @@
 # TimestreamWriteClient for boto3 TimestreamWrite module
 
-> [Index](../README.md) > [TimestreamWrite](./README.md) > TimestreamWriteClient
+> [Index](..) > [TimestreamWrite](.) > TimestreamWriteClient
 
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
@@ -96,11 +96,10 @@ Arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#createdatabaseresponsetypedef).
+[CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef).
 
 ### create_table
 
@@ -114,12 +113,11 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `RetentionProperties`:
-  [RetentionPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#retentionpropertiestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
+  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#createtableresponsetypedef).
+[CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
 
 ### delete_database
 
@@ -157,7 +155,7 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 
 Returns
-[DescribeDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#describedatabaseresponsetypedef).
+[DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef).
 
 ### describe_endpoints
 
@@ -168,7 +166,7 @@ Boto3 documentation:
 [TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
 
 Returns
-[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#describeendpointsresponsetypedef).
+[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
 ### describe_table
 
@@ -183,7 +181,7 @@ Arguments:
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#describetableresponsetypedef).
+[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
 ### generate_presigned_url
 
@@ -215,7 +213,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#listdatabasesresponsetypedef).
+[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
 
 ### list_tables
 
@@ -230,8 +228,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#listtablesresponsetypedef).
+Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -246,7 +243,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -258,9 +255,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -291,7 +286,7 @@ Arguments:
 - `KmsKeyId`: `str` *(required)*
 
 Returns
-[UpdateDatabaseResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#updatedatabaseresponsetypedef).
+[UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef).
 
 ### update_table
 
@@ -305,11 +300,11 @@ Arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `RetentionProperties`:
-  [RetentionPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#retentionpropertiestypedef)
+  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
   *(required)*
 
 Returns
-[UpdateTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#updatetableresponsetypedef).
+[UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
 
 ### write_records
 
@@ -322,8 +317,5 @@ Arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `Records`:
-  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#recordtypedef)\]
-  *(required)*
-- `CommonAttributes`:
-  [RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#recordtypedef)
+- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\] *(required)*
+- `CommonAttributes`: [RecordTypeDef](./type_defs.md#recordtypedef)

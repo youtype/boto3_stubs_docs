@@ -1,6 +1,6 @@
 # Paginators for boto3 Chime module
 
-> [Index](../README.md) > [Chime](./README.md) > Paginators
+> [Index](..) > [Chime](.) > Paginators
 
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
@@ -32,10 +32,10 @@ Arguments for `ListAccountsPaginator.paginate` method:
 - `Name`: `str`
 - `UserEmail`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountsPaginator.paginate` returns
-`Iterator`\[[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listaccountsresponsetypedef)\].
+`Iterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].
 
 ## ListUsersPaginator
 
@@ -57,10 +57,9 @@ Arguments for `ListUsersPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `UserEmail`: `str`
-- `UserType`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#usertype)
+- `UserType`: [UserType](./literals.md#usertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersPaginator.paginate` returns
-`Iterator`\[[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#listusersresponsetypedef)\].
+`Iterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].

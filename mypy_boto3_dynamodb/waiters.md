@@ -1,6 +1,6 @@
 # Waiters for boto3 DynamoDB module
 
-> [Index](../README.md) > [DynamoDB](./README.md) > Waiters
+> [Index](..) > [DynamoDB](.) > Waiters
 
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
@@ -30,8 +30,7 @@ Boto3 documentation:
 Arguments for `TableExistsWaiter.wait` method:
 
 - `TableName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TableNotExistsWaiter
 
@@ -52,5 +51,4 @@ Boto3 documentation:
 Arguments for `TableNotExistsWaiter.wait` method:
 
 - `TableName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodb/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

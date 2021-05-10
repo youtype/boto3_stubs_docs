@@ -1,6 +1,6 @@
 # Type annotations for boto3 ConfigService module
 
-> [Index](../README.md) > ConfigService
+> [Index](..) > ConfigService
 
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)

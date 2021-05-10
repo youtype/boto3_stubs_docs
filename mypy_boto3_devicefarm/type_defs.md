@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DeviceFarm module
 
-> [Index](../README.md) > [DeviceFarm](./README.md) > Structures
+> [Index](..) > [DeviceFarm](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
@@ -133,15 +133,12 @@ from mypy_boto3_devicefarm.type_defs import AccountSettingsTypeDef
 Optional fields:
 
 - `awsAccountNumber`: `str`
-- `unmeteredDevices`:
-  `Dict`\[[DevicePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceplatform),
+- `unmeteredDevices`: `Dict`\[[DevicePlatform](./literals.md#deviceplatform),
   `int`\]
 - `unmeteredRemoteAccessDevices`:
-  `Dict`\[[DevicePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceplatform),
-  `int`\]
+  `Dict`\[[DevicePlatform](./literals.md#deviceplatform), `int`\]
 - `maxJobTimeoutMinutes`: `int`
-- `trialMinutes`:
-  [TrialMinutesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#trialminutestypedef)
+- `trialMinutes`: [TrialMinutesTypeDef](./type_defs.md#trialminutestypedef)
 - `maxSlots`: `Dict`\[`str`, `int`\]
 - `defaultJobTimeoutMinutes`: `int`
 - `skipAppResign`: `bool`
@@ -156,8 +153,7 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`:
-  [ArtifactType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#artifacttype)
+- `type`: [ArtifactType](./literals.md#artifacttype)
 - `extension`: `str`
 - `url`: `str`
 
@@ -197,8 +193,7 @@ from mypy_boto3_devicefarm.type_defs import CreateDevicePoolResultTypeDef
 
 Optional fields:
 
-- `devicePool`:
-  [DevicePoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicepooltypedef)
+- `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
 
 ## CreateInstanceProfileResultTypeDef
 
@@ -209,7 +204,7 @@ from mypy_boto3_devicefarm.type_defs import CreateInstanceProfileResultTypeDef
 Optional fields:
 
 - `instanceProfile`:
-  [InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#instanceprofiletypedef)
+  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
 ## CreateNetworkProfileResultTypeDef
 
@@ -219,8 +214,7 @@ from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileResultTypeDef
 
 Optional fields:
 
-- `networkProfile`:
-  [NetworkProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#networkprofiletypedef)
+- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## CreateProjectResultTypeDef
 
@@ -230,8 +224,7 @@ from mypy_boto3_devicefarm.type_defs import CreateProjectResultTypeDef
 
 Optional fields:
 
-- `project`:
-  [ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#projecttypedef)
+- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 
 ## CreateRemoteAccessSessionConfigurationTypeDef
 
@@ -241,8 +234,7 @@ from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionConfigurati
 
 Optional fields:
 
-- `billingMethod`:
-  [BillingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#billingmethod)
+- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
 - `vpceConfigurationArns`: `List`\[`str`\]
 
 ## CreateRemoteAccessSessionResultTypeDef
@@ -254,7 +246,7 @@ from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionResultTypeD
 Optional fields:
 
 - `remoteAccessSession`:
-  [RemoteAccessSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#remoteaccesssessiontypedef)
+  [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
 
 ## CreateTestGridProjectResultTypeDef
 
@@ -265,7 +257,7 @@ from mypy_boto3_devicefarm.type_defs import CreateTestGridProjectResultTypeDef
 Optional fields:
 
 - `testGridProject`:
-  [TestGridProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridprojecttypedef)
+  [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
 
 ## CreateTestGridUrlResultTypeDef
 
@@ -286,8 +278,7 @@ from mypy_boto3_devicefarm.type_defs import CreateUploadResultTypeDef
 
 Optional fields:
 
-- `upload`:
-  [UploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#uploadtypedef)
+- `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 
 ## CreateVPCEConfigurationResultTypeDef
 
@@ -298,7 +289,7 @@ from mypy_boto3_devicefarm.type_defs import CreateVPCEConfigurationResultTypeDef
 Optional fields:
 
 - `vpceConfiguration`:
-  [VPCEConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#vpceconfigurationtypedef)
+  [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
 
 ## CustomerArtifactPathsTypeDef
 
@@ -320,10 +311,8 @@ from mypy_boto3_devicefarm.type_defs import DeviceFilterTypeDef
 
 Optional fields:
 
-- `attribute`:
-  [DeviceFilterAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#devicefilterattribute)
-- `operator`:
-  [RuleOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#ruleoperator)
+- `attribute`: [DeviceFilterAttribute](./literals.md#devicefilterattribute)
+- `operator`: [RuleOperator](./literals.md#ruleoperator)
 - `values`: `List`\[`str`\]
 
 ## DeviceInstanceTypeDef
@@ -337,11 +326,10 @@ Optional fields:
 - `arn`: `str`
 - `deviceArn`: `str`
 - `labels`: `List`\[`str`\]
-- `status`:
-  [InstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#instancestatus)
+- `status`: [InstanceStatus](./literals.md#instancestatus)
 - `udid`: `str`
 - `instanceProfile`:
-  [InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#instanceprofiletypedef)
+  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
 ## DeviceMinutesTypeDef
 
@@ -363,11 +351,10 @@ from mypy_boto3_devicefarm.type_defs import DevicePoolCompatibilityResultTypeDef
 
 Optional fields:
 
-- `device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicetypedef)
+- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 - `compatible`: `bool`
 - `incompatibilityMessages`:
-  `List`\[[IncompatibilityMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#incompatibilitymessagetypedef)\]
+  `List`\[[IncompatibilityMessageTypeDef](./type_defs.md#incompatibilitymessagetypedef)\]
 
 ## DevicePoolTypeDef
 
@@ -380,10 +367,8 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
-- `type`:
-  [DevicePoolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#devicepooltype)
-- `rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#ruletypedef)\]
+- `type`: [DevicePoolType](./literals.md#devicepooltype)
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `maxDevices`: `int`
 
 ## DeviceSelectionConfigurationTypeDef
@@ -394,8 +379,7 @@ from mypy_boto3_devicefarm.type_defs import DeviceSelectionConfigurationTypeDef
 
 Required fields:
 
-- `filters`:
-  `List`\[[DeviceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicefiltertypedef)\]
+- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `maxDevices`: `int`
 
 ## DeviceSelectionResultTypeDef
@@ -406,8 +390,7 @@ from mypy_boto3_devicefarm.type_defs import DeviceSelectionResultTypeDef
 
 Optional fields:
 
-- `filters`:
-  `List`\[[DeviceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicefiltertypedef)\]
+- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `matchedDevicesCount`: `int`
 - `maxDevices`: `int`
 
@@ -424,15 +407,11 @@ Optional fields:
 - `manufacturer`: `str`
 - `model`: `str`
 - `modelId`: `str`
-- `formFactor`:
-  [DeviceFormFactor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceformfactor)
-- `platform`:
-  [DevicePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceplatform)
+- `formFactor`: [DeviceFormFactor](./literals.md#deviceformfactor)
+- `platform`: [DevicePlatform](./literals.md#deviceplatform)
 - `os`: `str`
-- `cpu`:
-  [CPUTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#cputypedef)
-- `resolution`:
-  [ResolutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#resolutiontypedef)
+- `cpu`: [CPUTypeDef](./type_defs.md#cputypedef)
+- `resolution`: [ResolutionTypeDef](./type_defs.md#resolutiontypedef)
 - `heapSize`: `int`
 - `memory`: `int`
 - `image`: `str`
@@ -443,9 +422,8 @@ Optional fields:
 - `fleetType`: `str`
 - `fleetName`: `str`
 - `instances`:
-  `List`\[[DeviceInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceinstancetypedef)\]
-- `availability`:
-  [DeviceAvailability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceavailability)
+  `List`\[[DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)\]
+- `availability`: [DeviceAvailability](./literals.md#deviceavailability)
 
 ## ExecutionConfigurationTypeDef
 
@@ -470,7 +448,7 @@ from mypy_boto3_devicefarm.type_defs import GetAccountSettingsResultTypeDef
 Optional fields:
 
 - `accountSettings`:
-  [AccountSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#accountsettingstypedef)
+  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
 
 ## GetDeviceInstanceResultTypeDef
 
@@ -480,8 +458,7 @@ from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceResultTypeDef
 
 Optional fields:
 
-- `deviceInstance`:
-  [DeviceInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceinstancetypedef)
+- `deviceInstance`: [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
 
 ## GetDevicePoolCompatibilityResultTypeDef
 
@@ -492,9 +469,9 @@ from mypy_boto3_devicefarm.type_defs import GetDevicePoolCompatibilityResultType
 Optional fields:
 
 - `compatibleDevices`:
-  `List`\[[DevicePoolCompatibilityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicepoolcompatibilityresulttypedef)\]
+  `List`\[[DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef)\]
 - `incompatibleDevices`:
-  `List`\[[DevicePoolCompatibilityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicepoolcompatibilityresulttypedef)\]
+  `List`\[[DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef)\]
 
 ## GetDevicePoolResultTypeDef
 
@@ -504,8 +481,7 @@ from mypy_boto3_devicefarm.type_defs import GetDevicePoolResultTypeDef
 
 Optional fields:
 
-- `devicePool`:
-  [DevicePoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicepooltypedef)
+- `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
 
 ## GetDeviceResultTypeDef
 
@@ -515,8 +491,7 @@ from mypy_boto3_devicefarm.type_defs import GetDeviceResultTypeDef
 
 Optional fields:
 
-- `device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicetypedef)
+- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 
 ## GetInstanceProfileResultTypeDef
 
@@ -527,7 +502,7 @@ from mypy_boto3_devicefarm.type_defs import GetInstanceProfileResultTypeDef
 Optional fields:
 
 - `instanceProfile`:
-  [InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#instanceprofiletypedef)
+  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
 ## GetJobResultTypeDef
 
@@ -537,8 +512,7 @@ from mypy_boto3_devicefarm.type_defs import GetJobResultTypeDef
 
 Optional fields:
 
-- `job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#jobtypedef)
+- `job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## GetNetworkProfileResultTypeDef
 
@@ -548,8 +522,7 @@ from mypy_boto3_devicefarm.type_defs import GetNetworkProfileResultTypeDef
 
 Optional fields:
 
-- `networkProfile`:
-  [NetworkProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#networkprofiletypedef)
+- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## GetOfferingStatusResultTypeDef
 
@@ -560,9 +533,9 @@ from mypy_boto3_devicefarm.type_defs import GetOfferingStatusResultTypeDef
 Optional fields:
 
 - `current`: `Dict`\[`str`,
-  [OfferingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringstatustypedef)\]
+  [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)\]
 - `nextPeriod`: `Dict`\[`str`,
-  [OfferingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringstatustypedef)\]
+  [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)\]
 - `nextToken`: `str`
 
 ## GetProjectResultTypeDef
@@ -573,8 +546,7 @@ from mypy_boto3_devicefarm.type_defs import GetProjectResultTypeDef
 
 Optional fields:
 
-- `project`:
-  [ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#projecttypedef)
+- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 
 ## GetRemoteAccessSessionResultTypeDef
 
@@ -585,7 +557,7 @@ from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionResultTypeDef
 Optional fields:
 
 - `remoteAccessSession`:
-  [RemoteAccessSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#remoteaccesssessiontypedef)
+  [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
 
 ## GetRunResultTypeDef
 
@@ -595,8 +567,7 @@ from mypy_boto3_devicefarm.type_defs import GetRunResultTypeDef
 
 Optional fields:
 
-- `run`:
-  [RunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#runtypedef)
+- `run`: [RunTypeDef](./type_defs.md#runtypedef)
 
 ## GetSuiteResultTypeDef
 
@@ -606,8 +577,7 @@ from mypy_boto3_devicefarm.type_defs import GetSuiteResultTypeDef
 
 Optional fields:
 
-- `suite`:
-  [SuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#suitetypedef)
+- `suite`: [SuiteTypeDef](./type_defs.md#suitetypedef)
 
 ## GetTestGridProjectResultTypeDef
 
@@ -618,7 +588,7 @@ from mypy_boto3_devicefarm.type_defs import GetTestGridProjectResultTypeDef
 Optional fields:
 
 - `testGridProject`:
-  [TestGridProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridprojecttypedef)
+  [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
 
 ## GetTestGridSessionResultTypeDef
 
@@ -629,7 +599,7 @@ from mypy_boto3_devicefarm.type_defs import GetTestGridSessionResultTypeDef
 Optional fields:
 
 - `testGridSession`:
-  [TestGridSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridsessiontypedef)
+  [TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)
 
 ## GetTestResultTypeDef
 
@@ -639,8 +609,7 @@ from mypy_boto3_devicefarm.type_defs import GetTestResultTypeDef
 
 Optional fields:
 
-- `test`:
-  [TestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testtypedef)
+- `test`: [TestTypeDef](./type_defs.md#testtypedef)
 
 ## GetUploadResultTypeDef
 
@@ -650,8 +619,7 @@ from mypy_boto3_devicefarm.type_defs import GetUploadResultTypeDef
 
 Optional fields:
 
-- `upload`:
-  [UploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#uploadtypedef)
+- `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 
 ## GetVPCEConfigurationResultTypeDef
 
@@ -662,7 +630,7 @@ from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationResultTypeDef
 Optional fields:
 
 - `vpceConfiguration`:
-  [VPCEConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#vpceconfigurationtypedef)
+  [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
 
 ## IncompatibilityMessageTypeDef
 
@@ -673,8 +641,7 @@ from mypy_boto3_devicefarm.type_defs import IncompatibilityMessageTypeDef
 Optional fields:
 
 - `message`: `str`
-- `type`:
-  [DeviceAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceattribute)
+- `type`: [DeviceAttribute](./literals.md#deviceattribute)
 
 ## InstallToRemoteAccessSessionResultTypeDef
 
@@ -684,8 +651,7 @@ from mypy_boto3_devicefarm.type_defs import InstallToRemoteAccessSessionResultTy
 
 Optional fields:
 
-- `appUpload`:
-  [UploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#uploadtypedef)
+- `appUpload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 
 ## InstanceProfileTypeDef
 
@@ -712,23 +678,17 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`:
-  [TestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testtype)
+- `type`: [TestType](./literals.md#testtype)
 - `created`: `datetime`
-- `status`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionstatus)
-- `result`:
-  [ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult)
+- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `result`: [ExecutionResult](./literals.md#executionresult)
 - `started`: `datetime`
 - `stopped`: `datetime`
-- `counters`:
-  [CountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#counterstypedef)
+- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
 - `message`: `str`
-- `device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicetypedef)
+- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 - `instanceArn`: `str`
-- `deviceMinutes`:
-  [DeviceMinutesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceminutestypedef)
+- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 - `videoEndpoint`: `str`
 - `videoCapture`: `bool`
 
@@ -740,8 +700,7 @@ from mypy_boto3_devicefarm.type_defs import ListArtifactsResultTypeDef
 
 Optional fields:
 
-- `artifacts`:
-  `List`\[[ArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#artifacttypedef)\]
+- `artifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `nextToken`: `str`
 
 ## ListDeviceInstancesResultTypeDef
@@ -753,7 +712,7 @@ from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesResultTypeDef
 Optional fields:
 
 - `deviceInstances`:
-  `List`\[[DeviceInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceinstancetypedef)\]
+  `List`\[[DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)\]
 - `nextToken`: `str`
 
 ## ListDevicePoolsResultTypeDef
@@ -764,8 +723,7 @@ from mypy_boto3_devicefarm.type_defs import ListDevicePoolsResultTypeDef
 
 Optional fields:
 
-- `devicePools`:
-  `List`\[[DevicePoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicepooltypedef)\]
+- `devicePools`: `List`\[[DevicePoolTypeDef](./type_defs.md#devicepooltypedef)\]
 - `nextToken`: `str`
 
 ## ListDevicesResultTypeDef
@@ -776,8 +734,7 @@ from mypy_boto3_devicefarm.type_defs import ListDevicesResultTypeDef
 
 Optional fields:
 
-- `devices`:
-  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicetypedef)\]
+- `devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 - `nextToken`: `str`
 
 ## ListInstanceProfilesResultTypeDef
@@ -789,7 +746,7 @@ from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesResultTypeDef
 Optional fields:
 
 - `instanceProfiles`:
-  `List`\[[InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#instanceprofiletypedef)\]
+  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
 - `nextToken`: `str`
 
 ## ListJobsResultTypeDef
@@ -800,8 +757,7 @@ from mypy_boto3_devicefarm.type_defs import ListJobsResultTypeDef
 
 Optional fields:
 
-- `jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#jobtypedef)\]
+- `jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `nextToken`: `str`
 
 ## ListNetworkProfilesResultTypeDef
@@ -813,7 +769,7 @@ from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesResultTypeDef
 Optional fields:
 
 - `networkProfiles`:
-  `List`\[[NetworkProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#networkprofiletypedef)\]
+  `List`\[[NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)\]
 - `nextToken`: `str`
 
 ## ListOfferingPromotionsResultTypeDef
@@ -825,7 +781,7 @@ from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsResultTypeDef
 Optional fields:
 
 - `offeringPromotions`:
-  `List`\[[OfferingPromotionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringpromotiontypedef)\]
+  `List`\[[OfferingPromotionTypeDef](./type_defs.md#offeringpromotiontypedef)\]
 - `nextToken`: `str`
 
 ## ListOfferingTransactionsResultTypeDef
@@ -837,7 +793,7 @@ from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsResultTypeDe
 Optional fields:
 
 - `offeringTransactions`:
-  `List`\[[OfferingTransactionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringtransactiontypedef)\]
+  `List`\[[OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)\]
 - `nextToken`: `str`
 
 ## ListOfferingsResultTypeDef
@@ -848,8 +804,7 @@ from mypy_boto3_devicefarm.type_defs import ListOfferingsResultTypeDef
 
 Optional fields:
 
-- `offerings`:
-  `List`\[[OfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringtypedef)\]
+- `offerings`: `List`\[[OfferingTypeDef](./type_defs.md#offeringtypedef)\]
 - `nextToken`: `str`
 
 ## ListProjectsResultTypeDef
@@ -860,8 +815,7 @@ from mypy_boto3_devicefarm.type_defs import ListProjectsResultTypeDef
 
 Optional fields:
 
-- `projects`:
-  `List`\[[ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#projecttypedef)\]
+- `projects`: `List`\[[ProjectTypeDef](./type_defs.md#projecttypedef)\]
 - `nextToken`: `str`
 
 ## ListRemoteAccessSessionsResultTypeDef
@@ -873,7 +827,7 @@ from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsResultTypeDe
 Optional fields:
 
 - `remoteAccessSessions`:
-  `List`\[[RemoteAccessSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#remoteaccesssessiontypedef)\]
+  `List`\[[RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)\]
 - `nextToken`: `str`
 
 ## ListRunsResultTypeDef
@@ -884,8 +838,7 @@ from mypy_boto3_devicefarm.type_defs import ListRunsResultTypeDef
 
 Optional fields:
 
-- `runs`:
-  `List`\[[RunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#runtypedef)\]
+- `runs`: `List`\[[RunTypeDef](./type_defs.md#runtypedef)\]
 - `nextToken`: `str`
 
 ## ListSamplesResultTypeDef
@@ -896,8 +849,7 @@ from mypy_boto3_devicefarm.type_defs import ListSamplesResultTypeDef
 
 Optional fields:
 
-- `samples`:
-  `List`\[[SampleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#sampletypedef)\]
+- `samples`: `List`\[[SampleTypeDef](./type_defs.md#sampletypedef)\]
 - `nextToken`: `str`
 
 ## ListSuitesResultTypeDef
@@ -908,8 +860,7 @@ from mypy_boto3_devicefarm.type_defs import ListSuitesResultTypeDef
 
 Optional fields:
 
-- `suites`:
-  `List`\[[SuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#suitetypedef)\]
+- `suites`: `List`\[[SuiteTypeDef](./type_defs.md#suitetypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -920,8 +871,7 @@ from mypy_boto3_devicefarm.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTestGridProjectsResultTypeDef
 
@@ -932,7 +882,7 @@ from mypy_boto3_devicefarm.type_defs import ListTestGridProjectsResultTypeDef
 Optional fields:
 
 - `testGridProjects`:
-  `List`\[[TestGridProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridprojecttypedef)\]
+  `List`\[[TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)\]
 - `nextToken`: `str`
 
 ## ListTestGridSessionActionsResultTypeDef
@@ -944,7 +894,7 @@ from mypy_boto3_devicefarm.type_defs import ListTestGridSessionActionsResultType
 Optional fields:
 
 - `actions`:
-  `List`\[[TestGridSessionActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridsessionactiontypedef)\]
+  `List`\[[TestGridSessionActionTypeDef](./type_defs.md#testgridsessionactiontypedef)\]
 - `nextToken`: `str`
 
 ## ListTestGridSessionArtifactsResultTypeDef
@@ -956,7 +906,7 @@ from mypy_boto3_devicefarm.type_defs import ListTestGridSessionArtifactsResultTy
 Optional fields:
 
 - `artifacts`:
-  `List`\[[TestGridSessionArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridsessionartifacttypedef)\]
+  `List`\[[TestGridSessionArtifactTypeDef](./type_defs.md#testgridsessionartifacttypedef)\]
 - `nextToken`: `str`
 
 ## ListTestGridSessionsResultTypeDef
@@ -968,7 +918,7 @@ from mypy_boto3_devicefarm.type_defs import ListTestGridSessionsResultTypeDef
 Optional fields:
 
 - `testGridSessions`:
-  `List`\[[TestGridSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridsessiontypedef)\]
+  `List`\[[TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)\]
 - `nextToken`: `str`
 
 ## ListTestsResultTypeDef
@@ -979,8 +929,7 @@ from mypy_boto3_devicefarm.type_defs import ListTestsResultTypeDef
 
 Optional fields:
 
-- `tests`:
-  `List`\[[TestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testtypedef)\]
+- `tests`: `List`\[[TestTypeDef](./type_defs.md#testtypedef)\]
 - `nextToken`: `str`
 
 ## ListUniqueProblemsResultTypeDef
@@ -991,9 +940,8 @@ from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsResultTypeDef
 
 Optional fields:
 
-- `uniqueProblems`:
-  `Dict`\[[ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult),
-  `List`\[[UniqueProblemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#uniqueproblemtypedef)\]\]
+- `uniqueProblems`: `Dict`\[[ExecutionResult](./literals.md#executionresult),
+  `List`\[[UniqueProblemTypeDef](./type_defs.md#uniqueproblemtypedef)\]\]
 - `nextToken`: `str`
 
 ## ListUploadsResultTypeDef
@@ -1004,8 +952,7 @@ from mypy_boto3_devicefarm.type_defs import ListUploadsResultTypeDef
 
 Optional fields:
 
-- `uploads`:
-  `List`\[[UploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#uploadtypedef)\]
+- `uploads`: `List`\[[UploadTypeDef](./type_defs.md#uploadtypedef)\]
 - `nextToken`: `str`
 
 ## ListVPCEConfigurationsResultTypeDef
@@ -1017,7 +964,7 @@ from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsResultTypeDef
 Optional fields:
 
 - `vpceConfigurations`:
-  `List`\[[VPCEConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#vpceconfigurationtypedef)\]
+  `List`\[[VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)\]
 - `nextToken`: `str`
 
 ## LocationTypeDef
@@ -1040,7 +987,8 @@ from mypy_boto3_devicefarm.type_defs import MonetaryAmountTypeDef
 Optional fields:
 
 - `amount`: `float`
-- `currencyCode`: `Literal['USD']`
+- `currencyCode`: `Literal['USD']` (see
+  [CurrencyCode](./literals.md#currencycode))
 
 ## NetworkProfileTypeDef
 
@@ -1053,8 +1001,7 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
-- `type`:
-  [NetworkProfileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#networkprofiletype)
+- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
 - `uplinkBandwidthBits`: `int`
 - `downlinkBandwidthBits`: `int`
 - `uplinkDelayMs`: `int`
@@ -1083,10 +1030,8 @@ from mypy_boto3_devicefarm.type_defs import OfferingStatusTypeDef
 
 Optional fields:
 
-- `type`:
-  [OfferingTransactionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#offeringtransactiontype)
-- `offering`:
-  [OfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringtypedef)
+- `type`: [OfferingTransactionType](./literals.md#offeringtransactiontype)
+- `offering`: [OfferingTypeDef](./type_defs.md#offeringtypedef)
 - `quantity`: `int`
 - `effectiveOn`: `datetime`
 
@@ -1098,13 +1043,11 @@ from mypy_boto3_devicefarm.type_defs import OfferingTransactionTypeDef
 
 Optional fields:
 
-- `offeringStatus`:
-  [OfferingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringstatustypedef)
+- `offeringStatus`: [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)
 - `transactionId`: `str`
 - `offeringPromotionId`: `str`
 - `createdOn`: `datetime`
-- `cost`:
-  [MonetaryAmountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#monetaryamounttypedef)
+- `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
 
 ## OfferingTypeDef
 
@@ -1116,11 +1059,10 @@ Optional fields:
 
 - `id`: `str`
 - `description`: `str`
-- `type`: `Literal['RECURRING']`
-- `platform`:
-  [DevicePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceplatform)
+- `type`: `Literal['RECURRING']` (see [OfferingType](./literals.md#offeringtype))
+- `platform`: [DevicePlatform](./literals.md#deviceplatform)
 - `recurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#recurringchargetypedef)\]
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -1153,18 +1095,12 @@ from mypy_boto3_devicefarm.type_defs import ProblemTypeDef
 
 Optional fields:
 
-- `run`:
-  [ProblemDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#problemdetailtypedef)
-- `job`:
-  [ProblemDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#problemdetailtypedef)
-- `suite`:
-  [ProblemDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#problemdetailtypedef)
-- `test`:
-  [ProblemDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#problemdetailtypedef)
-- `device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicetypedef)
-- `result`:
-  [ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult)
+- `run`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
+- `job`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
+- `suite`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
+- `test`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
+- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
+- `result`: [ExecutionResult](./literals.md#executionresult)
 - `message`: `str`
 
 ## ProjectTypeDef
@@ -1189,7 +1125,7 @@ from mypy_boto3_devicefarm.type_defs import PurchaseOfferingResultTypeDef
 Optional fields:
 
 - `offeringTransaction`:
-  [OfferingTransactionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringtransactiontypedef)
+  [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
 
 ## RadiosTypeDef
 
@@ -1212,9 +1148,9 @@ from mypy_boto3_devicefarm.type_defs import RecurringChargeTypeDef
 
 Optional fields:
 
-- `cost`:
-  [MonetaryAmountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#monetaryamounttypedef)
-- `frequency`: `Literal['MONTHLY']`
+- `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
+- `frequency`: `Literal['MONTHLY']` (see
+  [RecurringChargeFrequency](./literals.md#recurringchargefrequency))
 
 ## RemoteAccessSessionTypeDef
 
@@ -1227,29 +1163,23 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `created`: `datetime`
-- `status`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionstatus)
-- `result`:
-  [ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult)
+- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `result`: [ExecutionResult](./literals.md#executionresult)
 - `message`: `str`
 - `started`: `datetime`
 - `stopped`: `datetime`
-- `device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicetypedef)
+- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 - `instanceArn`: `str`
 - `remoteDebugEnabled`: `bool`
 - `remoteRecordEnabled`: `bool`
 - `remoteRecordAppArn`: `str`
 - `hostAddress`: `str`
 - `clientId`: `str`
-- `billingMethod`:
-  [BillingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#billingmethod)
-- `deviceMinutes`:
-  [DeviceMinutesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceminutestypedef)
+- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
+- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 - `endpoint`: `str`
 - `deviceUdid`: `str`
-- `interactionMode`:
-  [InteractionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#interactionmode)
+- `interactionMode`: [InteractionMode](./literals.md#interactionmode)
 - `skipAppResign`: `bool`
 
 ## RenewOfferingResultTypeDef
@@ -1261,7 +1191,7 @@ from mypy_boto3_devicefarm.type_defs import RenewOfferingResultTypeDef
 Optional fields:
 
 - `offeringTransaction`:
-  [OfferingTransactionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#offeringtransactiontypedef)
+  [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
 
 ## ResolutionTypeDef
 
@@ -1282,10 +1212,8 @@ from mypy_boto3_devicefarm.type_defs import RuleTypeDef
 
 Optional fields:
 
-- `attribute`:
-  [DeviceAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceattribute)
-- `operator`:
-  [RuleOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#ruleoperator)
+- `attribute`: [DeviceAttribute](./literals.md#deviceattribute)
+- `operator`: [RuleOperator](./literals.md#ruleoperator)
 - `value`: `str`
 
 ## RunTypeDef
@@ -1298,48 +1226,37 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`:
-  [TestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testtype)
-- `platform`:
-  [DevicePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#deviceplatform)
+- `type`: [TestType](./literals.md#testtype)
+- `platform`: [DevicePlatform](./literals.md#deviceplatform)
 - `created`: `datetime`
-- `status`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionstatus)
-- `result`:
-  [ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult)
+- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `result`: [ExecutionResult](./literals.md#executionresult)
 - `started`: `datetime`
 - `stopped`: `datetime`
-- `counters`:
-  [CountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#counterstypedef)
+- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
 - `message`: `str`
 - `totalJobs`: `int`
 - `completedJobs`: `int`
-- `billingMethod`:
-  [BillingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#billingmethod)
-- `deviceMinutes`:
-  [DeviceMinutesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceminutestypedef)
-- `networkProfile`:
-  [NetworkProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#networkprofiletypedef)
+- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
+- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
+- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 - `parsingResultUrl`: `str`
-- `resultCode`:
-  [ExecutionResultCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresultcode)
+- `resultCode`: [ExecutionResultCode](./literals.md#executionresultcode)
 - `seed`: `int`
 - `appUpload`: `str`
 - `eventCount`: `int`
 - `jobTimeoutMinutes`: `int`
 - `devicePoolArn`: `str`
 - `locale`: `str`
-- `radios`:
-  [RadiosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#radiostypedef)
-- `location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#locationtypedef)
+- `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
+- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `customerArtifactPaths`:
-  [CustomerArtifactPathsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#customerartifactpathstypedef)
+  [CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef)
 - `webUrl`: `str`
 - `skipAppResign`: `bool`
 - `testSpecArn`: `str`
 - `deviceSelectionResult`:
-  [DeviceSelectionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceselectionresulttypedef)
+  [DeviceSelectionResultTypeDef](./type_defs.md#deviceselectionresulttypedef)
 
 ## SampleTypeDef
 
@@ -1350,8 +1267,7 @@ from mypy_boto3_devicefarm.type_defs import SampleTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `type`:
-  [SampleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#sampletype)
+- `type`: [SampleType](./literals.md#sampletype)
 - `url`: `str`
 
 ## ScheduleRunConfigurationTypeDef
@@ -1365,16 +1281,13 @@ Optional fields:
 - `extraDataPackageArn`: `str`
 - `networkProfileArn`: `str`
 - `locale`: `str`
-- `location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#locationtypedef)
+- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `vpceConfigurationArns`: `List`\[`str`\]
 - `customerArtifactPaths`:
-  [CustomerArtifactPathsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#customerartifactpathstypedef)
-- `radios`:
-  [RadiosTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#radiostypedef)
+  [CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef)
+- `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
 - `auxiliaryApps`: `List`\[`str`\]
-- `billingMethod`:
-  [BillingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#billingmethod)
+- `billingMethod`: [BillingMethod](./literals.md#billingmethod)
 
 ## ScheduleRunResultTypeDef
 
@@ -1384,8 +1297,7 @@ from mypy_boto3_devicefarm.type_defs import ScheduleRunResultTypeDef
 
 Optional fields:
 
-- `run`:
-  [RunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#runtypedef)
+- `run`: [RunTypeDef](./type_defs.md#runtypedef)
 
 ## ScheduleRunTestTypeDef
 
@@ -1395,8 +1307,7 @@ from mypy_boto3_devicefarm.type_defs import ScheduleRunTestTypeDef
 
 Required fields:
 
-- `type`:
-  [TestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testtype)
+- `type`: [TestType](./literals.md#testtype)
 
 Optional fields:
 
@@ -1413,8 +1324,7 @@ from mypy_boto3_devicefarm.type_defs import StopJobResultTypeDef
 
 Optional fields:
 
-- `job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#jobtypedef)
+- `job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## StopRemoteAccessSessionResultTypeDef
 
@@ -1425,7 +1335,7 @@ from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionResultTypeDef
 Optional fields:
 
 - `remoteAccessSession`:
-  [RemoteAccessSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#remoteaccesssessiontypedef)
+  [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
 
 ## StopRunResultTypeDef
 
@@ -1435,8 +1345,7 @@ from mypy_boto3_devicefarm.type_defs import StopRunResultTypeDef
 
 Optional fields:
 
-- `run`:
-  [RunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#runtypedef)
+- `run`: [RunTypeDef](./type_defs.md#runtypedef)
 
 ## SuiteTypeDef
 
@@ -1448,20 +1357,15 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`:
-  [TestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testtype)
+- `type`: [TestType](./literals.md#testtype)
 - `created`: `datetime`
-- `status`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionstatus)
-- `result`:
-  [ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult)
+- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `result`: [ExecutionResult](./literals.md#executionresult)
 - `started`: `datetime`
 - `stopped`: `datetime`
-- `counters`:
-  [CountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#counterstypedef)
+- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
 - `message`: `str`
-- `deviceMinutes`:
-  [DeviceMinutesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceminutestypedef)
+- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 
 ## TagTypeDef
 
@@ -1511,7 +1415,7 @@ Optional fields:
 
 - `filename`: `str`
 - `type`:
-  [TestGridSessionArtifactType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testgridsessionartifacttype)
+  [TestGridSessionArtifactType](./literals.md#testgridsessionartifacttype)
 - `url`: `str`
 
 ## TestGridSessionTypeDef
@@ -1523,8 +1427,7 @@ from mypy_boto3_devicefarm.type_defs import TestGridSessionTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `status`:
-  [TestGridSessionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testgridsessionstatus)
+- `status`: [TestGridSessionStatus](./literals.md#testgridsessionstatus)
 - `created`: `datetime`
 - `ended`: `datetime`
 - `billingMinutes`: `float`
@@ -1540,20 +1443,15 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`:
-  [TestType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#testtype)
+- `type`: [TestType](./literals.md#testtype)
 - `created`: `datetime`
-- `status`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionstatus)
-- `result`:
-  [ExecutionResult](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#executionresult)
+- `status`: [ExecutionStatus](./literals.md#executionstatus)
+- `result`: [ExecutionResult](./literals.md#executionresult)
 - `started`: `datetime`
 - `stopped`: `datetime`
-- `counters`:
-  [CountersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#counterstypedef)
+- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
 - `message`: `str`
-- `deviceMinutes`:
-  [DeviceMinutesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceminutestypedef)
+- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 
 ## TrialMinutesTypeDef
 
@@ -1575,8 +1473,7 @@ from mypy_boto3_devicefarm.type_defs import UniqueProblemTypeDef
 Optional fields:
 
 - `message`: `str`
-- `problems`:
-  `List`\[[ProblemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#problemtypedef)\]
+- `problems`: `List`\[[ProblemTypeDef](./type_defs.md#problemtypedef)\]
 
 ## UpdateDeviceInstanceResultTypeDef
 
@@ -1586,8 +1483,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceResultTypeDef
 
 Optional fields:
 
-- `deviceInstance`:
-  [DeviceInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#deviceinstancetypedef)
+- `deviceInstance`: [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
 
 ## UpdateDevicePoolResultTypeDef
 
@@ -1597,8 +1493,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateDevicePoolResultTypeDef
 
 Optional fields:
 
-- `devicePool`:
-  [DevicePoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicepooltypedef)
+- `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
 
 ## UpdateInstanceProfileResultTypeDef
 
@@ -1609,7 +1504,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateInstanceProfileResultTypeDef
 Optional fields:
 
 - `instanceProfile`:
-  [InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#instanceprofiletypedef)
+  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
 ## UpdateNetworkProfileResultTypeDef
 
@@ -1619,8 +1514,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileResultTypeDef
 
 Optional fields:
 
-- `networkProfile`:
-  [NetworkProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#networkprofiletypedef)
+- `networkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## UpdateProjectResultTypeDef
 
@@ -1630,8 +1524,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateProjectResultTypeDef
 
 Optional fields:
 
-- `project`:
-  [ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#projecttypedef)
+- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 
 ## UpdateTestGridProjectResultTypeDef
 
@@ -1642,7 +1535,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateTestGridProjectResultTypeDef
 Optional fields:
 
 - `testGridProject`:
-  [TestGridProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#testgridprojecttypedef)
+  [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
 
 ## UpdateUploadResultTypeDef
 
@@ -1652,8 +1545,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateUploadResultTypeDef
 
 Optional fields:
 
-- `upload`:
-  [UploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#uploadtypedef)
+- `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 
 ## UpdateVPCEConfigurationResultTypeDef
 
@@ -1664,7 +1556,7 @@ from mypy_boto3_devicefarm.type_defs import UpdateVPCEConfigurationResultTypeDef
 Optional fields:
 
 - `vpceConfiguration`:
-  [VPCEConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#vpceconfigurationtypedef)
+  [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
 
 ## UploadTypeDef
 
@@ -1677,16 +1569,13 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `created`: `datetime`
-- `type`:
-  [UploadType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#uploadtype)
-- `status`:
-  [UploadStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#uploadstatus)
+- `type`: [UploadType](./literals.md#uploadtype)
+- `status`: [UploadStatus](./literals.md#uploadstatus)
 - `url`: `str`
 - `metadata`: `str`
 - `contentType`: `str`
 - `message`: `str`
-- `category`:
-  [UploadCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#uploadcategory)
+- `category`: [UploadCategory](./literals.md#uploadcategory)
 
 ## VPCEConfigurationTypeDef
 

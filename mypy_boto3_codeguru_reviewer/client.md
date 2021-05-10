@@ -1,7 +1,6 @@
 # CodeGuruReviewerClient for boto3 CodeGuruReviewer module
 
-> [Index](../README.md) > [CodeGuruReviewer](./README.md) >
-> CodeGuruReviewerClient
+> [Index](..) > [CodeGuruReviewer](.) > CodeGuruReviewerClient
 
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
@@ -81,16 +80,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Repository`:
-  [RepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#repositorytypedef)
+- `Repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
   *(required)*
 - `ClientRequestToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `KMSKeyDetails`:
-  [KMSKeyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#kmskeydetailstypedef)
+- `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 
 Returns
-[AssociateRepositoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#associaterepositoryresponsetypedef).
+[AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef).
 
 ### can_paginate
 
@@ -117,13 +114,12 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `RepositoryAssociationArn`: `str` *(required)*
-- `Type`:
-  [CodeReviewTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#codereviewtypetypedef)
+- `Type`: [CodeReviewTypeTypeDef](./type_defs.md#codereviewtypetypedef)
   *(required)*
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateCodeReviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#createcodereviewresponsetypedef).
+[CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef).
 
 ### describe_code_review
 
@@ -138,7 +134,7 @@ Arguments:
 - `CodeReviewArn`: `str` *(required)*
 
 Returns
-[DescribeCodeReviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#describecodereviewresponsetypedef).
+[DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef).
 
 ### describe_recommendation_feedback
 
@@ -155,7 +151,7 @@ Arguments:
 - `UserId`: `str`
 
 Returns
-[DescribeRecommendationFeedbackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#describerecommendationfeedbackresponsetypedef).
+[DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef).
 
 ### describe_repository_association
 
@@ -170,7 +166,7 @@ Arguments:
 - `AssociationArn`: `str` *(required)*
 
 Returns
-[DescribeRepositoryAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#describerepositoryassociationresponsetypedef).
+[DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef).
 
 ### disassociate_repository
 
@@ -185,7 +181,7 @@ Arguments:
 - `AssociationArn`: `str` *(required)*
 
 Returns
-[DisassociateRepositoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#disassociaterepositoryresponsetypedef).
+[DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef).
 
 ### generate_presigned_url
 
@@ -214,19 +210,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#typetype)
-  *(required)*
-- `ProviderTypes`:
-  `List`\[[ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)\]
-- `States`:
-  `List`\[[JobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#jobstate)\]
+- `Type`: [TypeType](./literals.md#typetype) *(required)*
+- `ProviderTypes`: `List`\[[ProviderType](./literals.md#providertype)\]
+- `States`: `List`\[[JobState](./literals.md#jobstate)\]
 - `RepositoryNames`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListCodeReviewsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#listcodereviewsresponsetypedef).
+[ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef).
 
 ### list_recommendation_feedback
 
@@ -245,7 +237,7 @@ Arguments:
 - `RecommendationIds`: `List`\[`str`\]
 
 Returns
-[ListRecommendationFeedbackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#listrecommendationfeedbackresponsetypedef).
+[ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
 
 ### list_recommendations
 
@@ -262,7 +254,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#listrecommendationsresponsetypedef).
+[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
 ### list_repository_associations
 
@@ -274,17 +266,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `ProviderTypes`:
-  `List`\[[ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)\]
+- `ProviderTypes`: `List`\[[ProviderType](./literals.md#providertype)\]
 - `States`:
-  `List`\[[RepositoryAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#repositoryassociationstate)\]
+  `List`\[[RepositoryAssociationState](./literals.md#repositoryassociationstate)\]
 - `Names`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListRepositoryAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#listrepositoryassociationsresponsetypedef).
+[ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -299,7 +290,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_recommendation_feedback
 
@@ -313,9 +304,7 @@ Arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 - `RecommendationId`: `str` *(required)*
-- `Reactions`:
-  `List`\[[Reaction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#reaction)\]
-  *(required)*
+- `Reactions`: `List`\[[Reaction](./literals.md#reaction)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

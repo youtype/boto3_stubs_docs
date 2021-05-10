@@ -1,6 +1,6 @@
 # GlacierServiceResource for boto3 Glacier module
 
-> [Index](../README.md) > [Glacier](./README.md) > GlacierServiceResource
+> [Index](..) > [Glacier](.) > GlacierServiceResource
 
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
@@ -336,8 +336,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `jobParameters`:
-  [JobParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#jobparameterstypedef)
+- `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
 Returns [Job](#job).
 
@@ -416,8 +415,7 @@ Arguments:
 
 - `range`: `str`
 
-Returns
-[GetJobOutputOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#getjoboutputoutputtypedef).
+Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 
 #### Job.load method
 
@@ -491,7 +489,7 @@ Arguments:
 - `checksum`: `str`
 
 Returns
-[ArchiveCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#archivecreationoutputtypedef).
+[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
 #### MultipartUpload.get_available_subresources method
 
@@ -515,8 +513,7 @@ Arguments:
 - `marker`: `str`
 - `limit`: `str`
 
-Returns
-[ListPartsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#listpartsoutputtypedef).
+Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
 #### MultipartUpload.upload_part method
 
@@ -532,7 +529,7 @@ Arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Returns
-[UploadMultipartPartOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#uploadmultipartpartoutputtypedef).
+[UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
 
 ## Notification
 
@@ -609,7 +606,7 @@ Boto3 documentation:
 Arguments:
 
 - `vaultNotificationConfig`:
-  [VaultNotificationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#vaultnotificationconfigtypedef)
+  [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
 
 ## Vault
 
@@ -855,8 +852,7 @@ Type annotations for `boto3.resource("glacier").create` method.
 Boto3 documentation:
 [Glacier.Vault.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.create)
 
-Returns
-[CreateVaultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#createvaultoutputtypedef).
+Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 
 #### Vault.delete method
 
@@ -885,8 +881,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `jobParameters`:
-  [JobParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glacier/type_defs.html#jobparameterstypedef)
+- `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
 Returns [Job](#job).
 

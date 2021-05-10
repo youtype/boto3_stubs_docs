@@ -1,6 +1,6 @@
 # Literals for boto3 CodeCommit module
 
-> [Index](../README.md) > [CodeCommit](./README.md) > Literals
+> [Index](..) > [CodeCommit](.) > Literals
 
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)

@@ -1,6 +1,6 @@
 # SagemakerFeatureStoreRuntimeClient for boto3 SagemakerFeatureStoreRuntime module
 
-> [Index](../README.md) > [SagemakerFeatureStoreRuntime](./README.md) >
+> [Index](..) > [SagemakerFeatureStoreRuntime](.) >
 > SagemakerFeatureStoreRuntimeClient
 
 Auto-generated documentation for
@@ -116,8 +116,7 @@ Arguments:
 - `RecordIdentifierValueAsString`: `str` *(required)*
 - `FeatureNames`: `List`\[`str`\]
 
-Returns
-[GetRecordResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_featurestore_runtime/type_defs.html#getrecordresponsetypedef).
+Returns [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef).
 
 ### put_record
 
@@ -130,6 +129,5 @@ Boto3 documentation:
 Arguments:
 
 - `FeatureGroupName`: `str` *(required)*
-- `Record`:
-  `List`\[[FeatureValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_featurestore_runtime/type_defs.html#featurevaluetypedef)\]
+- `Record`: `List`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
   *(required)*

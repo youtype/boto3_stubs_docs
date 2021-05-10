@@ -1,6 +1,6 @@
 # Literals for boto3 ElasticsearchService module
 
-> [Index](../README.md) > [ElasticsearchService](./README.md) > Literals
+> [Index](..) > [ElasticsearchService](.) > Literals
 
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)

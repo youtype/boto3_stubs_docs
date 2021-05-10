@@ -1,6 +1,6 @@
 # Literals for boto3 IoTAnalytics module
 
-> [Index](../README.md) > [IoTAnalytics](./README.md) > Literals
+> [Index](..) > [IoTAnalytics](.) > Literals
 
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)

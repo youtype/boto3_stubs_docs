@@ -1,6 +1,6 @@
 # Literals for boto3 CloudSearchDomain module
 
-> [Index](../README.md) > [CloudSearchDomain](./README.md) > Literals
+> [Index](..) > [CloudSearchDomain](.) > Literals
 
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AuditManager module
 
-> [Index](../README.md) > [AuditManager](./README.md) > Structures
+> [Index](..) > [AuditManager](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
@@ -125,14 +125,11 @@ Optional fields:
 
 - `id`: `str`
 - `description`: `str`
-- `status`:
-  [ControlSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlsetstatus)
-- `roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+- `status`: [ControlSetStatus](./literals.md#controlsetstatus)
+- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `controls`:
-  `List`\[[AssessmentControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentcontroltypedef)\]
-- `delegations`:
-  `List`\[[DelegationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#delegationtypedef)\]
+  `List`\[[AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)\]
+- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `systemEvidenceCount`: `int`
 - `manualEvidenceCount`: `int`
 
@@ -147,12 +144,10 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `description`: `str`
-- `status`:
-  [ControlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlstatus)
-- `response`:
-  [ControlResponse](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controlresponse)
+- `status`: [ControlStatus](./literals.md#controlstatus)
+- `response`: [ControlResponse](./literals.md#controlresponse)
 - `comments`:
-  `List`\[[ControlCommentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controlcommenttypedef)\]
+  `List`\[[ControlCommentTypeDef](./type_defs.md#controlcommenttypedef)\]
 - `evidenceSources`: `List`\[`str`\]
 - `evidenceCount`: `int`
 - `assessmentReportEvidenceCount`: `int`
@@ -194,8 +189,7 @@ Optional fields:
 
 - `arn`: `str`
 - `id`: `str`
-- `type`:
-  [FrameworkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#frameworktype)
+- `type`: [FrameworkType](./literals.md#frameworktype)
 - `name`: `str`
 - `description`: `str`
 - `logo`: `str`
@@ -215,10 +209,9 @@ Optional fields:
 
 - `id`: `str`
 - `arn`: `str`
-- `metadata`:
-  [FrameworkMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#frameworkmetadatatypedef)
+- `metadata`: [FrameworkMetadataTypeDef](./type_defs.md#frameworkmetadatatypedef)
 - `controlSets`:
-  `List`\[[AssessmentControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentcontrolsettypedef)\]
+  `List`\[[AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef)\]
 
 ## AssessmentMetadataItemTypeDef
 
@@ -231,12 +224,9 @@ Optional fields:
 - `name`: `str`
 - `id`: `str`
 - `complianceType`: `str`
-- `status`:
-  [AssessmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#assessmentstatus)
-- `roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
-- `delegations`:
-  `List`\[[DelegationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#delegationtypedef)\]
+- `status`: [AssessmentStatus](./literals.md#assessmentstatus)
+- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 
@@ -252,16 +242,12 @@ Optional fields:
 - `id`: `str`
 - `description`: `str`
 - `complianceType`: `str`
-- `status`:
-  [AssessmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#assessmentstatus)
+- `status`: [AssessmentStatus](./literals.md#assessmentstatus)
 - `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
-- `scope`:
-  [ScopeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#scopetypedef)
-- `roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
-- `delegations`:
-  `List`\[[DelegationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#delegationtypedef)\]
+  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
+- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
+- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 
@@ -291,8 +277,7 @@ Optional fields:
 - `assessmentId`: `str`
 - `assessmentName`: `str`
 - `author`: `str`
-- `status`:
-  [AssessmentReportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#assessmentreportstatus)
+- `status`: [AssessmentReportStatus](./literals.md#assessmentreportstatus)
 - `creationTime`: `datetime`
 
 ## AssessmentReportTypeDef
@@ -310,8 +295,7 @@ Optional fields:
 - `assessmentId`: `str`
 - `assessmentName`: `str`
 - `author`: `str`
-- `status`:
-  [AssessmentReportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#assessmentreportstatus)
+- `status`: [AssessmentReportStatus](./literals.md#assessmentreportstatus)
 - `creationTime`: `datetime`
 
 ## AssessmentReportsDestinationTypeDef
@@ -322,7 +306,8 @@ from mypy_boto3_auditmanager.type_defs import AssessmentReportsDestinationTypeDe
 
 Optional fields:
 
-- `destinationType`: `Literal['S3']`
+- `destinationType`: `Literal['S3']` (see
+  [AssessmentReportDestinationType](./literals.md#assessmentreportdestinationtype))
 - `destination`: `str`
 
 ## AssessmentTypeDef
@@ -334,12 +319,11 @@ from mypy_boto3_auditmanager.type_defs import AssessmentTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `awsAccount`:
-  [AWSAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#awsaccounttypedef)
+- `awsAccount`: [AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)
 - `metadata`:
-  [AssessmentMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentmetadatatypedef)
+  [AssessmentMetadataTypeDef](./type_defs.md#assessmentmetadatatypedef)
 - `framework`:
-  [AssessmentFrameworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentframeworktypedef)
+  [AssessmentFrameworkTypeDef](./type_defs.md#assessmentframeworktypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## BatchAssociateAssessmentReportEvidenceResponseTypeDef
@@ -352,7 +336,7 @@ Optional fields:
 
 - `evidenceIds`: `List`\[`str`\]
 - `errors`:
-  `List`\[[AssessmentReportEvidenceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportevidenceerrortypedef)\]
+  `List`\[[AssessmentReportEvidenceErrorTypeDef](./type_defs.md#assessmentreportevidenceerrortypedef)\]
 
 ## BatchCreateDelegationByAssessmentErrorTypeDef
 
@@ -363,7 +347,7 @@ from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentE
 Optional fields:
 
 - `createDelegationRequest`:
-  [CreateDelegationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createdelegationrequesttypedef)
+  [CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
@@ -375,10 +359,9 @@ from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentR
 
 Optional fields:
 
-- `delegations`:
-  `List`\[[DelegationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#delegationtypedef)\]
+- `delegations`: `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
 - `errors`:
-  `List`\[[BatchCreateDelegationByAssessmentErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchcreatedelegationbyassessmenterrortypedef)\]
+  `List`\[[BatchCreateDelegationByAssessmentErrorTypeDef](./type_defs.md#batchcreatedelegationbyassessmenterrortypedef)\]
 
 ## BatchDeleteDelegationByAssessmentErrorTypeDef
 
@@ -401,7 +384,7 @@ from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentR
 Optional fields:
 
 - `errors`:
-  `List`\[[BatchDeleteDelegationByAssessmentErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchdeletedelegationbyassessmenterrortypedef)\]
+  `List`\[[BatchDeleteDelegationByAssessmentErrorTypeDef](./type_defs.md#batchdeletedelegationbyassessmenterrortypedef)\]
 
 ## BatchDisassociateAssessmentReportEvidenceResponseTypeDef
 
@@ -413,7 +396,7 @@ Optional fields:
 
 - `evidenceIds`: `List`\[`str`\]
 - `errors`:
-  `List`\[[AssessmentReportEvidenceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportevidenceerrortypedef)\]
+  `List`\[[AssessmentReportEvidenceErrorTypeDef](./type_defs.md#assessmentreportevidenceerrortypedef)\]
 
 ## BatchImportEvidenceToAssessmentControlErrorTypeDef
 
@@ -423,8 +406,7 @@ from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentCon
 
 Optional fields:
 
-- `manualEvidence`:
-  [ManualEvidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#manualevidencetypedef)
+- `manualEvidence`: [ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
@@ -437,7 +419,7 @@ from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentCon
 Optional fields:
 
 - `errors`:
-  `List`\[[BatchImportEvidenceToAssessmentControlErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#batchimportevidencetoassessmentcontrolerrortypedef)\]
+  `List`\[[BatchImportEvidenceToAssessmentControlErrorTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolerrortypedef)\]
 
 ## ChangeLogTypeDef
 
@@ -447,11 +429,9 @@ from mypy_boto3_auditmanager.type_defs import ChangeLogTypeDef
 
 Optional fields:
 
-- `objectType`:
-  [ObjectTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#objecttypeenum)
+- `objectType`: [ObjectTypeEnum](./literals.md#objecttypeenum)
 - `objectName`: `str`
-- `action`:
-  [ActionEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#actionenum)
+- `action`: [ActionEnum](./literals.md#actionenum)
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 
@@ -478,14 +458,10 @@ Optional fields:
 - `sourceId`: `str`
 - `sourceName`: `str`
 - `sourceDescription`: `str`
-- `sourceSetUpOption`:
-  [SourceSetUpOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcesetupoption)
-- `sourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcetype)
-- `sourceKeyword`:
-  [SourceKeywordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#sourcekeywordtypedef)
-- `sourceFrequency`:
-  [SourceFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcefrequency)
+- `sourceSetUpOption`: [SourceSetUpOption](./literals.md#sourcesetupoption)
+- `sourceType`: [SourceType](./literals.md#sourcetype)
+- `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
+- `sourceFrequency`: [SourceFrequency](./literals.md#sourcefrequency)
 - `troubleshootingText`: `str`
 
 ## ControlMetadataTypeDef
@@ -513,8 +489,7 @@ Optional fields:
 
 - `id`: `str`
 - `name`: `str`
-- `controls`:
-  `List`\[[ControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controltypedef)\]
+- `controls`: `List`\[[ControlTypeDef](./type_defs.md#controltypedef)\]
 
 ## ControlTypeDef
 
@@ -526,8 +501,7 @@ Optional fields:
 
 - `arn`: `str`
 - `id`: `str`
-- `type`:
-  [ControlType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#controltype)
+- `type`: [ControlType](./literals.md#controltype)
 - `name`: `str`
 - `description`: `str`
 - `testingInformation`: `str`
@@ -535,7 +509,7 @@ Optional fields:
 - `actionPlanInstructions`: `str`
 - `controlSources`: `str`
 - `controlMappingSources`:
-  `List`\[[ControlMappingSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controlmappingsourcetypedef)\]
+  `List`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `createdBy`: `str`
@@ -555,7 +529,7 @@ Required fields:
 Optional fields:
 
 - `controls`:
-  `List`\[[CreateAssessmentFrameworkControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkcontroltypedef)\]
+  `List`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 ## CreateAssessmentFrameworkControlTypeDef
 
@@ -575,8 +549,7 @@ from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkResponseT
 
 Optional fields:
 
-- `framework`:
-  [FrameworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#frameworktypedef)
+- `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
 
 ## CreateAssessmentReportResponseTypeDef
 
@@ -587,7 +560,7 @@ from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportResponseType
 Optional fields:
 
 - `assessmentReport`:
-  [AssessmentReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreporttypedef)
+  [AssessmentReportTypeDef](./type_defs.md#assessmentreporttypedef)
 
 ## CreateAssessmentResponseTypeDef
 
@@ -597,8 +570,7 @@ from mypy_boto3_auditmanager.type_defs import CreateAssessmentResponseTypeDef
 
 Optional fields:
 
-- `assessment`:
-  [AssessmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmenttypedef)
+- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
 
 ## CreateControlMappingSourceTypeDef
 
@@ -610,14 +582,10 @@ Optional fields:
 
 - `sourceName`: `str`
 - `sourceDescription`: `str`
-- `sourceSetUpOption`:
-  [SourceSetUpOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcesetupoption)
-- `sourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcetype)
-- `sourceKeyword`:
-  [SourceKeywordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#sourcekeywordtypedef)
-- `sourceFrequency`:
-  [SourceFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#sourcefrequency)
+- `sourceSetUpOption`: [SourceSetUpOption](./literals.md#sourcesetupoption)
+- `sourceType`: [SourceType](./literals.md#sourcetype)
+- `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
+- `sourceFrequency`: [SourceFrequency](./literals.md#sourcefrequency)
 - `troubleshootingText`: `str`
 
 ## CreateControlResponseTypeDef
@@ -628,8 +596,7 @@ from mypy_boto3_auditmanager.type_defs import CreateControlResponseTypeDef
 
 Optional fields:
 
-- `control`:
-  [ControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controltypedef)
+- `control`: [ControlTypeDef](./type_defs.md#controltypedef)
 
 ## CreateDelegationRequestTypeDef
 
@@ -642,8 +609,7 @@ Optional fields:
 - `comment`: `str`
 - `controlSetId`: `str`
 - `roleArn`: `str`
-- `roleType`:
-  [RoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#roletype)
+- `roleType`: [RoleType](./literals.md#roletype)
 
 ## DelegationMetadataTypeDef
 
@@ -656,8 +622,7 @@ Optional fields:
 - `id`: `str`
 - `assessmentName`: `str`
 - `assessmentId`: `str`
-- `status`:
-  [DelegationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#delegationstatus)
+- `status`: [DelegationStatus](./literals.md#delegationstatus)
 - `roleArn`: `str`
 - `creationTime`: `datetime`
 - `controlSetName`: `str`
@@ -673,11 +638,9 @@ Optional fields:
 - `id`: `str`
 - `assessmentName`: `str`
 - `assessmentId`: `str`
-- `status`:
-  [DelegationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#delegationstatus)
+- `status`: [DelegationStatus](./literals.md#delegationstatus)
 - `roleArn`: `str`
-- `roleType`:
-  [RoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#roletype)
+- `roleType`: [RoleType](./literals.md#roletype)
 - `creationTime`: `datetime`
 - `lastUpdated`: `datetime`
 - `controlSetId`: `str`
@@ -692,8 +655,7 @@ from mypy_boto3_auditmanager.type_defs import DeregisterAccountResponseTypeDef
 
 Optional fields:
 
-- `status`:
-  [AccountStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#accountstatus)
+- `status`: [AccountStatus](./literals.md#accountstatus)
 
 ## EvidenceTypeDef
 
@@ -710,7 +672,7 @@ Optional fields:
 - `eventName`: `str`
 - `evidenceByType`: `str`
 - `resourcesIncluded`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#resourcetypedef)\]
+  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `attributes`: `Dict`\[`str`, `str`\]
 - `iamId`: `str`
 - `complianceCheck`: `str`
@@ -744,14 +706,12 @@ Optional fields:
 - `arn`: `str`
 - `id`: `str`
 - `name`: `str`
-- `type`:
-  [FrameworkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#frameworktype)
+- `type`: [FrameworkType](./literals.md#frameworktype)
 - `complianceType`: `str`
 - `description`: `str`
 - `logo`: `str`
 - `controlSources`: `str`
-- `controlSets`:
-  `List`\[[ControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controlsettypedef)\]
+- `controlSets`: `List`\[[ControlSetTypeDef](./type_defs.md#controlsettypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `createdBy`: `str`
@@ -766,8 +726,7 @@ from mypy_boto3_auditmanager.type_defs import GetAccountStatusResponseTypeDef
 
 Optional fields:
 
-- `status`:
-  [AccountStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#accountstatus)
+- `status`: [AccountStatus](./literals.md#accountstatus)
 
 ## GetAssessmentFrameworkResponseTypeDef
 
@@ -777,8 +736,7 @@ from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkResponseType
 
 Optional fields:
 
-- `framework`:
-  [FrameworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#frameworktypedef)
+- `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
 
 ## GetAssessmentReportUrlResponseTypeDef
 
@@ -788,8 +746,7 @@ from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlResponseType
 
 Optional fields:
 
-- `preSignedUrl`:
-  [URLTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#urltypedef)
+- `preSignedUrl`: [URLTypeDef](./type_defs.md#urltypedef)
 
 ## GetAssessmentResponseTypeDef
 
@@ -799,10 +756,8 @@ from mypy_boto3_auditmanager.type_defs import GetAssessmentResponseTypeDef
 
 Optional fields:
 
-- `assessment`:
-  [AssessmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmenttypedef)
-- `userRole`:
-  [RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)
+- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
+- `userRole`: [RoleTypeDef](./type_defs.md#roletypedef)
 
 ## GetChangeLogsResponseTypeDef
 
@@ -812,8 +767,7 @@ from mypy_boto3_auditmanager.type_defs import GetChangeLogsResponseTypeDef
 
 Optional fields:
 
-- `changeLogs`:
-  `List`\[[ChangeLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#changelogtypedef)\]
+- `changeLogs`: `List`\[[ChangeLogTypeDef](./type_defs.md#changelogtypedef)\]
 - `nextToken`: `str`
 
 ## GetControlResponseTypeDef
@@ -824,8 +778,7 @@ from mypy_boto3_auditmanager.type_defs import GetControlResponseTypeDef
 
 Optional fields:
 
-- `control`:
-  [ControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controltypedef)
+- `control`: [ControlTypeDef](./type_defs.md#controltypedef)
 
 ## GetDelegationsResponseTypeDef
 
@@ -836,7 +789,7 @@ from mypy_boto3_auditmanager.type_defs import GetDelegationsResponseTypeDef
 Optional fields:
 
 - `delegations`:
-  `List`\[[DelegationMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#delegationmetadatatypedef)\]
+  `List`\[[DelegationMetadataTypeDef](./type_defs.md#delegationmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## GetEvidenceByEvidenceFolderResponseTypeDef
@@ -847,8 +800,7 @@ from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderRespons
 
 Optional fields:
 
-- `evidence`:
-  `List`\[[EvidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#evidencetypedef)\]
+- `evidence`: `List`\[[EvidenceTypeDef](./type_defs.md#evidencetypedef)\]
 - `nextToken`: `str`
 
 ## GetEvidenceFolderResponseTypeDef
@@ -860,7 +812,7 @@ from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderResponseTypeDef
 Optional fields:
 
 - `evidenceFolder`:
-  [AssessmentEvidenceFolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentevidencefoldertypedef)
+  [AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)
 
 ## GetEvidenceFoldersByAssessmentControlResponseTypeDef
 
@@ -871,7 +823,7 @@ from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentCont
 Optional fields:
 
 - `evidenceFolders`:
-  `List`\[[AssessmentEvidenceFolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentevidencefoldertypedef)\]
+  `List`\[[AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)\]
 - `nextToken`: `str`
 
 ## GetEvidenceFoldersByAssessmentResponseTypeDef
@@ -883,7 +835,7 @@ from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentResp
 Optional fields:
 
 - `evidenceFolders`:
-  `List`\[[AssessmentEvidenceFolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentevidencefoldertypedef)\]
+  `List`\[[AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)\]
 - `nextToken`: `str`
 
 ## GetEvidenceResponseTypeDef
@@ -894,8 +846,7 @@ from mypy_boto3_auditmanager.type_defs import GetEvidenceResponseTypeDef
 
 Optional fields:
 
-- `evidence`:
-  [EvidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#evidencetypedef)
+- `evidence`: [EvidenceTypeDef](./type_defs.md#evidencetypedef)
 
 ## GetOrganizationAdminAccountResponseTypeDef
 
@@ -917,7 +868,7 @@ from mypy_boto3_auditmanager.type_defs import GetServicesInScopeResponseTypeDef
 Optional fields:
 
 - `serviceMetadata`:
-  `List`\[[ServiceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#servicemetadatatypedef)\]
+  `List`\[[ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef)\]
 
 ## GetSettingsResponseTypeDef
 
@@ -927,8 +878,7 @@ from mypy_boto3_auditmanager.type_defs import GetSettingsResponseTypeDef
 
 Optional fields:
 
-- `settings`:
-  [SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#settingstypedef)
+- `settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 
 ## ListAssessmentFrameworksResponseTypeDef
 
@@ -939,7 +889,7 @@ from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksResponseTy
 Optional fields:
 
 - `frameworkMetadataList`:
-  `List`\[[AssessmentFrameworkMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentframeworkmetadatatypedef)\]
+  `List`\[[AssessmentFrameworkMetadataTypeDef](./type_defs.md#assessmentframeworkmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListAssessmentReportsResponseTypeDef
@@ -951,7 +901,7 @@ from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsResponseTypeD
 Optional fields:
 
 - `assessmentReports`:
-  `List`\[[AssessmentReportMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportmetadatatypedef)\]
+  `List`\[[AssessmentReportMetadataTypeDef](./type_defs.md#assessmentreportmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListAssessmentsResponseTypeDef
@@ -963,7 +913,7 @@ from mypy_boto3_auditmanager.type_defs import ListAssessmentsResponseTypeDef
 Optional fields:
 
 - `assessmentMetadata`:
-  `List`\[[AssessmentMetadataItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentmetadataitemtypedef)\]
+  `List`\[[AssessmentMetadataItemTypeDef](./type_defs.md#assessmentmetadataitemtypedef)\]
 - `nextToken`: `str`
 
 ## ListControlsResponseTypeDef
@@ -975,7 +925,7 @@ from mypy_boto3_auditmanager.type_defs import ListControlsResponseTypeDef
 Optional fields:
 
 - `controlMetadataList`:
-  `List`\[[ControlMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controlmetadatatypedef)\]
+  `List`\[[ControlMetadataTypeDef](./type_defs.md#controlmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListKeywordsForDataSourceResponseTypeDef
@@ -998,7 +948,7 @@ from mypy_boto3_auditmanager.type_defs import ListNotificationsResponseTypeDef
 Optional fields:
 
 - `notifications`:
-  `List`\[[NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#notificationtypedef)\]
+  `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -1046,8 +996,7 @@ from mypy_boto3_auditmanager.type_defs import RegisterAccountResponseTypeDef
 
 Optional fields:
 
-- `status`:
-  [AccountStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#accountstatus)
+- `status`: [AccountStatus](./literals.md#accountstatus)
 
 ## RegisterOrganizationAdminAccountResponseTypeDef
 
@@ -1079,8 +1028,7 @@ from mypy_boto3_auditmanager.type_defs import RoleTypeDef
 
 Optional fields:
 
-- `roleType`:
-  [RoleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/literals.html#roletype)
+- `roleType`: [RoleType](./literals.md#roletype)
 - `roleArn`: `str`
 
 ## ScopeTypeDef
@@ -1091,10 +1039,8 @@ from mypy_boto3_auditmanager.type_defs import ScopeTypeDef
 
 Optional fields:
 
-- `awsAccounts`:
-  `List`\[[AWSAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#awsaccounttypedef)\]
-- `awsServices`:
-  `List`\[[AWSServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#awsservicetypedef)\]
+- `awsAccounts`: `List`\[[AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)\]
+- `awsServices`: `List`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
 
 ## ServiceMetadataTypeDef
 
@@ -1120,9 +1066,8 @@ Optional fields:
 - `isAwsOrgEnabled`: `bool`
 - `snsTopic`: `str`
 - `defaultAssessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#roletypedef)\]
+  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
+- `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
 ## SourceKeywordTypeDef
@@ -1133,7 +1078,8 @@ from mypy_boto3_auditmanager.type_defs import SourceKeywordTypeDef
 
 Optional fields:
 
-- `keywordInputType`: `Literal['SELECT_FROM_LIST']`
+- `keywordInputType`: `Literal['SELECT_FROM_LIST']` (see
+  [KeywordInputType](./literals.md#keywordinputtype))
 - `keywordValue`: `str`
 
 ## URLTypeDef
@@ -1155,8 +1101,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlResponseTyp
 
 Optional fields:
 
-- `control`:
-  [AssessmentControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentcontroltypedef)
+- `control`: [AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)
 
 ## UpdateAssessmentControlSetStatusResponseTypeDef
 
@@ -1167,7 +1112,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusRe
 Optional fields:
 
 - `controlSet`:
-  [AssessmentControlSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmentcontrolsettypedef)
+  [AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef)
 
 ## UpdateAssessmentFrameworkControlSetTypeDef
 
@@ -1183,7 +1128,7 @@ Optional fields:
 
 - `id`: `str`
 - `controls`:
-  `List`\[[CreateAssessmentFrameworkControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#createassessmentframeworkcontroltypedef)\]
+  `List`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 ## UpdateAssessmentFrameworkResponseTypeDef
 
@@ -1193,8 +1138,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkResponseT
 
 Optional fields:
 
-- `framework`:
-  [FrameworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#frameworktypedef)
+- `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
 
 ## UpdateAssessmentResponseTypeDef
 
@@ -1204,8 +1148,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentResponseTypeDef
 
 Optional fields:
 
-- `assessment`:
-  [AssessmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmenttypedef)
+- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
 
 ## UpdateAssessmentStatusResponseTypeDef
 
@@ -1215,8 +1158,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusResponseType
 
 Optional fields:
 
-- `assessment`:
-  [AssessmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#assessmenttypedef)
+- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
 
 ## UpdateControlResponseTypeDef
 
@@ -1226,8 +1168,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateControlResponseTypeDef
 
 Optional fields:
 
-- `control`:
-  [ControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#controltypedef)
+- `control`: [ControlTypeDef](./type_defs.md#controltypedef)
 
 ## UpdateSettingsResponseTypeDef
 
@@ -1237,8 +1178,7 @@ from mypy_boto3_auditmanager.type_defs import UpdateSettingsResponseTypeDef
 
 Optional fields:
 
-- `settings`:
-  [SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_auditmanager/type_defs.html#settingstypedef)
+- `settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 
 ## ValidateAssessmentReportIntegrityResponseTypeDef
 

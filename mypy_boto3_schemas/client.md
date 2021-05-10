@@ -1,6 +1,6 @@
 # SchemasClient for boto3 Schemas module
 
-> [Index](../README.md) > [Schemas](./README.md) > SchemasClient
+> [Index](..) > [Schemas](.) > SchemasClient
 
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
@@ -118,7 +118,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDiscovererResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#creatediscovererresponsetypedef).
+[CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
 
 ### create_registry
 
@@ -134,7 +134,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#createregistryresponsetypedef).
+[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
 
 ### create_schema
 
@@ -148,14 +148,12 @@ Arguments:
 - `Content`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#typetype)
-  *(required)*
+- `Type`: [TypeType](./literals.md#typetype) *(required)*
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#createschemaresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### delete_discoverer
 
@@ -230,7 +228,7 @@ Arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[DescribeCodeBindingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#describecodebindingresponsetypedef).
+[DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef).
 
 ### describe_discoverer
 
@@ -244,7 +242,7 @@ Arguments:
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[DescribeDiscovererResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#describediscovererresponsetypedef).
+[DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef).
 
 ### describe_registry
 
@@ -258,7 +256,7 @@ Arguments:
 - `RegistryName`: `str` *(required)*
 
 Returns
-[DescribeRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#describeregistryresponsetypedef).
+[DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
 
 ### describe_schema
 
@@ -274,7 +272,7 @@ Arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[DescribeSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#describeschemaresponsetypedef).
+[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
 
 ### export_schema
 
@@ -291,7 +289,7 @@ Arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[ExportSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#exportschemaresponsetypedef).
+[ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef).
 
 ### generate_presigned_url
 
@@ -324,7 +322,7 @@ Arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[GetCodeBindingSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#getcodebindingsourceresponsetypedef).
+[GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef).
 
 ### get_discovered_schema
 
@@ -336,12 +334,10 @@ Boto3 documentation:
 Arguments:
 
 - `Events`: `List`\[`str`\] *(required)*
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#typetype)
-  *(required)*
+- `Type`: [TypeType](./literals.md#typetype) *(required)*
 
 Returns
-[GetDiscoveredSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#getdiscoveredschemaresponsetypedef).
+[GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef).
 
 ### get_resource_policy
 
@@ -355,7 +351,7 @@ Arguments:
 - `RegistryName`: `str`
 
 Returns
-[GetResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#getresourcepolicyresponsetypedef).
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### list_discoverers
 
@@ -372,7 +368,7 @@ Arguments:
 - `SourceArnPrefix`: `str`
 
 Returns
-[ListDiscoverersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listdiscoverersresponsetypedef).
+[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef).
 
 ### list_registries
 
@@ -389,7 +385,7 @@ Arguments:
 - `Scope`: `str`
 
 Returns
-[ListRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listregistriesresponsetypedef).
+[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
 
 ### list_schema_versions
 
@@ -406,7 +402,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listschemaversionsresponsetypedef).
+[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
 ### list_schemas
 
@@ -423,7 +419,7 @@ Arguments:
 - `SchemaNamePrefix`: `str`
 
 Returns
-[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listschemasresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -437,7 +433,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_code_binding
 
@@ -454,7 +450,7 @@ Arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[PutCodeBindingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#putcodebindingresponsetypedef).
+[PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef).
 
 ### put_resource_policy
 
@@ -470,7 +466,7 @@ Arguments:
 - `RevisionId`: `str`
 
 Returns
-[PutResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#putresourcepolicyresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### search_schemas
 
@@ -487,7 +483,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#searchschemasresponsetypedef).
+[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef).
 
 ### start_discoverer
 
@@ -501,7 +497,7 @@ Arguments:
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[StartDiscovererResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#startdiscovererresponsetypedef).
+[StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef).
 
 ### stop_discoverer
 
@@ -515,7 +511,7 @@ Arguments:
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[StopDiscovererResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#stopdiscovererresponsetypedef).
+[StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef).
 
 ### tag_resource
 
@@ -554,7 +550,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[UpdateDiscovererResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#updatediscovererresponsetypedef).
+[UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).
 
 ### update_registry
 
@@ -569,7 +565,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[UpdateRegistryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#updateregistryresponsetypedef).
+[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
 
 ### update_schema
 
@@ -585,11 +581,10 @@ Arguments:
 - `ClientTokenId`: `str`
 - `Content`: `str`
 - `Description`: `str`
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/literals.html#typetype)
+- `Type`: [TypeType](./literals.md#typetype)
 
 Returns
-[UpdateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#updateschemaresponsetypedef).
+[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
 ### get_paginator
 

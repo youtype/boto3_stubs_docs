@@ -1,6 +1,6 @@
 # Literals for boto3 DAX module
 
-> [Index](../README.md) > [DAX](./README.md) > Literals
+> [Index](..) > [DAX](.) > Literals
 
 Auto-generated documentation for
 [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)

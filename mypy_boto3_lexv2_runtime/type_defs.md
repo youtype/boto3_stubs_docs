@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 LexRuntimeV2 module
 
-> [Index](../README.md) > [LexRuntimeV2](./README.md) > Structures
+> [Index](..) > [LexRuntimeV2](.) > Typed dictionaries
 
 Auto-generated documentation for
 [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
@@ -49,7 +49,7 @@ Required fields:
 
 - `name`: `str`
 - `timeToLive`:
-  [ActiveContextTimeToLiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#activecontexttimetolivetypedef)
+  [ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef)
 
 Optional fields:
 
@@ -97,8 +97,7 @@ from mypy_boto3_lexv2_runtime.type_defs import DialogActionTypeDef
 
 Required fields:
 
-- `type`:
-  [DialogActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/literals.html#dialogactiontype)
+- `type`: [DialogActionType](./literals.md#dialogactiontype)
 
 Optional fields:
 
@@ -113,12 +112,10 @@ from mypy_boto3_lexv2_runtime.type_defs import GetSessionResponseTypeDef
 Optional fields:
 
 - `sessionId`: `str`
-- `messages`:
-  `List`\[[MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#messagetypedef)\]
+- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 - `interpretations`:
-  `List`\[[InterpretationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#interpretationtypedef)\]
-- `sessionState`:
-  [SessionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#sessionstatetypedef)
+  `List`\[[InterpretationTypeDef](./type_defs.md#interpretationtypedef)\]
+- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
 
 ## ImageResponseCardTypeDef
 
@@ -134,8 +131,7 @@ Optional fields:
 
 - `subtitle`: `str`
 - `imageUrl`: `str`
-- `buttons`:
-  `List`\[[ButtonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#buttontypedef)\]
+- `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
 
 ## IntentTypeDef
 
@@ -149,12 +145,9 @@ Required fields:
 
 Optional fields:
 
-- `slots`: `Dict`\[`str`,
-  [SlotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#slottypedef)\]
-- `state`:
-  [IntentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/literals.html#intentstate)
-- `confirmationState`:
-  [ConfirmationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/literals.html#confirmationstate)
+- `slots`: `Dict`\[`str`, [SlotTypeDef](./type_defs.md#slottypedef)\]
+- `state`: [IntentState](./literals.md#intentstate)
+- `confirmationState`: [ConfirmationState](./literals.md#confirmationstate)
 
 ## InterpretationTypeDef
 
@@ -165,11 +158,10 @@ from mypy_boto3_lexv2_runtime.type_defs import InterpretationTypeDef
 Optional fields:
 
 - `nluConfidence`:
-  [ConfidenceScoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#confidencescoretypedef)
+  [ConfidenceScoreTypeDef](./type_defs.md#confidencescoretypedef)
 - `sentimentResponse`:
-  [SentimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#sentimentresponsetypedef)
-- `intent`:
-  [IntentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#intenttypedef)
+  [SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef)
+- `intent`: [IntentTypeDef](./type_defs.md#intenttypedef)
 
 ## MessageTypeDef
 
@@ -180,10 +172,9 @@ from mypy_boto3_lexv2_runtime.type_defs import MessageTypeDef
 Optional fields:
 
 - `content`: `str`
-- `contentType`:
-  [MessageContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/literals.html#messagecontenttype)
+- `contentType`: [MessageContentType](./literals.md#messagecontenttype)
 - `imageResponseCard`:
-  [ImageResponseCardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#imageresponsecardtypedef)
+  [ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef)
 
 ## PutSessionResponseTypeDef
 
@@ -208,12 +199,10 @@ from mypy_boto3_lexv2_runtime.type_defs import RecognizeTextResponseTypeDef
 
 Optional fields:
 
-- `messages`:
-  `List`\[[MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#messagetypedef)\]
-- `sessionState`:
-  [SessionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#sessionstatetypedef)
+- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
 - `interpretations`:
-  `List`\[[InterpretationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#interpretationtypedef)\]
+  `List`\[[InterpretationTypeDef](./type_defs.md#interpretationtypedef)\]
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 - `sessionId`: `str`
 
@@ -243,10 +232,8 @@ from mypy_boto3_lexv2_runtime.type_defs import SentimentResponseTypeDef
 
 Optional fields:
 
-- `sentiment`:
-  [SentimentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/literals.html#sentimenttype)
-- `sentimentScore`:
-  [SentimentScoreTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#sentimentscoretypedef)
+- `sentiment`: [SentimentType](./literals.md#sentimenttype)
+- `sentimentScore`: [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
 
 ## SentimentScoreTypeDef
 
@@ -269,12 +256,10 @@ from mypy_boto3_lexv2_runtime.type_defs import SessionStateTypeDef
 
 Optional fields:
 
-- `dialogAction`:
-  [DialogActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#dialogactiontypedef)
-- `intent`:
-  [IntentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#intenttypedef)
+- `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
+- `intent`: [IntentTypeDef](./type_defs.md#intenttypedef)
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#activecontexttypedef)\]
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 - `sessionAttributes`: `Dict`\[`str`, `str`\]
 - `originatingRequestId`: `str`
 
@@ -286,8 +271,7 @@ from mypy_boto3_lexv2_runtime.type_defs import SlotTypeDef
 
 Optional fields:
 
-- `value`:
-  [ValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#valuetypedef)
+- `value`: [ValueTypeDef](./type_defs.md#valuetypedef)
 
 ## ValueTypeDef
 

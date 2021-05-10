@@ -1,6 +1,6 @@
 # Paginators for boto3 WorkSpaces module
 
-> [Index](../README.md) > [WorkSpaces](./README.md) > Paginators
+> [Index](..) > [WorkSpaces](.) > Paginators
 
 Auto-generated documentation for
 [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
@@ -37,10 +37,10 @@ Boto3 documentation:
 Arguments for `DescribeAccountModificationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeaccountmodificationsresulttypedef)\].
+`Iterator`\[[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef)\].
 
 ## DescribeIpGroupsPaginator
 
@@ -63,10 +63,10 @@ Arguments for `DescribeIpGroupsPaginator.paginate` method:
 
 - `GroupIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIpGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeIpGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeipgroupsresulttypedef)\].
+`Iterator`\[[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef)\].
 
 ## DescribeWorkspaceBundlesPaginator
 
@@ -90,10 +90,10 @@ Arguments for `DescribeWorkspaceBundlesPaginator.paginate` method:
 - `BundleIds`: `List`\[`str`\]
 - `Owner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspaceBundlesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspaceBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacebundlesresulttypedef)\].
+`Iterator`\[[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef)\].
 
 ## DescribeWorkspaceDirectoriesPaginator
 
@@ -117,10 +117,10 @@ Arguments for `DescribeWorkspaceDirectoriesPaginator.paginate` method:
 - `DirectoryIds`: `List`\[`str`\]
 - `Limit`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspaceDirectoriesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspaceDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacedirectoriesresulttypedef)\].
+`Iterator`\[[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef)\].
 
 ## DescribeWorkspaceImagesPaginator
 
@@ -142,13 +142,12 @@ Boto3 documentation:
 Arguments for `DescribeWorkspaceImagesPaginator.paginate` method:
 
 - `ImageIds`: `List`\[`str`\]
-- `ImageType`:
-  [ImageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/literals.html#imagetype)
+- `ImageType`: [ImageType](./literals.md#imagetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspaceImagesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspaceImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspaceimagesresulttypedef)\].
+`Iterator`\[[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef)\].
 
 ## DescribeWorkspacesPaginator
 
@@ -174,10 +173,10 @@ Arguments for `DescribeWorkspacesPaginator.paginate` method:
 - `UserName`: `str`
 - `BundleId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspacesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspacesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesresulttypedef)\].
+`Iterator`\[[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef)\].
 
 ## DescribeWorkspacesConnectionStatusPaginator
 
@@ -200,10 +199,10 @@ Arguments for `DescribeWorkspacesConnectionStatusPaginator.paginate` method:
 
 - `WorkspaceIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspacesConnectionStatusPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspacesConnectionStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#describeworkspacesconnectionstatusresulttypedef)\].
+`Iterator`\[[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef)\].
 
 ## ListAvailableManagementCidrRangesPaginator
 
@@ -226,7 +225,7 @@ Arguments for `ListAvailableManagementCidrRangesPaginator.paginate` method:
 
 - `ManagementCidrRangeConstraint`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAvailableManagementCidrRangesPaginator.paginate` returns
-`Iterator`\[[ListAvailableManagementCidrRangesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workspaces/type_defs.html#listavailablemanagementcidrrangesresulttypedef)\].
+`Iterator`\[[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef)\].

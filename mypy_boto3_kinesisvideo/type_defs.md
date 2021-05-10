@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 KinesisVideo module
 
-> [Index](../README.md) > [KinesisVideo](./README.md) > Structures
+> [Index](..) > [KinesisVideo](.) > Typed dictionaries
 
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
@@ -22,7 +22,7 @@ type annotations stubs module
   - [ListTagsForStreamOutputTypeDef](#listtagsforstreamoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceEndpointListItemTypeDef](#resourceendpointlistitemtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SingleMasterChannelEndpointConfigurationTypeDef](#singlemasterchannelendpointconfigurationtypedef)
   - [SingleMasterConfigurationTypeDef](#singlemasterconfigurationtypedef)
   - [StreamInfoTypeDef](#streaminfotypedef)
@@ -39,12 +39,12 @@ Optional fields:
 
 - `ChannelName`: `str`
 - `ChannelARN`: `str`
-- `ChannelType`: `Literal['SINGLE_MASTER']`
-- `ChannelStatus`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#status)
+- `ChannelType`: `Literal['SINGLE_MASTER']` (see
+  [ChannelType](./literals.md#channeltype))
+- `ChannelStatus`: [Status](./literals.md#status)
 - `CreationTime`: `datetime`
 - `SingleMasterConfiguration`:
-  [SingleMasterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#singlemasterconfigurationtypedef)
+  [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 - `Version`: `str`
 
 ## ChannelNameConditionTypeDef
@@ -55,7 +55,8 @@ from mypy_boto3_kinesisvideo.type_defs import ChannelNameConditionTypeDef
 
 Optional fields:
 
-- `ComparisonOperator`: `Literal['BEGINS_WITH']`
+- `ComparisonOperator`: `Literal['BEGINS_WITH']` (see
+  [ComparisonOperator](./literals.md#comparisonoperator))
 - `ComparisonValue`: `str`
 
 ## CreateSignalingChannelOutputTypeDef
@@ -68,7 +69,7 @@ Required fields:
 
 - `ChannelARN`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateStreamOutputTypeDef
 
@@ -80,7 +81,7 @@ Required fields:
 
 - `StreamARN`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeSignalingChannelOutputTypeDef
 
@@ -90,10 +91,9 @@ from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelOutputType
 
 Required fields:
 
-- `ChannelInfo`:
-  [ChannelInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#channelinfotypedef)
+- `ChannelInfo`: [ChannelInfoTypeDef](./type_defs.md#channelinfotypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeStreamOutputTypeDef
 
@@ -103,10 +103,9 @@ from mypy_boto3_kinesisvideo.type_defs import DescribeStreamOutputTypeDef
 
 Required fields:
 
-- `StreamInfo`:
-  [StreamInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#streaminfotypedef)
+- `StreamInfo`: [StreamInfoTypeDef](./type_defs.md#streaminfotypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetDataEndpointOutputTypeDef
 
@@ -118,7 +117,7 @@ Required fields:
 
 - `DataEndpoint`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetSignalingChannelEndpointOutputTypeDef
 
@@ -129,9 +128,9 @@ from mypy_boto3_kinesisvideo.type_defs import GetSignalingChannelEndpointOutputT
 Required fields:
 
 - `ResourceEndpointList`:
-  `List`\[[ResourceEndpointListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#resourceendpointlistitemtypedef)\]
+  `List`\[[ResourceEndpointListItemTypeDef](./type_defs.md#resourceendpointlistitemtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListSignalingChannelsOutputTypeDef
 
@@ -142,10 +141,10 @@ from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputTypeDef
 Required fields:
 
 - `ChannelInfoList`:
-  `List`\[[ChannelInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#channelinfotypedef)\]
+  `List`\[[ChannelInfoTypeDef](./type_defs.md#channelinfotypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListStreamsOutputTypeDef
 
@@ -156,10 +155,10 @@ from mypy_boto3_kinesisvideo.type_defs import ListStreamsOutputTypeDef
 Required fields:
 
 - `StreamInfoList`:
-  `List`\[[StreamInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#streaminfotypedef)\]
+  `List`\[[StreamInfoTypeDef](./type_defs.md#streaminfotypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -172,7 +171,7 @@ Required fields:
 - `NextToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForStreamOutputTypeDef
 
@@ -185,7 +184,7 @@ Required fields:
 - `NextToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -207,14 +206,13 @@ from mypy_boto3_kinesisvideo.type_defs import ResourceEndpointListItemTypeDef
 
 Optional fields:
 
-- `Protocol`:
-  [ChannelProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#channelprotocol)
+- `Protocol`: [ChannelProtocol](./literals.md#channelprotocol)
 - `ResourceEndpoint`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ResponseMetadata
+from mypy_boto3_kinesisvideo.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -233,10 +231,8 @@ from mypy_boto3_kinesisvideo.type_defs import SingleMasterChannelEndpointConfigu
 
 Optional fields:
 
-- `Protocols`:
-  `List`\[[ChannelProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#channelprotocol)\]
-- `Role`:
-  [ChannelRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#channelrole)
+- `Protocols`: `List`\[[ChannelProtocol](./literals.md#channelprotocol)\]
+- `Role`: [ChannelRole](./literals.md#channelrole)
 
 ## SingleMasterConfigurationTypeDef
 
@@ -262,8 +258,7 @@ Optional fields:
 - `MediaType`: `str`
 - `KmsKeyId`: `str`
 - `Version`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 - `CreationTime`: `datetime`
 - `DataRetentionInHours`: `int`
 
@@ -275,7 +270,8 @@ from mypy_boto3_kinesisvideo.type_defs import StreamNameConditionTypeDef
 
 Optional fields:
 
-- `ComparisonOperator`: `Literal['BEGINS_WITH']`
+- `ComparisonOperator`: `Literal['BEGINS_WITH']` (see
+  [ComparisonOperator](./literals.md#comparisonoperator))
 - `ComparisonValue`: `str`
 
 ## TagTypeDef

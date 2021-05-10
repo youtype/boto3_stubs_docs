@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 EC2 module
 
-> [Index](../README.md) > [EC2](./README.md) > Structures
+> [Index](..) > [EC2](.) > Typed dictionaries
 
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
@@ -948,7 +948,7 @@ from mypy_boto3_ec2.type_defs import AcceptTransitGatewayMulticastDomainAssociat
 Optional fields:
 
 - `Associations`:
-  [TransitGatewayMulticastDomainAssociationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomainassociationstypedef)
+  [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
 
 ## AcceptTransitGatewayPeeringAttachmentResultTypeDef
 
@@ -959,7 +959,7 @@ from mypy_boto3_ec2.type_defs import AcceptTransitGatewayPeeringAttachmentResult
 Optional fields:
 
 - `TransitGatewayPeeringAttachment`:
-  [TransitGatewayPeeringAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypeeringattachmenttypedef)
+  [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
 
 ## AcceptTransitGatewayVpcAttachmentResultTypeDef
 
@@ -970,7 +970,7 @@ from mypy_boto3_ec2.type_defs import AcceptTransitGatewayVpcAttachmentResultType
 Optional fields:
 
 - `TransitGatewayVpcAttachment`:
-  [TransitGatewayVpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmenttypedef)
+  [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
 
 ## AcceptVpcEndpointConnectionsResultTypeDef
 
@@ -981,7 +981,7 @@ from mypy_boto3_ec2.type_defs import AcceptVpcEndpointConnectionsResultTypeDef
 Optional fields:
 
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## AcceptVpcPeeringConnectionResultTypeDef
 
@@ -992,7 +992,7 @@ from mypy_boto3_ec2.type_defs import AcceptVpcPeeringConnectionResultTypeDef
 Optional fields:
 
 - `VpcPeeringConnection`:
-  [VpcPeeringConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectiontypedef)
+  [VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)
 
 ## AccountAttributeTypeDef
 
@@ -1004,7 +1004,7 @@ Optional fields:
 
 - `AttributeName`: `str`
 - `AttributeValues`:
-  `List`\[[AccountAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#accountattributevaluetypedef)\]
+  `List`\[[AccountAttributeValueTypeDef](./type_defs.md#accountattributevaluetypedef)\]
 
 ## AccountAttributeValueTypeDef
 
@@ -1027,8 +1027,7 @@ Optional fields:
 - `InstanceId`: `str`
 - `InstanceType`: `str`
 - `SpotInstanceRequestId`: `str`
-- `InstanceHealth`:
-  [InstanceHealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancehealthstatus)
+- `InstanceHealth`: [InstanceHealthStatus](./literals.md#instancehealthstatus)
 
 ## AddPrefixListEntryTypeDef
 
@@ -1056,7 +1055,7 @@ Optional fields:
 - `AllocationId`: `str`
 - `PtrRecord`: `str`
 - `PtrRecordUpdate`:
-  [PtrUpdateStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ptrupdatestatustypedef)
+  [PtrUpdateStatusTypeDef](./type_defs.md#ptrupdatestatustypedef)
 
 ## AddressTypeDef
 
@@ -1070,13 +1069,11 @@ Optional fields:
 - `PublicIp`: `str`
 - `AllocationId`: `str`
 - `AssociationId`: `str`
-- `Domain`:
-  [DomainType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#domaintype)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `NetworkInterfaceId`: `str`
 - `NetworkInterfaceOwnerId`: `str`
 - `PrivateIpAddress`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PublicIpv4Pool`: `str`
 - `NetworkBorderGroup`: `str`
 - `CustomerOwnedIp`: `str`
@@ -1091,8 +1088,7 @@ from mypy_boto3_ec2.type_defs import AdvertiseByoipCidrResultTypeDef
 
 Optional fields:
 
-- `ByoipCidr`:
-  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#byoipcidrtypedef)
+- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
 
 ## AllocateAddressResultTypeDef
 
@@ -1106,8 +1102,7 @@ Optional fields:
 - `AllocationId`: `str`
 - `PublicIpv4Pool`: `str`
 - `NetworkBorderGroup`: `str`
-- `Domain`:
-  [DomainType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#domaintype)
+- `Domain`: [DomainType](./literals.md#domaintype)
 - `CustomerOwnedIp`: `str`
 - `CustomerOwnedIpv4Pool`: `str`
 - `CarrierIp`: `str`
@@ -1130,8 +1125,7 @@ from mypy_boto3_ec2.type_defs import AllowedPrincipalTypeDef
 
 Optional fields:
 
-- `PrincipalType`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#principaltype)
+- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
 - `Principal`: `str`
 
 ## AlternatePathHintTypeDef
@@ -1155,8 +1149,7 @@ Optional fields:
 
 - `Cidr`: `str`
 - `Egress`: `bool`
-- `PortRange`:
-  [PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `Protocol`: `str`
 - `RuleAction`: `str`
 - `RuleNumber`: `int`
@@ -1193,8 +1186,7 @@ Optional fields:
 
 - `Address`: `str`
 - `AvailabilityZone`: `str`
-- `Instance`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+- `Instance`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Port`: `int`
 
 ## AnalysisPacketHeaderTypeDef
@@ -1207,11 +1199,11 @@ Optional fields:
 
 - `DestinationAddresses`: `List`\[`str`\]
 - `DestinationPortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)\]
+  `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocol`: `str`
 - `SourceAddresses`: `List`\[`str`\]
 - `SourcePortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)\]
+  `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
 ## AnalysisRouteTableRouteTypeDef
 
@@ -1243,8 +1235,7 @@ Optional fields:
 - `Cidr`: `str`
 - `Direction`: `str`
 - `SecurityGroupId`: `str`
-- `PortRange`:
-  [PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `PrefixListId`: `str`
 - `Protocol`: `str`
 
@@ -1279,7 +1270,7 @@ Optional fields:
 
 - `NetworkInterfaceId`: `str`
 - `AssignedPrivateIpAddresses`:
-  `List`\[[AssignedPrivateIpAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#assignedprivateipaddresstypedef)\]
+  `List`\[[AssignedPrivateIpAddressTypeDef](./type_defs.md#assignedprivateipaddresstypedef)\]
 
 ## AssignedPrivateIpAddressTypeDef
 
@@ -1310,8 +1301,7 @@ from mypy_boto3_ec2.type_defs import AssociateClientVpnTargetNetworkResultTypeDe
 Optional fields:
 
 - `AssociationId`: `str`
-- `Status`:
-  [AssociationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associationstatustypedef)
+- `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
 
 ## AssociateEnclaveCertificateIamRoleResultTypeDef
 
@@ -1334,7 +1324,7 @@ from mypy_boto3_ec2.type_defs import AssociateIamInstanceProfileResultTypeDef
 Optional fields:
 
 - `IamInstanceProfileAssociation`:
-  [IamInstanceProfileAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofileassociationtypedef)
+  [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
 
 ## AssociateRouteTableResultTypeDef
 
@@ -1346,7 +1336,7 @@ Optional fields:
 
 - `AssociationId`: `str`
 - `AssociationState`:
-  [RouteTableAssociationStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetableassociationstatetypedef)
+  [RouteTableAssociationStateTypeDef](./type_defs.md#routetableassociationstatetypedef)
 
 ## AssociateSubnetCidrBlockResultTypeDef
 
@@ -1357,7 +1347,7 @@ from mypy_boto3_ec2.type_defs import AssociateSubnetCidrBlockResultTypeDef
 Optional fields:
 
 - `Ipv6CidrBlockAssociation`:
-  [SubnetIpv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnetipv6cidrblockassociationtypedef)
+  [SubnetIpv6CidrBlockAssociationTypeDef](./type_defs.md#subnetipv6cidrblockassociationtypedef)
 - `SubnetId`: `str`
 
 ## AssociateTransitGatewayMulticastDomainResultTypeDef
@@ -1369,7 +1359,7 @@ from mypy_boto3_ec2.type_defs import AssociateTransitGatewayMulticastDomainResul
 Optional fields:
 
 - `Associations`:
-  [TransitGatewayMulticastDomainAssociationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomainassociationstypedef)
+  [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
 
 ## AssociateTransitGatewayRouteTableResultTypeDef
 
@@ -1380,7 +1370,7 @@ from mypy_boto3_ec2.type_defs import AssociateTransitGatewayRouteTableResultType
 Optional fields:
 
 - `Association`:
-  [TransitGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayassociationtypedef)
+  [TransitGatewayAssociationTypeDef](./type_defs.md#transitgatewayassociationtypedef)
 
 ## AssociateVpcCidrBlockResultTypeDef
 
@@ -1391,9 +1381,9 @@ from mypy_boto3_ec2.type_defs import AssociateVpcCidrBlockResultTypeDef
 Optional fields:
 
 - `Ipv6CidrBlockAssociation`:
-  [VpcIpv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcipv6cidrblockassociationtypedef)
+  [VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)
 - `CidrBlockAssociation`:
-  [VpcCidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpccidrblockassociationtypedef)
+  [VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)
 - `VpcId`: `str`
 
 ## AssociatedRoleTypeDef
@@ -1418,7 +1408,8 @@ from mypy_boto3_ec2.type_defs import AssociatedTargetNetworkTypeDef
 Optional fields:
 
 - `NetworkId`: `str`
-- `NetworkType`: `Literal['vpc']`
+- `NetworkType`: `Literal['vpc']` (see
+  [AssociatedNetworkType](./literals.md#associatednetworktype))
 
 ## AssociationStatusTypeDef
 
@@ -1428,8 +1419,7 @@ from mypy_boto3_ec2.type_defs import AssociationStatusTypeDef
 
 Optional fields:
 
-- `Code`:
-  [AssociationStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#associationstatuscode)
+- `Code`: [AssociationStatusCode](./literals.md#associationstatuscode)
 - `Message`: `str`
 
 ## AthenaIntegrationTypeDef
@@ -1442,7 +1432,7 @@ Required fields:
 
 - `IntegrationResultS3DestinationArn`: `str`
 - `PartitionLoadFrequency`:
-  [PartitionLoadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#partitionloadfrequency)
+  [PartitionLoadFrequency](./literals.md#partitionloadfrequency)
 
 Optional fields:
 
@@ -1478,8 +1468,7 @@ from mypy_boto3_ec2.type_defs import AttachVpnGatewayResultTypeDef
 
 Optional fields:
 
-- `VpcAttachment`:
-  [VpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcattachmenttypedef)
+- `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
 
 ## AttributeBooleanValueTypeDef
 
@@ -1515,7 +1504,7 @@ Optional fields:
 - `AccessAll`: `bool`
 - `DestinationCidr`: `str`
 - `Status`:
-  [ClientVpnAuthorizationRuleStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnauthorizationrulestatustypedef)
+  [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
 
 ## AuthorizeClientVpnIngressResultTypeDef
 
@@ -1526,7 +1515,7 @@ from mypy_boto3_ec2.type_defs import AuthorizeClientVpnIngressResultTypeDef
 Optional fields:
 
 - `Status`:
-  [ClientVpnAuthorizationRuleStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnauthorizationrulestatustypedef)
+  [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
 
 ## AvailabilityZoneMessageTypeDef
 
@@ -1546,12 +1535,11 @@ from mypy_boto3_ec2.type_defs import AvailabilityZoneTypeDef
 
 Optional fields:
 
-- `State`:
-  [AvailabilityZoneState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#availabilityzonestate)
+- `State`: [AvailabilityZoneState](./literals.md#availabilityzonestate)
 - `OptInStatus`:
-  [AvailabilityZoneOptInStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#availabilityzoneoptinstatus)
+  [AvailabilityZoneOptInStatus](./literals.md#availabilityzoneoptinstatus)
 - `Messages`:
-  `List`\[[AvailabilityZoneMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#availabilityzonemessagetypedef)\]
+  `List`\[[AvailabilityZoneMessageTypeDef](./type_defs.md#availabilityzonemessagetypedef)\]
 - `RegionName`: `str`
 - `ZoneName`: `str`
 - `ZoneId`: `str`
@@ -1570,7 +1558,7 @@ from mypy_boto3_ec2.type_defs import AvailableCapacityTypeDef
 Optional fields:
 
 - `AvailableInstanceCapacity`:
-  `List`\[[InstanceCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancecapacitytypedef)\]
+  `List`\[[InstanceCapacityTypeDef](./type_defs.md#instancecapacitytypedef)\]
 - `AvailableVCpus`: `int`
 
 ## BlobAttributeValueTypeDef
@@ -1593,8 +1581,7 @@ Optional fields:
 
 - `DeviceName`: `str`
 - `VirtualName`: `str`
-- `Ebs`:
-  [EbsBlockDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ebsblockdevicetypedef)
+- `Ebs`: [EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)
 - `NoDevice`: `str`
 
 ## BundleInstanceResultTypeDef
@@ -1605,8 +1592,7 @@ from mypy_boto3_ec2.type_defs import BundleInstanceResultTypeDef
 
 Optional fields:
 
-- `BundleTask`:
-  [BundleTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#bundletasktypedef)
+- `BundleTask`: [BundleTaskTypeDef](./type_defs.md#bundletasktypedef)
 
 ## BundleTaskErrorTypeDef
 
@@ -1629,14 +1615,12 @@ Optional fields:
 
 - `BundleId`: `str`
 - `BundleTaskError`:
-  [BundleTaskErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#bundletaskerrortypedef)
+  [BundleTaskErrorTypeDef](./type_defs.md#bundletaskerrortypedef)
 - `InstanceId`: `str`
 - `Progress`: `str`
 - `StartTime`: `datetime`
-- `State`:
-  [BundleTaskState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#bundletaskstate)
-- `Storage`:
-  [StorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#storagetypedef)
+- `State`: [BundleTaskState](./literals.md#bundletaskstate)
+- `Storage`: [StorageTypeDef](./type_defs.md#storagetypedef)
 - `UpdateTime`: `datetime`
 
 ## ByoipCidrTypeDef
@@ -1650,8 +1634,7 @@ Optional fields:
 - `Cidr`: `str`
 - `Description`: `str`
 - `StatusMessage`: `str`
-- `State`:
-  [ByoipCidrState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#byoipcidrstate)
+- `State`: [ByoipCidrState](./literals.md#byoipcidrstate)
 
 ## CancelBundleTaskResultTypeDef
 
@@ -1661,8 +1644,7 @@ from mypy_boto3_ec2.type_defs import CancelBundleTaskResultTypeDef
 
 Optional fields:
 
-- `BundleTask`:
-  [BundleTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#bundletasktypedef)
+- `BundleTask`: [BundleTaskTypeDef](./type_defs.md#bundletasktypedef)
 
 ## CancelCapacityReservationResultTypeDef
 
@@ -1695,7 +1677,7 @@ from mypy_boto3_ec2.type_defs import CancelReservedInstancesListingResultTypeDef
 Optional fields:
 
 - `ReservedInstancesListings`:
-  `List`\[[ReservedInstancesListingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstanceslistingtypedef)\]
+  `List`\[[ReservedInstancesListingTypeDef](./type_defs.md#reservedinstanceslistingtypedef)\]
 
 ## CancelSpotFleetRequestsErrorItemTypeDef
 
@@ -1706,7 +1688,7 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsErrorItemTypeDef
 Optional fields:
 
 - `Error`:
-  [CancelSpotFleetRequestsErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cancelspotfleetrequestserrortypedef)
+  [CancelSpotFleetRequestsErrorTypeDef](./type_defs.md#cancelspotfleetrequestserrortypedef)
 - `SpotFleetRequestId`: `str`
 
 ## CancelSpotFleetRequestsErrorTypeDef
@@ -1717,8 +1699,7 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsErrorTypeDef
 
 Optional fields:
 
-- `Code`:
-  [CancelBatchErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#cancelbatcherrorcode)
+- `Code`: [CancelBatchErrorCode](./literals.md#cancelbatcherrorcode)
 - `Message`: `str`
 
 ## CancelSpotFleetRequestsResponseTypeDef
@@ -1730,9 +1711,9 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsResponseTypeDef
 Optional fields:
 
 - `SuccessfulFleetRequests`:
-  `List`\[[CancelSpotFleetRequestsSuccessItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cancelspotfleetrequestssuccessitemtypedef)\]
+  `List`\[[CancelSpotFleetRequestsSuccessItemTypeDef](./type_defs.md#cancelspotfleetrequestssuccessitemtypedef)\]
 - `UnsuccessfulFleetRequests`:
-  `List`\[[CancelSpotFleetRequestsErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cancelspotfleetrequestserroritemtypedef)\]
+  `List`\[[CancelSpotFleetRequestsErrorItemTypeDef](./type_defs.md#cancelspotfleetrequestserroritemtypedef)\]
 
 ## CancelSpotFleetRequestsSuccessItemTypeDef
 
@@ -1742,10 +1723,8 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsSuccessItemTypeDef
 
 Optional fields:
 
-- `CurrentSpotFleetRequestState`:
-  [BatchState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#batchstate)
-- `PreviousSpotFleetRequestState`:
-  [BatchState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#batchstate)
+- `CurrentSpotFleetRequestState`: [BatchState](./literals.md#batchstate)
+- `PreviousSpotFleetRequestState`: [BatchState](./literals.md#batchstate)
 - `SpotFleetRequestId`: `str`
 
 ## CancelSpotInstanceRequestsResultTypeDef
@@ -1757,7 +1736,7 @@ from mypy_boto3_ec2.type_defs import CancelSpotInstanceRequestsResultTypeDef
 Optional fields:
 
 - `CancelledSpotInstanceRequests`:
-  `List`\[[CancelledSpotInstanceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cancelledspotinstancerequesttypedef)\]
+  `List`\[[CancelledSpotInstanceRequestTypeDef](./type_defs.md#cancelledspotinstancerequesttypedef)\]
 
 ## CancelledSpotInstanceRequestTypeDef
 
@@ -1769,7 +1748,7 @@ Optional fields:
 
 - `SpotInstanceRequestId`: `str`
 - `State`:
-  [CancelSpotInstanceRequestState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#cancelspotinstancerequeststate)
+  [CancelSpotInstanceRequestState](./literals.md#cancelspotinstancerequeststate)
 
 ## CapacityReservationGroupTypeDef
 
@@ -1790,7 +1769,8 @@ from mypy_boto3_ec2.type_defs import CapacityReservationOptionsRequestTypeDef
 
 Optional fields:
 
-- `UsageStrategy`: `Literal['use-capacity-reservations-first']`
+- `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
+  [FleetCapacityReservationUsageStrategy](./literals.md#fleetcapacityreservationusagestrategy))
 
 ## CapacityReservationOptionsTypeDef
 
@@ -1800,7 +1780,8 @@ from mypy_boto3_ec2.type_defs import CapacityReservationOptionsTypeDef
 
 Optional fields:
 
-- `UsageStrategy`: `Literal['use-capacity-reservations-first']`
+- `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
+  [FleetCapacityReservationUsageStrategy](./literals.md#fleetcapacityreservationusagestrategy))
 
 ## CapacityReservationSpecificationResponseTypeDef
 
@@ -1811,9 +1792,9 @@ from mypy_boto3_ec2.type_defs import CapacityReservationSpecificationResponseTyp
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationpreference)
+  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
 - `CapacityReservationTarget`:
-  [CapacityReservationTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationtargetresponsetypedef)
+  [CapacityReservationTargetResponseTypeDef](./type_defs.md#capacityreservationtargetresponsetypedef)
 
 ## CapacityReservationSpecificationTypeDef
 
@@ -1824,9 +1805,9 @@ from mypy_boto3_ec2.type_defs import CapacityReservationSpecificationTypeDef
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationpreference)
+  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
 - `CapacityReservationTarget`:
-  [CapacityReservationTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationtargettypedef)
+  [CapacityReservationTargetTypeDef](./type_defs.md#capacityreservationtargettypedef)
 
 ## CapacityReservationTargetResponseTypeDef
 
@@ -1864,25 +1845,22 @@ Optional fields:
 - `AvailabilityZoneId`: `str`
 - `InstanceType`: `str`
 - `InstancePlatform`:
-  [CapacityReservationInstancePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationinstanceplatform)
+  [CapacityReservationInstancePlatform](./literals.md#capacityreservationinstanceplatform)
 - `AvailabilityZone`: `str`
 - `Tenancy`:
-  [CapacityReservationTenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationtenancy)
+  [CapacityReservationTenancy](./literals.md#capacityreservationtenancy)
 - `TotalInstanceCount`: `int`
 - `AvailableInstanceCount`: `int`
 - `EbsOptimized`: `bool`
 - `EphemeralStorage`: `bool`
-- `State`:
-  [CapacityReservationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationstate)
+- `State`: [CapacityReservationState](./literals.md#capacityreservationstate)
 - `StartDate`: `datetime`
 - `EndDate`: `datetime`
-- `EndDateType`:
-  [EndDateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#enddatetype)
+- `EndDateType`: [EndDateType](./literals.md#enddatetype)
 - `InstanceMatchCriteria`:
-  [InstanceMatchCriteria](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancematchcriteria)
+  [InstanceMatchCriteria](./literals.md#instancematchcriteria)
 - `CreateDate`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CarrierGatewayTypeDef
 
@@ -1894,11 +1872,9 @@ Optional fields:
 
 - `CarrierGatewayId`: `str`
 - `VpcId`: `str`
-- `State`:
-  [CarrierGatewayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#carriergatewaystate)
+- `State`: [CarrierGatewayState](./literals.md#carriergatewaystate)
 - `OwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CertificateAuthenticationRequestTypeDef
 
@@ -1961,10 +1937,9 @@ from mypy_boto3_ec2.type_defs import ClassicLinkInstanceTypeDef
 Optional fields:
 
 - `Groups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `InstanceId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 
 ## ClassicLoadBalancerTypeDef
@@ -1986,7 +1961,7 @@ from mypy_boto3_ec2.type_defs import ClassicLoadBalancersConfigTypeDef
 Optional fields:
 
 - `ClassicLoadBalancers`:
-  `List`\[[ClassicLoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#classicloadbalancertypedef)\]
+  `List`\[[ClassicLoadBalancerTypeDef](./type_defs.md#classicloadbalancertypedef)\]
 
 ## ClientCertificateRevocationListStatusTypeDef
 
@@ -1997,7 +1972,7 @@ from mypy_boto3_ec2.type_defs import ClientCertificateRevocationListStatusTypeDe
 Optional fields:
 
 - `Code`:
-  [ClientCertificateRevocationListStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientcertificaterevocationliststatuscode)
+  [ClientCertificateRevocationListStatusCode](./literals.md#clientcertificaterevocationliststatuscode)
 - `Message`: `str`
 
 ## ClientConnectOptionsTypeDef
@@ -2022,7 +1997,7 @@ Optional fields:
 - `Enabled`: `bool`
 - `LambdaFunctionArn`: `str`
 - `Status`:
-  [ClientVpnEndpointAttributeStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnendpointattributestatustypedef)
+  [ClientVpnEndpointAttributeStatusTypeDef](./type_defs.md#clientvpnendpointattributestatustypedef)
 
 ## ClientDataTypeDef
 
@@ -2046,13 +2021,13 @@ from mypy_boto3_ec2.type_defs import ClientVpnAuthenticationRequestTypeDef
 Optional fields:
 
 - `Type`:
-  [ClientVpnAuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnauthenticationtype)
+  [ClientVpnAuthenticationType](./literals.md#clientvpnauthenticationtype)
 - `ActiveDirectory`:
-  [DirectoryServiceAuthenticationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#directoryserviceauthenticationrequesttypedef)
+  [DirectoryServiceAuthenticationRequestTypeDef](./type_defs.md#directoryserviceauthenticationrequesttypedef)
 - `MutualAuthentication`:
-  [CertificateAuthenticationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#certificateauthenticationrequesttypedef)
+  [CertificateAuthenticationRequestTypeDef](./type_defs.md#certificateauthenticationrequesttypedef)
 - `FederatedAuthentication`:
-  [FederatedAuthenticationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#federatedauthenticationrequesttypedef)
+  [FederatedAuthenticationRequestTypeDef](./type_defs.md#federatedauthenticationrequesttypedef)
 
 ## ClientVpnAuthenticationTypeDef
 
@@ -2063,13 +2038,13 @@ from mypy_boto3_ec2.type_defs import ClientVpnAuthenticationTypeDef
 Optional fields:
 
 - `Type`:
-  [ClientVpnAuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnauthenticationtype)
+  [ClientVpnAuthenticationType](./literals.md#clientvpnauthenticationtype)
 - `ActiveDirectory`:
-  [DirectoryServiceAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#directoryserviceauthenticationtypedef)
+  [DirectoryServiceAuthenticationTypeDef](./type_defs.md#directoryserviceauthenticationtypedef)
 - `MutualAuthentication`:
-  [CertificateAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#certificateauthenticationtypedef)
+  [CertificateAuthenticationTypeDef](./type_defs.md#certificateauthenticationtypedef)
 - `FederatedAuthentication`:
-  [FederatedAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#federatedauthenticationtypedef)
+  [FederatedAuthenticationTypeDef](./type_defs.md#federatedauthenticationtypedef)
 
 ## ClientVpnAuthorizationRuleStatusTypeDef
 
@@ -2080,7 +2055,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnAuthorizationRuleStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnAuthorizationRuleStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnauthorizationrulestatuscode)
+  [ClientVpnAuthorizationRuleStatusCode](./literals.md#clientvpnauthorizationrulestatuscode)
 - `Message`: `str`
 
 ## ClientVpnConnectionStatusTypeDef
@@ -2092,7 +2067,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnConnectionStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnConnectionStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnconnectionstatuscode)
+  [ClientVpnConnectionStatusCode](./literals.md#clientvpnconnectionstatuscode)
 - `Message`: `str`
 
 ## ClientVpnConnectionTypeDef
@@ -2115,7 +2090,7 @@ Optional fields:
 - `ClientIp`: `str`
 - `CommonName`: `str`
 - `Status`:
-  [ClientVpnConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnconnectionstatustypedef)
+  [ClientVpnConnectionStatusTypeDef](./type_defs.md#clientvpnconnectionstatustypedef)
 - `ConnectionEndTime`: `str`
 - `PostureComplianceStatuses`: `List`\[`str`\]
 
@@ -2128,7 +2103,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnEndpointAttributeStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnEndpointAttributeStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnendpointattributestatuscode)
+  [ClientVpnEndpointAttributeStatusCode](./literals.md#clientvpnendpointattributestatuscode)
 - `Message`: `str`
 
 ## ClientVpnEndpointStatusTypeDef
@@ -2140,7 +2115,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnEndpointStatusTypeDef
 Optional fields:
 
 - `Code`:
-  [ClientVpnEndpointStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnendpointstatuscode)
+  [ClientVpnEndpointStatusCode](./literals.md#clientvpnendpointstatuscode)
 - `Message`: `str`
 
 ## ClientVpnEndpointTypeDef
@@ -2154,31 +2129,30 @@ Optional fields:
 - `ClientVpnEndpointId`: `str`
 - `Description`: `str`
 - `Status`:
-  [ClientVpnEndpointStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnendpointstatustypedef)
+  [ClientVpnEndpointStatusTypeDef](./type_defs.md#clientvpnendpointstatustypedef)
 - `CreationTime`: `str`
 - `DeletionTime`: `str`
 - `DnsName`: `str`
 - `ClientCidrBlock`: `str`
 - `DnsServers`: `List`\[`str`\]
 - `SplitTunnel`: `bool`
-- `VpnProtocol`: `Literal['openvpn']`
-- `TransportProtocol`:
-  [TransportProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transportprotocol)
+- `VpnProtocol`: `Literal['openvpn']` (see
+  [VpnProtocol](./literals.md#vpnprotocol))
+- `TransportProtocol`: [TransportProtocol](./literals.md#transportprotocol)
 - `VpnPort`: `int`
 - `AssociatedTargetNetworks`:
-  `List`\[[AssociatedTargetNetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associatedtargetnetworktypedef)\]
+  `List`\[[AssociatedTargetNetworkTypeDef](./type_defs.md#associatedtargetnetworktypedef)\]
 - `ServerCertificateArn`: `str`
 - `AuthenticationOptions`:
-  `List`\[[ClientVpnAuthenticationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnauthenticationtypedef)\]
+  `List`\[[ClientVpnAuthenticationTypeDef](./type_defs.md#clientvpnauthenticationtypedef)\]
 - `ConnectionLogOptions`:
-  [ConnectionLogResponseOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#connectionlogresponseoptionstypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [ConnectionLogResponseOptionsTypeDef](./type_defs.md#connectionlogresponseoptionstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SecurityGroupIds`: `List`\[`str`\]
 - `VpcId`: `str`
 - `SelfServicePortalUrl`: `str`
 - `ClientConnectOptions`:
-  [ClientConnectResponseOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientconnectresponseoptionstypedef)
+  [ClientConnectResponseOptionsTypeDef](./type_defs.md#clientconnectresponseoptionstypedef)
 
 ## ClientVpnRouteStatusTypeDef
 
@@ -2188,8 +2162,7 @@ from mypy_boto3_ec2.type_defs import ClientVpnRouteStatusTypeDef
 
 Optional fields:
 
-- `Code`:
-  [ClientVpnRouteStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#clientvpnroutestatuscode)
+- `Code`: [ClientVpnRouteStatusCode](./literals.md#clientvpnroutestatuscode)
 - `Message`: `str`
 
 ## ClientVpnRouteTypeDef
@@ -2206,7 +2179,7 @@ Optional fields:
 - `Type`: `str`
 - `Origin`: `str`
 - `Status`:
-  [ClientVpnRouteStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnroutestatustypedef)
+  [ClientVpnRouteStatusTypeDef](./type_defs.md#clientvpnroutestatustypedef)
 - `Description`: `str`
 
 ## CoipAddressUsageTypeDef
@@ -2233,8 +2206,7 @@ Optional fields:
 - `PoolId`: `str`
 - `PoolCidrs`: `List`\[`str`\]
 - `LocalGatewayRouteTableId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PoolArn`: `str`
 
 ## ConfirmProductInstanceResultTypeDef
@@ -2283,11 +2255,12 @@ Optional fields:
 - `ConnectionNotificationId`: `str`
 - `ServiceId`: `str`
 - `VpcEndpointId`: `str`
-- `ConnectionNotificationType`: `Literal['Topic']`
+- `ConnectionNotificationType`: `Literal['Topic']` (see
+  [ConnectionNotificationType](./literals.md#connectionnotificationtype))
 - `ConnectionNotificationArn`: `str`
 - `ConnectionEvents`: `List`\[`str`\]
 - `ConnectionNotificationState`:
-  [ConnectionNotificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#connectionnotificationstate)
+  [ConnectionNotificationState](./literals.md#connectionnotificationstate)
 
 ## ConversionTaskTypeDef
 
@@ -2300,14 +2273,12 @@ Optional fields:
 - `ConversionTaskId`: `str`
 - `ExpirationTime`: `str`
 - `ImportInstance`:
-  [ImportInstanceTaskDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importinstancetaskdetailstypedef)
+  [ImportInstanceTaskDetailsTypeDef](./type_defs.md#importinstancetaskdetailstypedef)
 - `ImportVolume`:
-  [ImportVolumeTaskDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importvolumetaskdetailstypedef)
-- `State`:
-  [ConversionTaskState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#conversiontaskstate)
+  [ImportVolumeTaskDetailsTypeDef](./type_defs.md#importvolumetaskdetailstypedef)
+- `State`: [ConversionTaskState](./literals.md#conversiontaskstate)
 - `StatusMessage`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyFpgaImageResultTypeDef
 
@@ -2338,8 +2309,7 @@ from mypy_boto3_ec2.type_defs import CopySnapshotResultTypeDef
 Optional fields:
 
 - `SnapshotId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CpuOptionsRequestTypeDef
 
@@ -2372,7 +2342,7 @@ from mypy_boto3_ec2.type_defs import CreateCapacityReservationResultTypeDef
 Optional fields:
 
 - `CapacityReservation`:
-  [CapacityReservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationtypedef)
+  [CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef)
 
 ## CreateCarrierGatewayResultTypeDef
 
@@ -2382,8 +2352,7 @@ from mypy_boto3_ec2.type_defs import CreateCarrierGatewayResultTypeDef
 
 Optional fields:
 
-- `CarrierGateway`:
-  [CarrierGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#carriergatewaytypedef)
+- `CarrierGateway`: [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
 
 ## CreateClientVpnEndpointResultTypeDef
 
@@ -2395,7 +2364,7 @@ Optional fields:
 
 - `ClientVpnEndpointId`: `str`
 - `Status`:
-  [ClientVpnEndpointStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnendpointstatustypedef)
+  [ClientVpnEndpointStatusTypeDef](./type_defs.md#clientvpnendpointstatustypedef)
 - `DnsName`: `str`
 
 ## CreateClientVpnRouteResultTypeDef
@@ -2407,7 +2376,7 @@ from mypy_boto3_ec2.type_defs import CreateClientVpnRouteResultTypeDef
 Optional fields:
 
 - `Status`:
-  [ClientVpnRouteStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnroutestatustypedef)
+  [ClientVpnRouteStatusTypeDef](./type_defs.md#clientvpnroutestatustypedef)
 
 ## CreateCustomerGatewayResultTypeDef
 
@@ -2418,7 +2387,7 @@ from mypy_boto3_ec2.type_defs import CreateCustomerGatewayResultTypeDef
 Optional fields:
 
 - `CustomerGateway`:
-  [CustomerGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#customergatewaytypedef)
+  [CustomerGatewayTypeDef](./type_defs.md#customergatewaytypedef)
 
 ## CreateDefaultSubnetResultTypeDef
 
@@ -2428,8 +2397,7 @@ from mypy_boto3_ec2.type_defs import CreateDefaultSubnetResultTypeDef
 
 Optional fields:
 
-- `Subnet`:
-  [SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnettypedef)
+- `Subnet`: [SubnetTypeDef](./type_defs.md#subnettypedef)
 
 ## CreateDefaultVpcResultTypeDef
 
@@ -2439,8 +2407,7 @@ from mypy_boto3_ec2.type_defs import CreateDefaultVpcResultTypeDef
 
 Optional fields:
 
-- `Vpc`:
-  [VpcTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpctypedef)
+- `Vpc`: [VpcTypeDef](./type_defs.md#vpctypedef)
 
 ## CreateDhcpOptionsResultTypeDef
 
@@ -2450,8 +2417,7 @@ from mypy_boto3_ec2.type_defs import CreateDhcpOptionsResultTypeDef
 
 Optional fields:
 
-- `DhcpOptions`:
-  [DhcpOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#dhcpoptionstypedef)
+- `DhcpOptions`: [DhcpOptionsTypeDef](./type_defs.md#dhcpoptionstypedef)
 
 ## CreateEgressOnlyInternetGatewayResultTypeDef
 
@@ -2463,7 +2429,7 @@ Optional fields:
 
 - `ClientToken`: `str`
 - `EgressOnlyInternetGateway`:
-  [EgressOnlyInternetGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#egressonlyinternetgatewaytypedef)
+  [EgressOnlyInternetGatewayTypeDef](./type_defs.md#egressonlyinternetgatewaytypedef)
 
 ## CreateFleetErrorTypeDef
 
@@ -2474,9 +2440,8 @@ from mypy_boto3_ec2.type_defs import CreateFleetErrorTypeDef
 Optional fields:
 
 - `LaunchTemplateAndOverrides`:
-  [LaunchTemplateAndOverridesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`:
-  [InstanceLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancelifecycle)
+  [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
+- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
@@ -2489,13 +2454,12 @@ from mypy_boto3_ec2.type_defs import CreateFleetInstanceTypeDef
 Optional fields:
 
 - `LaunchTemplateAndOverrides`:
-  [LaunchTemplateAndOverridesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`:
-  [InstanceLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancelifecycle)
+  [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
+- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
 - `InstanceIds`: `List`\[`str`\]
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
-- `Platform`: `Literal['Windows']`
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `Platform`: `Literal['Windows']` (see
+  [PlatformValues](./literals.md#platformvalues))
 
 ## CreateFleetResultTypeDef
 
@@ -2507,9 +2471,9 @@ Optional fields:
 
 - `FleetId`: `str`
 - `Errors`:
-  `List`\[[CreateFleetErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#createfleeterrortypedef)\]
+  `List`\[[CreateFleetErrorTypeDef](./type_defs.md#createfleeterrortypedef)\]
 - `Instances`:
-  `List`\[[CreateFleetInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#createfleetinstancetypedef)\]
+  `List`\[[CreateFleetInstanceTypeDef](./type_defs.md#createfleetinstancetypedef)\]
 
 ## CreateFlowLogsResultTypeDef
 
@@ -2522,7 +2486,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `FlowLogIds`: `List`\[`str`\]
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## CreateFpgaImageResultTypeDef
 
@@ -2553,8 +2517,7 @@ from mypy_boto3_ec2.type_defs import CreateInstanceExportTaskResultTypeDef
 
 Optional fields:
 
-- `ExportTask`:
-  [ExportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#exporttasktypedef)
+- `ExportTask`: [ExportTaskTypeDef](./type_defs.md#exporttasktypedef)
 
 ## CreateInternetGatewayResultTypeDef
 
@@ -2565,7 +2528,7 @@ from mypy_boto3_ec2.type_defs import CreateInternetGatewayResultTypeDef
 Optional fields:
 
 - `InternetGateway`:
-  [InternetGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#internetgatewaytypedef)
+  [InternetGatewayTypeDef](./type_defs.md#internetgatewaytypedef)
 
 ## CreateLaunchTemplateResultTypeDef
 
@@ -2575,10 +2538,8 @@ from mypy_boto3_ec2.type_defs import CreateLaunchTemplateResultTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`:
-  [LaunchTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatetypedef)
-- `Warning`:
-  [ValidationWarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#validationwarningtypedef)
+- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `Warning`: [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
 
 ## CreateLaunchTemplateVersionResultTypeDef
 
@@ -2589,9 +2550,8 @@ from mypy_boto3_ec2.type_defs import CreateLaunchTemplateVersionResultTypeDef
 Optional fields:
 
 - `LaunchTemplateVersion`:
-  [LaunchTemplateVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateversiontypedef)
-- `Warning`:
-  [ValidationWarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#validationwarningtypedef)
+  [LaunchTemplateVersionTypeDef](./type_defs.md#launchtemplateversiontypedef)
+- `Warning`: [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
 
 ## CreateLocalGatewayRouteResultTypeDef
 
@@ -2601,8 +2561,7 @@ from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteResultTypeDef
 
 Optional fields:
 
-- `Route`:
-  [LocalGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetypedef)
+- `Route`: [LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef)
 
 ## CreateLocalGatewayRouteTableVpcAssociationResultTypeDef
 
@@ -2613,7 +2572,7 @@ from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableVpcAssociationR
 Optional fields:
 
 - `LocalGatewayRouteTableVpcAssociation`:
-  [LocalGatewayRouteTableVpcAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetablevpcassociationtypedef)
+  [LocalGatewayRouteTableVpcAssociationTypeDef](./type_defs.md#localgatewayroutetablevpcassociationtypedef)
 
 ## CreateManagedPrefixListResultTypeDef
 
@@ -2624,7 +2583,7 @@ from mypy_boto3_ec2.type_defs import CreateManagedPrefixListResultTypeDef
 Optional fields:
 
 - `PrefixList`:
-  [ManagedPrefixListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#managedprefixlisttypedef)
+  [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
 
 ## CreateNatGatewayResultTypeDef
 
@@ -2635,8 +2594,7 @@ from mypy_boto3_ec2.type_defs import CreateNatGatewayResultTypeDef
 Optional fields:
 
 - `ClientToken`: `str`
-- `NatGateway`:
-  [NatGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#natgatewaytypedef)
+- `NatGateway`: [NatGatewayTypeDef](./type_defs.md#natgatewaytypedef)
 
 ## CreateNetworkAclResultTypeDef
 
@@ -2646,8 +2604,7 @@ from mypy_boto3_ec2.type_defs import CreateNetworkAclResultTypeDef
 
 Optional fields:
 
-- `NetworkAcl`:
-  [NetworkAclTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkacltypedef)
+- `NetworkAcl`: [NetworkAclTypeDef](./type_defs.md#networkacltypedef)
 
 ## CreateNetworkInsightsPathResultTypeDef
 
@@ -2658,7 +2615,7 @@ from mypy_boto3_ec2.type_defs import CreateNetworkInsightsPathResultTypeDef
 Optional fields:
 
 - `NetworkInsightsPath`:
-  [NetworkInsightsPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinsightspathtypedef)
+  [NetworkInsightsPathTypeDef](./type_defs.md#networkinsightspathtypedef)
 
 ## CreateNetworkInterfacePermissionResultTypeDef
 
@@ -2669,7 +2626,7 @@ from mypy_boto3_ec2.type_defs import CreateNetworkInterfacePermissionResultTypeD
 Optional fields:
 
 - `InterfacePermission`:
-  [NetworkInterfacePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfacepermissiontypedef)
+  [NetworkInterfacePermissionTypeDef](./type_defs.md#networkinterfacepermissiontypedef)
 
 ## CreateNetworkInterfaceResultTypeDef
 
@@ -2680,7 +2637,7 @@ from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceResultTypeDef
 Optional fields:
 
 - `NetworkInterface`:
-  [NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfacetypedef)
+  [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 
 ## CreatePlacementGroupResultTypeDef
 
@@ -2690,8 +2647,7 @@ from mypy_boto3_ec2.type_defs import CreatePlacementGroupResultTypeDef
 
 Optional fields:
 
-- `PlacementGroup`:
-  [PlacementGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementgrouptypedef)
+- `PlacementGroup`: [PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)
 
 ## CreateReplaceRootVolumeTaskResultTypeDef
 
@@ -2702,7 +2658,7 @@ from mypy_boto3_ec2.type_defs import CreateReplaceRootVolumeTaskResultTypeDef
 Optional fields:
 
 - `ReplaceRootVolumeTask`:
-  [ReplaceRootVolumeTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#replacerootvolumetasktypedef)
+  [ReplaceRootVolumeTaskTypeDef](./type_defs.md#replacerootvolumetasktypedef)
 
 ## CreateReservedInstancesListingResultTypeDef
 
@@ -2713,7 +2669,7 @@ from mypy_boto3_ec2.type_defs import CreateReservedInstancesListingResultTypeDef
 Optional fields:
 
 - `ReservedInstancesListings`:
-  `List`\[[ReservedInstancesListingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstanceslistingtypedef)\]
+  `List`\[[ReservedInstancesListingTypeDef](./type_defs.md#reservedinstanceslistingtypedef)\]
 
 ## CreateRestoreImageTaskResultTypeDef
 
@@ -2743,8 +2699,7 @@ from mypy_boto3_ec2.type_defs import CreateRouteTableResultTypeDef
 
 Optional fields:
 
-- `RouteTable`:
-  [RouteTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetabletypedef)
+- `RouteTable`: [RouteTableTypeDef](./type_defs.md#routetabletypedef)
 
 ## CreateSecurityGroupResultTypeDef
 
@@ -2755,8 +2710,7 @@ from mypy_boto3_ec2.type_defs import CreateSecurityGroupResultTypeDef
 Optional fields:
 
 - `GroupId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSnapshotsResultTypeDef
 
@@ -2767,7 +2721,7 @@ from mypy_boto3_ec2.type_defs import CreateSnapshotsResultTypeDef
 Optional fields:
 
 - `Snapshots`:
-  `List`\[[SnapshotInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#snapshotinfotypedef)\]
+  `List`\[[SnapshotInfoTypeDef](./type_defs.md#snapshotinfotypedef)\]
 
 ## CreateSpotDatafeedSubscriptionResultTypeDef
 
@@ -2778,7 +2732,7 @@ from mypy_boto3_ec2.type_defs import CreateSpotDatafeedSubscriptionResultTypeDef
 Optional fields:
 
 - `SpotDatafeedSubscription`:
-  [SpotDatafeedSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotdatafeedsubscriptiontypedef)
+  [SpotDatafeedSubscriptionTypeDef](./type_defs.md#spotdatafeedsubscriptiontypedef)
 
 ## CreateStoreImageTaskResultTypeDef
 
@@ -2798,8 +2752,7 @@ from mypy_boto3_ec2.type_defs import CreateSubnetResultTypeDef
 
 Optional fields:
 
-- `Subnet`:
-  [SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnettypedef)
+- `Subnet`: [SubnetTypeDef](./type_defs.md#subnettypedef)
 
 ## CreateTrafficMirrorFilterResultTypeDef
 
@@ -2810,7 +2763,7 @@ from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterResultTypeDef
 Optional fields:
 
 - `TrafficMirrorFilter`:
-  [TrafficMirrorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfiltertypedef)
+  [TrafficMirrorFilterTypeDef](./type_defs.md#trafficmirrorfiltertypedef)
 - `ClientToken`: `str`
 
 ## CreateTrafficMirrorFilterRuleResultTypeDef
@@ -2822,7 +2775,7 @@ from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterRuleResultTypeDef
 Optional fields:
 
 - `TrafficMirrorFilterRule`:
-  [TrafficMirrorFilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfilterruletypedef)
+  [TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)
 - `ClientToken`: `str`
 
 ## CreateTrafficMirrorSessionResultTypeDef
@@ -2834,7 +2787,7 @@ from mypy_boto3_ec2.type_defs import CreateTrafficMirrorSessionResultTypeDef
 Optional fields:
 
 - `TrafficMirrorSession`:
-  [TrafficMirrorSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorsessiontypedef)
+  [TrafficMirrorSessionTypeDef](./type_defs.md#trafficmirrorsessiontypedef)
 - `ClientToken`: `str`
 
 ## CreateTrafficMirrorTargetResultTypeDef
@@ -2846,7 +2799,7 @@ from mypy_boto3_ec2.type_defs import CreateTrafficMirrorTargetResultTypeDef
 Optional fields:
 
 - `TrafficMirrorTarget`:
-  [TrafficMirrorTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrortargettypedef)
+  [TrafficMirrorTargetTypeDef](./type_defs.md#trafficmirrortargettypedef)
 - `ClientToken`: `str`
 
 ## CreateTransitGatewayConnectPeerResultTypeDef
@@ -2858,7 +2811,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectPeerResultTypeDe
 Optional fields:
 
 - `TransitGatewayConnectPeer`:
-  [TransitGatewayConnectPeerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnectpeertypedef)
+  [TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef)
 
 ## CreateTransitGatewayConnectRequestOptionsTypeDef
 
@@ -2868,7 +2821,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectRequestOptionsTy
 
 Required fields:
 
-- `Protocol`: `Literal['gre']`
+- `Protocol`: `Literal['gre']` (see [ProtocolValue](./literals.md#protocolvalue))
 
 ## CreateTransitGatewayConnectResultTypeDef
 
@@ -2879,7 +2832,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectResultTypeDef
 Optional fields:
 
 - `TransitGatewayConnect`:
-  [TransitGatewayConnectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnecttypedef)
+  [TransitGatewayConnectTypeDef](./type_defs.md#transitgatewayconnecttypedef)
 
 ## CreateTransitGatewayMulticastDomainRequestOptionsTypeDef
 
@@ -2889,12 +2842,11 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayMulticastDomainRequestO
 
 Optional fields:
 
-- `Igmpv2Support`:
-  [Igmpv2SupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#igmpv2supportvalue)
+- `Igmpv2Support`: [Igmpv2SupportValue](./literals.md#igmpv2supportvalue)
 - `StaticSourcesSupport`:
-  [StaticSourcesSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#staticsourcessupportvalue)
+  [StaticSourcesSupportValue](./literals.md#staticsourcessupportvalue)
 - `AutoAcceptSharedAssociations`:
-  [AutoAcceptSharedAssociationsValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#autoacceptsharedassociationsvalue)
+  [AutoAcceptSharedAssociationsValue](./literals.md#autoacceptsharedassociationsvalue)
 
 ## CreateTransitGatewayMulticastDomainResultTypeDef
 
@@ -2905,7 +2857,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayMulticastDomainResultTy
 Optional fields:
 
 - `TransitGatewayMulticastDomain`:
-  [TransitGatewayMulticastDomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomaintypedef)
+  [TransitGatewayMulticastDomainTypeDef](./type_defs.md#transitgatewaymulticastdomaintypedef)
 
 ## CreateTransitGatewayPeeringAttachmentResultTypeDef
 
@@ -2916,7 +2868,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentResult
 Optional fields:
 
 - `TransitGatewayPeeringAttachment`:
-  [TransitGatewayPeeringAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypeeringattachmenttypedef)
+  [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
 
 ## CreateTransitGatewayPrefixListReferenceResultTypeDef
 
@@ -2927,7 +2879,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayPrefixListReferenceResu
 Optional fields:
 
 - `TransitGatewayPrefixListReference`:
-  [TransitGatewayPrefixListReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayprefixlistreferencetypedef)
+  [TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)
 
 ## CreateTransitGatewayResultTypeDef
 
@@ -2937,8 +2889,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayResultTypeDef
 
 Optional fields:
 
-- `TransitGateway`:
-  [TransitGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaytypedef)
+- `TransitGateway`: [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
 
 ## CreateTransitGatewayRouteResultTypeDef
 
@@ -2949,7 +2900,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteResultTypeDef
 Optional fields:
 
 - `Route`:
-  [TransitGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetypedef)
+  [TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)
 
 ## CreateTransitGatewayRouteTableResultTypeDef
 
@@ -2960,7 +2911,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteTableResultTypeDef
 Optional fields:
 
 - `TransitGatewayRouteTable`:
-  [TransitGatewayRouteTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetabletypedef)
+  [TransitGatewayRouteTableTypeDef](./type_defs.md#transitgatewayroutetabletypedef)
 
 ## CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef
 
@@ -2970,12 +2921,10 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayVpcAttachmentRequestOpt
 
 Optional fields:
 
-- `DnsSupport`:
-  [DnsSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnssupportvalue)
-- `Ipv6Support`:
-  [Ipv6SupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ipv6supportvalue)
+- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
+- `Ipv6Support`: [Ipv6SupportValue](./literals.md#ipv6supportvalue)
 - `ApplianceModeSupport`:
-  [ApplianceModeSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#appliancemodesupportvalue)
+  [ApplianceModeSupportValue](./literals.md#appliancemodesupportvalue)
 
 ## CreateTransitGatewayVpcAttachmentResultTypeDef
 
@@ -2986,7 +2935,7 @@ from mypy_boto3_ec2.type_defs import CreateTransitGatewayVpcAttachmentResultType
 Optional fields:
 
 - `TransitGatewayVpcAttachment`:
-  [TransitGatewayVpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmenttypedef)
+  [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
 
 ## CreateVolumePermissionModificationsTypeDef
 
@@ -2997,9 +2946,9 @@ from mypy_boto3_ec2.type_defs import CreateVolumePermissionModificationsTypeDef
 Optional fields:
 
 - `Add`:
-  `List`\[[CreateVolumePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#createvolumepermissiontypedef)\]
+  `List`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
 - `Remove`:
-  `List`\[[CreateVolumePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#createvolumepermissiontypedef)\]
+  `List`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
 
 ## CreateVolumePermissionTypeDef
 
@@ -3009,7 +2958,8 @@ from mypy_boto3_ec2.type_defs import CreateVolumePermissionTypeDef
 
 Optional fields:
 
-- `Group`: `Literal['all']`
+- `Group`: `Literal['all']` (see
+  [PermissionGroup](./literals.md#permissiongroup))
 - `UserId`: `str`
 
 ## CreateVpcEndpointConnectionNotificationResultTypeDef
@@ -3021,7 +2971,7 @@ from mypy_boto3_ec2.type_defs import CreateVpcEndpointConnectionNotificationResu
 Optional fields:
 
 - `ConnectionNotification`:
-  [ConnectionNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#connectionnotificationtypedef)
+  [ConnectionNotificationTypeDef](./type_defs.md#connectionnotificationtypedef)
 - `ClientToken`: `str`
 
 ## CreateVpcEndpointResultTypeDef
@@ -3032,8 +2982,7 @@ from mypy_boto3_ec2.type_defs import CreateVpcEndpointResultTypeDef
 
 Optional fields:
 
-- `VpcEndpoint`:
-  [VpcEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcendpointtypedef)
+- `VpcEndpoint`: [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
 - `ClientToken`: `str`
 
 ## CreateVpcEndpointServiceConfigurationResultTypeDef
@@ -3045,7 +2994,7 @@ from mypy_boto3_ec2.type_defs import CreateVpcEndpointServiceConfigurationResult
 Optional fields:
 
 - `ServiceConfiguration`:
-  [ServiceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#serviceconfigurationtypedef)
+  [ServiceConfigurationTypeDef](./type_defs.md#serviceconfigurationtypedef)
 - `ClientToken`: `str`
 
 ## CreateVpcPeeringConnectionResultTypeDef
@@ -3057,7 +3006,7 @@ from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionResultTypeDef
 Optional fields:
 
 - `VpcPeeringConnection`:
-  [VpcPeeringConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectiontypedef)
+  [VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)
 
 ## CreateVpcResultTypeDef
 
@@ -3067,8 +3016,7 @@ from mypy_boto3_ec2.type_defs import CreateVpcResultTypeDef
 
 Optional fields:
 
-- `Vpc`:
-  [VpcTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpctypedef)
+- `Vpc`: [VpcTypeDef](./type_defs.md#vpctypedef)
 
 ## CreateVpnConnectionResultTypeDef
 
@@ -3078,8 +3026,7 @@ from mypy_boto3_ec2.type_defs import CreateVpnConnectionResultTypeDef
 
 Optional fields:
 
-- `VpnConnection`:
-  [VpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectiontypedef)
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
 
 ## CreateVpnGatewayResultTypeDef
 
@@ -3089,8 +3036,7 @@ from mypy_boto3_ec2.type_defs import CreateVpnGatewayResultTypeDef
 
 Optional fields:
 
-- `VpnGateway`:
-  [VpnGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpngatewaytypedef)
+- `VpnGateway`: [VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef)
 
 ## CreditSpecificationRequestTypeDef
 
@@ -3127,8 +3073,7 @@ Optional fields:
 - `State`: `str`
 - `Type`: `str`
 - `DeviceName`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DeleteCarrierGatewayResultTypeDef
 
@@ -3138,8 +3083,7 @@ from mypy_boto3_ec2.type_defs import DeleteCarrierGatewayResultTypeDef
 
 Optional fields:
 
-- `CarrierGateway`:
-  [CarrierGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#carriergatewaytypedef)
+- `CarrierGateway`: [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
 
 ## DeleteClientVpnEndpointResultTypeDef
 
@@ -3150,7 +3094,7 @@ from mypy_boto3_ec2.type_defs import DeleteClientVpnEndpointResultTypeDef
 Optional fields:
 
 - `Status`:
-  [ClientVpnEndpointStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnendpointstatustypedef)
+  [ClientVpnEndpointStatusTypeDef](./type_defs.md#clientvpnendpointstatustypedef)
 
 ## DeleteClientVpnRouteResultTypeDef
 
@@ -3161,7 +3105,7 @@ from mypy_boto3_ec2.type_defs import DeleteClientVpnRouteResultTypeDef
 Optional fields:
 
 - `Status`:
-  [ClientVpnRouteStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnroutestatustypedef)
+  [ClientVpnRouteStatusTypeDef](./type_defs.md#clientvpnroutestatustypedef)
 
 ## DeleteEgressOnlyInternetGatewayResultTypeDef
 
@@ -3181,8 +3125,7 @@ from mypy_boto3_ec2.type_defs import DeleteFleetErrorItemTypeDef
 
 Optional fields:
 
-- `Error`:
-  [DeleteFleetErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletefleeterrortypedef)
+- `Error`: [DeleteFleetErrorTypeDef](./type_defs.md#deletefleeterrortypedef)
 - `FleetId`: `str`
 
 ## DeleteFleetErrorTypeDef
@@ -3193,8 +3136,7 @@ from mypy_boto3_ec2.type_defs import DeleteFleetErrorTypeDef
 
 Optional fields:
 
-- `Code`:
-  [DeleteFleetErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#deletefleeterrorcode)
+- `Code`: [DeleteFleetErrorCode](./literals.md#deletefleeterrorcode)
 - `Message`: `str`
 
 ## DeleteFleetSuccessItemTypeDef
@@ -3205,10 +3147,8 @@ from mypy_boto3_ec2.type_defs import DeleteFleetSuccessItemTypeDef
 
 Optional fields:
 
-- `CurrentFleetState`:
-  [FleetStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetstatecode)
-- `PreviousFleetState`:
-  [FleetStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetstatecode)
+- `CurrentFleetState`: [FleetStateCode](./literals.md#fleetstatecode)
+- `PreviousFleetState`: [FleetStateCode](./literals.md#fleetstatecode)
 - `FleetId`: `str`
 
 ## DeleteFleetsResultTypeDef
@@ -3220,9 +3160,9 @@ from mypy_boto3_ec2.type_defs import DeleteFleetsResultTypeDef
 Optional fields:
 
 - `SuccessfulFleetDeletions`:
-  `List`\[[DeleteFleetSuccessItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletefleetsuccessitemtypedef)\]
+  `List`\[[DeleteFleetSuccessItemTypeDef](./type_defs.md#deletefleetsuccessitemtypedef)\]
 - `UnsuccessfulFleetDeletions`:
-  `List`\[[DeleteFleetErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletefleeterroritemtypedef)\]
+  `List`\[[DeleteFleetErrorItemTypeDef](./type_defs.md#deletefleeterroritemtypedef)\]
 
 ## DeleteFlowLogsResultTypeDef
 
@@ -3233,7 +3173,7 @@ from mypy_boto3_ec2.type_defs import DeleteFlowLogsResultTypeDef
 Optional fields:
 
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## DeleteFpgaImageResultTypeDef
 
@@ -3253,8 +3193,7 @@ from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateResultTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`:
-  [LaunchTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatetypedef)
+- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 
 ## DeleteLaunchTemplateVersionsResponseErrorItemTypeDef
 
@@ -3267,8 +3206,7 @@ Optional fields:
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
 - `VersionNumber`: `int`
-- `ResponseError`:
-  [ResponseErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#responseerrortypedef)
+- `ResponseError`: [ResponseErrorTypeDef](./type_defs.md#responseerrortypedef)
 
 ## DeleteLaunchTemplateVersionsResponseSuccessItemTypeDef
 
@@ -3291,9 +3229,9 @@ from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateVersionsResultTypeDef
 Optional fields:
 
 - `SuccessfullyDeletedLaunchTemplateVersions`:
-  `List`\[[DeleteLaunchTemplateVersionsResponseSuccessItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletelaunchtemplateversionsresponsesuccessitemtypedef)\]
+  `List`\[[DeleteLaunchTemplateVersionsResponseSuccessItemTypeDef](./type_defs.md#deletelaunchtemplateversionsresponsesuccessitemtypedef)\]
 - `UnsuccessfullyDeletedLaunchTemplateVersions`:
-  `List`\[[DeleteLaunchTemplateVersionsResponseErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletelaunchtemplateversionsresponseerroritemtypedef)\]
+  `List`\[[DeleteLaunchTemplateVersionsResponseErrorItemTypeDef](./type_defs.md#deletelaunchtemplateversionsresponseerroritemtypedef)\]
 
 ## DeleteLocalGatewayRouteResultTypeDef
 
@@ -3303,8 +3241,7 @@ from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteResultTypeDef
 
 Optional fields:
 
-- `Route`:
-  [LocalGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetypedef)
+- `Route`: [LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef)
 
 ## DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef
 
@@ -3315,7 +3252,7 @@ from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableVpcAssociationR
 Optional fields:
 
 - `LocalGatewayRouteTableVpcAssociation`:
-  [LocalGatewayRouteTableVpcAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetablevpcassociationtypedef)
+  [LocalGatewayRouteTableVpcAssociationTypeDef](./type_defs.md#localgatewayroutetablevpcassociationtypedef)
 
 ## DeleteManagedPrefixListResultTypeDef
 
@@ -3326,7 +3263,7 @@ from mypy_boto3_ec2.type_defs import DeleteManagedPrefixListResultTypeDef
 Optional fields:
 
 - `PrefixList`:
-  [ManagedPrefixListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#managedprefixlisttypedef)
+  [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
 
 ## DeleteNatGatewayResultTypeDef
 
@@ -3377,7 +3314,7 @@ from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesErrorTypeDef
 Optional fields:
 
 - `Code`:
-  [DeleteQueuedReservedInstancesErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#deletequeuedreservedinstanceserrorcode)
+  [DeleteQueuedReservedInstancesErrorCode](./literals.md#deletequeuedreservedinstanceserrorcode)
 - `Message`: `str`
 
 ## DeleteQueuedReservedInstancesResultTypeDef
@@ -3389,9 +3326,9 @@ from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesResultTypeDef
 Optional fields:
 
 - `SuccessfulQueuedPurchaseDeletions`:
-  `List`\[[SuccessfulQueuedPurchaseDeletionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#successfulqueuedpurchasedeletiontypedef)\]
+  `List`\[[SuccessfulQueuedPurchaseDeletionTypeDef](./type_defs.md#successfulqueuedpurchasedeletiontypedef)\]
 - `FailedQueuedPurchaseDeletions`:
-  `List`\[[FailedQueuedPurchaseDeletionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#failedqueuedpurchasedeletiontypedef)\]
+  `List`\[[FailedQueuedPurchaseDeletionTypeDef](./type_defs.md#failedqueuedpurchasedeletiontypedef)\]
 
 ## DeleteTrafficMirrorFilterResultTypeDef
 
@@ -3442,7 +3379,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectPeerResultTypeDe
 Optional fields:
 
 - `TransitGatewayConnectPeer`:
-  [TransitGatewayConnectPeerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnectpeertypedef)
+  [TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef)
 
 ## DeleteTransitGatewayConnectResultTypeDef
 
@@ -3453,7 +3390,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectResultTypeDef
 Optional fields:
 
 - `TransitGatewayConnect`:
-  [TransitGatewayConnectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnecttypedef)
+  [TransitGatewayConnectTypeDef](./type_defs.md#transitgatewayconnecttypedef)
 
 ## DeleteTransitGatewayMulticastDomainResultTypeDef
 
@@ -3464,7 +3401,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayMulticastDomainResultTy
 Optional fields:
 
 - `TransitGatewayMulticastDomain`:
-  [TransitGatewayMulticastDomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomaintypedef)
+  [TransitGatewayMulticastDomainTypeDef](./type_defs.md#transitgatewaymulticastdomaintypedef)
 
 ## DeleteTransitGatewayPeeringAttachmentResultTypeDef
 
@@ -3475,7 +3412,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPeeringAttachmentResult
 Optional fields:
 
 - `TransitGatewayPeeringAttachment`:
-  [TransitGatewayPeeringAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypeeringattachmenttypedef)
+  [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
 
 ## DeleteTransitGatewayPrefixListReferenceResultTypeDef
 
@@ -3486,7 +3423,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPrefixListReferenceResu
 Optional fields:
 
 - `TransitGatewayPrefixListReference`:
-  [TransitGatewayPrefixListReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayprefixlistreferencetypedef)
+  [TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)
 
 ## DeleteTransitGatewayResultTypeDef
 
@@ -3496,8 +3433,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayResultTypeDef
 
 Optional fields:
 
-- `TransitGateway`:
-  [TransitGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaytypedef)
+- `TransitGateway`: [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
 
 ## DeleteTransitGatewayRouteResultTypeDef
 
@@ -3508,7 +3444,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteResultTypeDef
 Optional fields:
 
 - `Route`:
-  [TransitGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetypedef)
+  [TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)
 
 ## DeleteTransitGatewayRouteTableResultTypeDef
 
@@ -3519,7 +3455,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteTableResultTypeDef
 Optional fields:
 
 - `TransitGatewayRouteTable`:
-  [TransitGatewayRouteTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetabletypedef)
+  [TransitGatewayRouteTableTypeDef](./type_defs.md#transitgatewayroutetabletypedef)
 
 ## DeleteTransitGatewayVpcAttachmentResultTypeDef
 
@@ -3530,7 +3466,7 @@ from mypy_boto3_ec2.type_defs import DeleteTransitGatewayVpcAttachmentResultType
 Optional fields:
 
 - `TransitGatewayVpcAttachment`:
-  [TransitGatewayVpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmenttypedef)
+  [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
 
 ## DeleteVpcEndpointConnectionNotificationsResultTypeDef
 
@@ -3541,7 +3477,7 @@ from mypy_boto3_ec2.type_defs import DeleteVpcEndpointConnectionNotificationsRes
 Optional fields:
 
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## DeleteVpcEndpointServiceConfigurationsResultTypeDef
 
@@ -3552,7 +3488,7 @@ from mypy_boto3_ec2.type_defs import DeleteVpcEndpointServiceConfigurationsResul
 Optional fields:
 
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## DeleteVpcEndpointsResultTypeDef
 
@@ -3563,7 +3499,7 @@ from mypy_boto3_ec2.type_defs import DeleteVpcEndpointsResultTypeDef
 Optional fields:
 
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## DeleteVpcPeeringConnectionResultTypeDef
 
@@ -3583,8 +3519,7 @@ from mypy_boto3_ec2.type_defs import DeprovisionByoipCidrResultTypeDef
 
 Optional fields:
 
-- `ByoipCidr`:
-  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#byoipcidrtypedef)
+- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
 
 ## DeregisterInstanceEventNotificationAttributesResultTypeDef
 
@@ -3595,7 +3530,7 @@ from mypy_boto3_ec2.type_defs import DeregisterInstanceEventNotificationAttribut
 Optional fields:
 
 - `InstanceTagAttribute`:
-  [InstanceTagNotificationAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancetagnotificationattributetypedef)
+  [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
 
 ## DeregisterInstanceTagAttributeRequestTypeDef
 
@@ -3617,7 +3552,7 @@ from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupMembe
 Optional fields:
 
 - `DeregisteredMulticastGroupMembers`:
-  [TransitGatewayMulticastDeregisteredGroupMembersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastderegisteredgroupmemberstypedef)
+  [TransitGatewayMulticastDeregisteredGroupMembersTypeDef](./type_defs.md#transitgatewaymulticastderegisteredgroupmemberstypedef)
 
 ## DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef
 
@@ -3628,7 +3563,7 @@ from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupSourc
 Optional fields:
 
 - `DeregisteredMulticastGroupSources`:
-  [TransitGatewayMulticastDeregisteredGroupSourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastderegisteredgroupsourcestypedef)
+  [TransitGatewayMulticastDeregisteredGroupSourcesTypeDef](./type_defs.md#transitgatewaymulticastderegisteredgroupsourcestypedef)
 
 ## DescribeAccountAttributesResultTypeDef
 
@@ -3639,7 +3574,7 @@ from mypy_boto3_ec2.type_defs import DescribeAccountAttributesResultTypeDef
 Optional fields:
 
 - `AccountAttributes`:
-  `List`\[[AccountAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#accountattributetypedef)\]
+  `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
 
 ## DescribeAddressesAttributeResultTypeDef
 
@@ -3650,7 +3585,7 @@ from mypy_boto3_ec2.type_defs import DescribeAddressesAttributeResultTypeDef
 Optional fields:
 
 - `Addresses`:
-  `List`\[[AddressAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#addressattributetypedef)\]
+  `List`\[[AddressAttributeTypeDef](./type_defs.md#addressattributetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeAddressesResultTypeDef
@@ -3661,8 +3596,7 @@ from mypy_boto3_ec2.type_defs import DescribeAddressesResultTypeDef
 
 Optional fields:
 
-- `Addresses`:
-  `List`\[[AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#addresstypedef)\]
+- `Addresses`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
 
 ## DescribeAggregateIdFormatResultTypeDef
 
@@ -3673,8 +3607,7 @@ from mypy_boto3_ec2.type_defs import DescribeAggregateIdFormatResultTypeDef
 Optional fields:
 
 - `UseLongIdsAggregated`: `bool`
-- `Statuses`:
-  `List`\[[IdFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#idformattypedef)\]
+- `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
 
 ## DescribeAvailabilityZonesResultTypeDef
 
@@ -3685,7 +3618,7 @@ from mypy_boto3_ec2.type_defs import DescribeAvailabilityZonesResultTypeDef
 Optional fields:
 
 - `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#availabilityzonetypedef)\]
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 
 ## DescribeBundleTasksResultTypeDef
 
@@ -3695,8 +3628,7 @@ from mypy_boto3_ec2.type_defs import DescribeBundleTasksResultTypeDef
 
 Optional fields:
 
-- `BundleTasks`:
-  `List`\[[BundleTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#bundletasktypedef)\]
+- `BundleTasks`: `List`\[[BundleTaskTypeDef](./type_defs.md#bundletasktypedef)\]
 
 ## DescribeByoipCidrsResultTypeDef
 
@@ -3706,8 +3638,7 @@ from mypy_boto3_ec2.type_defs import DescribeByoipCidrsResultTypeDef
 
 Optional fields:
 
-- `ByoipCidrs`:
-  `List`\[[ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#byoipcidrtypedef)\]
+- `ByoipCidrs`: `List`\[[ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeCapacityReservationsResultTypeDef
@@ -3720,7 +3651,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `CapacityReservations`:
-  `List`\[[CapacityReservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationtypedef)\]
+  `List`\[[CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef)\]
 
 ## DescribeCarrierGatewaysResultTypeDef
 
@@ -3731,7 +3662,7 @@ from mypy_boto3_ec2.type_defs import DescribeCarrierGatewaysResultTypeDef
 Optional fields:
 
 - `CarrierGateways`:
-  `List`\[[CarrierGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#carriergatewaytypedef)\]
+  `List`\[[CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClassicLinkInstancesResultTypeDef
@@ -3743,7 +3674,7 @@ from mypy_boto3_ec2.type_defs import DescribeClassicLinkInstancesResultTypeDef
 Optional fields:
 
 - `Instances`:
-  `List`\[[ClassicLinkInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#classiclinkinstancetypedef)\]
+  `List`\[[ClassicLinkInstanceTypeDef](./type_defs.md#classiclinkinstancetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClientVpnAuthorizationRulesResultTypeDef
@@ -3755,7 +3686,7 @@ from mypy_boto3_ec2.type_defs import DescribeClientVpnAuthorizationRulesResultTy
 Optional fields:
 
 - `AuthorizationRules`:
-  `List`\[[AuthorizationRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#authorizationruletypedef)\]
+  `List`\[[AuthorizationRuleTypeDef](./type_defs.md#authorizationruletypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClientVpnConnectionsResultTypeDef
@@ -3767,7 +3698,7 @@ from mypy_boto3_ec2.type_defs import DescribeClientVpnConnectionsResultTypeDef
 Optional fields:
 
 - `Connections`:
-  `List`\[[ClientVpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnconnectiontypedef)\]
+  `List`\[[ClientVpnConnectionTypeDef](./type_defs.md#clientvpnconnectiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClientVpnEndpointsResultTypeDef
@@ -3779,7 +3710,7 @@ from mypy_boto3_ec2.type_defs import DescribeClientVpnEndpointsResultTypeDef
 Optional fields:
 
 - `ClientVpnEndpoints`:
-  `List`\[[ClientVpnEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnendpointtypedef)\]
+  `List`\[[ClientVpnEndpointTypeDef](./type_defs.md#clientvpnendpointtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClientVpnRoutesResultTypeDef
@@ -3791,7 +3722,7 @@ from mypy_boto3_ec2.type_defs import DescribeClientVpnRoutesResultTypeDef
 Optional fields:
 
 - `Routes`:
-  `List`\[[ClientVpnRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnroutetypedef)\]
+  `List`\[[ClientVpnRouteTypeDef](./type_defs.md#clientvpnroutetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClientVpnTargetNetworksResultTypeDef
@@ -3803,7 +3734,7 @@ from mypy_boto3_ec2.type_defs import DescribeClientVpnTargetNetworksResultTypeDe
 Optional fields:
 
 - `ClientVpnTargetNetworks`:
-  `List`\[[TargetNetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#targetnetworktypedef)\]
+  `List`\[[TargetNetworkTypeDef](./type_defs.md#targetnetworktypedef)\]
 - `NextToken`: `str`
 
 ## DescribeCoipPoolsResultTypeDef
@@ -3814,8 +3745,7 @@ from mypy_boto3_ec2.type_defs import DescribeCoipPoolsResultTypeDef
 
 Optional fields:
 
-- `CoipPools`:
-  `List`\[[CoipPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#coippooltypedef)\]
+- `CoipPools`: `List`\[[CoipPoolTypeDef](./type_defs.md#coippooltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeConversionTasksResultTypeDef
@@ -3827,7 +3757,7 @@ from mypy_boto3_ec2.type_defs import DescribeConversionTasksResultTypeDef
 Optional fields:
 
 - `ConversionTasks`:
-  `List`\[[ConversionTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#conversiontasktypedef)\]
+  `List`\[[ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)\]
 
 ## DescribeCustomerGatewaysResultTypeDef
 
@@ -3838,7 +3768,7 @@ from mypy_boto3_ec2.type_defs import DescribeCustomerGatewaysResultTypeDef
 Optional fields:
 
 - `CustomerGateways`:
-  `List`\[[CustomerGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#customergatewaytypedef)\]
+  `List`\[[CustomerGatewayTypeDef](./type_defs.md#customergatewaytypedef)\]
 
 ## DescribeDhcpOptionsResultTypeDef
 
@@ -3849,7 +3779,7 @@ from mypy_boto3_ec2.type_defs import DescribeDhcpOptionsResultTypeDef
 Optional fields:
 
 - `DhcpOptions`:
-  `List`\[[DhcpOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#dhcpoptionstypedef)\]
+  `List`\[[DhcpOptionsTypeDef](./type_defs.md#dhcpoptionstypedef)\]
 - `NextToken`: `str`
 
 ## DescribeEgressOnlyInternetGatewaysResultTypeDef
@@ -3861,7 +3791,7 @@ from mypy_boto3_ec2.type_defs import DescribeEgressOnlyInternetGatewaysResultTyp
 Optional fields:
 
 - `EgressOnlyInternetGateways`:
-  `List`\[[EgressOnlyInternetGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#egressonlyinternetgatewaytypedef)\]
+  `List`\[[EgressOnlyInternetGatewayTypeDef](./type_defs.md#egressonlyinternetgatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeElasticGpusResultTypeDef
@@ -3873,7 +3803,7 @@ from mypy_boto3_ec2.type_defs import DescribeElasticGpusResultTypeDef
 Optional fields:
 
 - `ElasticGpuSet`:
-  `List`\[[ElasticGpusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpustypedef)\]
+  `List`\[[ElasticGpusTypeDef](./type_defs.md#elasticgpustypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -3886,7 +3816,7 @@ from mypy_boto3_ec2.type_defs import DescribeExportImageTasksResultTypeDef
 Optional fields:
 
 - `ExportImageTasks`:
-  `List`\[[ExportImageTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#exportimagetasktypedef)\]
+  `List`\[[ExportImageTaskTypeDef](./type_defs.md#exportimagetasktypedef)\]
 - `NextToken`: `str`
 
 ## DescribeExportTasksResultTypeDef
@@ -3897,8 +3827,7 @@ from mypy_boto3_ec2.type_defs import DescribeExportTasksResultTypeDef
 
 Optional fields:
 
-- `ExportTasks`:
-  `List`\[[ExportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#exporttasktypedef)\]
+- `ExportTasks`: `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
 
 ## DescribeFastSnapshotRestoreSuccessItemTypeDef
 
@@ -3911,7 +3840,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `AvailabilityZone`: `str`
 - `State`:
-  [FastSnapshotRestoreStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fastsnapshotrestorestatecode)
+  [FastSnapshotRestoreStateCode](./literals.md#fastsnapshotrestorestatecode)
 - `StateTransitionReason`: `str`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
@@ -3930,7 +3859,7 @@ from mypy_boto3_ec2.type_defs import DescribeFastSnapshotRestoresResultTypeDef
 Optional fields:
 
 - `FastSnapshotRestores`:
-  `List`\[[DescribeFastSnapshotRestoreSuccessItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefastsnapshotrestoresuccessitemtypedef)\]
+  `List`\[[DescribeFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#describefastsnapshotrestoresuccessitemtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeFleetErrorTypeDef
@@ -3942,9 +3871,8 @@ from mypy_boto3_ec2.type_defs import DescribeFleetErrorTypeDef
 Optional fields:
 
 - `LaunchTemplateAndOverrides`:
-  [LaunchTemplateAndOverridesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`:
-  [InstanceLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancelifecycle)
+  [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
+- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
@@ -3957,7 +3885,7 @@ from mypy_boto3_ec2.type_defs import DescribeFleetHistoryResultTypeDef
 Optional fields:
 
 - `HistoryRecords`:
-  `List`\[[HistoryRecordEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#historyrecordentrytypedef)\]
+  `List`\[[HistoryRecordEntryTypeDef](./type_defs.md#historyrecordentrytypedef)\]
 - `LastEvaluatedTime`: `datetime`
 - `NextToken`: `str`
 - `FleetId`: `str`
@@ -3972,7 +3900,7 @@ from mypy_boto3_ec2.type_defs import DescribeFleetInstancesResultTypeDef
 Optional fields:
 
 - `ActiveInstances`:
-  `List`\[[ActiveInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#activeinstancetypedef)\]
+  `List`\[[ActiveInstanceTypeDef](./type_defs.md#activeinstancetypedef)\]
 - `NextToken`: `str`
 - `FleetId`: `str`
 
@@ -3985,13 +3913,12 @@ from mypy_boto3_ec2.type_defs import DescribeFleetsInstancesTypeDef
 Optional fields:
 
 - `LaunchTemplateAndOverrides`:
-  [LaunchTemplateAndOverridesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateandoverridesresponsetypedef)
-- `Lifecycle`:
-  [InstanceLifecycle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancelifecycle)
+  [LaunchTemplateAndOverridesResponseTypeDef](./type_defs.md#launchtemplateandoverridesresponsetypedef)
+- `Lifecycle`: [InstanceLifecycle](./literals.md#instancelifecycle)
 - `InstanceIds`: `List`\[`str`\]
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
-- `Platform`: `Literal['Windows']`
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `Platform`: `Literal['Windows']` (see
+  [PlatformValues](./literals.md#platformvalues))
 
 ## DescribeFleetsResultTypeDef
 
@@ -4002,8 +3929,7 @@ from mypy_boto3_ec2.type_defs import DescribeFleetsResultTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Fleets`:
-  `List`\[[FleetDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetdatatypedef)\]
+- `Fleets`: `List`\[[FleetDataTypeDef](./type_defs.md#fleetdatatypedef)\]
 
 ## DescribeFlowLogsResultTypeDef
 
@@ -4013,8 +3939,7 @@ from mypy_boto3_ec2.type_defs import DescribeFlowLogsResultTypeDef
 
 Optional fields:
 
-- `FlowLogs`:
-  `List`\[[FlowLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#flowlogtypedef)\]
+- `FlowLogs`: `List`\[[FlowLogTypeDef](./type_defs.md#flowlogtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeFpgaImageAttributeResultTypeDef
@@ -4026,7 +3951,7 @@ from mypy_boto3_ec2.type_defs import DescribeFpgaImageAttributeResultTypeDef
 Optional fields:
 
 - `FpgaImageAttribute`:
-  [FpgaImageAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgaimageattributetypedef)
+  [FpgaImageAttributeTypeDef](./type_defs.md#fpgaimageattributetypedef)
 
 ## DescribeFpgaImagesResultTypeDef
 
@@ -4036,8 +3961,7 @@ from mypy_boto3_ec2.type_defs import DescribeFpgaImagesResultTypeDef
 
 Optional fields:
 
-- `FpgaImages`:
-  `List`\[[FpgaImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgaimagetypedef)\]
+- `FpgaImages`: `List`\[[FpgaImageTypeDef](./type_defs.md#fpgaimagetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeHostReservationOfferingsResultTypeDef
@@ -4050,7 +3974,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `OfferingSet`:
-  `List`\[[HostOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hostofferingtypedef)\]
+  `List`\[[HostOfferingTypeDef](./type_defs.md#hostofferingtypedef)\]
 
 ## DescribeHostReservationsResultTypeDef
 
@@ -4061,7 +3985,7 @@ from mypy_boto3_ec2.type_defs import DescribeHostReservationsResultTypeDef
 Optional fields:
 
 - `HostReservationSet`:
-  `List`\[[HostReservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hostreservationtypedef)\]
+  `List`\[[HostReservationTypeDef](./type_defs.md#hostreservationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeHostsResultTypeDef
@@ -4072,8 +3996,7 @@ from mypy_boto3_ec2.type_defs import DescribeHostsResultTypeDef
 
 Optional fields:
 
-- `Hosts`:
-  `List`\[[HostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hosttypedef)\]
+- `Hosts`: `List`\[[HostTypeDef](./type_defs.md#hosttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeIamInstanceProfileAssociationsResultTypeDef
@@ -4085,7 +4008,7 @@ from mypy_boto3_ec2.type_defs import DescribeIamInstanceProfileAssociationsResul
 Optional fields:
 
 - `IamInstanceProfileAssociations`:
-  `List`\[[IamInstanceProfileAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofileassociationtypedef)\]
+  `List`\[[IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeIdFormatResultTypeDef
@@ -4096,8 +4019,7 @@ from mypy_boto3_ec2.type_defs import DescribeIdFormatResultTypeDef
 
 Optional fields:
 
-- `Statuses`:
-  `List`\[[IdFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#idformattypedef)\]
+- `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
 
 ## DescribeIdentityIdFormatResultTypeDef
 
@@ -4107,8 +4029,7 @@ from mypy_boto3_ec2.type_defs import DescribeIdentityIdFormatResultTypeDef
 
 Optional fields:
 
-- `Statuses`:
-  `List`\[[IdFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#idformattypedef)\]
+- `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
 
 ## DescribeImagesResultTypeDef
 
@@ -4118,8 +4039,7 @@ from mypy_boto3_ec2.type_defs import DescribeImagesResultTypeDef
 
 Optional fields:
 
-- `Images`:
-  `List`\[[ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#imagetypedef)\]
+- `Images`: `List`\[[ImageTypeDef](./type_defs.md#imagetypedef)\]
 
 ## DescribeImportImageTasksResultTypeDef
 
@@ -4130,7 +4050,7 @@ from mypy_boto3_ec2.type_defs import DescribeImportImageTasksResultTypeDef
 Optional fields:
 
 - `ImportImageTasks`:
-  `List`\[[ImportImageTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importimagetasktypedef)\]
+  `List`\[[ImportImageTaskTypeDef](./type_defs.md#importimagetasktypedef)\]
 - `NextToken`: `str`
 
 ## DescribeImportSnapshotTasksResultTypeDef
@@ -4142,7 +4062,7 @@ from mypy_boto3_ec2.type_defs import DescribeImportSnapshotTasksResultTypeDef
 Optional fields:
 
 - `ImportSnapshotTasks`:
-  `List`\[[ImportSnapshotTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importsnapshottasktypedef)\]
+  `List`\[[ImportSnapshotTaskTypeDef](./type_defs.md#importsnapshottasktypedef)\]
 - `NextToken`: `str`
 
 ## DescribeInstanceCreditSpecificationsResultTypeDef
@@ -4154,7 +4074,7 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceCreditSpecificationsResultT
 Optional fields:
 
 - `InstanceCreditSpecifications`:
-  `List`\[[InstanceCreditSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancecreditspecificationtypedef)\]
+  `List`\[[InstanceCreditSpecificationTypeDef](./type_defs.md#instancecreditspecificationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeInstanceEventNotificationAttributesResultTypeDef
@@ -4166,7 +4086,7 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceEventNotificationAttributes
 Optional fields:
 
 - `InstanceTagAttribute`:
-  [InstanceTagNotificationAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancetagnotificationattributetypedef)
+  [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
 
 ## DescribeInstanceStatusResultTypeDef
 
@@ -4177,7 +4097,7 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceStatusResultTypeDef
 Optional fields:
 
 - `InstanceStatuses`:
-  `List`\[[InstanceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatustypedef)\]
+  `List`\[[InstanceStatusTypeDef](./type_defs.md#instancestatustypedef)\]
 - `NextToken`: `str`
 
 ## DescribeInstanceTypeOfferingsResultTypeDef
@@ -4189,7 +4109,7 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceTypeOfferingsResultTypeDef
 Optional fields:
 
 - `InstanceTypeOfferings`:
-  `List`\[[InstanceTypeOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancetypeofferingtypedef)\]
+  `List`\[[InstanceTypeOfferingTypeDef](./type_defs.md#instancetypeofferingtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeInstanceTypesResultTypeDef
@@ -4201,7 +4121,7 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceTypesResultTypeDef
 Optional fields:
 
 - `InstanceTypes`:
-  `List`\[[InstanceTypeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancetypeinfotypedef)\]
+  `List`\[[InstanceTypeInfoTypeDef](./type_defs.md#instancetypeinfotypedef)\]
 - `NextToken`: `str`
 
 ## DescribeInstancesResultTypeDef
@@ -4213,7 +4133,7 @@ from mypy_boto3_ec2.type_defs import DescribeInstancesResultTypeDef
 Optional fields:
 
 - `Reservations`:
-  `List`\[[ReservationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservationtypedef)\]
+  `List`\[[ReservationTypeDef](./type_defs.md#reservationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeInternetGatewaysResultTypeDef
@@ -4225,7 +4145,7 @@ from mypy_boto3_ec2.type_defs import DescribeInternetGatewaysResultTypeDef
 Optional fields:
 
 - `InternetGateways`:
-  `List`\[[InternetGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#internetgatewaytypedef)\]
+  `List`\[[InternetGatewayTypeDef](./type_defs.md#internetgatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeIpv6PoolsResultTypeDef
@@ -4236,8 +4156,7 @@ from mypy_boto3_ec2.type_defs import DescribeIpv6PoolsResultTypeDef
 
 Optional fields:
 
-- `Ipv6Pools`:
-  `List`\[[Ipv6PoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ipv6pooltypedef)\]
+- `Ipv6Pools`: `List`\[[Ipv6PoolTypeDef](./type_defs.md#ipv6pooltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeKeyPairsResultTypeDef
@@ -4248,8 +4167,7 @@ from mypy_boto3_ec2.type_defs import DescribeKeyPairsResultTypeDef
 
 Optional fields:
 
-- `KeyPairs`:
-  `List`\[[KeyPairInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#keypairinfotypedef)\]
+- `KeyPairs`: `List`\[[KeyPairInfoTypeDef](./type_defs.md#keypairinfotypedef)\]
 
 ## DescribeLaunchTemplateVersionsResultTypeDef
 
@@ -4260,7 +4178,7 @@ from mypy_boto3_ec2.type_defs import DescribeLaunchTemplateVersionsResultTypeDef
 Optional fields:
 
 - `LaunchTemplateVersions`:
-  `List`\[[LaunchTemplateVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateversiontypedef)\]
+  `List`\[[LaunchTemplateVersionTypeDef](./type_defs.md#launchtemplateversiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLaunchTemplatesResultTypeDef
@@ -4272,7 +4190,7 @@ from mypy_boto3_ec2.type_defs import DescribeLaunchTemplatesResultTypeDef
 Optional fields:
 
 - `LaunchTemplates`:
-  `List`\[[LaunchTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatetypedef)\]
+  `List`\[[LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef
@@ -4284,7 +4202,7 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVirtualInterf
 Optional fields:
 
 - `LocalGatewayRouteTableVirtualInterfaceGroupAssociations`:
-  `List`\[[LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetablevirtualinterfacegroupassociationtypedef)\]
+  `List`\[[LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef](./type_defs.md#localgatewayroutetablevirtualinterfacegroupassociationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef
@@ -4296,7 +4214,7 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVpcAssociatio
 Optional fields:
 
 - `LocalGatewayRouteTableVpcAssociations`:
-  `List`\[[LocalGatewayRouteTableVpcAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetablevpcassociationtypedef)\]
+  `List`\[[LocalGatewayRouteTableVpcAssociationTypeDef](./type_defs.md#localgatewayroutetablevpcassociationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLocalGatewayRouteTablesResultTypeDef
@@ -4308,7 +4226,7 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesResultTypeDe
 Optional fields:
 
 - `LocalGatewayRouteTables`:
-  `List`\[[LocalGatewayRouteTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetabletypedef)\]
+  `List`\[[LocalGatewayRouteTableTypeDef](./type_defs.md#localgatewayroutetabletypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef
@@ -4320,7 +4238,7 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfaceGroupsR
 Optional fields:
 
 - `LocalGatewayVirtualInterfaceGroups`:
-  `List`\[[LocalGatewayVirtualInterfaceGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayvirtualinterfacegrouptypedef)\]
+  `List`\[[LocalGatewayVirtualInterfaceGroupTypeDef](./type_defs.md#localgatewayvirtualinterfacegrouptypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLocalGatewayVirtualInterfacesResultTypeDef
@@ -4332,7 +4250,7 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfacesResult
 Optional fields:
 
 - `LocalGatewayVirtualInterfaces`:
-  `List`\[[LocalGatewayVirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayvirtualinterfacetypedef)\]
+  `List`\[[LocalGatewayVirtualInterfaceTypeDef](./type_defs.md#localgatewayvirtualinterfacetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeLocalGatewaysResultTypeDef
@@ -4344,7 +4262,7 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewaysResultTypeDef
 Optional fields:
 
 - `LocalGateways`:
-  `List`\[[LocalGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewaytypedef)\]
+  `List`\[[LocalGatewayTypeDef](./type_defs.md#localgatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeManagedPrefixListsResultTypeDef
@@ -4357,7 +4275,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PrefixLists`:
-  `List`\[[ManagedPrefixListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#managedprefixlisttypedef)\]
+  `List`\[[ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)\]
 
 ## DescribeMovingAddressesResultTypeDef
 
@@ -4368,7 +4286,7 @@ from mypy_boto3_ec2.type_defs import DescribeMovingAddressesResultTypeDef
 Optional fields:
 
 - `MovingAddressStatuses`:
-  `List`\[[MovingAddressStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#movingaddressstatustypedef)\]
+  `List`\[[MovingAddressStatusTypeDef](./type_defs.md#movingaddressstatustypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNatGatewaysResultTypeDef
@@ -4379,8 +4297,7 @@ from mypy_boto3_ec2.type_defs import DescribeNatGatewaysResultTypeDef
 
 Optional fields:
 
-- `NatGateways`:
-  `List`\[[NatGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#natgatewaytypedef)\]
+- `NatGateways`: `List`\[[NatGatewayTypeDef](./type_defs.md#natgatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkAclsResultTypeDef
@@ -4391,8 +4308,7 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkAclsResultTypeDef
 
 Optional fields:
 
-- `NetworkAcls`:
-  `List`\[[NetworkAclTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkacltypedef)\]
+- `NetworkAcls`: `List`\[[NetworkAclTypeDef](./type_defs.md#networkacltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkInsightsAnalysesResultTypeDef
@@ -4404,7 +4320,7 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesResultTypeDe
 Optional fields:
 
 - `NetworkInsightsAnalyses`:
-  `List`\[[NetworkInsightsAnalysisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinsightsanalysistypedef)\]
+  `List`\[[NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkInsightsPathsResultTypeDef
@@ -4416,7 +4332,7 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsPathsResultTypeDef
 Optional fields:
 
 - `NetworkInsightsPaths`:
-  `List`\[[NetworkInsightsPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinsightspathtypedef)\]
+  `List`\[[NetworkInsightsPathTypeDef](./type_defs.md#networkinsightspathtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkInterfaceAttributeResultTypeDef
@@ -4428,14 +4344,13 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeResultType
 Optional fields:
 
 - `Attachment`:
-  [NetworkInterfaceAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceattachmenttypedef)
-- `Description`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+  [NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef)
+- `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `Groups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `NetworkInterfaceId`: `str`
 - `SourceDestCheck`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ## DescribeNetworkInterfacePermissionsResultTypeDef
 
@@ -4446,7 +4361,7 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacePermissionsResultTy
 Optional fields:
 
 - `NetworkInterfacePermissions`:
-  `List`\[[NetworkInterfacePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfacepermissiontypedef)\]
+  `List`\[[NetworkInterfacePermissionTypeDef](./type_defs.md#networkinterfacepermissiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeNetworkInterfacesResultTypeDef
@@ -4458,7 +4373,7 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesResultTypeDef
 Optional fields:
 
 - `NetworkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 - `NextToken`: `str`
 
 ## DescribePlacementGroupsResultTypeDef
@@ -4470,7 +4385,7 @@ from mypy_boto3_ec2.type_defs import DescribePlacementGroupsResultTypeDef
 Optional fields:
 
 - `PlacementGroups`:
-  `List`\[[PlacementGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementgrouptypedef)\]
+  `List`\[[PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)\]
 
 ## DescribePrefixListsResultTypeDef
 
@@ -4481,8 +4396,7 @@ from mypy_boto3_ec2.type_defs import DescribePrefixListsResultTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `PrefixLists`:
-  `List`\[[PrefixListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#prefixlisttypedef)\]
+- `PrefixLists`: `List`\[[PrefixListTypeDef](./type_defs.md#prefixlisttypedef)\]
 
 ## DescribePrincipalIdFormatResultTypeDef
 
@@ -4493,7 +4407,7 @@ from mypy_boto3_ec2.type_defs import DescribePrincipalIdFormatResultTypeDef
 Optional fields:
 
 - `Principals`:
-  `List`\[[PrincipalIdFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#principalidformattypedef)\]
+  `List`\[[PrincipalIdFormatTypeDef](./type_defs.md#principalidformattypedef)\]
 - `NextToken`: `str`
 
 ## DescribePublicIpv4PoolsResultTypeDef
@@ -4505,7 +4419,7 @@ from mypy_boto3_ec2.type_defs import DescribePublicIpv4PoolsResultTypeDef
 Optional fields:
 
 - `PublicIpv4Pools`:
-  `List`\[[PublicIpv4PoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#publicipv4pooltypedef)\]
+  `List`\[[PublicIpv4PoolTypeDef](./type_defs.md#publicipv4pooltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeRegionsResultTypeDef
@@ -4516,8 +4430,7 @@ from mypy_boto3_ec2.type_defs import DescribeRegionsResultTypeDef
 
 Optional fields:
 
-- `Regions`:
-  `List`\[[RegionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#regiontypedef)\]
+- `Regions`: `List`\[[RegionTypeDef](./type_defs.md#regiontypedef)\]
 
 ## DescribeReplaceRootVolumeTasksResultTypeDef
 
@@ -4528,7 +4441,7 @@ from mypy_boto3_ec2.type_defs import DescribeReplaceRootVolumeTasksResultTypeDef
 Optional fields:
 
 - `ReplaceRootVolumeTasks`:
-  `List`\[[ReplaceRootVolumeTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#replacerootvolumetasktypedef)\]
+  `List`\[[ReplaceRootVolumeTaskTypeDef](./type_defs.md#replacerootvolumetasktypedef)\]
 - `NextToken`: `str`
 
 ## DescribeReservedInstancesListingsResultTypeDef
@@ -4540,7 +4453,7 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesListingsResultType
 Optional fields:
 
 - `ReservedInstancesListings`:
-  `List`\[[ReservedInstancesListingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstanceslistingtypedef)\]
+  `List`\[[ReservedInstancesListingTypeDef](./type_defs.md#reservedinstanceslistingtypedef)\]
 
 ## DescribeReservedInstancesModificationsResultTypeDef
 
@@ -4552,7 +4465,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ReservedInstancesModifications`:
-  `List`\[[ReservedInstancesModificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancesmodificationtypedef)\]
+  `List`\[[ReservedInstancesModificationTypeDef](./type_defs.md#reservedinstancesmodificationtypedef)\]
 
 ## DescribeReservedInstancesOfferingsResultTypeDef
 
@@ -4563,7 +4476,7 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesOfferingsResultTyp
 Optional fields:
 
 - `ReservedInstancesOfferings`:
-  `List`\[[ReservedInstancesOfferingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancesofferingtypedef)\]
+  `List`\[[ReservedInstancesOfferingTypeDef](./type_defs.md#reservedinstancesofferingtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeReservedInstancesResultTypeDef
@@ -4575,7 +4488,7 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesResultTypeDef
 Optional fields:
 
 - `ReservedInstances`:
-  `List`\[[ReservedInstancesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancestypedef)\]
+  `List`\[[ReservedInstancesTypeDef](./type_defs.md#reservedinstancestypedef)\]
 
 ## DescribeRouteTablesResultTypeDef
 
@@ -4585,8 +4498,7 @@ from mypy_boto3_ec2.type_defs import DescribeRouteTablesResultTypeDef
 
 Optional fields:
 
-- `RouteTables`:
-  `List`\[[RouteTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetabletypedef)\]
+- `RouteTables`: `List`\[[RouteTableTypeDef](./type_defs.md#routetabletypedef)\]
 - `NextToken`: `str`
 
 ## DescribeScheduledInstanceAvailabilityResultTypeDef
@@ -4599,7 +4511,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ScheduledInstanceAvailabilitySet`:
-  `List`\[[ScheduledInstanceAvailabilityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstanceavailabilitytypedef)\]
+  `List`\[[ScheduledInstanceAvailabilityTypeDef](./type_defs.md#scheduledinstanceavailabilitytypedef)\]
 
 ## DescribeScheduledInstancesResultTypeDef
 
@@ -4611,7 +4523,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ScheduledInstanceSet`:
-  `List`\[[ScheduledInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancetypedef)\]
+  `List`\[[ScheduledInstanceTypeDef](./type_defs.md#scheduledinstancetypedef)\]
 
 ## DescribeSecurityGroupReferencesResultTypeDef
 
@@ -4622,7 +4534,7 @@ from mypy_boto3_ec2.type_defs import DescribeSecurityGroupReferencesResultTypeDe
 Optional fields:
 
 - `SecurityGroupReferenceSet`:
-  `List`\[[SecurityGroupReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#securitygroupreferencetypedef)\]
+  `List`\[[SecurityGroupReferenceTypeDef](./type_defs.md#securitygroupreferencetypedef)\]
 
 ## DescribeSecurityGroupsResultTypeDef
 
@@ -4633,7 +4545,7 @@ from mypy_boto3_ec2.type_defs import DescribeSecurityGroupsResultTypeDef
 Optional fields:
 
 - `SecurityGroups`:
-  `List`\[[SecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#securitygrouptypedef)\]
+  `List`\[[SecurityGroupTypeDef](./type_defs.md#securitygrouptypedef)\]
 - `NextToken`: `str`
 
 ## DescribeSnapshotAttributeResultTypeDef
@@ -4645,9 +4557,9 @@ from mypy_boto3_ec2.type_defs import DescribeSnapshotAttributeResultTypeDef
 Optional fields:
 
 - `CreateVolumePermissions`:
-  `List`\[[CreateVolumePermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#createvolumepermissiontypedef)\]
+  `List`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `SnapshotId`: `str`
 
 ## DescribeSnapshotsResultTypeDef
@@ -4658,8 +4570,7 @@ from mypy_boto3_ec2.type_defs import DescribeSnapshotsResultTypeDef
 
 Optional fields:
 
-- `Snapshots`:
-  `List`\[[SnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#snapshottypedef)\]
+- `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 - `NextToken`: `str`
 
 ## DescribeSpotDatafeedSubscriptionResultTypeDef
@@ -4671,7 +4582,7 @@ from mypy_boto3_ec2.type_defs import DescribeSpotDatafeedSubscriptionResultTypeD
 Optional fields:
 
 - `SpotDatafeedSubscription`:
-  [SpotDatafeedSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotdatafeedsubscriptiontypedef)
+  [SpotDatafeedSubscriptionTypeDef](./type_defs.md#spotdatafeedsubscriptiontypedef)
 
 ## DescribeSpotFleetInstancesResponseTypeDef
 
@@ -4682,7 +4593,7 @@ from mypy_boto3_ec2.type_defs import DescribeSpotFleetInstancesResponseTypeDef
 Optional fields:
 
 - `ActiveInstances`:
-  `List`\[[ActiveInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#activeinstancetypedef)\]
+  `List`\[[ActiveInstanceTypeDef](./type_defs.md#activeinstancetypedef)\]
 - `NextToken`: `str`
 - `SpotFleetRequestId`: `str`
 
@@ -4695,7 +4606,7 @@ from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestHistoryResponseType
 Optional fields:
 
 - `HistoryRecords`:
-  `List`\[[HistoryRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#historyrecordtypedef)\]
+  `List`\[[HistoryRecordTypeDef](./type_defs.md#historyrecordtypedef)\]
 - `LastEvaluatedTime`: `datetime`
 - `NextToken`: `str`
 - `SpotFleetRequestId`: `str`
@@ -4711,7 +4622,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `SpotFleetRequestConfigs`:
-  `List`\[[SpotFleetRequestConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotfleetrequestconfigtypedef)\]
+  `List`\[[SpotFleetRequestConfigTypeDef](./type_defs.md#spotfleetrequestconfigtypedef)\]
 
 ## DescribeSpotInstanceRequestsResultTypeDef
 
@@ -4722,7 +4633,7 @@ from mypy_boto3_ec2.type_defs import DescribeSpotInstanceRequestsResultTypeDef
 Optional fields:
 
 - `SpotInstanceRequests`:
-  `List`\[[SpotInstanceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotinstancerequesttypedef)\]
+  `List`\[[SpotInstanceRequestTypeDef](./type_defs.md#spotinstancerequesttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeSpotPriceHistoryResultTypeDef
@@ -4735,7 +4646,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `SpotPriceHistory`:
-  `List`\[[SpotPriceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotpricetypedef)\]
+  `List`\[[SpotPriceTypeDef](./type_defs.md#spotpricetypedef)\]
 
 ## DescribeStaleSecurityGroupsResultTypeDef
 
@@ -4747,7 +4658,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `StaleSecurityGroupSet`:
-  `List`\[[StaleSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#stalesecuritygrouptypedef)\]
+  `List`\[[StaleSecurityGroupTypeDef](./type_defs.md#stalesecuritygrouptypedef)\]
 
 ## DescribeStoreImageTasksResultTypeDef
 
@@ -4758,7 +4669,7 @@ from mypy_boto3_ec2.type_defs import DescribeStoreImageTasksResultTypeDef
 Optional fields:
 
 - `StoreImageTaskResults`:
-  `List`\[[StoreImageTaskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#storeimagetaskresulttypedef)\]
+  `List`\[[StoreImageTaskResultTypeDef](./type_defs.md#storeimagetaskresulttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeSubnetsResultTypeDef
@@ -4769,8 +4680,7 @@ from mypy_boto3_ec2.type_defs import DescribeSubnetsResultTypeDef
 
 Optional fields:
 
-- `Subnets`:
-  `List`\[[SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnettypedef)\]
+- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTagsResultTypeDef
@@ -4782,8 +4692,7 @@ from mypy_boto3_ec2.type_defs import DescribeTagsResultTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Tags`:
-  `List`\[[TagDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagdescriptiontypedef)\]
+- `Tags`: `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
 
 ## DescribeTrafficMirrorFiltersResultTypeDef
 
@@ -4794,7 +4703,7 @@ from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorFiltersResultTypeDef
 Optional fields:
 
 - `TrafficMirrorFilters`:
-  `List`\[[TrafficMirrorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfiltertypedef)\]
+  `List`\[[TrafficMirrorFilterTypeDef](./type_defs.md#trafficmirrorfiltertypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTrafficMirrorSessionsResultTypeDef
@@ -4806,7 +4715,7 @@ from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorSessionsResultTypeDef
 Optional fields:
 
 - `TrafficMirrorSessions`:
-  `List`\[[TrafficMirrorSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorsessiontypedef)\]
+  `List`\[[TrafficMirrorSessionTypeDef](./type_defs.md#trafficmirrorsessiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTrafficMirrorTargetsResultTypeDef
@@ -4818,7 +4727,7 @@ from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorTargetsResultTypeDef
 Optional fields:
 
 - `TrafficMirrorTargets`:
-  `List`\[[TrafficMirrorTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrortargettypedef)\]
+  `List`\[[TrafficMirrorTargetTypeDef](./type_defs.md#trafficmirrortargettypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayAttachmentsResultTypeDef
@@ -4830,7 +4739,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayAttachmentsResultType
 Optional fields:
 
 - `TransitGatewayAttachments`:
-  `List`\[[TransitGatewayAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayattachmenttypedef)\]
+  `List`\[[TransitGatewayAttachmentTypeDef](./type_defs.md#transitgatewayattachmenttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayConnectPeersResultTypeDef
@@ -4842,7 +4751,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectPeersResultTyp
 Optional fields:
 
 - `TransitGatewayConnectPeers`:
-  `List`\[[TransitGatewayConnectPeerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnectpeertypedef)\]
+  `List`\[[TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayConnectsResultTypeDef
@@ -4854,7 +4763,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectsResultTypeDef
 Optional fields:
 
 - `TransitGatewayConnects`:
-  `List`\[[TransitGatewayConnectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnecttypedef)\]
+  `List`\[[TransitGatewayConnectTypeDef](./type_defs.md#transitgatewayconnecttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayMulticastDomainsResultTypeDef
@@ -4866,7 +4775,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayMulticastDomainsResul
 Optional fields:
 
 - `TransitGatewayMulticastDomains`:
-  `List`\[[TransitGatewayMulticastDomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomaintypedef)\]
+  `List`\[[TransitGatewayMulticastDomainTypeDef](./type_defs.md#transitgatewaymulticastdomaintypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayPeeringAttachmentsResultTypeDef
@@ -4878,7 +4787,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsRes
 Optional fields:
 
 - `TransitGatewayPeeringAttachments`:
-  `List`\[[TransitGatewayPeeringAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypeeringattachmenttypedef)\]
+  `List`\[[TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayRouteTablesResultTypeDef
@@ -4890,7 +4799,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTablesResultType
 Optional fields:
 
 - `TransitGatewayRouteTables`:
-  `List`\[[TransitGatewayRouteTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetabletypedef)\]
+  `List`\[[TransitGatewayRouteTableTypeDef](./type_defs.md#transitgatewayroutetabletypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewayVpcAttachmentsResultTypeDef
@@ -4902,7 +4811,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayVpcAttachmentsResultT
 Optional fields:
 
 - `TransitGatewayVpcAttachments`:
-  `List`\[[TransitGatewayVpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmenttypedef)\]
+  `List`\[[TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)\]
 - `NextToken`: `str`
 
 ## DescribeTransitGatewaysResultTypeDef
@@ -4914,7 +4823,7 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewaysResultTypeDef
 Optional fields:
 
 - `TransitGateways`:
-  `List`\[[TransitGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaytypedef)\]
+  `List`\[[TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVolumeAttributeResultTypeDef
@@ -4926,9 +4835,9 @@ from mypy_boto3_ec2.type_defs import DescribeVolumeAttributeResultTypeDef
 Optional fields:
 
 - `AutoEnableIO`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `VolumeId`: `str`
 
 ## DescribeVolumeStatusResultTypeDef
@@ -4941,7 +4850,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `VolumeStatuses`:
-  `List`\[[VolumeStatusItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumestatusitemtypedef)\]
+  `List`\[[VolumeStatusItemTypeDef](./type_defs.md#volumestatusitemtypedef)\]
 
 ## DescribeVolumesModificationsResultTypeDef
 
@@ -4952,7 +4861,7 @@ from mypy_boto3_ec2.type_defs import DescribeVolumesModificationsResultTypeDef
 Optional fields:
 
 - `VolumesModifications`:
-  `List`\[[VolumeModificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumemodificationtypedef)\]
+  `List`\[[VolumeModificationTypeDef](./type_defs.md#volumemodificationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVolumesResultTypeDef
@@ -4963,8 +4872,7 @@ from mypy_boto3_ec2.type_defs import DescribeVolumesResultTypeDef
 
 Optional fields:
 
-- `Volumes`:
-  `List`\[[VolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumetypedef)\]
+- `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcAttributeResultTypeDef
@@ -4977,9 +4885,9 @@ Optional fields:
 
 - `VpcId`: `str`
 - `EnableDnsHostnames`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnableDnsSupport`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
 ## DescribeVpcClassicLinkDnsSupportResultTypeDef
 
@@ -4991,7 +4899,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `Vpcs`:
-  `List`\[[ClassicLinkDnsSupportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#classiclinkdnssupporttypedef)\]
+  `List`\[[ClassicLinkDnsSupportTypeDef](./type_defs.md#classiclinkdnssupporttypedef)\]
 
 ## DescribeVpcClassicLinkResultTypeDef
 
@@ -5001,8 +4909,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkResultTypeDef
 
 Optional fields:
 
-- `Vpcs`:
-  `List`\[[VpcClassicLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcclassiclinktypedef)\]
+- `Vpcs`: `List`\[[VpcClassicLinkTypeDef](./type_defs.md#vpcclassiclinktypedef)\]
 
 ## DescribeVpcEndpointConnectionNotificationsResultTypeDef
 
@@ -5013,7 +4920,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionNotificationsR
 Optional fields:
 
 - `ConnectionNotificationSet`:
-  `List`\[[ConnectionNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#connectionnotificationtypedef)\]
+  `List`\[[ConnectionNotificationTypeDef](./type_defs.md#connectionnotificationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcEndpointConnectionsResultTypeDef
@@ -5025,7 +4932,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionsResultTypeDef
 Optional fields:
 
 - `VpcEndpointConnections`:
-  `List`\[[VpcEndpointConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcendpointconnectiontypedef)\]
+  `List`\[[VpcEndpointConnectionTypeDef](./type_defs.md#vpcendpointconnectiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcEndpointServiceConfigurationsResultTypeDef
@@ -5037,7 +4944,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServiceConfigurationsRes
 Optional fields:
 
 - `ServiceConfigurations`:
-  `List`\[[ServiceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#serviceconfigurationtypedef)\]
+  `List`\[[ServiceConfigurationTypeDef](./type_defs.md#serviceconfigurationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcEndpointServicePermissionsResultTypeDef
@@ -5049,7 +4956,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicePermissionsResult
 Optional fields:
 
 - `AllowedPrincipals`:
-  `List`\[[AllowedPrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#allowedprincipaltypedef)\]
+  `List`\[[AllowedPrincipalTypeDef](./type_defs.md#allowedprincipaltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcEndpointServicesResultTypeDef
@@ -5062,7 +4969,7 @@ Optional fields:
 
 - `ServiceNames`: `List`\[`str`\]
 - `ServiceDetails`:
-  `List`\[[ServiceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#servicedetailtypedef)\]
+  `List`\[[ServiceDetailTypeDef](./type_defs.md#servicedetailtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcEndpointsResultTypeDef
@@ -5074,7 +4981,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointsResultTypeDef
 Optional fields:
 
 - `VpcEndpoints`:
-  `List`\[[VpcEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcendpointtypedef)\]
+  `List`\[[VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcPeeringConnectionsResultTypeDef
@@ -5086,7 +4993,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcPeeringConnectionsResultTypeDef
 Optional fields:
 
 - `VpcPeeringConnections`:
-  `List`\[[VpcPeeringConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectiontypedef)\]
+  `List`\[[VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpcsResultTypeDef
@@ -5097,8 +5004,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcsResultTypeDef
 
 Optional fields:
 
-- `Vpcs`:
-  `List`\[[VpcTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpctypedef)\]
+- `Vpcs`: `List`\[[VpcTypeDef](./type_defs.md#vpctypedef)\]
 - `NextToken`: `str`
 
 ## DescribeVpnConnectionsResultTypeDef
@@ -5110,7 +5016,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpnConnectionsResultTypeDef
 Optional fields:
 
 - `VpnConnections`:
-  `List`\[[VpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectiontypedef)\]
+  `List`\[[VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)\]
 
 ## DescribeVpnGatewaysResultTypeDef
 
@@ -5120,8 +5026,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpnGatewaysResultTypeDef
 
 Optional fields:
 
-- `VpnGateways`:
-  `List`\[[VpnGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpngatewaytypedef)\]
+- `VpnGateways`: `List`\[[VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef)\]
 
 ## DetachClassicLinkVpcResultTypeDef
 
@@ -5143,7 +5048,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Values`:
-  `List`\[[AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)\]
+  `List`\[[AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 
 ## DhcpOptionsTypeDef
 
@@ -5154,11 +5059,10 @@ from mypy_boto3_ec2.type_defs import DhcpOptionsTypeDef
 Optional fields:
 
 - `DhcpConfigurations`:
-  `List`\[[DhcpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#dhcpconfigurationtypedef)\]
+  `List`\[[DhcpConfigurationTypeDef](./type_defs.md#dhcpconfigurationtypedef)\]
 - `DhcpOptionsId`: `str`
 - `OwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DirectoryServiceAuthenticationRequestTypeDef
 
@@ -5200,7 +5104,7 @@ Optional fields:
 
 - `SnapshotId`: `str`
 - `FastSnapshotRestoreStateErrors`:
-  `List`\[[DisableFastSnapshotRestoreStateErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#disablefastsnapshotrestorestateerroritemtypedef)\]
+  `List`\[[DisableFastSnapshotRestoreStateErrorItemTypeDef](./type_defs.md#disablefastsnapshotrestorestateerroritemtypedef)\]
 
 ## DisableFastSnapshotRestoreStateErrorItemTypeDef
 
@@ -5212,7 +5116,7 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `Error`:
-  [DisableFastSnapshotRestoreStateErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#disablefastsnapshotrestorestateerrortypedef)
+  [DisableFastSnapshotRestoreStateErrorTypeDef](./type_defs.md#disablefastsnapshotrestorestateerrortypedef)
 
 ## DisableFastSnapshotRestoreStateErrorTypeDef
 
@@ -5236,7 +5140,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `AvailabilityZone`: `str`
 - `State`:
-  [FastSnapshotRestoreStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fastsnapshotrestorestatecode)
+  [FastSnapshotRestoreStateCode](./literals.md#fastsnapshotrestorestatecode)
 - `StateTransitionReason`: `str`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
@@ -5255,9 +5159,9 @@ from mypy_boto3_ec2.type_defs import DisableFastSnapshotRestoresResultTypeDef
 Optional fields:
 
 - `Successful`:
-  `List`\[[DisableFastSnapshotRestoreSuccessItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#disablefastsnapshotrestoresuccessitemtypedef)\]
+  `List`\[[DisableFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#disablefastsnapshotrestoresuccessitemtypedef)\]
 - `Unsuccessful`:
-  `List`\[[DisableFastSnapshotRestoreErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#disablefastsnapshotrestoreerroritemtypedef)\]
+  `List`\[[DisableFastSnapshotRestoreErrorItemTypeDef](./type_defs.md#disablefastsnapshotrestoreerroritemtypedef)\]
 
 ## DisableSerialConsoleAccessResultTypeDef
 
@@ -5278,7 +5182,7 @@ from mypy_boto3_ec2.type_defs import DisableTransitGatewayRouteTablePropagationR
 Optional fields:
 
 - `Propagation`:
-  [TransitGatewayPropagationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypropagationtypedef)
+  [TransitGatewayPropagationTypeDef](./type_defs.md#transitgatewaypropagationtypedef)
 
 ## DisableVpcClassicLinkDnsSupportResultTypeDef
 
@@ -5309,8 +5213,7 @@ from mypy_boto3_ec2.type_defs import DisassociateClientVpnTargetNetworkResultTyp
 Optional fields:
 
 - `AssociationId`: `str`
-- `Status`:
-  [AssociationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associationstatustypedef)
+- `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
 
 ## DisassociateEnclaveCertificateIamRoleResultTypeDef
 
@@ -5331,7 +5234,7 @@ from mypy_boto3_ec2.type_defs import DisassociateIamInstanceProfileResultTypeDef
 Optional fields:
 
 - `IamInstanceProfileAssociation`:
-  [IamInstanceProfileAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofileassociationtypedef)
+  [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
 
 ## DisassociateSubnetCidrBlockResultTypeDef
 
@@ -5342,7 +5245,7 @@ from mypy_boto3_ec2.type_defs import DisassociateSubnetCidrBlockResultTypeDef
 Optional fields:
 
 - `Ipv6CidrBlockAssociation`:
-  [SubnetIpv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnetipv6cidrblockassociationtypedef)
+  [SubnetIpv6CidrBlockAssociationTypeDef](./type_defs.md#subnetipv6cidrblockassociationtypedef)
 - `SubnetId`: `str`
 
 ## DisassociateTransitGatewayMulticastDomainResultTypeDef
@@ -5354,7 +5257,7 @@ from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayMulticastDomainRe
 Optional fields:
 
 - `Associations`:
-  [TransitGatewayMulticastDomainAssociationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomainassociationstypedef)
+  [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
 
 ## DisassociateTransitGatewayRouteTableResultTypeDef
 
@@ -5365,7 +5268,7 @@ from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayRouteTableResultT
 Optional fields:
 
 - `Association`:
-  [TransitGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayassociationtypedef)
+  [TransitGatewayAssociationTypeDef](./type_defs.md#transitgatewayassociationtypedef)
 
 ## DisassociateVpcCidrBlockResultTypeDef
 
@@ -5376,9 +5279,9 @@ from mypy_boto3_ec2.type_defs import DisassociateVpcCidrBlockResultTypeDef
 Optional fields:
 
 - `Ipv6CidrBlockAssociation`:
-  [VpcIpv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcipv6cidrblockassociationtypedef)
+  [VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)
 - `CidrBlockAssociation`:
-  [VpcCidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpccidrblockassociationtypedef)
+  [VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)
 - `VpcId`: `str`
 
 ## DiskImageDescriptionTypeDef
@@ -5390,8 +5293,7 @@ from mypy_boto3_ec2.type_defs import DiskImageDescriptionTypeDef
 Optional fields:
 
 - `Checksum`: `str`
-- `Format`:
-  [DiskImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#diskimageformat)
+- `Format`: [DiskImageFormat](./literals.md#diskimageformat)
 - `ImportManifestUrl`: `str`
 - `Size`: `int`
 
@@ -5404,8 +5306,7 @@ from mypy_boto3_ec2.type_defs import DiskImageDetailTypeDef
 Required fields:
 
 - `Bytes`: `int`
-- `Format`:
-  [DiskImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#diskimageformat)
+- `Format`: [DiskImageFormat](./literals.md#diskimageformat)
 - `ImportManifestUrl`: `str`
 
 ## DiskImageTypeDef
@@ -5417,10 +5318,8 @@ from mypy_boto3_ec2.type_defs import DiskImageTypeDef
 Optional fields:
 
 - `Description`: `str`
-- `Image`:
-  [DiskImageDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#diskimagedetailtypedef)
-- `Volume`:
-  [VolumeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumedetailtypedef)
+- `Image`: [DiskImageDetailTypeDef](./type_defs.md#diskimagedetailtypedef)
+- `Volume`: [VolumeDetailTypeDef](./type_defs.md#volumedetailtypedef)
 
 ## DiskImageVolumeDescriptionTypeDef
 
@@ -5443,8 +5342,7 @@ Optional fields:
 
 - `SizeInGB`: `int`
 - `Count`: `int`
-- `Type`:
-  [DiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#disktype)
+- `Type`: [DiskType](./literals.md#disktype)
 
 ## DnsEntryTypeDef
 
@@ -5480,8 +5378,7 @@ Optional fields:
 - `Iops`: `int`
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
-- `VolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `VolumeType`: [VolumeType](./literals.md#volumetype)
 - `KmsKeyId`: `str`
 - `Throughput`: `int`
 - `OutpostArn`: `str`
@@ -5495,14 +5392,11 @@ from mypy_boto3_ec2.type_defs import EbsInfoTypeDef
 
 Optional fields:
 
-- `EbsOptimizedSupport`:
-  [EbsOptimizedSupport](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ebsoptimizedsupport)
-- `EncryptionSupport`:
-  [EbsEncryptionSupport](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ebsencryptionsupport)
+- `EbsOptimizedSupport`: [EbsOptimizedSupport](./literals.md#ebsoptimizedsupport)
+- `EncryptionSupport`: [EbsEncryptionSupport](./literals.md#ebsencryptionsupport)
 - `EbsOptimizedInfo`:
-  [EbsOptimizedInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ebsoptimizedinfotypedef)
-- `NvmeSupport`:
-  [EbsNvmeSupport](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ebsnvmesupport)
+  [EbsOptimizedInfoTypeDef](./type_defs.md#ebsoptimizedinfotypedef)
+- `NvmeSupport`: [EbsNvmeSupport](./literals.md#ebsnvmesupport)
 
 ## EbsInstanceBlockDeviceSpecificationTypeDef
 
@@ -5525,8 +5419,7 @@ Optional fields:
 
 - `AttachTime`: `datetime`
 - `DeleteOnTermination`: `bool`
-- `Status`:
-  [AttachmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#attachmentstatus)
+- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
 - `VolumeId`: `str`
 
 ## EbsOptimizedInfoTypeDef
@@ -5563,10 +5456,9 @@ from mypy_boto3_ec2.type_defs import EgressOnlyInternetGatewayTypeDef
 Optional fields:
 
 - `Attachments`:
-  `List`\[[InternetGatewayAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#internetgatewayattachmenttypedef)\]
+  `List`\[[InternetGatewayAttachmentTypeDef](./type_defs.md#internetgatewayattachmenttypedef)\]
 - `EgressOnlyInternetGatewayId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ElasticGpuAssociationTypeDef
 
@@ -5589,8 +5481,7 @@ from mypy_boto3_ec2.type_defs import ElasticGpuHealthTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ElasticGpuStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#elasticgpustatus)
+- `Status`: [ElasticGpuStatus](./literals.md#elasticgpustatus)
 
 ## ElasticGpuSpecificationResponseTypeDef
 
@@ -5624,11 +5515,11 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `ElasticGpuType`: `str`
 - `ElasticGpuHealth`:
-  [ElasticGpuHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpuhealthtypedef)
-- `ElasticGpuState`: `Literal['ATTACHED']`
+  [ElasticGpuHealthTypeDef](./type_defs.md#elasticgpuhealthtypedef)
+- `ElasticGpuState`: `Literal['ATTACHED']` (see
+  [ElasticGpuState](./literals.md#elasticgpustate))
 - `InstanceId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ElasticInferenceAcceleratorAssociationTypeDef
 
@@ -5677,7 +5568,7 @@ Optional fields:
 
 - `SnapshotId`: `str`
 - `FastSnapshotRestoreStateErrors`:
-  `List`\[[EnableFastSnapshotRestoreStateErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enablefastsnapshotrestorestateerroritemtypedef)\]
+  `List`\[[EnableFastSnapshotRestoreStateErrorItemTypeDef](./type_defs.md#enablefastsnapshotrestorestateerroritemtypedef)\]
 
 ## EnableFastSnapshotRestoreStateErrorItemTypeDef
 
@@ -5689,7 +5580,7 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `Error`:
-  [EnableFastSnapshotRestoreStateErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enablefastsnapshotrestorestateerrortypedef)
+  [EnableFastSnapshotRestoreStateErrorTypeDef](./type_defs.md#enablefastsnapshotrestorestateerrortypedef)
 
 ## EnableFastSnapshotRestoreStateErrorTypeDef
 
@@ -5713,7 +5604,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `AvailabilityZone`: `str`
 - `State`:
-  [FastSnapshotRestoreStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fastsnapshotrestorestatecode)
+  [FastSnapshotRestoreStateCode](./literals.md#fastsnapshotrestorestatecode)
 - `StateTransitionReason`: `str`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
@@ -5732,9 +5623,9 @@ from mypy_boto3_ec2.type_defs import EnableFastSnapshotRestoresResultTypeDef
 Optional fields:
 
 - `Successful`:
-  `List`\[[EnableFastSnapshotRestoreSuccessItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enablefastsnapshotrestoresuccessitemtypedef)\]
+  `List`\[[EnableFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#enablefastsnapshotrestoresuccessitemtypedef)\]
 - `Unsuccessful`:
-  `List`\[[EnableFastSnapshotRestoreErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enablefastsnapshotrestoreerroritemtypedef)\]
+  `List`\[[EnableFastSnapshotRestoreErrorItemTypeDef](./type_defs.md#enablefastsnapshotrestoreerroritemtypedef)\]
 
 ## EnableSerialConsoleAccessResultTypeDef
 
@@ -5755,7 +5646,7 @@ from mypy_boto3_ec2.type_defs import EnableTransitGatewayRouteTablePropagationRe
 Optional fields:
 
 - `Propagation`:
-  [TransitGatewayPropagationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypropagationtypedef)
+  [TransitGatewayPropagationTypeDef](./type_defs.md#transitgatewaypropagationtypedef)
 
 ## EnableVpcClassicLinkDnsSupportResultTypeDef
 
@@ -5817,82 +5708,77 @@ from mypy_boto3_ec2.type_defs import ExplanationTypeDef
 
 Optional fields:
 
-- `Acl`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
-- `AclRule`:
-  [AnalysisAclRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysisaclruletypedef)
+- `Acl`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `AclRule`: [AnalysisAclRuleTypeDef](./type_defs.md#analysisaclruletypedef)
 - `Address`: `str`
 - `Addresses`: `List`\[`str`\]
 - `AttachedTo`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `AvailabilityZones`: `List`\[`str`\]
 - `Cidrs`: `List`\[`str`\]
 - `Component`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `CustomerGateway`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Destination`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `DestinationVpc`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Direction`: `str`
 - `ExplanationCode`: `str`
 - `IngressRouteTable`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `InternetGateway`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `LoadBalancerArn`: `str`
 - `ClassicLoadBalancerListener`:
-  [AnalysisLoadBalancerListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysisloadbalancerlistenertypedef)
+  [AnalysisLoadBalancerListenerTypeDef](./type_defs.md#analysisloadbalancerlistenertypedef)
 - `LoadBalancerListenerPort`: `int`
 - `LoadBalancerTarget`:
-  [AnalysisLoadBalancerTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysisloadbalancertargettypedef)
+  [AnalysisLoadBalancerTargetTypeDef](./type_defs.md#analysisloadbalancertargettypedef)
 - `LoadBalancerTargetGroup`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `LoadBalancerTargetGroups`:
-  `List`\[[AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)\]
+  `List`\[[AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)\]
 - `LoadBalancerTargetPort`: `int`
 - `ElasticLoadBalancerListener`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `MissingComponent`: `str`
 - `NatGateway`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `NetworkInterface`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `PacketField`: `str`
 - `VpcPeeringConnection`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Port`: `int`
-- `PortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)\]
+- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `PrefixList`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Protocols`: `List`\[`str`\]
 - `RouteTableRoute`:
-  [AnalysisRouteTableRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysisroutetableroutetypedef)
+  [AnalysisRouteTableRouteTypeDef](./type_defs.md#analysisroutetableroutetypedef)
 - `RouteTable`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `SecurityGroup`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `SecurityGroupRule`:
-  [AnalysisSecurityGroupRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysissecuritygroupruletypedef)
+  [AnalysisSecurityGroupRuleTypeDef](./type_defs.md#analysissecuritygroupruletypedef)
 - `SecurityGroups`:
-  `List`\[[AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)\]
+  `List`\[[AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)\]
 - `SourceVpc`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `State`: `str`
-- `Subnet`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+- `Subnet`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `SubnetRouteTable`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
-- `Vpc`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `Vpc`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `VpcEndpoint`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `VpnConnection`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `VpnGateway`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 
 ## ExportClientVpnClientCertificateRevocationListResultTypeDef
 
@@ -5904,7 +5790,7 @@ Optional fields:
 
 - `CertificateRevocationList`: `str`
 - `Status`:
-  [ClientCertificateRevocationListStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientcertificaterevocationliststatustypedef)
+  [ClientCertificateRevocationListStatusTypeDef](./type_defs.md#clientcertificaterevocationliststatustypedef)
 
 ## ExportClientVpnClientConfigurationResultTypeDef
 
@@ -5925,18 +5811,16 @@ from mypy_boto3_ec2.type_defs import ExportImageResultTypeDef
 Optional fields:
 
 - `Description`: `str`
-- `DiskImageFormat`:
-  [DiskImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#diskimageformat)
+- `DiskImageFormat`: [DiskImageFormat](./literals.md#diskimageformat)
 - `ExportImageTaskId`: `str`
 - `ImageId`: `str`
 - `RoleName`: `str`
 - `Progress`: `str`
 - `S3ExportLocation`:
-  [ExportTaskS3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#exporttasks3locationtypedef)
+  [ExportTaskS3LocationTypeDef](./type_defs.md#exporttasks3locationtypedef)
 - `Status`: `str`
 - `StatusMessage`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ExportImageTaskTypeDef
 
@@ -5951,11 +5835,10 @@ Optional fields:
 - `ImageId`: `str`
 - `Progress`: `str`
 - `S3ExportLocation`:
-  [ExportTaskS3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#exporttasks3locationtypedef)
+  [ExportTaskS3LocationTypeDef](./type_defs.md#exporttasks3locationtypedef)
 - `Status`: `str`
 - `StatusMessage`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ExportTaskS3LocationRequestTypeDef
 
@@ -5992,15 +5875,12 @@ Optional fields:
 
 - `Description`: `str`
 - `ExportTaskId`: `str`
-- `ExportToS3Task`:
-  [ExportToS3TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#exporttos3tasktypedef)
+- `ExportToS3Task`: [ExportToS3TaskTypeDef](./type_defs.md#exporttos3tasktypedef)
 - `InstanceExportDetails`:
-  [InstanceExportDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceexportdetailstypedef)
-- `State`:
-  [ExportTaskState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#exporttaskstate)
+  [InstanceExportDetailsTypeDef](./type_defs.md#instanceexportdetailstypedef)
+- `State`: [ExportTaskState](./literals.md#exporttaskstate)
 - `StatusMessage`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ExportToS3TaskSpecificationTypeDef
 
@@ -6010,9 +5890,9 @@ from mypy_boto3_ec2.type_defs import ExportToS3TaskSpecificationTypeDef
 
 Optional fields:
 
-- `ContainerFormat`: `Literal['ova']`
-- `DiskImageFormat`:
-  [DiskImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#diskimageformat)
+- `ContainerFormat`: `Literal['ova']` (see
+  [ContainerFormat](./literals.md#containerformat))
+- `DiskImageFormat`: [DiskImageFormat](./literals.md#diskimageformat)
 - `S3Bucket`: `str`
 - `S3Prefix`: `str`
 
@@ -6024,9 +5904,9 @@ from mypy_boto3_ec2.type_defs import ExportToS3TaskTypeDef
 
 Optional fields:
 
-- `ContainerFormat`: `Literal['ova']`
-- `DiskImageFormat`:
-  [DiskImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#diskimageformat)
+- `ContainerFormat`: `Literal['ova']` (see
+  [ContainerFormat](./literals.md#containerformat))
+- `DiskImageFormat`: [DiskImageFormat](./literals.md#diskimageformat)
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 
@@ -6049,7 +5929,7 @@ from mypy_boto3_ec2.type_defs import FailedQueuedPurchaseDeletionTypeDef
 Optional fields:
 
 - `Error`:
-  [DeleteQueuedReservedInstancesErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#deletequeuedreservedinstanceserrortypedef)
+  [DeleteQueuedReservedInstancesErrorTypeDef](./type_defs.md#deletequeuedreservedinstanceserrortypedef)
 - `ReservedInstancesId`: `str`
 
 ## FederatedAuthenticationRequestTypeDef
@@ -6093,37 +5973,32 @@ from mypy_boto3_ec2.type_defs import FleetDataTypeDef
 
 Optional fields:
 
-- `ActivityStatus`:
-  [FleetActivityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetactivitystatus)
+- `ActivityStatus`: [FleetActivityStatus](./literals.md#fleetactivitystatus)
 - `CreateTime`: `datetime`
 - `FleetId`: `str`
-- `FleetState`:
-  [FleetStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetstatecode)
+- `FleetState`: [FleetStateCode](./literals.md#fleetstatecode)
 - `ClientToken`: `str`
 - `ExcessCapacityTerminationPolicy`:
-  [FleetExcessCapacityTerminationPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetexcesscapacityterminationpolicy)
+  [FleetExcessCapacityTerminationPolicy](./literals.md#fleetexcesscapacityterminationpolicy)
 - `FulfilledCapacity`: `float`
 - `FulfilledOnDemandCapacity`: `float`
 - `LaunchTemplateConfigs`:
-  `List`\[[FleetLaunchTemplateConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplateconfigtypedef)\]
+  `List`\[[FleetLaunchTemplateConfigTypeDef](./type_defs.md#fleetlaunchtemplateconfigtypedef)\]
 - `TargetCapacitySpecification`:
-  [TargetCapacitySpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#targetcapacityspecificationtypedef)
+  [TargetCapacitySpecificationTypeDef](./type_defs.md#targetcapacityspecificationtypedef)
 - `TerminateInstancesWithExpiration`: `bool`
-- `Type`:
-  [FleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleettype)
+- `Type`: [FleetType](./literals.md#fleettype)
 - `ValidFrom`: `datetime`
 - `ValidUntil`: `datetime`
 - `ReplaceUnhealthyInstances`: `bool`
-- `SpotOptions`:
-  [SpotOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotoptionstypedef)
+- `SpotOptions`: [SpotOptionsTypeDef](./type_defs.md#spotoptionstypedef)
 - `OnDemandOptions`:
-  [OnDemandOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ondemandoptionstypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [OnDemandOptionsTypeDef](./type_defs.md#ondemandoptionstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Errors`:
-  `List`\[[DescribeFleetErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefleeterrortypedef)\]
+  `List`\[[DescribeFleetErrorTypeDef](./type_defs.md#describefleeterrortypedef)\]
 - `Instances`:
-  `List`\[[DescribeFleetsInstancesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#describefleetsinstancestypedef)\]
+  `List`\[[DescribeFleetsInstancesTypeDef](./type_defs.md#describefleetsinstancestypedef)\]
 
 ## FleetLaunchTemplateConfigRequestTypeDef
 
@@ -6134,9 +6009,9 @@ from mypy_boto3_ec2.type_defs import FleetLaunchTemplateConfigRequestTypeDef
 Optional fields:
 
 - `LaunchTemplateSpecification`:
-  [FleetLaunchTemplateSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplatespecificationrequesttypedef)
+  [FleetLaunchTemplateSpecificationRequestTypeDef](./type_defs.md#fleetlaunchtemplatespecificationrequesttypedef)
 - `Overrides`:
-  `List`\[[FleetLaunchTemplateOverridesRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplateoverridesrequesttypedef)\]
+  `List`\[[FleetLaunchTemplateOverridesRequestTypeDef](./type_defs.md#fleetlaunchtemplateoverridesrequesttypedef)\]
 
 ## FleetLaunchTemplateConfigTypeDef
 
@@ -6147,9 +6022,9 @@ from mypy_boto3_ec2.type_defs import FleetLaunchTemplateConfigTypeDef
 Optional fields:
 
 - `LaunchTemplateSpecification`:
-  [FleetLaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplatespecificationtypedef)
+  [FleetLaunchTemplateSpecificationTypeDef](./type_defs.md#fleetlaunchtemplatespecificationtypedef)
 - `Overrides`:
-  `List`\[[FleetLaunchTemplateOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplateoverridestypedef)\]
+  `List`\[[FleetLaunchTemplateOverridesTypeDef](./type_defs.md#fleetlaunchtemplateoverridestypedef)\]
 
 ## FleetLaunchTemplateOverridesRequestTypeDef
 
@@ -6159,15 +6034,13 @@ from mypy_boto3_ec2.type_defs import FleetLaunchTemplateOverridesRequestTypeDef
 
 Optional fields:
 
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `MaxPrice`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
 - `WeightedCapacity`: `float`
 - `Priority`: `float`
-- `Placement`:
-  [PlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementtypedef)
+- `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 
 ## FleetLaunchTemplateOverridesTypeDef
 
@@ -6177,15 +6050,14 @@ from mypy_boto3_ec2.type_defs import FleetLaunchTemplateOverridesTypeDef
 
 Optional fields:
 
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `MaxPrice`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
 - `WeightedCapacity`: `float`
 - `Priority`: `float`
 - `Placement`:
-  [PlacementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementresponsetypedef)
+  [PlacementResponseTypeDef](./type_defs.md#placementresponsetypedef)
 
 ## FleetLaunchTemplateSpecificationRequestTypeDef
 
@@ -6219,7 +6091,8 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceRequestTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']`
+- `ReplacementStrategy`: `Literal['launch']` (see
+  [FleetReplacementStrategy](./literals.md#fleetreplacementstrategy))
 
 ## FleetSpotCapacityRebalanceTypeDef
 
@@ -6229,7 +6102,8 @@ from mypy_boto3_ec2.type_defs import FleetSpotCapacityRebalanceTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']`
+- `ReplacementStrategy`: `Literal['launch']` (see
+  [FleetReplacementStrategy](./literals.md#fleetreplacementstrategy))
 
 ## FleetSpotMaintenanceStrategiesRequestTypeDef
 
@@ -6240,7 +6114,7 @@ from mypy_boto3_ec2.type_defs import FleetSpotMaintenanceStrategiesRequestTypeDe
 Optional fields:
 
 - `CapacityRebalance`:
-  [FleetSpotCapacityRebalanceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetspotcapacityrebalancerequesttypedef)
+  [FleetSpotCapacityRebalanceRequestTypeDef](./type_defs.md#fleetspotcapacityrebalancerequesttypedef)
 
 ## FleetSpotMaintenanceStrategiesTypeDef
 
@@ -6251,7 +6125,7 @@ from mypy_boto3_ec2.type_defs import FleetSpotMaintenanceStrategiesTypeDef
 Optional fields:
 
 - `CapacityRebalance`:
-  [FleetSpotCapacityRebalanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetspotcapacityrebalancetypedef)
+  [FleetSpotCapacityRebalanceTypeDef](./type_defs.md#fleetspotcapacityrebalancetypedef)
 
 ## FlowLogTypeDef
 
@@ -6269,14 +6143,11 @@ Optional fields:
 - `FlowLogStatus`: `str`
 - `LogGroupName`: `str`
 - `ResourceId`: `str`
-- `TrafficType`:
-  [TrafficType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#traffictype)
-- `LogDestinationType`:
-  [LogDestinationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#logdestinationtype)
+- `TrafficType`: [TrafficType](./literals.md#traffictype)
+- `LogDestinationType`: [LogDestinationType](./literals.md#logdestinationtype)
 - `LogDestination`: `str`
 - `LogFormat`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `MaxAggregationInterval`: `int`
 
 ## FpgaDeviceInfoTypeDef
@@ -6291,7 +6162,7 @@ Optional fields:
 - `Manufacturer`: `str`
 - `Count`: `int`
 - `MemoryInfo`:
-  [FpgaDeviceMemoryInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgadevicememoryinfotypedef)
+  [FpgaDeviceMemoryInfoTypeDef](./type_defs.md#fpgadevicememoryinfotypedef)
 
 ## FpgaDeviceMemoryInfoTypeDef
 
@@ -6315,9 +6186,9 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `LoadPermissions`:
-  `List`\[[LoadPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#loadpermissiontypedef)\]
+  `List`\[[LoadPermissionTypeDef](./type_defs.md#loadpermissiontypedef)\]
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 
 ## FpgaImageStateTypeDef
 
@@ -6327,8 +6198,7 @@ from mypy_boto3_ec2.type_defs import FpgaImageStateTypeDef
 
 Optional fields:
 
-- `Code`:
-  [FpgaImageStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fpgaimagestatecode)
+- `Code`: [FpgaImageStateCode](./literals.md#fpgaimagestatecode)
 - `Message`: `str`
 
 ## FpgaImageTypeDef
@@ -6344,18 +6214,15 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `ShellVersion`: `str`
-- `PciId`:
-  [PciIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#pciidtypedef)
-- `State`:
-  [FpgaImageStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgaimagestatetypedef)
+- `PciId`: [PciIdTypeDef](./type_defs.md#pciidtypedef)
+- `State`: [FpgaImageStateTypeDef](./type_defs.md#fpgaimagestatetypedef)
 - `CreateTime`: `datetime`
 - `UpdateTime`: `datetime`
 - `OwnerId`: `str`
 - `OwnerAlias`: `str`
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Public`: `bool`
 - `DataRetentionSupport`: `bool`
 
@@ -6368,7 +6235,7 @@ from mypy_boto3_ec2.type_defs import FpgaInfoTypeDef
 Optional fields:
 
 - `Fpgas`:
-  `List`\[[FpgaDeviceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgadeviceinfotypedef)\]
+  `List`\[[FpgaDeviceInfoTypeDef](./type_defs.md#fpgadeviceinfotypedef)\]
 - `TotalFpgaMemoryInMiB`: `int`
 
 ## GetAssociatedEnclaveCertificateIamRolesResultTypeDef
@@ -6380,7 +6247,7 @@ from mypy_boto3_ec2.type_defs import GetAssociatedEnclaveCertificateIamRolesResu
 Optional fields:
 
 - `AssociatedRoles`:
-  `List`\[[AssociatedRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associatedroletypedef)\]
+  `List`\[[AssociatedRoleTypeDef](./type_defs.md#associatedroletypedef)\]
 
 ## GetAssociatedIpv6PoolCidrsResultTypeDef
 
@@ -6391,7 +6258,7 @@ from mypy_boto3_ec2.type_defs import GetAssociatedIpv6PoolCidrsResultTypeDef
 Optional fields:
 
 - `Ipv6CidrAssociations`:
-  `List`\[[Ipv6CidrAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ipv6cidrassociationtypedef)\]
+  `List`\[[Ipv6CidrAssociationTypeDef](./type_defs.md#ipv6cidrassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetCapacityReservationUsageResultTypeDef
@@ -6407,10 +6274,9 @@ Optional fields:
 - `InstanceType`: `str`
 - `TotalInstanceCount`: `int`
 - `AvailableInstanceCount`: `int`
-- `State`:
-  [CapacityReservationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationstate)
+- `State`: [CapacityReservationState](./literals.md#capacityreservationstate)
 - `InstanceUsages`:
-  `List`\[[InstanceUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceusagetypedef)\]
+  `List`\[[InstanceUsageTypeDef](./type_defs.md#instanceusagetypedef)\]
 
 ## GetCoipPoolUsageResultTypeDef
 
@@ -6422,7 +6288,7 @@ Optional fields:
 
 - `CoipPoolId`: `str`
 - `CoipAddressUsages`:
-  `List`\[[CoipAddressUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#coipaddressusagetypedef)\]
+  `List`\[[CoipAddressUsageTypeDef](./type_defs.md#coipaddressusagetypedef)\]
 - `LocalGatewayRouteTableId`: `str`
 
 ## GetConsoleOutputResultTypeDef
@@ -6457,7 +6323,7 @@ from mypy_boto3_ec2.type_defs import GetDefaultCreditSpecificationResultTypeDef
 Optional fields:
 
 - `InstanceFamilyCreditSpecification`:
-  [InstanceFamilyCreditSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancefamilycreditspecificationtypedef)
+  [InstanceFamilyCreditSpecificationTypeDef](./type_defs.md#instancefamilycreditspecificationtypedef)
 
 ## GetEbsDefaultKmsKeyIdResultTypeDef
 
@@ -6499,7 +6365,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `CapacityReservationGroups`:
-  `List`\[[CapacityReservationGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationgrouptypedef)\]
+  `List`\[[CapacityReservationGroupTypeDef](./type_defs.md#capacityreservationgrouptypedef)\]
 
 ## GetHostReservationPurchasePreviewResultTypeDef
 
@@ -6509,9 +6375,9 @@ from mypy_boto3_ec2.type_defs import GetHostReservationPurchasePreviewResultType
 
 Optional fields:
 
-- `CurrencyCode`: `Literal['USD']`
-- `Purchase`:
-  `List`\[[PurchaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#purchasetypedef)\]
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
+- `Purchase`: `List`\[[PurchaseTypeDef](./type_defs.md#purchasetypedef)\]
 - `TotalHourlyPrice`: `str`
 - `TotalUpfrontPrice`: `str`
 
@@ -6524,7 +6390,7 @@ from mypy_boto3_ec2.type_defs import GetLaunchTemplateDataResultTypeDef
 Optional fields:
 
 - `LaunchTemplateData`:
-  [ResponseLaunchTemplateDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#responselaunchtemplatedatatypedef)
+  [ResponseLaunchTemplateDataTypeDef](./type_defs.md#responselaunchtemplatedatatypedef)
 
 ## GetManagedPrefixListAssociationsResultTypeDef
 
@@ -6535,7 +6401,7 @@ from mypy_boto3_ec2.type_defs import GetManagedPrefixListAssociationsResultTypeD
 Optional fields:
 
 - `PrefixListAssociations`:
-  `List`\[[PrefixListAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#prefixlistassociationtypedef)\]
+  `List`\[[PrefixListAssociationTypeDef](./type_defs.md#prefixlistassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetManagedPrefixListEntriesResultTypeDef
@@ -6547,7 +6413,7 @@ from mypy_boto3_ec2.type_defs import GetManagedPrefixListEntriesResultTypeDef
 Optional fields:
 
 - `Entries`:
-  `List`\[[PrefixListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#prefixlistentrytypedef)\]
+  `List`\[[PrefixListEntryTypeDef](./type_defs.md#prefixlistentrytypedef)\]
 - `NextToken`: `str`
 
 ## GetPasswordDataResultTypeDef
@@ -6575,13 +6441,13 @@ Optional fields:
 - `OutputReservedInstancesWillExpireAt`: `datetime`
 - `PaymentDue`: `str`
 - `ReservedInstanceValueRollup`:
-  [ReservationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservationvaluetypedef)
+  [ReservationValueTypeDef](./type_defs.md#reservationvaluetypedef)
 - `ReservedInstanceValueSet`:
-  `List`\[[ReservedInstanceReservationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancereservationvaluetypedef)\]
+  `List`\[[ReservedInstanceReservationValueTypeDef](./type_defs.md#reservedinstancereservationvaluetypedef)\]
 - `TargetConfigurationValueRollup`:
-  [ReservationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservationvaluetypedef)
+  [ReservationValueTypeDef](./type_defs.md#reservationvaluetypedef)
 - `TargetConfigurationValueSet`:
-  `List`\[[TargetReservationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#targetreservationvaluetypedef)\]
+  `List`\[[TargetReservationValueTypeDef](./type_defs.md#targetreservationvaluetypedef)\]
 - `ValidationFailureReason`: `str`
 
 ## GetSerialConsoleAccessStatusResultTypeDef
@@ -6603,7 +6469,7 @@ from mypy_boto3_ec2.type_defs import GetTransitGatewayAttachmentPropagationsResu
 Optional fields:
 
 - `TransitGatewayAttachmentPropagations`:
-  `List`\[[TransitGatewayAttachmentPropagationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayattachmentpropagationtypedef)\]
+  `List`\[[TransitGatewayAttachmentPropagationTypeDef](./type_defs.md#transitgatewayattachmentpropagationtypedef)\]
 - `NextToken`: `str`
 
 ## GetTransitGatewayMulticastDomainAssociationsResultTypeDef
@@ -6615,7 +6481,7 @@ from mypy_boto3_ec2.type_defs import GetTransitGatewayMulticastDomainAssociation
 Optional fields:
 
 - `MulticastDomainAssociations`:
-  `List`\[[TransitGatewayMulticastDomainAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomainassociationtypedef)\]
+  `List`\[[TransitGatewayMulticastDomainAssociationTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetTransitGatewayPrefixListReferencesResultTypeDef
@@ -6627,7 +6493,7 @@ from mypy_boto3_ec2.type_defs import GetTransitGatewayPrefixListReferencesResult
 Optional fields:
 
 - `TransitGatewayPrefixListReferences`:
-  `List`\[[TransitGatewayPrefixListReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayprefixlistreferencetypedef)\]
+  `List`\[[TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)\]
 - `NextToken`: `str`
 
 ## GetTransitGatewayRouteTableAssociationsResultTypeDef
@@ -6639,7 +6505,7 @@ from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTableAssociationsResu
 Optional fields:
 
 - `Associations`:
-  `List`\[[TransitGatewayRouteTableAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetableassociationtypedef)\]
+  `List`\[[TransitGatewayRouteTableAssociationTypeDef](./type_defs.md#transitgatewayroutetableassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetTransitGatewayRouteTablePropagationsResultTypeDef
@@ -6651,7 +6517,7 @@ from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTablePropagationsResu
 Optional fields:
 
 - `TransitGatewayRouteTablePropagations`:
-  `List`\[[TransitGatewayRouteTablePropagationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetablepropagationtypedef)\]
+  `List`\[[TransitGatewayRouteTablePropagationTypeDef](./type_defs.md#transitgatewayroutetablepropagationtypedef)\]
 - `NextToken`: `str`
 
 ## GpuDeviceInfoTypeDef
@@ -6666,7 +6532,7 @@ Optional fields:
 - `Manufacturer`: `str`
 - `Count`: `int`
 - `MemoryInfo`:
-  [GpuDeviceMemoryInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gpudevicememoryinfotypedef)
+  [GpuDeviceMemoryInfoTypeDef](./type_defs.md#gpudevicememoryinfotypedef)
 
 ## GpuDeviceMemoryInfoTypeDef
 
@@ -6686,8 +6552,7 @@ from mypy_boto3_ec2.type_defs import GpuInfoTypeDef
 
 Optional fields:
 
-- `Gpus`:
-  `List`\[[GpuDeviceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gpudeviceinfotypedef)\]
+- `Gpus`: `List`\[[GpuDeviceInfoTypeDef](./type_defs.md#gpudeviceinfotypedef)\]
 - `TotalGpuMemoryInMiB`: `int`
 
 ## GroupIdentifierTypeDef
@@ -6730,9 +6595,8 @@ from mypy_boto3_ec2.type_defs import HistoryRecordEntryTypeDef
 Optional fields:
 
 - `EventInformation`:
-  [EventInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#eventinformationtypedef)
-- `EventType`:
-  [FleetEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleeteventtype)
+  [EventInformationTypeDef](./type_defs.md#eventinformationtypedef)
+- `EventType`: [FleetEventType](./literals.md#fleeteventtype)
 - `Timestamp`: `datetime`
 
 ## HistoryRecordTypeDef
@@ -6744,9 +6608,8 @@ from mypy_boto3_ec2.type_defs import HistoryRecordTypeDef
 Optional fields:
 
 - `EventInformation`:
-  [EventInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#eventinformationtypedef)
-- `EventType`:
-  [EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#eventtype)
+  [EventInformationTypeDef](./type_defs.md#eventinformationtypedef)
+- `EventType`: [EventType](./literals.md#eventtype)
 - `Timestamp`: `datetime`
 
 ## HostInstanceTypeDef
@@ -6769,13 +6632,13 @@ from mypy_boto3_ec2.type_defs import HostOfferingTypeDef
 
 Optional fields:
 
-- `CurrencyCode`: `Literal['USD']`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
 - `Duration`: `int`
 - `HourlyPrice`: `str`
 - `InstanceFamily`: `str`
 - `OfferingId`: `str`
-- `PaymentOption`:
-  [PaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#paymentoption)
+- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
 - `UpfrontPrice`: `str`
 
 ## HostPropertiesTypeDef
@@ -6801,7 +6664,8 @@ from mypy_boto3_ec2.type_defs import HostReservationTypeDef
 Optional fields:
 
 - `Count`: `int`
-- `CurrencyCode`: `Literal['USD']`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
 - `Duration`: `int`
 - `End`: `datetime`
 - `HostIdSet`: `List`\[`str`\]
@@ -6809,14 +6673,11 @@ Optional fields:
 - `HourlyPrice`: `str`
 - `InstanceFamily`: `str`
 - `OfferingId`: `str`
-- `PaymentOption`:
-  [PaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#paymentoption)
+- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
 - `Start`: `datetime`
-- `State`:
-  [ReservationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#reservationstate)
+- `State`: [ReservationState](./literals.md#reservationstate)
 - `UpfrontPrice`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## HostTypeDef
 
@@ -6826,28 +6687,23 @@ from mypy_boto3_ec2.type_defs import HostTypeDef
 
 Optional fields:
 
-- `AutoPlacement`:
-  [AutoPlacement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#autoplacement)
+- `AutoPlacement`: [AutoPlacement](./literals.md#autoplacement)
 - `AvailabilityZone`: `str`
 - `AvailableCapacity`:
-  [AvailableCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#availablecapacitytypedef)
+  [AvailableCapacityTypeDef](./type_defs.md#availablecapacitytypedef)
 - `ClientToken`: `str`
 - `HostId`: `str`
-- `HostProperties`:
-  [HostPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hostpropertiestypedef)
+- `HostProperties`: [HostPropertiesTypeDef](./type_defs.md#hostpropertiestypedef)
 - `HostReservationId`: `str`
 - `Instances`:
-  `List`\[[HostInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hostinstancetypedef)\]
-- `State`:
-  [AllocationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#allocationstate)
+  `List`\[[HostInstanceTypeDef](./type_defs.md#hostinstancetypedef)\]
+- `State`: [AllocationState](./literals.md#allocationstate)
 - `AllocationTime`: `datetime`
 - `ReleaseTime`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
-- `HostRecovery`:
-  [HostRecovery](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#hostrecovery)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `HostRecovery`: [HostRecovery](./literals.md#hostrecovery)
 - `AllowsMultipleInstanceTypes`:
-  [AllowsMultipleInstanceTypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#allowsmultipleinstancetypes)
+  [AllowsMultipleInstanceTypes](./literals.md#allowsmultipleinstancetypes)
 - `OwnerId`: `str`
 - `AvailabilityZoneId`: `str`
 - `MemberOfServiceLinkedResourceGroup`: `bool`
@@ -6883,9 +6739,9 @@ Optional fields:
 - `AssociationId`: `str`
 - `InstanceId`: `str`
 - `IamInstanceProfile`:
-  [IamInstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofiletypedef)
+  [IamInstanceProfileTypeDef](./type_defs.md#iaminstanceprofiletypedef)
 - `State`:
-  [IamInstanceProfileAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#iaminstanceprofileassociationstate)
+  [IamInstanceProfileAssociationState](./literals.md#iaminstanceprofileassociationstate)
 - `Timestamp`: `datetime`
 
 ## IamInstanceProfileSpecificationTypeDef
@@ -6942,22 +6798,18 @@ from mypy_boto3_ec2.type_defs import ImageAttributeTypeDef
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `LaunchPermissions`:
-  `List`\[[LaunchPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchpermissiontypedef)\]
+  `List`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
-- `Description`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `KernelId`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `RamdiskId`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
+- `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `KernelId`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `RamdiskId`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `SriovNetSupport`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `BootMode`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `BootMode`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 
 ## ImageDiskContainerTypeDef
 
@@ -6972,8 +6824,7 @@ Optional fields:
 - `Format`: `str`
 - `SnapshotId`: `str`
 - `Url`: `str`
-- `UserBucket`:
-  [UserBucketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#userbuckettypedef)
+- `UserBucket`: [UserBucketTypeDef](./type_defs.md#userbuckettypedef)
 
 ## ImageTypeDef
 
@@ -6983,44 +6834,36 @@ from mypy_boto3_ec2.type_defs import ImageTypeDef
 
 Optional fields:
 
-- `Architecture`:
-  [ArchitectureValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#architecturevalues)
+- `Architecture`: [ArchitectureValues](./literals.md#architecturevalues)
 - `CreationDate`: `str`
 - `ImageId`: `str`
 - `ImageLocation`: `str`
-- `ImageType`:
-  [ImageTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#imagetypevalues)
+- `ImageType`: [ImageTypeValues](./literals.md#imagetypevalues)
 - `Public`: `bool`
 - `KernelId`: `str`
 - `OwnerId`: `str`
-- `Platform`: `Literal['Windows']`
+- `Platform`: `Literal['Windows']` (see
+  [PlatformValues](./literals.md#platformvalues))
 - `PlatformDetails`: `str`
 - `UsageOperation`: `str`
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `RamdiskId`: `str`
-- `State`:
-  [ImageState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#imagestate)
+- `State`: [ImageState](./literals.md#imagestate)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `EnaSupport`: `bool`
-- `Hypervisor`:
-  [HypervisorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#hypervisortype)
+- `Hypervisor`: [HypervisorType](./literals.md#hypervisortype)
 - `ImageOwnerAlias`: `str`
 - `Name`: `str`
 - `RootDeviceName`: `str`
-- `RootDeviceType`:
-  [DeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#devicetype)
+- `RootDeviceType`: [DeviceType](./literals.md#devicetype)
 - `SriovNetSupport`: `str`
-- `StateReason`:
-  [StateReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#statereasontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
-- `VirtualizationType`:
-  [VirtualizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#virtualizationtype)
-- `BootMode`:
-  [BootModeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#bootmodevalues)
+- `StateReason`: [StateReasonTypeDef](./type_defs.md#statereasontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VirtualizationType`: [VirtualizationType](./literals.md#virtualizationtype)
+- `BootMode`: [BootModeValues](./literals.md#bootmodevalues)
 
 ## ImportClientVpnClientCertificateRevocationListResultTypeDef
 
@@ -7071,13 +6914,12 @@ Optional fields:
 - `Platform`: `str`
 - `Progress`: `str`
 - `SnapshotDetails`:
-  `List`\[[SnapshotDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#snapshotdetailtypedef)\]
+  `List`\[[SnapshotDetailTypeDef](./type_defs.md#snapshotdetailtypedef)\]
 - `Status`: `str`
 - `StatusMessage`: `str`
 - `LicenseSpecifications`:
-  `List`\[[ImportImageLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importimagelicenseconfigurationresponsetypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[ImportImageLicenseConfigurationResponseTypeDef](./type_defs.md#importimagelicenseconfigurationresponsetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ImportImageTaskTypeDef
 
@@ -7098,13 +6940,12 @@ Optional fields:
 - `Platform`: `str`
 - `Progress`: `str`
 - `SnapshotDetails`:
-  `List`\[[SnapshotDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#snapshotdetailtypedef)\]
+  `List`\[[SnapshotDetailTypeDef](./type_defs.md#snapshotdetailtypedef)\]
 - `Status`: `str`
 - `StatusMessage`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `LicenseSpecifications`:
-  `List`\[[ImportImageLicenseConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importimagelicenseconfigurationresponsetypedef)\]
+  `List`\[[ImportImageLicenseConfigurationResponseTypeDef](./type_defs.md#importimagelicenseconfigurationresponsetypedef)\]
 
 ## ImportInstanceLaunchSpecificationTypeDef
 
@@ -7115,21 +6956,17 @@ from mypy_boto3_ec2.type_defs import ImportInstanceLaunchSpecificationTypeDef
 Optional fields:
 
 - `AdditionalInfo`: `str`
-- `Architecture`:
-  [ArchitectureValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#architecturevalues)
+- `Architecture`: [ArchitectureValues](./literals.md#architecturevalues)
 - `GroupIds`: `List`\[`str`\]
 - `GroupNames`: `List`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
-  [ShutdownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#shutdownbehavior)
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+  [ShutdownBehavior](./literals.md#shutdownbehavior)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `Monitoring`: `bool`
-- `Placement`:
-  [PlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementtypedef)
+- `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `PrivateIpAddress`: `str`
 - `SubnetId`: `str`
-- `UserData`:
-  [UserDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#userdatatypedef)
+- `UserData`: [UserDataTypeDef](./type_defs.md#userdatatypedef)
 
 ## ImportInstanceResultTypeDef
 
@@ -7139,8 +6976,7 @@ from mypy_boto3_ec2.type_defs import ImportInstanceResultTypeDef
 
 Optional fields:
 
-- `ConversionTask`:
-  [ConversionTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#conversiontasktypedef)
+- `ConversionTask`: [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
 
 ## ImportInstanceTaskDetailsTypeDef
 
@@ -7152,9 +6988,10 @@ Optional fields:
 
 - `Description`: `str`
 - `InstanceId`: `str`
-- `Platform`: `Literal['Windows']`
+- `Platform`: `Literal['Windows']` (see
+  [PlatformValues](./literals.md#platformvalues))
 - `Volumes`:
-  `List`\[[ImportInstanceVolumeDetailItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#importinstancevolumedetailitemtypedef)\]
+  `List`\[[ImportInstanceVolumeDetailItemTypeDef](./type_defs.md#importinstancevolumedetailitemtypedef)\]
 
 ## ImportInstanceVolumeDetailItemTypeDef
 
@@ -7168,11 +7005,11 @@ Optional fields:
 - `BytesConverted`: `int`
 - `Description`: `str`
 - `Image`:
-  [DiskImageDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#diskimagedescriptiontypedef)
+  [DiskImageDescriptionTypeDef](./type_defs.md#diskimagedescriptiontypedef)
 - `Status`: `str`
 - `StatusMessage`: `str`
 - `Volume`:
-  [DiskImageVolumeDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#diskimagevolumedescriptiontypedef)
+  [DiskImageVolumeDescriptionTypeDef](./type_defs.md#diskimagevolumedescriptiontypedef)
 
 ## ImportKeyPairResultTypeDef
 
@@ -7185,8 +7022,7 @@ Optional fields:
 - `KeyFingerprint`: `str`
 - `KeyName`: `str`
 - `KeyPairId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ImportSnapshotResultTypeDef
 
@@ -7199,9 +7035,8 @@ Optional fields:
 - `Description`: `str`
 - `ImportTaskId`: `str`
 - `SnapshotTaskDetail`:
-  [SnapshotTaskDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#snapshottaskdetailtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [SnapshotTaskDetailTypeDef](./type_defs.md#snapshottaskdetailtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ImportSnapshotTaskTypeDef
 
@@ -7214,9 +7049,8 @@ Optional fields:
 - `Description`: `str`
 - `ImportTaskId`: `str`
 - `SnapshotTaskDetail`:
-  [SnapshotTaskDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#snapshottaskdetailtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [SnapshotTaskDetailTypeDef](./type_defs.md#snapshottaskdetailtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ImportVolumeResultTypeDef
 
@@ -7226,8 +7060,7 @@ from mypy_boto3_ec2.type_defs import ImportVolumeResultTypeDef
 
 Optional fields:
 
-- `ConversionTask`:
-  [ConversionTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#conversiontasktypedef)
+- `ConversionTask`: [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
 
 ## ImportVolumeTaskDetailsTypeDef
 
@@ -7241,9 +7074,9 @@ Optional fields:
 - `BytesConverted`: `int`
 - `Description`: `str`
 - `Image`:
-  [DiskImageDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#diskimagedescriptiontypedef)
+  [DiskImageDescriptionTypeDef](./type_defs.md#diskimagedescriptiontypedef)
 - `Volume`:
-  [DiskImageVolumeDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#diskimagevolumedescriptiontypedef)
+  [DiskImageVolumeDescriptionTypeDef](./type_defs.md#diskimagevolumedescriptiontypedef)
 
 ## InferenceAcceleratorInfoTypeDef
 
@@ -7254,7 +7087,7 @@ from mypy_boto3_ec2.type_defs import InferenceAcceleratorInfoTypeDef
 Optional fields:
 
 - `Accelerators`:
-  `List`\[[InferenceDeviceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#inferencedeviceinfotypedef)\]
+  `List`\[[InferenceDeviceInfoTypeDef](./type_defs.md#inferencedeviceinfotypedef)\]
 
 ## InferenceDeviceInfoTypeDef
 
@@ -7277,36 +7110,30 @@ from mypy_boto3_ec2.type_defs import InstanceAttributeTypeDef
 Optional fields:
 
 - `Groups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `BlockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceblockdevicemappingtypedef)\]
+  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `DisableApiTermination`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnaSupport`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
-- `EnclaveOptions`:
-  [EnclaveOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enclaveoptionstypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnclaveOptions`: [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
 - `EbsOptimized`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `InstanceId`: `str`
 - `InstanceInitiatedShutdownBehavior`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `InstanceType`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `KernelId`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `KernelId`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
-- `RamdiskId`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `RootDeviceName`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
+- `RamdiskId`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `RootDeviceName`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `SourceDestCheck`:
-  [AttributeBooleanValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributebooleanvaluetypedef)
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `SriovNetSupport`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
-- `UserData`:
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#attributevaluetypedef)
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `UserData`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 
 ## InstanceBlockDeviceMappingSpecificationTypeDef
 
@@ -7318,7 +7145,7 @@ Optional fields:
 
 - `DeviceName`: `str`
 - `Ebs`:
-  [EbsInstanceBlockDeviceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ebsinstanceblockdevicespecificationtypedef)
+  [EbsInstanceBlockDeviceSpecificationTypeDef](./type_defs.md#ebsinstanceblockdevicespecificationtypedef)
 - `NoDevice`: `str`
 - `VirtualName`: `str`
 
@@ -7332,7 +7159,7 @@ Optional fields:
 
 - `DeviceName`: `str`
 - `Ebs`:
-  [EbsInstanceBlockDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ebsinstanceblockdevicetypedef)
+  [EbsInstanceBlockDeviceTypeDef](./type_defs.md#ebsinstanceblockdevicetypedef)
 
 ## InstanceCapacityTypeDef
 
@@ -7355,8 +7182,7 @@ from mypy_boto3_ec2.type_defs import InstanceCountTypeDef
 Optional fields:
 
 - `InstanceCount`: `int`
-- `State`:
-  [ListingState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#listingstate)
+- `State`: [ListingState](./literals.md#listingstate)
 
 ## InstanceCreditSpecificationRequestTypeDef
 
@@ -7389,8 +7215,7 @@ from mypy_boto3_ec2.type_defs import InstanceExportDetailsTypeDef
 Optional fields:
 
 - `InstanceId`: `str`
-- `TargetEnvironment`:
-  [ExportEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#exportenvironment)
+- `TargetEnvironment`: [ExportEnvironment](./literals.md#exportenvironment)
 
 ## InstanceFamilyCreditSpecificationTypeDef
 
@@ -7401,7 +7226,7 @@ from mypy_boto3_ec2.type_defs import InstanceFamilyCreditSpecificationTypeDef
 Optional fields:
 
 - `InstanceFamily`:
-  [UnlimitedSupportedInstanceFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#unlimitedsupportedinstancefamily)
+  [UnlimitedSupportedInstanceFamily](./literals.md#unlimitedsupportedinstancefamily)
 - `CpuCredits`: `str`
 
 ## InstanceIpv6AddressRequestTypeDef
@@ -7432,9 +7257,9 @@ from mypy_boto3_ec2.type_defs import InstanceMarketOptionsRequestTypeDef
 
 Optional fields:
 
-- `MarketType`: `Literal['spot']`
+- `MarketType`: `Literal['spot']` (see [MarketType](./literals.md#markettype))
 - `SpotOptions`:
-  [SpotMarketOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotmarketoptionstypedef)
+  [SpotMarketOptionsTypeDef](./type_defs.md#spotmarketoptionstypedef)
 
 ## InstanceMetadataOptionsRequestTypeDef
 
@@ -7444,11 +7269,10 @@ from mypy_boto3_ec2.type_defs import InstanceMetadataOptionsRequestTypeDef
 
 Optional fields:
 
-- `HttpTokens`:
-  [HttpTokensState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#httptokensstate)
+- `HttpTokens`: [HttpTokensState](./literals.md#httptokensstate)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [InstanceMetadataEndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancemetadataendpointstate)
+  [InstanceMetadataEndpointState](./literals.md#instancemetadataendpointstate)
 
 ## InstanceMetadataOptionsResponseTypeDef
 
@@ -7459,12 +7283,11 @@ from mypy_boto3_ec2.type_defs import InstanceMetadataOptionsResponseTypeDef
 Optional fields:
 
 - `State`:
-  [InstanceMetadataOptionsState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancemetadataoptionsstate)
-- `HttpTokens`:
-  [HttpTokensState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#httptokensstate)
+  [InstanceMetadataOptionsState](./literals.md#instancemetadataoptionsstate)
+- `HttpTokens`: [HttpTokensState](./literals.md#httptokensstate)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [InstanceMetadataEndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancemetadataendpointstate)
+  [InstanceMetadataEndpointState](./literals.md#instancemetadataendpointstate)
 
 ## InstanceMonitoringTypeDef
 
@@ -7475,8 +7298,7 @@ from mypy_boto3_ec2.type_defs import InstanceMonitoringTypeDef
 Optional fields:
 
 - `InstanceId`: `str`
-- `Monitoring`:
-  [MonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#monitoringtypedef)
+- `Monitoring`: [MonitoringTypeDef](./type_defs.md#monitoringtypedef)
 
 ## InstanceNetworkInterfaceAssociationTypeDef
 
@@ -7503,8 +7325,7 @@ Optional fields:
 - `AttachmentId`: `str`
 - `DeleteOnTermination`: `bool`
 - `DeviceIndex`: `int`
-- `Status`:
-  [AttachmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#attachmentstatus)
+- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
 - `NetworkCardIndex`: `int`
 
 ## InstanceNetworkInterfaceSpecificationTypeDef
@@ -7522,11 +7343,11 @@ Optional fields:
 - `Groups`: `List`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `NetworkInterfaceId`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privateipaddressspecificationtypedef)\]
+  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `SubnetId`: `str`
 - `AssociateCarrierIpAddress`: `bool`
@@ -7542,24 +7363,23 @@ from mypy_boto3_ec2.type_defs import InstanceNetworkInterfaceTypeDef
 Optional fields:
 
 - `Association`:
-  [InstanceNetworkInterfaceAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfaceassociationtypedef)
+  [InstanceNetworkInterfaceAssociationTypeDef](./type_defs.md#instancenetworkinterfaceassociationtypedef)
 - `Attachment`:
-  [InstanceNetworkInterfaceAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfaceattachmenttypedef)
+  [InstanceNetworkInterfaceAttachmentTypeDef](./type_defs.md#instancenetworkinterfaceattachmenttypedef)
 - `Description`: `str`
 - `Groups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `MacAddress`: `str`
 - `NetworkInterfaceId`: `str`
 - `OwnerId`: `str`
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[InstancePrivateIpAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceprivateipaddresstypedef)\]
+  `List`\[[InstancePrivateIpAddressTypeDef](./type_defs.md#instanceprivateipaddresstypedef)\]
 - `SourceDestCheck`: `bool`
-- `Status`:
-  [NetworkInterfaceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#networkinterfacestatus)
+- `Status`: [NetworkInterfaceStatus](./literals.md#networkinterfacestatus)
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `InterfaceType`: `str`
@@ -7573,7 +7393,7 @@ from mypy_boto3_ec2.type_defs import InstancePrivateIpAddressTypeDef
 Optional fields:
 
 - `Association`:
-  [InstanceNetworkInterfaceAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfaceassociationtypedef)
+  [InstanceNetworkInterfaceAssociationTypeDef](./type_defs.md#instancenetworkinterfaceassociationtypedef)
 - `Primary`: `bool`
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
@@ -7597,11 +7417,9 @@ from mypy_boto3_ec2.type_defs import InstanceStateChangeTypeDef
 
 Optional fields:
 
-- `CurrentState`:
-  [InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatetypedef)
+- `CurrentState`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - `InstanceId`: `str`
-- `PreviousState`:
-  [InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatetypedef)
+- `PreviousState`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 
 ## InstanceStateTypeDef
 
@@ -7612,8 +7430,7 @@ from mypy_boto3_ec2.type_defs import InstanceStateTypeDef
 Optional fields:
 
 - `Code`: `int`
-- `Name`:
-  [InstanceStateName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancestatename)
+- `Name`: [InstanceStateName](./literals.md#instancestatename)
 
 ## InstanceStatusDetailsTypeDef
 
@@ -7624,9 +7441,8 @@ from mypy_boto3_ec2.type_defs import InstanceStatusDetailsTypeDef
 Optional fields:
 
 - `ImpairedSince`: `datetime`
-- `Name`: `Literal['reachability']`
-- `Status`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#statustype)
+- `Name`: `Literal['reachability']` (see [StatusName](./literals.md#statusname))
+- `Status`: [StatusType](./literals.md#statustype)
 
 ## InstanceStatusEventTypeDef
 
@@ -7637,8 +7453,7 @@ from mypy_boto3_ec2.type_defs import InstanceStatusEventTypeDef
 Optional fields:
 
 - `InstanceEventId`: `str`
-- `Code`:
-  [EventCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#eventcode)
+- `Code`: [EventCode](./literals.md#eventcode)
 - `Description`: `str`
 - `NotAfter`: `datetime`
 - `NotBefore`: `datetime`
@@ -7653,9 +7468,8 @@ from mypy_boto3_ec2.type_defs import InstanceStatusSummaryTypeDef
 Optional fields:
 
 - `Details`:
-  `List`\[[InstanceStatusDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatusdetailstypedef)\]
-- `Status`:
-  [SummaryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#summarystatus)
+  `List`\[[InstanceStatusDetailsTypeDef](./type_defs.md#instancestatusdetailstypedef)\]
+- `Status`: [SummaryStatus](./literals.md#summarystatus)
 
 ## InstanceStatusTypeDef
 
@@ -7668,14 +7482,13 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `OutpostArn`: `str`
 - `Events`:
-  `List`\[[InstanceStatusEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatuseventtypedef)\]
+  `List`\[[InstanceStatusEventTypeDef](./type_defs.md#instancestatuseventtypedef)\]
 - `InstanceId`: `str`
-- `InstanceState`:
-  [InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatetypedef)
+- `InstanceState`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - `InstanceStatus`:
-  [InstanceStatusSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatussummarytypedef)
+  [InstanceStatusSummaryTypeDef](./type_defs.md#instancestatussummarytypedef)
 - `SystemStatus`:
-  [InstanceStatusSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatussummarytypedef)
+  [InstanceStatusSummaryTypeDef](./type_defs.md#instancestatussummarytypedef)
 
 ## InstanceStorageInfoTypeDef
 
@@ -7686,10 +7499,8 @@ from mypy_boto3_ec2.type_defs import InstanceStorageInfoTypeDef
 Optional fields:
 
 - `TotalSizeInGB`: `int`
-- `Disks`:
-  `List`\[[DiskInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#diskinfotypedef)\]
-- `NvmeSupport`:
-  [EphemeralNvmeSupport](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ephemeralnvmesupport)
+- `Disks`: `List`\[[DiskInfoTypeDef](./type_defs.md#diskinfotypedef)\]
+- `NvmeSupport`: [EphemeralNvmeSupport](./literals.md#ephemeralnvmesupport)
 
 ## InstanceTagNotificationAttributeTypeDef
 
@@ -7713,77 +7524,65 @@ Optional fields:
 - `AmiLaunchIndex`: `int`
 - `ImageId`: `str`
 - `InstanceId`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `LaunchTime`: `datetime`
-- `Monitoring`:
-  [MonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#monitoringtypedef)
-- `Placement`:
-  [PlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementtypedef)
-- `Platform`: `Literal['Windows']`
+- `Monitoring`: [MonitoringTypeDef](./type_defs.md#monitoringtypedef)
+- `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
+- `Platform`: `Literal['Windows']` (see
+  [PlatformValues](./literals.md#platformvalues))
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#productcodetypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `PublicDnsName`: `str`
 - `PublicIpAddress`: `str`
 - `RamdiskId`: `str`
-- `State`:
-  [InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatetypedef)
+- `State`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - `StateTransitionReason`: `str`
 - `SubnetId`: `str`
 - `VpcId`: `str`
-- `Architecture`:
-  [ArchitectureValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#architecturevalues)
+- `Architecture`: [ArchitectureValues](./literals.md#architecturevalues)
 - `BlockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceblockdevicemappingtypedef)\]
+  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `ClientToken`: `str`
 - `EbsOptimized`: `bool`
 - `EnaSupport`: `bool`
-- `Hypervisor`:
-  [HypervisorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#hypervisortype)
+- `Hypervisor`: [HypervisorType](./literals.md#hypervisortype)
 - `IamInstanceProfile`:
-  [IamInstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofiletypedef)
+  [IamInstanceProfileTypeDef](./type_defs.md#iaminstanceprofiletypedef)
 - `InstanceLifecycle`:
-  [InstanceLifecycleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancelifecycletype)
+  [InstanceLifecycleType](./literals.md#instancelifecycletype)
 - `ElasticGpuAssociations`:
-  `List`\[[ElasticGpuAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpuassociationtypedef)\]
+  `List`\[[ElasticGpuAssociationTypeDef](./type_defs.md#elasticgpuassociationtypedef)\]
 - `ElasticInferenceAcceleratorAssociations`:
-  `List`\[[ElasticInferenceAcceleratorAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticinferenceacceleratorassociationtypedef)\]
+  `List`\[[ElasticInferenceAcceleratorAssociationTypeDef](./type_defs.md#elasticinferenceacceleratorassociationtypedef)\]
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfacetypedef)\]
+  `List`\[[InstanceNetworkInterfaceTypeDef](./type_defs.md#instancenetworkinterfacetypedef)\]
 - `OutpostArn`: `str`
 - `RootDeviceName`: `str`
-- `RootDeviceType`:
-  [DeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#devicetype)
+- `RootDeviceType`: [DeviceType](./literals.md#devicetype)
 - `SecurityGroups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `SourceDestCheck`: `bool`
 - `SpotInstanceRequestId`: `str`
 - `SriovNetSupport`: `str`
-- `StateReason`:
-  [StateReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#statereasontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
-- `VirtualizationType`:
-  [VirtualizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#virtualizationtype)
-- `CpuOptions`:
-  [CpuOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cpuoptionstypedef)
+- `StateReason`: [StateReasonTypeDef](./type_defs.md#statereasontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VirtualizationType`: [VirtualizationType](./literals.md#virtualizationtype)
+- `CpuOptions`: [CpuOptionsTypeDef](./type_defs.md#cpuoptionstypedef)
 - `CapacityReservationId`: `str`
 - `CapacityReservationSpecification`:
-  [CapacityReservationSpecificationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationspecificationresponsetypedef)
+  [CapacityReservationSpecificationResponseTypeDef](./type_defs.md#capacityreservationspecificationresponsetypedef)
 - `HibernationOptions`:
-  [HibernationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#hibernationoptionstypedef)
+  [HibernationOptionsTypeDef](./type_defs.md#hibernationoptionstypedef)
 - `Licenses`:
-  `List`\[[LicenseConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#licenseconfigurationtypedef)\]
+  `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
 - `MetadataOptions`:
-  [InstanceMetadataOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemetadataoptionsresponsetypedef)
-- `EnclaveOptions`:
-  [EnclaveOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#enclaveoptionstypedef)
-- `BootMode`:
-  [BootModeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#bootmodevalues)
+  [InstanceMetadataOptionsResponseTypeDef](./type_defs.md#instancemetadataoptionsresponsetypedef)
+- `EnclaveOptions`: [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
+- `BootMode`: [BootModeValues](./literals.md#bootmodevalues)
 
 ## InstanceTypeInfoTypeDef
 
@@ -7793,46 +7592,36 @@ from mypy_boto3_ec2.type_defs import InstanceTypeInfoTypeDef
 
 Optional fields:
 
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `CurrentGeneration`: `bool`
 - `FreeTierEligible`: `bool`
 - `SupportedUsageClasses`:
-  `List`\[[UsageClassType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#usageclasstype)\]
+  `List`\[[UsageClassType](./literals.md#usageclasstype)\]
 - `SupportedRootDeviceTypes`:
-  `List`\[[RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#rootdevicetype)\]
+  `List`\[[RootDeviceType](./literals.md#rootdevicetype)\]
 - `SupportedVirtualizationTypes`:
-  `List`\[[VirtualizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#virtualizationtype)\]
+  `List`\[[VirtualizationType](./literals.md#virtualizationtype)\]
 - `BareMetal`: `bool`
-- `Hypervisor`:
-  [InstanceTypeHypervisor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetypehypervisor)
-- `ProcessorInfo`:
-  [ProcessorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#processorinfotypedef)
-- `VCpuInfo`:
-  [VCpuInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vcpuinfotypedef)
-- `MemoryInfo`:
-  [MemoryInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#memoryinfotypedef)
+- `Hypervisor`: [InstanceTypeHypervisor](./literals.md#instancetypehypervisor)
+- `ProcessorInfo`: [ProcessorInfoTypeDef](./type_defs.md#processorinfotypedef)
+- `VCpuInfo`: [VCpuInfoTypeDef](./type_defs.md#vcpuinfotypedef)
+- `MemoryInfo`: [MemoryInfoTypeDef](./type_defs.md#memoryinfotypedef)
 - `InstanceStorageSupported`: `bool`
 - `InstanceStorageInfo`:
-  [InstanceStorageInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestorageinfotypedef)
-- `EbsInfo`:
-  [EbsInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ebsinfotypedef)
-- `NetworkInfo`:
-  [NetworkInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinfotypedef)
-- `GpuInfo`:
-  [GpuInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#gpuinfotypedef)
-- `FpgaInfo`:
-  [FpgaInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgainfotypedef)
+  [InstanceStorageInfoTypeDef](./type_defs.md#instancestorageinfotypedef)
+- `EbsInfo`: [EbsInfoTypeDef](./type_defs.md#ebsinfotypedef)
+- `NetworkInfo`: [NetworkInfoTypeDef](./type_defs.md#networkinfotypedef)
+- `GpuInfo`: [GpuInfoTypeDef](./type_defs.md#gpuinfotypedef)
+- `FpgaInfo`: [FpgaInfoTypeDef](./type_defs.md#fpgainfotypedef)
 - `PlacementGroupInfo`:
-  [PlacementGroupInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#placementgroupinfotypedef)
+  [PlacementGroupInfoTypeDef](./type_defs.md#placementgroupinfotypedef)
 - `InferenceAcceleratorInfo`:
-  [InferenceAcceleratorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#inferenceacceleratorinfotypedef)
+  [InferenceAcceleratorInfoTypeDef](./type_defs.md#inferenceacceleratorinfotypedef)
 - `HibernationSupported`: `bool`
 - `BurstablePerformanceSupported`: `bool`
 - `DedicatedHostsSupported`: `bool`
 - `AutoRecoverySupported`: `bool`
-- `SupportedBootModes`:
-  `List`\[[BootModeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#bootmodetype)\]
+- `SupportedBootModes`: `List`\[[BootModeType](./literals.md#bootmodetype)\]
 
 ## InstanceTypeOfferingTypeDef
 
@@ -7842,10 +7631,8 @@ from mypy_boto3_ec2.type_defs import InstanceTypeOfferingTypeDef
 
 Optional fields:
 
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
-- `LocationType`:
-  [LocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#locationtype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
+- `LocationType`: [LocationType](./literals.md#locationtype)
 - `Location`: `str`
 
 ## InstanceUsageTypeDef
@@ -7868,7 +7655,7 @@ from mypy_boto3_ec2.type_defs import IntegrateServicesTypeDef
 Optional fields:
 
 - `AthenaIntegrations`:
-  `List`\[[AthenaIntegrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#athenaintegrationtypedef)\]
+  `List`\[[AthenaIntegrationTypeDef](./type_defs.md#athenaintegrationtypedef)\]
 
 ## InternetGatewayAttachmentTypeDef
 
@@ -7878,8 +7665,7 @@ from mypy_boto3_ec2.type_defs import InternetGatewayAttachmentTypeDef
 
 Optional fields:
 
-- `State`:
-  [AttachmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#attachmentstatus)
+- `State`: [AttachmentStatus](./literals.md#attachmentstatus)
 - `VpcId`: `str`
 
 ## InternetGatewayTypeDef
@@ -7891,11 +7677,10 @@ from mypy_boto3_ec2.type_defs import InternetGatewayTypeDef
 Optional fields:
 
 - `Attachments`:
-  `List`\[[InternetGatewayAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#internetgatewayattachmenttypedef)\]
+  `List`\[[InternetGatewayAttachmentTypeDef](./type_defs.md#internetgatewayattachmenttypedef)\]
 - `InternetGatewayId`: `str`
 - `OwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## IpPermissionTypeDef
 
@@ -7907,15 +7692,13 @@ Optional fields:
 
 - `FromPort`: `int`
 - `IpProtocol`: `str`
-- `IpRanges`:
-  `List`\[[IpRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iprangetypedef)\]
-- `Ipv6Ranges`:
-  `List`\[[Ipv6RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ipv6rangetypedef)\]
+- `IpRanges`: `List`\[[IpRangeTypeDef](./type_defs.md#iprangetypedef)\]
+- `Ipv6Ranges`: `List`\[[Ipv6RangeTypeDef](./type_defs.md#ipv6rangetypedef)\]
 - `PrefixListIds`:
-  `List`\[[PrefixListIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#prefixlistidtypedef)\]
+  `List`\[[PrefixListIdTypeDef](./type_defs.md#prefixlistidtypedef)\]
 - `ToPort`: `int`
 - `UserIdGroupPairs`:
-  `List`\[[UserIdGroupPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#useridgrouppairtypedef)\]
+  `List`\[[UserIdGroupPairTypeDef](./type_defs.md#useridgrouppairtypedef)\]
 
 ## IpRangeTypeDef
 
@@ -7960,9 +7743,8 @@ Optional fields:
 - `PoolId`: `str`
 - `Description`: `str`
 - `PoolCidrBlocks`:
-  `List`\[[PoolCidrBlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#poolcidrblocktypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[PoolCidrBlockTypeDef](./type_defs.md#poolcidrblocktypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## Ipv6RangeTypeDef
 
@@ -7986,8 +7768,7 @@ Optional fields:
 - `KeyPairId`: `str`
 - `KeyFingerprint`: `str`
 - `KeyName`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## KeyPairTypeDef
 
@@ -8001,8 +7782,7 @@ Optional fields:
 - `KeyMaterial`: `str`
 - `KeyName`: `str`
 - `KeyPairId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LastErrorTypeDef
 
@@ -8024,9 +7804,9 @@ from mypy_boto3_ec2.type_defs import LaunchPermissionModificationsTypeDef
 Optional fields:
 
 - `Add`:
-  `List`\[[LaunchPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchpermissiontypedef)\]
+  `List`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
 - `Remove`:
-  `List`\[[LaunchPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchpermissiontypedef)\]
+  `List`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
 
 ## LaunchPermissionTypeDef
 
@@ -8036,7 +7816,8 @@ from mypy_boto3_ec2.type_defs import LaunchPermissionTypeDef
 
 Optional fields:
 
-- `Group`: `Literal['all']`
+- `Group`: `Literal['all']` (see
+  [PermissionGroup](./literals.md#permissiongroup))
 - `UserId`: `str`
 
 ## LaunchSpecificationTypeDef
@@ -8049,26 +7830,24 @@ Optional fields:
 
 - `UserData`: `str`
 - `SecurityGroups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `AddressingType`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
-  [IamInstanceProfileSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofilespecificationtypedef)
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
 - `ImageId`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfacespecificationtypedef)\]
-- `Placement`:
-  [SpotPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotplacementtypedef)
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+- `Placement`: [SpotPlacementTypeDef](./type_defs.md#spotplacementtypedef)
 - `RamdiskId`: `str`
 - `SubnetId`: `str`
 - `Monitoring`:
-  [RunInstancesMonitoringEnabledTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#runinstancesmonitoringenabledtypedef)
+  [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 
 ## LaunchTemplateAndOverridesResponseTypeDef
 
@@ -8079,9 +7858,9 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateAndOverridesResponseTypeDef
 Optional fields:
 
 - `LaunchTemplateSpecification`:
-  [FleetLaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplatespecificationtypedef)
+  [FleetLaunchTemplateSpecificationTypeDef](./type_defs.md#fleetlaunchtemplatespecificationtypedef)
 - `Overrides`:
-  [FleetLaunchTemplateOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplateoverridestypedef)
+  [FleetLaunchTemplateOverridesTypeDef](./type_defs.md#fleetlaunchtemplateoverridestypedef)
 
 ## LaunchTemplateBlockDeviceMappingRequestTypeDef
 
@@ -8094,7 +7873,7 @@ Optional fields:
 - `DeviceName`: `str`
 - `VirtualName`: `str`
 - `Ebs`:
-  [LaunchTemplateEbsBlockDeviceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateebsblockdevicerequesttypedef)
+  [LaunchTemplateEbsBlockDeviceRequestTypeDef](./type_defs.md#launchtemplateebsblockdevicerequesttypedef)
 - `NoDevice`: `str`
 
 ## LaunchTemplateBlockDeviceMappingTypeDef
@@ -8108,7 +7887,7 @@ Optional fields:
 - `DeviceName`: `str`
 - `VirtualName`: `str`
 - `Ebs`:
-  [LaunchTemplateEbsBlockDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateebsblockdevicetypedef)
+  [LaunchTemplateEbsBlockDeviceTypeDef](./type_defs.md#launchtemplateebsblockdevicetypedef)
 - `NoDevice`: `str`
 
 ## LaunchTemplateCapacityReservationSpecificationRequestTypeDef
@@ -8120,9 +7899,9 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateCapacityReservationSpecificat
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationpreference)
+  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
 - `CapacityReservationTarget`:
-  [CapacityReservationTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationtargettypedef)
+  [CapacityReservationTargetTypeDef](./type_defs.md#capacityreservationtargettypedef)
 
 ## LaunchTemplateCapacityReservationSpecificationResponseTypeDef
 
@@ -8133,9 +7912,9 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateCapacityReservationSpecificat
 Optional fields:
 
 - `CapacityReservationPreference`:
-  [CapacityReservationPreference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#capacityreservationpreference)
+  [CapacityReservationPreference](./literals.md#capacityreservationpreference)
 - `CapacityReservationTarget`:
-  [CapacityReservationTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationtargetresponsetypedef)
+  [CapacityReservationTargetResponseTypeDef](./type_defs.md#capacityreservationtargetresponsetypedef)
 
 ## LaunchTemplateConfigTypeDef
 
@@ -8146,9 +7925,9 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateConfigTypeDef
 Optional fields:
 
 - `LaunchTemplateSpecification`:
-  [FleetLaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetlaunchtemplatespecificationtypedef)
+  [FleetLaunchTemplateSpecificationTypeDef](./type_defs.md#fleetlaunchtemplatespecificationtypedef)
 - `Overrides`:
-  `List`\[[LaunchTemplateOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateoverridestypedef)\]
+  `List`\[[LaunchTemplateOverridesTypeDef](./type_defs.md#launchtemplateoverridestypedef)\]
 
 ## LaunchTemplateCpuOptionsRequestTypeDef
 
@@ -8186,8 +7965,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
-- `VolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `VolumeType`: [VolumeType](./literals.md#volumetype)
 - `Throughput`: `int`
 
 ## LaunchTemplateEbsBlockDeviceTypeDef
@@ -8204,8 +7982,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `SnapshotId`: `str`
 - `VolumeSize`: `int`
-- `VolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `VolumeType`: [VolumeType](./literals.md#volumetype)
 - `Throughput`: `int`
 
 ## LaunchTemplateElasticInferenceAcceleratorResponseTypeDef
@@ -8303,9 +8080,9 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMarketOptionsRequestT
 
 Optional fields:
 
-- `MarketType`: `Literal['spot']`
+- `MarketType`: `Literal['spot']` (see [MarketType](./literals.md#markettype))
 - `SpotOptions`:
-  [LaunchTemplateSpotMarketOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatespotmarketoptionsrequesttypedef)
+  [LaunchTemplateSpotMarketOptionsRequestTypeDef](./type_defs.md#launchtemplatespotmarketoptionsrequesttypedef)
 
 ## LaunchTemplateInstanceMarketOptionsTypeDef
 
@@ -8315,9 +8092,9 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMarketOptionsTypeDef
 
 Optional fields:
 
-- `MarketType`: `Literal['spot']`
+- `MarketType`: `Literal['spot']` (see [MarketType](./literals.md#markettype))
 - `SpotOptions`:
-  [LaunchTemplateSpotMarketOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatespotmarketoptionstypedef)
+  [LaunchTemplateSpotMarketOptionsTypeDef](./type_defs.md#launchtemplatespotmarketoptionstypedef)
 
 ## LaunchTemplateInstanceMetadataOptionsRequestTypeDef
 
@@ -8328,10 +8105,10 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMetadataOptionsReques
 Optional fields:
 
 - `HttpTokens`:
-  [LaunchTemplateHttpTokensState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#launchtemplatehttptokensstate)
+  [LaunchTemplateHttpTokensState](./literals.md#launchtemplatehttptokensstate)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [LaunchTemplateInstanceMetadataEndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#launchtemplateinstancemetadataendpointstate)
+  [LaunchTemplateInstanceMetadataEndpointState](./literals.md#launchtemplateinstancemetadataendpointstate)
 
 ## LaunchTemplateInstanceMetadataOptionsTypeDef
 
@@ -8342,12 +8119,12 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateInstanceMetadataOptionsTypeDe
 Optional fields:
 
 - `State`:
-  [LaunchTemplateInstanceMetadataOptionsState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#launchtemplateinstancemetadataoptionsstate)
+  [LaunchTemplateInstanceMetadataOptionsState](./literals.md#launchtemplateinstancemetadataoptionsstate)
 - `HttpTokens`:
-  [LaunchTemplateHttpTokensState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#launchtemplatehttptokensstate)
+  [LaunchTemplateHttpTokensState](./literals.md#launchtemplatehttptokensstate)
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
-  [LaunchTemplateInstanceMetadataEndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#launchtemplateinstancemetadataendpointstate)
+  [LaunchTemplateInstanceMetadataEndpointState](./literals.md#launchtemplateinstancemetadataendpointstate)
 
 ## LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef
 
@@ -8366,11 +8143,11 @@ Optional fields:
 - `InterfaceType`: `str`
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addressrequesttypedef)\]
+  `List`\[[InstanceIpv6AddressRequestTypeDef](./type_defs.md#instanceipv6addressrequesttypedef)\]
 - `NetworkInterfaceId`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privateipaddressspecificationtypedef)\]
+  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `SubnetId`: `str`
 - `NetworkCardIndex`: `int`
@@ -8392,11 +8169,11 @@ Optional fields:
 - `InterfaceType`: `str`
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instanceipv6addresstypedef)\]
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `NetworkInterfaceId`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privateipaddressspecificationtypedef)\]
+  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `SubnetId`: `str`
 - `NetworkCardIndex`: `int`
@@ -8429,8 +8206,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateOverridesTypeDef
 
 Optional fields:
 
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `SpotPrice`: `str`
 - `SubnetId`: `str`
 - `AvailabilityZone`: `str`
@@ -8449,8 +8225,7 @@ Optional fields:
 - `Affinity`: `str`
 - `GroupName`: `str`
 - `HostId`: `str`
-- `Tenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `Tenancy`: [Tenancy](./literals.md#tenancy)
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 - `PartitionNumber`: `int`
@@ -8467,8 +8242,7 @@ Optional fields:
 - `Affinity`: `str`
 - `GroupName`: `str`
 - `HostId`: `str`
-- `Tenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `Tenancy`: [Tenancy](./literals.md#tenancy)
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 - `PartitionNumber`: `int`
@@ -8494,12 +8268,11 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateSpotMarketOptionsRequestTypeD
 Optional fields:
 
 - `MaxPrice`: `str`
-- `SpotInstanceType`:
-  [SpotInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstancetype)
+- `SpotInstanceType`: [SpotInstanceType](./literals.md#spotinstancetype)
 - `BlockDurationMinutes`: `int`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceinterruptionbehavior)
+  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
 
 ## LaunchTemplateSpotMarketOptionsTypeDef
 
@@ -8510,12 +8283,11 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateSpotMarketOptionsTypeDef
 Optional fields:
 
 - `MaxPrice`: `str`
-- `SpotInstanceType`:
-  [SpotInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstancetype)
+- `SpotInstanceType`: [SpotInstanceType](./literals.md#spotinstancetype)
 - `BlockDurationMinutes`: `int`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceinterruptionbehavior)
+  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
 
 ## LaunchTemplateTagSpecificationRequestTypeDef
 
@@ -8525,10 +8297,8 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateTagSpecificationRequestTypeDe
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#resourcetype)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LaunchTemplateTagSpecificationTypeDef
 
@@ -8538,10 +8308,8 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateTagSpecificationTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#resourcetype)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LaunchTemplateTypeDef
 
@@ -8557,8 +8325,7 @@ Optional fields:
 - `CreatedBy`: `str`
 - `DefaultVersionNumber`: `int`
 - `LatestVersionNumber`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LaunchTemplateVersionTypeDef
 
@@ -8576,7 +8343,7 @@ Optional fields:
 - `CreatedBy`: `str`
 - `DefaultVersion`: `bool`
 - `LaunchTemplateData`:
-  [ResponseLaunchTemplateDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#responselaunchtemplatedatatypedef)
+  [ResponseLaunchTemplateDataTypeDef](./type_defs.md#responselaunchtemplatedatatypedef)
 
 ## LaunchTemplatesMonitoringRequestTypeDef
 
@@ -8627,9 +8394,9 @@ from mypy_boto3_ec2.type_defs import LoadBalancersConfigTypeDef
 Optional fields:
 
 - `ClassicLoadBalancersConfig`:
-  [ClassicLoadBalancersConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#classicloadbalancersconfigtypedef)
+  [ClassicLoadBalancersConfigTypeDef](./type_defs.md#classicloadbalancersconfigtypedef)
 - `TargetGroupsConfig`:
-  [TargetGroupsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#targetgroupsconfigtypedef)
+  [TargetGroupsConfigTypeDef](./type_defs.md#targetgroupsconfigtypedef)
 
 ## LoadPermissionModificationsTypeDef
 
@@ -8640,9 +8407,9 @@ from mypy_boto3_ec2.type_defs import LoadPermissionModificationsTypeDef
 Optional fields:
 
 - `Add`:
-  `List`\[[LoadPermissionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#loadpermissionrequesttypedef)\]
+  `List`\[[LoadPermissionRequestTypeDef](./type_defs.md#loadpermissionrequesttypedef)\]
 - `Remove`:
-  `List`\[[LoadPermissionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#loadpermissionrequesttypedef)\]
+  `List`\[[LoadPermissionRequestTypeDef](./type_defs.md#loadpermissionrequesttypedef)\]
 
 ## LoadPermissionRequestTypeDef
 
@@ -8652,7 +8419,8 @@ from mypy_boto3_ec2.type_defs import LoadPermissionRequestTypeDef
 
 Optional fields:
 
-- `Group`: `Literal['all']`
+- `Group`: `Literal['all']` (see
+  [PermissionGroup](./literals.md#permissiongroup))
 - `UserId`: `str`
 
 ## LoadPermissionTypeDef
@@ -8664,7 +8432,8 @@ from mypy_boto3_ec2.type_defs import LoadPermissionTypeDef
 Optional fields:
 
 - `UserId`: `str`
-- `Group`: `Literal['all']`
+- `Group`: `Literal['all']` (see
+  [PermissionGroup](./literals.md#permissiongroup))
 
 ## LocalGatewayRouteTableTypeDef
 
@@ -8680,8 +8449,7 @@ Optional fields:
 - `OutpostArn`: `str`
 - `OwnerId`: `str`
 - `State`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef
 
@@ -8698,8 +8466,7 @@ Optional fields:
 - `LocalGatewayRouteTableArn`: `str`
 - `OwnerId`: `str`
 - `State`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LocalGatewayRouteTableVpcAssociationTypeDef
 
@@ -8716,8 +8483,7 @@ Optional fields:
 - `VpcId`: `str`
 - `OwnerId`: `str`
 - `State`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LocalGatewayRouteTypeDef
 
@@ -8729,10 +8495,8 @@ Optional fields:
 
 - `DestinationCidrBlock`: `str`
 - `LocalGatewayVirtualInterfaceGroupId`: `str`
-- `Type`:
-  [LocalGatewayRouteType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#localgatewayroutetype)
-- `State`:
-  [LocalGatewayRouteState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#localgatewayroutestate)
+- `Type`: [LocalGatewayRouteType](./literals.md#localgatewayroutetype)
+- `State`: [LocalGatewayRouteState](./literals.md#localgatewayroutestate)
 - `LocalGatewayRouteTableId`: `str`
 - `LocalGatewayRouteTableArn`: `str`
 - `OwnerId`: `str`
@@ -8749,8 +8513,7 @@ Optional fields:
 - `OutpostArn`: `str`
 - `OwnerId`: `str`
 - `State`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LocalGatewayVirtualInterfaceGroupTypeDef
 
@@ -8764,8 +8527,7 @@ Optional fields:
 - `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
 - `LocalGatewayId`: `str`
 - `OwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LocalGatewayVirtualInterfaceTypeDef
 
@@ -8783,8 +8545,7 @@ Optional fields:
 - `LocalBgpAsn`: `int`
 - `PeerBgpAsn`: `int`
 - `OwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ManagedPrefixListTypeDef
 
@@ -8796,15 +8557,13 @@ Optional fields:
 
 - `PrefixListId`: `str`
 - `AddressFamily`: `str`
-- `State`:
-  [PrefixListState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#prefixliststate)
+- `State`: [PrefixListState](./literals.md#prefixliststate)
 - `StateMessage`: `str`
 - `PrefixListArn`: `str`
 - `PrefixListName`: `str`
 - `MaxEntries`: `int`
 - `Version`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OwnerId`: `str`
 
 ## MemoryInfoTypeDef
@@ -8825,8 +8584,7 @@ from mypy_boto3_ec2.type_defs import ModifyAddressAttributeResultTypeDef
 
 Optional fields:
 
-- `Address`:
-  [AddressAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#addressattributetypedef)
+- `Address`: [AddressAttributeTypeDef](./type_defs.md#addressattributetypedef)
 
 ## ModifyAvailabilityZoneGroupResultTypeDef
 
@@ -8867,7 +8625,7 @@ from mypy_boto3_ec2.type_defs import ModifyDefaultCreditSpecificationResultTypeD
 Optional fields:
 
 - `InstanceFamilyCreditSpecification`:
-  [InstanceFamilyCreditSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancefamilycreditspecificationtypedef)
+  [InstanceFamilyCreditSpecificationTypeDef](./type_defs.md#instancefamilycreditspecificationtypedef)
 
 ## ModifyEbsDefaultKmsKeyIdResultTypeDef
 
@@ -8898,7 +8656,7 @@ from mypy_boto3_ec2.type_defs import ModifyFpgaImageAttributeResultTypeDef
 Optional fields:
 
 - `FpgaImageAttribute`:
-  [FpgaImageAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fpgaimageattributetypedef)
+  [FpgaImageAttributeTypeDef](./type_defs.md#fpgaimageattributetypedef)
 
 ## ModifyHostsResultTypeDef
 
@@ -8910,7 +8668,7 @@ Optional fields:
 
 - `Successful`: `List`\[`str`\]
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## ModifyInstanceCapacityReservationAttributesResultTypeDef
 
@@ -8931,9 +8689,9 @@ from mypy_boto3_ec2.type_defs import ModifyInstanceCreditSpecificationResultType
 Optional fields:
 
 - `SuccessfulInstanceCreditSpecifications`:
-  `List`\[[SuccessfulInstanceCreditSpecificationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#successfulinstancecreditspecificationitemtypedef)\]
+  `List`\[[SuccessfulInstanceCreditSpecificationItemTypeDef](./type_defs.md#successfulinstancecreditspecificationitemtypedef)\]
 - `UnsuccessfulInstanceCreditSpecifications`:
-  `List`\[[UnsuccessfulInstanceCreditSpecificationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulinstancecreditspecificationitemtypedef)\]
+  `List`\[[UnsuccessfulInstanceCreditSpecificationItemTypeDef](./type_defs.md#unsuccessfulinstancecreditspecificationitemtypedef)\]
 
 ## ModifyInstanceEventStartTimeResultTypeDef
 
@@ -8944,7 +8702,7 @@ from mypy_boto3_ec2.type_defs import ModifyInstanceEventStartTimeResultTypeDef
 Optional fields:
 
 - `Event`:
-  [InstanceStatusEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatuseventtypedef)
+  [InstanceStatusEventTypeDef](./type_defs.md#instancestatuseventtypedef)
 
 ## ModifyInstanceMetadataOptionsResultTypeDef
 
@@ -8956,7 +8714,7 @@ Optional fields:
 
 - `InstanceId`: `str`
 - `InstanceMetadataOptions`:
-  [InstanceMetadataOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemetadataoptionsresponsetypedef)
+  [InstanceMetadataOptionsResponseTypeDef](./type_defs.md#instancemetadataoptionsresponsetypedef)
 
 ## ModifyInstancePlacementResultTypeDef
 
@@ -8976,8 +8734,7 @@ from mypy_boto3_ec2.type_defs import ModifyLaunchTemplateResultTypeDef
 
 Optional fields:
 
-- `LaunchTemplate`:
-  [LaunchTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatetypedef)
+- `LaunchTemplate`: [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 
 ## ModifyManagedPrefixListResultTypeDef
 
@@ -8988,7 +8745,7 @@ from mypy_boto3_ec2.type_defs import ModifyManagedPrefixListResultTypeDef
 Optional fields:
 
 - `PrefixList`:
-  [ManagedPrefixListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#managedprefixlisttypedef)
+  [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
 
 ## ModifyReservedInstancesResultTypeDef
 
@@ -9019,7 +8776,7 @@ from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterNetworkServicesRes
 Optional fields:
 
 - `TrafficMirrorFilter`:
-  [TrafficMirrorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfiltertypedef)
+  [TrafficMirrorFilterTypeDef](./type_defs.md#trafficmirrorfiltertypedef)
 
 ## ModifyTrafficMirrorFilterRuleResultTypeDef
 
@@ -9030,7 +8787,7 @@ from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterRuleResultTypeDef
 Optional fields:
 
 - `TrafficMirrorFilterRule`:
-  [TrafficMirrorFilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfilterruletypedef)
+  [TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)
 
 ## ModifyTrafficMirrorSessionResultTypeDef
 
@@ -9041,7 +8798,7 @@ from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorSessionResultTypeDef
 Optional fields:
 
 - `TrafficMirrorSession`:
-  [TrafficMirrorSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorsessiontypedef)
+  [TrafficMirrorSessionTypeDef](./type_defs.md#trafficmirrorsessiontypedef)
 
 ## ModifyTransitGatewayOptionsTypeDef
 
@@ -9053,17 +8810,15 @@ Optional fields:
 
 - `AddTransitGatewayCidrBlocks`: `List`\[`str`\]
 - `RemoveTransitGatewayCidrBlocks`: `List`\[`str`\]
-- `VpnEcmpSupport`:
-  [VpnEcmpSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpnecmpsupportvalue)
-- `DnsSupport`:
-  [DnsSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnssupportvalue)
+- `VpnEcmpSupport`: [VpnEcmpSupportValue](./literals.md#vpnecmpsupportvalue)
+- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
 - `AutoAcceptSharedAttachments`:
-  [AutoAcceptSharedAttachmentsValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#autoacceptsharedattachmentsvalue)
+  [AutoAcceptSharedAttachmentsValue](./literals.md#autoacceptsharedattachmentsvalue)
 - `DefaultRouteTableAssociation`:
-  [DefaultRouteTableAssociationValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaultroutetableassociationvalue)
+  [DefaultRouteTableAssociationValue](./literals.md#defaultroutetableassociationvalue)
 - `AssociationDefaultRouteTableId`: `str`
 - `DefaultRouteTablePropagation`:
-  [DefaultRouteTablePropagationValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaultroutetablepropagationvalue)
+  [DefaultRouteTablePropagationValue](./literals.md#defaultroutetablepropagationvalue)
 - `PropagationDefaultRouteTableId`: `str`
 
 ## ModifyTransitGatewayPrefixListReferenceResultTypeDef
@@ -9075,7 +8830,7 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayPrefixListReferenceResu
 Optional fields:
 
 - `TransitGatewayPrefixListReference`:
-  [TransitGatewayPrefixListReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayprefixlistreferencetypedef)
+  [TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)
 
 ## ModifyTransitGatewayResultTypeDef
 
@@ -9085,8 +8840,7 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayResultTypeDef
 
 Optional fields:
 
-- `TransitGateway`:
-  [TransitGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaytypedef)
+- `TransitGateway`: [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
 
 ## ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef
 
@@ -9096,12 +8850,10 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayVpcAttachmentRequestOpt
 
 Optional fields:
 
-- `DnsSupport`:
-  [DnsSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnssupportvalue)
-- `Ipv6Support`:
-  [Ipv6SupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ipv6supportvalue)
+- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
+- `Ipv6Support`: [Ipv6SupportValue](./literals.md#ipv6supportvalue)
 - `ApplianceModeSupport`:
-  [ApplianceModeSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#appliancemodesupportvalue)
+  [ApplianceModeSupportValue](./literals.md#appliancemodesupportvalue)
 
 ## ModifyTransitGatewayVpcAttachmentResultTypeDef
 
@@ -9112,7 +8864,7 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayVpcAttachmentResultType
 Optional fields:
 
 - `TransitGatewayVpcAttachment`:
-  [TransitGatewayVpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmenttypedef)
+  [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
 
 ## ModifyVolumeResultTypeDef
 
@@ -9123,7 +8875,7 @@ from mypy_boto3_ec2.type_defs import ModifyVolumeResultTypeDef
 Optional fields:
 
 - `VolumeModification`:
-  [VolumeModificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumemodificationtypedef)
+  [VolumeModificationTypeDef](./type_defs.md#volumemodificationtypedef)
 
 ## ModifyVpcEndpointConnectionNotificationResultTypeDef
 
@@ -9174,9 +8926,9 @@ from mypy_boto3_ec2.type_defs import ModifyVpcPeeringConnectionOptionsResultType
 Optional fields:
 
 - `AccepterPeeringConnectionOptions`:
-  [PeeringConnectionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#peeringconnectionoptionstypedef)
+  [PeeringConnectionOptionsTypeDef](./type_defs.md#peeringconnectionoptionstypedef)
 - `RequesterPeeringConnectionOptions`:
-  [PeeringConnectionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#peeringconnectionoptionstypedef)
+  [PeeringConnectionOptionsTypeDef](./type_defs.md#peeringconnectionoptionstypedef)
 
 ## ModifyVpcTenancyResultTypeDef
 
@@ -9196,8 +8948,7 @@ from mypy_boto3_ec2.type_defs import ModifyVpnConnectionOptionsResultTypeDef
 
 Optional fields:
 
-- `VpnConnection`:
-  [VpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectiontypedef)
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
 
 ## ModifyVpnConnectionResultTypeDef
 
@@ -9207,8 +8958,7 @@ from mypy_boto3_ec2.type_defs import ModifyVpnConnectionResultTypeDef
 
 Optional fields:
 
-- `VpnConnection`:
-  [VpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectiontypedef)
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
 
 ## ModifyVpnTunnelCertificateResultTypeDef
 
@@ -9218,8 +8968,7 @@ from mypy_boto3_ec2.type_defs import ModifyVpnTunnelCertificateResultTypeDef
 
 Optional fields:
 
-- `VpnConnection`:
-  [VpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectiontypedef)
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
 
 ## ModifyVpnTunnelOptionsResultTypeDef
 
@@ -9229,8 +8978,7 @@ from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsResultTypeDef
 
 Optional fields:
 
-- `VpnConnection`:
-  [VpnConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectiontypedef)
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
 
 ## ModifyVpnTunnelOptionsSpecificationTypeDef
 
@@ -9251,19 +8999,19 @@ Optional fields:
 - `DPDTimeoutSeconds`: `int`
 - `DPDTimeoutAction`: `str`
 - `Phase1EncryptionAlgorithms`:
-  `List`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase2EncryptionAlgorithms`:
-  `List`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase1IntegrityAlgorithms`:
-  `List`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1integrityalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase2IntegrityAlgorithms`:
-  `List`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2integrityalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase1DHGroupNumbers`:
-  `List`\[[Phase1DHGroupNumbersRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1dhgroupnumbersrequestlistvaluetypedef)\]
+  `List`\[[Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef)\]
 - `Phase2DHGroupNumbers`:
-  `List`\[[Phase2DHGroupNumbersRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2dhgroupnumbersrequestlistvaluetypedef)\]
+  `List`\[[Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef)\]
 - `IKEVersions`:
-  `List`\[[IKEVersionsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ikeversionsrequestlistvaluetypedef)\]
+  `List`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
 - `StartupAction`: `str`
 
 ## MonitorInstancesResultTypeDef
@@ -9275,7 +9023,7 @@ from mypy_boto3_ec2.type_defs import MonitorInstancesResultTypeDef
 Optional fields:
 
 - `InstanceMonitorings`:
-  `List`\[[InstanceMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemonitoringtypedef)\]
+  `List`\[[InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)\]
 
 ## MonitoringTypeDef
 
@@ -9285,8 +9033,7 @@ from mypy_boto3_ec2.type_defs import MonitoringTypeDef
 
 Optional fields:
 
-- `State`:
-  [MonitoringState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#monitoringstate)
+- `State`: [MonitoringState](./literals.md#monitoringstate)
 
 ## MoveAddressToVpcResultTypeDef
 
@@ -9297,8 +9044,7 @@ from mypy_boto3_ec2.type_defs import MoveAddressToVpcResultTypeDef
 Optional fields:
 
 - `AllocationId`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## MovingAddressStatusTypeDef
 
@@ -9308,8 +9054,7 @@ from mypy_boto3_ec2.type_defs import MovingAddressStatusTypeDef
 
 Optional fields:
 
-- `MoveStatus`:
-  [MoveStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#movestatus)
+- `MoveStatus`: [MoveStatus](./literals.md#movestatus)
 - `PublicIp`: `str`
 
 ## NatGatewayAddressTypeDef
@@ -9338,16 +9083,14 @@ Optional fields:
 - `FailureCode`: `str`
 - `FailureMessage`: `str`
 - `NatGatewayAddresses`:
-  `List`\[[NatGatewayAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#natgatewayaddresstypedef)\]
+  `List`\[[NatGatewayAddressTypeDef](./type_defs.md#natgatewayaddresstypedef)\]
 - `NatGatewayId`: `str`
 - `ProvisionedBandwidth`:
-  [ProvisionedBandwidthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#provisionedbandwidthtypedef)
-- `State`:
-  [NatGatewayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#natgatewaystate)
+  [ProvisionedBandwidthTypeDef](./type_defs.md#provisionedbandwidthtypedef)
+- `State`: [NatGatewayState](./literals.md#natgatewaystate)
 - `SubnetId`: `str`
 - `VpcId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NetworkAclAssociationTypeDef
 
@@ -9371,14 +9114,11 @@ Optional fields:
 
 - `CidrBlock`: `str`
 - `Egress`: `bool`
-- `IcmpTypeCode`:
-  [IcmpTypeCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#icmptypecodetypedef)
+- `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
 - `Ipv6CidrBlock`: `str`
-- `PortRange`:
-  [PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#portrangetypedef)
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `Protocol`: `str`
-- `RuleAction`:
-  [RuleAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ruleaction)
+- `RuleAction`: [RuleAction](./literals.md#ruleaction)
 - `RuleNumber`: `int`
 
 ## NetworkAclTypeDef
@@ -9390,13 +9130,12 @@ from mypy_boto3_ec2.type_defs import NetworkAclTypeDef
 Optional fields:
 
 - `Associations`:
-  `List`\[[NetworkAclAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkaclassociationtypedef)\]
+  `List`\[[NetworkAclAssociationTypeDef](./type_defs.md#networkaclassociationtypedef)\]
 - `Entries`:
-  `List`\[[NetworkAclEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkaclentrytypedef)\]
+  `List`\[[NetworkAclEntryTypeDef](./type_defs.md#networkaclentrytypedef)\]
 - `IsDefault`: `bool`
 - `NetworkAclId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 - `OwnerId`: `str`
 
@@ -9425,15 +9164,13 @@ Optional fields:
 - `MaximumNetworkCards`: `int`
 - `DefaultNetworkCardIndex`: `int`
 - `NetworkCards`:
-  `List`\[[NetworkCardInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkcardinfotypedef)\]
+  `List`\[[NetworkCardInfoTypeDef](./type_defs.md#networkcardinfotypedef)\]
 - `Ipv4AddressesPerInterface`: `int`
 - `Ipv6AddressesPerInterface`: `int`
 - `Ipv6Supported`: `bool`
-- `EnaSupport`:
-  [EnaSupport](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#enasupport)
+- `EnaSupport`: [EnaSupport](./literals.md#enasupport)
 - `EfaSupported`: `bool`
-- `EfaInfo`:
-  [EfaInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#efainfotypedef)
+- `EfaInfo`: [EfaInfoTypeDef](./type_defs.md#efainfotypedef)
 
 ## NetworkInsightsAnalysisTypeDef
 
@@ -9448,20 +9185,18 @@ Optional fields:
 - `NetworkInsightsPathId`: `str`
 - `FilterInArns`: `List`\[`str`\]
 - `StartDate`: `datetime`
-- `Status`:
-  [AnalysisStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#analysisstatus)
+- `Status`: [AnalysisStatus](./literals.md#analysisstatus)
 - `StatusMessage`: `str`
 - `NetworkPathFound`: `bool`
 - `ForwardPathComponents`:
-  `List`\[[PathComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#pathcomponenttypedef)\]
+  `List`\[[PathComponentTypeDef](./type_defs.md#pathcomponenttypedef)\]
 - `ReturnPathComponents`:
-  `List`\[[PathComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#pathcomponenttypedef)\]
+  `List`\[[PathComponentTypeDef](./type_defs.md#pathcomponenttypedef)\]
 - `Explanations`:
-  `List`\[[ExplanationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#explanationtypedef)\]
+  `List`\[[ExplanationTypeDef](./type_defs.md#explanationtypedef)\]
 - `AlternatePathHints`:
-  `List`\[[AlternatePathHintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#alternatepathhinttypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[AlternatePathHintTypeDef](./type_defs.md#alternatepathhinttypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NetworkInsightsPathTypeDef
 
@@ -9478,11 +9213,9 @@ Optional fields:
 - `Destination`: `str`
 - `SourceIp`: `str`
 - `DestinationIp`: `str`
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#protocoltype)
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `DestinationPort`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NetworkInterfaceAssociationTypeDef
 
@@ -9526,8 +9259,7 @@ Optional fields:
 - `NetworkCardIndex`: `int`
 - `InstanceId`: `str`
 - `InstanceOwnerId`: `str`
-- `Status`:
-  [AttachmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#attachmentstatus)
+- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
 
 ## NetworkInterfaceIpv6AddressTypeDef
 
@@ -9548,7 +9280,7 @@ from mypy_boto3_ec2.type_defs import NetworkInterfacePermissionStateTypeDef
 Optional fields:
 
 - `State`:
-  [NetworkInterfacePermissionStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#networkinterfacepermissionstatecode)
+  [NetworkInterfacePermissionStateCode](./literals.md#networkinterfacepermissionstatecode)
 - `StatusMessage`: `str`
 
 ## NetworkInterfacePermissionTypeDef
@@ -9563,10 +9295,9 @@ Optional fields:
 - `NetworkInterfaceId`: `str`
 - `AwsAccountId`: `str`
 - `AwsService`: `str`
-- `Permission`:
-  [InterfacePermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#interfacepermissiontype)
+- `Permission`: [InterfacePermissionType](./literals.md#interfacepermissiontype)
 - `PermissionState`:
-  [NetworkInterfacePermissionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfacepermissionstatetypedef)
+  [NetworkInterfacePermissionStateTypeDef](./type_defs.md#networkinterfacepermissionstatetypedef)
 
 ## NetworkInterfacePrivateIpAddressTypeDef
 
@@ -9577,7 +9308,7 @@ from mypy_boto3_ec2.type_defs import NetworkInterfacePrivateIpAddressTypeDef
 Optional fields:
 
 - `Association`:
-  [NetworkInterfaceAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceassociationtypedef)
+  [NetworkInterfaceAssociationTypeDef](./type_defs.md#networkinterfaceassociationtypedef)
 - `Primary`: `bool`
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
@@ -9591,17 +9322,16 @@ from mypy_boto3_ec2.type_defs import NetworkInterfaceTypeDef
 Optional fields:
 
 - `Association`:
-  [NetworkInterfaceAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceassociationtypedef)
+  [NetworkInterfaceAssociationTypeDef](./type_defs.md#networkinterfaceassociationtypedef)
 - `Attachment`:
-  [NetworkInterfaceAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceattachmenttypedef)
+  [NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef)
 - `AvailabilityZone`: `str`
 - `Description`: `str`
 - `Groups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
-- `InterfaceType`:
-  [NetworkInterfaceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#networkinterfacetype)
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
+- `InterfaceType`: [NetworkInterfaceType](./literals.md#networkinterfacetype)
 - `Ipv6Addresses`:
-  `List`\[[NetworkInterfaceIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceipv6addresstypedef)\]
+  `List`\[[NetworkInterfaceIpv6AddressTypeDef](./type_defs.md#networkinterfaceipv6addresstypedef)\]
 - `MacAddress`: `str`
 - `NetworkInterfaceId`: `str`
 - `OutpostArn`: `str`
@@ -9609,15 +9339,13 @@ Optional fields:
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[NetworkInterfacePrivateIpAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinterfaceprivateipaddresstypedef)\]
+  `List`\[[NetworkInterfacePrivateIpAddressTypeDef](./type_defs.md#networkinterfaceprivateipaddresstypedef)\]
 - `RequesterId`: `str`
 - `RequesterManaged`: `bool`
 - `SourceDestCheck`: `bool`
-- `Status`:
-  [NetworkInterfaceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#networkinterfacestatus)
+- `Status`: [NetworkInterfaceStatus](./literals.md#networkinterfacestatus)
 - `SubnetId`: `str`
-- `TagSet`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 
 ## NewDhcpConfigurationTypeDef
@@ -9640,9 +9368,9 @@ from mypy_boto3_ec2.type_defs import OnDemandOptionsRequestTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [FleetOnDemandAllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetondemandallocationstrategy)
+  [FleetOnDemandAllocationStrategy](./literals.md#fleetondemandallocationstrategy)
 - `CapacityReservationOptions`:
-  [CapacityReservationOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationoptionsrequesttypedef)
+  [CapacityReservationOptionsRequestTypeDef](./type_defs.md#capacityreservationoptionsrequesttypedef)
 - `SingleInstanceType`: `bool`
 - `SingleAvailabilityZone`: `bool`
 - `MinTargetCapacity`: `int`
@@ -9657,9 +9385,9 @@ from mypy_boto3_ec2.type_defs import OnDemandOptionsTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [FleetOnDemandAllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleetondemandallocationstrategy)
+  [FleetOnDemandAllocationStrategy](./literals.md#fleetondemandallocationstrategy)
 - `CapacityReservationOptions`:
-  [CapacityReservationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#capacityreservationoptionstypedef)
+  [CapacityReservationOptionsTypeDef](./type_defs.md#capacityreservationoptionstypedef)
 - `SingleInstanceType`: `bool`
 - `SingleAvailabilityZone`: `bool`
 - `MinTargetCapacity`: `int`
@@ -9686,26 +9414,23 @@ from mypy_boto3_ec2.type_defs import PathComponentTypeDef
 Optional fields:
 
 - `SequenceNumber`: `int`
-- `AclRule`:
-  [AnalysisAclRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysisaclruletypedef)
+- `AclRule`: [AnalysisAclRuleTypeDef](./type_defs.md#analysisaclruletypedef)
 - `Component`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `DestinationVpc`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `OutboundHeader`:
-  [AnalysisPacketHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysispacketheadertypedef)
+  [AnalysisPacketHeaderTypeDef](./type_defs.md#analysispacketheadertypedef)
 - `InboundHeader`:
-  [AnalysisPacketHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysispacketheadertypedef)
+  [AnalysisPacketHeaderTypeDef](./type_defs.md#analysispacketheadertypedef)
 - `RouteTableRoute`:
-  [AnalysisRouteTableRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysisroutetableroutetypedef)
+  [AnalysisRouteTableRouteTypeDef](./type_defs.md#analysisroutetableroutetypedef)
 - `SecurityGroupRule`:
-  [AnalysisSecurityGroupRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysissecuritygroupruletypedef)
+  [AnalysisSecurityGroupRuleTypeDef](./type_defs.md#analysissecuritygroupruletypedef)
 - `SourceVpc`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
-- `Subnet`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
-- `Vpc`:
-  [AnalysisComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#analysiscomponenttypedef)
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `Subnet`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `Vpc`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 
 ## PciIdTypeDef
 
@@ -9896,7 +9621,7 @@ from mypy_boto3_ec2.type_defs import PlacementGroupInfoTypeDef
 Optional fields:
 
 - `SupportedStrategies`:
-  `List`\[[PlacementGroupStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#placementgroupstrategy)\]
+  `List`\[[PlacementGroupStrategy](./literals.md#placementgroupstrategy)\]
 
 ## PlacementGroupTypeDef
 
@@ -9907,14 +9632,11 @@ from mypy_boto3_ec2.type_defs import PlacementGroupTypeDef
 Optional fields:
 
 - `GroupName`: `str`
-- `State`:
-  [PlacementGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#placementgroupstate)
-- `Strategy`:
-  [PlacementStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#placementstrategy)
+- `State`: [PlacementGroupState](./literals.md#placementgroupstate)
+- `Strategy`: [PlacementStrategy](./literals.md#placementstrategy)
 - `PartitionCount`: `int`
 - `GroupId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PlacementResponseTypeDef
 
@@ -9939,8 +9661,7 @@ Optional fields:
 - `GroupName`: `str`
 - `PartitionNumber`: `int`
 - `HostId`: `str`
-- `Tenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `Tenancy`: [Tenancy](./literals.md#tenancy)
 - `SpreadDomain`: `str`
 - `HostResourceGroupArn`: `str`
 
@@ -10018,7 +9739,8 @@ from mypy_boto3_ec2.type_defs import PriceScheduleSpecificationTypeDef
 
 Optional fields:
 
-- `CurrencyCode`: `Literal['USD']`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
 - `Price`: `float`
 - `Term`: `int`
 
@@ -10031,7 +9753,8 @@ from mypy_boto3_ec2.type_defs import PriceScheduleTypeDef
 Optional fields:
 
 - `Active`: `bool`
-- `CurrencyCode`: `Literal['USD']`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
 - `Price`: `float`
 - `Term`: `int`
 
@@ -10055,8 +9778,7 @@ from mypy_boto3_ec2.type_defs import PrincipalIdFormatTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `Statuses`:
-  `List`\[[IdFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#idformattypedef)\]
+- `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
 
 ## PrivateDnsDetailsTypeDef
 
@@ -10076,8 +9798,7 @@ from mypy_boto3_ec2.type_defs import PrivateDnsNameConfigurationTypeDef
 
 Optional fields:
 
-- `State`:
-  [DnsNameState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnsnamestate)
+- `State`: [DnsNameState](./literals.md#dnsnamestate)
 - `Type`: `str`
 - `Value`: `str`
 - `Name`: `str`
@@ -10102,7 +9823,7 @@ from mypy_boto3_ec2.type_defs import ProcessorInfoTypeDef
 Optional fields:
 
 - `SupportedArchitectures`:
-  `List`\[[ArchitectureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#architecturetype)\]
+  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 - `SustainedClockSpeedInGhz`: `float`
 
 ## ProductCodeTypeDef
@@ -10114,8 +9835,7 @@ from mypy_boto3_ec2.type_defs import ProductCodeTypeDef
 Optional fields:
 
 - `ProductCodeId`: `str`
-- `ProductCodeType`:
-  [ProductCodeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#productcodevalues)
+- `ProductCodeType`: [ProductCodeValues](./literals.md#productcodevalues)
 
 ## PropagatingVgwTypeDef
 
@@ -10135,8 +9855,7 @@ from mypy_boto3_ec2.type_defs import ProvisionByoipCidrResultTypeDef
 
 Optional fields:
 
-- `ByoipCidr`:
-  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#byoipcidrtypedef)
+- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
 
 ## ProvisionedBandwidthTypeDef
 
@@ -10188,12 +9907,11 @@ Optional fields:
 - `PoolId`: `str`
 - `Description`: `str`
 - `PoolAddressRanges`:
-  `List`\[[PublicIpv4PoolRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#publicipv4poolrangetypedef)\]
+  `List`\[[PublicIpv4PoolRangeTypeDef](./type_defs.md#publicipv4poolrangetypedef)\]
 - `TotalAddressCount`: `int`
 - `TotalAvailableAddressCount`: `int`
 - `NetworkBorderGroup`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PurchaseHostReservationResultTypeDef
 
@@ -10204,9 +9922,9 @@ from mypy_boto3_ec2.type_defs import PurchaseHostReservationResultTypeDef
 Optional fields:
 
 - `ClientToken`: `str`
-- `CurrencyCode`: `Literal['USD']`
-- `Purchase`:
-  `List`\[[PurchaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#purchasetypedef)\]
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
+- `Purchase`: `List`\[[PurchaseTypeDef](./type_defs.md#purchasetypedef)\]
 - `TotalHourlyPrice`: `str`
 - `TotalUpfrontPrice`: `str`
 
@@ -10240,7 +9958,7 @@ from mypy_boto3_ec2.type_defs import PurchaseScheduledInstancesResultTypeDef
 Optional fields:
 
 - `ScheduledInstanceSet`:
-  `List`\[[ScheduledInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancetypedef)\]
+  `List`\[[ScheduledInstanceTypeDef](./type_defs.md#scheduledinstancetypedef)\]
 
 ## PurchaseTypeDef
 
@@ -10250,14 +9968,14 @@ from mypy_boto3_ec2.type_defs import PurchaseTypeDef
 
 Optional fields:
 
-- `CurrencyCode`: `Literal['USD']`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
 - `Duration`: `int`
 - `HostIdSet`: `List`\[`str`\]
 - `HostReservationId`: `str`
 - `HourlyPrice`: `str`
 - `InstanceFamily`: `str`
-- `PaymentOption`:
-  [PaymentOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#paymentoption)
+- `PaymentOption`: [PaymentOption](./literals.md#paymentoption)
 - `UpfrontPrice`: `str`
 
 ## RecurringChargeTypeDef
@@ -10269,7 +9987,8 @@ from mypy_boto3_ec2.type_defs import RecurringChargeTypeDef
 Optional fields:
 
 - `Amount`: `float`
-- `Frequency`: `Literal['Hourly']`
+- `Frequency`: `Literal['Hourly']` (see
+  [RecurringChargeFrequency](./literals.md#recurringchargefrequency))
 
 ## RegionTypeDef
 
@@ -10302,7 +10021,7 @@ from mypy_boto3_ec2.type_defs import RegisterInstanceEventNotificationAttributes
 Optional fields:
 
 - `InstanceTagAttribute`:
-  [InstanceTagNotificationAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancetagnotificationattributetypedef)
+  [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
 
 ## RegisterInstanceTagAttributeRequestTypeDef
 
@@ -10324,7 +10043,7 @@ from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupMembers
 Optional fields:
 
 - `RegisteredMulticastGroupMembers`:
-  [TransitGatewayMulticastRegisteredGroupMembersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastregisteredgroupmemberstypedef)
+  [TransitGatewayMulticastRegisteredGroupMembersTypeDef](./type_defs.md#transitgatewaymulticastregisteredgroupmemberstypedef)
 
 ## RegisterTransitGatewayMulticastGroupSourcesResultTypeDef
 
@@ -10335,7 +10054,7 @@ from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupSources
 Optional fields:
 
 - `RegisteredMulticastGroupSources`:
-  [TransitGatewayMulticastRegisteredGroupSourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastregisteredgroupsourcestypedef)
+  [TransitGatewayMulticastRegisteredGroupSourcesTypeDef](./type_defs.md#transitgatewaymulticastregisteredgroupsourcestypedef)
 
 ## RejectTransitGatewayMulticastDomainAssociationsResultTypeDef
 
@@ -10346,7 +10065,7 @@ from mypy_boto3_ec2.type_defs import RejectTransitGatewayMulticastDomainAssociat
 Optional fields:
 
 - `Associations`:
-  [TransitGatewayMulticastDomainAssociationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomainassociationstypedef)
+  [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
 
 ## RejectTransitGatewayPeeringAttachmentResultTypeDef
 
@@ -10357,7 +10076,7 @@ from mypy_boto3_ec2.type_defs import RejectTransitGatewayPeeringAttachmentResult
 Optional fields:
 
 - `TransitGatewayPeeringAttachment`:
-  [TransitGatewayPeeringAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaypeeringattachmenttypedef)
+  [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
 
 ## RejectTransitGatewayVpcAttachmentResultTypeDef
 
@@ -10368,7 +10087,7 @@ from mypy_boto3_ec2.type_defs import RejectTransitGatewayVpcAttachmentResultType
 Optional fields:
 
 - `TransitGatewayVpcAttachment`:
-  [TransitGatewayVpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmenttypedef)
+  [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
 
 ## RejectVpcEndpointConnectionsResultTypeDef
 
@@ -10379,7 +10098,7 @@ from mypy_boto3_ec2.type_defs import RejectVpcEndpointConnectionsResultTypeDef
 Optional fields:
 
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## RejectVpcPeeringConnectionResultTypeDef
 
@@ -10401,7 +10120,7 @@ Optional fields:
 
 - `Successful`: `List`\[`str`\]
 - `Unsuccessful`:
-  `List`\[[UnsuccessfulItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemtypedef)\]
+  `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
 
 ## RemovePrefixListEntryTypeDef
 
@@ -10422,7 +10141,7 @@ from mypy_boto3_ec2.type_defs import ReplaceIamInstanceProfileAssociationResultT
 Optional fields:
 
 - `IamInstanceProfileAssociation`:
-  [IamInstanceProfileAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofileassociationtypedef)
+  [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
 
 ## ReplaceNetworkAclAssociationResultTypeDef
 
@@ -10445,11 +10164,10 @@ Optional fields:
 - `ReplaceRootVolumeTaskId`: `str`
 - `InstanceId`: `str`
 - `TaskState`:
-  [ReplaceRootVolumeTaskState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#replacerootvolumetaskstate)
+  [ReplaceRootVolumeTaskState](./literals.md#replacerootvolumetaskstate)
 - `StartTime`: `str`
 - `CompleteTime`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ReplaceRouteTableAssociationResultTypeDef
 
@@ -10461,7 +10179,7 @@ Optional fields:
 
 - `NewAssociationId`: `str`
 - `AssociationState`:
-  [RouteTableAssociationStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetableassociationstatetypedef)
+  [RouteTableAssociationStateTypeDef](./type_defs.md#routetableassociationstatetypedef)
 
 ## ReplaceTransitGatewayRouteResultTypeDef
 
@@ -10472,7 +10190,7 @@ from mypy_boto3_ec2.type_defs import ReplaceTransitGatewayRouteResultTypeDef
 Optional fields:
 
 - `Route`:
-  [TransitGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetypedef)
+  [TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)
 
 ## RequestLaunchTemplateDataTypeDef
 
@@ -10485,48 +10203,47 @@ Optional fields:
 - `KernelId`: `str`
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
-  [LaunchTemplateIamInstanceProfileSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateiaminstanceprofilespecificationrequesttypedef)
+  [LaunchTemplateIamInstanceProfileSpecificationRequestTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationrequesttypedef)
 - `BlockDeviceMappings`:
-  `List`\[[LaunchTemplateBlockDeviceMappingRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateblockdevicemappingrequesttypedef)\]
+  `List`\[[LaunchTemplateBlockDeviceMappingRequestTypeDef](./type_defs.md#launchtemplateblockdevicemappingrequesttypedef)\]
 - `NetworkInterfaces`:
-  `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateinstancenetworkinterfacespecificationrequesttypedef)\]
+  `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef](./type_defs.md#launchtemplateinstancenetworkinterfacespecificationrequesttypedef)\]
 - `ImageId`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `KeyName`: `str`
 - `Monitoring`:
-  [LaunchTemplatesMonitoringRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatesmonitoringrequesttypedef)
+  [LaunchTemplatesMonitoringRequestTypeDef](./type_defs.md#launchtemplatesmonitoringrequesttypedef)
 - `Placement`:
-  [LaunchTemplatePlacementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateplacementrequesttypedef)
+  [LaunchTemplatePlacementRequestTypeDef](./type_defs.md#launchtemplateplacementrequesttypedef)
 - `RamDiskId`: `str`
 - `DisableApiTermination`: `bool`
 - `InstanceInitiatedShutdownBehavior`:
-  [ShutdownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#shutdownbehavior)
+  [ShutdownBehavior](./literals.md#shutdownbehavior)
 - `UserData`: `str`
 - `TagSpecifications`:
-  `List`\[[LaunchTemplateTagSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatetagspecificationrequesttypedef)\]
+  `List`\[[LaunchTemplateTagSpecificationRequestTypeDef](./type_defs.md#launchtemplatetagspecificationrequesttypedef)\]
 - `ElasticGpuSpecifications`:
-  `List`\[[ElasticGpuSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpuspecificationtypedef)\]
+  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[LaunchTemplateElasticInferenceAcceleratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateelasticinferenceacceleratortypedef)\]
+  `List`\[[LaunchTemplateElasticInferenceAcceleratorTypeDef](./type_defs.md#launchtemplateelasticinferenceacceleratortypedef)\]
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SecurityGroups`: `List`\[`str`\]
 - `InstanceMarketOptions`:
-  [LaunchTemplateInstanceMarketOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateinstancemarketoptionsrequesttypedef)
+  [LaunchTemplateInstanceMarketOptionsRequestTypeDef](./type_defs.md#launchtemplateinstancemarketoptionsrequesttypedef)
 - `CreditSpecification`:
-  [CreditSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#creditspecificationrequesttypedef)
+  [CreditSpecificationRequestTypeDef](./type_defs.md#creditspecificationrequesttypedef)
 - `CpuOptions`:
-  [LaunchTemplateCpuOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatecpuoptionsrequesttypedef)
+  [LaunchTemplateCpuOptionsRequestTypeDef](./type_defs.md#launchtemplatecpuoptionsrequesttypedef)
 - `CapacityReservationSpecification`:
-  [LaunchTemplateCapacityReservationSpecificationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatecapacityreservationspecificationrequesttypedef)
+  [LaunchTemplateCapacityReservationSpecificationRequestTypeDef](./type_defs.md#launchtemplatecapacityreservationspecificationrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LaunchTemplateLicenseConfigurationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatelicenseconfigurationrequesttypedef)\]
+  `List`\[[LaunchTemplateLicenseConfigurationRequestTypeDef](./type_defs.md#launchtemplatelicenseconfigurationrequesttypedef)\]
 - `HibernationOptions`:
-  [LaunchTemplateHibernationOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatehibernationoptionsrequesttypedef)
+  [LaunchTemplateHibernationOptionsRequestTypeDef](./type_defs.md#launchtemplatehibernationoptionsrequesttypedef)
 - `MetadataOptions`:
-  [LaunchTemplateInstanceMetadataOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateinstancemetadataoptionsrequesttypedef)
+  [LaunchTemplateInstanceMetadataOptionsRequestTypeDef](./type_defs.md#launchtemplateinstancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
-  [LaunchTemplateEnclaveOptionsRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateenclaveoptionsrequesttypedef)
+  [LaunchTemplateEnclaveOptionsRequestTypeDef](./type_defs.md#launchtemplateenclaveoptionsrequesttypedef)
 
 ## RequestSpotFleetResponseTypeDef
 
@@ -10547,7 +10264,7 @@ from mypy_boto3_ec2.type_defs import RequestSpotInstancesResultTypeDef
 Optional fields:
 
 - `SpotInstanceRequests`:
-  `List`\[[SpotInstanceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotinstancerequesttypedef)\]
+  `List`\[[SpotInstanceRequestTypeDef](./type_defs.md#spotinstancerequesttypedef)\]
 
 ## RequestSpotLaunchSpecificationTypeDef
 
@@ -10561,21 +10278,19 @@ Optional fields:
 - `SecurityGroups`: `List`\[`str`\]
 - `AddressingType`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
-  [IamInstanceProfileSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofilespecificationtypedef)
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
 - `ImageId`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
-  [RunInstancesMonitoringEnabledTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#runinstancesmonitoringenabledtypedef)
+  [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfacespecificationtypedef)\]
-- `Placement`:
-  [SpotPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotplacementtypedef)
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+- `Placement`: [SpotPlacementTypeDef](./type_defs.md#spotplacementtypedef)
 - `RamdiskId`: `str`
 - `SubnetId`: `str`
 - `UserData`: `str`
@@ -10589,9 +10304,8 @@ from mypy_boto3_ec2.type_defs import ReservationTypeDef
 Optional fields:
 
 - `Groups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancetypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `OwnerId`: `str`
 - `RequesterId`: `str`
 - `ReservationId`: `str`
@@ -10617,7 +10331,8 @@ from mypy_boto3_ec2.type_defs import ReservedInstanceLimitPriceTypeDef
 Optional fields:
 
 - `Amount`: `float`
-- `CurrencyCode`: `Literal['USD']`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
 
 ## ReservedInstanceReservationValueTypeDef
 
@@ -10628,7 +10343,7 @@ from mypy_boto3_ec2.type_defs import ReservedInstanceReservationValueTypeDef
 Optional fields:
 
 - `ReservationValue`:
-  [ReservationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservationvaluetypedef)
+  [ReservationValueTypeDef](./type_defs.md#reservationvaluetypedef)
 - `ReservedInstanceId`: `str`
 
 ## ReservedInstancesConfigurationTypeDef
@@ -10641,11 +10356,9 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `InstanceCount`: `int`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `Platform`: `str`
-- `Scope`:
-  [scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#scope)
+- `Scope`: [scope](./literals.md#scope)
 
 ## ReservedInstancesIdTypeDef
 
@@ -10668,16 +10381,14 @@ Optional fields:
 - `ClientToken`: `str`
 - `CreateDate`: `datetime`
 - `InstanceCounts`:
-  `List`\[[InstanceCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancecounttypedef)\]
+  `List`\[[InstanceCountTypeDef](./type_defs.md#instancecounttypedef)\]
 - `PriceSchedules`:
-  `List`\[[PriceScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#pricescheduletypedef)\]
+  `List`\[[PriceScheduleTypeDef](./type_defs.md#pricescheduletypedef)\]
 - `ReservedInstancesId`: `str`
 - `ReservedInstancesListingId`: `str`
-- `Status`:
-  [ListingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#listingstatus)
+- `Status`: [ListingStatus](./literals.md#listingstatus)
 - `StatusMessage`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UpdateDate`: `datetime`
 
 ## ReservedInstancesModificationResultTypeDef
@@ -10690,7 +10401,7 @@ Optional fields:
 
 - `ReservedInstancesId`: `str`
 - `TargetConfiguration`:
-  [ReservedInstancesConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancesconfigurationtypedef)
+  [ReservedInstancesConfigurationTypeDef](./type_defs.md#reservedinstancesconfigurationtypedef)
 
 ## ReservedInstancesModificationTypeDef
 
@@ -10704,9 +10415,9 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `EffectiveDate`: `datetime`
 - `ModificationResults`:
-  `List`\[[ReservedInstancesModificationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancesmodificationresulttypedef)\]
+  `List`\[[ReservedInstancesModificationResultTypeDef](./type_defs.md#reservedinstancesmodificationresulttypedef)\]
 - `ReservedInstancesIds`:
-  `List`\[[ReservedInstancesIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservedinstancesidtypedef)\]
+  `List`\[[ReservedInstancesIdTypeDef](./type_defs.md#reservedinstancesidtypedef)\]
 - `ReservedInstancesModificationId`: `str`
 - `Status`: `str`
 - `StatusMessage`: `str`
@@ -10723,26 +10434,22 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `Duration`: `int`
 - `FixedPrice`: `float`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `ProductDescription`:
-  [RIProductDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#riproductdescription)
+  [RIProductDescription](./literals.md#riproductdescription)
 - `ReservedInstancesOfferingId`: `str`
 - `UsagePrice`: `float`
-- `CurrencyCode`: `Literal['USD']`
-- `InstanceTenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
+- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
 - `Marketplace`: `bool`
-- `OfferingClass`:
-  [OfferingClassType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringclasstype)
-- `OfferingType`:
-  [OfferingTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringtypevalues)
+- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
+- `OfferingType`: [OfferingTypeValues](./literals.md#offeringtypevalues)
 - `PricingDetails`:
-  `List`\[[PricingDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#pricingdetailtypedef)\]
+  `List`\[[PricingDetailTypeDef](./type_defs.md#pricingdetailtypedef)\]
 - `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#recurringchargetypedef)\]
-- `Scope`:
-  [scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#scope)
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
+- `Scope`: [scope](./literals.md#scope)
 
 ## ReservedInstancesTypeDef
 
@@ -10757,28 +10464,22 @@ Optional fields:
 - `End`: `datetime`
 - `FixedPrice`: `float`
 - `InstanceCount`: `int`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `ProductDescription`:
-  [RIProductDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#riproductdescription)
+  [RIProductDescription](./literals.md#riproductdescription)
 - `ReservedInstancesId`: `str`
 - `Start`: `datetime`
-- `State`:
-  [ReservedInstanceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#reservedinstancestate)
+- `State`: [ReservedInstanceState](./literals.md#reservedinstancestate)
 - `UsagePrice`: `float`
-- `CurrencyCode`: `Literal['USD']`
-- `InstanceTenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
-- `OfferingClass`:
-  [OfferingClassType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringclasstype)
-- `OfferingType`:
-  [OfferingTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#offeringtypevalues)
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValues](./literals.md#currencycodevalues))
+- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
+- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
+- `OfferingType`: [OfferingTypeValues](./literals.md#offeringtypevalues)
 - `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#recurringchargetypedef)\]
-- `Scope`:
-  [scope](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#scope)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
+- `Scope`: [scope](./literals.md#scope)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ResetAddressAttributeResultTypeDef
 
@@ -10788,8 +10489,7 @@ from mypy_boto3_ec2.type_defs import ResetAddressAttributeResultTypeDef
 
 Optional fields:
 
-- `Address`:
-  [AddressAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#addressattributetypedef)
+- `Address`: [AddressAttributeTypeDef](./type_defs.md#addressattributetypedef)
 
 ## ResetEbsDefaultKmsKeyIdResultTypeDef
 
@@ -10819,8 +10519,7 @@ from mypy_boto3_ec2.type_defs import ResponseErrorTypeDef
 
 Optional fields:
 
-- `Code`:
-  [LaunchTemplateErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#launchtemplateerrorcode)
+- `Code`: [LaunchTemplateErrorCode](./literals.md#launchtemplateerrorcode)
 - `Message`: `str`
 
 ## ResponseLaunchTemplateDataTypeDef
@@ -10834,48 +10533,47 @@ Optional fields:
 - `KernelId`: `str`
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
-  [LaunchTemplateIamInstanceProfileSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateiaminstanceprofilespecificationtypedef)
+  [LaunchTemplateIamInstanceProfileSpecificationTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationtypedef)
 - `BlockDeviceMappings`:
-  `List`\[[LaunchTemplateBlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateblockdevicemappingtypedef)\]
+  `List`\[[LaunchTemplateBlockDeviceMappingTypeDef](./type_defs.md#launchtemplateblockdevicemappingtypedef)\]
 - `NetworkInterfaces`:
-  `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateinstancenetworkinterfacespecificationtypedef)\]
+  `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#launchtemplateinstancenetworkinterfacespecificationtypedef)\]
 - `ImageId`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `KeyName`: `str`
 - `Monitoring`:
-  [LaunchTemplatesMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatesmonitoringtypedef)
+  [LaunchTemplatesMonitoringTypeDef](./type_defs.md#launchtemplatesmonitoringtypedef)
 - `Placement`:
-  [LaunchTemplatePlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateplacementtypedef)
+  [LaunchTemplatePlacementTypeDef](./type_defs.md#launchtemplateplacementtypedef)
 - `RamDiskId`: `str`
 - `DisableApiTermination`: `bool`
 - `InstanceInitiatedShutdownBehavior`:
-  [ShutdownBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#shutdownbehavior)
+  [ShutdownBehavior](./literals.md#shutdownbehavior)
 - `UserData`: `str`
 - `TagSpecifications`:
-  `List`\[[LaunchTemplateTagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatetagspecificationtypedef)\]
+  `List`\[[LaunchTemplateTagSpecificationTypeDef](./type_defs.md#launchtemplatetagspecificationtypedef)\]
 - `ElasticGpuSpecifications`:
-  `List`\[[ElasticGpuSpecificationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#elasticgpuspecificationresponsetypedef)\]
+  `List`\[[ElasticGpuSpecificationResponseTypeDef](./type_defs.md#elasticgpuspecificationresponsetypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[LaunchTemplateElasticInferenceAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateelasticinferenceacceleratorresponsetypedef)\]
+  `List`\[[LaunchTemplateElasticInferenceAcceleratorResponseTypeDef](./type_defs.md#launchtemplateelasticinferenceacceleratorresponsetypedef)\]
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SecurityGroups`: `List`\[`str`\]
 - `InstanceMarketOptions`:
-  [LaunchTemplateInstanceMarketOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateinstancemarketoptionstypedef)
+  [LaunchTemplateInstanceMarketOptionsTypeDef](./type_defs.md#launchtemplateinstancemarketoptionstypedef)
 - `CreditSpecification`:
-  [CreditSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#creditspecificationtypedef)
+  [CreditSpecificationTypeDef](./type_defs.md#creditspecificationtypedef)
 - `CpuOptions`:
-  [LaunchTemplateCpuOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatecpuoptionstypedef)
+  [LaunchTemplateCpuOptionsTypeDef](./type_defs.md#launchtemplatecpuoptionstypedef)
 - `CapacityReservationSpecification`:
-  [LaunchTemplateCapacityReservationSpecificationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatecapacityreservationspecificationresponsetypedef)
+  [LaunchTemplateCapacityReservationSpecificationResponseTypeDef](./type_defs.md#launchtemplatecapacityreservationspecificationresponsetypedef)
 - `LicenseSpecifications`:
-  `List`\[[LaunchTemplateLicenseConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatelicenseconfigurationtypedef)\]
+  `List`\[[LaunchTemplateLicenseConfigurationTypeDef](./type_defs.md#launchtemplatelicenseconfigurationtypedef)\]
 - `HibernationOptions`:
-  [LaunchTemplateHibernationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplatehibernationoptionstypedef)
+  [LaunchTemplateHibernationOptionsTypeDef](./type_defs.md#launchtemplatehibernationoptionstypedef)
 - `MetadataOptions`:
-  [LaunchTemplateInstanceMetadataOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateinstancemetadataoptionstypedef)
+  [LaunchTemplateInstanceMetadataOptionsTypeDef](./type_defs.md#launchtemplateinstancemetadataoptionstypedef)
 - `EnclaveOptions`:
-  [LaunchTemplateEnclaveOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateenclaveoptionstypedef)
+  [LaunchTemplateEnclaveOptionsTypeDef](./type_defs.md#launchtemplateenclaveoptionstypedef)
 
 ## RestoreAddressToClassicResultTypeDef
 
@@ -10886,8 +10584,7 @@ from mypy_boto3_ec2.type_defs import RestoreAddressToClassicResultTypeDef
 Optional fields:
 
 - `PublicIp`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## RestoreManagedPrefixListVersionResultTypeDef
 
@@ -10898,7 +10595,7 @@ from mypy_boto3_ec2.type_defs import RestoreManagedPrefixListVersionResultTypeDe
 Optional fields:
 
 - `PrefixList`:
-  [ManagedPrefixListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#managedprefixlisttypedef)
+  [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
 
 ## RevokeClientVpnIngressResultTypeDef
 
@@ -10909,7 +10606,7 @@ from mypy_boto3_ec2.type_defs import RevokeClientVpnIngressResultTypeDef
 Optional fields:
 
 - `Status`:
-  [ClientVpnAuthorizationRuleStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnauthorizationrulestatustypedef)
+  [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
 
 ## RevokeSecurityGroupEgressResultTypeDef
 
@@ -10921,7 +10618,7 @@ Optional fields:
 
 - `Return`: `bool`
 - `UnknownIpPermissions`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 ## RevokeSecurityGroupIngressResultTypeDef
 
@@ -10933,7 +10630,7 @@ Optional fields:
 
 - `Return`: `bool`
 - `UnknownIpPermissions`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 ## RouteTableAssociationStateTypeDef
 
@@ -10944,7 +10641,7 @@ from mypy_boto3_ec2.type_defs import RouteTableAssociationStateTypeDef
 Optional fields:
 
 - `State`:
-  [RouteTableAssociationStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#routetableassociationstatecode)
+  [RouteTableAssociationStateCode](./literals.md#routetableassociationstatecode)
 - `StatusMessage`: `str`
 
 ## RouteTableAssociationTypeDef
@@ -10961,7 +10658,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `GatewayId`: `str`
 - `AssociationState`:
-  [RouteTableAssociationStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetableassociationstatetypedef)
+  [RouteTableAssociationStateTypeDef](./type_defs.md#routetableassociationstatetypedef)
 
 ## RouteTableTypeDef
 
@@ -10972,14 +10669,12 @@ from mypy_boto3_ec2.type_defs import RouteTableTypeDef
 Optional fields:
 
 - `Associations`:
-  `List`\[[RouteTableAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetableassociationtypedef)\]
+  `List`\[[RouteTableAssociationTypeDef](./type_defs.md#routetableassociationtypedef)\]
 - `PropagatingVgws`:
-  `List`\[[PropagatingVgwTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#propagatingvgwtypedef)\]
+  `List`\[[PropagatingVgwTypeDef](./type_defs.md#propagatingvgwtypedef)\]
 - `RouteTableId`: `str`
-- `Routes`:
-  `List`\[[RouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#routetypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Routes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 - `OwnerId`: `str`
 
@@ -11003,10 +10698,8 @@ Optional fields:
 - `LocalGatewayId`: `str`
 - `CarrierGatewayId`: `str`
 - `NetworkInterfaceId`: `str`
-- `Origin`:
-  [RouteOrigin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#routeorigin)
-- `State`:
-  [RouteState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#routestate)
+- `Origin`: [RouteOrigin](./literals.md#routeorigin)
+- `State`: [RouteState](./literals.md#routestate)
 - `VpcPeeringConnectionId`: `str`
 
 ## RunInstancesMonitoringEnabledTypeDef
@@ -11073,7 +10766,7 @@ Optional fields:
 - `Platform`: `str`
 - `PurchaseToken`: `str`
 - `Recurrence`:
-  [ScheduledInstanceRecurrenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancerecurrencetypedef)
+  [ScheduledInstanceRecurrenceTypeDef](./type_defs.md#scheduledinstancerecurrencetypedef)
 - `SlotDurationInHours`: `int`
 - `TotalScheduledInstanceHours`: `int`
 
@@ -11123,7 +10816,7 @@ Optional fields:
 - `Platform`: `str`
 - `PreviousSlotEndTime`: `datetime`
 - `Recurrence`:
-  [ScheduledInstanceRecurrenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancerecurrencetypedef)
+  [ScheduledInstanceRecurrenceTypeDef](./type_defs.md#scheduledinstancerecurrencetypedef)
 - `ScheduledInstanceId`: `str`
 - `SlotDurationInHours`: `int`
 - `TermEndDate`: `datetime`
@@ -11140,7 +10833,7 @@ Optional fields:
 
 - `DeviceName`: `str`
 - `Ebs`:
-  [ScheduledInstancesEbsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesebstypedef)
+  [ScheduledInstancesEbsTypeDef](./type_defs.md#scheduledinstancesebstypedef)
 - `NoDevice`: `str`
 - `VirtualName`: `str`
 
@@ -11193,19 +10886,19 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[ScheduledInstancesBlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesblockdevicemappingtypedef)\]
+  `List`\[[ScheduledInstancesBlockDeviceMappingTypeDef](./type_defs.md#scheduledinstancesblockdevicemappingtypedef)\]
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
-  [ScheduledInstancesIamInstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesiaminstanceprofiletypedef)
+  [ScheduledInstancesIamInstanceProfileTypeDef](./type_defs.md#scheduledinstancesiaminstanceprofiletypedef)
 - `InstanceType`: `str`
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
-  [ScheduledInstancesMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesmonitoringtypedef)
+  [ScheduledInstancesMonitoringTypeDef](./type_defs.md#scheduledinstancesmonitoringtypedef)
 - `NetworkInterfaces`:
-  `List`\[[ScheduledInstancesNetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesnetworkinterfacetypedef)\]
+  `List`\[[ScheduledInstancesNetworkInterfaceTypeDef](./type_defs.md#scheduledinstancesnetworkinterfacetypedef)\]
 - `Placement`:
-  [ScheduledInstancesPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesplacementtypedef)
+  [ScheduledInstancesPlacementTypeDef](./type_defs.md#scheduledinstancesplacementtypedef)
 - `RamdiskId`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SubnetId`: `str`
@@ -11236,11 +10929,11 @@ Optional fields:
 - `Groups`: `List`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[ScheduledInstancesIpv6AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesipv6addresstypedef)\]
+  `List`\[[ScheduledInstancesIpv6AddressTypeDef](./type_defs.md#scheduledinstancesipv6addresstypedef)\]
 - `NetworkInterfaceId`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddressConfigs`:
-  `List`\[[ScheduledInstancesPrivateIpAddressConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#scheduledinstancesprivateipaddressconfigtypedef)\]
+  `List`\[[ScheduledInstancesPrivateIpAddressConfigTypeDef](./type_defs.md#scheduledinstancesprivateipaddressconfigtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `SubnetId`: `str`
 
@@ -11275,7 +10968,7 @@ from mypy_boto3_ec2.type_defs import SearchLocalGatewayRoutesResultTypeDef
 Optional fields:
 
 - `Routes`:
-  `List`\[[LocalGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#localgatewayroutetypedef)\]
+  `List`\[[LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef)\]
 - `NextToken`: `str`
 
 ## SearchTransitGatewayMulticastGroupsResultTypeDef
@@ -11287,7 +10980,7 @@ from mypy_boto3_ec2.type_defs import SearchTransitGatewayMulticastGroupsResultTy
 Optional fields:
 
 - `MulticastGroups`:
-  `List`\[[TransitGatewayMulticastGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastgrouptypedef)\]
+  `List`\[[TransitGatewayMulticastGroupTypeDef](./type_defs.md#transitgatewaymulticastgrouptypedef)\]
 - `NextToken`: `str`
 
 ## SearchTransitGatewayRoutesResultTypeDef
@@ -11299,7 +10992,7 @@ from mypy_boto3_ec2.type_defs import SearchTransitGatewayRoutesResultTypeDef
 Optional fields:
 
 - `Routes`:
-  `List`\[[TransitGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayroutetypedef)\]
+  `List`\[[TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)\]
 - `AdditionalRoutesAvailable`: `bool`
 
 ## SecurityGroupIdentifierTypeDef
@@ -11336,13 +11029,12 @@ Optional fields:
 - `Description`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `OwnerId`: `str`
 - `GroupId`: `str`
 - `IpPermissionsEgress`:
-  `List`\[[IpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ippermissiontypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 
 ## ServiceConfigurationTypeDef
@@ -11354,11 +11046,10 @@ from mypy_boto3_ec2.type_defs import ServiceConfigurationTypeDef
 Optional fields:
 
 - `ServiceType`:
-  `List`\[[ServiceTypeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#servicetypedetailtypedef)\]
+  `List`\[[ServiceTypeDetailTypeDef](./type_defs.md#servicetypedetailtypedef)\]
 - `ServiceId`: `str`
 - `ServiceName`: `str`
-- `ServiceState`:
-  [ServiceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#servicestate)
+- `ServiceState`: [ServiceState](./literals.md#servicestate)
 - `AvailabilityZones`: `List`\[`str`\]
 - `AcceptanceRequired`: `bool`
 - `ManagesVpcEndpoints`: `bool`
@@ -11367,9 +11058,8 @@ Optional fields:
 - `BaseEndpointDnsNames`: `List`\[`str`\]
 - `PrivateDnsName`: `str`
 - `PrivateDnsNameConfiguration`:
-  [PrivateDnsNameConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privatednsnameconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [PrivateDnsNameConfigurationTypeDef](./type_defs.md#privatednsnameconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ServiceDetailTypeDef
 
@@ -11382,20 +11072,18 @@ Optional fields:
 - `ServiceName`: `str`
 - `ServiceId`: `str`
 - `ServiceType`:
-  `List`\[[ServiceTypeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#servicetypedetailtypedef)\]
+  `List`\[[ServiceTypeDetailTypeDef](./type_defs.md#servicetypedetailtypedef)\]
 - `AvailabilityZones`: `List`\[`str`\]
 - `Owner`: `str`
 - `BaseEndpointDnsNames`: `List`\[`str`\]
 - `PrivateDnsName`: `str`
 - `PrivateDnsNames`:
-  `List`\[[PrivateDnsDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#privatednsdetailstypedef)\]
+  `List`\[[PrivateDnsDetailsTypeDef](./type_defs.md#privatednsdetailstypedef)\]
 - `VpcEndpointPolicySupported`: `bool`
 - `AcceptanceRequired`: `bool`
 - `ManagesVpcEndpoints`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
-- `PrivateDnsNameVerificationState`:
-  [DnsNameState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnsnamestate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `PrivateDnsNameVerificationState`: [DnsNameState](./literals.md#dnsnamestate)
 
 ## ServiceTypeDetailTypeDef
 
@@ -11405,8 +11093,7 @@ from mypy_boto3_ec2.type_defs import ServiceTypeDetailTypeDef
 
 Optional fields:
 
-- `ServiceType`:
-  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#servicetype)
+- `ServiceType`: [ServiceType](./literals.md#servicetype)
 
 ## SlotDateTimeRangeRequestTypeDef
 
@@ -11448,7 +11135,7 @@ Optional fields:
 - `StatusMessage`: `str`
 - `Url`: `str`
 - `UserBucket`:
-  [UserBucketDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#userbucketdetailstypedef)
+  [UserBucketDetailsTypeDef](./type_defs.md#userbucketdetailstypedef)
 
 ## SnapshotDiskContainerTypeDef
 
@@ -11461,8 +11148,7 @@ Optional fields:
 - `Description`: `str`
 - `Format`: `str`
 - `Url`: `str`
-- `UserBucket`:
-  [UserBucketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#userbuckettypedef)
+- `UserBucket`: [UserBucketTypeDef](./type_defs.md#userbuckettypedef)
 
 ## SnapshotInfoTypeDef
 
@@ -11473,12 +11159,10 @@ from mypy_boto3_ec2.type_defs import SnapshotInfoTypeDef
 Optional fields:
 
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Encrypted`: `bool`
 - `VolumeId`: `str`
-- `State`:
-  [SnapshotState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#snapshotstate)
+- `State`: [SnapshotState](./literals.md#snapshotstate)
 - `VolumeSize`: `int`
 - `StartTime`: `datetime`
 - `Progress`: `str`
@@ -11505,7 +11189,7 @@ Optional fields:
 - `StatusMessage`: `str`
 - `Url`: `str`
 - `UserBucket`:
-  [UserBucketDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#userbucketdetailstypedef)
+  [UserBucketDetailsTypeDef](./type_defs.md#userbucketdetailstypedef)
 
 ## SnapshotTypeDef
 
@@ -11523,15 +11207,13 @@ Optional fields:
 - `Progress`: `str`
 - `SnapshotId`: `str`
 - `StartTime`: `datetime`
-- `State`:
-  [SnapshotState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#snapshotstate)
+- `State`: [SnapshotState](./literals.md#snapshotstate)
 - `StateMessage`: `str`
 - `VolumeId`: `str`
 - `VolumeSize`: `int`
 - `OwnerAlias`: `str`
 - `OutpostArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SpotCapacityRebalanceTypeDef
 
@@ -11541,7 +11223,8 @@ from mypy_boto3_ec2.type_defs import SpotCapacityRebalanceTypeDef
 
 Optional fields:
 
-- `ReplacementStrategy`: `Literal['launch']`
+- `ReplacementStrategy`: `Literal['launch']` (see
+  [ReplacementStrategy](./literals.md#replacementstrategy))
 
 ## SpotDatafeedSubscriptionTypeDef
 
@@ -11553,11 +11236,10 @@ Optional fields:
 
 - `Bucket`: `str`
 - `Fault`:
-  [SpotInstanceStateFaultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotinstancestatefaulttypedef)
+  [SpotInstanceStateFaultTypeDef](./type_defs.md#spotinstancestatefaulttypedef)
 - `OwnerId`: `str`
 - `Prefix`: `str`
-- `State`:
-  [DatafeedSubscriptionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#datafeedsubscriptionstate)
+- `State`: [DatafeedSubscriptionState](./literals.md#datafeedsubscriptionstate)
 
 ## SpotFleetLaunchSpecificationTypeDef
 
@@ -11568,31 +11250,29 @@ from mypy_boto3_ec2.type_defs import SpotFleetLaunchSpecificationTypeDef
 Optional fields:
 
 - `SecurityGroups`:
-  `List`\[[GroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#groupidentifiertypedef)\]
+  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
 - `AddressingType`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
-  [IamInstanceProfileSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#iaminstanceprofilespecificationtypedef)
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
 - `ImageId`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
-  [SpotFleetMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotfleetmonitoringtypedef)
+  [SpotFleetMonitoringTypeDef](./type_defs.md#spotfleetmonitoringtypedef)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancenetworkinterfacespecificationtypedef)\]
-- `Placement`:
-  [SpotPlacementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotplacementtypedef)
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+- `Placement`: [SpotPlacementTypeDef](./type_defs.md#spotplacementtypedef)
 - `RamdiskId`: `str`
 - `SpotPrice`: `str`
 - `SubnetId`: `str`
 - `UserData`: `str`
 - `WeightedCapacity`: `float`
 - `TagSpecifications`:
-  `List`\[[SpotFleetTagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotfleettagspecificationtypedef)\]
+  `List`\[[SpotFleetTagSpecificationTypeDef](./type_defs.md#spotfleettagspecificationtypedef)\]
 
 ## SpotFleetMonitoringTypeDef
 
@@ -11617,38 +11297,36 @@ Required fields:
 
 Optional fields:
 
-- `AllocationStrategy`:
-  [AllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#allocationstrategy)
+- `AllocationStrategy`: [AllocationStrategy](./literals.md#allocationstrategy)
 - `OnDemandAllocationStrategy`:
-  [OnDemandAllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ondemandallocationstrategy)
+  [OnDemandAllocationStrategy](./literals.md#ondemandallocationstrategy)
 - `SpotMaintenanceStrategies`:
-  [SpotMaintenanceStrategiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotmaintenancestrategiestypedef)
+  [SpotMaintenanceStrategiesTypeDef](./type_defs.md#spotmaintenancestrategiestypedef)
 - `ClientToken`: `str`
 - `ExcessCapacityTerminationPolicy`:
-  [ExcessCapacityTerminationPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#excesscapacityterminationpolicy)
+  [ExcessCapacityTerminationPolicy](./literals.md#excesscapacityterminationpolicy)
 - `FulfilledCapacity`: `float`
 - `OnDemandFulfilledCapacity`: `float`
 - `LaunchSpecifications`:
-  `List`\[[SpotFleetLaunchSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotfleetlaunchspecificationtypedef)\]
+  `List`\[[SpotFleetLaunchSpecificationTypeDef](./type_defs.md#spotfleetlaunchspecificationtypedef)\]
 - `LaunchTemplateConfigs`:
-  `List`\[[LaunchTemplateConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchtemplateconfigtypedef)\]
+  `List`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
 - `SpotPrice`: `str`
 - `OnDemandTargetCapacity`: `int`
 - `OnDemandMaxTotalPrice`: `str`
 - `SpotMaxTotalPrice`: `str`
 - `TerminateInstancesWithExpiration`: `bool`
-- `Type`:
-  [FleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#fleettype)
+- `Type`: [FleetType](./literals.md#fleettype)
 - `ValidFrom`: `datetime`
 - `ValidUntil`: `datetime`
 - `ReplaceUnhealthyInstances`: `bool`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceinterruptionbehavior)
+  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
 - `LoadBalancersConfig`:
-  [LoadBalancersConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#loadbalancersconfigtypedef)
+  [LoadBalancersConfigTypeDef](./type_defs.md#loadbalancersconfigtypedef)
 - `InstancePoolsToUseCount`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagspecificationtypedef)\]
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## SpotFleetRequestConfigTypeDef
 
@@ -11658,16 +11336,13 @@ from mypy_boto3_ec2.type_defs import SpotFleetRequestConfigTypeDef
 
 Optional fields:
 
-- `ActivityStatus`:
-  [ActivityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#activitystatus)
+- `ActivityStatus`: [ActivityStatus](./literals.md#activitystatus)
 - `CreateTime`: `datetime`
 - `SpotFleetRequestConfig`:
-  [SpotFleetRequestConfigDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotfleetrequestconfigdatatypedef)
+  [SpotFleetRequestConfigDataTypeDef](./type_defs.md#spotfleetrequestconfigdatatypedef)
 - `SpotFleetRequestId`: `str`
-- `SpotFleetRequestState`:
-  [BatchState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#batchstate)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `SpotFleetRequestState`: [BatchState](./literals.md#batchstate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SpotFleetTagSpecificationTypeDef
 
@@ -11677,10 +11352,8 @@ from mypy_boto3_ec2.type_defs import SpotFleetTagSpecificationTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#resourcetype)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SpotInstanceRequestTypeDef
 
@@ -11695,28 +11368,24 @@ Optional fields:
 - `BlockDurationMinutes`: `int`
 - `CreateTime`: `datetime`
 - `Fault`:
-  [SpotInstanceStateFaultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotinstancestatefaulttypedef)
+  [SpotInstanceStateFaultTypeDef](./type_defs.md#spotinstancestatefaulttypedef)
 - `InstanceId`: `str`
 - `LaunchGroup`: `str`
 - `LaunchSpecification`:
-  [LaunchSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#launchspecificationtypedef)
+  [LaunchSpecificationTypeDef](./type_defs.md#launchspecificationtypedef)
 - `LaunchedAvailabilityZone`: `str`
 - `ProductDescription`:
-  [RIProductDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#riproductdescription)
+  [RIProductDescription](./literals.md#riproductdescription)
 - `SpotInstanceRequestId`: `str`
 - `SpotPrice`: `str`
-- `State`:
-  [SpotInstanceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstancestate)
-- `Status`:
-  [SpotInstanceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotinstancestatustypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
-- `Type`:
-  [SpotInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstancetype)
+- `State`: [SpotInstanceState](./literals.md#spotinstancestate)
+- `Status`: [SpotInstanceStatusTypeDef](./type_defs.md#spotinstancestatustypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Type`: [SpotInstanceType](./literals.md#spotinstancetype)
 - `ValidFrom`: `datetime`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceinterruptionbehavior)
+  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
 
 ## SpotInstanceStateFaultTypeDef
 
@@ -11750,7 +11419,7 @@ from mypy_boto3_ec2.type_defs import SpotMaintenanceStrategiesTypeDef
 Optional fields:
 
 - `CapacityRebalance`:
-  [SpotCapacityRebalanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#spotcapacityrebalancetypedef)
+  [SpotCapacityRebalanceTypeDef](./type_defs.md#spotcapacityrebalancetypedef)
 
 ## SpotMarketOptionsTypeDef
 
@@ -11761,12 +11430,11 @@ from mypy_boto3_ec2.type_defs import SpotMarketOptionsTypeDef
 Optional fields:
 
 - `MaxPrice`: `str`
-- `SpotInstanceType`:
-  [SpotInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstancetype)
+- `SpotInstanceType`: [SpotInstanceType](./literals.md#spotinstancetype)
 - `BlockDurationMinutes`: `int`
 - `ValidUntil`: `datetime`
 - `InstanceInterruptionBehavior`:
-  [InstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instanceinterruptionbehavior)
+  [InstanceInterruptionBehavior](./literals.md#instanceinterruptionbehavior)
 
 ## SpotOptionsRequestTypeDef
 
@@ -11777,11 +11445,11 @@ from mypy_boto3_ec2.type_defs import SpotOptionsRequestTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [SpotAllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotallocationstrategy)
+  [SpotAllocationStrategy](./literals.md#spotallocationstrategy)
 - `MaintenanceStrategies`:
-  [FleetSpotMaintenanceStrategiesRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetspotmaintenancestrategiesrequesttypedef)
+  [FleetSpotMaintenanceStrategiesRequestTypeDef](./type_defs.md#fleetspotmaintenancestrategiesrequesttypedef)
 - `InstanceInterruptionBehavior`:
-  [SpotInstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstanceinterruptionbehavior)
+  [SpotInstanceInterruptionBehavior](./literals.md#spotinstanceinterruptionbehavior)
 - `InstancePoolsToUseCount`: `int`
 - `SingleInstanceType`: `bool`
 - `SingleAvailabilityZone`: `bool`
@@ -11797,11 +11465,11 @@ from mypy_boto3_ec2.type_defs import SpotOptionsTypeDef
 Optional fields:
 
 - `AllocationStrategy`:
-  [SpotAllocationStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotallocationstrategy)
+  [SpotAllocationStrategy](./literals.md#spotallocationstrategy)
 - `MaintenanceStrategies`:
-  [FleetSpotMaintenanceStrategiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#fleetspotmaintenancestrategiestypedef)
+  [FleetSpotMaintenanceStrategiesTypeDef](./type_defs.md#fleetspotmaintenancestrategiestypedef)
 - `InstanceInterruptionBehavior`:
-  [SpotInstanceInterruptionBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#spotinstanceinterruptionbehavior)
+  [SpotInstanceInterruptionBehavior](./literals.md#spotinstanceinterruptionbehavior)
 - `InstancePoolsToUseCount`: `int`
 - `SingleInstanceType`: `bool`
 - `SingleAvailabilityZone`: `bool`
@@ -11818,8 +11486,7 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `GroupName`: `str`
-- `Tenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `Tenancy`: [Tenancy](./literals.md#tenancy)
 
 ## SpotPriceTypeDef
 
@@ -11830,10 +11497,9 @@ from mypy_boto3_ec2.type_defs import SpotPriceTypeDef
 Optional fields:
 
 - `AvailabilityZone`: `str`
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `ProductDescription`:
-  [RIProductDescription](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#riproductdescription)
+  [RIProductDescription](./literals.md#riproductdescription)
 - `SpotPrice`: `str`
 - `Timestamp`: `datetime`
 
@@ -11851,7 +11517,7 @@ Optional fields:
 - `PrefixListIds`: `List`\[`str`\]
 - `ToPort`: `int`
 - `UserIdGroupPairs`:
-  `List`\[[UserIdGroupPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#useridgrouppairtypedef)\]
+  `List`\[[UserIdGroupPairTypeDef](./type_defs.md#useridgrouppairtypedef)\]
 
 ## StaleSecurityGroupTypeDef
 
@@ -11865,9 +11531,9 @@ Optional fields:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `StaleIpPermissions`:
-  `List`\[[StaleIpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#staleippermissiontypedef)\]
+  `List`\[[StaleIpPermissionTypeDef](./type_defs.md#staleippermissiontypedef)\]
 - `StaleIpPermissionsEgress`:
-  `List`\[[StaleIpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#staleippermissiontypedef)\]
+  `List`\[[StaleIpPermissionTypeDef](./type_defs.md#staleippermissiontypedef)\]
 - `VpcId`: `str`
 
 ## StartInstancesResultTypeDef
@@ -11879,7 +11545,7 @@ from mypy_boto3_ec2.type_defs import StartInstancesResultTypeDef
 Optional fields:
 
 - `StartingInstances`:
-  `List`\[[InstanceStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatechangetypedef)\]
+  `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
 
 ## StartNetworkInsightsAnalysisResultTypeDef
 
@@ -11890,7 +11556,7 @@ from mypy_boto3_ec2.type_defs import StartNetworkInsightsAnalysisResultTypeDef
 Optional fields:
 
 - `NetworkInsightsAnalysis`:
-  [NetworkInsightsAnalysisTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#networkinsightsanalysistypedef)
+  [NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef)
 
 ## StartVpcEndpointServicePrivateDnsVerificationResultTypeDef
 
@@ -11922,7 +11588,7 @@ from mypy_boto3_ec2.type_defs import StopInstancesResultTypeDef
 Optional fields:
 
 - `StoppingInstances`:
-  `List`\[[InstanceStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatechangetypedef)\]
+  `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
 
 ## StorageLocationTypeDef
 
@@ -11943,8 +11609,7 @@ from mypy_boto3_ec2.type_defs import StorageTypeDef
 
 Optional fields:
 
-- `S3`:
-  [S3StorageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#s3storagetypedef)
+- `S3`: [S3StorageTypeDef](./type_defs.md#s3storagetypedef)
 
 ## StoreImageTaskResultTypeDef
 
@@ -11972,7 +11637,7 @@ Optional fields:
 
 - `SubnetId`: `str`
 - `State`:
-  [TransitGatewayMulitcastDomainAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewaymulitcastdomainassociationstate)
+  [TransitGatewayMulitcastDomainAssociationState](./literals.md#transitgatewaymulitcastdomainassociationstate)
 
 ## SubnetCidrBlockStateTypeDef
 
@@ -11982,8 +11647,7 @@ from mypy_boto3_ec2.type_defs import SubnetCidrBlockStateTypeDef
 
 Optional fields:
 
-- `State`:
-  [SubnetCidrBlockStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#subnetcidrblockstatecode)
+- `State`: [SubnetCidrBlockStateCode](./literals.md#subnetcidrblockstatecode)
 - `StatusMessage`: `str`
 
 ## SubnetIpv6CidrBlockAssociationTypeDef
@@ -11997,7 +11661,7 @@ Optional fields:
 - `AssociationId`: `str`
 - `Ipv6CidrBlock`: `str`
 - `Ipv6CidrBlockState`:
-  [SubnetCidrBlockStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnetcidrblockstatetypedef)
+  [SubnetCidrBlockStateTypeDef](./type_defs.md#subnetcidrblockstatetypedef)
 
 ## SubnetTypeDef
 
@@ -12015,16 +11679,14 @@ Optional fields:
 - `MapPublicIpOnLaunch`: `bool`
 - `MapCustomerOwnedIpOnLaunch`: `bool`
 - `CustomerOwnedIpv4Pool`: `str`
-- `State`:
-  [SubnetState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#subnetstate)
+- `State`: [SubnetState](./literals.md#subnetstate)
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `OwnerId`: `str`
 - `AssignIpv6AddressOnCreation`: `bool`
 - `Ipv6CidrBlockAssociationSet`:
-  `List`\[[SubnetIpv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnetipv6cidrblockassociationtypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[SubnetIpv6CidrBlockAssociationTypeDef](./type_defs.md#subnetipv6cidrblockassociationtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SubnetArn`: `str`
 - `OutpostArn`: `str`
 
@@ -12058,8 +11720,7 @@ Optional fields:
 
 - `Key`: `str`
 - `ResourceId`: `str`
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `Value`: `str`
 
 ## TagSpecificationTypeDef
@@ -12070,10 +11731,8 @@ from mypy_boto3_ec2.type_defs import TagSpecificationTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#resourcetype)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -12104,7 +11763,7 @@ Optional fields:
 - `OnDemandTargetCapacity`: `int`
 - `SpotTargetCapacity`: `int`
 - `DefaultTargetCapacityType`:
-  [DefaultTargetCapacityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaulttargetcapacitytype)
+  [DefaultTargetCapacityType](./literals.md#defaulttargetcapacitytype)
 
 ## TargetCapacitySpecificationTypeDef
 
@@ -12118,7 +11777,7 @@ Optional fields:
 - `OnDemandTargetCapacity`: `int`
 - `SpotTargetCapacity`: `int`
 - `DefaultTargetCapacityType`:
-  [DefaultTargetCapacityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaulttargetcapacitytype)
+  [DefaultTargetCapacityType](./literals.md#defaulttargetcapacitytype)
 
 ## TargetConfigurationRequestTypeDef
 
@@ -12164,7 +11823,7 @@ from mypy_boto3_ec2.type_defs import TargetGroupsConfigTypeDef
 Optional fields:
 
 - `TargetGroups`:
-  `List`\[[TargetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#targetgrouptypedef)\]
+  `List`\[[TargetGroupTypeDef](./type_defs.md#targetgrouptypedef)\]
 
 ## TargetNetworkTypeDef
 
@@ -12178,8 +11837,7 @@ Optional fields:
 - `VpcId`: `str`
 - `TargetNetworkId`: `str`
 - `ClientVpnEndpointId`: `str`
-- `Status`:
-  [AssociationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#associationstatustypedef)
+- `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
 - `SecurityGroups`: `List`\[`str`\]
 
 ## TargetReservationValueTypeDef
@@ -12191,9 +11849,9 @@ from mypy_boto3_ec2.type_defs import TargetReservationValueTypeDef
 Optional fields:
 
 - `ReservationValue`:
-  [ReservationValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#reservationvaluetypedef)
+  [ReservationValueTypeDef](./type_defs.md#reservationvaluetypedef)
 - `TargetConfiguration`:
-  [TargetConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#targetconfigurationtypedef)
+  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 
 ## TerminateClientVpnConnectionsResultTypeDef
 
@@ -12206,7 +11864,7 @@ Optional fields:
 - `ClientVpnEndpointId`: `str`
 - `Username`: `str`
 - `ConnectionStatuses`:
-  `List`\[[TerminateConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#terminateconnectionstatustypedef)\]
+  `List`\[[TerminateConnectionStatusTypeDef](./type_defs.md#terminateconnectionstatustypedef)\]
 
 ## TerminateConnectionStatusTypeDef
 
@@ -12218,9 +11876,9 @@ Optional fields:
 
 - `ConnectionId`: `str`
 - `PreviousStatus`:
-  [ClientVpnConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnconnectionstatustypedef)
+  [ClientVpnConnectionStatusTypeDef](./type_defs.md#clientvpnconnectionstatustypedef)
 - `CurrentStatus`:
-  [ClientVpnConnectionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#clientvpnconnectionstatustypedef)
+  [ClientVpnConnectionStatusTypeDef](./type_defs.md#clientvpnconnectionstatustypedef)
 
 ## TerminateInstancesResultTypeDef
 
@@ -12231,7 +11889,7 @@ from mypy_boto3_ec2.type_defs import TerminateInstancesResultTypeDef
 Optional fields:
 
 - `TerminatingInstances`:
-  `List`\[[InstanceStateChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancestatechangetypedef)\]
+  `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
 
 ## TrafficMirrorFilterRuleTypeDef
 
@@ -12243,16 +11901,14 @@ Optional fields:
 
 - `TrafficMirrorFilterRuleId`: `str`
 - `TrafficMirrorFilterId`: `str`
-- `TrafficDirection`:
-  [TrafficDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#trafficdirection)
+- `TrafficDirection`: [TrafficDirection](./literals.md#trafficdirection)
 - `RuleNumber`: `int`
-- `RuleAction`:
-  [TrafficMirrorRuleAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#trafficmirrorruleaction)
+- `RuleAction`: [TrafficMirrorRuleAction](./literals.md#trafficmirrorruleaction)
 - `Protocol`: `int`
 - `DestinationPortRange`:
-  [TrafficMirrorPortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorportrangetypedef)
+  [TrafficMirrorPortRangeTypeDef](./type_defs.md#trafficmirrorportrangetypedef)
 - `SourcePortRange`:
-  [TrafficMirrorPortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorportrangetypedef)
+  [TrafficMirrorPortRangeTypeDef](./type_defs.md#trafficmirrorportrangetypedef)
 - `DestinationCidrBlock`: `str`
 - `SourceCidrBlock`: `str`
 - `Description`: `str`
@@ -12267,13 +11923,13 @@ Optional fields:
 
 - `TrafficMirrorFilterId`: `str`
 - `IngressFilterRules`:
-  `List`\[[TrafficMirrorFilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfilterruletypedef)\]
+  `List`\[[TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)\]
 - `EgressFilterRules`:
-  `List`\[[TrafficMirrorFilterRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#trafficmirrorfilterruletypedef)\]
-- `NetworkServices`: `List`\[`Literal['amazon-dns']`\]
+  `List`\[[TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)\]
+- `NetworkServices`: `List`\[`Literal['amazon-dns']` (see
+  [TrafficMirrorNetworkService](./literals.md#trafficmirrornetworkservice))\]
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TrafficMirrorPortRangeRequestTypeDef
 
@@ -12314,8 +11970,7 @@ Optional fields:
 - `SessionNumber`: `int`
 - `VirtualNetworkId`: `int`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TrafficMirrorTargetTypeDef
 
@@ -12328,12 +11983,10 @@ Optional fields:
 - `TrafficMirrorTargetId`: `str`
 - `NetworkInterfaceId`: `str`
 - `NetworkLoadBalancerArn`: `str`
-- `Type`:
-  [TrafficMirrorTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#trafficmirrortargettype)
+- `Type`: [TrafficMirrorTargetType](./literals.md#trafficmirrortargettype)
 - `Description`: `str`
 - `OwnerId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayAssociationTypeDef
 
@@ -12347,9 +12000,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `State`:
-  [TransitGatewayAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayassociationstate)
+  [TransitGatewayAssociationState](./literals.md#transitgatewayassociationstate)
 
 ## TransitGatewayAttachmentAssociationTypeDef
 
@@ -12361,7 +12014,7 @@ Optional fields:
 
 - `TransitGatewayRouteTableId`: `str`
 - `State`:
-  [TransitGatewayAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayassociationstate)
+  [TransitGatewayAssociationState](./literals.md#transitgatewayassociationstate)
 
 ## TransitGatewayAttachmentBgpConfigurationTypeDef
 
@@ -12375,8 +12028,7 @@ Optional fields:
 - `PeerAsn`: `int`
 - `TransitGatewayAddress`: `str`
 - `PeerAddress`: `str`
-- `BgpStatus`:
-  [BgpStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#bgpstatus)
+- `BgpStatus`: [BgpStatus](./literals.md#bgpstatus)
 
 ## TransitGatewayAttachmentPropagationTypeDef
 
@@ -12388,7 +12040,7 @@ Optional fields:
 
 - `TransitGatewayRouteTableId`: `str`
 - `State`:
-  [TransitGatewayPropagationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewaypropagationstate)
+  [TransitGatewayPropagationState](./literals.md#transitgatewaypropagationstate)
 
 ## TransitGatewayAttachmentTypeDef
 
@@ -12403,15 +12055,14 @@ Optional fields:
 - `TransitGatewayOwnerId`: `str`
 - `ResourceOwnerId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `ResourceId`: `str`
 - `State`:
-  [TransitGatewayAttachmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
 - `Association`:
-  [TransitGatewayAttachmentAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayattachmentassociationtypedef)
+  [TransitGatewayAttachmentAssociationTypeDef](./type_defs.md#transitgatewayattachmentassociationtypedef)
 - `CreationTime`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayConnectOptionsTypeDef
 
@@ -12421,7 +12072,7 @@ from mypy_boto3_ec2.type_defs import TransitGatewayConnectOptionsTypeDef
 
 Optional fields:
 
-- `Protocol`: `Literal['gre']`
+- `Protocol`: `Literal['gre']` (see [ProtocolValue](./literals.md#protocolvalue))
 
 ## TransitGatewayConnectPeerConfigurationTypeDef
 
@@ -12434,9 +12085,9 @@ Optional fields:
 - `TransitGatewayAddress`: `str`
 - `PeerAddress`: `str`
 - `InsideCidrBlocks`: `List`\[`str`\]
-- `Protocol`: `Literal['gre']`
+- `Protocol`: `Literal['gre']` (see [ProtocolValue](./literals.md#protocolvalue))
 - `BgpConfigurations`:
-  `List`\[[TransitGatewayAttachmentBgpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayattachmentbgpconfigurationtypedef)\]
+  `List`\[[TransitGatewayAttachmentBgpConfigurationTypeDef](./type_defs.md#transitgatewayattachmentbgpconfigurationtypedef)\]
 
 ## TransitGatewayConnectPeerTypeDef
 
@@ -12449,12 +12100,11 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `TransitGatewayConnectPeerId`: `str`
 - `State`:
-  [TransitGatewayConnectPeerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayconnectpeerstate)
+  [TransitGatewayConnectPeerState](./literals.md#transitgatewayconnectpeerstate)
 - `CreationTime`: `datetime`
 - `ConnectPeerConfiguration`:
-  [TransitGatewayConnectPeerConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnectpeerconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [TransitGatewayConnectPeerConfigurationTypeDef](./type_defs.md#transitgatewayconnectpeerconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayConnectRequestBgpOptionsTypeDef
 
@@ -12478,12 +12128,11 @@ Optional fields:
 - `TransportTransitGatewayAttachmentId`: `str`
 - `TransitGatewayId`: `str`
 - `State`:
-  [TransitGatewayAttachmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
 - `CreationTime`: `datetime`
 - `Options`:
-  [TransitGatewayConnectOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayconnectoptionstypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [TransitGatewayConnectOptionsTypeDef](./type_defs.md#transitgatewayconnectoptionstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayMulticastDeregisteredGroupMembersTypeDef
 
@@ -12520,10 +12169,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `ResourceOwnerId`: `str`
-- `Subnet`:
-  [SubnetAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnetassociationtypedef)
+- `Subnet`: [SubnetAssociationTypeDef](./type_defs.md#subnetassociationtypedef)
 
 ## TransitGatewayMulticastDomainAssociationsTypeDef
 
@@ -12537,10 +12185,10 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `ResourceOwnerId`: `str`
 - `Subnets`:
-  `List`\[[SubnetAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#subnetassociationtypedef)\]
+  `List`\[[SubnetAssociationTypeDef](./type_defs.md#subnetassociationtypedef)\]
 
 ## TransitGatewayMulticastDomainOptionsTypeDef
 
@@ -12550,12 +12198,11 @@ from mypy_boto3_ec2.type_defs import TransitGatewayMulticastDomainOptionsTypeDef
 
 Optional fields:
 
-- `Igmpv2Support`:
-  [Igmpv2SupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#igmpv2supportvalue)
+- `Igmpv2Support`: [Igmpv2SupportValue](./literals.md#igmpv2supportvalue)
 - `StaticSourcesSupport`:
-  [StaticSourcesSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#staticsourcessupportvalue)
+  [StaticSourcesSupportValue](./literals.md#staticsourcessupportvalue)
 - `AutoAcceptSharedAssociations`:
-  [AutoAcceptSharedAssociationsValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#autoacceptsharedassociationsvalue)
+  [AutoAcceptSharedAssociationsValue](./literals.md#autoacceptsharedassociationsvalue)
 
 ## TransitGatewayMulticastDomainTypeDef
 
@@ -12570,12 +12217,11 @@ Optional fields:
 - `TransitGatewayMulticastDomainArn`: `str`
 - `OwnerId`: `str`
 - `Options`:
-  [TransitGatewayMulticastDomainOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewaymulticastdomainoptionstypedef)
+  [TransitGatewayMulticastDomainOptionsTypeDef](./type_defs.md#transitgatewaymulticastdomainoptionstypedef)
 - `State`:
-  [TransitGatewayMulticastDomainState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewaymulticastdomainstate)
+  [TransitGatewayMulticastDomainState](./literals.md#transitgatewaymulticastdomainstate)
 - `CreationTime`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayMulticastGroupTypeDef
 
@@ -12590,15 +12236,13 @@ Optional fields:
 - `SubnetId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `ResourceOwnerId`: `str`
 - `NetworkInterfaceId`: `str`
 - `GroupMember`: `bool`
 - `GroupSource`: `bool`
-- `MemberType`:
-  [MembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#membershiptype)
-- `SourceType`:
-  [MembershipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#membershiptype)
+- `MemberType`: [MembershipType](./literals.md#membershiptype)
+- `SourceType`: [MembershipType](./literals.md#membershiptype)
 
 ## TransitGatewayMulticastRegisteredGroupMembersTypeDef
 
@@ -12635,19 +12279,17 @@ Optional fields:
 - `AmazonSideAsn`: `int`
 - `TransitGatewayCidrBlocks`: `List`\[`str`\]
 - `AutoAcceptSharedAttachments`:
-  [AutoAcceptSharedAttachmentsValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#autoacceptsharedattachmentsvalue)
+  [AutoAcceptSharedAttachmentsValue](./literals.md#autoacceptsharedattachmentsvalue)
 - `DefaultRouteTableAssociation`:
-  [DefaultRouteTableAssociationValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaultroutetableassociationvalue)
+  [DefaultRouteTableAssociationValue](./literals.md#defaultroutetableassociationvalue)
 - `AssociationDefaultRouteTableId`: `str`
 - `DefaultRouteTablePropagation`:
-  [DefaultRouteTablePropagationValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaultroutetablepropagationvalue)
+  [DefaultRouteTablePropagationValue](./literals.md#defaultroutetablepropagationvalue)
 - `PropagationDefaultRouteTableId`: `str`
-- `VpnEcmpSupport`:
-  [VpnEcmpSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpnecmpsupportvalue)
-- `DnsSupport`:
-  [DnsSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnssupportvalue)
+- `VpnEcmpSupport`: [VpnEcmpSupportValue](./literals.md#vpnecmpsupportvalue)
+- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
 - `MulticastSupport`:
-  [MulticastSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#multicastsupportvalue)
+  [MulticastSupportValue](./literals.md#multicastsupportvalue)
 
 ## TransitGatewayPeeringAttachmentTypeDef
 
@@ -12659,16 +12301,15 @@ Optional fields:
 
 - `TransitGatewayAttachmentId`: `str`
 - `RequesterTgwInfo`:
-  [PeeringTgwInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#peeringtgwinfotypedef)
+  [PeeringTgwInfoTypeDef](./type_defs.md#peeringtgwinfotypedef)
 - `AccepterTgwInfo`:
-  [PeeringTgwInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#peeringtgwinfotypedef)
+  [PeeringTgwInfoTypeDef](./type_defs.md#peeringtgwinfotypedef)
 - `Status`:
-  [PeeringAttachmentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#peeringattachmentstatustypedef)
+  [PeeringAttachmentStatusTypeDef](./type_defs.md#peeringattachmentstatustypedef)
 - `State`:
-  [TransitGatewayAttachmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
 - `CreationTime`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayPrefixListAttachmentTypeDef
 
@@ -12680,7 +12321,7 @@ Optional fields:
 
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `ResourceId`: `str`
 
 ## TransitGatewayPrefixListReferenceTypeDef
@@ -12695,10 +12336,10 @@ Optional fields:
 - `PrefixListId`: `str`
 - `PrefixListOwnerId`: `str`
 - `State`:
-  [TransitGatewayPrefixListReferenceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayprefixlistreferencestate)
+  [TransitGatewayPrefixListReferenceState](./literals.md#transitgatewayprefixlistreferencestate)
 - `Blackhole`: `bool`
 - `TransitGatewayAttachment`:
-  [TransitGatewayPrefixListAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayprefixlistattachmenttypedef)
+  [TransitGatewayPrefixListAttachmentTypeDef](./type_defs.md#transitgatewayprefixlistattachmenttypedef)
 
 ## TransitGatewayPropagationTypeDef
 
@@ -12711,10 +12352,10 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `TransitGatewayRouteTableId`: `str`
 - `State`:
-  [TransitGatewayPropagationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewaypropagationstate)
+  [TransitGatewayPropagationState](./literals.md#transitgatewaypropagationstate)
 
 ## TransitGatewayRequestOptionsTypeDef
 
@@ -12726,17 +12367,15 @@ Optional fields:
 
 - `AmazonSideAsn`: `int`
 - `AutoAcceptSharedAttachments`:
-  [AutoAcceptSharedAttachmentsValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#autoacceptsharedattachmentsvalue)
+  [AutoAcceptSharedAttachmentsValue](./literals.md#autoacceptsharedattachmentsvalue)
 - `DefaultRouteTableAssociation`:
-  [DefaultRouteTableAssociationValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaultroutetableassociationvalue)
+  [DefaultRouteTableAssociationValue](./literals.md#defaultroutetableassociationvalue)
 - `DefaultRouteTablePropagation`:
-  [DefaultRouteTablePropagationValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#defaultroutetablepropagationvalue)
-- `VpnEcmpSupport`:
-  [VpnEcmpSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpnecmpsupportvalue)
-- `DnsSupport`:
-  [DnsSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnssupportvalue)
+  [DefaultRouteTablePropagationValue](./literals.md#defaultroutetablepropagationvalue)
+- `VpnEcmpSupport`: [VpnEcmpSupportValue](./literals.md#vpnecmpsupportvalue)
+- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
 - `MulticastSupport`:
-  [MulticastSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#multicastsupportvalue)
+  [MulticastSupportValue](./literals.md#multicastsupportvalue)
 - `TransitGatewayCidrBlocks`: `List`\[`str`\]
 
 ## TransitGatewayRouteAttachmentTypeDef
@@ -12750,7 +12389,7 @@ Optional fields:
 - `ResourceId`: `str`
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 
 ## TransitGatewayRouteTableAssociationTypeDef
 
@@ -12763,9 +12402,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `State`:
-  [TransitGatewayAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayassociationstate)
+  [TransitGatewayAssociationState](./literals.md#transitgatewayassociationstate)
 
 ## TransitGatewayRouteTablePropagationTypeDef
 
@@ -12778,9 +12417,9 @@ Optional fields:
 - `TransitGatewayAttachmentId`: `str`
 - `ResourceId`: `str`
 - `ResourceType`:
-  [TransitGatewayAttachmentResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentresourcetype)
+  [TransitGatewayAttachmentResourceType](./literals.md#transitgatewayattachmentresourcetype)
 - `State`:
-  [TransitGatewayPropagationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewaypropagationstate)
+  [TransitGatewayPropagationState](./literals.md#transitgatewaypropagationstate)
 
 ## TransitGatewayRouteTableTypeDef
 
@@ -12793,12 +12432,11 @@ Optional fields:
 - `TransitGatewayRouteTableId`: `str`
 - `TransitGatewayId`: `str`
 - `State`:
-  [TransitGatewayRouteTableState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayroutetablestate)
+  [TransitGatewayRouteTableState](./literals.md#transitgatewayroutetablestate)
 - `DefaultAssociationRouteTable`: `bool`
 - `DefaultPropagationRouteTable`: `bool`
 - `CreationTime`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayRouteTypeDef
 
@@ -12811,11 +12449,9 @@ Optional fields:
 - `DestinationCidrBlock`: `str`
 - `PrefixListId`: `str`
 - `TransitGatewayAttachments`:
-  `List`\[[TransitGatewayRouteAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayrouteattachmenttypedef)\]
-- `Type`:
-  [TransitGatewayRouteType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayroutetype)
-- `State`:
-  [TransitGatewayRouteState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayroutestate)
+  `List`\[[TransitGatewayRouteAttachmentTypeDef](./type_defs.md#transitgatewayrouteattachmenttypedef)\]
+- `Type`: [TransitGatewayRouteType](./literals.md#transitgatewayroutetype)
+- `State`: [TransitGatewayRouteState](./literals.md#transitgatewayroutestate)
 
 ## TransitGatewayTypeDef
 
@@ -12827,15 +12463,13 @@ Optional fields:
 
 - `TransitGatewayId`: `str`
 - `TransitGatewayArn`: `str`
-- `State`:
-  [TransitGatewayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewaystate)
+- `State`: [TransitGatewayState](./literals.md#transitgatewaystate)
 - `OwnerId`: `str`
 - `Description`: `str`
 - `CreationTime`: `datetime`
 - `Options`:
-  [TransitGatewayOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayoptionstypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [TransitGatewayOptionsTypeDef](./type_defs.md#transitgatewayoptionstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TransitGatewayVpcAttachmentOptionsTypeDef
 
@@ -12845,12 +12479,10 @@ from mypy_boto3_ec2.type_defs import TransitGatewayVpcAttachmentOptionsTypeDef
 
 Optional fields:
 
-- `DnsSupport`:
-  [DnsSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#dnssupportvalue)
-- `Ipv6Support`:
-  [Ipv6SupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#ipv6supportvalue)
+- `DnsSupport`: [DnsSupportValue](./literals.md#dnssupportvalue)
+- `Ipv6Support`: [Ipv6SupportValue](./literals.md#ipv6supportvalue)
 - `ApplianceModeSupport`:
-  [ApplianceModeSupportValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#appliancemodesupportvalue)
+  [ApplianceModeSupportValue](./literals.md#appliancemodesupportvalue)
 
 ## TransitGatewayVpcAttachmentTypeDef
 
@@ -12865,13 +12497,12 @@ Optional fields:
 - `VpcId`: `str`
 - `VpcOwnerId`: `str`
 - `State`:
-  [TransitGatewayAttachmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#transitgatewayattachmentstate)
+  [TransitGatewayAttachmentState](./literals.md#transitgatewayattachmentstate)
 - `SubnetIds`: `List`\[`str`\]
 - `CreationTime`: `datetime`
 - `Options`:
-  [TransitGatewayVpcAttachmentOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#transitgatewayvpcattachmentoptionstypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [TransitGatewayVpcAttachmentOptionsTypeDef](./type_defs.md#transitgatewayvpcattachmentoptionstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TunnelOptionTypeDef
 
@@ -12893,19 +12524,19 @@ Optional fields:
 - `DpdTimeoutSeconds`: `int`
 - `DpdTimeoutAction`: `str`
 - `Phase1EncryptionAlgorithms`:
-  `List`\[[Phase1EncryptionAlgorithmsListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1encryptionalgorithmslistvaluetypedef)\]
+  `List`\[[Phase1EncryptionAlgorithmsListValueTypeDef](./type_defs.md#phase1encryptionalgorithmslistvaluetypedef)\]
 - `Phase2EncryptionAlgorithms`:
-  `List`\[[Phase2EncryptionAlgorithmsListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2encryptionalgorithmslistvaluetypedef)\]
+  `List`\[[Phase2EncryptionAlgorithmsListValueTypeDef](./type_defs.md#phase2encryptionalgorithmslistvaluetypedef)\]
 - `Phase1IntegrityAlgorithms`:
-  `List`\[[Phase1IntegrityAlgorithmsListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1integrityalgorithmslistvaluetypedef)\]
+  `List`\[[Phase1IntegrityAlgorithmsListValueTypeDef](./type_defs.md#phase1integrityalgorithmslistvaluetypedef)\]
 - `Phase2IntegrityAlgorithms`:
-  `List`\[[Phase2IntegrityAlgorithmsListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2integrityalgorithmslistvaluetypedef)\]
+  `List`\[[Phase2IntegrityAlgorithmsListValueTypeDef](./type_defs.md#phase2integrityalgorithmslistvaluetypedef)\]
 - `Phase1DHGroupNumbers`:
-  `List`\[[Phase1DHGroupNumbersListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1dhgroupnumberslistvaluetypedef)\]
+  `List`\[[Phase1DHGroupNumbersListValueTypeDef](./type_defs.md#phase1dhgroupnumberslistvaluetypedef)\]
 - `Phase2DHGroupNumbers`:
-  `List`\[[Phase2DHGroupNumbersListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2dhgroupnumberslistvaluetypedef)\]
+  `List`\[[Phase2DHGroupNumbersListValueTypeDef](./type_defs.md#phase2dhgroupnumberslistvaluetypedef)\]
 - `IkeVersions`:
-  `List`\[[IKEVersionsListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ikeversionslistvaluetypedef)\]
+  `List`\[[IKEVersionsListValueTypeDef](./type_defs.md#ikeversionslistvaluetypedef)\]
 - `StartupAction`: `str`
 
 ## UnassignIpv6AddressesResultTypeDef
@@ -12928,7 +12559,7 @@ from mypy_boto3_ec2.type_defs import UnmonitorInstancesResultTypeDef
 Optional fields:
 
 - `InstanceMonitorings`:
-  `List`\[[InstanceMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#instancemonitoringtypedef)\]
+  `List`\[[InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)\]
 
 ## UnsuccessfulInstanceCreditSpecificationItemErrorTypeDef
 
@@ -12939,7 +12570,7 @@ from mypy_boto3_ec2.type_defs import UnsuccessfulInstanceCreditSpecificationItem
 Optional fields:
 
 - `Code`:
-  [UnsuccessfulInstanceCreditSpecificationErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#unsuccessfulinstancecreditspecificationerrorcode)
+  [UnsuccessfulInstanceCreditSpecificationErrorCode](./literals.md#unsuccessfulinstancecreditspecificationerrorcode)
 - `Message`: `str`
 
 ## UnsuccessfulInstanceCreditSpecificationItemTypeDef
@@ -12952,7 +12583,7 @@ Optional fields:
 
 - `InstanceId`: `str`
 - `Error`:
-  [UnsuccessfulInstanceCreditSpecificationItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulinstancecreditspecificationitemerrortypedef)
+  [UnsuccessfulInstanceCreditSpecificationItemErrorTypeDef](./type_defs.md#unsuccessfulinstancecreditspecificationitemerrortypedef)
 
 ## UnsuccessfulItemErrorTypeDef
 
@@ -12974,7 +12605,7 @@ from mypy_boto3_ec2.type_defs import UnsuccessfulItemTypeDef
 Optional fields:
 
 - `Error`:
-  [UnsuccessfulItemErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#unsuccessfulitemerrortypedef)
+  [UnsuccessfulItemErrorTypeDef](./type_defs.md#unsuccessfulitemerrortypedef)
 - `ResourceId`: `str`
 
 ## UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef
@@ -13079,7 +12710,7 @@ from mypy_boto3_ec2.type_defs import ValidationWarningTypeDef
 Optional fields:
 
 - `Errors`:
-  `List`\[[ValidationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#validationerrortypedef)\]
+  `List`\[[ValidationErrorTypeDef](./type_defs.md#validationerrortypedef)\]
 
 ## VgwTelemetryTypeDef
 
@@ -13092,8 +12723,7 @@ Optional fields:
 - `AcceptedRouteCount`: `int`
 - `LastStatusChange`: `datetime`
 - `OutsideIpAddress`: `str`
-- `Status`:
-  [TelemetryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#telemetrystatus)
+- `Status`: [TelemetryStatus](./literals.md#telemetrystatus)
 - `StatusMessage`: `str`
 - `CertificateArn`: `str`
 
@@ -13108,8 +12738,7 @@ Optional fields:
 - `AttachTime`: `datetime`
 - `Device`: `str`
 - `InstanceId`: `str`
-- `State`:
-  [VolumeAttachmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumeattachmentstate)
+- `State`: [VolumeAttachmentState](./literals.md#volumeattachmentstate)
 - `VolumeId`: `str`
 - `DeleteOnTermination`: `bool`
 
@@ -13133,18 +12762,16 @@ Optional fields:
 
 - `VolumeId`: `str`
 - `ModificationState`:
-  [VolumeModificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumemodificationstate)
+  [VolumeModificationState](./literals.md#volumemodificationstate)
 - `StatusMessage`: `str`
 - `TargetSize`: `int`
 - `TargetIops`: `int`
-- `TargetVolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `TargetVolumeType`: [VolumeType](./literals.md#volumetype)
 - `TargetThroughput`: `int`
 - `TargetMultiAttachEnabled`: `bool`
 - `OriginalSize`: `int`
 - `OriginalIops`: `int`
-- `OriginalVolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `OriginalVolumeType`: [VolumeType](./literals.md#volumetype)
 - `OriginalThroughput`: `int`
 - `OriginalMultiAttachEnabled`: `bool`
 - `Progress`: `int`
@@ -13183,8 +12810,7 @@ from mypy_boto3_ec2.type_defs import VolumeStatusDetailsTypeDef
 
 Optional fields:
 
-- `Name`:
-  [VolumeStatusName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumestatusname)
+- `Name`: [VolumeStatusName](./literals.md#volumestatusname)
 - `Status`: `str`
 
 ## VolumeStatusEventTypeDef
@@ -13211,9 +12837,8 @@ from mypy_boto3_ec2.type_defs import VolumeStatusInfoTypeDef
 Optional fields:
 
 - `Details`:
-  `List`\[[VolumeStatusDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumestatusdetailstypedef)\]
-- `Status`:
-  [VolumeStatusInfoStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumestatusinfostatus)
+  `List`\[[VolumeStatusDetailsTypeDef](./type_defs.md#volumestatusdetailstypedef)\]
+- `Status`: [VolumeStatusInfoStatus](./literals.md#volumestatusinfostatus)
 
 ## VolumeStatusItemTypeDef
 
@@ -13224,16 +12849,16 @@ from mypy_boto3_ec2.type_defs import VolumeStatusItemTypeDef
 Optional fields:
 
 - `Actions`:
-  `List`\[[VolumeStatusActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumestatusactiontypedef)\]
+  `List`\[[VolumeStatusActionTypeDef](./type_defs.md#volumestatusactiontypedef)\]
 - `AvailabilityZone`: `str`
 - `OutpostArn`: `str`
 - `Events`:
-  `List`\[[VolumeStatusEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumestatuseventtypedef)\]
+  `List`\[[VolumeStatusEventTypeDef](./type_defs.md#volumestatuseventtypedef)\]
 - `VolumeId`: `str`
 - `VolumeStatus`:
-  [VolumeStatusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumestatusinfotypedef)
+  [VolumeStatusInfoTypeDef](./type_defs.md#volumestatusinfotypedef)
 - `AttachmentStatuses`:
-  `List`\[[VolumeStatusAttachmentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumestatusattachmentstatustypedef)\]
+  `List`\[[VolumeStatusAttachmentStatusTypeDef](./type_defs.md#volumestatusattachmentstatustypedef)\]
 
 ## VolumeTypeDef
 
@@ -13244,7 +12869,7 @@ from mypy_boto3_ec2.type_defs import VolumeTypeDef
 Optional fields:
 
 - `Attachments`:
-  `List`\[[VolumeAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#volumeattachmenttypedef)\]
+  `List`\[[VolumeAttachmentTypeDef](./type_defs.md#volumeattachmenttypedef)\]
 - `AvailabilityZone`: `str`
 - `CreateTime`: `datetime`
 - `Encrypted`: `bool`
@@ -13252,14 +12877,11 @@ Optional fields:
 - `OutpostArn`: `str`
 - `Size`: `int`
 - `SnapshotId`: `str`
-- `State`:
-  [VolumeState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumestate)
+- `State`: [VolumeState](./literals.md#volumestate)
 - `VolumeId`: `str`
 - `Iops`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
-- `VolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#volumetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VolumeType`: [VolumeType](./literals.md#volumetype)
 - `FastRestored`: `bool`
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
@@ -13272,8 +12894,7 @@ from mypy_boto3_ec2.type_defs import VpcAttachmentTypeDef
 
 Optional fields:
 
-- `State`:
-  [AttachmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#attachmentstatus)
+- `State`: [AttachmentStatus](./literals.md#attachmentstatus)
 - `VpcId`: `str`
 
 ## VpcCidrBlockAssociationTypeDef
@@ -13287,7 +12908,7 @@ Optional fields:
 - `AssociationId`: `str`
 - `CidrBlock`: `str`
 - `CidrBlockState`:
-  [VpcCidrBlockStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpccidrblockstatetypedef)
+  [VpcCidrBlockStateTypeDef](./type_defs.md#vpccidrblockstatetypedef)
 
 ## VpcCidrBlockStateTypeDef
 
@@ -13297,8 +12918,7 @@ from mypy_boto3_ec2.type_defs import VpcCidrBlockStateTypeDef
 
 Optional fields:
 
-- `State`:
-  [VpcCidrBlockStateCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpccidrblockstatecode)
+- `State`: [VpcCidrBlockStateCode](./literals.md#vpccidrblockstatecode)
 - `StatusMessage`: `str`
 
 ## VpcClassicLinkTypeDef
@@ -13310,8 +12930,7 @@ from mypy_boto3_ec2.type_defs import VpcClassicLinkTypeDef
 Optional fields:
 
 - `ClassicLinkEnabled`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
 
 ## VpcEndpointConnectionTypeDef
@@ -13325,11 +12944,9 @@ Optional fields:
 - `ServiceId`: `str`
 - `VpcEndpointId`: `str`
 - `VpcEndpointOwner`: `str`
-- `VpcEndpointState`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#state)
+- `VpcEndpointState`: [State](./literals.md#state)
 - `CreationTimestamp`: `datetime`
-- `DnsEntries`:
-  `List`\[[DnsEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#dnsentrytypedef)\]
+- `DnsEntries`: `List`\[[DnsEntryTypeDef](./type_defs.md#dnsentrytypedef)\]
 - `NetworkLoadBalancerArns`: `List`\[`str`\]
 - `GatewayLoadBalancerArns`: `List`\[`str`\]
 
@@ -13342,28 +12959,23 @@ from mypy_boto3_ec2.type_defs import VpcEndpointTypeDef
 Optional fields:
 
 - `VpcEndpointId`: `str`
-- `VpcEndpointType`:
-  [VpcEndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpcendpointtype)
+- `VpcEndpointType`: [VpcEndpointType](./literals.md#vpcendpointtype)
 - `VpcId`: `str`
 - `ServiceName`: `str`
-- `State`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#state)
+- `State`: [State](./literals.md#state)
 - `PolicyDocument`: `str`
 - `RouteTableIds`: `List`\[`str`\]
 - `SubnetIds`: `List`\[`str`\]
 - `Groups`:
-  `List`\[[SecurityGroupIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#securitygroupidentifiertypedef)\]
+  `List`\[[SecurityGroupIdentifierTypeDef](./type_defs.md#securitygroupidentifiertypedef)\]
 - `PrivateDnsEnabled`: `bool`
 - `RequesterManaged`: `bool`
 - `NetworkInterfaceIds`: `List`\[`str`\]
-- `DnsEntries`:
-  `List`\[[DnsEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#dnsentrytypedef)\]
+- `DnsEntries`: `List`\[[DnsEntryTypeDef](./type_defs.md#dnsentrytypedef)\]
 - `CreationTimestamp`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OwnerId`: `str`
-- `LastError`:
-  [LastErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#lasterrortypedef)
+- `LastError`: [LastErrorTypeDef](./type_defs.md#lasterrortypedef)
 
 ## VpcIpv6CidrBlockAssociationTypeDef
 
@@ -13376,7 +12988,7 @@ Optional fields:
 - `AssociationId`: `str`
 - `Ipv6CidrBlock`: `str`
 - `Ipv6CidrBlockState`:
-  [VpcCidrBlockStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpccidrblockstatetypedef)
+  [VpcCidrBlockStateTypeDef](./type_defs.md#vpccidrblockstatetypedef)
 - `NetworkBorderGroup`: `str`
 - `Ipv6Pool`: `str`
 
@@ -13401,7 +13013,7 @@ from mypy_boto3_ec2.type_defs import VpcPeeringConnectionStateReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [VpcPeeringConnectionStateReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpcpeeringconnectionstatereasoncode)
+  [VpcPeeringConnectionStateReasonCode](./literals.md#vpcpeeringconnectionstatereasoncode)
 - `Message`: `str`
 
 ## VpcPeeringConnectionTypeDef
@@ -13413,14 +13025,13 @@ from mypy_boto3_ec2.type_defs import VpcPeeringConnectionTypeDef
 Optional fields:
 
 - `AccepterVpcInfo`:
-  [VpcPeeringConnectionVpcInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectionvpcinfotypedef)
+  [VpcPeeringConnectionVpcInfoTypeDef](./type_defs.md#vpcpeeringconnectionvpcinfotypedef)
 - `ExpirationTime`: `datetime`
 - `RequesterVpcInfo`:
-  [VpcPeeringConnectionVpcInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectionvpcinfotypedef)
+  [VpcPeeringConnectionVpcInfoTypeDef](./type_defs.md#vpcpeeringconnectionvpcinfotypedef)
 - `Status`:
-  [VpcPeeringConnectionStateReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectionstatereasontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  [VpcPeeringConnectionStateReasonTypeDef](./type_defs.md#vpcpeeringconnectionstatereasontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcPeeringConnectionId`: `str`
 
 ## VpcPeeringConnectionVpcInfoTypeDef
@@ -13433,12 +13044,11 @@ Optional fields:
 
 - `CidrBlock`: `str`
 - `Ipv6CidrBlockSet`:
-  `List`\[[Ipv6CidrBlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ipv6cidrblocktypedef)\]
-- `CidrBlockSet`:
-  `List`\[[CidrBlockTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#cidrblocktypedef)\]
+  `List`\[[Ipv6CidrBlockTypeDef](./type_defs.md#ipv6cidrblocktypedef)\]
+- `CidrBlockSet`: `List`\[[CidrBlockTypeDef](./type_defs.md#cidrblocktypedef)\]
 - `OwnerId`: `str`
 - `PeeringOptions`:
-  [VpcPeeringConnectionOptionsDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcpeeringconnectionoptionsdescriptiontypedef)
+  [VpcPeeringConnectionOptionsDescriptionTypeDef](./type_defs.md#vpcpeeringconnectionoptionsdescriptiontypedef)
 - `VpcId`: `str`
 - `Region`: `str`
 
@@ -13452,19 +13062,16 @@ Optional fields:
 
 - `CidrBlock`: `str`
 - `DhcpOptionsId`: `str`
-- `State`:
-  [VpcState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpcstate)
+- `State`: [VpcState](./literals.md#vpcstate)
 - `VpcId`: `str`
 - `OwnerId`: `str`
-- `InstanceTenancy`:
-  [Tenancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tenancy)
+- `InstanceTenancy`: [Tenancy](./literals.md#tenancy)
 - `Ipv6CidrBlockAssociationSet`:
-  `List`\[[VpcIpv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcipv6cidrblockassociationtypedef)\]
+  `List`\[[VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)\]
 - `CidrBlockAssociationSet`:
-  `List`\[[VpcCidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpccidrblockassociationtypedef)\]
+  `List`\[[VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)\]
 - `IsDefault`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VpnConnectionOptionsSpecificationTypeDef
 
@@ -13477,9 +13084,9 @@ Optional fields:
 - `EnableAcceleration`: `bool`
 - `StaticRoutesOnly`: `bool`
 - `TunnelInsideIpVersion`:
-  [TunnelInsideIpVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tunnelinsideipversion)
+  [TunnelInsideIpVersion](./literals.md#tunnelinsideipversion)
 - `TunnelOptions`:
-  `List`\[[VpnTunnelOptionsSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpntunneloptionsspecificationtypedef)\]
+  `List`\[[VpnTunnelOptionsSpecificationTypeDef](./type_defs.md#vpntunneloptionsspecificationtypedef)\]
 - `LocalIpv4NetworkCidr`: `str`
 - `RemoteIpv4NetworkCidr`: `str`
 - `LocalIpv6NetworkCidr`: `str`
@@ -13500,9 +13107,9 @@ Optional fields:
 - `LocalIpv6NetworkCidr`: `str`
 - `RemoteIpv6NetworkCidr`: `str`
 - `TunnelInsideIpVersion`:
-  [TunnelInsideIpVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#tunnelinsideipversion)
+  [TunnelInsideIpVersion](./literals.md#tunnelinsideipversion)
 - `TunnelOptions`:
-  `List`\[[TunnelOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tunneloptiontypedef)\]
+  `List`\[[TunnelOptionTypeDef](./type_defs.md#tunneloptiontypedef)\]
 
 ## VpnConnectionTypeDef
 
@@ -13515,20 +13122,18 @@ Optional fields:
 - `CustomerGatewayConfiguration`: `str`
 - `CustomerGatewayId`: `str`
 - `Category`: `str`
-- `State`:
-  [VpnState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpnstate)
-- `Type`: `Literal['ipsec.1']`
+- `State`: [VpnState](./literals.md#vpnstate)
+- `Type`: `Literal['ipsec.1']` (see [GatewayType](./literals.md#gatewaytype))
 - `VpnConnectionId`: `str`
 - `VpnGatewayId`: `str`
 - `TransitGatewayId`: `str`
 - `Options`:
-  [VpnConnectionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnconnectionoptionstypedef)
+  [VpnConnectionOptionsTypeDef](./type_defs.md#vpnconnectionoptionstypedef)
 - `Routes`:
-  `List`\[[VpnStaticRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpnstaticroutetypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+  `List`\[[VpnStaticRouteTypeDef](./type_defs.md#vpnstaticroutetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VgwTelemetry`:
-  `List`\[[VgwTelemetryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vgwtelemetrytypedef)\]
+  `List`\[[VgwTelemetryTypeDef](./type_defs.md#vgwtelemetrytypedef)\]
 
 ## VpnGatewayTypeDef
 
@@ -13539,15 +13144,13 @@ from mypy_boto3_ec2.type_defs import VpnGatewayTypeDef
 Optional fields:
 
 - `AvailabilityZone`: `str`
-- `State`:
-  [VpnState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpnstate)
-- `Type`: `Literal['ipsec.1']`
+- `State`: [VpnState](./literals.md#vpnstate)
+- `Type`: `Literal['ipsec.1']` (see [GatewayType](./literals.md#gatewaytype))
 - `VpcAttachments`:
-  `List`\[[VpcAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#vpcattachmenttypedef)\]
+  `List`\[[VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)\]
 - `VpnGatewayId`: `str`
 - `AmazonSideAsn`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VpnStaticRouteTypeDef
 
@@ -13558,9 +13161,9 @@ from mypy_boto3_ec2.type_defs import VpnStaticRouteTypeDef
 Optional fields:
 
 - `DestinationCidrBlock`: `str`
-- `Source`: `Literal['Static']`
-- `State`:
-  [VpnState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/literals.html#vpnstate)
+- `Source`: `Literal['Static']` (see
+  [VpnStaticRouteSource](./literals.md#vpnstaticroutesource))
+- `State`: [VpnState](./literals.md#vpnstate)
 
 ## VpnTunnelOptionsSpecificationTypeDef
 
@@ -13581,19 +13184,19 @@ Optional fields:
 - `DPDTimeoutSeconds`: `int`
 - `DPDTimeoutAction`: `str`
 - `Phase1EncryptionAlgorithms`:
-  `List`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase2EncryptionAlgorithms`:
-  `List`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase1IntegrityAlgorithms`:
-  `List`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1integrityalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase2IntegrityAlgorithms`:
-  `List`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2integrityalgorithmsrequestlistvaluetypedef)\]
+  `List`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase1DHGroupNumbers`:
-  `List`\[[Phase1DHGroupNumbersRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase1dhgroupnumbersrequestlistvaluetypedef)\]
+  `List`\[[Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef)\]
 - `Phase2DHGroupNumbers`:
-  `List`\[[Phase2DHGroupNumbersRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#phase2dhgroupnumbersrequestlistvaluetypedef)\]
+  `List`\[[Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef)\]
 - `IKEVersions`:
-  `List`\[[IKEVersionsRequestListValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#ikeversionsrequestlistvaluetypedef)\]
+  `List`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
 - `StartupAction`: `str`
 
 ## WaiterConfigTypeDef
@@ -13615,5 +13218,4 @@ from mypy_boto3_ec2.type_defs import WithdrawByoipCidrResultTypeDef
 
 Optional fields:
 
-- `ByoipCidr`:
-  [ByoipCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2/type_defs.html#byoipcidrtypedef)
+- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)

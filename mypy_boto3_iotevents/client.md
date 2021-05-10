@@ -1,6 +1,6 @@
 # IoTEventsClient for boto3 IoTEvents module
 
-> [Index](../README.md) > [IoTEvents](./README.md) > IoTEventsClient
+> [Index](..) > [IoTEvents](.) > IoTEventsClient
 
 Auto-generated documentation for
 [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
@@ -100,18 +100,16 @@ Arguments:
 
 - `detectorModelName`: `str` *(required)*
 - `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
   *(required)*
 - `roleArn`: `str` *(required)*
 - `detectorModelDescription`: `str`
 - `key`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
-- `evaluationMethod`:
-  [EvaluationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#evaluationmethod)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `evaluationMethod`: [EvaluationMethod](./literals.md#evaluationmethod)
 
 Returns
-[CreateDetectorModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#createdetectormodelresponsetypedef).
+[CreateDetectorModelResponseTypeDef](./type_defs.md#createdetectormodelresponsetypedef).
 
 ### create_input
 
@@ -124,14 +122,12 @@ Arguments:
 
 - `inputName`: `str` *(required)*
 - `inputDefinition`:
-  [InputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputdefinitiontypedef)
-  *(required)*
+  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef) *(required)*
 - `inputDescription`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#createinputresponsetypedef).
+[CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
 ### delete_detector_model
 
@@ -173,7 +169,7 @@ Arguments:
 - `detectorModelVersion`: `str`
 
 Returns
-[DescribeDetectorModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describedetectormodelresponsetypedef).
+[DescribeDetectorModelResponseTypeDef](./type_defs.md#describedetectormodelresponsetypedef).
 
 ### describe_detector_model_analysis
 
@@ -188,7 +184,7 @@ Arguments:
 - `analysisId`: `str` *(required)*
 
 Returns
-[DescribeDetectorModelAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describedetectormodelanalysisresponsetypedef).
+[DescribeDetectorModelAnalysisResponseTypeDef](./type_defs.md#describedetectormodelanalysisresponsetypedef).
 
 ### describe_input
 
@@ -202,7 +198,7 @@ Arguments:
 - `inputName`: `str` *(required)*
 
 Returns
-[DescribeInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describeinputresponsetypedef).
+[DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
 ### describe_logging_options
 
@@ -213,7 +209,7 @@ Boto3 documentation:
 [IoTEvents.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_logging_options)
 
 Returns
-[DescribeLoggingOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#describeloggingoptionsresponsetypedef).
+[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -246,7 +242,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetDetectorModelAnalysisResultsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#getdetectormodelanalysisresultsresponsetypedef).
+[GetDetectorModelAnalysisResultsResponseTypeDef](./type_defs.md#getdetectormodelanalysisresultsresponsetypedef).
 
 ### list_detector_model_versions
 
@@ -263,7 +259,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDetectorModelVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listdetectormodelversionsresponsetypedef).
+[ListDetectorModelVersionsResponseTypeDef](./type_defs.md#listdetectormodelversionsresponsetypedef).
 
 ### list_detector_models
 
@@ -278,7 +274,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDetectorModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listdetectormodelsresponsetypedef).
+[ListDetectorModelsResponseTypeDef](./type_defs.md#listdetectormodelsresponsetypedef).
 
 ### list_inputs
 
@@ -292,8 +288,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListInputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listinputsresponsetypedef).
+Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -307,7 +302,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_logging_options
 
@@ -318,8 +313,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#loggingoptionstypedef)
+- `loggingOptions`: [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
   *(required)*
 
 ### start_detector_model_analysis
@@ -333,11 +327,11 @@ Boto3 documentation:
 Arguments:
 
 - `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
   *(required)*
 
 Returns
-[StartDetectorModelAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#startdetectormodelanalysisresponsetypedef).
+[StartDetectorModelAnalysisResponseTypeDef](./type_defs.md#startdetectormodelanalysisresponsetypedef).
 
 ### tag_resource
 
@@ -349,9 +343,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -380,15 +372,14 @@ Arguments:
 
 - `detectorModelName`: `str` *(required)*
 - `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#detectormodeldefinitiontypedef)
+  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
   *(required)*
 - `roleArn`: `str` *(required)*
 - `detectorModelDescription`: `str`
-- `evaluationMethod`:
-  [EvaluationMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/literals.html#evaluationmethod)
+- `evaluationMethod`: [EvaluationMethod](./literals.md#evaluationmethod)
 
 Returns
-[UpdateDetectorModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#updatedetectormodelresponsetypedef).
+[UpdateDetectorModelResponseTypeDef](./type_defs.md#updatedetectormodelresponsetypedef).
 
 ### update_input
 
@@ -401,9 +392,8 @@ Arguments:
 
 - `inputName`: `str` *(required)*
 - `inputDefinition`:
-  [InputDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#inputdefinitiontypedef)
-  *(required)*
+  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef) *(required)*
 - `inputDescription`: `str`
 
 Returns
-[UpdateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents/type_defs.html#updateinputresponsetypedef).
+[UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).

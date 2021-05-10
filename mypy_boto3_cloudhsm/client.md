@@ -1,6 +1,6 @@
 # CloudHSMClient for boto3 CloudHSM module
 
-> [Index](../README.md) > [CloudHSM](./README.md) > CloudHSMClient
+> [Index](..) > [CloudHSM](.) > CloudHSMClient
 
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
@@ -82,12 +82,10 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#tagtypedef)\]
-  *(required)*
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
-[AddTagsToResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#addtagstoresourceresponsetypedef).
+[AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
 
 ### can_paginate
 
@@ -113,8 +111,7 @@ Arguments:
 
 - `Label`: `str` *(required)*
 
-Returns
-[CreateHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#createhapgresponsetypedef).
+Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
 
 ### create_hsm
 
@@ -128,14 +125,14 @@ Arguments:
 - `SubnetId`: `str` *(required)*
 - `SshKey`: `str` *(required)*
 - `IamRoleArn`: `str` *(required)*
-- `SubscriptionType`: `Literal['PRODUCTION']` *(required)*
+- `SubscriptionType`: `Literal['PRODUCTION']` (see
+  [SubscriptionType](./literals.md#subscriptiontype)) *(required)*
 - `EniIp`: `str`
 - `ExternalId`: `str`
 - `ClientToken`: `str`
 - `SyslogIp`: `str`
 
-Returns
-[CreateHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#createhsmresponsetypedef).
+Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
 ### create_luna_client
 
@@ -150,7 +147,7 @@ Arguments:
 - `Label`: `str`
 
 Returns
-[CreateLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#createlunaclientresponsetypedef).
+[CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef).
 
 ### delete_hapg
 
@@ -163,8 +160,7 @@ Arguments:
 
 - `HapgArn`: `str` *(required)*
 
-Returns
-[DeleteHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#deletehapgresponsetypedef).
+Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
 
 ### delete_hsm
 
@@ -177,8 +173,7 @@ Arguments:
 
 - `HsmArn`: `str` *(required)*
 
-Returns
-[DeleteHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#deletehsmresponsetypedef).
+Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 
 ### delete_luna_client
 
@@ -192,7 +187,7 @@ Arguments:
 - `ClientArn`: `str` *(required)*
 
 Returns
-[DeleteLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#deletelunaclientresponsetypedef).
+[DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef).
 
 ### describe_hapg
 
@@ -206,7 +201,7 @@ Arguments:
 - `HapgArn`: `str` *(required)*
 
 Returns
-[DescribeHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#describehapgresponsetypedef).
+[DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef).
 
 ### describe_hsm
 
@@ -221,7 +216,7 @@ Arguments:
 - `HsmSerialNumber`: `str`
 
 Returns
-[DescribeHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#describehsmresponsetypedef).
+[DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef).
 
 ### describe_luna_client
 
@@ -236,7 +231,7 @@ Arguments:
 - `CertificateFingerprint`: `str`
 
 Returns
-[DescribeLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#describelunaclientresponsetypedef).
+[DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef).
 
 ### generate_presigned_url
 
@@ -264,13 +259,10 @@ Boto3 documentation:
 Arguments:
 
 - `ClientArn`: `str` *(required)*
-- `ClientVersion`:
-  [ClientVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/literals.html#clientversion)
-  *(required)*
+- `ClientVersion`: [ClientVersion](./literals.md#clientversion) *(required)*
 - `HapgList`: `List`\[`str`\] *(required)*
 
-Returns
-[GetConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#getconfigresponsetypedef).
+Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
 ### list_available_zones
 
@@ -280,7 +272,7 @@ Boto3 documentation:
 [CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
 
 Returns
-[ListAvailableZonesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listavailablezonesresponsetypedef).
+[ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
 
 ### list_hapgs
 
@@ -293,8 +285,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListHapgsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listhapgsresponsetypedef).
+Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
 
 ### list_hsms
 
@@ -307,8 +298,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListHsmsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listhsmsresponsetypedef).
+Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
 
 ### list_luna_clients
 
@@ -322,7 +312,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLunaClientsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listlunaclientsresponsetypedef).
+[ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -336,7 +326,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### modify_hapg
 
@@ -351,8 +341,7 @@ Arguments:
 - `Label`: `str`
 - `PartitionSerialList`: `List`\[`str`\]
 
-Returns
-[ModifyHapgResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#modifyhapgresponsetypedef).
+Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
 
 ### modify_hsm
 
@@ -370,8 +359,7 @@ Arguments:
 - `ExternalId`: `str`
 - `SyslogIp`: `str`
 
-Returns
-[ModifyHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#modifyhsmresponsetypedef).
+Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
 
 ### modify_luna_client
 
@@ -386,7 +374,7 @@ Arguments:
 - `Certificate`: `str` *(required)*
 
 Returns
-[ModifyLunaClientResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#modifylunaclientresponsetypedef).
+[ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef).
 
 ### remove_tags_from_resource
 
@@ -402,7 +390,7 @@ Arguments:
 - `TagKeyList`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveTagsFromResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#removetagsfromresourceresponsetypedef).
+[RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef).
 
 ### get_paginator
 

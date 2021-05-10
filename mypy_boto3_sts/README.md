@@ -1,6 +1,6 @@
 # Type annotations for boto3 STS module
 
-> [Index](../README.md) > STS
+> [Index](..) > STS
 
 Auto-generated documentation for
 [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)

@@ -1,6 +1,6 @@
 # Paginators for boto3 Pricing module
 
-> [Index](../README.md) > [Pricing](./README.md) > Paginators
+> [Index](..) > [Pricing](.) > Paginators
 
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
@@ -34,10 +34,10 @@ Arguments for `DescribeServicesPaginator.paginate` method:
 - `ServiceCode`: `str`
 - `FormatVersion`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeServicesPaginator.paginate` returns
-`Iterator`\[[DescribeServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#describeservicesresponsetypedef)\].
+`Iterator`\[[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)\].
 
 ## GetAttributeValuesPaginator
 
@@ -61,10 +61,10 @@ Arguments for `GetAttributeValuesPaginator.paginate` method:
 - `ServiceCode`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAttributeValuesPaginator.paginate` returns
-`Iterator`\[[GetAttributeValuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#getattributevaluesresponsetypedef)\].
+`Iterator`\[[GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef)\].
 
 ## GetProductsPaginator
 
@@ -85,11 +85,10 @@ Boto3 documentation:
 Arguments for `GetProductsPaginator.paginate` method:
 
 - `ServiceCode`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `FormatVersion`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetProductsPaginator.paginate` returns
-`Iterator`\[[GetProductsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#getproductsresponsetypedef)\].
+`Iterator`\[[GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef)\].

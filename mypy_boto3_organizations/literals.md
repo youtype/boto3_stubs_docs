@@ -1,6 +1,6 @@
 # Literals for boto3 Organizations module
 
-> [Index](../README.md) > [Organizations](./README.md) > Literals
+> [Index](..) > [Organizations](.) > Literals
 
 Auto-generated documentation for
 [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)

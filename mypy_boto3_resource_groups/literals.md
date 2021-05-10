@@ -1,6 +1,6 @@
 # Literals for boto3 ResourceGroups module
 
-> [Index](../README.md) > [ResourceGroups](./README.md) > Literals
+> [Index](..) > [ResourceGroups](.) > Literals
 
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)

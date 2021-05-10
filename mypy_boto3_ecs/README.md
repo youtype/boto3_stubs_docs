@@ -1,6 +1,6 @@
 # Type annotations for boto3 ECS module
 
-> [Index](../README.md) > ECS
+> [Index](..) > ECS
 
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)

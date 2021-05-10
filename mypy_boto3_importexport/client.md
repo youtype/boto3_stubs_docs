@@ -1,6 +1,6 @@
 # ImportExportClient for boto3 ImportExport module
 
-> [Index](../README.md) > [ImportExport](./README.md) > ImportExportClient
+> [Index](..) > [ImportExport](.) > ImportExportClient
 
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
@@ -100,8 +100,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
 
-Returns
-[CancelJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#canceljoboutputtypedef).
+Returns [CancelJobOutputTypeDef](./type_defs.md#canceljoboutputtypedef).
 
 ### create_job
 
@@ -112,16 +111,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
-  *(required)*
+- `JobType`: [JobType](./literals.md#jobtype) *(required)*
 - `Manifest`: `str` *(required)*
 - `ValidateOnly`: `bool` *(required)*
 - `ManifestAddendum`: `str`
 - `APIVersion`: `str`
 
-Returns
-[CreateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#createjoboutputtypedef).
+Returns [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef).
 
 ### generate_presigned_url
 
@@ -163,7 +159,7 @@ Arguments:
 - `APIVersion`: `str`
 
 Returns
-[GetShippingLabelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#getshippinglabeloutputtypedef).
+[GetShippingLabelOutputTypeDef](./type_defs.md#getshippinglabeloutputtypedef).
 
 ### get_status
 
@@ -177,8 +173,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
 
-Returns
-[GetStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#getstatusoutputtypedef).
+Returns [GetStatusOutputTypeDef](./type_defs.md#getstatusoutputtypedef).
 
 ### list_jobs
 
@@ -193,8 +188,7 @@ Arguments:
 - `Marker`: `str`
 - `APIVersion`: `str`
 
-Returns
-[ListJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#listjobsoutputtypedef).
+Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 
 ### update_job
 
@@ -207,14 +201,11 @@ Arguments:
 
 - `JobId`: `str` *(required)*
 - `Manifest`: `str` *(required)*
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/literals.html#jobtype)
-  *(required)*
+- `JobType`: [JobType](./literals.md#jobtype) *(required)*
 - `ValidateOnly`: `bool` *(required)*
 - `APIVersion`: `str`
 
-Returns
-[UpdateJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_importexport/type_defs.html#updatejoboutputtypedef).
+Returns [UpdateJobOutputTypeDef](./type_defs.md#updatejoboutputtypedef).
 
 ### get_paginator
 

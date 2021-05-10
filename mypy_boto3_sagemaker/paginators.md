@@ -1,6 +1,6 @@
 # Paginators for boto3 SageMaker module
 
-> [Index](../README.md) > [SageMaker](./README.md) > Paginators
+> [Index](..) > [SageMaker](.) > Paginators
 
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
@@ -84,15 +84,13 @@ Arguments for `ListActionsPaginator.paginate` method:
 - `ActionType`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortActionsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortactionsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortActionsBy](./literals.md#sortactionsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActionsPaginator.paginate` returns
-`Iterator`\[[ListActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listactionsresponsetypedef)\].
+`Iterator`\[[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef)\].
 
 ## ListAlgorithmsPaginator
 
@@ -116,15 +114,13 @@ Arguments for `ListAlgorithmsPaginator.paginate` method:
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [AlgorithmSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#algorithmsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [AlgorithmSortBy](./literals.md#algorithmsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAlgorithmsPaginator.paginate` returns
-`Iterator`\[[ListAlgorithmsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listalgorithmsoutputtypedef)\].
+`Iterator`\[[ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef)\].
 
 ## ListAppImageConfigsPaginator
 
@@ -150,15 +146,13 @@ Arguments for `ListAppImageConfigsPaginator.paginate` method:
 - `CreationTimeAfter`: `datetime`
 - `ModifiedTimeBefore`: `datetime`
 - `ModifiedTimeAfter`: `datetime`
-- `SortBy`:
-  [AppImageConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appimageconfigsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [AppImageConfigSortKey](./literals.md#appimageconfigsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppImageConfigsPaginator.paginate` returns
-`Iterator`\[[ListAppImageConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listappimageconfigsresponsetypedef)\].
+`Iterator`\[[ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef)\].
 
 ## ListAppsPaginator
 
@@ -178,16 +172,16 @@ Boto3 documentation:
 
 Arguments for `ListAppsPaginator.paginate` method:
 
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
-- `SortBy`: `Literal['CreationTime']`
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortBy`: `Literal['CreationTime']` (see
+  [AppSortKey](./literals.md#appsortkey))
 - `DomainIdEquals`: `str`
 - `UserProfileNameEquals`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listappsresponsetypedef)\].
+`Iterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].
 
 ## ListArtifactsPaginator
 
@@ -212,14 +206,14 @@ Arguments for `ListArtifactsPaginator.paginate` method:
 - `ArtifactType`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`: `Literal['CreationTime']`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: `Literal['CreationTime']` (see
+  [SortArtifactsBy](./literals.md#sortartifactsby))
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListArtifactsPaginator.paginate` returns
-`Iterator`\[[ListArtifactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listartifactsresponsetypedef)\].
+`Iterator`\[[ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef)\].
 
 ## ListAssociationsPaginator
 
@@ -244,19 +238,16 @@ Arguments for `ListAssociationsPaginator.paginate` method:
 - `DestinationArn`: `str`
 - `SourceType`: `str`
 - `DestinationType`: `str`
-- `AssociationType`:
-  [AssociationEdgeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#associationedgetype)
+- `AssociationType`: [AssociationEdgeType](./literals.md#associationedgetype)
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortAssociationsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortassociationsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortAssociationsBy](./literals.md#sortassociationsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationsPaginator.paginate` returns
-`Iterator`\[[ListAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listassociationsresponsetypedef)\].
+`Iterator`\[[ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef)\].
 
 ## ListAutoMLJobsPaginator
 
@@ -282,17 +273,14 @@ Arguments for `ListAutoMLJobsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [AutoMLJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobstatus)
-- `SortOrder`:
-  [AutoMLSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortorder)
-- `SortBy`:
-  [AutoMLSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortby)
+- `StatusEquals`: [AutoMLJobStatus](./literals.md#automljobstatus)
+- `SortOrder`: [AutoMLSortOrder](./literals.md#automlsortorder)
+- `SortBy`: [AutoMLSortBy](./literals.md#automlsortby)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAutoMLJobsPaginator.paginate` returns
-`Iterator`\[[ListAutoMLJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listautomljobsresponsetypedef)\].
+`Iterator`\[[ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef)\].
 
 ## ListCandidatesForAutoMLJobPaginator
 
@@ -314,18 +302,15 @@ Boto3 documentation:
 Arguments for `ListCandidatesForAutoMLJobPaginator.paginate` method:
 
 - `AutoMLJobName`: `str` *(required)*
-- `StatusEquals`:
-  [CandidateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatestatus)
+- `StatusEquals`: [CandidateStatus](./literals.md#candidatestatus)
 - `CandidateNameEquals`: `str`
-- `SortOrder`:
-  [AutoMLSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortorder)
-- `SortBy`:
-  [CandidateSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatesortby)
+- `SortOrder`: [AutoMLSortOrder](./literals.md#automlsortorder)
+- `SortBy`: [CandidateSortBy](./literals.md#candidatesortby)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCandidatesForAutoMLJobPaginator.paginate` returns
-`Iterator`\[[ListCandidatesForAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcandidatesforautomljobresponsetypedef)\].
+`Iterator`\[[ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef)\].
 
 ## ListCodeRepositoriesPaginator
 
@@ -351,15 +336,13 @@ Arguments for `ListCodeRepositoriesPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [CodeRepositorySortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#coderepositorysortby)
-- `SortOrder`:
-  [CodeRepositorySortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#coderepositorysortorder)
+- `SortBy`: [CodeRepositorySortBy](./literals.md#coderepositorysortby)
+- `SortOrder`: [CodeRepositorySortOrder](./literals.md#coderepositorysortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCodeRepositoriesPaginator.paginate` returns
-`Iterator`\[[ListCodeRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcoderepositoriesoutputtypedef)\].
+`Iterator`\[[ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef)\].
 
 ## ListCompilationJobsPaginator
 
@@ -385,17 +368,14 @@ Arguments for `ListCompilationJobsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [CompilationJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compilationjobstatus)
-- `SortBy`:
-  [ListCompilationJobsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listcompilationjobssortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [CompilationJobStatus](./literals.md#compilationjobstatus)
+- `SortBy`: [ListCompilationJobsSortBy](./literals.md#listcompilationjobssortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCompilationJobsPaginator.paginate` returns
-`Iterator`\[[ListCompilationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcompilationjobsresponsetypedef)\].
+`Iterator`\[[ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef)\].
 
 ## ListContextsPaginator
 
@@ -420,15 +400,13 @@ Arguments for `ListContextsPaginator.paginate` method:
 - `ContextType`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortContextsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortcontextsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortContextsBy](./literals.md#sortcontextsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContextsPaginator.paginate` returns
-`Iterator`\[[ListContextsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcontextsresponsetypedef)\].
+`Iterator`\[[ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef)\].
 
 ## ListDataQualityJobDefinitionsPaginator
 
@@ -451,17 +429,16 @@ Arguments for `ListDataQualityJobDefinitionsPaginator.paginate` method:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataQualityJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListDataQualityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdataqualityjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef)\].
 
 ## ListDeviceFleetsPaginator
 
@@ -487,15 +464,13 @@ Arguments for `ListDeviceFleetsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [ListDeviceFleetsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listdevicefleetssortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [ListDeviceFleetsSortBy](./literals.md#listdevicefleetssortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceFleetsPaginator.paginate` returns
-`Iterator`\[[ListDeviceFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdevicefleetsresponsetypedef)\].
+`Iterator`\[[ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef)\].
 
 ## ListDevicesPaginator
 
@@ -519,10 +494,10 @@ Arguments for `ListDevicesPaginator.paginate` method:
 - `ModelName`: `str`
 - `DeviceFleetName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdevicesresponsetypedef)\].
+`Iterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].
 
 ## ListDomainsPaginator
 
@@ -543,10 +518,10 @@ Boto3 documentation:
 Arguments for `ListDomainsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdomainsresponsetypedef)\].
+`Iterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
 
 ## ListEdgePackagingJobsPaginator
 
@@ -573,17 +548,15 @@ Arguments for `ListEdgePackagingJobsPaginator.paginate` method:
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
 - `ModelNameContains`: `str`
-- `StatusEquals`:
-  [EdgePackagingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#edgepackagingjobstatus)
+- `StatusEquals`: [EdgePackagingJobStatus](./literals.md#edgepackagingjobstatus)
 - `SortBy`:
-  [ListEdgePackagingJobsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listedgepackagingjobssortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [ListEdgePackagingJobsSortBy](./literals.md#listedgepackagingjobssortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEdgePackagingJobsPaginator.paginate` returns
-`Iterator`\[[ListEdgePackagingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listedgepackagingjobsresponsetypedef)\].
+`Iterator`\[[ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef)\].
 
 ## ListEndpointConfigsPaginator
 
@@ -604,18 +577,16 @@ Boto3 documentation:
 
 Arguments for `ListEndpointConfigsPaginator.paginate` method:
 
-- `SortBy`:
-  [EndpointConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointconfigsortkey)
-- `SortOrder`:
-  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `SortBy`: [EndpointConfigSortKey](./literals.md#endpointconfigsortkey)
+- `SortOrder`: [OrderKey](./literals.md#orderkey)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointConfigsPaginator.paginate` returns
-`Iterator`\[[ListEndpointConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listendpointconfigsoutputtypedef)\].
+`Iterator`\[[ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef)\].
 
 ## ListEndpointsPaginator
 
@@ -636,22 +607,19 @@ Boto3 documentation:
 
 Arguments for `ListEndpointsPaginator.paginate` method:
 
-- `SortBy`:
-  [EndpointSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointsortkey)
-- `SortOrder`:
-  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `SortBy`: [EndpointSortKey](./literals.md#endpointsortkey)
+- `SortOrder`: [OrderKey](./literals.md#orderkey)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointstatus)
+- `StatusEquals`: [EndpointStatus](./literals.md#endpointstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointsPaginator.paginate` returns
-`Iterator`\[[ListEndpointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listendpointsoutputtypedef)\].
+`Iterator`\[[ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef)\].
 
 ## ListExperimentsPaginator
 
@@ -674,15 +642,13 @@ Arguments for `ListExperimentsPaginator.paginate` method:
 
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortExperimentsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortexperimentsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortExperimentsBy](./literals.md#sortexperimentsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExperimentsPaginator.paginate` returns
-`Iterator`\[[ListExperimentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listexperimentsresponsetypedef)\].
+`Iterator`\[[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef)\].
 
 ## ListFeatureGroupsPaginator
 
@@ -705,20 +671,18 @@ Arguments for `ListFeatureGroupsPaginator.paginate` method:
 
 - `NameContains`: `str`
 - `FeatureGroupStatusEquals`:
-  [FeatureGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupstatus)
+  [FeatureGroupStatus](./literals.md#featuregroupstatus)
 - `OfflineStoreStatusEquals`:
-  [OfflineStoreStatusValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#offlinestorestatusvalue)
+  [OfflineStoreStatusValue](./literals.md#offlinestorestatusvalue)
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [FeatureGroupSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupsortorder)
-- `SortBy`:
-  [FeatureGroupSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupsortby)
+- `SortOrder`: [FeatureGroupSortOrder](./literals.md#featuregroupsortorder)
+- `SortBy`: [FeatureGroupSortBy](./literals.md#featuregroupsortby)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFeatureGroupsPaginator.paginate` returns
-`Iterator`\[[ListFeatureGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listfeaturegroupsresponsetypedef)\].
+`Iterator`\[[ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef)\].
 
 ## ListFlowDefinitionsPaginator
 
@@ -741,13 +705,12 @@ Arguments for `ListFlowDefinitionsPaginator.paginate` method:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFlowDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListFlowDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listflowdefinitionsresponsetypedef)\].
+`Iterator`\[[ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef)\].
 
 ## ListHumanTaskUisPaginator
 
@@ -770,13 +733,12 @@ Arguments for `ListHumanTaskUisPaginator.paginate` method:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHumanTaskUisPaginator.paginate` returns
-`Iterator`\[[ListHumanTaskUisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listhumantaskuisresponsetypedef)\].
+`Iterator`\[[ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef)\].
 
 ## ListHyperParameterTuningJobsPaginator
 
@@ -798,21 +760,20 @@ Boto3 documentation:
 Arguments for `ListHyperParameterTuningJobsPaginator.paginate` method:
 
 - `SortBy`:
-  [HyperParameterTuningJobSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobsortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [HyperParameterTuningJobSortByOptions](./literals.md#hyperparametertuningjobsortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `StatusEquals`:
-  [HyperParameterTuningJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstatus)
+  [HyperParameterTuningJobStatus](./literals.md#hyperparametertuningjobstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHyperParameterTuningJobsPaginator.paginate` returns
-`Iterator`\[[ListHyperParameterTuningJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listhyperparametertuningjobsresponsetypedef)\].
+`Iterator`\[[ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef)\].
 
 ## ListImageVersionsPaginator
 
@@ -838,15 +799,13 @@ Arguments for `ListImageVersionsPaginator.paginate` method:
 - `CreationTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
-- `SortBy`:
-  [ImageVersionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionsortby)
-- `SortOrder`:
-  [ImageVersionSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionsortorder)
+- `SortBy`: [ImageVersionSortBy](./literals.md#imageversionsortby)
+- `SortOrder`: [ImageVersionSortOrder](./literals.md#imageversionsortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListImageVersionsPaginator.paginate` returns
-`Iterator`\[[ListImageVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listimageversionsresponsetypedef)\].
+`Iterator`\[[ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef)\].
 
 ## ListImagesPaginator
 
@@ -871,15 +830,13 @@ Arguments for `ListImagesPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [ImageSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagesortby)
-- `SortOrder`:
-  [ImageSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagesortorder)
+- `SortBy`: [ImageSortBy](./literals.md#imagesortby)
+- `SortOrder`: [ImageSortOrder](./literals.md#imagesortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListImagesPaginator.paginate` returns
-`Iterator`\[[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listimagesresponsetypedef)\].
+`Iterator`\[[ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef)\].
 
 ## ListLabelingJobsPaginator
 
@@ -905,17 +862,14 @@ Arguments for `ListLabelingJobsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
-- `StatusEquals`:
-  [LabelingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#labelingjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `StatusEquals`: [LabelingJobStatus](./literals.md#labelingjobstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLabelingJobsPaginator.paginate` returns
-`Iterator`\[[ListLabelingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listlabelingjobsresponsetypedef)\].
+`Iterator`\[[ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef)\].
 
 ## ListLabelingJobsForWorkteamPaginator
 
@@ -940,14 +894,14 @@ Arguments for `ListLabelingJobsForWorkteamPaginator.paginate` method:
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `JobReferenceCodeContains`: `str`
-- `SortBy`: `Literal['CreationTime']`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: `Literal['CreationTime']` (see
+  [ListLabelingJobsForWorkteamSortByOptions](./literals.md#listlabelingjobsforworkteamsortbyoptions))
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLabelingJobsForWorkteamPaginator.paginate` returns
-`Iterator`\[[ListLabelingJobsForWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listlabelingjobsforworkteamresponsetypedef)\].
+`Iterator`\[[ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef)\].
 
 ## ListModelBiasJobDefinitionsPaginator
 
@@ -970,17 +924,16 @@ Arguments for `ListModelBiasJobDefinitionsPaginator.paginate` method:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelBiasJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListModelBiasJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelbiasjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef)\].
 
 ## ListModelExplainabilityJobDefinitionsPaginator
 
@@ -1003,17 +956,16 @@ Arguments for `ListModelExplainabilityJobDefinitionsPaginator.paginate` method:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelExplainabilityJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListModelExplainabilityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelexplainabilityjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef)\].
 
 ## ListModelPackageGroupsPaginator
 
@@ -1037,15 +989,13 @@ Arguments for `ListModelPackageGroupsPaginator.paginate` method:
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [ModelPackageGroupSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagegroupsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [ModelPackageGroupSortBy](./literals.md#modelpackagegroupsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelPackageGroupsPaginator.paginate` returns
-`Iterator`\[[ListModelPackageGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelpackagegroupsoutputtypedef)\].
+`Iterator`\[[ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef)\].
 
 ## ListModelPackagesPaginator
 
@@ -1069,20 +1019,16 @@ Arguments for `ListModelPackagesPaginator.paginate` method:
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `ModelApprovalStatus`:
-  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
 - `ModelPackageGroupName`: `str`
-- `ModelPackageType`:
-  [ModelPackageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagetype)
-- `SortBy`:
-  [ModelPackageSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagesortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `ModelPackageType`: [ModelPackageType](./literals.md#modelpackagetype)
+- `SortBy`: [ModelPackageSortBy](./literals.md#modelpackagesortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelPackagesPaginator.paginate` returns
-`Iterator`\[[ListModelPackagesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelpackagesoutputtypedef)\].
+`Iterator`\[[ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef)\].
 
 ## ListModelQualityJobDefinitionsPaginator
 
@@ -1105,17 +1051,16 @@ Arguments for `ListModelQualityJobDefinitionsPaginator.paginate` method:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelQualityJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListModelQualityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelqualityjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef)\].
 
 ## ListModelsPaginator
 
@@ -1135,18 +1080,16 @@ Boto3 documentation:
 
 Arguments for `ListModelsPaginator.paginate` method:
 
-- `SortBy`:
-  [ModelSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelsortkey)
-- `SortOrder`:
-  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `SortBy`: [ModelSortKey](./literals.md#modelsortkey)
+- `SortOrder`: [OrderKey](./literals.md#orderkey)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelsPaginator.paginate` returns
-`Iterator`\[[ListModelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelsoutputtypedef)\].
+`Iterator`\[[ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef)\].
 
 ## ListMonitoringExecutionsPaginator
 
@@ -1170,25 +1113,22 @@ Arguments for `ListMonitoringExecutionsPaginator.paginate` method:
 - `MonitoringScheduleName`: `str`
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringExecutionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringexecutionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringExecutionSortKey](./literals.md#monitoringexecutionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `ScheduledTimeBefore`: `datetime`
 - `ScheduledTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#executionstatus)
+- `StatusEquals`: [ExecutionStatus](./literals.md#executionstatus)
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringTypeEquals`:
-  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
+- `MonitoringTypeEquals`: [MonitoringType](./literals.md#monitoringtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMonitoringExecutionsPaginator.paginate` returns
-`Iterator`\[[ListMonitoringExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmonitoringexecutionsresponsetypedef)\].
+`Iterator`\[[ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef)\].
 
 ## ListMonitoringSchedulesPaginator
 
@@ -1210,25 +1150,21 @@ Boto3 documentation:
 Arguments for `ListMonitoringSchedulesPaginator.paginate` method:
 
 - `EndpointName`: `str`
-- `SortBy`:
-  [MonitoringScheduleSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringschedulesortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [MonitoringScheduleSortKey](./literals.md#monitoringschedulesortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [ScheduleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#schedulestatus)
+- `StatusEquals`: [ScheduleStatus](./literals.md#schedulestatus)
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringTypeEquals`:
-  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
+- `MonitoringTypeEquals`: [MonitoringType](./literals.md#monitoringtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMonitoringSchedulesPaginator.paginate` returns
-`Iterator`\[[ListMonitoringSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmonitoringschedulesresponsetypedef)\].
+`Iterator`\[[ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef)\].
 
 ## ListNotebookInstanceLifecycleConfigsPaginator
 
@@ -1250,19 +1186,19 @@ Boto3 documentation:
 Arguments for `ListNotebookInstanceLifecycleConfigsPaginator.paginate` method:
 
 - `SortBy`:
-  [NotebookInstanceLifecycleConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancelifecycleconfigsortkey)
+  [NotebookInstanceLifecycleConfigSortKey](./literals.md#notebookinstancelifecycleconfigsortkey)
 - `SortOrder`:
-  [NotebookInstanceLifecycleConfigSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancelifecycleconfigsortorder)
+  [NotebookInstanceLifecycleConfigSortOrder](./literals.md#notebookinstancelifecycleconfigsortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotebookInstanceLifecycleConfigsPaginator.paginate` returns
-`Iterator`\[[ListNotebookInstanceLifecycleConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listnotebookinstancelifecycleconfigsoutputtypedef)\].
+`Iterator`\[[ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef)\].
 
 ## ListNotebookInstancesPaginator
 
@@ -1283,25 +1219,23 @@ Boto3 documentation:
 
 Arguments for `ListNotebookInstancesPaginator.paginate` method:
 
-- `SortBy`:
-  [NotebookInstanceSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancesortkey)
+- `SortBy`: [NotebookInstanceSortKey](./literals.md#notebookinstancesortkey)
 - `SortOrder`:
-  [NotebookInstanceSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancesortorder)
+  [NotebookInstanceSortOrder](./literals.md#notebookinstancesortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [NotebookInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancestatus)
+- `StatusEquals`: [NotebookInstanceStatus](./literals.md#notebookinstancestatus)
 - `NotebookInstanceLifecycleConfigNameContains`: `str`
 - `DefaultCodeRepositoryContains`: `str`
 - `AdditionalCodeRepositoryEquals`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotebookInstancesPaginator.paginate` returns
-`Iterator`\[[ListNotebookInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listnotebookinstancesoutputtypedef)\].
+`Iterator`\[[ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef)\].
 
 ## ListPipelineExecutionStepsPaginator
 
@@ -1323,13 +1257,12 @@ Boto3 documentation:
 Arguments for `ListPipelineExecutionStepsPaginator.paginate` method:
 
 - `PipelineExecutionArn`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineExecutionStepsPaginator.paginate` returns
-`Iterator`\[[ListPipelineExecutionStepsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineexecutionstepsresponsetypedef)\].
+`Iterator`\[[ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef)\].
 
 ## ListPipelineExecutionsPaginator
 
@@ -1353,15 +1286,13 @@ Arguments for `ListPipelineExecutionsPaginator.paginate` method:
 - `PipelineName`: `str` *(required)*
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortPipelineExecutionsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortpipelineexecutionsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortPipelineExecutionsBy](./literals.md#sortpipelineexecutionsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineExecutionsPaginator.paginate` returns
-`Iterator`\[[ListPipelineExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineexecutionsresponsetypedef)\].
+`Iterator`\[[ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef)\].
 
 ## ListPipelineParametersForExecutionPaginator
 
@@ -1384,10 +1315,10 @@ Arguments for `ListPipelineParametersForExecutionPaginator.paginate` method:
 
 - `PipelineExecutionArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineParametersForExecutionPaginator.paginate` returns
-`Iterator`\[[ListPipelineParametersForExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineparametersforexecutionresponsetypedef)\].
+`Iterator`\[[ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -1411,15 +1342,13 @@ Arguments for `ListPipelinesPaginator.paginate` method:
 - `PipelineNamePrefix`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortPipelinesBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortpipelinesby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortPipelinesBy](./literals.md#sortpipelinesby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelinesresponsetypedef)\].
+`Iterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
 
 ## ListProcessingJobsPaginator
 
@@ -1445,17 +1374,14 @@ Arguments for `ListProcessingJobsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [ProcessingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processingjobstatus)
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [ProcessingJobStatus](./literals.md#processingjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProcessingJobsPaginator.paginate` returns
-`Iterator`\[[ListProcessingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listprocessingjobsresponsetypedef)\].
+`Iterator`\[[ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef)\].
 
 ## ListSubscribedWorkteamsPaginator
 
@@ -1478,10 +1404,10 @@ Arguments for `ListSubscribedWorkteamsPaginator.paginate` method:
 
 - `NameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscribedWorkteamsPaginator.paginate` returns
-`Iterator`\[[ListSubscribedWorkteamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listsubscribedworkteamsresponsetypedef)\].
+`Iterator`\[[ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -1503,10 +1429,10 @@ Arguments for `ListTagsPaginator.paginate` method:
 
 - `ResourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtagsoutputtypedef)\].
+`Iterator`\[[ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef)\].
 
 ## ListTrainingJobsPaginator
 
@@ -1532,17 +1458,14 @@ Arguments for `ListTrainingJobsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [TrainingJobStatus](./literals.md#trainingjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrainingJobsPaginator.paginate` returns
-`Iterator`\[[ListTrainingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrainingjobsresponsetypedef)\].
+`Iterator`\[[ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef)\].
 
 ## ListTrainingJobsForHyperParameterTuningJobPaginator
 
@@ -1565,17 +1488,14 @@ Arguments for `ListTrainingJobsForHyperParameterTuningJobPaginator.paginate`
 method:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
-- `StatusEquals`:
-  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
-- `SortBy`:
-  [TrainingJobSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobsortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [TrainingJobStatus](./literals.md#trainingjobstatus)
+- `SortBy`: [TrainingJobSortByOptions](./literals.md#trainingjobsortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrainingJobsForHyperParameterTuningJobPaginator.paginate` returns
-`Iterator`\[[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrainingjobsforhyperparametertuningjobresponsetypedef)\].
+`Iterator`\[[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef)\].
 
 ## ListTransformJobsPaginator
 
@@ -1601,17 +1521,14 @@ Arguments for `ListTransformJobsPaginator.paginate` method:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [TransformJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transformjobstatus)
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [TransformJobStatus](./literals.md#transformjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTransformJobsPaginator.paginate` returns
-`Iterator`\[[ListTransformJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtransformjobsresponsetypedef)\].
+`Iterator`\[[ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef)\].
 
 ## ListTrialComponentsPaginator
 
@@ -1637,15 +1554,13 @@ Arguments for `ListTrialComponentsPaginator.paginate` method:
 - `SourceArn`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortTrialComponentsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sorttrialcomponentsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortTrialComponentsBy](./literals.md#sorttrialcomponentsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrialComponentsPaginator.paginate` returns
-`Iterator`\[[ListTrialComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrialcomponentsresponsetypedef)\].
+`Iterator`\[[ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef)\].
 
 ## ListTrialsPaginator
 
@@ -1669,15 +1584,13 @@ Arguments for `ListTrialsPaginator.paginate` method:
 - `TrialComponentName`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortTrialsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sorttrialsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortTrialsBy](./literals.md#sorttrialsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrialsPaginator.paginate` returns
-`Iterator`\[[ListTrialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrialsresponsetypedef)\].
+`Iterator`\[[ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef)\].
 
 ## ListUserProfilesPaginator
 
@@ -1698,17 +1611,15 @@ Boto3 documentation:
 
 Arguments for `ListUserProfilesPaginator.paginate` method:
 
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
-- `SortBy`:
-  [UserProfileSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#userprofilesortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortBy`: [UserProfileSortKey](./literals.md#userprofilesortkey)
 - `DomainIdEquals`: `str`
 - `UserProfileNameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserProfilesPaginator.paginate` returns
-`Iterator`\[[ListUserProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listuserprofilesresponsetypedef)\].
+`Iterator`\[[ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef)\].
 
 ## ListWorkforcesPaginator
 
@@ -1730,15 +1641,14 @@ Boto3 documentation:
 Arguments for `ListWorkforcesPaginator.paginate` method:
 
 - `SortBy`:
-  [ListWorkforcesSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listworkforcessortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [ListWorkforcesSortByOptions](./literals.md#listworkforcessortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkforcesPaginator.paginate` returns
-`Iterator`\[[ListWorkforcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listworkforcesresponsetypedef)\].
+`Iterator`\[[ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef)\].
 
 ## ListWorkteamsPaginator
 
@@ -1760,15 +1670,14 @@ Boto3 documentation:
 Arguments for `ListWorkteamsPaginator.paginate` method:
 
 - `SortBy`:
-  [ListWorkteamsSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listworkteamssortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [ListWorkteamsSortByOptions](./literals.md#listworkteamssortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkteamsPaginator.paginate` returns
-`Iterator`\[[ListWorkteamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listworkteamsresponsetypedef)\].
+`Iterator`\[[ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef)\].
 
 ## SearchPaginator
 
@@ -1788,16 +1697,13 @@ Boto3 documentation:
 
 Arguments for `SearchPaginator.paginate` method:
 
-- `Resource`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#resourcetype)
-  *(required)*
+- `Resource`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `SearchExpression`:
-  [SearchExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchexpressiontypedef)
+  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
 - `SortBy`: `str`
-- `SortOrder`:
-  [SearchSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#searchsortorder)
+- `SortOrder`: [SearchSortOrder](./literals.md#searchsortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchPaginator.paginate` returns
-`Iterator`\[[SearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchresponsetypedef)\].
+`Iterator`\[[SearchResponseTypeDef](./type_defs.md#searchresponsetypedef)\].

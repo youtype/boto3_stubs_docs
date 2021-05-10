@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 WorkMail module
 
-> [Index](../README.md) > [WorkMail](./README.md) > Structures
+> [Index](..) > [WorkMail](.) > Typed dictionaries
 
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
@@ -62,8 +62,7 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Effect`:
-  [AccessControlRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#accesscontrolruleeffect)
+- `Effect`: [AccessControlRuleEffect](./literals.md#accesscontrolruleeffect)
 - `Description`: `str`
 - `IpRanges`: `List`\[`str`\]
 - `NotIpRanges`: `List`\[`str`\]
@@ -145,8 +144,7 @@ from mypy_boto3_workmail.type_defs import DelegateTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`:
-  [MemberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#membertype)
+- `Type`: [MemberType](./literals.md#membertype)
 
 ## DeleteOrganizationResponseTypeDef
 
@@ -170,8 +168,7 @@ Optional fields:
 - `GroupId`: `str`
 - `Name`: `str`
 - `Email`: `str`
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
+- `State`: [EntityState](./literals.md#entitystate)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -191,8 +188,7 @@ Optional fields:
 - `S3Prefix`: `str`
 - `S3Path`: `str`
 - `EstimatedProgress`: `int`
-- `State`:
-  [MailboxExportJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mailboxexportjobstate)
+- `State`: [MailboxExportJobState](./literals.md#mailboxexportjobstate)
 - `ErrorInfo`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -226,12 +222,9 @@ Optional fields:
 - `ResourceId`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Type`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#resourcetype)
-- `BookingOptions`:
-  [BookingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#bookingoptionstypedef)
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
+- `Type`: [ResourceType](./literals.md#resourcetype)
+- `BookingOptions`: [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
+- `State`: [EntityState](./literals.md#entitystate)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -247,10 +240,8 @@ Optional fields:
 - `Name`: `str`
 - `Email`: `str`
 - `DisplayName`: `str`
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
-- `UserRole`:
-  [UserRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#userrole)
+- `State`: [EntityState](./literals.md#entitystate)
+- `UserRole`: [UserRole](./literals.md#userrole)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -273,10 +264,8 @@ from mypy_boto3_workmail.type_defs import FolderConfigurationTypeDef
 
 Required fields:
 
-- `Name`:
-  [FolderName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#foldername)
-- `Action`:
-  [RetentionAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#retentionaction)
+- `Name`: [FolderName](./literals.md#foldername)
+- `Action`: [RetentionAction](./literals.md#retentionaction)
 
 Optional fields:
 
@@ -290,8 +279,7 @@ from mypy_boto3_workmail.type_defs import GetAccessControlEffectResponseTypeDef
 
 Optional fields:
 
-- `Effect`:
-  [AccessControlRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#accesscontrolruleeffect)
+- `Effect`: [AccessControlRuleEffect](./literals.md#accesscontrolruleeffect)
 - `MatchedRules`: `List`\[`str`\]
 
 ## GetDefaultRetentionPolicyResponseTypeDef
@@ -306,7 +294,7 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `FolderConfigurations`:
-  `List`\[[FolderConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#folderconfigurationtypedef)\]
+  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
 
 ## GetMailboxDetailsResponseTypeDef
 
@@ -328,9 +316,9 @@ from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectResponseTyp
 Optional fields:
 
 - `Effect`:
-  [MobileDeviceAccessRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mobiledeviceaccessruleeffect)
+  [MobileDeviceAccessRuleEffect](./literals.md#mobiledeviceaccessruleeffect)
 - `MatchedRules`:
-  `List`\[[MobileDeviceAccessMatchedRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#mobiledeviceaccessmatchedruletypedef)\]
+  `List`\[[MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef)\]
 
 ## GroupTypeDef
 
@@ -343,8 +331,7 @@ Optional fields:
 - `Id`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
+- `State`: [EntityState](./literals.md#entitystate)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -357,7 +344,7 @@ from mypy_boto3_workmail.type_defs import ListAccessControlRulesResponseTypeDef
 Optional fields:
 
 - `Rules`:
-  `List`\[[AccessControlRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#accesscontrolruletypedef)\]
+  `List`\[[AccessControlRuleTypeDef](./type_defs.md#accesscontrolruletypedef)\]
 
 ## ListAliasesResponseTypeDef
 
@@ -378,8 +365,7 @@ from mypy_boto3_workmail.type_defs import ListGroupMembersResponseTypeDef
 
 Optional fields:
 
-- `Members`:
-  `List`\[[MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#membertypedef)\]
+- `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
 - `NextToken`: `str`
 
 ## ListGroupsResponseTypeDef
@@ -390,8 +376,7 @@ from mypy_boto3_workmail.type_defs import ListGroupsResponseTypeDef
 
 Optional fields:
 
-- `Groups`:
-  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#grouptypedef)\]
+- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `NextToken`: `str`
 
 ## ListMailboxExportJobsResponseTypeDef
@@ -403,7 +388,7 @@ from mypy_boto3_workmail.type_defs import ListMailboxExportJobsResponseTypeDef
 Optional fields:
 
 - `Jobs`:
-  `List`\[[MailboxExportJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#mailboxexportjobtypedef)\]
+  `List`\[[MailboxExportJobTypeDef](./type_defs.md#mailboxexportjobtypedef)\]
 - `NextToken`: `str`
 
 ## ListMailboxPermissionsResponseTypeDef
@@ -414,8 +399,7 @@ from mypy_boto3_workmail.type_defs import ListMailboxPermissionsResponseTypeDef
 
 Optional fields:
 
-- `Permissions`:
-  `List`\[[PermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#permissiontypedef)\]
+- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `NextToken`: `str`
 
 ## ListMobileDeviceAccessRulesResponseTypeDef
@@ -427,7 +411,7 @@ from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesResponseTyp
 Optional fields:
 
 - `Rules`:
-  `List`\[[MobileDeviceAccessRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#mobiledeviceaccessruletypedef)\]
+  `List`\[[MobileDeviceAccessRuleTypeDef](./type_defs.md#mobiledeviceaccessruletypedef)\]
 
 ## ListOrganizationsResponseTypeDef
 
@@ -438,7 +422,7 @@ from mypy_boto3_workmail.type_defs import ListOrganizationsResponseTypeDef
 Optional fields:
 
 - `OrganizationSummaries`:
-  `List`\[[OrganizationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#organizationsummarytypedef)\]
+  `List`\[[OrganizationSummaryTypeDef](./type_defs.md#organizationsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListResourceDelegatesResponseTypeDef
@@ -449,8 +433,7 @@ from mypy_boto3_workmail.type_defs import ListResourceDelegatesResponseTypeDef
 
 Optional fields:
 
-- `Delegates`:
-  `List`\[[DelegateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#delegatetypedef)\]
+- `Delegates`: `List`\[[DelegateTypeDef](./type_defs.md#delegatetypedef)\]
 - `NextToken`: `str`
 
 ## ListResourcesResponseTypeDef
@@ -461,8 +444,7 @@ from mypy_boto3_workmail.type_defs import ListResourcesResponseTypeDef
 
 Optional fields:
 
-- `Resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#resourcetypedef)\]
+- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -473,8 +455,7 @@ from mypy_boto3_workmail.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListUsersResponseTypeDef
 
@@ -484,8 +465,7 @@ from mypy_boto3_workmail.type_defs import ListUsersResponseTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/type_defs.html#usertypedef)\]
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 - `NextToken`: `str`
 
 ## MailboxExportJobTypeDef
@@ -502,8 +482,7 @@ Optional fields:
 - `S3BucketName`: `str`
 - `S3Path`: `str`
 - `EstimatedProgress`: `int`
-- `State`:
-  [MailboxExportJobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mailboxexportjobstate)
+- `State`: [MailboxExportJobState](./literals.md#mailboxexportjobstate)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
@@ -517,10 +496,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
-- `Type`:
-  [MemberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#membertype)
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
+- `Type`: [MemberType](./literals.md#membertype)
+- `State`: [EntityState](./literals.md#entitystate)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -547,7 +524,7 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Effect`:
-  [MobileDeviceAccessRuleEffect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#mobiledeviceaccessruleeffect)
+  [MobileDeviceAccessRuleEffect](./literals.md#mobiledeviceaccessruleeffect)
 - `DeviceTypes`: `List`\[`str`\]
 - `NotDeviceTypes`: `List`\[`str`\]
 - `DeviceModels`: `List`\[`str`\]
@@ -594,10 +571,8 @@ from mypy_boto3_workmail.type_defs import PermissionTypeDef
 Required fields:
 
 - `GranteeId`: `str`
-- `GranteeType`:
-  [MemberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#membertype)
-- `PermissionValues`:
-  `List`\[[PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#permissiontype)\]
+- `GranteeType`: [MemberType](./literals.md#membertype)
+- `PermissionValues`: `List`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## ResourceTypeDef
 
@@ -610,10 +585,8 @@ Optional fields:
 - `Id`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Type`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#resourcetype)
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
+- `Type`: [ResourceType](./literals.md#resourcetype)
+- `State`: [EntityState](./literals.md#entitystate)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
@@ -650,9 +623,7 @@ Optional fields:
 - `Email`: `str`
 - `Name`: `str`
 - `DisplayName`: `str`
-- `State`:
-  [EntityState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#entitystate)
-- `UserRole`:
-  [UserRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmail/literals.html#userrole)
+- `State`: [EntityState](./literals.md#entitystate)
+- `UserRole`: [UserRole](./literals.md#userrole)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`

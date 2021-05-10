@@ -1,6 +1,6 @@
 # Type annotations for boto3 SSOOIDC module
 
-> [Index](../README.md) > SSOOIDC
+> [Index](..) > SSOOIDC
 
 Auto-generated documentation for
 [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)

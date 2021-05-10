@@ -1,6 +1,6 @@
 # Literals for boto3 Glacier module
 
-> [Index](../README.md) > [Glacier](./README.md) > Literals
+> [Index](..) > [Glacier](.) > Literals
 
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 Comprehend module
 
-> [Index](../README.md) > Comprehend
+> [Index](..) > Comprehend
 
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)

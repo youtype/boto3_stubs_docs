@@ -1,7 +1,6 @@
 # IoTSecureTunnelingClient for boto3 IoTSecureTunneling module
 
-> [Index](../README.md) > [IoTSecureTunneling](./README.md) >
-> IoTSecureTunnelingClient
+> [Index](..) > [IoTSecureTunneling](.) > IoTSecureTunnelingClient
 
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
@@ -98,7 +97,7 @@ Arguments:
 - `tunnelId`: `str` *(required)*
 
 Returns
-[DescribeTunnelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#describetunnelresponsetypedef).
+[DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef).
 
 ### generate_presigned_url
 
@@ -130,7 +129,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_tunnels
 
@@ -146,7 +145,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTunnelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#listtunnelsresponsetypedef).
+[ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef).
 
 ### open_tunnel
 
@@ -158,15 +157,12 @@ Boto3 documentation:
 Arguments:
 
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `destinationConfig`:
-  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#destinationconfigtypedef)
-- `timeoutConfig`:
-  [TimeoutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#timeoutconfigtypedef)
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 
-Returns
-[OpenTunnelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#opentunnelresponsetypedef).
+Returns [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef).
 
 ### tag_resource
 
@@ -178,9 +174,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsecuretunneling/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

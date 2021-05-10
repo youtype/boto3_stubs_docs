@@ -1,6 +1,6 @@
 # WellArchitectedClient for boto3 WellArchitected module
 
-> [Index](../README.md) > [WellArchitected](./README.md) > WellArchitectedClient
+> [Index](..) > [WellArchitected](.) > WellArchitectedClient
 
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
@@ -125,7 +125,7 @@ Arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[CreateMilestoneOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#createmilestoneoutputtypedef).
+[CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef).
 
 ### create_workload
 
@@ -138,8 +138,7 @@ Arguments:
 
 - `WorkloadName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Environment`:
-  [WorkloadEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadenvironment)
+- `Environment`: [WorkloadEnvironment](./literals.md#workloadenvironment)
   *(required)*
 - `ReviewOwner`: `str` *(required)*
 - `Lenses`: `List`\[`str`\] *(required)*
@@ -155,7 +154,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorkloadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#createworkloadoutputtypedef).
+[CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef).
 
 ### create_workload_share
 
@@ -169,13 +168,11 @@ Arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `SharedWith`: `str` *(required)*
-- `PermissionType`:
-  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
-  *(required)*
+- `PermissionType`: [PermissionType](./literals.md#permissiontype) *(required)*
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[CreateWorkloadShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#createworkloadshareoutputtypedef).
+[CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef).
 
 ### delete_workload
 
@@ -247,8 +244,7 @@ Arguments:
 - `QuestionId`: `str` *(required)*
 - `MilestoneNumber`: `int`
 
-Returns
-[GetAnswerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getansweroutputtypedef).
+Returns [GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef).
 
 ### get_lens_review
 
@@ -264,7 +260,7 @@ Arguments:
 - `MilestoneNumber`: `int`
 
 Returns
-[GetLensReviewOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getlensreviewoutputtypedef).
+[GetLensReviewOutputTypeDef](./type_defs.md#getlensreviewoutputtypedef).
 
 ### get_lens_review_report
 
@@ -281,7 +277,7 @@ Arguments:
 - `MilestoneNumber`: `int`
 
 Returns
-[GetLensReviewReportOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getlensreviewreportoutputtypedef).
+[GetLensReviewReportOutputTypeDef](./type_defs.md#getlensreviewreportoutputtypedef).
 
 ### get_lens_version_difference
 
@@ -297,7 +293,7 @@ Arguments:
 - `BaseLensVersion`: `str` *(required)*
 
 Returns
-[GetLensVersionDifferenceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getlensversiondifferenceoutputtypedef).
+[GetLensVersionDifferenceOutputTypeDef](./type_defs.md#getlensversiondifferenceoutputtypedef).
 
 ### get_milestone
 
@@ -311,8 +307,7 @@ Arguments:
 - `WorkloadId`: `str` *(required)*
 - `MilestoneNumber`: `int` *(required)*
 
-Returns
-[GetMilestoneOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getmilestoneoutputtypedef).
+Returns [GetMilestoneOutputTypeDef](./type_defs.md#getmilestoneoutputtypedef).
 
 ### get_workload
 
@@ -325,8 +320,7 @@ Arguments:
 
 - `WorkloadId`: `str` *(required)*
 
-Returns
-[GetWorkloadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#getworkloadoutputtypedef).
+Returns [GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef).
 
 ### list_answers
 
@@ -344,8 +338,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListAnswersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listanswersoutputtypedef).
+Returns [ListAnswersOutputTypeDef](./type_defs.md#listanswersoutputtypedef).
 
 ### list_lens_review_improvements
 
@@ -365,7 +358,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLensReviewImprovementsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listlensreviewimprovementsoutputtypedef).
+[ListLensReviewImprovementsOutputTypeDef](./type_defs.md#listlensreviewimprovementsoutputtypedef).
 
 ### list_lens_reviews
 
@@ -383,7 +376,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLensReviewsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listlensreviewsoutputtypedef).
+[ListLensReviewsOutputTypeDef](./type_defs.md#listlensreviewsoutputtypedef).
 
 ### list_lenses
 
@@ -397,8 +390,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListLensesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listlensesoutputtypedef).
+Returns [ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef).
 
 ### list_milestones
 
@@ -414,7 +406,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMilestonesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listmilestonesoutputtypedef).
+[ListMilestonesOutputTypeDef](./type_defs.md#listmilestonesoutputtypedef).
 
 ### list_notifications
 
@@ -431,7 +423,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListNotificationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listnotificationsoutputtypedef).
+[ListNotificationsOutputTypeDef](./type_defs.md#listnotificationsoutputtypedef).
 
 ### list_share_invitations
 
@@ -448,7 +440,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListShareInvitationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listshareinvitationsoutputtypedef).
+[ListShareInvitationsOutputTypeDef](./type_defs.md#listshareinvitationsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -463,7 +455,7 @@ Arguments:
 - `WorkloadArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_workload_shares
 
@@ -481,7 +473,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkloadSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listworkloadsharesoutputtypedef).
+[ListWorkloadSharesOutputTypeDef](./type_defs.md#listworkloadsharesoutputtypedef).
 
 ### list_workloads
 
@@ -497,7 +489,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkloadsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#listworkloadsoutputtypedef).
+[ListWorkloadsOutputTypeDef](./type_defs.md#listworkloadsoutputtypedef).
 
 ### tag_resource
 
@@ -543,8 +535,7 @@ Arguments:
 - `Notes`: `str`
 - `IsApplicable`: `bool`
 
-Returns
-[UpdateAnswerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateansweroutputtypedef).
+Returns [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef).
 
 ### update_lens_review
 
@@ -562,7 +553,7 @@ Arguments:
 - `PillarNotes`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateLensReviewOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updatelensreviewoutputtypedef).
+[UpdateLensReviewOutputTypeDef](./type_defs.md#updatelensreviewoutputtypedef).
 
 ### update_share_invitation
 
@@ -576,11 +567,10 @@ Arguments:
 
 - `ShareInvitationId`: `str` *(required)*
 - `ShareInvitationAction`:
-  [ShareInvitationAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#shareinvitationaction)
-  *(required)*
+  [ShareInvitationAction](./literals.md#shareinvitationaction) *(required)*
 
 Returns
-[UpdateShareInvitationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateshareinvitationoutputtypedef).
+[UpdateShareInvitationOutputTypeDef](./type_defs.md#updateshareinvitationoutputtypedef).
 
 ### update_workload
 
@@ -594,8 +584,7 @@ Arguments:
 - `WorkloadId`: `str` *(required)*
 - `WorkloadName`: `str`
 - `Description`: `str`
-- `Environment`:
-  [WorkloadEnvironment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadenvironment)
+- `Environment`: [WorkloadEnvironment](./literals.md#workloadenvironment)
 - `AccountIds`: `List`\[`str`\]
 - `AwsRegions`: `List`\[`str`\]
 - `NonAwsRegions`: `List`\[`str`\]
@@ -607,10 +596,10 @@ Arguments:
 - `Industry`: `str`
 - `Notes`: `str`
 - `ImprovementStatus`:
-  [WorkloadImprovementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#workloadimprovementstatus)
+  [WorkloadImprovementStatus](./literals.md#workloadimprovementstatus)
 
 Returns
-[UpdateWorkloadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateworkloadoutputtypedef).
+[UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef).
 
 ### update_workload_share
 
@@ -624,12 +613,10 @@ Arguments:
 
 - `ShareId`: `str` *(required)*
 - `WorkloadId`: `str` *(required)*
-- `PermissionType`:
-  [PermissionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/literals.html#permissiontype)
-  *(required)*
+- `PermissionType`: [PermissionType](./literals.md#permissiontype) *(required)*
 
 Returns
-[UpdateWorkloadShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_wellarchitected/type_defs.html#updateworkloadshareoutputtypedef).
+[UpdateWorkloadShareOutputTypeDef](./type_defs.md#updateworkloadshareoutputtypedef).
 
 ### upgrade_lens_review
 

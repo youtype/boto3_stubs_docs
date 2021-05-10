@@ -1,6 +1,6 @@
 # Type annotations for boto3 Transfer module
 
-> [Index](../README.md) > Transfer
+> [Index](..) > Transfer
 
 Auto-generated documentation for
 [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)

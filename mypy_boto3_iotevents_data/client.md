@@ -1,6 +1,6 @@
 # IoTEventsDataClient for boto3 IoTEventsData module
 
-> [Index](../README.md) > [IoTEventsData](./README.md) > IoTEventsDataClient
+> [Index](..) > [IoTEventsData](.) > IoTEventsDataClient
 
 Auto-generated documentation for
 [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
@@ -66,12 +66,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `messages`:
-  `List`\[[MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#messagetypedef)\]
+- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
   *(required)*
 
 Returns
-[BatchPutMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#batchputmessageresponsetypedef).
+[BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
 ### batch_update_detector
 
@@ -84,11 +83,11 @@ Boto3 documentation:
 Arguments:
 
 - `detectors`:
-  `List`\[[UpdateDetectorRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#updatedetectorrequesttypedef)\]
+  `List`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
   *(required)*
 
 Returns
-[BatchUpdateDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#batchupdatedetectorresponsetypedef).
+[BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef).
 
 ### can_paginate
 
@@ -116,7 +115,7 @@ Arguments:
 - `keyValue`: `str`
 
 Returns
-[DescribeDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#describedetectorresponsetypedef).
+[DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef).
 
 ### generate_presigned_url
 
@@ -150,4 +149,4 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotevents_data/type_defs.html#listdetectorsresponsetypedef).
+[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).

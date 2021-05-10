@@ -1,6 +1,6 @@
 # Paginators for boto3 mgn module
 
-> [Index](../README.md) > [mgn](./README.md) > Paginators
+> [Index](..) > [mgn](.) > Paginators
 
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
@@ -34,10 +34,10 @@ Arguments for `DescribeJobLogItemsPaginator.paginate` method:
 
 - `jobID`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobLogItemsPaginator.paginate` returns
-`Iterator`\[[DescribeJobLogItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejoblogitemsresponsetypedef)\].
+`Iterator`\[[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)\].
 
 ## DescribeJobsPaginator
 
@@ -58,13 +58,13 @@ Boto3 documentation:
 Arguments for `DescribeJobsPaginator.paginate` method:
 
 - `filters`:
-  [DescribeJobsRequestFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejobsrequestfilterstypedef)
+  [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobsPaginator.paginate` returns
-`Iterator`\[[DescribeJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejobsresponsetypedef)\].
+`Iterator`\[[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)\].
 
 ## DescribeReplicationConfigurationTemplatesPaginator
 
@@ -88,10 +88,10 @@ method:
 
 - `replicationConfigurationTemplateIDs`: `List`\[`str`\] *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationConfigurationTemplatesPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationConfigurationTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describereplicationconfigurationtemplatesresponsetypedef)\].
+`Iterator`\[[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)\].
 
 ## DescribeSourceServersPaginator
 
@@ -113,10 +113,10 @@ Boto3 documentation:
 Arguments for `DescribeSourceServersPaginator.paginate` method:
 
 - `filters`:
-  [DescribeSourceServersRequestFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describesourceserversrequestfilterstypedef)
+  [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSourceServersPaginator.paginate` returns
-`Iterator`\[[DescribeSourceServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describesourceserversresponsetypedef)\].
+`Iterator`\[[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)\].

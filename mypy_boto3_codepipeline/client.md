@@ -1,6 +1,6 @@
 # CodePipelineClient for boto3 CodePipeline module
 
-> [Index](../README.md) > [CodePipeline](./README.md) > CodePipelineClient
+> [Index](..) > [CodePipeline](.) > CodePipelineClient
 
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
@@ -138,7 +138,7 @@ Arguments:
 - `nonce`: `str` *(required)*
 
 Returns
-[AcknowledgeJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#acknowledgejoboutputtypedef).
+[AcknowledgeJobOutputTypeDef](./type_defs.md#acknowledgejoboutputtypedef).
 
 ### acknowledge_third_party_job
 
@@ -155,7 +155,7 @@ Arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[AcknowledgeThirdPartyJobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#acknowledgethirdpartyjoboutputtypedef).
+[AcknowledgeThirdPartyJobOutputTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputtypedef).
 
 ### can_paginate
 
@@ -180,26 +180,21 @@ Boto3 documentation:
 
 Arguments:
 
-- `category`:
-  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
-  *(required)*
+- `category`: [ActionCategory](./literals.md#actioncategory) *(required)*
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
 - `inputArtifactDetails`:
-  [ArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailstypedef)
-  *(required)*
+  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) *(required)*
 - `outputArtifactDetails`:
-  [ArtifactDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#artifactdetailstypedef)
-  *(required)*
+  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) *(required)*
 - `settings`:
-  [ActionTypeSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypesettingstypedef)
+  [ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef)
 - `configurationProperties`:
-  `List`\[[ActionConfigurationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionconfigurationpropertytypedef)\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+  `List`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCustomActionTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#createcustomactiontypeoutputtypedef).
+[CreateCustomActionTypeOutputTypeDef](./type_defs.md#createcustomactiontypeoutputtypedef).
 
 ### create_pipeline
 
@@ -211,13 +206,12 @@ Boto3 documentation:
 Arguments:
 
 - `pipeline`:
-  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
   *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#createpipelineoutputtypedef).
+[CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
 
 ### delete_custom_action_type
 
@@ -229,9 +223,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `category`:
-  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
-  *(required)*
+- `category`: [ActionCategory](./literals.md#actioncategory) *(required)*
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
 
@@ -285,8 +277,7 @@ Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
-- `transitionType`:
-  [StageTransitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#stagetransitiontype)
+- `transitionType`: [StageTransitionType](./literals.md#stagetransitiontype)
   *(required)*
 - `reason`: `str` *(required)*
 
@@ -302,8 +293,7 @@ Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
-- `transitionType`:
-  [StageTransitionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#stagetransitiontype)
+- `transitionType`: [StageTransitionType](./literals.md#stagetransitiontype)
   *(required)*
 
 ### generate_presigned_url
@@ -332,15 +322,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `category`:
-  [ActionCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actioncategory)
-  *(required)*
+- `category`: [ActionCategory](./literals.md#actioncategory) *(required)*
 - `owner`: `str` *(required)*
 - `provider`: `str` *(required)*
 - `version`: `str` *(required)*
 
 Returns
-[GetActionTypeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getactiontypeoutputtypedef).
+[GetActionTypeOutputTypeDef](./type_defs.md#getactiontypeoutputtypedef).
 
 ### get_job_details
 
@@ -354,7 +342,7 @@ Arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[GetJobDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getjobdetailsoutputtypedef).
+[GetJobDetailsOutputTypeDef](./type_defs.md#getjobdetailsoutputtypedef).
 
 ### get_pipeline
 
@@ -368,8 +356,7 @@ Arguments:
 - `name`: `str` *(required)*
 - `version`: `int`
 
-Returns
-[GetPipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getpipelineoutputtypedef).
+Returns [GetPipelineOutputTypeDef](./type_defs.md#getpipelineoutputtypedef).
 
 ### get_pipeline_execution
 
@@ -385,7 +372,7 @@ Arguments:
 - `pipelineExecutionId`: `str` *(required)*
 
 Returns
-[GetPipelineExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getpipelineexecutionoutputtypedef).
+[GetPipelineExecutionOutputTypeDef](./type_defs.md#getpipelineexecutionoutputtypedef).
 
 ### get_pipeline_state
 
@@ -399,7 +386,7 @@ Arguments:
 - `name`: `str` *(required)*
 
 Returns
-[GetPipelineStateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getpipelinestateoutputtypedef).
+[GetPipelineStateOutputTypeDef](./type_defs.md#getpipelinestateoutputtypedef).
 
 ### get_third_party_job_details
 
@@ -415,7 +402,7 @@ Arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[GetThirdPartyJobDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#getthirdpartyjobdetailsoutputtypedef).
+[GetThirdPartyJobDetailsOutputTypeDef](./type_defs.md#getthirdpartyjobdetailsoutputtypedef).
 
 ### list_action_executions
 
@@ -429,12 +416,12 @@ Arguments:
 
 - `pipelineName`: `str` *(required)*
 - `filter`:
-  [ActionExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutionfiltertypedef)
+  [ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListActionExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listactionexecutionsoutputtypedef).
+[ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef).
 
 ### list_action_types
 
@@ -445,13 +432,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `actionOwnerFilter`:
-  [ActionOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionowner)
+- `actionOwnerFilter`: [ActionOwner](./literals.md#actionowner)
 - `nextToken`: `str`
 - `regionFilter`: `str`
 
 Returns
-[ListActionTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listactiontypesoutputtypedef).
+[ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef).
 
 ### list_pipeline_executions
 
@@ -468,7 +454,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListPipelineExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listpipelineexecutionsoutputtypedef).
+[ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef).
 
 ### list_pipelines
 
@@ -483,7 +469,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listpipelinesoutputtypedef).
+[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -500,7 +486,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_webhooks
 
@@ -514,8 +500,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListWebhooksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listwebhooksoutputtypedef).
+Returns [ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef).
 
 ### poll_for_jobs
 
@@ -526,14 +511,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `actionTypeId`:
-  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
   *(required)*
 - `maxBatchSize`: `int`
 - `queryParam`: `Dict`\[`str`, `str`\]
 
-Returns
-[PollForJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pollforjobsoutputtypedef).
+Returns [PollForJobsOutputTypeDef](./type_defs.md#pollforjobsoutputtypedef).
 
 ### poll_for_third_party_jobs
 
@@ -545,13 +528,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `actionTypeId`:
-  [ActionTypeIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypeidtypedef)
+- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
   *(required)*
 - `maxBatchSize`: `int`
 
 Returns
-[PollForThirdPartyJobsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pollforthirdpartyjobsoutputtypedef).
+[PollForThirdPartyJobsOutputTypeDef](./type_defs.md#pollforthirdpartyjobsoutputtypedef).
 
 ### put_action_revision
 
@@ -565,12 +547,11 @@ Arguments:
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `actionName`: `str` *(required)*
-- `actionRevision`:
-  [ActionRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionrevisiontypedef)
+- `actionRevision`: [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef)
   *(required)*
 
 Returns
-[PutActionRevisionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#putactionrevisionoutputtypedef).
+[PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef).
 
 ### put_approval_result
 
@@ -584,13 +565,12 @@ Arguments:
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `actionName`: `str` *(required)*
-- `result`:
-  [ApprovalResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#approvalresulttypedef)
+- `result`: [ApprovalResultTypeDef](./type_defs.md#approvalresulttypedef)
   *(required)*
 - `token`: `str` *(required)*
 
 Returns
-[PutApprovalResultOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#putapprovalresultoutputtypedef).
+[PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef).
 
 ### put_job_failure_result
 
@@ -603,8 +583,7 @@ Boto3 documentation:
 Arguments:
 
 - `jobId`: `str` *(required)*
-- `failureDetails`:
-  [FailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#failuredetailstypedef)
+- `failureDetails`: [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
   *(required)*
 
 ### put_job_success_result
@@ -619,10 +598,10 @@ Arguments:
 
 - `jobId`: `str` *(required)*
 - `currentRevision`:
-  [CurrentRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#currentrevisiontypedef)
+  [CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef)
 - `continuationToken`: `str`
 - `executionDetails`:
-  [ExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#executiondetailstypedef)
+  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
 - `outputVariables`: `Dict`\[`str`, `str`\]
 
 ### put_third_party_job_failure_result
@@ -637,8 +616,7 @@ Arguments:
 
 - `jobId`: `str` *(required)*
 - `clientToken`: `str` *(required)*
-- `failureDetails`:
-  [FailureDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#failuredetailstypedef)
+- `failureDetails`: [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
   *(required)*
 
 ### put_third_party_job_success_result
@@ -654,10 +632,10 @@ Arguments:
 - `jobId`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `currentRevision`:
-  [CurrentRevisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#currentrevisiontypedef)
+  [CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef)
 - `continuationToken`: `str`
 - `executionDetails`:
-  [ExecutionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#executiondetailstypedef)
+  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
 
 ### put_webhook
 
@@ -668,14 +646,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `webhook`:
-  [WebhookDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#webhookdefinitiontypedef)
+- `webhook`: [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
   *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[PutWebhookOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#putwebhookoutputtypedef).
+Returns [PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef).
 
 ### register_webhook_with_third_party
 
@@ -704,10 +679,11 @@ Arguments:
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
 - `pipelineExecutionId`: `str` *(required)*
-- `retryMode`: `Literal['FAILED_ACTIONS']` *(required)*
+- `retryMode`: `Literal['FAILED_ACTIONS']` (see
+  [StageRetryMode](./literals.md#stageretrymode)) *(required)*
 
 Returns
-[RetryStageExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#retrystageexecutionoutputtypedef).
+[RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef).
 
 ### start_pipeline_execution
 
@@ -723,7 +699,7 @@ Arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[StartPipelineExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#startpipelineexecutionoutputtypedef).
+[StartPipelineExecutionOutputTypeDef](./type_defs.md#startpipelineexecutionoutputtypedef).
 
 ### stop_pipeline_execution
 
@@ -741,7 +717,7 @@ Arguments:
 - `reason`: `str`
 
 Returns
-[StopPipelineExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#stoppipelineexecutionoutputtypedef).
+[StopPipelineExecutionOutputTypeDef](./type_defs.md#stoppipelineexecutionoutputtypedef).
 
 ### tag_resource
 
@@ -753,9 +729,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -783,7 +757,7 @@ Boto3 documentation:
 Arguments:
 
 - `actionType`:
-  [ActionTypeDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actiontypedeclarationtypedef)
+  [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
   *(required)*
 
 ### update_pipeline
@@ -796,11 +770,11 @@ Boto3 documentation:
 Arguments:
 
 - `pipeline`:
-  [PipelineDeclarationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#pipelinedeclarationtypedef)
+  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
   *(required)*
 
 Returns
-[UpdatePipelineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#updatepipelineoutputtypedef).
+[UpdatePipelineOutputTypeDef](./type_defs.md#updatepipelineoutputtypedef).
 
 ### get_paginator
 

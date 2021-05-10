@@ -1,6 +1,6 @@
 # IVSClient for boto3 IVS module
 
-> [Index](../README.md) > [IVS](./README.md) > IVSClient
+> [Index](..) > [IVS](.) > IVSClient
 
 Auto-generated documentation for
 [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
@@ -97,7 +97,7 @@ Arguments:
 - `arns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#batchgetchannelresponsetypedef).
+[BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef).
 
 ### batch_get_stream_key
 
@@ -111,7 +111,7 @@ Arguments:
 - `arns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetStreamKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#batchgetstreamkeyresponsetypedef).
+[BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef).
 
 ### can_paginate
 
@@ -136,16 +136,14 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str`
-- `latencyMode`:
-  [ChannelLatencyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channellatencymode)
-- `type`:
-  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channeltype)
+- `latencyMode`: [ChannelLatencyMode](./literals.md#channellatencymode)
+- `type`: [ChannelType](./literals.md#channeltype)
 - `authorized`: `bool`
 - `recordingConfigurationArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#createchannelresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_recording_configuration
 
@@ -158,13 +156,13 @@ Boto3 documentation:
 Arguments:
 
 - `destinationConfiguration`:
-  [DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#destinationconfigurationtypedef)
+  [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
   *(required)*
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRecordingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#createrecordingconfigurationresponsetypedef).
+[CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).
 
 ### create_stream_key
 
@@ -179,7 +177,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#createstreamkeyresponsetypedef).
+[CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef).
 
 ### delete_channel
 
@@ -255,8 +253,7 @@ Arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getchannelresponsetypedef).
+Returns [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef).
 
 ### get_playback_key_pair
 
@@ -270,7 +267,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetPlaybackKeyPairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getplaybackkeypairresponsetypedef).
+[GetPlaybackKeyPairResponseTypeDef](./type_defs.md#getplaybackkeypairresponsetypedef).
 
 ### get_recording_configuration
 
@@ -284,7 +281,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetRecordingConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getrecordingconfigurationresponsetypedef).
+[GetRecordingConfigurationResponseTypeDef](./type_defs.md#getrecordingconfigurationresponsetypedef).
 
 ### get_stream
 
@@ -297,8 +294,7 @@ Arguments:
 
 - `channelArn`: `str` *(required)*
 
-Returns
-[GetStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getstreamresponsetypedef).
+Returns [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef).
 
 ### get_stream_key
 
@@ -312,7 +308,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[GetStreamKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#getstreamkeyresponsetypedef).
+[GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef).
 
 ### import_playback_key_pair
 
@@ -328,7 +324,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ImportPlaybackKeyPairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#importplaybackkeypairresponsetypedef).
+[ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef).
 
 ### list_channels
 
@@ -345,7 +341,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listchannelsresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_playback_key_pairs
 
@@ -360,7 +356,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPlaybackKeyPairsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listplaybackkeypairsresponsetypedef).
+[ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef).
 
 ### list_recording_configurations
 
@@ -376,7 +372,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRecordingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listrecordingconfigurationsresponsetypedef).
+[ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef).
 
 ### list_stream_keys
 
@@ -392,7 +388,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListStreamKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#liststreamkeysresponsetypedef).
+[ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
 
 ### list_streams
 
@@ -407,7 +403,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListStreamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#liststreamsresponsetypedef).
+[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -423,7 +419,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_metadata
 
@@ -489,15 +485,13 @@ Arguments:
 
 - `arn`: `str` *(required)*
 - `name`: `str`
-- `latencyMode`:
-  [ChannelLatencyMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channellatencymode)
-- `type`:
-  [ChannelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/literals.html#channeltype)
+- `latencyMode`: [ChannelLatencyMode](./literals.md#channellatencymode)
+- `type`: [ChannelType](./literals.md#channeltype)
 - `authorized`: `bool`
 - `recordingConfigurationArn`: `str`
 
 Returns
-[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ivs/type_defs.html#updatechannelresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### get_paginator
 

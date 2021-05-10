@@ -1,6 +1,6 @@
 # Type annotations for boto3 Batch module
 
-> [Index](../README.md) > Batch
+> [Index](..) > Batch
 
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)

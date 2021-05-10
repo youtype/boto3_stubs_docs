@@ -1,6 +1,6 @@
 # Paginators for boto3 Transfer module
 
-> [Index](../README.md) > [Transfer](./README.md) > Paginators
+> [Index](..) > [Transfer](.) > Paginators
 
 Auto-generated documentation for
 [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
@@ -29,7 +29,7 @@ Boto3 documentation:
 Arguments for `ListServersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServersPaginator.paginate` returns
-`Iterator`\[[ListServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listserversresponsetypedef)\].
+`Iterator`\[[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef)\].

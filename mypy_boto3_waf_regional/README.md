@@ -1,6 +1,6 @@
 # Type annotations for boto3 WAFRegional module
 
-> [Index](../README.md) > WAFRegional
+> [Index](..) > WAFRegional
 
 Auto-generated documentation for
 [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)

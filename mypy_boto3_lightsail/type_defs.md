@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Lightsail module
 
-> [Index](../README.md) > [Lightsail](./README.md) > Structures
+> [Index](..) > [Lightsail](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
@@ -247,12 +247,13 @@ from mypy_boto3_lightsail.type_defs import AddOnRequestTypeDef
 
 Required fields:
 
-- `addOnType`: `Literal['AutoSnapshot']`
+- `addOnType`: `Literal['AutoSnapshot']` (see
+  [AddOnType](./literals.md#addontype))
 
 Optional fields:
 
 - `autoSnapshotAddOnRequest`:
-  [AutoSnapshotAddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#autosnapshotaddonrequesttypedef)
+  [AutoSnapshotAddOnRequestTypeDef](./type_defs.md#autosnapshotaddonrequesttypedef)
 
 ## AddOnTypeDef
 
@@ -278,33 +279,23 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `supportCode`: `str`
 - `monitoredResourceInfo`:
-  [MonitoredResourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#monitoredresourceinfotypedef)
-- `comparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#comparisonoperator)
+  [MonitoredResourceInfoTypeDef](./type_defs.md#monitoredresourceinfotypedef)
+- `comparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
 - `evaluationPeriods`: `int`
 - `period`: `int`
 - `threshold`: `float`
 - `datapointsToAlarm`: `int`
-- `treatMissingData`:
-  [TreatMissingData](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#treatmissingdata)
-- `statistic`:
-  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)
-- `metricName`:
-  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricname)
-- `state`:
-  [AlarmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#alarmstate)
-- `unit`:
-  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
-- `contactProtocols`:
-  `List`\[[ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)\]
-- `notificationTriggers`:
-  `List`\[[AlarmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#alarmstate)\]
+- `treatMissingData`: [TreatMissingData](./literals.md#treatmissingdata)
+- `statistic`: [MetricStatistic](./literals.md#metricstatistic)
+- `metricName`: [MetricName](./literals.md#metricname)
+- `state`: [AlarmState](./literals.md#alarmstate)
+- `unit`: [MetricUnit](./literals.md#metricunit)
+- `contactProtocols`: `List`\[[ContactProtocol](./literals.md#contactprotocol)\]
+- `notificationTriggers`: `List`\[[AlarmState](./literals.md#alarmstate)\]
 - `notificationEnabled`: `bool`
 
 ## AllocateStaticIpResultTypeDef
@@ -315,8 +306,7 @@ from mypy_boto3_lightsail.type_defs import AllocateStaticIpResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## AttachCertificateToDistributionResultTypeDef
 
@@ -326,8 +316,7 @@ from mypy_boto3_lightsail.type_defs import AttachCertificateToDistributionResult
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## AttachDiskResultTypeDef
 
@@ -337,8 +326,7 @@ from mypy_boto3_lightsail.type_defs import AttachDiskResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## AttachInstancesToLoadBalancerResultTypeDef
 
@@ -348,8 +336,7 @@ from mypy_boto3_lightsail.type_defs import AttachInstancesToLoadBalancerResultTy
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## AttachLoadBalancerTlsCertificateResultTypeDef
 
@@ -359,8 +346,7 @@ from mypy_boto3_lightsail.type_defs import AttachLoadBalancerTlsCertificateResul
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## AttachStaticIpResultTypeDef
 
@@ -370,8 +356,7 @@ from mypy_boto3_lightsail.type_defs import AttachStaticIpResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## AttachedDiskTypeDef
 
@@ -404,10 +389,9 @@ Optional fields:
 
 - `date`: `str`
 - `createdAt`: `datetime`
-- `status`:
-  [AutoSnapshotStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#autosnapshotstatus)
+- `status`: [AutoSnapshotStatus](./literals.md#autosnapshotstatus)
 - `fromAttachedDisks`:
-  `List`\[[AttachedDiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attacheddisktypedef)\]
+  `List`\[[AttachedDiskTypeDef](./type_defs.md#attacheddisktypedef)\]
 
 ## AvailabilityZoneTypeDef
 
@@ -431,8 +415,7 @@ Optional fields:
 - `blueprintId`: `str`
 - `name`: `str`
 - `group`: `str`
-- `type`:
-  [BlueprintType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#blueprinttype)
+- `type`: [BlueprintType](./literals.md#blueprinttype)
 - `description`: `str`
 - `isActive`: `bool`
 - `minPower`: `int`
@@ -440,8 +423,7 @@ Optional fields:
 - `versionCode`: `str`
 - `productUrl`: `str`
 - `licenseUrl`: `str`
-- `platform`:
-  [InstancePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instanceplatform)
+- `platform`: [InstancePlatform](./literals.md#instanceplatform)
 
 ## BundleTypeDef
 
@@ -462,7 +444,7 @@ Optional fields:
 - `ramSizeInGb`: `float`
 - `transferPerMonthInGb`: `int`
 - `supportedPlatforms`:
-  `List`\[[InstancePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instanceplatform)\]
+  `List`\[[InstancePlatform](./literals.md#instanceplatform)\]
 
 ## CacheBehaviorPerPathTypeDef
 
@@ -473,8 +455,7 @@ from mypy_boto3_lightsail.type_defs import CacheBehaviorPerPathTypeDef
 Optional fields:
 
 - `path`: `str`
-- `behavior`:
-  [BehaviorEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#behaviorenum)
+- `behavior`: [BehaviorEnum](./literals.md#behaviorenum)
 
 ## CacheBehaviorTypeDef
 
@@ -484,8 +465,7 @@ from mypy_boto3_lightsail.type_defs import CacheBehaviorTypeDef
 
 Optional fields:
 
-- `behavior`:
-  [BehaviorEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#behaviorenum)
+- `behavior`: [BehaviorEnum](./literals.md#behaviorenum)
 
 ## CacheSettingsTypeDef
 
@@ -500,12 +480,10 @@ Optional fields:
 - `maximumTTL`: `int`
 - `allowedHTTPMethods`: `str`
 - `cachedHTTPMethods`: `str`
-- `forwardedCookies`:
-  [CookieObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cookieobjecttypedef)
-- `forwardedHeaders`:
-  [HeaderObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#headerobjecttypedef)
+- `forwardedCookies`: [CookieObjectTypeDef](./type_defs.md#cookieobjecttypedef)
+- `forwardedHeaders`: [HeaderObjectTypeDef](./type_defs.md#headerobjecttypedef)
 - `forwardedQueryStrings`:
-  [QueryStringObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#querystringobjecttypedef)
+  [QueryStringObjectTypeDef](./type_defs.md#querystringobjecttypedef)
 
 ## CertificateSummaryTypeDef
 
@@ -518,10 +496,8 @@ Optional fields:
 - `certificateArn`: `str`
 - `certificateName`: `str`
 - `domainName`: `str`
-- `certificateDetail`:
-  [CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#certificatetypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `certificateDetail`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CertificateTypeDef
 
@@ -534,12 +510,11 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `domainName`: `str`
-- `status`:
-  [CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#certificatestatus)
+- `status`: [CertificateStatus](./literals.md#certificatestatus)
 - `serialNumber`: `str`
 - `subjectAlternativeNames`: `List`\[`str`\]
 - `domainValidationRecords`:
-  `List`\[[DomainValidationRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainvalidationrecordtypedef)\]
+  `List`\[[DomainValidationRecordTypeDef](./type_defs.md#domainvalidationrecordtypedef)\]
 - `requestFailureReason`: `str`
 - `inUseResourceCount`: `int`
 - `keyAlgorithm`: `str`
@@ -549,12 +524,10 @@ Optional fields:
 - `notBefore`: `datetime`
 - `notAfter`: `datetime`
 - `eligibleToRenew`: `str`
-- `renewalSummary`:
-  [RenewalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#renewalsummarytypedef)
+- `renewalSummary`: [RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef)
 - `revokedAt`: `datetime`
 - `revocationReason`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `supportCode`: `str`
 
 ## CloseInstancePublicPortsResultTypeDef
@@ -565,8 +538,7 @@ from mypy_boto3_lightsail.type_defs import CloseInstancePublicPortsResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## CloudFormationStackRecordSourceInfoTypeDef
 
@@ -576,7 +548,8 @@ from mypy_boto3_lightsail.type_defs import CloudFormationStackRecordSourceInfoTy
 
 Optional fields:
 
-- `resourceType`: `Literal['ExportSnapshotRecord']`
+- `resourceType`: `Literal['ExportSnapshotRecord']` (see
+  [CloudFormationStackRecordSourceType](./literals.md#cloudformationstackrecordsourcetype))
 - `name`: `str`
 - `arn`: `str`
 
@@ -591,16 +564,13 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `state`:
-  [RecordState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#recordstate)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `state`: [RecordState](./literals.md#recordstate)
 - `sourceInfo`:
-  `List`\[[CloudFormationStackRecordSourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cloudformationstackrecordsourceinfotypedef)\]
+  `List`\[[CloudFormationStackRecordSourceInfoTypeDef](./type_defs.md#cloudformationstackrecordsourceinfotypedef)\]
 - `destinationInfo`:
-  [DestinationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#destinationinfotypedef)
+  [DestinationInfoTypeDef](./type_defs.md#destinationinfotypedef)
 
 ## ContactMethodTypeDef
 
@@ -611,17 +581,13 @@ from mypy_boto3_lightsail.type_defs import ContactMethodTypeDef
 Optional fields:
 
 - `contactEndpoint`: `str`
-- `status`:
-  [ContactMethodStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactmethodstatus)
-- `protocol`:
-  [ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)
+- `status`: [ContactMethodStatus](./literals.md#contactmethodstatus)
+- `protocol`: [ContactProtocol](./literals.md#contactprotocol)
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `supportCode`: `str`
 
 ## ContainerImageTypeDef
@@ -645,9 +611,9 @@ from mypy_boto3_lightsail.type_defs import ContainerServiceDeploymentRequestType
 Optional fields:
 
 - `containers`: `Dict`\[`str`,
-  [ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containertypedef)\]
+  [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
-  [EndpointRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#endpointrequesttypedef)
+  [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
 
 ## ContainerServiceDeploymentTypeDef
 
@@ -659,11 +625,11 @@ Optional fields:
 
 - `version`: `int`
 - `state`:
-  [ContainerServiceDeploymentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicedeploymentstate)
+  [ContainerServiceDeploymentState](./literals.md#containerservicedeploymentstate)
 - `containers`: `Dict`\[`str`,
-  [ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containertypedef)\]
+  [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
-  [ContainerServiceEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerserviceendpointtypedef)
+  [ContainerServiceEndpointTypeDef](./type_defs.md#containerserviceendpointtypedef)
 - `createdAt`: `datetime`
 
 ## ContainerServiceEndpointTypeDef
@@ -677,7 +643,7 @@ Optional fields:
 - `containerName`: `str`
 - `containerPort`: `int`
 - `healthCheck`:
-  [ContainerServiceHealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicehealthcheckconfigtypedef)
+  [ContainerServiceHealthCheckConfigTypeDef](./type_defs.md#containerservicehealthcheckconfigtypedef)
 
 ## ContainerServiceHealthCheckConfigTypeDef
 
@@ -742,7 +708,7 @@ from mypy_boto3_lightsail.type_defs import ContainerServiceStateDetailTypeDef
 Optional fields:
 
 - `code`:
-  [ContainerServiceStateDetailCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicestatedetailcode)
+  [ContainerServiceStateDetailCode](./literals.md#containerservicestatedetailcode)
 - `message`: `str`
 
 ## ContainerServiceTypeDef
@@ -756,24 +722,19 @@ Optional fields:
 - `containerServiceName`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `power`:
-  [ContainerServicePowerName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicepowername)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `power`: [ContainerServicePowerName](./literals.md#containerservicepowername)
 - `powerId`: `str`
-- `state`:
-  [ContainerServiceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicestate)
+- `state`: [ContainerServiceState](./literals.md#containerservicestate)
 - `stateDetail`:
-  [ContainerServiceStateDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicestatedetailtypedef)
+  [ContainerServiceStateDetailTypeDef](./type_defs.md#containerservicestatedetailtypedef)
 - `scale`: `int`
 - `currentDeployment`:
-  [ContainerServiceDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicedeploymenttypedef)
+  [ContainerServiceDeploymentTypeDef](./type_defs.md#containerservicedeploymenttypedef)
 - `nextDeployment`:
-  [ContainerServiceDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicedeploymenttypedef)
+  [ContainerServiceDeploymentTypeDef](./type_defs.md#containerservicedeploymenttypedef)
 - `isDisabled`: `bool`
 - `principalArn`: `str`
 - `privateDomainName`: `str`
@@ -789,7 +750,7 @@ from mypy_boto3_lightsail.type_defs import ContainerServicesListResultTypeDef
 Optional fields:
 
 - `containerServices`:
-  `List`\[[ContainerServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicetypedef)\]
+  `List`\[[ContainerServiceTypeDef](./type_defs.md#containerservicetypedef)\]
 
 ## ContainerTypeDef
 
@@ -803,7 +764,7 @@ Optional fields:
 - `command`: `List`\[`str`\]
 - `environment`: `Dict`\[`str`, `str`\]
 - `ports`: `Dict`\[`str`,
-  [ContainerServiceProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerserviceprotocol)\]
+  [ContainerServiceProtocol](./literals.md#containerserviceprotocol)\]
 
 ## CookieObjectTypeDef
 
@@ -813,8 +774,7 @@ from mypy_boto3_lightsail.type_defs import CookieObjectTypeDef
 
 Optional fields:
 
-- `option`:
-  [ForwardValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#forwardvalues)
+- `option`: [ForwardValues](./literals.md#forwardvalues)
 - `cookiesAllowList`: `List`\[`str`\]
 
 ## CopySnapshotResultTypeDef
@@ -825,8 +785,7 @@ from mypy_boto3_lightsail.type_defs import CopySnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateCertificateResultTypeDef
 
@@ -837,9 +796,8 @@ from mypy_boto3_lightsail.type_defs import CreateCertificateResultTypeDef
 Optional fields:
 
 - `certificate`:
-  [CertificateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#certificatesummarytypedef)
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+  [CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef)
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateCloudFormationStackResultTypeDef
 
@@ -849,8 +807,7 @@ from mypy_boto3_lightsail.type_defs import CreateCloudFormationStackResultTypeDe
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateContactMethodResultTypeDef
 
@@ -860,8 +817,7 @@ from mypy_boto3_lightsail.type_defs import CreateContactMethodResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateContainerServiceDeploymentResultTypeDef
 
@@ -872,7 +828,7 @@ from mypy_boto3_lightsail.type_defs import CreateContainerServiceDeploymentResul
 Optional fields:
 
 - `containerService`:
-  [ContainerServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicetypedef)
+  [ContainerServiceTypeDef](./type_defs.md#containerservicetypedef)
 
 ## CreateContainerServiceRegistryLoginResultTypeDef
 
@@ -883,7 +839,7 @@ from mypy_boto3_lightsail.type_defs import CreateContainerServiceRegistryLoginRe
 Optional fields:
 
 - `registryLogin`:
-  [ContainerServiceRegistryLoginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerserviceregistrylogintypedef)
+  [ContainerServiceRegistryLoginTypeDef](./type_defs.md#containerserviceregistrylogintypedef)
 
 ## CreateContainerServiceResultTypeDef
 
@@ -894,7 +850,7 @@ from mypy_boto3_lightsail.type_defs import CreateContainerServiceResultTypeDef
 Optional fields:
 
 - `containerService`:
-  [ContainerServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicetypedef)
+  [ContainerServiceTypeDef](./type_defs.md#containerservicetypedef)
 
 ## CreateDiskFromSnapshotResultTypeDef
 
@@ -904,8 +860,7 @@ from mypy_boto3_lightsail.type_defs import CreateDiskFromSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateDiskResultTypeDef
 
@@ -915,8 +870,7 @@ from mypy_boto3_lightsail.type_defs import CreateDiskResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateDiskSnapshotResultTypeDef
 
@@ -926,8 +880,7 @@ from mypy_boto3_lightsail.type_defs import CreateDiskSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateDistributionResultTypeDef
 
@@ -938,9 +891,8 @@ from mypy_boto3_lightsail.type_defs import CreateDistributionResultTypeDef
 Optional fields:
 
 - `distribution`:
-  [LightsailDistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#lightsaildistributiontypedef)
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+  [LightsailDistributionTypeDef](./type_defs.md#lightsaildistributiontypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## CreateDomainEntryResultTypeDef
 
@@ -950,8 +902,7 @@ from mypy_boto3_lightsail.type_defs import CreateDomainEntryResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## CreateDomainResultTypeDef
 
@@ -961,8 +912,7 @@ from mypy_boto3_lightsail.type_defs import CreateDomainResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## CreateInstanceSnapshotResultTypeDef
 
@@ -972,8 +922,7 @@ from mypy_boto3_lightsail.type_defs import CreateInstanceSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateInstancesFromSnapshotResultTypeDef
 
@@ -983,8 +932,7 @@ from mypy_boto3_lightsail.type_defs import CreateInstancesFromSnapshotResultType
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateInstancesResultTypeDef
 
@@ -994,8 +942,7 @@ from mypy_boto3_lightsail.type_defs import CreateInstancesResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateKeyPairResultTypeDef
 
@@ -1005,12 +952,10 @@ from mypy_boto3_lightsail.type_defs import CreateKeyPairResultTypeDef
 
 Optional fields:
 
-- `keyPair`:
-  [KeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#keypairtypedef)
+- `keyPair`: [KeyPairTypeDef](./type_defs.md#keypairtypedef)
 - `publicKeyBase64`: `str`
 - `privateKeyBase64`: `str`
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## CreateLoadBalancerResultTypeDef
 
@@ -1020,8 +965,7 @@ from mypy_boto3_lightsail.type_defs import CreateLoadBalancerResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateLoadBalancerTlsCertificateResultTypeDef
 
@@ -1031,8 +975,7 @@ from mypy_boto3_lightsail.type_defs import CreateLoadBalancerTlsCertificateResul
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateRelationalDatabaseFromSnapshotResultTypeDef
 
@@ -1042,8 +985,7 @@ from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseFromSnapshotR
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateRelationalDatabaseResultTypeDef
 
@@ -1053,8 +995,7 @@ from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## CreateRelationalDatabaseSnapshotResultTypeDef
 
@@ -1064,8 +1005,7 @@ from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseSnapshotResul
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteAlarmResultTypeDef
 
@@ -1075,8 +1015,7 @@ from mypy_boto3_lightsail.type_defs import DeleteAlarmResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteAutoSnapshotResultTypeDef
 
@@ -1086,8 +1025,7 @@ from mypy_boto3_lightsail.type_defs import DeleteAutoSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteCertificateResultTypeDef
 
@@ -1097,8 +1035,7 @@ from mypy_boto3_lightsail.type_defs import DeleteCertificateResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteContactMethodResultTypeDef
 
@@ -1108,8 +1045,7 @@ from mypy_boto3_lightsail.type_defs import DeleteContactMethodResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteDiskResultTypeDef
 
@@ -1119,8 +1055,7 @@ from mypy_boto3_lightsail.type_defs import DeleteDiskResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteDiskSnapshotResultTypeDef
 
@@ -1130,8 +1065,7 @@ from mypy_boto3_lightsail.type_defs import DeleteDiskSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteDistributionResultTypeDef
 
@@ -1141,8 +1075,7 @@ from mypy_boto3_lightsail.type_defs import DeleteDistributionResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## DeleteDomainEntryResultTypeDef
 
@@ -1152,8 +1085,7 @@ from mypy_boto3_lightsail.type_defs import DeleteDomainEntryResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## DeleteDomainResultTypeDef
 
@@ -1163,8 +1095,7 @@ from mypy_boto3_lightsail.type_defs import DeleteDomainResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## DeleteInstanceResultTypeDef
 
@@ -1174,8 +1105,7 @@ from mypy_boto3_lightsail.type_defs import DeleteInstanceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteInstanceSnapshotResultTypeDef
 
@@ -1185,8 +1115,7 @@ from mypy_boto3_lightsail.type_defs import DeleteInstanceSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteKeyPairResultTypeDef
 
@@ -1196,8 +1125,7 @@ from mypy_boto3_lightsail.type_defs import DeleteKeyPairResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## DeleteKnownHostKeysResultTypeDef
 
@@ -1207,8 +1135,7 @@ from mypy_boto3_lightsail.type_defs import DeleteKnownHostKeysResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteLoadBalancerResultTypeDef
 
@@ -1218,8 +1145,7 @@ from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteLoadBalancerTlsCertificateResultTypeDef
 
@@ -1229,8 +1155,7 @@ from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerTlsCertificateResul
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteRelationalDatabaseResultTypeDef
 
@@ -1240,8 +1165,7 @@ from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DeleteRelationalDatabaseSnapshotResultTypeDef
 
@@ -1251,8 +1175,7 @@ from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseSnapshotResul
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DestinationInfoTypeDef
 
@@ -1273,8 +1196,7 @@ from mypy_boto3_lightsail.type_defs import DetachCertificateFromDistributionResu
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## DetachDiskResultTypeDef
 
@@ -1284,8 +1206,7 @@ from mypy_boto3_lightsail.type_defs import DetachDiskResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DetachInstancesFromLoadBalancerResultTypeDef
 
@@ -1295,8 +1216,7 @@ from mypy_boto3_lightsail.type_defs import DetachInstancesFromLoadBalancerResult
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DetachStaticIpResultTypeDef
 
@@ -1306,8 +1226,7 @@ from mypy_boto3_lightsail.type_defs import DetachStaticIpResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DisableAddOnResultTypeDef
 
@@ -1317,8 +1236,7 @@ from mypy_boto3_lightsail.type_defs import DisableAddOnResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## DiskInfoTypeDef
 
@@ -1366,15 +1284,11 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `sizeInGb`: `int`
-- `state`:
-  [DiskSnapshotState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#disksnapshotstate)
+- `state`: [DiskSnapshotState](./literals.md#disksnapshotstate)
 - `progress`: `str`
 - `fromDiskName`: `str`
 - `fromDiskArn`: `str`
@@ -1394,20 +1308,15 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `addOns`:
-  `List`\[[AddOnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addontypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`: `List`\[[AddOnTypeDef](./type_defs.md#addontypedef)\]
 - `sizeInGb`: `int`
 - `isSystemDisk`: `bool`
 - `iops`: `int`
 - `path`: `str`
-- `state`:
-  [DiskState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#diskstate)
+- `state`: [DiskState](./literals.md#diskstate)
 - `attachedTo`: `str`
 - `isAttached`: `bool`
 - `attachmentState`: `str`
@@ -1454,14 +1363,11 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `domainEntries`:
-  `List`\[[DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)\]
+  `List`\[[DomainEntryTypeDef](./type_defs.md#domainentrytypedef)\]
 
 ## DomainValidationRecordTypeDef
 
@@ -1472,8 +1378,7 @@ from mypy_boto3_lightsail.type_defs import DomainValidationRecordTypeDef
 Optional fields:
 
 - `domainName`: `str`
-- `resourceRecord`:
-  [ResourceRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcerecordtypedef)
+- `resourceRecord`: [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
 
 ## DownloadDefaultKeyPairResultTypeDef
 
@@ -1494,8 +1399,7 @@ from mypy_boto3_lightsail.type_defs import EnableAddOnResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## EndpointRequestTypeDef
 
@@ -1511,7 +1415,7 @@ Required fields:
 Optional fields:
 
 - `healthCheck`:
-  [ContainerServiceHealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicehealthcheckconfigtypedef)
+  [ContainerServiceHealthCheckConfigTypeDef](./type_defs.md#containerservicehealthcheckconfigtypedef)
 
 ## ExportSnapshotRecordSourceInfoTypeDef
 
@@ -1522,16 +1426,16 @@ from mypy_boto3_lightsail.type_defs import ExportSnapshotRecordSourceInfoTypeDef
 Optional fields:
 
 - `resourceType`:
-  [ExportSnapshotRecordSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#exportsnapshotrecordsourcetype)
+  [ExportSnapshotRecordSourceType](./literals.md#exportsnapshotrecordsourcetype)
 - `createdAt`: `datetime`
 - `name`: `str`
 - `arn`: `str`
 - `fromResourceName`: `str`
 - `fromResourceArn`: `str`
 - `instanceSnapshotInfo`:
-  [InstanceSnapshotInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancesnapshotinfotypedef)
+  [InstanceSnapshotInfoTypeDef](./type_defs.md#instancesnapshotinfotypedef)
 - `diskSnapshotInfo`:
-  [DiskSnapshotInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disksnapshotinfotypedef)
+  [DiskSnapshotInfoTypeDef](./type_defs.md#disksnapshotinfotypedef)
 
 ## ExportSnapshotRecordTypeDef
 
@@ -1544,16 +1448,13 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `state`:
-  [RecordState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#recordstate)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `state`: [RecordState](./literals.md#recordstate)
 - `sourceInfo`:
-  [ExportSnapshotRecordSourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#exportsnapshotrecordsourceinfotypedef)
+  [ExportSnapshotRecordSourceInfoTypeDef](./type_defs.md#exportsnapshotrecordsourceinfotypedef)
 - `destinationInfo`:
-  [DestinationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#destinationinfotypedef)
+  [DestinationInfoTypeDef](./type_defs.md#destinationinfotypedef)
 
 ## ExportSnapshotResultTypeDef
 
@@ -1563,8 +1464,7 @@ from mypy_boto3_lightsail.type_defs import ExportSnapshotResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## GetActiveNamesResultTypeDef
 
@@ -1585,8 +1485,7 @@ from mypy_boto3_lightsail.type_defs import GetAlarmsResultTypeDef
 
 Optional fields:
 
-- `alarms`:
-  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#alarmtypedef)\]
+- `alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetAutoSnapshotsResultTypeDef
@@ -1598,10 +1497,9 @@ from mypy_boto3_lightsail.type_defs import GetAutoSnapshotsResultTypeDef
 Optional fields:
 
 - `resourceName`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `autoSnapshots`:
-  `List`\[[AutoSnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#autosnapshotdetailstypedef)\]
+  `List`\[[AutoSnapshotDetailsTypeDef](./type_defs.md#autosnapshotdetailstypedef)\]
 
 ## GetBlueprintsResultTypeDef
 
@@ -1611,8 +1509,7 @@ from mypy_boto3_lightsail.type_defs import GetBlueprintsResultTypeDef
 
 Optional fields:
 
-- `blueprints`:
-  `List`\[[BlueprintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#blueprinttypedef)\]
+- `blueprints`: `List`\[[BlueprintTypeDef](./type_defs.md#blueprinttypedef)\]
 - `nextPageToken`: `str`
 
 ## GetBundlesResultTypeDef
@@ -1623,8 +1520,7 @@ from mypy_boto3_lightsail.type_defs import GetBundlesResultTypeDef
 
 Optional fields:
 
-- `bundles`:
-  `List`\[[BundleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#bundletypedef)\]
+- `bundles`: `List`\[[BundleTypeDef](./type_defs.md#bundletypedef)\]
 - `nextPageToken`: `str`
 
 ## GetCertificatesResultTypeDef
@@ -1636,7 +1532,7 @@ from mypy_boto3_lightsail.type_defs import GetCertificatesResultTypeDef
 Optional fields:
 
 - `certificates`:
-  `List`\[[CertificateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#certificatesummarytypedef)\]
+  `List`\[[CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef)\]
 
 ## GetCloudFormationStackRecordsResultTypeDef
 
@@ -1647,7 +1543,7 @@ from mypy_boto3_lightsail.type_defs import GetCloudFormationStackRecordsResultTy
 Optional fields:
 
 - `cloudFormationStackRecords`:
-  `List`\[[CloudFormationStackRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cloudformationstackrecordtypedef)\]
+  `List`\[[CloudFormationStackRecordTypeDef](./type_defs.md#cloudformationstackrecordtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetContactMethodsResultTypeDef
@@ -1659,7 +1555,7 @@ from mypy_boto3_lightsail.type_defs import GetContactMethodsResultTypeDef
 Optional fields:
 
 - `contactMethods`:
-  `List`\[[ContactMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#contactmethodtypedef)\]
+  `List`\[[ContactMethodTypeDef](./type_defs.md#contactmethodtypedef)\]
 
 ## GetContainerAPIMetadataResultTypeDef
 
@@ -1680,7 +1576,7 @@ from mypy_boto3_lightsail.type_defs import GetContainerImagesResultTypeDef
 Optional fields:
 
 - `containerImages`:
-  `List`\[[ContainerImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerimagetypedef)\]
+  `List`\[[ContainerImageTypeDef](./type_defs.md#containerimagetypedef)\]
 
 ## GetContainerLogResultTypeDef
 
@@ -1691,7 +1587,7 @@ from mypy_boto3_lightsail.type_defs import GetContainerLogResultTypeDef
 Optional fields:
 
 - `logEvents`:
-  `List`\[[ContainerServiceLogEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicelogeventtypedef)\]
+  `List`\[[ContainerServiceLogEventTypeDef](./type_defs.md#containerservicelogeventtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetContainerServiceDeploymentsResultTypeDef
@@ -1703,7 +1599,7 @@ from mypy_boto3_lightsail.type_defs import GetContainerServiceDeploymentsResultT
 Optional fields:
 
 - `deployments`:
-  `List`\[[ContainerServiceDeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicedeploymenttypedef)\]
+  `List`\[[ContainerServiceDeploymentTypeDef](./type_defs.md#containerservicedeploymenttypedef)\]
 
 ## GetContainerServiceMetricDataResultTypeDef
 
@@ -1714,9 +1610,9 @@ from mypy_boto3_lightsail.type_defs import GetContainerServiceMetricDataResultTy
 Optional fields:
 
 - `metricName`:
-  [ContainerServiceMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicemetricname)
+  [ContainerServiceMetricName](./literals.md#containerservicemetricname)
 - `metricData`:
-  `List`\[[MetricDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#metricdatapointtypedef)\]
+  `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
 ## GetContainerServicePowersResultTypeDef
 
@@ -1727,7 +1623,7 @@ from mypy_boto3_lightsail.type_defs import GetContainerServicePowersResultTypeDe
 Optional fields:
 
 - `powers`:
-  `List`\[[ContainerServicePowerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicepowertypedef)\]
+  `List`\[[ContainerServicePowerTypeDef](./type_defs.md#containerservicepowertypedef)\]
 
 ## GetDiskResultTypeDef
 
@@ -1737,8 +1633,7 @@ from mypy_boto3_lightsail.type_defs import GetDiskResultTypeDef
 
 Optional fields:
 
-- `disk`:
-  [DiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disktypedef)
+- `disk`: [DiskTypeDef](./type_defs.md#disktypedef)
 
 ## GetDiskSnapshotResultTypeDef
 
@@ -1748,8 +1643,7 @@ from mypy_boto3_lightsail.type_defs import GetDiskSnapshotResultTypeDef
 
 Optional fields:
 
-- `diskSnapshot`:
-  [DiskSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disksnapshottypedef)
+- `diskSnapshot`: [DiskSnapshotTypeDef](./type_defs.md#disksnapshottypedef)
 
 ## GetDiskSnapshotsResultTypeDef
 
@@ -1760,7 +1654,7 @@ from mypy_boto3_lightsail.type_defs import GetDiskSnapshotsResultTypeDef
 Optional fields:
 
 - `diskSnapshots`:
-  `List`\[[DiskSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disksnapshottypedef)\]
+  `List`\[[DiskSnapshotTypeDef](./type_defs.md#disksnapshottypedef)\]
 - `nextPageToken`: `str`
 
 ## GetDisksResultTypeDef
@@ -1771,8 +1665,7 @@ from mypy_boto3_lightsail.type_defs import GetDisksResultTypeDef
 
 Optional fields:
 
-- `disks`:
-  `List`\[[DiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disktypedef)\]
+- `disks`: `List`\[[DiskTypeDef](./type_defs.md#disktypedef)\]
 - `nextPageToken`: `str`
 
 ## GetDistributionBundlesResultTypeDef
@@ -1784,7 +1677,7 @@ from mypy_boto3_lightsail.type_defs import GetDistributionBundlesResultTypeDef
 Optional fields:
 
 - `bundles`:
-  `List`\[[DistributionBundleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#distributionbundletypedef)\]
+  `List`\[[DistributionBundleTypeDef](./type_defs.md#distributionbundletypedef)\]
 
 ## GetDistributionLatestCacheResetResultTypeDef
 
@@ -1805,10 +1698,9 @@ from mypy_boto3_lightsail.type_defs import GetDistributionMetricDataResultTypeDe
 
 Optional fields:
 
-- `metricName`:
-  [DistributionMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#distributionmetricname)
+- `metricName`: [DistributionMetricName](./literals.md#distributionmetricname)
 - `metricData`:
-  `List`\[[MetricDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#metricdatapointtypedef)\]
+  `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
 ## GetDistributionsResultTypeDef
 
@@ -1819,7 +1711,7 @@ from mypy_boto3_lightsail.type_defs import GetDistributionsResultTypeDef
 Optional fields:
 
 - `distributions`:
-  `List`\[[LightsailDistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#lightsaildistributiontypedef)\]
+  `List`\[[LightsailDistributionTypeDef](./type_defs.md#lightsaildistributiontypedef)\]
 - `nextPageToken`: `str`
 
 ## GetDomainResultTypeDef
@@ -1830,8 +1722,7 @@ from mypy_boto3_lightsail.type_defs import GetDomainResultTypeDef
 
 Optional fields:
 
-- `domain`:
-  [DomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domaintypedef)
+- `domain`: [DomainTypeDef](./type_defs.md#domaintypedef)
 
 ## GetDomainsResultTypeDef
 
@@ -1841,8 +1732,7 @@ from mypy_boto3_lightsail.type_defs import GetDomainsResultTypeDef
 
 Optional fields:
 
-- `domains`:
-  `List`\[[DomainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domaintypedef)\]
+- `domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
 - `nextPageToken`: `str`
 
 ## GetExportSnapshotRecordsResultTypeDef
@@ -1854,7 +1744,7 @@ from mypy_boto3_lightsail.type_defs import GetExportSnapshotRecordsResultTypeDef
 Optional fields:
 
 - `exportSnapshotRecords`:
-  `List`\[[ExportSnapshotRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#exportsnapshotrecordtypedef)\]
+  `List`\[[ExportSnapshotRecordTypeDef](./type_defs.md#exportsnapshotrecordtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetInstanceAccessDetailsResultTypeDef
@@ -1866,7 +1756,7 @@ from mypy_boto3_lightsail.type_defs import GetInstanceAccessDetailsResultTypeDef
 Optional fields:
 
 - `accessDetails`:
-  [InstanceAccessDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instanceaccessdetailstypedef)
+  [InstanceAccessDetailsTypeDef](./type_defs.md#instanceaccessdetailstypedef)
 
 ## GetInstanceMetricDataResultTypeDef
 
@@ -1876,10 +1766,9 @@ from mypy_boto3_lightsail.type_defs import GetInstanceMetricDataResultTypeDef
 
 Optional fields:
 
-- `metricName`:
-  [InstanceMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instancemetricname)
+- `metricName`: [InstanceMetricName](./literals.md#instancemetricname)
 - `metricData`:
-  `List`\[[MetricDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#metricdatapointtypedef)\]
+  `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
 ## GetInstancePortStatesResultTypeDef
 
@@ -1890,7 +1779,7 @@ from mypy_boto3_lightsail.type_defs import GetInstancePortStatesResultTypeDef
 Optional fields:
 
 - `portStates`:
-  `List`\[[InstancePortStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instanceportstatetypedef)\]
+  `List`\[[InstancePortStateTypeDef](./type_defs.md#instanceportstatetypedef)\]
 
 ## GetInstanceResultTypeDef
 
@@ -1900,8 +1789,7 @@ from mypy_boto3_lightsail.type_defs import GetInstanceResultTypeDef
 
 Optional fields:
 
-- `instance`:
-  [InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancetypedef)
+- `instance`: [InstanceTypeDef](./type_defs.md#instancetypedef)
 
 ## GetInstanceSnapshotResultTypeDef
 
@@ -1912,7 +1800,7 @@ from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotResultTypeDef
 Optional fields:
 
 - `instanceSnapshot`:
-  [InstanceSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancesnapshottypedef)
+  [InstanceSnapshotTypeDef](./type_defs.md#instancesnapshottypedef)
 
 ## GetInstanceSnapshotsResultTypeDef
 
@@ -1923,7 +1811,7 @@ from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotsResultTypeDef
 Optional fields:
 
 - `instanceSnapshots`:
-  `List`\[[InstanceSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancesnapshottypedef)\]
+  `List`\[[InstanceSnapshotTypeDef](./type_defs.md#instancesnapshottypedef)\]
 - `nextPageToken`: `str`
 
 ## GetInstanceStateResultTypeDef
@@ -1934,8 +1822,7 @@ from mypy_boto3_lightsail.type_defs import GetInstanceStateResultTypeDef
 
 Optional fields:
 
-- `state`:
-  [InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancestatetypedef)
+- `state`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 
 ## GetInstancesResultTypeDef
 
@@ -1945,8 +1832,7 @@ from mypy_boto3_lightsail.type_defs import GetInstancesResultTypeDef
 
 Optional fields:
 
-- `instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancetypedef)\]
+- `instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `nextPageToken`: `str`
 
 ## GetKeyPairResultTypeDef
@@ -1957,8 +1843,7 @@ from mypy_boto3_lightsail.type_defs import GetKeyPairResultTypeDef
 
 Optional fields:
 
-- `keyPair`:
-  [KeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#keypairtypedef)
+- `keyPair`: [KeyPairTypeDef](./type_defs.md#keypairtypedef)
 
 ## GetKeyPairsResultTypeDef
 
@@ -1968,8 +1853,7 @@ from mypy_boto3_lightsail.type_defs import GetKeyPairsResultTypeDef
 
 Optional fields:
 
-- `keyPairs`:
-  `List`\[[KeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#keypairtypedef)\]
+- `keyPairs`: `List`\[[KeyPairTypeDef](./type_defs.md#keypairtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetLoadBalancerMetricDataResultTypeDef
@@ -1980,10 +1864,9 @@ from mypy_boto3_lightsail.type_defs import GetLoadBalancerMetricDataResultTypeDe
 
 Optional fields:
 
-- `metricName`:
-  [LoadBalancerMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancermetricname)
+- `metricName`: [LoadBalancerMetricName](./literals.md#loadbalancermetricname)
 - `metricData`:
-  `List`\[[MetricDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#metricdatapointtypedef)\]
+  `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
 ## GetLoadBalancerResultTypeDef
 
@@ -1993,8 +1876,7 @@ from mypy_boto3_lightsail.type_defs import GetLoadBalancerResultTypeDef
 
 Optional fields:
 
-- `loadBalancer`:
-  [LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertypedef)
+- `loadBalancer`: [LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)
 
 ## GetLoadBalancerTlsCertificatesResultTypeDef
 
@@ -2005,7 +1887,7 @@ from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsCertificatesResultT
 Optional fields:
 
 - `tlsCertificates`:
-  `List`\[[LoadBalancerTlsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertlscertificatetypedef)\]
+  `List`\[[LoadBalancerTlsCertificateTypeDef](./type_defs.md#loadbalancertlscertificatetypedef)\]
 
 ## GetLoadBalancersResultTypeDef
 
@@ -2016,7 +1898,7 @@ from mypy_boto3_lightsail.type_defs import GetLoadBalancersResultTypeDef
 Optional fields:
 
 - `loadBalancers`:
-  `List`\[[LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertypedef)\]
+  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
 - `nextPageToken`: `str`
 
 ## GetOperationResultTypeDef
@@ -2027,8 +1909,7 @@ from mypy_boto3_lightsail.type_defs import GetOperationResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## GetOperationsForResourceResultTypeDef
 
@@ -2038,8 +1919,7 @@ from mypy_boto3_lightsail.type_defs import GetOperationsForResourceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 - `nextPageCount`: `str`
 - `nextPageToken`: `str`
 
@@ -2051,8 +1931,7 @@ from mypy_boto3_lightsail.type_defs import GetOperationsResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetRegionsResultTypeDef
@@ -2063,8 +1942,7 @@ from mypy_boto3_lightsail.type_defs import GetRegionsResultTypeDef
 
 Optional fields:
 
-- `regions`:
-  `List`\[[RegionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#regiontypedef)\]
+- `regions`: `List`\[[RegionTypeDef](./type_defs.md#regiontypedef)\]
 
 ## GetRelationalDatabaseBlueprintsResultTypeDef
 
@@ -2075,7 +1953,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBlueprintsResult
 Optional fields:
 
 - `blueprints`:
-  `List`\[[RelationalDatabaseBlueprintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabaseblueprinttypedef)\]
+  `List`\[[RelationalDatabaseBlueprintTypeDef](./type_defs.md#relationaldatabaseblueprinttypedef)\]
 - `nextPageToken`: `str`
 
 ## GetRelationalDatabaseBundlesResultTypeDef
@@ -2087,7 +1965,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBundlesResultTyp
 Optional fields:
 
 - `bundles`:
-  `List`\[[RelationalDatabaseBundleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabasebundletypedef)\]
+  `List`\[[RelationalDatabaseBundleTypeDef](./type_defs.md#relationaldatabasebundletypedef)\]
 - `nextPageToken`: `str`
 
 ## GetRelationalDatabaseEventsResultTypeDef
@@ -2099,7 +1977,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseEventsResultType
 Optional fields:
 
 - `relationalDatabaseEvents`:
-  `List`\[[RelationalDatabaseEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabaseeventtypedef)\]
+  `List`\[[RelationalDatabaseEventTypeDef](./type_defs.md#relationaldatabaseeventtypedef)\]
 - `nextPageToken`: `str`
 
 ## GetRelationalDatabaseLogEventsResultTypeDef
@@ -2111,7 +1989,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogEventsResultT
 Optional fields:
 
 - `resourceLogEvents`:
-  `List`\[[LogEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#logeventtypedef)\]
+  `List`\[[LogEventTypeDef](./type_defs.md#logeventtypedef)\]
 - `nextBackwardToken`: `str`
 - `nextForwardToken`: `str`
 
@@ -2145,9 +2023,9 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMetricDataResult
 Optional fields:
 
 - `metricName`:
-  [RelationalDatabaseMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#relationaldatabasemetricname)
+  [RelationalDatabaseMetricName](./literals.md#relationaldatabasemetricname)
 - `metricData`:
-  `List`\[[MetricDatapointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#metricdatapointtypedef)\]
+  `List`\[[MetricDatapointTypeDef](./type_defs.md#metricdatapointtypedef)\]
 
 ## GetRelationalDatabaseParametersResultTypeDef
 
@@ -2158,7 +2036,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseParametersResult
 Optional fields:
 
 - `parameters`:
-  `List`\[[RelationalDatabaseParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabaseparametertypedef)\]
+  `List`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
 - `nextPageToken`: `str`
 
 ## GetRelationalDatabaseResultTypeDef
@@ -2170,7 +2048,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseResultTypeDef
 Optional fields:
 
 - `relationalDatabase`:
-  [RelationalDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabasetypedef)
+  [RelationalDatabaseTypeDef](./type_defs.md#relationaldatabasetypedef)
 
 ## GetRelationalDatabaseSnapshotResultTypeDef
 
@@ -2181,7 +2059,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotResultTy
 Optional fields:
 
 - `relationalDatabaseSnapshot`:
-  [RelationalDatabaseSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabasesnapshottypedef)
+  [RelationalDatabaseSnapshotTypeDef](./type_defs.md#relationaldatabasesnapshottypedef)
 
 ## GetRelationalDatabaseSnapshotsResultTypeDef
 
@@ -2192,7 +2070,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotsResultT
 Optional fields:
 
 - `relationalDatabaseSnapshots`:
-  `List`\[[RelationalDatabaseSnapshotTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabasesnapshottypedef)\]
+  `List`\[[RelationalDatabaseSnapshotTypeDef](./type_defs.md#relationaldatabasesnapshottypedef)\]
 - `nextPageToken`: `str`
 
 ## GetRelationalDatabasesResultTypeDef
@@ -2204,7 +2082,7 @@ from mypy_boto3_lightsail.type_defs import GetRelationalDatabasesResultTypeDef
 Optional fields:
 
 - `relationalDatabases`:
-  `List`\[[RelationalDatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabasetypedef)\]
+  `List`\[[RelationalDatabaseTypeDef](./type_defs.md#relationaldatabasetypedef)\]
 - `nextPageToken`: `str`
 
 ## GetStaticIpResultTypeDef
@@ -2215,8 +2093,7 @@ from mypy_boto3_lightsail.type_defs import GetStaticIpResultTypeDef
 
 Optional fields:
 
-- `staticIp`:
-  [StaticIpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#staticiptypedef)
+- `staticIp`: [StaticIpTypeDef](./type_defs.md#staticiptypedef)
 
 ## GetStaticIpsResultTypeDef
 
@@ -2226,8 +2103,7 @@ from mypy_boto3_lightsail.type_defs import GetStaticIpsResultTypeDef
 
 Optional fields:
 
-- `staticIps`:
-  `List`\[[StaticIpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#staticiptypedef)\]
+- `staticIps`: `List`\[[StaticIpTypeDef](./type_defs.md#staticiptypedef)\]
 - `nextPageToken`: `str`
 
 ## HeaderObjectTypeDef
@@ -2238,10 +2114,8 @@ from mypy_boto3_lightsail.type_defs import HeaderObjectTypeDef
 
 Optional fields:
 
-- `option`:
-  [ForwardValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#forwardvalues)
-- `headersAllowList`:
-  `List`\[[HeaderEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#headerenum)\]
+- `option`: [ForwardValues](./literals.md#forwardvalues)
+- `headersAllowList`: `List`\[[HeaderEnum](./literals.md#headerenum)\]
 
 ## HostKeyAttributesTypeDef
 
@@ -2267,8 +2141,7 @@ from mypy_boto3_lightsail.type_defs import ImportKeyPairResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## InputOriginTypeDef
 
@@ -2279,10 +2152,9 @@ from mypy_boto3_lightsail.type_defs import InputOriginTypeDef
 Optional fields:
 
 - `name`: `str`
-- `regionName`:
-  [RegionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#regionname)
+- `regionName`: [RegionName](./literals.md#regionname)
 - `protocolPolicy`:
-  [OriginProtocolPolicyEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#originprotocolpolicyenum)
+  [OriginProtocolPolicyEnum](./literals.md#originprotocolpolicyenum)
 
 ## InstanceAccessDetailsTypeDef
 
@@ -2296,15 +2168,13 @@ Optional fields:
 - `expiresAt`: `datetime`
 - `ipAddress`: `str`
 - `password`: `str`
-- `passwordData`:
-  [PasswordDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#passworddatatypedef)
+- `passwordData`: [PasswordDataTypeDef](./type_defs.md#passworddatatypedef)
 - `privateKey`: `str`
-- `protocol`:
-  [InstanceAccessProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instanceaccessprotocol)
+- `protocol`: [InstanceAccessProtocol](./literals.md#instanceaccessprotocol)
 - `instanceName`: `str`
 - `username`: `str`
 - `hostKeys`:
-  `List`\[[HostKeyAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#hostkeyattributestypedef)\]
+  `List`\[[HostKeyAttributesTypeDef](./type_defs.md#hostkeyattributestypedef)\]
 
 ## InstanceEntryTypeDef
 
@@ -2316,8 +2186,7 @@ Required fields:
 
 - `sourceName`: `str`
 - `instanceType`: `str`
-- `portInfoSource`:
-  [PortInfoSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#portinfosourcetype)
+- `portInfoSource`: [PortInfoSourceType](./literals.md#portinfosourcetype)
 - `availabilityZone`: `str`
 
 Optional fields:
@@ -2333,8 +2202,7 @@ from mypy_boto3_lightsail.type_defs import InstanceHardwareTypeDef
 Optional fields:
 
 - `cpuCount`: `int`
-- `disks`:
-  `List`\[[DiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disktypedef)\]
+- `disks`: `List`\[[DiskTypeDef](./type_defs.md#disktypedef)\]
 - `ramSizeInGb`: `float`
 
 ## InstanceHealthSummaryTypeDef
@@ -2346,10 +2214,9 @@ from mypy_boto3_lightsail.type_defs import InstanceHealthSummaryTypeDef
 Optional fields:
 
 - `instanceName`: `str`
-- `instanceHealth`:
-  [InstanceHealthState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instancehealthstate)
+- `instanceHealth`: [InstanceHealthState](./literals.md#instancehealthstate)
 - `instanceHealthReason`:
-  [InstanceHealthReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instancehealthreason)
+  [InstanceHealthReason](./literals.md#instancehealthreason)
 
 ## InstanceNetworkingTypeDef
 
@@ -2360,9 +2227,9 @@ from mypy_boto3_lightsail.type_defs import InstanceNetworkingTypeDef
 Optional fields:
 
 - `monthlyTransfer`:
-  [MonthlyTransferTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#monthlytransfertypedef)
+  [MonthlyTransferTypeDef](./type_defs.md#monthlytransfertypedef)
 - `ports`:
-  `List`\[[InstancePortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instanceportinfotypedef)\]
+  `List`\[[InstancePortInfoTypeDef](./type_defs.md#instanceportinfotypedef)\]
 
 ## InstancePortInfoTypeDef
 
@@ -2374,14 +2241,11 @@ Optional fields:
 
 - `fromPort`: `int`
 - `toPort`: `int`
-- `protocol`:
-  [NetworkProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#networkprotocol)
+- `protocol`: [NetworkProtocol](./literals.md#networkprotocol)
 - `accessFrom`: `str`
-- `accessType`:
-  [PortAccessType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#portaccesstype)
+- `accessType`: [PortAccessType](./literals.md#portaccesstype)
 - `commonName`: `str`
-- `accessDirection`:
-  [AccessDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#accessdirection)
+- `accessDirection`: [AccessDirection](./literals.md#accessdirection)
 - `cidrs`: `List`\[`str`\]
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
@@ -2396,10 +2260,8 @@ Optional fields:
 
 - `fromPort`: `int`
 - `toPort`: `int`
-- `protocol`:
-  [NetworkProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#networkprotocol)
-- `state`:
-  [PortState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#portstate)
+- `protocol`: [NetworkProtocol](./literals.md#networkprotocol)
+- `state`: [PortState](./literals.md#portstate)
 - `cidrs`: `List`\[`str`\]
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
@@ -2414,8 +2276,7 @@ Optional fields:
 
 - `fromBundleId`: `str`
 - `fromBlueprintId`: `str`
-- `fromDiskInfo`:
-  `List`\[[DiskInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#diskinfotypedef)\]
+- `fromDiskInfo`: `List`\[[DiskInfoTypeDef](./type_defs.md#diskinfotypedef)\]
 
 ## InstanceSnapshotTypeDef
 
@@ -2429,17 +2290,12 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `state`:
-  [InstanceSnapshotState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instancesnapshotstate)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `state`: [InstanceSnapshotState](./literals.md#instancesnapshotstate)
 - `progress`: `str`
-- `fromAttachedDisks`:
-  `List`\[[DiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disktypedef)\]
+- `fromAttachedDisks`: `List`\[[DiskTypeDef](./type_defs.md#disktypedef)\]
 - `fromInstanceName`: `str`
 - `fromInstanceArn`: `str`
 - `fromBlueprintId`: `str`
@@ -2470,29 +2326,22 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `blueprintId`: `str`
 - `blueprintName`: `str`
 - `bundleId`: `str`
-- `addOns`:
-  `List`\[[AddOnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addontypedef)\]
+- `addOns`: `List`\[[AddOnTypeDef](./type_defs.md#addontypedef)\]
 - `isStaticIp`: `bool`
 - `privateIpAddress`: `str`
 - `publicIpAddress`: `str`
 - `ipv6Addresses`: `List`\[`str`\]
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
-- `hardware`:
-  [InstanceHardwareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancehardwaretypedef)
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `hardware`: [InstanceHardwareTypeDef](./type_defs.md#instancehardwaretypedef)
 - `networking`:
-  [InstanceNetworkingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancenetworkingtypedef)
-- `state`:
-  [InstanceStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancestatetypedef)
+  [InstanceNetworkingTypeDef](./type_defs.md#instancenetworkingtypedef)
+- `state`: [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - `username`: `str`
 - `sshKeyName`: `str`
 
@@ -2518,12 +2367,9 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `fingerprint`: `str`
 
 ## LightsailDistributionTypeDef
@@ -2538,30 +2384,25 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `alternativeDomainNames`: `List`\[`str`\]
 - `status`: `str`
 - `isEnabled`: `bool`
 - `domainName`: `str`
 - `bundleId`: `str`
 - `certificateName`: `str`
-- `origin`:
-  [OriginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#origintypedef)
+- `origin`: [OriginTypeDef](./type_defs.md#origintypedef)
 - `originPublicDNS`: `str`
 - `defaultCacheBehavior`:
-  [CacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviortypedef)
+  [CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)
 - `cacheBehaviorSettings`:
-  [CacheSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachesettingstypedef)
+  [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviorperpathtypedef)\]
+  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `ableToUpdateBundle`: `bool`
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LoadBalancerTlsCertificateDomainValidationOptionTypeDef
 
@@ -2573,7 +2414,7 @@ Optional fields:
 
 - `domainName`: `str`
 - `validationStatus`:
-  [LoadBalancerTlsCertificateDomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancertlscertificatedomainstatus)
+  [LoadBalancerTlsCertificateDomainStatus](./literals.md#loadbalancertlscertificatedomainstatus)
 
 ## LoadBalancerTlsCertificateDomainValidationRecordTypeDef
 
@@ -2587,7 +2428,7 @@ Optional fields:
 - `type`: `str`
 - `value`: `str`
 - `validationStatus`:
-  [LoadBalancerTlsCertificateDomainStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancertlscertificatedomainstatus)
+  [LoadBalancerTlsCertificateDomainStatus](./literals.md#loadbalancertlscertificatedomainstatus)
 - `domainName`: `str`
 
 ## LoadBalancerTlsCertificateRenewalSummaryTypeDef
@@ -2599,9 +2440,9 @@ from mypy_boto3_lightsail.type_defs import LoadBalancerTlsCertificateRenewalSumm
 Optional fields:
 
 - `renewalStatus`:
-  [LoadBalancerTlsCertificateRenewalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancertlscertificaterenewalstatus)
+  [LoadBalancerTlsCertificateRenewalStatus](./literals.md#loadbalancertlscertificaterenewalstatus)
 - `domainValidationOptions`:
-  `List`\[[LoadBalancerTlsCertificateDomainValidationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertlscertificatedomainvalidationoptiontypedef)\]
+  `List`\[[LoadBalancerTlsCertificateDomainValidationOptionTypeDef](./type_defs.md#loadbalancertlscertificatedomainvalidationoptiontypedef)\]
 
 ## LoadBalancerTlsCertificateSummaryTypeDef
 
@@ -2626,30 +2467,27 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `loadBalancerName`: `str`
 - `isAttached`: `bool`
 - `status`:
-  [LoadBalancerTlsCertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancertlscertificatestatus)
+  [LoadBalancerTlsCertificateStatus](./literals.md#loadbalancertlscertificatestatus)
 - `domainName`: `str`
 - `domainValidationRecords`:
-  `List`\[[LoadBalancerTlsCertificateDomainValidationRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertlscertificatedomainvalidationrecordtypedef)\]
+  `List`\[[LoadBalancerTlsCertificateDomainValidationRecordTypeDef](./type_defs.md#loadbalancertlscertificatedomainvalidationrecordtypedef)\]
 - `failureReason`:
-  [LoadBalancerTlsCertificateFailureReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancertlscertificatefailurereason)
+  [LoadBalancerTlsCertificateFailureReason](./literals.md#loadbalancertlscertificatefailurereason)
 - `issuedAt`: `datetime`
 - `issuer`: `str`
 - `keyAlgorithm`: `str`
 - `notAfter`: `datetime`
 - `notBefore`: `datetime`
 - `renewalSummary`:
-  [LoadBalancerTlsCertificateRenewalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertlscertificaterenewalsummarytypedef)
+  [LoadBalancerTlsCertificateRenewalSummaryTypeDef](./type_defs.md#loadbalancertlscertificaterenewalsummarytypedef)
 - `revocationReason`:
-  [LoadBalancerTlsCertificateRevocationReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancertlscertificaterevocationreason)
+  [LoadBalancerTlsCertificateRevocationReason](./literals.md#loadbalancertlscertificaterevocationreason)
 - `revokedAt`: `datetime`
 - `serial`: `str`
 - `signatureAlgorithm`: `str`
@@ -2668,29 +2506,23 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `dnsName`: `str`
-- `state`:
-  [LoadBalancerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancerstate)
-- `protocol`:
-  [LoadBalancerProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancerprotocol)
+- `state`: [LoadBalancerState](./literals.md#loadbalancerstate)
+- `protocol`: [LoadBalancerProtocol](./literals.md#loadbalancerprotocol)
 - `publicPorts`: `List`\[`int`\]
 - `healthCheckPath`: `str`
 - `instancePort`: `int`
 - `instanceHealthSummary`:
-  `List`\[[InstanceHealthSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instancehealthsummarytypedef)\]
+  `List`\[[InstanceHealthSummaryTypeDef](./type_defs.md#instancehealthsummarytypedef)\]
 - `tlsCertificateSummaries`:
-  `List`\[[LoadBalancerTlsCertificateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#loadbalancertlscertificatesummarytypedef)\]
+  `List`\[[LoadBalancerTlsCertificateSummaryTypeDef](./type_defs.md#loadbalancertlscertificatesummarytypedef)\]
 - `configurationOptions`:
-  `Dict`\[[LoadBalancerAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancerattributename),
+  `Dict`\[[LoadBalancerAttributeName](./literals.md#loadbalancerattributename),
   `str`\]
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 
 ## LogEventTypeDef
 
@@ -2717,8 +2549,7 @@ Optional fields:
 - `sampleCount`: `float`
 - `sum`: `float`
 - `timestamp`: `datetime`
-- `unit`:
-  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
+- `unit`: [MetricUnit](./literals.md#metricunit)
 
 ## MonitoredResourceInfoTypeDef
 
@@ -2730,8 +2561,7 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 
 ## MonthlyTransferTypeDef
 
@@ -2751,8 +2581,7 @@ from mypy_boto3_lightsail.type_defs import OpenInstancePublicPortsResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## OperationTypeDef
 
@@ -2764,17 +2593,13 @@ Optional fields:
 
 - `id`: `str`
 - `resourceName`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
 - `isTerminal`: `bool`
 - `operationDetails`: `str`
-- `operationType`:
-  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#operationtype)
-- `status`:
-  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#operationstatus)
+- `operationType`: [OperationType](./literals.md#operationtype)
+- `status`: [OperationStatus](./literals.md#operationstatus)
 - `statusChangedAt`: `datetime`
 - `errorCode`: `str`
 - `errorDetails`: `str`
@@ -2788,12 +2613,10 @@ from mypy_boto3_lightsail.type_defs import OriginTypeDef
 Optional fields:
 
 - `name`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `regionName`:
-  [RegionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#regionname)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `regionName`: [RegionName](./literals.md#regionname)
 - `protocolPolicy`:
-  [OriginProtocolPolicyEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#originprotocolpolicyenum)
+  [OriginProtocolPolicyEnum](./literals.md#originprotocolpolicyenum)
 
 ## PaginatorConfigTypeDef
 
@@ -2826,8 +2649,7 @@ from mypy_boto3_lightsail.type_defs import PeerVpcResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## PendingMaintenanceActionTypeDef
 
@@ -2863,8 +2685,7 @@ Optional fields:
 
 - `fromPort`: `int`
 - `toPort`: `int`
-- `protocol`:
-  [NetworkProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#networkprotocol)
+- `protocol`: [NetworkProtocol](./literals.md#networkprotocol)
 - `cidrs`: `List`\[`str`\]
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
@@ -2877,8 +2698,7 @@ from mypy_boto3_lightsail.type_defs import PutAlarmResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## PutInstancePublicPortsResultTypeDef
 
@@ -2888,8 +2708,7 @@ from mypy_boto3_lightsail.type_defs import PutInstancePublicPortsResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## QueryStringObjectTypeDef
 
@@ -2910,8 +2729,7 @@ from mypy_boto3_lightsail.type_defs import RebootInstanceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## RebootRelationalDatabaseResultTypeDef
 
@@ -2921,8 +2739,7 @@ from mypy_boto3_lightsail.type_defs import RebootRelationalDatabaseResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## RegionTypeDef
 
@@ -2935,12 +2752,11 @@ Optional fields:
 - `continentCode`: `str`
 - `description`: `str`
 - `displayName`: `str`
-- `name`:
-  [RegionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#regionname)
+- `name`: [RegionName](./literals.md#regionname)
 - `availabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#availabilityzonetypedef)\]
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `relationalDatabaseAvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#availabilityzonetypedef)\]
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 
 ## RegisterContainerImageResultTypeDef
 
@@ -2950,8 +2766,7 @@ from mypy_boto3_lightsail.type_defs import RegisterContainerImageResultTypeDef
 
 Optional fields:
 
-- `containerImage`:
-  [ContainerImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerimagetypedef)
+- `containerImage`: [ContainerImageTypeDef](./type_defs.md#containerimagetypedef)
 
 ## RelationalDatabaseBlueprintTypeDef
 
@@ -2962,7 +2777,8 @@ from mypy_boto3_lightsail.type_defs import RelationalDatabaseBlueprintTypeDef
 Optional fields:
 
 - `blueprintId`: `str`
-- `engine`: `Literal['mysql']`
+- `engine`: `Literal['mysql']` (see
+  [RelationalDatabaseEngine](./literals.md#relationaldatabaseengine))
 - `engineVersion`: `str`
 - `engineDescription`: `str`
 - `engineVersionDescription`: `str`
@@ -3051,12 +2867,9 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `engine`: `str`
 - `engineVersion`: `str`
 - `sizeInGb`: `int`
@@ -3078,22 +2891,19 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `relationalDatabaseBlueprintId`: `str`
 - `relationalDatabaseBundleId`: `str`
 - `masterDatabaseName`: `str`
 - `hardware`:
-  [RelationalDatabaseHardwareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabasehardwaretypedef)
+  [RelationalDatabaseHardwareTypeDef](./type_defs.md#relationaldatabasehardwaretypedef)
 - `state`: `str`
 - `secondaryAvailabilityZone`: `str`
 - `backupRetentionEnabled`: `bool`
 - `pendingModifiedValues`:
-  [PendingModifiedRelationalDatabaseValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#pendingmodifiedrelationaldatabasevaluestypedef)
+  [PendingModifiedRelationalDatabaseValuesTypeDef](./type_defs.md#pendingmodifiedrelationaldatabasevaluestypedef)
 - `engine`: `str`
 - `engineVersion`: `str`
 - `latestRestorableTime`: `datetime`
@@ -3103,9 +2913,9 @@ Optional fields:
 - `preferredMaintenanceWindow`: `str`
 - `publiclyAccessible`: `bool`
 - `masterEndpoint`:
-  [RelationalDatabaseEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabaseendpointtypedef)
+  [RelationalDatabaseEndpointTypeDef](./type_defs.md#relationaldatabaseendpointtypedef)
 - `pendingMaintenanceActions`:
-  `List`\[[PendingMaintenanceActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#pendingmaintenanceactiontypedef)\]
+  `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
 - `caCertificateIdentifier`: `str`
 
 ## ReleaseStaticIpResultTypeDef
@@ -3116,8 +2926,7 @@ from mypy_boto3_lightsail.type_defs import ReleaseStaticIpResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## RenewalSummaryTypeDef
 
@@ -3128,9 +2937,8 @@ from mypy_boto3_lightsail.type_defs import RenewalSummaryTypeDef
 Optional fields:
 
 - `domainValidationRecords`:
-  `List`\[[DomainValidationRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainvalidationrecordtypedef)\]
-- `renewalStatus`:
-  [RenewalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#renewalstatus)
+  `List`\[[DomainValidationRecordTypeDef](./type_defs.md#domainvalidationrecordtypedef)\]
+- `renewalStatus`: [RenewalStatus](./literals.md#renewalstatus)
 - `renewalStatusReason`: `str`
 - `updatedAt`: `datetime`
 
@@ -3144,8 +2952,7 @@ Optional fields:
 
 - `status`: `str`
 - `createTime`: `datetime`
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## ResourceLocationTypeDef
 
@@ -3156,8 +2963,7 @@ from mypy_boto3_lightsail.type_defs import ResourceLocationTypeDef
 Optional fields:
 
 - `availabilityZone`: `str`
-- `regionName`:
-  [RegionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#regionname)
+- `regionName`: [RegionName](./literals.md#regionname)
 
 ## ResourceRecordTypeDef
 
@@ -3179,8 +2985,7 @@ from mypy_boto3_lightsail.type_defs import SendContactMethodVerificationResultTy
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## SetIpAddressTypeResultTypeDef
 
@@ -3190,8 +2995,7 @@ from mypy_boto3_lightsail.type_defs import SetIpAddressTypeResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## StartInstanceResultTypeDef
 
@@ -3201,8 +3005,7 @@ from mypy_boto3_lightsail.type_defs import StartInstanceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## StartRelationalDatabaseResultTypeDef
 
@@ -3212,8 +3015,7 @@ from mypy_boto3_lightsail.type_defs import StartRelationalDatabaseResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## StaticIpTypeDef
 
@@ -3227,10 +3029,8 @@ Optional fields:
 - `arn`: `str`
 - `supportCode`: `str`
 - `createdAt`: `datetime`
-- `location`:
-  [ResourceLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resourcelocationtypedef)
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
+- `location`: [ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `ipAddress`: `str`
 - `attachedTo`: `str`
 - `isAttached`: `bool`
@@ -3243,8 +3043,7 @@ from mypy_boto3_lightsail.type_defs import StopInstanceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## StopRelationalDatabaseResultTypeDef
 
@@ -3254,8 +3053,7 @@ from mypy_boto3_lightsail.type_defs import StopRelationalDatabaseResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## TagResourceResultTypeDef
 
@@ -3265,8 +3063,7 @@ from mypy_boto3_lightsail.type_defs import TagResourceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## TagTypeDef
 
@@ -3287,8 +3084,7 @@ from mypy_boto3_lightsail.type_defs import TestAlarmResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## UnpeerVpcResultTypeDef
 
@@ -3298,8 +3094,7 @@ from mypy_boto3_lightsail.type_defs import UnpeerVpcResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## UntagResourceResultTypeDef
 
@@ -3309,8 +3104,7 @@ from mypy_boto3_lightsail.type_defs import UntagResourceResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## UpdateContainerServiceResultTypeDef
 
@@ -3321,7 +3115,7 @@ from mypy_boto3_lightsail.type_defs import UpdateContainerServiceResultTypeDef
 Optional fields:
 
 - `containerService`:
-  [ContainerServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicetypedef)
+  [ContainerServiceTypeDef](./type_defs.md#containerservicetypedef)
 
 ## UpdateDistributionBundleResultTypeDef
 
@@ -3331,8 +3125,7 @@ from mypy_boto3_lightsail.type_defs import UpdateDistributionBundleResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## UpdateDistributionResultTypeDef
 
@@ -3342,8 +3135,7 @@ from mypy_boto3_lightsail.type_defs import UpdateDistributionResultTypeDef
 
 Optional fields:
 
-- `operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)
+- `operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## UpdateDomainEntryResultTypeDef
 
@@ -3353,8 +3145,7 @@ from mypy_boto3_lightsail.type_defs import UpdateDomainEntryResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## UpdateLoadBalancerAttributeResultTypeDef
 
@@ -3364,8 +3155,7 @@ from mypy_boto3_lightsail.type_defs import UpdateLoadBalancerAttributeResultType
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## UpdateRelationalDatabaseParametersResultTypeDef
 
@@ -3375,8 +3165,7 @@ from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseParametersRes
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]
 
 ## UpdateRelationalDatabaseResultTypeDef
 
@@ -3386,5 +3175,4 @@ from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseResultTypeDef
 
 Optional fields:
 
-- `operations`:
-  `List`\[[OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#operationtypedef)\]
+- `operations`: `List`\[[OperationTypeDef](./type_defs.md#operationtypedef)\]

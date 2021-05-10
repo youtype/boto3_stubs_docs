@@ -1,6 +1,6 @@
 # Type annotations for boto3 ManagedBlockchain module
 
-> [Index](../README.md) > ManagedBlockchain
+> [Index](..) > ManagedBlockchain
 
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
@@ -153,6 +153,6 @@ from mypy_boto3_managedblockchain.type_defs import ApprovalThresholdPolicyTypeDe
 - [ProposalSummaryTypeDef](./type_defs.md#proposalsummarytypedef)
 - [ProposalTypeDef](./type_defs.md#proposaltypedef)
 - [RemoveActionTypeDef](./type_defs.md#removeactiontypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [VoteSummaryTypeDef](./type_defs.md#votesummarytypedef)
 - [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)

@@ -1,7 +1,6 @@
 # MarketplaceCatalogClient for boto3 MarketplaceCatalog module
 
-> [Index](../README.md) > [MarketplaceCatalog](./README.md) >
-> MarketplaceCatalogClient
+> [Index](..) > [MarketplaceCatalog](.) > MarketplaceCatalogClient
 
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
@@ -90,7 +89,7 @@ Arguments:
 - `ChangeSetId`: `str` *(required)*
 
 Returns
-[CancelChangeSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#cancelchangesetresponsetypedef).
+[CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef).
 
 ### describe_change_set
 
@@ -106,7 +105,7 @@ Arguments:
 - `ChangeSetId`: `str` *(required)*
 
 Returns
-[DescribeChangeSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#describechangesetresponsetypedef).
+[DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef).
 
 ### describe_entity
 
@@ -122,7 +121,7 @@ Arguments:
 - `EntityId`: `str` *(required)*
 
 Returns
-[DescribeEntityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#describeentityresponsetypedef).
+[DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef).
 
 ### generate_presigned_url
 
@@ -152,15 +151,13 @@ Boto3 documentation:
 Arguments:
 
 - `Catalog`: `str` *(required)*
-- `FilterList`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#filtertypedef)\]
-- `Sort`:
-  [SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#sorttypedef)
+- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListChangeSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#listchangesetsresponsetypedef).
+[ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
 
 ### list_entities
 
@@ -174,15 +171,13 @@ Arguments:
 
 - `Catalog`: `str` *(required)*
 - `EntityType`: `str` *(required)*
-- `FilterList`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#filtertypedef)\]
-- `Sort`:
-  [SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#sorttypedef)
+- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#listentitiesresponsetypedef).
+[ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef).
 
 ### start_change_set
 
@@ -195,11 +190,10 @@ Boto3 documentation:
 Arguments:
 
 - `Catalog`: `str` *(required)*
-- `ChangeSet`:
-  `List`\[[ChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#changetypedef)\]
+- `ChangeSet`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
   *(required)*
 - `ChangeSetName`: `str`
 - `ClientRequestToken`: `str`
 
 Returns
-[StartChangeSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#startchangesetresponsetypedef).
+[StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef).

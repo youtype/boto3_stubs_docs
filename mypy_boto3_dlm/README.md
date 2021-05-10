@@ -1,6 +1,6 @@
 # Type annotations for boto3 DLM module
 
-> [Index](../README.md) > DLM
+> [Index](..) > DLM
 
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)

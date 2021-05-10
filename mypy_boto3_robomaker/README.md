@@ -1,6 +1,6 @@
 # Type annotations for boto3 RoboMaker module
 
-> [Index](../README.md) > RoboMaker
+> [Index](..) > RoboMaker
 
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
@@ -246,7 +246,7 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsResponseTypeDef, ...
 - [ProgressDetailTypeDef](./type_defs.md#progressdetailtypedef)
 - [RegisterRobotResponseTypeDef](./type_defs.md#registerrobotresponsetypedef)
 - [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)
 - [RobotApplicationSummaryTypeDef](./type_defs.md#robotapplicationsummarytypedef)
 - [RobotDeploymentTypeDef](./type_defs.md#robotdeploymenttypedef)

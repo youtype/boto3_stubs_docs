@@ -1,6 +1,6 @@
 # Paginators for boto3 IoT1ClickDevicesService module
 
-> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Paginators
+> [Index](..) > [IoT1ClickDevicesService](.) > Paginators
 
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
@@ -34,10 +34,10 @@ Arguments for `ListDeviceEventsPaginator.paginate` method:
 - `FromTimeStamp`: `datetime` *(required)*
 - `ToTimeStamp`: `datetime` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceEventsPaginator.paginate` returns
-`Iterator`\[[ListDeviceEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listdeviceeventsresponsetypedef)\].
+`Iterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
 
 ## ListDevicesPaginator
 
@@ -60,7 +60,7 @@ Arguments for `ListDevicesPaginator.paginate` method:
 
 - `DeviceType`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listdevicesresponsetypedef)\].
+`Iterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].

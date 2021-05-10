@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CodeStarconnections module
 
-> [Index](../README.md) > [CodeStarconnections](./README.md) > Structures
+> [Index](..) > [CodeStarconnections](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
@@ -17,7 +17,7 @@ type annotations stubs module
   - [ListConnectionsOutputTypeDef](#listconnectionsoutputtypedef)
   - [ListHostsOutputTypeDef](#listhostsoutputtypedef)
   - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
@@ -31,11 +31,9 @@ Optional fields:
 
 - `ConnectionName`: `str`
 - `ConnectionArn`: `str`
-- `ProviderType`:
-  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+- `ProviderType`: [ProviderType](./literals.md#providertype)
 - `OwnerAccountId`: `str`
-- `ConnectionStatus`:
-  [ConnectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#connectionstatus)
+- `ConnectionStatus`: [ConnectionStatus](./literals.md#connectionstatus)
 - `HostArn`: `str`
 
 ## CreateConnectionOutputTypeDef
@@ -47,10 +45,9 @@ from mypy_boto3_codestar_connections.type_defs import CreateConnectionOutputType
 Required fields:
 
 - `ConnectionArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateHostOutputTypeDef
 
@@ -61,10 +58,9 @@ from mypy_boto3_codestar_connections.type_defs import CreateHostOutputTypeDef
 Required fields:
 
 - `HostArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetConnectionOutputTypeDef
 
@@ -74,10 +70,9 @@ from mypy_boto3_codestar_connections.type_defs import GetConnectionOutputTypeDef
 
 Required fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetHostOutputTypeDef
 
@@ -89,13 +84,12 @@ Required fields:
 
 - `Name`: `str`
 - `Status`: `str`
-- `ProviderType`:
-  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+- `ProviderType`: [ProviderType](./literals.md#providertype)
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`:
-  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#vpcconfigurationtypedef)
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HostTypeDef
 
@@ -107,11 +101,10 @@ Optional fields:
 
 - `Name`: `str`
 - `HostArn`: `str`
-- `ProviderType`:
-  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+- `ProviderType`: [ProviderType](./literals.md#providertype)
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`:
-  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#vpcconfigurationtypedef)
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `Status`: `str`
 - `StatusMessage`: `str`
 
@@ -123,11 +116,10 @@ from mypy_boto3_codestar_connections.type_defs import ListConnectionsOutputTypeD
 
 Required fields:
 
-- `Connections`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#connectiontypedef)\]
+- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListHostsOutputTypeDef
 
@@ -137,11 +129,10 @@ from mypy_boto3_codestar_connections.type_defs import ListHostsOutputTypeDef
 
 Required fields:
 
-- `Hosts`:
-  `List`\[[HostTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#hosttypedef)\]
+- `Hosts`: `List`\[[HostTypeDef](./type_defs.md#hosttypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -151,15 +142,14 @@ from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceOutputT
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import ResponseMetadata
+from mypy_boto3_codestar_connections.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:

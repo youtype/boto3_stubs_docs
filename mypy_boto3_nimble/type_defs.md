@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 NimbleStudio module
 
-> [Index](../README.md) > [NimbleStudio](./README.md) > Structures
+> [Index](..) > [NimbleStudio](.) > Typed dictionaries
 
 Auto-generated documentation for
 [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
@@ -86,7 +86,7 @@ from mypy_boto3_nimble.type_defs import AcceptEulasResponseTypeDef
 Optional fields:
 
 - `eulaAcceptances`:
-  `List`\[[EulaAcceptanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#eulaacceptancetypedef)\]
+  `List`\[[EulaAcceptanceTypeDef](./type_defs.md#eulaacceptancetypedef)\]
 
 ## ActiveDirectoryComputerAttributeTypeDef
 
@@ -108,7 +108,7 @@ from mypy_boto3_nimble.type_defs import ActiveDirectoryConfigurationTypeDef
 Optional fields:
 
 - `computerAttributes`:
-  `List`\[[ActiveDirectoryComputerAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#activedirectorycomputerattributetypedef)\]
+  `List`\[[ActiveDirectoryComputerAttributeTypeDef](./type_defs.md#activedirectorycomputerattributetypedef)\]
 - `directoryId`: `str`
 - `organizationalUnitDistinguishedName`: `str`
 
@@ -131,8 +131,7 @@ from mypy_boto3_nimble.type_defs import CreateLaunchProfileResponseTypeDef
 
 Optional fields:
 
-- `launchProfile`:
-  [LaunchProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofiletypedef)
+- `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 
 ## CreateStreamingImageResponseTypeDef
 
@@ -142,8 +141,7 @@ from mypy_boto3_nimble.type_defs import CreateStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`:
-  [StreamingImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimagetypedef)
+- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## CreateStreamingSessionResponseTypeDef
 
@@ -153,8 +151,7 @@ from mypy_boto3_nimble.type_defs import CreateStreamingSessionResponseTypeDef
 
 Optional fields:
 
-- `session`:
-  [StreamingSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingsessiontypedef)
+- `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 
 ## CreateStreamingSessionStreamResponseTypeDef
 
@@ -165,7 +162,7 @@ from mypy_boto3_nimble.type_defs import CreateStreamingSessionStreamResponseType
 Optional fields:
 
 - `stream`:
-  [StreamingSessionStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingsessionstreamtypedef)
+  [StreamingSessionStreamTypeDef](./type_defs.md#streamingsessionstreamtypedef)
 
 ## CreateStudioComponentResponseTypeDef
 
@@ -176,7 +173,7 @@ from mypy_boto3_nimble.type_defs import CreateStudioComponentResponseTypeDef
 Optional fields:
 
 - `studioComponent`:
-  [StudioComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponenttypedef)
+  [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 
 ## CreateStudioResponseTypeDef
 
@@ -186,8 +183,7 @@ from mypy_boto3_nimble.type_defs import CreateStudioResponseTypeDef
 
 Optional fields:
 
-- `studio`:
-  [StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiotypedef)
+- `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 
 ## DeleteLaunchProfileResponseTypeDef
 
@@ -197,8 +193,7 @@ from mypy_boto3_nimble.type_defs import DeleteLaunchProfileResponseTypeDef
 
 Optional fields:
 
-- `launchProfile`:
-  [LaunchProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofiletypedef)
+- `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 
 ## DeleteStreamingImageResponseTypeDef
 
@@ -208,8 +203,7 @@ from mypy_boto3_nimble.type_defs import DeleteStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`:
-  [StreamingImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimagetypedef)
+- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## DeleteStreamingSessionResponseTypeDef
 
@@ -219,8 +213,7 @@ from mypy_boto3_nimble.type_defs import DeleteStreamingSessionResponseTypeDef
 
 Optional fields:
 
-- `session`:
-  [StreamingSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingsessiontypedef)
+- `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 
 ## DeleteStudioComponentResponseTypeDef
 
@@ -231,7 +224,7 @@ from mypy_boto3_nimble.type_defs import DeleteStudioComponentResponseTypeDef
 Optional fields:
 
 - `studioComponent`:
-  [StudioComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponenttypedef)
+  [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 
 ## DeleteStudioResponseTypeDef
 
@@ -241,8 +234,7 @@ from mypy_boto3_nimble.type_defs import DeleteStudioResponseTypeDef
 
 Optional fields:
 
-- `studio`:
-  [StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiotypedef)
+- `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 
 ## EulaAcceptanceTypeDef
 
@@ -280,8 +272,7 @@ from mypy_boto3_nimble.type_defs import GetEulaResponseTypeDef
 
 Optional fields:
 
-- `eula`:
-  [EulaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#eulatypedef)
+- `eula`: [EulaTypeDef](./type_defs.md#eulatypedef)
 
 ## GetLaunchProfileDetailsResponseTypeDef
 
@@ -291,12 +282,11 @@ from mypy_boto3_nimble.type_defs import GetLaunchProfileDetailsResponseTypeDef
 
 Optional fields:
 
-- `launchProfile`:
-  [LaunchProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofiletypedef)
+- `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 - `streamingImages`:
-  `List`\[[StreamingImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimagetypedef)\]
+  `List`\[[StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)\]
 - `studioComponentSummaries`:
-  `List`\[[StudioComponentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentsummarytypedef)\]
+  `List`\[[StudioComponentSummaryTypeDef](./type_defs.md#studiocomponentsummarytypedef)\]
 
 ## GetLaunchProfileInitializationResponseTypeDef
 
@@ -307,7 +297,7 @@ from mypy_boto3_nimble.type_defs import GetLaunchProfileInitializationResponseTy
 Optional fields:
 
 - `launchProfileInitialization`:
-  [LaunchProfileInitializationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofileinitializationtypedef)
+  [LaunchProfileInitializationTypeDef](./type_defs.md#launchprofileinitializationtypedef)
 
 ## GetLaunchProfileMemberResponseTypeDef
 
@@ -318,7 +308,7 @@ from mypy_boto3_nimble.type_defs import GetLaunchProfileMemberResponseTypeDef
 Optional fields:
 
 - `member`:
-  [LaunchProfileMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofilemembershiptypedef)
+  [LaunchProfileMembershipTypeDef](./type_defs.md#launchprofilemembershiptypedef)
 
 ## GetLaunchProfileResponseTypeDef
 
@@ -328,8 +318,7 @@ from mypy_boto3_nimble.type_defs import GetLaunchProfileResponseTypeDef
 
 Optional fields:
 
-- `launchProfile`:
-  [LaunchProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofiletypedef)
+- `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 
 ## GetStreamingImageResponseTypeDef
 
@@ -339,8 +328,7 @@ from mypy_boto3_nimble.type_defs import GetStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`:
-  [StreamingImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimagetypedef)
+- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## GetStreamingSessionResponseTypeDef
 
@@ -350,8 +338,7 @@ from mypy_boto3_nimble.type_defs import GetStreamingSessionResponseTypeDef
 
 Optional fields:
 
-- `session`:
-  [StreamingSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingsessiontypedef)
+- `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 
 ## GetStreamingSessionStreamResponseTypeDef
 
@@ -362,7 +349,7 @@ from mypy_boto3_nimble.type_defs import GetStreamingSessionStreamResponseTypeDef
 Optional fields:
 
 - `stream`:
-  [StreamingSessionStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingsessionstreamtypedef)
+  [StreamingSessionStreamTypeDef](./type_defs.md#streamingsessionstreamtypedef)
 
 ## GetStudioComponentResponseTypeDef
 
@@ -373,7 +360,7 @@ from mypy_boto3_nimble.type_defs import GetStudioComponentResponseTypeDef
 Optional fields:
 
 - `studioComponent`:
-  [StudioComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponenttypedef)
+  [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 
 ## GetStudioMemberResponseTypeDef
 
@@ -383,8 +370,7 @@ from mypy_boto3_nimble.type_defs import GetStudioMemberResponseTypeDef
 
 Optional fields:
 
-- `member`:
-  [StudioMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiomembershiptypedef)
+- `member`: [StudioMembershipTypeDef](./type_defs.md#studiomembershiptypedef)
 
 ## GetStudioResponseTypeDef
 
@@ -394,8 +380,7 @@ from mypy_boto3_nimble.type_defs import GetStudioResponseTypeDef
 
 Optional fields:
 
-- `studio`:
-  [StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiotypedef)
+- `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 
 ## LaunchProfileInitializationActiveDirectoryTypeDef
 
@@ -406,7 +391,7 @@ from mypy_boto3_nimble.type_defs import LaunchProfileInitializationActiveDirecto
 Optional fields:
 
 - `computerAttributes`:
-  `List`\[[ActiveDirectoryComputerAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#activedirectorycomputerattributetypedef)\]
+  `List`\[[ActiveDirectoryComputerAttributeTypeDef](./type_defs.md#activedirectorycomputerattributetypedef)\]
 - `directoryId`: `str`
 - `directoryName`: `str`
 - `dnsIpAddresses`: `List`\[`str`\]
@@ -435,18 +420,17 @@ from mypy_boto3_nimble.type_defs import LaunchProfileInitializationTypeDef
 Optional fields:
 
 - `activeDirectory`:
-  [LaunchProfileInitializationActiveDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofileinitializationactivedirectorytypedef)
+  [LaunchProfileInitializationActiveDirectoryTypeDef](./type_defs.md#launchprofileinitializationactivedirectorytypedef)
 - `ec2SecurityGroupIds`: `List`\[`str`\]
 - `launchProfileId`: `str`
 - `launchProfileProtocolVersion`: `str`
 - `launchPurpose`: `str`
 - `name`: `str`
-- `platform`:
-  [LaunchProfilePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#launchprofileplatform)
+- `platform`: [LaunchProfilePlatform](./literals.md#launchprofileplatform)
 - `systemInitializationScripts`:
-  `List`\[[LaunchProfileInitializationScriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofileinitializationscripttypedef)\]
+  `List`\[[LaunchProfileInitializationScriptTypeDef](./type_defs.md#launchprofileinitializationscripttypedef)\]
 - `userInitializationScripts`:
-  `List`\[[LaunchProfileInitializationScriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofileinitializationscripttypedef)\]
+  `List`\[[LaunchProfileInitializationScriptTypeDef](./type_defs.md#launchprofileinitializationscripttypedef)\]
 
 ## LaunchProfileMembershipTypeDef
 
@@ -457,7 +441,8 @@ from mypy_boto3_nimble.type_defs import LaunchProfileMembershipTypeDef
 Optional fields:
 
 - `identityStoreId`: `str`
-- `persona`: `Literal['USER']`
+- `persona`: `Literal['USER']` (see
+  [LaunchProfilePersona](./literals.md#launchprofilepersona))
 - `principalId`: `str`
 
 ## LaunchProfileTypeDef
@@ -476,13 +461,11 @@ Optional fields:
 - `launchProfileId`: `str`
 - `launchProfileProtocolVersions`: `List`\[`str`\]
 - `name`: `str`
-- `state`:
-  [LaunchProfileState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#launchprofilestate)
-- `statusCode`:
-  [LaunchProfileStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#launchprofilestatuscode)
+- `state`: [LaunchProfileState](./literals.md#launchprofilestate)
+- `statusCode`: [LaunchProfileStatusCode](./literals.md#launchprofilestatuscode)
 - `statusMessage`: `str`
 - `streamConfiguration`:
-  [StreamConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamconfigurationtypedef)
+  [StreamConfigurationTypeDef](./type_defs.md#streamconfigurationtypedef)
 - `studioComponentIds`: `List`\[`str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
@@ -507,7 +490,7 @@ from mypy_boto3_nimble.type_defs import ListEulaAcceptancesResponseTypeDef
 Optional fields:
 
 - `eulaAcceptances`:
-  `List`\[[EulaAcceptanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#eulaacceptancetypedef)\]
+  `List`\[[EulaAcceptanceTypeDef](./type_defs.md#eulaacceptancetypedef)\]
 - `nextToken`: `str`
 
 ## ListEulasResponseTypeDef
@@ -518,8 +501,7 @@ from mypy_boto3_nimble.type_defs import ListEulasResponseTypeDef
 
 Optional fields:
 
-- `eulas`:
-  `List`\[[EulaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#eulatypedef)\]
+- `eulas`: `List`\[[EulaTypeDef](./type_defs.md#eulatypedef)\]
 - `nextToken`: `str`
 
 ## ListLaunchProfileMembersResponseTypeDef
@@ -531,7 +513,7 @@ from mypy_boto3_nimble.type_defs import ListLaunchProfileMembersResponseTypeDef
 Optional fields:
 
 - `members`:
-  `List`\[[LaunchProfileMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofilemembershiptypedef)\]
+  `List`\[[LaunchProfileMembershipTypeDef](./type_defs.md#launchprofilemembershiptypedef)\]
 - `nextToken`: `str`
 
 ## ListLaunchProfilesResponseTypeDef
@@ -543,7 +525,7 @@ from mypy_boto3_nimble.type_defs import ListLaunchProfilesResponseTypeDef
 Optional fields:
 
 - `launchProfiles`:
-  `List`\[[LaunchProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofiletypedef)\]
+  `List`\[[LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)\]
 - `nextToken`: `str`
 
 ## ListStreamingImagesResponseTypeDef
@@ -556,7 +538,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `streamingImages`:
-  `List`\[[StreamingImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimagetypedef)\]
+  `List`\[[StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)\]
 
 ## ListStreamingSessionsResponseTypeDef
 
@@ -568,7 +550,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `sessions`:
-  `List`\[[StreamingSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingsessiontypedef)\]
+  `List`\[[StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)\]
 
 ## ListStudioComponentsResponseTypeDef
 
@@ -580,7 +562,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `studioComponents`:
-  `List`\[[StudioComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponenttypedef)\]
+  `List`\[[StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)\]
 
 ## ListStudioMembersResponseTypeDef
 
@@ -591,7 +573,7 @@ from mypy_boto3_nimble.type_defs import ListStudioMembersResponseTypeDef
 Optional fields:
 
 - `members`:
-  `List`\[[StudioMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiomembershiptypedef)\]
+  `List`\[[StudioMembershipTypeDef](./type_defs.md#studiomembershiptypedef)\]
 - `nextToken`: `str`
 
 ## ListStudiosResponseTypeDef
@@ -603,8 +585,7 @@ from mypy_boto3_nimble.type_defs import ListStudiosResponseTypeDef
 Optional fields:
 
 - `nextToken`: `str`
-- `studios`:
-  `List`\[[StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiotypedef)\]
+- `studios`: `List`\[[StudioTypeDef](./type_defs.md#studiotypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -624,7 +605,8 @@ from mypy_boto3_nimble.type_defs import NewLaunchProfileMemberTypeDef
 
 Required fields:
 
-- `persona`: `Literal['USER']`
+- `persona`: `Literal['USER']` (see
+  [LaunchProfilePersona](./literals.md#launchprofilepersona))
 - `principalId`: `str`
 
 ## NewStudioMemberTypeDef
@@ -635,7 +617,8 @@ from mypy_boto3_nimble.type_defs import NewStudioMemberTypeDef
 
 Required fields:
 
-- `persona`: `Literal['ADMINISTRATOR']`
+- `persona`: `Literal['ADMINISTRATOR']` (see
+  [StudioPersona](./literals.md#studiopersona))
 - `principalId`: `str`
 
 ## PaginatorConfigTypeDef
@@ -683,8 +666,7 @@ from mypy_boto3_nimble.type_defs import StartStudioSSOConfigurationRepairRespons
 
 Optional fields:
 
-- `studio`:
-  [StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiotypedef)
+- `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 
 ## StreamConfigurationCreateTypeDef
 
@@ -694,10 +676,9 @@ from mypy_boto3_nimble.type_defs import StreamConfigurationCreateTypeDef
 
 Required fields:
 
-- `clipboardMode`:
-  [StreamingClipboardMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingclipboardmode)
+- `clipboardMode`: [StreamingClipboardMode](./literals.md#streamingclipboardmode)
 - `ec2InstanceTypes`:
-  `List`\[[StreamingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streaminginstancetype)\]
+  `List`\[[StreamingInstanceType](./literals.md#streaminginstancetype)\]
 - `streamingImageIds`: `List`\[`str`\]
 
 Optional fields:
@@ -712,10 +693,9 @@ from mypy_boto3_nimble.type_defs import StreamConfigurationTypeDef
 
 Optional fields:
 
-- `clipboardMode`:
-  [StreamingClipboardMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingclipboardmode)
+- `clipboardMode`: [StreamingClipboardMode](./literals.md#streamingclipboardmode)
 - `ec2InstanceTypes`:
-  `List`\[[StreamingInstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streaminginstancetype)\]
+  `List`\[[StreamingInstanceType](./literals.md#streaminginstancetype)\]
 - `maxSessionLengthInMinutes`: `int`
 - `streamingImageIds`: `List`\[`str`\]
 
@@ -727,7 +707,8 @@ from mypy_boto3_nimble.type_defs import StreamingImageEncryptionConfigurationTyp
 
 Required fields:
 
-- `keyType`: `Literal['CUSTOMER_MANAGED_KEY']`
+- `keyType`: `Literal['CUSTOMER_MANAGED_KEY']` (see
+  [StreamingImageEncryptionConfigurationKeyType](./literals.md#streamingimageencryptionconfigurationkeytype))
 
 Optional fields:
 
@@ -745,15 +726,14 @@ Optional fields:
 - `description`: `str`
 - `ec2ImageId`: `str`
 - `encryptionConfiguration`:
-  [StreamingImageEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimageencryptionconfigurationtypedef)
+  [StreamingImageEncryptionConfigurationTypeDef](./type_defs.md#streamingimageencryptionconfigurationtypedef)
 - `eulaIds`: `List`\[`str`\]
 - `name`: `str`
 - `owner`: `str`
 - `platform`: `str`
-- `state`:
-  [StreamingImageState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingimagestate)
+- `state`: [StreamingImageState](./literals.md#streamingimagestate)
 - `statusCode`:
-  [StreamingImageStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingimagestatuscode)
+  [StreamingImageStatusCode](./literals.md#streamingimagestatuscode)
 - `statusMessage`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -770,9 +750,9 @@ Optional fields:
 - `createdBy`: `str`
 - `expiresAt`: `datetime`
 - `state`:
-  [StreamingSessionStreamState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingsessionstreamstate)
+  [StreamingSessionStreamState](./literals.md#streamingsessionstreamstate)
 - `statusCode`:
-  [StreamingSessionStreamStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingsessionstreamstatuscode)
+  [StreamingSessionStreamStatusCode](./literals.md#streamingsessionstreamstatuscode)
 - `streamId`: `str`
 - `url`: `str`
 
@@ -790,10 +770,9 @@ Optional fields:
 - `ec2InstanceType`: `str`
 - `launchProfileId`: `str`
 - `sessionId`: `str`
-- `state`:
-  [StreamingSessionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingsessionstate)
+- `state`: [StreamingSessionState](./literals.md#streamingsessionstate)
 - `statusCode`:
-  [StreamingSessionStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#streamingsessionstatuscode)
+  [StreamingSessionStatusCode](./literals.md#streamingsessionstatuscode)
 - `statusMessage`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -810,13 +789,13 @@ from mypy_boto3_nimble.type_defs import StudioComponentConfigurationTypeDef
 Optional fields:
 
 - `activeDirectoryConfiguration`:
-  [ActiveDirectoryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#activedirectoryconfigurationtypedef)
+  [ActiveDirectoryConfigurationTypeDef](./type_defs.md#activedirectoryconfigurationtypedef)
 - `computeFarmConfiguration`:
-  [ComputeFarmConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#computefarmconfigurationtypedef)
+  [ComputeFarmConfigurationTypeDef](./type_defs.md#computefarmconfigurationtypedef)
 - `licenseServiceConfiguration`:
-  [LicenseServiceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#licenseserviceconfigurationtypedef)
+  [LicenseServiceConfigurationTypeDef](./type_defs.md#licenseserviceconfigurationtypedef)
 - `sharedFileSystemConfiguration`:
-  [SharedFileSystemConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#sharedfilesystemconfigurationtypedef)
+  [SharedFileSystemConfigurationTypeDef](./type_defs.md#sharedfilesystemconfigurationtypedef)
 
 ## StudioComponentInitializationScriptTypeDef
 
@@ -827,10 +806,9 @@ from mypy_boto3_nimble.type_defs import StudioComponentInitializationScriptTypeD
 Optional fields:
 
 - `launchProfileProtocolVersion`: `str`
-- `platform`:
-  [LaunchProfilePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#launchprofileplatform)
+- `platform`: [LaunchProfilePlatform](./literals.md#launchprofileplatform)
 - `runContext`:
-  [StudioComponentInitializationScriptRunContext](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentinitializationscriptruncontext)
+  [StudioComponentInitializationScriptRunContext](./literals.md#studiocomponentinitializationscriptruncontext)
 - `script`: `str`
 
 ## StudioComponentSummaryTypeDef
@@ -846,10 +824,8 @@ Optional fields:
 - `description`: `str`
 - `name`: `str`
 - `studioComponentId`: `str`
-- `subtype`:
-  [StudioComponentSubtype](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentsubtype)
-- `type`:
-  [StudioComponentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponenttype)
+- `subtype`: [StudioComponentSubtype](./literals.md#studiocomponentsubtype)
+- `type`: [StudioComponentType](./literals.md#studiocomponenttype)
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
 
@@ -863,27 +839,24 @@ Optional fields:
 
 - `arn`: `str`
 - `configuration`:
-  [StudioComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentconfigurationtypedef)
+  [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 - `description`: `str`
 - `ec2SecurityGroupIds`: `List`\[`str`\]
 - `initializationScripts`:
-  `List`\[[StudioComponentInitializationScriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponentinitializationscripttypedef)\]
+  `List`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
 - `name`: `str`
 - `scriptParameters`:
-  `List`\[[ScriptParameterKeyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#scriptparameterkeyvaluetypedef)\]
-- `state`:
-  [StudioComponentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentstate)
+  `List`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
+- `state`: [StudioComponentState](./literals.md#studiocomponentstate)
 - `statusCode`:
-  [StudioComponentStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentstatuscode)
+  [StudioComponentStatusCode](./literals.md#studiocomponentstatuscode)
 - `statusMessage`: `str`
 - `studioComponentId`: `str`
-- `subtype`:
-  [StudioComponentSubtype](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponentsubtype)
+- `subtype`: [StudioComponentSubtype](./literals.md#studiocomponentsubtype)
 - `tags`: `Dict`\[`str`, `str`\]
-- `type`:
-  [StudioComponentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiocomponenttype)
+- `type`: [StudioComponentType](./literals.md#studiocomponenttype)
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
 
@@ -896,7 +869,7 @@ from mypy_boto3_nimble.type_defs import StudioEncryptionConfigurationTypeDef
 Required fields:
 
 - `keyType`:
-  [StudioEncryptionConfigurationKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studioencryptionconfigurationkeytype)
+  [StudioEncryptionConfigurationKeyType](./literals.md#studioencryptionconfigurationkeytype)
 
 Optional fields:
 
@@ -911,7 +884,8 @@ from mypy_boto3_nimble.type_defs import StudioMembershipTypeDef
 Optional fields:
 
 - `identityStoreId`: `str`
-- `persona`: `Literal['ADMINISTRATOR']`
+- `persona`: `Literal['ADMINISTRATOR']` (see
+  [StudioPersona](./literals.md#studiopersona))
 - `principalId`: `str`
 
 ## StudioTypeDef
@@ -928,13 +902,11 @@ Optional fields:
 - `displayName`: `str`
 - `homeRegion`: `str`
 - `ssoClientId`: `str`
-- `state`:
-  [StudioState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiostate)
-- `statusCode`:
-  [StudioStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/literals.html#studiostatuscode)
+- `state`: [StudioState](./literals.md#studiostate)
+- `statusCode`: [StudioStatusCode](./literals.md#studiostatuscode)
 - `statusMessage`: `str`
 - `studioEncryptionConfiguration`:
-  [StudioEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studioencryptionconfigurationtypedef)
+  [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
 - `studioId`: `str`
 - `studioName`: `str`
 - `studioUrl`: `str`
@@ -951,7 +923,7 @@ from mypy_boto3_nimble.type_defs import UpdateLaunchProfileMemberResponseTypeDef
 Optional fields:
 
 - `member`:
-  [LaunchProfileMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofilemembershiptypedef)
+  [LaunchProfileMembershipTypeDef](./type_defs.md#launchprofilemembershiptypedef)
 
 ## UpdateLaunchProfileResponseTypeDef
 
@@ -961,8 +933,7 @@ from mypy_boto3_nimble.type_defs import UpdateLaunchProfileResponseTypeDef
 
 Optional fields:
 
-- `launchProfile`:
-  [LaunchProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#launchprofiletypedef)
+- `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 
 ## UpdateStreamingImageResponseTypeDef
 
@@ -972,8 +943,7 @@ from mypy_boto3_nimble.type_defs import UpdateStreamingImageResponseTypeDef
 
 Optional fields:
 
-- `streamingImage`:
-  [StreamingImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#streamingimagetypedef)
+- `streamingImage`: [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 
 ## UpdateStudioComponentResponseTypeDef
 
@@ -984,7 +954,7 @@ from mypy_boto3_nimble.type_defs import UpdateStudioComponentResponseTypeDef
 Optional fields:
 
 - `studioComponent`:
-  [StudioComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiocomponenttypedef)
+  [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 
 ## UpdateStudioResponseTypeDef
 
@@ -994,5 +964,4 @@ from mypy_boto3_nimble.type_defs import UpdateStudioResponseTypeDef
 
 Optional fields:
 
-- `studio`:
-  [StudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#studiotypedef)
+- `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)

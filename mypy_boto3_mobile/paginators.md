@@ -1,6 +1,6 @@
 # Paginators for boto3 Mobile module
 
-> [Index](../README.md) > [Mobile](./README.md) > Paginators
+> [Index](..) > [Mobile](.) > Paginators
 
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
@@ -30,10 +30,10 @@ Boto3 documentation:
 Arguments for `ListBundlesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBundlesPaginator.paginate` returns
-`Iterator`\[[ListBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listbundlesresulttypedef)\].
+`Iterator`\[[ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef)\].
 
 ## ListProjectsPaginator
 
@@ -54,7 +54,7 @@ Boto3 documentation:
 Arguments for `ListProjectsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listprojectsresulttypedef)\].
+`Iterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].

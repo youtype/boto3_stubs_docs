@@ -1,6 +1,6 @@
 # Type annotations for boto3 RDS module
 
-> [Index](../README.md) > RDS
+> [Index](..) > RDS
 
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)

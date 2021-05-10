@@ -1,6 +1,6 @@
 # Literals for boto3 CloudWatch module
 
-> [Index](../README.md) > [CloudWatch](./README.md) > Literals
+> [Index](..) > [CloudWatch](.) > Literals
 
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)

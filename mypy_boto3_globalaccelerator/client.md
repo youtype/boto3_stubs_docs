@@ -1,7 +1,6 @@
 # GlobalAcceleratorClient for boto3 GlobalAccelerator module
 
-> [Index](../README.md) > [GlobalAccelerator](./README.md) >
-> GlobalAcceleratorClient
+> [Index](..) > [GlobalAccelerator](.) > GlobalAcceleratorClient
 
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
@@ -126,12 +125,12 @@ Boto3 documentation:
 Arguments:
 
 - `EndpointConfigurations`:
-  `List`\[[CustomRoutingEndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingendpointconfigurationtypedef)\]
+  `List`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
   *(required)*
 - `EndpointGroupArn`: `str` *(required)*
 
 Returns
-[AddCustomRoutingEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#addcustomroutingendpointsresponsetypedef).
+[AddCustomRoutingEndpointsResponseTypeDef](./type_defs.md#addcustomroutingendpointsresponsetypedef).
 
 ### advertise_byoip_cidr
 
@@ -146,7 +145,7 @@ Arguments:
 - `Cidr`: `str` *(required)*
 
 Returns
-[AdvertiseByoipCidrResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#advertisebyoipcidrresponsetypedef).
+[AdvertiseByoipCidrResponseTypeDef](./type_defs.md#advertisebyoipcidrresponsetypedef).
 
 ### allow_custom_routing_traffic
 
@@ -189,14 +188,14 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
-- `IpAddressType`: `Literal['IPV4']`
+- `IpAddressType`: `Literal['IPV4']` (see
+  [IpAddressType](./literals.md#ipaddresstype))
 - `IpAddresses`: `List`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#createacceleratorresponsetypedef).
+[CreateAcceleratorResponseTypeDef](./type_defs.md#createacceleratorresponsetypedef).
 
 ### create_custom_routing_accelerator
 
@@ -210,14 +209,14 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
-- `IpAddressType`: `Literal['IPV4']`
+- `IpAddressType`: `Literal['IPV4']` (see
+  [IpAddressType](./literals.md#ipaddresstype))
 - `IpAddresses`: `List`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCustomRoutingAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#createcustomroutingacceleratorresponsetypedef).
+[CreateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponsetypedef).
 
 ### create_custom_routing_endpoint_group
 
@@ -233,12 +232,12 @@ Arguments:
 - `ListenerArn`: `str` *(required)*
 - `EndpointGroupRegion`: `str` *(required)*
 - `DestinationConfigurations`:
-  `List`\[[CustomRoutingDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#customroutingdestinationconfigurationtypedef)\]
+  `List`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 
 Returns
-[CreateCustomRoutingEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#createcustomroutingendpointgroupresponsetypedef).
+[CreateCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#createcustomroutingendpointgroupresponsetypedef).
 
 ### create_custom_routing_listener
 
@@ -251,13 +250,12 @@ Boto3 documentation:
 Arguments:
 
 - `AcceleratorArn`: `str` *(required)*
-- `PortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portrangetypedef)\]
+- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 
 Returns
-[CreateCustomRoutingListenerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#createcustomroutinglistenerresponsetypedef).
+[CreateCustomRoutingListenerResponseTypeDef](./type_defs.md#createcustomroutinglistenerresponsetypedef).
 
 ### create_endpoint_group
 
@@ -273,19 +271,18 @@ Arguments:
 - `EndpointGroupRegion`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `EndpointConfigurations`:
-  `List`\[[EndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointconfigurationtypedef)\]
+  `List`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#healthcheckprotocol)
+- `HealthCheckProtocol`: [HealthCheckProtocol](./literals.md#healthcheckprotocol)
 - `HealthCheckPath`: `str`
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
 - `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portoverridetypedef)\]
+  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 Returns
-[CreateEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#createendpointgroupresponsetypedef).
+[CreateEndpointGroupResponseTypeDef](./type_defs.md#createendpointgroupresponsetypedef).
 
 ### create_listener
 
@@ -298,18 +295,14 @@ Boto3 documentation:
 Arguments:
 
 - `AcceleratorArn`: `str` *(required)*
-- `PortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portrangetypedef)\]
+- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
   *(required)*
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#protocoltype)
-  *(required)*
+- `Protocol`: [ProtocolType](./literals.md#protocoltype) *(required)*
 - `IdempotencyToken`: `str` *(required)*
-- `ClientAffinity`:
-  [ClientAffinity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#clientaffinity)
+- `ClientAffinity`: [ClientAffinity](./literals.md#clientaffinity)
 
 Returns
-[CreateListenerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#createlistenerresponsetypedef).
+[CreateListenerResponseTypeDef](./type_defs.md#createlistenerresponsetypedef).
 
 ### delete_accelerator
 
@@ -413,7 +406,7 @@ Arguments:
 - `Cidr`: `str` *(required)*
 
 Returns
-[DeprovisionByoipCidrResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#deprovisionbyoipcidrresponsetypedef).
+[DeprovisionByoipCidrResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresponsetypedef).
 
 ### describe_accelerator
 
@@ -428,7 +421,7 @@ Arguments:
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describeacceleratorresponsetypedef).
+[DescribeAcceleratorResponseTypeDef](./type_defs.md#describeacceleratorresponsetypedef).
 
 ### describe_accelerator_attributes
 
@@ -443,7 +436,7 @@ Arguments:
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeAcceleratorAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describeacceleratorattributesresponsetypedef).
+[DescribeAcceleratorAttributesResponseTypeDef](./type_defs.md#describeacceleratorattributesresponsetypedef).
 
 ### describe_custom_routing_accelerator
 
@@ -458,7 +451,7 @@ Arguments:
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describecustomroutingacceleratorresponsetypedef).
+[DescribeCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#describecustomroutingacceleratorresponsetypedef).
 
 ### describe_custom_routing_accelerator_attributes
 
@@ -474,7 +467,7 @@ Arguments:
 - `AcceleratorArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describecustomroutingacceleratorattributesresponsetypedef).
+[DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#describecustomroutingacceleratorattributesresponsetypedef).
 
 ### describe_custom_routing_endpoint_group
 
@@ -490,7 +483,7 @@ Arguments:
 - `EndpointGroupArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describecustomroutingendpointgroupresponsetypedef).
+[DescribeCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#describecustomroutingendpointgroupresponsetypedef).
 
 ### describe_custom_routing_listener
 
@@ -505,7 +498,7 @@ Arguments:
 - `ListenerArn`: `str` *(required)*
 
 Returns
-[DescribeCustomRoutingListenerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describecustomroutinglistenerresponsetypedef).
+[DescribeCustomRoutingListenerResponseTypeDef](./type_defs.md#describecustomroutinglistenerresponsetypedef).
 
 ### describe_endpoint_group
 
@@ -520,7 +513,7 @@ Arguments:
 - `EndpointGroupArn`: `str` *(required)*
 
 Returns
-[DescribeEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describeendpointgroupresponsetypedef).
+[DescribeEndpointGroupResponseTypeDef](./type_defs.md#describeendpointgroupresponsetypedef).
 
 ### describe_listener
 
@@ -535,7 +528,7 @@ Arguments:
 - `ListenerArn`: `str` *(required)*
 
 Returns
-[DescribeListenerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#describelistenerresponsetypedef).
+[DescribeListenerResponseTypeDef](./type_defs.md#describelistenerresponsetypedef).
 
 ### generate_presigned_url
 
@@ -568,7 +561,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listacceleratorsresponsetypedef).
+[ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef).
 
 ### list_byoip_cidrs
 
@@ -584,7 +577,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListByoipCidrsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listbyoipcidrsresponsetypedef).
+[ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef).
 
 ### list_custom_routing_accelerators
 
@@ -600,7 +593,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingacceleratorsresponsetypedef).
+[ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef).
 
 ### list_custom_routing_endpoint_groups
 
@@ -617,7 +610,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingendpointgroupsresponsetypedef).
+[ListCustomRoutingEndpointGroupsResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponsetypedef).
 
 ### list_custom_routing_listeners
 
@@ -634,7 +627,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingListenersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutinglistenersresponsetypedef).
+[ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef).
 
 ### list_custom_routing_port_mappings
 
@@ -652,7 +645,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingPortMappingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingportmappingsresponsetypedef).
+[ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef).
 
 ### list_custom_routing_port_mappings_by_destination
 
@@ -671,7 +664,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingportmappingsbydestinationresponsetypedef).
+[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef).
 
 ### list_endpoint_groups
 
@@ -688,7 +681,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listendpointgroupsresponsetypedef).
+[ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef).
 
 ### list_listeners
 
@@ -704,7 +697,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListListenersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listlistenersresponsetypedef).
+[ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -719,7 +712,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### provision_byoip_cidr
 
@@ -733,11 +726,11 @@ Arguments:
 
 - `Cidr`: `str` *(required)*
 - `CidrAuthorizationContext`:
-  [CidrAuthorizationContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#cidrauthorizationcontexttypedef)
+  [CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef)
   *(required)*
 
 Returns
-[ProvisionByoipCidrResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#provisionbyoipcidrresponsetypedef).
+[ProvisionByoipCidrResponseTypeDef](./type_defs.md#provisionbyoipcidrresponsetypedef).
 
 ### remove_custom_routing_endpoints
 
@@ -762,9 +755,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -794,11 +785,12 @@ Arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']`
+- `IpAddressType`: `Literal['IPV4']` (see
+  [IpAddressType](./literals.md#ipaddresstype))
 - `Enabled`: `bool`
 
 Returns
-[UpdateAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updateacceleratorresponsetypedef).
+[UpdateAcceleratorResponseTypeDef](./type_defs.md#updateacceleratorresponsetypedef).
 
 ### update_accelerator_attributes
 
@@ -816,7 +808,7 @@ Arguments:
 - `FlowLogsS3Prefix`: `str`
 
 Returns
-[UpdateAcceleratorAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updateacceleratorattributesresponsetypedef).
+[UpdateAcceleratorAttributesResponseTypeDef](./type_defs.md#updateacceleratorattributesresponsetypedef).
 
 ### update_custom_routing_accelerator
 
@@ -830,11 +822,12 @@ Arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']`
+- `IpAddressType`: `Literal['IPV4']` (see
+  [IpAddressType](./literals.md#ipaddresstype))
 - `Enabled`: `bool`
 
 Returns
-[UpdateCustomRoutingAcceleratorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updatecustomroutingacceleratorresponsetypedef).
+[UpdateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorresponsetypedef).
 
 ### update_custom_routing_accelerator_attributes
 
@@ -853,7 +846,7 @@ Arguments:
 - `FlowLogsS3Prefix`: `str`
 
 Returns
-[UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updatecustomroutingacceleratorattributesresponsetypedef).
+[UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesresponsetypedef).
 
 ### update_custom_routing_listener
 
@@ -866,12 +859,11 @@ Boto3 documentation:
 Arguments:
 
 - `ListenerArn`: `str` *(required)*
-- `PortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portrangetypedef)\]
+- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
   *(required)*
 
 Returns
-[UpdateCustomRoutingListenerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updatecustomroutinglistenerresponsetypedef).
+[UpdateCustomRoutingListenerResponseTypeDef](./type_defs.md#updatecustomroutinglistenerresponsetypedef).
 
 ### update_endpoint_group
 
@@ -885,19 +877,18 @@ Arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointConfigurations`:
-  `List`\[[EndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#endpointconfigurationtypedef)\]
+  `List`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
 - `TrafficDialPercentage`: `float`
 - `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#healthcheckprotocol)
+- `HealthCheckProtocol`: [HealthCheckProtocol](./literals.md#healthcheckprotocol)
 - `HealthCheckPath`: `str`
 - `HealthCheckIntervalSeconds`: `int`
 - `ThresholdCount`: `int`
 - `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portoverridetypedef)\]
+  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
 Returns
-[UpdateEndpointGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updateendpointgroupresponsetypedef).
+[UpdateEndpointGroupResponseTypeDef](./type_defs.md#updateendpointgroupresponsetypedef).
 
 ### update_listener
 
@@ -910,15 +901,12 @@ Boto3 documentation:
 Arguments:
 
 - `ListenerArn`: `str` *(required)*
-- `PortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#portrangetypedef)\]
-- `Protocol`:
-  [ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#protocoltype)
-- `ClientAffinity`:
-  [ClientAffinity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/literals.html#clientaffinity)
+- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
+- `ClientAffinity`: [ClientAffinity](./literals.md#clientaffinity)
 
 Returns
-[UpdateListenerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#updatelistenerresponsetypedef).
+[UpdateListenerResponseTypeDef](./type_defs.md#updatelistenerresponsetypedef).
 
 ### withdraw_byoip_cidr
 
@@ -933,7 +921,7 @@ Arguments:
 - `Cidr`: `str` *(required)*
 
 Returns
-[WithdrawByoipCidrResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#withdrawbyoipcidrresponsetypedef).
+[WithdrawByoipCidrResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponsetypedef).
 
 ### get_paginator
 

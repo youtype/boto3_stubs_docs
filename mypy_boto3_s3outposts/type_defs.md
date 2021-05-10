@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 S3Outposts module
 
-> [Index](../README.md) > [S3Outposts](./README.md) > Structures
+> [Index](..) > [S3Outposts](.) > Typed dictionaries
 
 Auto-generated documentation for
 [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
@@ -35,11 +35,10 @@ Optional fields:
 - `EndpointArn`: `str`
 - `OutpostsId`: `str`
 - `CidrBlock`: `str`
-- `Status`:
-  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3outposts/literals.html#endpointstatus)
+- `Status`: [EndpointStatus](./literals.md#endpointstatus)
 - `CreationTime`: `datetime`
 - `NetworkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3outposts/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
 ## ListEndpointsResultTypeDef
 
@@ -49,8 +48,7 @@ from mypy_boto3_s3outposts.type_defs import ListEndpointsResultTypeDef
 
 Optional fields:
 
-- `Endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3outposts/type_defs.html#endpointtypedef)\]
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `NextToken`: `str`
 
 ## NetworkInterfaceTypeDef

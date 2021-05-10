@@ -1,6 +1,6 @@
 # Literals for boto3 Comprehend module
 
-> [Index](../README.md) > [Comprehend](./README.md) > Literals
+> [Index](..) > [Comprehend](.) > Literals
 
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)

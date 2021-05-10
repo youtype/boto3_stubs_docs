@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ServiceQuotas module
 
-> [Index](../README.md) > [ServiceQuotas](./README.md) > Structures
+> [Index](..) > [ServiceQuotas](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
@@ -40,8 +40,7 @@ from mypy_boto3_service_quotas.type_defs import ErrorReasonTypeDef
 
 Optional fields:
 
-- `ErrorCode`:
-  [ErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#errorcode)
+- `ErrorCode`: [ErrorCode](./literals.md#errorcode)
 - `ErrorMessage`: `str`
 
 ## GetAWSDefaultServiceQuotaResponseTypeDef
@@ -52,8 +51,7 @@ from mypy_boto3_service_quotas.type_defs import GetAWSDefaultServiceQuotaRespons
 
 Optional fields:
 
-- `Quota`:
-  [ServiceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotatypedef)
+- `Quota`: [ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)
 
 ## GetAssociationForServiceQuotaTemplateResponseTypeDef
 
@@ -64,7 +62,7 @@ from mypy_boto3_service_quotas.type_defs import GetAssociationForServiceQuotaTem
 Optional fields:
 
 - `ServiceQuotaTemplateAssociationStatus`:
-  [ServiceQuotaTemplateAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#servicequotatemplateassociationstatus)
+  [ServiceQuotaTemplateAssociationStatus](./literals.md#servicequotatemplateassociationstatus)
 
 ## GetRequestedServiceQuotaChangeResponseTypeDef
 
@@ -75,7 +73,7 @@ from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeRe
 Optional fields:
 
 - `RequestedQuota`:
-  [RequestedServiceQuotaChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#requestedservicequotachangetypedef)
+  [RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)
 
 ## GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
 
@@ -86,7 +84,7 @@ from mypy_boto3_service_quotas.type_defs import GetServiceQuotaIncreaseRequestFr
 Optional fields:
 
 - `ServiceQuotaIncreaseRequestInTemplate`:
-  [ServiceQuotaIncreaseRequestInTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotaincreaserequestintemplatetypedef)
+  [ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef)
 
 ## GetServiceQuotaResponseTypeDef
 
@@ -96,8 +94,7 @@ from mypy_boto3_service_quotas.type_defs import GetServiceQuotaResponseTypeDef
 
 Optional fields:
 
-- `Quota`:
-  [ServiceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotatypedef)
+- `Quota`: [ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)
 
 ## ListAWSDefaultServiceQuotasResponseTypeDef
 
@@ -108,8 +105,7 @@ from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasRespo
 Optional fields:
 
 - `NextToken`: `str`
-- `Quotas`:
-  `List`\[[ServiceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotatypedef)\]
+- `Quotas`: `List`\[[ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)\]
 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
 
@@ -121,7 +117,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `RequestedQuotas`:
-  `List`\[[RequestedServiceQuotaChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#requestedservicequotachangetypedef)\]
+  `List`\[[RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)\]
 
 ## ListRequestedServiceQuotaChangeHistoryResponseTypeDef
 
@@ -133,7 +129,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `RequestedQuotas`:
-  `List`\[[RequestedServiceQuotaChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#requestedservicequotachangetypedef)\]
+  `List`\[[RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)\]
 
 ## ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
 
@@ -144,7 +140,7 @@ from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequests
 Optional fields:
 
 - `ServiceQuotaIncreaseRequestInTemplateList`:
-  `List`\[[ServiceQuotaIncreaseRequestInTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotaincreaserequestintemplatetypedef)\]
+  `List`\[[ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef)\]
 - `NextToken`: `str`
 
 ## ListServiceQuotasResponseTypeDef
@@ -156,8 +152,7 @@ from mypy_boto3_service_quotas.type_defs import ListServiceQuotasResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Quotas`:
-  `List`\[[ServiceQuotaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotatypedef)\]
+- `Quotas`: `List`\[[ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)\]
 
 ## ListServicesResponseTypeDef
 
@@ -168,8 +163,7 @@ from mypy_boto3_service_quotas.type_defs import ListServicesResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Services`:
-  `List`\[[ServiceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#serviceinfotypedef)\]
+- `Services`: `List`\[[ServiceInfoTypeDef](./type_defs.md#serviceinfotypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -179,8 +173,7 @@ from mypy_boto3_service_quotas.type_defs import ListTagsForResourceResponseTypeD
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## MetricInfoTypeDef
 
@@ -216,7 +209,7 @@ from mypy_boto3_service_quotas.type_defs import PutServiceQuotaIncreaseRequestIn
 Optional fields:
 
 - `ServiceQuotaIncreaseRequestInTemplate`:
-  [ServiceQuotaIncreaseRequestInTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#servicequotaincreaserequestintemplatetypedef)
+  [ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef)
 
 ## QuotaPeriodTypeDef
 
@@ -227,8 +220,7 @@ from mypy_boto3_service_quotas.type_defs import QuotaPeriodTypeDef
 Optional fields:
 
 - `PeriodValue`: `int`
-- `PeriodUnit`:
-  [PeriodUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#periodunit)
+- `PeriodUnit`: [PeriodUnit](./literals.md#periodunit)
 
 ## RequestServiceQuotaIncreaseResponseTypeDef
 
@@ -239,7 +231,7 @@ from mypy_boto3_service_quotas.type_defs import RequestServiceQuotaIncreaseRespo
 Optional fields:
 
 - `RequestedQuota`:
-  [RequestedServiceQuotaChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#requestedservicequotachangetypedef)
+  [RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)
 
 ## RequestedServiceQuotaChangeTypeDef
 
@@ -256,8 +248,7 @@ Optional fields:
 - `QuotaCode`: `str`
 - `QuotaName`: `str`
 - `DesiredValue`: `float`
-- `Status`:
-  [RequestStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/literals.html#requeststatus)
+- `Status`: [RequestStatus](./literals.md#requeststatus)
 - `Created`: `datetime`
 - `LastUpdated`: `datetime`
 - `Requester`: `str`
@@ -310,12 +301,9 @@ Optional fields:
 - `Unit`: `str`
 - `Adjustable`: `bool`
 - `GlobalQuota`: `bool`
-- `UsageMetric`:
-  [MetricInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#metricinfotypedef)
-- `Period`:
-  [QuotaPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#quotaperiodtypedef)
-- `ErrorReason`:
-  [ErrorReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_service_quotas/type_defs.html#errorreasontypedef)
+- `UsageMetric`: [MetricInfoTypeDef](./type_defs.md#metricinfotypedef)
+- `Period`: [QuotaPeriodTypeDef](./type_defs.md#quotaperiodtypedef)
+- `ErrorReason`: [ErrorReasonTypeDef](./type_defs.md#errorreasontypedef)
 
 ## TagTypeDef
 

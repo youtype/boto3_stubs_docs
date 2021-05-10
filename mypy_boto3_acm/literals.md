@@ -1,6 +1,6 @@
 # Literals for boto3 ACM module
 
-> [Index](../README.md) > [ACM](./README.md) > Literals
+> [Index](..) > [ACM](.) > Literals
 
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)

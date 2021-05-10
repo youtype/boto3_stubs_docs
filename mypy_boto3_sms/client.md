@@ -1,6 +1,6 @@
 # SMSClient for boto3 SMS module
 
-> [Index](../README.md) > [SMS](./README.md) > SMSClient
+> [Index](..) > [SMS](.) > SMSClient
 
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
@@ -123,12 +123,10 @@ Arguments:
 - `roleName`: `str`
 - `clientToken`: `str`
 - `serverGroups`:
-  `List`\[[ServerGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouptypedef)\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#tagtypedef)\]
+  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#createappresponsetypedef).
+Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
 ### create_replication_job
 
@@ -143,8 +141,7 @@ Arguments:
 - `seedReplicationTime`: `datetime` *(required)*
 - `frequency`: `int`
 - `runOnce`: `bool`
-- `licenseType`:
-  [LicenseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#licensetype)
+- `licenseType`: [LicenseType](./literals.md#licensetype)
 - `roleName`: `str`
 - `description`: `str`
 - `numberOfRecentAmisToKeep`: `int`
@@ -152,7 +149,7 @@ Arguments:
 - `kmsKeyId`: `str`
 
 Returns
-[CreateReplicationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#createreplicationjobresponsetypedef).
+[CreateReplicationJobResponseTypeDef](./type_defs.md#createreplicationjobresponsetypedef).
 
 ### delete_app
 
@@ -256,11 +253,10 @@ Boto3 documentation:
 Arguments:
 
 - `appId`: `str`
-- `changesetFormat`:
-  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#outputformat)
+- `changesetFormat`: [OutputFormat](./literals.md#outputformat)
 
 Returns
-[GenerateChangeSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#generatechangesetresponsetypedef).
+[GenerateChangeSetResponseTypeDef](./type_defs.md#generatechangesetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -288,11 +284,10 @@ Boto3 documentation:
 Arguments:
 
 - `appId`: `str`
-- `templateFormat`:
-  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#outputformat)
+- `templateFormat`: [OutputFormat](./literals.md#outputformat)
 
 Returns
-[GenerateTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#generatetemplateresponsetypedef).
+[GenerateTemplateResponseTypeDef](./type_defs.md#generatetemplateresponsetypedef).
 
 ### get_app
 
@@ -305,8 +300,7 @@ Arguments:
 
 - `appId`: `str`
 
-Returns
-[GetAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getappresponsetypedef).
+Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
 
 ### get_app_launch_configuration
 
@@ -320,7 +314,7 @@ Arguments:
 - `appId`: `str`
 
 Returns
-[GetAppLaunchConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getapplaunchconfigurationresponsetypedef).
+[GetAppLaunchConfigurationResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponsetypedef).
 
 ### get_app_replication_configuration
 
@@ -335,7 +329,7 @@ Arguments:
 - `appId`: `str`
 
 Returns
-[GetAppReplicationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getappreplicationconfigurationresponsetypedef).
+[GetAppReplicationConfigurationResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponsetypedef).
 
 ### get_app_validation_configuration
 
@@ -350,7 +344,7 @@ Arguments:
 - `appId`: `str` *(required)*
 
 Returns
-[GetAppValidationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getappvalidationconfigurationresponsetypedef).
+[GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef).
 
 ### get_app_validation_output
 
@@ -364,7 +358,7 @@ Arguments:
 - `appId`: `str` *(required)*
 
 Returns
-[GetAppValidationOutputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getappvalidationoutputresponsetypedef).
+[GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef).
 
 ### get_connectors
 
@@ -379,7 +373,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetConnectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getconnectorsresponsetypedef).
+[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef).
 
 ### get_replication_jobs
 
@@ -395,7 +389,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetReplicationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getreplicationjobsresponsetypedef).
+[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef).
 
 ### get_replication_runs
 
@@ -411,7 +405,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetReplicationRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getreplicationrunsresponsetypedef).
+[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef).
 
 ### get_servers
 
@@ -425,10 +419,9 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `vmServerAddressList`:
-  `List`\[[VmServerAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#vmserveraddresstypedef)\]
+  `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 
-Returns
-[GetServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getserversresponsetypedef).
+Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
 
 ### import_app_catalog
 
@@ -478,8 +471,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListAppsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#listappsresponsetypedef).
+Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 
 ### notify_app_validation_output
 
@@ -492,7 +484,7 @@ Arguments:
 
 - `appId`: `str` *(required)*
 - `notificationContext`:
-  [NotificationContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#notificationcontexttypedef)
+  [NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -509,7 +501,7 @@ Arguments:
 - `roleName`: `str`
 - `autoLaunch`: `bool`
 - `serverGroupLaunchConfigurations`:
-  `List`\[[ServerGroupLaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouplaunchconfigurationtypedef)\]
+  `List`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -525,7 +517,7 @@ Arguments:
 
 - `appId`: `str`
 - `serverGroupReplicationConfigurations`:
-  `List`\[[ServerGroupReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergroupreplicationconfigurationtypedef)\]
+  `List`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -541,9 +533,9 @@ Arguments:
 
 - `appId`: `str` *(required)*
 - `appValidationConfigurations`:
-  `List`\[[AppValidationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#appvalidationconfigurationtypedef)\]
+  `List`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
 - `serverGroupValidationConfigurations`:
-  `List`\[[ServerGroupValidationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergroupvalidationconfigurationtypedef)\]
+  `List`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -589,7 +581,7 @@ Arguments:
 - `description`: `str`
 
 Returns
-[StartOnDemandReplicationRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#startondemandreplicationrunresponsetypedef).
+[StartOnDemandReplicationRunResponseTypeDef](./type_defs.md#startondemandreplicationrunresponsetypedef).
 
 ### stop_app_replication
 
@@ -631,12 +623,10 @@ Arguments:
 - `description`: `str`
 - `roleName`: `str`
 - `serverGroups`:
-  `List`\[[ServerGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#servergrouptypedef)\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#tagtypedef)\]
+  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[UpdateAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#updateappresponsetypedef).
+Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
 
 ### update_replication_job
 
@@ -650,8 +640,7 @@ Arguments:
 - `replicationJobId`: `str` *(required)*
 - `frequency`: `int`
 - `nextReplicationRunStartTime`: `datetime`
-- `licenseType`:
-  [LicenseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/literals.html#licensetype)
+- `licenseType`: [LicenseType](./literals.md#licensetype)
 - `roleName`: `str`
 - `description`: `str`
 - `numberOfRecentAmisToKeep`: `int`

@@ -1,6 +1,6 @@
 # Literals for boto3 IAM module
 
-> [Index](../README.md) > [IAM](./README.md) > Literals
+> [Index](..) > [IAM](.) > Literals
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)

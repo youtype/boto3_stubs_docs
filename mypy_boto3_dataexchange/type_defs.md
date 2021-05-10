@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DataExchange module
 
-> [Index](../README.md) > [DataExchange](./README.md) > Structures
+> [Index](..) > [DataExchange](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
@@ -75,7 +75,7 @@ from mypy_boto3_dataexchange.type_defs import AssetDetailsTypeDef
 Optional fields:
 
 - `S3SnapshotAsset`:
-  [S3SnapshotAssetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#s3snapshotassettypedef)
+  [S3SnapshotAssetTypeDef](./type_defs.md#s3snapshotassettypedef)
 
 ## AssetEntryTypeDef
 
@@ -86,9 +86,9 @@ from mypy_boto3_dataexchange.type_defs import AssetEntryTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `AssetDetails`:
-  [AssetDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetdetailstypedef)
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -120,15 +120,14 @@ from mypy_boto3_dataexchange.type_defs import CreateDataSetResponseTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`:
-  [Origin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#origin)
-- `OriginDetails`:
-  [OriginDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#origindetailstypedef)
+- `Origin`: [Origin](./literals.md#origin)
+- `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UpdatedAt`: `datetime`
@@ -143,15 +142,11 @@ Optional fields:
 
 - `Arn`: `str`
 - `CreatedAt`: `datetime`
-- `Details`:
-  [ResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#responsedetailstypedef)
-- `Errors`:
-  `List`\[[JobErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#joberrortypedef)\]
+- `Details`: [ResponseDetailsTypeDef](./type_defs.md#responsedetailstypedef)
+- `Errors`: `List`\[[JobErrorTypeDef](./type_defs.md#joberrortypedef)\]
 - `Id`: `str`
-- `State`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#state)
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#typetype)
+- `State`: [State](./literals.md#state)
+- `Type`: [TypeType](./literals.md#typetype)
 - `UpdatedAt`: `datetime`
 
 ## CreateRevisionResponseTypeDef
@@ -181,19 +176,18 @@ from mypy_boto3_dataexchange.type_defs import DataSetEntryTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`:
-  [Origin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#origin)
+- `Origin`: [Origin](./literals.md#origin)
 - `UpdatedAt`: `datetime`
 
 Optional fields:
 
-- `OriginDetails`:
-  [OriginDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#origindetailstypedef)
+- `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 
 ## DetailsTypeDef
@@ -205,9 +199,9 @@ from mypy_boto3_dataexchange.type_defs import DetailsTypeDef
 Optional fields:
 
 - `ImportAssetFromSignedUrlJobErrorDetails`:
-  [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#importassetfromsignedurljoberrordetailstypedef)
+  [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](./type_defs.md#importassetfromsignedurljoberrordetailstypedef)
 - `ImportAssetsFromS3JobErrorDetails`:
-  `List`\[[AssetSourceEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetsourceentrytypedef)\]
+  `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
 
 ## ExportAssetToSignedUrlRequestDetailsTypeDef
 
@@ -247,14 +241,14 @@ from mypy_boto3_dataexchange.type_defs import ExportAssetsToS3RequestDetailsType
 Required fields:
 
 - `AssetDestinations`:
-  `List`\[[AssetDestinationEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetdestinationentrytypedef)\]
+  `List`\[[AssetDestinationEntryTypeDef](./type_defs.md#assetdestinationentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
 Optional fields:
 
 - `Encryption`:
-  [ExportServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportserversideencryptiontypedef)
+  [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
 ## ExportAssetsToS3ResponseDetailsTypeDef
 
@@ -265,14 +259,14 @@ from mypy_boto3_dataexchange.type_defs import ExportAssetsToS3ResponseDetailsTyp
 Required fields:
 
 - `AssetDestinations`:
-  `List`\[[AssetDestinationEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetdestinationentrytypedef)\]
+  `List`\[[AssetDestinationEntryTypeDef](./type_defs.md#assetdestinationentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
 Optional fields:
 
 - `Encryption`:
-  [ExportServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportserversideencryptiontypedef)
+  [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
 ## ExportRevisionsToS3RequestDetailsTypeDef
 
@@ -284,12 +278,12 @@ Required fields:
 
 - `DataSetId`: `str`
 - `RevisionDestinations`:
-  `List`\[[RevisionDestinationEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#revisiondestinationentrytypedef)\]
+  `List`\[[RevisionDestinationEntryTypeDef](./type_defs.md#revisiondestinationentrytypedef)\]
 
 Optional fields:
 
 - `Encryption`:
-  [ExportServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportserversideencryptiontypedef)
+  [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
 ## ExportRevisionsToS3ResponseDetailsTypeDef
 
@@ -301,12 +295,12 @@ Required fields:
 
 - `DataSetId`: `str`
 - `RevisionDestinations`:
-  `List`\[[RevisionDestinationEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#revisiondestinationentrytypedef)\]
+  `List`\[[RevisionDestinationEntryTypeDef](./type_defs.md#revisiondestinationentrytypedef)\]
 
 Optional fields:
 
 - `Encryption`:
-  [ExportServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportserversideencryptiontypedef)
+  [ExportServerSideEncryptionTypeDef](./type_defs.md#exportserversideencryptiontypedef)
 
 ## ExportServerSideEncryptionTypeDef
 
@@ -316,8 +310,7 @@ from mypy_boto3_dataexchange.type_defs import ExportServerSideEncryptionTypeDef
 
 Required fields:
 
-- `Type`:
-  [ServerSideEncryptionTypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#serversideencryptiontypes)
+- `Type`: [ServerSideEncryptionTypes](./literals.md#serversideencryptiontypes)
 
 Optional fields:
 
@@ -332,9 +325,9 @@ from mypy_boto3_dataexchange.type_defs import GetAssetResponseTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `AssetDetails`:
-  [AssetDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetdetailstypedef)
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -352,15 +345,14 @@ from mypy_boto3_dataexchange.type_defs import GetDataSetResponseTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`:
-  [Origin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#origin)
-- `OriginDetails`:
-  [OriginDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#origindetailstypedef)
+- `Origin`: [Origin](./literals.md#origin)
+- `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UpdatedAt`: `datetime`
@@ -375,15 +367,11 @@ Optional fields:
 
 - `Arn`: `str`
 - `CreatedAt`: `datetime`
-- `Details`:
-  [ResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#responsedetailstypedef)
-- `Errors`:
-  `List`\[[JobErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#joberrortypedef)\]
+- `Details`: [ResponseDetailsTypeDef](./type_defs.md#responsedetailstypedef)
+- `Errors`: `List`\[[JobErrorTypeDef](./type_defs.md#joberrortypedef)\]
 - `Id`: `str`
-- `State`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#state)
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#typetype)
+- `State`: [State](./literals.md#state)
+- `Type`: [TypeType](./literals.md#typetype)
 - `UpdatedAt`: `datetime`
 
 ## GetRevisionResponseTypeDef
@@ -454,7 +442,7 @@ from mypy_boto3_dataexchange.type_defs import ImportAssetsFromS3RequestDetailsTy
 Required fields:
 
 - `AssetSources`:
-  `List`\[[AssetSourceEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetsourceentrytypedef)\]
+  `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
@@ -467,7 +455,7 @@ from mypy_boto3_dataexchange.type_defs import ImportAssetsFromS3ResponseDetailsT
 Required fields:
 
 - `AssetSources`:
-  `List`\[[AssetSourceEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetsourceentrytypedef)\]
+  `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
@@ -481,19 +469,15 @@ Required fields:
 
 - `Arn`: `str`
 - `CreatedAt`: `datetime`
-- `Details`:
-  [ResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#responsedetailstypedef)
+- `Details`: [ResponseDetailsTypeDef](./type_defs.md#responsedetailstypedef)
 - `Id`: `str`
-- `State`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#state)
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#typetype)
+- `State`: [State](./literals.md#state)
+- `Type`: [TypeType](./literals.md#typetype)
 - `UpdatedAt`: `datetime`
 
 Optional fields:
 
-- `Errors`:
-  `List`\[[JobErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#joberrortypedef)\]
+- `Errors`: `List`\[[JobErrorTypeDef](./type_defs.md#joberrortypedef)\]
 
 ## JobErrorTypeDef
 
@@ -503,20 +487,16 @@ from mypy_boto3_dataexchange.type_defs import JobErrorTypeDef
 
 Required fields:
 
-- `Code`:
-  [Code](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#code)
+- `Code`: [Code](./literals.md#code)
 - `Message`: `str`
 
 Optional fields:
 
-- `Details`:
-  [DetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#detailstypedef)
-- `LimitName`:
-  [JobErrorLimitName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#joberrorlimitname)
+- `Details`: [DetailsTypeDef](./type_defs.md#detailstypedef)
+- `LimitName`: [JobErrorLimitName](./literals.md#joberrorlimitname)
 - `LimitValue`: `float`
 - `ResourceId`: `str`
-- `ResourceType`:
-  [JobErrorResourceTypes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#joberrorresourcetypes)
+- `ResourceType`: [JobErrorResourceTypes](./literals.md#joberrorresourcetypes)
 
 ## ListDataSetRevisionsResponseTypeDef
 
@@ -528,7 +508,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `Revisions`:
-  `List`\[[RevisionEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#revisionentrytypedef)\]
+  `List`\[[RevisionEntryTypeDef](./type_defs.md#revisionentrytypedef)\]
 
 ## ListDataSetsResponseTypeDef
 
@@ -538,8 +518,7 @@ from mypy_boto3_dataexchange.type_defs import ListDataSetsResponseTypeDef
 
 Optional fields:
 
-- `DataSets`:
-  `List`\[[DataSetEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#datasetentrytypedef)\]
+- `DataSets`: `List`\[[DataSetEntryTypeDef](./type_defs.md#datasetentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListJobsResponseTypeDef
@@ -550,8 +529,7 @@ from mypy_boto3_dataexchange.type_defs import ListJobsResponseTypeDef
 
 Optional fields:
 
-- `Jobs`:
-  `List`\[[JobEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#jobentrytypedef)\]
+- `Jobs`: `List`\[[JobEntryTypeDef](./type_defs.md#jobentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListRevisionAssetsResponseTypeDef
@@ -562,8 +540,7 @@ from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsResponseTypeDef
 
 Optional fields:
 
-- `Assets`:
-  `List`\[[AssetEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetentrytypedef)\]
+- `Assets`: `List`\[[AssetEntryTypeDef](./type_defs.md#assetentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -607,15 +584,15 @@ from mypy_boto3_dataexchange.type_defs import RequestDetailsTypeDef
 Optional fields:
 
 - `ExportAssetToSignedUrl`:
-  [ExportAssetToSignedUrlRequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportassettosignedurlrequestdetailstypedef)
+  [ExportAssetToSignedUrlRequestDetailsTypeDef](./type_defs.md#exportassettosignedurlrequestdetailstypedef)
 - `ExportAssetsToS3`:
-  [ExportAssetsToS3RequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportassetstos3requestdetailstypedef)
+  [ExportAssetsToS3RequestDetailsTypeDef](./type_defs.md#exportassetstos3requestdetailstypedef)
 - `ExportRevisionsToS3`:
-  [ExportRevisionsToS3RequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportrevisionstos3requestdetailstypedef)
+  [ExportRevisionsToS3RequestDetailsTypeDef](./type_defs.md#exportrevisionstos3requestdetailstypedef)
 - `ImportAssetFromSignedUrl`:
-  [ImportAssetFromSignedUrlRequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#importassetfromsignedurlrequestdetailstypedef)
+  [ImportAssetFromSignedUrlRequestDetailsTypeDef](./type_defs.md#importassetfromsignedurlrequestdetailstypedef)
 - `ImportAssetsFromS3`:
-  [ImportAssetsFromS3RequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#importassetsfroms3requestdetailstypedef)
+  [ImportAssetsFromS3RequestDetailsTypeDef](./type_defs.md#importassetsfroms3requestdetailstypedef)
 
 ## ResponseDetailsTypeDef
 
@@ -626,15 +603,15 @@ from mypy_boto3_dataexchange.type_defs import ResponseDetailsTypeDef
 Optional fields:
 
 - `ExportAssetToSignedUrl`:
-  [ExportAssetToSignedUrlResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportassettosignedurlresponsedetailstypedef)
+  [ExportAssetToSignedUrlResponseDetailsTypeDef](./type_defs.md#exportassettosignedurlresponsedetailstypedef)
 - `ExportAssetsToS3`:
-  [ExportAssetsToS3ResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportassetstos3responsedetailstypedef)
+  [ExportAssetsToS3ResponseDetailsTypeDef](./type_defs.md#exportassetstos3responsedetailstypedef)
 - `ExportRevisionsToS3`:
-  [ExportRevisionsToS3ResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#exportrevisionstos3responsedetailstypedef)
+  [ExportRevisionsToS3ResponseDetailsTypeDef](./type_defs.md#exportrevisionstos3responsedetailstypedef)
 - `ImportAssetFromSignedUrl`:
-  [ImportAssetFromSignedUrlResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#importassetfromsignedurlresponsedetailstypedef)
+  [ImportAssetFromSignedUrlResponseDetailsTypeDef](./type_defs.md#importassetfromsignedurlresponsedetailstypedef)
 - `ImportAssetsFromS3`:
-  [ImportAssetsFromS3ResponseDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#importassetsfroms3responsedetailstypedef)
+  [ImportAssetsFromS3ResponseDetailsTypeDef](./type_defs.md#importassetsfroms3responsedetailstypedef)
 
 ## RevisionDestinationEntryTypeDef
 
@@ -690,9 +667,9 @@ from mypy_boto3_dataexchange.type_defs import UpdateAssetResponseTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `AssetDetails`:
-  [AssetDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#assetdetailstypedef)
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetDetails`: [AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef)
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `DataSetId`: `str`
 - `Id`: `str`
@@ -710,15 +687,14 @@ from mypy_boto3_dataexchange.type_defs import UpdateDataSetResponseTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `AssetType`: `Literal['S3_SNAPSHOT']`
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype))
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `Origin`:
-  [Origin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#origin)
-- `OriginDetails`:
-  [OriginDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#origindetailstypedef)
+- `Origin`: [Origin](./literals.md#origin)
+- `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 - `UpdatedAt`: `datetime`
 

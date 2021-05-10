@@ -1,6 +1,6 @@
 # Paginators for boto3 SMS module
 
-> [Index](../README.md) > [SMS](./README.md) > Paginators
+> [Index](..) > [SMS](.) > Paginators
 
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
@@ -33,10 +33,10 @@ Boto3 documentation:
 Arguments for `GetConnectorsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectorsPaginator.paginate` returns
-`Iterator`\[[GetConnectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getconnectorsresponsetypedef)\].
+`Iterator`\[[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)\].
 
 ## GetReplicationJobsPaginator
 
@@ -59,10 +59,10 @@ Arguments for `GetReplicationJobsPaginator.paginate` method:
 
 - `replicationJobId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationJobsPaginator.paginate` returns
-`Iterator`\[[GetReplicationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getreplicationjobsresponsetypedef)\].
+`Iterator`\[[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)\].
 
 ## GetReplicationRunsPaginator
 
@@ -85,10 +85,10 @@ Arguments for `GetReplicationRunsPaginator.paginate` method:
 
 - `replicationJobId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationRunsPaginator.paginate` returns
-`Iterator`\[[GetReplicationRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getreplicationrunsresponsetypedef)\].
+`Iterator`\[[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)\].
 
 ## GetServersPaginator
 
@@ -109,12 +109,12 @@ Boto3 documentation:
 Arguments for `GetServersPaginator.paginate` method:
 
 - `vmServerAddressList`:
-  `List`\[[VmServerAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#vmserveraddresstypedef)\]
+  `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServersPaginator.paginate` returns
-`Iterator`\[[GetServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#getserversresponsetypedef)\].
+`Iterator`\[[GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)\].
 
 ## ListAppsPaginator
 
@@ -136,7 +136,7 @@ Arguments for `ListAppsPaginator.paginate` method:
 
 - `appIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms/type_defs.html#listappsresponsetypedef)\].
+`Iterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].

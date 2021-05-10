@@ -1,6 +1,6 @@
 # Paginators for boto3 OpsWorks module
 
-> [Index](../README.md) > [OpsWorks](./README.md) > Paginators
+> [Index](..) > [OpsWorks](.) > Paginators
 
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
@@ -32,7 +32,7 @@ Arguments for `DescribeEcsClustersPaginator.paginate` method:
 - `EcsClusterArns`: `List`\[`str`\]
 - `StackId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEcsClustersPaginator.paginate` returns
-`Iterator`\[[DescribeEcsClustersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#describeecsclustersresulttypedef)\].
+`Iterator`\[[DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef)\].

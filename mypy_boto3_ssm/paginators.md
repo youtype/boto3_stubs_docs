@@ -1,6 +1,6 @@
 # Paginators for boto3 SSM module
 
-> [Index](../README.md) > [SSM](./README.md) > Paginators
+> [Index](..) > [SSM](.) > Paginators
 
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
@@ -75,12 +75,12 @@ Boto3 documentation:
 Arguments for `DescribeActivationsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[DescribeActivationsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeactivationsfiltertypedef)\]
+  `List`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeActivationsPaginator.paginate` returns
-`Iterator`\[[DescribeActivationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeactivationsresulttypedef)\].
+`Iterator`\[[DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef)\].
 
 ## DescribeAssociationExecutionTargetsPaginator
 
@@ -104,12 +104,12 @@ Arguments for `DescribeAssociationExecutionTargetsPaginator.paginate` method:
 - `AssociationId`: `str` *(required)*
 - `ExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AssociationExecutionTargetsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationexecutiontargetsfiltertypedef)\]
+  `List`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAssociationExecutionTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeAssociationExecutionTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeassociationexecutiontargetsresulttypedef)\].
+`Iterator`\[[DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef)\].
 
 ## DescribeAssociationExecutionsPaginator
 
@@ -132,12 +132,12 @@ Arguments for `DescribeAssociationExecutionsPaginator.paginate` method:
 
 - `AssociationId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AssociationExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationexecutionfiltertypedef)\]
+  `List`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAssociationExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeAssociationExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeassociationexecutionsresulttypedef)\].
+`Iterator`\[[DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef)\].
 
 ## DescribeAutomationExecutionsPaginator
 
@@ -159,12 +159,12 @@ Boto3 documentation:
 Arguments for `DescribeAutomationExecutionsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[AutomationExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#automationexecutionfiltertypedef)\]
+  `List`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutomationExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeAutomationExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeautomationexecutionsresulttypedef)\].
+`Iterator`\[[DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef)\].
 
 ## DescribeAutomationStepExecutionsPaginator
 
@@ -187,13 +187,13 @@ Arguments for `DescribeAutomationStepExecutionsPaginator.paginate` method:
 
 - `AutomationExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[StepExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#stepexecutionfiltertypedef)\]
+  `List`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
 - `ReverseOrder`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutomationStepExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeAutomationStepExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeautomationstepexecutionsresulttypedef)\].
+`Iterator`\[[DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef)\].
 
 ## DescribeAvailablePatchesPaginator
 
@@ -215,12 +215,12 @@ Boto3 documentation:
 Arguments for `DescribeAvailablePatchesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAvailablePatchesPaginator.paginate` returns
-`Iterator`\[[DescribeAvailablePatchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeavailablepatchesresulttypedef)\].
+`Iterator`\[[DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef)\].
 
 ## DescribeEffectiveInstanceAssociationsPaginator
 
@@ -243,10 +243,10 @@ Arguments for `DescribeEffectiveInstanceAssociationsPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEffectiveInstanceAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeEffectiveInstanceAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeeffectiveinstanceassociationsresulttypedef)\].
+`Iterator`\[[DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef)\].
 
 ## DescribeEffectivePatchesForPatchBaselinePaginator
 
@@ -270,10 +270,10 @@ method:
 
 - `BaselineId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEffectivePatchesForPatchBaselinePaginator.paginate` returns
-`Iterator`\[[DescribeEffectivePatchesForPatchBaselineResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeeffectivepatchesforpatchbaselineresulttypedef)\].
+`Iterator`\[[DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef)\].
 
 ## DescribeInstanceAssociationsStatusPaginator
 
@@ -296,10 +296,10 @@ Arguments for `DescribeInstanceAssociationsStatusPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceAssociationsStatusPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceAssociationsStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstanceassociationsstatusresulttypedef)\].
+`Iterator`\[[DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef)\].
 
 ## DescribeInstanceInformationPaginator
 
@@ -321,14 +321,14 @@ Boto3 documentation:
 Arguments for `DescribeInstanceInformationPaginator.paginate` method:
 
 - `InstanceInformationFilterList`:
-  `List`\[[InstanceInformationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceinformationfiltertypedef)\]
+  `List`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
 - `Filters`:
-  `List`\[[InstanceInformationStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instanceinformationstringfiltertypedef)\]
+  `List`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceInformationPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceInformationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstanceinformationresulttypedef)\].
+`Iterator`\[[DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef)\].
 
 ## DescribeInstancePatchStatesPaginator
 
@@ -351,10 +351,10 @@ Arguments for `DescribeInstancePatchStatesPaginator.paginate` method:
 
 - `InstanceIds`: `List`\[`str`\] *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancePatchStatesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancePatchStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstancepatchstatesresulttypedef)\].
+`Iterator`\[[DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef)\].
 
 ## DescribeInstancePatchStatesForPatchGroupPaginator
 
@@ -378,12 +378,12 @@ method:
 
 - `PatchGroup`: `str` *(required)*
 - `Filters`:
-  `List`\[[InstancePatchStateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#instancepatchstatefiltertypedef)\]
+  `List`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancePatchStatesForPatchGroupPaginator.paginate` returns
-`Iterator`\[[DescribeInstancePatchStatesForPatchGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstancepatchstatesforpatchgroupresulttypedef)\].
+`Iterator`\[[DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef)\].
 
 ## DescribeInstancePatchesPaginator
 
@@ -406,12 +406,12 @@ Arguments for `DescribeInstancePatchesPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancePatchesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancePatchesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinstancepatchesresulttypedef)\].
+`Iterator`\[[DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef)\].
 
 ## DescribeInventoryDeletionsPaginator
 
@@ -434,10 +434,10 @@ Arguments for `DescribeInventoryDeletionsPaginator.paginate` method:
 
 - `DeletionId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInventoryDeletionsPaginator.paginate` returns
-`Iterator`\[[DescribeInventoryDeletionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeinventorydeletionsresulttypedef)\].
+`Iterator`\[[DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef)\].
 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
 
@@ -462,12 +462,12 @@ Arguments for
 - `WindowExecutionId`: `str` *(required)*
 - `TaskId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowexecutiontaskinvocationsresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef)\].
 
 ## DescribeMaintenanceWindowExecutionTasksPaginator
 
@@ -491,12 +491,12 @@ method:
 
 - `WindowExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowExecutionTasksPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowExecutionTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowexecutiontasksresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef)\].
 
 ## DescribeMaintenanceWindowExecutionsPaginator
 
@@ -519,12 +519,12 @@ Arguments for `DescribeMaintenanceWindowExecutionsPaginator.paginate` method:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowExecutionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowexecutionsresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef)\].
 
 ## DescribeMaintenanceWindowSchedulePaginator
 
@@ -546,17 +546,16 @@ Boto3 documentation:
 Arguments for `DescribeMaintenanceWindowSchedulePaginator.paginate` method:
 
 - `WindowId`: `str`
-- `Targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ResourceType`:
-  [MaintenanceWindowResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowresourcetype)
+  [MaintenanceWindowResourceType](./literals.md#maintenancewindowresourcetype)
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowSchedulePaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowScheduleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowscheduleresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef)\].
 
 ## DescribeMaintenanceWindowTargetsPaginator
 
@@ -579,12 +578,12 @@ Arguments for `DescribeMaintenanceWindowTargetsPaginator.paginate` method:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowtargetsresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef)\].
 
 ## DescribeMaintenanceWindowTasksPaginator
 
@@ -607,12 +606,12 @@ Arguments for `DescribeMaintenanceWindowTasksPaginator.paginate` method:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowTasksPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowtasksresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef)\].
 
 ## DescribeMaintenanceWindowsPaginator
 
@@ -634,12 +633,12 @@ Boto3 documentation:
 Arguments for `DescribeMaintenanceWindowsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#maintenancewindowfiltertypedef)\]
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowsresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef)\].
 
 ## DescribeMaintenanceWindowsForTargetPaginator
 
@@ -660,17 +659,15 @@ Boto3 documentation:
 
 Arguments for `DescribeMaintenanceWindowsForTargetPaginator.paginate` method:
 
-- `Targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targettypedef)\]
-  *(required)*
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\] *(required)*
 - `ResourceType`:
-  [MaintenanceWindowResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#maintenancewindowresourcetype)
+  [MaintenanceWindowResourceType](./literals.md#maintenancewindowresourcetype)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowsForTargetPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowsForTargetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describemaintenancewindowsfortargetresulttypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef)\].
 
 ## DescribeOpsItemsPaginator
 
@@ -691,12 +688,12 @@ Boto3 documentation:
 Arguments for `DescribeOpsItemsPaginator.paginate` method:
 
 - `OpsItemFilters`:
-  `List`\[[OpsItemFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemfiltertypedef)\]
+  `List`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOpsItemsPaginator.paginate` returns
-`Iterator`\[[DescribeOpsItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeopsitemsresponsetypedef)\].
+`Iterator`\[[DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef)\].
 
 ## DescribeParametersPaginator
 
@@ -718,14 +715,14 @@ Boto3 documentation:
 Arguments for `DescribeParametersPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ParametersFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parametersfiltertypedef)\]
+  `List`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterstringfiltertypedef)\]
+  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeParametersPaginator.paginate` returns
-`Iterator`\[[DescribeParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describeparametersresulttypedef)\].
+`Iterator`\[[DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef)\].
 
 ## DescribePatchBaselinesPaginator
 
@@ -747,12 +744,12 @@ Boto3 documentation:
 Arguments for `DescribePatchBaselinesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePatchBaselinesPaginator.paginate` returns
-`Iterator`\[[DescribePatchBaselinesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchbaselinesresulttypedef)\].
+`Iterator`\[[DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef)\].
 
 ## DescribePatchGroupsPaginator
 
@@ -774,12 +771,12 @@ Boto3 documentation:
 Arguments for `DescribePatchGroupsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#patchorchestratorfiltertypedef)\]
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePatchGroupsPaginator.paginate` returns
-`Iterator`\[[DescribePatchGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchgroupsresulttypedef)\].
+`Iterator`\[[DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef)\].
 
 ## DescribePatchPropertiesPaginator
 
@@ -800,19 +797,15 @@ Boto3 documentation:
 
 Arguments for `DescribePatchPropertiesPaginator.paginate` method:
 
-- `OperatingSystem`:
-  [OperatingSystem](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#operatingsystem)
+- `OperatingSystem`: [OperatingSystem](./literals.md#operatingsystem)
   *(required)*
-- `Property`:
-  [PatchProperty](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchproperty)
-  *(required)*
-- `PatchSet`:
-  [PatchSet](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#patchset)
+- `Property`: [PatchProperty](./literals.md#patchproperty) *(required)*
+- `PatchSet`: [PatchSet](./literals.md#patchset)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePatchPropertiesPaginator.paginate` returns
-`Iterator`\[[DescribePatchPropertiesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describepatchpropertiesresulttypedef)\].
+`Iterator`\[[DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef)\].
 
 ## DescribeSessionsPaginator
 
@@ -832,16 +825,14 @@ Boto3 documentation:
 
 Arguments for `DescribeSessionsPaginator.paginate` method:
 
-- `State`:
-  [SessionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#sessionstate)
-  *(required)*
+- `State`: [SessionState](./literals.md#sessionstate) *(required)*
 - `Filters`:
-  `List`\[[SessionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#sessionfiltertypedef)\]
+  `List`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeSessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#describesessionsresponsetypedef)\].
+`Iterator`\[[DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef)\].
 
 ## GetInventoryPaginator
 
@@ -862,16 +853,16 @@ Boto3 documentation:
 Arguments for `GetInventoryPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryfiltertypedef)\]
+  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[InventoryAggregatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#inventoryaggregatortypedef)\]
+  `List`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[ResultAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#resultattributetypedef)\]
+  `List`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInventoryPaginator.paginate` returns
-`Iterator`\[[GetInventoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getinventoryresulttypedef)\].
+`Iterator`\[[GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef)\].
 
 ## GetInventorySchemaPaginator
 
@@ -896,10 +887,10 @@ Arguments for `GetInventorySchemaPaginator.paginate` method:
 - `Aggregator`: `bool`
 - `SubType`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInventorySchemaPaginator.paginate` returns
-`Iterator`\[[GetInventorySchemaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getinventoryschemaresulttypedef)\].
+`Iterator`\[[GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef)\].
 
 ## GetOpsSummaryPaginator
 
@@ -920,17 +911,16 @@ Boto3 documentation:
 Arguments for `GetOpsSummaryPaginator.paginate` method:
 
 - `SyncName`: `str`
-- `Filters`:
-  `List`\[[OpsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsfiltertypedef)\]
+- `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[OpsAggregatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsaggregatortypedef)\]
+  `List`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[OpsResultAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsresultattributetypedef)\]
+  `List`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOpsSummaryPaginator.paginate` returns
-`Iterator`\[[GetOpsSummaryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getopssummaryresulttypedef)\].
+`Iterator`\[[GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef)\].
 
 ## GetParameterHistoryPaginator
 
@@ -954,10 +944,10 @@ Arguments for `GetParameterHistoryPaginator.paginate` method:
 - `Name`: `str` *(required)*
 - `WithDecryption`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetParameterHistoryPaginator.paginate` returns
-`Iterator`\[[GetParameterHistoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getparameterhistoryresulttypedef)\].
+`Iterator`\[[GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef)\].
 
 ## GetParametersByPathPaginator
 
@@ -981,13 +971,13 @@ Arguments for `GetParametersByPathPaginator.paginate` method:
 - `Path`: `str` *(required)*
 - `Recursive`: `bool`
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#parameterstringfiltertypedef)\]
+  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `WithDecryption`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetParametersByPathPaginator.paginate` returns
-`Iterator`\[[GetParametersByPathResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#getparametersbypathresulttypedef)\].
+`Iterator`\[[GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef)\].
 
 ## ListAssociationVersionsPaginator
 
@@ -1010,10 +1000,10 @@ Arguments for `ListAssociationVersionsPaginator.paginate` method:
 
 - `AssociationId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationVersionsPaginator.paginate` returns
-`Iterator`\[[ListAssociationVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listassociationversionsresulttypedef)\].
+`Iterator`\[[ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef)\].
 
 ## ListAssociationsPaginator
 
@@ -1034,12 +1024,12 @@ Boto3 documentation:
 Arguments for `ListAssociationsPaginator.paginate` method:
 
 - `AssociationFilterList`:
-  `List`\[[AssociationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#associationfiltertypedef)\]
+  `List`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationsPaginator.paginate` returns
-`Iterator`\[[ListAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listassociationsresulttypedef)\].
+`Iterator`\[[ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef)\].
 
 ## ListCommandInvocationsPaginator
 
@@ -1063,13 +1053,13 @@ Arguments for `ListCommandInvocationsPaginator.paginate` method:
 - `CommandId`: `str`
 - `InstanceId`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandfiltertypedef)\]
+  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `Details`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCommandInvocationsPaginator.paginate` returns
-`Iterator`\[[ListCommandInvocationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcommandinvocationsresulttypedef)\].
+`Iterator`\[[ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef)\].
 
 ## ListCommandsPaginator
 
@@ -1092,12 +1082,12 @@ Arguments for `ListCommandsPaginator.paginate` method:
 - `CommandId`: `str`
 - `InstanceId`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#commandfiltertypedef)\]
+  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCommandsPaginator.paginate` returns
-`Iterator`\[[ListCommandsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcommandsresulttypedef)\].
+`Iterator`\[[ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef)\].
 
 ## ListComplianceItemsPaginator
 
@@ -1119,14 +1109,14 @@ Boto3 documentation:
 Arguments for `ListComplianceItemsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancestringfiltertypedef)\]
+  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `ResourceIds`: `List`\[`str`\]
 - `ResourceTypes`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceItemsPaginator.paginate` returns
-`Iterator`\[[ListComplianceItemsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcomplianceitemsresulttypedef)\].
+`Iterator`\[[ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef)\].
 
 ## ListComplianceSummariesPaginator
 
@@ -1148,12 +1138,12 @@ Boto3 documentation:
 Arguments for `ListComplianceSummariesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancestringfiltertypedef)\]
+  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceSummariesPaginator.paginate` returns
-`Iterator`\[[ListComplianceSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listcompliancesummariesresulttypedef)\].
+`Iterator`\[[ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef)\].
 
 ## ListDocumentVersionsPaginator
 
@@ -1176,10 +1166,10 @@ Arguments for `ListDocumentVersionsPaginator.paginate` method:
 
 - `Name`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentVersionsPaginator.paginate` returns
-`Iterator`\[[ListDocumentVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listdocumentversionsresulttypedef)\].
+`Iterator`\[[ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef)\].
 
 ## ListDocumentsPaginator
 
@@ -1200,14 +1190,14 @@ Boto3 documentation:
 Arguments for `ListDocumentsPaginator.paginate` method:
 
 - `DocumentFilterList`:
-  `List`\[[DocumentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentfiltertypedef)\]
+  `List`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
 - `Filters`:
-  `List`\[[DocumentKeyValuesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#documentkeyvaluesfiltertypedef)\]
+  `List`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentsPaginator.paginate` returns
-`Iterator`\[[ListDocumentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listdocumentsresulttypedef)\].
+`Iterator`\[[ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef)\].
 
 ## ListOpsItemEventsPaginator
 
@@ -1229,12 +1219,12 @@ Boto3 documentation:
 Arguments for `ListOpsItemEventsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[OpsItemEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemeventfiltertypedef)\]
+  `List`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpsItemEventsPaginator.paginate` returns
-`Iterator`\[[ListOpsItemEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemeventsresponsetypedef)\].
+`Iterator`\[[ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef)\].
 
 ## ListOpsItemRelatedItemsPaginator
 
@@ -1257,12 +1247,12 @@ Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
 
 - `OpsItemId`: `str`
 - `Filters`:
-  `List`\[[OpsItemRelatedItemsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsitemrelateditemsfiltertypedef)\]
+  `List`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpsItemRelatedItemsPaginator.paginate` returns
-`Iterator`\[[ListOpsItemRelatedItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsitemrelateditemsresponsetypedef)\].
+`Iterator`\[[ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef)\].
 
 ## ListOpsMetadataPaginator
 
@@ -1283,12 +1273,12 @@ Boto3 documentation:
 Arguments for `ListOpsMetadataPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[OpsMetadataFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#opsmetadatafiltertypedef)\]
+  `List`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpsMetadataPaginator.paginate` returns
-`Iterator`\[[ListOpsMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listopsmetadataresulttypedef)\].
+`Iterator`\[[ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef)\].
 
 ## ListResourceComplianceSummariesPaginator
 
@@ -1310,12 +1300,12 @@ Boto3 documentation:
 Arguments for `ListResourceComplianceSummariesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#compliancestringfiltertypedef)\]
+  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceComplianceSummariesPaginator.paginate` returns
-`Iterator`\[[ListResourceComplianceSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listresourcecompliancesummariesresulttypedef)\].
+`Iterator`\[[ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef)\].
 
 ## ListResourceDataSyncPaginator
 
@@ -1338,7 +1328,7 @@ Arguments for `ListResourceDataSyncPaginator.paginate` method:
 
 - `SyncType`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceDataSyncPaginator.paginate` returns
-`Iterator`\[[ListResourceDataSyncResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#listresourcedatasyncresulttypedef)\].
+`Iterator`\[[ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef)\].

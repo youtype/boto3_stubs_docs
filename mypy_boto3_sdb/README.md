@@ -1,6 +1,6 @@
 # Type annotations for boto3 SimpleDB module
 
-> [Index](../README.md) > SimpleDB
+> [Index](..) > SimpleDB
 
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)

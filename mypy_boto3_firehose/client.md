@@ -1,6 +1,6 @@
 # FirehoseClient for boto3 Firehose module
 
-> [Index](../README.md) > [Firehose](./README.md) > FirehoseClient
+> [Index](..) > [Firehose](.) > FirehoseClient
 
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
@@ -90,29 +90,27 @@ Boto3 documentation:
 Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `DeliveryStreamType`:
-  [DeliveryStreamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamtype)
+- `DeliveryStreamType`: [DeliveryStreamType](./literals.md#deliverystreamtype)
 - `KinesisStreamSourceConfiguration`:
-  [KinesisStreamSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#kinesisstreamsourceconfigurationtypedef)
+  [KinesisStreamSourceConfigurationTypeDef](./type_defs.md#kinesisstreamsourceconfigurationtypedef)
 - `DeliveryStreamEncryptionConfigurationInput`:
-  [DeliveryStreamEncryptionConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deliverystreamencryptionconfigurationinputtypedef)
+  [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
 - `S3DestinationConfiguration`:
-  [S3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationconfigurationtypedef)
+  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - `ExtendedS3DestinationConfiguration`:
-  [ExtendedS3DestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#extendeds3destinationconfigurationtypedef)
+  [ExtendedS3DestinationConfigurationTypeDef](./type_defs.md#extendeds3destinationconfigurationtypedef)
 - `RedshiftDestinationConfiguration`:
-  [RedshiftDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftdestinationconfigurationtypedef)
+  [RedshiftDestinationConfigurationTypeDef](./type_defs.md#redshiftdestinationconfigurationtypedef)
 - `ElasticsearchDestinationConfiguration`:
-  [ElasticsearchDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchdestinationconfigurationtypedef)
+  [ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef)
 - `SplunkDestinationConfiguration`:
-  [SplunkDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkdestinationconfigurationtypedef)
+  [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
 - `HttpEndpointDestinationConfiguration`:
-  [HttpEndpointDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointdestinationconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#tagtypedef)\]
+  [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeliveryStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#createdeliverystreamoutputtypedef).
+[CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef).
 
 ### delete_delivery_stream
 
@@ -143,7 +141,7 @@ Arguments:
 - `ExclusiveStartDestinationId`: `str`
 
 Returns
-[DescribeDeliveryStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#describedeliverystreamoutputtypedef).
+[DescribeDeliveryStreamOutputTypeDef](./type_defs.md#describedeliverystreamoutputtypedef).
 
 ### generate_presigned_url
 
@@ -171,12 +169,11 @@ Boto3 documentation:
 Arguments:
 
 - `Limit`: `int`
-- `DeliveryStreamType`:
-  [DeliveryStreamType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/literals.html#deliverystreamtype)
+- `DeliveryStreamType`: [DeliveryStreamType](./literals.md#deliverystreamtype)
 - `ExclusiveStartDeliveryStreamName`: `str`
 
 Returns
-[ListDeliveryStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#listdeliverystreamsoutputtypedef).
+[ListDeliveryStreamsOutputTypeDef](./type_defs.md#listdeliverystreamsoutputtypedef).
 
 ### list_tags_for_delivery_stream
 
@@ -193,7 +190,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForDeliveryStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#listtagsfordeliverystreamoutputtypedef).
+[ListTagsForDeliveryStreamOutputTypeDef](./type_defs.md#listtagsfordeliverystreamoutputtypedef).
 
 ### put_record
 
@@ -205,12 +202,9 @@ Boto3 documentation:
 Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `Record`:
-  [RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#recordtypedef)
-  *(required)*
+- `Record`: [RecordTypeDef](./type_defs.md#recordtypedef) *(required)*
 
-Returns
-[PutRecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#putrecordoutputtypedef).
+Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
 ### put_record_batch
 
@@ -222,12 +216,10 @@ Boto3 documentation:
 Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `Records`:
-  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#recordtypedef)\]
-  *(required)*
+- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\] *(required)*
 
 Returns
-[PutRecordBatchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#putrecordbatchoutputtypedef).
+[PutRecordBatchOutputTypeDef](./type_defs.md#putrecordbatchoutputtypedef).
 
 ### start_delivery_stream_encryption
 
@@ -241,7 +233,7 @@ Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `DeliveryStreamEncryptionConfigurationInput`:
-  [DeliveryStreamEncryptionConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#deliverystreamencryptionconfigurationinputtypedef)
+  [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -269,9 +261,7 @@ Boto3 documentation:
 Arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -302,16 +292,16 @@ Arguments:
 - `CurrentDeliveryStreamVersionId`: `str` *(required)*
 - `DestinationId`: `str` *(required)*
 - `S3DestinationUpdate`:
-  [S3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#s3destinationupdatetypedef)
+  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `ExtendedS3DestinationUpdate`:
-  [ExtendedS3DestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#extendeds3destinationupdatetypedef)
+  [ExtendedS3DestinationUpdateTypeDef](./type_defs.md#extendeds3destinationupdatetypedef)
 - `RedshiftDestinationUpdate`:
-  [RedshiftDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#redshiftdestinationupdatetypedef)
+  [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
 - `ElasticsearchDestinationUpdate`:
-  [ElasticsearchDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#elasticsearchdestinationupdatetypedef)
+  [ElasticsearchDestinationUpdateTypeDef](./type_defs.md#elasticsearchdestinationupdatetypedef)
 - `SplunkDestinationUpdate`:
-  [SplunkDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#splunkdestinationupdatetypedef)
+  [SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef)
 - `HttpEndpointDestinationUpdate`:
-  [HttpEndpointDestinationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_firehose/type_defs.html#httpendpointdestinationupdatetypedef)
+  [HttpEndpointDestinationUpdateTypeDef](./type_defs.md#httpendpointdestinationupdatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].

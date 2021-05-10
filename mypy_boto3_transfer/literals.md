@@ -1,6 +1,6 @@
 # Literals for boto3 Transfer module
 
-> [Index](../README.md) > [Transfer](./README.md) > Literals
+> [Index](..) > [Transfer](.) > Literals
 
 Auto-generated documentation for
 [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)

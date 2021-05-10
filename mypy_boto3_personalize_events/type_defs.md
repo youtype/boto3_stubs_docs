@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 PersonalizeEvents module
 
-> [Index](../README.md) > [PersonalizeEvents](./README.md) > Structures
+> [Index](..) > [PersonalizeEvents](.) > Typed dictionaries
 
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)

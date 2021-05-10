@@ -1,6 +1,6 @@
 # MigrationHubClient for boto3 MigrationHub module
 
-> [Index](../README.md) > [MigrationHub](./README.md) > MigrationHubClient
+> [Index](..) > [MigrationHub](.) > MigrationHubClient
 
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
@@ -88,8 +88,7 @@ Arguments:
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `CreatedArtifact`:
-  [CreatedArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#createdartifacttypedef)
-  *(required)*
+  [CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef) *(required)*
 - `DryRun`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -107,7 +106,7 @@ Arguments:
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `DiscoveredResource`:
-  [DiscoveredResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#discoveredresourcetypedef)
+  [DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)
   *(required)*
 - `DryRun`: `bool`
 
@@ -168,7 +167,7 @@ Arguments:
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DescribeApplicationStateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#describeapplicationstateresulttypedef).
+[DescribeApplicationStateResultTypeDef](./type_defs.md#describeapplicationstateresulttypedef).
 
 ### describe_migration_task
 
@@ -183,7 +182,7 @@ Arguments:
 - `MigrationTaskName`: `str` *(required)*
 
 Returns
-[DescribeMigrationTaskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#describemigrationtaskresulttypedef).
+[DescribeMigrationTaskResultTypeDef](./type_defs.md#describemigrationtaskresulttypedef).
 
 ### disassociate_created_artifact
 
@@ -264,7 +263,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListApplicationStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listapplicationstatesresulttypedef).
+[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef).
 
 ### list_created_artifacts
 
@@ -281,7 +280,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCreatedArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listcreatedartifactsresulttypedef).
+[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef).
 
 ### list_discovered_resources
 
@@ -298,7 +297,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDiscoveredResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listdiscoveredresourcesresulttypedef).
+[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef).
 
 ### list_migration_tasks
 
@@ -314,7 +313,7 @@ Arguments:
 - `ResourceName`: `str`
 
 Returns
-[ListMigrationTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listmigrationtasksresulttypedef).
+[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef).
 
 ### list_progress_update_streams
 
@@ -329,7 +328,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProgressUpdateStreamsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listprogressupdatestreamsresulttypedef).
+[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef).
 
 ### notify_application_state
 
@@ -341,9 +340,7 @@ Boto3 documentation:
 Arguments:
 
 - `ApplicationId`: `str` *(required)*
-- `Status`:
-  [ApplicationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/literals.html#applicationstatus)
-  *(required)*
+- `Status`: [ApplicationStatus](./literals.md#applicationstatus) *(required)*
 - `UpdateDateTime`: `datetime`
 - `DryRun`: `bool`
 
@@ -360,9 +357,7 @@ Arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
-- `Task`:
-  [TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#tasktypedef)
-  *(required)*
+- `Task`: [TaskTypeDef](./type_defs.md#tasktypedef) *(required)*
 - `UpdateDateTime`: `datetime` *(required)*
 - `NextUpdateSeconds`: `int` *(required)*
 - `DryRun`: `bool`
@@ -381,7 +376,7 @@ Arguments:
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `ResourceAttributeList`:
-  `List`\[[ResourceAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#resourceattributetypedef)\]
+  `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
   *(required)*
 - `DryRun`: `bool`
 

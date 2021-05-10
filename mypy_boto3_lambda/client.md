@@ -1,6 +1,6 @@
 # LambdaClient for boto3 Lambda module
 
-> [Index](../README.md) > [Lambda](./README.md) > LambdaClient
+> [Index](..) > [Lambda](.) > LambdaClient
 
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
@@ -161,7 +161,7 @@ Arguments:
 - `RevisionId`: `str`
 
 Returns
-[AddLayerVersionPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#addlayerversionpermissionresponsetypedef).
+[AddLayerVersionPermissionResponseTypeDef](./type_defs.md#addlayerversionpermissionresponsetypedef).
 
 ### add_permission
 
@@ -183,7 +183,7 @@ Arguments:
 - `RevisionId`: `str`
 
 Returns
-[AddPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#addpermissionresponsetypedef).
+[AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef).
 
 ### can_paginate
 
@@ -212,10 +212,9 @@ Arguments:
 - `FunctionVersion`: `str` *(required)*
 - `Description`: `str`
 - `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasroutingconfigurationtypedef)
+  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 
-Returns
-[AliasConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasconfigurationtypedef).
+Returns [AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef).
 
 ### create_code_signing_config
 
@@ -228,14 +227,14 @@ Boto3 documentation:
 Arguments:
 
 - `AllowedPublishers`:
-  [AllowedPublishersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#allowedpublisherstypedef)
+  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
   *(required)*
 - `Description`: `str`
 - `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#codesigningpoliciestypedef)
+  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
 Returns
-[CreateCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#createcodesigningconfigresponsetypedef).
+[CreateCodeSigningConfigResponseTypeDef](./type_defs.md#createcodesigningconfigresponsetypedef).
 
 ### create_event_source_mapping
 
@@ -253,11 +252,10 @@ Arguments:
 - `BatchSize`: `int`
 - `MaximumBatchingWindowInSeconds`: `int`
 - `ParallelizationFactor`: `int`
-- `StartingPosition`:
-  [EventSourcePosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#eventsourceposition)
+- `StartingPosition`: [EventSourcePosition](./literals.md#eventsourceposition)
 - `StartingPositionTimestamp`: `datetime`
 - `DestinationConfig`:
-  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 - `MaximumRecordAgeInSeconds`: `int`
 - `BisectBatchOnFunctionError`: `bool`
 - `MaximumRetryAttempts`: `int`
@@ -265,13 +263,14 @@ Arguments:
 - `Topics`: `List`\[`str`\]
 - `Queues`: `List`\[`str`\]
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#sourceaccessconfigurationtypedef)\]
+  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `SelfManagedEventSource`:
-  [SelfManagedEventSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#selfmanagedeventsourcetypedef)
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']`\]
+  [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
+- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
+  [FunctionResponseType](./literals.md#functionresponsetype))\]
 
 Returns
-[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
+[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef).
 
 ### create_function
 
@@ -284,37 +283,29 @@ Arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Role`: `str` *(required)*
-- `Code`:
-  [FunctionCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioncodetypedef)
-  *(required)*
-- `Runtime`:
-  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `Code`: [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef) *(required)*
+- `Runtime`: [Runtime](./literals.md#runtime)
 - `Handler`: `str`
 - `Description`: `str`
 - `Timeout`: `int`
 - `MemorySize`: `int`
 - `Publish`: `bool`
-- `VpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#vpcconfigtypedef)
-- `PackageType`:
-  [PackageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#packagetype)
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `PackageType`: [PackageType](./literals.md#packagetype)
 - `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#deadletterconfigtypedef)
-- `Environment`:
-  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#environmenttypedef)
+  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
+- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `KMSKeyArn`: `str`
-- `TracingConfig`:
-  [TracingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#tracingconfigtypedef)
+- `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Layers`: `List`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#filesystemconfigtypedef)\]
-- `ImageConfig`:
-  [ImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#imageconfigtypedef)
+  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `CodeSigningConfigArn`: `str`
 
 Returns
-[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
+[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef).
 
 ### delete_alias
 
@@ -355,7 +346,7 @@ Arguments:
 - `UUID`: `str` *(required)*
 
 Returns
-[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
+[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef).
 
 ### delete_function
 
@@ -455,7 +446,7 @@ Boto3 documentation:
 [Lambda.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
 
 Returns
-[GetAccountSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getaccountsettingsresponsetypedef).
+[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
 
 ### get_alias
 
@@ -469,8 +460,7 @@ Arguments:
 - `FunctionName`: `str` *(required)*
 - `Name`: `str` *(required)*
 
-Returns
-[AliasConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasconfigurationtypedef).
+Returns [AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef).
 
 ### get_code_signing_config
 
@@ -484,7 +474,7 @@ Arguments:
 - `CodeSigningConfigArn`: `str` *(required)*
 
 Returns
-[GetCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getcodesigningconfigresponsetypedef).
+[GetCodeSigningConfigResponseTypeDef](./type_defs.md#getcodesigningconfigresponsetypedef).
 
 ### get_event_source_mapping
 
@@ -498,7 +488,7 @@ Arguments:
 - `UUID`: `str` *(required)*
 
 Returns
-[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
+[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef).
 
 ### get_function
 
@@ -513,7 +503,7 @@ Arguments:
 - `Qualifier`: `str`
 
 Returns
-[GetFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getfunctionresponsetypedef).
+[GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
 ### get_function_code_signing_config
 
@@ -528,7 +518,7 @@ Arguments:
 - `FunctionName`: `str` *(required)*
 
 Returns
-[GetFunctionCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getfunctioncodesigningconfigresponsetypedef).
+[GetFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponsetypedef).
 
 ### get_function_concurrency
 
@@ -542,7 +532,7 @@ Arguments:
 - `FunctionName`: `str` *(required)*
 
 Returns
-[GetFunctionConcurrencyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getfunctionconcurrencyresponsetypedef).
+[GetFunctionConcurrencyResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponsetypedef).
 
 ### get_function_configuration
 
@@ -558,7 +548,7 @@ Arguments:
 - `Qualifier`: `str`
 
 Returns
-[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
+[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef).
 
 ### get_function_event_invoke_config
 
@@ -574,7 +564,7 @@ Arguments:
 - `Qualifier`: `str`
 
 Returns
-[FunctionEventInvokeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioneventinvokeconfigtypedef).
+[FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef).
 
 ### get_layer_version
 
@@ -589,7 +579,7 @@ Arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[GetLayerVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getlayerversionresponsetypedef).
+[GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
 
 ### get_layer_version_by_arn
 
@@ -603,7 +593,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 
 Returns
-[GetLayerVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getlayerversionresponsetypedef).
+[GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
 
 ### get_layer_version_policy
 
@@ -618,7 +608,7 @@ Arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[GetLayerVersionPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getlayerversionpolicyresponsetypedef).
+[GetLayerVersionPolicyResponseTypeDef](./type_defs.md#getlayerversionpolicyresponsetypedef).
 
 ### get_policy
 
@@ -632,8 +622,7 @@ Arguments:
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
 
-Returns
-[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getpolicyresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_provisioned_concurrency_config
 
@@ -649,7 +638,7 @@ Arguments:
 - `Qualifier`: `str` *(required)*
 
 Returns
-[GetProvisionedConcurrencyConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#getprovisionedconcurrencyconfigresponsetypedef).
+[GetProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#getprovisionedconcurrencyconfigresponsetypedef).
 
 ### invoke
 
@@ -661,16 +650,13 @@ Boto3 documentation:
 Arguments:
 
 - `FunctionName`: `str` *(required)*
-- `InvocationType`:
-  [InvocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#invocationtype)
-- `LogType`:
-  [LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#logtype)
+- `InvocationType`: [InvocationType](./literals.md#invocationtype)
+- `LogType`: [LogType](./literals.md#logtype)
 - `ClientContext`: `str`
 - `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `Qualifier`: `str`
 
-Returns
-[InvocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#invocationresponsetypedef).
+Returns [InvocationResponseTypeDef](./type_defs.md#invocationresponsetypedef).
 
 ### invoke_async
 
@@ -685,7 +671,7 @@ Arguments:
 - `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 
 Returns
-[InvokeAsyncResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#invokeasyncresponsetypedef).
+[InvokeAsyncResponseTypeDef](./type_defs.md#invokeasyncresponsetypedef).
 
 ### list_aliases
 
@@ -702,7 +688,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listaliasesresponsetypedef).
+[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
 ### list_code_signing_configs
 
@@ -717,7 +703,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListCodeSigningConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listcodesigningconfigsresponsetypedef).
+[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef).
 
 ### list_event_source_mappings
 
@@ -735,7 +721,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListEventSourceMappingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listeventsourcemappingsresponsetypedef).
+[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef).
 
 ### list_function_event_invoke_configs
 
@@ -752,7 +738,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListFunctionEventInvokeConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctioneventinvokeconfigsresponsetypedef).
+[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef).
 
 ### list_functions
 
@@ -764,12 +750,13 @@ Boto3 documentation:
 Arguments:
 
 - `MasterRegion`: `str`
-- `FunctionVersion`: `Literal['ALL']`
+- `FunctionVersion`: `Literal['ALL']` (see
+  [FunctionVersion](./literals.md#functionversion))
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctionsresponsetypedef).
+[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
 ### list_functions_by_code_signing_config
 
@@ -786,7 +773,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListFunctionsByCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listfunctionsbycodesigningconfigresponsetypedef).
+[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef).
 
 ### list_layer_versions
 
@@ -798,13 +785,12 @@ Boto3 documentation:
 Arguments:
 
 - `LayerName`: `str` *(required)*
-- `CompatibleRuntime`:
-  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `CompatibleRuntime`: [Runtime](./literals.md#runtime)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListLayerVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listlayerversionsresponsetypedef).
+[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef).
 
 ### list_layers
 
@@ -815,13 +801,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `CompatibleRuntime`:
-  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `CompatibleRuntime`: [Runtime](./literals.md#runtime)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListLayersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listlayersresponsetypedef).
+Returns [ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef).
 
 ### list_provisioned_concurrency_configs
 
@@ -838,7 +822,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListProvisionedConcurrencyConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listprovisionedconcurrencyconfigsresponsetypedef).
+[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef).
 
 ### list_tags
 
@@ -851,8 +835,7 @@ Arguments:
 
 - `Resource`: `str` *(required)*
 
-Returns
-[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listtagsresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### list_versions_by_function
 
@@ -868,7 +851,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListVersionsByFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#listversionsbyfunctionresponsetypedef).
+[ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef).
 
 ### publish_layer_version
 
@@ -881,15 +864,14 @@ Arguments:
 
 - `LayerName`: `str` *(required)*
 - `Content`:
-  [LayerVersionContentInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#layerversioncontentinputtypedef)
+  [LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef)
   *(required)*
 - `Description`: `str`
-- `CompatibleRuntimes`:
-  `List`\[[Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)\]
+- `CompatibleRuntimes`: `List`\[[Runtime](./literals.md#runtime)\]
 - `LicenseInfo`: `str`
 
 Returns
-[PublishLayerVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#publishlayerversionresponsetypedef).
+[PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef).
 
 ### publish_version
 
@@ -906,7 +888,7 @@ Arguments:
 - `RevisionId`: `str`
 
 Returns
-[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
+[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef).
 
 ### put_function_code_signing_config
 
@@ -922,7 +904,7 @@ Arguments:
 - `FunctionName`: `str` *(required)*
 
 Returns
-[PutFunctionCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#putfunctioncodesigningconfigresponsetypedef).
+[PutFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponsetypedef).
 
 ### put_function_concurrency
 
@@ -936,8 +918,7 @@ Arguments:
 - `FunctionName`: `str` *(required)*
 - `ReservedConcurrentExecutions`: `int` *(required)*
 
-Returns
-[ConcurrencyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#concurrencytypedef).
+Returns [ConcurrencyTypeDef](./type_defs.md#concurrencytypedef).
 
 ### put_function_event_invoke_config
 
@@ -954,10 +935,10 @@ Arguments:
 - `MaximumRetryAttempts`: `int`
 - `MaximumEventAgeInSeconds`: `int`
 - `DestinationConfig`:
-  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
 Returns
-[FunctionEventInvokeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioneventinvokeconfigtypedef).
+[FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef).
 
 ### put_provisioned_concurrency_config
 
@@ -974,7 +955,7 @@ Arguments:
 - `ProvisionedConcurrentExecutions`: `int` *(required)*
 
 Returns
-[PutProvisionedConcurrencyConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#putprovisionedconcurrencyconfigresponsetypedef).
+[PutProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponsetypedef).
 
 ### remove_layer_version_permission
 
@@ -1043,11 +1024,10 @@ Arguments:
 - `FunctionVersion`: `str`
 - `Description`: `str`
 - `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasroutingconfigurationtypedef)
+  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 - `RevisionId`: `str`
 
-Returns
-[AliasConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#aliasconfigurationtypedef).
+Returns [AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef).
 
 ### update_code_signing_config
 
@@ -1062,12 +1042,12 @@ Arguments:
 - `CodeSigningConfigArn`: `str` *(required)*
 - `Description`: `str`
 - `AllowedPublishers`:
-  [AllowedPublishersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#allowedpublisherstypedef)
+  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
 - `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#codesigningpoliciestypedef)
+  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
 Returns
-[UpdateCodeSigningConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#updatecodesigningconfigresponsetypedef).
+[UpdateCodeSigningConfigResponseTypeDef](./type_defs.md#updatecodesigningconfigresponsetypedef).
 
 ### update_event_source_mapping
 
@@ -1085,18 +1065,19 @@ Arguments:
 - `BatchSize`: `int`
 - `MaximumBatchingWindowInSeconds`: `int`
 - `DestinationConfig`:
-  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 - `MaximumRecordAgeInSeconds`: `int`
 - `BisectBatchOnFunctionError`: `bool`
 - `MaximumRetryAttempts`: `int`
 - `ParallelizationFactor`: `int`
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#sourceaccessconfigurationtypedef)\]
+  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']`\]
+- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
+  [FunctionResponseType](./literals.md#functionresponsetype))\]
 
 Returns
-[EventSourceMappingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#eventsourcemappingconfigurationtypedef).
+[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef).
 
 ### update_function_code
 
@@ -1118,7 +1099,7 @@ Arguments:
 - `RevisionId`: `str`
 
 Returns
-[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
+[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef).
 
 ### update_function_configuration
 
@@ -1136,26 +1117,21 @@ Arguments:
 - `Description`: `str`
 - `Timeout`: `int`
 - `MemorySize`: `int`
-- `VpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#vpcconfigtypedef)
-- `Environment`:
-  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#environmenttypedef)
-- `Runtime`:
-  [Runtime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/literals.html#runtime)
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+- `Runtime`: [Runtime](./literals.md#runtime)
 - `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#deadletterconfigtypedef)
+  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
 - `KMSKeyArn`: `str`
-- `TracingConfig`:
-  [TracingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#tracingconfigtypedef)
+- `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
 - `RevisionId`: `str`
 - `Layers`: `List`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#filesystemconfigtypedef)\]
-- `ImageConfig`:
-  [ImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#imageconfigtypedef)
+  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
 Returns
-[FunctionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functionconfigurationtypedef).
+[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef).
 
 ### update_function_event_invoke_config
 
@@ -1172,10 +1148,10 @@ Arguments:
 - `MaximumRetryAttempts`: `int`
 - `MaximumEventAgeInSeconds`: `int`
 - `DestinationConfig`:
-  [DestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#destinationconfigtypedef)
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
 Returns
-[FunctionEventInvokeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#functioneventinvokeconfigtypedef).
+[FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef).
 
 ### get_paginator
 

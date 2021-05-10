@@ -1,6 +1,6 @@
 # Type annotations for boto3 AuditManager module
 
-> [Index](../README.md) > AuditManager
+> [Index](..) > AuditManager
 
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)

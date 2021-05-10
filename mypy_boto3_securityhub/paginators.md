@@ -1,6 +1,6 @@
 # Paginators for boto3 SecurityHub module
 
-> [Index](../README.md) > [SecurityHub](./README.md) > Paginators
+> [Index](..) > [SecurityHub](.) > Paginators
 
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
@@ -36,10 +36,10 @@ Arguments for `GetEnabledStandardsPaginator.paginate` method:
 
 - `StandardsSubscriptionArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetEnabledStandardsPaginator.paginate` returns
-`Iterator`\[[GetEnabledStandardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getenabledstandardsresponsetypedef)\].
+`Iterator`\[[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef)\].
 
 ## GetFindingsPaginator
 
@@ -61,14 +61,14 @@ Boto3 documentation:
 Arguments for `GetFindingsPaginator.paginate` method:
 
 - `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#sortcriteriontypedef)\]
+  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetFindingsPaginator.paginate` returns
-`Iterator`\[[GetFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getfindingsresponsetypedef)\].
+`Iterator`\[[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef)\].
 
 ## GetInsightsPaginator
 
@@ -91,10 +91,10 @@ Arguments for `GetInsightsPaginator.paginate` method:
 
 - `InsightArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInsightsPaginator.paginate` returns
-`Iterator`\[[GetInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#getinsightsresponsetypedef)\].
+`Iterator`\[[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef)\].
 
 ## ListEnabledProductsForImportPaginator
 
@@ -116,10 +116,10 @@ Boto3 documentation:
 Arguments for `ListEnabledProductsForImportPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnabledProductsForImportPaginator.paginate` returns
-`Iterator`\[[ListEnabledProductsForImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listenabledproductsforimportresponsetypedef)\].
+`Iterator`\[[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)\].
 
 ## ListInvitationsPaginator
 
@@ -141,10 +141,10 @@ Boto3 documentation:
 Arguments for `ListInvitationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvitationsPaginator.paginate` returns
-`Iterator`\[[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listinvitationsresponsetypedef)\].
+`Iterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
 
 ## ListMembersPaginator
 
@@ -167,7 +167,7 @@ Arguments for `ListMembersPaginator.paginate` method:
 
 - `OnlyAssociated`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMembersPaginator.paginate` returns
-`Iterator`\[[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#listmembersresponsetypedef)\].
+`Iterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].

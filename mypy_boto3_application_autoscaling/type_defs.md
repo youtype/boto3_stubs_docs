@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ApplicationAutoScaling module
 
-> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Structures
+> [Index](..) > [ApplicationAutoScaling](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
@@ -49,13 +49,12 @@ Required fields:
 
 - `MetricName`: `str`
 - `Namespace`: `str`
-- `Statistic`:
-  [MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#metricstatistic)
+- `Statistic`: [MetricStatistic](./literals.md#metricstatistic)
 
 Optional fields:
 
 - `Dimensions`:
-  `List`\[[MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#metricdimensiontypedef)\]
+  `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
 ## DescribeScalableTargetsResponseTypeDef
@@ -67,7 +66,7 @@ from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargets
 Optional fields:
 
 - `ScalableTargets`:
-  `List`\[[ScalableTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#scalabletargettypedef)\]
+  `List`\[[ScalableTargetTypeDef](./type_defs.md#scalabletargettypedef)\]
 - `NextToken`: `str`
 
 ## DescribeScalingActivitiesResponseTypeDef
@@ -79,7 +78,7 @@ from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActiviti
 Optional fields:
 
 - `ScalingActivities`:
-  `List`\[[ScalingActivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#scalingactivitytypedef)\]
+  `List`\[[ScalingActivityTypeDef](./type_defs.md#scalingactivitytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeScalingPoliciesResponseTypeDef
@@ -91,7 +90,7 @@ from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPolicies
 Optional fields:
 
 - `ScalingPolicies`:
-  `List`\[[ScalingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#scalingpolicytypedef)\]
+  `List`\[[ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef)\]
 - `NextToken`: `str`
 
 ## DescribeScheduledActionsResponseTypeDef
@@ -103,7 +102,7 @@ from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledAction
 Optional fields:
 
 - `ScheduledActions`:
-  `List`\[[ScheduledActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#scheduledactiontypedef)\]
+  `List`\[[ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef)\]
 - `NextToken`: `str`
 
 ## MetricDimensionTypeDef
@@ -137,8 +136,7 @@ from mypy_boto3_application_autoscaling.type_defs import PredefinedMetricSpecifi
 
 Required fields:
 
-- `PredefinedMetricType`:
-  [MetricType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#metrictype)
+- `PredefinedMetricType`: [MetricType](./literals.md#metrictype)
 
 Optional fields:
 
@@ -156,8 +154,7 @@ Required fields:
 
 Optional fields:
 
-- `Alarms`:
-  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#alarmtypedef)\]
+- `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
 
 ## ScalableTargetActionTypeDef
 
@@ -178,11 +175,9 @@ from mypy_boto3_application_autoscaling.type_defs import ScalableTargetTypeDef
 
 Required fields:
 
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
 - `RoleARN`: `str`
@@ -190,8 +185,7 @@ Required fields:
 
 Optional fields:
 
-- `SuspendedState`:
-  [SuspendedStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#suspendedstatetypedef)
+- `SuspendedState`: [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 
 ## ScalingActivityTypeDef
 
@@ -202,16 +196,14 @@ from mypy_boto3_application_autoscaling.type_defs import ScalingActivityTypeDef
 Required fields:
 
 - `ActivityId`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `Description`: `str`
 - `Cause`: `str`
 - `StartTime`: `datetime`
 - `StatusCode`:
-  [ScalingActivityStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalingactivitystatuscode)
+  [ScalingActivityStatusCode](./literals.md#scalingactivitystatuscode)
 
 Optional fields:
 
@@ -229,23 +221,19 @@ Required fields:
 
 - `PolicyARN`: `str`
 - `PolicyName`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
 - `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
-- `PolicyType`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#policytype)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
+- `PolicyType`: [PolicyType](./literals.md#policytype)
 - `CreationTime`: `datetime`
 
 Optional fields:
 
 - `StepScalingPolicyConfiguration`:
-  [StepScalingPolicyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#stepscalingpolicyconfigurationtypedef)
+  [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
 - `TargetTrackingScalingPolicyConfiguration`:
-  [TargetTrackingScalingPolicyConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#targettrackingscalingpolicyconfigurationtypedef)
-- `Alarms`:
-  `List`\[[AlarmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#alarmtypedef)\]
+  [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
+- `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
 
 ## ScheduledActionTypeDef
 
@@ -257,8 +245,7 @@ Required fields:
 
 - `ScheduledActionName`: `str`
 - `ScheduledActionARN`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
 - `Schedule`: `str`
 - `ResourceId`: `str`
 - `CreationTime`: `datetime`
@@ -266,12 +253,11 @@ Required fields:
 Optional fields:
 
 - `Timezone`: `str`
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `ScalableTargetAction`:
-  [ScalableTargetActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#scalabletargetactiontypedef)
+  [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
 
 ## StepAdjustmentTypeDef
 
@@ -296,14 +282,13 @@ from mypy_boto3_application_autoscaling.type_defs import StepScalingPolicyConfig
 
 Optional fields:
 
-- `AdjustmentType`:
-  [AdjustmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#adjustmenttype)
+- `AdjustmentType`: [AdjustmentType](./literals.md#adjustmenttype)
 - `StepAdjustments`:
-  `List`\[[StepAdjustmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#stepadjustmenttypedef)\]
+  `List`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
 - `MinAdjustmentMagnitude`: `int`
 - `Cooldown`: `int`
 - `MetricAggregationType`:
-  [MetricAggregationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/literals.html#metricaggregationtype)
+  [MetricAggregationType](./literals.md#metricaggregationtype)
 
 ## SuspendedStateTypeDef
 
@@ -330,9 +315,9 @@ Required fields:
 Optional fields:
 
 - `PredefinedMetricSpecification`:
-  [PredefinedMetricSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#predefinedmetricspecificationtypedef)
+  [PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef)
 - `CustomizedMetricSpecification`:
-  [CustomizedMetricSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_application_autoscaling/type_defs.html#customizedmetricspecificationtypedef)
+  [CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef)
 - `ScaleOutCooldown`: `int`
 - `ScaleInCooldown`: `int`
 - `DisableScaleIn`: `bool`

@@ -1,6 +1,6 @@
 # Paginators for boto3 SSO module
 
-> [Index](../README.md) > [SSO](./README.md) > Paginators
+> [Index](..) > [SSO](.) > Paginators
 
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
@@ -32,10 +32,10 @@ Arguments for `ListAccountRolesPaginator.paginate` method:
 - `accessToken`: `str` *(required)*
 - `accountId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountRolesPaginator.paginate` returns
-`Iterator`\[[ListAccountRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountrolesresponsetypedef)\].
+`Iterator`\[[ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef)\].
 
 ## ListAccountsPaginator
 
@@ -57,7 +57,7 @@ Arguments for `ListAccountsPaginator.paginate` method:
 
 - `accessToken`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountsPaginator.paginate` returns
-`Iterator`\[[ListAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#listaccountsresponsetypedef)\].
+`Iterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].

@@ -1,6 +1,6 @@
 # Literals for boto3 ECRPublic module
 
-> [Index](../README.md) > [ECRPublic](./README.md) > Literals
+> [Index](..) > [ECRPublic](.) > Literals
 
 Auto-generated documentation for
 [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)

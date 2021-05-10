@@ -1,6 +1,6 @@
 # SyntheticsClient for boto3 Synthetics module
 
-> [Index](../README.md) > [Synthetics](./README.md) > SyntheticsClient
+> [Index](..) > [Synthetics](.) > SyntheticsClient
 
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
@@ -88,25 +88,23 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Code`:
-  [CanaryCodeInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarycodeinputtypedef)
+- `Code`: [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
   *(required)*
 - `ArtifactS3Location`: `str` *(required)*
 - `ExecutionRoleArn`: `str` *(required)*
 - `Schedule`:
-  [CanaryScheduleInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryscheduleinputtypedef)
+  [CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef)
   *(required)*
 - `RuntimeVersion`: `str` *(required)*
 - `RunConfig`:
-  [CanaryRunConfigInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryrunconfiginputtypedef)
+  [CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef)
 - `SuccessRetentionPeriodInDays`: `int`
 - `FailureRetentionPeriodInDays`: `int`
-- `VpcConfig`:
-  [VpcConfigInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#vpcconfiginputtypedef)
+- `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCanaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#createcanaryresponsetypedef).
+[CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef).
 
 ### delete_canary
 
@@ -134,7 +132,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeCanariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#describecanariesresponsetypedef).
+[DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef).
 
 ### describe_canaries_last_run
 
@@ -150,7 +148,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeCanariesLastRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#describecanarieslastrunresponsetypedef).
+[DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef).
 
 ### describe_runtime_versions
 
@@ -166,7 +164,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeRuntimeVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#describeruntimeversionsresponsetypedef).
+[DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -196,8 +194,7 @@ Arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetCanaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#getcanaryresponsetypedef).
+Returns [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef).
 
 ### get_canary_runs
 
@@ -213,7 +210,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetCanaryRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#getcanaryrunsresponsetypedef).
+[GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -228,7 +225,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_canary
 
@@ -294,17 +291,15 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `Code`:
-  [CanaryCodeInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canarycodeinputtypedef)
+- `Code`: [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
 - `ExecutionRoleArn`: `str`
 - `RuntimeVersion`: `str`
 - `Schedule`:
-  [CanaryScheduleInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryscheduleinputtypedef)
+  [CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef)
 - `RunConfig`:
-  [CanaryRunConfigInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#canaryrunconfiginputtypedef)
+  [CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef)
 - `SuccessRetentionPeriodInDays`: `int`
 - `FailureRetentionPeriodInDays`: `int`
-- `VpcConfig`:
-  [VpcConfigInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_synthetics/type_defs.html#vpcconfiginputtypedef)
+- `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 
 Returns `Dict`\[`str`, `Any`\].

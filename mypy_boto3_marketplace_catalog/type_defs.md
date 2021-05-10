@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MarketplaceCatalog module
 
-> [Index](../README.md) > [MarketplaceCatalog](./README.md) > Structures
+> [Index](..) > [MarketplaceCatalog](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
@@ -47,11 +47,9 @@ Optional fields:
 - `ChangeSetName`: `str`
 - `StartTime`: `str`
 - `EndTime`: `str`
-- `Status`:
-  [ChangeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/literals.html#changestatus)
+- `Status`: [ChangeStatus](./literals.md#changestatus)
 - `EntityIdList`: `List`\[`str`\]
-- `FailureCode`:
-  [FailureCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/literals.html#failurecode)
+- `FailureCode`: [FailureCode](./literals.md#failurecode)
 
 ## ChangeSummaryTypeDef
 
@@ -62,11 +60,10 @@ from mypy_boto3_marketplace_catalog.type_defs import ChangeSummaryTypeDef
 Optional fields:
 
 - `ChangeType`: `str`
-- `Entity`:
-  [EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#entitytypedef)
+- `Entity`: [EntityTypeDef](./type_defs.md#entitytypedef)
 - `Details`: `str`
 - `ErrorDetailList`:
-  `List`\[[ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#errordetailtypedef)\]
+  `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 - `ChangeName`: `str`
 
 ## ChangeTypeDef
@@ -78,8 +75,7 @@ from mypy_boto3_marketplace_catalog.type_defs import ChangeTypeDef
 Required fields:
 
 - `ChangeType`: `str`
-- `Entity`:
-  [EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#entitytypedef)
+- `Entity`: [EntityTypeDef](./type_defs.md#entitytypedef)
 - `Details`: `str`
 
 Optional fields:
@@ -99,13 +95,11 @@ Optional fields:
 - `ChangeSetName`: `str`
 - `StartTime`: `str`
 - `EndTime`: `str`
-- `Status`:
-  [ChangeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/literals.html#changestatus)
-- `FailureCode`:
-  [FailureCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/literals.html#failurecode)
+- `Status`: [ChangeStatus](./literals.md#changestatus)
+- `FailureCode`: [FailureCode](./literals.md#failurecode)
 - `FailureDescription`: `str`
 - `ChangeSet`:
-  `List`\[[ChangeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#changesummarytypedef)\]
+  `List`\[[ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef)\]
 
 ## DescribeEntityResponseTypeDef
 
@@ -181,7 +175,7 @@ from mypy_boto3_marketplace_catalog.type_defs import ListChangeSetsResponseTypeD
 Optional fields:
 
 - `ChangeSetSummaryList`:
-  `List`\[[ChangeSetSummaryListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#changesetsummarylistitemtypedef)\]
+  `List`\[[ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef)\]
 - `NextToken`: `str`
 
 ## ListEntitiesResponseTypeDef
@@ -193,7 +187,7 @@ from mypy_boto3_marketplace_catalog.type_defs import ListEntitiesResponseTypeDef
 Optional fields:
 
 - `EntitySummaryList`:
-  `List`\[[EntitySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/type_defs.html#entitysummarytypedef)\]
+  `List`\[[EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef)\]
 - `NextToken`: `str`
 
 ## SortTypeDef
@@ -205,8 +199,7 @@ from mypy_boto3_marketplace_catalog.type_defs import SortTypeDef
 Optional fields:
 
 - `SortBy`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_catalog/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 ## StartChangeSetResponseTypeDef
 

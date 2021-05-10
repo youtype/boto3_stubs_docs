@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeDeploy module
 
-> [Index](../README.md) > [CodeDeploy](./README.md) > Paginators
+> [Index](..) > [CodeDeploy](.) > Paginators
 
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
@@ -38,19 +38,16 @@ Boto3 documentation:
 Arguments for `ListApplicationRevisionsPaginator.paginate` method:
 
 - `applicationName`: `str` *(required)*
-- `sortBy`:
-  [ApplicationRevisionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#applicationrevisionsortby)
-- `sortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#sortorder)
+- `sortBy`: [ApplicationRevisionSortBy](./literals.md#applicationrevisionsortby)
+- `sortOrder`: [SortOrder](./literals.md#sortorder)
 - `s3Bucket`: `str`
 - `s3KeyPrefix`: `str`
-- `deployed`:
-  [ListStateFilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#liststatefilteraction)
+- `deployed`: [ListStateFilterAction](./literals.md#liststatefilteraction)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationRevisionsPaginator.paginate` returns
-`Iterator`\[[ListApplicationRevisionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listapplicationrevisionsoutputtypedef)\].
+`Iterator`\[[ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef)\].
 
 ## ListApplicationsPaginator
 
@@ -72,10 +69,10 @@ Boto3 documentation:
 Arguments for `ListApplicationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listapplicationsoutputtypedef)\].
+`Iterator`\[[ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef)\].
 
 ## ListDeploymentConfigsPaginator
 
@@ -97,10 +94,10 @@ Boto3 documentation:
 Arguments for `ListDeploymentConfigsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentConfigsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentconfigsoutputtypedef)\].
+`Iterator`\[[ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef)\].
 
 ## ListDeploymentGroupsPaginator
 
@@ -123,10 +120,10 @@ Arguments for `ListDeploymentGroupsPaginator.paginate` method:
 
 - `applicationName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentGroupsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentgroupsoutputtypedef)\].
+`Iterator`\[[ListDeploymentGroupsOutputTypeDef](./type_defs.md#listdeploymentgroupsoutputtypedef)\].
 
 ## ListDeploymentInstancesPaginator
 
@@ -149,14 +146,13 @@ Arguments for `ListDeploymentInstancesPaginator.paginate` method:
 
 - `deploymentId`: `str` *(required)*
 - `instanceStatusFilter`:
-  `List`\[[InstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instancestatus)\]
-- `instanceTypeFilter`:
-  `List`\[[InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#instancetype)\]
+  `List`\[[InstanceStatus](./literals.md#instancestatus)\]
+- `instanceTypeFilter`: `List`\[[InstanceType](./literals.md#instancetype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentInstancesPaginator.paginate` returns
-`Iterator`\[[ListDeploymentInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentinstancesoutputtypedef)\].
+`Iterator`\[[ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef)\].
 
 ## ListDeploymentTargetsPaginator
 
@@ -178,14 +174,13 @@ Boto3 documentation:
 Arguments for `ListDeploymentTargetsPaginator.paginate` method:
 
 - `deploymentId`: `str`
-- `targetFilters`:
-  `Dict`\[[TargetFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#targetfiltername),
+- `targetFilters`: `Dict`\[[TargetFilterName](./literals.md#targetfiltername),
   `List`\[`str`\]\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentTargetsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentTargetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymenttargetsoutputtypedef)\].
+`Iterator`\[[ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef)\].
 
 ## ListDeploymentsPaginator
 
@@ -210,14 +205,13 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 - `deploymentGroupName`: `str`
 - `externalId`: `str`
 - `includeOnlyStatuses`:
-  `List`\[[DeploymentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#deploymentstatus)\]
-- `createTimeRange`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#timerangetypedef)
+  `List`\[[DeploymentStatus](./literals.md#deploymentstatus)\]
+- `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listdeploymentsoutputtypedef)\].
+`Iterator`\[[ListDeploymentsOutputTypeDef](./type_defs.md#listdeploymentsoutputtypedef)\].
 
 ## ListGitHubAccountTokenNamesPaginator
 
@@ -239,10 +233,10 @@ Boto3 documentation:
 Arguments for `ListGitHubAccountTokenNamesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGitHubAccountTokenNamesPaginator.paginate` returns
-`Iterator`\[[ListGitHubAccountTokenNamesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listgithubaccounttokennamesoutputtypedef)\].
+`Iterator`\[[ListGitHubAccountTokenNamesOutputTypeDef](./type_defs.md#listgithubaccounttokennamesoutputtypedef)\].
 
 ## ListOnPremisesInstancesPaginator
 
@@ -263,12 +257,10 @@ Boto3 documentation:
 
 Arguments for `ListOnPremisesInstancesPaginator.paginate` method:
 
-- `registrationStatus`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/literals.html#registrationstatus)
-- `tagFilters`:
-  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#tagfiltertypedef)\]
+- `registrationStatus`: [RegistrationStatus](./literals.md#registrationstatus)
+- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOnPremisesInstancesPaginator.paginate` returns
-`Iterator`\[[ListOnPremisesInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codedeploy/type_defs.html#listonpremisesinstancesoutputtypedef)\].
+`Iterator`\[[ListOnPremisesInstancesOutputTypeDef](./type_defs.md#listonpremisesinstancesoutputtypedef)\].

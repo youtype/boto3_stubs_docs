@@ -1,7 +1,6 @@
 # LookoutforVisionClient for boto3 LookoutforVision module
 
-> [Index](../README.md) > [LookoutforVision](./README.md) >
-> LookoutforVisionClient
+> [Index](..) > [LookoutforVision](.) > LookoutforVisionClient
 
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
@@ -100,12 +99,11 @@ Arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*
-- `DatasetSource`:
-  [DatasetSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#datasetsourcetypedef)
+- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
 - `ClientToken`: `str`
 
 Returns
-[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#createdatasetresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_model
 
@@ -117,17 +115,15 @@ Boto3 documentation:
 Arguments:
 
 - `ProjectName`: `str` *(required)*
-- `OutputConfig`:
-  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#outputconfigtypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
   *(required)*
 - `Description`: `str`
 - `ClientToken`: `str`
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#createmodelresponsetypedef).
+[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
 ### create_project
 
@@ -142,7 +138,7 @@ Arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#createprojectresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### delete_dataset
 
@@ -173,7 +169,7 @@ Arguments:
 - `ClientToken`: `str`
 
 Returns
-[DeleteModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#deletemodelresponsetypedef).
+[DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef).
 
 ### delete_project
 
@@ -188,7 +184,7 @@ Arguments:
 - `ClientToken`: `str`
 
 Returns
-[DeleteProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#deleteprojectresponsetypedef).
+[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
 ### describe_dataset
 
@@ -203,7 +199,7 @@ Arguments:
 - `DatasetType`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#describedatasetresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_model
 
@@ -218,7 +214,7 @@ Arguments:
 - `ModelVersion`: `str` *(required)*
 
 Returns
-[DescribeModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#describemodelresponsetypedef).
+[DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
 ### describe_project
 
@@ -232,7 +228,7 @@ Arguments:
 - `ProjectName`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#describeprojectresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
 ### detect_anomalies
 
@@ -249,7 +245,7 @@ Arguments:
 - `ContentType`: `str` *(required)*
 
 Returns
-[DetectAnomaliesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#detectanomaliesresponsetypedef).
+[DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -289,7 +285,7 @@ Arguments:
 - `SourceRefContains`: `str`
 
 Returns
-[ListDatasetEntriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listdatasetentriesresponsetypedef).
+[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
 ### list_models
 
@@ -304,8 +300,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listmodelsresponsetypedef).
+Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
 ### list_projects
 
@@ -320,7 +315,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listprojectsresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -335,7 +330,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_model
 
@@ -351,8 +346,7 @@ Arguments:
 - `MinInferenceUnits`: `int` *(required)*
 - `ClientToken`: `str`
 
-Returns
-[StartModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#startmodelresponsetypedef).
+Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
 
 ### stop_model
 
@@ -367,8 +361,7 @@ Arguments:
 - `ModelVersion`: `str` *(required)*
 - `ClientToken`: `str`
 
-Returns
-[StopModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#stopmodelresponsetypedef).
+Returns [StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef).
 
 ### tag_resource
 
@@ -380,9 +373,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -416,7 +407,7 @@ Arguments:
 - `ClientToken`: `str`
 
 Returns
-[UpdateDatasetEntriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutvision/type_defs.html#updatedatasetentriesresponsetypedef).
+[UpdateDatasetEntriesResponseTypeDef](./type_defs.md#updatedatasetentriesresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 PersonalizeRuntime module
 
-> [Index](../README.md) > PersonalizeRuntime
+> [Index](..) > PersonalizeRuntime
 
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)

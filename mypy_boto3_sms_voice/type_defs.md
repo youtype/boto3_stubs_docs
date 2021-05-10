@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SMSVoice module
 
-> [Index](../README.md) > [SMSVoice](./README.md) > Structures
+> [Index](..) > [SMSVoice](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)
@@ -51,14 +51,12 @@ from mypy_boto3_sms_voice.type_defs import EventDestinationDefinitionTypeDef
 Optional fields:
 
 - `CloudWatchLogsDestination`:
-  [CloudWatchLogsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#cloudwatchlogsdestinationtypedef)
+  [CloudWatchLogsDestinationTypeDef](./type_defs.md#cloudwatchlogsdestinationtypedef)
 - `Enabled`: `bool`
 - `KinesisFirehoseDestination`:
-  [KinesisFirehoseDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#kinesisfirehosedestinationtypedef)
-- `MatchingEventTypes`:
-  `List`\[[EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/literals.html#eventtype)\]
-- `SnsDestination`:
-  [SnsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#snsdestinationtypedef)
+  [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
+- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
+- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
 ## EventDestinationTypeDef
 
@@ -69,15 +67,13 @@ from mypy_boto3_sms_voice.type_defs import EventDestinationTypeDef
 Optional fields:
 
 - `CloudWatchLogsDestination`:
-  [CloudWatchLogsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#cloudwatchlogsdestinationtypedef)
+  [CloudWatchLogsDestinationTypeDef](./type_defs.md#cloudwatchlogsdestinationtypedef)
 - `Enabled`: `bool`
 - `KinesisFirehoseDestination`:
-  [KinesisFirehoseDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#kinesisfirehosedestinationtypedef)
-- `MatchingEventTypes`:
-  `List`\[[EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/literals.html#eventtype)\]
+  [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
+- `MatchingEventTypes`: `List`\[[EventType](./literals.md#eventtype)\]
 - `Name`: `str`
-- `SnsDestination`:
-  [SnsDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#snsdestinationtypedef)
+- `SnsDestination`: [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
 ## GetConfigurationSetEventDestinationsResponseTypeDef
 
@@ -88,7 +84,7 @@ from mypy_boto3_sms_voice.type_defs import GetConfigurationSetEventDestinationsR
 Optional fields:
 
 - `EventDestinations`:
-  `List`\[[EventDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#eventdestinationtypedef)\]
+  `List`\[[EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)\]
 
 ## KinesisFirehoseDestinationTypeDef
 
@@ -165,8 +161,7 @@ from mypy_boto3_sms_voice.type_defs import VoiceMessageContentTypeDef
 Optional fields:
 
 - `CallInstructionsMessage`:
-  [CallInstructionsMessageTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#callinstructionsmessagetypetypedef)
+  [CallInstructionsMessageTypeTypeDef](./type_defs.md#callinstructionsmessagetypetypedef)
 - `PlainTextMessage`:
-  [PlainTextMessageTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#plaintextmessagetypetypedef)
-- `SSMLMessage`:
-  [SSMLMessageTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sms_voice/type_defs.html#ssmlmessagetypetypedef)
+  [PlainTextMessageTypeTypeDef](./type_defs.md#plaintextmessagetypetypedef)
+- `SSMLMessage`: [SSMLMessageTypeTypeDef](./type_defs.md#ssmlmessagetypetypedef)

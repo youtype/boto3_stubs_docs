@@ -1,6 +1,6 @@
 # Literals for boto3 Snowball module
 
-> [Index](../README.md) > [Snowball](./README.md) > Literals
+> [Index](..) > [Snowball](.) > Literals
 
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)

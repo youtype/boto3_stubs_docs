@@ -1,6 +1,6 @@
 # Paginators for boto3 GameLift module
 
-> [Index](../README.md) > [GameLift](./README.md) > Paginators
+> [Index](..) > [GameLift](.) > Paginators
 
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
@@ -50,10 +50,10 @@ Arguments for `DescribeFleetAttributesPaginator.paginate` method:
 
 - `FleetIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetAttributesPaginator.paginate` returns
-`Iterator`\[[DescribeFleetAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetattributesoutputtypedef)\].
+`Iterator`\[[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef)\].
 
 ## DescribeFleetCapacityPaginator
 
@@ -76,10 +76,10 @@ Arguments for `DescribeFleetCapacityPaginator.paginate` method:
 
 - `FleetIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetCapacityPaginator.paginate` returns
-`Iterator`\[[DescribeFleetCapacityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetcapacityoutputtypedef)\].
+`Iterator`\[[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef)\].
 
 ## DescribeFleetEventsPaginator
 
@@ -104,10 +104,10 @@ Arguments for `DescribeFleetEventsPaginator.paginate` method:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetEventsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleeteventsoutputtypedef)\].
+`Iterator`\[[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef)\].
 
 ## DescribeFleetUtilizationPaginator
 
@@ -130,10 +130,10 @@ Arguments for `DescribeFleetUtilizationPaginator.paginate` method:
 
 - `FleetIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetUtilizationPaginator.paginate` returns
-`Iterator`\[[DescribeFleetUtilizationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describefleetutilizationoutputtypedef)\].
+`Iterator`\[[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef)\].
 
 ## DescribeGameServerInstancesPaginator
 
@@ -157,10 +157,10 @@ Arguments for `DescribeGameServerInstancesPaginator.paginate` method:
 - `GameServerGroupName`: `str` *(required)*
 - `InstanceIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameServerInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeGameServerInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegameserverinstancesoutputtypedef)\].
+`Iterator`\[[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef)\].
 
 ## DescribeGameSessionDetailsPaginator
 
@@ -187,10 +187,10 @@ Arguments for `DescribeGameSessionDetailsPaginator.paginate` method:
 - `Location`: `str`
 - `StatusFilter`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameSessionDetailsPaginator.paginate` returns
-`Iterator`\[[DescribeGameSessionDetailsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessiondetailsoutputtypedef)\].
+`Iterator`\[[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef)\].
 
 ## DescribeGameSessionQueuesPaginator
 
@@ -213,10 +213,10 @@ Arguments for `DescribeGameSessionQueuesPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameSessionQueuesPaginator.paginate` returns
-`Iterator`\[[DescribeGameSessionQueuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionqueuesoutputtypedef)\].
+`Iterator`\[[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef)\].
 
 ## DescribeGameSessionsPaginator
 
@@ -243,10 +243,10 @@ Arguments for `DescribeGameSessionsPaginator.paginate` method:
 - `Location`: `str`
 - `StatusFilter`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGameSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describegamesessionsoutputtypedef)\].
+`Iterator`\[[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef)\].
 
 ## DescribeInstancesPaginator
 
@@ -271,10 +271,10 @@ Arguments for `DescribeInstancesPaginator.paginate` method:
 - `InstanceId`: `str`
 - `Location`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeinstancesoutputtypedef)\].
+`Iterator`\[[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef)\].
 
 ## DescribeMatchmakingConfigurationsPaginator
 
@@ -298,10 +298,10 @@ Arguments for `DescribeMatchmakingConfigurationsPaginator.paginate` method:
 - `Names`: `List`\[`str`\]
 - `RuleSetName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMatchmakingConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeMatchmakingConfigurationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingconfigurationsoutputtypedef)\].
+`Iterator`\[[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef)\].
 
 ## DescribeMatchmakingRuleSetsPaginator
 
@@ -324,10 +324,10 @@ Arguments for `DescribeMatchmakingRuleSetsPaginator.paginate` method:
 
 - `Names`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMatchmakingRuleSetsPaginator.paginate` returns
-`Iterator`\[[DescribeMatchmakingRuleSetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describematchmakingrulesetsoutputtypedef)\].
+`Iterator`\[[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef)\].
 
 ## DescribePlayerSessionsPaginator
 
@@ -353,10 +353,10 @@ Arguments for `DescribePlayerSessionsPaginator.paginate` method:
 - `PlayerSessionId`: `str`
 - `PlayerSessionStatusFilter`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePlayerSessionsPaginator.paginate` returns
-`Iterator`\[[DescribePlayerSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describeplayersessionsoutputtypedef)\].
+`Iterator`\[[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef)\].
 
 ## DescribeScalingPoliciesPaginator
 
@@ -378,14 +378,13 @@ Boto3 documentation:
 Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 
 - `FleetId`: `str` *(required)*
-- `StatusFilter`:
-  [ScalingStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#scalingstatustype)
+- `StatusFilter`: [ScalingStatusType](./literals.md#scalingstatustype)
 - `Location`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#describescalingpoliciesoutputtypedef)\].
+`Iterator`\[[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef)\].
 
 ## ListAliasesPaginator
 
@@ -405,14 +404,13 @@ Boto3 documentation:
 
 Arguments for `ListAliasesPaginator.paginate` method:
 
-- `RoutingStrategyType`:
-  [RoutingStrategyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#routingstrategytype)
+- `RoutingStrategyType`: [RoutingStrategyType](./literals.md#routingstrategytype)
 - `Name`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listaliasesoutputtypedef)\].
+`Iterator`\[[ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef)\].
 
 ## ListBuildsPaginator
 
@@ -432,13 +430,12 @@ Boto3 documentation:
 
 Arguments for `ListBuildsPaginator.paginate` method:
 
-- `Status`:
-  [BuildStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#buildstatus)
+- `Status`: [BuildStatus](./literals.md#buildstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBuildsPaginator.paginate` returns
-`Iterator`\[[ListBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listbuildsoutputtypedef)\].
+`Iterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
 
 ## ListFleetsPaginator
 
@@ -461,10 +458,10 @@ Arguments for `ListFleetsPaginator.paginate` method:
 - `BuildId`: `str`
 - `ScriptId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFleetsPaginator.paginate` returns
-`Iterator`\[[ListFleetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listfleetsoutputtypedef)\].
+`Iterator`\[[ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef)\].
 
 ## ListGameServerGroupsPaginator
 
@@ -486,10 +483,10 @@ Boto3 documentation:
 Arguments for `ListGameServerGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGameServerGroupsPaginator.paginate` returns
-`Iterator`\[[ListGameServerGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameservergroupsoutputtypedef)\].
+`Iterator`\[[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef)\].
 
 ## ListGameServersPaginator
 
@@ -511,13 +508,12 @@ Boto3 documentation:
 Arguments for `ListGameServersPaginator.paginate` method:
 
 - `GameServerGroupName`: `str` *(required)*
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGameServersPaginator.paginate` returns
-`Iterator`\[[ListGameServersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listgameserversoutputtypedef)\].
+`Iterator`\[[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef)\].
 
 ## ListScriptsPaginator
 
@@ -538,10 +534,10 @@ Boto3 documentation:
 Arguments for `ListScriptsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListScriptsPaginator.paginate` returns
-`Iterator`\[[ListScriptsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#listscriptsoutputtypedef)\].
+`Iterator`\[[ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef)\].
 
 ## SearchGameSessionsPaginator
 
@@ -568,7 +564,7 @@ Arguments for `SearchGameSessionsPaginator.paginate` method:
 - `FilterExpression`: `str`
 - `SortExpression`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchGameSessionsPaginator.paginate` returns
-`Iterator`\[[SearchGameSessionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_gamelift/type_defs.html#searchgamesessionsoutputtypedef)\].
+`Iterator`\[[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef)\].

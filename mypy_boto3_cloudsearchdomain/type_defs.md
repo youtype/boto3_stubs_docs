@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CloudSearchDomain module
 
-> [Index](../README.md) > [CloudSearchDomain](./README.md) > Structures
+> [Index](..) > [CloudSearchDomain](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
@@ -30,8 +30,7 @@ from mypy_boto3_cloudsearchdomain.type_defs import BucketInfoTypeDef
 
 Optional fields:
 
-- `buckets`:
-  `List`\[[BucketTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#buckettypedef)\]
+- `buckets`: `List`\[[BucketTypeDef](./type_defs.md#buckettypedef)\]
 
 ## BucketTypeDef
 
@@ -95,8 +94,7 @@ Optional fields:
 - `found`: `int`
 - `start`: `int`
 - `cursor`: `str`
-- `hit`:
-  `List`\[[HitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#hittypedef)\]
+- `hit`: `List`\[[HitTypeDef](./type_defs.md#hittypedef)\]
 
 ## SearchResponseTypeDef
 
@@ -106,14 +104,11 @@ from mypy_boto3_cloudsearchdomain.type_defs import SearchResponseTypeDef
 
 Optional fields:
 
-- `status`:
-  [SearchStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#searchstatustypedef)
-- `hits`:
-  [HitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#hitstypedef)
+- `status`: [SearchStatusTypeDef](./type_defs.md#searchstatustypedef)
+- `hits`: [HitsTypeDef](./type_defs.md#hitstypedef)
 - `facets`: `Dict`\[`str`,
-  [BucketInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#bucketinfotypedef)\]
-- `stats`: `Dict`\[`str`,
-  [FieldStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#fieldstatstypedef)\]
+  [BucketInfoTypeDef](./type_defs.md#bucketinfotypedef)\]
+- `stats`: `Dict`\[`str`, [FieldStatsTypeDef](./type_defs.md#fieldstatstypedef)\]
 
 ## SearchStatusTypeDef
 
@@ -137,7 +132,7 @@ Optional fields:
 - `query`: `str`
 - `found`: `int`
 - `suggestions`:
-  `List`\[[SuggestionMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#suggestionmatchtypedef)\]
+  `List`\[[SuggestionMatchTypeDef](./type_defs.md#suggestionmatchtypedef)\]
 
 ## SuggestResponseTypeDef
 
@@ -147,10 +142,8 @@ from mypy_boto3_cloudsearchdomain.type_defs import SuggestResponseTypeDef
 
 Optional fields:
 
-- `status`:
-  [SuggestStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#suggeststatustypedef)
-- `suggest`:
-  [SuggestModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#suggestmodeltypedef)
+- `status`: [SuggestStatusTypeDef](./type_defs.md#suggeststatustypedef)
+- `suggest`: [SuggestModelTypeDef](./type_defs.md#suggestmodeltypedef)
 
 ## SuggestStatusTypeDef
 
@@ -187,4 +180,4 @@ Optional fields:
 - `adds`: `int`
 - `deletes`: `int`
 - `warnings`:
-  `List`\[[DocumentServiceWarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearchdomain/type_defs.html#documentservicewarningtypedef)\]
+  `List`\[[DocumentServiceWarningTypeDef](./type_defs.md#documentservicewarningtypedef)\]

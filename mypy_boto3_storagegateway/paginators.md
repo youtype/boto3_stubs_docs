@@ -1,6 +1,6 @@
 # Paginators for boto3 StorageGateway module
 
-> [Index](../README.md) > [StorageGateway](./README.md) > Paginators
+> [Index](..) > [StorageGateway](.) > Paginators
 
 Auto-generated documentation for
 [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
@@ -41,10 +41,10 @@ Arguments for `DescribeTapeArchivesPaginator.paginate` method:
 
 - `TapeARNs`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTapeArchivesPaginator.paginate` returns
-`Iterator`\[[DescribeTapeArchivesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describetapearchivesoutputtypedef)\].
+`Iterator`\[[DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef)\].
 
 ## DescribeTapeRecoveryPointsPaginator
 
@@ -67,10 +67,10 @@ Arguments for `DescribeTapeRecoveryPointsPaginator.paginate` method:
 
 - `GatewayARN`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTapeRecoveryPointsPaginator.paginate` returns
-`Iterator`\[[DescribeTapeRecoveryPointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describetaperecoverypointsoutputtypedef)\].
+`Iterator`\[[DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef)\].
 
 ## DescribeTapesPaginator
 
@@ -94,10 +94,10 @@ Arguments for `DescribeTapesPaginator.paginate` method:
 - `GatewayARN`: `str` *(required)*
 - `TapeARNs`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTapesPaginator.paginate` returns
-`Iterator`\[[DescribeTapesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describetapesoutputtypedef)\].
+`Iterator`\[[DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef)\].
 
 ## DescribeVTLDevicesPaginator
 
@@ -121,10 +121,10 @@ Arguments for `DescribeVTLDevicesPaginator.paginate` method:
 - `GatewayARN`: `str` *(required)*
 - `VTLDeviceARNs`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVTLDevicesPaginator.paginate` returns
-`Iterator`\[[DescribeVTLDevicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#describevtldevicesoutputtypedef)\].
+`Iterator`\[[DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef)\].
 
 ## ListFileSharesPaginator
 
@@ -147,10 +147,10 @@ Arguments for `ListFileSharesPaginator.paginate` method:
 
 - `GatewayARN`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFileSharesPaginator.paginate` returns
-`Iterator`\[[ListFileSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listfilesharesoutputtypedef)\].
+`Iterator`\[[ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef)\].
 
 ## ListFileSystemAssociationsPaginator
 
@@ -173,10 +173,10 @@ Arguments for `ListFileSystemAssociationsPaginator.paginate` method:
 
 - `GatewayARN`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFileSystemAssociationsPaginator.paginate` returns
-`Iterator`\[[ListFileSystemAssociationsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listfilesystemassociationsoutputtypedef)\].
+`Iterator`\[[ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef)\].
 
 ## ListGatewaysPaginator
 
@@ -198,10 +198,10 @@ Boto3 documentation:
 Arguments for `ListGatewaysPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGatewaysPaginator.paginate` returns
-`Iterator`\[[ListGatewaysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listgatewaysoutputtypedef)\].
+`Iterator`\[[ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -224,10 +224,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `ResourceARN`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
 
 ## ListTapePoolsPaginator
 
@@ -250,10 +250,10 @@ Arguments for `ListTapePoolsPaginator.paginate` method:
 
 - `PoolARNs`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTapePoolsPaginator.paginate` returns
-`Iterator`\[[ListTapePoolsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listtapepoolsoutputtypedef)\].
+`Iterator`\[[ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef)\].
 
 ## ListTapesPaginator
 
@@ -276,10 +276,10 @@ Arguments for `ListTapesPaginator.paginate` method:
 
 - `TapeARNs`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTapesPaginator.paginate` returns
-`Iterator`\[[ListTapesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listtapesoutputtypedef)\].
+`Iterator`\[[ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef)\].
 
 ## ListVolumesPaginator
 
@@ -302,7 +302,7 @@ Arguments for `ListVolumesPaginator.paginate` method:
 
 - `GatewayARN`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVolumesPaginator.paginate` returns
-`Iterator`\[[ListVolumesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_storagegateway/type_defs.html#listvolumesoutputtypedef)\].
+`Iterator`\[[ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef)\].

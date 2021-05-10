@@ -1,6 +1,6 @@
 # DirectConnectClient for boto3 DirectConnect module
 
-> [Index](../README.md) > [DirectConnect](./README.md) > DirectConnectClient
+> [Index](..) > [DirectConnect](.) > DirectConnectClient
 
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
@@ -127,10 +127,10 @@ Arguments:
 - `proposalId`: `str` *(required)*
 - `associatedGatewayOwnerAccount`: `str` *(required)*
 - `overrideAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
-[AcceptDirectConnectGatewayAssociationProposalResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#acceptdirectconnectgatewayassociationproposalresulttypedef).
+[AcceptDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalresulttypedef).
 
 ### allocate_connection_on_interconnect
 
@@ -148,8 +148,7 @@ Arguments:
 - `interconnectId`: `str` *(required)*
 - `vlan`: `int` *(required)*
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### allocate_hosted_connection
 
@@ -166,11 +165,9 @@ Arguments:
 - `bandwidth`: `str` *(required)*
 - `connectionName`: `str` *(required)*
 - `vlan`: `int` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### allocate_private_virtual_interface
 
@@ -185,11 +182,10 @@ Arguments:
 - `connectionId`: `str` *(required)*
 - `ownerAccount`: `str` *(required)*
 - `newPrivateVirtualInterfaceAllocation`:
-  [NewPrivateVirtualInterfaceAllocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newprivatevirtualinterfaceallocationtypedef)
+  [NewPrivateVirtualInterfaceAllocationTypeDef](./type_defs.md#newprivatevirtualinterfaceallocationtypedef)
   *(required)*
 
-Returns
-[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef).
+Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 
 ### allocate_public_virtual_interface
 
@@ -204,11 +200,10 @@ Arguments:
 - `connectionId`: `str` *(required)*
 - `ownerAccount`: `str` *(required)*
 - `newPublicVirtualInterfaceAllocation`:
-  [NewPublicVirtualInterfaceAllocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newpublicvirtualinterfaceallocationtypedef)
+  [NewPublicVirtualInterfaceAllocationTypeDef](./type_defs.md#newpublicvirtualinterfaceallocationtypedef)
   *(required)*
 
-Returns
-[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef).
+Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 
 ### allocate_transit_virtual_interface
 
@@ -223,11 +218,11 @@ Arguments:
 - `connectionId`: `str` *(required)*
 - `ownerAccount`: `str` *(required)*
 - `newTransitVirtualInterfaceAllocation`:
-  [NewTransitVirtualInterfaceAllocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newtransitvirtualinterfaceallocationtypedef)
+  [NewTransitVirtualInterfaceAllocationTypeDef](./type_defs.md#newtransitvirtualinterfaceallocationtypedef)
   *(required)*
 
 Returns
-[AllocateTransitVirtualInterfaceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#allocatetransitvirtualinterfaceresulttypedef).
+[AllocateTransitVirtualInterfaceResultTypeDef](./type_defs.md#allocatetransitvirtualinterfaceresulttypedef).
 
 ### associate_connection_with_lag
 
@@ -242,8 +237,7 @@ Arguments:
 - `connectionId`: `str` *(required)*
 - `lagId`: `str` *(required)*
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### associate_hosted_connection
 
@@ -258,8 +252,7 @@ Arguments:
 - `connectionId`: `str` *(required)*
 - `parentConnectionId`: `str` *(required)*
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### associate_mac_sec_key
 
@@ -277,7 +270,7 @@ Arguments:
 - `cak`: `str`
 
 Returns
-[AssociateMacSecKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#associatemacseckeyresponsetypedef).
+[AssociateMacSecKeyResponseTypeDef](./type_defs.md#associatemacseckeyresponsetypedef).
 
 ### associate_virtual_interface
 
@@ -292,8 +285,7 @@ Arguments:
 - `virtualInterfaceId`: `str` *(required)*
 - `connectionId`: `str` *(required)*
 
-Returns
-[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef).
+Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 
 ### can_paginate
 
@@ -320,7 +312,7 @@ Arguments:
 - `connectionId`: `str` *(required)*
 
 Returns
-[ConfirmConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#confirmconnectionresponsetypedef).
+[ConfirmConnectionResponseTypeDef](./type_defs.md#confirmconnectionresponsetypedef).
 
 ### confirm_private_virtual_interface
 
@@ -337,7 +329,7 @@ Arguments:
 - `directConnectGatewayId`: `str`
 
 Returns
-[ConfirmPrivateVirtualInterfaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#confirmprivatevirtualinterfaceresponsetypedef).
+[ConfirmPrivateVirtualInterfaceResponseTypeDef](./type_defs.md#confirmprivatevirtualinterfaceresponsetypedef).
 
 ### confirm_public_virtual_interface
 
@@ -352,7 +344,7 @@ Arguments:
 - `virtualInterfaceId`: `str` *(required)*
 
 Returns
-[ConfirmPublicVirtualInterfaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#confirmpublicvirtualinterfaceresponsetypedef).
+[ConfirmPublicVirtualInterfaceResponseTypeDef](./type_defs.md#confirmpublicvirtualinterfaceresponsetypedef).
 
 ### confirm_transit_virtual_interface
 
@@ -368,7 +360,7 @@ Arguments:
 - `directConnectGatewayId`: `str` *(required)*
 
 Returns
-[ConfirmTransitVirtualInterfaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#confirmtransitvirtualinterfaceresponsetypedef).
+[ConfirmTransitVirtualInterfaceResponseTypeDef](./type_defs.md#confirmtransitvirtualinterfaceresponsetypedef).
 
 ### create_bgp_peer
 
@@ -380,11 +372,10 @@ Boto3 documentation:
 Arguments:
 
 - `virtualInterfaceId`: `str`
-- `newBGPPeer`:
-  [NewBGPPeerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newbgppeertypedef)
+- `newBGPPeer`: [NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef)
 
 Returns
-[CreateBGPPeerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#createbgppeerresponsetypedef).
+[CreateBGPPeerResponseTypeDef](./type_defs.md#createbgppeerresponsetypedef).
 
 ### create_connection
 
@@ -399,13 +390,11 @@ Arguments:
 - `bandwidth`: `str` *(required)*
 - `connectionName`: `str` *(required)*
 - `lagId`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### create_direct_connect_gateway
 
@@ -421,7 +410,7 @@ Arguments:
 - `amazonSideAsn`: `int`
 
 Returns
-[CreateDirectConnectGatewayResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#createdirectconnectgatewayresulttypedef).
+[CreateDirectConnectGatewayResultTypeDef](./type_defs.md#createdirectconnectgatewayresulttypedef).
 
 ### create_direct_connect_gateway_association
 
@@ -437,11 +426,11 @@ Arguments:
 - `directConnectGatewayId`: `str` *(required)*
 - `gatewayId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `virtualGatewayId`: `str`
 
 Returns
-[CreateDirectConnectGatewayAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#createdirectconnectgatewayassociationresulttypedef).
+[CreateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationresulttypedef).
 
 ### create_direct_connect_gateway_association_proposal
 
@@ -458,12 +447,12 @@ Arguments:
 - `directConnectGatewayOwnerAccount`: `str` *(required)*
 - `gatewayId`: `str` *(required)*
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
-[CreateDirectConnectGatewayAssociationProposalResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#createdirectconnectgatewayassociationproposalresulttypedef).
+[CreateDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalresulttypedef).
 
 ### create_interconnect
 
@@ -479,12 +468,10 @@ Arguments:
 - `bandwidth`: `str` *(required)*
 - `location`: `str` *(required)*
 - `lagId`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
-Returns
-[InterconnectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#interconnecttypedef).
+Returns [InterconnectTypeDef](./type_defs.md#interconnecttypedef).
 
 ### create_lag
 
@@ -500,15 +487,12 @@ Arguments:
 - `connectionsBandwidth`: `str` *(required)*
 - `lagName`: `str` *(required)*
 - `connectionId`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
-- `childConnectionTags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `childConnectionTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
-Returns
-[LagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#lagtypedef).
+Returns [LagTypeDef](./type_defs.md#lagtypedef).
 
 ### create_private_virtual_interface
 
@@ -522,11 +506,10 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 - `newPrivateVirtualInterface`:
-  [NewPrivateVirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newprivatevirtualinterfacetypedef)
+  [NewPrivateVirtualInterfaceTypeDef](./type_defs.md#newprivatevirtualinterfacetypedef)
   *(required)*
 
-Returns
-[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef).
+Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 
 ### create_public_virtual_interface
 
@@ -540,11 +523,10 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 - `newPublicVirtualInterface`:
-  [NewPublicVirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newpublicvirtualinterfacetypedef)
+  [NewPublicVirtualInterfaceTypeDef](./type_defs.md#newpublicvirtualinterfacetypedef)
   *(required)*
 
-Returns
-[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef).
+Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 
 ### create_transit_virtual_interface
 
@@ -558,11 +540,11 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 - `newTransitVirtualInterface`:
-  [NewTransitVirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#newtransitvirtualinterfacetypedef)
+  [NewTransitVirtualInterfaceTypeDef](./type_defs.md#newtransitvirtualinterfacetypedef)
   *(required)*
 
 Returns
-[CreateTransitVirtualInterfaceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#createtransitvirtualinterfaceresulttypedef).
+[CreateTransitVirtualInterfaceResultTypeDef](./type_defs.md#createtransitvirtualinterfaceresulttypedef).
 
 ### delete_bgp_peer
 
@@ -579,7 +561,7 @@ Arguments:
 - `bgpPeerId`: `str`
 
 Returns
-[DeleteBGPPeerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#deletebgppeerresponsetypedef).
+[DeleteBGPPeerResponseTypeDef](./type_defs.md#deletebgppeerresponsetypedef).
 
 ### delete_connection
 
@@ -592,8 +574,7 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### delete_direct_connect_gateway
 
@@ -608,7 +589,7 @@ Arguments:
 - `directConnectGatewayId`: `str` *(required)*
 
 Returns
-[DeleteDirectConnectGatewayResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#deletedirectconnectgatewayresulttypedef).
+[DeleteDirectConnectGatewayResultTypeDef](./type_defs.md#deletedirectconnectgatewayresulttypedef).
 
 ### delete_direct_connect_gateway_association
 
@@ -626,7 +607,7 @@ Arguments:
 - `virtualGatewayId`: `str`
 
 Returns
-[DeleteDirectConnectGatewayAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#deletedirectconnectgatewayassociationresulttypedef).
+[DeleteDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationresulttypedef).
 
 ### delete_direct_connect_gateway_association_proposal
 
@@ -642,7 +623,7 @@ Arguments:
 - `proposalId`: `str` *(required)*
 
 Returns
-[DeleteDirectConnectGatewayAssociationProposalResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#deletedirectconnectgatewayassociationproposalresulttypedef).
+[DeleteDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationproposalresulttypedef).
 
 ### delete_interconnect
 
@@ -657,7 +638,7 @@ Arguments:
 - `interconnectId`: `str` *(required)*
 
 Returns
-[DeleteInterconnectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#deleteinterconnectresponsetypedef).
+[DeleteInterconnectResponseTypeDef](./type_defs.md#deleteinterconnectresponsetypedef).
 
 ### delete_lag
 
@@ -670,8 +651,7 @@ Arguments:
 
 - `lagId`: `str` *(required)*
 
-Returns
-[LagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#lagtypedef).
+Returns [LagTypeDef](./type_defs.md#lagtypedef).
 
 ### delete_virtual_interface
 
@@ -686,7 +666,7 @@ Arguments:
 - `virtualInterfaceId`: `str` *(required)*
 
 Returns
-[DeleteVirtualInterfaceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#deletevirtualinterfaceresponsetypedef).
+[DeleteVirtualInterfaceResponseTypeDef](./type_defs.md#deletevirtualinterfaceresponsetypedef).
 
 ### describe_connection_loa
 
@@ -700,10 +680,11 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 - `providerName`: `str`
-- `loaContentType`: `Literal['application/pdf']`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentType](./literals.md#loacontenttype))
 
 Returns
-[DescribeConnectionLoaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describeconnectionloaresponsetypedef).
+[DescribeConnectionLoaResponseTypeDef](./type_defs.md#describeconnectionloaresponsetypedef).
 
 ### describe_connections
 
@@ -717,8 +698,7 @@ Arguments:
 
 - `connectionId`: `str`
 
-Returns
-[ConnectionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectionstypedef).
+Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
 ### describe_connections_on_interconnect
 
@@ -732,8 +712,7 @@ Arguments:
 
 - `interconnectId`: `str` *(required)*
 
-Returns
-[ConnectionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectionstypedef).
+Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
 ### describe_direct_connect_gateway_association_proposals
 
@@ -753,7 +732,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describedirectconnectgatewayassociationproposalsresulttypedef).
+[DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsresulttypedef).
 
 ### describe_direct_connect_gateway_associations
 
@@ -774,7 +753,7 @@ Arguments:
 - `virtualGatewayId`: `str`
 
 Returns
-[DescribeDirectConnectGatewayAssociationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describedirectconnectgatewayassociationsresulttypedef).
+[DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef).
 
 ### describe_direct_connect_gateway_attachments
 
@@ -793,7 +772,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeDirectConnectGatewayAttachmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describedirectconnectgatewayattachmentsresulttypedef).
+[DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef).
 
 ### describe_direct_connect_gateways
 
@@ -810,7 +789,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeDirectConnectGatewaysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describedirectconnectgatewaysresulttypedef).
+[DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef).
 
 ### describe_hosted_connections
 
@@ -824,8 +803,7 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 
-Returns
-[ConnectionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectionstypedef).
+Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
 ### describe_interconnect_loa
 
@@ -839,10 +817,11 @@ Arguments:
 
 - `interconnectId`: `str` *(required)*
 - `providerName`: `str`
-- `loaContentType`: `Literal['application/pdf']`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentType](./literals.md#loacontenttype))
 
 Returns
-[DescribeInterconnectLoaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describeinterconnectloaresponsetypedef).
+[DescribeInterconnectLoaResponseTypeDef](./type_defs.md#describeinterconnectloaresponsetypedef).
 
 ### describe_interconnects
 
@@ -856,8 +835,7 @@ Arguments:
 
 - `interconnectId`: `str`
 
-Returns
-[InterconnectsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#interconnectstypedef).
+Returns [InterconnectsTypeDef](./type_defs.md#interconnectstypedef).
 
 ### describe_lags
 
@@ -870,8 +848,7 @@ Arguments:
 
 - `lagId`: `str`
 
-Returns
-[LagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#lagstypedef).
+Returns [LagsTypeDef](./type_defs.md#lagstypedef).
 
 ### describe_loa
 
@@ -884,10 +861,10 @@ Arguments:
 
 - `connectionId`: `str` *(required)*
 - `providerName`: `str`
-- `loaContentType`: `Literal['application/pdf']`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentType](./literals.md#loacontenttype))
 
-Returns
-[LoaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#loatypedef).
+Returns [LoaTypeDef](./type_defs.md#loatypedef).
 
 ### describe_locations
 
@@ -896,8 +873,7 @@ Type annotations for `boto3.client("directconnect").describe_locations` method.
 Boto3 documentation:
 [DirectConnect.Client.describe_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
 
-Returns
-[LocationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#locationstypedef).
+Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
 
 ### describe_tags
 
@@ -911,7 +887,7 @@ Arguments:
 - `resourceArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#describetagsresponsetypedef).
+[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
 ### describe_virtual_gateways
 
@@ -921,8 +897,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.describe_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways)
 
-Returns
-[VirtualGatewaysTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualgatewaystypedef).
+Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
 
 ### describe_virtual_interfaces
 
@@ -937,8 +912,7 @@ Arguments:
 - `connectionId`: `str`
 - `virtualInterfaceId`: `str`
 
-Returns
-[VirtualInterfacesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacestypedef).
+Returns [VirtualInterfacesTypeDef](./type_defs.md#virtualinterfacestypedef).
 
 ### disassociate_connection_from_lag
 
@@ -953,8 +927,7 @@ Arguments:
 - `connectionId`: `str` *(required)*
 - `lagId`: `str` *(required)*
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### disassociate_mac_sec_key
 
@@ -970,7 +943,7 @@ Arguments:
 - `secretARN`: `str` *(required)*
 
 Returns
-[DisassociateMacSecKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#disassociatemacseckeyresponsetypedef).
+[DisassociateMacSecKeyResponseTypeDef](./type_defs.md#disassociatemacseckeyresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1007,7 +980,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualInterfaceTestHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#listvirtualinterfacetesthistoryresponsetypedef).
+[ListVirtualInterfaceTestHistoryResponseTypeDef](./type_defs.md#listvirtualinterfacetesthistoryresponsetypedef).
 
 ### start_bgp_failover_test
 
@@ -1024,7 +997,7 @@ Arguments:
 - `testDurationInMinutes`: `int`
 
 Returns
-[StartBgpFailoverTestResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#startbgpfailovertestresponsetypedef).
+[StartBgpFailoverTestResponseTypeDef](./type_defs.md#startbgpfailovertestresponsetypedef).
 
 ### stop_bgp_failover_test
 
@@ -1039,7 +1012,7 @@ Arguments:
 - `virtualInterfaceId`: `str` *(required)*
 
 Returns
-[StopBgpFailoverTestResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#stopbgpfailovertestresponsetypedef).
+[StopBgpFailoverTestResponseTypeDef](./type_defs.md#stopbgpfailovertestresponsetypedef).
 
 ### tag_resource
 
@@ -1051,9 +1024,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1084,8 +1055,7 @@ Arguments:
 - `connectionName`: `str`
 - `encryptionMode`: `str`
 
-Returns
-[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef).
+Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
 
 ### update_direct_connect_gateway_association
 
@@ -1100,12 +1070,12 @@ Arguments:
 
 - `associationId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
-[UpdateDirectConnectGatewayAssociationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#updatedirectconnectgatewayassociationresulttypedef).
+[UpdateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#updatedirectconnectgatewayassociationresulttypedef).
 
 ### update_lag
 
@@ -1121,8 +1091,7 @@ Arguments:
 - `minimumLinks`: `int`
 - `encryptionMode`: `str`
 
-Returns
-[LagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#lagtypedef).
+Returns [LagTypeDef](./type_defs.md#lagtypedef).
 
 ### update_virtual_interface_attributes
 
@@ -1137,8 +1106,7 @@ Arguments:
 - `virtualInterfaceId`: `str` *(required)*
 - `mtu`: `int`
 
-Returns
-[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef).
+Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
 
 ### get_paginator
 

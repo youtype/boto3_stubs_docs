@@ -1,6 +1,6 @@
 # Paginators for boto3 WorkDocs module
 
-> [Index](../README.md) > [WorkDocs](./README.md) > Paginators
+> [Index](..) > [WorkDocs](.) > Paginators
 
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
@@ -46,10 +46,10 @@ Arguments for `DescribeActivitiesPaginator.paginate` method:
 - `UserId`: `str`
 - `IncludeIndirectActivities`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeActivitiesPaginator.paginate` returns
-`Iterator`\[[DescribeActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeactivitiesresponsetypedef)\].
+`Iterator`\[[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef)\].
 
 ## DescribeCommentsPaginator
 
@@ -74,10 +74,10 @@ Arguments for `DescribeCommentsPaginator.paginate` method:
 - `VersionId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCommentsPaginator.paginate` returns
-`Iterator`\[[DescribeCommentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describecommentsresponsetypedef)\].
+`Iterator`\[[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef)\].
 
 ## DescribeDocumentVersionsPaginator
 
@@ -103,10 +103,10 @@ Arguments for `DescribeDocumentVersionsPaginator.paginate` method:
 - `Include`: `str`
 - `Fields`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDocumentVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeDocumentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describedocumentversionsresponsetypedef)\].
+`Iterator`\[[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef)\].
 
 ## DescribeFolderContentsPaginator
 
@@ -129,18 +129,15 @@ Arguments for `DescribeFolderContentsPaginator.paginate` method:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
-- `Sort`:
-  [ResourceSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcesorttype)
-- `Order`:
-  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
-- `Type`:
-  [FolderContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#foldercontenttype)
+- `Sort`: [ResourceSortType](./literals.md#resourcesorttype)
+- `Order`: [OrderType](./literals.md#ordertype)
+- `Type`: [FolderContentType](./literals.md#foldercontenttype)
 - `Include`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFolderContentsPaginator.paginate` returns
-`Iterator`\[[DescribeFolderContentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describefoldercontentsresponsetypedef)\].
+`Iterator`\[[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef)\].
 
 ## DescribeGroupsPaginator
 
@@ -165,10 +162,10 @@ Arguments for `DescribeGroupsPaginator.paginate` method:
 - `AuthenticationToken`: `str`
 - `OrganizationId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describegroupsresponsetypedef)\].
+`Iterator`\[[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef)\].
 
 ## DescribeNotificationSubscriptionsPaginator
 
@@ -191,10 +188,10 @@ Arguments for `DescribeNotificationSubscriptionsPaginator.paginate` method:
 
 - `OrganizationId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationSubscriptionsPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describenotificationsubscriptionsresponsetypedef)\].
+`Iterator`\[[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef)\].
 
 ## DescribeResourcePermissionsPaginator
 
@@ -219,10 +216,10 @@ Arguments for `DescribeResourcePermissionsPaginator.paginate` method:
 - `AuthenticationToken`: `str`
 - `PrincipalId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourcePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeResourcePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeresourcepermissionsresponsetypedef)\].
+`Iterator`\[[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef)\].
 
 ## DescribeRootFoldersPaginator
 
@@ -245,10 +242,10 @@ Arguments for `DescribeRootFoldersPaginator.paginate` method:
 
 - `AuthenticationToken`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRootFoldersPaginator.paginate` returns
-`Iterator`\[[DescribeRootFoldersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describerootfoldersresponsetypedef)\].
+`Iterator`\[[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -273,15 +270,12 @@ Arguments for `DescribeUsersPaginator.paginate` method:
 - `OrganizationId`: `str`
 - `UserIds`: `str`
 - `Query`: `str`
-- `Include`:
-  [UserFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#userfiltertype)
-- `Order`:
-  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
-- `Sort`:
-  [UserSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usersorttype)
+- `Include`: [UserFilterType](./literals.md#userfiltertype)
+- `Order`: [OrderType](./literals.md#ordertype)
+- `Sort`: [UserSortType](./literals.md#usersorttype)
 - `Fields`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeusersresponsetypedef)\].
+`Iterator`\[[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef)\].

@@ -1,6 +1,6 @@
 # MarketplaceCommerceAnalyticsClient for boto3 MarketplaceCommerceAnalytics module
 
-> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) >
+> [Index](..) > [MarketplaceCommerceAnalytics](.) >
 > MarketplaceCommerceAnalyticsClient
 
 Auto-generated documentation for
@@ -76,9 +76,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `dataSetType`:
-  [DataSetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplacecommerceanalytics/literals.html#datasettype)
-  *(required)*
+- `dataSetType`: [DataSetType](./literals.md#datasettype) *(required)*
 - `dataSetPublicationDate`: `datetime` *(required)*
 - `roleNameArn`: `str` *(required)*
 - `destinationS3BucketName`: `str` *(required)*
@@ -87,7 +85,7 @@ Arguments:
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GenerateDataSetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplacecommerceanalytics/type_defs.html#generatedatasetresulttypedef).
+[GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
 
 ### generate_presigned_url
 
@@ -117,8 +115,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `dataSetType`:
-  [SupportDataSetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplacecommerceanalytics/literals.html#supportdatasettype)
+- `dataSetType`: [SupportDataSetType](./literals.md#supportdatasettype)
   *(required)*
 - `fromDate`: `datetime` *(required)*
 - `roleNameArn`: `str` *(required)*
@@ -128,4 +125,4 @@ Arguments:
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSupportDataExportResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplacecommerceanalytics/type_defs.html#startsupportdataexportresulttypedef).
+[StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef).

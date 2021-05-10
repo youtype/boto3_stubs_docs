@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MediaConvert module
 
-> [Index](../README.md) > [MediaConvert](./README.md) > Structures
+> [Index](..) > [MediaConvert](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
@@ -146,7 +146,7 @@ type annotations stubs module
   - [ReservationPlanSettingsTypeDef](#reservationplansettingstypedef)
   - [ReservationPlanTypeDef](#reservationplantypedef)
   - [ResourceTagsTypeDef](#resourcetagstypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DestinationAccessControlTypeDef](#s3destinationaccesscontroltypedef)
   - [S3DestinationSettingsTypeDef](#s3destinationsettingstypedef)
   - [S3EncryptionSettingsTypeDef](#s3encryptionsettingstypedef)
@@ -186,21 +186,15 @@ from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef
 Optional fields:
 
 - `AudioDescriptionBroadcasterMix`:
-  [AacAudioDescriptionBroadcasterMix](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aacaudiodescriptionbroadcastermix)
+  [AacAudioDescriptionBroadcasterMix](./literals.md#aacaudiodescriptionbroadcastermix)
 - `Bitrate`: `int`
-- `CodecProfile`:
-  [AacCodecProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aaccodecprofile)
-- `CodingMode`:
-  [AacCodingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aaccodingmode)
-- `RateControlMode`:
-  [AacRateControlMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aacratecontrolmode)
-- `RawFormat`:
-  [AacRawFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aacrawformat)
+- `CodecProfile`: [AacCodecProfile](./literals.md#aaccodecprofile)
+- `CodingMode`: [AacCodingMode](./literals.md#aaccodingmode)
+- `RateControlMode`: [AacRateControlMode](./literals.md#aacratecontrolmode)
+- `RawFormat`: [AacRawFormat](./literals.md#aacrawformat)
 - `SampleRate`: `int`
-- `Specification`:
-  [AacSpecification](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aacspecification)
-- `VbrQuality`:
-  [AacVbrQuality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#aacvbrquality)
+- `Specification`: [AacSpecification](./literals.md#aacspecification)
+- `VbrQuality`: [AacVbrQuality](./literals.md#aacvbrquality)
 
 ## Ac3SettingsTypeDef
 
@@ -211,21 +205,17 @@ from mypy_boto3_mediaconvert.type_defs import Ac3SettingsTypeDef
 Optional fields:
 
 - `Bitrate`: `int`
-- `BitstreamMode`:
-  [Ac3BitstreamMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3bitstreammode)
-- `CodingMode`:
-  [Ac3CodingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3codingmode)
+- `BitstreamMode`: [Ac3BitstreamMode](./literals.md#ac3bitstreammode)
+- `CodingMode`: [Ac3CodingMode](./literals.md#ac3codingmode)
 - `Dialnorm`: `int`
 - `DynamicRangeCompressionLine`:
-  [Ac3DynamicRangeCompressionLine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3dynamicrangecompressionline)
+  [Ac3DynamicRangeCompressionLine](./literals.md#ac3dynamicrangecompressionline)
 - `DynamicRangeCompressionProfile`:
-  [Ac3DynamicRangeCompressionProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3dynamicrangecompressionprofile)
+  [Ac3DynamicRangeCompressionProfile](./literals.md#ac3dynamicrangecompressionprofile)
 - `DynamicRangeCompressionRf`:
-  [Ac3DynamicRangeCompressionRf](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3dynamicrangecompressionrf)
-- `LfeFilter`:
-  [Ac3LfeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3lfefilter)
-- `MetadataControl`:
-  [Ac3MetadataControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ac3metadatacontrol)
+  [Ac3DynamicRangeCompressionRf](./literals.md#ac3dynamicrangecompressionrf)
+- `LfeFilter`: [Ac3LfeFilter](./literals.md#ac3lfefilter)
+- `MetadataControl`: [Ac3MetadataControl](./literals.md#ac3metadatacontrol)
 - `SampleRate`: `int`
 
 ## AccelerationSettingsTypeDef
@@ -236,8 +226,7 @@ from mypy_boto3_mediaconvert.type_defs import AccelerationSettingsTypeDef
 
 Required fields:
 
-- `Mode`:
-  [AccelerationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#accelerationmode)
+- `Mode`: [AccelerationMode](./literals.md#accelerationmode)
 
 ## AiffSettingsTypeDef
 
@@ -260,10 +249,10 @@ from mypy_boto3_mediaconvert.type_defs import AncillarySourceSettingsTypeDef
 Optional fields:
 
 - `Convert608To708`:
-  [AncillaryConvert608To708](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ancillaryconvert608to708)
+  [AncillaryConvert608To708](./literals.md#ancillaryconvert608to708)
 - `SourceAncillaryChannelNumber`: `int`
 - `TerminateCaptions`:
-  [AncillaryTerminateCaptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ancillaryterminatecaptions)
+  [AncillaryTerminateCaptions](./literals.md#ancillaryterminatecaptions)
 
 ## AudioChannelTaggingSettingsTypeDef
 
@@ -273,8 +262,7 @@ from mypy_boto3_mediaconvert.type_defs import AudioChannelTaggingSettingsTypeDef
 
 Optional fields:
 
-- `ChannelTag`:
-  [AudioChannelTag](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audiochanneltag)
+- `ChannelTag`: [AudioChannelTag](./literals.md#audiochanneltag)
 
 ## AudioCodecSettingsTypeDef
 
@@ -284,28 +272,18 @@ from mypy_boto3_mediaconvert.type_defs import AudioCodecSettingsTypeDef
 
 Optional fields:
 
-- `AacSettings`:
-  [AacSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#aacsettingstypedef)
-- `Ac3Settings`:
-  [Ac3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#ac3settingstypedef)
-- `AiffSettings`:
-  [AiffSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#aiffsettingstypedef)
-- `Codec`:
-  [AudioCodec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audiocodec)
+- `AacSettings`: [AacSettingsTypeDef](./type_defs.md#aacsettingstypedef)
+- `Ac3Settings`: [Ac3SettingsTypeDef](./type_defs.md#ac3settingstypedef)
+- `AiffSettings`: [AiffSettingsTypeDef](./type_defs.md#aiffsettingstypedef)
+- `Codec`: [AudioCodec](./literals.md#audiocodec)
 - `Eac3AtmosSettings`:
-  [Eac3AtmosSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#eac3atmossettingstypedef)
-- `Eac3Settings`:
-  [Eac3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#eac3settingstypedef)
-- `Mp2Settings`:
-  [Mp2SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mp2settingstypedef)
-- `Mp3Settings`:
-  [Mp3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mp3settingstypedef)
-- `OpusSettings`:
-  [OpusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#opussettingstypedef)
-- `VorbisSettings`:
-  [VorbisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#vorbissettingstypedef)
-- `WavSettings`:
-  [WavSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#wavsettingstypedef)
+  [Eac3AtmosSettingsTypeDef](./type_defs.md#eac3atmossettingstypedef)
+- `Eac3Settings`: [Eac3SettingsTypeDef](./type_defs.md#eac3settingstypedef)
+- `Mp2Settings`: [Mp2SettingsTypeDef](./type_defs.md#mp2settingstypedef)
+- `Mp3Settings`: [Mp3SettingsTypeDef](./type_defs.md#mp3settingstypedef)
+- `OpusSettings`: [OpusSettingsTypeDef](./type_defs.md#opussettingstypedef)
+- `VorbisSettings`: [VorbisSettingsTypeDef](./type_defs.md#vorbissettingstypedef)
+- `WavSettings`: [WavSettingsTypeDef](./type_defs.md#wavsettingstypedef)
 
 ## AudioDescriptionTypeDef
 
@@ -316,22 +294,19 @@ from mypy_boto3_mediaconvert.type_defs import AudioDescriptionTypeDef
 Optional fields:
 
 - `AudioChannelTaggingSettings`:
-  [AudioChannelTaggingSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audiochanneltaggingsettingstypedef)
+  [AudioChannelTaggingSettingsTypeDef](./type_defs.md#audiochanneltaggingsettingstypedef)
 - `AudioNormalizationSettings`:
-  [AudioNormalizationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audionormalizationsettingstypedef)
+  [AudioNormalizationSettingsTypeDef](./type_defs.md#audionormalizationsettingstypedef)
 - `AudioSourceName`: `str`
 - `AudioType`: `int`
-- `AudioTypeControl`:
-  [AudioTypeControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audiotypecontrol)
+- `AudioTypeControl`: [AudioTypeControl](./literals.md#audiotypecontrol)
 - `CodecSettings`:
-  [AudioCodecSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audiocodecsettingstypedef)
+  [AudioCodecSettingsTypeDef](./type_defs.md#audiocodecsettingstypedef)
 - `CustomLanguageCode`: `str`
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#languagecode)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LanguageCodeControl`:
-  [AudioLanguageCodeControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audiolanguagecodecontrol)
-- `RemixSettings`:
-  [RemixSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#remixsettingstypedef)
+  [AudioLanguageCodeControl](./literals.md#audiolanguagecodecontrol)
+- `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
 - `StreamName`: `str`
 
 ## AudioNormalizationSettingsTypeDef
@@ -343,14 +318,14 @@ from mypy_boto3_mediaconvert.type_defs import AudioNormalizationSettingsTypeDef
 Optional fields:
 
 - `Algorithm`:
-  [AudioNormalizationAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audionormalizationalgorithm)
+  [AudioNormalizationAlgorithm](./literals.md#audionormalizationalgorithm)
 - `AlgorithmControl`:
-  [AudioNormalizationAlgorithmControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audionormalizationalgorithmcontrol)
+  [AudioNormalizationAlgorithmControl](./literals.md#audionormalizationalgorithmcontrol)
 - `CorrectionGateLevel`: `int`
 - `LoudnessLogging`:
-  [AudioNormalizationLoudnessLogging](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audionormalizationloudnesslogging)
+  [AudioNormalizationLoudnessLogging](./literals.md#audionormalizationloudnesslogging)
 - `PeakCalculation`:
-  [AudioNormalizationPeakCalculation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audionormalizationpeakcalculation)
+  [AudioNormalizationPeakCalculation](./literals.md#audionormalizationpeakcalculation)
 - `TargetLkfs`: `float`
 
 ## AudioSelectorGroupTypeDef
@@ -373,17 +348,14 @@ Optional fields:
 
 - `CustomLanguageCode`: `str`
 - `DefaultSelection`:
-  [AudioDefaultSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audiodefaultselection)
+  [AudioDefaultSelection](./literals.md#audiodefaultselection)
 - `ExternalAudioFileInput`: `str`
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#languagecode)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `Offset`: `int`
 - `Pids`: `List`\[`int`\]
 - `ProgramSelection`: `int`
-- `RemixSettings`:
-  [RemixSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#remixsettingstypedef)
-- `SelectorType`:
-  [AudioSelectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#audioselectortype)
+- `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
+- `SelectorType`: [AudioSelectorType](./literals.md#audioselectortype)
 - `Tracks`: `List`\[`int`\]
 
 ## AutomatedAbrSettingsTypeDef
@@ -407,7 +379,7 @@ from mypy_boto3_mediaconvert.type_defs import AutomatedEncodingSettingsTypeDef
 Optional fields:
 
 - `AbrSettings`:
-  [AutomatedAbrSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#automatedabrsettingstypedef)
+  [AutomatedAbrSettingsTypeDef](./type_defs.md#automatedabrsettingstypedef)
 
 ## Av1QvbrSettingsTypeDef
 
@@ -429,22 +401,21 @@ from mypy_boto3_mediaconvert.type_defs import Av1SettingsTypeDef
 Optional fields:
 
 - `AdaptiveQuantization`:
-  [Av1AdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#av1adaptivequantization)
-- `FramerateControl`:
-  [Av1FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#av1frameratecontrol)
+  [Av1AdaptiveQuantization](./literals.md#av1adaptivequantization)
+- `FramerateControl`: [Av1FramerateControl](./literals.md#av1frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [Av1FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#av1framerateconversionalgorithm)
+  [Av1FramerateConversionAlgorithm](./literals.md#av1framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
 - `GopSize`: `float`
 - `MaxBitrate`: `int`
 - `NumberBFramesBetweenReferenceFrames`: `int`
-- `QvbrSettings`:
-  [Av1QvbrSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#av1qvbrsettingstypedef)
-- `RateControlMode`: `Literal['QVBR']`
+- `QvbrSettings`: [Av1QvbrSettingsTypeDef](./type_defs.md#av1qvbrsettingstypedef)
+- `RateControlMode`: `Literal['QVBR']` (see
+  [Av1RateControlMode](./literals.md#av1ratecontrolmode))
 - `Slices`: `int`
 - `SpatialAdaptiveQuantization`:
-  [Av1SpatialAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#av1spatialadaptivequantization)
+  [Av1SpatialAdaptiveQuantization](./literals.md#av1spatialadaptivequantization)
 
 ## AvailBlankingTypeDef
 
@@ -464,24 +435,20 @@ from mypy_boto3_mediaconvert.type_defs import AvcIntraSettingsTypeDef
 
 Optional fields:
 
-- `AvcIntraClass`:
-  [AvcIntraClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintraclass)
+- `AvcIntraClass`: [AvcIntraClass](./literals.md#avcintraclass)
 - `AvcIntraUhdSettings`:
-  [AvcIntraUhdSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#avcintrauhdsettingstypedef)
+  [AvcIntraUhdSettingsTypeDef](./type_defs.md#avcintrauhdsettingstypedef)
 - `FramerateControl`:
-  [AvcIntraFramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintraframeratecontrol)
+  [AvcIntraFramerateControl](./literals.md#avcintraframeratecontrol)
 - `FramerateConversionAlgorithm`:
-  [AvcIntraFramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintraframerateconversionalgorithm)
+  [AvcIntraFramerateConversionAlgorithm](./literals.md#avcintraframerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
-- `InterlaceMode`:
-  [AvcIntraInterlaceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintrainterlacemode)
+- `InterlaceMode`: [AvcIntraInterlaceMode](./literals.md#avcintrainterlacemode)
 - `ScanTypeConversionMode`:
-  [AvcIntraScanTypeConversionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintrascantypeconversionmode)
-- `SlowPal`:
-  [AvcIntraSlowPal](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintraslowpal)
-- `Telecine`:
-  [AvcIntraTelecine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintratelecine)
+  [AvcIntraScanTypeConversionMode](./literals.md#avcintrascantypeconversionmode)
+- `SlowPal`: [AvcIntraSlowPal](./literals.md#avcintraslowpal)
+- `Telecine`: [AvcIntraTelecine](./literals.md#avcintratelecine)
 
 ## AvcIntraUhdSettingsTypeDef
 
@@ -492,7 +459,7 @@ from mypy_boto3_mediaconvert.type_defs import AvcIntraUhdSettingsTypeDef
 Optional fields:
 
 - `QualityTuningLevel`:
-  [AvcIntraUhdQualityTuningLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#avcintrauhdqualitytuninglevel)
+  [AvcIntraUhdQualityTuningLevel](./literals.md#avcintrauhdqualitytuninglevel)
 
 ## BurninDestinationSettingsTypeDef
 
@@ -502,28 +469,25 @@ from mypy_boto3_mediaconvert.type_defs import BurninDestinationSettingsTypeDef
 
 Optional fields:
 
-- `Alignment`:
-  [BurninSubtitleAlignment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#burninsubtitlealignment)
+- `Alignment`: [BurninSubtitleAlignment](./literals.md#burninsubtitlealignment)
 - `BackgroundColor`:
-  [BurninSubtitleBackgroundColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#burninsubtitlebackgroundcolor)
+  [BurninSubtitleBackgroundColor](./literals.md#burninsubtitlebackgroundcolor)
 - `BackgroundOpacity`: `int`
-- `FontColor`:
-  [BurninSubtitleFontColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#burninsubtitlefontcolor)
+- `FontColor`: [BurninSubtitleFontColor](./literals.md#burninsubtitlefontcolor)
 - `FontOpacity`: `int`
 - `FontResolution`: `int`
-- `FontScript`:
-  [FontScript](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#fontscript)
+- `FontScript`: [FontScript](./literals.md#fontscript)
 - `FontSize`: `int`
 - `OutlineColor`:
-  [BurninSubtitleOutlineColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#burninsubtitleoutlinecolor)
+  [BurninSubtitleOutlineColor](./literals.md#burninsubtitleoutlinecolor)
 - `OutlineSize`: `int`
 - `ShadowColor`:
-  [BurninSubtitleShadowColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#burninsubtitleshadowcolor)
+  [BurninSubtitleShadowColor](./literals.md#burninsubtitleshadowcolor)
 - `ShadowOpacity`: `int`
 - `ShadowXOffset`: `int`
 - `ShadowYOffset`: `int`
 - `TeletextSpacing`:
-  [BurninSubtitleTeletextSpacing](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#burninsubtitleteletextspacing)
+  [BurninSubtitleTeletextSpacing](./literals.md#burninsubtitleteletextspacing)
 - `XPosition`: `int`
 - `YPosition`: `int`
 
@@ -537,9 +501,8 @@ Optional fields:
 
 - `CustomLanguageCode`: `str`
 - `DestinationSettings`:
-  [CaptionDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captiondestinationsettingstypedef)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#languagecode)
+  [CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LanguageDescription`: `str`
 
 ## CaptionDescriptionTypeDef
@@ -553,9 +516,8 @@ Optional fields:
 - `CaptionSelectorName`: `str`
 - `CustomLanguageCode`: `str`
 - `DestinationSettings`:
-  [CaptionDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captiondestinationsettingstypedef)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#languagecode)
+  [CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LanguageDescription`: `str`
 
 ## CaptionDestinationSettingsTypeDef
@@ -567,23 +529,23 @@ from mypy_boto3_mediaconvert.type_defs import CaptionDestinationSettingsTypeDef
 Optional fields:
 
 - `BurninDestinationSettings`:
-  [BurninDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#burnindestinationsettingstypedef)
+  [BurninDestinationSettingsTypeDef](./type_defs.md#burnindestinationsettingstypedef)
 - `DestinationType`:
-  [CaptionDestinationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#captiondestinationtype)
+  [CaptionDestinationType](./literals.md#captiondestinationtype)
 - `DvbSubDestinationSettings`:
-  [DvbSubDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dvbsubdestinationsettingstypedef)
+  [DvbSubDestinationSettingsTypeDef](./type_defs.md#dvbsubdestinationsettingstypedef)
 - `EmbeddedDestinationSettings`:
-  [EmbeddedDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#embeddeddestinationsettingstypedef)
+  [EmbeddedDestinationSettingsTypeDef](./type_defs.md#embeddeddestinationsettingstypedef)
 - `ImscDestinationSettings`:
-  [ImscDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#imscdestinationsettingstypedef)
+  [ImscDestinationSettingsTypeDef](./type_defs.md#imscdestinationsettingstypedef)
 - `SccDestinationSettings`:
-  [SccDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#sccdestinationsettingstypedef)
+  [SccDestinationSettingsTypeDef](./type_defs.md#sccdestinationsettingstypedef)
 - `TeletextDestinationSettings`:
-  [TeletextDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#teletextdestinationsettingstypedef)
+  [TeletextDestinationSettingsTypeDef](./type_defs.md#teletextdestinationsettingstypedef)
 - `TtmlDestinationSettings`:
-  [TtmlDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#ttmldestinationsettingstypedef)
+  [TtmlDestinationSettingsTypeDef](./type_defs.md#ttmldestinationsettingstypedef)
 - `WebvttDestinationSettings`:
-  [WebvttDestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#webvttdestinationsettingstypedef)
+  [WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef)
 
 ## CaptionSelectorTypeDef
 
@@ -594,10 +556,9 @@ from mypy_boto3_mediaconvert.type_defs import CaptionSelectorTypeDef
 Optional fields:
 
 - `CustomLanguageCode`: `str`
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#languagecode)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `SourceSettings`:
-  [CaptionSourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captionsourcesettingstypedef)
+  [CaptionSourceSettingsTypeDef](./type_defs.md#captionsourcesettingstypedef)
 
 ## CaptionSourceFramerateTypeDef
 
@@ -619,19 +580,18 @@ from mypy_boto3_mediaconvert.type_defs import CaptionSourceSettingsTypeDef
 Optional fields:
 
 - `AncillarySourceSettings`:
-  [AncillarySourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#ancillarysourcesettingstypedef)
+  [AncillarySourceSettingsTypeDef](./type_defs.md#ancillarysourcesettingstypedef)
 - `DvbSubSourceSettings`:
-  [DvbSubSourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dvbsubsourcesettingstypedef)
+  [DvbSubSourceSettingsTypeDef](./type_defs.md#dvbsubsourcesettingstypedef)
 - `EmbeddedSourceSettings`:
-  [EmbeddedSourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#embeddedsourcesettingstypedef)
+  [EmbeddedSourceSettingsTypeDef](./type_defs.md#embeddedsourcesettingstypedef)
 - `FileSourceSettings`:
-  [FileSourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#filesourcesettingstypedef)
-- `SourceType`:
-  [CaptionSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#captionsourcetype)
+  [FileSourceSettingsTypeDef](./type_defs.md#filesourcesettingstypedef)
+- `SourceType`: [CaptionSourceType](./literals.md#captionsourcetype)
 - `TeletextSourceSettings`:
-  [TeletextSourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#teletextsourcesettingstypedef)
+  [TeletextSourceSettingsTypeDef](./type_defs.md#teletextsourcesettingstypedef)
 - `TrackSourceSettings`:
-  [TrackSourceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#tracksourcesettingstypedef)
+  [TrackSourceSettingsTypeDef](./type_defs.md#tracksourcesettingstypedef)
 
 ## ChannelMappingTypeDef
 
@@ -642,7 +602,7 @@ from mypy_boto3_mediaconvert.type_defs import ChannelMappingTypeDef
 Optional fields:
 
 - `OutputChannels`:
-  `List`\[[OutputChannelMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputchannelmappingtypedef)\]
+  `List`\[[OutputChannelMappingTypeDef](./type_defs.md#outputchannelmappingtypedef)\]
 
 ## CmafAdditionalManifestTypeDef
 
@@ -664,16 +624,14 @@ from mypy_boto3_mediaconvert.type_defs import CmafEncryptionSettingsTypeDef
 Optional fields:
 
 - `ConstantInitializationVector`: `str`
-- `EncryptionMethod`:
-  [CmafEncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafencryptiontype)
+- `EncryptionMethod`: [CmafEncryptionType](./literals.md#cmafencryptiontype)
 - `InitializationVectorInManifest`:
-  [CmafInitializationVectorInManifest](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafinitializationvectorinmanifest)
+  [CmafInitializationVectorInManifest](./literals.md#cmafinitializationvectorinmanifest)
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderCmafTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#spekekeyprovidercmaftypedef)
+  [SpekeKeyProviderCmafTypeDef](./type_defs.md#spekekeyprovidercmaftypedef)
 - `StaticKeyProvider`:
-  [StaticKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#statickeyprovidertypedef)
-- `Type`:
-  [CmafKeyProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafkeyprovidertype)
+  [StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef)
+- `Type`: [CmafKeyProviderType](./literals.md#cmafkeyprovidertype)
 
 ## CmafGroupSettingsTypeDef
 
@@ -684,39 +642,35 @@ from mypy_boto3_mediaconvert.type_defs import CmafGroupSettingsTypeDef
 Optional fields:
 
 - `AdditionalManifests`:
-  `List`\[[CmafAdditionalManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#cmafadditionalmanifesttypedef)\]
+  `List`\[[CmafAdditionalManifestTypeDef](./type_defs.md#cmafadditionalmanifesttypedef)\]
 - `BaseUrl`: `str`
-- `ClientCache`:
-  [CmafClientCache](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafclientcache)
+- `ClientCache`: [CmafClientCache](./literals.md#cmafclientcache)
 - `CodecSpecification`:
-  [CmafCodecSpecification](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafcodecspecification)
+  [CmafCodecSpecification](./literals.md#cmafcodecspecification)
 - `Destination`: `str`
 - `DestinationSettings`:
-  [DestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#destinationsettingstypedef)
+  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
 - `Encryption`:
-  [CmafEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#cmafencryptionsettingstypedef)
+  [CmafEncryptionSettingsTypeDef](./type_defs.md#cmafencryptionsettingstypedef)
 - `FragmentLength`: `int`
 - `ManifestCompression`:
-  [CmafManifestCompression](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafmanifestcompression)
+  [CmafManifestCompression](./literals.md#cmafmanifestcompression)
 - `ManifestDurationFormat`:
-  [CmafManifestDurationFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafmanifestdurationformat)
+  [CmafManifestDurationFormat](./literals.md#cmafmanifestdurationformat)
 - `MinBufferTime`: `int`
 - `MinFinalSegmentLength`: `float`
-- `MpdProfile`:
-  [CmafMpdProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafmpdprofile)
+- `MpdProfile`: [CmafMpdProfile](./literals.md#cmafmpdprofile)
 - `PtsOffsetHandlingForBFrames`:
-  [CmafPtsOffsetHandlingForBFrames](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafptsoffsethandlingforbframes)
-- `SegmentControl`:
-  [CmafSegmentControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafsegmentcontrol)
+  [CmafPtsOffsetHandlingForBFrames](./literals.md#cmafptsoffsethandlingforbframes)
+- `SegmentControl`: [CmafSegmentControl](./literals.md#cmafsegmentcontrol)
 - `SegmentLength`: `int`
 - `StreamInfResolution`:
-  [CmafStreamInfResolution](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafstreaminfresolution)
+  [CmafStreamInfResolution](./literals.md#cmafstreaminfresolution)
 - `WriteDashManifest`:
-  [CmafWriteDASHManifest](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafwritedashmanifest)
-- `WriteHlsManifest`:
-  [CmafWriteHLSManifest](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafwritehlsmanifest)
+  [CmafWriteDASHManifest](./literals.md#cmafwritedashmanifest)
+- `WriteHlsManifest`: [CmafWriteHLSManifest](./literals.md#cmafwritehlsmanifest)
 - `WriteSegmentTimelineInRepresentation`:
-  [CmafWriteSegmentTimelineInRepresentation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmafwritesegmenttimelineinrepresentation)
+  [CmafWriteSegmentTimelineInRepresentation](./literals.md#cmafwritesegmenttimelineinrepresentation)
 
 ## CmfcSettingsTypeDef
 
@@ -726,20 +680,16 @@ from mypy_boto3_mediaconvert.type_defs import CmfcSettingsTypeDef
 
 Optional fields:
 
-- `AudioDuration`:
-  [CmfcAudioDuration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfcaudioduration)
+- `AudioDuration`: [CmfcAudioDuration](./literals.md#cmfcaudioduration)
 - `AudioGroupId`: `str`
 - `AudioRenditionSets`: `str`
-- `AudioTrackType`:
-  [CmfcAudioTrackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfcaudiotracktype)
+- `AudioTrackType`: [CmfcAudioTrackType](./literals.md#cmfcaudiotracktype)
 - `DescriptiveVideoServiceFlag`:
-  [CmfcDescriptiveVideoServiceFlag](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfcdescriptivevideoserviceflag)
+  [CmfcDescriptiveVideoServiceFlag](./literals.md#cmfcdescriptivevideoserviceflag)
 - `IFrameOnlyManifest`:
-  [CmfcIFrameOnlyManifest](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfciframeonlymanifest)
-- `Scte35Esam`:
-  [CmfcScte35Esam](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfcscte35esam)
-- `Scte35Source`:
-  [CmfcScte35Source](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfcscte35source)
+  [CmfcIFrameOnlyManifest](./literals.md#cmfciframeonlymanifest)
+- `Scte35Esam`: [CmfcScte35Esam](./literals.md#cmfcscte35esam)
+- `Scte35Source`: [CmfcScte35Source](./literals.md#cmfcscte35source)
 
 ## ColorCorrectorTypeDef
 
@@ -751,10 +701,9 @@ Optional fields:
 
 - `Brightness`: `int`
 - `ColorSpaceConversion`:
-  [ColorSpaceConversion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#colorspaceconversion)
+  [ColorSpaceConversion](./literals.md#colorspaceconversion)
 - `Contrast`: `int`
-- `Hdr10Metadata`:
-  [Hdr10MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hdr10metadatatypedef)
+- `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
 - `Hue`: `int`
 - `Saturation`: `int`
 
@@ -766,24 +715,15 @@ from mypy_boto3_mediaconvert.type_defs import ContainerSettingsTypeDef
 
 Optional fields:
 
-- `CmfcSettings`:
-  [CmfcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#cmfcsettingstypedef)
-- `Container`:
-  [ContainerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#containertype)
-- `F4vSettings`:
-  [F4vSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#f4vsettingstypedef)
-- `M2tsSettings`:
-  [M2tsSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#m2tssettingstypedef)
-- `M3u8Settings`:
-  [M3u8SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#m3u8settingstypedef)
-- `MovSettings`:
-  [MovSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#movsettingstypedef)
-- `Mp4Settings`:
-  [Mp4SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mp4settingstypedef)
-- `MpdSettings`:
-  [MpdSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mpdsettingstypedef)
-- `MxfSettings`:
-  [MxfSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mxfsettingstypedef)
+- `CmfcSettings`: [CmfcSettingsTypeDef](./type_defs.md#cmfcsettingstypedef)
+- `Container`: [ContainerType](./literals.md#containertype)
+- `F4vSettings`: [F4vSettingsTypeDef](./type_defs.md#f4vsettingstypedef)
+- `M2tsSettings`: [M2tsSettingsTypeDef](./type_defs.md#m2tssettingstypedef)
+- `M3u8Settings`: [M3u8SettingsTypeDef](./type_defs.md#m3u8settingstypedef)
+- `MovSettings`: [MovSettingsTypeDef](./type_defs.md#movsettingstypedef)
+- `Mp4Settings`: [Mp4SettingsTypeDef](./type_defs.md#mp4settingstypedef)
+- `MpdSettings`: [MpdSettingsTypeDef](./type_defs.md#mpdsettingstypedef)
+- `MxfSettings`: [MxfSettingsTypeDef](./type_defs.md#mxfsettingstypedef)
 
 ## CreateJobResponseTypeDef
 
@@ -793,8 +733,7 @@ from mypy_boto3_mediaconvert.type_defs import CreateJobResponseTypeDef
 
 Optional fields:
 
-- `Job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtypedef)
+- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## CreateJobTemplateResponseTypeDef
 
@@ -804,8 +743,7 @@ from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateResponseTypeDef
 
 Optional fields:
 
-- `JobTemplate`:
-  [JobTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatetypedef)
+- `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
 
 ## CreatePresetResponseTypeDef
 
@@ -815,8 +753,7 @@ from mypy_boto3_mediaconvert.type_defs import CreatePresetResponseTypeDef
 
 Optional fields:
 
-- `Preset`:
-  [PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presettypedef)
+- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 
 ## CreateQueueResponseTypeDef
 
@@ -826,8 +763,7 @@ from mypy_boto3_mediaconvert.type_defs import CreateQueueResponseTypeDef
 
 Optional fields:
 
-- `Queue`:
-  [QueueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#queuetypedef)
+- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
 
 ## DashAdditionalManifestTypeDef
 
@@ -849,9 +785,9 @@ from mypy_boto3_mediaconvert.type_defs import DashIsoEncryptionSettingsTypeDef
 Optional fields:
 
 - `PlaybackDeviceCompatibility`:
-  [DashIsoPlaybackDeviceCompatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisoplaybackdevicecompatibility)
+  [DashIsoPlaybackDeviceCompatibility](./literals.md#dashisoplaybackdevicecompatibility)
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
 ## DashIsoGroupSettingsTypeDef
 
@@ -862,29 +798,27 @@ from mypy_boto3_mediaconvert.type_defs import DashIsoGroupSettingsTypeDef
 Optional fields:
 
 - `AdditionalManifests`:
-  `List`\[[DashAdditionalManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dashadditionalmanifesttypedef)\]
+  `List`\[[DashAdditionalManifestTypeDef](./type_defs.md#dashadditionalmanifesttypedef)\]
 - `AudioChannelConfigSchemeIdUri`:
-  [DashIsoGroupAudioChannelConfigSchemeIdUri](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisogroupaudiochannelconfigschemeiduri)
+  [DashIsoGroupAudioChannelConfigSchemeIdUri](./literals.md#dashisogroupaudiochannelconfigschemeiduri)
 - `BaseUrl`: `str`
 - `Destination`: `str`
 - `DestinationSettings`:
-  [DestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#destinationsettingstypedef)
+  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
 - `Encryption`:
-  [DashIsoEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dashisoencryptionsettingstypedef)
+  [DashIsoEncryptionSettingsTypeDef](./type_defs.md#dashisoencryptionsettingstypedef)
 - `FragmentLength`: `int`
 - `HbbtvCompliance`:
-  [DashIsoHbbtvCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisohbbtvcompliance)
+  [DashIsoHbbtvCompliance](./literals.md#dashisohbbtvcompliance)
 - `MinBufferTime`: `int`
 - `MinFinalSegmentLength`: `float`
-- `MpdProfile`:
-  [DashIsoMpdProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisompdprofile)
+- `MpdProfile`: [DashIsoMpdProfile](./literals.md#dashisompdprofile)
 - `PtsOffsetHandlingForBFrames`:
-  [DashIsoPtsOffsetHandlingForBFrames](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisoptsoffsethandlingforbframes)
-- `SegmentControl`:
-  [DashIsoSegmentControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisosegmentcontrol)
+  [DashIsoPtsOffsetHandlingForBFrames](./literals.md#dashisoptsoffsethandlingforbframes)
+- `SegmentControl`: [DashIsoSegmentControl](./literals.md#dashisosegmentcontrol)
 - `SegmentLength`: `int`
 - `WriteSegmentTimelineInRepresentation`:
-  [DashIsoWriteSegmentTimelineInRepresentation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dashisowritesegmenttimelineinrepresentation)
+  [DashIsoWriteSegmentTimelineInRepresentation](./literals.md#dashisowritesegmenttimelineinrepresentation)
 
 ## DeinterlacerTypeDef
 
@@ -894,12 +828,9 @@ from mypy_boto3_mediaconvert.type_defs import DeinterlacerTypeDef
 
 Optional fields:
 
-- `Algorithm`:
-  [DeinterlaceAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#deinterlacealgorithm)
-- `Control`:
-  [DeinterlacerControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#deinterlacercontrol)
-- `Mode`:
-  [DeinterlacerMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#deinterlacermode)
+- `Algorithm`: [DeinterlaceAlgorithm](./literals.md#deinterlacealgorithm)
+- `Control`: [DeinterlacerControl](./literals.md#deinterlacercontrol)
+- `Mode`: [DeinterlacerMode](./literals.md#deinterlacermode)
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -909,8 +840,7 @@ from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseTypeDef
 
 Optional fields:
 
-- `Endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#endpointtypedef)\]
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `NextToken`: `str`
 
 ## DestinationSettingsTypeDef
@@ -922,7 +852,7 @@ from mypy_boto3_mediaconvert.type_defs import DestinationSettingsTypeDef
 Optional fields:
 
 - `S3Settings`:
-  [S3DestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#s3destinationsettingstypedef)
+  [S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef)
 
 ## DolbyVisionLevel6MetadataTypeDef
 
@@ -944,10 +874,10 @@ from mypy_boto3_mediaconvert.type_defs import DolbyVisionTypeDef
 Optional fields:
 
 - `L6Metadata`:
-  [DolbyVisionLevel6MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dolbyvisionlevel6metadatatypedef)
-- `L6Mode`:
-  [DolbyVisionLevel6Mode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dolbyvisionlevel6mode)
-- `Profile`: `Literal['PROFILE_5']`
+  [DolbyVisionLevel6MetadataTypeDef](./type_defs.md#dolbyvisionlevel6metadatatypedef)
+- `L6Mode`: [DolbyVisionLevel6Mode](./literals.md#dolbyvisionlevel6mode)
+- `Profile`: `Literal['PROFILE_5']` (see
+  [DolbyVisionProfile](./literals.md#dolbyvisionprofile))
 
 ## DvbNitSettingsTypeDef
 
@@ -969,8 +899,7 @@ from mypy_boto3_mediaconvert.type_defs import DvbSdtSettingsTypeDef
 
 Optional fields:
 
-- `OutputSdt`:
-  [OutputSdt](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#outputsdt)
+- `OutputSdt`: [OutputSdt](./literals.md#outputsdt)
 - `SdtInterval`: `int`
 - `ServiceName`: `str`
 - `ServiceProviderName`: `str`
@@ -983,35 +912,29 @@ from mypy_boto3_mediaconvert.type_defs import DvbSubDestinationSettingsTypeDef
 
 Optional fields:
 
-- `Alignment`:
-  [DvbSubtitleAlignment](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlealignment)
+- `Alignment`: [DvbSubtitleAlignment](./literals.md#dvbsubtitlealignment)
 - `BackgroundColor`:
-  [DvbSubtitleBackgroundColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlebackgroundcolor)
+  [DvbSubtitleBackgroundColor](./literals.md#dvbsubtitlebackgroundcolor)
 - `BackgroundOpacity`: `int`
-- `DdsHandling`:
-  [DvbddsHandling](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbddshandling)
+- `DdsHandling`: [DvbddsHandling](./literals.md#dvbddshandling)
 - `DdsXCoordinate`: `int`
 - `DdsYCoordinate`: `int`
-- `FontColor`:
-  [DvbSubtitleFontColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlefontcolor)
+- `FontColor`: [DvbSubtitleFontColor](./literals.md#dvbsubtitlefontcolor)
 - `FontOpacity`: `int`
 - `FontResolution`: `int`
-- `FontScript`:
-  [FontScript](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#fontscript)
+- `FontScript`: [FontScript](./literals.md#fontscript)
 - `FontSize`: `int`
 - `Height`: `int`
 - `OutlineColor`:
-  [DvbSubtitleOutlineColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitleoutlinecolor)
+  [DvbSubtitleOutlineColor](./literals.md#dvbsubtitleoutlinecolor)
 - `OutlineSize`: `int`
-- `ShadowColor`:
-  [DvbSubtitleShadowColor](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitleshadowcolor)
+- `ShadowColor`: [DvbSubtitleShadowColor](./literals.md#dvbsubtitleshadowcolor)
 - `ShadowOpacity`: `int`
 - `ShadowXOffset`: `int`
 - `ShadowYOffset`: `int`
-- `SubtitlingType`:
-  [DvbSubtitlingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitlingtype)
+- `SubtitlingType`: [DvbSubtitlingType](./literals.md#dvbsubtitlingtype)
 - `TeletextSpacing`:
-  [DvbSubtitleTeletextSpacing](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dvbsubtitleteletextspacing)
+  [DvbSubtitleTeletextSpacing](./literals.md#dvbsubtitleteletextspacing)
 - `Width`: `int`
 - `XPosition`: `int`
 - `YPosition`: `int`
@@ -1045,26 +968,26 @@ from mypy_boto3_mediaconvert.type_defs import Eac3AtmosSettingsTypeDef
 Optional fields:
 
 - `Bitrate`: `int`
-- `BitstreamMode`: `Literal['COMPLETE_MAIN']`
-- `CodingMode`: `Literal['CODING_MODE_9_1_6']`
+- `BitstreamMode`: `Literal['COMPLETE_MAIN']` (see
+  [Eac3AtmosBitstreamMode](./literals.md#eac3atmosbitstreammode))
+- `CodingMode`: `Literal['CODING_MODE_9_1_6']` (see
+  [Eac3AtmosCodingMode](./literals.md#eac3atmoscodingmode))
 - `DialogueIntelligence`:
-  [Eac3AtmosDialogueIntelligence](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3atmosdialogueintelligence)
+  [Eac3AtmosDialogueIntelligence](./literals.md#eac3atmosdialogueintelligence)
 - `DynamicRangeCompressionLine`:
-  [Eac3AtmosDynamicRangeCompressionLine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3atmosdynamicrangecompressionline)
+  [Eac3AtmosDynamicRangeCompressionLine](./literals.md#eac3atmosdynamicrangecompressionline)
 - `DynamicRangeCompressionRf`:
-  [Eac3AtmosDynamicRangeCompressionRf](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3atmosdynamicrangecompressionrf)
+  [Eac3AtmosDynamicRangeCompressionRf](./literals.md#eac3atmosdynamicrangecompressionrf)
 - `LoRoCenterMixLevel`: `float`
 - `LoRoSurroundMixLevel`: `float`
 - `LtRtCenterMixLevel`: `float`
 - `LtRtSurroundMixLevel`: `float`
-- `MeteringMode`:
-  [Eac3AtmosMeteringMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3atmosmeteringmode)
+- `MeteringMode`: [Eac3AtmosMeteringMode](./literals.md#eac3atmosmeteringmode)
 - `SampleRate`: `int`
 - `SpeechThreshold`: `int`
-- `StereoDownmix`:
-  [Eac3AtmosStereoDownmix](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3atmosstereodownmix)
+- `StereoDownmix`: [Eac3AtmosStereoDownmix](./literals.md#eac3atmosstereodownmix)
 - `SurroundExMode`:
-  [Eac3AtmosSurroundExMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3atmossurroundexmode)
+  [Eac3AtmosSurroundExMode](./literals.md#eac3atmossurroundexmode)
 
 ## Eac3SettingsTypeDef
 
@@ -1075,40 +998,30 @@ from mypy_boto3_mediaconvert.type_defs import Eac3SettingsTypeDef
 Optional fields:
 
 - `AttenuationControl`:
-  [Eac3AttenuationControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3attenuationcontrol)
+  [Eac3AttenuationControl](./literals.md#eac3attenuationcontrol)
 - `Bitrate`: `int`
-- `BitstreamMode`:
-  [Eac3BitstreamMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3bitstreammode)
-- `CodingMode`:
-  [Eac3CodingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3codingmode)
-- `DcFilter`:
-  [Eac3DcFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3dcfilter)
+- `BitstreamMode`: [Eac3BitstreamMode](./literals.md#eac3bitstreammode)
+- `CodingMode`: [Eac3CodingMode](./literals.md#eac3codingmode)
+- `DcFilter`: [Eac3DcFilter](./literals.md#eac3dcfilter)
 - `Dialnorm`: `int`
 - `DynamicRangeCompressionLine`:
-  [Eac3DynamicRangeCompressionLine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3dynamicrangecompressionline)
+  [Eac3DynamicRangeCompressionLine](./literals.md#eac3dynamicrangecompressionline)
 - `DynamicRangeCompressionRf`:
-  [Eac3DynamicRangeCompressionRf](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3dynamicrangecompressionrf)
-- `LfeControl`:
-  [Eac3LfeControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3lfecontrol)
-- `LfeFilter`:
-  [Eac3LfeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3lfefilter)
+  [Eac3DynamicRangeCompressionRf](./literals.md#eac3dynamicrangecompressionrf)
+- `LfeControl`: [Eac3LfeControl](./literals.md#eac3lfecontrol)
+- `LfeFilter`: [Eac3LfeFilter](./literals.md#eac3lfefilter)
 - `LoRoCenterMixLevel`: `float`
 - `LoRoSurroundMixLevel`: `float`
 - `LtRtCenterMixLevel`: `float`
 - `LtRtSurroundMixLevel`: `float`
-- `MetadataControl`:
-  [Eac3MetadataControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3metadatacontrol)
+- `MetadataControl`: [Eac3MetadataControl](./literals.md#eac3metadatacontrol)
 - `PassthroughControl`:
-  [Eac3PassthroughControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3passthroughcontrol)
-- `PhaseControl`:
-  [Eac3PhaseControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3phasecontrol)
+  [Eac3PassthroughControl](./literals.md#eac3passthroughcontrol)
+- `PhaseControl`: [Eac3PhaseControl](./literals.md#eac3phasecontrol)
 - `SampleRate`: `int`
-- `StereoDownmix`:
-  [Eac3StereoDownmix](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3stereodownmix)
-- `SurroundExMode`:
-  [Eac3SurroundExMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3surroundexmode)
-- `SurroundMode`:
-  [Eac3SurroundMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#eac3surroundmode)
+- `StereoDownmix`: [Eac3StereoDownmix](./literals.md#eac3stereodownmix)
+- `SurroundExMode`: [Eac3SurroundExMode](./literals.md#eac3surroundexmode)
+- `SurroundMode`: [Eac3SurroundMode](./literals.md#eac3surroundmode)
 
 ## EmbeddedDestinationSettingsTypeDef
 
@@ -1130,11 +1043,11 @@ from mypy_boto3_mediaconvert.type_defs import EmbeddedSourceSettingsTypeDef
 Optional fields:
 
 - `Convert608To708`:
-  [EmbeddedConvert608To708](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#embeddedconvert608to708)
+  [EmbeddedConvert608To708](./literals.md#embeddedconvert608to708)
 - `Source608ChannelNumber`: `int`
 - `Source608TrackNumber`: `int`
 - `TerminateCaptions`:
-  [EmbeddedTerminateCaptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#embeddedterminatecaptions)
+  [EmbeddedTerminateCaptions](./literals.md#embeddedterminatecaptions)
 
 ## EndpointTypeDef
 
@@ -1165,10 +1078,10 @@ from mypy_boto3_mediaconvert.type_defs import EsamSettingsTypeDef
 Optional fields:
 
 - `ManifestConfirmConditionNotification`:
-  [EsamManifestConfirmConditionNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#esammanifestconfirmconditionnotificationtypedef)
+  [EsamManifestConfirmConditionNotificationTypeDef](./type_defs.md#esammanifestconfirmconditionnotificationtypedef)
 - `ResponseSignalPreroll`: `int`
 - `SignalProcessingNotification`:
-  [EsamSignalProcessingNotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#esamsignalprocessingnotificationtypedef)
+  [EsamSignalProcessingNotificationTypeDef](./type_defs.md#esamsignalprocessingnotificationtypedef)
 
 ## EsamSignalProcessingNotificationTypeDef
 
@@ -1188,8 +1101,7 @@ from mypy_boto3_mediaconvert.type_defs import F4vSettingsTypeDef
 
 Optional fields:
 
-- `MoovPlacement`:
-  [F4vMoovPlacement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#f4vmoovplacement)
+- `MoovPlacement`: [F4vMoovPlacement](./literals.md#f4vmoovplacement)
 
 ## FileGroupSettingsTypeDef
 
@@ -1201,7 +1113,7 @@ Optional fields:
 
 - `Destination`: `str`
 - `DestinationSettings`:
-  [DestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#destinationsettingstypedef)
+  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
 
 ## FileSourceSettingsTypeDef
 
@@ -1212,9 +1124,9 @@ from mypy_boto3_mediaconvert.type_defs import FileSourceSettingsTypeDef
 Optional fields:
 
 - `Convert608To708`:
-  [FileSourceConvert608To708](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#filesourceconvert608to708)
+  [FileSourceConvert608To708](./literals.md#filesourceconvert608to708)
 - `Framerate`:
-  [CaptionSourceFramerateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captionsourceframeratetypedef)
+  [CaptionSourceFramerateTypeDef](./type_defs.md#captionsourceframeratetypedef)
 - `SourceFile`: `str`
 - `TimeDelta`: `int`
 
@@ -1239,8 +1151,7 @@ from mypy_boto3_mediaconvert.type_defs import GetJobResponseTypeDef
 
 Optional fields:
 
-- `Job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtypedef)
+- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## GetJobTemplateResponseTypeDef
 
@@ -1250,8 +1161,7 @@ from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseTypeDef
 
 Optional fields:
 
-- `JobTemplate`:
-  [JobTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatetypedef)
+- `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
 
 ## GetPresetResponseTypeDef
 
@@ -1261,8 +1171,7 @@ from mypy_boto3_mediaconvert.type_defs import GetPresetResponseTypeDef
 
 Optional fields:
 
-- `Preset`:
-  [PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presettypedef)
+- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 
 ## GetQueueResponseTypeDef
 
@@ -1272,8 +1181,7 @@ from mypy_boto3_mediaconvert.type_defs import GetQueueResponseTypeDef
 
 Optional fields:
 
-- `Queue`:
-  [QueueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#queuetypedef)
+- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
 
 ## H264QvbrSettingsTypeDef
 
@@ -1296,70 +1204,55 @@ from mypy_boto3_mediaconvert.type_defs import H264SettingsTypeDef
 Optional fields:
 
 - `AdaptiveQuantization`:
-  [H264AdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264adaptivequantization)
+  [H264AdaptiveQuantization](./literals.md#h264adaptivequantization)
 - `Bitrate`: `int`
-- `CodecLevel`:
-  [H264CodecLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264codeclevel)
-- `CodecProfile`:
-  [H264CodecProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264codecprofile)
-- `DynamicSubGop`:
-  [H264DynamicSubGop](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264dynamicsubgop)
-- `EntropyEncoding`:
-  [H264EntropyEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264entropyencoding)
-- `FieldEncoding`:
-  [H264FieldEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264fieldencoding)
+- `CodecLevel`: [H264CodecLevel](./literals.md#h264codeclevel)
+- `CodecProfile`: [H264CodecProfile](./literals.md#h264codecprofile)
+- `DynamicSubGop`: [H264DynamicSubGop](./literals.md#h264dynamicsubgop)
+- `EntropyEncoding`: [H264EntropyEncoding](./literals.md#h264entropyencoding)
+- `FieldEncoding`: [H264FieldEncoding](./literals.md#h264fieldencoding)
 - `FlickerAdaptiveQuantization`:
-  [H264FlickerAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264flickeradaptivequantization)
-- `FramerateControl`:
-  [H264FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264frameratecontrol)
+  [H264FlickerAdaptiveQuantization](./literals.md#h264flickeradaptivequantization)
+- `FramerateControl`: [H264FramerateControl](./literals.md#h264frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [H264FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264framerateconversionalgorithm)
+  [H264FramerateConversionAlgorithm](./literals.md#h264framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
-- `GopBReference`:
-  [H264GopBReference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264gopbreference)
+- `GopBReference`: [H264GopBReference](./literals.md#h264gopbreference)
 - `GopClosedCadence`: `int`
 - `GopSize`: `float`
-- `GopSizeUnits`:
-  [H264GopSizeUnits](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264gopsizeunits)
+- `GopSizeUnits`: [H264GopSizeUnits](./literals.md#h264gopsizeunits)
 - `HrdBufferInitialFillPercentage`: `int`
 - `HrdBufferSize`: `int`
-- `InterlaceMode`:
-  [H264InterlaceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264interlacemode)
+- `InterlaceMode`: [H264InterlaceMode](./literals.md#h264interlacemode)
 - `MaxBitrate`: `int`
 - `MinIInterval`: `int`
 - `NumberBFramesBetweenReferenceFrames`: `int`
 - `NumberReferenceFrames`: `int`
-- `ParControl`:
-  [H264ParControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264parcontrol)
+- `ParControl`: [H264ParControl](./literals.md#h264parcontrol)
 - `ParDenominator`: `int`
 - `ParNumerator`: `int`
 - `QualityTuningLevel`:
-  [H264QualityTuningLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264qualitytuninglevel)
+  [H264QualityTuningLevel](./literals.md#h264qualitytuninglevel)
 - `QvbrSettings`:
-  [H264QvbrSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#h264qvbrsettingstypedef)
-- `RateControlMode`:
-  [H264RateControlMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264ratecontrolmode)
-- `RepeatPps`:
-  [H264RepeatPps](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264repeatpps)
+  [H264QvbrSettingsTypeDef](./type_defs.md#h264qvbrsettingstypedef)
+- `RateControlMode`: [H264RateControlMode](./literals.md#h264ratecontrolmode)
+- `RepeatPps`: [H264RepeatPps](./literals.md#h264repeatpps)
 - `ScanTypeConversionMode`:
-  [H264ScanTypeConversionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264scantypeconversionmode)
+  [H264ScanTypeConversionMode](./literals.md#h264scantypeconversionmode)
 - `SceneChangeDetect`:
-  [H264SceneChangeDetect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264scenechangedetect)
+  [H264SceneChangeDetect](./literals.md#h264scenechangedetect)
 - `Slices`: `int`
-- `SlowPal`:
-  [H264SlowPal](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264slowpal)
+- `SlowPal`: [H264SlowPal](./literals.md#h264slowpal)
 - `Softness`: `int`
 - `SpatialAdaptiveQuantization`:
-  [H264SpatialAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264spatialadaptivequantization)
-- `Syntax`:
-  [H264Syntax](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264syntax)
-- `Telecine`:
-  [H264Telecine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264telecine)
+  [H264SpatialAdaptiveQuantization](./literals.md#h264spatialadaptivequantization)
+- `Syntax`: [H264Syntax](./literals.md#h264syntax)
+- `Telecine`: [H264Telecine](./literals.md#h264telecine)
 - `TemporalAdaptiveQuantization`:
-  [H264TemporalAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264temporaladaptivequantization)
+  [H264TemporalAdaptiveQuantization](./literals.md#h264temporaladaptivequantization)
 - `UnregisteredSeiTimecode`:
-  [H264UnregisteredSeiTimecode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h264unregisteredseitimecode)
+  [H264UnregisteredSeiTimecode](./literals.md#h264unregisteredseitimecode)
 
 ## H265QvbrSettingsTypeDef
 
@@ -1382,71 +1275,58 @@ from mypy_boto3_mediaconvert.type_defs import H265SettingsTypeDef
 Optional fields:
 
 - `AdaptiveQuantization`:
-  [H265AdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265adaptivequantization)
+  [H265AdaptiveQuantization](./literals.md#h265adaptivequantization)
 - `AlternateTransferFunctionSei`:
-  [H265AlternateTransferFunctionSei](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265alternatetransferfunctionsei)
+  [H265AlternateTransferFunctionSei](./literals.md#h265alternatetransferfunctionsei)
 - `Bitrate`: `int`
-- `CodecLevel`:
-  [H265CodecLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265codeclevel)
-- `CodecProfile`:
-  [H265CodecProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265codecprofile)
-- `DynamicSubGop`:
-  [H265DynamicSubGop](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265dynamicsubgop)
+- `CodecLevel`: [H265CodecLevel](./literals.md#h265codeclevel)
+- `CodecProfile`: [H265CodecProfile](./literals.md#h265codecprofile)
+- `DynamicSubGop`: [H265DynamicSubGop](./literals.md#h265dynamicsubgop)
 - `FlickerAdaptiveQuantization`:
-  [H265FlickerAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265flickeradaptivequantization)
-- `FramerateControl`:
-  [H265FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265frameratecontrol)
+  [H265FlickerAdaptiveQuantization](./literals.md#h265flickeradaptivequantization)
+- `FramerateControl`: [H265FramerateControl](./literals.md#h265frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [H265FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265framerateconversionalgorithm)
+  [H265FramerateConversionAlgorithm](./literals.md#h265framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
-- `GopBReference`:
-  [H265GopBReference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265gopbreference)
+- `GopBReference`: [H265GopBReference](./literals.md#h265gopbreference)
 - `GopClosedCadence`: `int`
 - `GopSize`: `float`
-- `GopSizeUnits`:
-  [H265GopSizeUnits](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265gopsizeunits)
+- `GopSizeUnits`: [H265GopSizeUnits](./literals.md#h265gopsizeunits)
 - `HrdBufferInitialFillPercentage`: `int`
 - `HrdBufferSize`: `int`
-- `InterlaceMode`:
-  [H265InterlaceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265interlacemode)
+- `InterlaceMode`: [H265InterlaceMode](./literals.md#h265interlacemode)
 - `MaxBitrate`: `int`
 - `MinIInterval`: `int`
 - `NumberBFramesBetweenReferenceFrames`: `int`
 - `NumberReferenceFrames`: `int`
-- `ParControl`:
-  [H265ParControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265parcontrol)
+- `ParControl`: [H265ParControl](./literals.md#h265parcontrol)
 - `ParDenominator`: `int`
 - `ParNumerator`: `int`
 - `QualityTuningLevel`:
-  [H265QualityTuningLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265qualitytuninglevel)
+  [H265QualityTuningLevel](./literals.md#h265qualitytuninglevel)
 - `QvbrSettings`:
-  [H265QvbrSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#h265qvbrsettingstypedef)
-- `RateControlMode`:
-  [H265RateControlMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265ratecontrolmode)
+  [H265QvbrSettingsTypeDef](./type_defs.md#h265qvbrsettingstypedef)
+- `RateControlMode`: [H265RateControlMode](./literals.md#h265ratecontrolmode)
 - `SampleAdaptiveOffsetFilterMode`:
-  [H265SampleAdaptiveOffsetFilterMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265sampleadaptiveoffsetfiltermode)
+  [H265SampleAdaptiveOffsetFilterMode](./literals.md#h265sampleadaptiveoffsetfiltermode)
 - `ScanTypeConversionMode`:
-  [H265ScanTypeConversionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265scantypeconversionmode)
+  [H265ScanTypeConversionMode](./literals.md#h265scantypeconversionmode)
 - `SceneChangeDetect`:
-  [H265SceneChangeDetect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265scenechangedetect)
+  [H265SceneChangeDetect](./literals.md#h265scenechangedetect)
 - `Slices`: `int`
-- `SlowPal`:
-  [H265SlowPal](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265slowpal)
+- `SlowPal`: [H265SlowPal](./literals.md#h265slowpal)
 - `SpatialAdaptiveQuantization`:
-  [H265SpatialAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265spatialadaptivequantization)
-- `Telecine`:
-  [H265Telecine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265telecine)
+  [H265SpatialAdaptiveQuantization](./literals.md#h265spatialadaptivequantization)
+- `Telecine`: [H265Telecine](./literals.md#h265telecine)
 - `TemporalAdaptiveQuantization`:
-  [H265TemporalAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265temporaladaptivequantization)
-- `TemporalIds`:
-  [H265TemporalIds](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265temporalids)
-- `Tiles`:
-  [H265Tiles](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265tiles)
+  [H265TemporalAdaptiveQuantization](./literals.md#h265temporaladaptivequantization)
+- `TemporalIds`: [H265TemporalIds](./literals.md#h265temporalids)
+- `Tiles`: [H265Tiles](./literals.md#h265tiles)
 - `UnregisteredSeiTimecode`:
-  [H265UnregisteredSeiTimecode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265unregisteredseitimecode)
+  [H265UnregisteredSeiTimecode](./literals.md#h265unregisteredseitimecode)
 - `WriteMp4PackagingType`:
-  [H265WriteMp4PackagingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#h265writemp4packagingtype)
+  [H265WriteMp4PackagingType](./literals.md#h265writemp4packagingtype)
 
 ## Hdr10MetadataTypeDef
 
@@ -1490,8 +1370,7 @@ Optional fields:
 
 - `CaptionChannel`: `int`
 - `CustomLanguageCode`: `str`
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#languagecode)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LanguageDescription`: `str`
 
 ## HlsEncryptionSettingsTypeDef
@@ -1503,18 +1382,15 @@ from mypy_boto3_mediaconvert.type_defs import HlsEncryptionSettingsTypeDef
 Optional fields:
 
 - `ConstantInitializationVector`: `str`
-- `EncryptionMethod`:
-  [HlsEncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsencryptiontype)
+- `EncryptionMethod`: [HlsEncryptionType](./literals.md#hlsencryptiontype)
 - `InitializationVectorInManifest`:
-  [HlsInitializationVectorInManifest](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsinitializationvectorinmanifest)
-- `OfflineEncrypted`:
-  [HlsOfflineEncrypted](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsofflineencrypted)
+  [HlsInitializationVectorInManifest](./literals.md#hlsinitializationvectorinmanifest)
+- `OfflineEncrypted`: [HlsOfflineEncrypted](./literals.md#hlsofflineencrypted)
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 - `StaticKeyProvider`:
-  [StaticKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#statickeyprovidertypedef)
-- `Type`:
-  [HlsKeyProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlskeyprovidertype)
+  [StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef)
+- `Type`: [HlsKeyProviderType](./literals.md#hlskeyprovidertype)
 
 ## HlsGroupSettingsTypeDef
 
@@ -1524,47 +1400,41 @@ from mypy_boto3_mediaconvert.type_defs import HlsGroupSettingsTypeDef
 
 Optional fields:
 
-- `AdMarkers`:
-  `List`\[[HlsAdMarkers](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsadmarkers)\]
+- `AdMarkers`: `List`\[[HlsAdMarkers](./literals.md#hlsadmarkers)\]
 - `AdditionalManifests`:
-  `List`\[[HlsAdditionalManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hlsadditionalmanifesttypedef)\]
-- `AudioOnlyHeader`:
-  [HlsAudioOnlyHeader](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsaudioonlyheader)
+  `List`\[[HlsAdditionalManifestTypeDef](./type_defs.md#hlsadditionalmanifesttypedef)\]
+- `AudioOnlyHeader`: [HlsAudioOnlyHeader](./literals.md#hlsaudioonlyheader)
 - `BaseUrl`: `str`
 - `CaptionLanguageMappings`:
-  `List`\[[HlsCaptionLanguageMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hlscaptionlanguagemappingtypedef)\]
+  `List`\[[HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef)\]
 - `CaptionLanguageSetting`:
-  [HlsCaptionLanguageSetting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlscaptionlanguagesetting)
-- `ClientCache`:
-  [HlsClientCache](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsclientcache)
+  [HlsCaptionLanguageSetting](./literals.md#hlscaptionlanguagesetting)
+- `ClientCache`: [HlsClientCache](./literals.md#hlsclientcache)
 - `CodecSpecification`:
-  [HlsCodecSpecification](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlscodecspecification)
+  [HlsCodecSpecification](./literals.md#hlscodecspecification)
 - `Destination`: `str`
 - `DestinationSettings`:
-  [DestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#destinationsettingstypedef)
+  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
 - `DirectoryStructure`:
-  [HlsDirectoryStructure](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsdirectorystructure)
+  [HlsDirectoryStructure](./literals.md#hlsdirectorystructure)
 - `Encryption`:
-  [HlsEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hlsencryptionsettingstypedef)
+  [HlsEncryptionSettingsTypeDef](./type_defs.md#hlsencryptionsettingstypedef)
 - `ManifestCompression`:
-  [HlsManifestCompression](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsmanifestcompression)
+  [HlsManifestCompression](./literals.md#hlsmanifestcompression)
 - `ManifestDurationFormat`:
-  [HlsManifestDurationFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsmanifestdurationformat)
+  [HlsManifestDurationFormat](./literals.md#hlsmanifestdurationformat)
 - `MinFinalSegmentLength`: `float`
 - `MinSegmentLength`: `int`
-- `OutputSelection`:
-  [HlsOutputSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsoutputselection)
-- `ProgramDateTime`:
-  [HlsProgramDateTime](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsprogramdatetime)
+- `OutputSelection`: [HlsOutputSelection](./literals.md#hlsoutputselection)
+- `ProgramDateTime`: [HlsProgramDateTime](./literals.md#hlsprogramdatetime)
 - `ProgramDateTimePeriod`: `int`
-- `SegmentControl`:
-  [HlsSegmentControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlssegmentcontrol)
+- `SegmentControl`: [HlsSegmentControl](./literals.md#hlssegmentcontrol)
 - `SegmentLength`: `int`
 - `SegmentsPerSubdirectory`: `int`
 - `StreamInfResolution`:
-  [HlsStreamInfResolution](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsstreaminfresolution)
+  [HlsStreamInfResolution](./literals.md#hlsstreaminfresolution)
 - `TimedMetadataId3Frame`:
-  [HlsTimedMetadataId3Frame](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlstimedmetadataid3frame)
+  [HlsTimedMetadataId3Frame](./literals.md#hlstimedmetadataid3frame)
 - `TimedMetadataId3Period`: `int`
 - `TimestampDeltaMilliseconds`: `int`
 
@@ -1578,14 +1448,13 @@ Optional fields:
 
 - `AudioGroupId`: `str`
 - `AudioOnlyContainer`:
-  [HlsAudioOnlyContainer](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsaudioonlycontainer)
+  [HlsAudioOnlyContainer](./literals.md#hlsaudioonlycontainer)
 - `AudioRenditionSets`: `str`
-- `AudioTrackType`:
-  [HlsAudioTrackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsaudiotracktype)
+- `AudioTrackType`: [HlsAudioTrackType](./literals.md#hlsaudiotracktype)
 - `DescriptiveVideoServiceFlag`:
-  [HlsDescriptiveVideoServiceFlag](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsdescriptivevideoserviceflag)
+  [HlsDescriptiveVideoServiceFlag](./literals.md#hlsdescriptivevideoserviceflag)
 - `IFrameOnlyManifest`:
-  [HlsIFrameOnlyManifest](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#hlsiframeonlymanifest)
+  [HlsIFrameOnlyManifest](./literals.md#hlsiframeonlymanifest)
 - `SegmentModifier`: `str`
 
 ## HopDestinationTypeDef
@@ -1620,7 +1489,7 @@ from mypy_boto3_mediaconvert.type_defs import ImageInserterTypeDef
 Optional fields:
 
 - `InsertableImages`:
-  `List`\[[InsertableImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#insertableimagetypedef)\]
+  `List`\[[InsertableImageTypeDef](./type_defs.md#insertableimagetypedef)\]
 
 ## ImscDestinationSettingsTypeDef
 
@@ -1630,8 +1499,7 @@ from mypy_boto3_mediaconvert.type_defs import ImscDestinationSettingsTypeDef
 
 Optional fields:
 
-- `StylePassthrough`:
-  [ImscStylePassthrough](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#imscstylepassthrough)
+- `StylePassthrough`: [ImscStylePassthrough](./literals.md#imscstylepassthrough)
 
 ## InputClippingTypeDef
 
@@ -1652,8 +1520,7 @@ from mypy_boto3_mediaconvert.type_defs import InputDecryptionSettingsTypeDef
 
 Optional fields:
 
-- `DecryptionMode`:
-  [DecryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#decryptionmode)
+- `DecryptionMode`: [DecryptionMode](./literals.md#decryptionmode)
 - `EncryptedDecryptionKey`: `str`
 - `InitializationVector`: `str`
 - `KmsKeyRegion`: `str`
@@ -1667,36 +1534,26 @@ from mypy_boto3_mediaconvert.type_defs import InputTemplateTypeDef
 Optional fields:
 
 - `AudioSelectorGroups`: `Dict`\[`str`,
-  [AudioSelectorGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audioselectorgrouptypedef)\]
+  [AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef)\]
 - `AudioSelectors`: `Dict`\[`str`,
-  [AudioSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audioselectortypedef)\]
+  [AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
 - `CaptionSelectors`: `Dict`\[`str`,
-  [CaptionSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captionselectortypedef)\]
-- `Crop`:
-  [RectangleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#rectangletypedef)
-- `DeblockFilter`:
-  [InputDeblockFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputdeblockfilter)
-- `DenoiseFilter`:
-  [InputDenoiseFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputdenoisefilter)
-- `FilterEnable`:
-  [InputFilterEnable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputfilterenable)
+  [CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
+- `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
+- `DeblockFilter`: [InputDeblockFilter](./literals.md#inputdeblockfilter)
+- `DenoiseFilter`: [InputDenoiseFilter](./literals.md#inputdenoisefilter)
+- `FilterEnable`: [InputFilterEnable](./literals.md#inputfilterenable)
 - `FilterStrength`: `int`
-- `ImageInserter`:
-  [ImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#imageinsertertypedef)
+- `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
 - `InputClippings`:
-  `List`\[[InputClippingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputclippingtypedef)\]
-- `InputScanType`:
-  [InputScanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputscantype)
-- `Position`:
-  [RectangleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#rectangletypedef)
+  `List`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
+- `InputScanType`: [InputScanType](./literals.md#inputscantype)
+- `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
 - `ProgramNumber`: `int`
-- `PsiControl`:
-  [InputPsiControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputpsicontrol)
-- `TimecodeSource`:
-  [InputTimecodeSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputtimecodesource)
+- `PsiControl`: [InputPsiControl](./literals.md#inputpsicontrol)
+- `TimecodeSource`: [InputTimecodeSource](./literals.md#inputtimecodesource)
 - `TimecodeStart`: `str`
-- `VideoSelector`:
-  [VideoSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videoselectortypedef)
+- `VideoSelector`: [VideoSelectorTypeDef](./type_defs.md#videoselectortypedef)
 
 ## InputTypeDef
 
@@ -1707,40 +1564,30 @@ from mypy_boto3_mediaconvert.type_defs import InputTypeDef
 Optional fields:
 
 - `AudioSelectorGroups`: `Dict`\[`str`,
-  [AudioSelectorGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audioselectorgrouptypedef)\]
+  [AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef)\]
 - `AudioSelectors`: `Dict`\[`str`,
-  [AudioSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audioselectortypedef)\]
+  [AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
 - `CaptionSelectors`: `Dict`\[`str`,
-  [CaptionSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captionselectortypedef)\]
-- `Crop`:
-  [RectangleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#rectangletypedef)
-- `DeblockFilter`:
-  [InputDeblockFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputdeblockfilter)
+  [CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
+- `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
+- `DeblockFilter`: [InputDeblockFilter](./literals.md#inputdeblockfilter)
 - `DecryptionSettings`:
-  [InputDecryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputdecryptionsettingstypedef)
-- `DenoiseFilter`:
-  [InputDenoiseFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputdenoisefilter)
+  [InputDecryptionSettingsTypeDef](./type_defs.md#inputdecryptionsettingstypedef)
+- `DenoiseFilter`: [InputDenoiseFilter](./literals.md#inputdenoisefilter)
 - `FileInput`: `str`
-- `FilterEnable`:
-  [InputFilterEnable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputfilterenable)
+- `FilterEnable`: [InputFilterEnable](./literals.md#inputfilterenable)
 - `FilterStrength`: `int`
-- `ImageInserter`:
-  [ImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#imageinsertertypedef)
+- `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
 - `InputClippings`:
-  `List`\[[InputClippingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputclippingtypedef)\]
-- `InputScanType`:
-  [InputScanType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputscantype)
-- `Position`:
-  [RectangleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#rectangletypedef)
+  `List`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
+- `InputScanType`: [InputScanType](./literals.md#inputscantype)
+- `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
 - `ProgramNumber`: `int`
-- `PsiControl`:
-  [InputPsiControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputpsicontrol)
+- `PsiControl`: [InputPsiControl](./literals.md#inputpsicontrol)
 - `SupplementalImps`: `List`\[`str`\]
-- `TimecodeSource`:
-  [InputTimecodeSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputtimecodesource)
+- `TimecodeSource`: [InputTimecodeSource](./literals.md#inputtimecodesource)
 - `TimecodeStart`: `str`
-- `VideoSelector`:
-  [VideoSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videoselectortypedef)
+- `VideoSelector`: [VideoSelectorTypeDef](./type_defs.md#videoselectortypedef)
 
 ## InsertableImageTypeDef
 
@@ -1782,26 +1629,22 @@ from mypy_boto3_mediaconvert.type_defs import JobSettingsTypeDef
 Optional fields:
 
 - `AdAvailOffset`: `int`
-- `AvailBlanking`:
-  [AvailBlankingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#availblankingtypedef)
-- `Esam`:
-  [EsamSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#esamsettingstypedef)
-- `Inputs`:
-  `List`\[[InputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputtypedef)\]
+- `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
+- `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
+- `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
 - `KantarWatermark`:
-  [KantarWatermarkSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#kantarwatermarksettingstypedef)
+  [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
 - `MotionImageInserter`:
-  [MotionImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#motionimageinsertertypedef)
+  [MotionImageInserterTypeDef](./type_defs.md#motionimageinsertertypedef)
 - `NielsenConfiguration`:
-  [NielsenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#nielsenconfigurationtypedef)
+  [NielsenConfigurationTypeDef](./type_defs.md#nielsenconfigurationtypedef)
 - `NielsenNonLinearWatermark`:
-  [NielsenNonLinearWatermarkSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#nielsennonlinearwatermarksettingstypedef)
+  [NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef)
 - `OutputGroups`:
-  `List`\[[OutputGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputgrouptypedef)\]
-- `TimecodeConfig`:
-  [TimecodeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timecodeconfigtypedef)
+  `List`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
+- `TimecodeConfig`: [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
 - `TimedMetadataInsertion`:
-  [TimedMetadataInsertionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timedmetadatainsertiontypedef)
+  [TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef)
 
 ## JobTemplateSettingsTypeDef
 
@@ -1812,26 +1655,22 @@ from mypy_boto3_mediaconvert.type_defs import JobTemplateSettingsTypeDef
 Optional fields:
 
 - `AdAvailOffset`: `int`
-- `AvailBlanking`:
-  [AvailBlankingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#availblankingtypedef)
-- `Esam`:
-  [EsamSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#esamsettingstypedef)
-- `Inputs`:
-  `List`\[[InputTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#inputtemplatetypedef)\]
+- `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
+- `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
+- `Inputs`: `List`\[[InputTemplateTypeDef](./type_defs.md#inputtemplatetypedef)\]
 - `KantarWatermark`:
-  [KantarWatermarkSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#kantarwatermarksettingstypedef)
+  [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
 - `MotionImageInserter`:
-  [MotionImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#motionimageinsertertypedef)
+  [MotionImageInserterTypeDef](./type_defs.md#motionimageinsertertypedef)
 - `NielsenConfiguration`:
-  [NielsenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#nielsenconfigurationtypedef)
+  [NielsenConfigurationTypeDef](./type_defs.md#nielsenconfigurationtypedef)
 - `NielsenNonLinearWatermark`:
-  [NielsenNonLinearWatermarkSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#nielsennonlinearwatermarksettingstypedef)
+  [NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef)
 - `OutputGroups`:
-  `List`\[[OutputGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputgrouptypedef)\]
-- `TimecodeConfig`:
-  [TimecodeConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timecodeconfigtypedef)
+  `List`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
+- `TimecodeConfig`: [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
 - `TimedMetadataInsertion`:
-  [TimedMetadataInsertionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timedmetadatainsertiontypedef)
+  [TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef)
 
 ## JobTemplateTypeDef
 
@@ -1843,25 +1682,24 @@ Required fields:
 
 - `Name`: `str`
 - `Settings`:
-  [JobTemplateSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatesettingstypedef)
+  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
 
 Optional fields:
 
 - `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
 - `Arn`: `str`
 - `Category`: `str`
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `LastUpdated`: `datetime`
 - `Priority`: `int`
 - `Queue`: `str`
 - `StatusUpdateInterval`:
-  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#typetype)
+  [StatusUpdateInterval](./literals.md#statusupdateinterval)
+- `Type`: [TypeType](./literals.md#typetype)
 
 ## JobTypeDef
 
@@ -1872,45 +1710,38 @@ from mypy_boto3_mediaconvert.type_defs import JobTypeDef
 Required fields:
 
 - `Role`: `str`
-- `Settings`:
-  [JobSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobsettingstypedef)
+- `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
 
 Optional fields:
 
 - `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#accelerationsettingstypedef)
-- `AccelerationStatus`:
-  [AccelerationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#accelerationstatus)
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
+- `AccelerationStatus`: [AccelerationStatus](./literals.md#accelerationstatus)
 - `Arn`: `str`
-- `BillingTagsSource`:
-  [BillingTagsSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#billingtagssource)
+- `BillingTagsSource`: [BillingTagsSource](./literals.md#billingtagssource)
 - `CreatedAt`: `datetime`
-- `CurrentPhase`:
-  [JobPhase](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobphase)
+- `CurrentPhase`: [JobPhase](./literals.md#jobphase)
 - `ErrorCode`: `int`
 - `ErrorMessage`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hopdestinationtypedef)\]
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Id`: `str`
 - `JobPercentComplete`: `int`
 - `JobTemplate`: `str`
-- `Messages`:
-  [JobMessagesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobmessagestypedef)
+- `Messages`: [JobMessagesTypeDef](./type_defs.md#jobmessagestypedef)
 - `OutputGroupDetails`:
-  `List`\[[OutputGroupDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputgroupdetailtypedef)\]
+  `List`\[[OutputGroupDetailTypeDef](./type_defs.md#outputgroupdetailtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `QueueTransitions`:
-  `List`\[[QueueTransitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#queuetransitiontypedef)\]
+  `List`\[[QueueTransitionTypeDef](./type_defs.md#queuetransitiontypedef)\]
 - `RetryCount`: `int`
 - `SimulateReservedQueue`:
-  [SimulateReservedQueue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#simulatereservedqueue)
-- `Status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#jobstatus)
+  [SimulateReservedQueue](./literals.md#simulatereservedqueue)
+- `Status`: [JobStatus](./literals.md#jobstatus)
 - `StatusUpdateInterval`:
-  [StatusUpdateInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#statusupdateinterval)
-- `Timing`:
-  [TimingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timingtypedef)
+  [StatusUpdateInterval](./literals.md#statusupdateinterval)
+- `Timing`: [TimingTypeDef](./type_defs.md#timingtypedef)
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
 ## KantarWatermarkSettingsTypeDef
@@ -1944,7 +1775,7 @@ from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesResponseTypeDef
 Optional fields:
 
 - `JobTemplates`:
-  `List`\[[JobTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatetypedef)\]
+  `List`\[[JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)\]
 - `NextToken`: `str`
 
 ## ListJobsResponseTypeDef
@@ -1955,8 +1786,7 @@ from mypy_boto3_mediaconvert.type_defs import ListJobsResponseTypeDef
 
 Optional fields:
 
-- `Jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtypedef)\]
+- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextToken`: `str`
 
 ## ListPresetsResponseTypeDef
@@ -1968,8 +1798,7 @@ from mypy_boto3_mediaconvert.type_defs import ListPresetsResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Presets`:
-  `List`\[[PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presettypedef)\]
+- `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
 
 ## ListQueuesResponseTypeDef
 
@@ -1980,8 +1809,7 @@ from mypy_boto3_mediaconvert.type_defs import ListQueuesResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Queues`:
-  `List`\[[QueueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#queuetypedef)\]
+- `Queues`: `List`\[[QueueTypeDef](./type_defs.md#queuetypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1991,8 +1819,7 @@ from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `ResourceTags`:
-  [ResourceTagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#resourcetagstypedef)
+- `ResourceTags`: [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef)
 
 ## M2tsScte35EsamTypeDef
 
@@ -2012,56 +1839,42 @@ from mypy_boto3_mediaconvert.type_defs import M2tsSettingsTypeDef
 
 Optional fields:
 
-- `AudioBufferModel`:
-  [M2tsAudioBufferModel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsaudiobuffermodel)
-- `AudioDuration`:
-  [M2tsAudioDuration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsaudioduration)
+- `AudioBufferModel`: [M2tsAudioBufferModel](./literals.md#m2tsaudiobuffermodel)
+- `AudioDuration`: [M2tsAudioDuration](./literals.md#m2tsaudioduration)
 - `AudioFramesPerPes`: `int`
 - `AudioPids`: `List`\[`int`\]
 - `Bitrate`: `int`
-- `BufferModel`:
-  [M2tsBufferModel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsbuffermodel)
-- `DvbNitSettings`:
-  [DvbNitSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dvbnitsettingstypedef)
-- `DvbSdtSettings`:
-  [DvbSdtSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dvbsdtsettingstypedef)
+- `BufferModel`: [M2tsBufferModel](./literals.md#m2tsbuffermodel)
+- `DvbNitSettings`: [DvbNitSettingsTypeDef](./type_defs.md#dvbnitsettingstypedef)
+- `DvbSdtSettings`: [DvbSdtSettingsTypeDef](./type_defs.md#dvbsdtsettingstypedef)
 - `DvbSubPids`: `List`\[`int`\]
-- `DvbTdtSettings`:
-  [DvbTdtSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dvbtdtsettingstypedef)
+- `DvbTdtSettings`: [DvbTdtSettingsTypeDef](./type_defs.md#dvbtdtsettingstypedef)
 - `DvbTeletextPid`: `int`
-- `EbpAudioInterval`:
-  [M2tsEbpAudioInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsebpaudiointerval)
-- `EbpPlacement`:
-  [M2tsEbpPlacement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsebpplacement)
-- `EsRateInPes`:
-  [M2tsEsRateInPes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsesrateinpes)
+- `EbpAudioInterval`: [M2tsEbpAudioInterval](./literals.md#m2tsebpaudiointerval)
+- `EbpPlacement`: [M2tsEbpPlacement](./literals.md#m2tsebpplacement)
+- `EsRateInPes`: [M2tsEsRateInPes](./literals.md#m2tsesrateinpes)
 - `ForceTsVideoEbpOrder`:
-  [M2tsForceTsVideoEbpOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsforcetsvideoebporder)
+  [M2tsForceTsVideoEbpOrder](./literals.md#m2tsforcetsvideoebporder)
 - `FragmentTime`: `float`
 - `MaxPcrInterval`: `int`
 - `MinEbpInterval`: `int`
-- `NielsenId3`:
-  [M2tsNielsenId3](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsnielsenid3)
+- `NielsenId3`: [M2tsNielsenId3](./literals.md#m2tsnielsenid3)
 - `NullPacketBitrate`: `float`
 - `PatInterval`: `int`
-- `PcrControl`:
-  [M2tsPcrControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tspcrcontrol)
+- `PcrControl`: [M2tsPcrControl](./literals.md#m2tspcrcontrol)
 - `PcrPid`: `int`
 - `PmtInterval`: `int`
 - `PmtPid`: `int`
 - `PrivateMetadataPid`: `int`
 - `ProgramNumber`: `int`
-- `RateMode`:
-  [M2tsRateMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsratemode)
-- `Scte35Esam`:
-  [M2tsScte35EsamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#m2tsscte35esamtypedef)
+- `RateMode`: [M2tsRateMode](./literals.md#m2tsratemode)
+- `Scte35Esam`: [M2tsScte35EsamTypeDef](./type_defs.md#m2tsscte35esamtypedef)
 - `Scte35Pid`: `int`
-- `Scte35Source`:
-  [M2tsScte35Source](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tsscte35source)
+- `Scte35Source`: [M2tsScte35Source](./literals.md#m2tsscte35source)
 - `SegmentationMarkers`:
-  [M2tsSegmentationMarkers](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tssegmentationmarkers)
+  [M2tsSegmentationMarkers](./literals.md#m2tssegmentationmarkers)
 - `SegmentationStyle`:
-  [M2tsSegmentationStyle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m2tssegmentationstyle)
+  [M2tsSegmentationStyle](./literals.md#m2tssegmentationstyle)
 - `SegmentationTime`: `float`
 - `TimedMetadataPid`: `int`
 - `TransportStreamId`: `int`
@@ -2075,26 +1888,21 @@ from mypy_boto3_mediaconvert.type_defs import M3u8SettingsTypeDef
 
 Optional fields:
 
-- `AudioDuration`:
-  [M3u8AudioDuration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m3u8audioduration)
+- `AudioDuration`: [M3u8AudioDuration](./literals.md#m3u8audioduration)
 - `AudioFramesPerPes`: `int`
 - `AudioPids`: `List`\[`int`\]
 - `MaxPcrInterval`: `int`
-- `NielsenId3`:
-  [M3u8NielsenId3](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m3u8nielsenid3)
+- `NielsenId3`: [M3u8NielsenId3](./literals.md#m3u8nielsenid3)
 - `PatInterval`: `int`
-- `PcrControl`:
-  [M3u8PcrControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m3u8pcrcontrol)
+- `PcrControl`: [M3u8PcrControl](./literals.md#m3u8pcrcontrol)
 - `PcrPid`: `int`
 - `PmtInterval`: `int`
 - `PmtPid`: `int`
 - `PrivateMetadataPid`: `int`
 - `ProgramNumber`: `int`
 - `Scte35Pid`: `int`
-- `Scte35Source`:
-  [M3u8Scte35Source](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#m3u8scte35source)
-- `TimedMetadata`:
-  [TimedMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#timedmetadata)
+- `Scte35Source`: [M3u8Scte35Source](./literals.md#m3u8scte35source)
+- `TimedMetadata`: [TimedMetadata](./literals.md#timedmetadata)
 - `TimedMetadataPid`: `int`
 - `TransportStreamId`: `int`
 - `VideoPid`: `int`
@@ -2108,14 +1916,13 @@ from mypy_boto3_mediaconvert.type_defs import MotionImageInserterTypeDef
 Optional fields:
 
 - `Framerate`:
-  [MotionImageInsertionFramerateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#motionimageinsertionframeratetypedef)
+  [MotionImageInsertionFramerateTypeDef](./type_defs.md#motionimageinsertionframeratetypedef)
 - `Input`: `str`
 - `InsertionMode`:
-  [MotionImageInsertionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#motionimageinsertionmode)
+  [MotionImageInsertionMode](./literals.md#motionimageinsertionmode)
 - `Offset`:
-  [MotionImageInsertionOffsetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#motionimageinsertionoffsettypedef)
-- `Playback`:
-  [MotionImagePlayback](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#motionimageplayback)
+  [MotionImageInsertionOffsetTypeDef](./type_defs.md#motionimageinsertionoffsettypedef)
+- `Playback`: [MotionImagePlayback](./literals.md#motionimageplayback)
 - `StartTime`: `str`
 
 ## MotionImageInsertionFramerateTypeDef
@@ -2148,16 +1955,12 @@ from mypy_boto3_mediaconvert.type_defs import MovSettingsTypeDef
 
 Optional fields:
 
-- `ClapAtom`:
-  [MovClapAtom](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#movclapatom)
-- `CslgAtom`:
-  [MovCslgAtom](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#movcslgatom)
+- `ClapAtom`: [MovClapAtom](./literals.md#movclapatom)
+- `CslgAtom`: [MovCslgAtom](./literals.md#movcslgatom)
 - `Mpeg2FourCCControl`:
-  [MovMpeg2FourCCControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#movmpeg2fourcccontrol)
-- `PaddingControl`:
-  [MovPaddingControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#movpaddingcontrol)
-- `Reference`:
-  [MovReference](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#movreference)
+  [MovMpeg2FourCCControl](./literals.md#movmpeg2fourcccontrol)
+- `PaddingControl`: [MovPaddingControl](./literals.md#movpaddingcontrol)
+- `Reference`: [MovReference](./literals.md#movreference)
 
 ## Mp2SettingsTypeDef
 
@@ -2181,8 +1984,7 @@ Optional fields:
 
 - `Bitrate`: `int`
 - `Channels`: `int`
-- `RateControlMode`:
-  [Mp3RateControlMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mp3ratecontrolmode)
+- `RateControlMode`: [Mp3RateControlMode](./literals.md#mp3ratecontrolmode)
 - `SampleRate`: `int`
 - `VbrQuality`: `int`
 
@@ -2194,15 +1996,11 @@ from mypy_boto3_mediaconvert.type_defs import Mp4SettingsTypeDef
 
 Optional fields:
 
-- `AudioDuration`:
-  [CmfcAudioDuration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#cmfcaudioduration)
-- `CslgAtom`:
-  [Mp4CslgAtom](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mp4cslgatom)
+- `AudioDuration`: [CmfcAudioDuration](./literals.md#cmfcaudioduration)
+- `CslgAtom`: [Mp4CslgAtom](./literals.md#mp4cslgatom)
 - `CttsVersion`: `int`
-- `FreeSpaceBox`:
-  [Mp4FreeSpaceBox](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mp4freespacebox)
-- `MoovPlacement`:
-  [Mp4MoovPlacement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mp4moovplacement)
+- `FreeSpaceBox`: [Mp4FreeSpaceBox](./literals.md#mp4freespacebox)
+- `MoovPlacement`: [Mp4MoovPlacement](./literals.md#mp4moovplacement)
 - `Mp4MajorBrand`: `str`
 
 ## MpdSettingsTypeDef
@@ -2214,15 +2012,12 @@ from mypy_boto3_mediaconvert.type_defs import MpdSettingsTypeDef
 Optional fields:
 
 - `AccessibilityCaptionHints`:
-  [MpdAccessibilityCaptionHints](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpdaccessibilitycaptionhints)
-- `AudioDuration`:
-  [MpdAudioDuration](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpdaudioduration)
+  [MpdAccessibilityCaptionHints](./literals.md#mpdaccessibilitycaptionhints)
+- `AudioDuration`: [MpdAudioDuration](./literals.md#mpdaudioduration)
 - `CaptionContainerType`:
-  [MpdCaptionContainerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpdcaptioncontainertype)
-- `Scte35Esam`:
-  [MpdScte35Esam](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpdscte35esam)
-- `Scte35Source`:
-  [MpdScte35Source](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpdscte35source)
+  [MpdCaptionContainerType](./literals.md#mpdcaptioncontainertype)
+- `Scte35Esam`: [MpdScte35Esam](./literals.md#mpdscte35esam)
+- `Scte35Source`: [MpdScte35Source](./literals.md#mpdscte35source)
 
 ## Mpeg2SettingsTypeDef
 
@@ -2233,56 +2028,46 @@ from mypy_boto3_mediaconvert.type_defs import Mpeg2SettingsTypeDef
 Optional fields:
 
 - `AdaptiveQuantization`:
-  [Mpeg2AdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2adaptivequantization)
+  [Mpeg2AdaptiveQuantization](./literals.md#mpeg2adaptivequantization)
 - `Bitrate`: `int`
-- `CodecLevel`:
-  [Mpeg2CodecLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2codeclevel)
-- `CodecProfile`:
-  [Mpeg2CodecProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2codecprofile)
-- `DynamicSubGop`:
-  [Mpeg2DynamicSubGop](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2dynamicsubgop)
+- `CodecLevel`: [Mpeg2CodecLevel](./literals.md#mpeg2codeclevel)
+- `CodecProfile`: [Mpeg2CodecProfile](./literals.md#mpeg2codecprofile)
+- `DynamicSubGop`: [Mpeg2DynamicSubGop](./literals.md#mpeg2dynamicsubgop)
 - `FramerateControl`:
-  [Mpeg2FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2frameratecontrol)
+  [Mpeg2FramerateControl](./literals.md#mpeg2frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [Mpeg2FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2framerateconversionalgorithm)
+  [Mpeg2FramerateConversionAlgorithm](./literals.md#mpeg2framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
 - `GopClosedCadence`: `int`
 - `GopSize`: `float`
-- `GopSizeUnits`:
-  [Mpeg2GopSizeUnits](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2gopsizeunits)
+- `GopSizeUnits`: [Mpeg2GopSizeUnits](./literals.md#mpeg2gopsizeunits)
 - `HrdBufferInitialFillPercentage`: `int`
 - `HrdBufferSize`: `int`
-- `InterlaceMode`:
-  [Mpeg2InterlaceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2interlacemode)
+- `InterlaceMode`: [Mpeg2InterlaceMode](./literals.md#mpeg2interlacemode)
 - `IntraDcPrecision`:
-  [Mpeg2IntraDcPrecision](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2intradcprecision)
+  [Mpeg2IntraDcPrecision](./literals.md#mpeg2intradcprecision)
 - `MaxBitrate`: `int`
 - `MinIInterval`: `int`
 - `NumberBFramesBetweenReferenceFrames`: `int`
-- `ParControl`:
-  [Mpeg2ParControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2parcontrol)
+- `ParControl`: [Mpeg2ParControl](./literals.md#mpeg2parcontrol)
 - `ParDenominator`: `int`
 - `ParNumerator`: `int`
 - `QualityTuningLevel`:
-  [Mpeg2QualityTuningLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2qualitytuninglevel)
-- `RateControlMode`:
-  [Mpeg2RateControlMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2ratecontrolmode)
+  [Mpeg2QualityTuningLevel](./literals.md#mpeg2qualitytuninglevel)
+- `RateControlMode`: [Mpeg2RateControlMode](./literals.md#mpeg2ratecontrolmode)
 - `ScanTypeConversionMode`:
-  [Mpeg2ScanTypeConversionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2scantypeconversionmode)
+  [Mpeg2ScanTypeConversionMode](./literals.md#mpeg2scantypeconversionmode)
 - `SceneChangeDetect`:
-  [Mpeg2SceneChangeDetect](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2scenechangedetect)
-- `SlowPal`:
-  [Mpeg2SlowPal](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2slowpal)
+  [Mpeg2SceneChangeDetect](./literals.md#mpeg2scenechangedetect)
+- `SlowPal`: [Mpeg2SlowPal](./literals.md#mpeg2slowpal)
 - `Softness`: `int`
 - `SpatialAdaptiveQuantization`:
-  [Mpeg2SpatialAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2spatialadaptivequantization)
-- `Syntax`:
-  [Mpeg2Syntax](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2syntax)
-- `Telecine`:
-  [Mpeg2Telecine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2telecine)
+  [Mpeg2SpatialAdaptiveQuantization](./literals.md#mpeg2spatialadaptivequantization)
+- `Syntax`: [Mpeg2Syntax](./literals.md#mpeg2syntax)
+- `Telecine`: [Mpeg2Telecine](./literals.md#mpeg2telecine)
 - `TemporalAdaptiveQuantization`:
-  [Mpeg2TemporalAdaptiveQuantization](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mpeg2temporaladaptivequantization)
+  [Mpeg2TemporalAdaptiveQuantization](./literals.md#mpeg2temporaladaptivequantization)
 
 ## MsSmoothAdditionalManifestTypeDef
 
@@ -2304,7 +2089,7 @@ from mypy_boto3_mediaconvert.type_defs import MsSmoothEncryptionSettingsTypeDef
 Optional fields:
 
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
 ## MsSmoothGroupSettingsTypeDef
 
@@ -2315,17 +2100,17 @@ from mypy_boto3_mediaconvert.type_defs import MsSmoothGroupSettingsTypeDef
 Optional fields:
 
 - `AdditionalManifests`:
-  `List`\[[MsSmoothAdditionalManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mssmoothadditionalmanifesttypedef)\]
+  `List`\[[MsSmoothAdditionalManifestTypeDef](./type_defs.md#mssmoothadditionalmanifesttypedef)\]
 - `AudioDeduplication`:
-  [MsSmoothAudioDeduplication](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mssmoothaudiodeduplication)
+  [MsSmoothAudioDeduplication](./literals.md#mssmoothaudiodeduplication)
 - `Destination`: `str`
 - `DestinationSettings`:
-  [DestinationSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#destinationsettingstypedef)
+  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
 - `Encryption`:
-  [MsSmoothEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mssmoothencryptionsettingstypedef)
+  [MsSmoothEncryptionSettingsTypeDef](./type_defs.md#mssmoothencryptionsettingstypedef)
 - `FragmentLength`: `int`
 - `ManifestEncoding`:
-  [MsSmoothManifestEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mssmoothmanifestencoding)
+  [MsSmoothManifestEncoding](./literals.md#mssmoothmanifestencoding)
 
 ## MxfSettingsTypeDef
 
@@ -2335,10 +2120,8 @@ from mypy_boto3_mediaconvert.type_defs import MxfSettingsTypeDef
 
 Optional fields:
 
-- `AfdSignaling`:
-  [MxfAfdSignaling](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mxfafdsignaling)
-- `Profile`:
-  [MxfProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#mxfprofile)
+- `AfdSignaling`: [MxfAfdSignaling](./literals.md#mxfafdsignaling)
+- `Profile`: [MxfProfile](./literals.md#mxfprofile)
 
 ## NexGuardFileMarkerSettingsTypeDef
 
@@ -2351,8 +2134,7 @@ Optional fields:
 - `License`: `str`
 - `Payload`: `int`
 - `Preset`: `str`
-- `Strength`:
-  [WatermarkingStrength](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#watermarkingstrength)
+- `Strength`: [WatermarkingStrength](./literals.md#watermarkingstrength)
 
 ## NielsenConfigurationTypeDef
 
@@ -2374,7 +2156,7 @@ from mypy_boto3_mediaconvert.type_defs import NielsenNonLinearWatermarkSettingsT
 Optional fields:
 
 - `ActiveWatermarkProcess`:
-  [NielsenActiveWatermarkProcessType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#nielsenactivewatermarkprocesstype)
+  [NielsenActiveWatermarkProcessType](./literals.md#nielsenactivewatermarkprocesstype)
 - `AdiFilename`: `str`
 - `AssetId`: `str`
 - `AssetName`: `str`
@@ -2383,10 +2165,10 @@ Optional fields:
 - `MetadataDestination`: `str`
 - `SourceId`: `int`
 - `SourceWatermarkStatus`:
-  [NielsenSourceWatermarkStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#nielsensourcewatermarkstatustype)
+  [NielsenSourceWatermarkStatusType](./literals.md#nielsensourcewatermarkstatustype)
 - `TicServerUrl`: `str`
 - `UniqueTicPerAudioTrack`:
-  [NielsenUniqueTicPerAudioTrackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#nielsenuniqueticperaudiotracktype)
+  [NielsenUniqueTicPerAudioTrackType](./literals.md#nielsenuniqueticperaudiotracktype)
 
 ## NoiseReducerFilterSettingsTypeDef
 
@@ -2420,7 +2202,7 @@ Optional fields:
 
 - `AggressiveMode`: `int`
 - `PostTemporalSharpening`:
-  [NoiseFilterPostTemporalSharpening](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#noisefilterposttemporalsharpening)
+  [NoiseFilterPostTemporalSharpening](./literals.md#noisefilterposttemporalsharpening)
 - `Speed`: `int`
 - `Strength`: `int`
 
@@ -2432,14 +2214,13 @@ from mypy_boto3_mediaconvert.type_defs import NoiseReducerTypeDef
 
 Optional fields:
 
-- `Filter`:
-  [NoiseReducerFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#noisereducerfilter)
+- `Filter`: [NoiseReducerFilter](./literals.md#noisereducerfilter)
 - `FilterSettings`:
-  [NoiseReducerFilterSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#noisereducerfiltersettingstypedef)
+  [NoiseReducerFilterSettingsTypeDef](./type_defs.md#noisereducerfiltersettingstypedef)
 - `SpatialFilterSettings`:
-  [NoiseReducerSpatialFilterSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#noisereducerspatialfiltersettingstypedef)
+  [NoiseReducerSpatialFilterSettingsTypeDef](./type_defs.md#noisereducerspatialfiltersettingstypedef)
 - `TemporalFilterSettings`:
-  [NoiseReducerTemporalFilterSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#noisereducertemporalfiltersettingstypedef)
+  [NoiseReducerTemporalFilterSettingsTypeDef](./type_defs.md#noisereducertemporalfiltersettingstypedef)
 
 ## OpusSettingsTypeDef
 
@@ -2473,8 +2254,7 @@ from mypy_boto3_mediaconvert.type_defs import OutputDetailTypeDef
 Optional fields:
 
 - `DurationInMs`: `int`
-- `VideoDetails`:
-  [VideoDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videodetailtypedef)
+- `VideoDetails`: [VideoDetailTypeDef](./type_defs.md#videodetailtypedef)
 
 ## OutputGroupDetailTypeDef
 
@@ -2485,7 +2265,7 @@ from mypy_boto3_mediaconvert.type_defs import OutputGroupDetailTypeDef
 Optional fields:
 
 - `OutputDetails`:
-  `List`\[[OutputDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputdetailtypedef)\]
+  `List`\[[OutputDetailTypeDef](./type_defs.md#outputdetailtypedef)\]
 
 ## OutputGroupSettingsTypeDef
 
@@ -2496,17 +2276,16 @@ from mypy_boto3_mediaconvert.type_defs import OutputGroupSettingsTypeDef
 Optional fields:
 
 - `CmafGroupSettings`:
-  [CmafGroupSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#cmafgroupsettingstypedef)
+  [CmafGroupSettingsTypeDef](./type_defs.md#cmafgroupsettingstypedef)
 - `DashIsoGroupSettings`:
-  [DashIsoGroupSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dashisogroupsettingstypedef)
+  [DashIsoGroupSettingsTypeDef](./type_defs.md#dashisogroupsettingstypedef)
 - `FileGroupSettings`:
-  [FileGroupSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#filegroupsettingstypedef)
+  [FileGroupSettingsTypeDef](./type_defs.md#filegroupsettingstypedef)
 - `HlsGroupSettings`:
-  [HlsGroupSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hlsgroupsettingstypedef)
+  [HlsGroupSettingsTypeDef](./type_defs.md#hlsgroupsettingstypedef)
 - `MsSmoothGroupSettings`:
-  [MsSmoothGroupSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mssmoothgroupsettingstypedef)
-- `Type`:
-  [OutputGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#outputgrouptype)
+  [MsSmoothGroupSettingsTypeDef](./type_defs.md#mssmoothgroupsettingstypedef)
+- `Type`: [OutputGroupType](./literals.md#outputgrouptype)
 
 ## OutputGroupTypeDef
 
@@ -2517,13 +2296,12 @@ from mypy_boto3_mediaconvert.type_defs import OutputGroupTypeDef
 Optional fields:
 
 - `AutomatedEncodingSettings`:
-  [AutomatedEncodingSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#automatedencodingsettingstypedef)
+  [AutomatedEncodingSettingsTypeDef](./type_defs.md#automatedencodingsettingstypedef)
 - `CustomName`: `str`
 - `Name`: `str`
 - `OutputGroupSettings`:
-  [OutputGroupSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputgroupsettingstypedef)
-- `Outputs`:
-  `List`\[[OutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputtypedef)\]
+  [OutputGroupSettingsTypeDef](./type_defs.md#outputgroupsettingstypedef)
+- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 
 ## OutputSettingsTypeDef
 
@@ -2533,8 +2311,7 @@ from mypy_boto3_mediaconvert.type_defs import OutputSettingsTypeDef
 
 Optional fields:
 
-- `HlsSettings`:
-  [HlsSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hlssettingstypedef)
+- `HlsSettings`: [HlsSettingsTypeDef](./type_defs.md#hlssettingstypedef)
 
 ## OutputTypeDef
 
@@ -2545,20 +2322,19 @@ from mypy_boto3_mediaconvert.type_defs import OutputTypeDef
 Required fields:
 
 - `AudioDescriptions`:
-  `List`\[[AudioDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audiodescriptiontypedef)\]
+  `List`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
 - `CaptionDescriptions`:
-  `List`\[[CaptionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captiondescriptiontypedef)\]
+  `List`\[[CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef)\]
 - `ContainerSettings`:
-  [ContainerSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#containersettingstypedef)
+  [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
 - `Extension`: `str`
 - `NameModifier`: `str`
-- `OutputSettings`:
-  [OutputSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#outputsettingstypedef)
+- `OutputSettings`: [OutputSettingsTypeDef](./type_defs.md#outputsettingstypedef)
 - `Preset`: `str`
 - `VideoDescription`:
-  [VideoDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videodescriptiontypedef)
+  [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -2581,7 +2357,7 @@ from mypy_boto3_mediaconvert.type_defs import PartnerWatermarkingTypeDef
 Optional fields:
 
 - `NexguardFileMarkerSettings`:
-  [NexGuardFileMarkerSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#nexguardfilemarkersettingstypedef)
+  [NexGuardFileMarkerSettingsTypeDef](./type_defs.md#nexguardfilemarkersettingstypedef)
 
 ## PresetSettingsTypeDef
 
@@ -2592,13 +2368,13 @@ from mypy_boto3_mediaconvert.type_defs import PresetSettingsTypeDef
 Optional fields:
 
 - `AudioDescriptions`:
-  `List`\[[AudioDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#audiodescriptiontypedef)\]
+  `List`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
 - `CaptionDescriptions`:
-  `List`\[[CaptionDescriptionPresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#captiondescriptionpresettypedef)\]
+  `List`\[[CaptionDescriptionPresetTypeDef](./type_defs.md#captiondescriptionpresettypedef)\]
 - `ContainerSettings`:
-  [ContainerSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#containersettingstypedef)
+  [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
 - `VideoDescription`:
-  [VideoDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videodescriptiontypedef)
+  [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
 
 ## PresetTypeDef
 
@@ -2609,8 +2385,7 @@ from mypy_boto3_mediaconvert.type_defs import PresetTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Settings`:
-  [PresetSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presetsettingstypedef)
+- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
 
 Optional fields:
 
@@ -2619,8 +2394,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `LastUpdated`: `datetime`
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#typetype)
+- `Type`: [TypeType](./literals.md#typetype)
 
 ## ProresSettingsTypeDef
 
@@ -2630,26 +2404,21 @@ from mypy_boto3_mediaconvert.type_defs import ProresSettingsTypeDef
 
 Optional fields:
 
-- `CodecProfile`:
-  [ProresCodecProfile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#prorescodecprofile)
+- `CodecProfile`: [ProresCodecProfile](./literals.md#prorescodecprofile)
 - `FramerateControl`:
-  [ProresFramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#proresframeratecontrol)
+  [ProresFramerateControl](./literals.md#proresframeratecontrol)
 - `FramerateConversionAlgorithm`:
-  [ProresFramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#proresframerateconversionalgorithm)
+  [ProresFramerateConversionAlgorithm](./literals.md#proresframerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
-- `InterlaceMode`:
-  [ProresInterlaceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#proresinterlacemode)
-- `ParControl`:
-  [ProresParControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#proresparcontrol)
+- `InterlaceMode`: [ProresInterlaceMode](./literals.md#proresinterlacemode)
+- `ParControl`: [ProresParControl](./literals.md#proresparcontrol)
 - `ParDenominator`: `int`
 - `ParNumerator`: `int`
 - `ScanTypeConversionMode`:
-  [ProresScanTypeConversionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#proresscantypeconversionmode)
-- `SlowPal`:
-  [ProresSlowPal](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#proresslowpal)
-- `Telecine`:
-  [ProresTelecine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#prorestelecine)
+  [ProresScanTypeConversionMode](./literals.md#proresscantypeconversionmode)
+- `SlowPal`: [ProresSlowPal](./literals.md#proresslowpal)
+- `Telecine`: [ProresTelecine](./literals.md#prorestelecine)
 
 ## QueueTransitionTypeDef
 
@@ -2679,16 +2448,13 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `Description`: `str`
 - `LastUpdated`: `datetime`
-- `PricingPlan`:
-  [PricingPlan](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#pricingplan)
+- `PricingPlan`: [PricingPlan](./literals.md#pricingplan)
 - `ProgressingJobsCount`: `int`
 - `ReservationPlan`:
-  [ReservationPlanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#reservationplantypedef)
-- `Status`:
-  [QueueStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#queuestatus)
+  [ReservationPlanTypeDef](./type_defs.md#reservationplantypedef)
+- `Status`: [QueueStatus](./literals.md#queuestatus)
 - `SubmittedJobsCount`: `int`
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#typetype)
+- `Type`: [TypeType](./literals.md#typetype)
 
 ## RectangleTypeDef
 
@@ -2711,8 +2477,7 @@ from mypy_boto3_mediaconvert.type_defs import RemixSettingsTypeDef
 
 Optional fields:
 
-- `ChannelMapping`:
-  [ChannelMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#channelmappingtypedef)
+- `ChannelMapping`: [ChannelMappingTypeDef](./type_defs.md#channelmappingtypedef)
 - `ChannelsIn`: `int`
 - `ChannelsOut`: `int`
 
@@ -2724,9 +2489,9 @@ from mypy_boto3_mediaconvert.type_defs import ReservationPlanSettingsTypeDef
 
 Required fields:
 
-- `Commitment`: `Literal['ONE_YEAR']`
-- `RenewalType`:
-  [RenewalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#renewaltype)
+- `Commitment`: `Literal['ONE_YEAR']` (see
+  [Commitment](./literals.md#commitment))
+- `RenewalType`: [RenewalType](./literals.md#renewaltype)
 - `ReservedSlots`: `int`
 
 ## ReservationPlanTypeDef
@@ -2737,14 +2502,13 @@ from mypy_boto3_mediaconvert.type_defs import ReservationPlanTypeDef
 
 Optional fields:
 
-- `Commitment`: `Literal['ONE_YEAR']`
+- `Commitment`: `Literal['ONE_YEAR']` (see
+  [Commitment](./literals.md#commitment))
 - `ExpiresAt`: `datetime`
 - `PurchasedAt`: `datetime`
-- `RenewalType`:
-  [RenewalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#renewaltype)
+- `RenewalType`: [RenewalType](./literals.md#renewaltype)
 - `ReservedSlots`: `int`
-- `Status`:
-  [ReservationPlanStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#reservationplanstatus)
+- `Status`: [ReservationPlanStatus](./literals.md#reservationplanstatus)
 
 ## ResourceTagsTypeDef
 
@@ -2757,10 +2521,10 @@ Optional fields:
 - `Arn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ResponseMetadata
+from mypy_boto3_mediaconvert.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2779,8 +2543,7 @@ from mypy_boto3_mediaconvert.type_defs import S3DestinationAccessControlTypeDef
 
 Optional fields:
 
-- `CannedAcl`:
-  [S3ObjectCannedAcl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#s3objectcannedacl)
+- `CannedAcl`: [S3ObjectCannedAcl](./literals.md#s3objectcannedacl)
 
 ## S3DestinationSettingsTypeDef
 
@@ -2791,9 +2554,9 @@ from mypy_boto3_mediaconvert.type_defs import S3DestinationSettingsTypeDef
 Optional fields:
 
 - `AccessControl`:
-  [S3DestinationAccessControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#s3destinationaccesscontroltypedef)
+  [S3DestinationAccessControlTypeDef](./type_defs.md#s3destinationaccesscontroltypedef)
 - `Encryption`:
-  [S3EncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#s3encryptionsettingstypedef)
+  [S3EncryptionSettingsTypeDef](./type_defs.md#s3encryptionsettingstypedef)
 
 ## S3EncryptionSettingsTypeDef
 
@@ -2804,7 +2567,7 @@ from mypy_boto3_mediaconvert.type_defs import S3EncryptionSettingsTypeDef
 Optional fields:
 
 - `EncryptionType`:
-  [S3ServerSideEncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#s3serversideencryptiontype)
+  [S3ServerSideEncryptionType](./literals.md#s3serversideencryptiontype)
 - `KmsKeyArn`: `str`
 
 ## SccDestinationSettingsTypeDef
@@ -2815,8 +2578,7 @@ from mypy_boto3_mediaconvert.type_defs import SccDestinationSettingsTypeDef
 
 Optional fields:
 
-- `Framerate`:
-  [SccDestinationFramerate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#sccdestinationframerate)
+- `Framerate`: [SccDestinationFramerate](./literals.md#sccdestinationframerate)
 
 ## SpekeKeyProviderCmafTypeDef
 
@@ -2867,8 +2629,7 @@ from mypy_boto3_mediaconvert.type_defs import TeletextDestinationSettingsTypeDef
 Optional fields:
 
 - `PageNumber`: `str`
-- `PageTypes`:
-  `List`\[[TeletextPageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#teletextpagetype)\]
+- `PageTypes`: `List`\[[TeletextPageType](./literals.md#teletextpagetype)\]
 
 ## TeletextSourceSettingsTypeDef
 
@@ -2889,8 +2650,7 @@ from mypy_boto3_mediaconvert.type_defs import TimecodeBurninTypeDef
 Optional fields:
 
 - `FontSize`: `int`
-- `Position`:
-  [TimecodeBurninPosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#timecodeburninposition)
+- `Position`: [TimecodeBurninPosition](./literals.md#timecodeburninposition)
 - `Prefix`: `str`
 
 ## TimecodeConfigTypeDef
@@ -2902,8 +2662,7 @@ from mypy_boto3_mediaconvert.type_defs import TimecodeConfigTypeDef
 Optional fields:
 
 - `Anchor`: `str`
-- `Source`:
-  [TimecodeSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#timecodesource)
+- `Source`: [TimecodeSource](./literals.md#timecodesource)
 - `Start`: `str`
 - `TimestampOffset`: `str`
 
@@ -2916,7 +2675,7 @@ from mypy_boto3_mediaconvert.type_defs import TimedMetadataInsertionTypeDef
 Optional fields:
 
 - `Id3Insertions`:
-  `List`\[[Id3InsertionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#id3insertiontypedef)\]
+  `List`\[[Id3InsertionTypeDef](./type_defs.md#id3insertiontypedef)\]
 
 ## TimingTypeDef
 
@@ -2948,8 +2707,7 @@ from mypy_boto3_mediaconvert.type_defs import TtmlDestinationSettingsTypeDef
 
 Optional fields:
 
-- `StylePassthrough`:
-  [TtmlStylePassthrough](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#ttmlstylepassthrough)
+- `StylePassthrough`: [TtmlStylePassthrough](./literals.md#ttmlstylepassthrough)
 
 ## UpdateJobTemplateResponseTypeDef
 
@@ -2959,8 +2717,7 @@ from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateResponseTypeDef
 
 Optional fields:
 
-- `JobTemplate`:
-  [JobTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#jobtemplatetypedef)
+- `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
 
 ## UpdatePresetResponseTypeDef
 
@@ -2970,8 +2727,7 @@ from mypy_boto3_mediaconvert.type_defs import UpdatePresetResponseTypeDef
 
 Optional fields:
 
-- `Preset`:
-  [PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#presettypedef)
+- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 
 ## UpdateQueueResponseTypeDef
 
@@ -2981,8 +2737,7 @@ from mypy_boto3_mediaconvert.type_defs import UpdateQueueResponseTypeDef
 
 Optional fields:
 
-- `Queue`:
-  [QueueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#queuetypedef)
+- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
 
 ## Vc3SettingsTypeDef
 
@@ -2992,22 +2747,17 @@ from mypy_boto3_mediaconvert.type_defs import Vc3SettingsTypeDef
 
 Optional fields:
 
-- `FramerateControl`:
-  [Vc3FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3frameratecontrol)
+- `FramerateControl`: [Vc3FramerateControl](./literals.md#vc3frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [Vc3FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3framerateconversionalgorithm)
+  [Vc3FramerateConversionAlgorithm](./literals.md#vc3framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
-- `InterlaceMode`:
-  [Vc3InterlaceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3interlacemode)
+- `InterlaceMode`: [Vc3InterlaceMode](./literals.md#vc3interlacemode)
 - `ScanTypeConversionMode`:
-  [Vc3ScanTypeConversionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3scantypeconversionmode)
-- `SlowPal`:
-  [Vc3SlowPal](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3slowpal)
-- `Telecine`:
-  [Vc3Telecine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3telecine)
-- `Vc3Class`:
-  [Vc3Class](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vc3class)
+  [Vc3ScanTypeConversionMode](./literals.md#vc3scantypeconversionmode)
+- `SlowPal`: [Vc3SlowPal](./literals.md#vc3slowpal)
+- `Telecine`: [Vc3Telecine](./literals.md#vc3telecine)
+- `Vc3Class`: [Vc3Class](./literals.md#vc3class)
 
 ## VideoCodecSettingsTypeDef
 
@@ -3017,28 +2767,19 @@ from mypy_boto3_mediaconvert.type_defs import VideoCodecSettingsTypeDef
 
 Optional fields:
 
-- `Av1Settings`:
-  [Av1SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#av1settingstypedef)
+- `Av1Settings`: [Av1SettingsTypeDef](./type_defs.md#av1settingstypedef)
 - `AvcIntraSettings`:
-  [AvcIntraSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#avcintrasettingstypedef)
-- `Codec`:
-  [VideoCodec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#videocodec)
+  [AvcIntraSettingsTypeDef](./type_defs.md#avcintrasettingstypedef)
+- `Codec`: [VideoCodec](./literals.md#videocodec)
 - `FrameCaptureSettings`:
-  [FrameCaptureSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#framecapturesettingstypedef)
-- `H264Settings`:
-  [H264SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#h264settingstypedef)
-- `H265Settings`:
-  [H265SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#h265settingstypedef)
-- `Mpeg2Settings`:
-  [Mpeg2SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#mpeg2settingstypedef)
-- `ProresSettings`:
-  [ProresSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#proressettingstypedef)
-- `Vc3Settings`:
-  [Vc3SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#vc3settingstypedef)
-- `Vp8Settings`:
-  [Vp8SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#vp8settingstypedef)
-- `Vp9Settings`:
-  [Vp9SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#vp9settingstypedef)
+  [FrameCaptureSettingsTypeDef](./type_defs.md#framecapturesettingstypedef)
+- `H264Settings`: [H264SettingsTypeDef](./type_defs.md#h264settingstypedef)
+- `H265Settings`: [H265SettingsTypeDef](./type_defs.md#h265settingstypedef)
+- `Mpeg2Settings`: [Mpeg2SettingsTypeDef](./type_defs.md#mpeg2settingstypedef)
+- `ProresSettings`: [ProresSettingsTypeDef](./type_defs.md#proressettingstypedef)
+- `Vc3Settings`: [Vc3SettingsTypeDef](./type_defs.md#vc3settingstypedef)
+- `Vp8Settings`: [Vp8SettingsTypeDef](./type_defs.md#vp8settingstypedef)
+- `Vp9Settings`: [Vp9SettingsTypeDef](./type_defs.md#vp9settingstypedef)
 
 ## VideoDescriptionTypeDef
 
@@ -3048,31 +2789,23 @@ from mypy_boto3_mediaconvert.type_defs import VideoDescriptionTypeDef
 
 Optional fields:
 
-- `AfdSignaling`:
-  [AfdSignaling](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#afdsignaling)
-- `AntiAlias`:
-  [AntiAlias](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#antialias)
+- `AfdSignaling`: [AfdSignaling](./literals.md#afdsignaling)
+- `AntiAlias`: [AntiAlias](./literals.md#antialias)
 - `CodecSettings`:
-  [VideoCodecSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videocodecsettingstypedef)
-- `ColorMetadata`:
-  [ColorMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#colormetadata)
-- `Crop`:
-  [RectangleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#rectangletypedef)
-- `DropFrameTimecode`:
-  [DropFrameTimecode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#dropframetimecode)
+  [VideoCodecSettingsTypeDef](./type_defs.md#videocodecsettingstypedef)
+- `ColorMetadata`: [ColorMetadata](./literals.md#colormetadata)
+- `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
+- `DropFrameTimecode`: [DropFrameTimecode](./literals.md#dropframetimecode)
 - `FixedAfd`: `int`
 - `Height`: `int`
-- `Position`:
-  [RectangleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#rectangletypedef)
-- `RespondToAfd`:
-  [RespondToAfd](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#respondtoafd)
-- `ScalingBehavior`:
-  [ScalingBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#scalingbehavior)
+- `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
+- `RespondToAfd`: [RespondToAfd](./literals.md#respondtoafd)
+- `ScalingBehavior`: [ScalingBehavior](./literals.md#scalingbehavior)
 - `Sharpness`: `int`
 - `TimecodeInsertion`:
-  [VideoTimecodeInsertion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#videotimecodeinsertion)
+  [VideoTimecodeInsertion](./literals.md#videotimecodeinsertion)
 - `VideoPreprocessors`:
-  [VideoPreprocessorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#videopreprocessortypedef)
+  [VideoPreprocessorTypeDef](./type_defs.md#videopreprocessortypedef)
 - `Width`: `int`
 
 ## VideoDetailTypeDef
@@ -3094,20 +2827,14 @@ from mypy_boto3_mediaconvert.type_defs import VideoPreprocessorTypeDef
 
 Optional fields:
 
-- `ColorCorrector`:
-  [ColorCorrectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#colorcorrectortypedef)
-- `Deinterlacer`:
-  [DeinterlacerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#deinterlacertypedef)
-- `DolbyVision`:
-  [DolbyVisionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#dolbyvisiontypedef)
-- `ImageInserter`:
-  [ImageInserterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#imageinsertertypedef)
-- `NoiseReducer`:
-  [NoiseReducerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#noisereducertypedef)
+- `ColorCorrector`: [ColorCorrectorTypeDef](./type_defs.md#colorcorrectortypedef)
+- `Deinterlacer`: [DeinterlacerTypeDef](./type_defs.md#deinterlacertypedef)
+- `DolbyVision`: [DolbyVisionTypeDef](./type_defs.md#dolbyvisiontypedef)
+- `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
+- `NoiseReducer`: [NoiseReducerTypeDef](./type_defs.md#noisereducertypedef)
 - `PartnerWatermarking`:
-  [PartnerWatermarkingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#partnerwatermarkingtypedef)
-- `TimecodeBurnin`:
-  [TimecodeBurninTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#timecodeburnintypedef)
+  [PartnerWatermarkingTypeDef](./type_defs.md#partnerwatermarkingtypedef)
+- `TimecodeBurnin`: [TimecodeBurninTypeDef](./type_defs.md#timecodeburnintypedef)
 
 ## VideoSelectorTypeDef
 
@@ -3117,20 +2844,14 @@ from mypy_boto3_mediaconvert.type_defs import VideoSelectorTypeDef
 
 Optional fields:
 
-- `AlphaBehavior`:
-  [AlphaBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#alphabehavior)
-- `ColorSpace`:
-  [ColorSpace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#colorspace)
-- `ColorSpaceUsage`:
-  [ColorSpaceUsage](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#colorspaceusage)
-- `Hdr10Metadata`:
-  [Hdr10MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/type_defs.html#hdr10metadatatypedef)
+- `AlphaBehavior`: [AlphaBehavior](./literals.md#alphabehavior)
+- `ColorSpace`: [ColorSpace](./literals.md#colorspace)
+- `ColorSpaceUsage`: [ColorSpaceUsage](./literals.md#colorspaceusage)
+- `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
 - `Pid`: `int`
 - `ProgramNumber`: `int`
-- `Rotate`:
-  [InputRotate](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputrotate)
-- `SampleRange`:
-  [InputSampleRange](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#inputsamplerange)
+- `Rotate`: [InputRotate](./literals.md#inputrotate)
+- `SampleRange`: [InputSampleRange](./literals.md#inputsamplerange)
 
 ## VorbisSettingsTypeDef
 
@@ -3153,22 +2874,21 @@ from mypy_boto3_mediaconvert.type_defs import Vp8SettingsTypeDef
 Optional fields:
 
 - `Bitrate`: `int`
-- `FramerateControl`:
-  [Vp8FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp8frameratecontrol)
+- `FramerateControl`: [Vp8FramerateControl](./literals.md#vp8frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [Vp8FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp8framerateconversionalgorithm)
+  [Vp8FramerateConversionAlgorithm](./literals.md#vp8framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
 - `GopSize`: `float`
 - `HrdBufferSize`: `int`
 - `MaxBitrate`: `int`
-- `ParControl`:
-  [Vp8ParControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp8parcontrol)
+- `ParControl`: [Vp8ParControl](./literals.md#vp8parcontrol)
 - `ParDenominator`: `int`
 - `ParNumerator`: `int`
 - `QualityTuningLevel`:
-  [Vp8QualityTuningLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp8qualitytuninglevel)
-- `RateControlMode`: `Literal['VBR']`
+  [Vp8QualityTuningLevel](./literals.md#vp8qualitytuninglevel)
+- `RateControlMode`: `Literal['VBR']` (see
+  [Vp8RateControlMode](./literals.md#vp8ratecontrolmode))
 
 ## Vp9SettingsTypeDef
 
@@ -3179,22 +2899,21 @@ from mypy_boto3_mediaconvert.type_defs import Vp9SettingsTypeDef
 Optional fields:
 
 - `Bitrate`: `int`
-- `FramerateControl`:
-  [Vp9FramerateControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp9frameratecontrol)
+- `FramerateControl`: [Vp9FramerateControl](./literals.md#vp9frameratecontrol)
 - `FramerateConversionAlgorithm`:
-  [Vp9FramerateConversionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp9framerateconversionalgorithm)
+  [Vp9FramerateConversionAlgorithm](./literals.md#vp9framerateconversionalgorithm)
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
 - `GopSize`: `float`
 - `HrdBufferSize`: `int`
 - `MaxBitrate`: `int`
-- `ParControl`:
-  [Vp9ParControl](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp9parcontrol)
+- `ParControl`: [Vp9ParControl](./literals.md#vp9parcontrol)
 - `ParDenominator`: `int`
 - `ParNumerator`: `int`
 - `QualityTuningLevel`:
-  [Vp9QualityTuningLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#vp9qualitytuninglevel)
-- `RateControlMode`: `Literal['VBR']`
+  [Vp9QualityTuningLevel](./literals.md#vp9qualitytuninglevel)
+- `RateControlMode`: `Literal['VBR']` (see
+  [Vp9RateControlMode](./literals.md#vp9ratecontrolmode))
 
 ## WavSettingsTypeDef
 
@@ -3206,8 +2925,7 @@ Optional fields:
 
 - `BitDepth`: `int`
 - `Channels`: `int`
-- `Format`:
-  [WavFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#wavformat)
+- `Format`: [WavFormat](./literals.md#wavformat)
 - `SampleRate`: `int`
 
 ## WebvttDestinationSettingsTypeDef
@@ -3219,4 +2937,4 @@ from mypy_boto3_mediaconvert.type_defs import WebvttDestinationSettingsTypeDef
 Optional fields:
 
 - `StylePassthrough`:
-  [WebvttStylePassthrough](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediaconvert/literals.html#webvttstylepassthrough)
+  [WebvttStylePassthrough](./literals.md#webvttstylepassthrough)

@@ -1,6 +1,6 @@
 # Paginators for boto3 AutoScalingPlans module
 
-> [Index](../README.md) > [AutoScalingPlans](./README.md) > Paginators
+> [Index](..) > [AutoScalingPlans](.) > Paginators
 
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
@@ -33,10 +33,10 @@ Arguments for `DescribeScalingPlanResourcesPaginator.paginate` method:
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPlanResourcesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPlanResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplanresourcesresponsetypedef)\].
+`Iterator`\[[DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef)\].
 
 ## DescribeScalingPlansPaginator
 
@@ -60,9 +60,9 @@ Arguments for `DescribeScalingPlansPaginator.paginate` method:
 - `ScalingPlanNames`: `List`\[`str`\]
 - `ScalingPlanVersion`: `int`
 - `ApplicationSources`:
-  `List`\[[ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)\]
+  `List`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPlansPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPlansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplansresponsetypedef)\].
+`Iterator`\[[DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef)\].

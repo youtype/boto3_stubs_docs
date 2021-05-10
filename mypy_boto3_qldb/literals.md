@@ -1,6 +1,6 @@
 # Literals for boto3 QLDB module
 
-> [Index](../README.md) > [QLDB](./README.md) > Literals
+> [Index](..) > [QLDB](.) > Literals
 
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)

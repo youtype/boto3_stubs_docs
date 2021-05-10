@@ -1,6 +1,6 @@
 # Type annotations for boto3 RDSDataService module
 
-> [Index](../README.md) > RDSDataService
+> [Index](..) > RDSDataService
 
 Auto-generated documentation for
 [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)

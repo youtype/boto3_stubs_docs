@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeCommit module
 
-> [Index](../README.md) > [CodeCommit](./README.md) > Paginators
+> [Index](..) > [CodeCommit](.) > Paginators
 
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
@@ -37,13 +37,13 @@ Arguments for `DescribePullRequestEventsPaginator.paginate` method:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestEventType`:
-  [PullRequestEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequesteventtype)
+  [PullRequestEventType](./literals.md#pullrequesteventtype)
 - `actorArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePullRequestEventsPaginator.paginate` returns
-`Iterator`\[[DescribePullRequestEventsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#describepullrequesteventsoutputtypedef)\].
+`Iterator`\[[DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef)\].
 
 ## GetCommentsForComparedCommitPaginator
 
@@ -68,10 +68,10 @@ Arguments for `GetCommentsForComparedCommitPaginator.paginate` method:
 - `afterCommitId`: `str` *(required)*
 - `beforeCommitId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCommentsForComparedCommitPaginator.paginate` returns
-`Iterator`\[[GetCommentsForComparedCommitOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforcomparedcommitoutputtypedef)\].
+`Iterator`\[[GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef)\].
 
 ## GetCommentsForPullRequestPaginator
 
@@ -97,10 +97,10 @@ Arguments for `GetCommentsForPullRequestPaginator.paginate` method:
 - `beforeCommitId`: `str`
 - `afterCommitId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCommentsForPullRequestPaginator.paginate` returns
-`Iterator`\[[GetCommentsForPullRequestOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getcommentsforpullrequestoutputtypedef)\].
+`Iterator`\[[GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef)\].
 
 ## GetDifferencesPaginator
 
@@ -127,10 +127,10 @@ Arguments for `GetDifferencesPaginator.paginate` method:
 - `beforePath`: `str`
 - `afterPath`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDifferencesPaginator.paginate` returns
-`Iterator`\[[GetDifferencesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#getdifferencesoutputtypedef)\].
+`Iterator`\[[GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef)\].
 
 ## ListBranchesPaginator
 
@@ -153,10 +153,10 @@ Arguments for `ListBranchesPaginator.paginate` method:
 
 - `repositoryName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBranchesPaginator.paginate` returns
-`Iterator`\[[ListBranchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listbranchesoutputtypedef)\].
+`Iterator`\[[ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef)\].
 
 ## ListPullRequestsPaginator
 
@@ -180,12 +180,12 @@ Arguments for `ListPullRequestsPaginator.paginate` method:
 - `repositoryName`: `str` *(required)*
 - `authorArn`: `str`
 - `pullRequestStatus`:
-  [PullRequestStatusEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#pullrequeststatusenum)
+  [PullRequestStatusEnum](./literals.md#pullrequeststatusenum)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPullRequestsPaginator.paginate` returns
-`Iterator`\[[ListPullRequestsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listpullrequestsoutputtypedef)\].
+`Iterator`\[[ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef)\].
 
 ## ListRepositoriesPaginator
 
@@ -206,12 +206,10 @@ Boto3 documentation:
 
 Arguments for `ListRepositoriesPaginator.paginate` method:
 
-- `sortBy`:
-  [SortByEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#sortbyenum)
-- `order`:
-  [OrderEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/literals.html#orderenum)
+- `sortBy`: [SortByEnum](./literals.md#sortbyenum)
+- `order`: [OrderEnum](./literals.md#orderenum)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRepositoriesPaginator.paginate` returns
-`Iterator`\[[ListRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codecommit/type_defs.html#listrepositoriesoutputtypedef)\].
+`Iterator`\[[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef)\].

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MarketplaceMetering module
 
-> [Index](../README.md) > [MarketplaceMetering](./README.md) > Structures
+> [Index](..) > [MarketplaceMetering](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
@@ -26,9 +26,9 @@ from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDe
 Optional fields:
 
 - `Results`:
-  `List`\[[UsageRecordResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usagerecordresulttypedef)\]
+  `List`\[[UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef)\]
 - `UnprocessedRecords`:
-  `List`\[[UsageRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usagerecordtypedef)\]
+  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
 
 ## MeterUsageResultTypeDef
 
@@ -85,8 +85,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UsageRecordResultTypeDef
 
@@ -96,11 +95,9 @@ from mypy_boto3_meteringmarketplace.type_defs import UsageRecordResultTypeDef
 
 Optional fields:
 
-- `UsageRecord`:
-  [UsageRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usagerecordtypedef)
+- `UsageRecord`: [UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)
 - `MeteringRecordId`: `str`
-- `Status`:
-  [UsageRecordResultStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/literals.html#usagerecordresultstatus)
+- `Status`: [UsageRecordResultStatus](./literals.md#usagerecordresultstatus)
 
 ## UsageRecordTypeDef
 
@@ -118,4 +115,4 @@ Optional fields:
 
 - `Quantity`: `int`
 - `UsageAllocations`:
-  `List`\[[UsageAllocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_meteringmarketplace/type_defs.html#usageallocationtypedef)\]
+  `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]

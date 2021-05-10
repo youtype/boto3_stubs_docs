@@ -1,6 +1,6 @@
 # Literals for boto3 ImportExport module
 
-> [Index](../README.md) > [ImportExport](./README.md) > Literals
+> [Index](..) > [ImportExport](.) > Literals
 
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 Athena module
 
-> [Index](../README.md) > Athena
+> [Index](..) > Athena
 
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
@@ -170,7 +170,7 @@ from mypy_boto3_athena.type_defs import BatchGetNamedQueryOutputTypeDef, ...
 - [QueryExecutionStatisticsTypeDef](./type_defs.md#queryexecutionstatisticstypedef)
 - [QueryExecutionStatusTypeDef](./type_defs.md#queryexecutionstatustypedef)
 - [QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - [ResultConfigurationUpdatesTypeDef](./type_defs.md#resultconfigurationupdatestypedef)
 - [ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef)

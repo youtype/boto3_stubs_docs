@@ -1,6 +1,6 @@
 # Literals for boto3 PrometheusService module
 
-> [Index](../README.md) > [PrometheusService](./README.md) > Literals
+> [Index](..) > [PrometheusService](.) > Literals
 
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)

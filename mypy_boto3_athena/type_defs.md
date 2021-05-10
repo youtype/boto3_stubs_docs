@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Athena module
 
-> [Index](../README.md) > [Athena](./README.md) > Structures
+> [Index](..) > [Athena](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
@@ -44,7 +44,7 @@ type annotations stubs module
   - [QueryExecutionStatisticsTypeDef](#queryexecutionstatisticstypedef)
   - [QueryExecutionStatusTypeDef](#queryexecutionstatustypedef)
   - [QueryExecutionTypeDef](#queryexecutiontypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultConfigurationTypeDef](#resultconfigurationtypedef)
   - [ResultConfigurationUpdatesTypeDef](#resultconfigurationupdatestypedef)
   - [ResultSetMetadataTypeDef](#resultsetmetadatatypedef)
@@ -68,12 +68,11 @@ from mypy_boto3_athena.type_defs import BatchGetNamedQueryOutputTypeDef
 
 Required fields:
 
-- `NamedQueries`:
-  `List`\[[NamedQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#namedquerytypedef)\]
+- `NamedQueries`: `List`\[[NamedQueryTypeDef](./type_defs.md#namedquerytypedef)\]
 - `UnprocessedNamedQueryIds`:
-  `List`\[[UnprocessedNamedQueryIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#unprocessednamedqueryidtypedef)\]
+  `List`\[[UnprocessedNamedQueryIdTypeDef](./type_defs.md#unprocessednamedqueryidtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchGetQueryExecutionOutputTypeDef
 
@@ -84,11 +83,11 @@ from mypy_boto3_athena.type_defs import BatchGetQueryExecutionOutputTypeDef
 Required fields:
 
 - `QueryExecutions`:
-  `List`\[[QueryExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutiontypedef)\]
+  `List`\[[QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef)\]
 - `UnprocessedQueryExecutionIds`:
-  `List`\[[UnprocessedQueryExecutionIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#unprocessedqueryexecutionidtypedef)\]
+  `List`\[[UnprocessedQueryExecutionIdTypeDef](./type_defs.md#unprocessedqueryexecutionidtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ColumnInfoTypeDef
 
@@ -109,8 +108,7 @@ Optional fields:
 - `Label`: `str`
 - `Precision`: `int`
 - `Scale`: `int`
-- `Nullable`:
-  [ColumnNullable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#columnnullable)
+- `Nullable`: [ColumnNullable](./literals.md#columnnullable)
 - `CaseSensitive`: `bool`
 
 ## ColumnTypeDef
@@ -138,7 +136,7 @@ Required fields:
 
 - `NamedQueryId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DataCatalogSummaryTypeDef
 
@@ -149,8 +147,7 @@ from mypy_boto3_athena.type_defs import DataCatalogSummaryTypeDef
 Optional fields:
 
 - `CatalogName`: `str`
-- `Type`:
-  [DataCatalogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#datacatalogtype)
+- `Type`: [DataCatalogType](./literals.md#datacatalogtype)
 
 ## DataCatalogTypeDef
 
@@ -161,8 +158,7 @@ from mypy_boto3_athena.type_defs import DataCatalogTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Type`:
-  [DataCatalogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#datacatalogtype)
+- `Type`: [DataCatalogType](./literals.md#datacatalogtype)
 
 Optional fields:
 
@@ -202,8 +198,7 @@ from mypy_boto3_athena.type_defs import EncryptionConfigurationTypeDef
 
 Required fields:
 
-- `EncryptionOption`:
-  [EncryptionOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#encryptionoption)
+- `EncryptionOption`: [EncryptionOption](./literals.md#encryptionoption)
 
 Optional fields:
 
@@ -228,10 +223,9 @@ from mypy_boto3_athena.type_defs import GetDataCatalogOutputTypeDef
 
 Required fields:
 
-- `DataCatalog`:
-  [DataCatalogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#datacatalogtypedef)
+- `DataCatalog`: [DataCatalogTypeDef](./type_defs.md#datacatalogtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetDatabaseOutputTypeDef
 
@@ -241,10 +235,9 @@ from mypy_boto3_athena.type_defs import GetDatabaseOutputTypeDef
 
 Required fields:
 
-- `Database`:
-  [DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#databasetypedef)
+- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetNamedQueryOutputTypeDef
 
@@ -254,10 +247,9 @@ from mypy_boto3_athena.type_defs import GetNamedQueryOutputTypeDef
 
 Required fields:
 
-- `NamedQuery`:
-  [NamedQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#namedquerytypedef)
+- `NamedQuery`: [NamedQueryTypeDef](./type_defs.md#namedquerytypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetPreparedStatementOutputTypeDef
 
@@ -268,9 +260,9 @@ from mypy_boto3_athena.type_defs import GetPreparedStatementOutputTypeDef
 Required fields:
 
 - `PreparedStatement`:
-  [PreparedStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#preparedstatementtypedef)
+  [PreparedStatementTypeDef](./type_defs.md#preparedstatementtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetQueryExecutionOutputTypeDef
 
@@ -280,10 +272,9 @@ from mypy_boto3_athena.type_defs import GetQueryExecutionOutputTypeDef
 
 Required fields:
 
-- `QueryExecution`:
-  [QueryExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutiontypedef)
+- `QueryExecution`: [QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetQueryResultsOutputTypeDef
 
@@ -294,11 +285,10 @@ from mypy_boto3_athena.type_defs import GetQueryResultsOutputTypeDef
 Required fields:
 
 - `UpdateCount`: `int`
-- `ResultSet`:
-  [ResultSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultsettypedef)
+- `ResultSet`: [ResultSetTypeDef](./type_defs.md#resultsettypedef)
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetTableMetadataOutputTypeDef
 
@@ -308,10 +298,9 @@ from mypy_boto3_athena.type_defs import GetTableMetadataOutputTypeDef
 
 Required fields:
 
-- `TableMetadata`:
-  [TableMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tablemetadatatypedef)
+- `TableMetadata`: [TableMetadataTypeDef](./type_defs.md#tablemetadatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetWorkGroupOutputTypeDef
 
@@ -321,10 +310,9 @@ from mypy_boto3_athena.type_defs import GetWorkGroupOutputTypeDef
 
 Required fields:
 
-- `WorkGroup`:
-  [WorkGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgrouptypedef)
+- `WorkGroup`: [WorkGroupTypeDef](./type_defs.md#workgrouptypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListDataCatalogsOutputTypeDef
 
@@ -335,10 +323,10 @@ from mypy_boto3_athena.type_defs import ListDataCatalogsOutputTypeDef
 Required fields:
 
 - `DataCatalogsSummary`:
-  `List`\[[DataCatalogSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#datacatalogsummarytypedef)\]
+  `List`\[[DataCatalogSummaryTypeDef](./type_defs.md#datacatalogsummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListDatabasesOutputTypeDef
 
@@ -348,11 +336,10 @@ from mypy_boto3_athena.type_defs import ListDatabasesOutputTypeDef
 
 Required fields:
 
-- `DatabaseList`:
-  `List`\[[DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#databasetypedef)\]
+- `DatabaseList`: `List`\[[DatabaseTypeDef](./type_defs.md#databasetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListEngineVersionsOutputTypeDef
 
@@ -363,10 +350,10 @@ from mypy_boto3_athena.type_defs import ListEngineVersionsOutputTypeDef
 Required fields:
 
 - `EngineVersions`:
-  `List`\[[EngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#engineversiontypedef)\]
+  `List`\[[EngineVersionTypeDef](./type_defs.md#engineversiontypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListNamedQueriesOutputTypeDef
 
@@ -379,7 +366,7 @@ Required fields:
 - `NamedQueryIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListPreparedStatementsOutputTypeDef
 
@@ -390,10 +377,10 @@ from mypy_boto3_athena.type_defs import ListPreparedStatementsOutputTypeDef
 Required fields:
 
 - `PreparedStatements`:
-  `List`\[[PreparedStatementSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#preparedstatementsummarytypedef)\]
+  `List`\[[PreparedStatementSummaryTypeDef](./type_defs.md#preparedstatementsummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListQueryExecutionsOutputTypeDef
 
@@ -406,7 +393,7 @@ Required fields:
 - `QueryExecutionIds`: `List`\[`str`\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTableMetadataOutputTypeDef
 
@@ -417,10 +404,10 @@ from mypy_boto3_athena.type_defs import ListTableMetadataOutputTypeDef
 Required fields:
 
 - `TableMetadataList`:
-  `List`\[[TableMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tablemetadatatypedef)\]
+  `List`\[[TableMetadataTypeDef](./type_defs.md#tablemetadatatypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -430,11 +417,10 @@ from mypy_boto3_athena.type_defs import ListTagsForResourceOutputTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListWorkGroupsOutputTypeDef
 
@@ -445,10 +431,10 @@ from mypy_boto3_athena.type_defs import ListWorkGroupsOutputTypeDef
 Required fields:
 
 - `WorkGroups`:
-  `List`\[[WorkGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgroupsummarytypedef)\]
+  `List`\[[WorkGroupSummaryTypeDef](./type_defs.md#workgroupsummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NamedQueryTypeDef
 
@@ -540,8 +526,7 @@ from mypy_boto3_athena.type_defs import QueryExecutionStatusTypeDef
 
 Optional fields:
 
-- `State`:
-  [QueryExecutionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#queryexecutionstate)
+- `State`: [QueryExecutionState](./literals.md#queryexecutionstate)
 - `StateChangeReason`: `str`
 - `SubmissionDateTime`: `datetime`
 - `CompletionDateTime`: `datetime`
@@ -556,24 +541,22 @@ Optional fields:
 
 - `QueryExecutionId`: `str`
 - `Query`: `str`
-- `StatementType`:
-  [StatementType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#statementtype)
+- `StatementType`: [StatementType](./literals.md#statementtype)
 - `ResultConfiguration`:
-  [ResultConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultconfigurationtypedef)
+  [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - `QueryExecutionContext`:
-  [QueryExecutionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutioncontexttypedef)
+  [QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef)
 - `Status`:
-  [QueryExecutionStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutionstatustypedef)
+  [QueryExecutionStatusTypeDef](./type_defs.md#queryexecutionstatustypedef)
 - `Statistics`:
-  [QueryExecutionStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#queryexecutionstatisticstypedef)
+  [QueryExecutionStatisticsTypeDef](./type_defs.md#queryexecutionstatisticstypedef)
 - `WorkGroup`: `str`
-- `EngineVersion`:
-  [EngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#engineversiontypedef)
+- `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ResponseMetadata
+from mypy_boto3_athena.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -594,7 +577,7 @@ Optional fields:
 
 - `OutputLocation`: `str`
 - `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
 ## ResultConfigurationUpdatesTypeDef
 
@@ -607,7 +590,7 @@ Optional fields:
 - `OutputLocation`: `str`
 - `RemoveOutputLocation`: `bool`
 - `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `RemoveEncryptionConfiguration`: `bool`
 
 ## ResultSetMetadataTypeDef
@@ -618,8 +601,7 @@ from mypy_boto3_athena.type_defs import ResultSetMetadataTypeDef
 
 Optional fields:
 
-- `ColumnInfo`:
-  `List`\[[ColumnInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#columninfotypedef)\]
+- `ColumnInfo`: `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
 
 ## ResultSetTypeDef
 
@@ -629,10 +611,9 @@ from mypy_boto3_athena.type_defs import ResultSetTypeDef
 
 Optional fields:
 
-- `Rows`:
-  `List`\[[RowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#rowtypedef)\]
+- `Rows`: `List`\[[RowTypeDef](./type_defs.md#rowtypedef)\]
 - `ResultSetMetadata`:
-  [ResultSetMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultsetmetadatatypedef)
+  [ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef)
 
 ## RowTypeDef
 
@@ -642,8 +623,7 @@ from mypy_boto3_athena.type_defs import RowTypeDef
 
 Optional fields:
 
-- `Data`:
-  `List`\[[DatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#datumtypedef)\]
+- `Data`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
 
 ## StartQueryExecutionOutputTypeDef
 
@@ -655,7 +635,7 @@ Required fields:
 
 - `QueryExecutionId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TableMetadataTypeDef
 
@@ -672,10 +652,8 @@ Optional fields:
 - `CreateTime`: `datetime`
 - `LastAccessTime`: `datetime`
 - `TableType`: `str`
-- `Columns`:
-  `List`\[[ColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#columntypedef)\]
-- `PartitionKeys`:
-  `List`\[[ColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#columntypedef)\]
+- `Columns`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
+- `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `Parameters`: `Dict`\[`str`, `str`\]
 
 ## TagTypeDef
@@ -722,13 +700,12 @@ from mypy_boto3_athena.type_defs import WorkGroupConfigurationTypeDef
 Optional fields:
 
 - `ResultConfiguration`:
-  [ResultConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultconfigurationtypedef)
+  [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - `EnforceWorkGroupConfiguration`: `bool`
 - `PublishCloudWatchMetricsEnabled`: `bool`
 - `BytesScannedCutoffPerQuery`: `int`
 - `RequesterPaysEnabled`: `bool`
-- `EngineVersion`:
-  [EngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#engineversiontypedef)
+- `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
 
 ## WorkGroupConfigurationUpdatesTypeDef
 
@@ -740,13 +717,12 @@ Optional fields:
 
 - `EnforceWorkGroupConfiguration`: `bool`
 - `ResultConfigurationUpdates`:
-  [ResultConfigurationUpdatesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#resultconfigurationupdatestypedef)
+  [ResultConfigurationUpdatesTypeDef](./type_defs.md#resultconfigurationupdatestypedef)
 - `PublishCloudWatchMetricsEnabled`: `bool`
 - `BytesScannedCutoffPerQuery`: `int`
 - `RemoveBytesScannedCutoffPerQuery`: `bool`
 - `RequesterPaysEnabled`: `bool`
-- `EngineVersion`:
-  [EngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#engineversiontypedef)
+- `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
 
 ## WorkGroupSummaryTypeDef
 
@@ -757,12 +733,10 @@ from mypy_boto3_athena.type_defs import WorkGroupSummaryTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `State`:
-  [WorkGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#workgroupstate)
+- `State`: [WorkGroupState](./literals.md#workgroupstate)
 - `Description`: `str`
 - `CreationTime`: `datetime`
-- `EngineVersion`:
-  [EngineVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#engineversiontypedef)
+- `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
 
 ## WorkGroupTypeDef
 
@@ -776,9 +750,8 @@ Required fields:
 
 Optional fields:
 
-- `State`:
-  [WorkGroupState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/literals.html#workgroupstate)
+- `State`: [WorkGroupState](./literals.md#workgroupstate)
 - `Configuration`:
-  [WorkGroupConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_athena/type_defs.html#workgroupconfigurationtypedef)
+  [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)
 - `Description`: `str`
 - `CreationTime`: `datetime`

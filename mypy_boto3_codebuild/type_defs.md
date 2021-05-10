@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CodeBuild module
 
-> [Index](../README.md) > [CodeBuild](./README.md) > Structures
+> [Index](..) > [CodeBuild](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
@@ -80,7 +80,7 @@ type annotations stubs module
   - [ReportTypeDef](#reporttypedef)
   - [ReportWithRawDataTypeDef](#reportwithrawdatatypedef)
   - [ResolvedArtifactTypeDef](#resolvedartifacttypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetryBuildBatchOutputTypeDef](#retrybuildbatchoutputtypedef)
   - [RetryBuildOutputTypeDef](#retrybuildoutputtypedef)
   - [S3LogsConfigTypeDef](#s3logsconfigtypedef)
@@ -112,9 +112,9 @@ Required fields:
 
 - `buildsDeleted`: `List`\[`str`\]
 - `buildsNotDeleted`:
-  `List`\[[BuildNotDeletedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildnotdeletedtypedef)\]
+  `List`\[[BuildNotDeletedTypeDef](./type_defs.md#buildnotdeletedtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchGetBuildBatchesOutputTypeDef
 
@@ -124,11 +124,10 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesOutputTypeDef
 
 Required fields:
 
-- `buildBatches`:
-  `List`\[[BuildBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchtypedef)\]
+- `buildBatches`: `List`\[[BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)\]
 - `buildBatchesNotFound`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchGetBuildsOutputTypeDef
 
@@ -138,11 +137,10 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildsOutputTypeDef
 
 Required fields:
 
-- `builds`:
-  `List`\[[BuildTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildtypedef)\]
+- `builds`: `List`\[[BuildTypeDef](./type_defs.md#buildtypedef)\]
 - `buildsNotFound`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchGetProjectsOutputTypeDef
 
@@ -152,11 +150,10 @@ from mypy_boto3_codebuild.type_defs import BatchGetProjectsOutputTypeDef
 
 Required fields:
 
-- `projects`:
-  `List`\[[ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projecttypedef)\]
+- `projects`: `List`\[[ProjectTypeDef](./type_defs.md#projecttypedef)\]
 - `projectsNotFound`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchGetReportGroupsOutputTypeDef
 
@@ -167,10 +164,10 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsOutputTypeDef
 Required fields:
 
 - `reportGroups`:
-  `List`\[[ReportGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportgrouptypedef)\]
+  `List`\[[ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)\]
 - `reportGroupsNotFound`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchGetReportsOutputTypeDef
 
@@ -180,11 +177,10 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportsOutputTypeDef
 
 Required fields:
 
-- `reports`:
-  `List`\[[ReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reporttypedef)\]
+- `reports`: `List`\[[ReportTypeDef](./type_defs.md#reporttypedef)\]
 - `reportsNotFound`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchRestrictionsTypeDef
 
@@ -211,8 +207,7 @@ Optional fields:
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#bucketowneraccess)
+- `bucketOwnerAccess`: [BucketOwnerAccess](./literals.md#bucketowneraccess)
 
 ## BuildBatchFilterTypeDef
 
@@ -222,8 +217,7 @@ from mypy_boto3_codebuild.type_defs import BuildBatchFilterTypeDef
 
 Optional fields:
 
-- `status`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#statustype)
+- `status`: [StatusType](./literals.md#statustype)
 
 ## BuildBatchPhaseTypeDef
 
@@ -233,15 +227,12 @@ from mypy_boto3_codebuild.type_defs import BuildBatchPhaseTypeDef
 
 Optional fields:
 
-- `phaseType`:
-  [BuildBatchPhaseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#buildbatchphasetype)
-- `phaseStatus`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#statustype)
+- `phaseType`: [BuildBatchPhaseType](./literals.md#buildbatchphasetype)
+- `phaseStatus`: [StatusType](./literals.md#statustype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `durationInSeconds`: `int`
-- `contexts`:
-  `List`\[[PhaseContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#phasecontexttypedef)\]
+- `contexts`: `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
 
 ## BuildBatchTypeDef
 
@@ -256,44 +247,37 @@ Optional fields:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `currentPhase`: `str`
-- `buildBatchStatus`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#statustype)
+- `buildBatchStatus`: [StatusType](./literals.md#statustype)
 - `sourceVersion`: `str`
 - `resolvedSourceVersion`: `str`
 - `projectName`: `str`
 - `phases`:
-  `List`\[[BuildBatchPhaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchphasetypedef)\]
-- `source`:
-  [ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)
+  `List`\[[BuildBatchPhaseTypeDef](./type_defs.md#buildbatchphasetypedef)\]
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
-- `artifacts`:
-  [BuildArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildartifactstypedef)
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `artifacts`: [BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)
 - `secondaryArtifacts`:
-  `List`\[[BuildArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildartifactstypedef)\]
-- `cache`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+  `List`\[[BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `environment`:
-  [ProjectEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectenvironmenttypedef)
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
 - `serviceRole`: `str`
-- `logConfig`:
-  [LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logsconfigtypedef)
+- `logConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `buildTimeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `complete`: `bool`
 - `initiator`: `str`
-- `vpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#vpcconfigtypedef)
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `encryptionKey`: `str`
 - `buildBatchNumber`: `int`
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectfilesystemlocationtypedef)\]
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectbuildbatchconfigtypedef)
-- `buildGroups`:
-  `List`\[[BuildGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildgrouptypedef)\]
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
+- `buildGroups`: `List`\[[BuildGroupTypeDef](./type_defs.md#buildgrouptypedef)\]
 - `debugSessionEnabled`: `bool`
 
 ## BuildGroupTypeDef
@@ -308,9 +292,9 @@ Optional fields:
 - `dependsOn`: `List`\[`str`\]
 - `ignoreFailure`: `bool`
 - `currentBuildSummary`:
-  [BuildSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildsummarytypedef)
+  [BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef)
 - `priorBuildSummaryList`:
-  `List`\[[BuildSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildsummarytypedef)\]
+  `List`\[[BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef)\]
 
 ## BuildNotDeletedTypeDef
 
@@ -331,15 +315,12 @@ from mypy_boto3_codebuild.type_defs import BuildPhaseTypeDef
 
 Optional fields:
 
-- `phaseType`:
-  [BuildPhaseType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#buildphasetype)
-- `phaseStatus`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#statustype)
+- `phaseType`: [BuildPhaseType](./literals.md#buildphasetype)
+- `phaseStatus`: [StatusType](./literals.md#statustype)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `durationInSeconds`: `int`
-- `contexts`:
-  `List`\[[PhaseContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#phasecontexttypedef)\]
+- `contexts`: `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
 
 ## BuildStatusConfigTypeDef
 
@@ -362,12 +343,11 @@ Optional fields:
 
 - `arn`: `str`
 - `requestedOn`: `datetime`
-- `buildStatus`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#statustype)
+- `buildStatus`: [StatusType](./literals.md#statustype)
 - `primaryArtifact`:
-  [ResolvedArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#resolvedartifacttypedef)
+  [ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)
 - `secondaryArtifacts`:
-  `List`\[[ResolvedArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#resolvedartifacttypedef)\]
+  `List`\[[ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)\]
 
 ## BuildTypeDef
 
@@ -383,46 +363,38 @@ Optional fields:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `currentPhase`: `str`
-- `buildStatus`:
-  [StatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#statustype)
+- `buildStatus`: [StatusType](./literals.md#statustype)
 - `sourceVersion`: `str`
 - `resolvedSourceVersion`: `str`
 - `projectName`: `str`
-- `phases`:
-  `List`\[[BuildPhaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildphasetypedef)\]
-- `source`:
-  [ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)
+- `phases`: `List`\[[BuildPhaseTypeDef](./type_defs.md#buildphasetypedef)\]
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
-- `artifacts`:
-  [BuildArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildartifactstypedef)
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `artifacts`: [BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)
 - `secondaryArtifacts`:
-  `List`\[[BuildArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildartifactstypedef)\]
-- `cache`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+  `List`\[[BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `environment`:
-  [ProjectEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectenvironmenttypedef)
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
 - `serviceRole`: `str`
-- `logs`:
-  [LogsLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logslocationtypedef)
+- `logs`: [LogsLocationTypeDef](./type_defs.md#logslocationtypedef)
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `buildComplete`: `bool`
 - `initiator`: `str`
-- `vpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#vpcconfigtypedef)
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `networkInterface`:
-  [NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#networkinterfacetypedef)
+  [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - `encryptionKey`: `str`
 - `exportedEnvironmentVariables`:
-  `List`\[[ExportedEnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#exportedenvironmentvariabletypedef)\]
+  `List`\[[ExportedEnvironmentVariableTypeDef](./type_defs.md#exportedenvironmentvariabletypedef)\]
 - `reportArns`: `List`\[`str`\]
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectfilesystemlocationtypedef)\]
-- `debugSession`:
-  [DebugSessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#debugsessiontypedef)
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+- `debugSession`: [DebugSessionTypeDef](./type_defs.md#debugsessiontypedef)
 - `buildBatchArn`: `str`
 
 ## CloudWatchLogsConfigTypeDef
@@ -433,8 +405,7 @@ from mypy_boto3_codebuild.type_defs import CloudWatchLogsConfigTypeDef
 
 Required fields:
 
-- `status`:
-  [LogsConfigStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#logsconfigstatustype)
+- `status`: [LogsConfigStatusType](./literals.md#logsconfigstatustype)
 
 Optional fields:
 
@@ -483,10 +454,9 @@ from mypy_boto3_codebuild.type_defs import CreateProjectOutputTypeDef
 
 Required fields:
 
-- `project`:
-  [ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projecttypedef)
+- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateReportGroupOutputTypeDef
 
@@ -496,10 +466,9 @@ from mypy_boto3_codebuild.type_defs import CreateReportGroupOutputTypeDef
 
 Required fields:
 
-- `reportGroup`:
-  [ReportGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportgrouptypedef)
+- `reportGroup`: [ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateWebhookOutputTypeDef
 
@@ -509,10 +478,9 @@ from mypy_boto3_codebuild.type_defs import CreateWebhookOutputTypeDef
 
 Required fields:
 
-- `webhook`:
-  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#webhooktypedef)
+- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DebugSessionTypeDef
 
@@ -536,9 +504,9 @@ Required fields:
 - `statusCode`: `str`
 - `buildsDeleted`: `List`\[`str`\]
 - `buildsNotDeleted`:
-  `List`\[[BuildNotDeletedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildnotdeletedtypedef)\]
+  `List`\[[BuildNotDeletedTypeDef](./type_defs.md#buildnotdeletedtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteSourceCredentialsOutputTypeDef
 
@@ -550,7 +518,7 @@ Required fields:
 
 - `arn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeCodeCoveragesOutputTypeDef
 
@@ -562,9 +530,9 @@ Required fields:
 
 - `nextToken`: `str`
 - `codeCoverages`:
-  `List`\[[CodeCoverageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#codecoveragetypedef)\]
+  `List`\[[CodeCoverageTypeDef](./type_defs.md#codecoveragetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTestCasesOutputTypeDef
 
@@ -575,10 +543,9 @@ from mypy_boto3_codebuild.type_defs import DescribeTestCasesOutputTypeDef
 Required fields:
 
 - `nextToken`: `str`
-- `testCases`:
-  `List`\[[TestCaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#testcasetypedef)\]
+- `testCases`: `List`\[[TestCaseTypeDef](./type_defs.md#testcasetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EnvironmentImageTypeDef
 
@@ -600,10 +567,9 @@ from mypy_boto3_codebuild.type_defs import EnvironmentLanguageTypeDef
 
 Optional fields:
 
-- `language`:
-  [LanguageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#languagetype)
+- `language`: [LanguageType](./literals.md#languagetype)
 - `images`:
-  `List`\[[EnvironmentImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#environmentimagetypedef)\]
+  `List`\[[EnvironmentImageTypeDef](./type_defs.md#environmentimagetypedef)\]
 
 ## EnvironmentPlatformTypeDef
 
@@ -613,10 +579,9 @@ from mypy_boto3_codebuild.type_defs import EnvironmentPlatformTypeDef
 
 Optional fields:
 
-- `platform`:
-  [PlatformType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#platformtype)
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `languages`:
-  `List`\[[EnvironmentLanguageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#environmentlanguagetypedef)\]
+  `List`\[[EnvironmentLanguageTypeDef](./type_defs.md#environmentlanguagetypedef)\]
 
 ## EnvironmentVariableTypeDef
 
@@ -631,8 +596,7 @@ Required fields:
 
 Optional fields:
 
-- `type`:
-  [EnvironmentVariableType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#environmentvariabletype)
+- `type`: [EnvironmentVariableType](./literals.md#environmentvariabletype)
 
 ## ExportedEnvironmentVariableTypeDef
 
@@ -654,11 +618,11 @@ from mypy_boto3_codebuild.type_defs import GetReportGroupTrendOutputTypeDef
 Required fields:
 
 - `stats`:
-  [ReportGroupTrendStatsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportgrouptrendstatstypedef)
+  [ReportGroupTrendStatsTypeDef](./type_defs.md#reportgrouptrendstatstypedef)
 - `rawData`:
-  `List`\[[ReportWithRawDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportwithrawdatatypedef)\]
+  `List`\[[ReportWithRawDataTypeDef](./type_defs.md#reportwithrawdatatypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetResourcePolicyOutputTypeDef
 
@@ -670,7 +634,7 @@ Required fields:
 
 - `policy`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GitSubmodulesConfigTypeDef
 
@@ -692,7 +656,7 @@ Required fields:
 
 - `arn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBuildBatchesForProjectOutputTypeDef
 
@@ -705,7 +669,7 @@ Required fields:
 - `ids`: `List`\[`str`\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBuildBatchesOutputTypeDef
 
@@ -718,7 +682,7 @@ Required fields:
 - `ids`: `List`\[`str`\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBuildsForProjectOutputTypeDef
 
@@ -731,7 +695,7 @@ Required fields:
 - `ids`: `List`\[`str`\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListBuildsOutputTypeDef
 
@@ -744,7 +708,7 @@ Required fields:
 - `ids`: `List`\[`str`\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListCuratedEnvironmentImagesOutputTypeDef
 
@@ -755,9 +719,9 @@ from mypy_boto3_codebuild.type_defs import ListCuratedEnvironmentImagesOutputTyp
 Required fields:
 
 - `platforms`:
-  `List`\[[EnvironmentPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#environmentplatformtypedef)\]
+  `List`\[[EnvironmentPlatformTypeDef](./type_defs.md#environmentplatformtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListProjectsOutputTypeDef
 
@@ -770,7 +734,7 @@ Required fields:
 - `nextToken`: `str`
 - `projects`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListReportGroupsOutputTypeDef
 
@@ -783,7 +747,7 @@ Required fields:
 - `nextToken`: `str`
 - `reportGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListReportsForReportGroupOutputTypeDef
 
@@ -796,7 +760,7 @@ Required fields:
 - `nextToken`: `str`
 - `reports`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListReportsOutputTypeDef
 
@@ -809,7 +773,7 @@ Required fields:
 - `nextToken`: `str`
 - `reports`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListSharedProjectsOutputTypeDef
 
@@ -822,7 +786,7 @@ Required fields:
 - `nextToken`: `str`
 - `projects`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListSharedReportGroupsOutputTypeDef
 
@@ -835,7 +799,7 @@ Required fields:
 - `nextToken`: `str`
 - `reportGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListSourceCredentialsOutputTypeDef
 
@@ -846,9 +810,9 @@ from mypy_boto3_codebuild.type_defs import ListSourceCredentialsOutputTypeDef
 Required fields:
 
 - `sourceCredentialsInfos`:
-  `List`\[[SourceCredentialsInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#sourcecredentialsinfotypedef)\]
+  `List`\[[SourceCredentialsInfoTypeDef](./type_defs.md#sourcecredentialsinfotypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogsConfigTypeDef
 
@@ -859,9 +823,8 @@ from mypy_boto3_codebuild.type_defs import LogsConfigTypeDef
 Optional fields:
 
 - `cloudWatchLogs`:
-  [CloudWatchLogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#cloudwatchlogsconfigtypedef)
-- `s3Logs`:
-  [S3LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#s3logsconfigtypedef)
+  [CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef)
+- `s3Logs`: [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)
 
 ## LogsLocationTypeDef
 
@@ -878,9 +841,8 @@ Optional fields:
 - `cloudWatchLogsArn`: `str`
 - `s3LogsArn`: `str`
 - `cloudWatchLogs`:
-  [CloudWatchLogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#cloudwatchlogsconfigtypedef)
-- `s3Logs`:
-  [S3LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#s3logsconfigtypedef)
+  [CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef)
+- `s3Logs`: [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)
 
 ## NetworkInterfaceTypeDef
 
@@ -924,23 +886,19 @@ from mypy_boto3_codebuild.type_defs import ProjectArtifactsTypeDef
 
 Required fields:
 
-- `type`:
-  [ArtifactsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#artifactstype)
+- `type`: [ArtifactsType](./literals.md#artifactstype)
 
 Optional fields:
 
 - `location`: `str`
 - `path`: `str`
-- `namespaceType`:
-  [ArtifactNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#artifactnamespace)
+- `namespaceType`: [ArtifactNamespace](./literals.md#artifactnamespace)
 - `name`: `str`
-- `packaging`:
-  [ArtifactPackaging](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#artifactpackaging)
+- `packaging`: [ArtifactPackaging](./literals.md#artifactpackaging)
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#bucketowneraccess)
+- `bucketOwnerAccess`: [BucketOwnerAccess](./literals.md#bucketowneraccess)
 
 ## ProjectBadgeTypeDef
 
@@ -964,7 +922,7 @@ Optional fields:
 - `serviceRole`: `str`
 - `combineArtifacts`: `bool`
 - `restrictions`:
-  [BatchRestrictionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchrestrictionstypedef)
+  [BatchRestrictionsTypeDef](./type_defs.md#batchrestrictionstypedef)
 - `timeoutInMins`: `int`
 
 ## ProjectCacheTypeDef
@@ -975,14 +933,12 @@ from mypy_boto3_codebuild.type_defs import ProjectCacheTypeDef
 
 Required fields:
 
-- `type`:
-  [CacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#cachetype)
+- `type`: [CacheType](./literals.md#cachetype)
 
 Optional fields:
 
 - `location`: `str`
-- `modes`:
-  `List`\[[CacheMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#cachemode)\]
+- `modes`: `List`\[[CacheMode](./literals.md#cachemode)\]
 
 ## ProjectEnvironmentTypeDef
 
@@ -992,22 +948,20 @@ from mypy_boto3_codebuild.type_defs import ProjectEnvironmentTypeDef
 
 Required fields:
 
-- `type`:
-  [EnvironmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#environmenttype)
+- `type`: [EnvironmentType](./literals.md#environmenttype)
 - `image`: `str`
-- `computeType`:
-  [ComputeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#computetype)
+- `computeType`: [ComputeType](./literals.md#computetype)
 
 Optional fields:
 
 - `environmentVariables`:
-  `List`\[[EnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#environmentvariabletypedef)\]
+  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 - `privilegedMode`: `bool`
 - `certificate`: `str`
 - `registryCredential`:
-  [RegistryCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#registrycredentialtypedef)
+  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
 - `imagePullCredentialsType`:
-  [ImagePullCredentialsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#imagepullcredentialstype)
+  [ImagePullCredentialsType](./literals.md#imagepullcredentialstype)
 
 ## ProjectFileSystemLocationTypeDef
 
@@ -1017,7 +971,7 @@ from mypy_boto3_codebuild.type_defs import ProjectFileSystemLocationTypeDef
 
 Optional fields:
 
-- `type`: `Literal['EFS']`
+- `type`: `Literal['EFS']` (see [FileSystemType](./literals.md#filesystemtype))
 - `location`: `str`
 - `mountPoint`: `str`
 - `identifier`: `str`
@@ -1031,21 +985,19 @@ from mypy_boto3_codebuild.type_defs import ProjectSourceTypeDef
 
 Required fields:
 
-- `type`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sourcetype)
+- `type`: [SourceType](./literals.md#sourcetype)
 
 Optional fields:
 
 - `location`: `str`
 - `gitCloneDepth`: `int`
 - `gitSubmodulesConfig`:
-  [GitSubmodulesConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#gitsubmodulesconfigtypedef)
+  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
 - `buildspec`: `str`
-- `auth`:
-  [SourceAuthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#sourceauthtypedef)
+- `auth`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
 - `reportBuildStatus`: `bool`
 - `buildStatusConfig`:
-  [BuildStatusConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildstatusconfigtypedef)
+  [BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef)
 - `insecureSsl`: `bool`
 - `sourceIdentifier`: `str`
 
@@ -1071,41 +1023,33 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 - `description`: `str`
-- `source`:
-  [ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
-- `artifacts`:
-  [ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `artifacts`: [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)\]
-- `cache`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `environment`:
-  [ProjectEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectenvironmenttypedef)
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
 - `serviceRole`: `str`
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `created`: `datetime`
 - `lastModified`: `datetime`
-- `webhook`:
-  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#webhooktypedef)
-- `vpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#vpcconfigtypedef)
-- `badge`:
-  [ProjectBadgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectbadgetypedef)
-- `logsConfig`:
-  [LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logsconfigtypedef)
+- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `badge`: [ProjectBadgeTypeDef](./type_defs.md#projectbadgetypedef)
+- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectfilesystemlocationtypedef)\]
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectbuildbatchconfigtypedef)
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
 ## PutResourcePolicyOutputTypeDef
@@ -1118,7 +1062,7 @@ Required fields:
 
 - `resourceArn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RegistryCredentialTypeDef
 
@@ -1129,7 +1073,8 @@ from mypy_boto3_codebuild.type_defs import RegistryCredentialTypeDef
 Required fields:
 
 - `credential`: `str`
-- `credentialProvider`: `Literal['SECRETS_MANAGER']`
+- `credentialProvider`: `Literal['SECRETS_MANAGER']` (see
+  [CredentialProviderType](./literals.md#credentialprovidertype))
 
 ## ReportExportConfigTypeDef
 
@@ -1140,9 +1085,9 @@ from mypy_boto3_codebuild.type_defs import ReportExportConfigTypeDef
 Optional fields:
 
 - `exportConfigType`:
-  [ReportExportConfigType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportexportconfigtype)
+  [ReportExportConfigType](./literals.md#reportexportconfigtype)
 - `s3Destination`:
-  [S3ReportExportConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#s3reportexportconfigtypedef)
+  [S3ReportExportConfigTypeDef](./type_defs.md#s3reportexportconfigtypedef)
 
 ## ReportFilterTypeDef
 
@@ -1152,8 +1097,7 @@ from mypy_boto3_codebuild.type_defs import ReportFilterTypeDef
 
 Optional fields:
 
-- `status`:
-  [ReportStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportstatustype)
+- `status`: [ReportStatusType](./literals.md#reportstatustype)
 
 ## ReportGroupTrendStatsTypeDef
 
@@ -1177,16 +1121,13 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
-- `type`:
-  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reporttype)
+- `type`: [ReportType](./literals.md#reporttype)
 - `exportConfig`:
-  [ReportExportConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportexportconfigtypedef)
+  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
 - `created`: `datetime`
 - `lastModified`: `datetime`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#tagtypedef)\]
-- `status`:
-  [ReportGroupStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportgroupstatustype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `status`: [ReportGroupStatusType](./literals.md#reportgroupstatustype)
 
 ## ReportTypeDef
 
@@ -1197,22 +1138,20 @@ from mypy_boto3_codebuild.type_defs import ReportTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `type`:
-  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reporttype)
+- `type`: [ReportType](./literals.md#reporttype)
 - `name`: `str`
 - `reportGroupArn`: `str`
 - `executionId`: `str`
-- `status`:
-  [ReportStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportstatustype)
+- `status`: [ReportStatusType](./literals.md#reportstatustype)
 - `created`: `datetime`
 - `expired`: `datetime`
 - `exportConfig`:
-  [ReportExportConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportexportconfigtypedef)
+  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
 - `truncated`: `bool`
 - `testSummary`:
-  [TestReportSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#testreportsummarytypedef)
+  [TestReportSummaryTypeDef](./type_defs.md#testreportsummarytypedef)
 - `codeCoverageSummary`:
-  [CodeCoverageReportSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#codecoveragereportsummarytypedef)
+  [CodeCoverageReportSummaryTypeDef](./type_defs.md#codecoveragereportsummarytypedef)
 
 ## ReportWithRawDataTypeDef
 
@@ -1233,15 +1172,14 @@ from mypy_boto3_codebuild.type_defs import ResolvedArtifactTypeDef
 
 Optional fields:
 
-- `type`:
-  [ArtifactsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#artifactstype)
+- `type`: [ArtifactsType](./literals.md#artifactstype)
 - `location`: `str`
 - `identifier`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ResponseMetadata
+from mypy_boto3_codebuild.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1260,10 +1198,9 @@ from mypy_boto3_codebuild.type_defs import RetryBuildBatchOutputTypeDef
 
 Required fields:
 
-- `buildBatch`:
-  [BuildBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchtypedef)
+- `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RetryBuildOutputTypeDef
 
@@ -1273,10 +1210,9 @@ from mypy_boto3_codebuild.type_defs import RetryBuildOutputTypeDef
 
 Required fields:
 
-- `build`:
-  [BuildTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildtypedef)
+- `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## S3LogsConfigTypeDef
 
@@ -1286,15 +1222,13 @@ from mypy_boto3_codebuild.type_defs import S3LogsConfigTypeDef
 
 Required fields:
 
-- `status`:
-  [LogsConfigStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#logsconfigstatustype)
+- `status`: [LogsConfigStatusType](./literals.md#logsconfigstatustype)
 
 Optional fields:
 
 - `location`: `str`
 - `encryptionDisabled`: `bool`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#bucketowneraccess)
+- `bucketOwnerAccess`: [BucketOwnerAccess](./literals.md#bucketowneraccess)
 
 ## S3ReportExportConfigTypeDef
 
@@ -1307,8 +1241,7 @@ Optional fields:
 - `bucket`: `str`
 - `bucketOwner`: `str`
 - `path`: `str`
-- `packaging`:
-  [ReportPackagingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportpackagingtype)
+- `packaging`: [ReportPackagingType](./literals.md#reportpackagingtype)
 - `encryptionKey`: `str`
 - `encryptionDisabled`: `bool`
 
@@ -1320,7 +1253,7 @@ from mypy_boto3_codebuild.type_defs import SourceAuthTypeDef
 
 Required fields:
 
-- `type`: `Literal['OAUTH']`
+- `type`: `Literal['OAUTH']` (see [SourceAuthType](./literals.md#sourceauthtype))
 
 Optional fields:
 
@@ -1335,10 +1268,8 @@ from mypy_boto3_codebuild.type_defs import SourceCredentialsInfoTypeDef
 Optional fields:
 
 - `arn`: `str`
-- `serverType`:
-  [ServerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#servertype)
-- `authType`:
-  [AuthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#authtype)
+- `serverType`: [ServerType](./literals.md#servertype)
+- `authType`: [AuthType](./literals.md#authtype)
 
 ## StartBuildBatchOutputTypeDef
 
@@ -1348,10 +1279,9 @@ from mypy_boto3_codebuild.type_defs import StartBuildBatchOutputTypeDef
 
 Required fields:
 
-- `buildBatch`:
-  [BuildBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchtypedef)
+- `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartBuildOutputTypeDef
 
@@ -1361,10 +1291,9 @@ from mypy_boto3_codebuild.type_defs import StartBuildOutputTypeDef
 
 Required fields:
 
-- `build`:
-  [BuildTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildtypedef)
+- `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StopBuildBatchOutputTypeDef
 
@@ -1374,10 +1303,9 @@ from mypy_boto3_codebuild.type_defs import StopBuildBatchOutputTypeDef
 
 Required fields:
 
-- `buildBatch`:
-  [BuildBatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchtypedef)
+- `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StopBuildOutputTypeDef
 
@@ -1387,10 +1315,9 @@ from mypy_boto3_codebuild.type_defs import StopBuildOutputTypeDef
 
 Required fields:
 
-- `build`:
-  [BuildTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildtypedef)
+- `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 
@@ -1451,10 +1378,9 @@ from mypy_boto3_codebuild.type_defs import UpdateProjectOutputTypeDef
 
 Required fields:
 
-- `project`:
-  [ProjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projecttypedef)
+- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateReportGroupOutputTypeDef
 
@@ -1464,10 +1390,9 @@ from mypy_boto3_codebuild.type_defs import UpdateReportGroupOutputTypeDef
 
 Required fields:
 
-- `reportGroup`:
-  [ReportGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportgrouptypedef)
+- `reportGroup`: [ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateWebhookOutputTypeDef
 
@@ -1477,10 +1402,9 @@ from mypy_boto3_codebuild.type_defs import UpdateWebhookOutputTypeDef
 
 Required fields:
 
-- `webhook`:
-  [WebhookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#webhooktypedef)
+- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcConfigTypeDef
 
@@ -1502,8 +1426,7 @@ from mypy_boto3_codebuild.type_defs import WebhookFilterTypeDef
 
 Required fields:
 
-- `type`:
-  [WebhookFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#webhookfiltertype)
+- `type`: [WebhookFilterType](./literals.md#webhookfiltertype)
 - `pattern`: `str`
 
 Optional fields:
@@ -1523,7 +1446,6 @@ Optional fields:
 - `secret`: `str`
 - `branchFilter`: `str`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#webhookfiltertypedef)\]\]
-- `buildType`:
-  [WebhookBuildType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#webhookbuildtype)
+  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+- `buildType`: [WebhookBuildType](./literals.md#webhookbuildtype)
 - `lastModifiedSecret`: `datetime`

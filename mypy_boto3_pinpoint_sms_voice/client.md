@@ -1,7 +1,6 @@
 # PinpointSMSVoiceClient for boto3 PinpointSMSVoice module
 
-> [Index](../README.md) > [PinpointSMSVoice](./README.md) >
-> PinpointSMSVoiceClient
+> [Index](..) > [PinpointSMSVoice](.) > PinpointSMSVoiceClient
 
 Auto-generated documentation for
 [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)
@@ -102,7 +101,7 @@ Arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestination`:
-  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#eventdestinationdefinitiontypedef)
+  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
 - `EventDestinationName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -168,7 +167,7 @@ Arguments:
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetEventDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#getconfigurationseteventdestinationsresponsetypedef).
+[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
 
 ### send_voice_message
 
@@ -183,12 +182,12 @@ Arguments:
 - `CallerId`: `str`
 - `ConfigurationSetName`: `str`
 - `Content`:
-  [VoiceMessageContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#voicemessagecontenttypedef)
+  [VoiceMessageContentTypeDef](./type_defs.md#voicemessagecontenttypedef)
 - `DestinationPhoneNumber`: `str`
 - `OriginationPhoneNumber`: `str`
 
 Returns
-[SendVoiceMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#sendvoicemessageresponsetypedef).
+[SendVoiceMessageResponseTypeDef](./type_defs.md#sendvoicemessageresponsetypedef).
 
 ### update_configuration_set_event_destination
 
@@ -204,6 +203,6 @@ Arguments:
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestinationName`: `str` *(required)*
 - `EventDestination`:
-  [EventDestinationDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pinpoint_sms_voice/type_defs.html#eventdestinationdefinitiontypedef)
+  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
 
 Returns `Dict`\[`str`, `Any`\].

@@ -1,6 +1,6 @@
 # Type annotations for boto3 DataSync module
 
-> [Index](../README.md) > DataSync
+> [Index](..) > DataSync
 
 Auto-generated documentation for
 [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)

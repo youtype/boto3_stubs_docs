@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 OpsWorks module
 
-> [Index](../README.md) > [OpsWorks](./README.md) > Structures
+> [Index](..) > [OpsWorks](.) > Typed dictionaries
 
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
@@ -100,7 +100,7 @@ Optional fields:
 
 - `Version`: `str`
 - `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
 
 ## AppTypeDef
 
@@ -115,22 +115,18 @@ Optional fields:
 - `Shortname`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `DataSources`:
-  `List`\[[DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#datasourcetypedef)\]
-- `Type`:
-  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#apptype)
-- `AppSource`:
-  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `DataSources`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+- `Type`: [AppType](./literals.md#apptype)
+- `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `Domains`: `List`\[`str`\]
 - `EnableSsl`: `bool`
 - `SslConfiguration`:
-  [SslConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sslconfigurationtypedef)
-- `Attributes`:
-  `Dict`\[[AppAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#appattributeskeys),
+  [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
+- `Attributes`: `Dict`\[[AppAttributesKeys](./literals.md#appattributeskeys),
   `str`\]
 - `CreatedAt`: `str`
 - `Environment`:
-  `List`\[[EnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#environmentvariabletypedef)\]
+  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
 ## AutoScalingThresholdsTypeDef
 
@@ -159,8 +155,7 @@ Optional fields:
 - `DeviceName`: `str`
 - `NoDevice`: `str`
 - `VirtualName`: `str`
-- `Ebs`:
-  [EbsBlockDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#ebsblockdevicetypedef)
+- `Ebs`: [EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)
 
 ## ChefConfigurationTypeDef
 
@@ -193,7 +188,7 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `LogStreams`:
-  `List`\[[CloudWatchLogsLogStreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#cloudwatchlogslogstreamtypedef)\]
+  `List`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
 
 ## CloudWatchLogsLogStreamTypeDef
 
@@ -205,15 +200,13 @@ Optional fields:
 
 - `LogGroupName`: `str`
 - `DatetimeFormat`: `str`
-- `TimeZone`:
-  [CloudWatchLogsTimeZone](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#cloudwatchlogstimezone)
+- `TimeZone`: [CloudWatchLogsTimeZone](./literals.md#cloudwatchlogstimezone)
 - `File`: `str`
 - `FileFingerprintLines`: `str`
 - `MultiLineStartPattern`: `str`
 - `InitialPosition`:
-  [CloudWatchLogsInitialPosition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#cloudwatchlogsinitialposition)
-- `Encoding`:
-  [CloudWatchLogsEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#cloudwatchlogsencoding)
+  [CloudWatchLogsInitialPosition](./literals.md#cloudwatchlogsinitialposition)
+- `Encoding`: [CloudWatchLogsEncoding](./literals.md#cloudwatchlogsencoding)
 - `BufferDuration`: `int`
 - `BatchCount`: `int`
 - `BatchSize`: `int`
@@ -317,8 +310,7 @@ from mypy_boto3_opsworks.type_defs import DeploymentCommandTypeDef
 
 Required fields:
 
-- `Name`:
-  [DeploymentCommandName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#deploymentcommandname)
+- `Name`: [DeploymentCommandName](./literals.md#deploymentcommandname)
 
 Optional fields:
 
@@ -340,8 +332,7 @@ Optional fields:
 - `Duration`: `int`
 - `IamUserArn`: `str`
 - `Comment`: `str`
-- `Command`:
-  [DeploymentCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#deploymentcommandtypedef)
+- `Command`: [DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef)
 - `Status`: `str`
 - `CustomJson`: `str`
 - `InstanceIds`: `List`\[`str`\]
@@ -355,7 +346,7 @@ from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsResultTypeDef
 Optional fields:
 
 - `AgentVersions`:
-  `List`\[[AgentVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#agentversiontypedef)\]
+  `List`\[[AgentVersionTypeDef](./type_defs.md#agentversiontypedef)\]
 
 ## DescribeAppsResultTypeDef
 
@@ -365,8 +356,7 @@ from mypy_boto3_opsworks.type_defs import DescribeAppsResultTypeDef
 
 Optional fields:
 
-- `Apps`:
-  `List`\[[AppTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#apptypedef)\]
+- `Apps`: `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]
 
 ## DescribeCommandsResultTypeDef
 
@@ -376,8 +366,7 @@ from mypy_boto3_opsworks.type_defs import DescribeCommandsResultTypeDef
 
 Optional fields:
 
-- `Commands`:
-  `List`\[[CommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#commandtypedef)\]
+- `Commands`: `List`\[[CommandTypeDef](./type_defs.md#commandtypedef)\]
 
 ## DescribeDeploymentsResultTypeDef
 
@@ -387,8 +376,7 @@ from mypy_boto3_opsworks.type_defs import DescribeDeploymentsResultTypeDef
 
 Optional fields:
 
-- `Deployments`:
-  `List`\[[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#deploymenttypedef)\]
+- `Deployments`: `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 
 ## DescribeEcsClustersResultTypeDef
 
@@ -398,8 +386,7 @@ from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultTypeDef
 
 Optional fields:
 
-- `EcsClusters`:
-  `List`\[[EcsClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#ecsclustertypedef)\]
+- `EcsClusters`: `List`\[[EcsClusterTypeDef](./type_defs.md#ecsclustertypedef)\]
 - `NextToken`: `str`
 
 ## DescribeElasticIpsResultTypeDef
@@ -410,8 +397,7 @@ from mypy_boto3_opsworks.type_defs import DescribeElasticIpsResultTypeDef
 
 Optional fields:
 
-- `ElasticIps`:
-  `List`\[[ElasticIpTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#elasticiptypedef)\]
+- `ElasticIps`: `List`\[[ElasticIpTypeDef](./type_defs.md#elasticiptypedef)\]
 
 ## DescribeElasticLoadBalancersResultTypeDef
 
@@ -422,7 +408,7 @@ from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersResultType
 Optional fields:
 
 - `ElasticLoadBalancers`:
-  `List`\[[ElasticLoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#elasticloadbalancertypedef)\]
+  `List`\[[ElasticLoadBalancerTypeDef](./type_defs.md#elasticloadbalancertypedef)\]
 
 ## DescribeInstancesResultTypeDef
 
@@ -432,8 +418,7 @@ from mypy_boto3_opsworks.type_defs import DescribeInstancesResultTypeDef
 
 Optional fields:
 
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#instancetypedef)\]
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 ## DescribeLayersResultTypeDef
 
@@ -443,8 +428,7 @@ from mypy_boto3_opsworks.type_defs import DescribeLayersResultTypeDef
 
 Optional fields:
 
-- `Layers`:
-  `List`\[[LayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#layertypedef)\]
+- `Layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
 
 ## DescribeLoadBasedAutoScalingResultTypeDef
 
@@ -455,7 +439,7 @@ from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingResultType
 Optional fields:
 
 - `LoadBasedAutoScalingConfigurations`:
-  `List`\[[LoadBasedAutoScalingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#loadbasedautoscalingconfigurationtypedef)\]
+  `List`\[[LoadBasedAutoScalingConfigurationTypeDef](./type_defs.md#loadbasedautoscalingconfigurationtypedef)\]
 
 ## DescribeMyUserProfileResultTypeDef
 
@@ -465,8 +449,7 @@ from mypy_boto3_opsworks.type_defs import DescribeMyUserProfileResultTypeDef
 
 Optional fields:
 
-- `UserProfile`:
-  [SelfUserProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#selfuserprofiletypedef)
+- `UserProfile`: [SelfUserProfileTypeDef](./type_defs.md#selfuserprofiletypedef)
 
 ## DescribeOperatingSystemsResponseTypeDef
 
@@ -477,7 +460,7 @@ from mypy_boto3_opsworks.type_defs import DescribeOperatingSystemsResponseTypeDe
 Optional fields:
 
 - `OperatingSystems`:
-  `List`\[[OperatingSystemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#operatingsystemtypedef)\]
+  `List`\[[OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef)\]
 
 ## DescribePermissionsResultTypeDef
 
@@ -487,8 +470,7 @@ from mypy_boto3_opsworks.type_defs import DescribePermissionsResultTypeDef
 
 Optional fields:
 
-- `Permissions`:
-  `List`\[[PermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#permissiontypedef)\]
+- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 
 ## DescribeRaidArraysResultTypeDef
 
@@ -498,8 +480,7 @@ from mypy_boto3_opsworks.type_defs import DescribeRaidArraysResultTypeDef
 
 Optional fields:
 
-- `RaidArrays`:
-  `List`\[[RaidArrayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#raidarraytypedef)\]
+- `RaidArrays`: `List`\[[RaidArrayTypeDef](./type_defs.md#raidarraytypedef)\]
 
 ## DescribeRdsDbInstancesResultTypeDef
 
@@ -510,7 +491,7 @@ from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesResultTypeDef
 Optional fields:
 
 - `RdsDbInstances`:
-  `List`\[[RdsDbInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#rdsdbinstancetypedef)\]
+  `List`\[[RdsDbInstanceTypeDef](./type_defs.md#rdsdbinstancetypedef)\]
 
 ## DescribeServiceErrorsResultTypeDef
 
@@ -521,7 +502,7 @@ from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsResultTypeDef
 Optional fields:
 
 - `ServiceErrors`:
-  `List`\[[ServiceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#serviceerrortypedef)\]
+  `List`\[[ServiceErrorTypeDef](./type_defs.md#serviceerrortypedef)\]
 
 ## DescribeStackProvisioningParametersResultTypeDef
 
@@ -542,8 +523,7 @@ from mypy_boto3_opsworks.type_defs import DescribeStackSummaryResultTypeDef
 
 Optional fields:
 
-- `StackSummary`:
-  [StackSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stacksummarytypedef)
+- `StackSummary`: [StackSummaryTypeDef](./type_defs.md#stacksummarytypedef)
 
 ## DescribeStacksResultTypeDef
 
@@ -553,8 +533,7 @@ from mypy_boto3_opsworks.type_defs import DescribeStacksResultTypeDef
 
 Optional fields:
 
-- `Stacks`:
-  `List`\[[StackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stacktypedef)\]
+- `Stacks`: `List`\[[StackTypeDef](./type_defs.md#stacktypedef)\]
 
 ## DescribeTimeBasedAutoScalingResultTypeDef
 
@@ -565,7 +544,7 @@ from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingResultType
 Optional fields:
 
 - `TimeBasedAutoScalingConfigurations`:
-  `List`\[[TimeBasedAutoScalingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#timebasedautoscalingconfigurationtypedef)\]
+  `List`\[[TimeBasedAutoScalingConfigurationTypeDef](./type_defs.md#timebasedautoscalingconfigurationtypedef)\]
 
 ## DescribeUserProfilesResultTypeDef
 
@@ -576,7 +555,7 @@ from mypy_boto3_opsworks.type_defs import DescribeUserProfilesResultTypeDef
 Optional fields:
 
 - `UserProfiles`:
-  `List`\[[UserProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#userprofiletypedef)\]
+  `List`\[[UserProfileTypeDef](./type_defs.md#userprofiletypedef)\]
 
 ## DescribeVolumesResultTypeDef
 
@@ -586,8 +565,7 @@ from mypy_boto3_opsworks.type_defs import DescribeVolumesResultTypeDef
 
 Optional fields:
 
-- `Volumes`:
-  `List`\[[VolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#volumetypedef)\]
+- `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 
 ## EbsBlockDeviceTypeDef
 
@@ -600,8 +578,7 @@ Optional fields:
 - `SnapshotId`: `str`
 - `Iops`: `int`
 - `VolumeSize`: `int`
-- `VolumeType`:
-  [VolumeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#volumetype)
+- `VolumeType`: [VolumeType](./literals.md#volumetype)
 - `DeleteOnTermination`: `bool`
 
 ## EcsClusterTypeDef
@@ -684,7 +661,7 @@ from mypy_boto3_opsworks.type_defs import GrantAccessResultTypeDef
 Optional fields:
 
 - `TemporaryCredential`:
-  [TemporaryCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#temporarycredentialtypedef)
+  [TemporaryCredentialTypeDef](./type_defs.md#temporarycredentialtypedef)
 
 ## InstanceIdentityTypeDef
 
@@ -707,14 +684,12 @@ Optional fields:
 
 - `AgentVersion`: `str`
 - `AmiId`: `str`
-- `Architecture`:
-  [Architecture](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#architecture)
+- `Architecture`: [Architecture](./literals.md#architecture)
 - `Arn`: `str`
-- `AutoScalingType`:
-  [AutoScalingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#autoscalingtype)
+- `AutoScalingType`: [AutoScalingType](./literals.md#autoscalingtype)
 - `AvailabilityZone`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `CreatedAt`: `str`
 - `EbsOptimized`: `bool`
 - `Ec2InstanceId`: `str`
@@ -737,10 +712,8 @@ Optional fields:
 - `PublicIp`: `str`
 - `RegisteredBy`: `str`
 - `ReportedAgentVersion`: `str`
-- `ReportedOs`:
-  [ReportedOsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#reportedostypedef)
-- `RootDeviceType`:
-  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `ReportedOs`: [ReportedOsTypeDef](./type_defs.md#reportedostypedef)
+- `RootDeviceType`: [RootDeviceType](./literals.md#rootdevicetype)
 - `RootDeviceVolumeId`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SshHostDsaKeyFingerprint`: `str`
@@ -750,8 +723,7 @@ Optional fields:
 - `Status`: `str`
 - `SubnetId`: `str`
 - `Tenancy`: `str`
-- `VirtualizationType`:
-  [VirtualizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#virtualizationtype)
+- `VirtualizationType`: [VirtualizationType](./literals.md#virtualizationtype)
 
 ## InstancesCountTypeDef
 
@@ -793,34 +765,30 @@ Optional fields:
 - `Arn`: `str`
 - `StackId`: `str`
 - `LayerId`: `str`
-- `Type`:
-  [LayerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layertype)
+- `Type`: [LayerType](./literals.md#layertype)
 - `Name`: `str`
 - `Shortname`: `str`
-- `Attributes`:
-  `Dict`\[[LayerAttributesKeys](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#layerattributeskeys),
+- `Attributes`: `Dict`\[[LayerAttributesKeys](./literals.md#layerattributeskeys),
   `str`\]
 - `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#cloudwatchlogsconfigurationtypedef)
+  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
 - `CustomSecurityGroupIds`: `List`\[`str`\]
 - `DefaultSecurityGroupNames`: `List`\[`str`\]
 - `Packages`: `List`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#volumeconfigurationtypedef)\]
+  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
-- `DefaultRecipes`:
-  [RecipesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#recipestypedef)
-- `CustomRecipes`:
-  [RecipesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#recipestypedef)
+- `DefaultRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
+- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
 - `CreatedAt`: `str`
 - `InstallUpdatesOnBoot`: `bool`
 - `UseEbsOptimizedInstances`: `bool`
 - `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#lifecycleeventconfigurationtypedef)
+  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
 ## LifecycleEventConfigurationTypeDef
 
@@ -831,7 +799,7 @@ from mypy_boto3_opsworks.type_defs import LifecycleEventConfigurationTypeDef
 Optional fields:
 
 - `Shutdown`:
-  [ShutdownEventConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#shutdowneventconfigurationtypedef)
+  [ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef)
 
 ## ListTagsResultTypeDef
 
@@ -855,9 +823,9 @@ Optional fields:
 - `LayerId`: `str`
 - `Enable`: `bool`
 - `UpScaling`:
-  [AutoScalingThresholdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#autoscalingthresholdstypedef)
+  [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
 - `DownScaling`:
-  [AutoScalingThresholdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#autoscalingthresholdstypedef)
+  [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
 
 ## OperatingSystemConfigurationManagerTypeDef
 
@@ -882,7 +850,7 @@ Optional fields:
 - `Id`: `str`
 - `Type`: `str`
 - `ConfigurationManagers`:
-  `List`\[[OperatingSystemConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#operatingsystemconfigurationmanagertypedef)\]
+  `List`\[[OperatingSystemConfigurationManagerTypeDef](./type_defs.md#operatingsystemconfigurationmanagertypedef)\]
 - `ReportedName`: `str`
 - `ReportedVersion`: `str`
 - `Supported`: `bool`
@@ -1066,8 +1034,7 @@ from mypy_boto3_opsworks.type_defs import SourceTypeDef
 
 Optional fields:
 
-- `Type`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#sourcetype)
+- `Type`: [SourceType](./literals.md#sourcetype)
 - `Url`: `str`
 - `Username`: `str`
 - `Password`: `str`
@@ -1113,8 +1080,7 @@ Optional fields:
 - `Arn`: `str`
 - `LayersCount`: `int`
 - `AppsCount`: `int`
-- `InstancesCount`:
-  [InstancesCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#instancescounttypedef)
+- `InstancesCount`: [InstancesCountTypeDef](./type_defs.md#instancescounttypedef)
 
 ## StackTypeDef
 
@@ -1129,7 +1095,8 @@ Optional fields:
 - `Arn`: `str`
 - `Region`: `str`
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']`, `str`\]
+- `Attributes`: `Dict`\[`Literal['Color']` (see
+  [StackAttributesKeys](./literals.md#stackattributeskeys)), `str`\]
 - `ServiceRoleArn`: `str`
 - `DefaultInstanceProfileArn`: `str`
 - `DefaultOs`: `str`
@@ -1138,17 +1105,15 @@ Optional fields:
 - `DefaultSubnetId`: `str`
 - `CustomJson`: `str`
 - `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#stackconfigurationmanagertypedef)
+  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
 - `ChefConfiguration`:
-  [ChefConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#chefconfigurationtypedef)
+  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
 - `UseCustomCookbooks`: `bool`
 - `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`:
-  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#sourcetypedef)
+- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `DefaultSshKeyName`: `str`
 - `CreatedAt`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/literals.html#rootdevicetype)
+- `DefaultRootDeviceType`: [RootDeviceType](./literals.md#rootdevicetype)
 - `AgentVersion`: `str`
 
 ## TemporaryCredentialTypeDef
@@ -1174,7 +1139,7 @@ Optional fields:
 
 - `InstanceId`: `str`
 - `AutoScalingSchedule`:
-  [WeeklyAutoScalingScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#weeklyautoscalingscheduletypedef)
+  [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
 
 ## UserProfileTypeDef
 

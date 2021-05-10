@@ -1,6 +1,6 @@
 # Literals for boto3 Chime module
 
-> [Index](../README.md) > [Chime](./README.md) > Literals
+> [Index](..) > [Chime](.) > Literals
 
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)

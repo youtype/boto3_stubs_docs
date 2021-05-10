@@ -1,6 +1,6 @@
 # Paginators for boto3 TimestreamQuery module
 
-> [Index](../README.md) > [TimestreamQuery](./README.md) > Paginators
+> [Index](..) > [TimestreamQuery](.) > Paginators
 
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
@@ -31,7 +31,7 @@ Arguments for `QueryPaginator.paginate` method:
 - `QueryString`: `str` *(required)*
 - `ClientToken`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryPaginator.paginate` returns
-`Iterator`\[[QueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#queryresponsetypedef)\].
+`Iterator`\[[QueryResponseTypeDef](./type_defs.md#queryresponsetypedef)\].

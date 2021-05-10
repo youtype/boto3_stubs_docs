@@ -1,6 +1,6 @@
 # Paginators for boto3 S3Control module
 
-> [Index](../README.md) > [S3Control](./README.md) > Paginators
+> [Index](..) > [S3Control](.) > Paginators
 
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
@@ -31,7 +31,7 @@ Arguments for `ListAccessPointsForObjectLambdaPaginator.paginate` method:
 
 - `AccountId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPointsForObjectLambdaPaginator.paginate` returns
-`Iterator`\[[ListAccessPointsForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listaccesspointsforobjectlambdaresulttypedef)\].
+`Iterator`\[[ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef)\].

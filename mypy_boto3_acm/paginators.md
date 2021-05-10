@@ -1,6 +1,6 @@
 # Paginators for boto3 ACM module
 
-> [Index](../README.md) > [ACM](./README.md) > Paginators
+> [Index](..) > [ACM](.) > Paginators
 
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
@@ -29,11 +29,10 @@ Boto3 documentation:
 Arguments for `ListCertificatesPaginator.paginate` method:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/literals.html#certificatestatus)\]
-- `Includes`:
-  [FiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#filterstypedef)
+  `List`\[[CertificateStatus](./literals.md#certificatestatus)\]
+- `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificatesPaginator.paginate` returns
-`Iterator`\[[ListCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm/type_defs.html#listcertificatesresponsetypedef)\].
+`Iterator`\[[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)\].

@@ -1,6 +1,6 @@
 # Waiters for boto3 ACMPCA module
 
-> [Index](../README.md) > [ACMPCA](./README.md) > Waiters
+> [Index](..) > [ACMPCA](.) > Waiters
 
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
@@ -33,8 +33,7 @@ Arguments for `AuditReportCreatedWaiter.wait` method:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `AuditReportId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## CertificateAuthorityCSRCreatedWaiter
 
@@ -56,8 +55,7 @@ Boto3 documentation:
 Arguments for `CertificateAuthorityCSRCreatedWaiter.wait` method:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## CertificateIssuedWaiter
 
@@ -80,5 +78,4 @@ Arguments for `CertificateIssuedWaiter.wait` method:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `CertificateArn`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

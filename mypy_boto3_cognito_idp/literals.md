@@ -1,6 +1,6 @@
 # Literals for boto3 CognitoIdentityProvider module
 
-> [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Literals
+> [Index](..) > [CognitoIdentityProvider](.) > Literals
 
 Auto-generated documentation for
 [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)

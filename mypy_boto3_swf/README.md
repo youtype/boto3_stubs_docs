@@ -1,6 +1,6 @@
 # Type annotations for boto3 SWF module
 
-> [Index](../README.md) > SWF
+> [Index](..) > SWF
 
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
@@ -225,7 +225,7 @@ from mypy_boto3_swf.type_defs import ActivityTaskCancelRequestedEventAttributesT
 - [RequestCancelExternalWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#requestcancelexternalworkflowexecutionfailedeventattributestypedef)
 - [RequestCancelExternalWorkflowExecutionInitiatedEventAttributesTypeDef](./type_defs.md#requestcancelexternalworkflowexecutioninitiatedeventattributestypedef)
 - [ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RunTypeDef](./type_defs.md#runtypedef)
 - [ScheduleActivityTaskDecisionAttributesTypeDef](./type_defs.md#scheduleactivitytaskdecisionattributestypedef)
 - [ScheduleActivityTaskFailedEventAttributesTypeDef](./type_defs.md#scheduleactivitytaskfailedeventattributestypedef)

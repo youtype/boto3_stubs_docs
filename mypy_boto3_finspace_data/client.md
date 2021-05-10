@@ -1,6 +1,6 @@
 # FinSpaceDataClient for boto3 FinSpaceData module
 
-> [Index](../README.md) > [FinSpaceData](./README.md) > FinSpaceDataClient
+> [Index](..) > [FinSpaceData](.) > FinSpaceDataClient
 
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
@@ -79,18 +79,16 @@ Boto3 documentation:
 Arguments:
 
 - `datasetId`: `str` *(required)*
-- `changeType`:
-  [ChangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#changetype)
+- `changeType`: [ChangeType](./literals.md#changetype) *(required)*
+- `sourceType`: `Literal['S3']` (see [SourceType](./literals.md#sourcetype))
   *(required)*
-- `sourceType`: `Literal['S3']` *(required)*
 - `sourceParams`: `Dict`\[`str`, `str`\] *(required)*
-- `formatType`:
-  [FormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#formattype)
+- `formatType`: [FormatType](./literals.md#formattype)
 - `formatParams`: `Dict`\[`str`, `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChangesetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/type_defs.html#createchangesetresponsetypedef).
+[CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -123,7 +121,7 @@ Arguments:
 - `durationInMinutes`: `int`
 
 Returns
-[GetProgrammaticAccessCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/type_defs.html#getprogrammaticaccesscredentialsresponsetypedef).
+[GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef).
 
 ### get_working_location
 
@@ -135,8 +133,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `locationType`:
-  [locationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/literals.html#locationtype)
+- `locationType`: [locationType](./literals.md#locationtype)
 
 Returns
-[GetWorkingLocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace_data/type_defs.html#getworkinglocationresponsetypedef).
+[GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef).

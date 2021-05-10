@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudSearchDomain module
 
-> [Index](../README.md) > CloudSearchDomain
+> [Index](..) > CloudSearchDomain
 
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)

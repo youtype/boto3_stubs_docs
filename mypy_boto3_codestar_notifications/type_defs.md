@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CodeStarNotifications module
 
-> [Index](../README.md) > [CodeStarNotifications](./README.md) > Structures
+> [Index](..) > [CodeStarNotifications](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
@@ -61,15 +61,13 @@ Optional fields:
 
 - `Name`: `str`
 - `EventTypes`:
-  `List`\[[EventTypeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#eventtypesummarytypedef)\]
+  `List`\[[EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)\]
 - `Resource`: `str`
 - `Targets`:
-  `List`\[[TargetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targetsummarytypedef)\]
-- `DetailType`:
-  [DetailType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#detailtype)
+  `List`\[[TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)\]
+- `DetailType`: [DetailType](./literals.md#detailtype)
 - `CreatedBy`: `str`
-- `Status`:
-  [NotificationRuleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#notificationrulestatus)
+- `Status`: [NotificationRuleStatus](./literals.md#notificationrulestatus)
 - `CreatedTimestamp`: `datetime`
 - `LastModifiedTimestamp`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -95,8 +93,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListEventTypesFilterType
 
 Required fields:
 
-- `Name`:
-  [ListEventTypesFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#listeventtypesfiltername)
+- `Name`: [ListEventTypesFilterName](./literals.md#listeventtypesfiltername)
 - `Value`: `str`
 
 ## ListEventTypesResultTypeDef
@@ -108,7 +105,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListEventTypesResultType
 Optional fields:
 
 - `EventTypes`:
-  `List`\[[EventTypeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#eventtypesummarytypedef)\]
+  `List`\[[EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListNotificationRulesFilterTypeDef
@@ -120,7 +117,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesFil
 Required fields:
 
 - `Name`:
-  [ListNotificationRulesFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#listnotificationrulesfiltername)
+  [ListNotificationRulesFilterName](./literals.md#listnotificationrulesfiltername)
 - `Value`: `str`
 
 ## ListNotificationRulesResultTypeDef
@@ -133,7 +130,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `NotificationRules`:
-  `List`\[[NotificationRuleSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#notificationrulesummarytypedef)\]
+  `List`\[[NotificationRuleSummaryTypeDef](./type_defs.md#notificationrulesummarytypedef)\]
 
 ## ListTagsForResourceResultTypeDef
 
@@ -153,8 +150,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListTargetsFilterTypeDef
 
 Required fields:
 
-- `Name`:
-  [ListTargetsFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#listtargetsfiltername)
+- `Name`: [ListTargetsFilterName](./literals.md#listtargetsfiltername)
 - `Value`: `str`
 
 ## ListTargetsResultTypeDef
@@ -166,7 +162,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListTargetsResultTypeDef
 Optional fields:
 
 - `Targets`:
-  `List`\[[TargetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#targetsummarytypedef)\]
+  `List`\[[TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)\]
 - `NextToken`: `str`
 
 ## NotificationRuleSummaryTypeDef
@@ -222,8 +218,7 @@ Optional fields:
 
 - `TargetAddress`: `str`
 - `TargetType`: `str`
-- `TargetStatus`:
-  [TargetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/literals.html#targetstatus)
+- `TargetStatus`: [TargetStatus](./literals.md#targetstatus)
 
 ## TargetTypeDef
 

@@ -1,6 +1,6 @@
 # DevopsGuruClient for boto3 DevopsGuru module
 
-> [Index](../README.md) > [DevopsGuru](./README.md) > DevopsGuruClient
+> [Index](..) > [DevopsGuru](.) > DevopsGuruClient
 
 Auto-generated documentation for
 [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
@@ -88,11 +88,11 @@ Boto3 documentation:
 Arguments:
 
 - `Config`:
-  [NotificationChannelConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#notificationchannelconfigtypedef)
+  [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
   *(required)*
 
 Returns
-[AddNotificationChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#addnotificationchannelresponsetypedef).
+[AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef).
 
 ### can_paginate
 
@@ -116,7 +116,7 @@ Boto3 documentation:
 [DevopsGuru.Client.describe_account_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_account_health)
 
 Returns
-[DescribeAccountHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeaccounthealthresponsetypedef).
+[DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef).
 
 ### describe_account_overview
 
@@ -132,7 +132,7 @@ Arguments:
 - `ToTime`: `datetime`
 
 Returns
-[DescribeAccountOverviewResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeaccountoverviewresponsetypedef).
+[DescribeAccountOverviewResponseTypeDef](./type_defs.md#describeaccountoverviewresponsetypedef).
 
 ### describe_anomaly
 
@@ -146,7 +146,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeAnomalyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeanomalyresponsetypedef).
+[DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
 
 ### describe_feedback
 
@@ -160,7 +160,7 @@ Arguments:
 - `InsightId`: `str`
 
 Returns
-[DescribeFeedbackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describefeedbackresponsetypedef).
+[DescribeFeedbackResponseTypeDef](./type_defs.md#describefeedbackresponsetypedef).
 
 ### describe_insight
 
@@ -174,7 +174,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeinsightresponsetypedef).
+[DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef).
 
 ### describe_resource_collection_health
 
@@ -187,12 +187,11 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceCollectionType`:
-  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
-  *(required)*
+  [ResourceCollectionType](./literals.md#resourcecollectiontype) *(required)*
 - `NextToken`: `str`
 
 Returns
-[DescribeResourceCollectionHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeresourcecollectionhealthresponsetypedef).
+[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef).
 
 ### describe_service_integration
 
@@ -203,7 +202,7 @@ Boto3 documentation:
 [DevopsGuru.Client.describe_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.describe_service_integration)
 
 Returns
-[DescribeServiceIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeserviceintegrationresponsetypedef).
+[DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -234,7 +233,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetCostEstimationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getcostestimationresponsetypedef).
+[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef).
 
 ### get_resource_collection
 
@@ -247,12 +246,11 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceCollectionType`:
-  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
-  *(required)*
+  [ResourceCollectionType](./literals.md#resourcecollectiontype) *(required)*
 - `NextToken`: `str`
 
 Returns
-[GetResourceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getresourcecollectionresponsetypedef).
+[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef).
 
 ### list_anomalies_for_insight
 
@@ -265,13 +263,12 @@ Boto3 documentation:
 Arguments:
 
 - `InsightId`: `str` *(required)*
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `StartTimeRange`: [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListAnomaliesForInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listanomaliesforinsightresponsetypedef).
+[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef).
 
 ### list_events
 
@@ -282,14 +279,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  [ListEventsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsfilterstypedef)
+- `Filters`: [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
   *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsresponsetypedef).
+Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
 
 ### list_insights
 
@@ -301,13 +296,13 @@ Boto3 documentation:
 Arguments:
 
 - `StatusFilter`:
-  [ListInsightsStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsstatusfiltertypedef)
+  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
   *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsresponsetypedef).
+[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef).
 
 ### list_notification_channels
 
@@ -322,7 +317,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListNotificationChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listnotificationchannelsresponsetypedef).
+[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef).
 
 ### list_recommendations
 
@@ -335,11 +330,10 @@ Arguments:
 
 - `InsightId`: `str` *(required)*
 - `NextToken`: `str`
-- `Locale`:
-  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#locale)
+- `Locale`: [Locale](./literals.md#locale)
 
 Returns
-[ListRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listrecommendationsresponsetypedef).
+[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
 ### put_feedback
 
@@ -351,7 +345,7 @@ Boto3 documentation:
 Arguments:
 
 - `InsightFeedback`:
-  [InsightFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#insightfeedbacktypedef)
+  [InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -378,19 +372,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `StartTimeRange`: [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
   *(required)*
-- `Type`:
-  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
-  *(required)*
+- `Type`: [InsightType](./literals.md#insighttype) *(required)*
 - `Filters`:
-  [SearchInsightsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsfilterstypedef)
+  [SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[SearchInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsresponsetypedef).
+[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef).
 
 ### start_cost_estimation
 
@@ -403,7 +394,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceCollection`:
-  [CostEstimationResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#costestimationresourcecollectionfiltertypedef)
+  [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
   *(required)*
 - `ClientToken`: `str`
 
@@ -420,10 +411,10 @@ Boto3 documentation:
 Arguments:
 
 - `Action`:
-  [UpdateResourceCollectionAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#updateresourcecollectionaction)
+  [UpdateResourceCollectionAction](./literals.md#updateresourcecollectionaction)
   *(required)*
 - `ResourceCollection`:
-  [UpdateResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#updateresourcecollectionfiltertypedef)
+  [UpdateResourceCollectionFilterTypeDef](./type_defs.md#updateresourcecollectionfiltertypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -439,7 +430,7 @@ Boto3 documentation:
 Arguments:
 
 - `ServiceIntegration`:
-  [UpdateServiceIntegrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#updateserviceintegrationconfigtypedef)
+  [UpdateServiceIntegrationConfigTypeDef](./type_defs.md#updateserviceintegrationconfigtypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

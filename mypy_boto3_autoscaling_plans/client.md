@@ -1,7 +1,6 @@
 # AutoScalingPlansClient for boto3 AutoScalingPlans module
 
-> [Index](../README.md) > [AutoScalingPlans](./README.md) >
-> AutoScalingPlansClient
+> [Index](..) > [AutoScalingPlans](.) > AutoScalingPlansClient
 
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
@@ -87,14 +86,14 @@ Arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ApplicationSource`:
-  [ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)
+  [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
   *(required)*
 - `ScalingInstructions`:
-  `List`\[[ScalingInstructionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#scalinginstructiontypedef)\]
+  `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
   *(required)*
 
 Returns
-[CreateScalingPlanResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#createscalingplanresponsetypedef).
+[CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef).
 
 ### delete_scaling_plan
 
@@ -127,7 +126,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPlanResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplanresourcesresponsetypedef).
+[DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef).
 
 ### describe_scaling_plans
 
@@ -142,12 +141,12 @@ Arguments:
 - `ScalingPlanNames`: `List`\[`str`\]
 - `ScalingPlanVersion`: `int`
 - `ApplicationSources`:
-  `List`\[[ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)\]
+  `List`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPlansResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#describescalingplansresponsetypedef).
+[DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef).
 
 ### generate_presigned_url
 
@@ -179,21 +178,18 @@ Arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*
-- `ServiceNamespace`:
-  [ServiceNamespace](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/literals.html#servicenamespace)
+- `ServiceNamespace`: [ServiceNamespace](./literals.md#servicenamespace)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimension](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/literals.html#scalabledimension)
+- `ScalableDimension`: [ScalableDimension](./literals.md#scalabledimension)
   *(required)*
-- `ForecastDataType`:
-  [ForecastDataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/literals.html#forecastdatatype)
+- `ForecastDataType`: [ForecastDataType](./literals.md#forecastdatatype)
   *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
 
 Returns
-[GetScalingPlanResourceForecastDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#getscalingplanresourceforecastdataresponsetypedef).
+[GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef).
 
 ### update_scaling_plan
 
@@ -208,9 +204,9 @@ Arguments:
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*
 - `ApplicationSource`:
-  [ApplicationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#applicationsourcetypedef)
+  [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
 - `ScalingInstructions`:
-  `List`\[[ScalingInstructionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling_plans/type_defs.html#scalinginstructiontypedef)\]
+  `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

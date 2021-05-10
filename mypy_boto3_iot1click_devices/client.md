@@ -1,7 +1,6 @@
 # IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module
 
-> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) >
-> IoT1ClickDevicesServiceClient
+> [Index](..) > [IoT1ClickDevicesService](.) > IoT1ClickDevicesServiceClient
 
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
@@ -96,7 +95,7 @@ Arguments:
 - `ClaimCode`: `str` *(required)*
 
 Returns
-[ClaimDevicesByClaimCodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#claimdevicesbyclaimcoderesponsetypedef).
+[ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef).
 
 ### describe_device
 
@@ -111,7 +110,7 @@ Arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[DescribeDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#describedeviceresponsetypedef).
+[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
 ### finalize_device_claim
 
@@ -127,7 +126,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[FinalizeDeviceClaimResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#finalizedeviceclaimresponsetypedef).
+[FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef).
 
 ### generate_presigned_url
 
@@ -159,7 +158,7 @@ Arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[GetDeviceMethodsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#getdevicemethodsresponsetypedef).
+[GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef).
 
 ### initiate_device_claim
 
@@ -174,7 +173,7 @@ Arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[InitiateDeviceClaimResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#initiatedeviceclaimresponsetypedef).
+[InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef).
 
 ### invoke_device_method
 
@@ -187,12 +186,11 @@ Boto3 documentation:
 Arguments:
 
 - `DeviceId`: `str` *(required)*
-- `DeviceMethod`:
-  [DeviceMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicemethodtypedef)
+- `DeviceMethod`: [DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)
 - `DeviceMethodParameters`: `str`
 
 Returns
-[InvokeDeviceMethodResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#invokedevicemethodresponsetypedef).
+[InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef).
 
 ### list_device_events
 
@@ -211,7 +209,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeviceEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listdeviceeventsresponsetypedef).
+[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
 ### list_devices
 
@@ -227,7 +225,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listdevicesresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -242,7 +240,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -268,7 +266,7 @@ Arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[UnclaimDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#unclaimdeviceresponsetypedef).
+[UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef).
 
 ### untag_resource
 

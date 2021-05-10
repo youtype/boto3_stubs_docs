@@ -1,6 +1,6 @@
 # TranslateClient for boto3 Translate module
 
-> [Index](../README.md) > [Translate](./README.md) > TranslateClient
+> [Index](..) > [Translate](.) > TranslateClient
 
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
@@ -100,15 +100,14 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `ParallelDataConfig`:
-  [ParallelDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldataconfigtypedef)
+  [ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef)
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `Description`: `str`
-- `EncryptionKey`:
-  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#encryptionkeytypedef)
+- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
 Returns
-[CreateParallelDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#createparalleldataresponsetypedef).
+[CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef).
 
 ### delete_parallel_data
 
@@ -122,7 +121,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteParallelDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#deleteparalleldataresponsetypedef).
+[DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef).
 
 ### delete_terminology
 
@@ -148,7 +147,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeTextTranslationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#describetexttranslationjobresponsetypedef).
+[DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -178,7 +177,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetParallelDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#getparalleldataresponsetypedef).
+[GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef).
 
 ### get_terminology
 
@@ -191,11 +190,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `TerminologyDataFormat`:
-  [TerminologyDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/literals.html#terminologydataformat)
-  *(required)*
+  [TerminologyDataFormat](./literals.md#terminologydataformat) *(required)*
 
 Returns
-[GetTerminologyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#getterminologyresponsetypedef).
+[GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
 
 ### import_terminology
 
@@ -207,16 +205,15 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `MergeStrategy`: `Literal['OVERWRITE']` *(required)*
+- `MergeStrategy`: `Literal['OVERWRITE']` (see
+  [MergeStrategy](./literals.md#mergestrategy)) *(required)*
 - `TerminologyData`:
-  [TerminologyDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#terminologydatatypedef)
-  *(required)*
+  [TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) *(required)*
 - `Description`: `str`
-- `EncryptionKey`:
-  [EncryptionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#encryptionkeytypedef)
+- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
 Returns
-[ImportTerminologyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#importterminologyresponsetypedef).
+[ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef).
 
 ### list_parallel_data
 
@@ -231,7 +228,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListParallelDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#listparalleldataresponsetypedef).
+[ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef).
 
 ### list_terminologies
 
@@ -246,7 +243,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTerminologiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#listterminologiesresponsetypedef).
+[ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef).
 
 ### list_text_translation_jobs
 
@@ -259,12 +256,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filter`:
-  [TextTranslationJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#texttranslationjobfiltertypedef)
+  [TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListTextTranslationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#listtexttranslationjobsresponsetypedef).
+[ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef).
 
 ### start_text_translation_job
 
@@ -277,11 +274,9 @@ Boto3 documentation:
 Arguments:
 
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#outputdataconfigtypedef)
-  *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
 - `SourceLanguageCode`: `str` *(required)*
 - `TargetLanguageCodes`: `List`\[`str`\] *(required)*
@@ -291,7 +286,7 @@ Arguments:
 - `ParallelDataNames`: `List`\[`str`\]
 
 Returns
-[StartTextTranslationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#starttexttranslationjobresponsetypedef).
+[StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
 
 ### stop_text_translation_job
 
@@ -306,7 +301,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StopTextTranslationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#stoptexttranslationjobresponsetypedef).
+[StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef).
 
 ### translate_text
 
@@ -323,7 +318,7 @@ Arguments:
 - `TerminologyNames`: `List`\[`str`\]
 
 Returns
-[TranslateTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#translatetextresponsetypedef).
+[TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).
 
 ### update_parallel_data
 
@@ -336,13 +331,13 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `ParallelDataConfig`:
-  [ParallelDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#paralleldataconfigtypedef)
+  [ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef)
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `Description`: `str`
 
 Returns
-[UpdateParallelDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_translate/type_defs.html#updateparalleldataresponsetypedef).
+[UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef).
 
 ### get_paginator
 

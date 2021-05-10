@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ManagedBlockchain module
 
-> [Index](../README.md) > [ManagedBlockchain](./README.md) > Structures
+> [Index](..) > [ManagedBlockchain](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
@@ -56,7 +56,7 @@ type annotations stubs module
   - [ProposalSummaryTypeDef](#proposalsummarytypedef)
   - [ProposalTypeDef](#proposaltypedef)
   - [RemoveActionTypeDef](#removeactiontypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [VoteSummaryTypeDef](#votesummarytypedef)
   - [VotingPolicyTypeDef](#votingpolicytypedef)
 
@@ -70,8 +70,7 @@ Optional fields:
 
 - `ThresholdPercentage`: `int`
 - `ProposalDurationInHours`: `int`
-- `ThresholdComparator`:
-  [ThresholdComparator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#thresholdcomparator)
+- `ThresholdComparator`: [ThresholdComparator](./literals.md#thresholdcomparator)
 
 ## CreateMemberOutputTypeDef
 
@@ -83,7 +82,7 @@ Required fields:
 
 - `MemberId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateNetworkOutputTypeDef
 
@@ -96,7 +95,7 @@ Required fields:
 - `NetworkId`: `str`
 - `MemberId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateNodeOutputTypeDef
 
@@ -108,7 +107,7 @@ Required fields:
 
 - `NodeId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateProposalOutputTypeDef
 
@@ -120,7 +119,7 @@ Required fields:
 
 - `ProposalId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetMemberOutputTypeDef
 
@@ -130,10 +129,9 @@ from mypy_boto3_managedblockchain.type_defs import GetMemberOutputTypeDef
 
 Required fields:
 
-- `Member`:
-  [MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#membertypedef)
+- `Member`: [MemberTypeDef](./type_defs.md#membertypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetNetworkOutputTypeDef
 
@@ -143,10 +141,9 @@ from mypy_boto3_managedblockchain.type_defs import GetNetworkOutputTypeDef
 
 Required fields:
 
-- `Network`:
-  [NetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networktypedef)
+- `Network`: [NetworkTypeDef](./type_defs.md#networktypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetNodeOutputTypeDef
 
@@ -156,10 +153,9 @@ from mypy_boto3_managedblockchain.type_defs import GetNodeOutputTypeDef
 
 Required fields:
 
-- `Node`:
-  [NodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodetypedef)
+- `Node`: [NodeTypeDef](./type_defs.md#nodetypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetProposalOutputTypeDef
 
@@ -169,10 +165,9 @@ from mypy_boto3_managedblockchain.type_defs import GetProposalOutputTypeDef
 
 Required fields:
 
-- `Proposal`:
-  [ProposalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#proposaltypedef)
+- `Proposal`: [ProposalTypeDef](./type_defs.md#proposaltypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InvitationTypeDef
 
@@ -185,10 +180,8 @@ Optional fields:
 - `InvitationId`: `str`
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
-- `Status`:
-  [InvitationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#invitationstatus)
-- `NetworkSummary`:
-  [NetworkSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networksummarytypedef)
+- `Status`: [InvitationStatus](./literals.md#invitationstatus)
+- `NetworkSummary`: [NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef)
 - `Arn`: `str`
 
 ## InviteActionTypeDef
@@ -209,11 +202,10 @@ from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputTypeDef
 
 Required fields:
 
-- `Invitations`:
-  `List`\[[InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#invitationtypedef)\]
+- `Invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListMembersOutputTypeDef
 
@@ -224,10 +216,10 @@ from mypy_boto3_managedblockchain.type_defs import ListMembersOutputTypeDef
 Required fields:
 
 - `Members`:
-  `List`\[[MemberSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#membersummarytypedef)\]
+  `List`\[[MemberSummaryTypeDef](./type_defs.md#membersummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListNetworksOutputTypeDef
 
@@ -238,10 +230,10 @@ from mypy_boto3_managedblockchain.type_defs import ListNetworksOutputTypeDef
 Required fields:
 
 - `Networks`:
-  `List`\[[NetworkSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networksummarytypedef)\]
+  `List`\[[NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListNodesOutputTypeDef
 
@@ -251,11 +243,10 @@ from mypy_boto3_managedblockchain.type_defs import ListNodesOutputTypeDef
 
 Required fields:
 
-- `Nodes`:
-  `List`\[[NodeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodesummarytypedef)\]
+- `Nodes`: `List`\[[NodeSummaryTypeDef](./type_defs.md#nodesummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListProposalVotesOutputTypeDef
 
@@ -266,10 +257,10 @@ from mypy_boto3_managedblockchain.type_defs import ListProposalVotesOutputTypeDe
 Required fields:
 
 - `ProposalVotes`:
-  `List`\[[VoteSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#votesummarytypedef)\]
+  `List`\[[VoteSummaryTypeDef](./type_defs.md#votesummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListProposalsOutputTypeDef
 
@@ -280,10 +271,10 @@ from mypy_boto3_managedblockchain.type_defs import ListProposalsOutputTypeDef
 Required fields:
 
 - `Proposals`:
-  `List`\[[ProposalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#proposalsummarytypedef)\]
+  `List`\[[ProposalSummaryTypeDef](./type_defs.md#proposalsummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -313,8 +304,7 @@ from mypy_boto3_managedblockchain.type_defs import LogConfigurationsTypeDef
 
 Optional fields:
 
-- `Cloudwatch`:
-  [LogConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#logconfigurationtypedef)
+- `Cloudwatch`: [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 
 ## MemberConfigurationTypeDef
 
@@ -326,13 +316,13 @@ Required fields:
 
 - `Name`: `str`
 - `FrameworkConfiguration`:
-  [MemberFrameworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberframeworkconfigurationtypedef)
+  [MemberFrameworkConfigurationTypeDef](./type_defs.md#memberframeworkconfigurationtypedef)
 
 Optional fields:
 
 - `Description`: `str`
 - `LogPublishingConfiguration`:
-  [MemberLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberlogpublishingconfigurationtypedef)
+  [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## MemberFabricAttributesTypeDef
@@ -365,8 +355,7 @@ from mypy_boto3_managedblockchain.type_defs import MemberFabricLogPublishingConf
 
 Optional fields:
 
-- `CaLogs`:
-  [LogConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#logconfigurationstypedef)
+- `CaLogs`: [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
 
 ## MemberFrameworkAttributesTypeDef
 
@@ -377,7 +366,7 @@ from mypy_boto3_managedblockchain.type_defs import MemberFrameworkAttributesType
 Optional fields:
 
 - `Fabric`:
-  [MemberFabricAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberfabricattributestypedef)
+  [MemberFabricAttributesTypeDef](./type_defs.md#memberfabricattributestypedef)
 
 ## MemberFrameworkConfigurationTypeDef
 
@@ -388,7 +377,7 @@ from mypy_boto3_managedblockchain.type_defs import MemberFrameworkConfigurationT
 Optional fields:
 
 - `Fabric`:
-  [MemberFabricConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberfabricconfigurationtypedef)
+  [MemberFabricConfigurationTypeDef](./type_defs.md#memberfabricconfigurationtypedef)
 
 ## MemberLogPublishingConfigurationTypeDef
 
@@ -399,7 +388,7 @@ from mypy_boto3_managedblockchain.type_defs import MemberLogPublishingConfigurat
 Optional fields:
 
 - `Fabric`:
-  [MemberFabricLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberfabriclogpublishingconfigurationtypedef)
+  [MemberFabricLogPublishingConfigurationTypeDef](./type_defs.md#memberfabriclogpublishingconfigurationtypedef)
 
 ## MemberSummaryTypeDef
 
@@ -412,8 +401,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`:
-  [MemberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#memberstatus)
+- `Status`: [MemberStatus](./literals.md#memberstatus)
 - `CreationDate`: `datetime`
 - `IsOwned`: `bool`
 - `Arn`: `str`
@@ -431,11 +419,10 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `FrameworkAttributes`:
-  [MemberFrameworkAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberframeworkattributestypedef)
+  [MemberFrameworkAttributesTypeDef](./type_defs.md#memberframeworkattributestypedef)
 - `LogPublishingConfiguration`:
-  [MemberLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#memberlogpublishingconfigurationtypedef)
-- `Status`:
-  [MemberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#memberstatus)
+  [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
+- `Status`: [MemberStatus](./literals.md#memberstatus)
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
@@ -459,8 +446,7 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFabricAttributesTypeDe
 Optional fields:
 
 - `OrderingServiceEndpoint`: `str`
-- `Edition`:
-  [Edition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#edition)
+- `Edition`: [Edition](./literals.md#edition)
 
 ## NetworkFabricConfigurationTypeDef
 
@@ -470,8 +456,7 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFabricConfigurationTyp
 
 Required fields:
 
-- `Edition`:
-  [Edition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#edition)
+- `Edition`: [Edition](./literals.md#edition)
 
 ## NetworkFrameworkAttributesTypeDef
 
@@ -482,9 +467,9 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFrameworkAttributesTyp
 Optional fields:
 
 - `Fabric`:
-  [NetworkFabricAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networkfabricattributestypedef)
+  [NetworkFabricAttributesTypeDef](./type_defs.md#networkfabricattributestypedef)
 - `Ethereum`:
-  [NetworkEthereumAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networkethereumattributestypedef)
+  [NetworkEthereumAttributesTypeDef](./type_defs.md#networkethereumattributestypedef)
 
 ## NetworkFrameworkConfigurationTypeDef
 
@@ -495,7 +480,7 @@ from mypy_boto3_managedblockchain.type_defs import NetworkFrameworkConfiguration
 Optional fields:
 
 - `Fabric`:
-  [NetworkFabricConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networkfabricconfigurationtypedef)
+  [NetworkFabricConfigurationTypeDef](./type_defs.md#networkfabricconfigurationtypedef)
 
 ## NetworkSummaryTypeDef
 
@@ -508,11 +493,9 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Framework`:
-  [Framework](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#framework)
+- `Framework`: [Framework](./literals.md#framework)
 - `FrameworkVersion`: `str`
-- `Status`:
-  [NetworkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#networkstatus)
+- `Status`: [NetworkStatus](./literals.md#networkstatus)
 - `CreationDate`: `datetime`
 - `Arn`: `str`
 
@@ -527,16 +510,13 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Framework`:
-  [Framework](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#framework)
+- `Framework`: [Framework](./literals.md#framework)
 - `FrameworkVersion`: `str`
 - `FrameworkAttributes`:
-  [NetworkFrameworkAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#networkframeworkattributestypedef)
+  [NetworkFrameworkAttributesTypeDef](./type_defs.md#networkframeworkattributestypedef)
 - `VpcEndpointServiceName`: `str`
-- `VotingPolicy`:
-  [VotingPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#votingpolicytypedef)
-- `Status`:
-  [NetworkStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#networkstatus)
+- `VotingPolicy`: [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
+- `Status`: [NetworkStatus](./literals.md#networkstatus)
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
@@ -555,9 +535,8 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `LogPublishingConfiguration`:
-  [NodeLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodelogpublishingconfigurationtypedef)
-- `StateDB`:
-  [StateDBType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#statedbtype)
+  [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
+- `StateDB`: [StateDBType](./literals.md#statedbtype)
 
 ## NodeEthereumAttributesTypeDef
 
@@ -590,9 +569,8 @@ from mypy_boto3_managedblockchain.type_defs import NodeFabricLogPublishingConfig
 Optional fields:
 
 - `ChaincodeLogs`:
-  [LogConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#logconfigurationstypedef)
-- `PeerLogs`:
-  [LogConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#logconfigurationstypedef)
+  [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
+- `PeerLogs`: [LogConfigurationsTypeDef](./type_defs.md#logconfigurationstypedef)
 
 ## NodeFrameworkAttributesTypeDef
 
@@ -603,9 +581,9 @@ from mypy_boto3_managedblockchain.type_defs import NodeFrameworkAttributesTypeDe
 Optional fields:
 
 - `Fabric`:
-  [NodeFabricAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodefabricattributestypedef)
+  [NodeFabricAttributesTypeDef](./type_defs.md#nodefabricattributestypedef)
 - `Ethereum`:
-  [NodeEthereumAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodeethereumattributestypedef)
+  [NodeEthereumAttributesTypeDef](./type_defs.md#nodeethereumattributestypedef)
 
 ## NodeLogPublishingConfigurationTypeDef
 
@@ -616,7 +594,7 @@ from mypy_boto3_managedblockchain.type_defs import NodeLogPublishingConfiguratio
 Optional fields:
 
 - `Fabric`:
-  [NodeFabricLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodefabriclogpublishingconfigurationtypedef)
+  [NodeFabricLogPublishingConfigurationTypeDef](./type_defs.md#nodefabriclogpublishingconfigurationtypedef)
 
 ## NodeSummaryTypeDef
 
@@ -627,8 +605,7 @@ from mypy_boto3_managedblockchain.type_defs import NodeSummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Status`:
-  [NodeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#nodestatus)
+- `Status`: [NodeStatus](./literals.md#nodestatus)
 - `CreationDate`: `datetime`
 - `AvailabilityZone`: `str`
 - `InstanceType`: `str`
@@ -648,13 +625,11 @@ Optional fields:
 - `InstanceType`: `str`
 - `AvailabilityZone`: `str`
 - `FrameworkAttributes`:
-  [NodeFrameworkAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodeframeworkattributestypedef)
+  [NodeFrameworkAttributesTypeDef](./type_defs.md#nodeframeworkattributestypedef)
 - `LogPublishingConfiguration`:
-  [NodeLogPublishingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#nodelogpublishingconfigurationtypedef)
-- `StateDB`:
-  [StateDBType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#statedbtype)
-- `Status`:
-  [NodeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#nodestatus)
+  [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
+- `StateDB`: [StateDBType](./literals.md#statedbtype)
+- `Status`: [NodeStatus](./literals.md#nodestatus)
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
@@ -668,9 +643,8 @@ from mypy_boto3_managedblockchain.type_defs import ProposalActionsTypeDef
 Optional fields:
 
 - `Invitations`:
-  `List`\[[InviteActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#inviteactiontypedef)\]
-- `Removals`:
-  `List`\[[RemoveActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#removeactiontypedef)\]
+  `List`\[[InviteActionTypeDef](./type_defs.md#inviteactiontypedef)\]
+- `Removals`: `List`\[[RemoveActionTypeDef](./type_defs.md#removeactiontypedef)\]
 
 ## ProposalSummaryTypeDef
 
@@ -684,8 +658,7 @@ Optional fields:
 - `Description`: `str`
 - `ProposedByMemberId`: `str`
 - `ProposedByMemberName`: `str`
-- `Status`:
-  [ProposalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#proposalstatus)
+- `Status`: [ProposalStatus](./literals.md#proposalstatus)
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
 - `Arn`: `str`
@@ -701,12 +674,10 @@ Optional fields:
 - `ProposalId`: `str`
 - `NetworkId`: `str`
 - `Description`: `str`
-- `Actions`:
-  [ProposalActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#proposalactionstypedef)
+- `Actions`: [ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef)
 - `ProposedByMemberId`: `str`
 - `ProposedByMemberName`: `str`
-- `Status`:
-  [ProposalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#proposalstatus)
+- `Status`: [ProposalStatus](./literals.md#proposalstatus)
 - `CreationDate`: `datetime`
 - `ExpirationDate`: `datetime`
 - `YesVoteCount`: `int`
@@ -725,10 +696,10 @@ Required fields:
 
 - `MemberId`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ResponseMetadata
+from mypy_boto3_managedblockchain.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -747,8 +718,7 @@ from mypy_boto3_managedblockchain.type_defs import VoteSummaryTypeDef
 
 Optional fields:
 
-- `Vote`:
-  [VoteValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/literals.html#votevalue)
+- `Vote`: [VoteValue](./literals.md#votevalue)
 - `MemberName`: `str`
 - `MemberId`: `str`
 
@@ -761,4 +731,4 @@ from mypy_boto3_managedblockchain.type_defs import VotingPolicyTypeDef
 Optional fields:
 
 - `ApprovalThresholdPolicy`:
-  [ApprovalThresholdPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_managedblockchain/type_defs.html#approvalthresholdpolicytypedef)
+  [ApprovalThresholdPolicyTypeDef](./type_defs.md#approvalthresholdpolicytypedef)

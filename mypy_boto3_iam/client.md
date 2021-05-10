@@ -1,6 +1,6 @@
 # IAMClient for boto3 IAM module
 
-> [Index](../README.md) > [IAM](./README.md) > IAMClient
+> [Index](..) > [IAM](.) > IAMClient
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
@@ -345,7 +345,7 @@ Arguments:
 - `UserName`: `str`
 
 Returns
-[CreateAccessKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createaccesskeyresponsetypedef).
+[CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef).
 
 ### create_account_alias
 
@@ -371,7 +371,7 @@ Arguments:
 - `Path`: `str`
 
 Returns
-[CreateGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#creategroupresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_instance_profile
 
@@ -384,11 +384,10 @@ Arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInstanceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createinstanceprofileresponsetypedef).
+[CreateInstanceProfileResponseTypeDef](./type_defs.md#createinstanceprofileresponsetypedef).
 
 ### create_login_profile
 
@@ -404,7 +403,7 @@ Arguments:
 - `PasswordResetRequired`: `bool`
 
 Returns
-[CreateLoginProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createloginprofileresponsetypedef).
+[CreateLoginProfileResponseTypeDef](./type_defs.md#createloginprofileresponsetypedef).
 
 ### create_open_id_connect_provider
 
@@ -419,11 +418,10 @@ Arguments:
 - `Url`: `str` *(required)*
 - `ThumbprintList`: `List`\[`str`\] *(required)*
 - `ClientIDList`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOpenIDConnectProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createopenidconnectproviderresponsetypedef).
+[CreateOpenIDConnectProviderResponseTypeDef](./type_defs.md#createopenidconnectproviderresponsetypedef).
 
 ### create_policy
 
@@ -438,11 +436,10 @@ Arguments:
 - `PolicyDocument`: `str` *(required)*
 - `Path`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createpolicyresponsetypedef).
+[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
 
 ### create_policy_version
 
@@ -458,7 +455,7 @@ Arguments:
 - `SetAsDefault`: `bool`
 
 Returns
-[CreatePolicyVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createpolicyversionresponsetypedef).
+[CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
 
 ### create_role
 
@@ -475,11 +472,9 @@ Arguments:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createroleresponsetypedef).
+Returns [CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef).
 
 ### create_saml_provider
 
@@ -492,11 +487,10 @@ Arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createsamlproviderresponsetypedef).
+[CreateSAMLProviderResponseTypeDef](./type_defs.md#createsamlproviderresponsetypedef).
 
 ### create_service_linked_role
 
@@ -512,7 +506,7 @@ Arguments:
 - `CustomSuffix`: `str`
 
 Returns
-[CreateServiceLinkedRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createservicelinkedroleresponsetypedef).
+[CreateServiceLinkedRoleResponseTypeDef](./type_defs.md#createservicelinkedroleresponsetypedef).
 
 ### create_service_specific_credential
 
@@ -528,7 +522,7 @@ Arguments:
 - `ServiceName`: `str` *(required)*
 
 Returns
-[CreateServiceSpecificCredentialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createservicespecificcredentialresponsetypedef).
+[CreateServiceSpecificCredentialResponseTypeDef](./type_defs.md#createservicespecificcredentialresponsetypedef).
 
 ### create_user
 
@@ -542,11 +536,9 @@ Arguments:
 - `UserName`: `str` *(required)*
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createuserresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_virtual_mfa_device
 
@@ -559,11 +551,10 @@ Arguments:
 
 - `VirtualMFADeviceName`: `str` *(required)*
 - `Path`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateVirtualMFADeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#createvirtualmfadeviceresponsetypedef).
+[CreateVirtualMFADeviceResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponsetypedef).
 
 ### deactivate_mfa_device
 
@@ -757,7 +748,7 @@ Arguments:
 - `RoleName`: `str` *(required)*
 
 Returns
-[DeleteServiceLinkedRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#deleteservicelinkedroleresponsetypedef).
+[DeleteServiceLinkedRoleResponseTypeDef](./type_defs.md#deleteservicelinkedroleresponsetypedef).
 
 ### delete_service_specific_credential
 
@@ -900,7 +891,7 @@ Boto3 documentation:
 [IAM.Client.generate_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report)
 
 Returns
-[GenerateCredentialReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#generatecredentialreportresponsetypedef).
+[GenerateCredentialReportResponseTypeDef](./type_defs.md#generatecredentialreportresponsetypedef).
 
 ### generate_organizations_access_report
 
@@ -916,7 +907,7 @@ Arguments:
 - `OrganizationsPolicyId`: `str`
 
 Returns
-[GenerateOrganizationsAccessReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#generateorganizationsaccessreportresponsetypedef).
+[GenerateOrganizationsAccessReportResponseTypeDef](./type_defs.md#generateorganizationsaccessreportresponsetypedef).
 
 ### generate_presigned_url
 
@@ -946,10 +937,10 @@ Arguments:
 
 - `Arn`: `str` *(required)*
 - `Granularity`:
-  [AccessAdvisorUsageGranularityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#accessadvisorusagegranularitytype)
+  [AccessAdvisorUsageGranularityType](./literals.md#accessadvisorusagegranularitytype)
 
 Returns
-[GenerateServiceLastAccessedDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#generateservicelastaccesseddetailsresponsetypedef).
+[GenerateServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#generateservicelastaccesseddetailsresponsetypedef).
 
 ### get_access_key_last_used
 
@@ -963,7 +954,7 @@ Arguments:
 - `AccessKeyId`: `str` *(required)*
 
 Returns
-[GetAccessKeyLastUsedResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccesskeylastusedresponsetypedef).
+[GetAccessKeyLastUsedResponseTypeDef](./type_defs.md#getaccesskeylastusedresponsetypedef).
 
 ### get_account_authorization_details
 
@@ -975,13 +966,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filter`:
-  `List`\[[EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#entitytype)\]
+- `Filter`: `List`\[[EntityType](./literals.md#entitytype)\]
 - `MaxItems`: `int`
 - `Marker`: `str`
 
 Returns
-[GetAccountAuthorizationDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountauthorizationdetailsresponsetypedef).
+[GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef).
 
 ### get_account_password_policy
 
@@ -991,7 +981,7 @@ Boto3 documentation:
 [IAM.Client.get_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy)
 
 Returns
-[GetAccountPasswordPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountpasswordpolicyresponsetypedef).
+[GetAccountPasswordPolicyResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponsetypedef).
 
 ### get_account_summary
 
@@ -1001,7 +991,7 @@ Boto3 documentation:
 [IAM.Client.get_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary)
 
 Returns
-[GetAccountSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getaccountsummaryresponsetypedef).
+[GetAccountSummaryResponseTypeDef](./type_defs.md#getaccountsummaryresponsetypedef).
 
 ### get_context_keys_for_custom_policy
 
@@ -1016,7 +1006,7 @@ Arguments:
 - `PolicyInputList`: `List`\[`str`\] *(required)*
 
 Returns
-[GetContextKeysForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getcontextkeysforpolicyresponsetypedef).
+[GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
 
 ### get_context_keys_for_principal_policy
 
@@ -1032,7 +1022,7 @@ Arguments:
 - `PolicyInputList`: `List`\[`str`\]
 
 Returns
-[GetContextKeysForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getcontextkeysforpolicyresponsetypedef).
+[GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
 
 ### get_credential_report
 
@@ -1042,7 +1032,7 @@ Boto3 documentation:
 [IAM.Client.get_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report)
 
 Returns
-[GetCredentialReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getcredentialreportresponsetypedef).
+[GetCredentialReportResponseTypeDef](./type_defs.md#getcredentialreportresponsetypedef).
 
 ### get_group
 
@@ -1057,8 +1047,7 @@ Arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[GetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getgroupresponsetypedef).
+Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
 
 ### get_group_policy
 
@@ -1073,7 +1062,7 @@ Arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetGroupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getgrouppolicyresponsetypedef).
+[GetGroupPolicyResponseTypeDef](./type_defs.md#getgrouppolicyresponsetypedef).
 
 ### get_instance_profile
 
@@ -1087,7 +1076,7 @@ Arguments:
 - `InstanceProfileName`: `str` *(required)*
 
 Returns
-[GetInstanceProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getinstanceprofileresponsetypedef).
+[GetInstanceProfileResponseTypeDef](./type_defs.md#getinstanceprofileresponsetypedef).
 
 ### get_login_profile
 
@@ -1101,7 +1090,7 @@ Arguments:
 - `UserName`: `str` *(required)*
 
 Returns
-[GetLoginProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getloginprofileresponsetypedef).
+[GetLoginProfileResponseTypeDef](./type_defs.md#getloginprofileresponsetypedef).
 
 ### get_open_id_connect_provider
 
@@ -1115,7 +1104,7 @@ Arguments:
 - `OpenIDConnectProviderArn`: `str` *(required)*
 
 Returns
-[GetOpenIDConnectProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getopenidconnectproviderresponsetypedef).
+[GetOpenIDConnectProviderResponseTypeDef](./type_defs.md#getopenidconnectproviderresponsetypedef).
 
 ### get_organizations_access_report
 
@@ -1130,11 +1119,10 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `MaxItems`: `int`
 - `Marker`: `str`
-- `SortKey`:
-  [sortKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#sortkeytype)
+- `SortKey`: [sortKeyType](./literals.md#sortkeytype)
 
 Returns
-[GetOrganizationsAccessReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getorganizationsaccessreportresponsetypedef).
+[GetOrganizationsAccessReportResponseTypeDef](./type_defs.md#getorganizationsaccessreportresponsetypedef).
 
 ### get_policy
 
@@ -1147,8 +1135,7 @@ Arguments:
 
 - `PolicyArn`: `str` *(required)*
 
-Returns
-[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getpolicyresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_policy_version
 
@@ -1163,7 +1150,7 @@ Arguments:
 - `VersionId`: `str` *(required)*
 
 Returns
-[GetPolicyVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getpolicyversionresponsetypedef).
+[GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
 
 ### get_role
 
@@ -1176,8 +1163,7 @@ Arguments:
 
 - `RoleName`: `str` *(required)*
 
-Returns
-[GetRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getroleresponsetypedef).
+Returns [GetRoleResponseTypeDef](./type_defs.md#getroleresponsetypedef).
 
 ### get_role_policy
 
@@ -1192,7 +1178,7 @@ Arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetRolePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getrolepolicyresponsetypedef).
+[GetRolePolicyResponseTypeDef](./type_defs.md#getrolepolicyresponsetypedef).
 
 ### get_saml_provider
 
@@ -1206,7 +1192,7 @@ Arguments:
 - `SAMLProviderArn`: `str` *(required)*
 
 Returns
-[GetSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getsamlproviderresponsetypedef).
+[GetSAMLProviderResponseTypeDef](./type_defs.md#getsamlproviderresponsetypedef).
 
 ### get_server_certificate
 
@@ -1220,7 +1206,7 @@ Arguments:
 - `ServerCertificateName`: `str` *(required)*
 
 Returns
-[GetServerCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservercertificateresponsetypedef).
+[GetServerCertificateResponseTypeDef](./type_defs.md#getservercertificateresponsetypedef).
 
 ### get_service_last_accessed_details
 
@@ -1237,7 +1223,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[GetServiceLastAccessedDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservicelastaccesseddetailsresponsetypedef).
+[GetServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#getservicelastaccesseddetailsresponsetypedef).
 
 ### get_service_last_accessed_details_with_entities
 
@@ -1255,7 +1241,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservicelastaccesseddetailswithentitiesresponsetypedef).
+[GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesresponsetypedef).
 
 ### get_service_linked_role_deletion_status
 
@@ -1270,7 +1256,7 @@ Arguments:
 - `DeletionTaskId`: `str` *(required)*
 
 Returns
-[GetServiceLinkedRoleDeletionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getservicelinkedroledeletionstatusresponsetypedef).
+[GetServiceLinkedRoleDeletionStatusResponseTypeDef](./type_defs.md#getservicelinkedroledeletionstatusresponsetypedef).
 
 ### get_ssh_public_key
 
@@ -1283,12 +1269,10 @@ Arguments:
 
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyId`: `str` *(required)*
-- `Encoding`:
-  [encodingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#encodingtype)
-  *(required)*
+- `Encoding`: [encodingType](./literals.md#encodingtype) *(required)*
 
 Returns
-[GetSSHPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getsshpublickeyresponsetypedef).
+[GetSSHPublicKeyResponseTypeDef](./type_defs.md#getsshpublickeyresponsetypedef).
 
 ### get_user
 
@@ -1301,8 +1285,7 @@ Arguments:
 
 - `UserName`: `str`
 
-Returns
-[GetUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getuserresponsetypedef).
+Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 
 ### get_user_policy
 
@@ -1317,7 +1300,7 @@ Arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetUserPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#getuserpolicyresponsetypedef).
+[GetUserPolicyResponseTypeDef](./type_defs.md#getuserpolicyresponsetypedef).
 
 ### list_access_keys
 
@@ -1333,7 +1316,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAccessKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listaccesskeysresponsetypedef).
+[ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef).
 
 ### list_account_aliases
 
@@ -1348,7 +1331,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAccountAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listaccountaliasesresponsetypedef).
+[ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef).
 
 ### list_attached_group_policies
 
@@ -1365,7 +1348,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAttachedGroupPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattachedgrouppoliciesresponsetypedef).
+[ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef).
 
 ### list_attached_role_policies
 
@@ -1382,7 +1365,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAttachedRolePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattachedrolepoliciesresponsetypedef).
+[ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef).
 
 ### list_attached_user_policies
 
@@ -1399,7 +1382,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAttachedUserPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listattacheduserpoliciesresponsetypedef).
+[ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef).
 
 ### list_entities_for_policy
 
@@ -1411,16 +1394,14 @@ Boto3 documentation:
 Arguments:
 
 - `PolicyArn`: `str` *(required)*
-- `EntityFilter`:
-  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#entitytype)
+- `EntityFilter`: [EntityType](./literals.md#entitytype)
 - `PathPrefix`: `str`
-- `PolicyUsageFilter`:
-  [PolicyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyusagetype)
+- `PolicyUsageFilter`: [PolicyUsageType](./literals.md#policyusagetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListEntitiesForPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listentitiesforpolicyresponsetypedef).
+[ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef).
 
 ### list_group_policies
 
@@ -1436,7 +1417,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListGroupPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgrouppoliciesresponsetypedef).
+[ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef).
 
 ### list_groups
 
@@ -1451,8 +1432,7 @@ Arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgroupsresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_groups_for_user
 
@@ -1468,7 +1448,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListGroupsForUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listgroupsforuserresponsetypedef).
+[ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef).
 
 ### list_instance_profile_tags
 
@@ -1484,7 +1464,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListInstanceProfileTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofiletagsresponsetypedef).
+[ListInstanceProfileTagsResponseTypeDef](./type_defs.md#listinstanceprofiletagsresponsetypedef).
 
 ### list_instance_profiles
 
@@ -1500,7 +1480,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListInstanceProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofilesresponsetypedef).
+[ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef).
 
 ### list_instance_profiles_for_role
 
@@ -1517,7 +1497,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListInstanceProfilesForRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listinstanceprofilesforroleresponsetypedef).
+[ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef).
 
 ### list_mfa_device_tags
 
@@ -1533,7 +1513,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListMFADeviceTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listmfadevicetagsresponsetypedef).
+[ListMFADeviceTagsResponseTypeDef](./type_defs.md#listmfadevicetagsresponsetypedef).
 
 ### list_mfa_devices
 
@@ -1549,7 +1529,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListMFADevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listmfadevicesresponsetypedef).
+[ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef).
 
 ### list_open_id_connect_provider_tags
 
@@ -1566,7 +1546,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListOpenIDConnectProviderTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listopenidconnectprovidertagsresponsetypedef).
+[ListOpenIDConnectProviderTagsResponseTypeDef](./type_defs.md#listopenidconnectprovidertagsresponsetypedef).
 
 ### list_open_id_connect_providers
 
@@ -1577,7 +1557,7 @@ Boto3 documentation:
 [IAM.Client.list_open_id_connect_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
 
 Returns
-[ListOpenIDConnectProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listopenidconnectprovidersresponsetypedef).
+[ListOpenIDConnectProvidersResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponsetypedef).
 
 ### list_policies
 
@@ -1588,17 +1568,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Scope`:
-  [policyScopeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyscopetype)
+- `Scope`: [policyScopeType](./literals.md#policyscopetype)
 - `OnlyAttached`: `bool`
 - `PathPrefix`: `str`
-- `PolicyUsageFilter`:
-  [PolicyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyusagetype)
+- `PolicyUsageFilter`: [PolicyUsageType](./literals.md#policyusagetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpoliciesresponsetypedef).
+[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
 
 ### list_policies_granting_service_access
 
@@ -1615,7 +1593,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListPoliciesGrantingServiceAccessResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpoliciesgrantingserviceaccessresponsetypedef).
+[ListPoliciesGrantingServiceAccessResponseTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessresponsetypedef).
 
 ### list_policy_tags
 
@@ -1631,7 +1609,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListPolicyTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpolicytagsresponsetypedef).
+[ListPolicyTagsResponseTypeDef](./type_defs.md#listpolicytagsresponsetypedef).
 
 ### list_policy_versions
 
@@ -1647,7 +1625,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListPolicyVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpolicyversionsresponsetypedef).
+[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
 
 ### list_role_policies
 
@@ -1663,7 +1641,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListRolePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listrolepoliciesresponsetypedef).
+[ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef).
 
 ### list_role_tags
 
@@ -1679,7 +1657,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListRoleTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listroletagsresponsetypedef).
+[ListRoleTagsResponseTypeDef](./type_defs.md#listroletagsresponsetypedef).
 
 ### list_roles
 
@@ -1694,8 +1672,7 @@ Arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListRolesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listrolesresponsetypedef).
+Returns [ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef).
 
 ### list_saml_provider_tags
 
@@ -1711,7 +1688,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListSAMLProviderTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsamlprovidertagsresponsetypedef).
+[ListSAMLProviderTagsResponseTypeDef](./type_defs.md#listsamlprovidertagsresponsetypedef).
 
 ### list_saml_providers
 
@@ -1721,7 +1698,7 @@ Boto3 documentation:
 [IAM.Client.list_saml_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers)
 
 Returns
-[ListSAMLProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsamlprovidersresponsetypedef).
+[ListSAMLProvidersResponseTypeDef](./type_defs.md#listsamlprovidersresponsetypedef).
 
 ### list_server_certificate_tags
 
@@ -1737,7 +1714,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListServerCertificateTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservercertificatetagsresponsetypedef).
+[ListServerCertificateTagsResponseTypeDef](./type_defs.md#listservercertificatetagsresponsetypedef).
 
 ### list_server_certificates
 
@@ -1753,7 +1730,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListServerCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservercertificatesresponsetypedef).
+[ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef).
 
 ### list_service_specific_credentials
 
@@ -1769,7 +1746,7 @@ Arguments:
 - `ServiceName`: `str`
 
 Returns
-[ListServiceSpecificCredentialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listservicespecificcredentialsresponsetypedef).
+[ListServiceSpecificCredentialsResponseTypeDef](./type_defs.md#listservicespecificcredentialsresponsetypedef).
 
 ### list_signing_certificates
 
@@ -1785,7 +1762,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListSigningCertificatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsigningcertificatesresponsetypedef).
+[ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef).
 
 ### list_ssh_public_keys
 
@@ -1801,7 +1778,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListSSHPublicKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listsshpublickeysresponsetypedef).
+[ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef).
 
 ### list_user_policies
 
@@ -1817,7 +1794,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListUserPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listuserpoliciesresponsetypedef).
+[ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef).
 
 ### list_user_tags
 
@@ -1833,7 +1810,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListUserTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listusertagsresponsetypedef).
+[ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef).
 
 ### list_users
 
@@ -1848,8 +1825,7 @@ Arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listusersresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_virtual_mfa_devices
 
@@ -1860,13 +1836,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `AssignmentStatus`:
-  [assignmentStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#assignmentstatustype)
+- `AssignmentStatus`: [assignmentStatusType](./literals.md#assignmentstatustype)
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListVirtualMFADevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listvirtualmfadevicesresponsetypedef).
+[ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef).
 
 ### put_group_policy
 
@@ -1985,7 +1960,7 @@ Arguments:
 - `UserName`: `str`
 
 Returns
-[ResetServiceSpecificCredentialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#resetservicespecificcredentialresponsetypedef).
+[ResetServiceSpecificCredentialResponseTypeDef](./type_defs.md#resetservicespecificcredentialresponsetypedef).
 
 ### resync_mfa_device
 
@@ -2024,7 +1999,7 @@ Boto3 documentation:
 Arguments:
 
 - `GlobalEndpointTokenVersion`:
-  [globalEndpointTokenVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#globalendpointtokenversion)
+  [globalEndpointTokenVersion](./literals.md#globalendpointtokenversion)
   *(required)*
 
 ### simulate_custom_policy
@@ -2044,13 +2019,13 @@ Arguments:
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#contextentrytypedef)\]
+  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `MaxItems`: `int`
 - `Marker`: `str`
 
 Returns
-[SimulatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#simulatepolicyresponsetypedef).
+[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
 
 ### simulate_principal_policy
 
@@ -2070,13 +2045,13 @@ Arguments:
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#contextentrytypedef)\]
+  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `MaxItems`: `int`
 - `Marker`: `str`
 
 Returns
-[SimulatePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#simulatepolicyresponsetypedef).
+[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
 
 ### tag_instance_profile
 
@@ -2088,9 +2063,7 @@ Boto3 documentation:
 Arguments:
 
 - `InstanceProfileName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_mfa_device
 
@@ -2102,9 +2075,7 @@ Boto3 documentation:
 Arguments:
 
 - `SerialNumber`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_open_id_connect_provider
 
@@ -2116,9 +2087,7 @@ Boto3 documentation:
 Arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_policy
 
@@ -2130,9 +2099,7 @@ Boto3 documentation:
 Arguments:
 
 - `PolicyArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_role
 
@@ -2144,9 +2111,7 @@ Boto3 documentation:
 Arguments:
 
 - `RoleName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_saml_provider
 
@@ -2158,9 +2123,7 @@ Boto3 documentation:
 Arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_server_certificate
 
@@ -2172,9 +2135,7 @@ Boto3 documentation:
 Arguments:
 
 - `ServerCertificateName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_user
 
@@ -2186,9 +2147,7 @@ Boto3 documentation:
 Arguments:
 
 - `UserName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_instance_profile
 
@@ -2297,9 +2256,7 @@ Boto3 documentation:
 Arguments:
 
 - `AccessKeyId`: `str` *(required)*
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 - `UserName`: `str`
 
 ### update_account_password_policy
@@ -2401,7 +2358,7 @@ Arguments:
 - `Description`: `str` *(required)*
 
 Returns
-[UpdateRoleDescriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#updateroledescriptionresponsetypedef).
+[UpdateRoleDescriptionResponseTypeDef](./type_defs.md#updateroledescriptionresponsetypedef).
 
 ### update_saml_provider
 
@@ -2416,7 +2373,7 @@ Arguments:
 - `SAMLProviderArn`: `str` *(required)*
 
 Returns
-[UpdateSAMLProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#updatesamlproviderresponsetypedef).
+[UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
 
 ### update_server_certificate
 
@@ -2442,9 +2399,7 @@ Boto3 documentation:
 Arguments:
 
 - `ServiceSpecificCredentialId`: `str` *(required)*
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 - `UserName`: `str`
 
 ### update_signing_certificate
@@ -2457,9 +2412,7 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateId`: `str` *(required)*
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 - `UserName`: `str`
 
 ### update_ssh_public_key
@@ -2473,9 +2426,7 @@ Arguments:
 
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyId`: `str` *(required)*
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
-  *(required)*
+- `Status`: [statusType](./literals.md#statustype) *(required)*
 
 ### update_user
 
@@ -2504,11 +2455,10 @@ Arguments:
 - `PrivateKey`: `str` *(required)*
 - `Path`: `str`
 - `CertificateChain`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UploadServerCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#uploadservercertificateresponsetypedef).
+[UploadServerCertificateResponseTypeDef](./type_defs.md#uploadservercertificateresponsetypedef).
 
 ### upload_signing_certificate
 
@@ -2523,7 +2473,7 @@ Arguments:
 - `UserName`: `str`
 
 Returns
-[UploadSigningCertificateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#uploadsigningcertificateresponsetypedef).
+[UploadSigningCertificateResponseTypeDef](./type_defs.md#uploadsigningcertificateresponsetypedef).
 
 ### upload_ssh_public_key
 
@@ -2538,7 +2488,7 @@ Arguments:
 - `SSHPublicKeyBody`: `str` *(required)*
 
 Returns
-[UploadSSHPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#uploadsshpublickeyresponsetypedef).
+[UploadSSHPublicKeyResponseTypeDef](./type_defs.md#uploadsshpublickeyresponsetypedef).
 
 ### get_paginator
 

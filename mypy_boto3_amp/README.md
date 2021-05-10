@@ -1,6 +1,6 @@
 # Type annotations for boto3 PrometheusService module
 
-> [Index](../README.md) > PrometheusService
+> [Index](..) > PrometheusService
 
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)

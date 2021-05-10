@@ -1,6 +1,6 @@
 # Paginators for boto3 Batch module
 
-> [Index](../README.md) > [Batch](./README.md) > Paginators
+> [Index](..) > [Batch](.) > Paginators
 
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
@@ -34,10 +34,10 @@ Arguments for `DescribeComputeEnvironmentsPaginator.paginate` method:
 
 - `computeEnvironments`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeComputeEnvironmentsPaginator.paginate` returns
-`Iterator`\[[DescribeComputeEnvironmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describecomputeenvironmentsresponsetypedef)\].
+`Iterator`\[[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef)\].
 
 ## DescribeJobDefinitionsPaginator
 
@@ -62,10 +62,10 @@ Arguments for `DescribeJobDefinitionsPaginator.paginate` method:
 - `jobDefinitionName`: `str`
 - `status`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[DescribeJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobdefinitionsresponsetypedef)\].
+`Iterator`\[[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef)\].
 
 ## DescribeJobQueuesPaginator
 
@@ -88,10 +88,10 @@ Arguments for `DescribeJobQueuesPaginator.paginate` method:
 
 - `jobQueues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobQueuesPaginator.paginate` returns
-`Iterator`\[[DescribeJobQueuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#describejobqueuesresponsetypedef)\].
+`Iterator`\[[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -114,10 +114,9 @@ Arguments for `ListJobsPaginator.paginate` method:
 - `jobQueue`: `str`
 - `arrayJobId`: `str`
 - `multiNodeJobId`: `str`
-- `jobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/literals.html#jobstatus)
+- `jobStatus`: [JobStatus](./literals.md#jobstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_batch/type_defs.html#listjobsresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].

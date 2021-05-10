@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ServiceDiscovery module
 
-> [Index](../README.md) > [ServiceDiscovery](./README.md) > Structures
+> [Index](..) > [ServiceDiscovery](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
@@ -89,8 +89,7 @@ from mypy_boto3_servicediscovery.type_defs import CreateServiceResponseTypeDef
 
 Optional fields:
 
-- `Service`:
-  [ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicetypedef)
+- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 
 ## DeleteNamespaceResponseTypeDef
 
@@ -121,7 +120,7 @@ from mypy_boto3_servicediscovery.type_defs import DiscoverInstancesResponseTypeD
 Optional fields:
 
 - `Instances`:
-  `List`\[[HttpInstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#httpinstancesummarytypedef)\]
+  `List`\[[HttpInstanceSummaryTypeDef](./type_defs.md#httpinstancesummarytypedef)\]
 
 ## DnsConfigChangeTypeDef
 
@@ -131,8 +130,7 @@ from mypy_boto3_servicediscovery.type_defs import DnsConfigChangeTypeDef
 
 Required fields:
 
-- `DnsRecords`:
-  `List`\[[DnsRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsrecordtypedef)\]
+- `DnsRecords`: `List`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
 
 ## DnsConfigTypeDef
 
@@ -142,14 +140,12 @@ from mypy_boto3_servicediscovery.type_defs import DnsConfigTypeDef
 
 Required fields:
 
-- `DnsRecords`:
-  `List`\[[DnsRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsrecordtypedef)\]
+- `DnsRecords`: `List`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
 
 Optional fields:
 
 - `NamespaceId`: `str`
-- `RoutingPolicy`:
-  [RoutingPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#routingpolicy)
+- `RoutingPolicy`: [RoutingPolicy](./literals.md#routingpolicy)
 
 ## DnsPropertiesTypeDef
 
@@ -169,8 +165,7 @@ from mypy_boto3_servicediscovery.type_defs import DnsRecordTypeDef
 
 Required fields:
 
-- `Type`:
-  [RecordType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#recordtype)
+- `Type`: [RecordType](./literals.md#recordtype)
 - `TTL`: `int`
 
 ## GetInstanceResponseTypeDef
@@ -181,8 +176,7 @@ from mypy_boto3_servicediscovery.type_defs import GetInstanceResponseTypeDef
 
 Optional fields:
 
-- `Instance`:
-  [InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#instancetypedef)
+- `Instance`: [InstanceTypeDef](./type_defs.md#instancetypedef)
 
 ## GetInstancesHealthStatusResponseTypeDef
 
@@ -192,8 +186,7 @@ from mypy_boto3_servicediscovery.type_defs import GetInstancesHealthStatusRespon
 
 Optional fields:
 
-- `Status`: `Dict`\[`str`,
-  [HealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#healthstatus)\]
+- `Status`: `Dict`\[`str`, [HealthStatus](./literals.md#healthstatus)\]
 - `NextToken`: `str`
 
 ## GetNamespaceResponseTypeDef
@@ -204,8 +197,7 @@ from mypy_boto3_servicediscovery.type_defs import GetNamespaceResponseTypeDef
 
 Optional fields:
 
-- `Namespace`:
-  [NamespaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacetypedef)
+- `Namespace`: [NamespaceTypeDef](./type_defs.md#namespacetypedef)
 
 ## GetOperationResponseTypeDef
 
@@ -215,8 +207,7 @@ from mypy_boto3_servicediscovery.type_defs import GetOperationResponseTypeDef
 
 Optional fields:
 
-- `Operation`:
-  [OperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#operationtypedef)
+- `Operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
 
 ## GetServiceResponseTypeDef
 
@@ -226,8 +217,7 @@ from mypy_boto3_servicediscovery.type_defs import GetServiceResponseTypeDef
 
 Optional fields:
 
-- `Service`:
-  [ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicetypedef)
+- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 
 ## HealthCheckConfigTypeDef
 
@@ -237,8 +227,7 @@ from mypy_boto3_servicediscovery.type_defs import HealthCheckConfigTypeDef
 
 Required fields:
 
-- `Type`:
-  [HealthCheckType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#healthchecktype)
+- `Type`: [HealthCheckType](./literals.md#healthchecktype)
 
 Optional fields:
 
@@ -266,8 +255,7 @@ Optional fields:
 - `InstanceId`: `str`
 - `NamespaceName`: `str`
 - `ServiceName`: `str`
-- `HealthStatus`:
-  [HealthStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#healthstatus)
+- `HealthStatus`: [HealthStatus](./literals.md#healthstatus)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 ## HttpPropertiesTypeDef
@@ -315,7 +303,7 @@ from mypy_boto3_servicediscovery.type_defs import ListInstancesResponseTypeDef
 Optional fields:
 
 - `Instances`:
-  `List`\[[InstanceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#instancesummarytypedef)\]
+  `List`\[[InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListNamespacesResponseTypeDef
@@ -327,7 +315,7 @@ from mypy_boto3_servicediscovery.type_defs import ListNamespacesResponseTypeDef
 Optional fields:
 
 - `Namespaces`:
-  `List`\[[NamespaceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacesummarytypedef)\]
+  `List`\[[NamespaceSummaryTypeDef](./type_defs.md#namespacesummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListOperationsResponseTypeDef
@@ -339,7 +327,7 @@ from mypy_boto3_servicediscovery.type_defs import ListOperationsResponseTypeDef
 Optional fields:
 
 - `Operations`:
-  `List`\[[OperationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#operationsummarytypedef)\]
+  `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListServicesResponseTypeDef
@@ -351,7 +339,7 @@ from mypy_boto3_servicediscovery.type_defs import ListServicesResponseTypeDef
 Optional fields:
 
 - `Services`:
-  `List`\[[ServiceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#servicesummarytypedef)\]
+  `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -362,8 +350,7 @@ from mypy_boto3_servicediscovery.type_defs import ListTagsForResourceResponseTyp
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NamespaceFilterTypeDef
 
@@ -373,13 +360,13 @@ from mypy_boto3_servicediscovery.type_defs import NamespaceFilterTypeDef
 
 Required fields:
 
-- `Name`: `Literal['TYPE']`
+- `Name`: `Literal['TYPE']` (see
+  [NamespaceFilterName](./literals.md#namespacefiltername))
 - `Values`: `List`\[`str`\]
 
 Optional fields:
 
-- `Condition`:
-  [FilterCondition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#filtercondition)
+- `Condition`: [FilterCondition](./literals.md#filtercondition)
 
 ## NamespacePropertiesTypeDef
 
@@ -389,10 +376,8 @@ from mypy_boto3_servicediscovery.type_defs import NamespacePropertiesTypeDef
 
 Optional fields:
 
-- `DnsProperties`:
-  [DnsPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnspropertiestypedef)
-- `HttpProperties`:
-  [HttpPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#httppropertiestypedef)
+- `DnsProperties`: [DnsPropertiesTypeDef](./type_defs.md#dnspropertiestypedef)
+- `HttpProperties`: [HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef)
 
 ## NamespaceSummaryTypeDef
 
@@ -405,12 +390,11 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`:
-  [NamespaceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#namespacetype)
+- `Type`: [NamespaceType](./literals.md#namespacetype)
 - `Description`: `str`
 - `ServiceCount`: `int`
 - `Properties`:
-  [NamespacePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacepropertiestypedef)
+  [NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef)
 - `CreateDate`: `datetime`
 
 ## NamespaceTypeDef
@@ -424,12 +408,11 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`:
-  [NamespaceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#namespacetype)
+- `Type`: [NamespaceType](./literals.md#namespacetype)
 - `Description`: `str`
 - `ServiceCount`: `int`
 - `Properties`:
-  [NamespacePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#namespacepropertiestypedef)
+  [NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef)
 - `CreateDate`: `datetime`
 - `CreatorRequestId`: `str`
 
@@ -441,14 +424,12 @@ from mypy_boto3_servicediscovery.type_defs import OperationFilterTypeDef
 
 Required fields:
 
-- `Name`:
-  [OperationFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#operationfiltername)
+- `Name`: [OperationFilterName](./literals.md#operationfiltername)
 - `Values`: `List`\[`str`\]
 
 Optional fields:
 
-- `Condition`:
-  [FilterCondition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#filtercondition)
+- `Condition`: [FilterCondition](./literals.md#filtercondition)
 
 ## OperationSummaryTypeDef
 
@@ -459,8 +440,7 @@ from mypy_boto3_servicediscovery.type_defs import OperationSummaryTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Status`:
-  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#operationstatus)
+- `Status`: [OperationStatus](./literals.md#operationstatus)
 
 ## OperationTypeDef
 
@@ -471,16 +451,13 @@ from mypy_boto3_servicediscovery.type_defs import OperationTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`:
-  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#operationtype)
-- `Status`:
-  [OperationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#operationstatus)
+- `Type`: [OperationType](./literals.md#operationtype)
+- `Status`: [OperationStatus](./literals.md#operationstatus)
 - `ErrorMessage`: `str`
 - `ErrorCode`: `str`
 - `CreateDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `Targets`:
-  `Dict`\[[OperationTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#operationtargettype),
+- `Targets`: `Dict`\[[OperationTargetType](./literals.md#operationtargettype),
   `str`\]
 
 ## PaginatorConfigTypeDef
@@ -514,10 +491,9 @@ from mypy_boto3_servicediscovery.type_defs import ServiceChangeTypeDef
 Optional fields:
 
 - `Description`: `str`
-- `DnsConfig`:
-  [DnsConfigChangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsconfigchangetypedef)
+- `DnsConfig`: [DnsConfigChangeTypeDef](./type_defs.md#dnsconfigchangetypedef)
 - `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckconfigtypedef)
+  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 
 ## ServiceFilterTypeDef
 
@@ -527,13 +503,13 @@ from mypy_boto3_servicediscovery.type_defs import ServiceFilterTypeDef
 
 Required fields:
 
-- `Name`: `Literal['NAMESPACE_ID']`
+- `Name`: `Literal['NAMESPACE_ID']` (see
+  [ServiceFilterName](./literals.md#servicefiltername))
 - `Values`: `List`\[`str`\]
 
 Optional fields:
 
-- `Condition`:
-  [FilterCondition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#filtercondition)
+- `Condition`: [FilterCondition](./literals.md#filtercondition)
 
 ## ServiceSummaryTypeDef
 
@@ -546,16 +522,14 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`:
-  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#servicetype)
+- `Type`: [ServiceType](./literals.md#servicetype)
 - `Description`: `str`
 - `InstanceCount`: `int`
-- `DnsConfig`:
-  [DnsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsconfigtypedef)
+- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
 - `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckconfigtypedef)
+  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckcustomconfigtypedef)
+  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
 - `CreateDate`: `datetime`
 
 ## ServiceTypeDef
@@ -572,14 +546,12 @@ Optional fields:
 - `NamespaceId`: `str`
 - `Description`: `str`
 - `InstanceCount`: `int`
-- `DnsConfig`:
-  [DnsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#dnsconfigtypedef)
-- `Type`:
-  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/literals.html#servicetype)
+- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
+- `Type`: [ServiceType](./literals.md#servicetype)
 - `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckconfigtypedef)
+  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicediscovery/type_defs.html#healthcheckcustomconfigtypedef)
+  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
 - `CreateDate`: `datetime`
 - `CreatorRequestId`: `str`
 

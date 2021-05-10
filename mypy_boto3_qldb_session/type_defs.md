@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 QLDBSession module
 
-> [Index](../README.md) > [QLDBSession](./README.md) > Structures
+> [Index](..) > [QLDBSession](.) > Typed dictionaries
 
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
@@ -34,7 +34,7 @@ from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef
 Optional fields:
 
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
 ## CommitTransactionRequestTypeDef
 
@@ -58,9 +58,8 @@ Optional fields:
 - `TransactionId`: `str`
 - `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
-- `ConsumedIOs`:
-  [IOUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#iousagetypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
+- `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 
 ## EndSessionResultTypeDef
 
@@ -71,7 +70,7 @@ from mypy_boto3_qldb_session.type_defs import EndSessionResultTypeDef
 Optional fields:
 
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
 ## ExecuteStatementRequestTypeDef
 
@@ -86,8 +85,7 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`:
-  `List`\[[ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#valueholdertypedef)\]
+- `Parameters`: `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 
 ## ExecuteStatementResultTypeDef
 
@@ -97,12 +95,10 @@ from mypy_boto3_qldb_session.type_defs import ExecuteStatementResultTypeDef
 
 Optional fields:
 
-- `FirstPage`:
-  [PageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#pagetypedef)
+- `FirstPage`: [PageTypeDef](./type_defs.md#pagetypedef)
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
-- `ConsumedIOs`:
-  [IOUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#iousagetypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
+- `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 
 ## FetchPageRequestTypeDef
 
@@ -123,12 +119,10 @@ from mypy_boto3_qldb_session.type_defs import FetchPageResultTypeDef
 
 Optional fields:
 
-- `Page`:
-  [PageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#pagetypedef)
+- `Page`: [PageTypeDef](./type_defs.md#pagetypedef)
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
-- `ConsumedIOs`:
-  [IOUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#iousagetypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
+- `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 
 ## IOUsageTypeDef
 
@@ -149,8 +143,7 @@ from mypy_boto3_qldb_session.type_defs import PageTypeDef
 
 Optional fields:
 
-- `Values`:
-  `List`\[[ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#valueholdertypedef)\]
+- `Values`: `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 - `NextPageToken`: `str`
 
 ## SendCommandResultTypeDef
@@ -162,19 +155,17 @@ from mypy_boto3_qldb_session.type_defs import SendCommandResultTypeDef
 Optional fields:
 
 - `StartSession`:
-  [StartSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#startsessionresulttypedef)
+  [StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef)
 - `StartTransaction`:
-  [StartTransactionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#starttransactionresulttypedef)
-- `EndSession`:
-  [EndSessionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#endsessionresulttypedef)
+  [StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef)
+- `EndSession`: [EndSessionResultTypeDef](./type_defs.md#endsessionresulttypedef)
 - `CommitTransaction`:
-  [CommitTransactionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#committransactionresulttypedef)
+  [CommitTransactionResultTypeDef](./type_defs.md#committransactionresulttypedef)
 - `AbortTransaction`:
-  [AbortTransactionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#aborttransactionresulttypedef)
+  [AbortTransactionResultTypeDef](./type_defs.md#aborttransactionresulttypedef)
 - `ExecuteStatement`:
-  [ExecuteStatementResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#executestatementresulttypedef)
-- `FetchPage`:
-  [FetchPageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#fetchpageresulttypedef)
+  [ExecuteStatementResultTypeDef](./type_defs.md#executestatementresulttypedef)
+- `FetchPage`: [FetchPageResultTypeDef](./type_defs.md#fetchpageresulttypedef)
 
 ## StartSessionRequestTypeDef
 
@@ -196,7 +187,7 @@ Optional fields:
 
 - `SessionToken`: `str`
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
 ## StartTransactionResultTypeDef
 
@@ -208,7 +199,7 @@ Optional fields:
 
 - `TransactionId`: `str`
 - `TimingInformation`:
-  [TimingInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#timinginformationtypedef)
+  [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
 ## TimingInformationTypeDef
 

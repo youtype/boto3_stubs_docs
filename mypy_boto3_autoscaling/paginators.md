@@ -1,6 +1,6 @@
 # Paginators for boto3 AutoScaling module
 
-> [Index](../README.md) > [AutoScaling](./README.md) > Paginators
+> [Index](..) > [AutoScaling](.) > Paginators
 
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
@@ -40,10 +40,10 @@ Arguments for `DescribeAutoScalingGroupsPaginator.paginate` method:
 
 - `AutoScalingGroupNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutoScalingGroupsPaginator.paginate` returns
-`Iterator`\[[AutoScalingGroupsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinggroupstypetypedef)\].
+`Iterator`\[[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef)\].
 
 ## DescribeAutoScalingInstancesPaginator
 
@@ -66,10 +66,10 @@ Arguments for `DescribeAutoScalingInstancesPaginator.paginate` method:
 
 - `InstanceIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutoScalingInstancesPaginator.paginate` returns
-`Iterator`\[[AutoScalingInstancesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinginstancestypetypedef)\].
+`Iterator`\[[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef)\].
 
 ## DescribeLaunchConfigurationsPaginator
 
@@ -92,10 +92,10 @@ Arguments for `DescribeLaunchConfigurationsPaginator.paginate` method:
 
 - `LaunchConfigurationNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchConfigurationsPaginator.paginate` returns
-`Iterator`\[[LaunchConfigurationsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchconfigurationstypetypedef)\].
+`Iterator`\[[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef)\].
 
 ## DescribeLoadBalancerTargetGroupsPaginator
 
@@ -118,10 +118,10 @@ Arguments for `DescribeLoadBalancerTargetGroupsPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancerTargetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancerTargetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeloadbalancertargetgroupsresponsetypedef)\].
+`Iterator`\[[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -144,10 +144,10 @@ Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeloadbalancersresponsetypedef)\].
+`Iterator`\[[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef)\].
 
 ## DescribeNotificationConfigurationsPaginator
 
@@ -170,10 +170,10 @@ Arguments for `DescribeNotificationConfigurationsPaginator.paginate` method:
 
 - `AutoScalingGroupNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationConfigurationsAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describenotificationconfigurationsanswertypedef)\].
+`Iterator`\[[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef)\].
 
 ## DescribePoliciesPaginator
 
@@ -198,10 +198,10 @@ Arguments for `DescribePoliciesPaginator.paginate` method:
 - `PolicyNames`: `List`\[`str`\]
 - `PolicyTypes`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePoliciesPaginator.paginate` returns
-`Iterator`\[[PoliciesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#policiestypetypedef)\].
+`Iterator`\[[PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef)\].
 
 ## DescribeScalingActivitiesPaginator
 
@@ -226,10 +226,10 @@ Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 - `AutoScalingGroupName`: `str`
 - `IncludeDeletedGroups`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingActivitiesPaginator.paginate` returns
-`Iterator`\[[ActivitiesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitiestypetypedef)\].
+`Iterator`\[[ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -255,10 +255,10 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[ScheduledActionsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scheduledactionstypetypedef)\].
+`Iterator`\[[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -279,10 +279,9 @@ Boto3 documentation:
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[TagsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagstypetypedef)\].
+`Iterator`\[[TagsTypeTypeDef](./type_defs.md#tagstypetypedef)\].

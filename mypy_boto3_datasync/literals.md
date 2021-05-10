@@ -1,6 +1,6 @@
 # Literals for boto3 DataSync module
 
-> [Index](../README.md) > [DataSync](./README.md) > Literals
+> [Index](..) > [DataSync](.) > Literals
 
 Auto-generated documentation for
 [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)

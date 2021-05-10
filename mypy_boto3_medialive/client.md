@@ -1,6 +1,6 @@
 # MediaLiveClient for boto3 MediaLive module
 
-> [Index](../README.md) > [MediaLive](./README.md) > MediaLiveClient
+> [Index](..) > [MediaLive](.) > MediaLiveClient
 
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
@@ -144,7 +144,7 @@ Arguments:
 - `MultiplexIds`: `List`\[`str`\]
 
 Returns
-[BatchDeleteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchdeleteresponsetypedef).
+[BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef).
 
 ### batch_start
 
@@ -158,8 +158,7 @@ Arguments:
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-Returns
-[BatchStartResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchstartresponsetypedef).
+Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 
 ### batch_stop
 
@@ -173,8 +172,7 @@ Arguments:
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
 
-Returns
-[BatchStopResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchstopresponsetypedef).
+Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
 
 ### batch_update_schedule
 
@@ -187,12 +185,12 @@ Arguments:
 
 - `ChannelId`: `str` *(required)*
 - `Creates`:
-  [BatchScheduleActionCreateRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchscheduleactioncreaterequesttypedef)
+  [BatchScheduleActionCreateRequestTypeDef](./type_defs.md#batchscheduleactioncreaterequesttypedef)
 - `Deletes`:
-  [BatchScheduleActionDeleteRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchscheduleactiondeleterequesttypedef)
+  [BatchScheduleActionDeleteRequestTypeDef](./type_defs.md#batchscheduleactiondeleterequesttypedef)
 
 Returns
-[BatchUpdateScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#batchupdatescheduleresponsetypedef).
+[BatchUpdateScheduleResponseTypeDef](./type_defs.md#batchupdatescheduleresponsetypedef).
 
 ### can_paginate
 
@@ -231,29 +229,26 @@ Boto3 documentation:
 Arguments:
 
 - `CdiInputSpecification`:
-  [CdiInputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#cdiinputspecificationtypedef)
-- `ChannelClass`:
-  [ChannelClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#channelclass)
+  [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
+- `ChannelClass`: [ChannelClass](./literals.md#channelclass)
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#outputdestinationtypedef)\]
+  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 - `EncoderSettings`:
-  [EncoderSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#encodersettingstypedef)
+  [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
 - `InputAttachments`:
-  `List`\[[InputAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputattachmenttypedef)\]
+  `List`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
 - `InputSpecification`:
-  [InputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputspecificationtypedef)
-- `LogLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#loglevel)
+  [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
+- `LogLevel`: [LogLevel](./literals.md#loglevel)
 - `Name`: `str`
 - `RequestId`: `str`
 - `Reserved`: `str`
 - `RoleArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Vpc`:
-  [VpcOutputSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#vpcoutputsettingstypedef)
+- `Vpc`: [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
 
 Returns
-[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createchannelresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_input
 
@@ -265,25 +260,23 @@ Boto3 documentation:
 Arguments:
 
 - `Destinations`:
-  `List`\[[InputDestinationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdestinationrequesttypedef)\]
+  `List`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
 - `InputDevices`:
-  `List`\[[InputDeviceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdevicesettingstypedef)\]
+  `List`\[[InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef)\]
 - `InputSecurityGroups`: `List`\[`str`\]
 - `MediaConnectFlows`:
-  `List`\[[MediaConnectFlowRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#mediaconnectflowrequesttypedef)\]
+  `List`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
 - `Name`: `str`
 - `RequestId`: `str`
 - `RoleArn`: `str`
 - `Sources`:
-  `List`\[[InputSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputsourcerequesttypedef)\]
+  `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Type`:
-  [InputType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#inputtype)
-- `Vpc`:
-  [InputVpcRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputvpcrequesttypedef)
+- `Type`: [InputType](./literals.md#inputtype)
+- `Vpc`: [InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef)
 
 Returns
-[CreateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createinputresponsetypedef).
+[CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
 ### create_input_security_group
 
@@ -297,10 +290,10 @@ Arguments:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 - `WhitelistRules`:
-  `List`\[[InputWhitelistRuleCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputwhitelistrulecidrtypedef)\]
+  `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 Returns
-[CreateInputSecurityGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createinputsecuritygroupresponsetypedef).
+[CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef).
 
 ### create_multiplex
 
@@ -313,14 +306,14 @@ Arguments:
 
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 - `MultiplexSettings`:
-  [MultiplexSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexsettingstypedef)
+  [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
   *(required)*
 - `Name`: `str` *(required)*
 - `RequestId`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createmultiplexresponsetypedef).
+[CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef).
 
 ### create_multiplex_program
 
@@ -334,13 +327,13 @@ Arguments:
 
 - `MultiplexId`: `str` *(required)*
 - `MultiplexProgramSettings`:
-  [MultiplexProgramSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexprogramsettingstypedef)
+  [MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef)
   *(required)*
 - `ProgramName`: `str` *(required)*
 - `RequestId`: `str` *(required)*
 
 Returns
-[CreateMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createmultiplexprogramresponsetypedef).
+[CreateMultiplexProgramResponseTypeDef](./type_defs.md#createmultiplexprogramresponsetypedef).
 
 ### create_partner_input
 
@@ -356,7 +349,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePartnerInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#createpartnerinputresponsetypedef).
+[CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef).
 
 ### create_tags
 
@@ -382,7 +375,7 @@ Arguments:
 - `ChannelId`: `str` *(required)*
 
 Returns
-[DeleteChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletechannelresponsetypedef).
+[DeleteChannelResponseTypeDef](./type_defs.md#deletechannelresponsetypedef).
 
 ### delete_input
 
@@ -423,7 +416,7 @@ Arguments:
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[DeleteMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletemultiplexresponsetypedef).
+[DeleteMultiplexResponseTypeDef](./type_defs.md#deletemultiplexresponsetypedef).
 
 ### delete_multiplex_program
 
@@ -439,7 +432,7 @@ Arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DeleteMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletemultiplexprogramresponsetypedef).
+[DeleteMultiplexProgramResponseTypeDef](./type_defs.md#deletemultiplexprogramresponsetypedef).
 
 ### delete_reservation
 
@@ -453,7 +446,7 @@ Arguments:
 - `ReservationId`: `str` *(required)*
 
 Returns
-[DeleteReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#deletereservationresponsetypedef).
+[DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef).
 
 ### delete_schedule
 
@@ -492,7 +485,7 @@ Arguments:
 - `ChannelId`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describechannelresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_input
 
@@ -506,7 +499,7 @@ Arguments:
 - `InputId`: `str` *(required)*
 
 Returns
-[DescribeInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputresponsetypedef).
+[DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
 ### describe_input_device
 
@@ -520,7 +513,7 @@ Arguments:
 - `InputDeviceId`: `str` *(required)*
 
 Returns
-[DescribeInputDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputdeviceresponsetypedef).
+[DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef).
 
 ### describe_input_device_thumbnail
 
@@ -533,10 +526,11 @@ Boto3 documentation:
 Arguments:
 
 - `InputDeviceId`: `str` *(required)*
-- `Accept`: `Literal['image/jpeg']` *(required)*
+- `Accept`: `Literal['image/jpeg']` (see
+  [AcceptHeader](./literals.md#acceptheader)) *(required)*
 
 Returns
-[DescribeInputDeviceThumbnailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputdevicethumbnailresponsetypedef).
+[DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef).
 
 ### describe_input_security_group
 
@@ -551,7 +545,7 @@ Arguments:
 - `InputSecurityGroupId`: `str` *(required)*
 
 Returns
-[DescribeInputSecurityGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeinputsecuritygroupresponsetypedef).
+[DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef).
 
 ### describe_multiplex
 
@@ -565,7 +559,7 @@ Arguments:
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[DescribeMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describemultiplexresponsetypedef).
+[DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef).
 
 ### describe_multiplex_program
 
@@ -581,7 +575,7 @@ Arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DescribeMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describemultiplexprogramresponsetypedef).
+[DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef).
 
 ### describe_offering
 
@@ -595,7 +589,7 @@ Arguments:
 - `OfferingId`: `str` *(required)*
 
 Returns
-[DescribeOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describeofferingresponsetypedef).
+[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
 
 ### describe_reservation
 
@@ -609,7 +603,7 @@ Arguments:
 - `ReservationId`: `str` *(required)*
 
 Returns
-[DescribeReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describereservationresponsetypedef).
+[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
 
 ### describe_schedule
 
@@ -625,7 +619,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#describescheduleresponsetypedef).
+[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
 ### generate_presigned_url
 
@@ -656,7 +650,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listchannelsresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_input_device_transfers
 
@@ -673,7 +667,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInputDeviceTransfersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputdevicetransfersresponsetypedef).
+[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef).
 
 ### list_input_devices
 
@@ -688,7 +682,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInputDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputdevicesresponsetypedef).
+[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef).
 
 ### list_input_security_groups
 
@@ -704,7 +698,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInputSecurityGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputsecuritygroupsresponsetypedef).
+[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef).
 
 ### list_inputs
 
@@ -718,8 +712,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListInputsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listinputsresponsetypedef).
+Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
 
 ### list_multiplex_programs
 
@@ -736,7 +729,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMultiplexProgramsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listmultiplexprogramsresponsetypedef).
+[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef).
 
 ### list_multiplexes
 
@@ -751,7 +744,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMultiplexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listmultiplexesresponsetypedef).
+[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef).
 
 ### list_offerings
 
@@ -776,7 +769,7 @@ Arguments:
 - `VideoQuality`: `str`
 
 Returns
-[ListOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listofferingsresponsetypedef).
+[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
 ### list_reservations
 
@@ -799,7 +792,7 @@ Arguments:
 - `VideoQuality`: `str`
 
 Returns
-[ListReservationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listreservationsresponsetypedef).
+[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -813,7 +806,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### purchase_offering
 
@@ -832,7 +825,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PurchaseOfferingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#purchaseofferingresponsetypedef).
+[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
 
 ### reject_input_device_transfer
 
@@ -860,7 +853,7 @@ Arguments:
 - `ChannelId`: `str` *(required)*
 
 Returns
-[StartChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#startchannelresponsetypedef).
+[StartChannelResponseTypeDef](./type_defs.md#startchannelresponsetypedef).
 
 ### start_multiplex
 
@@ -874,7 +867,7 @@ Arguments:
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[StartMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#startmultiplexresponsetypedef).
+[StartMultiplexResponseTypeDef](./type_defs.md#startmultiplexresponsetypedef).
 
 ### stop_channel
 
@@ -888,7 +881,7 @@ Arguments:
 - `ChannelId`: `str` *(required)*
 
 Returns
-[StopChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#stopchannelresponsetypedef).
+[StopChannelResponseTypeDef](./type_defs.md#stopchannelresponsetypedef).
 
 ### stop_multiplex
 
@@ -902,7 +895,7 @@ Arguments:
 - `MultiplexId`: `str` *(required)*
 
 Returns
-[StopMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#stopmultiplexresponsetypedef).
+[StopMultiplexResponseTypeDef](./type_defs.md#stopmultiplexresponsetypedef).
 
 ### transfer_input_device
 
@@ -931,22 +924,21 @@ Arguments:
 
 - `ChannelId`: `str` *(required)*
 - `CdiInputSpecification`:
-  [CdiInputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#cdiinputspecificationtypedef)
+  [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#outputdestinationtypedef)\]
+  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 - `EncoderSettings`:
-  [EncoderSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#encodersettingstypedef)
+  [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
 - `InputAttachments`:
-  `List`\[[InputAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputattachmenttypedef)\]
+  `List`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
 - `InputSpecification`:
-  [InputSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputspecificationtypedef)
-- `LogLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#loglevel)
+  [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
+- `LogLevel`: [LogLevel](./literals.md#loglevel)
 - `Name`: `str`
 - `RoleArn`: `str`
 
 Returns
-[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatechannelresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_channel_class
 
@@ -957,15 +949,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `ChannelClass`:
-  [ChannelClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/literals.html#channelclass)
-  *(required)*
+- `ChannelClass`: [ChannelClass](./literals.md#channelclass) *(required)*
 - `ChannelId`: `str` *(required)*
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#outputdestinationtypedef)\]
+  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 
 Returns
-[UpdateChannelClassResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatechannelclassresponsetypedef).
+[UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef).
 
 ### update_input
 
@@ -978,19 +968,19 @@ Arguments:
 
 - `InputId`: `str` *(required)*
 - `Destinations`:
-  `List`\[[InputDestinationRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdestinationrequesttypedef)\]
+  `List`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
 - `InputDevices`:
-  `List`\[[InputDeviceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdevicerequesttypedef)\]
+  `List`\[[InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef)\]
 - `InputSecurityGroups`: `List`\[`str`\]
 - `MediaConnectFlows`:
-  `List`\[[MediaConnectFlowRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#mediaconnectflowrequesttypedef)\]
+  `List`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
 - `Name`: `str`
 - `RoleArn`: `str`
 - `Sources`:
-  `List`\[[InputSourceRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputsourcerequesttypedef)\]
+  `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
 
 Returns
-[UpdateInputResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updateinputresponsetypedef).
+[UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).
 
 ### update_input_device
 
@@ -1003,13 +993,13 @@ Arguments:
 
 - `InputDeviceId`: `str` *(required)*
 - `HdDeviceSettings`:
-  [InputDeviceConfigurableSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdeviceconfigurablesettingstypedef)
+  [InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef)
 - `Name`: `str`
 - `UhdDeviceSettings`:
-  [InputDeviceConfigurableSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputdeviceconfigurablesettingstypedef)
+  [InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef)
 
 Returns
-[UpdateInputDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updateinputdeviceresponsetypedef).
+[UpdateInputDeviceResponseTypeDef](./type_defs.md#updateinputdeviceresponsetypedef).
 
 ### update_input_security_group
 
@@ -1024,10 +1014,10 @@ Arguments:
 - `InputSecurityGroupId`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 - `WhitelistRules`:
-  `List`\[[InputWhitelistRuleCidrTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#inputwhitelistrulecidrtypedef)\]
+  `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 Returns
-[UpdateInputSecurityGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updateinputsecuritygroupresponsetypedef).
+[UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef).
 
 ### update_multiplex
 
@@ -1040,11 +1030,11 @@ Arguments:
 
 - `MultiplexId`: `str` *(required)*
 - `MultiplexSettings`:
-  [MultiplexSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexsettingstypedef)
+  [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
 - `Name`: `str`
 
 Returns
-[UpdateMultiplexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatemultiplexresponsetypedef).
+[UpdateMultiplexResponseTypeDef](./type_defs.md#updatemultiplexresponsetypedef).
 
 ### update_multiplex_program
 
@@ -1059,10 +1049,10 @@ Arguments:
 - `MultiplexId`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
 - `MultiplexProgramSettings`:
-  [MultiplexProgramSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#multiplexprogramsettingstypedef)
+  [MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef)
 
 Returns
-[UpdateMultiplexProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatemultiplexprogramresponsetypedef).
+[UpdateMultiplexProgramResponseTypeDef](./type_defs.md#updatemultiplexprogramresponsetypedef).
 
 ### update_reservation
 
@@ -1077,7 +1067,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[UpdateReservationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_medialive/type_defs.html#updatereservationresponsetypedef).
+[UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # PIClient for boto3 PI module
 
-> [Index](../README.md) > [PI](./README.md) > PIClient
+> [Index](..) > [PI](.) > PIClient
 
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
@@ -75,23 +75,22 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceType`: `Literal['RDS']` *(required)*
+- `ServiceType`: `Literal['RDS']` (see [ServiceType](./literals.md#servicetype))
+  *(required)*
 - `Identifier`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
 - `Metric`: `str` *(required)*
-- `GroupBy`:
-  [DimensionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensiongrouptypedef)
+- `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
   *(required)*
 - `PeriodInSeconds`: `int`
-- `PartitionBy`:
-  [DimensionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensiongrouptypedef)
+- `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - `Filter`: `Dict`\[`str`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeDimensionKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#describedimensionkeysresponsetypedef).
+[DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef).
 
 ### generate_presigned_url
 
@@ -118,11 +117,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `ServiceType`: `Literal['RDS']` *(required)*
+- `ServiceType`: `Literal['RDS']` (see [ServiceType](./literals.md#servicetype))
+  *(required)*
 - `Identifier`: `str` *(required)*
 - `MetricQueries`:
-  `List`\[[MetricQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#metricquerytypedef)\]
-  *(required)*
+  `List`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\] *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
 - `PeriodInSeconds`: `int`
@@ -130,4 +129,4 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetResourceMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#getresourcemetricsresponsetypedef).
+[GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).

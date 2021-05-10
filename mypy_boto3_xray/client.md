@@ -1,6 +1,6 @@
 # XRayClient for boto3 XRay module
 
-> [Index](../README.md) > [XRay](./README.md) > XRayClient
+> [Index](..) > [XRay](.) > XRayClient
 
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
@@ -94,7 +94,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[BatchGetTracesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#batchgettracesresulttypedef).
+[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef).
 
 ### can_paginate
 
@@ -121,12 +121,10 @@ Arguments:
 - `GroupName`: `str` *(required)*
 - `FilterExpression`: `str`
 - `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightsconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#tagtypedef)\]
+  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#creategroupresulttypedef).
+Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
 
 ### create_sampling_rule
 
@@ -137,14 +135,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `SamplingRule`:
-  [SamplingRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingruletypedef)
+- `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSamplingRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#createsamplingruleresulttypedef).
+[CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef).
 
 ### delete_group
 
@@ -173,7 +169,7 @@ Arguments:
 - `RuleARN`: `str`
 
 Returns
-[DeleteSamplingRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#deletesamplingruleresulttypedef).
+[DeleteSamplingRuleResultTypeDef](./type_defs.md#deletesamplingruleresulttypedef).
 
 ### generate_presigned_url
 
@@ -199,7 +195,7 @@ Boto3 documentation:
 [XRay.Client.get_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config)
 
 Returns
-[GetEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getencryptionconfigresulttypedef).
+[GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef).
 
 ### get_group
 
@@ -213,8 +209,7 @@ Arguments:
 - `GroupName`: `str`
 - `GroupARN`: `str`
 
-Returns
-[GetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getgroupresulttypedef).
+Returns [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef).
 
 ### get_groups
 
@@ -227,8 +222,7 @@ Arguments:
 
 - `NextToken`: `str`
 
-Returns
-[GetGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getgroupsresulttypedef).
+Returns [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef).
 
 ### get_insight
 
@@ -241,8 +235,7 @@ Arguments:
 
 - `InsightId`: `str` *(required)*
 
-Returns
-[GetInsightResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getinsightresulttypedef).
+Returns [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef).
 
 ### get_insight_events
 
@@ -258,7 +251,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInsightEventsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getinsighteventsresulttypedef).
+[GetInsightEventsResultTypeDef](./type_defs.md#getinsighteventsresulttypedef).
 
 ### get_insight_impact_graph
 
@@ -275,7 +268,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInsightImpactGraphResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getinsightimpactgraphresulttypedef).
+[GetInsightImpactGraphResultTypeDef](./type_defs.md#getinsightimpactgraphresulttypedef).
 
 ### get_insight_summaries
 
@@ -288,15 +281,14 @@ Arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
-- `States`:
-  `List`\[[InsightState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#insightstate)\]
+- `States`: `List`\[[InsightState](./literals.md#insightstate)\]
 - `GroupARN`: `str`
 - `GroupName`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetInsightSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getinsightsummariesresulttypedef).
+[GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef).
 
 ### get_sampling_rules
 
@@ -310,7 +302,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSamplingRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getsamplingrulesresulttypedef).
+[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef).
 
 ### get_sampling_statistic_summaries
 
@@ -325,7 +317,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSamplingStatisticSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getsamplingstatisticsummariesresulttypedef).
+[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef).
 
 ### get_sampling_targets
 
@@ -337,11 +329,11 @@ Boto3 documentation:
 Arguments:
 
 - `SamplingStatisticsDocuments`:
-  `List`\[[SamplingStatisticsDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingstatisticsdocumenttypedef)\]
+  `List`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
   *(required)*
 
 Returns
-[GetSamplingTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getsamplingtargetsresulttypedef).
+[GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef).
 
 ### get_service_graph
 
@@ -359,7 +351,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetServiceGraphResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getservicegraphresulttypedef).
+[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef).
 
 ### get_time_series_service_statistics
 
@@ -381,7 +373,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTimeSeriesServiceStatisticsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#gettimeseriesservicestatisticsresulttypedef).
+[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef).
 
 ### get_trace_graph
 
@@ -396,7 +388,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTraceGraphResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#gettracegraphresulttypedef).
+[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef).
 
 ### get_trace_summaries
 
@@ -409,16 +401,15 @@ Arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
-- `TimeRangeType`:
-  [TimeRangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#timerangetype)
+- `TimeRangeType`: [TimeRangeType](./literals.md#timerangetype)
 - `Sampling`: `bool`
 - `SamplingStrategy`:
-  [SamplingStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingstrategytypedef)
+  [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
 - `FilterExpression`: `str`
 - `NextToken`: `str`
 
 Returns
-[GetTraceSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#gettracesummariesresulttypedef).
+[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -433,7 +424,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_encryption_config
 
@@ -444,13 +435,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`:
-  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#encryptiontype)
-  *(required)*
+- `Type`: [EncryptionType](./literals.md#encryptiontype) *(required)*
 - `KeyId`: `str`
 
 Returns
-[PutEncryptionConfigResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#putencryptionconfigresulttypedef).
+[PutEncryptionConfigResultTypeDef](./type_defs.md#putencryptionconfigresulttypedef).
 
 ### put_telemetry_records
 
@@ -462,7 +451,7 @@ Boto3 documentation:
 Arguments:
 
 - `TelemetryRecords`:
-  `List`\[[TelemetryRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#telemetryrecordtypedef)\]
+  `List`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
   *(required)*
 - `EC2InstanceId`: `str`
 - `Hostname`: `str`
@@ -482,7 +471,7 @@ Arguments:
 - `TraceSegmentDocuments`: `List`\[`str`\] *(required)*
 
 Returns
-[PutTraceSegmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#puttracesegmentsresulttypedef).
+[PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef).
 
 ### tag_resource
 
@@ -494,9 +483,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -527,10 +514,9 @@ Arguments:
 - `GroupARN`: `str`
 - `FilterExpression`: `str`
 - `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#insightsconfigurationtypedef)
+  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
 
-Returns
-[UpdateGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#updategroupresulttypedef).
+Returns [UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef).
 
 ### update_sampling_rule
 
@@ -542,11 +528,11 @@ Boto3 documentation:
 Arguments:
 
 - `SamplingRuleUpdate`:
-  [SamplingRuleUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingruleupdatetypedef)
+  [SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef)
   *(required)*
 
 Returns
-[UpdateSamplingRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#updatesamplingruleresulttypedef).
+[UpdateSamplingRuleResultTypeDef](./type_defs.md#updatesamplingruleresulttypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodeGuruReviewer module
 
-> [Index](../README.md) > CodeGuruReviewer
+> [Index](..) > CodeGuruReviewer
 
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)

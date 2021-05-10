@@ -1,6 +1,6 @@
 # Type annotations for boto3 AmplifyBackend module
 
-> [Index](../README.md) > AmplifyBackend
+> [Index](..) > AmplifyBackend
 
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)

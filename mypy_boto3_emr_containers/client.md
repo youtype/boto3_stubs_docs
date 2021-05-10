@@ -1,6 +1,6 @@
 # EMRContainersClient for boto3 EMRContainers module
 
-> [Index](../README.md) > [EMRContainers](./README.md) > EMRContainersClient
+> [Index](..) > [EMRContainers](.) > EMRContainersClient
 
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
@@ -93,7 +93,7 @@ Arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[CancelJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#canceljobrunresponsetypedef).
+[CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef).
 
 ### create_managed_endpoint
 
@@ -113,11 +113,11 @@ Arguments:
 - `certificateArn`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `configurationOverrides`:
-  [ConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationoverridestypedef)
+  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateManagedEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#createmanagedendpointresponsetypedef).
+[CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef).
 
 ### create_virtual_cluster
 
@@ -131,13 +131,13 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `containerProvider`:
-  [ContainerProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#containerprovidertypedef)
+  [ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef)
   *(required)*
 - `clientToken`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateVirtualClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#createvirtualclusterresponsetypedef).
+[CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef).
 
 ### delete_managed_endpoint
 
@@ -153,7 +153,7 @@ Arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[DeleteManagedEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#deletemanagedendpointresponsetypedef).
+[DeleteManagedEndpointResponseTypeDef](./type_defs.md#deletemanagedendpointresponsetypedef).
 
 ### delete_virtual_cluster
 
@@ -168,7 +168,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[DeleteVirtualClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#deletevirtualclusterresponsetypedef).
+[DeleteVirtualClusterResponseTypeDef](./type_defs.md#deletevirtualclusterresponsetypedef).
 
 ### describe_job_run
 
@@ -183,7 +183,7 @@ Arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[DescribeJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#describejobrunresponsetypedef).
+[DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
 
 ### describe_managed_endpoint
 
@@ -199,7 +199,7 @@ Arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[DescribeManagedEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#describemanagedendpointresponsetypedef).
+[DescribeManagedEndpointResponseTypeDef](./type_defs.md#describemanagedendpointresponsetypedef).
 
 ### describe_virtual_cluster
 
@@ -214,7 +214,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[DescribeVirtualClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#describevirtualclusterresponsetypedef).
+[DescribeVirtualClusterResponseTypeDef](./type_defs.md#describevirtualclusterresponsetypedef).
 
 ### generate_presigned_url
 
@@ -246,13 +246,12 @@ Arguments:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `name`: `str`
-- `states`:
-  `List`\[[JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#jobrunstate)\]
+- `states`: `List`\[[JobRunState](./literals.md#jobrunstate)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListJobRunsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listjobrunsresponsetypedef).
+[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
 
 ### list_managed_endpoints
 
@@ -268,13 +267,12 @@ Arguments:
 - `createdBefore`: `datetime`
 - `createdAfter`: `datetime`
 - `types`: `List`\[`str`\]
-- `states`:
-  `List`\[[EndpointState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#endpointstate)\]
+- `states`: `List`\[[EndpointState](./literals.md#endpointstate)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListManagedEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listmanagedendpointsresponsetypedef).
+[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -289,7 +287,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_virtual_clusters
 
@@ -302,16 +300,16 @@ Boto3 documentation:
 Arguments:
 
 - `containerProviderId`: `str`
-- `containerProviderType`: `Literal['EKS']`
+- `containerProviderType`: `Literal['EKS']` (see
+  [ContainerProviderType](./literals.md#containerprovidertype))
 - `createdAfter`: `datetime`
 - `createdBefore`: `datetime`
-- `states`:
-  `List`\[[VirtualClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/literals.html#virtualclusterstate)\]
+- `states`: `List`\[[VirtualClusterState](./literals.md#virtualclusterstate)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListVirtualClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#listvirtualclustersresponsetypedef).
+[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef).
 
 ### start_job_run
 
@@ -326,16 +324,14 @@ Arguments:
 - `clientToken`: `str` *(required)*
 - `executionRoleArn`: `str` *(required)*
 - `releaseLabel`: `str` *(required)*
-- `jobDriver`:
-  [JobDriverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#jobdrivertypedef)
-  *(required)*
+- `jobDriver`: [JobDriverTypeDef](./type_defs.md#jobdrivertypedef) *(required)*
 - `name`: `str`
 - `configurationOverrides`:
-  [ConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#configurationoverridestypedef)
+  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartJobRunResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr_containers/type_defs.html#startjobrunresponsetypedef).
+[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
 ### tag_resource
 

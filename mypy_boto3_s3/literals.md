@@ -1,6 +1,6 @@
 # Literals for boto3 S3 module
 
-> [Index](../README.md) > [S3](./README.md) > Literals
+> [Index](..) > [S3](.) > Literals
 
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)

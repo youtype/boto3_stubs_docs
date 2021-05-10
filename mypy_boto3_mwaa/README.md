@@ -1,6 +1,6 @@
 # Type annotations for boto3 MWAA module
 
-> [Index](../README.md) > MWAA
+> [Index](..) > MWAA
 
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
@@ -113,7 +113,7 @@ from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef, ...
 - [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
 - [UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef)
 - [UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)

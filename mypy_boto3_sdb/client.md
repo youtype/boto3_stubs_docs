@@ -1,6 +1,6 @@
 # SimpleDBClient for boto3 SimpleDB module
 
-> [Index](../README.md) > [SimpleDB](./README.md) > SimpleDBClient
+> [Index](..) > [SimpleDB](.) > SimpleDBClient
 
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
@@ -86,8 +86,7 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `Items`:
-  `List`\[[DeletableItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#deletableitemtypedef)\]
+- `Items`: `List`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
   *(required)*
 
 ### batch_put_attributes
@@ -101,7 +100,7 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `Items`:
-  `List`\[[ReplaceableItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#replaceableitemtypedef)\]
+  `List`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
   *(required)*
 
 ### can_paginate
@@ -139,10 +138,8 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
-- `Attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
-- `Expected`:
-  [UpdateConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#updateconditiontypedef)
+- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
 ### delete_domain
 
@@ -167,7 +164,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DomainMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#domainmetadataresulttypedef).
+[DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef).
 
 ### generate_presigned_url
 
@@ -200,7 +197,7 @@ Arguments:
 - `ConsistentRead`: `bool`
 
 Returns
-[GetAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#getattributesresulttypedef).
+[GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef).
 
 ### list_domains
 
@@ -214,8 +211,7 @@ Arguments:
 - `MaxNumberOfDomains`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#listdomainsresulttypedef).
+Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
 
 ### put_attributes
 
@@ -229,10 +225,9 @@ Arguments:
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
 - `Attributes`:
-  `List`\[[ReplaceableAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#replaceableattributetypedef)\]
+  `List`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
   *(required)*
-- `Expected`:
-  [UpdateConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#updateconditiontypedef)
+- `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
 ### select
 
@@ -247,8 +242,7 @@ Arguments:
 - `NextToken`: `str`
 - `ConsistentRead`: `bool`
 
-Returns
-[SelectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#selectresulttypedef).
+Returns [SelectResultTypeDef](./type_defs.md#selectresulttypedef).
 
 ### get_paginator
 

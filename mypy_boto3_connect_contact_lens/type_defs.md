@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ConnectContactLens module
 
-> [Index](../README.md) > [ConnectContactLens](./README.md) > Structures
+> [Index](..) > [ConnectContactLens](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
@@ -27,7 +27,7 @@ Required fields:
 
 - `MatchedCategories`: `List`\[`str`\]
 - `MatchedDetails`: `Dict`\[`str`,
-  [CategoryDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#categorydetailstypedef)\]
+  [CategoryDetailsTypeDef](./type_defs.md#categorydetailstypedef)\]
 
 ## CategoryDetailsTypeDef
 
@@ -38,7 +38,7 @@ from mypy_boto3_connect_contact_lens.type_defs import CategoryDetailsTypeDef
 Required fields:
 
 - `PointsOfInterest`:
-  `List`\[[PointOfInterestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#pointofinteresttypedef)\]
+  `List`\[[PointOfInterestTypeDef](./type_defs.md#pointofinteresttypedef)\]
 
 ## CharacterOffsetsTypeDef
 
@@ -60,7 +60,7 @@ from mypy_boto3_connect_contact_lens.type_defs import IssueDetectedTypeDef
 Required fields:
 
 - `CharacterOffsets`:
-  [CharacterOffsetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#characteroffsetstypedef)
+  [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
 
 ## ListRealtimeContactAnalysisSegmentsResponseTypeDef
 
@@ -71,7 +71,7 @@ from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysi
 Required fields:
 
 - `Segments`:
-  `List`\[[RealtimeContactAnalysisSegmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#realtimecontactanalysissegmenttypedef)\]
+  `List`\[[RealtimeContactAnalysisSegmentTypeDef](./type_defs.md#realtimecontactanalysissegmenttypedef)\]
 
 Optional fields:
 
@@ -96,10 +96,8 @@ from mypy_boto3_connect_contact_lens.type_defs import RealtimeContactAnalysisSeg
 
 Optional fields:
 
-- `Transcript`:
-  [TranscriptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#transcripttypedef)
-- `Categories`:
-  [CategoriesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#categoriestypedef)
+- `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
+- `Categories`: [CategoriesTypeDef](./type_defs.md#categoriestypedef)
 
 ## TranscriptTypeDef
 
@@ -115,10 +113,9 @@ Required fields:
 - `Content`: `str`
 - `BeginOffsetMillis`: `int`
 - `EndOffsetMillis`: `int`
-- `Sentiment`:
-  [SentimentValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/literals.html#sentimentvalue)
+- `Sentiment`: [SentimentValue](./literals.md#sentimentvalue)
 
 Optional fields:
 
 - `IssuesDetected`:
-  `List`\[[IssueDetectedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#issuedetectedtypedef)\]
+  `List`\[[IssueDetectedTypeDef](./type_defs.md#issuedetectedtypedef)\]

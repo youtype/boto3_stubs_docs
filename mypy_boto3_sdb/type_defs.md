@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SimpleDB module
 
-> [Index](../README.md) > [SimpleDB](./README.md) > Structures
+> [Index](..) > [SimpleDB](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
@@ -48,8 +48,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
+- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## DomainMetadataResultTypeDef
 
@@ -75,8 +74,7 @@ from mypy_boto3_sdb.type_defs import GetAttributesResultTypeDef
 
 Optional fields:
 
-- `Attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
+- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## ItemTypeDef
 
@@ -87,8 +85,7 @@ from mypy_boto3_sdb.type_defs import ItemTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#attributetypedef)\]
+- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Optional fields:
 
@@ -142,7 +139,7 @@ Required fields:
 
 - `Name`: `str`
 - `Attributes`:
-  `List`\[[ReplaceableAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#replaceableattributetypedef)\]
+  `List`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
 
 ## SelectResultTypeDef
 
@@ -152,8 +149,7 @@ from mypy_boto3_sdb.type_defs import SelectResultTypeDef
 
 Optional fields:
 
-- `Items`:
-  `List`\[[ItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#itemtypedef)\]
+- `Items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 - `NextToken`: `str`
 
 ## UpdateConditionTypeDef

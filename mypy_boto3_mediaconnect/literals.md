@@ -1,6 +1,6 @@
 # Literals for boto3 MediaConnect module
 
-> [Index](../README.md) > [MediaConnect](./README.md) > Literals
+> [Index](..) > [MediaConnect](.) > Literals
 
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)

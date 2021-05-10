@@ -1,6 +1,6 @@
 # Type annotations for boto3 S3Control module
 
-> [Index](../README.md) > S3Control
+> [Index](..) > S3Control
 
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
@@ -227,7 +227,7 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef)
 - [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - [RegionalBucketTypeDef](./type_defs.md#regionalbuckettypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3AccessControlListTypeDef](./type_defs.md#s3accesscontrollisttypedef)
 - [S3AccessControlPolicyTypeDef](./type_defs.md#s3accesscontrolpolicytypedef)
 - [S3BucketDestinationTypeDef](./type_defs.md#s3bucketdestinationtypedef)

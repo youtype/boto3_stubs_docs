@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CostandUsageReportService module
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) > Structures
+> [Index](..) > [CostandUsageReportService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
@@ -32,7 +32,7 @@ from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseTypeDef
 Optional fields:
 
 - `ReportDefinitions`:
-  `List`\[[ReportDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#reportdefinitiontypedef)\]
+  `List`\[[ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)\]
 - `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -56,23 +56,19 @@ from mypy_boto3_cur.type_defs import ReportDefinitionTypeDef
 Required fields:
 
 - `ReportName`: `str`
-- `TimeUnit`:
-  [TimeUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/literals.html#timeunit)
-- `Format`:
-  [ReportFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/literals.html#reportformat)
-- `Compression`:
-  [CompressionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/literals.html#compressionformat)
-- `AdditionalSchemaElements`: `List`\[`Literal['RESOURCES']`\]
+- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
+- `Format`: [ReportFormat](./literals.md#reportformat)
+- `Compression`: [CompressionFormat](./literals.md#compressionformat)
+- `AdditionalSchemaElements`: `List`\[`Literal['RESOURCES']` (see
+  [SchemaElement](./literals.md#schemaelement))\]
 - `S3Bucket`: `str`
 - `S3Prefix`: `str`
-- `S3Region`:
-  [AWSRegion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/literals.html#awsregion)
+- `S3Region`: [AWSRegion](./literals.md#awsregion)
 
 Optional fields:
 
 - `AdditionalArtifacts`:
-  `List`\[[AdditionalArtifact](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/literals.html#additionalartifact)\]
+  `List`\[[AdditionalArtifact](./literals.md#additionalartifact)\]
 - `RefreshClosedReports`: `bool`
-- `ReportVersioning`:
-  [ReportVersioning](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/literals.html#reportversioning)
+- `ReportVersioning`: [ReportVersioning](./literals.md#reportversioning)
 - `BillingViewArn`: `str`

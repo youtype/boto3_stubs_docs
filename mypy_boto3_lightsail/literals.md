@@ -1,6 +1,6 @@
 # Literals for boto3 Lightsail module
 
-> [Index](../README.md) > [Lightsail](./README.md) > Literals
+> [Index](..) > [Lightsail](.) > Literals
 
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)

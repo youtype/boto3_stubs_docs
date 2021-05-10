@@ -1,6 +1,6 @@
 # Type annotations for boto3 AppConfig module
 
-> [Index](../README.md) > AppConfig
+> [Index](..) > AppConfig
 
 Auto-generated documentation for
 [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)

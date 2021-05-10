@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTSecureTunneling module
 
-> [Index](../README.md) > IoTSecureTunneling
+> [Index](..) > IoTSecureTunneling
 
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)

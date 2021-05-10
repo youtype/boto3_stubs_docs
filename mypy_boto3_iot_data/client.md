@@ -1,6 +1,6 @@
 # IoTDataPlaneClient for boto3 IoTDataPlane module
 
-> [Index](../README.md) > [IoTDataPlane](./README.md) > IoTDataPlaneClient
+> [Index](..) > [IoTDataPlane](.) > IoTDataPlaneClient
 
 Auto-generated documentation for
 [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
@@ -89,7 +89,7 @@ Arguments:
 - `shadowName`: `str`
 
 Returns
-[DeleteThingShadowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#deletethingshadowresponsetypedef).
+[DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef).
 
 ### generate_presigned_url
 
@@ -120,7 +120,7 @@ Arguments:
 - `shadowName`: `str`
 
 Returns
-[GetThingShadowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#getthingshadowresponsetypedef).
+[GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef).
 
 ### list_named_shadows_for_thing
 
@@ -137,7 +137,7 @@ Arguments:
 - `pageSize`: `int`
 
 Returns
-[ListNamedShadowsForThingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#listnamedshadowsforthingresponsetypedef).
+[ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
 
 ### publish
 
@@ -166,4 +166,4 @@ Arguments:
 - `shadowName`: `str`
 
 Returns
-[UpdateThingShadowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_data/type_defs.html#updatethingshadowresponsetypedef).
+[UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef).

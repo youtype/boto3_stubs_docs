@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ComprehendMedical module
 
-> [Index](../README.md) > [ComprehendMedical](./README.md) > Structures
+> [Index](..) > [ComprehendMedical](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
@@ -54,20 +54,16 @@ from mypy_boto3_comprehendmedical.type_defs import AttributeTypeDef
 
 Optional fields:
 
-- `Type`:
-  [EntitySubType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#entitysubtype)
+- `Type`: [EntitySubType](./literals.md#entitysubtype)
 - `Score`: `float`
 - `RelationshipScore`: `float`
-- `RelationshipType`:
-  [RelationshipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#relationshiptype)
+- `RelationshipType`: [RelationshipType](./literals.md#relationshiptype)
 - `Id`: `int`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 - `Text`: `str`
-- `Category`:
-  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#entitytype)
-- `Traits`:
-  `List`\[[TraitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#traittypedef)\]
+- `Category`: [EntityType](./literals.md#entitytype)
+- `Traits`: `List`\[[TraitTypeDef](./type_defs.md#traittypedef)\]
 
 ## ComprehendMedicalAsyncJobFilterTypeDef
 
@@ -78,8 +74,7 @@ from mypy_boto3_comprehendmedical.type_defs import ComprehendMedicalAsyncJobFilt
 Optional fields:
 
 - `JobName`: `str`
-- `JobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#jobstatus)
+- `JobStatus`: [JobStatus](./literals.md#jobstatus)
 - `SubmitTimeBefore`: `datetime`
 - `SubmitTimeAfter`: `datetime`
 
@@ -93,17 +88,17 @@ Optional fields:
 
 - `JobId`: `str`
 - `JobName`: `str`
-- `JobStatus`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#jobstatus)
+- `JobStatus`: [JobStatus](./literals.md#jobstatus)
 - `Message`: `str`
 - `SubmitTime`: `datetime`
 - `EndTime`: `datetime`
 - `ExpirationTime`: `datetime`
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
-- `LanguageCode`: `Literal['en']`
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCode](./literals.md#languagecode))
 - `DataAccessRoleArn`: `str`
 - `ManifestFilePath`: `str`
 - `KMSKey`: `str`
@@ -118,7 +113,7 @@ from mypy_boto3_comprehendmedical.type_defs import DescribeEntitiesDetectionV2Jo
 Optional fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
-  [ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)
+  [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
 
 ## DescribeICD10CMInferenceJobResponseTypeDef
 
@@ -129,7 +124,7 @@ from mypy_boto3_comprehendmedical.type_defs import DescribeICD10CMInferenceJobRe
 Optional fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
-  [ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)
+  [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
 
 ## DescribePHIDetectionJobResponseTypeDef
 
@@ -140,7 +135,7 @@ from mypy_boto3_comprehendmedical.type_defs import DescribePHIDetectionJobRespon
 Optional fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
-  [ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)
+  [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
 
 ## DescribeRxNormInferenceJobResponseTypeDef
 
@@ -151,7 +146,7 @@ from mypy_boto3_comprehendmedical.type_defs import DescribeRxNormInferenceJobRes
 Optional fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
-  [ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)
+  [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
 
 ## DetectEntitiesResponseTypeDef
 
@@ -161,14 +156,13 @@ from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesResponseTypeDef
 
 Required fields:
 
-- `Entities`:
-  `List`\[[EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#entitytypedef)\]
+- `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
 - `ModelVersion`: `str`
 
 Optional fields:
 
 - `UnmappedAttributes`:
-  `List`\[[UnmappedAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#unmappedattributetypedef)\]
+  `List`\[[UnmappedAttributeTypeDef](./type_defs.md#unmappedattributetypedef)\]
 - `PaginationToken`: `str`
 
 ## DetectEntitiesV2ResponseTypeDef
@@ -179,14 +173,13 @@ from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesV2ResponseTypeD
 
 Required fields:
 
-- `Entities`:
-  `List`\[[EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#entitytypedef)\]
+- `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
 - `ModelVersion`: `str`
 
 Optional fields:
 
 - `UnmappedAttributes`:
-  `List`\[[UnmappedAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#unmappedattributetypedef)\]
+  `List`\[[UnmappedAttributeTypeDef](./type_defs.md#unmappedattributetypedef)\]
 - `PaginationToken`: `str`
 
 ## DetectPHIResponseTypeDef
@@ -197,8 +190,7 @@ from mypy_boto3_comprehendmedical.type_defs import DetectPHIResponseTypeDef
 
 Required fields:
 
-- `Entities`:
-  `List`\[[EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#entitytypedef)\]
+- `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
 - `ModelVersion`: `str`
 
 Optional fields:
@@ -218,14 +210,10 @@ Optional fields:
 - `EndOffset`: `int`
 - `Score`: `float`
 - `Text`: `str`
-- `Category`:
-  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#entitytype)
-- `Type`:
-  [EntitySubType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#entitysubtype)
-- `Traits`:
-  `List`\[[TraitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#traittypedef)\]
-- `Attributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#attributetypedef)\]
+- `Category`: [EntityType](./literals.md#entitytype)
+- `Type`: [EntitySubType](./literals.md#entitysubtype)
+- `Traits`: `List`\[[TraitTypeDef](./type_defs.md#traittypedef)\]
+- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## ICD10CMAttributeTypeDef
 
@@ -235,20 +223,17 @@ from mypy_boto3_comprehendmedical.type_defs import ICD10CMAttributeTypeDef
 
 Optional fields:
 
-- `Type`:
-  [ICD10CMAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#icd10cmattributetype)
+- `Type`: [ICD10CMAttributeType](./literals.md#icd10cmattributetype)
 - `Score`: `float`
 - `RelationshipScore`: `float`
 - `Id`: `int`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 - `Text`: `str`
-- `Traits`:
-  `List`\[[ICD10CMTraitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#icd10cmtraittypedef)\]
-- `Category`:
-  [ICD10CMEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#icd10cmentitytype)
+- `Traits`: `List`\[[ICD10CMTraitTypeDef](./type_defs.md#icd10cmtraittypedef)\]
+- `Category`: [ICD10CMEntityType](./literals.md#icd10cmentitytype)
 - `RelationshipType`:
-  [ICD10CMRelationshipType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#icd10cmrelationshiptype)
+  [ICD10CMRelationshipType](./literals.md#icd10cmrelationshiptype)
 
 ## ICD10CMConceptTypeDef
 
@@ -272,18 +257,17 @@ Optional fields:
 
 - `Id`: `int`
 - `Text`: `str`
-- `Category`: `Literal['MEDICAL_CONDITION']`
-- `Type`:
-  [ICD10CMEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#icd10cmentitytype)
+- `Category`: `Literal['MEDICAL_CONDITION']` (see
+  [ICD10CMEntityCategory](./literals.md#icd10cmentitycategory))
+- `Type`: [ICD10CMEntityType](./literals.md#icd10cmentitytype)
 - `Score`: `float`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 - `Attributes`:
-  `List`\[[ICD10CMAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#icd10cmattributetypedef)\]
-- `Traits`:
-  `List`\[[ICD10CMTraitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#icd10cmtraittypedef)\]
+  `List`\[[ICD10CMAttributeTypeDef](./type_defs.md#icd10cmattributetypedef)\]
+- `Traits`: `List`\[[ICD10CMTraitTypeDef](./type_defs.md#icd10cmtraittypedef)\]
 - `ICD10CMConcepts`:
-  `List`\[[ICD10CMConceptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#icd10cmconcepttypedef)\]
+  `List`\[[ICD10CMConceptTypeDef](./type_defs.md#icd10cmconcepttypedef)\]
 
 ## ICD10CMTraitTypeDef
 
@@ -293,8 +277,7 @@ from mypy_boto3_comprehendmedical.type_defs import ICD10CMTraitTypeDef
 
 Optional fields:
 
-- `Name`:
-  [ICD10CMTraitName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#icd10cmtraitname)
+- `Name`: [ICD10CMTraitName](./literals.md#icd10cmtraitname)
 - `Score`: `float`
 
 ## InferICD10CMResponseTypeDef
@@ -306,7 +289,7 @@ from mypy_boto3_comprehendmedical.type_defs import InferICD10CMResponseTypeDef
 Required fields:
 
 - `Entities`:
-  `List`\[[ICD10CMEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#icd10cmentitytypedef)\]
+  `List`\[[ICD10CMEntityTypeDef](./type_defs.md#icd10cmentitytypedef)\]
 
 Optional fields:
 
@@ -321,8 +304,7 @@ from mypy_boto3_comprehendmedical.type_defs import InferRxNormResponseTypeDef
 
 Required fields:
 
-- `Entities`:
-  `List`\[[RxNormEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#rxnormentitytypedef)\]
+- `Entities`: `List`\[[RxNormEntityTypeDef](./type_defs.md#rxnormentitytypedef)\]
 
 Optional fields:
 
@@ -352,7 +334,7 @@ from mypy_boto3_comprehendmedical.type_defs import ListEntitiesDetectionV2JobsRe
 Optional fields:
 
 - `ComprehendMedicalAsyncJobPropertiesList`:
-  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)\]
+  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
 
 ## ListICD10CMInferenceJobsResponseTypeDef
@@ -364,7 +346,7 @@ from mypy_boto3_comprehendmedical.type_defs import ListICD10CMInferenceJobsRespo
 Optional fields:
 
 - `ComprehendMedicalAsyncJobPropertiesList`:
-  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)\]
+  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
 
 ## ListPHIDetectionJobsResponseTypeDef
@@ -376,7 +358,7 @@ from mypy_boto3_comprehendmedical.type_defs import ListPHIDetectionJobsResponseT
 Optional fields:
 
 - `ComprehendMedicalAsyncJobPropertiesList`:
-  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)\]
+  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
 
 ## ListRxNormInferenceJobsResponseTypeDef
@@ -388,7 +370,7 @@ from mypy_boto3_comprehendmedical.type_defs import ListRxNormInferenceJobsRespon
 Optional fields:
 
 - `ComprehendMedicalAsyncJobPropertiesList`:
-  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobpropertiestypedef)\]
+  `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
 
 ## OutputDataConfigTypeDef
@@ -413,16 +395,14 @@ from mypy_boto3_comprehendmedical.type_defs import RxNormAttributeTypeDef
 
 Optional fields:
 
-- `Type`:
-  [RxNormAttributeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#rxnormattributetype)
+- `Type`: [RxNormAttributeType](./literals.md#rxnormattributetype)
 - `Score`: `float`
 - `RelationshipScore`: `float`
 - `Id`: `int`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 - `Text`: `str`
-- `Traits`:
-  `List`\[[RxNormTraitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#rxnormtraittypedef)\]
+- `Traits`: `List`\[[RxNormTraitTypeDef](./type_defs.md#rxnormtraittypedef)\]
 
 ## RxNormConceptTypeDef
 
@@ -446,18 +426,17 @@ Optional fields:
 
 - `Id`: `int`
 - `Text`: `str`
-- `Category`: `Literal['MEDICATION']`
-- `Type`:
-  [RxNormEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#rxnormentitytype)
+- `Category`: `Literal['MEDICATION']` (see
+  [RxNormEntityCategory](./literals.md#rxnormentitycategory))
+- `Type`: [RxNormEntityType](./literals.md#rxnormentitytype)
 - `Score`: `float`
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 - `Attributes`:
-  `List`\[[RxNormAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#rxnormattributetypedef)\]
-- `Traits`:
-  `List`\[[RxNormTraitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#rxnormtraittypedef)\]
+  `List`\[[RxNormAttributeTypeDef](./type_defs.md#rxnormattributetypedef)\]
+- `Traits`: `List`\[[RxNormTraitTypeDef](./type_defs.md#rxnormtraittypedef)\]
 - `RxNormConcepts`:
-  `List`\[[RxNormConceptTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#rxnormconcepttypedef)\]
+  `List`\[[RxNormConceptTypeDef](./type_defs.md#rxnormconcepttypedef)\]
 
 ## RxNormTraitTypeDef
 
@@ -467,7 +446,8 @@ from mypy_boto3_comprehendmedical.type_defs import RxNormTraitTypeDef
 
 Optional fields:
 
-- `Name`: `Literal['NEGATION']`
+- `Name`: `Literal['NEGATION']` (see
+  [RxNormTraitName](./literals.md#rxnormtraitname))
 - `Score`: `float`
 
 ## StartEntitiesDetectionV2JobResponseTypeDef
@@ -558,8 +538,7 @@ from mypy_boto3_comprehendmedical.type_defs import TraitTypeDef
 
 Optional fields:
 
-- `Name`:
-  [AttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#attributename)
+- `Name`: [AttributeName](./literals.md#attributename)
 - `Score`: `float`
 
 ## UnmappedAttributeTypeDef
@@ -570,7 +549,5 @@ from mypy_boto3_comprehendmedical.type_defs import UnmappedAttributeTypeDef
 
 Optional fields:
 
-- `Type`:
-  [EntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/literals.html#entitytype)
-- `Attribute`:
-  [AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#attributetypedef)
+- `Type`: [EntityType](./literals.md#entitytype)
+- `Attribute`: [AttributeTypeDef](./type_defs.md#attributetypedef)

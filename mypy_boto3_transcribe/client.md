@@ -1,7 +1,6 @@
 # TranscribeServiceClient for boto3 TranscribeService module
 
-> [Index](../README.md) > [TranscribeService](./README.md) >
-> TranscribeServiceClient
+> [Index](..) > [TranscribeService](.) > TranscribeServiceClient
 
 Auto-generated documentation for
 [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
@@ -103,19 +102,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `LanguageCode`:
-  [CLMLanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#clmlanguagecode)
-  *(required)*
-- `BaseModelName`:
-  [BaseModelName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#basemodelname)
-  *(required)*
+- `LanguageCode`: [CLMLanguageCode](./literals.md#clmlanguagecode) *(required)*
+- `BaseModelName`: [BaseModelName](./literals.md#basemodelname) *(required)*
 - `ModelName`: `str` *(required)*
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 
 Returns
-[CreateLanguageModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createlanguagemodelresponsetypedef).
+[CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef).
 
 ### create_medical_vocabulary
 
@@ -128,13 +122,11 @@ Boto3 documentation:
 Arguments:
 
 - `VocabularyName`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
-  *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode) *(required)*
 - `VocabularyFileUri`: `str` *(required)*
 
 Returns
-[CreateMedicalVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createmedicalvocabularyresponsetypedef).
+[CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef).
 
 ### create_vocabulary
 
@@ -146,14 +138,12 @@ Boto3 documentation:
 Arguments:
 
 - `VocabularyName`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
-  *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode) *(required)*
 - `Phrases`: `List`\[`str`\]
 - `VocabularyFileUri`: `str`
 
 Returns
-[CreateVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createvocabularyresponsetypedef).
+[CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
 
 ### create_vocabulary_filter
 
@@ -166,14 +156,12 @@ Boto3 documentation:
 Arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
-  *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode) *(required)*
 - `Words`: `List`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
 
 Returns
-[CreateVocabularyFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#createvocabularyfilterresponsetypedef).
+[CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
 
 ### delete_language_model
 
@@ -258,7 +246,7 @@ Arguments:
 - `ModelName`: `str` *(required)*
 
 Returns
-[DescribeLanguageModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#describelanguagemodelresponsetypedef).
+[DescribeLanguageModelResponseTypeDef](./type_defs.md#describelanguagemodelresponsetypedef).
 
 ### generate_presigned_url
 
@@ -290,7 +278,7 @@ Arguments:
 - `MedicalTranscriptionJobName`: `str` *(required)*
 
 Returns
-[GetMedicalTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getmedicaltranscriptionjobresponsetypedef).
+[GetMedicalTranscriptionJobResponseTypeDef](./type_defs.md#getmedicaltranscriptionjobresponsetypedef).
 
 ### get_medical_vocabulary
 
@@ -305,7 +293,7 @@ Arguments:
 - `VocabularyName`: `str` *(required)*
 
 Returns
-[GetMedicalVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getmedicalvocabularyresponsetypedef).
+[GetMedicalVocabularyResponseTypeDef](./type_defs.md#getmedicalvocabularyresponsetypedef).
 
 ### get_transcription_job
 
@@ -319,7 +307,7 @@ Arguments:
 - `TranscriptionJobName`: `str` *(required)*
 
 Returns
-[GetTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#gettranscriptionjobresponsetypedef).
+[GetTranscriptionJobResponseTypeDef](./type_defs.md#gettranscriptionjobresponsetypedef).
 
 ### get_vocabulary
 
@@ -333,7 +321,7 @@ Arguments:
 - `VocabularyName`: `str` *(required)*
 
 Returns
-[GetVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getvocabularyresponsetypedef).
+[GetVocabularyResponseTypeDef](./type_defs.md#getvocabularyresponsetypedef).
 
 ### get_vocabulary_filter
 
@@ -347,7 +335,7 @@ Arguments:
 - `VocabularyFilterName`: `str` *(required)*
 
 Returns
-[GetVocabularyFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#getvocabularyfilterresponsetypedef).
+[GetVocabularyFilterResponseTypeDef](./type_defs.md#getvocabularyfilterresponsetypedef).
 
 ### list_language_models
 
@@ -358,14 +346,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `StatusEquals`:
-  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#modelstatus)
+- `StatusEquals`: [ModelStatus](./literals.md#modelstatus)
 - `NameContains`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListLanguageModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listlanguagemodelsresponsetypedef).
+[ListLanguageModelsResponseTypeDef](./type_defs.md#listlanguagemodelsresponsetypedef).
 
 ### list_medical_transcription_jobs
 
@@ -377,14 +364,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [TranscriptionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#transcriptionjobstatus)
+- `Status`: [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
 - `JobNameContains`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListMedicalTranscriptionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listmedicaltranscriptionjobsresponsetypedef).
+[ListMedicalTranscriptionJobsResponseTypeDef](./type_defs.md#listmedicaltranscriptionjobsresponsetypedef).
 
 ### list_medical_vocabularies
 
@@ -398,12 +384,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `StateEquals`:
-  [VocabularyState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#vocabularystate)
+- `StateEquals`: [VocabularyState](./literals.md#vocabularystate)
 - `NameContains`: `str`
 
 Returns
-[ListMedicalVocabulariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listmedicalvocabulariesresponsetypedef).
+[ListMedicalVocabulariesResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponsetypedef).
 
 ### list_transcription_jobs
 
@@ -415,14 +400,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Status`:
-  [TranscriptionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#transcriptionjobstatus)
+- `Status`: [TranscriptionJobStatus](./literals.md#transcriptionjobstatus)
 - `JobNameContains`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListTranscriptionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listtranscriptionjobsresponsetypedef).
+[ListTranscriptionJobsResponseTypeDef](./type_defs.md#listtranscriptionjobsresponsetypedef).
 
 ### list_vocabularies
 
@@ -435,12 +419,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `StateEquals`:
-  [VocabularyState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#vocabularystate)
+- `StateEquals`: [VocabularyState](./literals.md#vocabularystate)
 - `NameContains`: `str`
 
 Returns
-[ListVocabulariesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listvocabulariesresponsetypedef).
+[ListVocabulariesResponseTypeDef](./type_defs.md#listvocabulariesresponsetypedef).
 
 ### list_vocabulary_filters
 
@@ -457,7 +440,7 @@ Arguments:
 - `NameContains`: `str`
 
 Returns
-[ListVocabularyFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#listvocabularyfiltersresponsetypedef).
+[ListVocabularyFiltersResponseTypeDef](./type_defs.md#listvocabularyfiltersresponsetypedef).
 
 ### start_medical_transcription_job
 
@@ -470,27 +453,21 @@ Boto3 documentation:
 Arguments:
 
 - `MedicalTranscriptionJobName`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
-  *(required)*
-- `Media`:
-  [MediaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#mediatypedef)
-  *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode) *(required)*
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
 - `OutputBucketName`: `str` *(required)*
-- `Specialty`: `Literal['PRIMARYCARE']` *(required)*
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#typetype)
-  *(required)*
+- `Specialty`: `Literal['PRIMARYCARE']` (see
+  [Specialty](./literals.md#specialty)) *(required)*
+- `Type`: [TypeType](./literals.md#typetype) *(required)*
 - `MediaSampleRateHertz`: `int`
-- `MediaFormat`:
-  [MediaFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#mediaformat)
+- `MediaFormat`: [MediaFormat](./literals.md#mediaformat)
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
 - `Settings`:
-  [MedicalTranscriptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#medicaltranscriptionsettingtypedef)
+  [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 
 Returns
-[StartMedicalTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#startmedicaltranscriptionjobresponsetypedef).
+[StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef).
 
 ### start_transcription_job
 
@@ -503,31 +480,24 @@ Boto3 documentation:
 Arguments:
 
 - `TranscriptionJobName`: `str` *(required)*
-- `Media`:
-  [MediaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#mediatypedef)
-  *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `MediaSampleRateHertz`: `int`
-- `MediaFormat`:
-  [MediaFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#mediaformat)
+- `MediaFormat`: [MediaFormat](./literals.md#mediaformat)
 - `OutputBucketName`: `str`
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
-- `Settings`:
-  [SettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#settingstypedef)
-- `ModelSettings`:
-  [ModelSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#modelsettingstypedef)
+- `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
+- `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
 - `JobExecutionSettings`:
-  [JobExecutionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#jobexecutionsettingstypedef)
+  [JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef)
 - `ContentRedaction`:
-  [ContentRedactionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#contentredactiontypedef)
+  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `IdentifyLanguage`: `bool`
-- `LanguageOptions`:
-  `List`\[[LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)\]
+- `LanguageOptions`: `List`\[[LanguageCode](./literals.md#languagecode)\]
 
 Returns
-[StartTranscriptionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#starttranscriptionjobresponsetypedef).
+[StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
 
 ### update_medical_vocabulary
 
@@ -540,13 +510,11 @@ Boto3 documentation:
 Arguments:
 
 - `VocabularyName`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
-  *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode) *(required)*
 - `VocabularyFileUri`: `str`
 
 Returns
-[UpdateMedicalVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#updatemedicalvocabularyresponsetypedef).
+[UpdateMedicalVocabularyResponseTypeDef](./type_defs.md#updatemedicalvocabularyresponsetypedef).
 
 ### update_vocabulary
 
@@ -558,14 +526,12 @@ Boto3 documentation:
 Arguments:
 
 - `VocabularyName`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/literals.html#languagecode)
-  *(required)*
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode) *(required)*
 - `Phrases`: `List`\[`str`\]
 - `VocabularyFileUri`: `str`
 
 Returns
-[UpdateVocabularyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#updatevocabularyresponsetypedef).
+[UpdateVocabularyResponseTypeDef](./type_defs.md#updatevocabularyresponsetypedef).
 
 ### update_vocabulary_filter
 
@@ -582,4 +548,4 @@ Arguments:
 - `VocabularyFilterFileUri`: `str`
 
 Returns
-[UpdateVocabularyFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transcribe/type_defs.html#updatevocabularyfilterresponsetypedef).
+[UpdateVocabularyFilterResponseTypeDef](./type_defs.md#updatevocabularyfilterresponsetypedef).

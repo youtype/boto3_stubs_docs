@@ -1,6 +1,6 @@
 # TimestreamQueryClient for boto3 TimestreamQuery module
 
-> [Index](../README.md) > [TimestreamQuery](./README.md) > TimestreamQueryClient
+> [Index](..) > [TimestreamQuery](.) > TimestreamQueryClient
 
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
@@ -84,7 +84,7 @@ Arguments:
 - `QueryId`: `str` *(required)*
 
 Returns
-[CancelQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#cancelqueryresponsetypedef).
+[CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
 
 ### describe_endpoints
 
@@ -95,7 +95,7 @@ Boto3 documentation:
 [TimestreamQuery.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
 
 Returns
-[DescribeEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#describeendpointsresponsetypedef).
+[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -128,8 +128,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxRows`: `int`
 
-Returns
-[QueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_query/type_defs.html#queryresponsetypedef).
+Returns [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef).
 
 ### get_paginator
 

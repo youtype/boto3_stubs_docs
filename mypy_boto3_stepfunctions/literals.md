@@ -1,6 +1,6 @@
 # Literals for boto3 SFN module
 
-> [Index](../README.md) > [SFN](./README.md) > Literals
+> [Index](..) > [SFN](.) > Literals
 
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)

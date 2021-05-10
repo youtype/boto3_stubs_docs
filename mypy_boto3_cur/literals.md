@@ -1,6 +1,6 @@
 # Literals for boto3 CostandUsageReportService module
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) > Literals
+> [Index](..) > [CostandUsageReportService](.) > Literals
 
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)

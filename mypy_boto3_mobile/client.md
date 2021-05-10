@@ -1,6 +1,6 @@
 # MobileClient for boto3 Mobile module
 
-> [Index](../README.md) > [Mobile](./README.md) > MobileClient
+> [Index](..) > [Mobile](.) > MobileClient
 
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
@@ -94,7 +94,7 @@ Arguments:
 - `snapshotId`: `str`
 
 Returns
-[CreateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#createprojectresulttypedef).
+[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
 ### delete_project
 
@@ -108,7 +108,7 @@ Arguments:
 - `projectId`: `str` *(required)*
 
 Returns
-[DeleteProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#deleteprojectresulttypedef).
+[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
 
 ### describe_bundle
 
@@ -122,7 +122,7 @@ Arguments:
 - `bundleId`: `str` *(required)*
 
 Returns
-[DescribeBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#describebundleresulttypedef).
+[DescribeBundleResultTypeDef](./type_defs.md#describebundleresulttypedef).
 
 ### describe_project
 
@@ -137,7 +137,7 @@ Arguments:
 - `syncFromResources`: `bool`
 
 Returns
-[DescribeProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#describeprojectresulttypedef).
+[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
 
 ### export_bundle
 
@@ -150,11 +150,9 @@ Arguments:
 
 - `bundleId`: `str` *(required)*
 - `projectId`: `str`
-- `platform`:
-  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/literals.html#platform)
+- `platform`: [Platform](./literals.md#platform)
 
-Returns
-[ExportBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#exportbundleresulttypedef).
+Returns [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef).
 
 ### export_project
 
@@ -168,7 +166,7 @@ Arguments:
 - `projectId`: `str` *(required)*
 
 Returns
-[ExportProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#exportprojectresulttypedef).
+[ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef).
 
 ### generate_presigned_url
 
@@ -198,8 +196,7 @@ Arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listbundlesresulttypedef).
+Returns [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef).
 
 ### list_projects
 
@@ -213,8 +210,7 @@ Arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#listprojectsresulttypedef).
+Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 
 ### update_project
 
@@ -229,7 +225,7 @@ Arguments:
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Returns
-[UpdateProjectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mobile/type_defs.html#updateprojectresulttypedef).
+[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
 
 ### get_paginator
 

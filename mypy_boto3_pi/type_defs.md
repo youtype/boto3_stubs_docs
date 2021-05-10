@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 PI module
 
-> [Index](../README.md) > [PI](./README.md) > Structures
+> [Index](..) > [PI](.) > Typed dictionaries
 
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
@@ -40,9 +40,9 @@ Optional fields:
 - `AlignedStartTime`: `datetime`
 - `AlignedEndTime`: `datetime`
 - `PartitionKeys`:
-  `List`\[[ResponsePartitionKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#responsepartitionkeytypedef)\]
+  `List`\[[ResponsePartitionKeyTypeDef](./type_defs.md#responsepartitionkeytypedef)\]
 - `Keys`:
-  `List`\[[DimensionKeyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensionkeydescriptiontypedef)\]
+  `List`\[[DimensionKeyDescriptionTypeDef](./type_defs.md#dimensionkeydescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## DimensionGroupTypeDef
@@ -84,7 +84,7 @@ Optional fields:
 - `AlignedEndTime`: `datetime`
 - `Identifier`: `str`
 - `MetricList`:
-  `List`\[[MetricKeyDataPointsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#metrickeydatapointstypedef)\]
+  `List`\[[MetricKeyDataPointsTypeDef](./type_defs.md#metrickeydatapointstypedef)\]
 - `NextToken`: `str`
 
 ## MetricKeyDataPointsTypeDef
@@ -96,9 +96,8 @@ from mypy_boto3_pi.type_defs import MetricKeyDataPointsTypeDef
 Optional fields:
 
 - `Key`:
-  [ResponseResourceMetricKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#responseresourcemetrickeytypedef)
-- `DataPoints`:
-  `List`\[[DataPointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#datapointtypedef)\]
+  [ResponseResourceMetricKeyTypeDef](./type_defs.md#responseresourcemetrickeytypedef)
+- `DataPoints`: `List`\[[DataPointTypeDef](./type_defs.md#datapointtypedef)\]
 
 ## MetricQueryTypeDef
 
@@ -112,8 +111,7 @@ Required fields:
 
 Optional fields:
 
-- `GroupBy`:
-  [DimensionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pi/type_defs.html#dimensiongrouptypedef)
+- `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - `Filter`: `Dict`\[`str`, `str`\]
 
 ## ResponsePartitionKeyTypeDef

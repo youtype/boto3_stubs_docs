@@ -1,6 +1,6 @@
 # Paginators for boto3 SimpleDB module
 
-> [Index](../README.md) > [SimpleDB](./README.md) > Paginators
+> [Index](..) > [SimpleDB](.) > Paginators
 
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
@@ -30,10 +30,10 @@ Boto3 documentation:
 Arguments for `ListDomainsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[ListDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#listdomainsresulttypedef)\].
+`Iterator`\[[ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)\].
 
 ## SelectPaginator
 
@@ -56,7 +56,7 @@ Arguments for `SelectPaginator.paginate` method:
 - `SelectExpression`: `str` *(required)*
 - `ConsistentRead`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SelectPaginator.paginate` returns
-`Iterator`\[[SelectResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sdb/type_defs.html#selectresulttypedef)\].
+`Iterator`\[[SelectResultTypeDef](./type_defs.md#selectresulttypedef)\].

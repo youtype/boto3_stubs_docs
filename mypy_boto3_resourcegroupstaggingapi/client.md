@@ -1,7 +1,6 @@
 # ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module
 
-> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) >
-> ResourceGroupsTaggingAPIClient
+> [Index](..) > [ResourceGroupsTaggingAPI](.) > ResourceGroupsTaggingAPIClient
 
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
@@ -87,7 +86,7 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
 
 Returns
-[DescribeReportCreationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#describereportcreationoutputtypedef).
+[DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
 
 ### generate_presigned_url
 
@@ -120,13 +119,12 @@ Arguments:
 - `RegionFilters`: `List`\[`str`\]
 - `ResourceTypeFilters`: `List`\[`str`\]
 - `TagKeyFilters`: `List`\[`str`\]
-- `GroupBy`:
-  `List`\[[GroupByAttribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/literals.html#groupbyattribute)\]
+- `GroupBy`: `List`\[[GroupByAttribute](./literals.md#groupbyattribute)\]
 - `MaxResults`: `int`
 - `PaginationToken`: `str`
 
 Returns
-[GetComplianceSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getcompliancesummaryoutputtypedef).
+[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef).
 
 ### get_resources
 
@@ -139,8 +137,7 @@ Boto3 documentation:
 Arguments:
 
 - `PaginationToken`: `str`
-- `TagFilters`:
-  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagfiltertypedef)\]
+- `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `ResourcesPerPage`: `int`
 - `TagsPerPage`: `int`
 - `ResourceTypeFilters`: `List`\[`str`\]
@@ -148,8 +145,7 @@ Arguments:
 - `ExcludeCompliantResources`: `bool`
 - `ResourceARNList`: `List`\[`str`\]
 
-Returns
-[GetResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#getresourcesoutputtypedef).
+Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
 
 ### get_tag_keys
 
@@ -163,8 +159,7 @@ Arguments:
 
 - `PaginationToken`: `str`
 
-Returns
-[GetTagKeysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagkeysoutputtypedef).
+Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
 
 ### get_tag_values
 
@@ -179,8 +174,7 @@ Arguments:
 - `Key`: `str` *(required)*
 - `PaginationToken`: `str`
 
-Returns
-[GetTagValuesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#gettagvaluesoutputtypedef).
+Returns [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef).
 
 ### start_report_creation
 
@@ -209,8 +203,7 @@ Arguments:
 - `ResourceARNList`: `List`\[`str`\] *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#tagresourcesoutputtypedef).
+Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
 
 ### untag_resources
 
@@ -226,7 +219,7 @@ Arguments:
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[UntagResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resourcegroupstaggingapi/type_defs.html#untagresourcesoutputtypedef).
+[UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef).
 
 ### get_paginator
 

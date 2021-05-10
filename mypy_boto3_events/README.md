@@ -1,6 +1,6 @@
 # Type annotations for boto3 EventBridge module
 
-> [Index](../README.md) > EventBridge
+> [Index](..) > EventBridge
 
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)

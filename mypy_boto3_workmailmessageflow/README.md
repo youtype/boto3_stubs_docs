@@ -1,6 +1,6 @@
 # Type annotations for boto3 WorkMailMessageFlow module
 
-> [Index](../README.md) > WorkMailMessageFlow
+> [Index](..) > WorkMailMessageFlow
 
 Auto-generated documentation for
 [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)

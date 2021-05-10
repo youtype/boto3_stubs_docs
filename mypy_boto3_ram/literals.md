@@ -1,6 +1,6 @@
 # Literals for boto3 RAM module
 
-> [Index](../README.md) > [RAM](./README.md) > Literals
+> [Index](..) > [RAM](.) > Literals
 
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)

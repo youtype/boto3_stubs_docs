@@ -1,6 +1,6 @@
 # Literals for boto3 AccessAnalyzer module
 
-> [Index](../README.md) > [AccessAnalyzer](./README.md) > Literals
+> [Index](..) > [AccessAnalyzer](.) > Literals
 
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)

@@ -1,6 +1,6 @@
 # Literals for boto3 Route53 module
 
-> [Index](../README.md) > [Route53](./README.md) > Literals
+> [Index](..) > [Route53](.) > Literals
 
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)

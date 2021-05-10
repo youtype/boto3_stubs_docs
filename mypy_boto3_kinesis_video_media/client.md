@@ -1,7 +1,6 @@
 # KinesisVideoMediaClient for boto3 KinesisVideoMedia module
 
-> [Index](../README.md) > [KinesisVideoMedia](./README.md) >
-> KinesisVideoMediaClient
+> [Index](..) > [KinesisVideoMedia](.) > KinesisVideoMediaClient
 
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
@@ -95,11 +94,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `StartSelector`:
-  [StartSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_media/type_defs.html#startselectortypedef)
+- `StartSelector`: [StartSelectorTypeDef](./type_defs.md#startselectortypedef)
   *(required)*
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-Returns
-[GetMediaOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_media/type_defs.html#getmediaoutputtypedef).
+Returns [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef).

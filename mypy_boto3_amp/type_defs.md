@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 PrometheusService module
 
-> [Index](../README.md) > [PrometheusService](./README.md) > Structures
+> [Index](..) > [PrometheusService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
@@ -25,8 +25,7 @@ from mypy_boto3_amp.type_defs import CreateWorkspaceResponseTypeDef
 Required fields:
 
 - `arn`: `str`
-- `status`:
-  [WorkspaceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacestatustypedef)
+- `status`: [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - `workspaceId`: `str`
 
 ## DescribeWorkspaceResponseTypeDef
@@ -38,7 +37,7 @@ from mypy_boto3_amp.type_defs import DescribeWorkspaceResponseTypeDef
 Required fields:
 
 - `workspace`:
-  [WorkspaceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacedescriptiontypedef)
+  [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 
 ## ListWorkspacesResponseTypeDef
 
@@ -49,7 +48,7 @@ from mypy_boto3_amp.type_defs import ListWorkspacesResponseTypeDef
 Required fields:
 
 - `workspaces`:
-  `List`\[[WorkspaceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacesummarytypedef)\]
+  `List`\[[WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)\]
 
 Optional fields:
 
@@ -77,8 +76,7 @@ Required fields:
 
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `status`:
-  [WorkspaceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacestatustypedef)
+- `status`: [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - `workspaceId`: `str`
 
 Optional fields:
@@ -94,8 +92,7 @@ from mypy_boto3_amp.type_defs import WorkspaceStatusTypeDef
 
 Required fields:
 
-- `statusCode`:
-  [WorkspaceStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/literals.html#workspacestatuscode)
+- `statusCode`: [WorkspaceStatusCode](./literals.md#workspacestatuscode)
 
 ## WorkspaceSummaryTypeDef
 
@@ -107,8 +104,7 @@ Required fields:
 
 - `arn`: `str`
 - `createdAt`: `datetime`
-- `status`:
-  [WorkspaceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#workspacestatustypedef)
+- `status`: [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - `workspaceId`: `str`
 
 Optional fields:

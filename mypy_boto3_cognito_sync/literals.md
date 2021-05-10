@@ -1,6 +1,6 @@
 # Literals for boto3 CognitoSync module
 
-> [Index](../README.md) > [CognitoSync](./README.md) > Literals
+> [Index](..) > [CognitoSync](.) > Literals
 
 Auto-generated documentation for
 [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)

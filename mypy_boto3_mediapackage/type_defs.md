@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MediaPackage module
 
-> [Index](../README.md) > [MediaPackage](./README.md) > Structures
+> [Index](..) > [MediaPackage](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
@@ -70,12 +70,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CmafEncryptionTypeDef
@@ -87,7 +86,7 @@ from mypy_boto3_mediapackage.type_defs import CmafEncryptionTypeDef
 Required fields:
 
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
 Optional fields:
 
@@ -102,14 +101,13 @@ from mypy_boto3_mediapackage.type_defs import CmafPackageCreateOrUpdateParameter
 
 Optional fields:
 
-- `Encryption`:
-  [CmafEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafencryptiontypedef)
+- `Encryption`: [CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef)
 - `HlsManifests`:
-  `List`\[[HlsManifestCreateOrUpdateParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsmanifestcreateorupdateparameterstypedef)\]
+  `List`\[[HlsManifestCreateOrUpdateParametersTypeDef](./type_defs.md#hlsmanifestcreateorupdateparameterstypedef)\]
 - `SegmentDurationSeconds`: `int`
 - `SegmentPrefix`: `str`
 - `StreamSelection`:
-  [StreamSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#streamselectiontypedef)
+  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 
 ## CmafPackageTypeDef
 
@@ -119,14 +117,13 @@ from mypy_boto3_mediapackage.type_defs import CmafPackageTypeDef
 
 Optional fields:
 
-- `Encryption`:
-  [CmafEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafencryptiontypedef)
+- `Encryption`: [CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef)
 - `HlsManifests`:
-  `List`\[[HlsManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsmanifesttypedef)\]
+  `List`\[[HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef)\]
 - `SegmentDurationSeconds`: `int`
 - `SegmentPrefix`: `str`
 - `StreamSelection`:
-  [StreamSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#streamselectiontypedef)
+  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 
 ## ConfigureLogsResponseTypeDef
 
@@ -139,12 +136,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
@@ -158,12 +154,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateHarvestJobResponseTypeDef
@@ -180,11 +175,9 @@ Optional fields:
 - `EndTime`: `str`
 - `Id`: `str`
 - `OriginEndpointId`: `str`
-- `S3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#s3destinationtypedef)
+- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## CreateOriginEndpointResponseTypeDef
 
@@ -195,22 +188,16 @@ from mypy_boto3_mediapackage.type_defs import CreateOriginEndpointResponseTypeDe
 Optional fields:
 
 - `Arn`: `str`
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `ChannelId`: `str`
-- `CmafPackage`:
-  [CmafPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafpackagetypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashpackagetypedef)
+- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `Description`: `str`
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlspackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `Id`: `str`
 - `ManifestName`: `str`
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#msspackagetypedef)
-- `Origination`:
-  [Origination](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#origination)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [Origination](./literals.md#origination)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -226,7 +213,7 @@ from mypy_boto3_mediapackage.type_defs import DashEncryptionTypeDef
 Required fields:
 
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
 Optional fields:
 
@@ -241,27 +228,24 @@ from mypy_boto3_mediapackage.type_defs import DashPackageTypeDef
 Optional fields:
 
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#--adtriggerselement)\]
+  `List`\[[\_\_AdTriggersElement](./literals.md#--adtriggerselement)\]
 - `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#adsondeliveryrestrictions)
-- `Encryption`:
-  [DashEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashencryptiontypedef)
-- `ManifestLayout`:
-  [ManifestLayout](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#manifestlayout)
+  [AdsOnDeliveryRestrictions](./literals.md#adsondeliveryrestrictions)
+- `Encryption`: [DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef)
+- `ManifestLayout`: [ManifestLayout](./literals.md#manifestlayout)
 - `ManifestWindowSeconds`: `int`
 - `MinBufferTimeSeconds`: `int`
 - `MinUpdatePeriodSeconds`: `int`
-- `PeriodTriggers`: `List`\[`Literal['ADS']`\]
-- `Profile`:
-  [Profile](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#profile)
+- `PeriodTriggers`: `List`\[`Literal['ADS']` (see
+  [\_\_PeriodTriggersElement](./literals.md#--periodtriggerselement))\]
+- `Profile`: [Profile](./literals.md#profile)
 - `SegmentDurationSeconds`: `int`
 - `SegmentTemplateFormat`:
-  [SegmentTemplateFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#segmenttemplateformat)
+  [SegmentTemplateFormat](./literals.md#segmenttemplateformat)
 - `StreamSelection`:
-  [StreamSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#streamselectiontypedef)
+  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 - `SuggestedPresentationDelaySeconds`: `int`
-- `UtcTiming`:
-  [UtcTiming](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#utctiming)
+- `UtcTiming`: [UtcTiming](./literals.md#utctiming)
 - `UtcTimingUri`: `str`
 
 ## DescribeChannelResponseTypeDef
@@ -275,12 +259,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeHarvestJobResponseTypeDef
@@ -297,11 +280,9 @@ Optional fields:
 - `EndTime`: `str`
 - `Id`: `str`
 - `OriginEndpointId`: `str`
-- `S3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#s3destinationtypedef)
+- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## DescribeOriginEndpointResponseTypeDef
 
@@ -312,22 +293,16 @@ from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointResponseType
 Optional fields:
 
 - `Arn`: `str`
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `ChannelId`: `str`
-- `CmafPackage`:
-  [CmafPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafpackagetypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashpackagetypedef)
+- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `Description`: `str`
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlspackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `Id`: `str`
 - `ManifestName`: `str`
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#msspackagetypedef)
-- `Origination`:
-  [Origination](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#origination)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [Origination](./literals.md#origination)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -352,8 +327,10 @@ from mypy_boto3_mediapackage.type_defs import EncryptionContractConfigurationTyp
 
 Required fields:
 
-- `PresetSpeke20Audio`: `Literal['PRESET-AUDIO-1']`
-- `PresetSpeke20Video`: `Literal['PRESET-VIDEO-1']`
+- `PresetSpeke20Audio`: `Literal['PRESET-AUDIO-1']` (see
+  [PresetSpeke20Audio](./literals.md#presetspeke20audio))
+- `PresetSpeke20Video`: `Literal['PRESET-VIDEO-1']` (see
+  [PresetSpeke20Video](./literals.md#presetspeke20video))
 
 ## HarvestJobTypeDef
 
@@ -369,11 +346,9 @@ Optional fields:
 - `EndTime`: `str`
 - `Id`: `str`
 - `OriginEndpointId`: `str`
-- `S3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#s3destinationtypedef)
+- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## HlsEncryptionTypeDef
 
@@ -384,13 +359,12 @@ from mypy_boto3_mediapackage.type_defs import HlsEncryptionTypeDef
 Required fields:
 
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
 Optional fields:
 
 - `ConstantInitializationVector`: `str`
-- `EncryptionMethod`:
-  [EncryptionMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#encryptionmethod)
+- `EncryptionMethod`: [EncryptionMethod](./literals.md#encryptionmethod)
 - `KeyRotationIntervalSeconds`: `int`
 - `RepeatExtXKey`: `bool`
 
@@ -403,7 +377,7 @@ from mypy_boto3_mediapackage.type_defs import HlsIngestTypeDef
 Optional fields:
 
 - `IngestEndpoints`:
-  `List`\[[IngestEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingestendpointtypedef)\]
+  `List`\[[IngestEndpointTypeDef](./type_defs.md#ingestendpointtypedef)\]
 
 ## HlsManifestCreateOrUpdateParametersTypeDef
 
@@ -417,16 +391,14 @@ Required fields:
 
 Optional fields:
 
-- `AdMarkers`:
-  [AdMarkers](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#admarkers)
+- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#--adtriggerselement)\]
+  `List`\[[\_\_AdTriggersElement](./literals.md#--adtriggerselement)\]
 - `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#adsondeliveryrestrictions)
+  [AdsOnDeliveryRestrictions](./literals.md#adsondeliveryrestrictions)
 - `IncludeIframeOnlyStream`: `bool`
 - `ManifestName`: `str`
-- `PlaylistType`:
-  [PlaylistType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#playlisttype)
+- `PlaylistType`: [PlaylistType](./literals.md#playlisttype)
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 
@@ -442,12 +414,10 @@ Required fields:
 
 Optional fields:
 
-- `AdMarkers`:
-  [AdMarkers](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#admarkers)
+- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
 - `IncludeIframeOnlyStream`: `bool`
 - `ManifestName`: `str`
-- `PlaylistType`:
-  [PlaylistType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#playlisttype)
+- `PlaylistType`: [PlaylistType](./literals.md#playlisttype)
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 - `Url`: `str`
@@ -460,22 +430,19 @@ from mypy_boto3_mediapackage.type_defs import HlsPackageTypeDef
 
 Optional fields:
 
-- `AdMarkers`:
-  [AdMarkers](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#admarkers)
+- `AdMarkers`: [AdMarkers](./literals.md#admarkers)
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElement](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#--adtriggerselement)\]
+  `List`\[[\_\_AdTriggersElement](./literals.md#--adtriggerselement)\]
 - `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#adsondeliveryrestrictions)
-- `Encryption`:
-  [HlsEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsencryptiontypedef)
+  [AdsOnDeliveryRestrictions](./literals.md#adsondeliveryrestrictions)
+- `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
 - `IncludeIframeOnlyStream`: `bool`
-- `PlaylistType`:
-  [PlaylistType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#playlisttype)
+- `PlaylistType`: [PlaylistType](./literals.md#playlisttype)
 - `PlaylistWindowSeconds`: `int`
 - `ProgramDateTimeIntervalSeconds`: `int`
 - `SegmentDurationSeconds`: `int`
 - `StreamSelection`:
-  [StreamSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#streamselectiontypedef)
+  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 - `UseAudioRenditionGroup`: `bool`
 
 ## IngestEndpointTypeDef
@@ -509,8 +476,7 @@ from mypy_boto3_mediapackage.type_defs import ListChannelsResponseTypeDef
 
 Optional fields:
 
-- `Channels`:
-  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#channeltypedef)\]
+- `Channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `NextToken`: `str`
 
 ## ListHarvestJobsResponseTypeDef
@@ -521,8 +487,7 @@ from mypy_boto3_mediapackage.type_defs import ListHarvestJobsResponseTypeDef
 
 Optional fields:
 
-- `HarvestJobs`:
-  `List`\[[HarvestJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#harvestjobtypedef)\]
+- `HarvestJobs`: `List`\[[HarvestJobTypeDef](./type_defs.md#harvestjobtypedef)\]
 - `NextToken`: `str`
 
 ## ListOriginEndpointsResponseTypeDef
@@ -535,7 +500,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `OriginEndpoints`:
-  `List`\[[OriginEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#originendpointtypedef)\]
+  `List`\[[OriginEndpointTypeDef](./type_defs.md#originendpointtypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -556,7 +521,7 @@ from mypy_boto3_mediapackage.type_defs import MssEncryptionTypeDef
 Required fields:
 
 - `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#spekekeyprovidertypedef)
+  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
 
 ## MssPackageTypeDef
 
@@ -566,12 +531,11 @@ from mypy_boto3_mediapackage.type_defs import MssPackageTypeDef
 
 Optional fields:
 
-- `Encryption`:
-  [MssEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#mssencryptiontypedef)
+- `Encryption`: [MssEncryptionTypeDef](./type_defs.md#mssencryptiontypedef)
 - `ManifestWindowSeconds`: `int`
 - `SegmentDurationSeconds`: `int`
 - `StreamSelection`:
-  [StreamSelectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#streamselectiontypedef)
+  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 
 ## OriginEndpointTypeDef
 
@@ -582,22 +546,16 @@ from mypy_boto3_mediapackage.type_defs import OriginEndpointTypeDef
 Optional fields:
 
 - `Arn`: `str`
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `ChannelId`: `str`
-- `CmafPackage`:
-  [CmafPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafpackagetypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashpackagetypedef)
+- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `Description`: `str`
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlspackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `Id`: `str`
 - `ManifestName`: `str`
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#msspackagetypedef)
-- `Origination`:
-  [Origination](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#origination)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [Origination](./literals.md#origination)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
@@ -627,12 +585,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## RotateIngestEndpointCredentialsResponseTypeDef
@@ -646,12 +603,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## S3DestinationTypeDef
@@ -683,7 +639,7 @@ Optional fields:
 
 - `CertificateArn`: `str`
 - `EncryptionContractConfiguration`:
-  [EncryptionContractConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#encryptioncontractconfigurationtypedef)
+  [EncryptionContractConfigurationTypeDef](./type_defs.md#encryptioncontractconfigurationtypedef)
 
 ## StreamSelectionTypeDef
 
@@ -695,8 +651,7 @@ Optional fields:
 
 - `MaxVideoBitsPerSecond`: `int`
 - `MinVideoBitsPerSecond`: `int`
-- `StreamOrder`:
-  [StreamOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#streamorder)
+- `StreamOrder`: [StreamOrder](./literals.md#streamorder)
 
 ## UpdateChannelResponseTypeDef
 
@@ -709,12 +664,11 @@ Optional fields:
 - `Arn`: `str`
 - `Description`: `str`
 - `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#egressaccesslogstypedef)
-- `HlsIngest`:
-  [HlsIngestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlsingesttypedef)
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
 - `Id`: `str`
 - `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#ingressaccesslogstypedef)
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## UpdateOriginEndpointResponseTypeDef
@@ -726,22 +680,16 @@ from mypy_boto3_mediapackage.type_defs import UpdateOriginEndpointResponseTypeDe
 Optional fields:
 
 - `Arn`: `str`
-- `Authorization`:
-  [AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#authorizationtypedef)
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `ChannelId`: `str`
-- `CmafPackage`:
-  [CmafPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#cmafpackagetypedef)
-- `DashPackage`:
-  [DashPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#dashpackagetypedef)
+- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `Description`: `str`
-- `HlsPackage`:
-  [HlsPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#hlspackagetypedef)
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `Id`: `str`
 - `ManifestName`: `str`
-- `MssPackage`:
-  [MssPackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#msspackagetypedef)
-- `Origination`:
-  [Origination](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/literals.html#origination)
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [Origination](./literals.md#origination)
 - `StartoverWindowSeconds`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`

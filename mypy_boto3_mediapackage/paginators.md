@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaPackage module
 
-> [Index](../README.md) > [MediaPackage](./README.md) > Paginators
+> [Index](..) > [MediaPackage](.) > Paginators
 
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
@@ -32,10 +32,10 @@ Boto3 documentation:
 Arguments for `ListChannelsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listchannelsresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListHarvestJobsPaginator
 
@@ -59,10 +59,10 @@ Arguments for `ListHarvestJobsPaginator.paginate` method:
 - `IncludeChannelId`: `str`
 - `IncludeStatus`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHarvestJobsPaginator.paginate` returns
-`Iterator`\[[ListHarvestJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listharvestjobsresponsetypedef)\].
+`Iterator`\[[ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef)\].
 
 ## ListOriginEndpointsPaginator
 
@@ -85,7 +85,7 @@ Arguments for `ListOriginEndpointsPaginator.paginate` method:
 
 - `ChannelId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOriginEndpointsPaginator.paginate` returns
-`Iterator`\[[ListOriginEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediapackage/type_defs.html#listoriginendpointsresponsetypedef)\].
+`Iterator`\[[ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef)\].

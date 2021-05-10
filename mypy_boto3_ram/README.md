@@ -1,6 +1,6 @@
 # Type annotations for boto3 RAM module
 
-> [Index](../README.md) > RAM
+> [Index](..) > RAM
 
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)

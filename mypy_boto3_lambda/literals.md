@@ -1,6 +1,6 @@
 # Literals for boto3 Lambda module
 
-> [Index](../README.md) > [Lambda](./README.md) > Literals
+> [Index](..) > [Lambda](.) > Literals
 
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)

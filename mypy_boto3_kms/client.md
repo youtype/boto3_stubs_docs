@@ -1,6 +1,6 @@
 # KMSClient for boto3 KMS module
 
-> [Index](../README.md) > [KMS](./README.md) > KMSClient
+> [Index](..) > [KMS](.) > KMSClient
 
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
@@ -153,7 +153,7 @@ Arguments:
 - `KeyId`: `str` *(required)*
 
 Returns
-[CancelKeyDeletionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#cancelkeydeletionresponsetypedef).
+[CancelKeyDeletionResponseTypeDef](./type_defs.md#cancelkeydeletionresponsetypedef).
 
 ### connect_custom_key_store
 
@@ -195,7 +195,7 @@ Arguments:
 - `KeyStorePassword`: `str` *(required)*
 
 Returns
-[CreateCustomKeyStoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#createcustomkeystoreresponsetypedef).
+[CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef).
 
 ### create_grant
 
@@ -208,17 +208,16 @@ Arguments:
 
 - `KeyId`: `str` *(required)*
 - `GranteePrincipal`: `str` *(required)*
-- `Operations`:
-  `List`\[[GrantOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#grantoperation)\]
+- `Operations`: `List`\[[GrantOperation](./literals.md#grantoperation)\]
   *(required)*
 - `RetiringPrincipal`: `str`
 - `Constraints`:
-  [GrantConstraintsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#grantconstraintstypedef)
+  [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
 - `GrantTokens`: `List`\[`str`\]
 - `Name`: `str`
 
 Returns
-[CreateGrantResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#creategrantresponsetypedef).
+[CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
 
 ### create_key
 
@@ -231,19 +230,15 @@ Arguments:
 
 - `Policy`: `str`
 - `Description`: `str`
-- `KeyUsage`:
-  [KeyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#keyusagetype)
+- `KeyUsage`: [KeyUsageType](./literals.md#keyusagetype)
 - `CustomerMasterKeySpec`:
-  [CustomerMasterKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#customermasterkeyspec)
-- `Origin`:
-  [OriginType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#origintype)
+  [CustomerMasterKeySpec](./literals.md#customermasterkeyspec)
+- `Origin`: [OriginType](./literals.md#origintype)
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#createkeyresponsetypedef).
+Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
 
 ### decrypt
 
@@ -259,10 +254,9 @@ Arguments:
 - `GrantTokens`: `List`\[`str`\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 
-Returns
-[DecryptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#decryptresponsetypedef).
+Returns [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef).
 
 ### delete_alias
 
@@ -314,7 +308,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeCustomKeyStoresResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#describecustomkeystoresresponsetypedef).
+[DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef).
 
 ### describe_key
 
@@ -329,7 +323,7 @@ Arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[DescribeKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#describekeyresponsetypedef).
+[DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef).
 
 ### disable_key
 
@@ -402,10 +396,9 @@ Arguments:
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 - `EncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 
-Returns
-[EncryptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#encryptresponsetypedef).
+Returns [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef).
 
 ### generate_data_key
 
@@ -419,12 +412,11 @@ Arguments:
 - `KeyId`: `str` *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `NumberOfBytes`: `int`
-- `KeySpec`:
-  [DataKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeyspec)
+- `KeySpec`: [DataKeySpec](./literals.md#datakeyspec)
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeyresponsetypedef).
+[GenerateDataKeyResponseTypeDef](./type_defs.md#generatedatakeyresponsetypedef).
 
 ### generate_data_key_pair
 
@@ -436,14 +428,12 @@ Boto3 documentation:
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `KeyPairSpec`:
-  [DataKeyPairSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeypairspec)
-  *(required)*
+- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec) *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyPairResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeypairresponsetypedef).
+[GenerateDataKeyPairResponseTypeDef](./type_defs.md#generatedatakeypairresponsetypedef).
 
 ### generate_data_key_pair_without_plaintext
 
@@ -456,14 +446,12 @@ Boto3 documentation:
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `KeyPairSpec`:
-  [DataKeyPairSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeypairspec)
-  *(required)*
+- `KeyPairSpec`: [DataKeyPairSpec](./literals.md#datakeypairspec) *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyPairWithoutPlaintextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeypairwithoutplaintextresponsetypedef).
+[GenerateDataKeyPairWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponsetypedef).
 
 ### generate_data_key_without_plaintext
 
@@ -477,13 +465,12 @@ Arguments:
 
 - `KeyId`: `str` *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `KeySpec`:
-  [DataKeySpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#datakeyspec)
+- `KeySpec`: [DataKeySpec](./literals.md#datakeyspec)
 - `NumberOfBytes`: `int`
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyWithoutPlaintextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generatedatakeywithoutplaintextresponsetypedef).
+[GenerateDataKeyWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeywithoutplaintextresponsetypedef).
 
 ### generate_presigned_url
 
@@ -514,7 +501,7 @@ Arguments:
 - `CustomKeyStoreId`: `str`
 
 Returns
-[GenerateRandomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#generaterandomresponsetypedef).
+[GenerateRandomResponseTypeDef](./type_defs.md#generaterandomresponsetypedef).
 
 ### get_key_policy
 
@@ -529,7 +516,7 @@ Arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetKeyPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getkeypolicyresponsetypedef).
+[GetKeyPolicyResponseTypeDef](./type_defs.md#getkeypolicyresponsetypedef).
 
 ### get_key_rotation_status
 
@@ -543,7 +530,7 @@ Arguments:
 - `KeyId`: `str` *(required)*
 
 Returns
-[GetKeyRotationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getkeyrotationstatusresponsetypedef).
+[GetKeyRotationStatusResponseTypeDef](./type_defs.md#getkeyrotationstatusresponsetypedef).
 
 ### get_parameters_for_import
 
@@ -555,13 +542,12 @@ Boto3 documentation:
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `WrappingAlgorithm`:
-  [AlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#algorithmspec)
-  *(required)*
-- `WrappingKeySpec`: `Literal['RSA_2048']` *(required)*
+- `WrappingAlgorithm`: [AlgorithmSpec](./literals.md#algorithmspec) *(required)*
+- `WrappingKeySpec`: `Literal['RSA_2048']` (see
+  [WrappingKeySpec](./literals.md#wrappingkeyspec)) *(required)*
 
 Returns
-[GetParametersForImportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getparametersforimportresponsetypedef).
+[GetParametersForImportResponseTypeDef](./type_defs.md#getparametersforimportresponsetypedef).
 
 ### get_public_key
 
@@ -576,7 +562,7 @@ Arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GetPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#getpublickeyresponsetypedef).
+[GetPublicKeyResponseTypeDef](./type_defs.md#getpublickeyresponsetypedef).
 
 ### import_key_material
 
@@ -591,8 +577,7 @@ Arguments:
 - `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `EncryptedKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `ValidTo`: `datetime`
-- `ExpirationModel`:
-  [ExpirationModelType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#expirationmodeltype)
+- `ExpirationModel`: [ExpirationModelType](./literals.md#expirationmodeltype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -610,7 +595,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listaliasesresponsetypedef).
+[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
 ### list_grants
 
@@ -627,8 +612,7 @@ Arguments:
 - `GrantId`: `str`
 - `GranteePrincipal`: `str`
 
-Returns
-[ListGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listgrantsresponsetypedef).
+Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
 ### list_key_policies
 
@@ -644,7 +628,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListKeyPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listkeypoliciesresponsetypedef).
+[ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef).
 
 ### list_keys
 
@@ -658,8 +642,7 @@ Arguments:
 - `Limit`: `int`
 - `Marker`: `str`
 
-Returns
-[ListKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listkeysresponsetypedef).
+Returns [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef).
 
 ### list_resource_tags
 
@@ -675,7 +658,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[ListResourceTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listresourcetagsresponsetypedef).
+[ListResourceTagsResponseTypeDef](./type_defs.md#listresourcetagsresponsetypedef).
 
 ### list_retirable_grants
 
@@ -690,8 +673,7 @@ Arguments:
 - `Limit`: `int`
 - `Marker`: `str`
 
-Returns
-[ListGrantsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#listgrantsresponsetypedef).
+Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
 ### put_key_policy
 
@@ -722,13 +704,12 @@ Arguments:
 - `SourceKeyId`: `str`
 - `DestinationEncryptionContext`: `Dict`\[`str`, `str`\]
 - `SourceEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 - `DestinationEncryptionAlgorithm`:
-  [EncryptionAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#encryptionalgorithmspec)
+  [EncryptionAlgorithmSpec](./literals.md#encryptionalgorithmspec)
 - `GrantTokens`: `List`\[`str`\]
 
-Returns
-[ReEncryptResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#reencryptresponsetypedef).
+Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 
 ### retire_grant
 
@@ -768,7 +749,7 @@ Arguments:
 - `PendingWindowInDays`: `int`
 
 Returns
-[ScheduleKeyDeletionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#schedulekeydeletionresponsetypedef).
+[ScheduleKeyDeletionResponseTypeDef](./type_defs.md#schedulekeydeletionresponsetypedef).
 
 ### sign
 
@@ -781,15 +762,12 @@ Arguments:
 
 - `KeyId`: `str` *(required)*
 - `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `SigningAlgorithm`:
-  [SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)
+- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
   *(required)*
-- `MessageType`:
-  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#messagetype)
+- `MessageType`: [MessageType](./literals.md#messagetype)
 - `GrantTokens`: `List`\[`str`\]
 
-Returns
-[SignResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#signresponsetypedef).
+Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 
 ### tag_resource
 
@@ -801,9 +779,7 @@ Boto3 documentation:
 Arguments:
 
 - `KeyId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -869,15 +845,12 @@ Arguments:
 - `KeyId`: `str` *(required)*
 - `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `SigningAlgorithm`:
-  [SigningAlgorithmSpec](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#signingalgorithmspec)
+- `SigningAlgorithm`: [SigningAlgorithmSpec](./literals.md#signingalgorithmspec)
   *(required)*
-- `MessageType`:
-  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/literals.html#messagetype)
+- `MessageType`: [MessageType](./literals.md#messagetype)
 - `GrantTokens`: `List`\[`str`\]
 
-Returns
-[VerifyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kms/type_defs.html#verifyresponsetypedef).
+Returns [VerifyResponseTypeDef](./type_defs.md#verifyresponsetypedef).
 
 ### get_paginator
 

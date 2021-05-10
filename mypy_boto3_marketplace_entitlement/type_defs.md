@@ -1,7 +1,6 @@
 # Typed dictionaries for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) >
-> Structures
+> [Index](..) > [MarketplaceEntitlementService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
@@ -25,8 +24,7 @@ Optional fields:
 - `ProductCode`: `str`
 - `Dimension`: `str`
 - `CustomerIdentifier`: `str`
-- `Value`:
-  [EntitlementValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#entitlementvaluetypedef)
+- `Value`: [EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef)
 - `ExpirationDate`: `datetime`
 
 ## EntitlementValueTypeDef
@@ -51,7 +49,7 @@ from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultTy
 Optional fields:
 
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#entitlementtypedef)\]
+  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `NextToken`: `str`
 
 ## PaginatorConfigTypeDef

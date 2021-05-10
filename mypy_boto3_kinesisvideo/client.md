@@ -1,6 +1,6 @@
 # KinesisVideoClient for boto3 KinesisVideo module
 
-> [Index](../README.md) > [KinesisVideo](./README.md) > KinesisVideoClient
+> [Index](..) > [KinesisVideo](.) > KinesisVideoClient
 
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
@@ -105,14 +105,14 @@ Boto3 documentation:
 Arguments:
 
 - `ChannelName`: `str` *(required)*
-- `ChannelType`: `Literal['SINGLE_MASTER']`
+- `ChannelType`: `Literal['SINGLE_MASTER']` (see
+  [ChannelType](./literals.md#channeltype))
 - `SingleMasterConfiguration`:
-  [SingleMasterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#singlemasterconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#tagtypedef)\]
+  [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSignalingChannelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#createsignalingchanneloutputtypedef).
+[CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef).
 
 ### create_stream
 
@@ -130,8 +130,7 @@ Arguments:
 - `DataRetentionInHours`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#createstreamoutputtypedef).
+Returns [CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef).
 
 ### delete_signaling_channel
 
@@ -176,7 +175,7 @@ Arguments:
 - `ChannelARN`: `str`
 
 Returns
-[DescribeSignalingChannelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#describesignalingchanneloutputtypedef).
+[DescribeSignalingChannelOutputTypeDef](./type_defs.md#describesignalingchanneloutputtypedef).
 
 ### describe_stream
 
@@ -191,7 +190,7 @@ Arguments:
 - `StreamARN`: `str`
 
 Returns
-[DescribeStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#describestreamoutputtypedef).
+[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
 ### generate_presigned_url
 
@@ -219,14 +218,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `APIName`:
-  [APIName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#apiname)
-  *(required)*
+- `APIName`: [APIName](./literals.md#apiname) *(required)*
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
 Returns
-[GetDataEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#getdataendpointoutputtypedef).
+[GetDataEndpointOutputTypeDef](./type_defs.md#getdataendpointoutputtypedef).
 
 ### get_signaling_channel_endpoint
 
@@ -240,10 +237,10 @@ Arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `SingleMasterChannelEndpointConfiguration`:
-  [SingleMasterChannelEndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#singlemasterchannelendpointconfigurationtypedef)
+  [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
 
 Returns
-[GetSignalingChannelEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#getsignalingchannelendpointoutputtypedef).
+[GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef).
 
 ### list_signaling_channels
 
@@ -258,10 +255,10 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ChannelNameCondition`:
-  [ChannelNameConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#channelnameconditiontypedef)
+  [ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef)
 
 Returns
-[ListSignalingChannelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#listsignalingchannelsoutputtypedef).
+[ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef).
 
 ### list_streams
 
@@ -275,10 +272,9 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `StreamNameCondition`:
-  [StreamNameConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#streamnameconditiontypedef)
+  [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
 
-Returns
-[ListStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#liststreamsoutputtypedef).
+Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -294,7 +290,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_tags_for_stream
 
@@ -311,7 +307,7 @@ Arguments:
 - `StreamName`: `str`
 
 Returns
-[ListTagsForStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#listtagsforstreamoutputtypedef).
+[ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
 ### tag_resource
 
@@ -323,9 +319,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -385,7 +379,7 @@ Arguments:
 
 - `CurrentVersion`: `str` *(required)*
 - `Operation`:
-  [UpdateDataRetentionOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/literals.html#updatedataretentionoperation)
+  [UpdateDataRetentionOperation](./literals.md#updatedataretentionoperation)
   *(required)*
 - `DataRetentionChangeInHours`: `int` *(required)*
 - `StreamName`: `str`
@@ -406,7 +400,7 @@ Arguments:
 - `ChannelARN`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
 - `SingleMasterConfiguration`:
-  [SingleMasterConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#singlemasterconfigurationtypedef)
+  [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

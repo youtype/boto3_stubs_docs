@@ -1,6 +1,6 @@
 # GuardDutyClient for boto3 GuardDuty module
 
-> [Index](../README.md) > [GuardDuty](./README.md) > GuardDutyClient
+> [Index](..) > [GuardDuty](.) > GuardDutyClient
 
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
@@ -163,13 +163,13 @@ Arguments:
 - `Enable`: `bool` *(required)*
 - `ClientToken`: `str`
 - `FindingPublishingFrequency`:
-  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#findingpublishingfrequency)
+  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
 - `DataSources`:
-  [DataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationstypedef)
+  [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createdetectorresponsetypedef).
+[CreateDetectorResponseTypeDef](./type_defs.md#createdetectorresponsetypedef).
 
 ### create_filter
 
@@ -183,17 +183,15 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `FindingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
-  *(required)*
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) *(required)*
 - `Description`: `str`
-- `Action`:
-  [FilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#filteraction)
+- `Action`: [FilterAction](./literals.md#filteraction)
 - `Rank`: `int`
 - `ClientToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createfilterresponsetypedef).
+[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
 
 ### create_ip_set
 
@@ -206,16 +204,14 @@ Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Format`:
-  [IpSetFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#ipsetformat)
-  *(required)*
+- `Format`: [IpSetFormat](./literals.md#ipsetformat) *(required)*
 - `Location`: `str` *(required)*
 - `Activate`: `bool` *(required)*
 - `ClientToken`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createipsetresponsetypedef).
+[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
 
 ### create_members
 
@@ -228,11 +224,11 @@ Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountDetails`:
-  `List`\[[AccountDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#accountdetailtypedef)\]
+  `List`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
   *(required)*
 
 Returns
-[CreateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createmembersresponsetypedef).
+[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
 
 ### create_publishing_destination
 
@@ -245,14 +241,15 @@ Boto3 documentation:
 Arguments:
 
 - `DetectorId`: `str` *(required)*
-- `DestinationType`: `Literal['S3']` *(required)*
+- `DestinationType`: `Literal['S3']` (see
+  [DestinationType](./literals.md#destinationtype)) *(required)*
 - `DestinationProperties`:
-  [DestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#destinationpropertiestypedef)
+  [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
   *(required)*
 - `ClientToken`: `str`
 
 Returns
-[CreatePublishingDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createpublishingdestinationresponsetypedef).
+[CreatePublishingDestinationResponseTypeDef](./type_defs.md#createpublishingdestinationresponsetypedef).
 
 ### create_sample_findings
 
@@ -280,8 +277,7 @@ Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `Format`:
-  [ThreatIntelSetFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#threatintelsetformat)
+- `Format`: [ThreatIntelSetFormat](./literals.md#threatintelsetformat)
   *(required)*
 - `Location`: `str` *(required)*
 - `Activate`: `bool` *(required)*
@@ -289,7 +285,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateThreatIntelSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#createthreatintelsetresponsetypedef).
+[CreateThreatIntelSetResponseTypeDef](./type_defs.md#createthreatintelsetresponsetypedef).
 
 ### decline_invitations
 
@@ -303,7 +299,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#declineinvitationsresponsetypedef).
+[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
 ### delete_detector
 
@@ -344,7 +340,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#deleteinvitationsresponsetypedef).
+[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
 ### delete_ip_set
 
@@ -373,7 +369,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#deletemembersresponsetypedef).
+[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
 ### delete_publishing_destination
 
@@ -418,7 +414,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 
 Returns
-[DescribeOrganizationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#describeorganizationconfigurationresponsetypedef).
+[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
 ### describe_publishing_destination
 
@@ -434,7 +430,7 @@ Arguments:
 - `DestinationId`: `str` *(required)*
 
 Returns
-[DescribePublishingDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#describepublishingdestinationresponsetypedef).
+[DescribePublishingDestinationResponseTypeDef](./type_defs.md#describepublishingdestinationresponsetypedef).
 
 ### disable_organization_admin_account
 
@@ -477,7 +473,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#disassociatemembersresponsetypedef).
+[DisassociateMembersResponseTypeDef](./type_defs.md#disassociatemembersresponsetypedef).
 
 ### enable_organization_admin_account
 
@@ -521,7 +517,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 
 Returns
-[GetDetectorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getdetectorresponsetypedef).
+[GetDetectorResponseTypeDef](./type_defs.md#getdetectorresponsetypedef).
 
 ### get_filter
 
@@ -535,8 +531,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `FilterName`: `str` *(required)*
 
-Returns
-[GetFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getfilterresponsetypedef).
+Returns [GetFilterResponseTypeDef](./type_defs.md#getfilterresponsetypedef).
 
 ### get_findings
 
@@ -549,11 +544,10 @@ Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingIds`: `List`\[`str`\] *(required)*
-- `SortCriteria`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#sortcriteriatypedef)
+- `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[GetFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getfindingsresponsetypedef).
+[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
 
 ### get_findings_statistics
 
@@ -566,12 +560,13 @@ Boto3 documentation:
 Arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']`\] *(required)*
+- `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']` (see
+  [FindingStatisticType](./literals.md#findingstatistictype))\] *(required)*
 - `FindingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
 Returns
-[GetFindingsStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getfindingsstatisticsresponsetypedef).
+[GetFindingsStatisticsResponseTypeDef](./type_defs.md#getfindingsstatisticsresponsetypedef).
 
 ### get_invitations_count
 
@@ -581,7 +576,7 @@ Boto3 documentation:
 [GuardDuty.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getinvitationscountresponsetypedef).
+[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
 
 ### get_ip_set
 
@@ -595,8 +590,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `IpSetId`: `str` *(required)*
 
-Returns
-[GetIPSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getipsetresponsetypedef).
+Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 
 ### get_master_account
 
@@ -610,7 +604,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 
 Returns
-[GetMasterAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getmasteraccountresponsetypedef).
+[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
 
 ### get_member_detectors
 
@@ -625,7 +619,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[GetMemberDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getmemberdetectorsresponsetypedef).
+[GetMemberDetectorsResponseTypeDef](./type_defs.md#getmemberdetectorsresponsetypedef).
 
 ### get_members
 
@@ -639,8 +633,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
-Returns
-[GetMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getmembersresponsetypedef).
+Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### get_threat_intel_set
 
@@ -655,7 +648,7 @@ Arguments:
 - `ThreatIntelSetId`: `str` *(required)*
 
 Returns
-[GetThreatIntelSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getthreatintelsetresponsetypedef).
+[GetThreatIntelSetResponseTypeDef](./type_defs.md#getthreatintelsetresponsetypedef).
 
 ### get_usage_statistics
 
@@ -667,18 +660,16 @@ Boto3 documentation:
 Arguments:
 
 - `DetectorId`: `str` *(required)*
-- `UsageStatisticType`:
-  [UsageStatisticType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#usagestatistictype)
+- `UsageStatisticType`: [UsageStatisticType](./literals.md#usagestatistictype)
   *(required)*
-- `UsageCriteria`:
-  [UsageCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usagecriteriatypedef)
+- `UsageCriteria`: [UsageCriteriaTypeDef](./type_defs.md#usagecriteriatypedef)
   *(required)*
 - `Unit`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetUsageStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#getusagestatisticsresponsetypedef).
+[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
 
 ### invite_members
 
@@ -695,7 +686,7 @@ Arguments:
 - `Message`: `str`
 
 Returns
-[InviteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#invitemembersresponsetypedef).
+[InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
 
 ### list_detectors
 
@@ -710,7 +701,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listdetectorsresponsetypedef).
+[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).
 
 ### list_filters
 
@@ -726,7 +717,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listfiltersresponsetypedef).
+[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
 
 ### list_findings
 
@@ -739,14 +730,13 @@ Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
-- `SortCriteria`:
-  [SortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#sortcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+- `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListFindingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listfindingsresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_invitations
 
@@ -761,7 +751,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listinvitationsresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_ip_sets
 
@@ -776,8 +766,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListIPSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listipsetsresponsetypedef).
+Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
 
 ### list_members
 
@@ -794,7 +783,7 @@ Arguments:
 - `OnlyAssociated`: `str`
 
 Returns
-[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listmembersresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_organization_admin_accounts
 
@@ -810,7 +799,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listorganizationadminaccountsresponsetypedef).
+[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
 ### list_publishing_destinations
 
@@ -827,7 +816,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPublishingDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listpublishingdestinationsresponsetypedef).
+[ListPublishingDestinationsResponseTypeDef](./type_defs.md#listpublishingdestinationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -841,7 +830,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_threat_intel_sets
 
@@ -857,7 +846,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListThreatIntelSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#listthreatintelsetsresponsetypedef).
+[ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef).
 
 ### start_monitoring_members
 
@@ -873,7 +862,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StartMonitoringMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#startmonitoringmembersresponsetypedef).
+[StartMonitoringMembersResponseTypeDef](./type_defs.md#startmonitoringmembersresponsetypedef).
 
 ### stop_monitoring_members
 
@@ -889,7 +878,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StopMonitoringMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#stopmonitoringmembersresponsetypedef).
+[StopMonitoringMembersResponseTypeDef](./type_defs.md#stopmonitoringmembersresponsetypedef).
 
 ### tag_resource
 
@@ -945,9 +934,9 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `Enable`: `bool`
 - `FindingPublishingFrequency`:
-  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#findingpublishingfrequency)
+  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
 - `DataSources`:
-  [DataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationstypedef)
+  [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -963,14 +952,13 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `FilterName`: `str` *(required)*
 - `Description`: `str`
-- `Action`:
-  [FilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#filteraction)
+- `Action`: [FilterAction](./literals.md#filteraction)
 - `Rank`: `int`
 - `FindingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
 Returns
-[UpdateFilterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#updatefilterresponsetypedef).
+[UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef).
 
 ### update_findings_feedback
 
@@ -984,9 +972,7 @@ Arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingIds`: `List`\[`str`\] *(required)*
-- `Feedback`:
-  [Feedback](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#feedback)
-  *(required)*
+- `Feedback`: [Feedback](./literals.md#feedback) *(required)*
 - `Comments`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1021,10 +1007,10 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 - `DataSources`:
-  [DataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationstypedef)
+  [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 
 Returns
-[UpdateMemberDetectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#updatememberdetectorsresponsetypedef).
+[UpdateMemberDetectorsResponseTypeDef](./type_defs.md#updatememberdetectorsresponsetypedef).
 
 ### update_organization_configuration
 
@@ -1039,7 +1025,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `AutoEnable`: `bool` *(required)*
 - `DataSources`:
-  [OrganizationDataSourceConfigurationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#organizationdatasourceconfigurationstypedef)
+  [OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1056,7 +1042,7 @@ Arguments:
 - `DetectorId`: `str` *(required)*
 - `DestinationId`: `str` *(required)*
 - `DestinationProperties`:
-  [DestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#destinationpropertiestypedef)
+  [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

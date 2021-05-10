@@ -1,6 +1,6 @@
 # MarketplaceEntitlementServiceClient for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) >
+> [Index](..) > [MarketplaceEntitlementService](.) >
 > MarketplaceEntitlementServiceClient
 
 Auto-generated documentation for
@@ -97,13 +97,13 @@ Arguments:
 
 - `ProductCode`: `str` *(required)*
 - `Filter`:
-  `Dict`\[[GetEntitlementFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/literals.html#getentitlementfiltername),
+  `Dict`\[[GetEntitlementFilterName](./literals.md#getentitlementfiltername),
   `List`\[`str`\]\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[GetEntitlementsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#getentitlementsresulttypedef).
+[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Literals for boto3 SSOAdmin module
 
-> [Index](../README.md) > [SSOAdmin](./README.md) > Literals
+> [Index](..) > [SSOAdmin](.) > Literals
 
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)

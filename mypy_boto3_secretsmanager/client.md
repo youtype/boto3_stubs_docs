@@ -1,6 +1,6 @@
 # SecretsManagerClient for boto3 SecretsManager module
 
-> [Index](../README.md) > [SecretsManager](./README.md) > SecretsManagerClient
+> [Index](..) > [SecretsManager](.) > SecretsManagerClient
 
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
@@ -109,7 +109,7 @@ Arguments:
 - `SecretId`: `str` *(required)*
 
 Returns
-[CancelRotateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#cancelrotatesecretresponsetypedef).
+[CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef).
 
 ### create_secret
 
@@ -126,14 +126,13 @@ Arguments:
 - `KmsKeyId`: `str`
 - `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `SecretString`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AddReplicaRegions`:
-  `List`\[[ReplicaRegionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicaregiontypetypedef)\]
+  `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
 - `ForceOverwriteReplicaSecret`: `bool`
 
 Returns
-[CreateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#createsecretresponsetypedef).
+[CreateSecretResponseTypeDef](./type_defs.md#createsecretresponsetypedef).
 
 ### delete_resource_policy
 
@@ -148,7 +147,7 @@ Arguments:
 - `SecretId`: `str` *(required)*
 
 Returns
-[DeleteResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#deleteresourcepolicyresponsetypedef).
+[DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
 
 ### delete_secret
 
@@ -164,7 +163,7 @@ Arguments:
 - `ForceDeleteWithoutRecovery`: `bool`
 
 Returns
-[DeleteSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#deletesecretresponsetypedef).
+[DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef).
 
 ### describe_secret
 
@@ -178,7 +177,7 @@ Arguments:
 - `SecretId`: `str` *(required)*
 
 Returns
-[DescribeSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#describesecretresponsetypedef).
+[DescribeSecretResponseTypeDef](./type_defs.md#describesecretresponsetypedef).
 
 ### generate_presigned_url
 
@@ -217,7 +216,7 @@ Arguments:
 - `RequireEachIncludedType`: `bool`
 
 Returns
-[GetRandomPasswordResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#getrandompasswordresponsetypedef).
+[GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef).
 
 ### get_resource_policy
 
@@ -232,7 +231,7 @@ Arguments:
 - `SecretId`: `str` *(required)*
 
 Returns
-[GetResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#getresourcepolicyresponsetypedef).
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### get_secret_value
 
@@ -248,7 +247,7 @@ Arguments:
 - `VersionStage`: `str`
 
 Returns
-[GetSecretValueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#getsecretvalueresponsetypedef).
+[GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef).
 
 ### list_secret_version_ids
 
@@ -266,7 +265,7 @@ Arguments:
 - `IncludeDeprecated`: `bool`
 
 Returns
-[ListSecretVersionIdsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#listsecretversionidsresponsetypedef).
+[ListSecretVersionIdsResponseTypeDef](./type_defs.md#listsecretversionidsresponsetypedef).
 
 ### list_secrets
 
@@ -279,13 +278,11 @@ Arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#filtertypedef)\]
-- `SortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/literals.html#sortordertype)
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListSecretsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#listsecretsresponsetypedef).
+[ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef).
 
 ### put_resource_policy
 
@@ -302,7 +299,7 @@ Arguments:
 - `BlockPublicPolicy`: `bool`
 
 Returns
-[PutResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#putresourcepolicyresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### put_secret_value
 
@@ -320,7 +317,7 @@ Arguments:
 - `VersionStages`: `List`\[`str`\]
 
 Returns
-[PutSecretValueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#putsecretvalueresponsetypedef).
+[PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef).
 
 ### remove_regions_from_replication
 
@@ -336,7 +333,7 @@ Arguments:
 - `RemoveReplicaRegions`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveRegionsFromReplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#removeregionsfromreplicationresponsetypedef).
+[RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef).
 
 ### replicate_secret_to_regions
 
@@ -350,12 +347,12 @@ Arguments:
 
 - `SecretId`: `str` *(required)*
 - `AddReplicaRegions`:
-  `List`\[[ReplicaRegionTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicaregiontypetypedef)\]
+  `List`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
   *(required)*
 - `ForceOverwriteReplicaSecret`: `bool`
 
 Returns
-[ReplicateSecretToRegionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#replicatesecrettoregionsresponsetypedef).
+[ReplicateSecretToRegionsResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponsetypedef).
 
 ### restore_secret
 
@@ -369,7 +366,7 @@ Arguments:
 - `SecretId`: `str` *(required)*
 
 Returns
-[RestoreSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#restoresecretresponsetypedef).
+[RestoreSecretResponseTypeDef](./type_defs.md#restoresecretresponsetypedef).
 
 ### rotate_secret
 
@@ -384,10 +381,10 @@ Arguments:
 - `ClientRequestToken`: `str`
 - `RotationLambdaARN`: `str`
 - `RotationRules`:
-  [RotationRulesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#rotationrulestypetypedef)
+  [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
 
 Returns
-[RotateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#rotatesecretresponsetypedef).
+[RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef).
 
 ### stop_replication_to_replica
 
@@ -402,7 +399,7 @@ Arguments:
 - `SecretId`: `str` *(required)*
 
 Returns
-[StopReplicationToReplicaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#stopreplicationtoreplicaresponsetypedef).
+[StopReplicationToReplicaResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponsetypedef).
 
 ### tag_resource
 
@@ -414,9 +411,7 @@ Boto3 documentation:
 Arguments:
 
 - `SecretId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -447,7 +442,7 @@ Arguments:
 - `SecretString`: `str`
 
 Returns
-[UpdateSecretResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#updatesecretresponsetypedef).
+[UpdateSecretResponseTypeDef](./type_defs.md#updatesecretresponsetypedef).
 
 ### update_secret_version_stage
 
@@ -465,7 +460,7 @@ Arguments:
 - `MoveToVersionId`: `str`
 
 Returns
-[UpdateSecretVersionStageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#updatesecretversionstageresponsetypedef).
+[UpdateSecretVersionStageResponseTypeDef](./type_defs.md#updatesecretversionstageresponsetypedef).
 
 ### validate_resource_policy
 
@@ -481,7 +476,7 @@ Arguments:
 - `SecretId`: `str`
 
 Returns
-[ValidateResourcePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_secretsmanager/type_defs.html#validateresourcepolicyresponsetypedef).
+[ValidateResourcePolicyResponseTypeDef](./type_defs.md#validateresourcepolicyresponsetypedef).
 
 ### get_paginator
 

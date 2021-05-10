@@ -1,6 +1,6 @@
 # Literals for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > Literals
+> [Index](..) > [MarketplaceEntitlementService](.) > Literals
 
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)

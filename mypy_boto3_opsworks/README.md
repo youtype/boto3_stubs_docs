@@ -1,6 +1,6 @@
 # Type annotations for boto3 OpsWorks module
 
-> [Index](../README.md) > OpsWorks
+> [Index](..) > OpsWorks
 
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
@@ -126,7 +126,7 @@ OpsWorksClient [exceptions](./client.md#exceptions)
 ## OpsWorksServiceResource
 
 Type annotations for `boto3.resource("opsworks")` as
-[OpsWorksServiceResource](./service_resource.md)
+[OpsWorksServiceResource](./service_resource.md#opsworksserviceresource)
 
 Can be used directly:
 
@@ -144,7 +144,7 @@ Can be used directly:
 from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection, ...
 ```
 
-- [ServiceResourceStacksCollection](./service_resource.md#opsworksserviceresource.stacks)
+- [ServiceResourceStacksCollection](./service_resource.md#opsworksserviceresourcestacks)
 
 ### Resources
 

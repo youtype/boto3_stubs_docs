@@ -1,6 +1,6 @@
 # Type annotations for boto3 MediaConvert module
 
-> [Index](../README.md) > MediaConvert
+> [Index](..) > MediaConvert
 
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
@@ -580,7 +580,7 @@ from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef, ...
 - [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
 - [ReservationPlanTypeDef](./type_defs.md#reservationplantypedef)
 - [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3DestinationAccessControlTypeDef](./type_defs.md#s3destinationaccesscontroltypedef)
 - [S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef)
 - [S3EncryptionSettingsTypeDef](./type_defs.md#s3encryptionsettingstypedef)

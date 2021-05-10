@@ -1,6 +1,6 @@
 # SQSClient for boto3 SQS module
 
-> [Index](../README.md) > [SQS](./README.md) > SQSClient
+> [Index](..) > [SQS](.) > SQSClient
 
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
@@ -137,11 +137,11 @@ Arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
-  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#changemessagevisibilitybatchrequestentrytypedef)\]
+  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
   *(required)*
 
 Returns
-[ChangeMessageVisibilityBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#changemessagevisibilitybatchresulttypedef).
+[ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef).
 
 ### create_queue
 
@@ -153,13 +153,11 @@ Boto3 documentation:
 Arguments:
 
 - `QueueName`: `str` *(required)*
-- `Attributes`:
-  `Dict`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename),
+- `Attributes`: `Dict`\[[QueueAttributeName](./literals.md#queueattributename),
   `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateQueueResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#createqueueresulttypedef).
+Returns [CreateQueueResultTypeDef](./type_defs.md#createqueueresulttypedef).
 
 ### delete_message
 
@@ -184,11 +182,11 @@ Arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
-  `List`\[[DeleteMessageBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#deletemessagebatchrequestentrytypedef)\]
+  `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
   *(required)*
 
 Returns
-[DeleteMessageBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#deletemessagebatchresulttypedef).
+[DeleteMessageBatchResultTypeDef](./type_defs.md#deletemessagebatchresulttypedef).
 
 ### delete_queue
 
@@ -228,10 +226,10 @@ Arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `AttributeNames`:
-  `List`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename)\]
+  `List`\[[QueueAttributeName](./literals.md#queueattributename)\]
 
 Returns
-[GetQueueAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#getqueueattributesresulttypedef).
+[GetQueueAttributesResultTypeDef](./type_defs.md#getqueueattributesresulttypedef).
 
 ### get_queue_url
 
@@ -245,8 +243,7 @@ Arguments:
 - `QueueName`: `str` *(required)*
 - `QueueOwnerAWSAccountId`: `str`
 
-Returns
-[GetQueueUrlResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#getqueueurlresulttypedef).
+Returns [GetQueueUrlResultTypeDef](./type_defs.md#getqueueurlresulttypedef).
 
 ### list_dead_letter_source_queues
 
@@ -263,7 +260,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDeadLetterSourceQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listdeadlettersourcequeuesresulttypedef).
+[ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef).
 
 ### list_queue_tags
 
@@ -277,7 +274,7 @@ Arguments:
 - `QueueUrl`: `str` *(required)*
 
 Returns
-[ListQueueTagsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listqueuetagsresulttypedef).
+[ListQueueTagsResultTypeDef](./type_defs.md#listqueuetagsresulttypedef).
 
 ### list_queues
 
@@ -292,8 +289,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListQueuesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#listqueuesresulttypedef).
+Returns [ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef).
 
 ### purge_queue
 
@@ -317,7 +313,7 @@ Arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `AttributeNames`:
-  `List`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename)\]
+  `List`\[[QueueAttributeName](./literals.md#queueattributename)\]
 - `MessageAttributeNames`: `List`\[`str`\]
 - `MaxNumberOfMessages`: `int`
 - `VisibilityTimeout`: `int`
@@ -325,7 +321,7 @@ Arguments:
 - `ReceiveRequestAttemptId`: `str`
 
 Returns
-[ReceiveMessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#receivemessageresulttypedef).
+[ReceiveMessageResultTypeDef](./type_defs.md#receivemessageresulttypedef).
 
 ### remove_permission
 
@@ -352,14 +348,14 @@ Arguments:
 - `MessageBody`: `str` *(required)*
 - `DelaySeconds`: `int`
 - `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']`,
-  [MessageSystemAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messagesystemattributevaluetypedef)\]
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
+- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+  [MessageSystemAttributeNameForSends](./literals.md#messagesystemattributenameforsends)),
+  [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[SendMessageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessageresulttypedef).
+Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 
 ### send_message_batch
 
@@ -372,11 +368,11 @@ Arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
-  `List`\[[SendMessageBatchRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessagebatchrequestentrytypedef)\]
+  `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
   *(required)*
 
 Returns
-[SendMessageBatchResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessagebatchresulttypedef).
+[SendMessageBatchResultTypeDef](./type_defs.md#sendmessagebatchresulttypedef).
 
 ### set_queue_attributes
 
@@ -388,8 +384,7 @@ Boto3 documentation:
 Arguments:
 
 - `QueueUrl`: `str` *(required)*
-- `Attributes`:
-  `Dict`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename),
+- `Attributes`: `Dict`\[[QueueAttributeName](./literals.md#queueattributename),
   `str`\] *(required)*
 
 ### tag_queue

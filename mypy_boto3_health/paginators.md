@@ -1,6 +1,6 @@
 # Paginators for boto3 Health module
 
-> [Index](../README.md) > [Health](./README.md) > Paginators
+> [Index](..) > [Health](.) > Paginators
 
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
@@ -38,10 +38,10 @@ method:
 
 - `eventArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAffectedAccountsForOrganizationPaginator.paginate` returns
-`Iterator`\[[DescribeAffectedAccountsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedaccountsfororganizationresponsetypedef)\].
+`Iterator`\[[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef)\].
 
 ## DescribeAffectedEntitiesPaginator
 
@@ -62,15 +62,14 @@ Boto3 documentation:
 
 Arguments for `DescribeAffectedEntitiesPaginator.paginate` method:
 
-- `filter`:
-  [EntityFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#entityfiltertypedef)
+- `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
   *(required)*
 - `locale`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAffectedEntitiesPaginator.paginate` returns
-`Iterator`\[[DescribeAffectedEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesresponsetypedef)\].
+`Iterator`\[[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef)\].
 
 ## DescribeAffectedEntitiesForOrganizationPaginator
 
@@ -93,14 +92,14 @@ Arguments for `DescribeAffectedEntitiesForOrganizationPaginator.paginate`
 method:
 
 - `organizationEntityFilters`:
-  `List`\[[EventAccountFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventaccountfiltertypedef)\]
+  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
   *(required)*
 - `locale`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAffectedEntitiesForOrganizationPaginator.paginate` returns
-`Iterator`\[[DescribeAffectedEntitiesForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeaffectedentitiesfororganizationresponsetypedef)\].
+`Iterator`\[[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef)\].
 
 ## DescribeEventAggregatesPaginator
 
@@ -121,14 +120,14 @@ Boto3 documentation:
 
 Arguments for `DescribeEventAggregatesPaginator.paginate` method:
 
-- `aggregateField`: `Literal['eventTypeCategory']` *(required)*
-- `filter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `aggregateField`: `Literal['eventTypeCategory']` (see
+  [eventAggregateField](./literals.md#eventaggregatefield)) *(required)*
+- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventAggregatesPaginator.paginate` returns
-`Iterator`\[[DescribeEventAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventaggregatesresponsetypedef)\].
+`Iterator`\[[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef)\].
 
 ## DescribeEventTypesPaginator
 
@@ -149,14 +148,13 @@ Boto3 documentation:
 
 Arguments for `DescribeEventTypesPaginator.paginate` method:
 
-- `filter`:
-  [EventTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventtypefiltertypedef)
+- `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
 - `locale`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventTypesPaginator.paginate` returns
-`Iterator`\[[DescribeEventTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventtypesresponsetypedef)\].
+`Iterator`\[[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -176,14 +174,13 @@ Boto3 documentation:
 
 Arguments for `DescribeEventsPaginator.paginate` method:
 
-- `filter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#eventfiltertypedef)
+- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `locale`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsresponsetypedef)\].
+`Iterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
 
 ## DescribeEventsForOrganizationPaginator
 
@@ -205,10 +202,10 @@ Boto3 documentation:
 Arguments for `DescribeEventsForOrganizationPaginator.paginate` method:
 
 - `filter`:
-  [OrganizationEventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#organizationeventfiltertypedef)
+  [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)
 - `locale`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsForOrganizationPaginator.paginate` returns
-`Iterator`\[[DescribeEventsForOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_health/type_defs.html#describeeventsfororganizationresponsetypedef)\].
+`Iterator`\[[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef)\].

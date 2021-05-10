@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudFormation module
 
-> [Index](../README.md) > CloudFormation
+> [Index](..) > CloudFormation
 
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
@@ -125,7 +125,7 @@ CloudFormationClient [exceptions](./client.md#exceptions)
 ## CloudFormationServiceResource
 
 Type annotations for `boto3.resource("cloudformation")` as
-[CloudFormationServiceResource](./service_resource.md)
+[CloudFormationServiceResource](./service_resource.md#cloudformationserviceresource)
 
 Can be used directly:
 
@@ -143,7 +143,7 @@ Can be used directly:
 from mypy_boto3_cloudformation.service_resource import ServiceResourceStacksCollection, ...
 ```
 
-- [ServiceResourceStacksCollection](./service_resource.md#cloudformationserviceresource.stacks)
+- [ServiceResourceStacksCollection](./service_resource.md#cloudformationserviceresourcestacks)
 
 ### Resources
 
@@ -348,7 +348,7 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [ResourceIdentifierSummaryTypeDef](./type_defs.md#resourceidentifiersummarytypedef)
 - [ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef)
 - [ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - [RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)
 - [StackDriftInformationSummaryTypeDef](./type_defs.md#stackdriftinformationsummarytypedef)

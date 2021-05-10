@@ -1,6 +1,6 @@
 # Paginators for boto3 Shield module
 
-> [Index](../README.md) > [Shield](./README.md) > Paginators
+> [Index](..) > [Shield](.) > Paginators
 
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
@@ -30,15 +30,13 @@ Boto3 documentation:
 Arguments for `ListAttacksPaginator.paginate` method:
 
 - `ResourceArns`: `List`\[`str`\]
-- `StartTime`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#timerangetypedef)
-- `EndTime`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#timerangetypedef)
+- `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttacksPaginator.paginate` returns
-`Iterator`\[[ListAttacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listattacksresponsetypedef)\].
+`Iterator`\[[ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef)\].
 
 ## ListProtectionsPaginator
 
@@ -60,7 +58,7 @@ Boto3 documentation:
 Arguments for `ListProtectionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProtectionsPaginator.paginate` returns
-`Iterator`\[[ListProtectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listprotectionsresponsetypedef)\].
+`Iterator`\[[ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef)\].

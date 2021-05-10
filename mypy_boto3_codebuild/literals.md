@@ -1,6 +1,6 @@
 # Literals for boto3 CodeBuild module
 
-> [Index](../README.md) > [CodeBuild](./README.md) > Literals
+> [Index](..) > [CodeBuild](.) > Literals
 
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)

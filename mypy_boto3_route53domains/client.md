@@ -1,6 +1,6 @@
 # Route53DomainsClient for boto3 Route53Domains module
 
-> [Index](../README.md) > [Route53Domains](./README.md) > Route53DomainsClient
+> [Index](..) > [Route53Domains](.) > Route53DomainsClient
 
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
@@ -98,7 +98,7 @@ Arguments:
 - `Password`: `str` *(required)*
 
 Returns
-[AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#acceptdomaintransferfromanotherawsaccountresponsetypedef).
+[AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountresponsetypedef).
 
 ### can_paginate
 
@@ -127,7 +127,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[CancelDomainTransferToAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#canceldomaintransfertoanotherawsaccountresponsetypedef).
+[CancelDomainTransferToAnotherAwsAccountResponseTypeDef](./type_defs.md#canceldomaintransfertoanotherawsaccountresponsetypedef).
 
 ### check_domain_availability
 
@@ -143,7 +143,7 @@ Arguments:
 - `IdnLangCode`: `str`
 
 Returns
-[CheckDomainAvailabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#checkdomainavailabilityresponsetypedef).
+[CheckDomainAvailabilityResponseTypeDef](./type_defs.md#checkdomainavailabilityresponsetypedef).
 
 ### check_domain_transferability
 
@@ -159,7 +159,7 @@ Arguments:
 - `AuthCode`: `str`
 
 Returns
-[CheckDomainTransferabilityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#checkdomaintransferabilityresponsetypedef).
+[CheckDomainTransferabilityResponseTypeDef](./type_defs.md#checkdomaintransferabilityresponsetypedef).
 
 ### delete_tags_for_domain
 
@@ -203,7 +203,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DisableDomainTransferLockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#disabledomaintransferlockresponsetypedef).
+[DisableDomainTransferLockResponseTypeDef](./type_defs.md#disabledomaintransferlockresponsetypedef).
 
 ### enable_domain_auto_renew
 
@@ -232,7 +232,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[EnableDomainTransferLockResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#enabledomaintransferlockresponsetypedef).
+[EnableDomainTransferLockResponseTypeDef](./type_defs.md#enabledomaintransferlockresponsetypedef).
 
 ### generate_presigned_url
 
@@ -264,7 +264,7 @@ Arguments:
 - `domainName`: `str`
 
 Returns
-[GetContactReachabilityStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getcontactreachabilitystatusresponsetypedef).
+[GetContactReachabilityStatusResponseTypeDef](./type_defs.md#getcontactreachabilitystatusresponsetypedef).
 
 ### get_domain_detail
 
@@ -278,7 +278,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[GetDomainDetailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getdomaindetailresponsetypedef).
+[GetDomainDetailResponseTypeDef](./type_defs.md#getdomaindetailresponsetypedef).
 
 ### get_domain_suggestions
 
@@ -295,7 +295,7 @@ Arguments:
 - `OnlyAvailable`: `bool` *(required)*
 
 Returns
-[GetDomainSuggestionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getdomainsuggestionsresponsetypedef).
+[GetDomainSuggestionsResponseTypeDef](./type_defs.md#getdomainsuggestionsresponsetypedef).
 
 ### get_operation_detail
 
@@ -310,7 +310,7 @@ Arguments:
 - `OperationId`: `str` *(required)*
 
 Returns
-[GetOperationDetailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#getoperationdetailresponsetypedef).
+[GetOperationDetailResponseTypeDef](./type_defs.md#getoperationdetailresponsetypedef).
 
 ### list_domains
 
@@ -325,7 +325,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listdomainsresponsetypedef).
+[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
 ### list_operations
 
@@ -341,7 +341,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListOperationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listoperationsresponsetypedef).
+[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
 
 ### list_tags_for_domain
 
@@ -356,7 +356,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[ListTagsForDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#listtagsfordomainresponsetypedef).
+[ListTagsForDomainResponseTypeDef](./type_defs.md#listtagsfordomainresponsetypedef).
 
 ### register_domain
 
@@ -369,14 +369,11 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `DurationInYears`: `int` *(required)*
-- `AdminContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
   *(required)*
 - `RegistrantContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
-  *(required)*
-- `TechContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) *(required)*
+- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
   *(required)*
 - `IdnLangCode`: `str`
 - `AutoRenew`: `bool`
@@ -385,7 +382,7 @@ Arguments:
 - `PrivacyProtectTechContact`: `bool`
 
 Returns
-[RegisterDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#registerdomainresponsetypedef).
+[RegisterDomainResponseTypeDef](./type_defs.md#registerdomainresponsetypedef).
 
 ### reject_domain_transfer_from_another_aws_account
 
@@ -401,7 +398,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#rejectdomaintransferfromanotherawsaccountresponsetypedef).
+[RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](./type_defs.md#rejectdomaintransferfromanotherawsaccountresponsetypedef).
 
 ### renew_domain
 
@@ -417,7 +414,7 @@ Arguments:
 - `DurationInYears`: `int`
 
 Returns
-[RenewDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#renewdomainresponsetypedef).
+[RenewDomainResponseTypeDef](./type_defs.md#renewdomainresponsetypedef).
 
 ### resend_contact_reachability_email
 
@@ -432,7 +429,7 @@ Arguments:
 - `domainName`: `str`
 
 Returns
-[ResendContactReachabilityEmailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#resendcontactreachabilityemailresponsetypedef).
+[ResendContactReachabilityEmailResponseTypeDef](./type_defs.md#resendcontactreachabilityemailresponsetypedef).
 
 ### retrieve_domain_auth_code
 
@@ -447,7 +444,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[RetrieveDomainAuthCodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#retrievedomainauthcoderesponsetypedef).
+[RetrieveDomainAuthCodeResponseTypeDef](./type_defs.md#retrievedomainauthcoderesponsetypedef).
 
 ### transfer_domain
 
@@ -460,18 +457,14 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `DurationInYears`: `int` *(required)*
-- `AdminContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
   *(required)*
 - `RegistrantContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
-  *(required)*
-- `TechContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) *(required)*
+- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
   *(required)*
 - `IdnLangCode`: `str`
-- `Nameservers`:
-  `List`\[[NameserverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#nameservertypedef)\]
+- `Nameservers`: `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
 - `AuthCode`: `str`
 - `AutoRenew`: `bool`
 - `PrivacyProtectAdminContact`: `bool`
@@ -479,7 +472,7 @@ Arguments:
 - `PrivacyProtectTechContact`: `bool`
 
 Returns
-[TransferDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#transferdomainresponsetypedef).
+[TransferDomainResponseTypeDef](./type_defs.md#transferdomainresponsetypedef).
 
 ### transfer_domain_to_another_aws_account
 
@@ -495,7 +488,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[TransferDomainToAnotherAwsAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#transferdomaintoanotherawsaccountresponsetypedef).
+[TransferDomainToAnotherAwsAccountResponseTypeDef](./type_defs.md#transferdomaintoanotherawsaccountresponsetypedef).
 
 ### update_domain_contact
 
@@ -508,15 +501,13 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `AdminContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 - `RegistrantContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
-- `TechContact`:
-  [ContactDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#contactdetailtypedef)
+  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 
 Returns
-[UpdateDomainContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#updatedomaincontactresponsetypedef).
+[UpdateDomainContactResponseTypeDef](./type_defs.md#updatedomaincontactresponsetypedef).
 
 ### update_domain_contact_privacy
 
@@ -534,7 +525,7 @@ Arguments:
 - `TechPrivacy`: `bool`
 
 Returns
-[UpdateDomainContactPrivacyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#updatedomaincontactprivacyresponsetypedef).
+[UpdateDomainContactPrivacyResponseTypeDef](./type_defs.md#updatedomaincontactprivacyresponsetypedef).
 
 ### update_domain_nameservers
 
@@ -547,13 +538,12 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `Nameservers`:
-  `List`\[[NameserverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#nameservertypedef)\]
+- `Nameservers`: `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
   *(required)*
 - `FIAuthKey`: `str`
 
 Returns
-[UpdateDomainNameserversResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#updatedomainnameserversresponsetypedef).
+[UpdateDomainNameserversResponseTypeDef](./type_defs.md#updatedomainnameserversresponsetypedef).
 
 ### update_tags_for_domain
 
@@ -566,8 +556,7 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `TagsToUpdate`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#tagtypedef)\]
+- `TagsToUpdate`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -586,7 +575,7 @@ Arguments:
 - `MaxItems`: `int`
 
 Returns
-[ViewBillingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53domains/type_defs.html#viewbillingresponsetypedef).
+[ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 KinesisVideoArchivedMedia module
 
-> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Structures
+> [Index](..) > [KinesisVideoArchivedMedia](.) > Typed dictionaries
 
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
@@ -22,7 +22,7 @@ type annotations stubs module
   - [HLSTimestampRangeTypeDef](#hlstimestamprangetypedef)
   - [ListFragmentsOutputTypeDef](#listfragmentsoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TimestampRangeTypeDef](#timestamprangetypedef)
 
 ## ClipFragmentSelectorTypeDef
@@ -34,9 +34,9 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelect
 Required fields:
 
 - `FragmentSelectorType`:
-  [ClipFragmentSelectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#clipfragmentselectortype)
+  [ClipFragmentSelectorType](./literals.md#clipfragmentselectortype)
 - `TimestampRange`:
-  [ClipTimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#cliptimestamprangetypedef)
+  [ClipTimestampRangeTypeDef](./type_defs.md#cliptimestamprangetypedef)
 
 ## ClipTimestampRangeTypeDef
 
@@ -58,9 +58,9 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import DASHFragmentSelect
 Optional fields:
 
 - `FragmentSelectorType`:
-  [DASHFragmentSelectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#dashfragmentselectortype)
+  [DASHFragmentSelectorType](./literals.md#dashfragmentselectortype)
 - `TimestampRange`:
-  [DASHTimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#dashtimestamprangetypedef)
+  [DASHTimestampRangeTypeDef](./type_defs.md#dashtimestamprangetypedef)
 
 ## DASHTimestampRangeTypeDef
 
@@ -82,9 +82,8 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import FragmentSelectorTy
 Required fields:
 
 - `FragmentSelectorType`:
-  [FragmentSelectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#fragmentselectortype)
-- `TimestampRange`:
-  [TimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#timestamprangetypedef)
+  [FragmentSelectorType](./literals.md#fragmentselectortype)
+- `TimestampRange`: [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
 ## FragmentTypeDef
 
@@ -111,7 +110,7 @@ Required fields:
 - `ContentType`: `str`
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetDASHStreamingSessionURLOutputTypeDef
 
@@ -123,7 +122,7 @@ Required fields:
 
 - `DASHStreamingSessionURL`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetHLSStreamingSessionURLOutputTypeDef
 
@@ -135,7 +134,7 @@ Required fields:
 
 - `HLSStreamingSessionURL`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetMediaForFragmentListOutputTypeDef
 
@@ -148,7 +147,7 @@ Required fields:
 - `ContentType`: `str`
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HLSFragmentSelectorTypeDef
 
@@ -159,9 +158,9 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import HLSFragmentSelecto
 Optional fields:
 
 - `FragmentSelectorType`:
-  [HLSFragmentSelectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#hlsfragmentselectortype)
+  [HLSFragmentSelectorType](./literals.md#hlsfragmentselectortype)
 - `TimestampRange`:
-  [HLSTimestampRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#hlstimestamprangetypedef)
+  [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
 
 ## HLSTimestampRangeTypeDef
 
@@ -182,11 +181,10 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsOutpu
 
 Required fields:
 
-- `Fragments`:
-  `List`\[[FragmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#fragmenttypedef)\]
+- `Fragments`: `List`\[[FragmentTypeDef](./type_defs.md#fragmenttypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -200,10 +198,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import ResponseMetadata
+from mypy_boto3_kinesis_video_archived_media.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:

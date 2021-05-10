@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodeStar module
 
-> [Index](../README.md) > CodeStar
+> [Index](..) > CodeStar
 
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)

@@ -1,6 +1,6 @@
 # Literals for boto3 PinpointEmail module
 
-> [Index](../README.md) > [PinpointEmail](./README.md) > Literals
+> [Index](..) > [PinpointEmail](.) > Literals
 
 Auto-generated documentation for
 [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)

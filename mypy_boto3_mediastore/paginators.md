@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaStore module
 
-> [Index](../README.md) > [MediaStore](./README.md) > Paginators
+> [Index](..) > [MediaStore](.) > Paginators
 
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
@@ -30,7 +30,7 @@ Boto3 documentation:
 Arguments for `ListContainersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContainersPaginator.paginate` returns
-`Iterator`\[[ListContainersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#listcontainersoutputtypedef)\].
+`Iterator`\[[ListContainersOutputTypeDef](./type_defs.md#listcontainersoutputtypedef)\].

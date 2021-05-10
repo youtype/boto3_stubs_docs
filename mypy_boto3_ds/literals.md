@@ -1,6 +1,6 @@
 # Literals for boto3 DirectoryService module
 
-> [Index](../README.md) > [DirectoryService](./README.md) > Literals
+> [Index](..) > [DirectoryService](.) > Literals
 
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)

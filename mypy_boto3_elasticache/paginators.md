@@ -1,6 +1,6 @@
 # Paginators for boto3 ElastiCache module
 
-> [Index](../README.md) > [ElastiCache](./README.md) > Paginators
+> [Index](..) > [ElastiCache](.) > Paginators
 
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
@@ -49,10 +49,10 @@ Arguments for `DescribeCacheClustersPaginator.paginate` method:
 - `ShowCacheNodeInfo`: `bool`
 - `ShowCacheClustersNotInReplicationGroups`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheClustersPaginator.paginate` returns
-`Iterator`\[[CacheClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheclustermessagetypedef)\].
+`Iterator`\[[CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef)\].
 
 ## DescribeCacheEngineVersionsPaginator
 
@@ -78,10 +78,10 @@ Arguments for `DescribeCacheEngineVersionsPaginator.paginate` method:
 - `CacheParameterGroupFamily`: `str`
 - `DefaultOnly`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheEngineVersionsPaginator.paginate` returns
-`Iterator`\[[CacheEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheengineversionmessagetypedef)\].
+`Iterator`\[[CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef)\].
 
 ## DescribeCacheParameterGroupsPaginator
 
@@ -104,10 +104,10 @@ Arguments for `DescribeCacheParameterGroupsPaginator.paginate` method:
 
 - `CacheParameterGroupName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheParameterGroupsPaginator.paginate` returns
-`Iterator`\[[CacheParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupsmessagetypedef)\].
+`Iterator`\[[CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef)\].
 
 ## DescribeCacheParametersPaginator
 
@@ -131,10 +131,10 @@ Arguments for `DescribeCacheParametersPaginator.paginate` method:
 - `CacheParameterGroupName`: `str` *(required)*
 - `Source`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheParametersPaginator.paginate` returns
-`Iterator`\[[CacheParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cacheparametergroupdetailstypedef)\].
+`Iterator`\[[CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef)\].
 
 ## DescribeCacheSecurityGroupsPaginator
 
@@ -157,10 +157,10 @@ Arguments for `DescribeCacheSecurityGroupsPaginator.paginate` method:
 
 - `CacheSecurityGroupName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[CacheSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesecuritygroupmessagetypedef)\].
+`Iterator`\[[CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef)\].
 
 ## DescribeCacheSubnetGroupsPaginator
 
@@ -183,10 +183,10 @@ Arguments for `DescribeCacheSubnetGroupsPaginator.paginate` method:
 
 - `CacheSubnetGroupName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[CacheSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#cachesubnetgroupmessagetypedef)\].
+`Iterator`\[[CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef)\].
 
 ## DescribeEngineDefaultParametersPaginator
 
@@ -209,10 +209,10 @@ Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 
 - `CacheParameterGroupFamily`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEngineDefaultParametersPaginator.paginate` returns
-`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeenginedefaultparametersresulttypedef)\].
+`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -234,16 +234,15 @@ Boto3 documentation:
 Arguments for `DescribeEventsPaginator.paginate` method:
 
 - `SourceIdentifier`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#eventsmessagetypedef)\].
+`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
 ## DescribeGlobalReplicationGroupsPaginator
 
@@ -267,10 +266,10 @@ Arguments for `DescribeGlobalReplicationGroupsPaginator.paginate` method:
 - `GlobalReplicationGroupId`: `str`
 - `ShowMemberInfo`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalReplicationGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeGlobalReplicationGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeglobalreplicationgroupsresulttypedef)\].
+`Iterator`\[[DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef)\].
 
 ## DescribeReplicationGroupsPaginator
 
@@ -293,10 +292,10 @@ Arguments for `DescribeReplicationGroupsPaginator.paginate` method:
 
 - `ReplicationGroupId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationGroupsPaginator.paginate` returns
-`Iterator`\[[ReplicationGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#replicationgroupmessagetypedef)\].
+`Iterator`\[[ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef)\].
 
 ## DescribeReservedCacheNodesPaginator
 
@@ -324,10 +323,10 @@ Arguments for `DescribeReservedCacheNodesPaginator.paginate` method:
 - `ProductDescription`: `str`
 - `OfferingType`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedCacheNodesPaginator.paginate` returns
-`Iterator`\[[ReservedCacheNodeMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodemessagetypedef)\].
+`Iterator`\[[ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef)\].
 
 ## DescribeReservedCacheNodesOfferingsPaginator
 
@@ -354,10 +353,10 @@ Arguments for `DescribeReservedCacheNodesOfferingsPaginator.paginate` method:
 - `ProductDescription`: `str`
 - `OfferingType`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedCacheNodesOfferingsPaginator.paginate` returns
-`Iterator`\[[ReservedCacheNodesOfferingMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#reservedcachenodesofferingmessagetypedef)\].
+`Iterator`\[[ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef)\].
 
 ## DescribeServiceUpdatesPaginator
 
@@ -380,12 +379,12 @@ Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
 
 - `ServiceUpdateName`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+  `List`\[[ServiceUpdateStatus](./literals.md#serviceupdatestatus)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeServiceUpdatesPaginator.paginate` returns
-`Iterator`\[[ServiceUpdatesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#serviceupdatesmessagetypedef)\].
+`Iterator`\[[ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef)\].
 
 ## DescribeSnapshotsPaginator
 
@@ -412,10 +411,10 @@ Arguments for `DescribeSnapshotsPaginator.paginate` method:
 - `SnapshotSource`: `str`
 - `ShowNodeGroupConfig`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotsPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotsListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describesnapshotslistmessagetypedef)\].
+`Iterator`\[[DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef)\].
 
 ## DescribeUpdateActionsPaginator
 
@@ -441,17 +440,17 @@ Arguments for `DescribeUpdateActionsPaginator.paginate` method:
 - `CacheClusterIds`: `List`\[`str`\]
 - `Engine`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#serviceupdatestatus)\]
+  `List`\[[ServiceUpdateStatus](./literals.md#serviceupdatestatus)\]
 - `ServiceUpdateTimeRange`:
-  [TimeRangeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#timerangefiltertypedef)
+  [TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef)
 - `UpdateActionStatus`:
-  `List`\[[UpdateActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/literals.html#updateactionstatus)\]
+  `List`\[[UpdateActionStatus](./literals.md#updateactionstatus)\]
 - `ShowNodeLevelUpdateStatus`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUpdateActionsPaginator.paginate` returns
-`Iterator`\[[UpdateActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#updateactionsmessagetypedef)\].
+`Iterator`\[[UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef)\].
 
 ## DescribeUserGroupsPaginator
 
@@ -474,10 +473,10 @@ Arguments for `DescribeUserGroupsPaginator.paginate` method:
 
 - `UserGroupId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUserGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeUserGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusergroupsresulttypedef)\].
+`Iterator`\[[DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -500,10 +499,9 @@ Arguments for `DescribeUsersPaginator.paginate` method:
 
 - `Engine`: `str`
 - `UserId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticache/type_defs.html#describeusersresulttypedef)\].
+`Iterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].

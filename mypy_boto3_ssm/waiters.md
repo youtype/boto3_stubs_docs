@@ -1,6 +1,6 @@
 # Waiters for boto3 SSM module
 
-> [Index](../README.md) > [SSM](./README.md) > Waiters
+> [Index](..) > [SSM](.) > Waiters
 
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
@@ -31,5 +31,4 @@ Arguments for `CommandExecutedWaiter.wait` method:
 - `CommandId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 - `PluginName`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

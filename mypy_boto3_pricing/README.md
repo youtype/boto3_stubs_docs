@@ -1,6 +1,6 @@
 # Type annotations for boto3 Pricing module
 
-> [Index](../README.md) > Pricing
+> [Index](..) > Pricing
 
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)

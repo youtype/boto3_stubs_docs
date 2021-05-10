@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudDirectory module
 
-> [Index](../README.md) > [CloudDirectory](./README.md) > Paginators
+> [Index](..) > [CloudDirectory](.) > Paginators
 
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
@@ -50,10 +50,10 @@ Arguments for `ListAppliedSchemaArnsPaginator.paginate` method:
 - `DirectoryArn`: `str` *(required)*
 - `SchemaArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppliedSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListAppliedSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listappliedschemaarnsresponsetypedef)\].
+`Iterator`\[[ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef)\].
 
 ## ListAttachedIndicesPaginator
 
@@ -76,15 +76,13 @@ Arguments for `ListAttachedIndicesPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `TargetReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedIndicesPaginator.paginate` returns
-`Iterator`\[[ListAttachedIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listattachedindicesresponsetypedef)\].
+`Iterator`\[[ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef)\].
 
 ## ListDevelopmentSchemaArnsPaginator
 
@@ -106,10 +104,10 @@ Boto3 documentation:
 Arguments for `ListDevelopmentSchemaArnsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevelopmentSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListDevelopmentSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listdevelopmentschemaarnsresponsetypedef)\].
+`Iterator`\[[ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef)\].
 
 ## ListDirectoriesPaginator
 
@@ -130,13 +128,12 @@ Boto3 documentation:
 
 Arguments for `ListDirectoriesPaginator.paginate` method:
 
-- `state`:
-  [DirectoryState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#directorystate)
+- `state`: [DirectoryState](./literals.md#directorystate)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDirectoriesPaginator.paginate` returns
-`Iterator`\[[ListDirectoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listdirectoriesresponsetypedef)\].
+`Iterator`\[[ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef)\].
 
 ## ListFacetAttributesPaginator
 
@@ -160,10 +157,10 @@ Arguments for `ListFacetAttributesPaginator.paginate` method:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacetAttributesPaginator.paginate` returns
-`Iterator`\[[ListFacetAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listfacetattributesresponsetypedef)\].
+`Iterator`\[[ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef)\].
 
 ## ListFacetNamesPaginator
 
@@ -186,10 +183,10 @@ Arguments for `ListFacetNamesPaginator.paginate` method:
 
 - `SchemaArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacetNamesPaginator.paginate` returns
-`Iterator`\[[ListFacetNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listfacetnamesresponsetypedef)\].
+`Iterator`\[[ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef)\].
 
 ## ListIncomingTypedLinksPaginator
 
@@ -212,19 +209,17 @@ Arguments for `ListIncomingTypedLinksPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributerangetypedef)\]
+  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
-  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIncomingTypedLinksPaginator.paginate` returns
-`Iterator`\[[ListIncomingTypedLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listincomingtypedlinksresponsetypedef)\].
+`Iterator`\[[ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef)\].
 
 ## ListIndexPaginator
 
@@ -247,17 +242,15 @@ Arguments for `ListIndexPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `IndexReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `RangesOnIndexedValues`:
-  `List`\[[ObjectAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectattributerangetypedef)\]
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIndexPaginator.paginate` returns
-`Iterator`\[[ListIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listindexresponsetypedef)\].
+`Iterator`\[[ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef)\].
 
 ## ListManagedSchemaArnsPaginator
 
@@ -280,10 +273,10 @@ Arguments for `ListManagedSchemaArnsPaginator.paginate` method:
 
 - `SchemaArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListManagedSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listmanagedschemaarnsresponsetypedef)\].
+`Iterator`\[[ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef)\].
 
 ## ListObjectAttributesPaginator
 
@@ -306,17 +299,14 @@ Arguments for `ListObjectAttributesPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
-- `FacetFilter`:
-  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `FacetFilter`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectAttributesPaginator.paginate` returns
-`Iterator`\[[ListObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectattributesresponsetypedef)\].
+`Iterator`\[[ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef)\].
 
 ## ListObjectParentPathsPaginator
 
@@ -339,13 +329,12 @@ Arguments for `ListObjectParentPathsPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectParentPathsPaginator.paginate` returns
-`Iterator`\[[ListObjectParentPathsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectparentpathsresponsetypedef)\].
+`Iterator`\[[ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef)\].
 
 ## ListObjectPoliciesPaginator
 
@@ -368,15 +357,13 @@ Arguments for `ListObjectPoliciesPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectPoliciesPaginator.paginate` returns
-`Iterator`\[[ListObjectPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectpoliciesresponsetypedef)\].
+`Iterator`\[[ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef)\].
 
 ## ListOutgoingTypedLinksPaginator
 
@@ -399,19 +386,17 @@ Arguments for `ListOutgoingTypedLinksPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributerangetypedef)\]
+  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
-  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOutgoingTypedLinksPaginator.paginate` returns
-`Iterator`\[[ListOutgoingTypedLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listoutgoingtypedlinksresponsetypedef)\].
+`Iterator`\[[ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef)\].
 
 ## ListPolicyAttachmentsPaginator
 
@@ -434,15 +419,13 @@ Arguments for `ListPolicyAttachmentsPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `PolicyReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyAttachmentsPaginator.paginate` returns
-`Iterator`\[[ListPolicyAttachmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listpolicyattachmentsresponsetypedef)\].
+`Iterator`\[[ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef)\].
 
 ## ListPublishedSchemaArnsPaginator
 
@@ -465,10 +448,10 @@ Arguments for `ListPublishedSchemaArnsPaginator.paginate` method:
 
 - `SchemaArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPublishedSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListPublishedSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listpublishedschemaarnsresponsetypedef)\].
+`Iterator`\[[ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -491,10 +474,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `ResourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listtagsforresourceresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## ListTypedLinkFacetAttributesPaginator
 
@@ -518,10 +501,10 @@ Arguments for `ListTypedLinkFacetAttributesPaginator.paginate` method:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTypedLinkFacetAttributesPaginator.paginate` returns
-`Iterator`\[[ListTypedLinkFacetAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listtypedlinkfacetattributesresponsetypedef)\].
+`Iterator`\[[ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef)\].
 
 ## ListTypedLinkFacetNamesPaginator
 
@@ -544,10 +527,10 @@ Arguments for `ListTypedLinkFacetNamesPaginator.paginate` method:
 
 - `SchemaArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTypedLinkFacetNamesPaginator.paginate` returns
-`Iterator`\[[ListTypedLinkFacetNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listtypedlinkfacetnamesresponsetypedef)\].
+`Iterator`\[[ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef)\].
 
 ## LookupPolicyPaginator
 
@@ -570,10 +553,9 @@ Arguments for `LookupPolicyPaginator.paginate` method:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `LookupPolicyPaginator.paginate` returns
-`Iterator`\[[LookupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#lookuppolicyresponsetypedef)\].
+`Iterator`\[[LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef)\].

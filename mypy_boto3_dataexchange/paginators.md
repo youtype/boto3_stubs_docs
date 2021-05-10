@@ -1,6 +1,6 @@
 # Paginators for boto3 DataExchange module
 
-> [Index](../README.md) > [DataExchange](./README.md) > Paginators
+> [Index](..) > [DataExchange](.) > Paginators
 
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
@@ -34,10 +34,10 @@ Arguments for `ListDataSetRevisionsPaginator.paginate` method:
 
 - `DataSetId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSetRevisionsPaginator.paginate` returns
-`Iterator`\[[ListDataSetRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listdatasetrevisionsresponsetypedef)\].
+`Iterator`\[[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)\].
 
 ## ListDataSetsPaginator
 
@@ -60,10 +60,10 @@ Arguments for `ListDataSetsPaginator.paginate` method:
 
 - `Origin`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSetsPaginator.paginate` returns
-`Iterator`\[[ListDataSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listdatasetsresponsetypedef)\].
+`Iterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -86,10 +86,10 @@ Arguments for `ListJobsPaginator.paginate` method:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listjobsresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListRevisionAssetsPaginator
 
@@ -113,7 +113,7 @@ Arguments for `ListRevisionAssetsPaginator.paginate` method:
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRevisionAssetsPaginator.paginate` returns
-`Iterator`\[[ListRevisionAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listrevisionassetsresponsetypedef)\].
+`Iterator`\[[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef)\].

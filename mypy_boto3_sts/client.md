@@ -1,6 +1,6 @@
 # STSClient for boto3 STS module
 
-> [Index](../README.md) > [STS](./README.md) > STSClient
+> [Index](..) > [STS](.) > STSClient
 
 Auto-generated documentation for
 [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
@@ -76,19 +76,17 @@ Arguments:
 - `RoleArn`: `str` *(required)*
 - `RoleSessionName`: `str` *(required)*
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TransitiveTagKeys`: `List`\[`str`\]
 - `ExternalId`: `str`
 - `SerialNumber`: `str`
 - `TokenCode`: `str`
 - `SourceIdentity`: `str`
 
-Returns
-[AssumeRoleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumeroleresponsetypedef).
+Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
 
 ### assume_role_with_saml
 
@@ -103,12 +101,12 @@ Arguments:
 - `PrincipalArn`: `str` *(required)*
 - `SAMLAssertion`: `str` *(required)*
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
 Returns
-[AssumeRoleWithSAMLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumerolewithsamlresponsetypedef).
+[AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef).
 
 ### assume_role_with_web_identity
 
@@ -125,12 +123,12 @@ Arguments:
 - `WebIdentityToken`: `str` *(required)*
 - `ProviderId`: `str`
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
 Returns
-[AssumeRoleWithWebIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#assumerolewithwebidentityresponsetypedef).
+[AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef).
 
 ### can_paginate
 
@@ -157,7 +155,7 @@ Arguments:
 - `EncodedMessage`: `str` *(required)*
 
 Returns
-[DecodeAuthorizationMessageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#decodeauthorizationmessageresponsetypedef).
+[DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef).
 
 ### generate_presigned_url
 
@@ -187,7 +185,7 @@ Arguments:
 - `AccessKeyId`: `str` *(required)*
 
 Returns
-[GetAccessKeyInfoResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getaccesskeyinforesponsetypedef).
+[GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef).
 
 ### get_caller_identity
 
@@ -197,7 +195,7 @@ Boto3 documentation:
 [STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
 
 Returns
-[GetCallerIdentityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getcalleridentityresponsetypedef).
+[GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
 
 ### get_federation_token
 
@@ -211,13 +209,12 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Policy`: `str`
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#policydescriptortypetypedef)\]
+  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `DurationSeconds`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[GetFederationTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getfederationtokenresponsetypedef).
+[GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
 
 ### get_session_token
 
@@ -233,4 +230,4 @@ Arguments:
 - `TokenCode`: `str`
 
 Returns
-[GetSessionTokenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sts/type_defs.html#getsessiontokenresponsetypedef).
+[GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef).

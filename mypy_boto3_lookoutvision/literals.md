@@ -1,6 +1,6 @@
 # Literals for boto3 LookoutforVision module
 
-> [Index](../README.md) > [LookoutforVision](./README.md) > Literals
+> [Index](..) > [LookoutforVision](.) > Literals
 
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)

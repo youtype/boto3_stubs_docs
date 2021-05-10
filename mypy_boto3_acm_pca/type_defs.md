@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ACMPCA module
 
-> [Index](../README.md) > [ACMPCA](./README.md) > Structures
+> [Index](..) > [ACMPCA](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
@@ -75,10 +75,8 @@ from mypy_boto3_acm_pca.type_defs import AccessDescriptionTypeDef
 
 Required fields:
 
-- `AccessMethod`:
-  [AccessMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#accessmethodtypedef)
-- `AccessLocation`:
-  [GeneralNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#generalnametypedef)
+- `AccessMethod`: [AccessMethodTypeDef](./type_defs.md#accessmethodtypedef)
+- `AccessLocation`: [GeneralNameTypeDef](./type_defs.md#generalnametypedef)
 
 ## AccessMethodTypeDef
 
@@ -89,8 +87,7 @@ from mypy_boto3_acm_pca.type_defs import AccessMethodTypeDef
 Optional fields:
 
 - `CustomObjectIdentifier`: `str`
-- `AccessMethodType`:
-  [AccessMethodType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#accessmethodtype)
+- `AccessMethodType`: [AccessMethodType](./literals.md#accessmethodtype)
 
 ## ApiPassthroughTypeDef
 
@@ -100,10 +97,8 @@ from mypy_boto3_acm_pca.type_defs import ApiPassthroughTypeDef
 
 Optional fields:
 
-- `Extensions`:
-  [ExtensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#extensionstypedef)
-- `Subject`:
-  [ASN1SubjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#asn1subjecttypedef)
+- `Extensions`: [ExtensionsTypeDef](./type_defs.md#extensionstypedef)
+- `Subject`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
 
 ## CertificateAuthorityConfigurationTypeDef
 
@@ -113,17 +108,13 @@ from mypy_boto3_acm_pca.type_defs import CertificateAuthorityConfigurationTypeDe
 
 Required fields:
 
-- `KeyAlgorithm`:
-  [KeyAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#keyalgorithm)
-- `SigningAlgorithm`:
-  [SigningAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#signingalgorithm)
-- `Subject`:
-  [ASN1SubjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#asn1subjecttypedef)
+- `KeyAlgorithm`: [KeyAlgorithm](./literals.md#keyalgorithm)
+- `SigningAlgorithm`: [SigningAlgorithm](./literals.md#signingalgorithm)
+- `Subject`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
 
 Optional fields:
 
-- `CsrExtensions`:
-  [CsrExtensionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#csrextensionstypedef)
+- `CsrExtensions`: [CsrExtensionsTypeDef](./type_defs.md#csrextensionstypedef)
 
 ## CertificateAuthorityTypeDef
 
@@ -137,22 +128,20 @@ Optional fields:
 - `OwnerAccount`: `str`
 - `CreatedAt`: `datetime`
 - `LastStateChangeAt`: `datetime`
-- `Type`:
-  [CertificateAuthorityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#certificateauthoritytype)
+- `Type`: [CertificateAuthorityType](./literals.md#certificateauthoritytype)
 - `Serial`: `str`
 - `Status`:
-  [CertificateAuthorityStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#certificateauthoritystatus)
+  [CertificateAuthorityStatus](./literals.md#certificateauthoritystatus)
 - `NotBefore`: `datetime`
 - `NotAfter`: `datetime`
-- `FailureReason`:
-  [FailureReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#failurereason)
+- `FailureReason`: [FailureReason](./literals.md#failurereason)
 - `CertificateAuthorityConfiguration`:
-  [CertificateAuthorityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#certificateauthorityconfigurationtypedef)
+  [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
 - `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
+  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
 - `RestorableUntil`: `datetime`
 - `KeyStorageSecurityStandard`:
-  [KeyStorageSecurityStandard](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#keystoragesecuritystandard)
+  [KeyStorageSecurityStandard](./literals.md#keystoragesecuritystandard)
 
 ## CreateCertificateAuthorityAuditReportResponseTypeDef
 
@@ -199,10 +188,9 @@ from mypy_boto3_acm_pca.type_defs import CsrExtensionsTypeDef
 
 Optional fields:
 
-- `KeyUsage`:
-  [KeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#keyusagetypedef)
+- `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectInformationAccess`:
-  `List`\[[AccessDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#accessdescriptiontypedef)\]
+  `List`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
 
 ## DescribeCertificateAuthorityAuditReportResponseTypeDef
 
@@ -212,8 +200,7 @@ from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReport
 
 Optional fields:
 
-- `AuditReportStatus`:
-  [AuditReportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#auditreportstatus)
+- `AuditReportStatus`: [AuditReportStatus](./literals.md#auditreportstatus)
 - `S3BucketName`: `str`
 - `S3Key`: `str`
 - `CreatedAt`: `datetime`
@@ -227,7 +214,7 @@ from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityResponseTyp
 Optional fields:
 
 - `CertificateAuthority`:
-  [CertificateAuthorityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#certificateauthoritytypedef)
+  [CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef)
 
 ## EdiPartyNameTypeDef
 
@@ -252,7 +239,7 @@ from mypy_boto3_acm_pca.type_defs import ExtendedKeyUsageTypeDef
 Optional fields:
 
 - `ExtendedKeyUsageType`:
-  [ExtendedKeyUsageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#extendedkeyusagetype)
+  [ExtendedKeyUsageType](./literals.md#extendedkeyusagetype)
 - `ExtendedKeyUsageObjectIdentifier`: `str`
 
 ## ExtensionsTypeDef
@@ -264,13 +251,12 @@ from mypy_boto3_acm_pca.type_defs import ExtensionsTypeDef
 Optional fields:
 
 - `CertificatePolicies`:
-  `List`\[[PolicyInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#policyinformationtypedef)\]
+  `List`\[[PolicyInformationTypeDef](./type_defs.md#policyinformationtypedef)\]
 - `ExtendedKeyUsage`:
-  `List`\[[ExtendedKeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#extendedkeyusagetypedef)\]
-- `KeyUsage`:
-  [KeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#keyusagetypedef)
+  `List`\[[ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)\]
+- `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectAlternativeNames`:
-  `List`\[[GeneralNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#generalnametypedef)\]
+  `List`\[[GeneralNameTypeDef](./type_defs.md#generalnametypedef)\]
 
 ## GeneralNameTypeDef
 
@@ -280,14 +266,11 @@ from mypy_boto3_acm_pca.type_defs import GeneralNameTypeDef
 
 Optional fields:
 
-- `OtherName`:
-  [OtherNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#othernametypedef)
+- `OtherName`: [OtherNameTypeDef](./type_defs.md#othernametypedef)
 - `Rfc822Name`: `str`
 - `DnsName`: `str`
-- `DirectoryName`:
-  [ASN1SubjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#asn1subjecttypedef)
-- `EdiPartyName`:
-  [EdiPartyNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#edipartynametypedef)
+- `DirectoryName`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
+- `EdiPartyName`: [EdiPartyNameTypeDef](./type_defs.md#edipartynametypedef)
 - `UniformResourceIdentifier`: `str`
 - `IpAddress`: `str`
 - `RegisteredId`: `str`
@@ -371,7 +354,7 @@ from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesResponseTypeD
 Optional fields:
 
 - `CertificateAuthorities`:
-  `List`\[[CertificateAuthorityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#certificateauthoritytypedef)\]
+  `List`\[[CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef)\]
 - `NextToken`: `str`
 
 ## ListPermissionsResponseTypeDef
@@ -382,8 +365,7 @@ from mypy_boto3_acm_pca.type_defs import ListPermissionsResponseTypeDef
 
 Optional fields:
 
-- `Permissions`:
-  `List`\[[PermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#permissiontypedef)\]
+- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsResponseTypeDef
@@ -394,8 +376,7 @@ from mypy_boto3_acm_pca.type_defs import ListTagsResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## OtherNameTypeDef
@@ -433,8 +414,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `Principal`: `str`
 - `SourceAccount`: `str`
-- `Actions`:
-  `List`\[[ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#actiontype)\]
+- `Actions`: `List`\[[ActionType](./literals.md#actiontype)\]
 - `Policy`: `str`
 
 ## PolicyInformationTypeDef
@@ -450,7 +430,7 @@ Required fields:
 Optional fields:
 
 - `PolicyQualifiers`:
-  `List`\[[PolicyQualifierInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#policyqualifierinfotypedef)\]
+  `List`\[[PolicyQualifierInfoTypeDef](./type_defs.md#policyqualifierinfotypedef)\]
 
 ## PolicyQualifierInfoTypeDef
 
@@ -460,9 +440,9 @@ from mypy_boto3_acm_pca.type_defs import PolicyQualifierInfoTypeDef
 
 Required fields:
 
-- `PolicyQualifierId`: `Literal['CPS']`
-- `Qualifier`:
-  [QualifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#qualifiertypedef)
+- `PolicyQualifierId`: `Literal['CPS']` (see
+  [PolicyQualifierId](./literals.md#policyqualifierid))
+- `Qualifier`: [QualifierTypeDef](./type_defs.md#qualifiertypedef)
 
 ## QualifierTypeDef
 
@@ -483,7 +463,7 @@ from mypy_boto3_acm_pca.type_defs import RevocationConfigurationTypeDef
 Optional fields:
 
 - `CrlConfiguration`:
-  [CrlConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#crlconfigurationtypedef)
+  [CrlConfigurationTypeDef](./type_defs.md#crlconfigurationtypedef)
 
 ## TagTypeDef
 
@@ -508,8 +488,7 @@ from mypy_boto3_acm_pca.type_defs import ValidityTypeDef
 Required fields:
 
 - `Value`: `int`
-- `Type`:
-  [ValidityPeriodType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#validityperiodtype)
+- `Type`: [ValidityPeriodType](./literals.md#validityperiodtype)
 
 ## WaiterConfigTypeDef
 

@@ -1,6 +1,6 @@
 # Paginators for boto3 NimbleStudio module
 
-> [Index](../README.md) > [NimbleStudio](./README.md) > Paginators
+> [Index](..) > [NimbleStudio](.) > Paginators
 
 Auto-generated documentation for
 [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
@@ -40,10 +40,10 @@ Arguments for `ListEulaAcceptancesPaginator.paginate` method:
 - `studioId`: `str` *(required)*
 - `eulaIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEulaAcceptancesPaginator.paginate` returns
-`Iterator`\[[ListEulaAcceptancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listeulaacceptancesresponsetypedef)\].
+`Iterator`\[[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef)\].
 
 ## ListEulasPaginator
 
@@ -65,10 +65,10 @@ Arguments for `ListEulasPaginator.paginate` method:
 
 - `eulaIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEulasPaginator.paginate` returns
-`Iterator`\[[ListEulasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listeulasresponsetypedef)\].
+`Iterator`\[[ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef)\].
 
 ## ListLaunchProfileMembersPaginator
 
@@ -92,10 +92,10 @@ Arguments for `ListLaunchProfileMembersPaginator.paginate` method:
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLaunchProfileMembersPaginator.paginate` returns
-`Iterator`\[[ListLaunchProfileMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listlaunchprofilemembersresponsetypedef)\].
+`Iterator`\[[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef)\].
 
 ## ListLaunchProfilesPaginator
 
@@ -120,10 +120,10 @@ Arguments for `ListLaunchProfilesPaginator.paginate` method:
 - `principalId`: `str`
 - `states`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLaunchProfilesPaginator.paginate` returns
-`Iterator`\[[ListLaunchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#listlaunchprofilesresponsetypedef)\].
+`Iterator`\[[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef)\].
 
 ## ListStreamingImagesPaginator
 
@@ -147,10 +147,10 @@ Arguments for `ListStreamingImagesPaginator.paginate` method:
 - `studioId`: `str` *(required)*
 - `owner`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamingImagesPaginator.paginate` returns
-`Iterator`\[[ListStreamingImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststreamingimagesresponsetypedef)\].
+`Iterator`\[[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef)\].
 
 ## ListStreamingSessionsPaginator
 
@@ -175,10 +175,10 @@ Arguments for `ListStreamingSessionsPaginator.paginate` method:
 - `createdBy`: `str`
 - `sessionIds`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamingSessionsPaginator.paginate` returns
-`Iterator`\[[ListStreamingSessionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststreamingsessionsresponsetypedef)\].
+`Iterator`\[[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef)\].
 
 ## ListStudioComponentsPaginator
 
@@ -203,10 +203,10 @@ Arguments for `ListStudioComponentsPaginator.paginate` method:
 - `states`: `List`\[`str`\]
 - `types`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudioComponentsPaginator.paginate` returns
-`Iterator`\[[ListStudioComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststudiocomponentsresponsetypedef)\].
+`Iterator`\[[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef)\].
 
 ## ListStudioMembersPaginator
 
@@ -229,10 +229,10 @@ Arguments for `ListStudioMembersPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudioMembersPaginator.paginate` returns
-`Iterator`\[[ListStudioMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststudiomembersresponsetypedef)\].
+`Iterator`\[[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef)\].
 
 ## ListStudiosPaginator
 
@@ -253,7 +253,7 @@ Boto3 documentation:
 Arguments for `ListStudiosPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudiosPaginator.paginate` returns
-`Iterator`\[[ListStudiosResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_nimble/type_defs.html#liststudiosresponsetypedef)\].
+`Iterator`\[[ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef)\].

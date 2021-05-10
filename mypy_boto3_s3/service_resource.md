@@ -1,6 +1,6 @@
 # S3ServiceResource for boto3 S3 module
 
-> [Index](../README.md) > [S3](./README.md) > S3ServiceResource
+> [Index](..) > [S3](.) > S3ServiceResource
 
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
@@ -389,10 +389,9 @@ Boto3 documentation:
 Arguments:
 
 - `Bucket`: `str` *(required)*
-- `ACL`:
-  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketcannedacl)
+- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
 - `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#createbucketconfigurationtypedef)
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -621,8 +620,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `CopySource`:
-  [CopySourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copysourcetypedef)
+- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
   *(required)*
 - `Key`: `str` *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
@@ -639,10 +637,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketcannedacl)
+- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
 - `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#createbucketconfigurationtypedef)
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -650,8 +647,7 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 
-Returns
-[CreateBucketOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#createbucketoutputtypedef).
+Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
 
 #### Bucket.delete method
 
@@ -673,16 +669,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Delete`:
-  [DeleteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deletetypedef)
-  *(required)*
+- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef) *(required)*
 - `MFA`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[DeleteObjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjectsoutputtypedef).
+[DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
 
 #### Bucket.download_file method
 
@@ -740,8 +735,7 @@ Boto3 documentation:
 Arguments:
 
 - `Key`: `str` *(required)*
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
@@ -757,9 +751,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -767,13 +760,13 @@ Arguments:
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 
 Returns [Object](#object).
@@ -880,10 +873,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#bucketcannedacl)
+- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
 - `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#accesscontrolpolicytypedef)
+  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -967,7 +959,7 @@ Boto3 documentation:
 Arguments:
 
 - `CORSConfiguration`:
-  [CORSConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#corsconfigurationtypedef)
+  [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -1047,7 +1039,7 @@ Boto3 documentation:
 Arguments:
 
 - `LifecycleConfiguration`:
-  [LifecycleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#lifecycleconfigurationtypedef)
+  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
 #### BucketLifecycle.reload method
@@ -1126,7 +1118,7 @@ Boto3 documentation:
 Arguments:
 
 - `LifecycleConfiguration`:
-  [BucketLifecycleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#bucketlifecycleconfigurationtypedef)
+  [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
 #### BucketLifecycleConfiguration.reload method
@@ -1194,7 +1186,7 @@ Boto3 documentation:
 Arguments:
 
 - `BucketLoggingStatus`:
-  [BucketLoggingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#bucketloggingstatustypedef)
+  [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -1265,7 +1257,7 @@ Boto3 documentation:
 Arguments:
 
 - `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#notificationconfigurationtypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -1413,7 +1405,7 @@ Boto3 documentation:
 Arguments:
 
 - `RequestPaymentConfiguration`:
-  [RequestPaymentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#requestpaymentconfigurationtypedef)
+  [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -1492,9 +1484,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Tagging`:
-  [TaggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#taggingtypedef)
-  *(required)*
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
 - `ExpectedBucketOwner`: `str`
 
 #### BucketTagging.reload method
@@ -1547,7 +1537,7 @@ Boto3 documentation:
 Arguments:
 
 - `VersioningConfiguration`:
-  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#versioningconfigurationtypedef)
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
   *(required)*
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
@@ -1578,7 +1568,7 @@ Boto3 documentation:
 Arguments:
 
 - `VersioningConfiguration`:
-  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#versioningconfigurationtypedef)
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
   *(required)*
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
@@ -1600,7 +1590,7 @@ Boto3 documentation:
 Arguments:
 
 - `VersioningConfiguration`:
-  [VersioningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#versioningconfigurationtypedef)
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
   *(required)*
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
@@ -1677,7 +1667,7 @@ Boto3 documentation:
 Arguments:
 
 - `WebsiteConfiguration`:
-  [WebsiteConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#websiteconfigurationtypedef)
+  [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -1772,11 +1762,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[AbortMultipartUploadOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#abortmultipartuploadoutputtypedef).
+[AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef).
 
 #### MultipartUpload.complete method
 
@@ -1788,8 +1779,9 @@ Boto3 documentation:
 Arguments:
 
 - `MultipartUpload`:
-  [CompletedMultipartUploadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#completedmultipartuploadtypedef)
-- `RequestPayer`: `Literal['requester']`
+  [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 
 Returns [Object](#object).
@@ -1861,12 +1853,13 @@ Arguments:
 - `CopySourceSSECustomerAlgorithm`: `str`
 - `CopySourceSSECustomerKey`: `str`
 - `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
 Returns
-[UploadPartCopyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#uploadpartcopyoutputtypedef).
+[UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef).
 
 #### MultipartUploadPart.get_available_subresources method
 
@@ -1892,11 +1885,11 @@ Arguments:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[UploadPartOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#uploadpartoutputtypedef).
+Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
 
 ## Object
 
@@ -2004,8 +1997,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `CopySource`:
-  [CopySourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copysourcetypedef)
+- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
   *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
@@ -2022,8 +2014,7 @@ Boto3 documentation:
 Arguments:
 
 - `CopySource`: `str` *(required)*
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -2039,14 +2030,11 @@ Arguments:
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#metadatadirective)
-- `TaggingDirective`:
-  [TaggingDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#taggingdirective)
+- `MetadataDirective`: [MetadataDirective](./literals.md#metadatadirective)
+- `TaggingDirective`: [TaggingDirective](./literals.md#taggingdirective)
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2057,18 +2045,17 @@ Arguments:
 - `CopySourceSSECustomerAlgorithm`: `str`
 - `CopySourceSSECustomerKey`: `str`
 - `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-Returns
-[CopyObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copyobjectoutputtypedef).
+Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 
 #### Object.delete method
 
@@ -2081,12 +2068,12 @@ Arguments:
 
 - `MFA`: `str`
 - `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjectoutputtypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 #### Object.download_file method
 
@@ -2140,12 +2127,12 @@ Arguments:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectoutputtypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 #### Object.get_available_subresources method
 
@@ -2165,8 +2152,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -2179,9 +2165,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2189,13 +2174,13 @@ Arguments:
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 
 Returns [MultipartUpload](#multipartupload).
@@ -2216,8 +2201,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
@@ -2233,9 +2217,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2243,17 +2226,16 @@ Arguments:
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectoutputtypedef).
+Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 
 #### Object.reload method
 
@@ -2272,13 +2254,13 @@ Boto3 documentation:
 Arguments:
 
 - `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']`
+- `RestoreRequest`: [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[RestoreObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#restoreobjectoutputtypedef).
+[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
 
 #### Object.upload_file method
 
@@ -2382,21 +2364,20 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#accesscontrolpolicytypedef)
+  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectAclOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectacloutputtypedef).
+Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
 
 #### ObjectAcl.reload method
 
@@ -2496,8 +2477,7 @@ Boto3 documentation:
 Arguments:
 
 - `CopySource`: `str` *(required)*
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -2513,14 +2493,11 @@ Arguments:
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#metadatadirective)
-- `TaggingDirective`:
-  [TaggingDirective](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#taggingdirective)
+- `MetadataDirective`: [MetadataDirective](./literals.md#metadatadirective)
+- `TaggingDirective`: [TaggingDirective](./literals.md#taggingdirective)
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2531,18 +2508,17 @@ Arguments:
 - `CopySourceSSECustomerAlgorithm`: `str`
 - `CopySourceSSECustomerKey`: `str`
 - `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-Returns
-[CopyObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#copyobjectoutputtypedef).
+Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 
 #### ObjectSummary.delete method
 
@@ -2555,12 +2531,12 @@ Arguments:
 
 - `MFA`: `str`
 - `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjectoutputtypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 #### ObjectSummary.get method
 
@@ -2586,12 +2562,12 @@ Arguments:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectoutputtypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 #### ObjectSummary.get_available_subresources method
 
@@ -2611,8 +2587,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -2625,9 +2600,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2635,13 +2609,13 @@ Arguments:
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 
 Returns [MultipartUpload](#multipartupload).
@@ -2662,8 +2636,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `ACL`:
-  [ObjectCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectcannedacl)
+- `ACL`: [ObjectCannedACL](./literals.md#objectcannedacl)
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
@@ -2679,9 +2652,8 @@ Arguments:
 - `GrantWriteACP`: `str`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ServerSideEncryption`:
-  [ServerSideEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#serversideencryption)
-- `StorageClass`:
-  [StorageClass](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#storageclass)
+  [ServerSideEncryption](./literals.md#serversideencryption)
+- `StorageClass`: [StorageClass](./literals.md#storageclass)
 - `WebsiteRedirectLocation`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2689,17 +2661,16 @@ Arguments:
 - `SSEKMSKeyId`: `str`
 - `SSEKMSEncryptionContext`: `str`
 - `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `Tagging`: `str`
-- `ObjectLockMode`:
-  [ObjectLockMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlockmode)
+- `ObjectLockMode`: [ObjectLockMode](./literals.md#objectlockmode)
 - `ObjectLockRetainUntilDate`: `datetime`
 - `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/literals.html#objectlocklegalholdstatus)
+  [ObjectLockLegalHoldStatus](./literals.md#objectlocklegalholdstatus)
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#putobjectoutputtypedef).
+Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 
 #### ObjectSummary.restore_object method
 
@@ -2711,13 +2682,13 @@ Boto3 documentation:
 Arguments:
 
 - `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']`
+- `RestoreRequest`: [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[RestoreObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#restoreobjectoutputtypedef).
+[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
 
 #### ObjectSummary.wait_until_exists method
 
@@ -2784,12 +2755,12 @@ Boto3 documentation:
 Arguments:
 
 - `MFA`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#deleteobjectoutputtypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 #### ObjectVersion.get method
 
@@ -2814,12 +2785,12 @@ Arguments:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#getobjectoutputtypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 #### ObjectVersion.get_available_subresources method
 
@@ -2847,9 +2818,9 @@ Arguments:
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayer](./literals.md#requestpayer))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[HeadObjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3/type_defs.html#headobjectoutputtypedef).
+Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).

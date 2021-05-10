@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AlexaForBusiness module
 
-> [Index](../README.md) > [AlexaForBusiness](./README.md) > Structures
+> [Index](..) > [AlexaForBusiness](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
@@ -147,7 +147,7 @@ from mypy_boto3_alexaforbusiness.type_defs import AudioTypeDef
 
 Required fields:
 
-- `Locale`: `Literal['en-US']`
+- `Locale`: `Literal['en-US']` (see [Locale](./literals.md#locale))
 - `Location`: `str`
 
 ## BusinessReportContentRangeTypeDef
@@ -158,8 +158,7 @@ from mypy_boto3_alexaforbusiness.type_defs import BusinessReportContentRangeType
 
 Required fields:
 
-- `Interval`:
-  [BusinessReportInterval](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#businessreportinterval)
+- `Interval`: [BusinessReportInterval](./literals.md#businessreportinterval)
 
 ## BusinessReportRecurrenceTypeDef
 
@@ -194,14 +193,13 @@ Optional fields:
 - `ScheduleName`: `str`
 - `S3BucketName`: `str`
 - `S3KeyPrefix`: `str`
-- `Format`:
-  [BusinessReportFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#businessreportformat)
+- `Format`: [BusinessReportFormat](./literals.md#businessreportformat)
 - `ContentRange`:
-  [BusinessReportContentRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreportcontentrangetypedef)
+  [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
 - `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreportrecurrencetypedef)
+  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
 - `LastBusinessReport`:
-  [BusinessReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreporttypedef)
+  [BusinessReportTypeDef](./type_defs.md#businessreporttypedef)
 
 ## BusinessReportTypeDef
 
@@ -211,12 +209,11 @@ from mypy_boto3_alexaforbusiness.type_defs import BusinessReportTypeDef
 
 Optional fields:
 
-- `Status`:
-  [BusinessReportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#businessreportstatus)
+- `Status`: [BusinessReportStatus](./literals.md#businessreportstatus)
 - `FailureCode`:
-  [BusinessReportFailureCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#businessreportfailurecode)
+  [BusinessReportFailureCode](./literals.md#businessreportfailurecode)
 - `S3Location`:
-  [BusinessReportS3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreports3locationtypedef)
+  [BusinessReportS3LocationTypeDef](./type_defs.md#businessreports3locationtypedef)
 - `DeliveryTime`: `datetime`
 - `DownloadUrl`: `str`
 
@@ -251,14 +248,10 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`:
-  [ConferenceProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#conferenceprovidertype)
-- `IPDialIn`:
-  [IPDialInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#ipdialintypedef)
-- `PSTNDialIn`:
-  [PSTNDialInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#pstndialintypedef)
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#meetingsettingtypedef)
+- `Type`: [ConferenceProviderType](./literals.md#conferenceprovidertype)
+- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
+- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
+- `MeetingSetting`: [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
 
 ## ContactDataTypeDef
 
@@ -274,9 +267,8 @@ Optional fields:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#phonenumbertypedef)\]
-- `SipAddresses`:
-  `List`\[[SipAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sipaddresstypedef)\]
+  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 ## ContactTypeDef
 
@@ -292,9 +284,8 @@ Optional fields:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#phonenumbertypedef)\]
-- `SipAddresses`:
-  `List`\[[SipAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sipaddresstypedef)\]
+  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 ## ContentTypeDef
 
@@ -304,12 +295,9 @@ from mypy_boto3_alexaforbusiness.type_defs import ContentTypeDef
 
 Optional fields:
 
-- `TextList`:
-  `List`\[[TextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#texttypedef)\]
-- `SsmlList`:
-  `List`\[[SsmlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#ssmltypedef)\]
-- `AudioList`:
-  `List`\[[AudioTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#audiotypedef)\]
+- `TextList`: `List`\[[TextTypeDef](./type_defs.md#texttypedef)\]
+- `SsmlList`: `List`\[[SsmlTypeDef](./type_defs.md#ssmltypedef)\]
+- `AudioList`: `List`\[[AudioTypeDef](./type_defs.md#audiotypedef)\]
 
 ## CreateAddressBookResponseTypeDef
 
@@ -361,7 +349,7 @@ Required fields:
 
 - `ReminderAtMinutes`: `List`\[`int`\]
 - `ReminderType`:
-  [EndOfMeetingReminderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#endofmeetingremindertype)
+  [EndOfMeetingReminderType](./literals.md#endofmeetingremindertype)
 - `Enabled`: `bool`
 
 ## CreateGatewayGroupResponseTypeDef
@@ -395,11 +383,11 @@ Optional fields:
 
 - `RoomUtilizationMetricsEnabled`: `bool`
 - `EndOfMeetingReminder`:
-  [CreateEndOfMeetingReminderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createendofmeetingremindertypedef)
+  [CreateEndOfMeetingReminderTypeDef](./type_defs.md#createendofmeetingremindertypedef)
 - `InstantBooking`:
-  [CreateInstantBookingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createinstantbookingtypedef)
+  [CreateInstantBookingTypeDef](./type_defs.md#createinstantbookingtypedef)
 - `RequireCheckIn`:
-  [CreateRequireCheckInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createrequirecheckintypedef)
+  [CreateRequireCheckInTypeDef](./type_defs.md#createrequirecheckintypedef)
 
 ## CreateNetworkProfileResponseTypeDef
 
@@ -489,14 +477,13 @@ Optional fields:
 - `DeviceName`: `str`
 - `SoftwareVersion`: `str`
 - `MacAddress`: `str`
-- `DeviceStatus`:
-  [DeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#devicestatus)
+- `DeviceStatus`: [DeviceStatus](./literals.md#devicestatus)
 - `NetworkProfileArn`: `str`
 - `NetworkProfileName`: `str`
 - `RoomArn`: `str`
 - `RoomName`: `str`
 - `DeviceStatusInfo`:
-  [DeviceStatusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#devicestatusinfotypedef)
+  [DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef)
 - `CreatedTime`: `datetime`
 
 ## DeviceEventTypeDef
@@ -507,8 +494,7 @@ from mypy_boto3_alexaforbusiness.type_defs import DeviceEventTypeDef
 
 Optional fields:
 
-- `Type`:
-  [DeviceEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#deviceeventtype)
+- `Type`: [DeviceEventType](./literals.md#deviceeventtype)
 - `Value`: `str`
 - `Timestamp`: `datetime`
 
@@ -532,10 +518,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeviceStatusDetailTypeDef
 
 Optional fields:
 
-- `Feature`:
-  [Feature](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#feature)
-- `Code`:
-  [DeviceStatusDetailCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#devicestatusdetailcode)
+- `Feature`: [Feature](./literals.md#feature)
+- `Code`: [DeviceStatusDetailCode](./literals.md#devicestatusdetailcode)
 
 ## DeviceStatusInfoTypeDef
 
@@ -546,9 +530,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeviceStatusInfoTypeDef
 Optional fields:
 
 - `DeviceStatusDetails`:
-  `List`\[[DeviceStatusDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#devicestatusdetailtypedef)\]
-- `ConnectionStatus`:
-  [ConnectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#connectionstatus)
+  `List`\[[DeviceStatusDetailTypeDef](./type_defs.md#devicestatusdetailtypedef)\]
+- `ConnectionStatus`: [ConnectionStatus](./literals.md#connectionstatus)
 - `ConnectionStatusUpdatedTime`: `datetime`
 
 ## DeviceTypeDef
@@ -566,12 +549,11 @@ Optional fields:
 - `SoftwareVersion`: `str`
 - `MacAddress`: `str`
 - `RoomArn`: `str`
-- `DeviceStatus`:
-  [DeviceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#devicestatus)
+- `DeviceStatus`: [DeviceStatus](./literals.md#devicestatus)
 - `DeviceStatusInfo`:
-  [DeviceStatusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#devicestatusinfotypedef)
+  [DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef)
 - `NetworkProfileInfo`:
-  [DeviceNetworkProfileInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#devicenetworkprofileinfotypedef)
+  [DeviceNetworkProfileInfoTypeDef](./type_defs.md#devicenetworkprofileinfotypedef)
 
 ## EndOfMeetingReminderTypeDef
 
@@ -583,7 +565,7 @@ Optional fields:
 
 - `ReminderAtMinutes`: `List`\[`int`\]
 - `ReminderType`:
-  [EndOfMeetingReminderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#endofmeetingremindertype)
+  [EndOfMeetingReminderType](./literals.md#endofmeetingremindertype)
 - `Enabled`: `bool`
 
 ## FilterTypeDef
@@ -657,8 +639,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetAddressBookResponseTypeDef
 
 Optional fields:
 
-- `AddressBook`:
-  [AddressBookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#addressbooktypedef)
+- `AddressBook`: [AddressBookTypeDef](./type_defs.md#addressbooktypedef)
 
 ## GetConferencePreferenceResponseTypeDef
 
@@ -669,7 +650,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetConferencePreferenceRespons
 Optional fields:
 
 - `Preference`:
-  [ConferencePreferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#conferencepreferencetypedef)
+  [ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef)
 
 ## GetConferenceProviderResponseTypeDef
 
@@ -680,7 +661,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetConferenceProviderResponseT
 Optional fields:
 
 - `ConferenceProvider`:
-  [ConferenceProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#conferenceprovidertypedef)
+  [ConferenceProviderTypeDef](./type_defs.md#conferenceprovidertypedef)
 
 ## GetContactResponseTypeDef
 
@@ -690,8 +671,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetContactResponseTypeDef
 
 Optional fields:
 
-- `Contact`:
-  [ContactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#contacttypedef)
+- `Contact`: [ContactTypeDef](./type_defs.md#contacttypedef)
 
 ## GetDeviceResponseTypeDef
 
@@ -701,8 +681,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetDeviceResponseTypeDef
 
 Optional fields:
 
-- `Device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#devicetypedef)
+- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 
 ## GetGatewayGroupResponseTypeDef
 
@@ -712,8 +691,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetGatewayGroupResponseTypeDef
 
 Optional fields:
 
-- `GatewayGroup`:
-  [GatewayGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#gatewaygrouptypedef)
+- `GatewayGroup`: [GatewayGroupTypeDef](./type_defs.md#gatewaygrouptypedef)
 
 ## GetGatewayResponseTypeDef
 
@@ -723,8 +701,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetGatewayResponseTypeDef
 
 Optional fields:
 
-- `Gateway`:
-  [GatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#gatewaytypedef)
+- `Gateway`: [GatewayTypeDef](./type_defs.md#gatewaytypedef)
 
 ## GetInvitationConfigurationResponseTypeDef
 
@@ -746,8 +723,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetNetworkProfileResponseTypeD
 
 Optional fields:
 
-- `NetworkProfile`:
-  [NetworkProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#networkprofiletypedef)
+- `NetworkProfile`: [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 
 ## GetProfileResponseTypeDef
 
@@ -757,8 +733,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetProfileResponseTypeDef
 
 Optional fields:
 
-- `Profile`:
-  [ProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#profiletypedef)
+- `Profile`: [ProfileTypeDef](./type_defs.md#profiletypedef)
 
 ## GetRoomResponseTypeDef
 
@@ -768,8 +743,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetRoomResponseTypeDef
 
 Optional fields:
 
-- `Room`:
-  [RoomTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#roomtypedef)
+- `Room`: [RoomTypeDef](./type_defs.md#roomtypedef)
 
 ## GetRoomSkillParameterResponseTypeDef
 
@@ -780,7 +754,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetRoomSkillParameterResponseT
 Optional fields:
 
 - `RoomSkillParameter`:
-  [RoomSkillParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#roomskillparametertypedef)
+  [RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)
 
 ## GetSkillGroupResponseTypeDef
 
@@ -790,8 +764,7 @@ from mypy_boto3_alexaforbusiness.type_defs import GetSkillGroupResponseTypeDef
 
 Optional fields:
 
-- `SkillGroup`:
-  [SkillGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#skillgrouptypedef)
+- `SkillGroup`: [SkillGroupTypeDef](./type_defs.md#skillgrouptypedef)
 
 ## IPDialInTypeDef
 
@@ -802,8 +775,7 @@ from mypy_boto3_alexaforbusiness.type_defs import IPDialInTypeDef
 Required fields:
 
 - `Endpoint`: `str`
-- `CommsProtocol`:
-  [CommsProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#commsprotocol)
+- `CommsProtocol`: [CommsProtocol](./literals.md#commsprotocol)
 
 ## InstantBookingTypeDef
 
@@ -825,7 +797,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListBusinessReportSchedulesRes
 Optional fields:
 
 - `BusinessReportSchedules`:
-  `List`\[[BusinessReportScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreportscheduletypedef)\]
+  `List`\[[BusinessReportScheduleTypeDef](./type_defs.md#businessreportscheduletypedef)\]
 - `NextToken`: `str`
 
 ## ListConferenceProvidersResponseTypeDef
@@ -837,7 +809,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListConferenceProvidersRespons
 Optional fields:
 
 - `ConferenceProviders`:
-  `List`\[[ConferenceProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#conferenceprovidertypedef)\]
+  `List`\[[ConferenceProviderTypeDef](./type_defs.md#conferenceprovidertypedef)\]
 - `NextToken`: `str`
 
 ## ListDeviceEventsResponseTypeDef
@@ -849,7 +821,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListDeviceEventsResponseTypeDe
 Optional fields:
 
 - `DeviceEvents`:
-  `List`\[[DeviceEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#deviceeventtypedef)\]
+  `List`\[[DeviceEventTypeDef](./type_defs.md#deviceeventtypedef)\]
 - `NextToken`: `str`
 
 ## ListGatewayGroupsResponseTypeDef
@@ -861,7 +833,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListGatewayGroupsResponseTypeD
 Optional fields:
 
 - `GatewayGroups`:
-  `List`\[[GatewayGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#gatewaygroupsummarytypedef)\]
+  `List`\[[GatewayGroupSummaryTypeDef](./type_defs.md#gatewaygroupsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListGatewaysResponseTypeDef
@@ -873,7 +845,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListGatewaysResponseTypeDef
 Optional fields:
 
 - `Gateways`:
-  `List`\[[GatewaySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#gatewaysummarytypedef)\]
+  `List`\[[GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListSkillsResponseTypeDef
@@ -885,7 +857,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListSkillsResponseTypeDef
 Optional fields:
 
 - `SkillSummaries`:
-  `List`\[[SkillSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#skillsummarytypedef)\]
+  `List`\[[SkillSummaryTypeDef](./type_defs.md#skillsummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListSkillsStoreCategoriesResponseTypeDef
@@ -896,8 +868,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreCategoriesRespo
 
 Optional fields:
 
-- `CategoryList`:
-  `List`\[[CategoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#categorytypedef)\]
+- `CategoryList`: `List`\[[CategoryTypeDef](./type_defs.md#categorytypedef)\]
 - `NextToken`: `str`
 
 ## ListSkillsStoreSkillsByCategoryResponseTypeDef
@@ -909,7 +880,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListSkillsStoreSkillsByCategor
 Optional fields:
 
 - `SkillsStoreSkills`:
-  `List`\[[SkillsStoreSkillTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#skillsstoreskilltypedef)\]
+  `List`\[[SkillsStoreSkillTypeDef](./type_defs.md#skillsstoreskilltypedef)\]
 - `NextToken`: `str`
 
 ## ListSmartHomeAppliancesResponseTypeDef
@@ -921,7 +892,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListSmartHomeAppliancesRespons
 Optional fields:
 
 - `SmartHomeAppliances`:
-  `List`\[[SmartHomeApplianceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#smarthomeappliancetypedef)\]
+  `List`\[[SmartHomeApplianceTypeDef](./type_defs.md#smarthomeappliancetypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsResponseTypeDef
@@ -932,8 +903,7 @@ from mypy_boto3_alexaforbusiness.type_defs import ListTagsResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## MeetingRoomConfigurationTypeDef
@@ -946,11 +916,9 @@ Optional fields:
 
 - `RoomUtilizationMetricsEnabled`: `bool`
 - `EndOfMeetingReminder`:
-  [EndOfMeetingReminderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#endofmeetingremindertypedef)
-- `InstantBooking`:
-  [InstantBookingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#instantbookingtypedef)
-- `RequireCheckIn`:
-  [RequireCheckInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#requirecheckintypedef)
+  [EndOfMeetingReminderTypeDef](./type_defs.md#endofmeetingremindertypedef)
+- `InstantBooking`: [InstantBookingTypeDef](./type_defs.md#instantbookingtypedef)
+- `RequireCheckIn`: [RequireCheckInTypeDef](./type_defs.md#requirecheckintypedef)
 
 ## MeetingSettingTypeDef
 
@@ -960,8 +928,7 @@ from mypy_boto3_alexaforbusiness.type_defs import MeetingSettingTypeDef
 
 Required fields:
 
-- `RequirePin`:
-  [RequirePin](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#requirepin)
+- `RequirePin`: [RequirePin](./literals.md#requirepin)
 
 ## NetworkProfileDataTypeDef
 
@@ -975,9 +942,9 @@ Optional fields:
 - `NetworkProfileName`: `str`
 - `Description`: `str`
 - `Ssid`: `str`
-- `SecurityType`:
-  [NetworkSecurityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#networksecuritytype)
-- `EapMethod`: `Literal['EAP_TLS']`
+- `SecurityType`: [NetworkSecurityType](./literals.md#networksecuritytype)
+- `EapMethod`: `Literal['EAP_TLS']` (see
+  [NetworkEapMethod](./literals.md#networkeapmethod))
 - `CertificateAuthorityArn`: `str`
 
 ## NetworkProfileTypeDef
@@ -992,9 +959,9 @@ Optional fields:
 - `NetworkProfileName`: `str`
 - `Description`: `str`
 - `Ssid`: `str`
-- `SecurityType`:
-  [NetworkSecurityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#networksecuritytype)
-- `EapMethod`: `Literal['EAP_TLS']`
+- `SecurityType`: [NetworkSecurityType](./literals.md#networksecuritytype)
+- `EapMethod`: `Literal['EAP_TLS']` (see
+  [NetworkEapMethod](./literals.md#networkeapmethod))
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
@@ -1034,8 +1001,7 @@ from mypy_boto3_alexaforbusiness.type_defs import PhoneNumberTypeDef
 Required fields:
 
 - `Number`: `str`
-- `Type`:
-  [PhoneNumberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#phonenumbertype)
+- `Type`: [PhoneNumberType](./literals.md#phonenumbertype)
 
 ## ProfileDataTypeDef
 
@@ -1050,12 +1016,9 @@ Optional fields:
 - `IsDefault`: `bool`
 - `Address`: `str`
 - `Timezone`: `str`
-- `DistanceUnit`:
-  [DistanceUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#distanceunit)
-- `TemperatureUnit`:
-  [TemperatureUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#temperatureunit)
-- `WakeWord`:
-  [WakeWord](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#wakeword)
+- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit)
+- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
+- `WakeWord`: [WakeWord](./literals.md#wakeword)
 - `Locale`: `str`
 
 ## ProfileTypeDef
@@ -1071,12 +1034,9 @@ Optional fields:
 - `IsDefault`: `bool`
 - `Address`: `str`
 - `Timezone`: `str`
-- `DistanceUnit`:
-  [DistanceUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#distanceunit)
-- `TemperatureUnit`:
-  [TemperatureUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#temperatureunit)
-- `WakeWord`:
-  [WakeWord](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#wakeword)
+- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit)
+- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
+- `WakeWord`: [WakeWord](./literals.md#wakeword)
 - `Locale`: `str`
 - `SetupModeDisabled`: `bool`
 - `MaxVolumeLimit`: `int`
@@ -1084,7 +1044,7 @@ Optional fields:
 - `DataRetentionOptIn`: `bool`
 - `AddressBookArn`: `str`
 - `MeetingRoomConfiguration`:
-  [MeetingRoomConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#meetingroomconfigurationtypedef)
+  [MeetingRoomConfigurationTypeDef](./type_defs.md#meetingroomconfigurationtypedef)
 
 ## RegisterAVSDeviceResponseTypeDef
 
@@ -1118,7 +1078,7 @@ Optional fields:
 - `RoomArn`: `str`
 - `RoomName`: `str`
 - `RoomSkillParameters`:
-  `List`\[[RoomSkillParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#roomskillparametertypedef)\]
+  `List`\[[RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)\]
 
 ## RoomDataTypeDef
 
@@ -1169,7 +1129,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchAddressBooksResponseType
 Optional fields:
 
 - `AddressBooks`:
-  `List`\[[AddressBookDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#addressbookdatatypedef)\]
+  `List`\[[AddressBookDataTypeDef](./type_defs.md#addressbookdatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1181,8 +1141,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchContactsResponseTypeDef
 
 Optional fields:
 
-- `Contacts`:
-  `List`\[[ContactDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#contactdatatypedef)\]
+- `Contacts`: `List`\[[ContactDataTypeDef](./type_defs.md#contactdatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1194,8 +1153,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchDevicesResponseTypeDef
 
 Optional fields:
 
-- `Devices`:
-  `List`\[[DeviceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#devicedatatypedef)\]
+- `Devices`: `List`\[[DeviceDataTypeDef](./type_defs.md#devicedatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1208,7 +1166,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchNetworkProfilesResponseT
 Optional fields:
 
 - `NetworkProfiles`:
-  `List`\[[NetworkProfileDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#networkprofiledatatypedef)\]
+  `List`\[[NetworkProfileDataTypeDef](./type_defs.md#networkprofiledatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1220,8 +1178,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchProfilesResponseTypeDef
 
 Optional fields:
 
-- `Profiles`:
-  `List`\[[ProfileDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#profiledatatypedef)\]
+- `Profiles`: `List`\[[ProfileDataTypeDef](./type_defs.md#profiledatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1233,8 +1190,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchRoomsResponseTypeDef
 
 Optional fields:
 
-- `Rooms`:
-  `List`\[[RoomDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#roomdatatypedef)\]
+- `Rooms`: `List`\[[RoomDataTypeDef](./type_defs.md#roomdatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1247,7 +1203,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchSkillGroupsResponseTypeD
 Optional fields:
 
 - `SkillGroups`:
-  `List`\[[SkillGroupDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#skillgroupdatatypedef)\]
+  `List`\[[SkillGroupDataTypeDef](./type_defs.md#skillgroupdatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1259,8 +1215,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchUsersResponseTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#userdatatypedef)\]
+- `Users`: `List`\[[UserDataTypeDef](./type_defs.md#userdatatypedef)\]
 - `NextToken`: `str`
 - `TotalCount`: `int`
 
@@ -1283,7 +1238,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SipAddressTypeDef
 Required fields:
 
 - `Uri`: `str`
-- `Type`: `Literal['WORK']`
+- `Type`: `Literal['WORK']` (see [SipType](./literals.md#siptype))
 
 ## SkillDetailsTypeDef
 
@@ -1302,8 +1257,7 @@ Optional fields:
 - `NewInThisVersionBulletPoints`: `List`\[`str`\]
 - `SkillTypes`: `List`\[`str`\]
 - `Reviews`: `Dict`\[`str`, `str`\]
-- `DeveloperInfo`:
-  [DeveloperInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#developerinfotypedef)
+- `DeveloperInfo`: [DeveloperInfoTypeDef](./type_defs.md#developerinfotypedef)
 
 ## SkillGroupDataTypeDef
 
@@ -1340,10 +1294,8 @@ Optional fields:
 - `SkillId`: `str`
 - `SkillName`: `str`
 - `SupportsLinking`: `bool`
-- `EnablementType`:
-  [EnablementType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#enablementtype)
-- `SkillType`:
-  [SkillType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#skilltype)
+- `EnablementType`: [EnablementType](./literals.md#enablementtype)
+- `SkillType`: [SkillType](./literals.md#skilltype)
 
 ## SkillsStoreSkillTypeDef
 
@@ -1358,8 +1310,7 @@ Optional fields:
 - `ShortDescription`: `str`
 - `IconUrl`: `str`
 - `SampleUtterances`: `List`\[`str`\]
-- `SkillDetails`:
-  [SkillDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#skilldetailstypedef)
+- `SkillDetails`: [SkillDetailsTypeDef](./type_defs.md#skilldetailstypedef)
 - `SupportsLinking`: `bool`
 
 ## SmartHomeApplianceTypeDef
@@ -1383,8 +1334,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SortTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Value`:
-  [SortValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#sortvalue)
+- `Value`: [SortValue](./literals.md#sortvalue)
 
 ## SsmlTypeDef
 
@@ -1394,7 +1344,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SsmlTypeDef
 
 Required fields:
 
-- `Locale`: `Literal['en-US']`
+- `Locale`: `Literal['en-US']` (see [Locale](./literals.md#locale))
 - `Value`: `str`
 
 ## TagTypeDef
@@ -1416,7 +1366,7 @@ from mypy_boto3_alexaforbusiness.type_defs import TextTypeDef
 
 Required fields:
 
-- `Locale`: `Literal['en-US']`
+- `Locale`: `Literal['en-US']` (see [Locale](./literals.md#locale))
 - `Value`: `str`
 
 ## UpdateEndOfMeetingReminderTypeDef
@@ -1429,7 +1379,7 @@ Optional fields:
 
 - `ReminderAtMinutes`: `List`\[`int`\]
 - `ReminderType`:
-  [EndOfMeetingReminderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#endofmeetingremindertype)
+  [EndOfMeetingReminderType](./literals.md#endofmeetingremindertype)
 - `Enabled`: `bool`
 
 ## UpdateInstantBookingTypeDef
@@ -1453,11 +1403,11 @@ Optional fields:
 
 - `RoomUtilizationMetricsEnabled`: `bool`
 - `EndOfMeetingReminder`:
-  [UpdateEndOfMeetingReminderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#updateendofmeetingremindertypedef)
+  [UpdateEndOfMeetingReminderTypeDef](./type_defs.md#updateendofmeetingremindertypedef)
 - `InstantBooking`:
-  [UpdateInstantBookingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#updateinstantbookingtypedef)
+  [UpdateInstantBookingTypeDef](./type_defs.md#updateinstantbookingtypedef)
 - `RequireCheckIn`:
-  [UpdateRequireCheckInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#updaterequirecheckintypedef)
+  [UpdateRequireCheckInTypeDef](./type_defs.md#updaterequirecheckintypedef)
 
 ## UpdateRequireCheckInTypeDef
 
@@ -1482,6 +1432,5 @@ Optional fields:
 - `FirstName`: `str`
 - `LastName`: `str`
 - `Email`: `str`
-- `EnrollmentStatus`:
-  [EnrollmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#enrollmentstatus)
+- `EnrollmentStatus`: [EnrollmentStatus](./literals.md#enrollmentstatus)
 - `EnrollmentId`: `str`

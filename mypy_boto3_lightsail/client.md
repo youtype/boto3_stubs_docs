@@ -1,6 +1,6 @@
 # LightsailClient for boto3 Lightsail module
 
-> [Index](../README.md) > [Lightsail](./README.md) > LightsailClient
+> [Index](..) > [Lightsail](.) > LightsailClient
 
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
@@ -210,7 +210,7 @@ Arguments:
 - `staticIpName`: `str` *(required)*
 
 Returns
-[AllocateStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#allocatestaticipresulttypedef).
+[AllocateStaticIpResultTypeDef](./type_defs.md#allocatestaticipresulttypedef).
 
 ### attach_certificate_to_distribution
 
@@ -226,7 +226,7 @@ Arguments:
 - `certificateName`: `str` *(required)*
 
 Returns
-[AttachCertificateToDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachcertificatetodistributionresulttypedef).
+[AttachCertificateToDistributionResultTypeDef](./type_defs.md#attachcertificatetodistributionresulttypedef).
 
 ### attach_disk
 
@@ -241,8 +241,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 - `diskPath`: `str` *(required)*
 
-Returns
-[AttachDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachdiskresulttypedef).
+Returns [AttachDiskResultTypeDef](./type_defs.md#attachdiskresulttypedef).
 
 ### attach_instances_to_load_balancer
 
@@ -258,7 +257,7 @@ Arguments:
 - `instanceNames`: `List`\[`str`\] *(required)*
 
 Returns
-[AttachInstancesToLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachinstancestoloadbalancerresulttypedef).
+[AttachInstancesToLoadBalancerResultTypeDef](./type_defs.md#attachinstancestoloadbalancerresulttypedef).
 
 ### attach_load_balancer_tls_certificate
 
@@ -274,7 +273,7 @@ Arguments:
 - `certificateName`: `str` *(required)*
 
 Returns
-[AttachLoadBalancerTlsCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachloadbalancertlscertificateresulttypedef).
+[AttachLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#attachloadbalancertlscertificateresulttypedef).
 
 ### attach_static_ip
 
@@ -289,7 +288,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[AttachStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#attachstaticipresulttypedef).
+[AttachStaticIpResultTypeDef](./type_defs.md#attachstaticipresulttypedef).
 
 ### can_paginate
 
@@ -314,13 +313,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `portInfo`:
-  [PortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#portinfotypedef)
-  *(required)*
+- `portInfo`: [PortInfoTypeDef](./type_defs.md#portinfotypedef) *(required)*
 - `instanceName`: `str` *(required)*
 
 Returns
-[CloseInstancePublicPortsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#closeinstancepublicportsresulttypedef).
+[CloseInstancePublicPortsResultTypeDef](./type_defs.md#closeinstancepublicportsresulttypedef).
 
 ### copy_snapshot
 
@@ -332,16 +329,13 @@ Boto3 documentation:
 Arguments:
 
 - `targetSnapshotName`: `str` *(required)*
-- `sourceRegion`:
-  [RegionName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#regionname)
-  *(required)*
+- `sourceRegion`: [RegionName](./literals.md#regionname) *(required)*
 - `sourceSnapshotName`: `str`
 - `sourceResourceName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
-Returns
-[CopySnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#copysnapshotresulttypedef).
+Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
 ### create_certificate
 
@@ -355,11 +349,10 @@ Arguments:
 - `certificateName`: `str` *(required)*
 - `domainName`: `str` *(required)*
 - `subjectAlternativeNames`: `List`\[`str`\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcertificateresulttypedef).
+[CreateCertificateResultTypeDef](./type_defs.md#createcertificateresulttypedef).
 
 ### create_cloud_formation_stack
 
@@ -372,11 +365,11 @@ Boto3 documentation:
 Arguments:
 
 - `instances`:
-  `List`\[[InstanceEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#instanceentrytypedef)\]
+  `List`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
   *(required)*
 
 Returns
-[CreateCloudFormationStackResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcloudformationstackresulttypedef).
+[CreateCloudFormationStackResultTypeDef](./type_defs.md#createcloudformationstackresulttypedef).
 
 ### create_contact_method
 
@@ -387,13 +380,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `protocol`:
-  [ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)
-  *(required)*
+- `protocol`: [ContactProtocol](./literals.md#contactprotocol) *(required)*
 - `contactEndpoint`: `str` *(required)*
 
 Returns
-[CreateContactMethodResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontactmethodresulttypedef).
+[CreateContactMethodResultTypeDef](./type_defs.md#createcontactmethodresulttypedef).
 
 ### create_container_service
 
@@ -406,18 +397,16 @@ Boto3 documentation:
 Arguments:
 
 - `serviceName`: `str` *(required)*
-- `power`:
-  [ContainerServicePowerName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicepowername)
+- `power`: [ContainerServicePowerName](./literals.md#containerservicepowername)
   *(required)*
 - `scale`: `int` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
 - `deployment`:
-  [ContainerServiceDeploymentRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerservicedeploymentrequesttypedef)
+  [ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef)
 
 Returns
-[CreateContainerServiceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontainerserviceresulttypedef).
+[CreateContainerServiceResultTypeDef](./type_defs.md#createcontainerserviceresulttypedef).
 
 ### create_container_service_deployment
 
@@ -431,12 +420,12 @@ Arguments:
 
 - `serviceName`: `str` *(required)*
 - `containers`: `Dict`\[`str`,
-  [ContainerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containertypedef)\]
+  [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
-  [EndpointRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#endpointrequesttypedef)
+  [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
 
 Returns
-[CreateContainerServiceDeploymentResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontainerservicedeploymentresulttypedef).
+[CreateContainerServiceDeploymentResultTypeDef](./type_defs.md#createcontainerservicedeploymentresulttypedef).
 
 ### create_container_service_registry_login
 
@@ -447,7 +436,7 @@ Boto3 documentation:
 [Lightsail.Client.create_container_service_registry_login](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login)
 
 Returns
-[CreateContainerServiceRegistryLoginResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createcontainerserviceregistryloginresulttypedef).
+[CreateContainerServiceRegistryLoginResultTypeDef](./type_defs.md#createcontainerserviceregistryloginresulttypedef).
 
 ### create_disk
 
@@ -461,13 +450,10 @@ Arguments:
 - `diskName`: `str` *(required)*
 - `availabilityZone`: `str` *(required)*
 - `sizeInGb`: `int` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `addOns`:
-  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
-Returns
-[CreateDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#creatediskresulttypedef).
+Returns [CreateDiskResultTypeDef](./type_defs.md#creatediskresulttypedef).
 
 ### create_disk_from_snapshot
 
@@ -483,16 +469,14 @@ Arguments:
 - `availabilityZone`: `str` *(required)*
 - `sizeInGb`: `int` *(required)*
 - `diskSnapshotName`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `addOns`:
-  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `sourceDiskName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
 Returns
-[CreateDiskFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#creatediskfromsnapshotresulttypedef).
+[CreateDiskFromSnapshotResultTypeDef](./type_defs.md#creatediskfromsnapshotresulttypedef).
 
 ### create_disk_snapshot
 
@@ -506,11 +490,10 @@ Arguments:
 - `diskSnapshotName`: `str` *(required)*
 - `diskName`: `str`
 - `instanceName`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDiskSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdisksnapshotresulttypedef).
+[CreateDiskSnapshotResultTypeDef](./type_defs.md#createdisksnapshotresulttypedef).
 
 ### create_distribution
 
@@ -522,24 +505,19 @@ Boto3 documentation:
 Arguments:
 
 - `distributionName`: `str` *(required)*
-- `origin`:
-  [InputOriginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#inputorigintypedef)
-  *(required)*
+- `origin`: [InputOriginTypeDef](./type_defs.md#inputorigintypedef) *(required)*
 - `defaultCacheBehavior`:
-  [CacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviortypedef)
-  *(required)*
+  [CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef) *(required)*
 - `bundleId`: `str` *(required)*
 - `cacheBehaviorSettings`:
-  [CacheSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachesettingstypedef)
+  [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviorperpathtypedef)\]
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdistributionresulttypedef).
+[CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
 
 ### create_domain
 
@@ -551,11 +529,9 @@ Boto3 documentation:
 Arguments:
 
 - `domainName`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdomainresulttypedef).
+Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
 ### create_domain_entry
 
@@ -567,12 +543,11 @@ Boto3 documentation:
 Arguments:
 
 - `domainName`: `str` *(required)*
-- `domainEntry`:
-  [DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)
+- `domainEntry`: [DomainEntryTypeDef](./type_defs.md#domainentrytypedef)
   *(required)*
 
 Returns
-[CreateDomainEntryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createdomainentryresulttypedef).
+[CreateDomainEntryResultTypeDef](./type_defs.md#createdomainentryresulttypedef).
 
 ### create_instance_snapshot
 
@@ -586,11 +561,10 @@ Arguments:
 
 - `instanceSnapshotName`: `str` *(required)*
 - `instanceName`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInstanceSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createinstancesnapshotresulttypedef).
+[CreateInstanceSnapshotResultTypeDef](./type_defs.md#createinstancesnapshotresulttypedef).
 
 ### create_instances
 
@@ -608,15 +582,12 @@ Arguments:
 - `customImageName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `addOns`:
-  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 
 Returns
-[CreateInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createinstancesresulttypedef).
+[CreateInstancesResultTypeDef](./type_defs.md#createinstancesresulttypedef).
 
 ### create_instances_from_snapshot
 
@@ -632,22 +603,19 @@ Arguments:
 - `availabilityZone`: `str` *(required)*
 - `bundleId`: `str` *(required)*
 - `attachedDiskMapping`: `Dict`\[`str`,
-  `List`\[[DiskMapTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#diskmaptypedef)\]\]
+  `List`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
 - `instanceSnapshotName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `addOns`:
-  `List`\[[AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)\]
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 - `sourceInstanceName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
 Returns
-[CreateInstancesFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createinstancesfromsnapshotresulttypedef).
+[CreateInstancesFromSnapshotResultTypeDef](./type_defs.md#createinstancesfromsnapshotresulttypedef).
 
 ### create_key_pair
 
@@ -659,11 +627,10 @@ Boto3 documentation:
 Arguments:
 
 - `keyPairName`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createkeypairresulttypedef).
+[CreateKeyPairResultTypeDef](./type_defs.md#createkeypairresulttypedef).
 
 ### create_load_balancer
 
@@ -680,13 +647,11 @@ Arguments:
 - `certificateName`: `str`
 - `certificateDomainName`: `str`
 - `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 
 Returns
-[CreateLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createloadbalancerresulttypedef).
+[CreateLoadBalancerResultTypeDef](./type_defs.md#createloadbalancerresulttypedef).
 
 ### create_load_balancer_tls_certificate
 
@@ -702,11 +667,10 @@ Arguments:
 - `certificateName`: `str` *(required)*
 - `certificateDomainName`: `str` *(required)*
 - `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateLoadBalancerTlsCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createloadbalancertlscertificateresulttypedef).
+[CreateLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#createloadbalancertlscertificateresulttypedef).
 
 ### create_relational_database
 
@@ -728,11 +692,10 @@ Arguments:
 - `preferredBackupWindow`: `str`
 - `preferredMaintenanceWindow`: `str`
 - `publiclyAccessible`: `bool`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createrelationaldatabaseresulttypedef).
+[CreateRelationalDatabaseResultTypeDef](./type_defs.md#createrelationaldatabaseresulttypedef).
 
 ### create_relational_database_from_snapshot
 
@@ -752,11 +715,10 @@ Arguments:
 - `sourceRelationalDatabaseName`: `str`
 - `restoreTime`: `datetime`
 - `useLatestRestorableTime`: `bool`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRelationalDatabaseFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createrelationaldatabasefromsnapshotresulttypedef).
+[CreateRelationalDatabaseFromSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotresulttypedef).
 
 ### create_relational_database_snapshot
 
@@ -770,11 +732,10 @@ Arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `relationalDatabaseSnapshotName`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRelationalDatabaseSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#createrelationaldatabasesnapshotresulttypedef).
+[CreateRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasesnapshotresulttypedef).
 
 ### delete_alarm
 
@@ -787,8 +748,7 @@ Arguments:
 
 - `alarmName`: `str` *(required)*
 
-Returns
-[DeleteAlarmResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletealarmresulttypedef).
+Returns [DeleteAlarmResultTypeDef](./type_defs.md#deletealarmresulttypedef).
 
 ### delete_auto_snapshot
 
@@ -803,7 +763,7 @@ Arguments:
 - `date`: `str` *(required)*
 
 Returns
-[DeleteAutoSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteautosnapshotresulttypedef).
+[DeleteAutoSnapshotResultTypeDef](./type_defs.md#deleteautosnapshotresulttypedef).
 
 ### delete_certificate
 
@@ -817,7 +777,7 @@ Arguments:
 - `certificateName`: `str` *(required)*
 
 Returns
-[DeleteCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletecertificateresulttypedef).
+[DeleteCertificateResultTypeDef](./type_defs.md#deletecertificateresulttypedef).
 
 ### delete_contact_method
 
@@ -828,12 +788,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `protocol`:
-  [ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)
-  *(required)*
+- `protocol`: [ContactProtocol](./literals.md#contactprotocol) *(required)*
 
 Returns
-[DeleteContactMethodResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletecontactmethodresulttypedef).
+[DeleteContactMethodResultTypeDef](./type_defs.md#deletecontactmethodresulttypedef).
 
 ### delete_container_image
 
@@ -875,8 +833,7 @@ Arguments:
 - `diskName`: `str` *(required)*
 - `forceDeleteAddOns`: `bool`
 
-Returns
-[DeleteDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletediskresulttypedef).
+Returns [DeleteDiskResultTypeDef](./type_defs.md#deletediskresulttypedef).
 
 ### delete_disk_snapshot
 
@@ -890,7 +847,7 @@ Arguments:
 - `diskSnapshotName`: `str` *(required)*
 
 Returns
-[DeleteDiskSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedisksnapshotresulttypedef).
+[DeleteDiskSnapshotResultTypeDef](./type_defs.md#deletedisksnapshotresulttypedef).
 
 ### delete_distribution
 
@@ -904,7 +861,7 @@ Arguments:
 - `distributionName`: `str`
 
 Returns
-[DeleteDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedistributionresulttypedef).
+[DeleteDistributionResultTypeDef](./type_defs.md#deletedistributionresulttypedef).
 
 ### delete_domain
 
@@ -917,8 +874,7 @@ Arguments:
 
 - `domainName`: `str` *(required)*
 
-Returns
-[DeleteDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedomainresulttypedef).
+Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
 
 ### delete_domain_entry
 
@@ -930,12 +886,11 @@ Boto3 documentation:
 Arguments:
 
 - `domainName`: `str` *(required)*
-- `domainEntry`:
-  [DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)
+- `domainEntry`: [DomainEntryTypeDef](./type_defs.md#domainentrytypedef)
   *(required)*
 
 Returns
-[DeleteDomainEntryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletedomainentryresulttypedef).
+[DeleteDomainEntryResultTypeDef](./type_defs.md#deletedomainentryresulttypedef).
 
 ### delete_instance
 
@@ -950,7 +905,7 @@ Arguments:
 - `forceDeleteAddOns`: `bool`
 
 Returns
-[DeleteInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteinstanceresulttypedef).
+[DeleteInstanceResultTypeDef](./type_defs.md#deleteinstanceresulttypedef).
 
 ### delete_instance_snapshot
 
@@ -965,7 +920,7 @@ Arguments:
 - `instanceSnapshotName`: `str` *(required)*
 
 Returns
-[DeleteInstanceSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteinstancesnapshotresulttypedef).
+[DeleteInstanceSnapshotResultTypeDef](./type_defs.md#deleteinstancesnapshotresulttypedef).
 
 ### delete_key_pair
 
@@ -979,7 +934,7 @@ Arguments:
 - `keyPairName`: `str` *(required)*
 
 Returns
-[DeleteKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deletekeypairresulttypedef).
+[DeleteKeyPairResultTypeDef](./type_defs.md#deletekeypairresulttypedef).
 
 ### delete_known_host_keys
 
@@ -993,7 +948,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[DeleteKnownHostKeysResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteknownhostkeysresulttypedef).
+[DeleteKnownHostKeysResultTypeDef](./type_defs.md#deleteknownhostkeysresulttypedef).
 
 ### delete_load_balancer
 
@@ -1007,7 +962,7 @@ Arguments:
 - `loadBalancerName`: `str` *(required)*
 
 Returns
-[DeleteLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteloadbalancerresulttypedef).
+[DeleteLoadBalancerResultTypeDef](./type_defs.md#deleteloadbalancerresulttypedef).
 
 ### delete_load_balancer_tls_certificate
 
@@ -1024,7 +979,7 @@ Arguments:
 - `force`: `bool`
 
 Returns
-[DeleteLoadBalancerTlsCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleteloadbalancertlscertificateresulttypedef).
+[DeleteLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#deleteloadbalancertlscertificateresulttypedef).
 
 ### delete_relational_database
 
@@ -1041,7 +996,7 @@ Arguments:
 - `finalRelationalDatabaseSnapshotName`: `str`
 
 Returns
-[DeleteRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleterelationaldatabaseresulttypedef).
+[DeleteRelationalDatabaseResultTypeDef](./type_defs.md#deleterelationaldatabaseresulttypedef).
 
 ### delete_relational_database_snapshot
 
@@ -1056,7 +1011,7 @@ Arguments:
 - `relationalDatabaseSnapshotName`: `str` *(required)*
 
 Returns
-[DeleteRelationalDatabaseSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#deleterelationaldatabasesnapshotresulttypedef).
+[DeleteRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#deleterelationaldatabasesnapshotresulttypedef).
 
 ### detach_certificate_from_distribution
 
@@ -1071,7 +1026,7 @@ Arguments:
 - `distributionName`: `str` *(required)*
 
 Returns
-[DetachCertificateFromDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachcertificatefromdistributionresulttypedef).
+[DetachCertificateFromDistributionResultTypeDef](./type_defs.md#detachcertificatefromdistributionresulttypedef).
 
 ### detach_disk
 
@@ -1084,8 +1039,7 @@ Arguments:
 
 - `diskName`: `str` *(required)*
 
-Returns
-[DetachDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachdiskresulttypedef).
+Returns [DetachDiskResultTypeDef](./type_defs.md#detachdiskresulttypedef).
 
 ### detach_instances_from_load_balancer
 
@@ -1101,7 +1055,7 @@ Arguments:
 - `instanceNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DetachInstancesFromLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachinstancesfromloadbalancerresulttypedef).
+[DetachInstancesFromLoadBalancerResultTypeDef](./type_defs.md#detachinstancesfromloadbalancerresulttypedef).
 
 ### detach_static_ip
 
@@ -1115,7 +1069,7 @@ Arguments:
 - `staticIpName`: `str` *(required)*
 
 Returns
-[DetachStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#detachstaticipresulttypedef).
+[DetachStaticIpResultTypeDef](./type_defs.md#detachstaticipresulttypedef).
 
 ### disable_add_on
 
@@ -1126,11 +1080,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `addOnType`: `Literal['AutoSnapshot']` *(required)*
+- `addOnType`: `Literal['AutoSnapshot']` (see
+  [AddOnType](./literals.md#addontype)) *(required)*
 - `resourceName`: `str` *(required)*
 
-Returns
-[DisableAddOnResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#disableaddonresulttypedef).
+Returns [DisableAddOnResultTypeDef](./type_defs.md#disableaddonresulttypedef).
 
 ### download_default_key_pair
 
@@ -1141,7 +1095,7 @@ Boto3 documentation:
 [Lightsail.Client.download_default_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair)
 
 Returns
-[DownloadDefaultKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#downloaddefaultkeypairresulttypedef).
+[DownloadDefaultKeyPairResultTypeDef](./type_defs.md#downloaddefaultkeypairresulttypedef).
 
 ### enable_add_on
 
@@ -1153,12 +1107,10 @@ Boto3 documentation:
 Arguments:
 
 - `resourceName`: `str` *(required)*
-- `addOnRequest`:
-  [AddOnRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#addonrequesttypedef)
+- `addOnRequest`: [AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)
   *(required)*
 
-Returns
-[EnableAddOnResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#enableaddonresulttypedef).
+Returns [EnableAddOnResultTypeDef](./type_defs.md#enableaddonresulttypedef).
 
 ### export_snapshot
 
@@ -1172,7 +1124,7 @@ Arguments:
 - `sourceSnapshotName`: `str` *(required)*
 
 Returns
-[ExportSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#exportsnapshotresulttypedef).
+[ExportSnapshotResultTypeDef](./type_defs.md#exportsnapshotresulttypedef).
 
 ### generate_presigned_url
 
@@ -1202,7 +1154,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetActiveNamesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getactivenamesresulttypedef).
+[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef).
 
 ### get_alarms
 
@@ -1217,8 +1169,7 @@ Arguments:
 - `pageToken`: `str`
 - `monitoredResourceName`: `str`
 
-Returns
-[GetAlarmsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getalarmsresulttypedef).
+Returns [GetAlarmsResultTypeDef](./type_defs.md#getalarmsresulttypedef).
 
 ### get_auto_snapshots
 
@@ -1232,7 +1183,7 @@ Arguments:
 - `resourceName`: `str` *(required)*
 
 Returns
-[GetAutoSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getautosnapshotsresulttypedef).
+[GetAutoSnapshotsResultTypeDef](./type_defs.md#getautosnapshotsresulttypedef).
 
 ### get_blueprints
 
@@ -1247,7 +1198,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetBlueprintsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getblueprintsresulttypedef).
+[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef).
 
 ### get_bundles
 
@@ -1261,8 +1212,7 @@ Arguments:
 - `includeInactive`: `bool`
 - `pageToken`: `str`
 
-Returns
-[GetBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getbundlesresulttypedef).
+Returns [GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef).
 
 ### get_certificates
 
@@ -1274,12 +1224,12 @@ Boto3 documentation:
 Arguments:
 
 - `certificateStatuses`:
-  `List`\[[CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#certificatestatus)\]
+  `List`\[[CertificateStatus](./literals.md#certificatestatus)\]
 - `includeCertificateDetails`: `bool`
 - `certificateName`: `str`
 
 Returns
-[GetCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcertificatesresulttypedef).
+[GetCertificatesResultTypeDef](./type_defs.md#getcertificatesresulttypedef).
 
 ### get_cloud_formation_stack_records
 
@@ -1294,7 +1244,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetCloudFormationStackRecordsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcloudformationstackrecordsresulttypedef).
+[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef).
 
 ### get_contact_methods
 
@@ -1305,11 +1255,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `protocols`:
-  `List`\[[ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)\]
+- `protocols`: `List`\[[ContactProtocol](./literals.md#contactprotocol)\]
 
 Returns
-[GetContactMethodsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontactmethodsresulttypedef).
+[GetContactMethodsResultTypeDef](./type_defs.md#getcontactmethodsresulttypedef).
 
 ### get_container_api_metadata
 
@@ -1320,7 +1269,7 @@ Boto3 documentation:
 [Lightsail.Client.get_container_api_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata)
 
 Returns
-[GetContainerAPIMetadataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerapimetadataresulttypedef).
+[GetContainerAPIMetadataResultTypeDef](./type_defs.md#getcontainerapimetadataresulttypedef).
 
 ### get_container_images
 
@@ -1334,7 +1283,7 @@ Arguments:
 - `serviceName`: `str` *(required)*
 
 Returns
-[GetContainerImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerimagesresulttypedef).
+[GetContainerImagesResultTypeDef](./type_defs.md#getcontainerimagesresulttypedef).
 
 ### get_container_log
 
@@ -1353,7 +1302,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetContainerLogResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerlogresulttypedef).
+[GetContainerLogResultTypeDef](./type_defs.md#getcontainerlogresulttypedef).
 
 ### get_container_service_deployments
 
@@ -1368,7 +1317,7 @@ Arguments:
 - `serviceName`: `str` *(required)*
 
 Returns
-[GetContainerServiceDeploymentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerservicedeploymentsresulttypedef).
+[GetContainerServiceDeploymentsResultTypeDef](./type_defs.md#getcontainerservicedeploymentsresulttypedef).
 
 ### get_container_service_metric_data
 
@@ -1382,17 +1331,16 @@ Arguments:
 
 - `serviceName`: `str` *(required)*
 - `metricName`:
-  [ContainerServiceMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicemetricname)
+  [ContainerServiceMetricName](./literals.md#containerservicemetricname)
   *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
 - `period`: `int` *(required)*
-- `statistics`:
-  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
   *(required)*
 
 Returns
-[GetContainerServiceMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerservicemetricdataresulttypedef).
+[GetContainerServiceMetricDataResultTypeDef](./type_defs.md#getcontainerservicemetricdataresulttypedef).
 
 ### get_container_service_powers
 
@@ -1403,7 +1351,7 @@ Boto3 documentation:
 [Lightsail.Client.get_container_service_powers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers)
 
 Returns
-[GetContainerServicePowersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcontainerservicepowersresulttypedef).
+[GetContainerServicePowersResultTypeDef](./type_defs.md#getcontainerservicepowersresulttypedef).
 
 ### get_container_services
 
@@ -1417,7 +1365,7 @@ Arguments:
 - `serviceName`: `str`
 
 Returns
-[ContainerServicesListResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#containerserviceslistresulttypedef).
+[ContainerServicesListResultTypeDef](./type_defs.md#containerserviceslistresulttypedef).
 
 ### get_disk
 
@@ -1430,8 +1378,7 @@ Arguments:
 
 - `diskName`: `str` *(required)*
 
-Returns
-[GetDiskResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdiskresulttypedef).
+Returns [GetDiskResultTypeDef](./type_defs.md#getdiskresulttypedef).
 
 ### get_disk_snapshot
 
@@ -1445,7 +1392,7 @@ Arguments:
 - `diskSnapshotName`: `str` *(required)*
 
 Returns
-[GetDiskSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksnapshotresulttypedef).
+[GetDiskSnapshotResultTypeDef](./type_defs.md#getdisksnapshotresulttypedef).
 
 ### get_disk_snapshots
 
@@ -1459,7 +1406,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetDiskSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksnapshotsresulttypedef).
+[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef).
 
 ### get_disks
 
@@ -1472,8 +1419,7 @@ Arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetDisksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksresulttypedef).
+Returns [GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef).
 
 ### get_distribution_bundles
 
@@ -1484,7 +1430,7 @@ Boto3 documentation:
 [Lightsail.Client.get_distribution_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles)
 
 Returns
-[GetDistributionBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionbundlesresulttypedef).
+[GetDistributionBundlesResultTypeDef](./type_defs.md#getdistributionbundlesresulttypedef).
 
 ### get_distribution_latest_cache_reset
 
@@ -1499,7 +1445,7 @@ Arguments:
 - `distributionName`: `str`
 
 Returns
-[GetDistributionLatestCacheResetResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionlatestcacheresetresulttypedef).
+[GetDistributionLatestCacheResetResultTypeDef](./type_defs.md#getdistributionlatestcacheresetresulttypedef).
 
 ### get_distribution_metric_data
 
@@ -1512,21 +1458,17 @@ Boto3 documentation:
 Arguments:
 
 - `distributionName`: `str` *(required)*
-- `metricName`:
-  [DistributionMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#distributionmetricname)
+- `metricName`: [DistributionMetricName](./literals.md#distributionmetricname)
   *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
 - `period`: `int` *(required)*
-- `unit`:
-  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
-  *(required)*
-- `statistics`:
-  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
+- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
   *(required)*
 
 Returns
-[GetDistributionMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionmetricdataresulttypedef).
+[GetDistributionMetricDataResultTypeDef](./type_defs.md#getdistributionmetricdataresulttypedef).
 
 ### get_distributions
 
@@ -1541,7 +1483,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetDistributionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdistributionsresulttypedef).
+[GetDistributionsResultTypeDef](./type_defs.md#getdistributionsresulttypedef).
 
 ### get_domain
 
@@ -1554,8 +1496,7 @@ Arguments:
 
 - `domainName`: `str` *(required)*
 
-Returns
-[GetDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdomainresulttypedef).
+Returns [GetDomainResultTypeDef](./type_defs.md#getdomainresulttypedef).
 
 ### get_domains
 
@@ -1568,8 +1509,7 @@ Arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdomainsresulttypedef).
+Returns [GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef).
 
 ### get_export_snapshot_records
 
@@ -1584,7 +1524,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetExportSnapshotRecordsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getexportsnapshotrecordsresulttypedef).
+[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef).
 
 ### get_instance
 
@@ -1597,8 +1537,7 @@ Arguments:
 
 - `instanceName`: `str` *(required)*
 
-Returns
-[GetInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstanceresulttypedef).
+Returns [GetInstanceResultTypeDef](./type_defs.md#getinstanceresulttypedef).
 
 ### get_instance_access_details
 
@@ -1611,11 +1550,10 @@ Boto3 documentation:
 Arguments:
 
 - `instanceName`: `str` *(required)*
-- `protocol`:
-  [InstanceAccessProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instanceaccessprotocol)
+- `protocol`: [InstanceAccessProtocol](./literals.md#instanceaccessprotocol)
 
 Returns
-[GetInstanceAccessDetailsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstanceaccessdetailsresulttypedef).
+[GetInstanceAccessDetailsResultTypeDef](./type_defs.md#getinstanceaccessdetailsresulttypedef).
 
 ### get_instance_metric_data
 
@@ -1628,21 +1566,17 @@ Boto3 documentation:
 Arguments:
 
 - `instanceName`: `str` *(required)*
-- `metricName`:
-  [InstanceMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#instancemetricname)
+- `metricName`: [InstanceMetricName](./literals.md#instancemetricname)
   *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `unit`:
-  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
-  *(required)*
-- `statistics`:
-  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
+- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
   *(required)*
 
 Returns
-[GetInstanceMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancemetricdataresulttypedef).
+[GetInstanceMetricDataResultTypeDef](./type_defs.md#getinstancemetricdataresulttypedef).
 
 ### get_instance_port_states
 
@@ -1657,7 +1591,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[GetInstancePortStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstanceportstatesresulttypedef).
+[GetInstancePortStatesResultTypeDef](./type_defs.md#getinstanceportstatesresulttypedef).
 
 ### get_instance_snapshot
 
@@ -1671,7 +1605,7 @@ Arguments:
 - `instanceSnapshotName`: `str` *(required)*
 
 Returns
-[GetInstanceSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesnapshotresulttypedef).
+[GetInstanceSnapshotResultTypeDef](./type_defs.md#getinstancesnapshotresulttypedef).
 
 ### get_instance_snapshots
 
@@ -1685,7 +1619,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetInstanceSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesnapshotsresulttypedef).
+[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef).
 
 ### get_instance_state
 
@@ -1699,7 +1633,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[GetInstanceStateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancestateresulttypedef).
+[GetInstanceStateResultTypeDef](./type_defs.md#getinstancestateresulttypedef).
 
 ### get_instances
 
@@ -1712,8 +1646,7 @@ Arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesresulttypedef).
+Returns [GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef).
 
 ### get_key_pair
 
@@ -1726,8 +1659,7 @@ Arguments:
 
 - `keyPairName`: `str` *(required)*
 
-Returns
-[GetKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getkeypairresulttypedef).
+Returns [GetKeyPairResultTypeDef](./type_defs.md#getkeypairresulttypedef).
 
 ### get_key_pairs
 
@@ -1740,8 +1672,7 @@ Arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetKeyPairsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getkeypairsresulttypedef).
+Returns [GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef).
 
 ### get_load_balancer
 
@@ -1755,7 +1686,7 @@ Arguments:
 - `loadBalancerName`: `str` *(required)*
 
 Returns
-[GetLoadBalancerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancerresulttypedef).
+[GetLoadBalancerResultTypeDef](./type_defs.md#getloadbalancerresulttypedef).
 
 ### get_load_balancer_metric_data
 
@@ -1768,21 +1699,17 @@ Boto3 documentation:
 Arguments:
 
 - `loadBalancerName`: `str` *(required)*
-- `metricName`:
-  [LoadBalancerMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancermetricname)
+- `metricName`: [LoadBalancerMetricName](./literals.md#loadbalancermetricname)
   *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `unit`:
-  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
-  *(required)*
-- `statistics`:
-  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
+- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
   *(required)*
 
 Returns
-[GetLoadBalancerMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancermetricdataresulttypedef).
+[GetLoadBalancerMetricDataResultTypeDef](./type_defs.md#getloadbalancermetricdataresulttypedef).
 
 ### get_load_balancer_tls_certificates
 
@@ -1797,7 +1724,7 @@ Arguments:
 - `loadBalancerName`: `str` *(required)*
 
 Returns
-[GetLoadBalancerTlsCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancertlscertificatesresulttypedef).
+[GetLoadBalancerTlsCertificatesResultTypeDef](./type_defs.md#getloadbalancertlscertificatesresulttypedef).
 
 ### get_load_balancers
 
@@ -1811,7 +1738,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetLoadBalancersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancersresulttypedef).
+[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef).
 
 ### get_operation
 
@@ -1824,8 +1751,7 @@ Arguments:
 
 - `operationId`: `str` *(required)*
 
-Returns
-[GetOperationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationresulttypedef).
+Returns [GetOperationResultTypeDef](./type_defs.md#getoperationresulttypedef).
 
 ### get_operations
 
@@ -1839,7 +1765,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetOperationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationsresulttypedef).
+[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef).
 
 ### get_operations_for_resource
 
@@ -1855,7 +1781,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetOperationsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationsforresourceresulttypedef).
+[GetOperationsForResourceResultTypeDef](./type_defs.md#getoperationsforresourceresulttypedef).
 
 ### get_regions
 
@@ -1869,8 +1795,7 @@ Arguments:
 - `includeAvailabilityZones`: `bool`
 - `includeRelationalDatabaseAvailabilityZones`: `bool`
 
-Returns
-[GetRegionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getregionsresulttypedef).
+Returns [GetRegionsResultTypeDef](./type_defs.md#getregionsresulttypedef).
 
 ### get_relational_database
 
@@ -1885,7 +1810,7 @@ Arguments:
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[GetRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseresulttypedef).
+[GetRelationalDatabaseResultTypeDef](./type_defs.md#getrelationaldatabaseresulttypedef).
 
 ### get_relational_database_blueprints
 
@@ -1900,7 +1825,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseBlueprintsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseblueprintsresulttypedef).
+[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef).
 
 ### get_relational_database_bundles
 
@@ -1915,7 +1840,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasebundlesresulttypedef).
+[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef).
 
 ### get_relational_database_events
 
@@ -1932,7 +1857,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseEventsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseeventsresulttypedef).
+[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef).
 
 ### get_relational_database_log_events
 
@@ -1952,7 +1877,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseLogEventsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaselogeventsresulttypedef).
+[GetRelationalDatabaseLogEventsResultTypeDef](./type_defs.md#getrelationaldatabaselogeventsresulttypedef).
 
 ### get_relational_database_log_streams
 
@@ -1967,7 +1892,7 @@ Arguments:
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[GetRelationalDatabaseLogStreamsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaselogstreamsresulttypedef).
+[GetRelationalDatabaseLogStreamsResultTypeDef](./type_defs.md#getrelationaldatabaselogstreamsresulttypedef).
 
 ### get_relational_database_master_user_password
 
@@ -1982,10 +1907,10 @@ Arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `passwordVersion`:
-  [RelationalDatabasePasswordVersion](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#relationaldatabasepasswordversion)
+  [RelationalDatabasePasswordVersion](./literals.md#relationaldatabasepasswordversion)
 
 Returns
-[GetRelationalDatabaseMasterUserPasswordResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasemasteruserpasswordresulttypedef).
+[GetRelationalDatabaseMasterUserPasswordResultTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordresulttypedef).
 
 ### get_relational_database_metric_data
 
@@ -1999,20 +1924,17 @@ Arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `metricName`:
-  [RelationalDatabaseMetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#relationaldatabasemetricname)
+  [RelationalDatabaseMetricName](./literals.md#relationaldatabasemetricname)
   *(required)*
 - `period`: `int` *(required)*
 - `startTime`: `datetime` *(required)*
 - `endTime`: `datetime` *(required)*
-- `unit`:
-  [MetricUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricunit)
-  *(required)*
-- `statistics`:
-  `List`\[[MetricStatistic](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricstatistic)\]
+- `unit`: [MetricUnit](./literals.md#metricunit) *(required)*
+- `statistics`: `List`\[[MetricStatistic](./literals.md#metricstatistic)\]
   *(required)*
 
 Returns
-[GetRelationalDatabaseMetricDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasemetricdataresulttypedef).
+[GetRelationalDatabaseMetricDataResultTypeDef](./type_defs.md#getrelationaldatabasemetricdataresulttypedef).
 
 ### get_relational_database_parameters
 
@@ -2028,7 +1950,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseparametersresulttypedef).
+[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef).
 
 ### get_relational_database_snapshot
 
@@ -2043,7 +1965,7 @@ Arguments:
 - `relationalDatabaseSnapshotName`: `str` *(required)*
 
 Returns
-[GetRelationalDatabaseSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesnapshotresulttypedef).
+[GetRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotresulttypedef).
 
 ### get_relational_database_snapshots
 
@@ -2058,7 +1980,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesnapshotsresulttypedef).
+[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef).
 
 ### get_relational_databases
 
@@ -2073,7 +1995,7 @@ Arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabasesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesresulttypedef).
+[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef).
 
 ### get_static_ip
 
@@ -2086,8 +2008,7 @@ Arguments:
 
 - `staticIpName`: `str` *(required)*
 
-Returns
-[GetStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getstaticipresulttypedef).
+Returns [GetStaticIpResultTypeDef](./type_defs.md#getstaticipresulttypedef).
 
 ### get_static_ips
 
@@ -2100,8 +2021,7 @@ Arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetStaticIpsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getstaticipsresulttypedef).
+Returns [GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef).
 
 ### import_key_pair
 
@@ -2116,7 +2036,7 @@ Arguments:
 - `publicKeyBase64`: `str` *(required)*
 
 Returns
-[ImportKeyPairResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#importkeypairresulttypedef).
+[ImportKeyPairResultTypeDef](./type_defs.md#importkeypairresulttypedef).
 
 ### is_vpc_peered
 
@@ -2125,8 +2045,7 @@ Type annotations for `boto3.client("lightsail").is_vpc_peered` method.
 Boto3 documentation:
 [Lightsail.Client.is_vpc_peered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered)
 
-Returns
-[IsVpcPeeredResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#isvpcpeeredresulttypedef).
+Returns [IsVpcPeeredResultTypeDef](./type_defs.md#isvpcpeeredresulttypedef).
 
 ### open_instance_public_ports
 
@@ -2138,13 +2057,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `portInfo`:
-  [PortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#portinfotypedef)
-  *(required)*
+- `portInfo`: [PortInfoTypeDef](./type_defs.md#portinfotypedef) *(required)*
 - `instanceName`: `str` *(required)*
 
 Returns
-[OpenInstancePublicPortsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#openinstancepublicportsresulttypedef).
+[OpenInstancePublicPortsResultTypeDef](./type_defs.md#openinstancepublicportsresulttypedef).
 
 ### peer_vpc
 
@@ -2153,8 +2070,7 @@ Type annotations for `boto3.client("lightsail").peer_vpc` method.
 Boto3 documentation:
 [Lightsail.Client.peer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc)
 
-Returns
-[PeerVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#peervpcresulttypedef).
+Returns [PeerVpcResultTypeDef](./type_defs.md#peervpcresulttypedef).
 
 ### put_alarm
 
@@ -2166,26 +2082,19 @@ Boto3 documentation:
 Arguments:
 
 - `alarmName`: `str` *(required)*
-- `metricName`:
-  [MetricName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#metricname)
-  *(required)*
+- `metricName`: [MetricName](./literals.md#metricname) *(required)*
 - `monitoredResourceName`: `str` *(required)*
-- `comparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#comparisonoperator)
+- `comparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
   *(required)*
 - `threshold`: `float` *(required)*
 - `evaluationPeriods`: `int` *(required)*
 - `datapointsToAlarm`: `int`
-- `treatMissingData`:
-  [TreatMissingData](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#treatmissingdata)
-- `contactProtocols`:
-  `List`\[[ContactProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#contactprotocol)\]
-- `notificationTriggers`:
-  `List`\[[AlarmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#alarmstate)\]
+- `treatMissingData`: [TreatMissingData](./literals.md#treatmissingdata)
+- `contactProtocols`: `List`\[[ContactProtocol](./literals.md#contactprotocol)\]
+- `notificationTriggers`: `List`\[[AlarmState](./literals.md#alarmstate)\]
 - `notificationEnabled`: `bool`
 
-Returns
-[PutAlarmResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#putalarmresulttypedef).
+Returns [PutAlarmResultTypeDef](./type_defs.md#putalarmresulttypedef).
 
 ### put_instance_public_ports
 
@@ -2197,13 +2106,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `portInfos`:
-  `List`\[[PortInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#portinfotypedef)\]
+- `portInfos`: `List`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
   *(required)*
 - `instanceName`: `str` *(required)*
 
 Returns
-[PutInstancePublicPortsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#putinstancepublicportsresulttypedef).
+[PutInstancePublicPortsResultTypeDef](./type_defs.md#putinstancepublicportsresulttypedef).
 
 ### reboot_instance
 
@@ -2217,7 +2125,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[RebootInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#rebootinstanceresulttypedef).
+[RebootInstanceResultTypeDef](./type_defs.md#rebootinstanceresulttypedef).
 
 ### reboot_relational_database
 
@@ -2232,7 +2140,7 @@ Arguments:
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[RebootRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#rebootrelationaldatabaseresulttypedef).
+[RebootRelationalDatabaseResultTypeDef](./type_defs.md#rebootrelationaldatabaseresulttypedef).
 
 ### register_container_image
 
@@ -2249,7 +2157,7 @@ Arguments:
 - `digest`: `str` *(required)*
 
 Returns
-[RegisterContainerImageResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#registercontainerimageresulttypedef).
+[RegisterContainerImageResultTypeDef](./type_defs.md#registercontainerimageresulttypedef).
 
 ### release_static_ip
 
@@ -2263,7 +2171,7 @@ Arguments:
 - `staticIpName`: `str` *(required)*
 
 Returns
-[ReleaseStaticIpResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#releasestaticipresulttypedef).
+[ReleaseStaticIpResultTypeDef](./type_defs.md#releasestaticipresulttypedef).
 
 ### reset_distribution_cache
 
@@ -2278,7 +2186,7 @@ Arguments:
 - `distributionName`: `str`
 
 Returns
-[ResetDistributionCacheResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#resetdistributioncacheresulttypedef).
+[ResetDistributionCacheResultTypeDef](./type_defs.md#resetdistributioncacheresulttypedef).
 
 ### send_contact_method_verification
 
@@ -2290,10 +2198,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `protocol`: `Literal['Email']` *(required)*
+- `protocol`: `Literal['Email']` (see
+  [ContactMethodVerificationProtocol](./literals.md#contactmethodverificationprotocol))
+  *(required)*
 
 Returns
-[SendContactMethodVerificationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#sendcontactmethodverificationresulttypedef).
+[SendContactMethodVerificationResultTypeDef](./type_defs.md#sendcontactmethodverificationresulttypedef).
 
 ### set_ip_address_type
 
@@ -2304,16 +2214,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#resourcetype)
-  *(required)*
+- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `resourceName`: `str` *(required)*
-- `ipAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#ipaddresstype)
-  *(required)*
+- `ipAddressType`: [IpAddressType](./literals.md#ipaddresstype) *(required)*
 
 Returns
-[SetIpAddressTypeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#setipaddresstyperesulttypedef).
+[SetIpAddressTypeResultTypeDef](./type_defs.md#setipaddresstyperesulttypedef).
 
 ### start_instance
 
@@ -2327,7 +2233,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[StartInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#startinstanceresulttypedef).
+[StartInstanceResultTypeDef](./type_defs.md#startinstanceresulttypedef).
 
 ### start_relational_database
 
@@ -2342,7 +2248,7 @@ Arguments:
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[StartRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#startrelationaldatabaseresulttypedef).
+[StartRelationalDatabaseResultTypeDef](./type_defs.md#startrelationaldatabaseresulttypedef).
 
 ### stop_instance
 
@@ -2356,8 +2262,7 @@ Arguments:
 - `instanceName`: `str` *(required)*
 - `force`: `bool`
 
-Returns
-[StopInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#stopinstanceresulttypedef).
+Returns [StopInstanceResultTypeDef](./type_defs.md#stopinstanceresulttypedef).
 
 ### stop_relational_database
 
@@ -2373,7 +2278,7 @@ Arguments:
 - `relationalDatabaseSnapshotName`: `str`
 
 Returns
-[StopRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#stoprelationaldatabaseresulttypedef).
+[StopRelationalDatabaseResultTypeDef](./type_defs.md#stoprelationaldatabaseresulttypedef).
 
 ### tag_resource
 
@@ -2385,13 +2290,10 @@ Boto3 documentation:
 Arguments:
 
 - `resourceName`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `resourceArn`: `str`
 
-Returns
-[TagResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#tagresourceresulttypedef).
+Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 
 ### test_alarm
 
@@ -2403,12 +2305,9 @@ Boto3 documentation:
 Arguments:
 
 - `alarmName`: `str` *(required)*
-- `state`:
-  [AlarmState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#alarmstate)
-  *(required)*
+- `state`: [AlarmState](./literals.md#alarmstate) *(required)*
 
-Returns
-[TestAlarmResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#testalarmresulttypedef).
+Returns [TestAlarmResultTypeDef](./type_defs.md#testalarmresulttypedef).
 
 ### unpeer_vpc
 
@@ -2417,8 +2316,7 @@ Type annotations for `boto3.client("lightsail").unpeer_vpc` method.
 Boto3 documentation:
 [Lightsail.Client.unpeer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc)
 
-Returns
-[UnpeerVpcResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#unpeervpcresulttypedef).
+Returns [UnpeerVpcResultTypeDef](./type_defs.md#unpeervpcresulttypedef).
 
 ### untag_resource
 
@@ -2434,7 +2332,7 @@ Arguments:
 - `resourceArn`: `str`
 
 Returns
-[UntagResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#untagresourceresulttypedef).
+[UntagResourceResultTypeDef](./type_defs.md#untagresourceresulttypedef).
 
 ### update_container_service
 
@@ -2447,14 +2345,13 @@ Boto3 documentation:
 Arguments:
 
 - `serviceName`: `str` *(required)*
-- `power`:
-  [ContainerServicePowerName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#containerservicepowername)
+- `power`: [ContainerServicePowerName](./literals.md#containerservicepowername)
 - `scale`: `int`
 - `isDisabled`: `bool`
 - `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
 
 Returns
-[UpdateContainerServiceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatecontainerserviceresulttypedef).
+[UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef).
 
 ### update_distribution
 
@@ -2466,18 +2363,17 @@ Boto3 documentation:
 Arguments:
 
 - `distributionName`: `str` *(required)*
-- `origin`:
-  [InputOriginTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#inputorigintypedef)
+- `origin`: [InputOriginTypeDef](./type_defs.md#inputorigintypedef)
 - `defaultCacheBehavior`:
-  [CacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviortypedef)
+  [CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)
 - `cacheBehaviorSettings`:
-  [CacheSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachesettingstypedef)
+  [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#cachebehaviorperpathtypedef)\]
+  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `isEnabled`: `bool`
 
 Returns
-[UpdateDistributionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatedistributionresulttypedef).
+[UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef).
 
 ### update_distribution_bundle
 
@@ -2493,7 +2389,7 @@ Arguments:
 - `bundleId`: `str`
 
 Returns
-[UpdateDistributionBundleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatedistributionbundleresulttypedef).
+[UpdateDistributionBundleResultTypeDef](./type_defs.md#updatedistributionbundleresulttypedef).
 
 ### update_domain_entry
 
@@ -2505,12 +2401,11 @@ Boto3 documentation:
 Arguments:
 
 - `domainName`: `str` *(required)*
-- `domainEntry`:
-  [DomainEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#domainentrytypedef)
+- `domainEntry`: [DomainEntryTypeDef](./type_defs.md#domainentrytypedef)
   *(required)*
 
 Returns
-[UpdateDomainEntryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updatedomainentryresulttypedef).
+[UpdateDomainEntryResultTypeDef](./type_defs.md#updatedomainentryresulttypedef).
 
 ### update_load_balancer_attribute
 
@@ -2524,12 +2419,12 @@ Arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `attributeName`:
-  [LoadBalancerAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/literals.html#loadbalancerattributename)
+  [LoadBalancerAttributeName](./literals.md#loadbalancerattributename)
   *(required)*
 - `attributeValue`: `str` *(required)*
 
 Returns
-[UpdateLoadBalancerAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updateloadbalancerattributeresulttypedef).
+[UpdateLoadBalancerAttributeResultTypeDef](./type_defs.md#updateloadbalancerattributeresulttypedef).
 
 ### update_relational_database
 
@@ -2553,7 +2448,7 @@ Arguments:
 - `caCertificateIdentifier`: `str`
 
 Returns
-[UpdateRelationalDatabaseResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updaterelationaldatabaseresulttypedef).
+[UpdateRelationalDatabaseResultTypeDef](./type_defs.md#updaterelationaldatabaseresulttypedef).
 
 ### update_relational_database_parameters
 
@@ -2567,11 +2462,11 @@ Arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `parameters`:
-  `List`\[[RelationalDatabaseParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#relationaldatabaseparametertypedef)\]
+  `List`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
   *(required)*
 
 Returns
-[UpdateRelationalDatabaseParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#updaterelationaldatabaseparametersresulttypedef).
+[UpdateRelationalDatabaseParametersResultTypeDef](./type_defs.md#updaterelationaldatabaseparametersresulttypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Waiters for boto3 MachineLearning module
 
-> [Index](../README.md) > [MachineLearning](./README.md) > Waiters
+> [Index](..) > [MachineLearning](.) > Waiters
 
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
@@ -33,7 +33,7 @@ Boto3 documentation:
 Arguments for `BatchPredictionAvailableWaiter.wait` method:
 
 - `FilterVariable`:
-  [BatchPredictionFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#batchpredictionfiltervariable)
+  [BatchPredictionFilterVariable](./literals.md#batchpredictionfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -41,12 +41,10 @@ Arguments for `BatchPredictionAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## DataSourceAvailableWaiter
 
@@ -68,7 +66,7 @@ Boto3 documentation:
 Arguments for `DataSourceAvailableWaiter.wait` method:
 
 - `FilterVariable`:
-  [DataSourceFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#datasourcefiltervariable)
+  [DataSourceFilterVariable](./literals.md#datasourcefiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -76,12 +74,10 @@ Arguments for `DataSourceAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## EvaluationAvailableWaiter
 
@@ -103,7 +99,7 @@ Boto3 documentation:
 Arguments for `EvaluationAvailableWaiter.wait` method:
 
 - `FilterVariable`:
-  [EvaluationFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#evaluationfiltervariable)
+  [EvaluationFilterVariable](./literals.md#evaluationfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -111,12 +107,10 @@ Arguments for `EvaluationAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## MLModelAvailableWaiter
 
@@ -137,8 +131,7 @@ Boto3 documentation:
 
 Arguments for `MLModelAvailableWaiter.wait` method:
 
-- `FilterVariable`:
-  [MLModelFilterVariable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#mlmodelfiltervariable)
+- `FilterVariable`: [MLModelFilterVariable](./literals.md#mlmodelfiltervariable)
 - `EQ`: `str`
 - `GT`: `str`
 - `LT`: `str`
@@ -146,9 +139,7 @@ Arguments for `MLModelAvailableWaiter.wait` method:
 - `LE`: `str`
 - `NE`: `str`
 - `Prefix`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `Limit`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_machinelearning/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

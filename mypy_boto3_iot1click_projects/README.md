@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoT1ClickProjects module
 
-> [Index](../README.md) > IoT1ClickProjects
+> [Index](..) > IoT1ClickProjects
 
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)

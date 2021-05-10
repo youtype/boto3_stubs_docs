@@ -1,6 +1,6 @@
 # Literals for boto3 GuardDuty module
 
-> [Index](../README.md) > [GuardDuty](./README.md) > Literals
+> [Index](..) > [GuardDuty](.) > Literals
 
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)

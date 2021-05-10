@@ -1,6 +1,6 @@
 # Literals for boto3 DataExchange module
 
-> [Index](../README.md) > [DataExchange](./README.md) > Literals
+> [Index](..) > [DataExchange](.) > Literals
 
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)

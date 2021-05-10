@@ -1,6 +1,6 @@
 # Paginators for boto3 KinesisVideo module
 
-> [Index](../README.md) > [KinesisVideo](./README.md) > Paginators
+> [Index](..) > [KinesisVideo](.) > Paginators
 
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
@@ -31,12 +31,12 @@ Boto3 documentation:
 Arguments for `ListSignalingChannelsPaginator.paginate` method:
 
 - `ChannelNameCondition`:
-  [ChannelNameConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#channelnameconditiontypedef)
+  [ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSignalingChannelsPaginator.paginate` returns
-`Iterator`\[[ListSignalingChannelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#listsignalingchannelsoutputtypedef)\].
+`Iterator`\[[ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef)\].
 
 ## ListStreamsPaginator
 
@@ -58,9 +58,9 @@ Boto3 documentation:
 Arguments for `ListStreamsPaginator.paginate` method:
 
 - `StreamNameCondition`:
-  [StreamNameConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#streamnameconditiontypedef)
+  [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisvideo/type_defs.html#liststreamsoutputtypedef)\].
+`Iterator`\[[ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)\].

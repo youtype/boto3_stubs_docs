@@ -1,6 +1,6 @@
 # Literals for boto3 CodeGuruProfiler module
 
-> [Index](../README.md) > [CodeGuruProfiler](./README.md) > Literals
+> [Index](..) > [CodeGuruProfiler](.) > Literals
 
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)

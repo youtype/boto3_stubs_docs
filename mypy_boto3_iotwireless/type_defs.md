@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IoTWireless module
 
-> [Index](../README.md) > [IoTWireless](./README.md) > Structures
+> [Index](..) > [IoTWireless](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
@@ -88,7 +88,7 @@ Optional fields:
 
 - `DevAddr`: `str`
 - `SessionKeys`:
-  [SessionKeysAbpV1_0_xTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sessionkeysabpv1-0-xtypedef)
+  [SessionKeysAbpV1_0_xTypeDef](./type_defs.md#sessionkeysabpv1-0-xtypedef)
 
 ## AbpV1_1TypeDef
 
@@ -100,7 +100,7 @@ Optional fields:
 
 - `DevAddr`: `str`
 - `SessionKeys`:
-  [SessionKeysAbpV1_1TypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sessionkeysabpv1-1typedef)
+  [SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1-1typedef)
 
 ## AssociateAwsAccountWithPartnerAccountResponseTypeDef
 
@@ -111,7 +111,7 @@ from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccou
 Optional fields:
 
 - `Sidewalk`:
-  [SidewalkAccountInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkaccountinfotypedef)
+  [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
 - `Arn`: `str`
 
 ## AssociateWirelessGatewayWithCertificateResponseTypeDef
@@ -132,8 +132,7 @@ from mypy_boto3_iotwireless.type_defs import CertificateListTypeDef
 
 Required fields:
 
-- `SigningAlg`:
-  [SigningAlg](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#signingalg)
+- `SigningAlg`: [SigningAlg](./literals.md#signingalg)
 - `Value`: `str`
 
 ## CreateDestinationResponseTypeDef
@@ -211,8 +210,7 @@ from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskResponseTy
 Optional fields:
 
 - `WirelessGatewayTaskDefinitionId`: `str`
-- `Status`:
-  [WirelessGatewayTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessgatewaytaskstatus)
+- `Status`: [WirelessGatewayTaskStatus](./literals.md#wirelessgatewaytaskstatus)
 
 ## DestinationsTypeDef
 
@@ -224,8 +222,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `ExpressionType`:
-  [ExpressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#expressiontype)
+- `ExpressionType`: [ExpressionType](./literals.md#expressiontype)
 - `Expression`: `str`
 - `Description`: `str`
 - `RoleArn`: `str`
@@ -253,8 +250,7 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `Expression`: `str`
-- `ExpressionType`:
-  [ExpressionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#expressiontype)
+- `ExpressionType`: [ExpressionType](./literals.md#expressiontype)
 - `Description`: `str`
 - `RoleArn`: `str`
 
@@ -270,7 +266,7 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 - `LoRaWAN`:
-  [LoRaWANDeviceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawandeviceprofiletypedef)
+  [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
 
 ## GetPartnerAccountResponseTypeDef
 
@@ -281,7 +277,7 @@ from mypy_boto3_iotwireless.type_defs import GetPartnerAccountResponseTypeDef
 Optional fields:
 
 - `Sidewalk`:
-  [SidewalkAccountInfoWithFingerprintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkaccountinfowithfingerprinttypedef)
+  [SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)
 - `AccountLinked`: `bool`
 
 ## GetServiceEndpointResponseTypeDef
@@ -293,7 +289,7 @@ from mypy_boto3_iotwireless.type_defs import GetServiceEndpointResponseTypeDef
 Optional fields:
 
 - `ServiceType`:
-  [WirelessGatewayServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessgatewayservicetype)
+  [WirelessGatewayServiceType](./literals.md#wirelessgatewayservicetype)
 - `ServiceEndpoint`: `str`
 - `ServerTrust`: `str`
 
@@ -309,7 +305,7 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 - `LoRaWAN`:
-  [LoRaWANGetServiceProfileInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangetserviceprofileinfotypedef)
+  [LoRaWANGetServiceProfileInfoTypeDef](./type_defs.md#lorawangetserviceprofileinfotypedef)
 
 ## GetWirelessDeviceResponseTypeDef
 
@@ -319,8 +315,7 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceResponseTypeDef
 
 Optional fields:
 
-- `Type`:
-  [WirelessDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessdevicetype)
+- `Type`: [WirelessDeviceType](./literals.md#wirelessdevicetype)
 - `Name`: `str`
 - `Description`: `str`
 - `DestinationName`: `str`
@@ -328,10 +323,8 @@ Optional fields:
 - `Arn`: `str`
 - `ThingName`: `str`
 - `ThingArn`: `str`
-- `LoRaWAN`:
-  [LoRaWANDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawandevicetypedef)
-- `Sidewalk`:
-  [SidewalkDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkdevicetypedef)
+- `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
+- `Sidewalk`: [SidewalkDeviceTypeDef](./type_defs.md#sidewalkdevicetypedef)
 
 ## GetWirelessDeviceStatisticsResponseTypeDef
 
@@ -344,9 +337,9 @@ Optional fields:
 - `WirelessDeviceId`: `str`
 - `LastUplinkReceivedAt`: `str`
 - `LoRaWAN`:
-  [LoRaWANDeviceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawandevicemetadatatypedef)
+  [LoRaWANDeviceMetadataTypeDef](./type_defs.md#lorawandevicemetadatatypedef)
 - `Sidewalk`:
-  [SidewalkDeviceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkdevicemetadatatypedef)
+  [SidewalkDeviceMetadataTypeDef](./type_defs.md#sidewalkdevicemetadatatypedef)
 
 ## GetWirelessGatewayCertificateResponseTypeDef
 
@@ -368,7 +361,7 @@ from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformati
 Optional fields:
 
 - `LoRaWAN`:
-  [LoRaWANGatewayCurrentVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewaycurrentversiontypedef)
+  [LoRaWANGatewayCurrentVersionTypeDef](./type_defs.md#lorawangatewaycurrentversiontypedef)
 
 ## GetWirelessGatewayResponseTypeDef
 
@@ -381,8 +374,7 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 - `Description`: `str`
-- `LoRaWAN`:
-  [LoRaWANGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewaytypedef)
+- `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
 - `Arn`: `str`
 - `ThingName`: `str`
 - `ThingArn`: `str`
@@ -397,8 +389,7 @@ Optional fields:
 
 - `WirelessGatewayId`: `str`
 - `LastUplinkReceivedAt`: `str`
-- `ConnectionStatus`:
-  [ConnectionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#connectionstatus)
+- `ConnectionStatus`: [ConnectionStatus](./literals.md#connectionstatus)
 
 ## GetWirelessGatewayTaskDefinitionResponseTypeDef
 
@@ -411,7 +402,7 @@ Optional fields:
 - `AutoCreateTasks`: `bool`
 - `Name`: `str`
 - `Update`:
-  [UpdateWirelessGatewayTaskCreateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#updatewirelessgatewaytaskcreatetypedef)
+  [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
 - `Arn`: `str`
 
 ## GetWirelessGatewayTaskResponseTypeDef
@@ -426,8 +417,7 @@ Optional fields:
 - `WirelessGatewayTaskDefinitionId`: `str`
 - `LastUplinkReceivedAt`: `str`
 - `TaskCreatedAt`: `str`
-- `Status`:
-  [WirelessGatewayTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessgatewaytaskstatus)
+- `Status`: [WirelessGatewayTaskStatus](./literals.md#wirelessgatewaytaskstatus)
 
 ## ListDestinationsResponseTypeDef
 
@@ -439,7 +429,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `DestinationList`:
-  `List`\[[DestinationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#destinationstypedef)\]
+  `List`\[[DestinationsTypeDef](./type_defs.md#destinationstypedef)\]
 
 ## ListDeviceProfilesResponseTypeDef
 
@@ -451,7 +441,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `DeviceProfileList`:
-  `List`\[[DeviceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#deviceprofiletypedef)\]
+  `List`\[[DeviceProfileTypeDef](./type_defs.md#deviceprofiletypedef)\]
 
 ## ListPartnerAccountsResponseTypeDef
 
@@ -463,7 +453,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `Sidewalk`:
-  `List`\[[SidewalkAccountInfoWithFingerprintTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalkaccountinfowithfingerprinttypedef)\]
+  `List`\[[SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)\]
 
 ## ListServiceProfilesResponseTypeDef
 
@@ -475,7 +465,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ServiceProfileList`:
-  `List`\[[ServiceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#serviceprofiletypedef)\]
+  `List`\[[ServiceProfileTypeDef](./type_defs.md#serviceprofiletypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -485,8 +475,7 @@ from mypy_boto3_iotwireless.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListWirelessDevicesResponseTypeDef
 
@@ -498,7 +487,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `WirelessDeviceList`:
-  `List`\[[WirelessDeviceStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#wirelessdevicestatisticstypedef)\]
+  `List`\[[WirelessDeviceStatisticsTypeDef](./type_defs.md#wirelessdevicestatisticstypedef)\]
 
 ## ListWirelessGatewayTaskDefinitionsResponseTypeDef
 
@@ -510,7 +499,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `TaskDefinitions`:
-  `List`\[[UpdateWirelessGatewayTaskEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#updatewirelessgatewaytaskentrytypedef)\]
+  `List`\[[UpdateWirelessGatewayTaskEntryTypeDef](./type_defs.md#updatewirelessgatewaytaskentrytypedef)\]
 
 ## ListWirelessGatewaysResponseTypeDef
 
@@ -522,7 +511,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `WirelessGatewayList`:
-  `List`\[[WirelessGatewayStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#wirelessgatewaystatisticstypedef)\]
+  `List`\[[WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef)\]
 
 ## LoRaWANDeviceMetadataTypeDef
 
@@ -538,7 +527,7 @@ Optional fields:
 - `Frequency`: `int`
 - `Timestamp`: `str`
 - `Gateways`:
-  `List`\[[LoRaWANGatewayMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewaymetadatatypedef)\]
+  `List`\[[LoRaWANGatewayMetadataTypeDef](./type_defs.md#lorawangatewaymetadatatypedef)\]
 
 ## LoRaWANDeviceProfileTypeDef
 
@@ -579,14 +568,10 @@ Optional fields:
 - `DevEui`: `str`
 - `DeviceProfileId`: `str`
 - `ServiceProfileId`: `str`
-- `OtaaV1_1`:
-  [OtaaV1_1TypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#otaav1-1typedef)
-- `OtaaV1_0_x`:
-  [OtaaV1_0_xTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#otaav1-0-xtypedef)
-- `AbpV1_1`:
-  [AbpV1_1TypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#abpv1-1typedef)
-- `AbpV1_0_x`:
-  [AbpV1_0_xTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#abpv1-0-xtypedef)
+- `OtaaV1_1`: [OtaaV1_1TypeDef](./type_defs.md#otaav1-1typedef)
+- `OtaaV1_0_x`: [OtaaV1_0_xTypeDef](./type_defs.md#otaav1-0-xtypedef)
+- `AbpV1_1`: [AbpV1_1TypeDef](./type_defs.md#abpv1-1typedef)
+- `AbpV1_0_x`: [AbpV1_0_xTypeDef](./type_defs.md#abpv1-0-xtypedef)
 
 ## LoRaWANGatewayCurrentVersionTypeDef
 
@@ -597,7 +582,7 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayCurrentVersionTypeDef
 Optional fields:
 
 - `CurrentVersion`:
-  [LoRaWANGatewayVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewayversiontypedef)
+  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
 ## LoRaWANGatewayMetadataTypeDef
 
@@ -717,9 +702,9 @@ Optional fields:
 - `UpdateSignature`: `str`
 - `SigKeyCrc`: `int`
 - `CurrentVersion`:
-  [LoRaWANGatewayVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewayversiontypedef)
+  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 - `UpdateVersion`:
-  [LoRaWANGatewayVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewayversiontypedef)
+  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
 ## LoRaWANUpdateGatewayTaskEntryTypeDef
 
@@ -730,9 +715,9 @@ from mypy_boto3_iotwireless.type_defs import LoRaWANUpdateGatewayTaskEntryTypeDe
 Optional fields:
 
 - `CurrentVersion`:
-  [LoRaWANGatewayVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewayversiontypedef)
+  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 - `UpdateVersion`:
-  [LoRaWANGatewayVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewayversiontypedef)
+  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
 
 ## OtaaV1_0_xTypeDef
 
@@ -835,12 +820,9 @@ from mypy_boto3_iotwireless.type_defs import SidewalkDeviceMetadataTypeDef
 Optional fields:
 
 - `Rssi`: `int`
-- `BatteryLevel`:
-  [BatteryLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#batterylevel)
-- `Event`:
-  [Event](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#event)
-- `DeviceState`:
-  [DeviceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#devicestate)
+- `BatteryLevel`: [BatteryLevel](./literals.md#batterylevel)
+- `Event`: [Event](./literals.md#event)
+- `DeviceState`: [DeviceState](./literals.md#devicestate)
 
 ## SidewalkDeviceTypeDef
 
@@ -853,7 +835,7 @@ Optional fields:
 - `SidewalkId`: `str`
 - `SidewalkManufacturingSn`: `str`
 - `DeviceCertificates`:
-  `List`\[[CertificateListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#certificatelisttypedef)\]
+  `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
 
 ## SidewalkListDeviceTypeDef
 
@@ -867,7 +849,7 @@ Optional fields:
 - `SidewalkId`: `str`
 - `SidewalkManufacturingSn`: `str`
 - `DeviceCertificates`:
-  `List`\[[CertificateListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#certificatelisttypedef)\]
+  `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
 
 ## SidewalkSendDataToDeviceTypeDef
 
@@ -878,8 +860,7 @@ from mypy_boto3_iotwireless.type_defs import SidewalkSendDataToDeviceTypeDef
 Optional fields:
 
 - `Seq`: `int`
-- `MessageType`:
-  [MessageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#messagetype)
+- `MessageType`: [MessageType](./literals.md#messagetype)
 
 ## SidewalkUpdateAccountTypeDef
 
@@ -923,7 +904,7 @@ Optional fields:
 - `UpdateDataSource`: `str`
 - `UpdateDataRole`: `str`
 - `LoRaWAN`:
-  [LoRaWANUpdateGatewayTaskCreateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawanupdategatewaytaskcreatetypedef)
+  [LoRaWANUpdateGatewayTaskCreateTypeDef](./type_defs.md#lorawanupdategatewaytaskcreatetypedef)
 
 ## UpdateWirelessGatewayTaskEntryTypeDef
 
@@ -935,7 +916,7 @@ Optional fields:
 
 - `Id`: `str`
 - `LoRaWAN`:
-  [LoRaWANUpdateGatewayTaskEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawanupdategatewaytaskentrytypedef)
+  [LoRaWANUpdateGatewayTaskEntryTypeDef](./type_defs.md#lorawanupdategatewaytaskentrytypedef)
 - `Arn`: `str`
 
 ## WirelessDeviceStatisticsTypeDef
@@ -948,15 +929,13 @@ Optional fields:
 
 - `Arn`: `str`
 - `Id`: `str`
-- `Type`:
-  [WirelessDeviceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/literals.html#wirelessdevicetype)
+- `Type`: [WirelessDeviceType](./literals.md#wirelessdevicetype)
 - `Name`: `str`
 - `DestinationName`: `str`
 - `LastUplinkReceivedAt`: `str`
-- `LoRaWAN`:
-  [LoRaWANListDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawanlistdevicetypedef)
+- `LoRaWAN`: [LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef)
 - `Sidewalk`:
-  [SidewalkListDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalklistdevicetypedef)
+  [SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef)
 
 ## WirelessGatewayStatisticsTypeDef
 
@@ -970,8 +949,7 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `LoRaWAN`:
-  [LoRaWANGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawangatewaytypedef)
+- `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
 - `LastUplinkReceivedAt`: `str`
 
 ## WirelessMetadataTypeDef
@@ -983,6 +961,6 @@ from mypy_boto3_iotwireless.type_defs import WirelessMetadataTypeDef
 Optional fields:
 
 - `LoRaWAN`:
-  [LoRaWANSendDataToDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#lorawansenddatatodevicetypedef)
+  [LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef)
 - `Sidewalk`:
-  [SidewalkSendDataToDeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotwireless/type_defs.html#sidewalksenddatatodevicetypedef)
+  [SidewalkSendDataToDeviceTypeDef](./type_defs.md#sidewalksenddatatodevicetypedef)

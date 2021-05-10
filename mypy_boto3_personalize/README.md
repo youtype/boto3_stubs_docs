@@ -1,6 +1,6 @@
 # Type annotations for boto3 Personalize module
 
-> [Index](../README.md) > Personalize
+> [Index](..) > Personalize
 
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
@@ -237,7 +237,7 @@ from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef, ...
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef)
 - [RecipeTypeDef](./type_defs.md#recipetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
 - [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 - [SolutionSummaryTypeDef](./type_defs.md#solutionsummarytypedef)

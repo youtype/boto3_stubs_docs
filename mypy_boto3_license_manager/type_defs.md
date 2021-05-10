@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 LicenseManager module
 
-> [Index](../README.md) > [LicenseManager](./README.md) > Structures
+> [Index](..) > [LicenseManager](.) > Typed dictionaries
 
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
@@ -82,8 +82,7 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`:
-  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `Status`: [GrantStatus](./literals.md#grantstatus)
 - `Version`: `str`
 
 ## AutomatedDiscoveryInformationTypeDef
@@ -118,13 +117,12 @@ Optional fields:
 - `LicenseArn`: `str`
 - `LicenseConsumptionToken`: `str`
 - `EntitlementsAllowed`:
-  `List`\[[EntitlementDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementdatatypedef)\]
+  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
 - `NodeId`: `str`
 - `SignedToken`: `str`
 - `IssuedAt`: `str`
 - `Expiration`: `str`
-- `CheckoutMetadata`:
-  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+- `CheckoutMetadata`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 ## CheckoutLicenseResponseTypeDef
 
@@ -134,10 +132,11 @@ from mypy_boto3_license_manager.type_defs import CheckoutLicenseResponseTypeDef
 
 Optional fields:
 
-- `CheckoutType`: `Literal['PROVISIONAL']`
+- `CheckoutType`: `Literal['PROVISIONAL']` (see
+  [CheckoutType](./literals.md#checkouttype))
 - `LicenseConsumptionToken`: `str`
 - `EntitlementsAllowed`:
-  `List`\[[EntitlementDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementdatatypedef)\]
+  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
 - `SignedToken`: `str`
 - `NodeId`: `str`
 - `IssuedAt`: `str`
@@ -151,8 +150,7 @@ from mypy_boto3_license_manager.type_defs import ConsumedLicenseSummaryTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `ConsumedLicenses`: `int`
 
 ## ConsumptionConfigurationTypeDef
@@ -163,12 +161,11 @@ from mypy_boto3_license_manager.type_defs import ConsumptionConfigurationTypeDef
 
 Optional fields:
 
-- `RenewType`:
-  [RenewType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#renewtype)
+- `RenewType`: [RenewType](./literals.md#renewtype)
 - `ProvisionalConfiguration`:
-  [ProvisionalConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#provisionalconfigurationtypedef)
+  [ProvisionalConfigurationTypeDef](./type_defs.md#provisionalconfigurationtypedef)
 - `BorrowConfiguration`:
-  [BorrowConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#borrowconfigurationtypedef)
+  [BorrowConfigurationTypeDef](./type_defs.md#borrowconfigurationtypedef)
 
 ## CreateGrantResponseTypeDef
 
@@ -179,8 +176,7 @@ from mypy_boto3_license_manager.type_defs import CreateGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`:
-  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `Status`: [GrantStatus](./literals.md#grantstatus)
 - `Version`: `str`
 
 ## CreateGrantVersionResponseTypeDef
@@ -192,8 +188,7 @@ from mypy_boto3_license_manager.type_defs import CreateGrantVersionResponseTypeD
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`:
-  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `Status`: [GrantStatus](./literals.md#grantstatus)
 - `Version`: `str`
 
 ## CreateLicenseConfigurationResponseTypeDef
@@ -215,8 +210,7 @@ from mypy_boto3_license_manager.type_defs import CreateLicenseResponseTypeDef
 Optional fields:
 
 - `LicenseArn`: `str`
-- `Status`:
-  [LicenseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensestatus)
+- `Status`: [LicenseStatus](./literals.md#licensestatus)
 - `Version`: `str`
 
 ## CreateLicenseVersionResponseTypeDef
@@ -229,8 +223,7 @@ Optional fields:
 
 - `LicenseArn`: `str`
 - `Version`: `str`
-- `Status`:
-  [LicenseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensestatus)
+- `Status`: [LicenseStatus](./literals.md#licensestatus)
 
 ## CreateTokenResponseTypeDef
 
@@ -241,7 +234,8 @@ from mypy_boto3_license_manager.type_defs import CreateTokenResponseTypeDef
 Optional fields:
 
 - `TokenId`: `str`
-- `TokenType`: `Literal['REFRESH_TOKEN']`
+- `TokenType`: `Literal['REFRESH_TOKEN']` (see
+  [TokenType](./literals.md#tokentype))
 - `Token`: `str`
 
 ## DatetimeRangeTypeDef
@@ -267,8 +261,7 @@ from mypy_boto3_license_manager.type_defs import DeleteGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`:
-  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `Status`: [GrantStatus](./literals.md#grantstatus)
 - `Version`: `str`
 
 ## DeleteLicenseResponseTypeDef
@@ -279,8 +272,7 @@ from mypy_boto3_license_manager.type_defs import DeleteLicenseResponseTypeDef
 
 Optional fields:
 
-- `Status`:
-  [LicenseDeletionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensedeletionstatus)
+- `Status`: [LicenseDeletionStatus](./literals.md#licensedeletionstatus)
 - `DeletionDate`: `str`
 
 ## EntitlementDataTypeDef
@@ -292,8 +284,7 @@ from mypy_boto3_license_manager.type_defs import EntitlementDataTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Unit`:
-  [EntitlementDataUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#entitlementdataunit)
+- `Unit`: [EntitlementDataUnit](./literals.md#entitlementdataunit)
 
 Optional fields:
 
@@ -308,8 +299,7 @@ from mypy_boto3_license_manager.type_defs import EntitlementTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Unit`:
-  [EntitlementUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#entitlementunit)
+- `Unit`: [EntitlementUnit](./literals.md#entitlementunit)
 
 Optional fields:
 
@@ -328,8 +318,7 @@ Required fields:
 
 - `Name`: `str`
 - `ConsumedValue`: `str`
-- `Unit`:
-  [EntitlementDataUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#entitlementdataunit)
+- `Unit`: [EntitlementDataUnit](./literals.md#entitlementdataunit)
 
 Optional fields:
 
@@ -375,8 +364,7 @@ from mypy_boto3_license_manager.type_defs import GetGrantResponseTypeDef
 
 Optional fields:
 
-- `Grant`:
-  [GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#granttypedef)
+- `Grant`: [GrantTypeDef](./type_defs.md#granttypedef)
 
 ## GetLicenseConfigurationResponseTypeDef
 
@@ -390,8 +378,7 @@ Optional fields:
 - `LicenseConfigurationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `LicenseCountingType`:
-  [LicenseCountingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensecountingtype)
+- `LicenseCountingType`: [LicenseCountingType](./literals.md#licensecountingtype)
 - `LicenseRules`: `List`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
@@ -399,15 +386,14 @@ Optional fields:
 - `Status`: `str`
 - `OwnerAccountId`: `str`
 - `ConsumedLicenseSummaryList`:
-  `List`\[[ConsumedLicenseSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#consumedlicensesummarytypedef)\]
+  `List`\[[ConsumedLicenseSummaryTypeDef](./type_defs.md#consumedlicensesummarytypedef)\]
 - `ManagedResourceSummaryList`:
-  `List`\[[ManagedResourceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#managedresourcesummarytypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#tagtypedef)\]
+  `List`\[[ManagedResourceSummaryTypeDef](./type_defs.md#managedresourcesummarytypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#productinformationtypedef)\]
+  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 - `AutomatedDiscoveryInformation`:
-  [AutomatedDiscoveryInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#automateddiscoveryinformationtypedef)
+  [AutomatedDiscoveryInformationTypeDef](./type_defs.md#automateddiscoveryinformationtypedef)
 - `DisassociateWhenNotFound`: `bool`
 
 ## GetLicenseResponseTypeDef
@@ -418,8 +404,7 @@ from mypy_boto3_license_manager.type_defs import GetLicenseResponseTypeDef
 
 Optional fields:
 
-- `License`:
-  [LicenseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licensetypedef)
+- `License`: [LicenseTypeDef](./type_defs.md#licensetypedef)
 
 ## GetLicenseUsageResponseTypeDef
 
@@ -429,8 +414,7 @@ from mypy_boto3_license_manager.type_defs import GetLicenseUsageResponseTypeDef
 
 Optional fields:
 
-- `LicenseUsage`:
-  [LicenseUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licenseusagetypedef)
+- `LicenseUsage`: [LicenseUsageTypeDef](./type_defs.md#licenseusagetypedef)
 
 ## GetServiceSettingsResponseTypeDef
 
@@ -443,7 +427,7 @@ Optional fields:
 - `S3BucketArn`: `str`
 - `SnsTopicArn`: `str`
 - `OrganizationConfiguration`:
-  [OrganizationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#organizationconfigurationtypedef)
+  [OrganizationConfigurationTypeDef](./type_defs.md#organizationconfigurationtypedef)
 - `EnableCrossAccountsDiscovery`: `bool`
 - `LicenseManagerResourceShareArn`: `str`
 
@@ -461,11 +445,10 @@ Required fields:
 - `LicenseArn`: `str`
 - `GranteePrincipalArn`: `str`
 - `HomeRegion`: `str`
-- `GrantStatus`:
-  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `GrantStatus`: [GrantStatus](./literals.md#grantstatus)
 - `Version`: `str`
 - `GrantedOperations`:
-  `List`\[[AllowedOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#allowedoperation)\]
+  `List`\[[AllowedOperation](./literals.md#allowedoperation)\]
 
 Optional fields:
 
@@ -483,24 +466,20 @@ Optional fields:
 - `LicenseName`: `str`
 - `ProductName`: `str`
 - `ProductSKU`: `str`
-- `Issuer`:
-  [IssuerDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#issuerdetailstypedef)
+- `Issuer`: [IssuerDetailsTypeDef](./type_defs.md#issuerdetailstypedef)
 - `HomeRegion`: `str`
-- `Status`:
-  [LicenseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensestatus)
-- `Validity`:
-  [DatetimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#datetimerangetypedef)
+- `Status`: [LicenseStatus](./literals.md#licensestatus)
+- `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `Beneficiary`: `str`
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementtypedef)\]
+  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `ConsumptionConfiguration`:
-  [ConsumptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#consumptionconfigurationtypedef)
-- `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+  [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
+- `LicenseMetadata`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `CreateTime`: `str`
 - `Version`: `str`
 - `ReceivedMetadata`:
-  [ReceivedMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#receivedmetadatatypedef)
+  [ReceivedMetadataTypeDef](./type_defs.md#receivedmetadatatypedef)
 
 ## InventoryFilterTypeDef
 
@@ -511,8 +490,7 @@ from mypy_boto3_license_manager.type_defs import InventoryFilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Condition`:
-  [InventoryFilterCondition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#inventoryfiltercondition)
+- `Condition`: [InventoryFilterCondition](./literals.md#inventoryfiltercondition)
 
 Optional fields:
 
@@ -553,8 +531,7 @@ from mypy_boto3_license_manager.type_defs import LicenseConfigurationAssociation
 Optional fields:
 
 - `ResourceArn`: `str`
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `ResourceOwnerId`: `str`
 - `AssociationTime`: `datetime`
 - `AmiAssociationScope`: `str`
@@ -571,8 +548,7 @@ Optional fields:
 - `LicenseConfigurationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `LicenseCountingType`:
-  [LicenseCountingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensecountingtype)
+- `LicenseCountingType`: [LicenseCountingType](./literals.md#licensecountingtype)
 - `LicenseRules`: `List`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
@@ -581,13 +557,13 @@ Optional fields:
 - `Status`: `str`
 - `OwnerAccountId`: `str`
 - `ConsumedLicenseSummaryList`:
-  `List`\[[ConsumedLicenseSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#consumedlicensesummarytypedef)\]
+  `List`\[[ConsumedLicenseSummaryTypeDef](./type_defs.md#consumedlicensesummarytypedef)\]
 - `ManagedResourceSummaryList`:
-  `List`\[[ManagedResourceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#managedresourcesummarytypedef)\]
+  `List`\[[ManagedResourceSummaryTypeDef](./type_defs.md#managedresourcesummarytypedef)\]
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#productinformationtypedef)\]
+  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 - `AutomatedDiscoveryInformation`:
-  [AutomatedDiscoveryInformationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#automateddiscoveryinformationtypedef)
+  [AutomatedDiscoveryInformationTypeDef](./type_defs.md#automateddiscoveryinformationtypedef)
 
 ## LicenseConfigurationUsageTypeDef
 
@@ -598,8 +574,7 @@ from mypy_boto3_license_manager.type_defs import LicenseConfigurationUsageTypeDe
 Optional fields:
 
 - `ResourceArn`: `str`
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `ResourceStatus`: `str`
 - `ResourceOwnerId`: `str`
 - `AssociationTime`: `datetime`
@@ -614,15 +589,13 @@ from mypy_boto3_license_manager.type_defs import LicenseOperationFailureTypeDef
 Optional fields:
 
 - `ResourceArn`: `str`
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `ErrorMessage`: `str`
 - `FailureTime`: `datetime`
 - `OperationName`: `str`
 - `ResourceOwnerId`: `str`
 - `OperationRequestedBy`: `str`
-- `MetadataList`:
-  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+- `MetadataList`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 ## LicenseSpecificationTypeDef
 
@@ -650,20 +623,16 @@ Optional fields:
 - `LicenseName`: `str`
 - `ProductName`: `str`
 - `ProductSKU`: `str`
-- `Issuer`:
-  [IssuerDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#issuerdetailstypedef)
+- `Issuer`: [IssuerDetailsTypeDef](./type_defs.md#issuerdetailstypedef)
 - `HomeRegion`: `str`
-- `Status`:
-  [LicenseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#licensestatus)
-- `Validity`:
-  [DatetimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#datetimerangetypedef)
+- `Status`: [LicenseStatus](./literals.md#licensestatus)
+- `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `Beneficiary`: `str`
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementtypedef)\]
+  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `ConsumptionConfiguration`:
-  [ConsumptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#consumptionconfigurationtypedef)
-- `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#metadatatypedef)\]
+  [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
+- `LicenseMetadata`: `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `CreateTime`: `str`
 - `Version`: `str`
 
@@ -676,7 +645,7 @@ from mypy_boto3_license_manager.type_defs import LicenseUsageTypeDef
 Optional fields:
 
 - `EntitlementUsages`:
-  `List`\[[EntitlementUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#entitlementusagetypedef)\]
+  `List`\[[EntitlementUsageTypeDef](./type_defs.md#entitlementusagetypedef)\]
 
 ## ListAssociationsForLicenseConfigurationResponseTypeDef
 
@@ -687,7 +656,7 @@ from mypy_boto3_license_manager.type_defs import ListAssociationsForLicenseConfi
 Optional fields:
 
 - `LicenseConfigurationAssociations`:
-  `List`\[[LicenseConfigurationAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licenseconfigurationassociationtypedef)\]
+  `List`\[[LicenseConfigurationAssociationTypeDef](./type_defs.md#licenseconfigurationassociationtypedef)\]
 - `NextToken`: `str`
 
 ## ListDistributedGrantsResponseTypeDef
@@ -698,8 +667,7 @@ from mypy_boto3_license_manager.type_defs import ListDistributedGrantsResponseTy
 
 Optional fields:
 
-- `Grants`:
-  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#granttypedef)\]
+- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `NextToken`: `str`
 
 ## ListFailuresForLicenseConfigurationOperationsResponseTypeDef
@@ -711,7 +679,7 @@ from mypy_boto3_license_manager.type_defs import ListFailuresForLicenseConfigura
 Optional fields:
 
 - `LicenseOperationFailureList`:
-  `List`\[[LicenseOperationFailureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licenseoperationfailuretypedef)\]
+  `List`\[[LicenseOperationFailureTypeDef](./type_defs.md#licenseoperationfailuretypedef)\]
 - `NextToken`: `str`
 
 ## ListLicenseConfigurationsResponseTypeDef
@@ -723,7 +691,7 @@ from mypy_boto3_license_manager.type_defs import ListLicenseConfigurationsRespon
 Optional fields:
 
 - `LicenseConfigurations`:
-  `List`\[[LicenseConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licenseconfigurationtypedef)\]
+  `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
 - `NextToken`: `str`
 
 ## ListLicenseSpecificationsForResourceResponseTypeDef
@@ -735,7 +703,7 @@ from mypy_boto3_license_manager.type_defs import ListLicenseSpecificationsForRes
 Optional fields:
 
 - `LicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licensespecificationtypedef)\]
+  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 - `NextToken`: `str`
 
 ## ListLicenseVersionsResponseTypeDef
@@ -746,8 +714,7 @@ from mypy_boto3_license_manager.type_defs import ListLicenseVersionsResponseType
 
 Optional fields:
 
-- `Licenses`:
-  `List`\[[LicenseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licensetypedef)\]
+- `Licenses`: `List`\[[LicenseTypeDef](./type_defs.md#licensetypedef)\]
 - `NextToken`: `str`
 
 ## ListLicensesResponseTypeDef
@@ -758,8 +725,7 @@ from mypy_boto3_license_manager.type_defs import ListLicensesResponseTypeDef
 
 Optional fields:
 
-- `Licenses`:
-  `List`\[[LicenseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licensetypedef)\]
+- `Licenses`: `List`\[[LicenseTypeDef](./type_defs.md#licensetypedef)\]
 - `NextToken`: `str`
 
 ## ListReceivedGrantsResponseTypeDef
@@ -770,8 +736,7 @@ from mypy_boto3_license_manager.type_defs import ListReceivedGrantsResponseTypeD
 
 Optional fields:
 
-- `Grants`:
-  `List`\[[GrantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#granttypedef)\]
+- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `NextToken`: `str`
 
 ## ListReceivedLicensesResponseTypeDef
@@ -783,7 +748,7 @@ from mypy_boto3_license_manager.type_defs import ListReceivedLicensesResponseTyp
 Optional fields:
 
 - `Licenses`:
-  `List`\[[GrantedLicenseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#grantedlicensetypedef)\]
+  `List`\[[GrantedLicenseTypeDef](./type_defs.md#grantedlicensetypedef)\]
 - `NextToken`: `str`
 
 ## ListResourceInventoryResponseTypeDef
@@ -795,7 +760,7 @@ from mypy_boto3_license_manager.type_defs import ListResourceInventoryResponseTy
 Optional fields:
 
 - `ResourceInventoryList`:
-  `List`\[[ResourceInventoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#resourceinventorytypedef)\]
+  `List`\[[ResourceInventoryTypeDef](./type_defs.md#resourceinventorytypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -806,8 +771,7 @@ from mypy_boto3_license_manager.type_defs import ListTagsForResourceResponseType
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTokensResponseTypeDef
 
@@ -817,8 +781,7 @@ from mypy_boto3_license_manager.type_defs import ListTokensResponseTypeDef
 
 Optional fields:
 
-- `Tokens`:
-  `List`\[[TokenDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#tokendatatypedef)\]
+- `Tokens`: `List`\[[TokenDataTypeDef](./type_defs.md#tokendatatypedef)\]
 - `NextToken`: `str`
 
 ## ListUsageForLicenseConfigurationResponseTypeDef
@@ -830,7 +793,7 @@ from mypy_boto3_license_manager.type_defs import ListUsageForLicenseConfiguratio
 Optional fields:
 
 - `LicenseConfigurationUsageList`:
-  `List`\[[LicenseConfigurationUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#licenseconfigurationusagetypedef)\]
+  `List`\[[LicenseConfigurationUsageTypeDef](./type_defs.md#licenseconfigurationusagetypedef)\]
 - `NextToken`: `str`
 
 ## ManagedResourceSummaryTypeDef
@@ -841,8 +804,7 @@ from mypy_boto3_license_manager.type_defs import ManagedResourceSummaryTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `AssociationCount`: `int`
 
 ## MetadataTypeDef
@@ -903,7 +865,7 @@ Required fields:
 
 - `ResourceType`: `str`
 - `ProductInformationFilterList`:
-  `List`\[[ProductInformationFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/type_defs.html#productinformationfiltertypedef)\]
+  `List`\[[ProductInformationFilterTypeDef](./type_defs.md#productinformationfiltertypedef)\]
 
 ## ProvisionalConfigurationTypeDef
 
@@ -923,10 +885,9 @@ from mypy_boto3_license_manager.type_defs import ReceivedMetadataTypeDef
 
 Optional fields:
 
-- `ReceivedStatus`:
-  [ReceivedStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#receivedstatus)
+- `ReceivedStatus`: [ReceivedStatus](./literals.md#receivedstatus)
 - `AllowedOperations`:
-  `List`\[[AllowedOperation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#allowedoperation)\]
+  `List`\[[AllowedOperation](./literals.md#allowedoperation)\]
 
 ## RejectGrantResponseTypeDef
 
@@ -937,8 +898,7 @@ from mypy_boto3_license_manager.type_defs import RejectGrantResponseTypeDef
 Optional fields:
 
 - `GrantArn`: `str`
-- `Status`:
-  [GrantStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#grantstatus)
+- `Status`: [GrantStatus](./literals.md#grantstatus)
 - `Version`: `str`
 
 ## ResourceInventoryTypeDef
@@ -950,8 +910,7 @@ from mypy_boto3_license_manager.type_defs import ResourceInventoryTypeDef
 Optional fields:
 
 - `ResourceId`: `str`
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_license_manager/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `ResourceArn`: `str`
 - `Platform`: `str`
 - `PlatformVersion`: `str`

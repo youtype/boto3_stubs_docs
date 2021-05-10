@@ -1,6 +1,6 @@
 # ApplicationDiscoveryServiceClient for boto3 ApplicationDiscoveryService module
 
-> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) >
+> [Index](..) > [ApplicationDiscoveryService](.) >
 > ApplicationDiscoveryServiceClient
 
 Auto-generated documentation for
@@ -113,7 +113,7 @@ Arguments:
 - `importTaskIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteImportDataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#batchdeleteimportdataresponsetypedef).
+[BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef).
 
 ### can_paginate
 
@@ -141,7 +141,7 @@ Arguments:
 - `description`: `str`
 
 Returns
-[CreateApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#createapplicationresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### create_tags
 
@@ -153,9 +153,7 @@ Boto3 documentation:
 Arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -182,8 +180,7 @@ Boto3 documentation:
 Arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -197,13 +194,12 @@ Boto3 documentation:
 Arguments:
 
 - `agentIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeAgentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describeagentsresponsetypedef).
+[DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef).
 
 ### describe_configurations
 
@@ -218,7 +214,7 @@ Arguments:
 - `configurationIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describeconfigurationsresponsetypedef).
+[DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef).
 
 ### describe_continuous_exports
 
@@ -235,7 +231,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeContinuousExportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describecontinuousexportsresponsetypedef).
+[DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef).
 
 ### describe_export_configurations
 
@@ -252,7 +248,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeExportConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describeexportconfigurationsresponsetypedef).
+[DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef).
 
 ### describe_export_tasks
 
@@ -264,13 +260,12 @@ Boto3 documentation:
 Arguments:
 
 - `exportIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[ExportFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#exportfiltertypedef)\]
+- `filters`: `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeExportTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describeexporttasksresponsetypedef).
+[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
 
 ### describe_import_tasks
 
@@ -282,12 +277,12 @@ Boto3 documentation:
 Arguments:
 
 - `filters`:
-  `List`\[[ImportTaskFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#importtaskfiltertypedef)\]
+  `List`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeImportTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describeimporttasksresponsetypedef).
+[DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef).
 
 ### describe_tags
 
@@ -298,13 +293,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `filters`:
-  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#tagfiltertypedef)\]
+- `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#describetagsresponsetypedef).
+[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
 ### disassociate_configuration_items_from_application
 
@@ -330,7 +324,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.export_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
 
 Returns
-[ExportConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#exportconfigurationsresponsetypedef).
+[ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -356,7 +350,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.get_discovery_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
 
 Returns
-[GetDiscoverySummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#getdiscoverysummaryresponsetypedef).
+[GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef).
 
 ### list_configurations
 
@@ -368,17 +362,15 @@ Boto3 documentation:
 Arguments:
 
 - `configurationType`:
-  [ConfigurationItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#configurationitemtype)
-  *(required)*
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#filtertypedef)\]
+  [ConfigurationItemType](./literals.md#configurationitemtype) *(required)*
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `orderBy`:
-  `List`\[[OrderByElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#orderbyelementtypedef)\]
+  `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 
 Returns
-[ListConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#listconfigurationsresponsetypedef).
+[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
 ### list_server_neighbors
 
@@ -396,7 +388,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListServerNeighborsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#listserverneighborsresponsetypedef).
+[ListServerNeighborsResponseTypeDef](./type_defs.md#listserverneighborsresponsetypedef).
 
 ### start_continuous_export
 
@@ -407,7 +399,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
 
 Returns
-[StartContinuousExportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#startcontinuousexportresponsetypedef).
+[StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef).
 
 ### start_data_collection_by_agent_ids
 
@@ -422,7 +414,7 @@ Arguments:
 - `agentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StartDataCollectionByAgentIdsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#startdatacollectionbyagentidsresponsetypedef).
+[StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef).
 
 ### start_export_task
 
@@ -434,14 +426,13 @@ Boto3 documentation:
 Arguments:
 
 - `exportDataFormat`:
-  `List`\[[ExportDataFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/literals.html#exportdataformat)\]
-- `filters`:
-  `List`\[[ExportFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#exportfiltertypedef)\]
+  `List`\[[ExportDataFormat](./literals.md#exportdataformat)\]
+- `filters`: `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 
 Returns
-[StartExportTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#startexporttaskresponsetypedef).
+[StartExportTaskResponseTypeDef](./type_defs.md#startexporttaskresponsetypedef).
 
 ### start_import_task
 
@@ -457,7 +448,7 @@ Arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[StartImportTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#startimporttaskresponsetypedef).
+[StartImportTaskResponseTypeDef](./type_defs.md#startimporttaskresponsetypedef).
 
 ### stop_continuous_export
 
@@ -471,7 +462,7 @@ Arguments:
 - `exportId`: `str` *(required)*
 
 Returns
-[StopContinuousExportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#stopcontinuousexportresponsetypedef).
+[StopContinuousExportResponseTypeDef](./type_defs.md#stopcontinuousexportresponsetypedef).
 
 ### stop_data_collection_by_agent_ids
 
@@ -486,7 +477,7 @@ Arguments:
 - `agentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StopDataCollectionByAgentIdsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_discovery/type_defs.html#stopdatacollectionbyagentidsresponsetypedef).
+[StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef).
 
 ### update_application
 

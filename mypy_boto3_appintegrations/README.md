@@ -1,6 +1,6 @@
 # Type annotations for boto3 AppIntegrationsService module
 
-> [Index](../README.md) > AppIntegrationsService
+> [Index](..) > AppIntegrationsService
 
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)

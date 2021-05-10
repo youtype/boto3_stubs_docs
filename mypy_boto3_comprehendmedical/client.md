@@ -1,7 +1,6 @@
 # ComprehendMedicalClient for boto3 ComprehendMedical module
 
-> [Index](../README.md) > [ComprehendMedical](./README.md) >
-> ComprehendMedicalClient
+> [Index](..) > [ComprehendMedical](.) > ComprehendMedicalClient
 
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
@@ -104,7 +103,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeEntitiesDetectionV2JobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describeentitiesdetectionv2jobresponsetypedef).
+[DescribeEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponsetypedef).
 
 ### describe_icd10_cm_inference_job
 
@@ -119,7 +118,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeICD10CMInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describeicd10cminferencejobresponsetypedef).
+[DescribeICD10CMInferenceJobResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponsetypedef).
 
 ### describe_phi_detection_job
 
@@ -134,7 +133,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribePHIDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describephidetectionjobresponsetypedef).
+[DescribePHIDetectionJobResponseTypeDef](./type_defs.md#describephidetectionjobresponsetypedef).
 
 ### describe_rx_norm_inference_job
 
@@ -149,7 +148,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeRxNormInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#describerxnorminferencejobresponsetypedef).
+[DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef).
 
 ### detect_entities
 
@@ -164,7 +163,7 @@ Arguments:
 - `Text`: `str` *(required)*
 
 Returns
-[DetectEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#detectentitiesresponsetypedef).
+[DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
 
 ### detect_entities_v2
 
@@ -179,7 +178,7 @@ Arguments:
 - `Text`: `str` *(required)*
 
 Returns
-[DetectEntitiesV2ResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#detectentitiesv2responsetypedef).
+[DetectEntitiesV2ResponseTypeDef](./type_defs.md#detectentitiesv2responsetypedef).
 
 ### detect_phi
 
@@ -192,8 +191,7 @@ Arguments:
 
 - `Text`: `str` *(required)*
 
-Returns
-[DetectPHIResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#detectphiresponsetypedef).
+Returns [DetectPHIResponseTypeDef](./type_defs.md#detectphiresponsetypedef).
 
 ### generate_presigned_url
 
@@ -224,7 +222,7 @@ Arguments:
 - `Text`: `str` *(required)*
 
 Returns
-[InferICD10CMResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#infericd10cmresponsetypedef).
+[InferICD10CMResponseTypeDef](./type_defs.md#infericd10cmresponsetypedef).
 
 ### infer_rx_norm
 
@@ -238,7 +236,7 @@ Arguments:
 - `Text`: `str` *(required)*
 
 Returns
-[InferRxNormResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inferrxnormresponsetypedef).
+[InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef).
 
 ### list_entities_detection_v2_jobs
 
@@ -251,12 +249,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListEntitiesDetectionV2JobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listentitiesdetectionv2jobsresponsetypedef).
+[ListEntitiesDetectionV2JobsResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponsetypedef).
 
 ### list_icd10_cm_inference_jobs
 
@@ -269,12 +267,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListICD10CMInferenceJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listicd10cminferencejobsresponsetypedef).
+[ListICD10CMInferenceJobsResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponsetypedef).
 
 ### list_phi_detection_jobs
 
@@ -287,12 +285,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPHIDetectionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listphidetectionjobsresponsetypedef).
+[ListPHIDetectionJobsResponseTypeDef](./type_defs.md#listphidetectionjobsresponsetypedef).
 
 ### list_rx_norm_inference_jobs
 
@@ -305,12 +303,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#comprehendmedicalasyncjobfiltertypedef)
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListRxNormInferenceJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#listrxnorminferencejobsresponsetypedef).
+[ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef).
 
 ### start_entities_detection_v2_job
 
@@ -323,19 +321,18 @@ Boto3 documentation:
 Arguments:
 
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
-  *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` *(required)*
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCode](./literals.md#languagecode)) *(required)*
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
 - `KMSKey`: `str`
 
 Returns
-[StartEntitiesDetectionV2JobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#startentitiesdetectionv2jobresponsetypedef).
+[StartEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponsetypedef).
 
 ### start_icd10_cm_inference_job
 
@@ -348,19 +345,18 @@ Boto3 documentation:
 Arguments:
 
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
-  *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` *(required)*
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCode](./literals.md#languagecode)) *(required)*
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
 - `KMSKey`: `str`
 
 Returns
-[StartICD10CMInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#starticd10cminferencejobresponsetypedef).
+[StartICD10CMInferenceJobResponseTypeDef](./type_defs.md#starticd10cminferencejobresponsetypedef).
 
 ### start_phi_detection_job
 
@@ -373,19 +369,18 @@ Boto3 documentation:
 Arguments:
 
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
-  *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` *(required)*
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCode](./literals.md#languagecode)) *(required)*
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
 - `KMSKey`: `str`
 
 Returns
-[StartPHIDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#startphidetectionjobresponsetypedef).
+[StartPHIDetectionJobResponseTypeDef](./type_defs.md#startphidetectionjobresponsetypedef).
 
 ### start_rx_norm_inference_job
 
@@ -398,19 +393,18 @@ Boto3 documentation:
 Arguments:
 
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#outputdataconfigtypedef)
-  *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` *(required)*
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCode](./literals.md#languagecode)) *(required)*
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
 - `KMSKey`: `str`
 
 Returns
-[StartRxNormInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#startrxnorminferencejobresponsetypedef).
+[StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef).
 
 ### stop_entities_detection_v2_job
 
@@ -425,7 +419,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StopEntitiesDetectionV2JobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stopentitiesdetectionv2jobresponsetypedef).
+[StopEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponsetypedef).
 
 ### stop_icd10_cm_inference_job
 
@@ -440,7 +434,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StopICD10CMInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stopicd10cminferencejobresponsetypedef).
+[StopICD10CMInferenceJobResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponsetypedef).
 
 ### stop_phi_detection_job
 
@@ -455,7 +449,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StopPHIDetectionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stopphidetectionjobresponsetypedef).
+[StopPHIDetectionJobResponseTypeDef](./type_defs.md#stopphidetectionjobresponsetypedef).
 
 ### stop_rx_norm_inference_job
 
@@ -470,4 +464,4 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StopRxNormInferenceJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_comprehendmedical/type_defs.html#stoprxnorminferencejobresponsetypedef).
+[StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef).

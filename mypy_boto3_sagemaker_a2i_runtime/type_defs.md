@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AugmentedAIRuntime module
 
-> [Index](../README.md) > [AugmentedAIRuntime](./README.md) > Structures
+> [Index](..) > [AugmentedAIRuntime](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
@@ -15,7 +15,7 @@ type annotations stubs module
   - [HumanLoopSummaryTypeDef](#humanloopsummarytypedef)
   - [ListHumanLoopsResponseTypeDef](#listhumanloopsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartHumanLoopResponseTypeDef](#starthumanloopresponsetypedef)
 
 ## DescribeHumanLoopResponseTypeDef
@@ -27,8 +27,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopResponse
 Required fields:
 
 - `CreationTime`: `datetime`
-- `HumanLoopStatus`:
-  [HumanLoopStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/literals.html#humanloopstatus)
+- `HumanLoopStatus`: [HumanLoopStatus](./literals.md#humanloopstatus)
 - `HumanLoopName`: `str`
 - `HumanLoopArn`: `str`
 - `FlowDefinitionArn`: `str`
@@ -38,7 +37,7 @@ Optional fields:
 - `FailureReason`: `str`
 - `FailureCode`: `str`
 - `HumanLoopOutput`:
-  [HumanLoopOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#humanloopoutputtypedef)
+  [HumanLoopOutputTypeDef](./type_defs.md#humanloopoutputtypedef)
 
 ## HumanLoopDataAttributesTypeDef
 
@@ -49,7 +48,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopDataAttributesTy
 Required fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/literals.html#contentclassifier)\]
+  `List`\[[ContentClassifier](./literals.md#contentclassifier)\]
 
 ## HumanLoopInputTypeDef
 
@@ -71,7 +70,7 @@ Required fields:
 
 - `OutputS3Uri`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HumanLoopSummaryTypeDef
 
@@ -82,8 +81,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopSummaryTypeDef
 Optional fields:
 
 - `HumanLoopName`: `str`
-- `HumanLoopStatus`:
-  [HumanLoopStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/literals.html#humanloopstatus)
+- `HumanLoopStatus`: [HumanLoopStatus](./literals.md#humanloopstatus)
 - `CreationTime`: `datetime`
 - `FailureReason`: `str`
 - `FlowDefinitionArn`: `str`
@@ -97,7 +95,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsResponseTyp
 Required fields:
 
 - `HumanLoopSummaries`:
-  `List`\[[HumanLoopSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_a2i_runtime/type_defs.html#humanloopsummarytypedef)\]
+  `List`\[[HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef)\]
 
 Optional fields:
 
@@ -115,10 +113,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import ResponseMetadata
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:

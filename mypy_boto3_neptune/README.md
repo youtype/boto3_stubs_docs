@@ -1,6 +1,6 @@
 # Type annotations for boto3 Neptune module
 
-> [Index](../README.md) > Neptune
+> [Index](..) > Neptune
 
 Auto-generated documentation for
 [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
@@ -336,7 +336,7 @@ from mypy_boto3_neptune.type_defs import AddSourceIdentifierToSubscriptionResult
 - [RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef)
 - [RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef)
 - [ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef)
 - [RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef)
 - [StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef)

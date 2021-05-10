@@ -1,7 +1,6 @@
 # CustomerProfilesClient for boto3 CustomerProfiles module
 
-> [Index](../README.md) > [CustomerProfiles](./README.md) >
-> CustomerProfilesClient
+> [Index](..) > [CustomerProfiles](.) > CustomerProfilesClient
 
 Auto-generated documentation for
 [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
@@ -100,7 +99,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[AddProfileKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addprofilekeyresponsetypedef).
+[AddProfileKeyResponseTypeDef](./type_defs.md#addprofilekeyresponsetypedef).
 
 ### can_paginate
 
@@ -128,12 +127,11 @@ Arguments:
 - `DefaultExpirationDays`: `int` *(required)*
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
-- `Matching`:
-  [MatchingRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingrequesttypedef)
+- `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#createdomainresponsetypedef).
+[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
 ### create_profile
 
@@ -147,15 +145,13 @@ Arguments:
 - `DomainName`: `str` *(required)*
 - `AccountNumber`: `str`
 - `AdditionalInformation`: `str`
-- `PartyType`:
-  [PartyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#partytype)
+- `PartyType`: [PartyType](./literals.md#partytype)
 - `BusinessName`: `str`
 - `FirstName`: `str`
 - `MiddleName`: `str`
 - `LastName`: `str`
 - `BirthDate`: `str`
-- `Gender`:
-  [Gender](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#gender)
+- `Gender`: [Gender](./literals.md#gender)
 - `PhoneNumber`: `str`
 - `MobilePhoneNumber`: `str`
 - `HomePhoneNumber`: `str`
@@ -163,18 +159,14 @@ Arguments:
 - `EmailAddress`: `str`
 - `PersonalEmailAddress`: `str`
 - `BusinessEmailAddress`: `str`
-- `Address`:
-  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
-- `ShippingAddress`:
-  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
-- `MailingAddress`:
-  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
-- `BillingAddress`:
-  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#addresstypedef)
+- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
+- `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
+- `MailingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
+- `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#createprofileresponsetypedef).
+[CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
 
 ### delete_domain
 
@@ -188,7 +180,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deletedomainresponsetypedef).
+[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
 
 ### delete_integration
 
@@ -204,7 +196,7 @@ Arguments:
 - `Uri`: `str` *(required)*
 
 Returns
-[DeleteIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteintegrationresponsetypedef).
+[DeleteIntegrationResponseTypeDef](./type_defs.md#deleteintegrationresponsetypedef).
 
 ### delete_profile
 
@@ -219,7 +211,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofileresponsetypedef).
+[DeleteProfileResponseTypeDef](./type_defs.md#deleteprofileresponsetypedef).
 
 ### delete_profile_key
 
@@ -237,7 +229,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteProfileKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofilekeyresponsetypedef).
+[DeleteProfileKeyResponseTypeDef](./type_defs.md#deleteprofilekeyresponsetypedef).
 
 ### delete_profile_object
 
@@ -255,7 +247,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteProfileObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofileobjectresponsetypedef).
+[DeleteProfileObjectResponseTypeDef](./type_defs.md#deleteprofileobjectresponsetypedef).
 
 ### delete_profile_object_type
 
@@ -271,7 +263,7 @@ Arguments:
 - `ObjectTypeName`: `str` *(required)*
 
 Returns
-[DeleteProfileObjectTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#deleteprofileobjecttyperesponsetypedef).
+[DeleteProfileObjectTypeResponseTypeDef](./type_defs.md#deleteprofileobjecttyperesponsetypedef).
 
 ### generate_presigned_url
 
@@ -301,8 +293,7 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 
-Returns
-[GetDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getdomainresponsetypedef).
+Returns [GetDomainResponseTypeDef](./type_defs.md#getdomainresponsetypedef).
 
 ### get_integration
 
@@ -318,7 +309,7 @@ Arguments:
 - `Uri`: `str` *(required)*
 
 Returns
-[GetIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getintegrationresponsetypedef).
+[GetIntegrationResponseTypeDef](./type_defs.md#getintegrationresponsetypedef).
 
 ### get_matches
 
@@ -333,8 +324,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[GetMatchesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getmatchesresponsetypedef).
+Returns [GetMatchesResponseTypeDef](./type_defs.md#getmatchesresponsetypedef).
 
 ### get_profile_object_type
 
@@ -350,7 +340,7 @@ Arguments:
 - `ObjectTypeName`: `str` *(required)*
 
 Returns
-[GetProfileObjectTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getprofileobjecttyperesponsetypedef).
+[GetProfileObjectTypeResponseTypeDef](./type_defs.md#getprofileobjecttyperesponsetypedef).
 
 ### get_profile_object_type_template
 
@@ -365,7 +355,7 @@ Arguments:
 - `TemplateId`: `str` *(required)*
 
 Returns
-[GetProfileObjectTypeTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#getprofileobjecttypetemplateresponsetypedef).
+[GetProfileObjectTypeTemplateResponseTypeDef](./type_defs.md#getprofileobjecttypetemplateresponsetypedef).
 
 ### list_account_integrations
 
@@ -382,7 +372,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountIntegrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listaccountintegrationsresponsetypedef).
+[ListAccountIntegrationsResponseTypeDef](./type_defs.md#listaccountintegrationsresponsetypedef).
 
 ### list_domains
 
@@ -397,7 +387,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listdomainsresponsetypedef).
+[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
 ### list_integrations
 
@@ -414,7 +404,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIntegrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listintegrationsresponsetypedef).
+[ListIntegrationsResponseTypeDef](./type_defs.md#listintegrationsresponsetypedef).
 
 ### list_profile_object_type_templates
 
@@ -430,7 +420,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProfileObjectTypeTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjecttypetemplatesresponsetypedef).
+[ListProfileObjectTypeTemplatesResponseTypeDef](./type_defs.md#listprofileobjecttypetemplatesresponsetypedef).
 
 ### list_profile_object_types
 
@@ -447,7 +437,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProfileObjectTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjecttypesresponsetypedef).
+[ListProfileObjectTypesResponseTypeDef](./type_defs.md#listprofileobjecttypesresponsetypedef).
 
 ### list_profile_objects
 
@@ -466,7 +456,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProfileObjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listprofileobjectsresponsetypedef).
+[ListProfileObjectsResponseTypeDef](./type_defs.md#listprofileobjectsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -481,7 +471,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### merge_profiles
 
@@ -496,10 +486,10 @@ Arguments:
 - `MainProfileId`: `str` *(required)*
 - `ProfileIdsToBeMerged`: `List`\[`str`\] *(required)*
 - `FieldSourceProfileIds`:
-  [FieldSourceProfileIdsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#fieldsourceprofileidstypedef)
+  [FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef)
 
 Returns
-[MergeProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#mergeprofilesresponsetypedef).
+[MergeProfilesResponseTypeDef](./type_defs.md#mergeprofilesresponsetypedef).
 
 ### put_integration
 
@@ -515,11 +505,10 @@ Arguments:
 - `ObjectTypeName`: `str` *(required)*
 - `Uri`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `FlowDefinition`:
-  [FlowDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#flowdefinitiontypedef)
+- `FlowDefinition`: [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
 
 Returns
-[PutIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#putintegrationresponsetypedef).
+[PutIntegrationResponseTypeDef](./type_defs.md#putintegrationresponsetypedef).
 
 ### put_profile_object
 
@@ -536,7 +525,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[PutProfileObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#putprofileobjectresponsetypedef).
+[PutProfileObjectResponseTypeDef](./type_defs.md#putprofileobjectresponsetypedef).
 
 ### put_profile_object_type
 
@@ -556,13 +545,13 @@ Arguments:
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
 - `Fields`: `Dict`\[`str`,
-  [ObjectTypeFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypefieldtypedef)\]
+  [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
 - `Keys`: `Dict`\[`str`,
-  `List`\[[ObjectTypeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#objecttypekeytypedef)\]\]
+  `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PutProfileObjectTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#putprofileobjecttyperesponsetypedef).
+[PutProfileObjectTypeResponseTypeDef](./type_defs.md#putprofileobjecttyperesponsetypedef).
 
 ### search_profiles
 
@@ -581,7 +570,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#searchprofilesresponsetypedef).
+[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
 
 ### tag_resource
 
@@ -624,12 +613,11 @@ Arguments:
 - `DefaultExpirationDays`: `int`
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
-- `Matching`:
-  [MatchingRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#matchingrequesttypedef)
+- `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updatedomainresponsetypedef).
+[UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
 
 ### update_profile
 
@@ -644,15 +632,13 @@ Arguments:
 - `ProfileId`: `str` *(required)*
 - `AdditionalInformation`: `str`
 - `AccountNumber`: `str`
-- `PartyType`:
-  [PartyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#partytype)
+- `PartyType`: [PartyType](./literals.md#partytype)
 - `BusinessName`: `str`
 - `FirstName`: `str`
 - `MiddleName`: `str`
 - `LastName`: `str`
 - `BirthDate`: `str`
-- `Gender`:
-  [Gender](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/literals.html#gender)
+- `Gender`: [Gender](./literals.md#gender)
 - `PhoneNumber`: `str`
 - `MobilePhoneNumber`: `str`
 - `HomePhoneNumber`: `str`
@@ -660,15 +646,11 @@ Arguments:
 - `EmailAddress`: `str`
 - `PersonalEmailAddress`: `str`
 - `BusinessEmailAddress`: `str`
-- `Address`:
-  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
-- `ShippingAddress`:
-  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
-- `MailingAddress`:
-  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
-- `BillingAddress`:
-  [UpdateAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateaddresstypedef)
+- `Address`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
+- `ShippingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
+- `MailingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
+- `BillingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_customer_profiles/type_defs.html#updateprofileresponsetypedef).
+[UpdateProfileResponseTypeDef](./type_defs.md#updateprofileresponsetypedef).

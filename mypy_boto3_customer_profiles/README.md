@@ -1,6 +1,6 @@
 # Type annotations for boto3 CustomerProfiles module
 
-> [Index](../README.md) > CustomerProfiles
+> [Index](..) > CustomerProfiles
 
 Auto-generated documentation for
 [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)

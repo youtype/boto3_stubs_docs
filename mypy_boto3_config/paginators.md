@@ -1,6 +1,6 @@
 # Paginators for boto3 ConfigService module
 
-> [Index](../README.md) > [ConfigService](./README.md) > Paginators
+> [Index](..) > [ConfigService](.) > Paginators
 
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
@@ -61,12 +61,12 @@ method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [ConfigRuleComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configrulecompliancefilterstypedef)
+  [ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAggregateComplianceByConfigRulesPaginator.paginate` returns
-`Iterator`\[[DescribeAggregateComplianceByConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconfigrulesresponsetypedef)\].
+`Iterator`\[[DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef)\].
 
 ## DescribeAggregateComplianceByConformancePacksPaginator
 
@@ -90,12 +90,12 @@ method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [AggregateConformancePackComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateconformancepackcompliancefilterstypedef)
+  [AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAggregateComplianceByConformancePacksPaginator.paginate` returns
-`Iterator`\[[DescribeAggregateComplianceByConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconformancepacksresponsetypedef)\].
+`Iterator`\[[DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef)\].
 
 ## DescribeAggregationAuthorizationsPaginator
 
@@ -117,10 +117,10 @@ Boto3 documentation:
 Arguments for `DescribeAggregationAuthorizationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAggregationAuthorizationsPaginator.paginate` returns
-`Iterator`\[[DescribeAggregationAuthorizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregationauthorizationsresponsetypedef)\].
+`Iterator`\[[DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef)\].
 
 ## DescribeComplianceByConfigRulePaginator
 
@@ -142,13 +142,12 @@ Boto3 documentation:
 Arguments for `DescribeComplianceByConfigRulePaginator.paginate` method:
 
 - `ConfigRuleNames`: `List`\[`str`\]
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeComplianceByConfigRulePaginator.paginate` returns
-`Iterator`\[[DescribeComplianceByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyconfigruleresponsetypedef)\].
+`Iterator`\[[DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef)\].
 
 ## DescribeComplianceByResourcePaginator
 
@@ -171,13 +170,12 @@ Arguments for `DescribeComplianceByResourcePaginator.paginate` method:
 
 - `ResourceType`: `str`
 - `ResourceId`: `str`
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeComplianceByResourcePaginator.paginate` returns
-`Iterator`\[[DescribeComplianceByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyresourceresponsetypedef)\].
+`Iterator`\[[DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef)\].
 
 ## DescribeConfigRuleEvaluationStatusPaginator
 
@@ -200,10 +198,10 @@ Arguments for `DescribeConfigRuleEvaluationStatusPaginator.paginate` method:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConfigRuleEvaluationStatusPaginator.paginate` returns
-`Iterator`\[[DescribeConfigRuleEvaluationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigruleevaluationstatusresponsetypedef)\].
+`Iterator`\[[DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef)\].
 
 ## DescribeConfigRulesPaginator
 
@@ -226,10 +224,10 @@ Arguments for `DescribeConfigRulesPaginator.paginate` method:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConfigRulesPaginator.paginate` returns
-`Iterator`\[[DescribeConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigrulesresponsetypedef)\].
+`Iterator`\[[DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef)\].
 
 ## DescribeConfigurationAggregatorSourcesStatusPaginator
 
@@ -253,12 +251,12 @@ method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#aggregatedsourcestatustype)\]
+  `List`\[[AggregatedSourceStatusType](./literals.md#aggregatedsourcestatustype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConfigurationAggregatorSourcesStatusPaginator.paginate` returns
-`Iterator`\[[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsourcesstatusresponsetypedef)\].
+`Iterator`\[[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef)\].
 
 ## DescribeConfigurationAggregatorsPaginator
 
@@ -281,10 +279,10 @@ Arguments for `DescribeConfigurationAggregatorsPaginator.paginate` method:
 
 - `ConfigurationAggregatorNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConfigurationAggregatorsPaginator.paginate` returns
-`Iterator`\[[DescribeConfigurationAggregatorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsresponsetypedef)\].
+`Iterator`\[[DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef)\].
 
 ## DescribeConformancePackStatusPaginator
 
@@ -307,10 +305,10 @@ Arguments for `DescribeConformancePackStatusPaginator.paginate` method:
 
 - `ConformancePackNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConformancePackStatusPaginator.paginate` returns
-`Iterator`\[[DescribeConformancePackStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepackstatusresponsetypedef)\].
+`Iterator`\[[DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef)\].
 
 ## DescribeConformancePacksPaginator
 
@@ -333,10 +331,10 @@ Arguments for `DescribeConformancePacksPaginator.paginate` method:
 
 - `ConformancePackNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConformancePacksPaginator.paginate` returns
-`Iterator`\[[DescribeConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepacksresponsetypedef)\].
+`Iterator`\[[DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef)\].
 
 ## DescribeOrganizationConfigRuleStatusesPaginator
 
@@ -360,10 +358,10 @@ method:
 
 - `OrganizationConfigRuleNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrganizationConfigRuleStatusesPaginator.paginate` returns
-`Iterator`\[[DescribeOrganizationConfigRuleStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconfigrulestatusesresponsetypedef)\].
+`Iterator`\[[DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef)\].
 
 ## DescribeOrganizationConfigRulesPaginator
 
@@ -386,10 +384,10 @@ Arguments for `DescribeOrganizationConfigRulesPaginator.paginate` method:
 
 - `OrganizationConfigRuleNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrganizationConfigRulesPaginator.paginate` returns
-`Iterator`\[[DescribeOrganizationConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconfigrulesresponsetypedef)\].
+`Iterator`\[[DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef)\].
 
 ## DescribeOrganizationConformancePackStatusesPaginator
 
@@ -413,10 +411,10 @@ method:
 
 - `OrganizationConformancePackNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrganizationConformancePackStatusesPaginator.paginate` returns
-`Iterator`\[[DescribeOrganizationConformancePackStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconformancepackstatusesresponsetypedef)\].
+`Iterator`\[[DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef)\].
 
 ## DescribeOrganizationConformancePacksPaginator
 
@@ -439,10 +437,10 @@ Arguments for `DescribeOrganizationConformancePacksPaginator.paginate` method:
 
 - `OrganizationConformancePackNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrganizationConformancePacksPaginator.paginate` returns
-`Iterator`\[[DescribeOrganizationConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconformancepacksresponsetypedef)\].
+`Iterator`\[[DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef)\].
 
 ## DescribePendingAggregationRequestsPaginator
 
@@ -464,10 +462,10 @@ Boto3 documentation:
 Arguments for `DescribePendingAggregationRequestsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePendingAggregationRequestsPaginator.paginate` returns
-`Iterator`\[[DescribePendingAggregationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describependingaggregationrequestsresponsetypedef)\].
+`Iterator`\[[DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef)\].
 
 ## DescribeRemediationExecutionStatusPaginator
 
@@ -490,12 +488,12 @@ Arguments for `DescribeRemediationExecutionStatusPaginator.paginate` method:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRemediationExecutionStatusPaginator.paginate` returns
-`Iterator`\[[DescribeRemediationExecutionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationexecutionstatusresponsetypedef)\].
+`Iterator`\[[DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef)\].
 
 ## DescribeRetentionConfigurationsPaginator
 
@@ -518,10 +516,10 @@ Arguments for `DescribeRetentionConfigurationsPaginator.paginate` method:
 
 - `RetentionConfigurationNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRetentionConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeRetentionConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeretentionconfigurationsresponsetypedef)\].
+`Iterator`\[[DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef)\].
 
 ## GetAggregateComplianceDetailsByConfigRulePaginator
 
@@ -547,13 +545,12 @@ method:
 - `ConfigRuleName`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 - `AwsRegion`: `str` *(required)*
-- `ComplianceType`:
-  [ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)
+- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAggregateComplianceDetailsByConfigRulePaginator.paginate` returns
-`Iterator`\[[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregatecompliancedetailsbyconfigruleresponsetypedef)\].
+`Iterator`\[[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef)\].
 
 ## GetComplianceDetailsByConfigRulePaginator
 
@@ -575,13 +572,12 @@ Boto3 documentation:
 Arguments for `GetComplianceDetailsByConfigRulePaginator.paginate` method:
 
 - `ConfigRuleName`: `str` *(required)*
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetComplianceDetailsByConfigRulePaginator.paginate` returns
-`Iterator`\[[GetComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyconfigruleresponsetypedef)\].
+`Iterator`\[[GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef)\].
 
 ## GetComplianceDetailsByResourcePaginator
 
@@ -604,13 +600,12 @@ Arguments for `GetComplianceDetailsByResourcePaginator.paginate` method:
 
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetComplianceDetailsByResourcePaginator.paginate` returns
-`Iterator`\[[GetComplianceDetailsByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyresourceresponsetypedef)\].
+`Iterator`\[[GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef)\].
 
 ## GetConformancePackComplianceSummaryPaginator
 
@@ -633,10 +628,10 @@ Arguments for `GetConformancePackComplianceSummaryPaginator.paginate` method:
 
 - `ConformancePackNames`: `List`\[`str`\] *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConformancePackComplianceSummaryPaginator.paginate` returns
-`Iterator`\[[GetConformancePackComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getconformancepackcompliancesummaryresponsetypedef)\].
+`Iterator`\[[GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef)\].
 
 ## GetOrganizationConfigRuleDetailedStatusPaginator
 
@@ -660,12 +655,12 @@ method:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 - `Filters`:
-  [StatusDetailFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#statusdetailfilterstypedef)
+  [StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOrganizationConfigRuleDetailedStatusPaginator.paginate` returns
-`Iterator`\[[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getorganizationconfigruledetailedstatusresponsetypedef)\].
+`Iterator`\[[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef)\].
 
 ## GetOrganizationConformancePackDetailedStatusPaginator
 
@@ -689,12 +684,12 @@ method:
 
 - `OrganizationConformancePackName`: `str` *(required)*
 - `Filters`:
-  [OrganizationResourceDetailedStatusFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationresourcedetailedstatusfilterstypedef)
+  [OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOrganizationConformancePackDetailedStatusPaginator.paginate` returns
-`Iterator`\[[GetOrganizationConformancePackDetailedStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getorganizationconformancepackdetailedstatusresponsetypedef)\].
+`Iterator`\[[GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef)\].
 
 ## GetResourceConfigHistoryPaginator
 
@@ -715,19 +710,16 @@ Boto3 documentation:
 
 Arguments for `GetResourceConfigHistoryPaginator.paginate` method:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
-  *(required)*
+- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `resourceId`: `str` *(required)*
 - `laterTime`: `datetime`
 - `earlierTime`: `datetime`
-- `chronologicalOrder`:
-  [ChronologicalOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#chronologicalorder)
+- `chronologicalOrder`: [ChronologicalOrder](./literals.md#chronologicalorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceConfigHistoryPaginator.paginate` returns
-`Iterator`\[[GetResourceConfigHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getresourceconfighistoryresponsetypedef)\].
+`Iterator`\[[GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef)\].
 
 ## ListAggregateDiscoveredResourcesPaginator
 
@@ -749,16 +741,13 @@ Boto3 documentation:
 Arguments for `ListAggregateDiscoveredResourcesPaginator.paginate` method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
-  *(required)*
-- `Filters`:
-  [ResourceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcefilterstypedef)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAggregateDiscoveredResourcesPaginator.paginate` returns
-`Iterator`\[[ListAggregateDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listaggregatediscoveredresourcesresponsetypedef)\].
+`Iterator`\[[ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef)\].
 
 ## ListDiscoveredResourcesPaginator
 
@@ -779,17 +768,15 @@ Boto3 documentation:
 
 Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
-  *(required)*
+- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `resourceIds`: `List`\[`str`\]
 - `resourceName`: `str`
 - `includeDeletedResources`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDiscoveredResourcesPaginator.paginate` returns
-`Iterator`\[[ListDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listdiscoveredresourcesresponsetypedef)\].
+`Iterator`\[[ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -812,10 +799,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `ResourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listtagsforresourceresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## SelectAggregateResourceConfigPaginator
 
@@ -840,10 +827,10 @@ Arguments for `SelectAggregateResourceConfigPaginator.paginate` method:
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `MaxResults`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SelectAggregateResourceConfigPaginator.paginate` returns
-`Iterator`\[[SelectAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#selectaggregateresourceconfigresponsetypedef)\].
+`Iterator`\[[SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef)\].
 
 ## SelectResourceConfigPaginator
 
@@ -866,7 +853,7 @@ Arguments for `SelectResourceConfigPaginator.paginate` method:
 
 - `Expression`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SelectResourceConfigPaginator.paginate` returns
-`Iterator`\[[SelectResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#selectresourceconfigresponsetypedef)\].
+`Iterator`\[[SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef)\].

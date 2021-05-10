@@ -1,6 +1,6 @@
 # Paginators for boto3 CostandUsageReportService module
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) > Paginators
+> [Index](..) > [CostandUsageReportService](.) > Paginators
 
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
@@ -30,7 +30,7 @@ Boto3 documentation:
 Arguments for `DescribeReportDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReportDefinitionsPaginator.paginate` returns
-`Iterator`\[[DescribeReportDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cur/type_defs.html#describereportdefinitionsresponsetypedef)\].
+`Iterator`\[[DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef)\].

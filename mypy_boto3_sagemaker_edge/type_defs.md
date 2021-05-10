@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SagemakerEdgeManager module
 
-> [Index](../README.md) > [SagemakerEdgeManager](./README.md) > Structures
+> [Index](..) > [SagemakerEdgeManager](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
@@ -48,5 +48,4 @@ Optional fields:
 - `ModelVersion`: `str`
 - `LatestSampleTime`: `datetime`
 - `LatestInference`: `datetime`
-- `ModelMetrics`:
-  `List`\[[EdgeMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_edge/type_defs.html#edgemetrictypedef)\]
+- `ModelMetrics`: `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]

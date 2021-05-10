@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SecurityHub module
 
-> [Index](../README.md) > [SecurityHub](./README.md) > Structures
+> [Index](..) > [SecurityHub](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
@@ -352,13 +352,10 @@ Optional fields:
 
 - `IpAddressV4`: `str`
 - `Organization`:
-  [IpOrganizationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#iporganizationdetailstypedef)
-- `Country`:
-  [CountryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#countrytypedef)
-- `City`:
-  [CityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#citytypedef)
-- `GeoLocation`:
-  [GeoLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#geolocationtypedef)
+  [IpOrganizationDetailsTypeDef](./type_defs.md#iporganizationdetailstypedef)
+- `Country`: [CountryTypeDef](./type_defs.md#countrytypedef)
+- `City`: [CityTypeDef](./type_defs.md#citytypedef)
+- `GeoLocation`: [GeoLocationTypeDef](./type_defs.md#geolocationtypedef)
 
 ## ActionRemotePortDetailsTypeDef
 
@@ -393,13 +390,13 @@ Optional fields:
 
 - `ActionType`: `str`
 - `NetworkConnectionAction`:
-  [NetworkConnectionActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networkconnectionactiontypedef)
+  [NetworkConnectionActionTypeDef](./type_defs.md#networkconnectionactiontypedef)
 - `AwsApiCallAction`:
-  [AwsApiCallActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapicallactiontypedef)
+  [AwsApiCallActionTypeDef](./type_defs.md#awsapicallactiontypedef)
 - `DnsRequestAction`:
-  [DnsRequestActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#dnsrequestactiontypedef)
+  [DnsRequestActionTypeDef](./type_defs.md#dnsrequestactiontypedef)
 - `PortProbeAction`:
-  [PortProbeActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#portprobeactiontypedef)
+  [PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef)
 
 ## AdminAccountTypeDef
 
@@ -410,8 +407,7 @@ from mypy_boto3_securityhub.type_defs import AdminAccountTypeDef
 Optional fields:
 
 - `AccountId`: `str`
-- `Status`:
-  [AdminStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#adminstatus)
+- `Status`: [AdminStatus](./literals.md#adminstatus)
 
 ## AvailabilityZoneTypeDef
 
@@ -446,9 +442,9 @@ Optional fields:
 - `ServiceName`: `str`
 - `CallerType`: `str`
 - `RemoteIpDetails`:
-  [ActionRemoteIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionremoteipdetailstypedef)
+  [ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef)
 - `DomainDetails`:
-  [AwsApiCallActionDomainDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapicallactiondomaindetailstypedef)
+  [AwsApiCallActionDomainDetailsTypeDef](./type_defs.md#awsapicallactiondomaindetailstypedef)
 - `AffectedResources`: `Dict`\[`str`, `str`\]
 - `FirstSeen`: `str`
 - `LastSeen`: `str`
@@ -525,7 +521,7 @@ Optional fields:
 - `MinimumCompressionSize`: `int`
 - `ApiKeySource`: `str`
 - `EndpointConfiguration`:
-  [AwsApiGatewayEndpointConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayendpointconfigurationtypedef)
+  [AwsApiGatewayEndpointConfigurationTypeDef](./type_defs.md#awsapigatewayendpointconfigurationtypedef)
 
 ## AwsApiGatewayStageDetailsTypeDef
 
@@ -543,13 +539,13 @@ Optional fields:
 - `CacheClusterSize`: `str`
 - `CacheClusterStatus`: `str`
 - `MethodSettings`:
-  `List`\[[AwsApiGatewayMethodSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewaymethodsettingstypedef)\]
+  `List`\[[AwsApiGatewayMethodSettingsTypeDef](./type_defs.md#awsapigatewaymethodsettingstypedef)\]
 - `Variables`: `Dict`\[`str`, `str`\]
 - `DocumentationVersion`: `str`
 - `AccessLogSettings`:
-  [AwsApiGatewayAccessLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayaccesslogsettingstypedef)
+  [AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef)
 - `CanarySettings`:
-  [AwsApiGatewayCanarySettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewaycanarysettingstypedef)
+  [AwsApiGatewayCanarySettingsTypeDef](./type_defs.md#awsapigatewaycanarysettingstypedef)
 - `TracingEnabled`: `bool`
 - `CreatedDate`: `str`
 - `LastUpdatedDate`: `str`
@@ -573,7 +569,7 @@ Optional fields:
 - `ProtocolType`: `str`
 - `RouteSelectionExpression`: `str`
 - `CorsConfiguration`:
-  [AwsCorsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscorsconfigurationtypedef)
+  [AwsCorsConfigurationTypeDef](./type_defs.md#awscorsconfigurationtypedef)
 
 ## AwsApiGatewayV2RouteSettingsTypeDef
 
@@ -600,15 +596,15 @@ Optional fields:
 - `CreatedDate`: `str`
 - `Description`: `str`
 - `DefaultRouteSettings`:
-  [AwsApiGatewayV2RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayv2routesettingstypedef)
+  [AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef)
 - `DeploymentId`: `str`
 - `LastUpdatedDate`: `str`
 - `RouteSettings`:
-  [AwsApiGatewayV2RouteSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayv2routesettingstypedef)
+  [AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef)
 - `StageName`: `str`
 - `StageVariables`: `Dict`\[`str`, `str`\]
 - `AccessLogSettings`:
-  [AwsApiGatewayAccessLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayaccesslogsettingstypedef)
+  [AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef)
 - `AutoDeploy`: `bool`
 - `LastDeploymentStatusMessage`: `str`
 - `ApiGatewayManaged`: `bool`
@@ -639,9 +635,9 @@ Optional fields:
 - `CreatedAt`: `str`
 - `DomainName`: `str`
 - `DomainValidationOptions`:
-  `List`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
+  `List`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
 - `ExtendedKeyUsages`:
-  `List`\[[AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificateextendedkeyusagetypedef)\]
+  `List`\[[AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificateextendedkeyusagetypedef)\]
 - `FailureReason`: `str`
 - `ImportedAt`: `str`
 - `InUseBy`: `List`\[`str`\]
@@ -649,14 +645,14 @@ Optional fields:
 - `Issuer`: `str`
 - `KeyAlgorithm`: `str`
 - `KeyUsages`:
-  `List`\[[AwsCertificateManagerCertificateKeyUsageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificatekeyusagetypedef)\]
+  `List`\[[AwsCertificateManagerCertificateKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificatekeyusagetypedef)\]
 - `NotAfter`: `str`
 - `NotBefore`: `str`
 - `Options`:
-  [AwsCertificateManagerCertificateOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificateoptionstypedef)
+  [AwsCertificateManagerCertificateOptionsTypeDef](./type_defs.md#awscertificatemanagercertificateoptionstypedef)
 - `RenewalEligibility`: `str`
 - `RenewalSummary`:
-  [AwsCertificateManagerCertificateRenewalSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificaterenewalsummarytypedef)
+  [AwsCertificateManagerCertificateRenewalSummaryTypeDef](./type_defs.md#awscertificatemanagercertificaterenewalsummarytypedef)
 - `Serial`: `str`
 - `SignatureAlgorithm`: `str`
 - `Status`: `str`
@@ -674,7 +670,7 @@ Optional fields:
 
 - `DomainName`: `str`
 - `ResourceRecord`:
-  [AwsCertificateManagerCertificateResourceRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificateresourcerecordtypedef)
+  [AwsCertificateManagerCertificateResourceRecordTypeDef](./type_defs.md#awscertificatemanagercertificateresourcerecordtypedef)
 - `ValidationDomain`: `str`
 - `ValidationEmails`: `List`\[`str`\]
 - `ValidationMethod`: `str`
@@ -720,7 +716,7 @@ from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateRen
 Optional fields:
 
 - `DomainValidationOptions`:
-  `List`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
+  `List`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
 - `RenewalStatus`: `str`
 - `RenewalStatusReason`: `str`
 - `UpdatedAt`: `str`
@@ -756,7 +752,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionCacheBehav
 Optional fields:
 
 - `Items`:
-  `List`\[[AwsCloudFrontDistributionCacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributioncachebehaviortypedef)\]
+  `List`\[[AwsCloudFrontDistributionCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviortypedef)\]
 
 ## AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef
 
@@ -777,19 +773,19 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionDetailsTyp
 Optional fields:
 
 - `CacheBehaviors`:
-  [AwsCloudFrontDistributionCacheBehaviorsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributioncachebehaviorstypedef)
+  [AwsCloudFrontDistributionCacheBehaviorsTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviorstypedef)
 - `DefaultCacheBehavior`:
-  [AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributiondefaultcachebehaviortypedef)
+  [AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributiondefaultcachebehaviortypedef)
 - `DefaultRootObject`: `str`
 - `DomainName`: `str`
 - `ETag`: `str`
 - `LastModifiedTime`: `str`
 - `Logging`:
-  [AwsCloudFrontDistributionLoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionloggingtypedef)
+  [AwsCloudFrontDistributionLoggingTypeDef](./type_defs.md#awscloudfrontdistributionloggingtypedef)
 - `Origins`:
-  [AwsCloudFrontDistributionOriginsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionoriginstypedef)
+  [AwsCloudFrontDistributionOriginsTypeDef](./type_defs.md#awscloudfrontdistributionoriginstypedef)
 - `OriginGroups`:
-  [AwsCloudFrontDistributionOriginGroupsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionorigingroupstypedef)
+  [AwsCloudFrontDistributionOriginGroupsTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupstypedef)
 - `Status`: `str`
 - `WebAclId`: `str`
 
@@ -826,7 +822,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGrou
 Optional fields:
 
 - `StatusCodes`:
-  [AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionorigingroupfailoverstatuscodestypedef)
+  [AwsCloudFrontDistributionOriginGroupFailoverStatusCodesTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailoverstatuscodestypedef)
 
 ## AwsCloudFrontDistributionOriginGroupTypeDef
 
@@ -837,7 +833,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGrou
 Optional fields:
 
 - `FailoverCriteria`:
-  [AwsCloudFrontDistributionOriginGroupFailoverTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionorigingroupfailovertypedef)
+  [AwsCloudFrontDistributionOriginGroupFailoverTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupfailovertypedef)
 
 ## AwsCloudFrontDistributionOriginGroupsTypeDef
 
@@ -848,7 +844,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGrou
 Optional fields:
 
 - `Items`:
-  `List`\[[AwsCloudFrontDistributionOriginGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionorigingrouptypedef)\]
+  `List`\[[AwsCloudFrontDistributionOriginGroupTypeDef](./type_defs.md#awscloudfrontdistributionorigingrouptypedef)\]
 
 ## AwsCloudFrontDistributionOriginItemTypeDef
 
@@ -862,7 +858,7 @@ Optional fields:
 - `Id`: `str`
 - `OriginPath`: `str`
 - `S3OriginConfig`:
-  [AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionorigins3originconfigtypedef)
+  [AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](./type_defs.md#awscloudfrontdistributionorigins3originconfigtypedef)
 
 ## AwsCloudFrontDistributionOriginS3OriginConfigTypeDef
 
@@ -883,7 +879,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginsTyp
 Optional fields:
 
 - `Items`:
-  `List`\[[AwsCloudFrontDistributionOriginItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributionoriginitemtypedef)\]
+  `List`\[[AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef)\]
 
 ## AwsCloudTrailTrailDetailsTypeDef
 
@@ -919,13 +915,13 @@ Optional fields:
 
 - `EncryptionKey`: `str`
 - `Environment`:
-  [AwsCodeBuildProjectEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscodebuildprojectenvironmenttypedef)
+  [AwsCodeBuildProjectEnvironmentTypeDef](./type_defs.md#awscodebuildprojectenvironmenttypedef)
 - `Name`: `str`
 - `Source`:
-  [AwsCodeBuildProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscodebuildprojectsourcetypedef)
+  [AwsCodeBuildProjectSourceTypeDef](./type_defs.md#awscodebuildprojectsourcetypedef)
 - `ServiceRole`: `str`
 - `VpcConfig`:
-  [AwsCodeBuildProjectVpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscodebuildprojectvpcconfigtypedef)
+  [AwsCodeBuildProjectVpcConfigTypeDef](./type_defs.md#awscodebuildprojectvpcconfigtypedef)
 
 ## AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef
 
@@ -949,7 +945,7 @@ Optional fields:
 - `Certificate`: `str`
 - `ImagePullCredentialsType`: `str`
 - `RegistryCredential`:
-  [AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscodebuildprojectenvironmentregistrycredentialtypedef)
+  [AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef](./type_defs.md#awscodebuildprojectenvironmentregistrycredentialtypedef)
 - `Type`: `str`
 
 ## AwsCodeBuildProjectSourceTypeDef
@@ -1023,30 +1019,30 @@ from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableDetailsTypeDef
 Optional fields:
 
 - `AttributeDefinitions`:
-  `List`\[[AwsDynamoDbTableAttributeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableattributedefinitiontypedef)\]
+  `List`\[[AwsDynamoDbTableAttributeDefinitionTypeDef](./type_defs.md#awsdynamodbtableattributedefinitiontypedef)\]
 - `BillingModeSummary`:
-  [AwsDynamoDbTableBillingModeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablebillingmodesummarytypedef)
+  [AwsDynamoDbTableBillingModeSummaryTypeDef](./type_defs.md#awsdynamodbtablebillingmodesummarytypedef)
 - `CreationDateTime`: `str`
 - `GlobalSecondaryIndexes`:
-  `List`\[[AwsDynamoDbTableGlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableglobalsecondaryindextypedef)\]
+  `List`\[[AwsDynamoDbTableGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtableglobalsecondaryindextypedef)\]
 - `GlobalTableVersion`: `str`
 - `ItemCount`: `int`
 - `KeySchema`:
-  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablekeyschematypedef)\]
+  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
 - `LatestStreamArn`: `str`
 - `LatestStreamLabel`: `str`
 - `LocalSecondaryIndexes`:
-  `List`\[[AwsDynamoDbTableLocalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablelocalsecondaryindextypedef)\]
+  `List`\[[AwsDynamoDbTableLocalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablelocalsecondaryindextypedef)\]
 - `ProvisionedThroughput`:
-  [AwsDynamoDbTableProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableprovisionedthroughputtypedef)
+  [AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef)
 - `Replicas`:
-  `List`\[[AwsDynamoDbTableReplicaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablereplicatypedef)\]
+  `List`\[[AwsDynamoDbTableReplicaTypeDef](./type_defs.md#awsdynamodbtablereplicatypedef)\]
 - `RestoreSummary`:
-  [AwsDynamoDbTableRestoreSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablerestoresummarytypedef)
+  [AwsDynamoDbTableRestoreSummaryTypeDef](./type_defs.md#awsdynamodbtablerestoresummarytypedef)
 - `SseDescription`:
-  [AwsDynamoDbTableSseDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablessedescriptiontypedef)
+  [AwsDynamoDbTableSseDescriptionTypeDef](./type_defs.md#awsdynamodbtablessedescriptiontypedef)
 - `StreamSpecification`:
-  [AwsDynamoDbTableStreamSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablestreamspecificationtypedef)
+  [AwsDynamoDbTableStreamSpecificationTypeDef](./type_defs.md#awsdynamodbtablestreamspecificationtypedef)
 - `TableId`: `str`
 - `TableName`: `str`
 - `TableSizeBytes`: `int`
@@ -1067,11 +1063,11 @@ Optional fields:
 - `IndexStatus`: `str`
 - `ItemCount`: `int`
 - `KeySchema`:
-  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablekeyschematypedef)\]
+  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
 - `Projection`:
-  [AwsDynamoDbTableProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableprojectiontypedef)
+  [AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef)
 - `ProvisionedThroughput`:
-  [AwsDynamoDbTableProvisionedThroughputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableprovisionedthroughputtypedef)
+  [AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef)
 
 ## AwsDynamoDbTableKeySchemaTypeDef
 
@@ -1095,9 +1091,9 @@ Optional fields:
 - `IndexArn`: `str`
 - `IndexName`: `str`
 - `KeySchema`:
-  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablekeyschematypedef)\]
+  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
 - `Projection`:
-  [AwsDynamoDbTableProjectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableprojectiontypedef)
+  [AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef)
 
 ## AwsDynamoDbTableProjectionTypeDef
 
@@ -1144,7 +1140,7 @@ Optional fields:
 
 - `IndexName`: `str`
 - `ProvisionedThroughputOverride`:
-  [AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableprovisionedthroughputoverridetypedef)
+  [AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef)
 
 ## AwsDynamoDbTableReplicaTypeDef
 
@@ -1155,10 +1151,10 @@ from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableReplicaTypeDef
 Optional fields:
 
 - `GlobalSecondaryIndexes`:
-  `List`\[[AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtablereplicaglobalsecondaryindextypedef)\]
+  `List`\[[AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablereplicaglobalsecondaryindextypedef)\]
 - `KmsMasterKeyId`: `str`
 - `ProvisionedThroughputOverride`:
-  [AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtableprovisionedthroughputoverridetypedef)
+  [AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef)
 - `RegionName`: `str`
 - `ReplicaStatus`: `str`
 - `ReplicaStatusDescription`: `str`
@@ -1262,9 +1258,9 @@ Optional fields:
 - `OwnerId`: `str`
 - `VpcId`: `str`
 - `Associations`:
-  `List`\[[AwsEc2NetworkAclAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkaclassociationtypedef)\]
+  `List`\[[AwsEc2NetworkAclAssociationTypeDef](./type_defs.md#awsec2networkaclassociationtypedef)\]
 - `Entries`:
-  `List`\[[AwsEc2NetworkAclEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkaclentrytypedef)\]
+  `List`\[[AwsEc2NetworkAclEntryTypeDef](./type_defs.md#awsec2networkaclentrytypedef)\]
 
 ## AwsEc2NetworkAclEntryTypeDef
 
@@ -1276,11 +1272,9 @@ Optional fields:
 
 - `CidrBlock`: `str`
 - `Egress`: `bool`
-- `IcmpTypeCode`:
-  [IcmpTypeCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#icmptypecodetypedef)
+- `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
 - `Ipv6CidrBlock`: `str`
-- `PortRange`:
-  [PortRangeFromToTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#portrangefromtotypedef)
+- `PortRange`: [PortRangeFromToTypeDef](./type_defs.md#portrangefromtotypedef)
 - `Protocol`: `str`
 - `RuleAction`: `str`
 - `RuleNumber`: `int`
@@ -1310,15 +1304,15 @@ from mypy_boto3_securityhub.type_defs import AwsEc2NetworkInterfaceDetailsTypeDe
 Optional fields:
 
 - `Attachment`:
-  [AwsEc2NetworkInterfaceAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkinterfaceattachmenttypedef)
+  [AwsEc2NetworkInterfaceAttachmentTypeDef](./type_defs.md#awsec2networkinterfaceattachmenttypedef)
 - `NetworkInterfaceId`: `str`
 - `SecurityGroups`:
-  `List`\[[AwsEc2NetworkInterfaceSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkinterfacesecuritygrouptypedef)\]
+  `List`\[[AwsEc2NetworkInterfaceSecurityGroupTypeDef](./type_defs.md#awsec2networkinterfacesecuritygrouptypedef)\]
 - `SourceDestCheck`: `bool`
 - `IpV6Addresses`:
-  `List`\[[AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkinterfaceipv6addressdetailtypedef)\]
+  `List`\[[AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceipv6addressdetailtypedef)\]
 - `PrivateIpAddresses`:
-  `List`\[[AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkinterfaceprivateipaddressdetailtypedef)\]
+  `List`\[[AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceprivateipaddressdetailtypedef)\]
 - `PublicDnsName`: `str`
 - `PublicIp`: `str`
 
@@ -1367,9 +1361,9 @@ Optional fields:
 - `OwnerId`: `str`
 - `VpcId`: `str`
 - `IpPermissions`:
-  `List`\[[AwsEc2SecurityGroupIpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupippermissiontypedef)\]
+  `List`\[[AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef)\]
 - `IpPermissionsEgress`:
-  `List`\[[AwsEc2SecurityGroupIpPermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupippermissiontypedef)\]
+  `List`\[[AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef)\]
 
 ## AwsEc2SecurityGroupIpPermissionTypeDef
 
@@ -1383,13 +1377,13 @@ Optional fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 - `UserIdGroupPairs`:
-  `List`\[[AwsEc2SecurityGroupUserIdGroupPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupuseridgrouppairtypedef)\]
+  `List`\[[AwsEc2SecurityGroupUserIdGroupPairTypeDef](./type_defs.md#awsec2securitygroupuseridgrouppairtypedef)\]
 - `IpRanges`:
-  `List`\[[AwsEc2SecurityGroupIpRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupiprangetypedef)\]
+  `List`\[[AwsEc2SecurityGroupIpRangeTypeDef](./type_defs.md#awsec2securitygroupiprangetypedef)\]
 - `Ipv6Ranges`:
-  `List`\[[AwsEc2SecurityGroupIpv6RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupipv6rangetypedef)\]
+  `List`\[[AwsEc2SecurityGroupIpv6RangeTypeDef](./type_defs.md#awsec2securitygroupipv6rangetypedef)\]
 - `PrefixListIds`:
-  `List`\[[AwsEc2SecurityGroupPrefixListIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupprefixlistidtypedef)\]
+  `List`\[[AwsEc2SecurityGroupPrefixListIdTypeDef](./type_defs.md#awsec2securitygroupprefixlistidtypedef)\]
 
 ## AwsEc2SecurityGroupIpRangeTypeDef
 
@@ -1457,7 +1451,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `Ipv6CidrBlockAssociationSet`:
-  `List`\[[Ipv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipv6cidrblockassociationtypedef)\]
+  `List`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
 
 ## AwsEc2VolumeAttachmentTypeDef
 
@@ -1487,7 +1481,7 @@ Optional fields:
 - `Status`: `str`
 - `KmsKeyId`: `str`
 - `Attachments`:
-  `List`\[[AwsEc2VolumeAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2volumeattachmenttypedef)\]
+  `List`\[[AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef)\]
 
 ## AwsEc2VpcDetailsTypeDef
 
@@ -1498,9 +1492,9 @@ from mypy_boto3_securityhub.type_defs import AwsEc2VpcDetailsTypeDef
 Optional fields:
 
 - `CidrBlockAssociationSet`:
-  `List`\[[CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#cidrblockassociationtypedef)\]
+  `List`\[[CidrBlockAssociationTypeDef](./type_defs.md#cidrblockassociationtypedef)\]
 - `Ipv6CidrBlockAssociationSet`:
-  `List`\[[Ipv6CidrBlockAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipv6cidrblockassociationtypedef)\]
+  `List`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
 - `DhcpOptionsId`: `str`
 - `State`: `str`
 
@@ -1521,15 +1515,15 @@ Optional fields:
 - `EnvironmentArn`: `str`
 - `EnvironmentId`: `str`
 - `EnvironmentLinks`:
-  `List`\[[AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticbeanstalkenvironmentenvironmentlinktypedef)\]
+  `List`\[[AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](./type_defs.md#awselasticbeanstalkenvironmentenvironmentlinktypedef)\]
 - `EnvironmentName`: `str`
 - `OptionSettings`:
-  `List`\[[AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticbeanstalkenvironmentoptionsettingtypedef)\]
+  `List`\[[AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](./type_defs.md#awselasticbeanstalkenvironmentoptionsettingtypedef)\]
 - `PlatformArn`: `str`
 - `SolutionStackName`: `str`
 - `Status`: `str`
 - `Tier`:
-  [AwsElasticBeanstalkEnvironmentTierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticbeanstalkenvironmenttiertypedef)
+  [AwsElasticBeanstalkEnvironmentTierTypeDef](./type_defs.md#awselasticbeanstalkenvironmenttiertypedef)
 - `VersionLabel`: `str`
 
 ## AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef
@@ -1578,18 +1572,18 @@ Optional fields:
 
 - `AccessPolicies`: `str`
 - `DomainEndpointOptions`:
-  [AwsElasticsearchDomainDomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticsearchdomaindomainendpointoptionstypedef)
+  [AwsElasticsearchDomainDomainEndpointOptionsTypeDef](./type_defs.md#awselasticsearchdomaindomainendpointoptionstypedef)
 - `DomainId`: `str`
 - `DomainName`: `str`
 - `Endpoint`: `str`
 - `Endpoints`: `Dict`\[`str`, `str`\]
 - `ElasticsearchVersion`: `str`
 - `EncryptionAtRestOptions`:
-  [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticsearchdomainencryptionatrestoptionstypedef)
+  [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](./type_defs.md#awselasticsearchdomainencryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
-  [AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticsearchdomainnodetonodeencryptionoptionstypedef)
+  [AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef](./type_defs.md#awselasticsearchdomainnodetonodeencryptionoptionstypedef)
 - `VPCOptions`:
-  [AwsElasticsearchDomainVPCOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticsearchdomainvpcoptionstypedef)
+  [AwsElasticsearchDomainVPCOptionsTypeDef](./type_defs.md#awselasticsearchdomainvpcoptionstypedef)
 
 ## AwsElasticsearchDomainDomainEndpointOptionsTypeDef
 
@@ -1680,13 +1674,13 @@ from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerAttributesTypeDef
 Optional fields:
 
 - `AccessLog`:
-  [AwsElbLoadBalancerAccessLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalanceraccesslogtypedef)
+  [AwsElbLoadBalancerAccessLogTypeDef](./type_defs.md#awselbloadbalanceraccesslogtypedef)
 - `ConnectionDraining`:
-  [AwsElbLoadBalancerConnectionDrainingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerconnectiondrainingtypedef)
+  [AwsElbLoadBalancerConnectionDrainingTypeDef](./type_defs.md#awselbloadbalancerconnectiondrainingtypedef)
 - `ConnectionSettings`:
-  [AwsElbLoadBalancerConnectionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerconnectionsettingstypedef)
+  [AwsElbLoadBalancerConnectionSettingsTypeDef](./type_defs.md#awselbloadbalancerconnectionsettingstypedef)
 - `CrossZoneLoadBalancing`:
-  [AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancercrosszoneloadbalancingtypedef)
+  [AwsElbLoadBalancerCrossZoneLoadBalancingTypeDef](./type_defs.md#awselbloadbalancercrosszoneloadbalancingtypedef)
 
 ## AwsElbLoadBalancerBackendServerDescriptionTypeDef
 
@@ -1740,26 +1734,26 @@ Optional fields:
 
 - `AvailabilityZones`: `List`\[`str`\]
 - `BackendServerDescriptions`:
-  `List`\[[AwsElbLoadBalancerBackendServerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerbackendserverdescriptiontypedef)\]
+  `List`\[[AwsElbLoadBalancerBackendServerDescriptionTypeDef](./type_defs.md#awselbloadbalancerbackendserverdescriptiontypedef)\]
 - `CanonicalHostedZoneName`: `str`
 - `CanonicalHostedZoneNameID`: `str`
 - `CreatedTime`: `str`
 - `DnsName`: `str`
 - `HealthCheck`:
-  [AwsElbLoadBalancerHealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerhealthchecktypedef)
+  [AwsElbLoadBalancerHealthCheckTypeDef](./type_defs.md#awselbloadbalancerhealthchecktypedef)
 - `Instances`:
-  `List`\[[AwsElbLoadBalancerInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerinstancetypedef)\]
+  `List`\[[AwsElbLoadBalancerInstanceTypeDef](./type_defs.md#awselbloadbalancerinstancetypedef)\]
 - `ListenerDescriptions`:
-  `List`\[[AwsElbLoadBalancerListenerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerlistenerdescriptiontypedef)\]
+  `List`\[[AwsElbLoadBalancerListenerDescriptionTypeDef](./type_defs.md#awselbloadbalancerlistenerdescriptiontypedef)\]
 - `LoadBalancerAttributes`:
-  [AwsElbLoadBalancerAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerattributestypedef)
+  [AwsElbLoadBalancerAttributesTypeDef](./type_defs.md#awselbloadbalancerattributestypedef)
 - `LoadBalancerName`: `str`
 - `Policies`:
-  [AwsElbLoadBalancerPoliciesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerpoliciestypedef)
+  [AwsElbLoadBalancerPoliciesTypeDef](./type_defs.md#awselbloadbalancerpoliciestypedef)
 - `Scheme`: `str`
 - `SecurityGroups`: `List`\[`str`\]
 - `SourceSecurityGroup`:
-  [AwsElbLoadBalancerSourceSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancersourcesecuritygrouptypedef)
+  [AwsElbLoadBalancerSourceSecurityGroupTypeDef](./type_defs.md#awselbloadbalancersourcesecuritygrouptypedef)
 - `Subnets`: `List`\[`str`\]
 - `VpcId`: `str`
 
@@ -1796,7 +1790,7 @@ from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerListenerDescripti
 Optional fields:
 
 - `Listener`:
-  [AwsElbLoadBalancerListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerlistenertypedef)
+  [AwsElbLoadBalancerListenerTypeDef](./type_defs.md#awselbloadbalancerlistenertypedef)
 - `PolicyNames`: `List`\[`str`\]
 
 ## AwsElbLoadBalancerListenerTypeDef
@@ -1822,9 +1816,9 @@ from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerPoliciesTypeDef
 Optional fields:
 
 - `AppCookieStickinessPolicies`:
-  `List`\[[AwsElbAppCookieStickinessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbappcookiestickinesspolicytypedef)\]
+  `List`\[[AwsElbAppCookieStickinessPolicyTypeDef](./type_defs.md#awselbappcookiestickinesspolicytypedef)\]
 - `LbCookieStickinessPolicies`:
-  `List`\[[AwsElbLbCookieStickinessPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselblbcookiestickinesspolicytypedef)\]
+  `List`\[[AwsElbLbCookieStickinessPolicyTypeDef](./type_defs.md#awselblbcookiestickinesspolicytypedef)\]
 - `OtherPolicies`: `List`\[`str`\]
 
 ## AwsElbLoadBalancerSourceSecurityGroupTypeDef
@@ -1847,15 +1841,14 @@ from mypy_boto3_securityhub.type_defs import AwsElbv2LoadBalancerDetailsTypeDef
 Optional fields:
 
 - `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#availabilityzonetypedef)\]
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `CanonicalHostedZoneId`: `str`
 - `CreatedTime`: `str`
 - `DNSName`: `str`
 - `IpAddressType`: `str`
 - `Scheme`: `str`
 - `SecurityGroups`: `List`\[`str`\]
-- `State`:
-  [LoadBalancerStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#loadbalancerstatetypedef)
+- `State`: [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
 - `Type`: `str`
 - `VpcId`: `str`
 
@@ -1868,8 +1861,7 @@ from mypy_boto3_securityhub.type_defs import AwsIamAccessKeyDetailsTypeDef
 Optional fields:
 
 - `UserName`: `str`
-- `Status`:
-  [AwsIamAccessKeyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#awsiamaccesskeystatus)
+- `Status`: [AwsIamAccessKeyStatus](./literals.md#awsiamaccesskeystatus)
 - `CreatedAt`: `str`
 - `PrincipalId`: `str`
 - `PrincipalType`: `str`
@@ -1877,7 +1869,7 @@ Optional fields:
 - `AccountId`: `str`
 - `AccessKeyId`: `str`
 - `SessionContext`:
-  [AwsIamAccessKeySessionContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamaccesskeysessioncontexttypedef)
+  [AwsIamAccessKeySessionContextTypeDef](./type_defs.md#awsiamaccesskeysessioncontexttypedef)
 
 ## AwsIamAccessKeySessionContextAttributesTypeDef
 
@@ -1913,9 +1905,9 @@ from mypy_boto3_securityhub.type_defs import AwsIamAccessKeySessionContextTypeDe
 Optional fields:
 
 - `Attributes`:
-  [AwsIamAccessKeySessionContextAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamaccesskeysessioncontextattributestypedef)
+  [AwsIamAccessKeySessionContextAttributesTypeDef](./type_defs.md#awsiamaccesskeysessioncontextattributestypedef)
 - `SessionIssuer`:
-  [AwsIamAccessKeySessionContextSessionIssuerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamaccesskeysessioncontextsessionissuertypedef)
+  [AwsIamAccessKeySessionContextSessionIssuerTypeDef](./type_defs.md#awsiamaccesskeysessioncontextsessionissuertypedef)
 
 ## AwsIamAttachedManagedPolicyTypeDef
 
@@ -1937,12 +1929,12 @@ from mypy_boto3_securityhub.type_defs import AwsIamGroupDetailsTypeDef
 Optional fields:
 
 - `AttachedManagedPolicies`:
-  `List`\[[AwsIamAttachedManagedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamattachedmanagedpolicytypedef)\]
+  `List`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
 - `CreateDate`: `str`
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `GroupPolicyList`:
-  `List`\[[AwsIamGroupPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamgrouppolicytypedef)\]
+  `List`\[[AwsIamGroupPolicyTypeDef](./type_defs.md#awsiamgrouppolicytypedef)\]
 - `Path`: `str`
 
 ## AwsIamGroupPolicyTypeDef
@@ -1984,7 +1976,7 @@ Optional fields:
 - `InstanceProfileName`: `str`
 - `Path`: `str`
 - `Roles`:
-  `List`\[[AwsIamInstanceProfileRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiaminstanceprofileroletypedef)\]
+  `List`\[[AwsIamInstanceProfileRoleTypeDef](./type_defs.md#awsiaminstanceprofileroletypedef)\]
 
 ## AwsIamPermissionsBoundaryTypeDef
 
@@ -2015,7 +2007,7 @@ Optional fields:
 - `PolicyId`: `str`
 - `PolicyName`: `str`
 - `PolicyVersionList`:
-  `List`\[[AwsIamPolicyVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiampolicyversiontypedef)\]
+  `List`\[[AwsIamPolicyVersionTypeDef](./type_defs.md#awsiampolicyversiontypedef)\]
 - `UpdateDate`: `str`
 
 ## AwsIamPolicyVersionTypeDef
@@ -2040,16 +2032,16 @@ Optional fields:
 
 - `AssumeRolePolicyDocument`: `str`
 - `AttachedManagedPolicies`:
-  `List`\[[AwsIamAttachedManagedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamattachedmanagedpolicytypedef)\]
+  `List`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
 - `CreateDate`: `str`
 - `InstanceProfileList`:
-  `List`\[[AwsIamInstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiaminstanceprofiletypedef)\]
+  `List`\[[AwsIamInstanceProfileTypeDef](./type_defs.md#awsiaminstanceprofiletypedef)\]
 - `PermissionsBoundary`:
-  [AwsIamPermissionsBoundaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiampermissionsboundarytypedef)
+  [AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef)
 - `RoleId`: `str`
 - `RoleName`: `str`
 - `RolePolicyList`:
-  `List`\[[AwsIamRolePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamrolepolicytypedef)\]
+  `List`\[[AwsIamRolePolicyTypeDef](./type_defs.md#awsiamrolepolicytypedef)\]
 - `MaxSessionDuration`: `int`
 - `Path`: `str`
 
@@ -2072,16 +2064,16 @@ from mypy_boto3_securityhub.type_defs import AwsIamUserDetailsTypeDef
 Optional fields:
 
 - `AttachedManagedPolicies`:
-  `List`\[[AwsIamAttachedManagedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamattachedmanagedpolicytypedef)\]
+  `List`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
 - `CreateDate`: `str`
 - `GroupList`: `List`\[`str`\]
 - `Path`: `str`
 - `PermissionsBoundary`:
-  [AwsIamPermissionsBoundaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiampermissionsboundarytypedef)
+  [AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef)
 - `UserId`: `str`
 - `UserName`: `str`
 - `UserPolicyList`:
-  `List`\[[AwsIamUserPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamuserpolicytypedef)\]
+  `List`\[[AwsIamUserPolicyTypeDef](./type_defs.md#awsiamuserpolicytypedef)\]
 
 ## AwsIamUserPolicyTypeDef
 
@@ -2141,18 +2133,18 @@ from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionDetailsTypeDef
 Optional fields:
 
 - `Code`:
-  [AwsLambdaFunctionCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctioncodetypedef)
+  [AwsLambdaFunctionCodeTypeDef](./type_defs.md#awslambdafunctioncodetypedef)
 - `CodeSha256`: `str`
 - `DeadLetterConfig`:
-  [AwsLambdaFunctionDeadLetterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctiondeadletterconfigtypedef)
+  [AwsLambdaFunctionDeadLetterConfigTypeDef](./type_defs.md#awslambdafunctiondeadletterconfigtypedef)
 - `Environment`:
-  [AwsLambdaFunctionEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctionenvironmenttypedef)
+  [AwsLambdaFunctionEnvironmentTypeDef](./type_defs.md#awslambdafunctionenvironmenttypedef)
 - `FunctionName`: `str`
 - `Handler`: `str`
 - `KmsKeyArn`: `str`
 - `LastModified`: `str`
 - `Layers`:
-  `List`\[[AwsLambdaFunctionLayerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctionlayertypedef)\]
+  `List`\[[AwsLambdaFunctionLayerTypeDef](./type_defs.md#awslambdafunctionlayertypedef)\]
 - `MasterArn`: `str`
 - `MemorySize`: `int`
 - `RevisionId`: `str`
@@ -2160,9 +2152,9 @@ Optional fields:
 - `Runtime`: `str`
 - `Timeout`: `int`
 - `TracingConfig`:
-  [AwsLambdaFunctionTracingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctiontracingconfigtypedef)
+  [AwsLambdaFunctionTracingConfigTypeDef](./type_defs.md#awslambdafunctiontracingconfigtypedef)
 - `VpcConfig`:
-  [AwsLambdaFunctionVpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctionvpcconfigtypedef)
+  [AwsLambdaFunctionVpcConfigTypeDef](./type_defs.md#awslambdafunctionvpcconfigtypedef)
 - `Version`: `str`
 
 ## AwsLambdaFunctionEnvironmentErrorTypeDef
@@ -2186,7 +2178,7 @@ Optional fields:
 
 - `Variables`: `Dict`\[`str`, `str`\]
 - `Error`:
-  [AwsLambdaFunctionEnvironmentErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctionenvironmenterrortypedef)
+  [AwsLambdaFunctionEnvironmentErrorTypeDef](./type_defs.md#awslambdafunctionenvironmenterrortypedef)
 
 ## AwsLambdaFunctionLayerTypeDef
 
@@ -2269,13 +2261,13 @@ Optional fields:
 - `PreferredMaintenanceWindow`: `str`
 - `ReadReplicaIdentifiers`: `List`\[`str`\]
 - `VpcSecurityGroups`:
-  `List`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbinstancevpcsecuritygrouptypedef)\]
+  `List`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef)\]
 - `HostedZoneId`: `str`
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `DbClusterResourceId`: `str`
 - `AssociatedRoles`:
-  `List`\[[AwsRdsDbClusterAssociatedRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbclusterassociatedroletypedef)\]
+  `List`\[[AwsRdsDbClusterAssociatedRoleTypeDef](./type_defs.md#awsrdsdbclusterassociatedroletypedef)\]
 - `ClusterCreateTime`: `str`
 - `EnabledCloudWatchLogsExports`: `List`\[`str`\]
 - `EngineMode`: `str`
@@ -2285,14 +2277,14 @@ Optional fields:
 - `CopyTagsToSnapshot`: `bool`
 - `CrossAccountClone`: `bool`
 - `DomainMemberships`:
-  `List`\[[AwsRdsDbDomainMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbdomainmembershiptypedef)\]
+  `List`\[[AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef)\]
 - `DbClusterParameterGroup`: `str`
 - `DbSubnetGroup`: `str`
 - `DbClusterOptionGroupMemberships`:
-  `List`\[[AwsRdsDbClusterOptionGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbclusteroptiongroupmembershiptypedef)\]
+  `List`\[[AwsRdsDbClusterOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdbclusteroptiongroupmembershiptypedef)\]
 - `DbClusterIdentifier`: `str`
 - `DbClusterMembers`:
-  `List`\[[AwsRdsDbClusterMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbclustermembertypedef)\]
+  `List`\[[AwsRdsDbClusterMemberTypeDef](./type_defs.md#awsrdsdbclustermembertypedef)\]
 - `IamDatabaseAuthenticationEnabled`: `bool`
 
 ## AwsRdsDbClusterMemberTypeDef
@@ -2380,7 +2372,7 @@ from mypy_boto3_securityhub.type_defs import AwsRdsDbInstanceDetailsTypeDef
 Optional fields:
 
 - `AssociatedRoles`:
-  `List`\[[AwsRdsDbInstanceAssociatedRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbinstanceassociatedroletypedef)\]
+  `List`\[[AwsRdsDbInstanceAssociatedRoleTypeDef](./type_defs.md#awsrdsdbinstanceassociatedroletypedef)\]
 - `CACertificateIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
 - `DBInstanceIdentifier`: `str`
@@ -2390,7 +2382,7 @@ Optional fields:
 - `DBName`: `str`
 - `DeletionProtection`: `bool`
 - `Endpoint`:
-  [AwsRdsDbInstanceEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbinstanceendpointtypedef)
+  [AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef)
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `IAMDatabaseAuthenticationEnabled`: `bool`
@@ -2400,7 +2392,7 @@ Optional fields:
 - `StorageEncrypted`: `bool`
 - `TdeCredentialArn`: `str`
 - `VpcSecurityGroups`:
-  `List`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbinstancevpcsecuritygrouptypedef)\]
+  `List`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef)\]
 - `MultiAz`: `bool`
 - `EnhancedMonitoringResourceArn`: `str`
 - `DbInstanceStatus`: `str`
@@ -2410,13 +2402,13 @@ Optional fields:
 - `BackupRetentionPeriod`: `int`
 - `DbSecurityGroups`: `List`\[`str`\]
 - `DbParameterGroups`:
-  `List`\[[AwsRdsDbParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbparametergrouptypedef)\]
+  `List`\[[AwsRdsDbParameterGroupTypeDef](./type_defs.md#awsrdsdbparametergrouptypedef)\]
 - `AvailabilityZone`: `str`
 - `DbSubnetGroup`:
-  [AwsRdsDbSubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbsubnetgrouptypedef)
+  [AwsRdsDbSubnetGroupTypeDef](./type_defs.md#awsrdsdbsubnetgrouptypedef)
 - `PreferredMaintenanceWindow`: `str`
 - `PendingModifiedValues`:
-  [AwsRdsDbPendingModifiedValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbpendingmodifiedvaluestypedef)
+  [AwsRdsDbPendingModifiedValuesTypeDef](./type_defs.md#awsrdsdbpendingmodifiedvaluestypedef)
 - `LatestRestorableTime`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
 - `ReadReplicaSourceDBInstanceIdentifier`: `str`
@@ -2425,14 +2417,14 @@ Optional fields:
 - `LicenseModel`: `str`
 - `Iops`: `int`
 - `OptionGroupMemberships`:
-  `List`\[[AwsRdsDbOptionGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdboptiongroupmembershiptypedef)\]
+  `List`\[[AwsRdsDbOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdboptiongroupmembershiptypedef)\]
 - `CharacterSetName`: `str`
 - `SecondaryAvailabilityZone`: `str`
 - `StatusInfos`:
-  `List`\[[AwsRdsDbStatusInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbstatusinfotypedef)\]
+  `List`\[[AwsRdsDbStatusInfoTypeDef](./type_defs.md#awsrdsdbstatusinfotypedef)\]
 - `StorageType`: `str`
 - `DomainMemberships`:
-  `List`\[[AwsRdsDbDomainMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbdomainmembershiptypedef)\]
+  `List`\[[AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef)\]
 - `CopyTagsToSnapshot`: `bool`
 - `MonitoringInterval`: `int`
 - `MonitoringRoleArn`: `str`
@@ -2443,9 +2435,9 @@ Optional fields:
 - `PerformanceInsightsRetentionPeriod`: `int`
 - `EnabledCloudWatchLogsExports`: `List`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[AwsRdsDbProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbprocessorfeaturetypedef)\]
+  `List`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
 - `ListenerEndpoint`:
-  [AwsRdsDbInstanceEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbinstanceendpointtypedef)
+  [AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef)
 - `MaxAllocatedStorage`: `int`
 
 ## AwsRdsDbInstanceEndpointTypeDef
@@ -2515,9 +2507,9 @@ Optional fields:
 - `CaCertificateIdentifier`: `str`
 - `DbSubnetGroupName`: `str`
 - `PendingCloudWatchLogsExports`:
-  [AwsRdsPendingCloudWatchLogsExportsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdspendingcloudwatchlogsexportstypedef)
+  [AwsRdsPendingCloudWatchLogsExportsTypeDef](./type_defs.md#awsrdspendingcloudwatchlogsexportstypedef)
 - `ProcessorFeatures`:
-  `List`\[[AwsRdsDbProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbprocessorfeaturetypedef)\]
+  `List`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
 
 ## AwsRdsDbProcessorFeatureTypeDef
 
@@ -2564,7 +2556,7 @@ Optional fields:
 - `Timezone`: `str`
 - `IamDatabaseAuthenticationEnabled`: `bool`
 - `ProcessorFeatures`:
-  `List`\[[AwsRdsDbProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbprocessorfeaturetypedef)\]
+  `List`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
 - `DbiResourceId`: `str`
 
 ## AwsRdsDbStatusInfoTypeDef
@@ -2600,7 +2592,7 @@ Optional fields:
 
 - `SubnetIdentifier`: `str`
 - `SubnetAvailabilityZone`:
-  [AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbsubnetgroupsubnetavailabilityzonetypedef)
+  [AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnetavailabilityzonetypedef)
 - `SubnetStatus`: `str`
 
 ## AwsRdsDbSubnetGroupTypeDef
@@ -2616,7 +2608,7 @@ Optional fields:
 - `VpcId`: `str`
 - `SubnetGroupStatus`: `str`
 - `Subnets`:
-  `List`\[[AwsRdsDbSubnetGroupSubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbsubnetgroupsubnettypedef)\]
+  `List`\[[AwsRdsDbSubnetGroupSubnetTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnettypedef)\]
 - `DbSubnetGroupArn`: `str`
 
 ## AwsRdsPendingCloudWatchLogsExportsTypeDef
@@ -2651,7 +2643,7 @@ from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterClusterParameterG
 Optional fields:
 
 - `ClusterParameterStatusList`:
-  `List`\[[AwsRedshiftClusterClusterParameterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterclusterparameterstatustypedef)\]
+  `List`\[[AwsRedshiftClusterClusterParameterStatusTypeDef](./type_defs.md#awsredshiftclusterclusterparameterstatustypedef)\]
 - `ParameterApplyStatus`: `str`
 - `ParameterGroupName`: `str`
 
@@ -2718,34 +2710,34 @@ Optional fields:
 - `ClusterCreateTime`: `str`
 - `ClusterIdentifier`: `str`
 - `ClusterNodes`:
-  `List`\[[AwsRedshiftClusterClusterNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterclusternodetypedef)\]
+  `List`\[[AwsRedshiftClusterClusterNodeTypeDef](./type_defs.md#awsredshiftclusterclusternodetypedef)\]
 - `ClusterParameterGroups`:
-  `List`\[[AwsRedshiftClusterClusterParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterclusterparametergrouptypedef)\]
+  `List`\[[AwsRedshiftClusterClusterParameterGroupTypeDef](./type_defs.md#awsredshiftclusterclusterparametergrouptypedef)\]
 - `ClusterPublicKey`: `str`
 - `ClusterRevisionNumber`: `str`
 - `ClusterSecurityGroups`:
-  `List`\[[AwsRedshiftClusterClusterSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterclustersecuritygrouptypedef)\]
+  `List`\[[AwsRedshiftClusterClusterSecurityGroupTypeDef](./type_defs.md#awsredshiftclusterclustersecuritygrouptypedef)\]
 - `ClusterSnapshotCopyStatus`:
-  [AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterclustersnapshotcopystatustypedef)
+  [AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef](./type_defs.md#awsredshiftclusterclustersnapshotcopystatustypedef)
 - `ClusterStatus`: `str`
 - `ClusterSubnetGroupName`: `str`
 - `ClusterVersion`: `str`
 - `DBName`: `str`
 - `DeferredMaintenanceWindows`:
-  `List`\[[AwsRedshiftClusterDeferredMaintenanceWindowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterdeferredmaintenancewindowtypedef)\]
+  `List`\[[AwsRedshiftClusterDeferredMaintenanceWindowTypeDef](./type_defs.md#awsredshiftclusterdeferredmaintenancewindowtypedef)\]
 - `ElasticIpStatus`:
-  [AwsRedshiftClusterElasticIpStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterelasticipstatustypedef)
+  [AwsRedshiftClusterElasticIpStatusTypeDef](./type_defs.md#awsredshiftclusterelasticipstatustypedef)
 - `ElasticResizeNumberOfNodeOptions`: `str`
 - `Encrypted`: `bool`
 - `Endpoint`:
-  [AwsRedshiftClusterEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterendpointtypedef)
+  [AwsRedshiftClusterEndpointTypeDef](./type_defs.md#awsredshiftclusterendpointtypedef)
 - `EnhancedVpcRouting`: `bool`
 - `ExpectedNextSnapshotScheduleTime`: `str`
 - `ExpectedNextSnapshotScheduleTimeStatus`: `str`
 - `HsmStatus`:
-  [AwsRedshiftClusterHsmStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterhsmstatustypedef)
+  [AwsRedshiftClusterHsmStatusTypeDef](./type_defs.md#awsredshiftclusterhsmstatustypedef)
 - `IamRoles`:
-  `List`\[[AwsRedshiftClusterIamRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusteriamroletypedef)\]
+  `List`\[[AwsRedshiftClusterIamRoleTypeDef](./type_defs.md#awsredshiftclusteriamroletypedef)\]
 - `KmsKeyId`: `str`
 - `MaintenanceTrackName`: `str`
 - `ManualSnapshotRetentionPeriod`: `int`
@@ -2755,18 +2747,18 @@ Optional fields:
 - `NumberOfNodes`: `int`
 - `PendingActions`: `List`\[`str`\]
 - `PendingModifiedValues`:
-  [AwsRedshiftClusterPendingModifiedValuesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterpendingmodifiedvaluestypedef)
+  [AwsRedshiftClusterPendingModifiedValuesTypeDef](./type_defs.md#awsredshiftclusterpendingmodifiedvaluestypedef)
 - `PreferredMaintenanceWindow`: `str`
 - `PubliclyAccessible`: `bool`
 - `ResizeInfo`:
-  [AwsRedshiftClusterResizeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterresizeinfotypedef)
+  [AwsRedshiftClusterResizeInfoTypeDef](./type_defs.md#awsredshiftclusterresizeinfotypedef)
 - `RestoreStatus`:
-  [AwsRedshiftClusterRestoreStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterrestorestatustypedef)
+  [AwsRedshiftClusterRestoreStatusTypeDef](./type_defs.md#awsredshiftclusterrestorestatustypedef)
 - `SnapshotScheduleIdentifier`: `str`
 - `SnapshotScheduleState`: `str`
 - `VpcId`: `str`
 - `VpcSecurityGroups`:
-  `List`\[[AwsRedshiftClusterVpcSecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclustervpcsecuritygrouptypedef)\]
+  `List`\[[AwsRedshiftClusterVpcSecurityGroupTypeDef](./type_defs.md#awsredshiftclustervpcsecuritygrouptypedef)\]
 
 ## AwsRedshiftClusterElasticIpStatusTypeDef
 
@@ -2895,9 +2887,9 @@ Optional fields:
 - `OwnerName`: `str`
 - `CreatedAt`: `str`
 - `ServerSideEncryptionConfiguration`:
-  [AwsS3BucketServerSideEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3bucketserversideencryptionconfigurationtypedef)
+  [AwsS3BucketServerSideEncryptionConfigurationTypeDef](./type_defs.md#awss3bucketserversideencryptionconfigurationtypedef)
 - `PublicAccessBlockConfiguration`:
-  [AwsS3AccountPublicAccessBlockDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3accountpublicaccessblockdetailstypedef)
+  [AwsS3AccountPublicAccessBlockDetailsTypeDef](./type_defs.md#awss3accountpublicaccessblockdetailstypedef)
 
 ## AwsS3BucketServerSideEncryptionByDefaultTypeDef
 
@@ -2919,7 +2911,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionConf
 Optional fields:
 
 - `Rules`:
-  `List`\[[AwsS3BucketServerSideEncryptionRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3bucketserversideencryptionruletypedef)\]
+  `List`\[[AwsS3BucketServerSideEncryptionRuleTypeDef](./type_defs.md#awss3bucketserversideencryptionruletypedef)\]
 
 ## AwsS3BucketServerSideEncryptionRuleTypeDef
 
@@ -2930,7 +2922,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionRule
 Optional fields:
 
 - `ApplyServerSideEncryptionByDefault`:
-  [AwsS3BucketServerSideEncryptionByDefaultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3bucketserversideencryptionbydefaulttypedef)
+  [AwsS3BucketServerSideEncryptionByDefaultTypeDef](./type_defs.md#awss3bucketserversideencryptionbydefaulttypedef)
 
 ## AwsS3ObjectDetailsTypeDef
 
@@ -2956,7 +2948,7 @@ from mypy_boto3_securityhub.type_defs import AwsSecretsManagerSecretDetailsTypeD
 Optional fields:
 
 - `RotationRules`:
-  [AwsSecretsManagerSecretRotationRulesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecretsmanagersecretrotationrulestypedef)
+  [AwsSecretsManagerSecretRotationRulesTypeDef](./type_defs.md#awssecretsmanagersecretrotationrulestypedef)
 - `RotationOccurredWithinFrequency`: `bool`
 - `KmsKeyId`: `str`
 - `RotationEnabled`: `bool`
@@ -2984,187 +2976,179 @@ from mypy_boto3_securityhub.type_defs import AwsSecurityFindingFiltersTypeDef
 Optional fields:
 
 - `ProductArn`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `AwsAccountId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
-- `Id`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `Id`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `GeneratorId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
-- `Type`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `Type`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FirstObservedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `LastObservedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
-- `CreatedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
-- `UpdatedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+- `CreatedAt`: `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+- `UpdatedAt`: `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `SeverityProduct`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `SeverityNormalized`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `SeverityLabel`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Confidence`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `Criticality`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
-- `Title`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+- `Title`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Description`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RecommendationText`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `SourceUrl`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
-- `ProductFields`:
-  `List`\[[MapFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#mapfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `ProductFields`: `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ProductName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `CompanyName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `UserDefinedFields`:
-  `List`\[[MapFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#mapfiltertypedef)\]
+  `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `MalwareName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `MalwareType`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `MalwarePath`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `MalwareState`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkDirection`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkProtocol`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkSourceIpV4`:
-  `List`\[[IpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipfiltertypedef)\]
+  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkSourceIpV6`:
-  `List`\[[IpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipfiltertypedef)\]
+  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkSourcePort`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `NetworkSourceDomain`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkSourceMac`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkDestinationIpV4`:
-  `List`\[[IpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipfiltertypedef)\]
+  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkDestinationIpV6`:
-  `List`\[[IpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipfiltertypedef)\]
+  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkDestinationPort`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `NetworkDestinationDomain`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProcessName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProcessPath`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProcessPid`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `ProcessParentPid`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `ProcessLaunchedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ProcessTerminatedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ThreatIntelIndicatorType`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorValue`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorCategory`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorLastObservedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ThreatIntelIndicatorSource`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorSourceUrl`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceType`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourcePartition`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceRegion`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
-- `ResourceTags`:
-  `List`\[[MapFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#mapfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `ResourceTags`: `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ResourceAwsEc2InstanceType`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceImageId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceIpV4Addresses`:
-  `List`\[[IpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipfiltertypedef)\]
+  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `ResourceAwsEc2InstanceIpV6Addresses`:
-  `List`\[[IpFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#ipfiltertypedef)\]
+  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `ResourceAwsEc2InstanceKeyName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceIamInstanceProfileArn`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceVpcId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceSubnetId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceLaunchedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ResourceAwsS3BucketOwnerId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsS3BucketOwnerName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyUserName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyStatus`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyCreatedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ResourceContainerName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerImageId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerImageName`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerLaunchedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ResourceDetailsOther`:
-  `List`\[[MapFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#mapfiltertypedef)\]
+  `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ComplianceStatus`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `VerificationState`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `WorkflowState`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `WorkflowStatus`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RecordState`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RelatedFindingsProductArn`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RelatedFindingsId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
-- `NoteText`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `NoteText`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NoteUpdatedAt`:
-  `List`\[[DateFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#datefiltertypedef)\]
+  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `NoteUpdatedBy`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Keyword`:
-  `List`\[[KeywordFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#keywordfiltertypedef)\]
+  `List`\[[KeywordFilterTypeDef](./type_defs.md#keywordfiltertypedef)\]
 - `FindingProviderFieldsConfidence`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `FindingProviderFieldsCriticality`:
-  `List`\[[NumberFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#numberfiltertypedef)\]
+  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `FindingProviderFieldsRelatedFindingsId`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsRelatedFindingsProductArn`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsSeverityLabel`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsSeverityOriginal`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsTypes`:
-  `List`\[[StringFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#stringfiltertypedef)\]
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 
 ## AwsSecurityFindingIdentifierTypeDef
 
@@ -3194,55 +3178,41 @@ Required fields:
 - `UpdatedAt`: `str`
 - `Title`: `str`
 - `Description`: `str`
-- `Resources`:
-  `List`\[[ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resourcetypedef)\]
+- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 Optional fields:
 
 - `Types`: `List`\[`str`\]
 - `FirstObservedAt`: `str`
 - `LastObservedAt`: `str`
-- `Severity`:
-  [SeverityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#severitytypedef)
+- `Severity`: [SeverityTypeDef](./type_defs.md#severitytypedef)
 - `Confidence`: `int`
 - `Criticality`: `int`
-- `Remediation`:
-  [RemediationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#remediationtypedef)
+- `Remediation`: [RemediationTypeDef](./type_defs.md#remediationtypedef)
 - `SourceUrl`: `str`
 - `ProductFields`: `Dict`\[`str`, `str`\]
 - `UserDefinedFields`: `Dict`\[`str`, `str`\]
-- `Malware`:
-  `List`\[[MalwareTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#malwaretypedef)\]
-- `Network`:
-  [NetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networktypedef)
+- `Malware`: `List`\[[MalwareTypeDef](./type_defs.md#malwaretypedef)\]
+- `Network`: [NetworkTypeDef](./type_defs.md#networktypedef)
 - `NetworkPath`:
-  `List`\[[NetworkPathComponentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networkpathcomponenttypedef)\]
-- `Process`:
-  [ProcessDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#processdetailstypedef)
+  `List`\[[NetworkPathComponentTypeDef](./type_defs.md#networkpathcomponenttypedef)\]
+- `Process`: [ProcessDetailsTypeDef](./type_defs.md#processdetailstypedef)
 - `ThreatIntelIndicators`:
-  `List`\[[ThreatIntelIndicatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#threatintelindicatortypedef)\]
-- `Compliance`:
-  [ComplianceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#compliancetypedef)
-- `VerificationState`:
-  [VerificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#verificationstate)
-- `WorkflowState`:
-  [WorkflowState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#workflowstate)
-- `Workflow`:
-  [WorkflowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#workflowtypedef)
-- `RecordState`:
-  [RecordState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#recordstate)
+  `List`\[[ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef)\]
+- `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
+- `VerificationState`: [VerificationState](./literals.md#verificationstate)
+- `WorkflowState`: [WorkflowState](./literals.md#workflowstate)
+- `Workflow`: [WorkflowTypeDef](./type_defs.md#workflowtypedef)
+- `RecordState`: [RecordState](./literals.md#recordstate)
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#relatedfindingtypedef)\]
-- `Note`:
-  [NoteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#notetypedef)
+  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+- `Note`: [NoteTypeDef](./type_defs.md#notetypedef)
 - `Vulnerabilities`:
-  `List`\[[VulnerabilityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#vulnerabilitytypedef)\]
-- `PatchSummary`:
-  [PatchSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#patchsummarytypedef)
-- `Action`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actiontypedef)
+  `List`\[[VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef)\]
+- `PatchSummary`: [PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef)
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 - `FindingProviderFields`:
-  [FindingProviderFieldsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#findingproviderfieldstypedef)
+  [FindingProviderFieldsTypeDef](./type_defs.md#findingproviderfieldstypedef)
 
 ## AwsSnsTopicDetailsTypeDef
 
@@ -3254,7 +3224,7 @@ Optional fields:
 
 - `KmsMasterKeyId`: `str`
 - `Subscription`:
-  `List`\[[AwsSnsTopicSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssnstopicsubscriptiontypedef)\]
+  `List`\[[AwsSnsTopicSubscriptionTypeDef](./type_defs.md#awssnstopicsubscriptiontypedef)\]
 - `TopicName`: `str`
 - `Owner`: `str`
 
@@ -3317,8 +3287,7 @@ from mypy_boto3_securityhub.type_defs import AwsSsmPatchComplianceDetailsTypeDef
 
 Optional fields:
 
-- `Patch`:
-  [AwsSsmPatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsssmpatchtypedef)
+- `Patch`: [AwsSsmPatchTypeDef](./type_defs.md#awsssmpatchtypedef)
 
 ## AwsSsmPatchTypeDef
 
@@ -3329,7 +3298,7 @@ from mypy_boto3_securityhub.type_defs import AwsSsmPatchTypeDef
 Optional fields:
 
 - `ComplianceSummary`:
-  [AwsSsmComplianceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsssmcompliancesummarytypedef)
+  [AwsSsmComplianceSummaryTypeDef](./type_defs.md#awsssmcompliancesummarytypedef)
 
 ## AwsWafWebAclDetailsTypeDef
 
@@ -3342,7 +3311,7 @@ Optional fields:
 - `Name`: `str`
 - `DefaultAction`: `str`
 - `Rules`:
-  `List`\[[AwsWafWebAclRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awswafwebaclruletypedef)\]
+  `List`\[[AwsWafWebAclRuleTypeDef](./type_defs.md#awswafwebaclruletypedef)\]
 - `WebAclId`: `str`
 
 ## AwsWafWebAclRuleTypeDef
@@ -3353,12 +3322,11 @@ from mypy_boto3_securityhub.type_defs import AwsWafWebAclRuleTypeDef
 
 Optional fields:
 
-- `Action`:
-  [WafActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#wafactiontypedef)
+- `Action`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 - `ExcludedRules`:
-  `List`\[[WafExcludedRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#wafexcludedruletypedef)\]
+  `List`\[[WafExcludedRuleTypeDef](./type_defs.md#wafexcludedruletypedef)\]
 - `OverrideAction`:
-  [WafOverrideActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#wafoverrideactiontypedef)
+  [WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef)
 - `Priority`: `int`
 - `RuleId`: `str`
 - `Type`: `str`
@@ -3372,7 +3340,7 @@ from mypy_boto3_securityhub.type_defs import BatchDisableStandardsResponseTypeDe
 Optional fields:
 
 - `StandardsSubscriptions`:
-  `List`\[[StandardsSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardssubscriptiontypedef)\]
+  `List`\[[StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef)\]
 
 ## BatchEnableStandardsResponseTypeDef
 
@@ -3383,7 +3351,7 @@ from mypy_boto3_securityhub.type_defs import BatchEnableStandardsResponseTypeDef
 Optional fields:
 
 - `StandardsSubscriptions`:
-  `List`\[[StandardsSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardssubscriptiontypedef)\]
+  `List`\[[StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef)\]
 
 ## BatchImportFindingsResponseTypeDef
 
@@ -3399,7 +3367,7 @@ Required fields:
 Optional fields:
 
 - `FailedFindings`:
-  `List`\[[ImportFindingsErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#importfindingserrortypedef)\]
+  `List`\[[ImportFindingsErrorTypeDef](./type_defs.md#importfindingserrortypedef)\]
 
 ## BatchUpdateFindingsResponseTypeDef
 
@@ -3410,9 +3378,9 @@ from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsResponseTypeDef
 Required fields:
 
 - `ProcessedFindings`:
-  `List`\[[AwsSecurityFindingIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingidentifiertypedef)\]
+  `List`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
 - `UnprocessedFindings`:
-  `List`\[[BatchUpdateFindingsUnprocessedFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#batchupdatefindingsunprocessedfindingtypedef)\]
+  `List`\[[BatchUpdateFindingsUnprocessedFindingTypeDef](./type_defs.md#batchupdatefindingsunprocessedfindingtypedef)\]
 
 ## BatchUpdateFindingsUnprocessedFindingTypeDef
 
@@ -3423,7 +3391,7 @@ from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsUnprocessedFindi
 Required fields:
 
 - `FindingIdentifier`:
-  [AwsSecurityFindingIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingidentifiertypedef)
+  [AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
@@ -3474,11 +3442,11 @@ Optional fields:
 - `SizeClassified`: `int`
 - `AdditionalOccurrences`: `bool`
 - `Status`:
-  [ClassificationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#classificationstatustypedef)
+  [ClassificationStatusTypeDef](./type_defs.md#classificationstatustypedef)
 - `SensitiveData`:
-  `List`\[[SensitiveDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#sensitivedataresulttypedef)\]
+  `List`\[[SensitiveDataResultTypeDef](./type_defs.md#sensitivedataresulttypedef)\]
 - `CustomDataIdentifiers`:
-  [CustomDataIdentifiersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#customdataidentifiersresulttypedef)
+  [CustomDataIdentifiersResultTypeDef](./type_defs.md#customdataidentifiersresulttypedef)
 
 ## ClassificationStatusTypeDef
 
@@ -3499,11 +3467,10 @@ from mypy_boto3_securityhub.type_defs import ComplianceTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ComplianceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#compliancestatus)
+- `Status`: [ComplianceStatus](./literals.md#compliancestatus)
 - `RelatedRequirements`: `List`\[`str`\]
 - `StatusReasons`:
-  `List`\[[StatusReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#statusreasontypedef)\]
+  `List`\[[StatusReasonTypeDef](./type_defs.md#statusreasontypedef)\]
 
 ## ContainerDetailsTypeDef
 
@@ -3557,8 +3524,7 @@ from mypy_boto3_securityhub.type_defs import CreateMembersResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`:
-  `List`\[[ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resulttypedef)\]
+- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## CustomDataIdentifiersDetectionsTypeDef
 
@@ -3571,8 +3537,7 @@ Optional fields:
 - `Count`: `int`
 - `Arn`: `str`
 - `Name`: `str`
-- `Occurrences`:
-  [OccurrencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#occurrencestypedef)
+- `Occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
 
 ## CustomDataIdentifiersResultTypeDef
 
@@ -3583,7 +3548,7 @@ from mypy_boto3_securityhub.type_defs import CustomDataIdentifiersResultTypeDef
 Optional fields:
 
 - `Detections`:
-  `List`\[[CustomDataIdentifiersDetectionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#customdataidentifiersdetectionstypedef)\]
+  `List`\[[CustomDataIdentifiersDetectionsTypeDef](./type_defs.md#customdataidentifiersdetectionstypedef)\]
 - `TotalCount`: `int`
 
 ## CvssTypeDef
@@ -3608,7 +3573,7 @@ Optional fields:
 
 - `DetailedResultsLocation`: `str`
 - `Result`:
-  [ClassificationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#classificationresulttypedef)
+  [ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef)
 
 ## DateFilterTypeDef
 
@@ -3620,8 +3585,7 @@ Optional fields:
 
 - `Start`: `str`
 - `End`: `str`
-- `DateRange`:
-  [DateRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#daterangetypedef)
+- `DateRange`: [DateRangeTypeDef](./type_defs.md#daterangetypedef)
 
 ## DateRangeTypeDef
 
@@ -3632,7 +3596,7 @@ from mypy_boto3_securityhub.type_defs import DateRangeTypeDef
 Optional fields:
 
 - `Value`: `int`
-- `Unit`: `Literal['DAYS']`
+- `Unit`: `Literal['DAYS']` (see [DateRangeUnit](./literals.md#daterangeunit))
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -3642,8 +3606,7 @@ from mypy_boto3_securityhub.type_defs import DeclineInvitationsResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`:
-  `List`\[[ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resulttypedef)\]
+- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## DeleteActionTargetResponseTypeDef
 
@@ -3673,8 +3636,7 @@ from mypy_boto3_securityhub.type_defs import DeleteInvitationsResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`:
-  `List`\[[ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resulttypedef)\]
+- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -3684,8 +3646,7 @@ from mypy_boto3_securityhub.type_defs import DeleteMembersResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`:
-  `List`\[[ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resulttypedef)\]
+- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## DescribeActionTargetsResponseTypeDef
 
@@ -3696,7 +3657,7 @@ from mypy_boto3_securityhub.type_defs import DescribeActionTargetsResponseTypeDe
 Required fields:
 
 - `ActionTargets`:
-  `List`\[[ActionTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actiontargettypedef)\]
+  `List`\[[ActionTargetTypeDef](./type_defs.md#actiontargettypedef)\]
 
 Optional fields:
 
@@ -3733,8 +3694,7 @@ from mypy_boto3_securityhub.type_defs import DescribeProductsResponseTypeDef
 
 Required fields:
 
-- `Products`:
-  `List`\[[ProductTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#producttypedef)\]
+- `Products`: `List`\[[ProductTypeDef](./type_defs.md#producttypedef)\]
 
 Optional fields:
 
@@ -3749,7 +3709,7 @@ from mypy_boto3_securityhub.type_defs import DescribeStandardsControlsResponseTy
 Optional fields:
 
 - `Controls`:
-  `List`\[[StandardsControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardscontroltypedef)\]
+  `List`\[[StandardsControlTypeDef](./type_defs.md#standardscontroltypedef)\]
 - `NextToken`: `str`
 
 ## DescribeStandardsResponseTypeDef
@@ -3760,8 +3720,7 @@ from mypy_boto3_securityhub.type_defs import DescribeStandardsResponseTypeDef
 
 Optional fields:
 
-- `Standards`:
-  `List`\[[StandardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardtypedef)\]
+- `Standards`: `List`\[[StandardTypeDef](./type_defs.md#standardtypedef)\]
 - `NextToken`: `str`
 
 ## DnsRequestActionTypeDef
@@ -3797,9 +3756,9 @@ Optional fields:
 - `Confidence`: `int`
 - `Criticality`: `int`
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#relatedfindingtypedef)\]
+  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 - `Severity`:
-  [FindingProviderSeverityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#findingproviderseveritytypedef)
+  [FindingProviderSeverityTypeDef](./type_defs.md#findingproviderseveritytypedef)
 - `Types`: `List`\[`str`\]
 
 ## FindingProviderSeverityTypeDef
@@ -3810,8 +3769,7 @@ from mypy_boto3_securityhub.type_defs import FindingProviderSeverityTypeDef
 
 Optional fields:
 
-- `Label`:
-  [SeverityLabel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#severitylabel)
+- `Label`: [SeverityLabel](./literals.md#severitylabel)
 - `Original`: `str`
 
 ## GeoLocationTypeDef
@@ -3833,8 +3791,7 @@ from mypy_boto3_securityhub.type_defs import GetAdministratorAccountResponseType
 
 Optional fields:
 
-- `Administrator`:
-  [InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#invitationtypedef)
+- `Administrator`: [InvitationTypeDef](./type_defs.md#invitationtypedef)
 
 ## GetEnabledStandardsResponseTypeDef
 
@@ -3845,7 +3802,7 @@ from mypy_boto3_securityhub.type_defs import GetEnabledStandardsResponseTypeDef
 Optional fields:
 
 - `StandardsSubscriptions`:
-  `List`\[[StandardsSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#standardssubscriptiontypedef)\]
+  `List`\[[StandardsSubscriptionTypeDef](./type_defs.md#standardssubscriptiontypedef)\]
 - `NextToken`: `str`
 
 ## GetFindingsResponseTypeDef
@@ -3857,7 +3814,7 @@ from mypy_boto3_securityhub.type_defs import GetFindingsResponseTypeDef
 Required fields:
 
 - `Findings`:
-  `List`\[[AwsSecurityFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingtypedef)\]
+  `List`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
 
 Optional fields:
 
@@ -3871,8 +3828,7 @@ from mypy_boto3_securityhub.type_defs import GetInsightResultsResponseTypeDef
 
 Required fields:
 
-- `InsightResults`:
-  [InsightResultsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#insightresultstypedef)
+- `InsightResults`: [InsightResultsTypeDef](./type_defs.md#insightresultstypedef)
 
 ## GetInsightsResponseTypeDef
 
@@ -3882,8 +3838,7 @@ from mypy_boto3_securityhub.type_defs import GetInsightsResponseTypeDef
 
 Required fields:
 
-- `Insights`:
-  `List`\[[InsightTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#insighttypedef)\]
+- `Insights`: `List`\[[InsightTypeDef](./type_defs.md#insighttypedef)\]
 
 Optional fields:
 
@@ -3907,8 +3862,7 @@ from mypy_boto3_securityhub.type_defs import GetMasterAccountResponseTypeDef
 
 Optional fields:
 
-- `Master`:
-  [InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#invitationtypedef)
+- `Master`: [InvitationTypeDef](./type_defs.md#invitationtypedef)
 
 ## GetMembersResponseTypeDef
 
@@ -3918,10 +3872,8 @@ from mypy_boto3_securityhub.type_defs import GetMembersResponseTypeDef
 
 Optional fields:
 
-- `Members`:
-  `List`\[[MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#membertypedef)\]
-- `UnprocessedAccounts`:
-  `List`\[[ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resulttypedef)\]
+- `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
+- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## IcmpTypeCodeTypeDef
 
@@ -3968,7 +3920,7 @@ Required fields:
 - `InsightArn`: `str`
 - `GroupByAttribute`: `str`
 - `ResultValues`:
-  `List`\[[InsightResultValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#insightresultvaluetypedef)\]
+  `List`\[[InsightResultValueTypeDef](./type_defs.md#insightresultvaluetypedef)\]
 
 ## InsightTypeDef
 
@@ -3981,7 +3933,7 @@ Required fields:
 - `InsightArn`: `str`
 - `Name`: `str`
 - `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecurityfindingfilterstypedef)
+  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `GroupByAttribute`: `str`
 
 ## InvitationTypeDef
@@ -4005,8 +3957,7 @@ from mypy_boto3_securityhub.type_defs import InviteMembersResponseTypeDef
 
 Optional fields:
 
-- `UnprocessedAccounts`:
-  `List`\[[ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resulttypedef)\]
+- `UnprocessedAccounts`: `List`\[[ResultTypeDef](./type_defs.md#resulttypedef)\]
 
 ## IpFilterTypeDef
 
@@ -4072,8 +4023,7 @@ from mypy_boto3_securityhub.type_defs import ListInvitationsResponseTypeDef
 
 Optional fields:
 
-- `Invitations`:
-  `List`\[[InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#invitationtypedef)\]
+- `Invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `NextToken`: `str`
 
 ## ListMembersResponseTypeDef
@@ -4084,8 +4034,7 @@ from mypy_boto3_securityhub.type_defs import ListMembersResponseTypeDef
 
 Optional fields:
 
-- `Members`:
-  `List`\[[MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#membertypedef)\]
+- `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
 - `NextToken`: `str`
 
 ## ListOrganizationAdminAccountsResponseTypeDef
@@ -4097,7 +4046,7 @@ from mypy_boto3_securityhub.type_defs import ListOrganizationAdminAccountsRespon
 Optional fields:
 
 - `AdminAccounts`:
-  `List`\[[AdminAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#adminaccounttypedef)\]
+  `List`\[[AdminAccountTypeDef](./type_defs.md#adminaccounttypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -4133,11 +4082,9 @@ Required fields:
 
 Optional fields:
 
-- `Type`:
-  [MalwareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#malwaretype)
+- `Type`: [MalwareType](./literals.md#malwaretype)
 - `Path`: `str`
-- `State`:
-  [MalwareState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#malwarestate)
+- `State`: [MalwareState](./literals.md#malwarestate)
 
 ## MapFilterTypeDef
 
@@ -4149,8 +4096,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Comparison`:
-  [MapFilterComparison](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#mapfiltercomparison)
+- `Comparison`: [MapFilterComparison](./literals.md#mapfiltercomparison)
 
 ## MemberTypeDef
 
@@ -4178,11 +4124,11 @@ Optional fields:
 
 - `ConnectionDirection`: `str`
 - `RemoteIpDetails`:
-  [ActionRemoteIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionremoteipdetailstypedef)
+  [ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef)
 - `RemotePortDetails`:
-  [ActionRemotePortDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionremoteportdetailstypedef)
+  [ActionRemotePortDetailsTypeDef](./type_defs.md#actionremoteportdetailstypedef)
 - `LocalPortDetails`:
-  [ActionLocalPortDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionlocalportdetailstypedef)
+  [ActionLocalPortDetailsTypeDef](./type_defs.md#actionlocalportdetailstypedef)
 - `Protocol`: `str`
 - `Blocked`: `bool`
 
@@ -4196,9 +4142,9 @@ Optional fields:
 
 - `Protocol`: `str`
 - `Destination`:
-  [NetworkPathComponentDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networkpathcomponentdetailstypedef)
+  [NetworkPathComponentDetailsTypeDef](./type_defs.md#networkpathcomponentdetailstypedef)
 - `Source`:
-  [NetworkPathComponentDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networkpathcomponentdetailstypedef)
+  [NetworkPathComponentDetailsTypeDef](./type_defs.md#networkpathcomponentdetailstypedef)
 
 ## NetworkPathComponentDetailsTypeDef
 
@@ -4209,8 +4155,7 @@ from mypy_boto3_securityhub.type_defs import NetworkPathComponentDetailsTypeDef
 Optional fields:
 
 - `Address`: `List`\[`str`\]
-- `PortRanges`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#portrangetypedef)\]
+- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
 ## NetworkPathComponentTypeDef
 
@@ -4222,10 +4167,8 @@ Optional fields:
 
 - `ComponentId`: `str`
 - `ComponentType`: `str`
-- `Egress`:
-  [NetworkHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networkheadertypedef)
-- `Ingress`:
-  [NetworkHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#networkheadertypedef)
+- `Egress`: [NetworkHeaderTypeDef](./type_defs.md#networkheadertypedef)
+- `Ingress`: [NetworkHeaderTypeDef](./type_defs.md#networkheadertypedef)
 
 ## NetworkTypeDef
 
@@ -4235,11 +4178,9 @@ from mypy_boto3_securityhub.type_defs import NetworkTypeDef
 
 Optional fields:
 
-- `Direction`:
-  [NetworkDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#networkdirection)
+- `Direction`: [NetworkDirection](./literals.md#networkdirection)
 - `Protocol`: `str`
-- `OpenPortRange`:
-  [PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#portrangetypedef)
+- `OpenPortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 - `SourceIpV4`: `str`
 - `SourceIpV6`: `str`
 - `SourcePort`: `int`
@@ -4293,16 +4234,11 @@ from mypy_boto3_securityhub.type_defs import OccurrencesTypeDef
 
 Optional fields:
 
-- `LineRanges`:
-  `List`\[[RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#rangetypedef)\]
-- `OffsetRanges`:
-  `List`\[[RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#rangetypedef)\]
-- `Pages`:
-  `List`\[[PageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#pagetypedef)\]
-- `Records`:
-  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#recordtypedef)\]
-- `Cells`:
-  `List`\[[CellTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#celltypedef)\]
+- `LineRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
+- `OffsetRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
+- `Pages`: `List`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
+- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `Cells`: `List`\[[CellTypeDef](./type_defs.md#celltypedef)\]
 
 ## PageTypeDef
 
@@ -4313,10 +4249,8 @@ from mypy_boto3_securityhub.type_defs import PageTypeDef
 Optional fields:
 
 - `PageNumber`: `int`
-- `LineRange`:
-  [RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#rangetypedef)
-- `OffsetRange`:
-  [RangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#rangetypedef)
+- `LineRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
+- `OffsetRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -4362,7 +4296,7 @@ from mypy_boto3_securityhub.type_defs import PortProbeActionTypeDef
 Optional fields:
 
 - `PortProbeDetails`:
-  `List`\[[PortProbeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#portprobedetailtypedef)\]
+  `List`\[[PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef)\]
 - `Blocked`: `bool`
 
 ## PortProbeDetailTypeDef
@@ -4374,11 +4308,11 @@ from mypy_boto3_securityhub.type_defs import PortProbeDetailTypeDef
 Optional fields:
 
 - `LocalPortDetails`:
-  [ActionLocalPortDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionlocalportdetailstypedef)
+  [ActionLocalPortDetailsTypeDef](./type_defs.md#actionlocalportdetailstypedef)
 - `LocalIpDetails`:
-  [ActionLocalIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionlocalipdetailstypedef)
+  [ActionLocalIpDetailsTypeDef](./type_defs.md#actionlocalipdetailstypedef)
 - `RemoteIpDetails`:
-  [ActionRemoteIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#actionremoteipdetailstypedef)
+  [ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef)
 
 ## PortRangeFromToTypeDef
 
@@ -4433,8 +4367,7 @@ Optional fields:
 - `CompanyName`: `str`
 - `Description`: `str`
 - `Categories`: `List`\[`str`\]
-- `IntegrationTypes`:
-  `List`\[[IntegrationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#integrationtype)\]
+- `IntegrationTypes`: `List`\[[IntegrationType](./literals.md#integrationtype)\]
 - `MarketplaceUrl`: `str`
 - `ActivationUrl`: `str`
 - `ProductSubscriptionResourcePolicy`: `str`
@@ -4492,8 +4425,7 @@ from mypy_boto3_securityhub.type_defs import RemediationTypeDef
 
 Optional fields:
 
-- `Recommendation`:
-  [RecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#recommendationtypedef)
+- `Recommendation`: [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
 
 ## ResourceDetailsTypeDef
 
@@ -4504,93 +4436,89 @@ from mypy_boto3_securityhub.type_defs import ResourceDetailsTypeDef
 Optional fields:
 
 - `AwsAutoScalingAutoScalingGroup`:
-  [AwsAutoScalingAutoScalingGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsautoscalingautoscalinggroupdetailstypedef)
+  [AwsAutoScalingAutoScalingGroupDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupdetailstypedef)
 - `AwsCodeBuildProject`:
-  [AwsCodeBuildProjectDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscodebuildprojectdetailstypedef)
+  [AwsCodeBuildProjectDetailsTypeDef](./type_defs.md#awscodebuildprojectdetailstypedef)
 - `AwsCloudFrontDistribution`:
-  [AwsCloudFrontDistributionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudfrontdistributiondetailstypedef)
+  [AwsCloudFrontDistributionDetailsTypeDef](./type_defs.md#awscloudfrontdistributiondetailstypedef)
 - `AwsEc2Instance`:
-  [AwsEc2InstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2instancedetailstypedef)
+  [AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef)
 - `AwsEc2NetworkInterface`:
-  [AwsEc2NetworkInterfaceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkinterfacedetailstypedef)
+  [AwsEc2NetworkInterfaceDetailsTypeDef](./type_defs.md#awsec2networkinterfacedetailstypedef)
 - `AwsEc2SecurityGroup`:
-  [AwsEc2SecurityGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2securitygroupdetailstypedef)
+  [AwsEc2SecurityGroupDetailsTypeDef](./type_defs.md#awsec2securitygroupdetailstypedef)
 - `AwsEc2Volume`:
-  [AwsEc2VolumeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2volumedetailstypedef)
-- `AwsEc2Vpc`:
-  [AwsEc2VpcDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2vpcdetailstypedef)
-- `AwsEc2Eip`:
-  [AwsEc2EipDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2eipdetailstypedef)
+  [AwsEc2VolumeDetailsTypeDef](./type_defs.md#awsec2volumedetailstypedef)
+- `AwsEc2Vpc`: [AwsEc2VpcDetailsTypeDef](./type_defs.md#awsec2vpcdetailstypedef)
+- `AwsEc2Eip`: [AwsEc2EipDetailsTypeDef](./type_defs.md#awsec2eipdetailstypedef)
 - `AwsEc2Subnet`:
-  [AwsEc2SubnetDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2subnetdetailstypedef)
+  [AwsEc2SubnetDetailsTypeDef](./type_defs.md#awsec2subnetdetailstypedef)
 - `AwsEc2NetworkAcl`:
-  [AwsEc2NetworkAclDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsec2networkacldetailstypedef)
+  [AwsEc2NetworkAclDetailsTypeDef](./type_defs.md#awsec2networkacldetailstypedef)
 - `AwsElbv2LoadBalancer`:
-  [AwsElbv2LoadBalancerDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbv2loadbalancerdetailstypedef)
+  [AwsElbv2LoadBalancerDetailsTypeDef](./type_defs.md#awselbv2loadbalancerdetailstypedef)
 - `AwsElasticBeanstalkEnvironment`:
-  [AwsElasticBeanstalkEnvironmentDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticbeanstalkenvironmentdetailstypedef)
+  [AwsElasticBeanstalkEnvironmentDetailsTypeDef](./type_defs.md#awselasticbeanstalkenvironmentdetailstypedef)
 - `AwsElasticsearchDomain`:
-  [AwsElasticsearchDomainDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselasticsearchdomaindetailstypedef)
+  [AwsElasticsearchDomainDetailsTypeDef](./type_defs.md#awselasticsearchdomaindetailstypedef)
 - `AwsS3Bucket`:
-  [AwsS3BucketDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3bucketdetailstypedef)
+  [AwsS3BucketDetailsTypeDef](./type_defs.md#awss3bucketdetailstypedef)
 - `AwsS3AccountPublicAccessBlock`:
-  [AwsS3AccountPublicAccessBlockDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3accountpublicaccessblockdetailstypedef)
+  [AwsS3AccountPublicAccessBlockDetailsTypeDef](./type_defs.md#awss3accountpublicaccessblockdetailstypedef)
 - `AwsS3Object`:
-  [AwsS3ObjectDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awss3objectdetailstypedef)
+  [AwsS3ObjectDetailsTypeDef](./type_defs.md#awss3objectdetailstypedef)
 - `AwsSecretsManagerSecret`:
-  [AwsSecretsManagerSecretDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssecretsmanagersecretdetailstypedef)
+  [AwsSecretsManagerSecretDetailsTypeDef](./type_defs.md#awssecretsmanagersecretdetailstypedef)
 - `AwsIamAccessKey`:
-  [AwsIamAccessKeyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamaccesskeydetailstypedef)
+  [AwsIamAccessKeyDetailsTypeDef](./type_defs.md#awsiamaccesskeydetailstypedef)
 - `AwsIamUser`:
-  [AwsIamUserDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamuserdetailstypedef)
+  [AwsIamUserDetailsTypeDef](./type_defs.md#awsiamuserdetailstypedef)
 - `AwsIamPolicy`:
-  [AwsIamPolicyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiampolicydetailstypedef)
+  [AwsIamPolicyDetailsTypeDef](./type_defs.md#awsiampolicydetailstypedef)
 - `AwsApiGatewayV2Stage`:
-  [AwsApiGatewayV2StageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayv2stagedetailstypedef)
+  [AwsApiGatewayV2StageDetailsTypeDef](./type_defs.md#awsapigatewayv2stagedetailstypedef)
 - `AwsApiGatewayV2Api`:
-  [AwsApiGatewayV2ApiDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayv2apidetailstypedef)
+  [AwsApiGatewayV2ApiDetailsTypeDef](./type_defs.md#awsapigatewayv2apidetailstypedef)
 - `AwsDynamoDbTable`:
-  [AwsDynamoDbTableDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsdynamodbtabledetailstypedef)
+  [AwsDynamoDbTableDetailsTypeDef](./type_defs.md#awsdynamodbtabledetailstypedef)
 - `AwsApiGatewayStage`:
-  [AwsApiGatewayStageDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewaystagedetailstypedef)
+  [AwsApiGatewayStageDetailsTypeDef](./type_defs.md#awsapigatewaystagedetailstypedef)
 - `AwsApiGatewayRestApi`:
-  [AwsApiGatewayRestApiDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsapigatewayrestapidetailstypedef)
+  [AwsApiGatewayRestApiDetailsTypeDef](./type_defs.md#awsapigatewayrestapidetailstypedef)
 - `AwsCloudTrailTrail`:
-  [AwsCloudTrailTrailDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscloudtrailtraildetailstypedef)
+  [AwsCloudTrailTrailDetailsTypeDef](./type_defs.md#awscloudtrailtraildetailstypedef)
 - `AwsSsmPatchCompliance`:
-  [AwsSsmPatchComplianceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsssmpatchcompliancedetailstypedef)
+  [AwsSsmPatchComplianceDetailsTypeDef](./type_defs.md#awsssmpatchcompliancedetailstypedef)
 - `AwsCertificateManagerCertificate`:
-  [AwsCertificateManagerCertificateDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awscertificatemanagercertificatedetailstypedef)
+  [AwsCertificateManagerCertificateDetailsTypeDef](./type_defs.md#awscertificatemanagercertificatedetailstypedef)
 - `AwsRedshiftCluster`:
-  [AwsRedshiftClusterDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsredshiftclusterdetailstypedef)
+  [AwsRedshiftClusterDetailsTypeDef](./type_defs.md#awsredshiftclusterdetailstypedef)
 - `AwsElbLoadBalancer`:
-  [AwsElbLoadBalancerDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awselbloadbalancerdetailstypedef)
+  [AwsElbLoadBalancerDetailsTypeDef](./type_defs.md#awselbloadbalancerdetailstypedef)
 - `AwsIamGroup`:
-  [AwsIamGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamgroupdetailstypedef)
+  [AwsIamGroupDetailsTypeDef](./type_defs.md#awsiamgroupdetailstypedef)
 - `AwsIamRole`:
-  [AwsIamRoleDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsiamroledetailstypedef)
-- `AwsKmsKey`:
-  [AwsKmsKeyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awskmskeydetailstypedef)
+  [AwsIamRoleDetailsTypeDef](./type_defs.md#awsiamroledetailstypedef)
+- `AwsKmsKey`: [AwsKmsKeyDetailsTypeDef](./type_defs.md#awskmskeydetailstypedef)
 - `AwsLambdaFunction`:
-  [AwsLambdaFunctionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdafunctiondetailstypedef)
+  [AwsLambdaFunctionDetailsTypeDef](./type_defs.md#awslambdafunctiondetailstypedef)
 - `AwsLambdaLayerVersion`:
-  [AwsLambdaLayerVersionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awslambdalayerversiondetailstypedef)
+  [AwsLambdaLayerVersionDetailsTypeDef](./type_defs.md#awslambdalayerversiondetailstypedef)
 - `AwsRdsDbInstance`:
-  [AwsRdsDbInstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbinstancedetailstypedef)
+  [AwsRdsDbInstanceDetailsTypeDef](./type_defs.md#awsrdsdbinstancedetailstypedef)
 - `AwsSnsTopic`:
-  [AwsSnsTopicDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssnstopicdetailstypedef)
+  [AwsSnsTopicDetailsTypeDef](./type_defs.md#awssnstopicdetailstypedef)
 - `AwsSqsQueue`:
-  [AwsSqsQueueDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awssqsqueuedetailstypedef)
+  [AwsSqsQueueDetailsTypeDef](./type_defs.md#awssqsqueuedetailstypedef)
 - `AwsWafWebAcl`:
-  [AwsWafWebAclDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awswafwebacldetailstypedef)
+  [AwsWafWebAclDetailsTypeDef](./type_defs.md#awswafwebacldetailstypedef)
 - `AwsRdsDbSnapshot`:
-  [AwsRdsDbSnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbsnapshotdetailstypedef)
+  [AwsRdsDbSnapshotDetailsTypeDef](./type_defs.md#awsrdsdbsnapshotdetailstypedef)
 - `AwsRdsDbClusterSnapshot`:
-  [AwsRdsDbClusterSnapshotDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbclustersnapshotdetailstypedef)
+  [AwsRdsDbClusterSnapshotDetailsTypeDef](./type_defs.md#awsrdsdbclustersnapshotdetailstypedef)
 - `AwsRdsDbCluster`:
-  [AwsRdsDbClusterDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#awsrdsdbclusterdetailstypedef)
-- `Container`:
-  [ContainerDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#containerdetailstypedef)
+  [AwsRdsDbClusterDetailsTypeDef](./type_defs.md#awsrdsdbclusterdetailstypedef)
+- `Container`: [ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef)
 - `Other`: `Dict`\[`str`, `str`\]
 
 ## ResourceTypeDef
@@ -4606,15 +4534,13 @@ Required fields:
 
 Optional fields:
 
-- `Partition`:
-  [Partition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#partition)
+- `Partition`: [Partition](./literals.md#partition)
 - `Region`: `str`
 - `ResourceRole`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `DataClassification`:
-  [DataClassificationDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#dataclassificationdetailstypedef)
-- `Details`:
-  [ResourceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#resourcedetailstypedef)
+  [DataClassificationDetailsTypeDef](./type_defs.md#dataclassificationdetailstypedef)
+- `Details`: [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
 
 ## ResultTypeDef
 
@@ -4637,8 +4563,7 @@ Optional fields:
 
 - `Count`: `int`
 - `Type`: `str`
-- `Occurrences`:
-  [OccurrencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#occurrencestypedef)
+- `Occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
 
 ## SensitiveDataResultTypeDef
 
@@ -4650,7 +4575,7 @@ Optional fields:
 
 - `Category`: `str`
 - `Detections`:
-  `List`\[[SensitiveDataDetectionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#sensitivedatadetectionstypedef)\]
+  `List`\[[SensitiveDataDetectionsTypeDef](./type_defs.md#sensitivedatadetectionstypedef)\]
 - `TotalCount`: `int`
 
 ## SeverityTypeDef
@@ -4662,8 +4587,7 @@ from mypy_boto3_securityhub.type_defs import SeverityTypeDef
 Optional fields:
 
 - `Product`: `float`
-- `Label`:
-  [SeverityLabel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#severitylabel)
+- `Label`: [SeverityLabel](./literals.md#severitylabel)
 - `Normalized`: `int`
 - `Original`: `str`
 
@@ -4677,8 +4601,7 @@ Optional fields:
 
 - `Normalized`: `int`
 - `Product`: `float`
-- `Label`:
-  [SeverityLabel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#severitylabel)
+- `Label`: [SeverityLabel](./literals.md#severitylabel)
 
 ## SoftwarePackageTypeDef
 
@@ -4703,8 +4626,7 @@ from mypy_boto3_securityhub.type_defs import SortCriterionTypeDef
 Optional fields:
 
 - `Field`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 ## StandardTypeDef
 
@@ -4728,16 +4650,14 @@ from mypy_boto3_securityhub.type_defs import StandardsControlTypeDef
 Optional fields:
 
 - `StandardsControlArn`: `str`
-- `ControlStatus`:
-  [ControlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#controlstatus)
+- `ControlStatus`: [ControlStatus](./literals.md#controlstatus)
 - `DisabledReason`: `str`
 - `ControlStatusUpdatedAt`: `datetime`
 - `ControlId`: `str`
 - `Title`: `str`
 - `Description`: `str`
 - `RemediationUrl`: `str`
-- `SeverityRating`:
-  [SeverityRating](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#severityrating)
+- `SeverityRating`: [SeverityRating](./literals.md#severityrating)
 - `RelatedRequirements`: `List`\[`str`\]
 
 ## StandardsSubscriptionRequestTypeDef
@@ -4765,8 +4685,7 @@ Required fields:
 - `StandardsSubscriptionArn`: `str`
 - `StandardsArn`: `str`
 - `StandardsInput`: `Dict`\[`str`, `str`\]
-- `StandardsStatus`:
-  [StandardsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#standardsstatus)
+- `StandardsStatus`: [StandardsStatus](./literals.md#standardsstatus)
 
 ## StatusReasonTypeDef
 
@@ -4791,8 +4710,7 @@ from mypy_boto3_securityhub.type_defs import StringFilterTypeDef
 Optional fields:
 
 - `Value`: `str`
-- `Comparison`:
-  [StringFilterComparison](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#stringfiltercomparison)
+- `Comparison`: [StringFilterComparison](./literals.md#stringfiltercomparison)
 
 ## ThreatIntelIndicatorTypeDef
 
@@ -4802,11 +4720,10 @@ from mypy_boto3_securityhub.type_defs import ThreatIntelIndicatorTypeDef
 
 Optional fields:
 
-- `Type`:
-  [ThreatIntelIndicatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#threatintelindicatortype)
+- `Type`: [ThreatIntelIndicatorType](./literals.md#threatintelindicatortype)
 - `Value`: `str`
 - `Category`:
-  [ThreatIntelIndicatorCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#threatintelindicatorcategory)
+  [ThreatIntelIndicatorCategory](./literals.md#threatintelindicatorcategory)
 - `LastObservedAt`: `str`
 - `Source`: `str`
 - `SourceUrl`: `str`
@@ -4824,12 +4741,11 @@ Required fields:
 Optional fields:
 
 - `VulnerablePackages`:
-  `List`\[[SoftwarePackageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#softwarepackagetypedef)\]
-- `Cvss`:
-  `List`\[[CvssTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#cvsstypedef)\]
+  `List`\[[SoftwarePackageTypeDef](./type_defs.md#softwarepackagetypedef)\]
+- `Cvss`: `List`\[[CvssTypeDef](./type_defs.md#cvsstypedef)\]
 - `RelatedVulnerabilities`: `List`\[`str`\]
 - `Vendor`:
-  [VulnerabilityVendorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/type_defs.html#vulnerabilityvendortypedef)
+  [VulnerabilityVendorTypeDef](./type_defs.md#vulnerabilityvendortypedef)
 - `ReferenceUrls`: `List`\[`str`\]
 
 ## VulnerabilityVendorTypeDef
@@ -4887,8 +4803,7 @@ from mypy_boto3_securityhub.type_defs import WorkflowTypeDef
 
 Optional fields:
 
-- `Status`:
-  [WorkflowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#workflowstatus)
+- `Status`: [WorkflowStatus](./literals.md#workflowstatus)
 
 ## WorkflowUpdateTypeDef
 
@@ -4898,5 +4813,4 @@ from mypy_boto3_securityhub.type_defs import WorkflowUpdateTypeDef
 
 Optional fields:
 
-- `Status`:
-  [WorkflowStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_securityhub/literals.html#workflowstatus)
+- `Status`: [WorkflowStatus](./literals.md#workflowstatus)

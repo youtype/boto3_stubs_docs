@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SNS module
 
-> [Index](../README.md) > [SNS](./README.md) > Structures
+> [Index](..) > [SNS](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
@@ -154,8 +154,7 @@ from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationResponseT
 
 Optional fields:
 
-- `Endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#endpointtypedef)\]
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `NextToken`: `str`
 
 ## ListPhoneNumbersOptedOutResponseTypeDef
@@ -178,7 +177,7 @@ from mypy_boto3_sns.type_defs import ListPlatformApplicationsResponseTypeDef
 Optional fields:
 
 - `PlatformApplications`:
-  `List`\[[PlatformApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#platformapplicationtypedef)\]
+  `List`\[[PlatformApplicationTypeDef](./type_defs.md#platformapplicationtypedef)\]
 - `NextToken`: `str`
 
 ## ListSubscriptionsByTopicResponseTypeDef
@@ -190,7 +189,7 @@ from mypy_boto3_sns.type_defs import ListSubscriptionsByTopicResponseTypeDef
 Optional fields:
 
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#subscriptiontypedef)\]
+  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListSubscriptionsResponseTypeDef
@@ -202,7 +201,7 @@ from mypy_boto3_sns.type_defs import ListSubscriptionsResponseTypeDef
 Optional fields:
 
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#subscriptiontypedef)\]
+  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -213,8 +212,7 @@ from mypy_boto3_sns.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTopicsResponseTypeDef
 
@@ -224,8 +222,7 @@ from mypy_boto3_sns.type_defs import ListTopicsResponseTypeDef
 
 Optional fields:
 
-- `Topics`:
-  `List`\[[TopicTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#topictypedef)\]
+- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `NextToken`: `str`
 
 ## MessageAttributeValueTypeDef

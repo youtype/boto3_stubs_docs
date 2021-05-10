@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MediaStoreData module
 
-> [Index](../README.md) > [MediaStoreData](./README.md) > Structures
+> [Index](..) > [MediaStoreData](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
@@ -58,8 +58,7 @@ from mypy_boto3_mediastore_data.type_defs import ItemTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Type`:
-  [ItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/literals.html#itemtype)
+- `Type`: [ItemType](./literals.md#itemtype)
 - `ETag`: `str`
 - `LastModified`: `datetime`
 - `ContentType`: `str`
@@ -73,8 +72,7 @@ from mypy_boto3_mediastore_data.type_defs import ListItemsResponseTypeDef
 
 Optional fields:
 
-- `Items`:
-  `List`\[[ItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore_data/type_defs.html#itemtypedef)\]
+- `Items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 - `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -99,4 +97,5 @@ Optional fields:
 
 - `ContentSHA256`: `str`
 - `ETag`: `str`
-- `StorageClass`: `Literal['TEMPORAL']`
+- `StorageClass`: `Literal['TEMPORAL']` (see
+  [StorageClass](./literals.md#storageclass))

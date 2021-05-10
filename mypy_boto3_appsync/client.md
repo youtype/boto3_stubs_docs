@@ -1,6 +1,6 @@
 # AppSyncClient for boto3 AppSync module
 
-> [Index](../README.md) > [AppSync](./README.md) > AppSyncClient
+> [Index](..) > [AppSync](.) > AppSyncClient
 
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
@@ -125,17 +125,14 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `ttl`: `int` *(required)*
-- `apiCachingBehavior`:
-  [ApiCachingBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachingbehavior)
+- `apiCachingBehavior`: [ApiCachingBehavior](./literals.md#apicachingbehavior)
   *(required)*
-- `type`:
-  [ApiCacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachetype)
-  *(required)*
+- `type`: [ApiCacheType](./literals.md#apicachetype) *(required)*
 - `transitEncryptionEnabled`: `bool`
 - `atRestEncryptionEnabled`: `bool`
 
 Returns
-[CreateApiCacheResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createapicacheresponsetypedef).
+[CreateApiCacheResponseTypeDef](./type_defs.md#createapicacheresponsetypedef).
 
 ### create_api_key
 
@@ -151,7 +148,7 @@ Arguments:
 - `expires`: `int`
 
 Returns
-[CreateApiKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createapikeyresponsetypedef).
+[CreateApiKeyResponseTypeDef](./type_defs.md#createapikeyresponsetypedef).
 
 ### create_data_source
 
@@ -164,24 +161,22 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
-- `type`:
-  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#datasourcetype)
-  *(required)*
+- `type`: [DataSourceType](./literals.md#datasourcetype) *(required)*
 - `description`: `str`
 - `serviceRoleArn`: `str`
 - `dynamodbConfig`:
-  [DynamodbDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#dynamodbdatasourceconfigtypedef)
+  [DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef)
 - `lambdaConfig`:
-  [LambdaDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#lambdadatasourceconfigtypedef)
+  [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
-  [ElasticsearchDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#elasticsearchdatasourceconfigtypedef)
+  [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
 - `httpConfig`:
-  [HttpDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#httpdatasourceconfigtypedef)
+  [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
-  [RelationalDatabaseDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#relationaldatabasedatasourceconfigtypedef)
+  [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
 Returns
-[CreateDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createdatasourceresponsetypedef).
+[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
 ### create_function
 
@@ -199,11 +194,10 @@ Arguments:
 - `description`: `str`
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
-- `syncConfig`:
-  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
+- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
 Returns
-[CreateFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createfunctionresponsetypedef).
+[CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef).
 
 ### create_graphql_api
 
@@ -215,22 +209,19 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `authenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#authenticationtype)
+- `authenticationType`: [AuthenticationType](./literals.md#authenticationtype)
   *(required)*
-- `logConfig`:
-  [LogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#logconfigtypedef)
-- `userPoolConfig`:
-  [UserPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#userpoolconfigtypedef)
+- `logConfig`: [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
+- `userPoolConfig`: [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
 - `openIDConnectConfig`:
-  [OpenIDConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#openidconnectconfigtypedef)
+  [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#additionalauthenticationprovidertypedef)\]
+  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 
 Returns
-[CreateGraphqlApiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#creategraphqlapiresponsetypedef).
+[CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
 
 ### create_resolver
 
@@ -247,17 +238,13 @@ Arguments:
 - `dataSourceName`: `str`
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
-- `kind`:
-  [ResolverKind](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#resolverkind)
-- `pipelineConfig`:
-  [PipelineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#pipelineconfigtypedef)
-- `syncConfig`:
-  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
-- `cachingConfig`:
-  [CachingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#cachingconfigtypedef)
+- `kind`: [ResolverKind](./literals.md#resolverkind)
+- `pipelineConfig`: [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
+- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
+- `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
 Returns
-[CreateResolverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createresolverresponsetypedef).
+[CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef).
 
 ### create_type
 
@@ -270,12 +257,10 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `definition`: `str` *(required)*
-- `format`:
-  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+- `format`: [TypeDefinitionFormat](./literals.md#typedefinitionformat)
   *(required)*
 
-Returns
-[CreateTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#createtyperesponsetypedef).
+Returns [CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef).
 
 ### delete_api_cache
 
@@ -415,7 +400,7 @@ Arguments:
 - `apiId`: `str` *(required)*
 
 Returns
-[GetApiCacheResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getapicacheresponsetypedef).
+[GetApiCacheResponseTypeDef](./type_defs.md#getapicacheresponsetypedef).
 
 ### get_data_source
 
@@ -430,7 +415,7 @@ Arguments:
 - `name`: `str` *(required)*
 
 Returns
-[GetDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getdatasourceresponsetypedef).
+[GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef).
 
 ### get_function
 
@@ -445,7 +430,7 @@ Arguments:
 - `functionId`: `str` *(required)*
 
 Returns
-[GetFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getfunctionresponsetypedef).
+[GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
 ### get_graphql_api
 
@@ -459,7 +444,7 @@ Arguments:
 - `apiId`: `str` *(required)*
 
 Returns
-[GetGraphqlApiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getgraphqlapiresponsetypedef).
+[GetGraphqlApiResponseTypeDef](./type_defs.md#getgraphqlapiresponsetypedef).
 
 ### get_introspection_schema
 
@@ -471,13 +456,11 @@ Boto3 documentation:
 Arguments:
 
 - `apiId`: `str` *(required)*
-- `format`:
-  [OutputType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#outputtype)
-  *(required)*
+- `format`: [OutputType](./literals.md#outputtype) *(required)*
 - `includeDirectives`: `bool`
 
 Returns
-[GetIntrospectionSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getintrospectionschemaresponsetypedef).
+[GetIntrospectionSchemaResponseTypeDef](./type_defs.md#getintrospectionschemaresponsetypedef).
 
 ### get_resolver
 
@@ -493,7 +476,7 @@ Arguments:
 - `fieldName`: `str` *(required)*
 
 Returns
-[GetResolverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getresolverresponsetypedef).
+[GetResolverResponseTypeDef](./type_defs.md#getresolverresponsetypedef).
 
 ### get_schema_creation_status
 
@@ -508,7 +491,7 @@ Arguments:
 - `apiId`: `str` *(required)*
 
 Returns
-[GetSchemaCreationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#getschemacreationstatusresponsetypedef).
+[GetSchemaCreationStatusResponseTypeDef](./type_defs.md#getschemacreationstatusresponsetypedef).
 
 ### get_type
 
@@ -521,12 +504,10 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
-- `format`:
-  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+- `format`: [TypeDefinitionFormat](./literals.md#typedefinitionformat)
   *(required)*
 
-Returns
-[GetTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#gettyperesponsetypedef).
+Returns [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef).
 
 ### list_api_keys
 
@@ -542,7 +523,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListApiKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listapikeysresponsetypedef).
+[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef).
 
 ### list_data_sources
 
@@ -558,7 +539,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDataSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listdatasourcesresponsetypedef).
+[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
 ### list_functions
 
@@ -574,7 +555,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListFunctionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listfunctionsresponsetypedef).
+[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
 ### list_graphql_apis
 
@@ -589,7 +570,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListGraphqlApisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listgraphqlapisresponsetypedef).
+[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef).
 
 ### list_resolvers
 
@@ -606,7 +587,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResolversResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listresolversresponsetypedef).
+[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef).
 
 ### list_resolvers_by_function
 
@@ -624,7 +605,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResolversByFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listresolversbyfunctionresponsetypedef).
+[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -638,7 +619,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_types
 
@@ -650,14 +631,12 @@ Boto3 documentation:
 Arguments:
 
 - `apiId`: `str` *(required)*
-- `format`:
-  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+- `format`: [TypeDefinitionFormat](./literals.md#typedefinitionformat)
   *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#listtypesresponsetypedef).
+Returns [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef).
 
 ### start_schema_creation
 
@@ -672,7 +651,7 @@ Arguments:
 - `definition`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 
 Returns
-[StartSchemaCreationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#startschemacreationresponsetypedef).
+[StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef).
 
 ### tag_resource
 
@@ -713,15 +692,12 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `ttl`: `int` *(required)*
-- `apiCachingBehavior`:
-  [ApiCachingBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachingbehavior)
+- `apiCachingBehavior`: [ApiCachingBehavior](./literals.md#apicachingbehavior)
   *(required)*
-- `type`:
-  [ApiCacheType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#apicachetype)
-  *(required)*
+- `type`: [ApiCacheType](./literals.md#apicachetype) *(required)*
 
 Returns
-[UpdateApiCacheResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updateapicacheresponsetypedef).
+[UpdateApiCacheResponseTypeDef](./type_defs.md#updateapicacheresponsetypedef).
 
 ### update_api_key
 
@@ -738,7 +714,7 @@ Arguments:
 - `expires`: `int`
 
 Returns
-[UpdateApiKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updateapikeyresponsetypedef).
+[UpdateApiKeyResponseTypeDef](./type_defs.md#updateapikeyresponsetypedef).
 
 ### update_data_source
 
@@ -751,24 +727,22 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
-- `type`:
-  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#datasourcetype)
-  *(required)*
+- `type`: [DataSourceType](./literals.md#datasourcetype) *(required)*
 - `description`: `str`
 - `serviceRoleArn`: `str`
 - `dynamodbConfig`:
-  [DynamodbDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#dynamodbdatasourceconfigtypedef)
+  [DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef)
 - `lambdaConfig`:
-  [LambdaDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#lambdadatasourceconfigtypedef)
+  [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
-  [ElasticsearchDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#elasticsearchdatasourceconfigtypedef)
+  [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
 - `httpConfig`:
-  [HttpDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#httpdatasourceconfigtypedef)
+  [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
-  [RelationalDatabaseDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#relationaldatabasedatasourceconfigtypedef)
+  [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
 
 Returns
-[UpdateDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updatedatasourceresponsetypedef).
+[UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
 
 ### update_function
 
@@ -787,11 +761,10 @@ Arguments:
 - `description`: `str`
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
-- `syncConfig`:
-  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
+- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 
 Returns
-[UpdateFunctionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updatefunctionresponsetypedef).
+[UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef).
 
 ### update_graphql_api
 
@@ -804,20 +777,17 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
-- `logConfig`:
-  [LogConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#logconfigtypedef)
-- `authenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#authenticationtype)
-- `userPoolConfig`:
-  [UserPoolConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#userpoolconfigtypedef)
+- `logConfig`: [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
+- `authenticationType`: [AuthenticationType](./literals.md#authenticationtype)
+- `userPoolConfig`: [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
 - `openIDConnectConfig`:
-  [OpenIDConnectConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#openidconnectconfigtypedef)
+  [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#additionalauthenticationprovidertypedef)\]
+  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 
 Returns
-[UpdateGraphqlApiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updategraphqlapiresponsetypedef).
+[UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).
 
 ### update_resolver
 
@@ -834,17 +804,13 @@ Arguments:
 - `dataSourceName`: `str`
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
-- `kind`:
-  [ResolverKind](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#resolverkind)
-- `pipelineConfig`:
-  [PipelineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#pipelineconfigtypedef)
-- `syncConfig`:
-  [SyncConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#syncconfigtypedef)
-- `cachingConfig`:
-  [CachingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#cachingconfigtypedef)
+- `kind`: [ResolverKind](./literals.md#resolverkind)
+- `pipelineConfig`: [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
+- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
+- `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
 
 Returns
-[UpdateResolverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updateresolverresponsetypedef).
+[UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef).
 
 ### update_type
 
@@ -857,13 +823,11 @@ Arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
-- `format`:
-  [TypeDefinitionFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/literals.html#typedefinitionformat)
+- `format`: [TypeDefinitionFormat](./literals.md#typedefinitionformat)
   *(required)*
 - `definition`: `str`
 
-Returns
-[UpdateTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appsync/type_defs.html#updatetyperesponsetypedef).
+Returns [UpdateTypeResponseTypeDef](./type_defs.md#updatetyperesponsetypedef).
 
 ### get_paginator
 

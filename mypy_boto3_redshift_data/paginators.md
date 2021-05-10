@@ -1,6 +1,6 @@
 # Paginators for boto3 RedshiftDataAPIService module
 
-> [Index](../README.md) > [RedshiftDataAPIService](./README.md) > Paginators
+> [Index](..) > [RedshiftDataAPIService](.) > Paginators
 
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
@@ -42,10 +42,10 @@ Arguments for `DescribeTablePaginator.paginate` method:
 - `SecretArn`: `str`
 - `Table`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTablePaginator.paginate` returns
-`Iterator`\[[DescribeTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#describetableresponsetypedef)\].
+`Iterator`\[[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)\].
 
 ## GetStatementResultPaginator
 
@@ -68,10 +68,10 @@ Arguments for `GetStatementResultPaginator.paginate` method:
 
 - `Id`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetStatementResultPaginator.paginate` returns
-`Iterator`\[[GetStatementResultResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#getstatementresultresponsetypedef)\].
+`Iterator`\[[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef)\].
 
 ## ListDatabasesPaginator
 
@@ -97,10 +97,10 @@ Arguments for `ListDatabasesPaginator.paginate` method:
 - `DbUser`: `str`
 - `SecretArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatabasesPaginator.paginate` returns
-`Iterator`\[[ListDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listdatabasesresponsetypedef)\].
+`Iterator`\[[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)\].
 
 ## ListSchemasPaginator
 
@@ -128,10 +128,10 @@ Arguments for `ListSchemasPaginator.paginate` method:
 - `SchemaPattern`: `str`
 - `SecretArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemasPaginator.paginate` returns
-`Iterator`\[[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listschemasresponsetypedef)\].
+`Iterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
 
 ## ListStatementsPaginator
 
@@ -154,13 +154,12 @@ Arguments for `ListStatementsPaginator.paginate` method:
 
 - `RoleLevel`: `bool`
 - `StatementName`: `str`
-- `Status`:
-  [StatusString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/literals.html#statusstring)
+- `Status`: [StatusString](./literals.md#statusstring)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStatementsPaginator.paginate` returns
-`Iterator`\[[ListStatementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#liststatementsresponsetypedef)\].
+`Iterator`\[[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)\].
 
 ## ListTablesPaginator
 
@@ -189,7 +188,7 @@ Arguments for `ListTablesPaginator.paginate` method:
 - `SecretArn`: `str`
 - `TablePattern`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTablesPaginator.paginate` returns
-`Iterator`\[[ListTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listtablesresponsetypedef)\].
+`Iterator`\[[ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)\].

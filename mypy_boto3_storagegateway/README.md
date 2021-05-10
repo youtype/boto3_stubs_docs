@@ -1,6 +1,6 @@
 # Type annotations for boto3 StorageGateway module
 
-> [Index](../README.md) > StorageGateway
+> [Index](..) > StorageGateway
 
 Auto-generated documentation for
 [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
@@ -285,7 +285,7 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef, ..
 - [RefreshCacheOutputTypeDef](./type_defs.md#refreshcacheoutputtypedef)
 - [RemoveTagsFromResourceOutputTypeDef](./type_defs.md#removetagsfromresourceoutputtypedef)
 - [ResetCacheOutputTypeDef](./type_defs.md#resetcacheoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RetrieveTapeArchiveOutputTypeDef](./type_defs.md#retrievetapearchiveoutputtypedef)
 - [RetrieveTapeRecoveryPointOutputTypeDef](./type_defs.md#retrievetaperecoverypointoutputtypedef)
 - [SMBFileShareInfoTypeDef](./type_defs.md#smbfileshareinfotypedef)

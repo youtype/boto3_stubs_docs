@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 EventBridge module
 
-> [Index](../README.md) > [EventBridge](./README.md) > Structures
+> [Index](..) > [EventBridge](.) > Typed dictionaries
 
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
@@ -113,12 +113,11 @@ Optional fields:
 
 - `ApiDestinationArn`: `str`
 - `Name`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationstate)
+- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
 - `ConnectionArn`: `str`
 - `InvocationEndpoint`: `str`
 - `HttpMethod`:
-  [ApiDestinationHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationhttpmethod)
+  [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod)
 - `InvocationRateLimitPerSecond`: `int`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -133,8 +132,7 @@ Optional fields:
 
 - `ArchiveName`: `str`
 - `EventSourceArn`: `str`
-- `State`:
-  [ArchiveState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#archivestate)
+- `State`: [ArchiveState](./literals.md#archivestate)
 - `StateReason`: `str`
 - `RetentionDays`: `int`
 - `SizeBytes`: `int`
@@ -154,8 +152,7 @@ Required fields:
 Optional fields:
 
 - `SecurityGroups`: `List`\[`str`\]
-- `AssignPublicIp`:
-  [AssignPublicIp](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#assignpublicip)
+- `AssignPublicIp`: [AssignPublicIp](./literals.md#assignpublicip)
 
 ## BatchArrayPropertiesTypeDef
 
@@ -181,9 +178,9 @@ Required fields:
 Optional fields:
 
 - `ArrayProperties`:
-  [BatchArrayPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#batcharraypropertiestypedef)
+  [BatchArrayPropertiesTypeDef](./type_defs.md#batcharraypropertiestypedef)
 - `RetryStrategy`:
-  [BatchRetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#batchretrystrategytypedef)
+  [BatchRetryStrategyTypeDef](./type_defs.md#batchretrystrategytypedef)
 
 ## BatchRetryStrategyTypeDef
 
@@ -204,8 +201,7 @@ from mypy_boto3_events.type_defs import CancelReplayResponseTypeDef
 Optional fields:
 
 - `ReplayArn`: `str`
-- `State`:
-  [ReplayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#replaystate)
+- `State`: [ReplayState](./literals.md#replaystate)
 - `StateReason`: `str`
 
 ## ConditionTypeDef
@@ -239,13 +235,13 @@ from mypy_boto3_events.type_defs import ConnectionAuthResponseParametersTypeDef
 Optional fields:
 
 - `BasicAuthParameters`:
-  [ConnectionBasicAuthResponseParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionbasicauthresponseparameterstypedef)
+  [ConnectionBasicAuthResponseParametersTypeDef](./type_defs.md#connectionbasicauthresponseparameterstypedef)
 - `OAuthParameters`:
-  [ConnectionOAuthResponseParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionoauthresponseparameterstypedef)
+  [ConnectionOAuthResponseParametersTypeDef](./type_defs.md#connectionoauthresponseparameterstypedef)
 - `ApiKeyAuthParameters`:
-  [ConnectionApiKeyAuthResponseParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionapikeyauthresponseparameterstypedef)
+  [ConnectionApiKeyAuthResponseParametersTypeDef](./type_defs.md#connectionapikeyauthresponseparameterstypedef)
 - `InvocationHttpParameters`:
-  [ConnectionHttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionhttpparameterstypedef)
+  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
 ## ConnectionBasicAuthResponseParametersTypeDef
 
@@ -290,11 +286,11 @@ from mypy_boto3_events.type_defs import ConnectionHttpParametersTypeDef
 Optional fields:
 
 - `HeaderParameters`:
-  `List`\[[ConnectionHeaderParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionheaderparametertypedef)\]
+  `List`\[[ConnectionHeaderParameterTypeDef](./type_defs.md#connectionheaderparametertypedef)\]
 - `QueryStringParameters`:
-  `List`\[[ConnectionQueryStringParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionquerystringparametertypedef)\]
+  `List`\[[ConnectionQueryStringParameterTypeDef](./type_defs.md#connectionquerystringparametertypedef)\]
 - `BodyParameters`:
-  `List`\[[ConnectionBodyParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionbodyparametertypedef)\]
+  `List`\[[ConnectionBodyParameterTypeDef](./type_defs.md#connectionbodyparametertypedef)\]
 
 ## ConnectionOAuthClientResponseParametersTypeDef
 
@@ -315,12 +311,12 @@ from mypy_boto3_events.type_defs import ConnectionOAuthResponseParametersTypeDef
 Optional fields:
 
 - `ClientParameters`:
-  [ConnectionOAuthClientResponseParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionoauthclientresponseparameterstypedef)
+  [ConnectionOAuthClientResponseParametersTypeDef](./type_defs.md#connectionoauthclientresponseparameterstypedef)
 - `AuthorizationEndpoint`: `str`
 - `HttpMethod`:
-  [ConnectionOAuthHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionoauthhttpmethod)
+  [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
 - `OAuthHttpParameters`:
-  [ConnectionHttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionhttpparameterstypedef)
+  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
 ## ConnectionQueryStringParameterTypeDef
 
@@ -344,11 +340,10 @@ Optional fields:
 
 - `ConnectionArn`: `str`
 - `Name`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `StateReason`: `str`
 - `AuthorizationType`:
-  [ConnectionAuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionauthorizationtype)
+  [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -362,8 +357,7 @@ from mypy_boto3_events.type_defs import CreateApiDestinationResponseTypeDef
 Optional fields:
 
 - `ApiDestinationArn`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationstate)
+- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -376,8 +370,7 @@ from mypy_boto3_events.type_defs import CreateArchiveResponseTypeDef
 Optional fields:
 
 - `ArchiveArn`: `str`
-- `State`:
-  [ArchiveState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#archivestate)
+- `State`: [ArchiveState](./literals.md#archivestate)
 - `StateReason`: `str`
 - `CreationTime`: `datetime`
 
@@ -401,13 +394,13 @@ from mypy_boto3_events.type_defs import CreateConnectionAuthRequestParametersTyp
 Optional fields:
 
 - `BasicAuthParameters`:
-  [CreateConnectionBasicAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createconnectionbasicauthrequestparameterstypedef)
+  [CreateConnectionBasicAuthRequestParametersTypeDef](./type_defs.md#createconnectionbasicauthrequestparameterstypedef)
 - `OAuthParameters`:
-  [CreateConnectionOAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createconnectionoauthrequestparameterstypedef)
+  [CreateConnectionOAuthRequestParametersTypeDef](./type_defs.md#createconnectionoauthrequestparameterstypedef)
 - `ApiKeyAuthParameters`:
-  [CreateConnectionApiKeyAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createconnectionapikeyauthrequestparameterstypedef)
+  [CreateConnectionApiKeyAuthRequestParametersTypeDef](./type_defs.md#createconnectionapikeyauthrequestparameterstypedef)
 - `InvocationHttpParameters`:
-  [ConnectionHttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionhttpparameterstypedef)
+  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
 ## CreateConnectionBasicAuthRequestParametersTypeDef
 
@@ -440,15 +433,15 @@ from mypy_boto3_events.type_defs import CreateConnectionOAuthRequestParametersTy
 Required fields:
 
 - `ClientParameters`:
-  [CreateConnectionOAuthClientRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#createconnectionoauthclientrequestparameterstypedef)
+  [CreateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#createconnectionoauthclientrequestparameterstypedef)
 - `AuthorizationEndpoint`: `str`
 - `HttpMethod`:
-  [ConnectionOAuthHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionoauthhttpmethod)
+  [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
 
 Optional fields:
 
 - `OAuthHttpParameters`:
-  [ConnectionHttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionhttpparameterstypedef)
+  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
 ## CreateConnectionResponseTypeDef
 
@@ -459,8 +452,7 @@ from mypy_boto3_events.type_defs import CreateConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -503,8 +495,7 @@ from mypy_boto3_events.type_defs import DeauthorizeConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -518,8 +509,7 @@ from mypy_boto3_events.type_defs import DeleteConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -535,12 +525,11 @@ Optional fields:
 - `ApiDestinationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationstate)
+- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
 - `ConnectionArn`: `str`
 - `InvocationEndpoint`: `str`
 - `HttpMethod`:
-  [ApiDestinationHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationhttpmethod)
+  [ApiDestinationHttpMethod](./literals.md#apidestinationhttpmethod)
 - `InvocationRateLimitPerSecond`: `int`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
@@ -558,8 +547,7 @@ Optional fields:
 - `EventSourceArn`: `str`
 - `Description`: `str`
 - `EventPattern`: `str`
-- `State`:
-  [ArchiveState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#archivestate)
+- `State`: [ArchiveState](./literals.md#archivestate)
 - `StateReason`: `str`
 - `RetentionDays`: `int`
 - `SizeBytes`: `int`
@@ -577,14 +565,13 @@ Optional fields:
 - `ConnectionArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `StateReason`: `str`
 - `AuthorizationType`:
-  [ConnectionAuthorizationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionauthorizationtype)
+  [ConnectionAuthorizationType](./literals.md#connectionauthorizationtype)
 - `SecretArn`: `str`
 - `AuthParameters`:
-  [ConnectionAuthResponseParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionauthresponseparameterstypedef)
+  [ConnectionAuthResponseParametersTypeDef](./type_defs.md#connectionauthresponseparameterstypedef)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
@@ -614,8 +601,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
 - `Name`: `str`
-- `State`:
-  [EventSourceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#eventsourcestate)
+- `State`: [EventSourceState](./literals.md#eventsourcestate)
 
 ## DescribePartnerEventSourceResponseTypeDef
 
@@ -639,12 +625,11 @@ Optional fields:
 - `ReplayName`: `str`
 - `ReplayArn`: `str`
 - `Description`: `str`
-- `State`:
-  [ReplayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#replaystate)
+- `State`: [ReplayState](./literals.md#replaystate)
 - `StateReason`: `str`
 - `EventSourceArn`: `str`
 - `Destination`:
-  [ReplayDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#replaydestinationtypedef)
+  [ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef)
 - `EventStartTime`: `datetime`
 - `EventEndTime`: `datetime`
 - `EventLastReplayedTime`: `datetime`
@@ -663,8 +648,7 @@ Optional fields:
 - `Arn`: `str`
 - `EventPattern`: `str`
 - `ScheduleExpression`: `str`
-- `State`:
-  [RuleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#rulestate)
+- `State`: [RuleState](./literals.md#rulestate)
 - `Description`: `str`
 - `RoleArn`: `str`
 - `ManagedBy`: `str`
@@ -684,10 +668,9 @@ Required fields:
 Optional fields:
 
 - `TaskCount`: `int`
-- `LaunchType`:
-  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#launchtype)
+- `LaunchType`: [LaunchType](./literals.md#launchtype)
 - `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#networkconfigurationtypedef)
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `PlatformVersion`: `str`
 - `Group`: `str`
 
@@ -716,8 +699,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
 - `Name`: `str`
-- `State`:
-  [EventSourceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#eventsourcestate)
+- `State`: [EventSourceState](./literals.md#eventsourcestate)
 
 ## HttpParametersTypeDef
 
@@ -764,7 +746,7 @@ from mypy_boto3_events.type_defs import ListApiDestinationsResponseTypeDef
 Optional fields:
 
 - `ApiDestinations`:
-  `List`\[[ApiDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#apidestinationtypedef)\]
+  `List`\[[ApiDestinationTypeDef](./type_defs.md#apidestinationtypedef)\]
 - `NextToken`: `str`
 
 ## ListArchivesResponseTypeDef
@@ -775,8 +757,7 @@ from mypy_boto3_events.type_defs import ListArchivesResponseTypeDef
 
 Optional fields:
 
-- `Archives`:
-  `List`\[[ArchiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#archivetypedef)\]
+- `Archives`: `List`\[[ArchiveTypeDef](./type_defs.md#archivetypedef)\]
 - `NextToken`: `str`
 
 ## ListConnectionsResponseTypeDef
@@ -787,8 +768,7 @@ from mypy_boto3_events.type_defs import ListConnectionsResponseTypeDef
 
 Optional fields:
 
-- `Connections`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectiontypedef)\]
+- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 
 ## ListEventBusesResponseTypeDef
@@ -799,8 +779,7 @@ from mypy_boto3_events.type_defs import ListEventBusesResponseTypeDef
 
 Optional fields:
 
-- `EventBuses`:
-  `List`\[[EventBusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#eventbustypedef)\]
+- `EventBuses`: `List`\[[EventBusTypeDef](./type_defs.md#eventbustypedef)\]
 - `NextToken`: `str`
 
 ## ListEventSourcesResponseTypeDef
@@ -812,7 +791,7 @@ from mypy_boto3_events.type_defs import ListEventSourcesResponseTypeDef
 Optional fields:
 
 - `EventSources`:
-  `List`\[[EventSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#eventsourcetypedef)\]
+  `List`\[[EventSourceTypeDef](./type_defs.md#eventsourcetypedef)\]
 - `NextToken`: `str`
 
 ## ListPartnerEventSourceAccountsResponseTypeDef
@@ -824,7 +803,7 @@ from mypy_boto3_events.type_defs import ListPartnerEventSourceAccountsResponseTy
 Optional fields:
 
 - `PartnerEventSourceAccounts`:
-  `List`\[[PartnerEventSourceAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#partnereventsourceaccounttypedef)\]
+  `List`\[[PartnerEventSourceAccountTypeDef](./type_defs.md#partnereventsourceaccounttypedef)\]
 - `NextToken`: `str`
 
 ## ListPartnerEventSourcesResponseTypeDef
@@ -836,7 +815,7 @@ from mypy_boto3_events.type_defs import ListPartnerEventSourcesResponseTypeDef
 Optional fields:
 
 - `PartnerEventSources`:
-  `List`\[[PartnerEventSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#partnereventsourcetypedef)\]
+  `List`\[[PartnerEventSourceTypeDef](./type_defs.md#partnereventsourcetypedef)\]
 - `NextToken`: `str`
 
 ## ListReplaysResponseTypeDef
@@ -847,8 +826,7 @@ from mypy_boto3_events.type_defs import ListReplaysResponseTypeDef
 
 Optional fields:
 
-- `Replays`:
-  `List`\[[ReplayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#replaytypedef)\]
+- `Replays`: `List`\[[ReplayTypeDef](./type_defs.md#replaytypedef)\]
 - `NextToken`: `str`
 
 ## ListRuleNamesByTargetResponseTypeDef
@@ -870,8 +848,7 @@ from mypy_boto3_events.type_defs import ListRulesResponseTypeDef
 
 Optional fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -882,8 +859,7 @@ from mypy_boto3_events.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTargetsByRuleResponseTypeDef
 
@@ -893,8 +869,7 @@ from mypy_boto3_events.type_defs import ListTargetsByRuleResponseTypeDef
 
 Optional fields:
 
-- `Targets`:
-  `List`\[[TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#targettypedef)\]
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `NextToken`: `str`
 
 ## NetworkConfigurationTypeDef
@@ -906,7 +881,7 @@ from mypy_boto3_events.type_defs import NetworkConfigurationTypeDef
 Optional fields:
 
 - `awsvpcConfiguration`:
-  [AwsVpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#awsvpcconfigurationtypedef)
+  [AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -931,8 +906,7 @@ Optional fields:
 - `Account`: `str`
 - `CreationTime`: `datetime`
 - `ExpirationTime`: `datetime`
-- `State`:
-  [EventSourceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#eventsourcestate)
+- `State`: [EventSourceState](./literals.md#eventsourcestate)
 
 ## PartnerEventSourceTypeDef
 
@@ -971,7 +945,7 @@ Optional fields:
 
 - `FailedEntryCount`: `int`
 - `Entries`:
-  `List`\[[PutEventsResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#puteventsresultentrytypedef)\]
+  `List`\[[PutEventsResultEntryTypeDef](./type_defs.md#puteventsresultentrytypedef)\]
 
 ## PutEventsResultEntryTypeDef
 
@@ -1009,7 +983,7 @@ Optional fields:
 
 - `FailedEntryCount`: `int`
 - `Entries`:
-  `List`\[[PutPartnerEventsResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#putpartnereventsresultentrytypedef)\]
+  `List`\[[PutPartnerEventsResultEntryTypeDef](./type_defs.md#putpartnereventsresultentrytypedef)\]
 
 ## PutPartnerEventsResultEntryTypeDef
 
@@ -1043,7 +1017,7 @@ Optional fields:
 
 - `FailedEntryCount`: `int`
 - `FailedEntries`:
-  `List`\[[PutTargetsResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#puttargetsresultentrytypedef)\]
+  `List`\[[PutTargetsResultEntryTypeDef](./type_defs.md#puttargetsresultentrytypedef)\]
 
 ## PutTargetsResultEntryTypeDef
 
@@ -1085,7 +1059,7 @@ Optional fields:
 
 - `FailedEntryCount`: `int`
 - `FailedEntries`:
-  `List`\[[RemoveTargetsResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#removetargetsresultentrytypedef)\]
+  `List`\[[RemoveTargetsResultEntryTypeDef](./type_defs.md#removetargetsresultentrytypedef)\]
 
 ## RemoveTargetsResultEntryTypeDef
 
@@ -1123,8 +1097,7 @@ Optional fields:
 
 - `ReplayName`: `str`
 - `EventSourceArn`: `str`
-- `State`:
-  [ReplayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#replaystate)
+- `State`: [ReplayState](./literals.md#replaystate)
 - `StateReason`: `str`
 - `EventStartTime`: `datetime`
 - `EventEndTime`: `datetime`
@@ -1154,8 +1127,7 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `EventPattern`: `str`
-- `State`:
-  [RuleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#rulestate)
+- `State`: [RuleState](./literals.md#rulestate)
 - `Description`: `str`
 - `ScheduleExpression`: `str`
 - `RoleArn`: `str`
@@ -1171,7 +1143,7 @@ from mypy_boto3_events.type_defs import RunCommandParametersTypeDef
 Required fields:
 
 - `RunCommandTargets`:
-  `List`\[[RunCommandTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#runcommandtargettypedef)\]
+  `List`\[[RunCommandTargetTypeDef](./type_defs.md#runcommandtargettypedef)\]
 
 ## RunCommandTargetTypeDef
 
@@ -1204,7 +1176,7 @@ from mypy_boto3_events.type_defs import SageMakerPipelineParametersTypeDef
 Optional fields:
 
 - `PipelineParameterList`:
-  `List`\[[SageMakerPipelineParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#sagemakerpipelineparametertypedef)\]
+  `List`\[[SageMakerPipelineParameterTypeDef](./type_defs.md#sagemakerpipelineparametertypedef)\]
 
 ## SqsParametersTypeDef
 
@@ -1225,8 +1197,7 @@ from mypy_boto3_events.type_defs import StartReplayResponseTypeDef
 Optional fields:
 
 - `ReplayArn`: `str`
-- `State`:
-  [ReplayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#replaystate)
+- `State`: [ReplayState](./literals.md#replaystate)
 - `StateReason`: `str`
 - `ReplayStartTime`: `datetime`
 
@@ -1258,27 +1229,23 @@ Optional fields:
 - `Input`: `str`
 - `InputPath`: `str`
 - `InputTransformer`:
-  [InputTransformerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#inputtransformertypedef)
+  [InputTransformerTypeDef](./type_defs.md#inputtransformertypedef)
 - `KinesisParameters`:
-  [KinesisParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#kinesisparameterstypedef)
+  [KinesisParametersTypeDef](./type_defs.md#kinesisparameterstypedef)
 - `RunCommandParameters`:
-  [RunCommandParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#runcommandparameterstypedef)
-- `EcsParameters`:
-  [EcsParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#ecsparameterstypedef)
+  [RunCommandParametersTypeDef](./type_defs.md#runcommandparameterstypedef)
+- `EcsParameters`: [EcsParametersTypeDef](./type_defs.md#ecsparameterstypedef)
 - `BatchParameters`:
-  [BatchParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#batchparameterstypedef)
-- `SqsParameters`:
-  [SqsParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#sqsparameterstypedef)
-- `HttpParameters`:
-  [HttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#httpparameterstypedef)
+  [BatchParametersTypeDef](./type_defs.md#batchparameterstypedef)
+- `SqsParameters`: [SqsParametersTypeDef](./type_defs.md#sqsparameterstypedef)
+- `HttpParameters`: [HttpParametersTypeDef](./type_defs.md#httpparameterstypedef)
 - `RedshiftDataParameters`:
-  [RedshiftDataParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#redshiftdataparameterstypedef)
+  [RedshiftDataParametersTypeDef](./type_defs.md#redshiftdataparameterstypedef)
 - `SageMakerPipelineParameters`:
-  [SageMakerPipelineParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#sagemakerpipelineparameterstypedef)
+  [SageMakerPipelineParametersTypeDef](./type_defs.md#sagemakerpipelineparameterstypedef)
 - `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#deadletterconfigtypedef)
-- `RetryPolicy`:
-  [RetryPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#retrypolicytypedef)
+  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
+- `RetryPolicy`: [RetryPolicyTypeDef](./type_defs.md#retrypolicytypedef)
 
 ## TestEventPatternResponseTypeDef
 
@@ -1299,8 +1266,7 @@ from mypy_boto3_events.type_defs import UpdateApiDestinationResponseTypeDef
 Optional fields:
 
 - `ApiDestinationArn`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#apidestinationstate)
+- `ApiDestinationState`: [ApiDestinationState](./literals.md#apidestinationstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
@@ -1313,8 +1279,7 @@ from mypy_boto3_events.type_defs import UpdateArchiveResponseTypeDef
 Optional fields:
 
 - `ArchiveArn`: `str`
-- `State`:
-  [ArchiveState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#archivestate)
+- `State`: [ArchiveState](./literals.md#archivestate)
 - `StateReason`: `str`
 - `CreationTime`: `datetime`
 
@@ -1338,13 +1303,13 @@ from mypy_boto3_events.type_defs import UpdateConnectionAuthRequestParametersTyp
 Optional fields:
 
 - `BasicAuthParameters`:
-  [UpdateConnectionBasicAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateconnectionbasicauthrequestparameterstypedef)
+  [UpdateConnectionBasicAuthRequestParametersTypeDef](./type_defs.md#updateconnectionbasicauthrequestparameterstypedef)
 - `OAuthParameters`:
-  [UpdateConnectionOAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateconnectionoauthrequestparameterstypedef)
+  [UpdateConnectionOAuthRequestParametersTypeDef](./type_defs.md#updateconnectionoauthrequestparameterstypedef)
 - `ApiKeyAuthParameters`:
-  [UpdateConnectionApiKeyAuthRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateconnectionapikeyauthrequestparameterstypedef)
+  [UpdateConnectionApiKeyAuthRequestParametersTypeDef](./type_defs.md#updateconnectionapikeyauthrequestparameterstypedef)
 - `InvocationHttpParameters`:
-  [ConnectionHttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionhttpparameterstypedef)
+  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
 ## UpdateConnectionBasicAuthRequestParametersTypeDef
 
@@ -1377,12 +1342,12 @@ from mypy_boto3_events.type_defs import UpdateConnectionOAuthRequestParametersTy
 Optional fields:
 
 - `ClientParameters`:
-  [UpdateConnectionOAuthClientRequestParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#updateconnectionoauthclientrequestparameterstypedef)
+  [UpdateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#updateconnectionoauthclientrequestparameterstypedef)
 - `AuthorizationEndpoint`: `str`
 - `HttpMethod`:
-  [ConnectionOAuthHttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionoauthhttpmethod)
+  [ConnectionOAuthHttpMethod](./literals.md#connectionoauthhttpmethod)
 - `OAuthHttpParameters`:
-  [ConnectionHttpParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#connectionhttpparameterstypedef)
+  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
 ## UpdateConnectionResponseTypeDef
 
@@ -1393,8 +1358,7 @@ from mypy_boto3_events.type_defs import UpdateConnectionResponseTypeDef
 Optional fields:
 
 - `ConnectionArn`: `str`
-- `ConnectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/literals.html#connectionstate)
+- `ConnectionState`: [ConnectionState](./literals.md#connectionstate)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`

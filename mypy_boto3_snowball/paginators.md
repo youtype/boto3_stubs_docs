@@ -1,6 +1,6 @@
 # Paginators for boto3 Snowball module
 
-> [Index](../README.md) > [Snowball](./README.md) > Paginators
+> [Index](..) > [Snowball](.) > Paginators
 
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
@@ -34,10 +34,10 @@ Boto3 documentation:
 Arguments for `DescribeAddressesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeAddressesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describeaddressesresulttypedef)\].
+`Iterator`\[[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)\].
 
 ## ListClusterJobsPaginator
 
@@ -60,10 +60,10 @@ Arguments for `ListClusterJobsPaginator.paginate` method:
 
 - `ClusterId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClusterJobsPaginator.paginate` returns
-`Iterator`\[[ListClusterJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listclusterjobsresulttypedef)\].
+`Iterator`\[[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)\].
 
 ## ListClustersPaginator
 
@@ -84,10 +84,10 @@ Boto3 documentation:
 Arguments for `ListClustersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listclustersresulttypedef)\].
+`Iterator`\[[ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)\].
 
 ## ListCompatibleImagesPaginator
 
@@ -109,10 +109,10 @@ Boto3 documentation:
 Arguments for `ListCompatibleImagesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCompatibleImagesPaginator.paginate` returns
-`Iterator`\[[ListCompatibleImagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listcompatibleimagesresulttypedef)\].
+`Iterator`\[[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)\].
 
 ## ListJobsPaginator
 
@@ -133,7 +133,7 @@ Boto3 documentation:
 Arguments for `ListJobsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listjobsresulttypedef)\].
+`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].

@@ -1,6 +1,6 @@
 # Paginators for boto3 RAM module
 
-> [Index](../README.md) > [RAM](./README.md) > Paginators
+> [Index](..) > [RAM](.) > Paginators
 
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
@@ -37,10 +37,10 @@ Arguments for `GetResourcePoliciesPaginator.paginate` method:
 - `resourceArns`: `List`\[`str`\] *(required)*
 - `principal`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[GetResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourcepoliciesresponsetypedef)\].
+`Iterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
 
 ## GetResourceShareAssociationsPaginator
 
@@ -62,18 +62,18 @@ Boto3 documentation:
 Arguments for `GetResourceShareAssociationsPaginator.paginate` method:
 
 - `associationType`:
-  [ResourceShareAssociationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationtype)
+  [ResourceShareAssociationType](./literals.md#resourceshareassociationtype)
   *(required)*
 - `resourceShareArns`: `List`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
-  [ResourceShareAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationstatus)
+  [ResourceShareAssociationStatus](./literals.md#resourceshareassociationstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceShareAssociationsPaginator.paginate` returns
-`Iterator`\[[GetResourceShareAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourceshareassociationsresponsetypedef)\].
+`Iterator`\[[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef)\].
 
 ## GetResourceShareInvitationsPaginator
 
@@ -97,10 +97,10 @@ Arguments for `GetResourceShareInvitationsPaginator.paginate` method:
 - `resourceShareInvitationArns`: `List`\[`str`\]
 - `resourceShareArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceShareInvitationsPaginator.paginate` returns
-`Iterator`\[[GetResourceShareInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourceshareinvitationsresponsetypedef)\].
+`Iterator`\[[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef)\].
 
 ## GetResourceSharesPaginator
 
@@ -121,20 +121,16 @@ Boto3 documentation:
 
 Arguments for `GetResourceSharesPaginator.paginate` method:
 
-- `resourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
-  *(required)*
+- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
 - `resourceShareArns`: `List`\[`str`\]
-- `resourceShareStatus`:
-  [ResourceShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourcesharestatus)
+- `resourceShareStatus`: [ResourceShareStatus](./literals.md#resourcesharestatus)
 - `name`: `str`
-- `tagFilters`:
-  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagfiltertypedef)\]
+- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceSharesPaginator.paginate` returns
-`Iterator`\[[GetResourceSharesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourcesharesresponsetypedef)\].
+`Iterator`\[[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef)\].
 
 ## ListPrincipalsPaginator
 
@@ -154,18 +150,16 @@ Boto3 documentation:
 
 Arguments for `ListPrincipalsPaginator.paginate` method:
 
-- `resourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
-  *(required)*
+- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
 - `resourceArn`: `str`
 - `principals`: `List`\[`str`\]
 - `resourceType`: `str`
 - `resourceShareArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listprincipalsresponsetypedef)\].
+`Iterator`\[[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef)\].
 
 ## ListResourcesPaginator
 
@@ -185,15 +179,13 @@ Boto3 documentation:
 
 Arguments for `ListResourcesPaginator.paginate` method:
 
-- `resourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
-  *(required)*
+- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
 - `principal`: `str`
 - `resourceType`: `str`
 - `resourceArns`: `List`\[`str`\]
 - `resourceShareArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesPaginator.paginate` returns
-`Iterator`\[[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcesresponsetypedef)\].
+`Iterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].

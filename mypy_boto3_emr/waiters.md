@@ -1,6 +1,6 @@
 # Waiters for boto3 EMR module
 
-> [Index](../README.md) > [EMR](./README.md) > Waiters
+> [Index](..) > [EMR](.) > Waiters
 
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
@@ -31,8 +31,7 @@ Boto3 documentation:
 Arguments for `ClusterRunningWaiter.wait` method:
 
 - `ClusterId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterTerminatedWaiter
 
@@ -53,8 +52,7 @@ Boto3 documentation:
 Arguments for `ClusterTerminatedWaiter.wait` method:
 
 - `ClusterId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## StepCompleteWaiter
 
@@ -76,5 +74,4 @@ Arguments for `StepCompleteWaiter.wait` method:
 
 - `ClusterId`: `str` *(required)*
 - `StepId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_emr/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

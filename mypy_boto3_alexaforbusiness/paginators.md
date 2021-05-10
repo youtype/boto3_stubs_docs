@@ -1,6 +1,6 @@
 # Paginators for boto3 AlexaForBusiness module
 
-> [Index](../README.md) > [AlexaForBusiness](./README.md) > Paginators
+> [Index](..) > [AlexaForBusiness](.) > Paginators
 
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
@@ -42,10 +42,10 @@ Boto3 documentation:
 Arguments for `ListBusinessReportSchedulesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBusinessReportSchedulesPaginator.paginate` returns
-`Iterator`\[[ListBusinessReportSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listbusinessreportschedulesresponsetypedef)\].
+`Iterator`\[[ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef)\].
 
 ## ListConferenceProvidersPaginator
 
@@ -67,10 +67,10 @@ Boto3 documentation:
 Arguments for `ListConferenceProvidersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConferenceProvidersPaginator.paginate` returns
-`Iterator`\[[ListConferenceProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listconferenceprovidersresponsetypedef)\].
+`Iterator`\[[ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef)\].
 
 ## ListDeviceEventsPaginator
 
@@ -92,13 +92,12 @@ Boto3 documentation:
 Arguments for `ListDeviceEventsPaginator.paginate` method:
 
 - `DeviceArn`: `str` *(required)*
-- `EventType`:
-  [DeviceEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#deviceeventtype)
+- `EventType`: [DeviceEventType](./literals.md#deviceeventtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceEventsPaginator.paginate` returns
-`Iterator`\[[ListDeviceEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listdeviceeventsresponsetypedef)\].
+`Iterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
 
 ## ListSkillsPaginator
 
@@ -120,15 +119,13 @@ Boto3 documentation:
 Arguments for `ListSkillsPaginator.paginate` method:
 
 - `SkillGroupArn`: `str`
-- `EnablementType`:
-  [EnablementTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#enablementtypefilter)
-- `SkillType`:
-  [SkillTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#skilltypefilter)
+- `EnablementType`: [EnablementTypeFilter](./literals.md#enablementtypefilter)
+- `SkillType`: [SkillTypeFilter](./literals.md#skilltypefilter)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSkillsPaginator.paginate` returns
-`Iterator`\[[ListSkillsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsresponsetypedef)\].
+`Iterator`\[[ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef)\].
 
 ## ListSkillsStoreCategoriesPaginator
 
@@ -150,10 +147,10 @@ Boto3 documentation:
 Arguments for `ListSkillsStoreCategoriesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSkillsStoreCategoriesPaginator.paginate` returns
-`Iterator`\[[ListSkillsStoreCategoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsstorecategoriesresponsetypedef)\].
+`Iterator`\[[ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef)\].
 
 ## ListSkillsStoreSkillsByCategoryPaginator
 
@@ -176,10 +173,10 @@ Arguments for `ListSkillsStoreSkillsByCategoryPaginator.paginate` method:
 
 - `CategoryId`: `int` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSkillsStoreSkillsByCategoryPaginator.paginate` returns
-`Iterator`\[[ListSkillsStoreSkillsByCategoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsstoreskillsbycategoryresponsetypedef)\].
+`Iterator`\[[ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef)\].
 
 ## ListSmartHomeAppliancesPaginator
 
@@ -202,10 +199,10 @@ Arguments for `ListSmartHomeAppliancesPaginator.paginate` method:
 
 - `RoomArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSmartHomeAppliancesPaginator.paginate` returns
-`Iterator`\[[ListSmartHomeAppliancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listsmarthomeappliancesresponsetypedef)\].
+`Iterator`\[[ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -228,10 +225,10 @@ Arguments for `ListTagsPaginator.paginate` method:
 
 - `Arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listtagsresponsetypedef)\].
+`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
 
 ## SearchDevicesPaginator
 
@@ -252,15 +249,13 @@ Boto3 documentation:
 
 Arguments for `SearchDevicesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchDevicesPaginator.paginate` returns
-`Iterator`\[[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchdevicesresponsetypedef)\].
+`Iterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
 
 ## SearchProfilesPaginator
 
@@ -281,15 +276,13 @@ Boto3 documentation:
 
 Arguments for `SearchProfilesPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchProfilesPaginator.paginate` returns
-`Iterator`\[[SearchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchprofilesresponsetypedef)\].
+`Iterator`\[[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef)\].
 
 ## SearchRoomsPaginator
 
@@ -310,15 +303,13 @@ Boto3 documentation:
 
 Arguments for `SearchRoomsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchRoomsPaginator.paginate` returns
-`Iterator`\[[SearchRoomsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchroomsresponsetypedef)\].
+`Iterator`\[[SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef)\].
 
 ## SearchSkillGroupsPaginator
 
@@ -339,15 +330,13 @@ Boto3 documentation:
 
 Arguments for `SearchSkillGroupsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSkillGroupsPaginator.paginate` returns
-`Iterator`\[[SearchSkillGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchskillgroupsresponsetypedef)\].
+`Iterator`\[[SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef)\].
 
 ## SearchUsersPaginator
 
@@ -368,12 +357,10 @@ Boto3 documentation:
 
 Arguments for `SearchUsersPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchUsersPaginator.paginate` returns
-`Iterator`\[[SearchUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchusersresponsetypedef)\].
+`Iterator`\[[SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef)\].

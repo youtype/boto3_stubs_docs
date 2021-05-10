@@ -1,6 +1,6 @@
 # Paginators for boto3 ServiceCatalog module
 
-> [Index](../README.md) > [ServiceCatalog](./README.md) > Paginators
+> [Index](..) > [ServiceCatalog](.) > Paginators
 
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
@@ -45,13 +45,12 @@ Boto3 documentation:
 Arguments for `ListAcceptedPortfolioSharesPaginator.paginate` method:
 
 - `AcceptLanguage`: `str`
-- `PortfolioShareType`:
-  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+- `PortfolioShareType`: [PortfolioShareType](./literals.md#portfoliosharetype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAcceptedPortfolioSharesPaginator.paginate` returns
-`Iterator`\[[ListAcceptedPortfolioSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listacceptedportfoliosharesoutputtypedef)\].
+`Iterator`\[[ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef)\].
 
 ## ListConstraintsForPortfolioPaginator
 
@@ -76,10 +75,10 @@ Arguments for `ListConstraintsForPortfolioPaginator.paginate` method:
 - `AcceptLanguage`: `str`
 - `ProductId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConstraintsForPortfolioPaginator.paginate` returns
-`Iterator`\[[ListConstraintsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listconstraintsforportfoliooutputtypedef)\].
+`Iterator`\[[ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef)\].
 
 ## ListLaunchPathsPaginator
 
@@ -103,10 +102,10 @@ Arguments for `ListLaunchPathsPaginator.paginate` method:
 - `ProductId`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLaunchPathsPaginator.paginate` returns
-`Iterator`\[[ListLaunchPathsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listlaunchpathsoutputtypedef)\].
+`Iterator`\[[ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef)\].
 
 ## ListOrganizationPortfolioAccessPaginator
 
@@ -129,14 +128,13 @@ Arguments for `ListOrganizationPortfolioAccessPaginator.paginate` method:
 
 - `PortfolioId`: `str` *(required)*
 - `OrganizationNodeType`:
-  [OrganizationNodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#organizationnodetype)
-  *(required)*
+  [OrganizationNodeType](./literals.md#organizationnodetype) *(required)*
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOrganizationPortfolioAccessPaginator.paginate` returns
-`Iterator`\[[ListOrganizationPortfolioAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listorganizationportfolioaccessoutputtypedef)\].
+`Iterator`\[[ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef)\].
 
 ## ListPortfoliosPaginator
 
@@ -159,10 +157,10 @@ Arguments for `ListPortfoliosPaginator.paginate` method:
 
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPortfoliosPaginator.paginate` returns
-`Iterator`\[[ListPortfoliosOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosoutputtypedef)\].
+`Iterator`\[[ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef)\].
 
 ## ListPortfoliosForProductPaginator
 
@@ -186,10 +184,10 @@ Arguments for `ListPortfoliosForProductPaginator.paginate` method:
 - `ProductId`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPortfoliosForProductPaginator.paginate` returns
-`Iterator`\[[ListPortfoliosForProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosforproductoutputtypedef)\].
+`Iterator`\[[ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef)\].
 
 ## ListPrincipalsForPortfolioPaginator
 
@@ -213,10 +211,10 @@ Arguments for `ListPrincipalsForPortfolioPaginator.paginate` method:
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalsForPortfolioPaginator.paginate` returns
-`Iterator`\[[ListPrincipalsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprincipalsforportfoliooutputtypedef)\].
+`Iterator`\[[ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef)\].
 
 ## ListProvisionedProductPlansPaginator
 
@@ -240,12 +238,12 @@ Arguments for `ListProvisionedProductPlansPaginator.paginate` method:
 - `AcceptLanguage`: `str`
 - `ProvisionProductId`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisionedProductPlansPaginator.paginate` returns
-`Iterator`\[[ListProvisionedProductPlansOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisionedproductplansoutputtypedef)\].
+`Iterator`\[[ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef)\].
 
 ## ListProvisioningArtifactsForServiceActionPaginator
 
@@ -270,10 +268,10 @@ method:
 - `ServiceActionId`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisioningArtifactsForServiceActionPaginator.paginate` returns
-`Iterator`\[[ListProvisioningArtifactsForServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisioningartifactsforserviceactionoutputtypedef)\].
+`Iterator`\[[ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef)\].
 
 ## ListRecordHistoryPaginator
 
@@ -296,14 +294,14 @@ Arguments for `ListRecordHistoryPaginator.paginate` method:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 - `SearchFilter`:
-  [ListRecordHistorySearchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistorysearchfiltertypedef)
+  [ListRecordHistorySearchFilterTypeDef](./type_defs.md#listrecordhistorysearchfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecordHistoryPaginator.paginate` returns
-`Iterator`\[[ListRecordHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistoryoutputtypedef)\].
+`Iterator`\[[ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef)\].
 
 ## ListResourcesForTagOptionPaginator
 
@@ -327,10 +325,10 @@ Arguments for `ListResourcesForTagOptionPaginator.paginate` method:
 - `TagOptionId`: `str` *(required)*
 - `ResourceType`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesForTagOptionPaginator.paginate` returns
-`Iterator`\[[ListResourcesForTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listresourcesfortagoptionoutputtypedef)\].
+`Iterator`\[[ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef)\].
 
 ## ListServiceActionsPaginator
 
@@ -353,10 +351,10 @@ Arguments for `ListServiceActionsPaginator.paginate` method:
 
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceActionsPaginator.paginate` returns
-`Iterator`\[[ListServiceActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsoutputtypedef)\].
+`Iterator`\[[ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef)\].
 
 ## ListServiceActionsForProvisioningArtifactPaginator
 
@@ -382,10 +380,10 @@ method:
 - `ProvisioningArtifactId`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceActionsForProvisioningArtifactPaginator.paginate` returns
-`Iterator`\[[ListServiceActionsForProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsforprovisioningartifactoutputtypedef)\].
+`Iterator`\[[ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef)\].
 
 ## ListTagOptionsPaginator
 
@@ -407,12 +405,12 @@ Boto3 documentation:
 Arguments for `ListTagOptionsPaginator.paginate` method:
 
 - `Filters`:
-  [ListTagOptionsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsfilterstypedef)
+  [ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagOptionsPaginator.paginate` returns
-`Iterator`\[[ListTagOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsoutputtypedef)\].
+`Iterator`\[[ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef)\].
 
 ## ScanProvisionedProductsPaginator
 
@@ -435,12 +433,12 @@ Arguments for `ScanProvisionedProductsPaginator.paginate` method:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ScanProvisionedProductsPaginator.paginate` returns
-`Iterator`\[[ScanProvisionedProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#scanprovisionedproductsoutputtypedef)\].
+`Iterator`\[[ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef)\].
 
 ## SearchProductsAsAdminPaginator
 
@@ -463,16 +461,14 @@ Arguments for `SearchProductsAsAdminPaginator.paginate` method:
 
 - `AcceptLanguage`: `str`
 - `PortfolioId`: `str`
-- `Filters`:
-  `Dict`\[[ProductViewFilterBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewfilterby),
+- `Filters`: `Dict`\[[ProductViewFilterBy](./literals.md#productviewfilterby),
   `List`\[`str`\]\]
-- `SortBy`:
-  [ProductViewSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
-- `ProductSource`: `Literal['ACCOUNT']`
+- `SortBy`: [ProductViewSortBy](./literals.md#productviewsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `ProductSource`: `Literal['ACCOUNT']` (see
+  [ProductSource](./literals.md#productsource))
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchProductsAsAdminPaginator.paginate` returns
-`Iterator`\[[SearchProductsAsAdminOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchproductsasadminoutputtypedef)\].
+`Iterator`\[[SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef)\].

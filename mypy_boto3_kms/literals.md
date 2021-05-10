@@ -1,6 +1,6 @@
 # Literals for boto3 KMS module
 
-> [Index](../README.md) > [KMS](./README.md) > Literals
+> [Index](..) > [KMS](.) > Literals
 
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)

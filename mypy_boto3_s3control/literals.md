@@ -1,6 +1,6 @@
 # Literals for boto3 S3Control module
 
-> [Index](../README.md) > [S3Control](./README.md) > Literals
+> [Index](..) > [S3Control](.) > Literals
 
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)

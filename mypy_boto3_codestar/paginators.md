@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeStar module
 
-> [Index](../README.md) > [CodeStar](./README.md) > Paginators
+> [Index](..) > [CodeStar](.) > Paginators
 
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
@@ -32,10 +32,10 @@ Boto3 documentation:
 Arguments for `ListProjectsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listprojectsresulttypedef)\].
+`Iterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
 
 ## ListResourcesPaginator
 
@@ -58,10 +58,10 @@ Arguments for `ListResourcesPaginator.paginate` method:
 
 - `projectId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesPaginator.paginate` returns
-`Iterator`\[[ListResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listresourcesresulttypedef)\].
+`Iterator`\[[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef)\].
 
 ## ListTeamMembersPaginator
 
@@ -84,10 +84,10 @@ Arguments for `ListTeamMembersPaginator.paginate` method:
 
 - `projectId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTeamMembersPaginator.paginate` returns
-`Iterator`\[[ListTeamMembersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listteammembersresulttypedef)\].
+`Iterator`\[[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef)\].
 
 ## ListUserProfilesPaginator
 
@@ -109,7 +109,7 @@ Boto3 documentation:
 Arguments for `ListUserProfilesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserProfilesPaginator.paginate` returns
-`Iterator`\[[ListUserProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar/type_defs.html#listuserprofilesresulttypedef)\].
+`Iterator`\[[ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef)\].

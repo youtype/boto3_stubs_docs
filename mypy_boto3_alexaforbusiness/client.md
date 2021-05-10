@@ -1,7 +1,6 @@
 # AlexaForBusinessClient for boto3 AlexaForBusiness module
 
-> [Index](../README.md) > [AlexaForBusiness](./README.md) >
-> AlexaForBusinessClient
+> [Index](..) > [AlexaForBusiness](.) > AlexaForBusinessClient
 
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
@@ -287,11 +286,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Description`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAddressBookResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createaddressbookresponsetypedef).
+[CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef).
 
 ### create_business_report_schedule
 
@@ -303,23 +301,21 @@ Boto3 documentation:
 
 Arguments:
 
-- `Format`:
-  [BusinessReportFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#businessreportformat)
+- `Format`: [BusinessReportFormat](./literals.md#businessreportformat)
   *(required)*
 - `ContentRange`:
-  [BusinessReportContentRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreportcontentrangetypedef)
+  [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
   *(required)*
 - `ScheduleName`: `str`
 - `S3BucketName`: `str`
 - `S3KeyPrefix`: `str`
 - `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreportrecurrencetypedef)
+  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBusinessReportScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createbusinessreportscheduleresponsetypedef).
+[CreateBusinessReportScheduleResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponsetypedef).
 
 ### create_conference_provider
 
@@ -333,21 +329,16 @@ Arguments:
 
 - `ConferenceProviderName`: `str` *(required)*
 - `ConferenceProviderType`:
-  [ConferenceProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#conferenceprovidertype)
+  [ConferenceProviderType](./literals.md#conferenceprovidertype) *(required)*
+- `MeetingSetting`: [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
   *(required)*
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#meetingsettingtypedef)
-  *(required)*
-- `IPDialIn`:
-  [IPDialInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#ipdialintypedef)
-- `PSTNDialIn`:
-  [PSTNDialInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#pstndialintypedef)
+- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
+- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConferenceProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createconferenceproviderresponsetypedef).
+[CreateConferenceProviderResponseTypeDef](./type_defs.md#createconferenceproviderresponsetypedef).
 
 ### create_contact
 
@@ -363,15 +354,13 @@ Arguments:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#phonenumbertypedef)\]
-- `SipAddresses`:
-  `List`\[[SipAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sipaddresstypedef)\]
+  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createcontactresponsetypedef).
+[CreateContactResponseTypeDef](./type_defs.md#createcontactresponsetypedef).
 
 ### create_gateway_group
 
@@ -386,11 +375,10 @@ Arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGatewayGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#creategatewaygroupresponsetypedef).
+[CreateGatewayGroupResponseTypeDef](./type_defs.md#creategatewaygroupresponsetypedef).
 
 ### create_network_profile
 
@@ -404,21 +392,20 @@ Arguments:
 
 - `NetworkProfileName`: `str` *(required)*
 - `Ssid`: `str` *(required)*
-- `SecurityType`:
-  [NetworkSecurityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#networksecuritytype)
+- `SecurityType`: [NetworkSecurityType](./literals.md#networksecuritytype)
   *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Description`: `str`
-- `EapMethod`: `Literal['EAP_TLS']`
+- `EapMethod`: `Literal['EAP_TLS']` (see
+  [NetworkEapMethod](./literals.md#networkeapmethod))
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
 - `TrustAnchors`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateNetworkProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createnetworkprofileresponsetypedef).
+[CreateNetworkProfileResponseTypeDef](./type_defs.md#createnetworkprofileresponsetypedef).
 
 ### create_profile
 
@@ -432,15 +419,10 @@ Arguments:
 - `ProfileName`: `str` *(required)*
 - `Timezone`: `str` *(required)*
 - `Address`: `str` *(required)*
-- `DistanceUnit`:
-  [DistanceUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#distanceunit)
+- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit) *(required)*
+- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
   *(required)*
-- `TemperatureUnit`:
-  [TemperatureUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#temperatureunit)
-  *(required)*
-- `WakeWord`:
-  [WakeWord](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#wakeword)
-  *(required)*
+- `WakeWord`: [WakeWord](./literals.md#wakeword) *(required)*
 - `Locale`: `str`
 - `ClientRequestToken`: `str`
 - `SetupModeDisabled`: `bool`
@@ -448,12 +430,11 @@ Arguments:
 - `PSTNEnabled`: `bool`
 - `DataRetentionOptIn`: `bool`
 - `MeetingRoomConfiguration`:
-  [CreateMeetingRoomConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createmeetingroomconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+  [CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createprofileresponsetypedef).
+[CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
 
 ### create_room
 
@@ -469,11 +450,9 @@ Arguments:
 - `ProfileArn`: `str`
 - `ProviderCalendarId`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createroomresponsetypedef).
+Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
 
 ### create_skill_group
 
@@ -488,11 +467,10 @@ Arguments:
 - `SkillGroupName`: `str` *(required)*
 - `Description`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSkillGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createskillgroupresponsetypedef).
+[CreateSkillGroupResponseTypeDef](./type_defs.md#createskillgroupresponsetypedef).
 
 ### create_user
 
@@ -508,11 +486,9 @@ Arguments:
 - `LastName`: `str`
 - `Email`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#createuserresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### delete_address_book
 
@@ -593,7 +569,8 @@ Boto3 documentation:
 Arguments:
 
 - `DeviceArn`: `str` *(required)*
-- `DeviceUsageType`: `Literal['VOICE']` *(required)*
+- `DeviceUsageType`: `Literal['VOICE']` (see
+  [DeviceUsageType](./literals.md#deviceusagetype)) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -828,7 +805,7 @@ Arguments:
 - `AddressBookArn`: `str` *(required)*
 
 Returns
-[GetAddressBookResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getaddressbookresponsetypedef).
+[GetAddressBookResponseTypeDef](./type_defs.md#getaddressbookresponsetypedef).
 
 ### get_conference_preference
 
@@ -839,7 +816,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
 
 Returns
-[GetConferencePreferenceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getconferencepreferenceresponsetypedef).
+[GetConferencePreferenceResponseTypeDef](./type_defs.md#getconferencepreferenceresponsetypedef).
 
 ### get_conference_provider
 
@@ -854,7 +831,7 @@ Arguments:
 - `ConferenceProviderArn`: `str` *(required)*
 
 Returns
-[GetConferenceProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getconferenceproviderresponsetypedef).
+[GetConferenceProviderResponseTypeDef](./type_defs.md#getconferenceproviderresponsetypedef).
 
 ### get_contact
 
@@ -867,8 +844,7 @@ Arguments:
 
 - `ContactArn`: `str` *(required)*
 
-Returns
-[GetContactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getcontactresponsetypedef).
+Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
 
 ### get_device
 
@@ -881,8 +857,7 @@ Arguments:
 
 - `DeviceArn`: `str`
 
-Returns
-[GetDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getdeviceresponsetypedef).
+Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
 ### get_gateway
 
@@ -895,8 +870,7 @@ Arguments:
 
 - `GatewayArn`: `str` *(required)*
 
-Returns
-[GetGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getgatewayresponsetypedef).
+Returns [GetGatewayResponseTypeDef](./type_defs.md#getgatewayresponsetypedef).
 
 ### get_gateway_group
 
@@ -911,7 +885,7 @@ Arguments:
 - `GatewayGroupArn`: `str` *(required)*
 
 Returns
-[GetGatewayGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getgatewaygroupresponsetypedef).
+[GetGatewayGroupResponseTypeDef](./type_defs.md#getgatewaygroupresponsetypedef).
 
 ### get_invitation_configuration
 
@@ -922,7 +896,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
 
 Returns
-[GetInvitationConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getinvitationconfigurationresponsetypedef).
+[GetInvitationConfigurationResponseTypeDef](./type_defs.md#getinvitationconfigurationresponsetypedef).
 
 ### get_network_profile
 
@@ -937,7 +911,7 @@ Arguments:
 - `NetworkProfileArn`: `str` *(required)*
 
 Returns
-[GetNetworkProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getnetworkprofileresponsetypedef).
+[GetNetworkProfileResponseTypeDef](./type_defs.md#getnetworkprofileresponsetypedef).
 
 ### get_profile
 
@@ -950,8 +924,7 @@ Arguments:
 
 - `ProfileArn`: `str`
 
-Returns
-[GetProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getprofileresponsetypedef).
+Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 
 ### get_room
 
@@ -964,8 +937,7 @@ Arguments:
 
 - `RoomArn`: `str`
 
-Returns
-[GetRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getroomresponsetypedef).
+Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
 
 ### get_room_skill_parameter
 
@@ -982,7 +954,7 @@ Arguments:
 - `RoomArn`: `str`
 
 Returns
-[GetRoomSkillParameterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getroomskillparameterresponsetypedef).
+[GetRoomSkillParameterResponseTypeDef](./type_defs.md#getroomskillparameterresponsetypedef).
 
 ### get_skill_group
 
@@ -996,7 +968,7 @@ Arguments:
 - `SkillGroupArn`: `str`
 
 Returns
-[GetSkillGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#getskillgroupresponsetypedef).
+[GetSkillGroupResponseTypeDef](./type_defs.md#getskillgroupresponsetypedef).
 
 ### list_business_report_schedules
 
@@ -1012,7 +984,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBusinessReportSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listbusinessreportschedulesresponsetypedef).
+[ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef).
 
 ### list_conference_providers
 
@@ -1028,7 +1000,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListConferenceProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listconferenceprovidersresponsetypedef).
+[ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef).
 
 ### list_device_events
 
@@ -1041,13 +1013,12 @@ Boto3 documentation:
 Arguments:
 
 - `DeviceArn`: `str` *(required)*
-- `EventType`:
-  [DeviceEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#deviceeventtype)
+- `EventType`: [DeviceEventType](./literals.md#deviceeventtype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListDeviceEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listdeviceeventsresponsetypedef).
+[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
 ### list_gateway_groups
 
@@ -1063,7 +1034,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGatewayGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listgatewaygroupsresponsetypedef).
+[ListGatewayGroupsResponseTypeDef](./type_defs.md#listgatewaygroupsresponsetypedef).
 
 ### list_gateways
 
@@ -1079,7 +1050,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGatewaysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listgatewaysresponsetypedef).
+[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
 
 ### list_skills
 
@@ -1091,15 +1062,12 @@ Boto3 documentation:
 Arguments:
 
 - `SkillGroupArn`: `str`
-- `EnablementType`:
-  [EnablementTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#enablementtypefilter)
-- `SkillType`:
-  [SkillTypeFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#skilltypefilter)
+- `EnablementType`: [EnablementTypeFilter](./literals.md#enablementtypefilter)
+- `SkillType`: [SkillTypeFilter](./literals.md#skilltypefilter)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListSkillsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsresponsetypedef).
+Returns [ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef).
 
 ### list_skills_store_categories
 
@@ -1115,7 +1083,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSkillsStoreCategoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsstorecategoriesresponsetypedef).
+[ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef).
 
 ### list_skills_store_skills_by_category
 
@@ -1132,7 +1100,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSkillsStoreSkillsByCategoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listskillsstoreskillsbycategoryresponsetypedef).
+[ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef).
 
 ### list_smart_home_appliances
 
@@ -1149,7 +1117,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSmartHomeAppliancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listsmarthomeappliancesresponsetypedef).
+[ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef).
 
 ### list_tags
 
@@ -1164,8 +1132,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#listtagsresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### put_conference_preference
 
@@ -1178,7 +1145,7 @@ Boto3 documentation:
 Arguments:
 
 - `ConferencePreference`:
-  [ConferencePreferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#conferencepreferencetypedef)
+  [ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1211,7 +1178,7 @@ Arguments:
 
 - `SkillId`: `str` *(required)*
 - `RoomSkillParameter`:
-  [RoomSkillParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#roomskillparametertypedef)
+  [RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)
   *(required)*
 - `RoomArn`: `str`
 
@@ -1249,11 +1216,10 @@ Arguments:
 - `AmazonId`: `str` *(required)*
 - `DeviceSerialNumber`: `str`
 - `RoomArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RegisterAVSDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#registeravsdeviceresponsetypedef).
+[RegisterAVSDeviceResponseTypeDef](./type_defs.md#registeravsdeviceresponsetypedef).
 
 ### reject_skill
 
@@ -1281,7 +1247,7 @@ Arguments:
 - `SkillId`: `str` *(required)*
 
 Returns
-[ResolveRoomResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#resolveroomresponsetypedef).
+[ResolveRoomResponseTypeDef](./type_defs.md#resolveroomresponsetypedef).
 
 ### revoke_invitation
 
@@ -1308,15 +1274,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[SearchAddressBooksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchaddressbooksresponsetypedef).
+[SearchAddressBooksResponseTypeDef](./type_defs.md#searchaddressbooksresponsetypedef).
 
 ### search_contacts
 
@@ -1327,15 +1291,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[SearchContactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchcontactsresponsetypedef).
+[SearchContactsResponseTypeDef](./type_defs.md#searchcontactsresponsetypedef).
 
 ### search_devices
 
@@ -1348,13 +1310,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchdevicesresponsetypedef).
+[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
 
 ### search_network_profiles
 
@@ -1368,13 +1328,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchNetworkProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchnetworkprofilesresponsetypedef).
+[SearchNetworkProfilesResponseTypeDef](./type_defs.md#searchnetworkprofilesresponsetypedef).
 
 ### search_profiles
 
@@ -1387,13 +1345,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchprofilesresponsetypedef).
+[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
 
 ### search_rooms
 
@@ -1406,13 +1362,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchRoomsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchroomsresponsetypedef).
+[SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef).
 
 ### search_skill_groups
 
@@ -1426,13 +1380,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchSkillGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchskillgroupsresponsetypedef).
+[SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef).
 
 ### search_users
 
@@ -1445,13 +1397,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
-- `SortCriteria`:
-  `List`\[[SortTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sorttypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#searchusersresponsetypedef).
+[SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef).
 
 ### send_announcement
 
@@ -1463,17 +1413,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `RoomFilters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#filtertypedef)\]
+- `RoomFilters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
   *(required)*
-- `Content`:
-  [ContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#contenttypedef)
-  *(required)*
+- `Content`: [ContentTypeDef](./type_defs.md#contenttypedef) *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `TimeToLiveInSeconds`: `int`
 
 Returns
-[SendAnnouncementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sendannouncementresponsetypedef).
+[SendAnnouncementResponseTypeDef](./type_defs.md#sendannouncementresponsetypedef).
 
 ### send_invitation
 
@@ -1498,9 +1445,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Features`:
-  `List`\[[Feature](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#feature)\]
-  *(required)*
+- `Features`: `List`\[[Feature](./literals.md#feature)\] *(required)*
 - `RoomArn`: `str`
 - `DeviceArn`: `str`
 
@@ -1530,9 +1475,7 @@ Boto3 documentation:
 Arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1579,11 +1522,10 @@ Arguments:
 - `ScheduleArn`: `str` *(required)*
 - `S3BucketName`: `str`
 - `S3KeyPrefix`: `str`
-- `Format`:
-  [BusinessReportFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#businessreportformat)
+- `Format`: [BusinessReportFormat](./literals.md#businessreportformat)
 - `ScheduleName`: `str`
 - `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#businessreportrecurrencetypedef)
+  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1599,15 +1541,11 @@ Arguments:
 
 - `ConferenceProviderArn`: `str` *(required)*
 - `ConferenceProviderType`:
-  [ConferenceProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#conferenceprovidertype)
+  [ConferenceProviderType](./literals.md#conferenceprovidertype) *(required)*
+- `MeetingSetting`: [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
   *(required)*
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#meetingsettingtypedef)
-  *(required)*
-- `IPDialIn`:
-  [IPDialInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#ipdialintypedef)
-- `PSTNDialIn`:
-  [PSTNDialInTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#pstndialintypedef)
+- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
+- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1626,9 +1564,8 @@ Arguments:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#phonenumbertypedef)\]
-- `SipAddresses`:
-  `List`\[[SipAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#sipaddresstypedef)\]
+  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+- `SipAddresses`: `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1712,19 +1649,16 @@ Arguments:
 - `IsDefault`: `bool`
 - `Timezone`: `str`
 - `Address`: `str`
-- `DistanceUnit`:
-  [DistanceUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#distanceunit)
-- `TemperatureUnit`:
-  [TemperatureUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#temperatureunit)
-- `WakeWord`:
-  [WakeWord](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/literals.html#wakeword)
+- `DistanceUnit`: [DistanceUnit](./literals.md#distanceunit)
+- `TemperatureUnit`: [TemperatureUnit](./literals.md#temperatureunit)
+- `WakeWord`: [WakeWord](./literals.md#wakeword)
 - `Locale`: `str`
 - `SetupModeDisabled`: `bool`
 - `MaxVolumeLimit`: `int`
 - `PSTNEnabled`: `bool`
 - `DataRetentionOptIn`: `bool`
 - `MeetingRoomConfiguration`:
-  [UpdateMeetingRoomConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_alexaforbusiness/type_defs.html#updatemeetingroomconfigurationtypedef)
+  [UpdateMeetingRoomConfigurationTypeDef](./type_defs.md#updatemeetingroomconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

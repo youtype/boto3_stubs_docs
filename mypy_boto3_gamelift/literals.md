@@ -1,6 +1,6 @@
 # Literals for boto3 GameLift module
 
-> [Index](../README.md) > [GameLift](./README.md) > Literals
+> [Index](..) > [GameLift](.) > Literals
 
 Auto-generated documentation for
 [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)

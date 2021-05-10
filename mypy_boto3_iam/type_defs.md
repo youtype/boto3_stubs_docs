@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IAM module
 
-> [Index](../README.md) > [IAM](./README.md) > Structures
+> [Index](..) > [IAM](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
@@ -184,8 +184,7 @@ Optional fields:
 
 - `UserName`: `str`
 - `AccessKeyId`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 - `CreateDate`: `datetime`
 
 ## AccessKeyTypeDef
@@ -198,8 +197,7 @@ Required fields:
 
 - `UserName`: `str`
 - `AccessKeyId`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 - `SecretAccessKey`: `str`
 
 Optional fields:
@@ -214,7 +212,8 @@ from mypy_boto3_iam.type_defs import AttachedPermissionsBoundaryTypeDef
 
 Optional fields:
 
-- `PermissionsBoundaryType`: `Literal['PermissionsBoundaryPolicy']`
+- `PermissionsBoundaryType`: `Literal['PermissionsBoundaryPolicy']` (see
+  [PermissionsBoundaryAttachmentType](./literals.md#permissionsboundaryattachmenttype))
 - `PermissionsBoundaryArn`: `str`
 
 ## AttachedPolicyTypeDef
@@ -238,8 +237,7 @@ Optional fields:
 
 - `ContextKeyName`: `str`
 - `ContextKeyValues`: `List`\[`str`\]
-- `ContextKeyType`:
-  [ContextKeyTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#contextkeytypeenum)
+- `ContextKeyType`: [ContextKeyTypeEnum](./literals.md#contextkeytypeenum)
 
 ## CreateAccessKeyResponseTypeDef
 
@@ -249,8 +247,7 @@ from mypy_boto3_iam.type_defs import CreateAccessKeyResponseTypeDef
 
 Required fields:
 
-- `AccessKey`:
-  [AccessKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#accesskeytypedef)
+- `AccessKey`: [AccessKeyTypeDef](./type_defs.md#accesskeytypedef)
 
 ## CreateGroupResponseTypeDef
 
@@ -260,8 +257,7 @@ from mypy_boto3_iam.type_defs import CreateGroupResponseTypeDef
 
 Required fields:
 
-- `Group`:
-  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#grouptypedef)
+- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 
 ## CreateInstanceProfileResponseTypeDef
 
@@ -272,7 +268,7 @@ from mypy_boto3_iam.type_defs import CreateInstanceProfileResponseTypeDef
 Required fields:
 
 - `InstanceProfile`:
-  [InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#instanceprofiletypedef)
+  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
 ## CreateLoginProfileResponseTypeDef
 
@@ -282,8 +278,7 @@ from mypy_boto3_iam.type_defs import CreateLoginProfileResponseTypeDef
 
 Required fields:
 
-- `LoginProfile`:
-  [LoginProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#loginprofiletypedef)
+- `LoginProfile`: [LoginProfileTypeDef](./type_defs.md#loginprofiletypedef)
 
 ## CreateOpenIDConnectProviderResponseTypeDef
 
@@ -294,8 +289,7 @@ from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderResponseTypeDef
 Optional fields:
 
 - `OpenIDConnectProviderArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePolicyResponseTypeDef
 
@@ -305,8 +299,7 @@ from mypy_boto3_iam.type_defs import CreatePolicyResponseTypeDef
 
 Optional fields:
 
-- `Policy`:
-  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policytypedef)
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 
 ## CreatePolicyVersionResponseTypeDef
 
@@ -316,8 +309,7 @@ from mypy_boto3_iam.type_defs import CreatePolicyVersionResponseTypeDef
 
 Optional fields:
 
-- `PolicyVersion`:
-  [PolicyVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policyversiontypedef)
+- `PolicyVersion`: [PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)
 
 ## CreateRoleResponseTypeDef
 
@@ -327,8 +319,7 @@ from mypy_boto3_iam.type_defs import CreateRoleResponseTypeDef
 
 Required fields:
 
-- `Role`:
-  [RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roletypedef)
+- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
 
 ## CreateSAMLProviderResponseTypeDef
 
@@ -339,8 +330,7 @@ from mypy_boto3_iam.type_defs import CreateSAMLProviderResponseTypeDef
 Optional fields:
 
 - `SAMLProviderArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateServiceLinkedRoleResponseTypeDef
 
@@ -350,8 +340,7 @@ from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleResponseTypeDef
 
 Optional fields:
 
-- `Role`:
-  [RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roletypedef)
+- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
 
 ## CreateServiceSpecificCredentialResponseTypeDef
 
@@ -362,7 +351,7 @@ from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialResponseType
 Optional fields:
 
 - `ServiceSpecificCredential`:
-  [ServiceSpecificCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servicespecificcredentialtypedef)
+  [ServiceSpecificCredentialTypeDef](./type_defs.md#servicespecificcredentialtypedef)
 
 ## CreateUserResponseTypeDef
 
@@ -372,8 +361,7 @@ from mypy_boto3_iam.type_defs import CreateUserResponseTypeDef
 
 Optional fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 
 ## CreateVirtualMFADeviceResponseTypeDef
 
@@ -384,7 +372,7 @@ from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceResponseTypeDef
 Required fields:
 
 - `VirtualMFADevice`:
-  [VirtualMFADeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#virtualmfadevicetypedef)
+  [VirtualMFADeviceTypeDef](./type_defs.md#virtualmfadevicetypedef)
 
 ## DeleteServiceLinkedRoleResponseTypeDef
 
@@ -406,7 +394,7 @@ Optional fields:
 
 - `Reason`: `str`
 - `RoleUsageList`:
-  `List`\[[RoleUsageTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roleusagetypetypedef)\]
+  `List`\[[RoleUsageTypeTypeDef](./type_defs.md#roleusagetypetypedef)\]
 
 ## EntityDetailsTypeDef
 
@@ -416,8 +404,7 @@ from mypy_boto3_iam.type_defs import EntityDetailsTypeDef
 
 Required fields:
 
-- `EntityInfo`:
-  [EntityInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#entityinfotypedef)
+- `EntityInfo`: [EntityInfoTypeDef](./type_defs.md#entityinfotypedef)
 
 Optional fields:
 
@@ -433,8 +420,7 @@ Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`:
-  [policyOwnerEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyownerentitytype)
+- `Type`: [policyOwnerEntityType](./literals.md#policyownerentitytype)
 - `Id`: `str`
 
 Optional fields:
@@ -462,22 +448,22 @@ Required fields:
 
 - `EvalActionName`: `str`
 - `EvalDecision`:
-  [PolicyEvaluationDecisionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyevaluationdecisiontype)
+  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)
 
 Optional fields:
 
 - `EvalResourceName`: `str`
 - `MatchedStatements`:
-  `List`\[[StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#statementtypedef)\]
+  `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 - `MissingContextValues`: `List`\[`str`\]
 - `OrganizationsDecisionDetail`:
-  [OrganizationsDecisionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#organizationsdecisiondetailtypedef)
+  [OrganizationsDecisionDetailTypeDef](./type_defs.md#organizationsdecisiondetailtypedef)
 - `PermissionsBoundaryDecisionDetail`:
-  [PermissionsBoundaryDecisionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#permissionsboundarydecisiondetailtypedef)
+  [PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef)
 - `EvalDecisionDetails`: `Dict`\[`str`,
-  [PolicyEvaluationDecisionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyevaluationdecisiontype)\]
+  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)\]
 - `ResourceSpecificResults`:
-  `List`\[[ResourceSpecificResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#resourcespecificresulttypedef)\]
+  `List`\[[ResourceSpecificResultTypeDef](./type_defs.md#resourcespecificresulttypedef)\]
 
 ## GenerateCredentialReportResponseTypeDef
 
@@ -487,8 +473,7 @@ from mypy_boto3_iam.type_defs import GenerateCredentialReportResponseTypeDef
 
 Optional fields:
 
-- `State`:
-  [ReportStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#reportstatetype)
+- `State`: [ReportStateType](./literals.md#reportstatetype)
 - `Description`: `str`
 
 ## GenerateOrganizationsAccessReportResponseTypeDef
@@ -521,7 +506,7 @@ Optional fields:
 
 - `UserName`: `str`
 - `AccessKeyLastUsed`:
-  [AccessKeyLastUsedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#accesskeylastusedtypedef)
+  [AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef)
 
 ## GetAccountAuthorizationDetailsResponseTypeDef
 
@@ -532,13 +517,13 @@ from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsResponseTypeD
 Optional fields:
 
 - `UserDetailList`:
-  `List`\[[UserDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#userdetailtypedef)\]
+  `List`\[[UserDetailTypeDef](./type_defs.md#userdetailtypedef)\]
 - `GroupDetailList`:
-  `List`\[[GroupDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#groupdetailtypedef)\]
+  `List`\[[GroupDetailTypeDef](./type_defs.md#groupdetailtypedef)\]
 - `RoleDetailList`:
-  `List`\[[RoleDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roledetailtypedef)\]
+  `List`\[[RoleDetailTypeDef](./type_defs.md#roledetailtypedef)\]
 - `Policies`:
-  `List`\[[ManagedPolicyDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#managedpolicydetailtypedef)\]
+  `List`\[[ManagedPolicyDetailTypeDef](./type_defs.md#managedpolicydetailtypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -550,8 +535,7 @@ from mypy_boto3_iam.type_defs import GetAccountPasswordPolicyResponseTypeDef
 
 Required fields:
 
-- `PasswordPolicy`:
-  [PasswordPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#passwordpolicytypedef)
+- `PasswordPolicy`: [PasswordPolicyTypeDef](./type_defs.md#passwordpolicytypedef)
 
 ## GetAccountSummaryResponseTypeDef
 
@@ -561,9 +545,7 @@ from mypy_boto3_iam.type_defs import GetAccountSummaryResponseTypeDef
 
 Optional fields:
 
-- `SummaryMap`:
-  `Dict`\[[summaryKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#summarykeytype),
-  `int`\]
+- `SummaryMap`: `Dict`\[[summaryKeyType](./literals.md#summarykeytype), `int`\]
 
 ## GetContextKeysForPolicyResponseTypeDef
 
@@ -584,7 +566,8 @@ from mypy_boto3_iam.type_defs import GetCredentialReportResponseTypeDef
 Optional fields:
 
 - `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `ReportFormat`: `Literal['text/csv']`
+- `ReportFormat`: `Literal['text/csv']` (see
+  [ReportFormatType](./literals.md#reportformattype))
 - `GeneratedTime`: `datetime`
 
 ## GetGroupPolicyResponseTypeDef
@@ -607,10 +590,8 @@ from mypy_boto3_iam.type_defs import GetGroupResponseTypeDef
 
 Required fields:
 
-- `Group`:
-  [GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#grouptypedef)
-- `Users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#usertypedef)\]
+- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Optional fields:
 
@@ -626,7 +607,7 @@ from mypy_boto3_iam.type_defs import GetInstanceProfileResponseTypeDef
 Required fields:
 
 - `InstanceProfile`:
-  [InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#instanceprofiletypedef)
+  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
 ## GetLoginProfileResponseTypeDef
 
@@ -636,8 +617,7 @@ from mypy_boto3_iam.type_defs import GetLoginProfileResponseTypeDef
 
 Required fields:
 
-- `LoginProfile`:
-  [LoginProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#loginprofiletypedef)
+- `LoginProfile`: [LoginProfileTypeDef](./type_defs.md#loginprofiletypedef)
 
 ## GetOpenIDConnectProviderResponseTypeDef
 
@@ -651,8 +631,7 @@ Optional fields:
 - `ClientIDList`: `List`\[`str`\]
 - `ThumbprintList`: `List`\[`str`\]
 - `CreateDate`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## GetOrganizationsAccessReportResponseTypeDef
 
@@ -662,8 +641,7 @@ from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportResponseTypeDef
 
 Required fields:
 
-- `JobStatus`:
-  [jobStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#jobstatustype)
+- `JobStatus`: [jobStatusType](./literals.md#jobstatustype)
 - `JobCreationDate`: `datetime`
 
 Optional fields:
@@ -672,11 +650,10 @@ Optional fields:
 - `NumberOfServicesAccessible`: `int`
 - `NumberOfServicesNotAccessed`: `int`
 - `AccessDetails`:
-  `List`\[[AccessDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#accessdetailtypedef)\]
+  `List`\[[AccessDetailTypeDef](./type_defs.md#accessdetailtypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
-- `ErrorDetails`:
-  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#errordetailstypedef)
+- `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
 ## GetPolicyResponseTypeDef
 
@@ -686,8 +663,7 @@ from mypy_boto3_iam.type_defs import GetPolicyResponseTypeDef
 
 Optional fields:
 
-- `Policy`:
-  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policytypedef)
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 
 ## GetPolicyVersionResponseTypeDef
 
@@ -697,8 +673,7 @@ from mypy_boto3_iam.type_defs import GetPolicyVersionResponseTypeDef
 
 Optional fields:
 
-- `PolicyVersion`:
-  [PolicyVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policyversiontypedef)
+- `PolicyVersion`: [PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)
 
 ## GetRolePolicyResponseTypeDef
 
@@ -720,8 +695,7 @@ from mypy_boto3_iam.type_defs import GetRoleResponseTypeDef
 
 Required fields:
 
-- `Role`:
-  [RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roletypedef)
+- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
 
 ## GetSAMLProviderResponseTypeDef
 
@@ -734,8 +708,7 @@ Optional fields:
 - `SAMLMetadataDocument`: `str`
 - `CreateDate`: `datetime`
 - `ValidUntil`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## GetSSHPublicKeyResponseTypeDef
 
@@ -745,8 +718,7 @@ from mypy_boto3_iam.type_defs import GetSSHPublicKeyResponseTypeDef
 
 Optional fields:
 
-- `SSHPublicKey`:
-  [SSHPublicKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#sshpublickeytypedef)
+- `SSHPublicKey`: [SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
 
 ## GetServerCertificateResponseTypeDef
 
@@ -757,7 +729,7 @@ from mypy_boto3_iam.type_defs import GetServerCertificateResponseTypeDef
 Required fields:
 
 - `ServerCertificate`:
-  [ServerCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servercertificatetypedef)
+  [ServerCertificateTypeDef](./type_defs.md#servercertificatetypedef)
 
 ## GetServiceLastAccessedDetailsResponseTypeDef
 
@@ -767,21 +739,19 @@ from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsResponseTypeDe
 
 Required fields:
 
-- `JobStatus`:
-  [jobStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#jobstatustype)
+- `JobStatus`: [jobStatusType](./literals.md#jobstatustype)
 - `JobCreationDate`: `datetime`
 - `ServicesLastAccessed`:
-  `List`\[[ServiceLastAccessedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servicelastaccessedtypedef)\]
+  `List`\[[ServiceLastAccessedTypeDef](./type_defs.md#servicelastaccessedtypedef)\]
 - `JobCompletionDate`: `datetime`
 
 Optional fields:
 
 - `JobType`:
-  [AccessAdvisorUsageGranularityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#accessadvisorusagegranularitytype)
+  [AccessAdvisorUsageGranularityType](./literals.md#accessadvisorusagegranularitytype)
 - `IsTruncated`: `bool`
 - `Marker`: `str`
-- `Error`:
-  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#errordetailstypedef)
+- `Error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
 ## GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef
 
@@ -791,19 +761,17 @@ from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesRe
 
 Required fields:
 
-- `JobStatus`:
-  [jobStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#jobstatustype)
+- `JobStatus`: [jobStatusType](./literals.md#jobstatustype)
 - `JobCreationDate`: `datetime`
 - `JobCompletionDate`: `datetime`
 - `EntityDetailsList`:
-  `List`\[[EntityDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#entitydetailstypedef)\]
+  `List`\[[EntityDetailsTypeDef](./type_defs.md#entitydetailstypedef)\]
 
 Optional fields:
 
 - `IsTruncated`: `bool`
 - `Marker`: `str`
-- `Error`:
-  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#errordetailstypedef)
+- `Error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
 ## GetServiceLinkedRoleDeletionStatusResponseTypeDef
 
@@ -813,13 +781,12 @@ from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusResponseT
 
 Required fields:
 
-- `Status`:
-  [DeletionTaskStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#deletiontaskstatustype)
+- `Status`: [DeletionTaskStatusType](./literals.md#deletiontaskstatustype)
 
 Optional fields:
 
 - `Reason`:
-  [DeletionTaskFailureReasonTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#deletiontaskfailurereasontypetypedef)
+  [DeletionTaskFailureReasonTypeTypeDef](./type_defs.md#deletiontaskfailurereasontypetypedef)
 
 ## GetUserPolicyResponseTypeDef
 
@@ -841,8 +808,7 @@ from mypy_boto3_iam.type_defs import GetUserResponseTypeDef
 
 Required fields:
 
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 
 ## GroupDetailTypeDef
 
@@ -858,9 +824,9 @@ Optional fields:
 - `Arn`: `str`
 - `CreateDate`: `datetime`
 - `GroupPolicyList`:
-  `List`\[[PolicyDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policydetailtypedef)\]
+  `List`\[[PolicyDetailTypeDef](./type_defs.md#policydetailtypedef)\]
 - `AttachedManagedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpolicytypedef)\]
+  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
 
 ## GroupTypeDef
 
@@ -889,13 +855,11 @@ Required fields:
 - `InstanceProfileId`: `str`
 - `Arn`: `str`
 - `CreateDate`: `datetime`
-- `Roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roletypedef)\]
+- `Roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListAccessKeysResponseTypeDef
 
@@ -906,7 +870,7 @@ from mypy_boto3_iam.type_defs import ListAccessKeysResponseTypeDef
 Required fields:
 
 - `AccessKeyMetadata`:
-  `List`\[[AccessKeyMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#accesskeymetadatatypedef)\]
+  `List`\[[AccessKeyMetadataTypeDef](./type_defs.md#accesskeymetadatatypedef)\]
 
 Optional fields:
 
@@ -937,7 +901,7 @@ from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesResponseTypeDef
 Optional fields:
 
 - `AttachedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpolicytypedef)\]
+  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -950,7 +914,7 @@ from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesResponseTypeDef
 Optional fields:
 
 - `AttachedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpolicytypedef)\]
+  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -963,7 +927,7 @@ from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesResponseTypeDef
 Optional fields:
 
 - `AttachedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpolicytypedef)\]
+  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -976,11 +940,9 @@ from mypy_boto3_iam.type_defs import ListEntitiesForPolicyResponseTypeDef
 Optional fields:
 
 - `PolicyGroups`:
-  `List`\[[PolicyGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policygrouptypedef)\]
-- `PolicyUsers`:
-  `List`\[[PolicyUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policyusertypedef)\]
-- `PolicyRoles`:
-  `List`\[[PolicyRoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policyroletypedef)\]
+  `List`\[[PolicyGroupTypeDef](./type_defs.md#policygrouptypedef)\]
+- `PolicyUsers`: `List`\[[PolicyUserTypeDef](./type_defs.md#policyusertypedef)\]
+- `PolicyRoles`: `List`\[[PolicyRoleTypeDef](./type_defs.md#policyroletypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -1007,8 +969,7 @@ from mypy_boto3_iam.type_defs import ListGroupsForUserResponseTypeDef
 
 Required fields:
 
-- `Groups`:
-  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#grouptypedef)\]
+- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 
 Optional fields:
 
@@ -1023,8 +984,7 @@ from mypy_boto3_iam.type_defs import ListGroupsResponseTypeDef
 
 Required fields:
 
-- `Groups`:
-  `List`\[[GroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#grouptypedef)\]
+- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 
 Optional fields:
 
@@ -1039,8 +999,7 @@ from mypy_boto3_iam.type_defs import ListInstanceProfileTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1056,7 +1015,7 @@ from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleResponseTypeDef
 Required fields:
 
 - `InstanceProfiles`:
-  `List`\[[InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#instanceprofiletypedef)\]
+  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
 
 Optional fields:
 
@@ -1072,7 +1031,7 @@ from mypy_boto3_iam.type_defs import ListInstanceProfilesResponseTypeDef
 Required fields:
 
 - `InstanceProfiles`:
-  `List`\[[InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#instanceprofiletypedef)\]
+  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
 
 Optional fields:
 
@@ -1087,8 +1046,7 @@ from mypy_boto3_iam.type_defs import ListMFADeviceTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1103,8 +1061,7 @@ from mypy_boto3_iam.type_defs import ListMFADevicesResponseTypeDef
 
 Required fields:
 
-- `MFADevices`:
-  `List`\[[MFADeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#mfadevicetypedef)\]
+- `MFADevices`: `List`\[[MFADeviceTypeDef](./type_defs.md#mfadevicetypedef)\]
 
 Optional fields:
 
@@ -1119,8 +1076,7 @@ from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsResponseTypeDe
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1136,7 +1092,7 @@ from mypy_boto3_iam.type_defs import ListOpenIDConnectProvidersResponseTypeDef
 Optional fields:
 
 - `OpenIDConnectProviderList`:
-  `List`\[[OpenIDConnectProviderListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#openidconnectproviderlistentrytypedef)\]
+  `List`\[[OpenIDConnectProviderListEntryTypeDef](./type_defs.md#openidconnectproviderlistentrytypedef)\]
 
 ## ListPoliciesGrantingServiceAccessEntryTypeDef
 
@@ -1148,7 +1104,7 @@ Optional fields:
 
 - `ServiceNamespace`: `str`
 - `Policies`:
-  `List`\[[PolicyGrantingServiceAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policygrantingserviceaccesstypedef)\]
+  `List`\[[PolicyGrantingServiceAccessTypeDef](./type_defs.md#policygrantingserviceaccesstypedef)\]
 
 ## ListPoliciesGrantingServiceAccessResponseTypeDef
 
@@ -1159,7 +1115,7 @@ from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessResponseTy
 Required fields:
 
 - `PoliciesGrantingServiceAccess`:
-  `List`\[[ListPoliciesGrantingServiceAccessEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#listpoliciesgrantingserviceaccessentrytypedef)\]
+  `List`\[[ListPoliciesGrantingServiceAccessEntryTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessentrytypedef)\]
 
 Optional fields:
 
@@ -1174,8 +1130,7 @@ from mypy_boto3_iam.type_defs import ListPoliciesResponseTypeDef
 
 Optional fields:
 
-- `Policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policytypedef)\]
+- `Policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -1187,8 +1142,7 @@ from mypy_boto3_iam.type_defs import ListPolicyTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1204,7 +1158,7 @@ from mypy_boto3_iam.type_defs import ListPolicyVersionsResponseTypeDef
 Optional fields:
 
 - `Versions`:
-  `List`\[[PolicyVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policyversiontypedef)\]
+  `List`\[[PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -1231,8 +1185,7 @@ from mypy_boto3_iam.type_defs import ListRoleTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1247,8 +1200,7 @@ from mypy_boto3_iam.type_defs import ListRolesResponseTypeDef
 
 Required fields:
 
-- `Roles`:
-  `List`\[[RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roletypedef)\]
+- `Roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 Optional fields:
 
@@ -1263,8 +1215,7 @@ from mypy_boto3_iam.type_defs import ListSAMLProviderTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1280,7 +1231,7 @@ from mypy_boto3_iam.type_defs import ListSAMLProvidersResponseTypeDef
 Optional fields:
 
 - `SAMLProviderList`:
-  `List`\[[SAMLProviderListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#samlproviderlistentrytypedef)\]
+  `List`\[[SAMLProviderListEntryTypeDef](./type_defs.md#samlproviderlistentrytypedef)\]
 
 ## ListSSHPublicKeysResponseTypeDef
 
@@ -1291,7 +1242,7 @@ from mypy_boto3_iam.type_defs import ListSSHPublicKeysResponseTypeDef
 Optional fields:
 
 - `SSHPublicKeys`:
-  `List`\[[SSHPublicKeyMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#sshpublickeymetadatatypedef)\]
+  `List`\[[SSHPublicKeyMetadataTypeDef](./type_defs.md#sshpublickeymetadatatypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -1303,8 +1254,7 @@ from mypy_boto3_iam.type_defs import ListServerCertificateTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1320,7 +1270,7 @@ from mypy_boto3_iam.type_defs import ListServerCertificatesResponseTypeDef
 Required fields:
 
 - `ServerCertificateMetadataList`:
-  `List`\[[ServerCertificateMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servercertificatemetadatatypedef)\]
+  `List`\[[ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef)\]
 
 Optional fields:
 
@@ -1336,7 +1286,7 @@ from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsResponseTypeD
 Optional fields:
 
 - `ServiceSpecificCredentials`:
-  `List`\[[ServiceSpecificCredentialMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servicespecificcredentialmetadatatypedef)\]
+  `List`\[[ServiceSpecificCredentialMetadataTypeDef](./type_defs.md#servicespecificcredentialmetadatatypedef)\]
 
 ## ListSigningCertificatesResponseTypeDef
 
@@ -1347,7 +1297,7 @@ from mypy_boto3_iam.type_defs import ListSigningCertificatesResponseTypeDef
 Required fields:
 
 - `Certificates`:
-  `List`\[[SigningCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#signingcertificatetypedef)\]
+  `List`\[[SigningCertificateTypeDef](./type_defs.md#signingcertificatetypedef)\]
 
 Optional fields:
 
@@ -1377,8 +1327,7 @@ from mypy_boto3_iam.type_defs import ListUserTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -1393,8 +1342,7 @@ from mypy_boto3_iam.type_defs import ListUsersResponseTypeDef
 
 Required fields:
 
-- `Users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#usertypedef)\]
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Optional fields:
 
@@ -1410,7 +1358,7 @@ from mypy_boto3_iam.type_defs import ListVirtualMFADevicesResponseTypeDef
 Required fields:
 
 - `VirtualMFADevices`:
-  `List`\[[VirtualMFADeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#virtualmfadevicetypedef)\]
+  `List`\[[VirtualMFADeviceTypeDef](./type_defs.md#virtualmfadevicetypedef)\]
 
 Optional fields:
 
@@ -1464,7 +1412,7 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `UpdateDate`: `datetime`
 - `PolicyVersionList`:
-  `List`\[[PolicyVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policyversiontypedef)\]
+  `List`\[[PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)\]
 
 ## OpenIDConnectProviderListEntryTypeDef
 
@@ -1547,14 +1495,12 @@ from mypy_boto3_iam.type_defs import PolicyGrantingServiceAccessTypeDef
 Required fields:
 
 - `PolicyName`: `str`
-- `PolicyType`:
-  [policyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policytype)
+- `PolicyType`: [policyType](./literals.md#policytype)
 
 Optional fields:
 
 - `PolicyArn`: `str`
-- `EntityType`:
-  [policyOwnerEntityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyownerentitytype)
+- `EntityType`: [policyOwnerEntityType](./literals.md#policyownerentitytype)
 - `EntityName`: `str`
 
 ## PolicyGroupTypeDef
@@ -1598,8 +1544,7 @@ Optional fields:
 - `Description`: `str`
 - `CreateDate`: `datetime`
 - `UpdateDate`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PolicyUserTypeDef
 
@@ -1645,7 +1590,7 @@ from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialResponseTypeD
 Optional fields:
 
 - `ServiceSpecificCredential`:
-  [ServiceSpecificCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servicespecificcredentialtypedef)
+  [ServiceSpecificCredentialTypeDef](./type_defs.md#servicespecificcredentialtypedef)
 
 ## ResourceSpecificResultTypeDef
 
@@ -1657,17 +1602,17 @@ Required fields:
 
 - `EvalResourceName`: `str`
 - `EvalResourceDecision`:
-  [PolicyEvaluationDecisionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyevaluationdecisiontype)
+  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)
 
 Optional fields:
 
 - `MatchedStatements`:
-  `List`\[[StatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#statementtypedef)\]
+  `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 - `MissingContextValues`: `List`\[`str`\]
 - `EvalDecisionDetails`: `Dict`\[`str`,
-  [PolicyEvaluationDecisionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policyevaluationdecisiontype)\]
+  [PolicyEvaluationDecisionType](./literals.md#policyevaluationdecisiontype)\]
 - `PermissionsBoundaryDecisionDetail`:
-  [PermissionsBoundaryDecisionDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#permissionsboundarydecisiondetailtypedef)
+  [PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef)
 
 ## RoleDetailTypeDef
 
@@ -1684,17 +1629,15 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `AssumeRolePolicyDocument`: `str`
 - `InstanceProfileList`:
-  `List`\[[InstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#instanceprofiletypedef)\]
+  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
 - `RolePolicyList`:
-  `List`\[[PolicyDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policydetailtypedef)\]
+  `List`\[[PolicyDetailTypeDef](./type_defs.md#policydetailtypedef)\]
 - `AttachedManagedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpolicytypedef)\]
+  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
 - `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpermissionsboundarytypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-- `RoleLastUsed`:
-  [RoleLastUsedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#rolelastusedtypedef)
+  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RoleLastUsed`: [RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef)
 
 ## RoleLastUsedTypeDef
 
@@ -1727,11 +1670,9 @@ Optional fields:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpermissionsboundarytypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
-- `RoleLastUsed`:
-  [RoleLastUsedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#rolelastusedtypedef)
+  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RoleLastUsed`: [RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef)
 
 ## RoleUsageTypeTypeDef
 
@@ -1766,8 +1707,7 @@ Required fields:
 
 - `UserName`: `str`
 - `SSHPublicKeyId`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 - `UploadDate`: `datetime`
 
 ## SSHPublicKeyTypeDef
@@ -1782,8 +1722,7 @@ Required fields:
 - `SSHPublicKeyId`: `str`
 - `Fingerprint`: `str`
 - `SSHPublicKeyBody`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 
 Optional fields:
 
@@ -1816,14 +1755,13 @@ from mypy_boto3_iam.type_defs import ServerCertificateTypeDef
 Required fields:
 
 - `ServerCertificateMetadata`:
-  [ServerCertificateMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servercertificatemetadatatypedef)
+  [ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef)
 - `CertificateBody`: `str`
 
 Optional fields:
 
 - `CertificateChain`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ServiceLastAccessedTypeDef
 
@@ -1843,7 +1781,7 @@ Optional fields:
 - `LastAuthenticatedRegion`: `str`
 - `TotalAuthenticatedEntities`: `int`
 - `TrackedActionsLastAccessed`:
-  `List`\[[TrackedActionLastAccessedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#trackedactionlastaccessedtypedef)\]
+  `List`\[[TrackedActionLastAccessedTypeDef](./type_defs.md#trackedactionlastaccessedtypedef)\]
 
 ## ServiceSpecificCredentialMetadataTypeDef
 
@@ -1854,8 +1792,7 @@ from mypy_boto3_iam.type_defs import ServiceSpecificCredentialMetadataTypeDef
 Required fields:
 
 - `UserName`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 - `ServiceUserName`: `str`
 - `CreateDate`: `datetime`
 - `ServiceSpecificCredentialId`: `str`
@@ -1875,8 +1812,7 @@ Required fields:
 - `ServicePassword`: `str`
 - `ServiceSpecificCredentialId`: `str`
 - `UserName`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 
 ## SigningCertificateTypeDef
 
@@ -1889,8 +1825,7 @@ Required fields:
 - `UserName`: `str`
 - `CertificateId`: `str`
 - `CertificateBody`: `str`
-- `Status`:
-  [statusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#statustype)
+- `Status`: [statusType](./literals.md#statustype)
 
 Optional fields:
 
@@ -1905,7 +1840,7 @@ from mypy_boto3_iam.type_defs import SimulatePolicyResponseTypeDef
 Optional fields:
 
 - `EvaluationResults`:
-  `List`\[[EvaluationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#evaluationresulttypedef)\]
+  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `IsTruncated`: `bool`
 - `Marker`: `str`
 
@@ -1918,12 +1853,9 @@ from mypy_boto3_iam.type_defs import StatementTypeDef
 Optional fields:
 
 - `SourcePolicyId`: `str`
-- `SourcePolicyType`:
-  [PolicySourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/literals.html#policysourcetype)
-- `StartPosition`:
-  [PositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#positiontypedef)
-- `EndPosition`:
-  [PositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#positiontypedef)
+- `SourcePolicyType`: [PolicySourceType](./literals.md#policysourcetype)
+- `StartPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
+- `EndPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
 
 ## TagTypeDef
 
@@ -1957,8 +1889,7 @@ from mypy_boto3_iam.type_defs import UpdateRoleDescriptionResponseTypeDef
 
 Optional fields:
 
-- `Role`:
-  [RoleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#roletypedef)
+- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
 
 ## UpdateSAMLProviderResponseTypeDef
 
@@ -1978,8 +1909,7 @@ from mypy_boto3_iam.type_defs import UploadSSHPublicKeyResponseTypeDef
 
 Optional fields:
 
-- `SSHPublicKey`:
-  [SSHPublicKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#sshpublickeytypedef)
+- `SSHPublicKey`: [SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
 
 ## UploadServerCertificateResponseTypeDef
 
@@ -1990,9 +1920,8 @@ from mypy_boto3_iam.type_defs import UploadServerCertificateResponseTypeDef
 Optional fields:
 
 - `ServerCertificateMetadata`:
-  [ServerCertificateMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#servercertificatemetadatatypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  [ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UploadSigningCertificateResponseTypeDef
 
@@ -2003,7 +1932,7 @@ from mypy_boto3_iam.type_defs import UploadSigningCertificateResponseTypeDef
 Required fields:
 
 - `Certificate`:
-  [SigningCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#signingcertificatetypedef)
+  [SigningCertificateTypeDef](./type_defs.md#signingcertificatetypedef)
 
 ## UserDetailTypeDef
 
@@ -2019,14 +1948,13 @@ Optional fields:
 - `Arn`: `str`
 - `CreateDate`: `datetime`
 - `UserPolicyList`:
-  `List`\[[PolicyDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#policydetailtypedef)\]
+  `List`\[[PolicyDetailTypeDef](./type_defs.md#policydetailtypedef)\]
 - `GroupList`: `List`\[`str`\]
 - `AttachedManagedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpolicytypedef)\]
+  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
 - `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpermissionsboundarytypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UserTypeDef
 
@@ -2046,9 +1974,8 @@ Optional fields:
 
 - `PasswordLastUsed`: `datetime`
 - `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#attachedpermissionsboundarytypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VirtualMFADeviceTypeDef
 
@@ -2064,11 +1991,9 @@ Optional fields:
 
 - `Base32StringSeed`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `QRCodePNG`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `User`:
-  [UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#usertypedef)
+- `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `EnableDate`: `datetime`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iam/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## WaiterConfigTypeDef
 

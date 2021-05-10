@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 QLDB module
 
-> [Index](../README.md) > [QLDB](./README.md) > Structures
+> [Index](..) > [QLDB](.) > Typed dictionaries
 
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
@@ -52,8 +52,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
-- `State`:
-  [LedgerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#ledgerstate)
+- `State`: [LedgerState](./literals.md#ledgerstate)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
 
@@ -66,7 +65,7 @@ from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamResponseTypeDe
 Optional fields:
 
 - `Stream`:
-  [JournalKinesisStreamDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#journalkinesisstreamdescriptiontypedef)
+  [JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef)
 
 ## DescribeJournalS3ExportResponseTypeDef
 
@@ -77,7 +76,7 @@ from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportResponseTypeDef
 Required fields:
 
 - `ExportDescription`:
-  [JournalS3ExportDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#journals3exportdescriptiontypedef)
+  [JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)
 
 ## DescribeLedgerResponseTypeDef
 
@@ -89,8 +88,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
-- `State`:
-  [LedgerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#ledgerstate)
+- `State`: [LedgerState](./literals.md#ledgerstate)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
 
@@ -112,13 +110,11 @@ from mypy_boto3_qldb.type_defs import GetBlockResponseTypeDef
 
 Required fields:
 
-- `Block`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `Block`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 Optional fields:
 
-- `Proof`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `Proof`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 ## GetDigestResponseTypeDef
 
@@ -129,8 +125,7 @@ from mypy_boto3_qldb.type_defs import GetDigestResponseTypeDef
 Required fields:
 
 - `Digest`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `DigestTipAddress`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 ## GetRevisionResponseTypeDef
 
@@ -140,13 +135,11 @@ from mypy_boto3_qldb.type_defs import GetRevisionResponseTypeDef
 
 Required fields:
 
-- `Revision`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `Revision`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 Optional fields:
 
-- `Proof`:
-  [ValueHolderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#valueholdertypedef)
+- `Proof`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 ## JournalKinesisStreamDescriptionTypeDef
 
@@ -159,10 +152,9 @@ Required fields:
 - `LedgerName`: `str`
 - `RoleArn`: `str`
 - `StreamId`: `str`
-- `Status`:
-  [StreamStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#streamstatus)
+- `Status`: [StreamStatus](./literals.md#streamstatus)
 - `KinesisConfiguration`:
-  [KinesisConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#kinesisconfigurationtypedef)
+  [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
 - `StreamName`: `str`
 
 Optional fields:
@@ -171,8 +163,7 @@ Optional fields:
 - `InclusiveStartTime`: `datetime`
 - `ExclusiveEndTime`: `datetime`
 - `Arn`: `str`
-- `ErrorCause`:
-  [ErrorCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#errorcause)
+- `ErrorCause`: [ErrorCause](./literals.md#errorcause)
 
 ## JournalS3ExportDescriptionTypeDef
 
@@ -185,12 +176,11 @@ Required fields:
 - `LedgerName`: `str`
 - `ExportId`: `str`
 - `ExportCreationTime`: `datetime`
-- `Status`:
-  [ExportStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#exportstatus)
+- `Status`: [ExportStatus](./literals.md#exportstatus)
 - `InclusiveStartTime`: `datetime`
 - `ExclusiveEndTime`: `datetime`
 - `S3ExportConfiguration`:
-  [S3ExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#s3exportconfigurationtypedef)
+  [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 - `RoleArn`: `str`
 
 ## KinesisConfigurationTypeDef
@@ -216,8 +206,7 @@ from mypy_boto3_qldb.type_defs import LedgerSummaryTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `State`:
-  [LedgerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#ledgerstate)
+- `State`: [LedgerState](./literals.md#ledgerstate)
 - `CreationDateTime`: `datetime`
 
 ## ListJournalKinesisStreamsForLedgerResponseTypeDef
@@ -229,7 +218,7 @@ from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerResponse
 Optional fields:
 
 - `Streams`:
-  `List`\[[JournalKinesisStreamDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#journalkinesisstreamdescriptiontypedef)\]
+  `List`\[[JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListJournalS3ExportsForLedgerResponseTypeDef
@@ -241,7 +230,7 @@ from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerResponseTypeD
 Optional fields:
 
 - `JournalS3Exports`:
-  `List`\[[JournalS3ExportDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#journals3exportdescriptiontypedef)\]
+  `List`\[[JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListJournalS3ExportsResponseTypeDef
@@ -253,7 +242,7 @@ from mypy_boto3_qldb.type_defs import ListJournalS3ExportsResponseTypeDef
 Optional fields:
 
 - `JournalS3Exports`:
-  `List`\[[JournalS3ExportDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#journals3exportdescriptiontypedef)\]
+  `List`\[[JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListLedgersResponseTypeDef
@@ -265,7 +254,7 @@ from mypy_boto3_qldb.type_defs import ListLedgersResponseTypeDef
 Optional fields:
 
 - `Ledgers`:
-  `List`\[[LedgerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#ledgersummarytypedef)\]
+  `List`\[[LedgerSummaryTypeDef](./type_defs.md#ledgersummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -287,7 +276,7 @@ from mypy_boto3_qldb.type_defs import S3EncryptionConfigurationTypeDef
 Required fields:
 
 - `ObjectEncryptionType`:
-  [S3ObjectEncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#s3objectencryptiontype)
+  [S3ObjectEncryptionType](./literals.md#s3objectencryptiontype)
 
 Optional fields:
 
@@ -304,7 +293,7 @@ Required fields:
 - `Bucket`: `str`
 - `Prefix`: `str`
 - `EncryptionConfiguration`:
-  [S3EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/type_defs.html#s3encryptionconfigurationtypedef)
+  [S3EncryptionConfigurationTypeDef](./type_defs.md#s3encryptionconfigurationtypedef)
 
 ## StreamJournalToKinesisResponseTypeDef
 
@@ -326,8 +315,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
-- `State`:
-  [LedgerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb/literals.html#ledgerstate)
+- `State`: [LedgerState](./literals.md#ledgerstate)
 - `CreationDateTime`: `datetime`
 - `DeletionProtection`: `bool`
 

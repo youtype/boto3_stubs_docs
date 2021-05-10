@@ -1,6 +1,6 @@
 # HealthLakeClient for boto3 HealthLake module
 
-> [Index](../README.md) > [HealthLake](./README.md) > HealthLakeClient
+> [Index](..) > [HealthLake](.) > HealthLakeClient
 
 Auto-generated documentation for
 [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
@@ -84,14 +84,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `DatastoreTypeVersion`: `Literal['R4']` *(required)*
+- `DatastoreTypeVersion`: `Literal['R4']` (see
+  [FHIRVersion](./literals.md#fhirversion)) *(required)*
 - `DatastoreName`: `str`
 - `PreloadDataConfig`:
-  [PreloadDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#preloaddataconfigtypedef)
+  [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 - `ClientToken`: `str`
 
 Returns
-[CreateFHIRDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#createfhirdatastoreresponsetypedef).
+[CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef).
 
 ### delete_fhir_datastore
 
@@ -105,7 +106,7 @@ Arguments:
 - `DatastoreId`: `str`
 
 Returns
-[DeleteFHIRDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#deletefhirdatastoreresponsetypedef).
+[DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef).
 
 ### describe_fhir_datastore
 
@@ -120,7 +121,7 @@ Arguments:
 - `DatastoreId`: `str`
 
 Returns
-[DescribeFHIRDatastoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#describefhirdatastoreresponsetypedef).
+[DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef).
 
 ### describe_fhir_export_job
 
@@ -136,7 +137,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeFHIRExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#describefhirexportjobresponsetypedef).
+[DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef).
 
 ### describe_fhir_import_job
 
@@ -152,7 +153,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeFHIRImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#describefhirimportjobresponsetypedef).
+[DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -180,13 +181,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filter`:
-  [DatastoreFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#datastorefiltertypedef)
+- `Filter`: [DatastoreFilterTypeDef](./type_defs.md#datastorefiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListFHIRDatastoresResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#listfhirdatastoresresponsetypedef).
+[ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef).
 
 ### start_fhir_export_job
 
@@ -198,15 +198,14 @@ Boto3 documentation:
 Arguments:
 
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#outputdataconfigtypedef)
-  *(required)*
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
 - `DatastoreId`: `str` *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
 - `JobName`: `str`
 
 Returns
-[StartFHIRExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#startfhirexportjobresponsetypedef).
+[StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef).
 
 ### start_fhir_import_job
 
@@ -218,12 +217,11 @@ Boto3 documentation:
 Arguments:
 
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `DatastoreId`: `str` *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
 - `JobName`: `str`
 
 Returns
-[StartFHIRImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_healthlake/type_defs.html#startfhirimportjobresponsetypedef).
+[StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef).

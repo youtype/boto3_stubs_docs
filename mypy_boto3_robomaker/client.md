@@ -1,6 +1,6 @@
 # RoboMakerClient for boto3 RoboMaker module
 
-> [Index](../README.md) > [RoboMaker](./README.md) > RoboMakerClient
+> [Index](..) > [RoboMaker](.) > RoboMakerClient
 
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
@@ -127,7 +127,7 @@ Arguments:
 - `worlds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteWorldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#batchdeleteworldsresponsetypedef).
+[BatchDeleteWorldsResponseTypeDef](./type_defs.md#batchdeleteworldsresponsetypedef).
 
 ### batch_describe_simulation_job
 
@@ -142,7 +142,7 @@ Arguments:
 - `jobs`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDescribeSimulationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#batchdescribesimulationjobresponsetypedef).
+[BatchDescribeSimulationJobResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponsetypedef).
 
 ### can_paginate
 
@@ -237,14 +237,14 @@ Arguments:
 - `clientRequestToken`: `str` *(required)*
 - `fleet`: `str` *(required)*
 - `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#deploymentapplicationconfigtypedef)\]
+  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
   *(required)*
 - `deploymentConfig`:
-  [DeploymentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#deploymentconfigtypedef)
+  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeploymentJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createdeploymentjobresponsetypedef).
+[CreateDeploymentJobResponseTypeDef](./type_defs.md#createdeploymentjobresponsetypedef).
 
 ### create_fleet
 
@@ -259,7 +259,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createfleetresponsetypedef).
+[CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
 
 ### create_robot
 
@@ -271,14 +271,12 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `architecture`:
-  [Architecture](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/literals.html#architecture)
-  *(required)*
+- `architecture`: [Architecture](./literals.md#architecture) *(required)*
 - `greengrassGroupId`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createrobotresponsetypedef).
+[CreateRobotResponseTypeDef](./type_defs.md#createrobotresponsetypedef).
 
 ### create_robot_application
 
@@ -291,16 +289,15 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+- `sources`: `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
   *(required)*
 - `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRobotApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createrobotapplicationresponsetypedef).
+[CreateRobotApplicationResponseTypeDef](./type_defs.md#createrobotapplicationresponsetypedef).
 
 ### create_robot_application_version
 
@@ -316,7 +313,7 @@ Arguments:
 - `currentRevisionId`: `str`
 
 Returns
-[CreateRobotApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createrobotapplicationversionresponsetypedef).
+[CreateRobotApplicationVersionResponseTypeDef](./type_defs.md#createrobotapplicationversionresponsetypedef).
 
 ### create_simulation_application
 
@@ -329,21 +326,20 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+- `sources`: `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
   *(required)*
 - `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationsoftwaresuitetypedef)
+  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
   *(required)*
 - `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
 - `renderingEngine`:
-  [RenderingEngineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#renderingenginetypedef)
+  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSimulationApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createsimulationapplicationresponsetypedef).
+[CreateSimulationApplicationResponseTypeDef](./type_defs.md#createsimulationapplicationresponsetypedef).
 
 ### create_simulation_application_version
 
@@ -359,7 +355,7 @@ Arguments:
 - `currentRevisionId`: `str`
 
 Returns
-[CreateSimulationApplicationVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createsimulationapplicationversionresponsetypedef).
+[CreateSimulationApplicationVersionResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponsetypedef).
 
 ### create_simulation_job
 
@@ -373,26 +369,21 @@ Arguments:
 - `maxJobDurationInSeconds`: `int` *(required)*
 - `iamRole`: `str` *(required)*
 - `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#outputlocationtypedef)
-- `loggingConfig`:
-  [LoggingConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#loggingconfigtypedef)
-- `failureBehavior`:
-  [FailureBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/literals.html#failurebehavior)
+- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
+- `failureBehavior`: [FailureBehavior](./literals.md#failurebehavior)
 - `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotapplicationconfigtypedef)\]
+  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
 - `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationapplicationconfigtypedef)\]
+  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
 - `dataSources`:
-  `List`\[[DataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#datasourceconfigtypedef)\]
+  `List`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
-- `vpcConfig`:
-  [VPCConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#vpcconfigtypedef)
-- `compute`:
-  [ComputeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#computetypedef)
+- `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
 
 Returns
-[CreateSimulationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createsimulationjobresponsetypedef).
+[CreateSimulationJobResponseTypeDef](./type_defs.md#createsimulationjobresponsetypedef).
 
 ### create_world_export_job
 
@@ -405,15 +396,14 @@ Boto3 documentation:
 Arguments:
 
 - `worlds`: `List`\[`str`\] *(required)*
-- `outputLocation`:
-  [OutputLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#outputlocationtypedef)
+- `outputLocation`: [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
   *(required)*
 - `iamRole`: `str` *(required)*
 - `clientRequestToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorldExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createworldexportjobresponsetypedef).
+[CreateWorldExportJobResponseTypeDef](./type_defs.md#createworldexportjobresponsetypedef).
 
 ### create_world_generation_job
 
@@ -426,15 +416,14 @@ Boto3 documentation:
 Arguments:
 
 - `template`: `str` *(required)*
-- `worldCount`:
-  [WorldCountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#worldcounttypedef)
+- `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
   *(required)*
 - `clientRequestToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 - `worldTags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorldGenerationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createworldgenerationjobresponsetypedef).
+[CreateWorldGenerationJobResponseTypeDef](./type_defs.md#createworldgenerationjobresponsetypedef).
 
 ### create_world_template
 
@@ -449,11 +438,11 @@ Arguments:
 - `name`: `str`
 - `templateBody`: `str`
 - `templateLocation`:
-  [TemplateLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#templatelocationtypedef)
+  [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorldTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#createworldtemplateresponsetypedef).
+[CreateWorldTemplateResponseTypeDef](./type_defs.md#createworldtemplateresponsetypedef).
 
 ### delete_fleet
 
@@ -537,7 +526,7 @@ Arguments:
 - `robot`: `str` *(required)*
 
 Returns
-[DeregisterRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#deregisterrobotresponsetypedef).
+[DeregisterRobotResponseTypeDef](./type_defs.md#deregisterrobotresponsetypedef).
 
 ### describe_deployment_job
 
@@ -552,7 +541,7 @@ Arguments:
 - `job`: `str` *(required)*
 
 Returns
-[DescribeDeploymentJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describedeploymentjobresponsetypedef).
+[DescribeDeploymentJobResponseTypeDef](./type_defs.md#describedeploymentjobresponsetypedef).
 
 ### describe_fleet
 
@@ -566,7 +555,7 @@ Arguments:
 - `fleet`: `str` *(required)*
 
 Returns
-[DescribeFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describefleetresponsetypedef).
+[DescribeFleetResponseTypeDef](./type_defs.md#describefleetresponsetypedef).
 
 ### describe_robot
 
@@ -580,7 +569,7 @@ Arguments:
 - `robot`: `str` *(required)*
 
 Returns
-[DescribeRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describerobotresponsetypedef).
+[DescribeRobotResponseTypeDef](./type_defs.md#describerobotresponsetypedef).
 
 ### describe_robot_application
 
@@ -596,7 +585,7 @@ Arguments:
 - `applicationVersion`: `str`
 
 Returns
-[DescribeRobotApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describerobotapplicationresponsetypedef).
+[DescribeRobotApplicationResponseTypeDef](./type_defs.md#describerobotapplicationresponsetypedef).
 
 ### describe_simulation_application
 
@@ -612,7 +601,7 @@ Arguments:
 - `applicationVersion`: `str`
 
 Returns
-[DescribeSimulationApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describesimulationapplicationresponsetypedef).
+[DescribeSimulationApplicationResponseTypeDef](./type_defs.md#describesimulationapplicationresponsetypedef).
 
 ### describe_simulation_job
 
@@ -627,7 +616,7 @@ Arguments:
 - `job`: `str` *(required)*
 
 Returns
-[DescribeSimulationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describesimulationjobresponsetypedef).
+[DescribeSimulationJobResponseTypeDef](./type_defs.md#describesimulationjobresponsetypedef).
 
 ### describe_simulation_job_batch
 
@@ -642,7 +631,7 @@ Arguments:
 - `batch`: `str` *(required)*
 
 Returns
-[DescribeSimulationJobBatchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describesimulationjobbatchresponsetypedef).
+[DescribeSimulationJobBatchResponseTypeDef](./type_defs.md#describesimulationjobbatchresponsetypedef).
 
 ### describe_world
 
@@ -656,7 +645,7 @@ Arguments:
 - `world`: `str` *(required)*
 
 Returns
-[DescribeWorldResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldresponsetypedef).
+[DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef).
 
 ### describe_world_export_job
 
@@ -671,7 +660,7 @@ Arguments:
 - `job`: `str` *(required)*
 
 Returns
-[DescribeWorldExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldexportjobresponsetypedef).
+[DescribeWorldExportJobResponseTypeDef](./type_defs.md#describeworldexportjobresponsetypedef).
 
 ### describe_world_generation_job
 
@@ -686,7 +675,7 @@ Arguments:
 - `job`: `str` *(required)*
 
 Returns
-[DescribeWorldGenerationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldgenerationjobresponsetypedef).
+[DescribeWorldGenerationJobResponseTypeDef](./type_defs.md#describeworldgenerationjobresponsetypedef).
 
 ### describe_world_template
 
@@ -701,7 +690,7 @@ Arguments:
 - `template`: `str` *(required)*
 
 Returns
-[DescribeWorldTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#describeworldtemplateresponsetypedef).
+[DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef).
 
 ### generate_presigned_url
 
@@ -733,7 +722,7 @@ Arguments:
 - `generationJob`: `str`
 
 Returns
-[GetWorldTemplateBodyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#getworldtemplatebodyresponsetypedef).
+[GetWorldTemplateBodyResponseTypeDef](./type_defs.md#getworldtemplatebodyresponsetypedef).
 
 ### list_deployment_jobs
 
@@ -744,13 +733,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListDeploymentJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listdeploymentjobsresponsetypedef).
+[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef).
 
 ### list_fleets
 
@@ -763,11 +751,9 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listfleetsresponsetypedef).
+Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 
 ### list_robot_applications
 
@@ -782,11 +768,10 @@ Arguments:
 - `versionQualifier`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListRobotApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listrobotapplicationsresponsetypedef).
+[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef).
 
 ### list_robots
 
@@ -799,11 +784,9 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListRobotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listrobotsresponsetypedef).
+Returns [ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef).
 
 ### list_simulation_applications
 
@@ -818,11 +801,10 @@ Arguments:
 - `versionQualifier`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListSimulationApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationapplicationsresponsetypedef).
+[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef).
 
 ### list_simulation_job_batches
 
@@ -836,11 +818,10 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListSimulationJobBatchesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationjobbatchesresponsetypedef).
+[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef).
 
 ### list_simulation_jobs
 
@@ -853,11 +834,10 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListSimulationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listsimulationjobsresponsetypedef).
+[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -871,7 +851,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_world_export_jobs
 
@@ -884,11 +864,10 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListWorldExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldexportjobsresponsetypedef).
+[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef).
 
 ### list_world_generation_jobs
 
@@ -902,11 +881,10 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListWorldGenerationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldgenerationjobsresponsetypedef).
+[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef).
 
 ### list_world_templates
 
@@ -921,7 +899,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListWorldTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldtemplatesresponsetypedef).
+[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef).
 
 ### list_worlds
 
@@ -934,11 +912,9 @@ Arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListWorldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#listworldsresponsetypedef).
+Returns [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef).
 
 ### register_robot
 
@@ -953,7 +929,7 @@ Arguments:
 - `robot`: `str` *(required)*
 
 Returns
-[RegisterRobotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#registerrobotresponsetypedef).
+[RegisterRobotResponseTypeDef](./type_defs.md#registerrobotresponsetypedef).
 
 ### restart_simulation_job
 
@@ -979,15 +955,14 @@ Boto3 documentation:
 Arguments:
 
 - `createSimulationJobRequests`:
-  `List`\[[SimulationJobRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationjobrequesttypedef)\]
+  `List`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
-- `batchPolicy`:
-  [BatchPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#batchpolicytypedef)
+- `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSimulationJobBatchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#startsimulationjobbatchresponsetypedef).
+[StartSimulationJobBatchResponseTypeDef](./type_defs.md#startsimulationjobbatchresponsetypedef).
 
 ### sync_deployment_job
 
@@ -1002,7 +977,7 @@ Arguments:
 - `fleet`: `str` *(required)*
 
 Returns
-[SyncDeploymentJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#syncdeploymentjobresponsetypedef).
+[SyncDeploymentJobResponseTypeDef](./type_defs.md#syncdeploymentjobresponsetypedef).
 
 ### tag_resource
 
@@ -1043,16 +1018,15 @@ Boto3 documentation:
 Arguments:
 
 - `application`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+- `sources`: `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
   *(required)*
 - `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
 - `currentRevisionId`: `str`
 
 Returns
-[UpdateRobotApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#updaterobotapplicationresponsetypedef).
+[UpdateRobotApplicationResponseTypeDef](./type_defs.md#updaterobotapplicationresponsetypedef).
 
 ### update_simulation_application
 
@@ -1065,21 +1039,20 @@ Boto3 documentation:
 Arguments:
 
 - `application`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#sourceconfigtypedef)\]
+- `sources`: `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
   *(required)*
 - `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#simulationsoftwaresuitetypedef)
+  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
   *(required)*
 - `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#robotsoftwaresuitetypedef)
+  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
 - `renderingEngine`:
-  [RenderingEngineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#renderingenginetypedef)
+  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `currentRevisionId`: `str`
 
 Returns
-[UpdateSimulationApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#updatesimulationapplicationresponsetypedef).
+[UpdateSimulationApplicationResponseTypeDef](./type_defs.md#updatesimulationapplicationresponsetypedef).
 
 ### update_world_template
 
@@ -1094,10 +1067,10 @@ Arguments:
 - `name`: `str`
 - `templateBody`: `str`
 - `templateLocation`:
-  [TemplateLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#templatelocationtypedef)
+  [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
 
 Returns
-[UpdateWorldTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_robomaker/type_defs.html#updateworldtemplateresponsetypedef).
+[UpdateWorldTemplateResponseTypeDef](./type_defs.md#updateworldtemplateresponsetypedef).
 
 ### get_paginator
 

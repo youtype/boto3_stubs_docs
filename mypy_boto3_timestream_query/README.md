@@ -1,6 +1,6 @@
 # Type annotations for boto3 TimestreamQuery module
 
-> [Index](../README.md) > TimestreamQuery
+> [Index](..) > TimestreamQuery
 
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)

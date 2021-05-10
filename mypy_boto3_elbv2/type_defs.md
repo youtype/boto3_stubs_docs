@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ElasticLoadBalancingv2 module
 
-> [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Structures
+> [Index](..) > [ElasticLoadBalancingv2](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
@@ -52,7 +52,7 @@ type annotations stubs module
   - [QueryStringConditionConfigTypeDef](#querystringconditionconfigtypedef)
   - [QueryStringKeyValuePairTypeDef](#querystringkeyvaluepairtypedef)
   - [RedirectActionConfigTypeDef](#redirectactionconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleConditionTypeDef](#ruleconditiontypedef)
   - [RulePriorityPairTypeDef](#ruleprioritypairtypedef)
   - [RuleTypeDef](#ruletypedef)
@@ -82,23 +82,22 @@ from mypy_boto3_elbv2.type_defs import ActionTypeDef
 
 Required fields:
 
-- `Type`:
-  [ActionTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#actiontypeenum)
+- `Type`: [ActionTypeEnum](./literals.md#actiontypeenum)
 
 Optional fields:
 
 - `TargetGroupArn`: `str`
 - `AuthenticateOidcConfig`:
-  [AuthenticateOidcActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#authenticateoidcactionconfigtypedef)
+  [AuthenticateOidcActionConfigTypeDef](./type_defs.md#authenticateoidcactionconfigtypedef)
 - `AuthenticateCognitoConfig`:
-  [AuthenticateCognitoActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#authenticatecognitoactionconfigtypedef)
+  [AuthenticateCognitoActionConfigTypeDef](./type_defs.md#authenticatecognitoactionconfigtypedef)
 - `Order`: `int`
 - `RedirectConfig`:
-  [RedirectActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#redirectactionconfigtypedef)
+  [RedirectActionConfigTypeDef](./type_defs.md#redirectactionconfigtypedef)
 - `FixedResponseConfig`:
-  [FixedResponseActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#fixedresponseactionconfigtypedef)
+  [FixedResponseActionConfigTypeDef](./type_defs.md#fixedresponseactionconfigtypedef)
 - `ForwardConfig`:
-  [ForwardActionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#forwardactionconfigtypedef)
+  [ForwardActionConfigTypeDef](./type_defs.md#forwardactionconfigtypedef)
 
 ## AddListenerCertificatesOutputTypeDef
 
@@ -109,9 +108,9 @@ from mypy_boto3_elbv2.type_defs import AddListenerCertificatesOutputTypeDef
 Required fields:
 
 - `Certificates`:
-  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#certificatetypedef)\]
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AuthenticateCognitoActionConfigTypeDef
 
@@ -132,7 +131,7 @@ Optional fields:
 - `SessionTimeout`: `int`
 - `AuthenticationRequestExtraParams`: `Dict`\[`str`, `str`\]
 - `OnUnauthenticatedRequest`:
-  [AuthenticateCognitoActionConditionalBehaviorEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#authenticatecognitoactionconditionalbehaviorenum)
+  [AuthenticateCognitoActionConditionalBehaviorEnum](./literals.md#authenticatecognitoactionconditionalbehaviorenum)
 
 ## AuthenticateOidcActionConfigTypeDef
 
@@ -156,7 +155,7 @@ Optional fields:
 - `SessionTimeout`: `int`
 - `AuthenticationRequestExtraParams`: `Dict`\[`str`, `str`\]
 - `OnUnauthenticatedRequest`:
-  [AuthenticateOidcActionConditionalBehaviorEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#authenticateoidcactionconditionalbehaviorenum)
+  [AuthenticateOidcActionConditionalBehaviorEnum](./literals.md#authenticateoidcactionconditionalbehaviorenum)
 - `UseExistingClientSecret`: `bool`
 
 ## AvailabilityZoneTypeDef
@@ -171,7 +170,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `OutpostId`: `str`
 - `LoadBalancerAddresses`:
-  `List`\[[LoadBalancerAddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#loadbalanceraddresstypedef)\]
+  `List`\[[LoadBalancerAddressTypeDef](./type_defs.md#loadbalanceraddresstypedef)\]
 
 ## CertificateTypeDef
 
@@ -203,10 +202,9 @@ from mypy_boto3_elbv2.type_defs import CreateListenerOutputTypeDef
 
 Required fields:
 
-- `Listeners`:
-  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#listenertypedef)\]
+- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateLoadBalancerOutputTypeDef
 
@@ -217,9 +215,9 @@ from mypy_boto3_elbv2.type_defs import CreateLoadBalancerOutputTypeDef
 Required fields:
 
 - `LoadBalancers`:
-  `List`\[[LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#loadbalancertypedef)\]
+  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateRuleOutputTypeDef
 
@@ -229,10 +227,9 @@ from mypy_boto3_elbv2.type_defs import CreateRuleOutputTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateTargetGroupOutputTypeDef
 
@@ -243,9 +240,9 @@ from mypy_boto3_elbv2.type_defs import CreateTargetGroupOutputTypeDef
 Required fields:
 
 - `TargetGroups`:
-  `List`\[[TargetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgrouptypedef)\]
+  `List`\[[TargetGroupTypeDef](./type_defs.md#targetgrouptypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeAccountLimitsOutputTypeDef
 
@@ -255,11 +252,10 @@ from mypy_boto3_elbv2.type_defs import DescribeAccountLimitsOutputTypeDef
 
 Required fields:
 
-- `Limits`:
-  `List`\[[LimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#limittypedef)\]
+- `Limits`: `List`\[[LimitTypeDef](./type_defs.md#limittypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeListenerCertificatesOutputTypeDef
 
@@ -270,10 +266,10 @@ from mypy_boto3_elbv2.type_defs import DescribeListenerCertificatesOutputTypeDef
 Required fields:
 
 - `Certificates`:
-  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#certificatetypedef)\]
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeListenersOutputTypeDef
 
@@ -283,11 +279,10 @@ from mypy_boto3_elbv2.type_defs import DescribeListenersOutputTypeDef
 
 Required fields:
 
-- `Listeners`:
-  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#listenertypedef)\]
+- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeLoadBalancerAttributesOutputTypeDef
 
@@ -298,9 +293,9 @@ from mypy_boto3_elbv2.type_defs import DescribeLoadBalancerAttributesOutputTypeD
 Required fields:
 
 - `Attributes`:
-  `List`\[[LoadBalancerAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#loadbalancerattributetypedef)\]
+  `List`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeLoadBalancersOutputTypeDef
 
@@ -311,10 +306,10 @@ from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersOutputTypeDef
 Required fields:
 
 - `LoadBalancers`:
-  `List`\[[LoadBalancerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#loadbalancertypedef)\]
+  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeRulesOutputTypeDef
 
@@ -324,11 +319,10 @@ from mypy_boto3_elbv2.type_defs import DescribeRulesOutputTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeSSLPoliciesOutputTypeDef
 
@@ -338,11 +332,10 @@ from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesOutputTypeDef
 
 Required fields:
 
-- `SslPolicies`:
-  `List`\[[SslPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#sslpolicytypedef)\]
+- `SslPolicies`: `List`\[[SslPolicyTypeDef](./type_defs.md#sslpolicytypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTagsOutputTypeDef
 
@@ -353,9 +346,9 @@ from mypy_boto3_elbv2.type_defs import DescribeTagsOutputTypeDef
 Required fields:
 
 - `TagDescriptions`:
-  `List`\[[TagDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#tagdescriptiontypedef)\]
+  `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTargetGroupAttributesOutputTypeDef
 
@@ -366,9 +359,9 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetGroupAttributesOutputTypeDe
 Required fields:
 
 - `Attributes`:
-  `List`\[[TargetGroupAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgroupattributetypedef)\]
+  `List`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTargetGroupsOutputTypeDef
 
@@ -379,10 +372,10 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsOutputTypeDef
 Required fields:
 
 - `TargetGroups`:
-  `List`\[[TargetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgrouptypedef)\]
+  `List`\[[TargetGroupTypeDef](./type_defs.md#targetgrouptypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeTargetHealthOutputTypeDef
 
@@ -393,9 +386,9 @@ from mypy_boto3_elbv2.type_defs import DescribeTargetHealthOutputTypeDef
 Required fields:
 
 - `TargetHealthDescriptions`:
-  `List`\[[TargetHealthDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targethealthdescriptiontypedef)\]
+  `List`\[[TargetHealthDescriptionTypeDef](./type_defs.md#targethealthdescriptiontypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FixedResponseActionConfigTypeDef
 
@@ -421,9 +414,9 @@ from mypy_boto3_elbv2.type_defs import ForwardActionConfigTypeDef
 Optional fields:
 
 - `TargetGroups`:
-  `List`\[[TargetGroupTupleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgrouptupletypedef)\]
+  `List`\[[TargetGroupTupleTypeDef](./type_defs.md#targetgrouptupletypedef)\]
 - `TargetGroupStickinessConfig`:
-  [TargetGroupStickinessConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgroupstickinessconfigtypedef)
+  [TargetGroupStickinessConfigTypeDef](./type_defs.md#targetgroupstickinessconfigtypedef)
 
 ## HostHeaderConditionConfigTypeDef
 
@@ -478,13 +471,11 @@ Optional fields:
 - `ListenerArn`: `str`
 - `LoadBalancerArn`: `str`
 - `Port`: `int`
-- `Protocol`:
-  [ProtocolEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#protocolenum)
+- `Protocol`: [ProtocolEnum](./literals.md#protocolenum)
 - `Certificates`:
-  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#certificatetypedef)\]
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `SslPolicy`: `str`
-- `DefaultActions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#actiontypedef)\]
+- `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `AlpnPolicy`: `List`\[`str`\]
 
 ## LoadBalancerAddressTypeDef
@@ -519,8 +510,7 @@ from mypy_boto3_elbv2.type_defs import LoadBalancerStateTypeDef
 
 Optional fields:
 
-- `Code`:
-  [LoadBalancerStateEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#loadbalancerstateenum)
+- `Code`: [LoadBalancerStateEnum](./literals.md#loadbalancerstateenum)
 - `Reason`: `str`
 
 ## LoadBalancerTypeDef
@@ -536,18 +526,14 @@ Optional fields:
 - `CanonicalHostedZoneId`: `str`
 - `CreatedTime`: `datetime`
 - `LoadBalancerName`: `str`
-- `Scheme`:
-  [LoadBalancerSchemeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#loadbalancerschemeenum)
+- `Scheme`: [LoadBalancerSchemeEnum](./literals.md#loadbalancerschemeenum)
 - `VpcId`: `str`
-- `State`:
-  [LoadBalancerStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#loadbalancerstatetypedef)
-- `Type`:
-  [LoadBalancerTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#loadbalancertypeenum)
+- `State`: [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
+- `Type`: [LoadBalancerTypeEnum](./literals.md#loadbalancertypeenum)
 - `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#availabilityzonetypedef)\]
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `SecurityGroups`: `List`\[`str`\]
-- `IpAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#ipaddresstype)
+- `IpAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 - `CustomerOwnedIpv4Pool`: `str`
 
 ## MatcherTypeDef
@@ -569,10 +555,9 @@ from mypy_boto3_elbv2.type_defs import ModifyListenerOutputTypeDef
 
 Required fields:
 
-- `Listeners`:
-  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#listenertypedef)\]
+- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyLoadBalancerAttributesOutputTypeDef
 
@@ -583,9 +568,9 @@ from mypy_boto3_elbv2.type_defs import ModifyLoadBalancerAttributesOutputTypeDef
 Required fields:
 
 - `Attributes`:
-  `List`\[[LoadBalancerAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#loadbalancerattributetypedef)\]
+  `List`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyRuleOutputTypeDef
 
@@ -595,10 +580,9 @@ from mypy_boto3_elbv2.type_defs import ModifyRuleOutputTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyTargetGroupAttributesOutputTypeDef
 
@@ -609,9 +593,9 @@ from mypy_boto3_elbv2.type_defs import ModifyTargetGroupAttributesOutputTypeDef
 Required fields:
 
 - `Attributes`:
-  `List`\[[TargetGroupAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgroupattributetypedef)\]
+  `List`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyTargetGroupOutputTypeDef
 
@@ -622,9 +606,9 @@ from mypy_boto3_elbv2.type_defs import ModifyTargetGroupOutputTypeDef
 Required fields:
 
 - `TargetGroups`:
-  `List`\[[TargetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetgrouptypedef)\]
+  `List`\[[TargetGroupTypeDef](./type_defs.md#targetgrouptypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -657,7 +641,7 @@ from mypy_boto3_elbv2.type_defs import QueryStringConditionConfigTypeDef
 Optional fields:
 
 - `Values`:
-  `List`\[[QueryStringKeyValuePairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#querystringkeyvaluepairtypedef)\]
+  `List`\[[QueryStringKeyValuePairTypeDef](./type_defs.md#querystringkeyvaluepairtypedef)\]
 
 ## QueryStringKeyValuePairTypeDef
 
@@ -679,7 +663,7 @@ from mypy_boto3_elbv2.type_defs import RedirectActionConfigTypeDef
 Required fields:
 
 - `StatusCode`:
-  [RedirectActionStatusCodeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#redirectactionstatuscodeenum)
+  [RedirectActionStatusCodeEnum](./literals.md#redirectactionstatuscodeenum)
 
 Optional fields:
 
@@ -689,10 +673,10 @@ Optional fields:
 - `Path`: `str`
 - `Query`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ResponseMetadata
+from mypy_boto3_elbv2.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -714,17 +698,17 @@ Optional fields:
 - `Field`: `str`
 - `Values`: `List`\[`str`\]
 - `HostHeaderConfig`:
-  [HostHeaderConditionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#hostheaderconditionconfigtypedef)
+  [HostHeaderConditionConfigTypeDef](./type_defs.md#hostheaderconditionconfigtypedef)
 - `PathPatternConfig`:
-  [PathPatternConditionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#pathpatternconditionconfigtypedef)
+  [PathPatternConditionConfigTypeDef](./type_defs.md#pathpatternconditionconfigtypedef)
 - `HttpHeaderConfig`:
-  [HttpHeaderConditionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#httpheaderconditionconfigtypedef)
+  [HttpHeaderConditionConfigTypeDef](./type_defs.md#httpheaderconditionconfigtypedef)
 - `QueryStringConfig`:
-  [QueryStringConditionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#querystringconditionconfigtypedef)
+  [QueryStringConditionConfigTypeDef](./type_defs.md#querystringconditionconfigtypedef)
 - `HttpRequestMethodConfig`:
-  [HttpRequestMethodConditionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#httprequestmethodconditionconfigtypedef)
+  [HttpRequestMethodConditionConfigTypeDef](./type_defs.md#httprequestmethodconditionconfigtypedef)
 - `SourceIpConfig`:
-  [SourceIpConditionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#sourceipconditionconfigtypedef)
+  [SourceIpConditionConfigTypeDef](./type_defs.md#sourceipconditionconfigtypedef)
 
 ## RulePriorityPairTypeDef
 
@@ -748,9 +732,8 @@ Optional fields:
 - `RuleArn`: `str`
 - `Priority`: `str`
 - `Conditions`:
-  `List`\[[RuleConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#ruleconditiontypedef)\]
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#actiontypedef)\]
+  `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `IsDefault`: `bool`
 
 ## SetIpAddressTypeOutputTypeDef
@@ -761,10 +744,9 @@ from mypy_boto3_elbv2.type_defs import SetIpAddressTypeOutputTypeDef
 
 Required fields:
 
-- `IpAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#ipaddresstype)
+- `IpAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SetRulePrioritiesOutputTypeDef
 
@@ -774,10 +756,9 @@ from mypy_boto3_elbv2.type_defs import SetRulePrioritiesOutputTypeDef
 
 Required fields:
 
-- `Rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#ruletypedef)\]
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SetSecurityGroupsOutputTypeDef
 
@@ -789,7 +770,7 @@ Required fields:
 
 - `SecurityGroupIds`: `List`\[`str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SetSubnetsOutputTypeDef
 
@@ -800,11 +781,10 @@ from mypy_boto3_elbv2.type_defs import SetSubnetsOutputTypeDef
 Required fields:
 
 - `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#availabilityzonetypedef)\]
-- `IpAddressType`:
-  [IpAddressType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#ipaddresstype)
+  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
+- `IpAddressType`: [IpAddressType](./literals.md#ipaddresstype)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SourceIpConditionConfigTypeDef
 
@@ -825,8 +805,7 @@ from mypy_boto3_elbv2.type_defs import SslPolicyTypeDef
 Optional fields:
 
 - `SslProtocols`: `List`\[`str`\]
-- `Ciphers`:
-  `List`\[[CipherTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#ciphertypedef)\]
+- `Ciphers`: `List`\[[CipherTypeDef](./type_defs.md#ciphertypedef)\]
 - `Name`: `str`
 
 ## SubnetMappingTypeDef
@@ -851,8 +830,7 @@ from mypy_boto3_elbv2.type_defs import TagDescriptionTypeDef
 Optional fields:
 
 - `ResourceArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -926,12 +904,10 @@ Optional fields:
 
 - `TargetGroupArn`: `str`
 - `TargetGroupName`: `str`
-- `Protocol`:
-  [ProtocolEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#protocolenum)
+- `Protocol`: [ProtocolEnum](./literals.md#protocolenum)
 - `Port`: `int`
 - `VpcId`: `str`
-- `HealthCheckProtocol`:
-  [ProtocolEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#protocolenum)
+- `HealthCheckProtocol`: [ProtocolEnum](./literals.md#protocolenum)
 - `HealthCheckPort`: `str`
 - `HealthCheckEnabled`: `bool`
 - `HealthCheckIntervalSeconds`: `int`
@@ -939,11 +915,9 @@ Optional fields:
 - `HealthyThresholdCount`: `int`
 - `UnhealthyThresholdCount`: `int`
 - `HealthCheckPath`: `str`
-- `Matcher`:
-  [MatcherTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#matchertypedef)
+- `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 - `LoadBalancerArns`: `List`\[`str`\]
-- `TargetType`:
-  [TargetTypeEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#targettypeenum)
+- `TargetType`: [TargetTypeEnum](./literals.md#targettypeenum)
 - `ProtocolVersion`: `str`
 
 ## TargetHealthDescriptionTypeDef
@@ -954,11 +928,9 @@ from mypy_boto3_elbv2.type_defs import TargetHealthDescriptionTypeDef
 
 Optional fields:
 
-- `Target`:
-  [TargetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetdescriptiontypedef)
+- `Target`: [TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)
 - `HealthCheckPort`: `str`
-- `TargetHealth`:
-  [TargetHealthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targethealthtypedef)
+- `TargetHealth`: [TargetHealthTypeDef](./type_defs.md#targethealthtypedef)
 
 ## TargetHealthTypeDef
 
@@ -968,10 +940,8 @@ from mypy_boto3_elbv2.type_defs import TargetHealthTypeDef
 
 Optional fields:
 
-- `State`:
-  [TargetHealthStateEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#targethealthstateenum)
-- `Reason`:
-  [TargetHealthReasonEnum](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/literals.html#targethealthreasonenum)
+- `State`: [TargetHealthStateEnum](./literals.md#targethealthstateenum)
+- `Reason`: [TargetHealthReasonEnum](./literals.md#targethealthreasonenum)
 - `Description`: `str`
 
 ## WaiterConfigTypeDef

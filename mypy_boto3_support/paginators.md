@@ -1,6 +1,6 @@
 # Paginators for boto3 Support module
 
-> [Index](../README.md) > [Support](./README.md) > Paginators
+> [Index](..) > [Support](.) > Paginators
 
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
@@ -37,10 +37,10 @@ Arguments for `DescribeCasesPaginator.paginate` method:
 - `language`: `str`
 - `includeCommunications`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCasesPaginator.paginate` returns
-`Iterator`\[[DescribeCasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecasesresponsetypedef)\].
+`Iterator`\[[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef)\].
 
 ## DescribeCommunicationsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `DescribeCommunicationsPaginator.paginate` method:
 - `beforeTime`: `str`
 - `afterTime`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCommunicationsPaginator.paginate` returns
-`Iterator`\[[DescribeCommunicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_support/type_defs.html#describecommunicationsresponsetypedef)\].
+`Iterator`\[[DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef)\].

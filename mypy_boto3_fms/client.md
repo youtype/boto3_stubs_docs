@@ -1,6 +1,6 @@
 # FMSClient for boto3 FMS module
 
-> [Index](../README.md) > [FMS](./README.md) > FMSClient
+> [Index](..) > [FMS](.) > FMSClient
 
 Auto-generated documentation for
 [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
@@ -177,7 +177,7 @@ Boto3 documentation:
 [FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
 
 Returns
-[GetAdminAccountResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getadminaccountresponsetypedef).
+[GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef).
 
 ### get_apps_list
 
@@ -192,7 +192,7 @@ Arguments:
 - `DefaultList`: `bool`
 
 Returns
-[GetAppsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getappslistresponsetypedef).
+[GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef).
 
 ### get_compliance_detail
 
@@ -207,7 +207,7 @@ Arguments:
 - `MemberAccount`: `str` *(required)*
 
 Returns
-[GetComplianceDetailResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getcompliancedetailresponsetypedef).
+[GetComplianceDetailResponseTypeDef](./type_defs.md#getcompliancedetailresponsetypedef).
 
 ### get_notification_channel
 
@@ -217,7 +217,7 @@ Boto3 documentation:
 [FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
 
 Returns
-[GetNotificationChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getnotificationchannelresponsetypedef).
+[GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef).
 
 ### get_policy
 
@@ -230,8 +230,7 @@ Arguments:
 
 - `PolicyId`: `str` *(required)*
 
-Returns
-[GetPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getpolicyresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_protection_status
 
@@ -250,7 +249,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetProtectionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getprotectionstatusresponsetypedef).
+[GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef).
 
 ### get_protocols_list
 
@@ -265,7 +264,7 @@ Arguments:
 - `DefaultList`: `bool`
 
 Returns
-[GetProtocolsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getprotocolslistresponsetypedef).
+[GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef).
 
 ### get_violation_details
 
@@ -282,7 +281,7 @@ Arguments:
 - `ResourceType`: `str` *(required)*
 
 Returns
-[GetViolationDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#getviolationdetailsresponsetypedef).
+[GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef).
 
 ### list_apps_lists
 
@@ -298,7 +297,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppsListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listappslistsresponsetypedef).
+[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef).
 
 ### list_compliance_status
 
@@ -314,7 +313,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListComplianceStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listcompliancestatusresponsetypedef).
+[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef).
 
 ### list_member_accounts
 
@@ -329,7 +328,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMemberAccountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listmemberaccountsresponsetypedef).
+[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef).
 
 ### list_policies
 
@@ -344,7 +343,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listpoliciesresponsetypedef).
+[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
 
 ### list_protocols_lists
 
@@ -360,7 +359,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProtocolsListsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listprotocolslistsresponsetypedef).
+[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -374,7 +373,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_apps_list
 
@@ -385,14 +384,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `AppsList`:
-  [AppsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#appslistdatatypedef)
+- `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
   *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutAppsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#putappslistresponsetypedef).
+[PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef).
 
 ### put_notification_channel
 
@@ -415,14 +412,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `Policy`:
-  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#policytypedef)
-  *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[PutPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#putpolicyresponsetypedef).
+Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
 
 ### put_protocols_list
 
@@ -434,13 +427,12 @@ Boto3 documentation:
 Arguments:
 
 - `ProtocolsList`:
-  [ProtocolsListDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#protocolslistdatatypedef)
+  [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
   *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutProtocolsListResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#putprotocolslistresponsetypedef).
+[PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef).
 
 ### tag_resource
 
@@ -452,9 +444,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fms/type_defs.html#tagtypedef)\]
-  *(required)*
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

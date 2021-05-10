@@ -1,6 +1,6 @@
 # Literals for boto3 SecurityHub module
 
-> [Index](../README.md) > [SecurityHub](./README.md) > Literals
+> [Index](..) > [SecurityHub](.) > Literals
 
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)

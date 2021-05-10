@@ -1,6 +1,6 @@
 # Type annotations for boto3 Route53Resolver module
 
-> [Index](../README.md) > Route53Resolver
+> [Index](..) > Route53Resolver
 
 Auto-generated documentation for
 [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)

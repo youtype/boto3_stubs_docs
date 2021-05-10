@@ -1,6 +1,6 @@
 # Literals for boto3 Budgets module
 
-> [Index](../README.md) > [Budgets](./README.md) > Literals
+> [Index](..) > [Budgets](.) > Literals
 
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)

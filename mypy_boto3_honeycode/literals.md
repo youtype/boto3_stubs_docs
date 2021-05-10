@@ -1,6 +1,6 @@
 # Literals for boto3 Honeycode module
 
-> [Index](../README.md) > [Honeycode](./README.md) > Literals
+> [Index](..) > [Honeycode](.) > Literals
 
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)

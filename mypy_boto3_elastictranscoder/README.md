@@ -1,6 +1,6 @@
 # Type annotations for boto3 ElasticTranscoder module
 
-> [Index](../README.md) > ElasticTranscoder
+> [Index](..) > ElasticTranscoder
 
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
@@ -161,7 +161,7 @@ from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef, ...
 - [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef)
 - [ReadPipelineResponseTypeDef](./type_defs.md#readpipelineresponsetypedef)
 - [ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef)
 - [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
 - [TimeSpanTypeDef](./type_defs.md#timespantypedef)

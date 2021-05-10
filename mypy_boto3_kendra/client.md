@@ -1,6 +1,6 @@
 # KendraClient for boto3 Kendra module
 
-> [Index](../README.md) > [Kendra](./README.md) > KendraClient
+> [Index](..) > [Kendra](.) > KendraClient
 
 Auto-generated documentation for
 [Kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#Kendra)
@@ -99,10 +99,10 @@ Arguments:
 - `IndexId`: `str` *(required)*
 - `DocumentIdList`: `List`\[`str`\] *(required)*
 - `DataSourceSyncJobMetricTarget`:
-  [DataSourceSyncJobMetricTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourcesyncjobmetrictargettypedef)
+  [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
 
 Returns
-[BatchDeleteDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#batchdeletedocumentresponsetypedef).
+[BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
 
 ### batch_put_document
 
@@ -114,13 +114,12 @@ Boto3 documentation:
 Arguments:
 
 - `IndexId`: `str` *(required)*
-- `Documents`:
-  `List`\[[DocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documenttypedef)\]
+- `Documents`: `List`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
   *(required)*
 - `RoleArn`: `str`
 
 Returns
-[BatchPutDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#batchputdocumentresponsetypedef).
+[BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
 
 ### can_paginate
 
@@ -146,20 +145,17 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `IndexId`: `str` *(required)*
-- `Type`:
-  [DataSourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcetype)
-  *(required)*
+- `Type`: [DataSourceType](./literals.md#datasourcetype) *(required)*
 - `Configuration`:
-  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourceconfigurationtypedef)
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 Returns
-[CreateDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createdatasourceresponsetypedef).
+[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
 ### create_faq
 
@@ -172,19 +168,14 @@ Arguments:
 
 - `IndexId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `S3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
-  *(required)*
+- `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
-- `FileFormat`:
-  [FaqFileFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#faqfileformat)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FileFormat`: [FaqFileFormat](./literals.md#faqfileformat)
 - `ClientToken`: `str`
 
-Returns
-[CreateFaqResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createfaqresponsetypedef).
+Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
 
 ### create_index
 
@@ -197,21 +188,18 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `Edition`:
-  [IndexEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#indexedition)
+- `Edition`: [IndexEdition](./literals.md#indexedition)
 - `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#serversideencryptionconfigurationtypedef)
+  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usertokenconfigurationtypedef)\]
-- `UserContextPolicy`:
-  [UserContextPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#usercontextpolicy)
+  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`: [UserContextPolicy](./literals.md#usercontextpolicy)
 
 Returns
-[CreateIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createindexresponsetypedef).
+[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
 ### create_thesaurus
 
@@ -225,16 +213,13 @@ Arguments:
 - `IndexId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `SourceS3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
-  *(required)*
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 Returns
-[CreateThesaurusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#createthesaurusresponsetypedef).
+[CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef).
 
 ### delete_data_source
 
@@ -296,7 +281,7 @@ Arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeDataSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describedatasourceresponsetypedef).
+[DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
 
 ### describe_faq
 
@@ -311,7 +296,7 @@ Arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeFaqResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describefaqresponsetypedef).
+[DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef).
 
 ### describe_index
 
@@ -325,7 +310,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describeindexresponsetypedef).
+[DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
 
 ### describe_thesaurus
 
@@ -340,7 +325,7 @@ Arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeThesaurusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#describethesaurusresponsetypedef).
+[DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
 
 ### generate_presigned_url
 
@@ -372,13 +357,12 @@ Arguments:
 - `IndexId`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `StartTimeFilter`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#timerangetypedef)
+- `StartTimeFilter`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `StatusFilter`:
-  [DataSourceSyncJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#datasourcesyncjobstatus)
+  [DataSourceSyncJobStatus](./literals.md#datasourcesyncjobstatus)
 
 Returns
-[ListDataSourceSyncJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listdatasourcesyncjobsresponsetypedef).
+[ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef).
 
 ### list_data_sources
 
@@ -394,7 +378,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listdatasourcesresponsetypedef).
+[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
 ### list_faqs
 
@@ -409,8 +393,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListFaqsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listfaqsresponsetypedef).
+Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
 
 ### list_indices
 
@@ -425,7 +408,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listindicesresponsetypedef).
+[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -439,7 +422,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_thesauri
 
@@ -455,7 +438,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListThesauriResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#listthesauriresponsetypedef).
+[ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
 
 ### query
 
@@ -469,24 +452,20 @@ Arguments:
 - `IndexId`: `str` *(required)*
 - `QueryText`: `str` *(required)*
 - `AttributeFilter`:
-  [AttributeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#attributefiltertypedef)
-- `Facets`:
-  `List`\[[FacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#facettypedef)\]
+  [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
+- `Facets`: `List`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
 - `RequestedDocumentAttributes`: `List`\[`str`\]
-- `QueryResultTypeFilter`:
-  [QueryResultType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#queryresulttype)
+- `QueryResultTypeFilter`: [QueryResultType](./literals.md#queryresulttype)
 - `DocumentRelevanceOverrideConfigurations`:
-  `List`\[[DocumentRelevanceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentrelevanceconfigurationtypedef)\]
+  `List`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
 - `PageNumber`: `int`
 - `PageSize`: `int`
 - `SortingConfiguration`:
-  [SortingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#sortingconfigurationtypedef)
-- `UserContext`:
-  [UserContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usercontexttypedef)
+  [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
+- `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
 
-Returns
-[QueryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#queryresulttypedef).
+Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
 
 ### start_data_source_sync_job
 
@@ -502,7 +481,7 @@ Arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[StartDataSourceSyncJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#startdatasourcesyncjobresponsetypedef).
+[StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef).
 
 ### stop_data_source_sync_job
 
@@ -528,9 +507,9 @@ Arguments:
 - `IndexId`: `str` *(required)*
 - `QueryId`: `str` *(required)*
 - `ClickFeedbackItems`:
-  `List`\[[ClickFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#clickfeedbacktypedef)\]
+  `List`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
 - `RelevanceFeedbackItems`:
-  `List`\[[RelevanceFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#relevancefeedbacktypedef)\]
+  `List`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
 ### tag_resource
 
@@ -542,9 +521,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -575,7 +552,7 @@ Arguments:
 - `IndexId`: `str` *(required)*
 - `Name`: `str`
 - `Configuration`:
-  [DataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#datasourceconfigurationtypedef)
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
@@ -594,13 +571,12 @@ Arguments:
 - `RoleArn`: `str`
 - `Description`: `str`
 - `DocumentMetadataConfigurationUpdates`:
-  `List`\[[DocumentMetadataConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#documentmetadataconfigurationtypedef)\]
+  `List`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
 - `CapacityUnits`:
-  [CapacityUnitsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#capacityunitsconfigurationtypedef)
+  [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#usertokenconfigurationtypedef)\]
-- `UserContextPolicy`:
-  [UserContextPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/literals.html#usercontextpolicy)
+  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`: [UserContextPolicy](./literals.md#usercontextpolicy)
 
 ### update_thesaurus
 
@@ -616,5 +592,4 @@ Arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `RoleArn`: `str`
-- `SourceS3Path`:
-  [S3PathTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kendra/type_defs.html#s3pathtypedef)
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)

@@ -1,7 +1,6 @@
 # RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module
 
-> [Index](../README.md) > [RedshiftDataAPIService](./README.md) >
-> RedshiftDataAPIServiceClient
+> [Index](..) > [RedshiftDataAPIService](.) > RedshiftDataAPIServiceClient
 
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
@@ -89,7 +88,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[CancelStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#cancelstatementresponsetypedef).
+[CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef).
 
 ### describe_statement
 
@@ -103,7 +102,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeStatementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#describestatementresponsetypedef).
+[DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef).
 
 ### describe_table
 
@@ -125,7 +124,7 @@ Arguments:
 - `Table`: `str`
 
 Returns
-[DescribeTableResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#describetableresponsetypedef).
+[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
 ### execute_statement
 
@@ -145,7 +144,7 @@ Arguments:
 - `WithEvent`: `bool`
 
 Returns
-[ExecuteStatementOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#executestatementoutputtypedef).
+[ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
 ### generate_presigned_url
 
@@ -178,7 +177,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetStatementResultResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#getstatementresultresponsetypedef).
+[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef).
 
 ### list_databases
 
@@ -197,7 +196,7 @@ Arguments:
 - `SecretArn`: `str`
 
 Returns
-[ListDatabasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listdatabasesresponsetypedef).
+[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
 
 ### list_schemas
 
@@ -218,7 +217,7 @@ Arguments:
 - `SecretArn`: `str`
 
 Returns
-[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listschemasresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_statements
 
@@ -233,11 +232,10 @@ Arguments:
 - `NextToken`: `str`
 - `RoleLevel`: `bool`
 - `StatementName`: `str`
-- `Status`:
-  [StatusString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/literals.html#statusstring)
+- `Status`: [StatusString](./literals.md#statusstring)
 
 Returns
-[ListStatementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#liststatementsresponsetypedef).
+[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
 
 ### list_tables
 
@@ -258,8 +256,7 @@ Arguments:
 - `SecretArn`: `str`
 - `TablePattern`: `str`
 
-Returns
-[ListTablesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift_data/type_defs.html#listtablesresponsetypedef).
+Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
 
 ### get_paginator
 

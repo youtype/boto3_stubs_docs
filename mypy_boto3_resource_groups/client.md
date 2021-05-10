@@ -1,6 +1,6 @@
 # ResourceGroupsClient for boto3 ResourceGroups module
 
-> [Index](../README.md) > [ResourceGroups](./README.md) > ResourceGroupsClient
+> [Index](..) > [ResourceGroups](.) > ResourceGroupsClient
 
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
@@ -96,14 +96,12 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `ResourceQuery`:
-  [ResourceQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcequerytypedef)
+- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationitemtypedef)\]
+  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
-Returns
-[CreateGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#creategroupoutputtypedef).
+Returns [CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef).
 
 ### delete_group
 
@@ -117,8 +115,7 @@ Arguments:
 - `GroupName`: `str`
 - `Group`: `str`
 
-Returns
-[DeleteGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#deletegroupoutputtypedef).
+Returns [DeleteGroupOutputTypeDef](./type_defs.md#deletegroupoutputtypedef).
 
 ### generate_presigned_url
 
@@ -149,8 +146,7 @@ Arguments:
 - `GroupName`: `str`
 - `Group`: `str`
 
-Returns
-[GetGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#getgroupoutputtypedef).
+Returns [GetGroupOutputTypeDef](./type_defs.md#getgroupoutputtypedef).
 
 ### get_group_configuration
 
@@ -165,7 +161,7 @@ Arguments:
 - `Group`: `str`
 
 Returns
-[GetGroupConfigurationOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#getgroupconfigurationoutputtypedef).
+[GetGroupConfigurationOutputTypeDef](./type_defs.md#getgroupconfigurationoutputtypedef).
 
 ### get_group_query
 
@@ -180,7 +176,7 @@ Arguments:
 - `Group`: `str`
 
 Returns
-[GetGroupQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#getgroupqueryoutputtypedef).
+[GetGroupQueryOutputTypeDef](./type_defs.md#getgroupqueryoutputtypedef).
 
 ### get_tags
 
@@ -193,8 +189,7 @@ Arguments:
 
 - `Arn`: `str` *(required)*
 
-Returns
-[GetTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#gettagsoutputtypedef).
+Returns [GetTagsOutputTypeDef](./type_defs.md#gettagsoutputtypedef).
 
 ### group_resources
 
@@ -209,7 +204,7 @@ Arguments:
 - `ResourceArns`: `List`\[`str`\] *(required)*
 
 Returns
-[GroupResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupresourcesoutputtypedef).
+[GroupResourcesOutputTypeDef](./type_defs.md#groupresourcesoutputtypedef).
 
 ### list_group_resources
 
@@ -224,12 +219,12 @@ Arguments:
 - `GroupName`: `str`
 - `Group`: `str`
 - `Filters`:
-  `List`\[[ResourceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcefiltertypedef)\]
+  `List`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListGroupResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#listgroupresourcesoutputtypedef).
+[ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef).
 
 ### list_groups
 
@@ -240,13 +235,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  `List`\[[GroupFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupfiltertypedef)\]
+- `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#listgroupsoutputtypedef).
+Returns [ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef).
 
 ### put_group_configuration
 
@@ -260,7 +253,7 @@ Arguments:
 
 - `Group`: `str`
 - `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupconfigurationitemtypedef)\]
+  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -273,14 +266,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `ResourceQuery`:
-  [ResourceQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcequerytypedef)
+- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
   *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[SearchResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#searchresourcesoutputtypedef).
+[SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef).
 
 ### tag
 
@@ -294,8 +286,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#tagoutputtypedef).
+Returns [TagOutputTypeDef](./type_defs.md#tagoutputtypedef).
 
 ### ungroup_resources
 
@@ -311,7 +302,7 @@ Arguments:
 - `ResourceArns`: `List`\[`str`\] *(required)*
 
 Returns
-[UngroupResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#ungroupresourcesoutputtypedef).
+[UngroupResourcesOutputTypeDef](./type_defs.md#ungroupresourcesoutputtypedef).
 
 ### untag
 
@@ -325,8 +316,7 @@ Arguments:
 - `Arn`: `str` *(required)*
 - `Keys`: `List`\[`str`\] *(required)*
 
-Returns
-[UntagOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#untagoutputtypedef).
+Returns [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef).
 
 ### update_group
 
@@ -341,8 +331,7 @@ Arguments:
 - `Group`: `str`
 - `Description`: `str`
 
-Returns
-[UpdateGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#updategroupoutputtypedef).
+Returns [UpdateGroupOutputTypeDef](./type_defs.md#updategroupoutputtypedef).
 
 ### update_group_query
 
@@ -354,14 +343,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `ResourceQuery`:
-  [ResourceQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcequerytypedef)
+- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
   *(required)*
 - `GroupName`: `str`
 - `Group`: `str`
 
 Returns
-[UpdateGroupQueryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#updategroupqueryoutputtypedef).
+[UpdateGroupQueryOutputTypeDef](./type_defs.md#updategroupqueryoutputtypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Paginators for boto3 ECS module
 
-> [Index](../README.md) > [ECS](./README.md) > Paginators
+> [Index](..) > [ECS](.) > Paginators
 
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
@@ -36,16 +36,15 @@ Boto3 documentation:
 
 Arguments for `ListAccountSettingsPaginator.paginate` method:
 
-- `name`:
-  [SettingName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#settingname)
+- `name`: [SettingName](./literals.md#settingname)
 - `value`: `str`
 - `principalArn`: `str`
 - `effectiveSettings`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountSettingsPaginator.paginate` returns
-`Iterator`\[[ListAccountSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listaccountsettingsresponsetypedef)\].
+`Iterator`\[[ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef)\].
 
 ## ListAttributesPaginator
 
@@ -65,15 +64,16 @@ Boto3 documentation:
 
 Arguments for `ListAttributesPaginator.paginate` method:
 
-- `targetType`: `Literal['container-instance']` *(required)*
+- `targetType`: `Literal['container-instance']` (see
+  [TargetType](./literals.md#targettype)) *(required)*
 - `cluster`: `str`
 - `attributeName`: `str`
 - `attributeValue`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttributesPaginator.paginate` returns
-`Iterator`\[[ListAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listattributesresponsetypedef)\].
+`Iterator`\[[ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef)\].
 
 ## ListClustersPaginator
 
@@ -94,10 +94,10 @@ Boto3 documentation:
 Arguments for `ListClustersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listclustersresponsetypedef)\].
+`Iterator`\[[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)\].
 
 ## ListContainerInstancesPaginator
 
@@ -120,13 +120,12 @@ Arguments for `ListContainerInstancesPaginator.paginate` method:
 
 - `cluster`: `str`
 - `filter`: `str`
-- `status`:
-  [ContainerInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#containerinstancestatus)
+- `status`: [ContainerInstanceStatus](./literals.md#containerinstancestatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContainerInstancesPaginator.paginate` returns
-`Iterator`\[[ListContainerInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listcontainerinstancesresponsetypedef)\].
+`Iterator`\[[ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef)\].
 
 ## ListServicesPaginator
 
@@ -147,15 +146,13 @@ Boto3 documentation:
 Arguments for `ListServicesPaginator.paginate` method:
 
 - `cluster`: `str`
-- `launchType`:
-  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
-- `schedulingStrategy`:
-  [SchedulingStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#schedulingstrategy)
+- `launchType`: [LaunchType](./literals.md#launchtype)
+- `schedulingStrategy`: [SchedulingStrategy](./literals.md#schedulingstrategy)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServicesPaginator.paginate` returns
-`Iterator`\[[ListServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listservicesresponsetypedef)\].
+`Iterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
 
 ## ListTaskDefinitionFamiliesPaginator
 
@@ -178,12 +175,12 @@ Arguments for `ListTaskDefinitionFamiliesPaginator.paginate` method:
 
 - `familyPrefix`: `str`
 - `status`:
-  [TaskDefinitionFamilyStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#taskdefinitionfamilystatus)
+  [TaskDefinitionFamilyStatus](./literals.md#taskdefinitionfamilystatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTaskDefinitionFamiliesPaginator.paginate` returns
-`Iterator`\[[ListTaskDefinitionFamiliesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtaskdefinitionfamiliesresponsetypedef)\].
+`Iterator`\[[ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef)\].
 
 ## ListTaskDefinitionsPaginator
 
@@ -205,15 +202,13 @@ Boto3 documentation:
 Arguments for `ListTaskDefinitionsPaginator.paginate` method:
 
 - `familyPrefix`: `str`
-- `status`:
-  [TaskDefinitionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#taskdefinitionstatus)
-- `sort`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#sortorder)
+- `status`: [TaskDefinitionStatus](./literals.md#taskdefinitionstatus)
+- `sort`: [SortOrder](./literals.md#sortorder)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTaskDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListTaskDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtaskdefinitionsresponsetypedef)\].
+`Iterator`\[[ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef)\].
 
 ## ListTasksPaginator
 
@@ -238,12 +233,10 @@ Arguments for `ListTasksPaginator.paginate` method:
 - `family`: `str`
 - `startedBy`: `str`
 - `serviceName`: `str`
-- `desiredStatus`:
-  [DesiredStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#desiredstatus)
-- `launchType`:
-  [LaunchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/literals.html#launchtype)
+- `desiredStatus`: [DesiredStatus](./literals.md#desiredstatus)
+- `launchType`: [LaunchType](./literals.md#launchtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTasksPaginator.paginate` returns
-`Iterator`\[[ListTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecs/type_defs.html#listtasksresponsetypedef)\].
+`Iterator`\[[ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef)\].

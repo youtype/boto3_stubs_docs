@@ -1,6 +1,6 @@
 # Type annotations for boto3 AppSync module
 
-> [Index](../README.md) > AppSync
+> [Index](..) > AppSync
 
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)

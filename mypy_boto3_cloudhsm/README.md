@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudHSM module
 
-> [Index](../README.md) > CloudHSM
+> [Index](..) > CloudHSM
 
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)

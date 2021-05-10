@@ -1,6 +1,6 @@
 # BraketClient for boto3 Braket module
 
-> [Index](../README.md) > [Braket](./README.md) > BraketClient
+> [Index](..) > [Braket](.) > BraketClient
 
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
@@ -92,7 +92,7 @@ Arguments:
 - `quantumTaskArn`: `str` *(required)*
 
 Returns
-[CancelQuantumTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#cancelquantumtaskresponsetypedef).
+[CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef).
 
 ### create_quantum_task
 
@@ -113,7 +113,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQuantumTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#createquantumtaskresponsetypedef).
+[CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef).
 
 ### generate_presigned_url
 
@@ -142,8 +142,7 @@ Arguments:
 
 - `deviceArn`: `str` *(required)*
 
-Returns
-[GetDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#getdeviceresponsetypedef).
+Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
 ### get_quantum_task
 
@@ -157,7 +156,7 @@ Arguments:
 - `quantumTaskArn`: `str` *(required)*
 
 Returns
-[GetQuantumTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#getquantumtaskresponsetypedef).
+[GetQuantumTaskResponseTypeDef](./type_defs.md#getquantumtaskresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -171,7 +170,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### search_devices
 
@@ -183,13 +182,13 @@ Boto3 documentation:
 Arguments:
 
 - `filters`:
-  `List`\[[SearchDevicesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesfiltertypedef)\]
+  `List`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
   *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[SearchDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchdevicesresponsetypedef).
+[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
 
 ### search_quantum_tasks
 
@@ -201,13 +200,13 @@ Boto3 documentation:
 Arguments:
 
 - `filters`:
-  `List`\[[SearchQuantumTasksFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksfiltertypedef)\]
+  `List`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
   *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[SearchQuantumTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_braket/type_defs.html#searchquantumtasksresponsetypedef).
+[SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef).
 
 ### tag_resource
 

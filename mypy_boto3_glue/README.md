@@ -1,6 +1,6 @@
 # Type annotations for boto3 Glue module
 
-> [Index](../README.md) > Glue
+> [Index](..) > Glue
 
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)

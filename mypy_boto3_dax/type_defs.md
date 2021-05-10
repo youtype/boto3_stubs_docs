@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DAX module
 
-> [Index](../README.md) > [DAX](./README.md) > Structures
+> [Index](..) > [DAX](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
@@ -62,22 +62,19 @@ Optional fields:
 - `ActiveNodes`: `int`
 - `NodeType`: `str`
 - `Status`: `str`
-- `ClusterDiscoveryEndpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#endpointtypedef)
+- `ClusterDiscoveryEndpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `NodeIdsToRemove`: `List`\[`str`\]
-- `Nodes`:
-  `List`\[[NodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#nodetypedef)\]
+- `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#notificationconfigurationtypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 - `SubnetGroup`: `str`
 - `SecurityGroups`:
-  `List`\[[SecurityGroupMembershipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#securitygroupmembershiptypedef)\]
+  `List`\[[SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef)\]
 - `IamRoleArn`: `str`
 - `ParameterGroup`:
-  [ParameterGroupStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#parametergroupstatustypedef)
-- `SSEDescription`:
-  [SSEDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#ssedescriptiontypedef)
+  [ParameterGroupStatusTypeDef](./type_defs.md#parametergroupstatustypedef)
+- `SSEDescription`: [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 
 ## CreateClusterResponseTypeDef
 
@@ -87,8 +84,7 @@ from mypy_boto3_dax.type_defs import CreateClusterResponseTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## CreateParameterGroupResponseTypeDef
 
@@ -98,8 +94,7 @@ from mypy_boto3_dax.type_defs import CreateParameterGroupResponseTypeDef
 
 Optional fields:
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#parametergrouptypedef)
+- `ParameterGroup`: [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 
 ## CreateSubnetGroupResponseTypeDef
 
@@ -109,8 +104,7 @@ from mypy_boto3_dax.type_defs import CreateSubnetGroupResponseTypeDef
 
 Optional fields:
 
-- `SubnetGroup`:
-  [SubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#subnetgrouptypedef)
+- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
 
 ## DecreaseReplicationFactorResponseTypeDef
 
@@ -120,8 +114,7 @@ from mypy_boto3_dax.type_defs import DecreaseReplicationFactorResponseTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## DeleteClusterResponseTypeDef
 
@@ -131,8 +124,7 @@ from mypy_boto3_dax.type_defs import DeleteClusterResponseTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## DeleteParameterGroupResponseTypeDef
 
@@ -163,8 +155,7 @@ from mypy_boto3_dax.type_defs import DescribeClustersResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Clusters`:
-  `List`\[[ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)\]
+- `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
 
 ## DescribeDefaultParametersResponseTypeDef
 
@@ -175,8 +166,7 @@ from mypy_boto3_dax.type_defs import DescribeDefaultParametersResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## DescribeEventsResponseTypeDef
 
@@ -187,8 +177,7 @@ from mypy_boto3_dax.type_defs import DescribeEventsResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Events`:
-  `List`\[[EventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#eventtypedef)\]
+- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 ## DescribeParameterGroupsResponseTypeDef
 
@@ -200,7 +189,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `ParameterGroups`:
-  `List`\[[ParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#parametergrouptypedef)\]
+  `List`\[[ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)\]
 
 ## DescribeParametersResponseTypeDef
 
@@ -211,8 +200,7 @@ from mypy_boto3_dax.type_defs import DescribeParametersResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## DescribeSubnetGroupsResponseTypeDef
 
@@ -224,7 +212,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `SubnetGroups`:
-  `List`\[[SubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#subnetgrouptypedef)\]
+  `List`\[[SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)\]
 
 ## EndpointTypeDef
 
@@ -246,8 +234,7 @@ from mypy_boto3_dax.type_defs import EventTypeDef
 Optional fields:
 
 - `SourceName`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `Message`: `str`
 - `Date`: `datetime`
 
@@ -259,8 +246,7 @@ from mypy_boto3_dax.type_defs import IncreaseReplicationFactorResponseTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## ListTagsResponseTypeDef
 
@@ -270,8 +256,7 @@ from mypy_boto3_dax.type_defs import ListTagsResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## NodeTypeDef
@@ -283,8 +268,7 @@ from mypy_boto3_dax.type_defs import NodeTypeDef
 Optional fields:
 
 - `NodeId`: `str`
-- `Endpoint`:
-  [EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#endpointtypedef)
+- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `NodeCreateTime`: `datetime`
 - `AvailabilityZone`: `str`
 - `NodeStatus`: `str`
@@ -367,19 +351,16 @@ from mypy_boto3_dax.type_defs import ParameterTypeDef
 Optional fields:
 
 - `ParameterName`: `str`
-- `ParameterType`:
-  [ParameterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/literals.html#parametertype)
+- `ParameterType`: [ParameterType](./literals.md#parametertype)
 - `ParameterValue`: `str`
 - `NodeTypeSpecificValues`:
-  `List`\[[NodeTypeSpecificValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#nodetypespecificvaluetypedef)\]
+  `List`\[[NodeTypeSpecificValueTypeDef](./type_defs.md#nodetypespecificvaluetypedef)\]
 - `Description`: `str`
 - `Source`: `str`
 - `DataType`: `str`
 - `AllowedValues`: `str`
-- `IsModifiable`:
-  [IsModifiable](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/literals.html#ismodifiable)
-- `ChangeType`:
-  [ChangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/literals.html#changetype)
+- `IsModifiable`: [IsModifiable](./literals.md#ismodifiable)
+- `ChangeType`: [ChangeType](./literals.md#changetype)
 
 ## RebootNodeResponseTypeDef
 
@@ -389,8 +370,7 @@ from mypy_boto3_dax.type_defs import RebootNodeResponseTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## SSEDescriptionTypeDef
 
@@ -400,8 +380,7 @@ from mypy_boto3_dax.type_defs import SSEDescriptionTypeDef
 
 Optional fields:
 
-- `Status`:
-  [SSEStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/literals.html#ssestatus)
+- `Status`: [SSEStatus](./literals.md#ssestatus)
 
 ## SSESpecificationTypeDef
 
@@ -435,8 +414,7 @@ Optional fields:
 - `SubnetGroupName`: `str`
 - `Description`: `str`
 - `VpcId`: `str`
-- `Subnets`:
-  `List`\[[SubnetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#subnettypedef)\]
+- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 
 ## SubnetTypeDef
 
@@ -457,8 +435,7 @@ from mypy_boto3_dax.type_defs import TagResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -479,8 +456,7 @@ from mypy_boto3_dax.type_defs import UntagResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateClusterResponseTypeDef
 
@@ -490,8 +466,7 @@ from mypy_boto3_dax.type_defs import UpdateClusterResponseTypeDef
 
 Optional fields:
 
-- `Cluster`:
-  [ClusterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#clustertypedef)
+- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 
 ## UpdateParameterGroupResponseTypeDef
 
@@ -501,8 +476,7 @@ from mypy_boto3_dax.type_defs import UpdateParameterGroupResponseTypeDef
 
 Optional fields:
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#parametergrouptypedef)
+- `ParameterGroup`: [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 
 ## UpdateSubnetGroupResponseTypeDef
 
@@ -512,5 +486,4 @@ from mypy_boto3_dax.type_defs import UpdateSubnetGroupResponseTypeDef
 
 Optional fields:
 
-- `SubnetGroup`:
-  [SubnetGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dax/type_defs.html#subnetgrouptypedef)
+- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)

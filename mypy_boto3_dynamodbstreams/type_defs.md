@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DynamoDBStreams module
 
-> [Index](../README.md) > [DynamoDBStreams](./README.md) > Structures
+> [Index](..) > [DynamoDBStreams](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
@@ -16,7 +16,7 @@ type annotations stubs module
   - [KeySchemaElementTypeDef](#keyschemaelementtypedef)
   - [ListStreamsOutputTypeDef](#liststreamsoutputtypedef)
   - [RecordTypeDef](#recordtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SequenceNumberRangeTypeDef](#sequencenumberrangetypedef)
   - [ShardTypeDef](#shardtypedef)
   - [StreamDescriptionTypeDef](#streamdescriptiontypedef)
@@ -38,9 +38,8 @@ Optional fields:
 - `NS`: `List`\[`str`\]
 - `BS`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
 - `M`: `Dict`\[`str`,
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#attributevaluetypedef)\]
-- `L`:
-  `List`\[[AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#attributevaluetypedef)\]
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
+- `L`: `List`\[[AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `NULL`: `bool`
 - `BOOL`: `bool`
 
@@ -53,9 +52,9 @@ from mypy_boto3_dynamodbstreams.type_defs import DescribeStreamOutputTypeDef
 Required fields:
 
 - `StreamDescription`:
-  [StreamDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#streamdescriptiontypedef)
+  [StreamDescriptionTypeDef](./type_defs.md#streamdescriptiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetRecordsOutputTypeDef
 
@@ -65,11 +64,10 @@ from mypy_boto3_dynamodbstreams.type_defs import GetRecordsOutputTypeDef
 
 Required fields:
 
-- `Records`:
-  `List`\[[RecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#recordtypedef)\]
+- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 - `NextShardIterator`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetShardIteratorOutputTypeDef
 
@@ -81,7 +79,7 @@ Required fields:
 
 - `ShardIterator`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IdentityTypeDef
 
@@ -103,8 +101,7 @@ from mypy_boto3_dynamodbstreams.type_defs import KeySchemaElementTypeDef
 Required fields:
 
 - `AttributeName`: `str`
-- `KeyType`:
-  [KeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#keytype)
+- `KeyType`: [KeyType](./literals.md#keytype)
 
 ## ListStreamsOutputTypeDef
 
@@ -114,11 +111,10 @@ from mypy_boto3_dynamodbstreams.type_defs import ListStreamsOutputTypeDef
 
 Required fields:
 
-- `Streams`:
-  `List`\[[StreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#streamtypedef)\]
+- `Streams`: `List`\[[StreamTypeDef](./type_defs.md#streamtypedef)\]
 - `LastEvaluatedStreamArn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RecordTypeDef
 
@@ -129,20 +125,17 @@ from mypy_boto3_dynamodbstreams.type_defs import RecordTypeDef
 Optional fields:
 
 - `eventID`: `str`
-- `eventName`:
-  [OperationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#operationtype)
+- `eventName`: [OperationType](./literals.md#operationtype)
 - `eventVersion`: `str`
 - `eventSource`: `str`
 - `awsRegion`: `str`
-- `dynamodb`:
-  [StreamRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#streamrecordtypedef)
-- `userIdentity`:
-  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#identitytypedef)
+- `dynamodb`: [StreamRecordTypeDef](./type_defs.md#streamrecordtypedef)
+- `userIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_dynamodbstreams.type_defs import ResponseMetadata
+from mypy_boto3_dynamodbstreams.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -174,7 +167,7 @@ Optional fields:
 
 - `ShardId`: `str`
 - `SequenceNumberRange`:
-  [SequenceNumberRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#sequencenumberrangetypedef)
+  [SequenceNumberRangeTypeDef](./type_defs.md#sequencenumberrangetypedef)
 - `ParentShardId`: `str`
 
 ## StreamDescriptionTypeDef
@@ -187,16 +180,13 @@ Optional fields:
 
 - `StreamArn`: `str`
 - `StreamLabel`: `str`
-- `StreamStatus`:
-  [StreamStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#streamstatus)
-- `StreamViewType`:
-  [StreamViewType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#streamviewtype)
+- `StreamStatus`: [StreamStatus](./literals.md#streamstatus)
+- `StreamViewType`: [StreamViewType](./literals.md#streamviewtype)
 - `CreationRequestDateTime`: `datetime`
 - `TableName`: `str`
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#keyschemaelementtypedef)\]
-- `Shards`:
-  `List`\[[ShardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#shardtypedef)\]
+  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+- `Shards`: `List`\[[ShardTypeDef](./type_defs.md#shardtypedef)\]
 - `LastEvaluatedShardId`: `str`
 
 ## StreamRecordTypeDef
@@ -209,15 +199,14 @@ Optional fields:
 
 - `ApproximateCreationDateTime`: `datetime`
 - `Keys`: `Dict`\[`str`,
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#attributevaluetypedef)\]
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `NewImage`: `Dict`\[`str`,
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#attributevaluetypedef)\]
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `OldImage`: `Dict`\[`str`,
-  [AttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/type_defs.html#attributevaluetypedef)\]
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `SequenceNumber`: `str`
 - `SizeBytes`: `int`
-- `StreamViewType`:
-  [StreamViewType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dynamodbstreams/literals.html#streamviewtype)
+- `StreamViewType`: [StreamViewType](./literals.md#streamviewtype)
 
 ## StreamTypeDef
 

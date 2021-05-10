@@ -1,6 +1,6 @@
 # Literals for boto3 Glue module
 
-> [Index](../README.md) > [Glue](./README.md) > Literals
+> [Index](..) > [Glue](.) > Literals
 
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)

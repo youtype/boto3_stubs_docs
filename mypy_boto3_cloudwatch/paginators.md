@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudWatch module
 
-> [Index](../README.md) > [CloudWatch](./README.md) > Paginators
+> [Index](..) > [CloudWatch](.) > Paginators
 
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
@@ -34,19 +34,16 @@ Boto3 documentation:
 Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
 
 - `AlarmName`: `str`
-- `AlarmTypes`:
-  `List`\[[AlarmType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#alarmtype)\]
-- `HistoryItemType`:
-  [HistoryItemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#historyitemtype)
+- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
+- `HistoryItemType`: [HistoryItemType](./literals.md#historyitemtype)
 - `StartDate`: `datetime`
 - `EndDate`: `datetime`
-- `ScanBy`:
-  [ScanBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#scanby)
+- `ScanBy`: [ScanBy](./literals.md#scanby)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#describealarmhistoryoutputtypedef)\].
+`Iterator`\[[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)\].
 
 ## DescribeAlarmsPaginator
 
@@ -69,18 +66,16 @@ Arguments for `DescribeAlarmsPaginator.paginate` method:
 
 - `AlarmNames`: `List`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`:
-  `List`\[[AlarmType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#alarmtype)\]
+- `AlarmTypes`: `List`\[[AlarmType](./literals.md#alarmtype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
-- `StateValue`:
-  [StateValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#statevalue)
+- `StateValue`: [StateValue](./literals.md#statevalue)
 - `ActionPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmsPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#describealarmsoutputtypedef)\].
+`Iterator`\[[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)\].
 
 ## GetMetricDataPaginator
 
@@ -102,19 +97,17 @@ Boto3 documentation:
 Arguments for `GetMetricDataPaginator.paginate` method:
 
 - `MetricDataQueries`:
-  `List`\[[MetricDataQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#metricdataquerytypedef)\]
+  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
   *(required)*
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
-- `ScanBy`:
-  [ScanBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/literals.html#scanby)
-- `LabelOptions`:
-  [LabelOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#labeloptionstypedef)
+- `ScanBy`: [ScanBy](./literals.md#scanby)
+- `LabelOptions`: [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetMetricDataPaginator.paginate` returns
-`Iterator`\[[GetMetricDataOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#getmetricdataoutputtypedef)\].
+`Iterator`\[[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)\].
 
 ## ListDashboardsPaginator
 
@@ -137,10 +130,10 @@ Arguments for `ListDashboardsPaginator.paginate` method:
 
 - `DashboardNamePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDashboardsPaginator.paginate` returns
-`Iterator`\[[ListDashboardsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#listdashboardsoutputtypedef)\].
+`Iterator`\[[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)\].
 
 ## ListMetricsPaginator
 
@@ -164,10 +157,11 @@ Arguments for `ListMetricsPaginator.paginate` method:
 - `Namespace`: `str`
 - `MetricName`: `str`
 - `Dimensions`:
-  `List`\[[DimensionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#dimensionfiltertypedef)\]
-- `RecentlyActive`: `Literal['PT3H']`
+  `List`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
+- `RecentlyActive`: `Literal['PT3H']` (see
+  [RecentlyActive](./literals.md#recentlyactive))
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMetricsPaginator.paginate` returns
-`Iterator`\[[ListMetricsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudwatch/type_defs.html#listmetricsoutputtypedef)\].
+`Iterator`\[[ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)\].

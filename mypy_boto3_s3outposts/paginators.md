@@ -1,6 +1,6 @@
 # Paginators for boto3 S3Outposts module
 
-> [Index](../README.md) > [S3Outposts](./README.md) > Paginators
+> [Index](..) > [S3Outposts](.) > Paginators
 
 Auto-generated documentation for
 [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
@@ -30,7 +30,7 @@ Boto3 documentation:
 Arguments for `ListEndpointsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3outposts/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointsPaginator.paginate` returns
-`Iterator`\[[ListEndpointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3outposts/type_defs.html#listendpointsresulttypedef)\].
+`Iterator`\[[ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)\].

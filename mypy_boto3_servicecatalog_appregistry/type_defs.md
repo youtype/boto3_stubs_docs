@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AppRegistry module
 
-> [Index](../README.md) > [AppRegistry](./README.md) > Structures
+> [Index](..) > [AppRegistry](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
@@ -125,8 +125,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import CreateApplicationRes
 
 Optional fields:
 
-- `application`:
-  [ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationtypedef)
+- `application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 
 ## CreateAttributeGroupResponseTypeDef
 
@@ -136,8 +135,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroup
 
 Optional fields:
 
-- `attributeGroup`:
-  [AttributeGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegrouptypedef)
+- `attributeGroup`: [AttributeGroupTypeDef](./type_defs.md#attributegrouptypedef)
 
 ## DeleteApplicationResponseTypeDef
 
@@ -148,7 +146,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationRes
 Optional fields:
 
 - `application`:
-  [ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationsummarytypedef)
+  [ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)
 
 ## DeleteAttributeGroupResponseTypeDef
 
@@ -159,7 +157,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroup
 Optional fields:
 
 - `attributeGroup`:
-  [AttributeGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegroupsummarytypedef)
+  [AttributeGroupSummaryTypeDef](./type_defs.md#attributegroupsummarytypedef)
 
 ## DisassociateAttributeGroupResponseTypeDef
 
@@ -226,7 +224,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ListApplicationsResp
 Optional fields:
 
 - `applications`:
-  `List`\[[ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationsummarytypedef)\]
+  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListAssociatedAttributeGroupsResponseTypeDef
@@ -249,7 +247,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedResour
 Optional fields:
 
 - `resources`:
-  `List`\[[ResourceInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#resourceinfotypedef)\]
+  `List`\[[ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)\]
 - `nextToken`: `str`
 
 ## ListAttributeGroupsResponseTypeDef
@@ -261,7 +259,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsR
 Optional fields:
 
 - `attributeGroups`:
-  `List`\[[AttributeGroupSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegroupsummarytypedef)\]
+  `List`\[[AttributeGroupSummaryTypeDef](./type_defs.md#attributegroupsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -307,8 +305,7 @@ Optional fields:
 
 - `applicationArn`: `str`
 - `resourceArn`: `str`
-- `actionTaken`:
-  [SyncAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/literals.html#syncaction)
+- `actionTaken`: [SyncAction](./literals.md#syncaction)
 
 ## UpdateApplicationResponseTypeDef
 
@@ -318,8 +315,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateApplicationRes
 
 Optional fields:
 
-- `application`:
-  [ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#applicationtypedef)
+- `application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 
 ## UpdateAttributeGroupResponseTypeDef
 
@@ -329,5 +325,4 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroup
 
 Optional fields:
 
-- `attributeGroup`:
-  [AttributeGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog_appregistry/type_defs.html#attributegrouptypedef)
+- `attributeGroup`: [AttributeGroupTypeDef](./type_defs.md#attributegrouptypedef)

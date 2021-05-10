@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IoT1ClickDevicesService module
 
-> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Structures
+> [Index](..) > [IoT1ClickDevicesService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
@@ -44,7 +44,7 @@ from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceResponseTypeDef
 Optional fields:
 
 - `DeviceDescription`:
-  [DeviceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicedescriptiontypedef)
+  [DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef)
 
 ## DeviceDescriptionTypeDef
 
@@ -70,8 +70,7 @@ from mypy_boto3_iot1click_devices.type_defs import DeviceEventTypeDef
 
 Optional fields:
 
-- `Device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicetypedef)
+- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 - `StdEvent`: `str`
 
 ## DeviceMethodTypeDef
@@ -116,7 +115,7 @@ from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsResponseTypeD
 Optional fields:
 
 - `DeviceMethods`:
-  `List`\[[DeviceMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicemethodtypedef)\]
+  `List`\[[DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)\]
 
 ## InitiateDeviceClaimResponseTypeDef
 
@@ -146,8 +145,7 @@ from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseTypeD
 
 Optional fields:
 
-- `Events`:
-  `List`\[[DeviceEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#deviceeventtypedef)\]
+- `Events`: `List`\[[DeviceEventTypeDef](./type_defs.md#deviceeventtypedef)\]
 - `NextToken`: `str`
 
 ## ListDevicesResponseTypeDef
@@ -159,7 +157,7 @@ from mypy_boto3_iot1click_devices.type_defs import ListDevicesResponseTypeDef
 Optional fields:
 
 - `Devices`:
-  `List`\[[DeviceDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_devices/type_defs.html#devicedescriptiontypedef)\]
+  `List`\[[DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef

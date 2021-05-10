@@ -1,6 +1,6 @@
 # PricingClient for boto3 Pricing module
 
-> [Index](../README.md) > [Pricing](./README.md) > PricingClient
+> [Index](..) > [Pricing](.) > PricingClient
 
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
@@ -85,7 +85,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeServicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#describeservicesresponsetypedef).
+[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -118,7 +118,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetAttributeValuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#getattributevaluesresponsetypedef).
+[GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef).
 
 ### get_products
 
@@ -130,14 +130,13 @@ Boto3 documentation:
 Arguments:
 
 - `ServiceCode`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `FormatVersion`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[GetProductsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_pricing/type_defs.html#getproductsresponsetypedef).
+[GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef).
 
 ### get_paginator
 

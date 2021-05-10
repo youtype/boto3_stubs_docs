@@ -1,6 +1,6 @@
 # Type annotations for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../README.md) > KinesisVideoSignalingChannels
+> [Index](..) > KinesisVideoSignalingChannels
 
 Auto-generated documentation for
 [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 FMS module
 
-> [Index](../README.md) > FMS
+> [Index](..) > FMS
 
 Auto-generated documentation for
 [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)

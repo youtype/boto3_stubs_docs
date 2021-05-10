@@ -1,6 +1,6 @@
 # Waiters for boto3 ElasticLoadBalancingv2 module
 
-> [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Waiters
+> [Index](..) > [ElasticLoadBalancingv2](.) > Waiters
 
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
@@ -37,8 +37,7 @@ Arguments for `LoadBalancerAvailableWaiter.wait` method:
 - `Names`: `List`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## LoadBalancerExistsWaiter
 
@@ -63,8 +62,7 @@ Arguments for `LoadBalancerExistsWaiter.wait` method:
 - `Names`: `List`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## LoadBalancersDeletedWaiter
 
@@ -89,8 +87,7 @@ Arguments for `LoadBalancersDeletedWaiter.wait` method:
 - `Names`: `List`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TargetDeregisteredWaiter
 
@@ -112,9 +109,8 @@ Arguments for `TargetDeregisteredWaiter.wait` method:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetdescriptiontypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TargetInServiceWaiter
 
@@ -136,6 +132,5 @@ Arguments for `TargetInServiceWaiter.wait` method:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#targetdescriptiontypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elbv2/type_defs.html#waiterconfigtypedef)
+  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

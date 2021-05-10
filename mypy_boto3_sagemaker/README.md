@@ -1,6 +1,6 @@
 # Type annotations for boto3 SageMaker module
 
-> [Index](../README.md) > SageMaker
+> [Index](..) > SageMaker
 
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
@@ -1032,7 +1032,7 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
 - [ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef)
 - [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RetentionPolicyTypeDef](./type_defs.md#retentionpolicytypedef)
 - [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - [S3DataSourceTypeDef](./type_defs.md#s3datasourcetypedef)

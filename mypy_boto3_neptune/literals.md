@@ -1,6 +1,6 @@
 # Literals for boto3 Neptune module
 
-> [Index](../README.md) > [Neptune](./README.md) > Literals
+> [Index](..) > [Neptune](.) > Literals
 
 Auto-generated documentation for
 [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)

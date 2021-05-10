@@ -1,6 +1,6 @@
 # Paginators for boto3 LocationService module
 
-> [Index](../README.md) > [LocationService](./README.md) > Paginators
+> [Index](..) > [LocationService](.) > Paginators
 
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
@@ -40,10 +40,10 @@ Arguments for `GetDevicePositionHistoryPaginator.paginate` method:
 - `EndTimeExclusive`: `datetime`
 - `StartTimeInclusive`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevicePositionHistoryPaginator.paginate` returns
-`Iterator`\[[GetDevicePositionHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#getdevicepositionhistoryresponsetypedef)\].
+`Iterator`\[[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)\].
 
 ## ListGeofenceCollectionsPaginator
 
@@ -65,10 +65,10 @@ Boto3 documentation:
 Arguments for `ListGeofenceCollectionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeofenceCollectionsPaginator.paginate` returns
-`Iterator`\[[ListGeofenceCollectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencecollectionsresponsetypedef)\].
+`Iterator`\[[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)\].
 
 ## ListGeofencesPaginator
 
@@ -91,10 +91,10 @@ Arguments for `ListGeofencesPaginator.paginate` method:
 
 - `CollectionName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeofencesPaginator.paginate` returns
-`Iterator`\[[ListGeofencesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listgeofencesresponsetypedef)\].
+`Iterator`\[[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef)\].
 
 ## ListMapsPaginator
 
@@ -115,10 +115,10 @@ Boto3 documentation:
 Arguments for `ListMapsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMapsPaginator.paginate` returns
-`Iterator`\[[ListMapsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listmapsresponsetypedef)\].
+`Iterator`\[[ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)\].
 
 ## ListPlaceIndexesPaginator
 
@@ -140,10 +140,10 @@ Boto3 documentation:
 Arguments for `ListPlaceIndexesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaceIndexesPaginator.paginate` returns
-`Iterator`\[[ListPlaceIndexesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listplaceindexesresponsetypedef)\].
+`Iterator`\[[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)\].
 
 ## ListTrackerConsumersPaginator
 
@@ -166,10 +166,10 @@ Arguments for `ListTrackerConsumersPaginator.paginate` method:
 
 - `TrackerName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrackerConsumersPaginator.paginate` returns
-`Iterator`\[[ListTrackerConsumersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackerconsumersresponsetypedef)\].
+`Iterator`\[[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)\].
 
 ## ListTrackersPaginator
 
@@ -190,7 +190,7 @@ Boto3 documentation:
 Arguments for `ListTrackersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrackersPaginator.paginate` returns
-`Iterator`\[[ListTrackersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_location/type_defs.html#listtrackersresponsetypedef)\].
+`Iterator`\[[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)\].

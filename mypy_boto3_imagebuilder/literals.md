@@ -1,6 +1,6 @@
 # Literals for boto3 Imagebuilder module
 
-> [Index](../README.md) > [Imagebuilder](./README.md) > Literals
+> [Index](..) > [Imagebuilder](.) > Literals
 
 Auto-generated documentation for
 [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)

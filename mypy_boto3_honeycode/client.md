@@ -1,6 +1,6 @@
 # HoneycodeClient for boto3 Honeycode module
 
-> [Index](../README.md) > [Honeycode](./README.md) > HoneycodeClient
+> [Index](..) > [Honeycode](.) > HoneycodeClient
 
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
@@ -84,12 +84,12 @@ Arguments:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `rowsToCreate`:
-  `List`\[[CreateRowDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#createrowdatatypedef)\]
+  `List`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
 Returns
-[BatchCreateTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchcreatetablerowsresulttypedef).
+[BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef).
 
 ### batch_delete_table_rows
 
@@ -107,7 +107,7 @@ Arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchDeleteTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchdeletetablerowsresulttypedef).
+[BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef).
 
 ### batch_update_table_rows
 
@@ -122,12 +122,12 @@ Arguments:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `rowsToUpdate`:
-  `List`\[[UpdateRowDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#updaterowdatatypedef)\]
+  `List`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
 Returns
-[BatchUpdateTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchupdatetablerowsresulttypedef).
+[BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef).
 
 ### batch_upsert_table_rows
 
@@ -142,12 +142,12 @@ Arguments:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `rowsToUpsert`:
-  `List`\[[UpsertRowDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#upsertrowdatatypedef)\]
+  `List`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
 Returns
-[BatchUpsertTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#batchupserttablerowsresulttypedef).
+[BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef).
 
 ### can_paginate
 
@@ -177,7 +177,7 @@ Arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeTableDataImportJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#describetabledataimportjobresulttypedef).
+[DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef).
 
 ### generate_presigned_url
 
@@ -208,12 +208,12 @@ Arguments:
 - `appId`: `str` *(required)*
 - `screenId`: `str` *(required)*
 - `variables`: `Dict`\[`str`,
-  [VariableValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#variablevaluetypedef)\]
+  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[GetScreenDataResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#getscreendataresulttypedef).
+[GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef).
 
 ### invoke_screen_automation
 
@@ -230,12 +230,12 @@ Arguments:
 - `screenId`: `str` *(required)*
 - `screenAutomationId`: `str` *(required)*
 - `variables`: `Dict`\[`str`,
-  [VariableValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#variablevaluetypedef)\]
+  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
 - `rowId`: `str`
 - `clientRequestToken`: `str`
 
 Returns
-[InvokeScreenAutomationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#invokescreenautomationresulttypedef).
+[InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef).
 
 ### list_table_columns
 
@@ -251,7 +251,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTableColumnsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablecolumnsresulttypedef).
+[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef).
 
 ### list_table_rows
 
@@ -269,7 +269,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablerowsresulttypedef).
+[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef).
 
 ### list_tables
 
@@ -284,8 +284,7 @@ Arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablesresulttypedef).
+Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
 
 ### query_table_rows
 
@@ -298,14 +297,12 @@ Arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
-- `filterFormula`:
-  [FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#filtertypedef)
-  *(required)*
+- `filterFormula`: [FilterTypeDef](./type_defs.md#filtertypedef) *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[QueryTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#querytablerowsresulttypedef).
+[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef).
 
 ### start_table_data_import_job
 
@@ -318,18 +315,17 @@ Boto3 documentation:
 Arguments:
 
 - `workbookId`: `str` *(required)*
-- `dataSource`:
-  [ImportDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importdatasourcetypedef)
+- `dataSource`: [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
   *(required)*
-- `dataFormat`: `Literal['DELIMITED_TEXT']` *(required)*
+- `dataFormat`: `Literal['DELIMITED_TEXT']` (see
+  [ImportSourceDataFormat](./literals.md#importsourcedataformat)) *(required)*
 - `destinationTableId`: `str` *(required)*
-- `importOptions`:
-  [ImportOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importoptionstypedef)
+- `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
   *(required)*
 - `clientRequestToken`: `str` *(required)*
 
 Returns
-[StartTableDataImportJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#starttabledataimportjobresulttypedef).
+[StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
 
 ### get_paginator
 

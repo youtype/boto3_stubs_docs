@@ -1,6 +1,6 @@
 # IoTSiteWiseClient for boto3 IoTSiteWise module
 
-> [Index](../README.md) > [IoTSiteWise](./README.md) > IoTSiteWiseClient
+> [Index](..) > [IoTSiteWise](.) > IoTSiteWiseClient
 
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
@@ -147,7 +147,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[BatchAssociateProjectAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#batchassociateprojectassetsresponsetypedef).
+[BatchAssociateProjectAssetsResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponsetypedef).
 
 ### batch_disassociate_project_assets
 
@@ -164,7 +164,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[BatchDisassociateProjectAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#batchdisassociateprojectassetsresponsetypedef).
+[BatchDisassociateProjectAssetsResponseTypeDef](./type_defs.md#batchdisassociateprojectassetsresponsetypedef).
 
 ### batch_put_asset_property_value
 
@@ -177,11 +177,11 @@ Boto3 documentation:
 Arguments:
 
 - `entries`:
-  `List`\[[PutAssetPropertyValueEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#putassetpropertyvalueentrytypedef)\]
+  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
   *(required)*
 
 Returns
-[BatchPutAssetPropertyValueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#batchputassetpropertyvalueresponsetypedef).
+[BatchPutAssetPropertyValueResponseTypeDef](./type_defs.md#batchputassetpropertyvalueresponsetypedef).
 
 ### can_paginate
 
@@ -205,20 +205,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `accessPolicyIdentity`:
-  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#identitytypedef)
+- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
   *(required)*
-- `accessPolicyResource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#resourcetypedef)
+- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
   *(required)*
-- `accessPolicyPermission`:
-  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#permission)
-  *(required)*
+- `accessPolicyPermission`: [Permission](./literals.md#permission) *(required)*
 - `clientToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAccessPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#createaccesspolicyresponsetypedef).
+[CreateAccessPolicyResponseTypeDef](./type_defs.md#createaccesspolicyresponsetypedef).
 
 ### create_asset
 
@@ -235,7 +231,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#createassetresponsetypedef).
+[CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
 
 ### create_asset_model
 
@@ -249,16 +245,16 @@ Arguments:
 - `assetModelName`: `str` *(required)*
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelpropertydefinitiontypedef)\]
+  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelhierarchydefinitiontypedef)\]
+  `List`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelcompositemodeldefinitiontypedef)\]
+  `List`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
 - `clientToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssetModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#createassetmodelresponsetypedef).
+[CreateAssetModelResponseTypeDef](./type_defs.md#createassetmodelresponsetypedef).
 
 ### create_dashboard
 
@@ -277,7 +273,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDashboardResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#createdashboardresponsetypedef).
+[CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
 
 ### create_gateway
 
@@ -290,12 +286,11 @@ Arguments:
 
 - `gatewayName`: `str` *(required)*
 - `gatewayPlatform`:
-  [GatewayPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#gatewayplatformtypedef)
-  *(required)*
+  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#creategatewayresponsetypedef).
+[CreateGatewayResponseTypeDef](./type_defs.md#creategatewayresponsetypedef).
 
 ### create_portal
 
@@ -311,14 +306,12 @@ Arguments:
 - `roleArn`: `str` *(required)*
 - `portalDescription`: `str`
 - `clientToken`: `str`
-- `portalLogoImageFile`:
-  [ImageFileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#imagefiletypedef)
+- `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
 - `tags`: `Dict`\[`str`, `str`\]
-- `portalAuthMode`:
-  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#authmode)
+- `portalAuthMode`: [AuthMode](./literals.md#authmode)
 
 Returns
-[CreatePortalResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#createportalresponsetypedef).
+[CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
 
 ### create_project
 
@@ -336,7 +329,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#createprojectresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### delete_access_policy
 
@@ -365,7 +358,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#deleteassetresponsetypedef).
+[DeleteAssetResponseTypeDef](./type_defs.md#deleteassetresponsetypedef).
 
 ### delete_asset_model
 
@@ -380,7 +373,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteAssetModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#deleteassetmodelresponsetypedef).
+[DeleteAssetModelResponseTypeDef](./type_defs.md#deleteassetmodelresponsetypedef).
 
 ### delete_dashboard
 
@@ -420,7 +413,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[DeletePortalResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#deleteportalresponsetypedef).
+[DeletePortalResponseTypeDef](./type_defs.md#deleteportalresponsetypedef).
 
 ### delete_project
 
@@ -449,7 +442,7 @@ Arguments:
 - `accessPolicyId`: `str` *(required)*
 
 Returns
-[DescribeAccessPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeaccesspolicyresponsetypedef).
+[DescribeAccessPolicyResponseTypeDef](./type_defs.md#describeaccesspolicyresponsetypedef).
 
 ### describe_asset
 
@@ -463,7 +456,7 @@ Arguments:
 - `assetId`: `str` *(required)*
 
 Returns
-[DescribeAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeassetresponsetypedef).
+[DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
 
 ### describe_asset_model
 
@@ -477,7 +470,7 @@ Arguments:
 - `assetModelId`: `str` *(required)*
 
 Returns
-[DescribeAssetModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeassetmodelresponsetypedef).
+[DescribeAssetModelResponseTypeDef](./type_defs.md#describeassetmodelresponsetypedef).
 
 ### describe_asset_property
 
@@ -493,7 +486,7 @@ Arguments:
 - `propertyId`: `str` *(required)*
 
 Returns
-[DescribeAssetPropertyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeassetpropertyresponsetypedef).
+[DescribeAssetPropertyResponseTypeDef](./type_defs.md#describeassetpropertyresponsetypedef).
 
 ### describe_dashboard
 
@@ -507,7 +500,7 @@ Arguments:
 - `dashboardId`: `str` *(required)*
 
 Returns
-[DescribeDashboardResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describedashboardresponsetypedef).
+[DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
 
 ### describe_default_encryption_configuration
 
@@ -518,7 +511,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
 
 Returns
-[DescribeDefaultEncryptionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describedefaultencryptionconfigurationresponsetypedef).
+[DescribeDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponsetypedef).
 
 ### describe_gateway
 
@@ -532,7 +525,7 @@ Arguments:
 - `gatewayId`: `str` *(required)*
 
 Returns
-[DescribeGatewayResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describegatewayresponsetypedef).
+[DescribeGatewayResponseTypeDef](./type_defs.md#describegatewayresponsetypedef).
 
 ### describe_gateway_capability_configuration
 
@@ -548,7 +541,7 @@ Arguments:
 - `capabilityNamespace`: `str` *(required)*
 
 Returns
-[DescribeGatewayCapabilityConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describegatewaycapabilityconfigurationresponsetypedef).
+[DescribeGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponsetypedef).
 
 ### describe_logging_options
 
@@ -559,7 +552,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
 
 Returns
-[DescribeLoggingOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeloggingoptionsresponsetypedef).
+[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
 ### describe_portal
 
@@ -573,7 +566,7 @@ Arguments:
 - `portalId`: `str` *(required)*
 
 Returns
-[DescribePortalResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeportalresponsetypedef).
+[DescribePortalResponseTypeDef](./type_defs.md#describeportalresponsetypedef).
 
 ### describe_project
 
@@ -587,7 +580,7 @@ Arguments:
 - `projectId`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#describeprojectresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
 ### disassociate_assets
 
@@ -630,8 +623,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `aggregateTypes`:
-  `List`\[[AggregateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#aggregatetype)\]
+- `aggregateTypes`: `List`\[[AggregateType](./literals.md#aggregatetype)\]
   *(required)*
 - `resolution`: `str` *(required)*
 - `startDate`: `datetime` *(required)*
@@ -639,15 +631,13 @@ Arguments:
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`:
-  `List`\[[Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)\]
-- `timeOrdering`:
-  [TimeOrdering](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#timeordering)
+- `qualities`: `List`\[[Quality](./literals.md#quality)\]
+- `timeOrdering`: [TimeOrdering](./literals.md#timeordering)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[GetAssetPropertyAggregatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyaggregatesresponsetypedef).
+[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef).
 
 ### get_asset_property_value
 
@@ -664,7 +654,7 @@ Arguments:
 - `propertyAlias`: `str`
 
 Returns
-[GetAssetPropertyValueResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyvalueresponsetypedef).
+[GetAssetPropertyValueResponseTypeDef](./type_defs.md#getassetpropertyvalueresponsetypedef).
 
 ### get_asset_property_value_history
 
@@ -681,15 +671,13 @@ Arguments:
 - `propertyAlias`: `str`
 - `startDate`: `datetime`
 - `endDate`: `datetime`
-- `qualities`:
-  `List`\[[Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)\]
-- `timeOrdering`:
-  [TimeOrdering](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#timeordering)
+- `qualities`: `List`\[[Quality](./literals.md#quality)\]
+- `timeOrdering`: [TimeOrdering](./literals.md#timeordering)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[GetAssetPropertyValueHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getassetpropertyvaluehistoryresponsetypedef).
+[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef).
 
 ### get_interpolated_asset_property_values
 
@@ -703,9 +691,7 @@ Arguments:
 
 - `startTimeInSeconds`: `int` *(required)*
 - `endTimeInSeconds`: `int` *(required)*
-- `quality`:
-  [Quality](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#quality)
-  *(required)*
+- `quality`: [Quality](./literals.md#quality) *(required)*
 - `intervalInSeconds`: `int` *(required)*
 - `type`: `str` *(required)*
 - `assetId`: `str`
@@ -717,7 +703,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetInterpolatedAssetPropertyValuesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#getinterpolatedassetpropertyvaluesresponsetypedef).
+[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef).
 
 ### list_access_policies
 
@@ -728,18 +714,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `identityType`:
-  [IdentityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#identitytype)
+- `identityType`: [IdentityType](./literals.md#identitytype)
 - `identityId`: `str`
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `resourceId`: `str`
 - `iamArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listaccesspoliciesresponsetypedef).
+[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef).
 
 ### list_asset_models
 
@@ -754,7 +738,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssetModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetmodelsresponsetypedef).
+[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef).
 
 ### list_asset_relationships
 
@@ -767,12 +751,13 @@ Boto3 documentation:
 Arguments:
 
 - `assetId`: `str` *(required)*
-- `traversalType`: `Literal['PATH_TO_ROOT']` *(required)*
+- `traversalType`: `Literal['PATH_TO_ROOT']` (see
+  [TraversalType](./literals.md#traversaltype)) *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssetRelationshipsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetrelationshipsresponsetypedef).
+[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef).
 
 ### list_assets
 
@@ -786,11 +771,9 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `assetModelId`: `str`
-- `filter`:
-  [ListAssetsFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#listassetsfilter)
+- `filter`: [ListAssetsFilter](./literals.md#listassetsfilter)
 
-Returns
-[ListAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassetsresponsetypedef).
+Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
 
 ### list_associated_assets
 
@@ -804,13 +787,12 @@ Arguments:
 
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str`
-- `traversalDirection`:
-  [TraversalDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#traversaldirection)
+- `traversalDirection`: [TraversalDirection](./literals.md#traversaldirection)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listassociatedassetsresponsetypedef).
+[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef).
 
 ### list_dashboards
 
@@ -826,7 +808,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDashboardsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listdashboardsresponsetypedef).
+[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
 
 ### list_gateways
 
@@ -841,7 +823,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListGatewaysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listgatewaysresponsetypedef).
+[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
 
 ### list_portals
 
@@ -856,7 +838,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPortalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listportalsresponsetypedef).
+[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
 
 ### list_project_assets
 
@@ -872,7 +854,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListProjectAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listprojectassetsresponsetypedef).
+[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef).
 
 ### list_projects
 
@@ -888,7 +870,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listprojectsresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -903,7 +885,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_default_encryption_configuration
 
@@ -915,13 +897,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `encryptionType`:
-  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#encryptiontype)
-  *(required)*
+- `encryptionType`: [EncryptionType](./literals.md#encryptiontype) *(required)*
 - `kmsKeyId`: `str`
 
 Returns
-[PutDefaultEncryptionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#putdefaultencryptionconfigurationresponsetypedef).
+[PutDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#putdefaultencryptionconfigurationresponsetypedef).
 
 ### put_logging_options
 
@@ -932,8 +912,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#loggingoptionstypedef)
+- `loggingOptions`: [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -976,15 +955,11 @@ Boto3 documentation:
 Arguments:
 
 - `accessPolicyId`: `str` *(required)*
-- `accessPolicyIdentity`:
-  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#identitytypedef)
+- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
   *(required)*
-- `accessPolicyResource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#resourcetypedef)
+- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
   *(required)*
-- `accessPolicyPermission`:
-  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#permission)
-  *(required)*
+- `accessPolicyPermission`: [Permission](./literals.md#permission) *(required)*
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1003,7 +978,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#updateassetresponsetypedef).
+[UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
 
 ### update_asset_model
 
@@ -1018,15 +993,15 @@ Arguments:
 - `assetModelName`: `str` *(required)*
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelpropertytypedef)\]
+  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelhierarchytypedef)\]
+  `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#assetmodelcompositemodeltypedef)\]
+  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
 - `clientToken`: `str`
 
 Returns
-[UpdateAssetModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#updateassetmodelresponsetypedef).
+[UpdateAssetModelResponseTypeDef](./type_defs.md#updateassetmodelresponsetypedef).
 
 ### update_asset_property
 
@@ -1042,7 +1017,7 @@ Arguments:
 - `propertyId`: `str` *(required)*
 - `propertyAlias`: `str`
 - `propertyNotificationState`:
-  [PropertyNotificationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/literals.html#propertynotificationstate)
+  [PropertyNotificationState](./literals.md#propertynotificationstate)
 - `clientToken`: `str`
 
 ### update_dashboard
@@ -1089,7 +1064,7 @@ Arguments:
 - `capabilityConfiguration`: `str` *(required)*
 
 Returns
-[UpdateGatewayCapabilityConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#updategatewaycapabilityconfigurationresponsetypedef).
+[UpdateGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponsetypedef).
 
 ### update_portal
 
@@ -1105,12 +1080,11 @@ Arguments:
 - `portalContactEmail`: `str` *(required)*
 - `roleArn`: `str` *(required)*
 - `portalDescription`: `str`
-- `portalLogoImage`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#imagetypedef)
+- `portalLogoImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
 - `clientToken`: `str`
 
 Returns
-[UpdatePortalResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#updateportalresponsetypedef).
+[UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
 
 ### update_project
 

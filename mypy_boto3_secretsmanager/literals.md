@@ -1,6 +1,6 @@
 # Literals for boto3 SecretsManager module
 
-> [Index](../README.md) > [SecretsManager](./README.md) > Literals
+> [Index](..) > [SecretsManager](.) > Literals
 
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)

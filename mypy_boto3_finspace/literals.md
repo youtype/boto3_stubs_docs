@@ -1,6 +1,6 @@
 # Literals for boto3 finspace module
 
-> [Index](../README.md) > [finspace](./README.md) > Literals
+> [Index](..) > [finspace](.) > Literals
 
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)

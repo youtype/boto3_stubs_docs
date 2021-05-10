@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodeDeploy module
 
-> [Index](../README.md) > CodeDeploy
+> [Index](..) > CodeDeploy
 
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
@@ -374,7 +374,7 @@ from mypy_boto3_codedeploy.type_defs import AlarmConfigurationTypeDef, ...
 - [PutLifecycleEventHookExecutionStatusOutputTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusoutputtypedef)
 - [RawStringTypeDef](./type_defs.md#rawstringtypedef)
 - [RelatedDeploymentsTypeDef](./type_defs.md#relateddeploymentstypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RevisionInfoTypeDef](./type_defs.md#revisioninfotypedef)
 - [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
 - [RollbackInfoTypeDef](./type_defs.md#rollbackinfotypedef)

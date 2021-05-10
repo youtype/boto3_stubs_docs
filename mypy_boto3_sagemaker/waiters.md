@@ -1,6 +1,6 @@
 # Waiters for boto3 SageMaker module
 
-> [Index](../README.md) > [SageMaker](./README.md) > Waiters
+> [Index](..) > [SageMaker](.) > Waiters
 
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
@@ -37,8 +37,7 @@ Boto3 documentation:
 Arguments for `EndpointDeletedWaiter.wait` method:
 
 - `EndpointName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## EndpointInServiceWaiter
 
@@ -60,8 +59,7 @@ Boto3 documentation:
 Arguments for `EndpointInServiceWaiter.wait` method:
 
 - `EndpointName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NotebookInstanceDeletedWaiter
 
@@ -83,8 +81,7 @@ Boto3 documentation:
 Arguments for `NotebookInstanceDeletedWaiter.wait` method:
 
 - `NotebookInstanceName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NotebookInstanceInServiceWaiter
 
@@ -106,8 +103,7 @@ Boto3 documentation:
 Arguments for `NotebookInstanceInServiceWaiter.wait` method:
 
 - `NotebookInstanceName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NotebookInstanceStoppedWaiter
 
@@ -129,8 +125,7 @@ Boto3 documentation:
 Arguments for `NotebookInstanceStoppedWaiter.wait` method:
 
 - `NotebookInstanceName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ProcessingJobCompletedOrStoppedWaiter
 
@@ -152,8 +147,7 @@ Boto3 documentation:
 Arguments for `ProcessingJobCompletedOrStoppedWaiter.wait` method:
 
 - `ProcessingJobName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TrainingJobCompletedOrStoppedWaiter
 
@@ -175,8 +169,7 @@ Boto3 documentation:
 Arguments for `TrainingJobCompletedOrStoppedWaiter.wait` method:
 
 - `TrainingJobName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## TransformJobCompletedOrStoppedWaiter
 
@@ -198,5 +191,4 @@ Boto3 documentation:
 Arguments for `TransformJobCompletedOrStoppedWaiter.wait` method:
 
 - `TransformJobName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

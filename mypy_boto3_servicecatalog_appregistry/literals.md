@@ -1,6 +1,6 @@
 # Literals for boto3 AppRegistry module
 
-> [Index](../README.md) > [AppRegistry](./README.md) > Literals
+> [Index](..) > [AppRegistry](.) > Literals
 
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)

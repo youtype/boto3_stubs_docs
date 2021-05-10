@@ -1,6 +1,6 @@
 # Type annotations for boto3 mgn module
 
-> [Index](../README.md) > mgn
+> [Index](..) > mgn
 
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)

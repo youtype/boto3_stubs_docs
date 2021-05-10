@@ -1,6 +1,6 @@
 # Paginators for boto3 GlobalAccelerator module
 
-> [Index](../README.md) > [GlobalAccelerator](./README.md) > Paginators
+> [Index](..) > [GlobalAccelerator](.) > Paginators
 
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
@@ -37,10 +37,10 @@ Boto3 documentation:
 Arguments for `ListAcceleratorsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAcceleratorsPaginator.paginate` returns
-`Iterator`\[[ListAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listacceleratorsresponsetypedef)\].
+`Iterator`\[[ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef)\].
 
 ## ListByoipCidrsPaginator
 
@@ -62,10 +62,10 @@ Boto3 documentation:
 Arguments for `ListByoipCidrsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListByoipCidrsPaginator.paginate` returns
-`Iterator`\[[ListByoipCidrsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listbyoipcidrsresponsetypedef)\].
+`Iterator`\[[ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef)\].
 
 ## ListCustomRoutingAcceleratorsPaginator
 
@@ -87,10 +87,10 @@ Boto3 documentation:
 Arguments for `ListCustomRoutingAcceleratorsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomRoutingAcceleratorsPaginator.paginate` returns
-`Iterator`\[[ListCustomRoutingAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingacceleratorsresponsetypedef)\].
+`Iterator`\[[ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef)\].
 
 ## ListCustomRoutingListenersPaginator
 
@@ -113,10 +113,10 @@ Arguments for `ListCustomRoutingListenersPaginator.paginate` method:
 
 - `AcceleratorArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomRoutingListenersPaginator.paginate` returns
-`Iterator`\[[ListCustomRoutingListenersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutinglistenersresponsetypedef)\].
+`Iterator`\[[ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef)\].
 
 ## ListCustomRoutingPortMappingsPaginator
 
@@ -140,10 +140,10 @@ Arguments for `ListCustomRoutingPortMappingsPaginator.paginate` method:
 - `AcceleratorArn`: `str` *(required)*
 - `EndpointGroupArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomRoutingPortMappingsPaginator.paginate` returns
-`Iterator`\[[ListCustomRoutingPortMappingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingportmappingsresponsetypedef)\].
+`Iterator`\[[ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef)\].
 
 ## ListCustomRoutingPortMappingsByDestinationPaginator
 
@@ -168,10 +168,10 @@ method:
 - `EndpointId`: `str` *(required)*
 - `DestinationAddress`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomRoutingPortMappingsByDestinationPaginator.paginate` returns
-`Iterator`\[[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listcustomroutingportmappingsbydestinationresponsetypedef)\].
+`Iterator`\[[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef)\].
 
 ## ListEndpointGroupsPaginator
 
@@ -194,10 +194,10 @@ Arguments for `ListEndpointGroupsPaginator.paginate` method:
 
 - `ListenerArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointGroupsPaginator.paginate` returns
-`Iterator`\[[ListEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listendpointgroupsresponsetypedef)\].
+`Iterator`\[[ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef)\].
 
 ## ListListenersPaginator
 
@@ -220,7 +220,7 @@ Arguments for `ListListenersPaginator.paginate` method:
 
 - `AcceleratorArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListListenersPaginator.paginate` returns
-`Iterator`\[[ListListenersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_globalaccelerator/type_defs.html#listlistenersresponsetypedef)\].
+`Iterator`\[[ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef)\].

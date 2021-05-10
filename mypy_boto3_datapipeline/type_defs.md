@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DataPipeline module
 
-> [Index](../README.md) > [DataPipeline](./README.md) > Structures
+> [Index](..) > [DataPipeline](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
@@ -30,7 +30,7 @@ type annotations stubs module
   - [QueryTypeDef](#querytypedef)
   - [ReportTaskProgressOutputTypeDef](#reporttaskprogressoutputtypedef)
   - [ReportTaskRunnerHeartbeatOutputTypeDef](#reporttaskrunnerheartbeatoutputtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SelectorTypeDef](#selectortypedef)
   - [TagTypeDef](#tagtypedef)
   - [TaskObjectTypeDef](#taskobjecttypedef)
@@ -48,7 +48,7 @@ Required fields:
 
 - `pipelineId`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeObjectsOutputTypeDef
 
@@ -59,11 +59,11 @@ from mypy_boto3_datapipeline.type_defs import DescribeObjectsOutputTypeDef
 Required fields:
 
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
 - `marker`: `str`
 - `hasMoreResults`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribePipelinesOutputTypeDef
 
@@ -74,9 +74,9 @@ from mypy_boto3_datapipeline.type_defs import DescribePipelinesOutputTypeDef
 Required fields:
 
 - `pipelineDescriptionList`:
-  `List`\[[PipelineDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelinedescriptiontypedef)\]
+  `List`\[[PipelineDescriptionTypeDef](./type_defs.md#pipelinedescriptiontypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EvaluateExpressionOutputTypeDef
 
@@ -88,7 +88,7 @@ Required fields:
 
 - `evaluatedExpression`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FieldTypeDef
 
@@ -114,13 +114,13 @@ from mypy_boto3_datapipeline.type_defs import GetPipelineDefinitionOutputTypeDef
 Required fields:
 
 - `pipelineObjects`:
-  `List`\[[PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  `List`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
 - `parameterObjects`:
-  `List`\[[ParameterObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parameterobjecttypedef)\]
+  `List`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
 - `parameterValues`:
-  `List`\[[ParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parametervaluetypedef)\]
+  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InstanceIdentityTypeDef
 
@@ -142,11 +142,11 @@ from mypy_boto3_datapipeline.type_defs import ListPipelinesOutputTypeDef
 Required fields:
 
 - `pipelineIdList`:
-  `List`\[[PipelineIdNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineidnametypedef)\]
+  `List`\[[PipelineIdNameTypeDef](./type_defs.md#pipelineidnametypedef)\]
 - `marker`: `str`
 - `hasMoreResults`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OperatorTypeDef
 
@@ -156,8 +156,7 @@ from mypy_boto3_datapipeline.type_defs import OperatorTypeDef
 
 Optional fields:
 
-- `type`:
-  [OperatorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/literals.html#operatortype)
+- `type`: [OperatorType](./literals.md#operatortype)
 - `values`: `List`\[`str`\]
 
 ## PaginatorConfigTypeDef
@@ -193,7 +192,7 @@ Required fields:
 
 - `id`: `str`
 - `attributes`:
-  `List`\[[ParameterAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#parameterattributetypedef)\]
+  `List`\[[ParameterAttributeTypeDef](./type_defs.md#parameterattributetypedef)\]
 
 ## ParameterValueTypeDef
 
@@ -216,14 +215,12 @@ Required fields:
 
 - `pipelineId`: `str`
 - `name`: `str`
-- `fields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#fieldtypedef)\]
+- `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 Optional fields:
 
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PipelineIdNameTypeDef
 
@@ -246,8 +243,7 @@ Required fields:
 
 - `id`: `str`
 - `name`: `str`
-- `fields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#fieldtypedef)\]
+- `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 ## PollForTaskOutputTypeDef
 
@@ -257,10 +253,9 @@ from mypy_boto3_datapipeline.type_defs import PollForTaskOutputTypeDef
 
 Required fields:
 
-- `taskObject`:
-  [TaskObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#taskobjecttypedef)
+- `taskObject`: [TaskObjectTypeDef](./type_defs.md#taskobjecttypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutPipelineDefinitionOutputTypeDef
 
@@ -271,12 +266,12 @@ from mypy_boto3_datapipeline.type_defs import PutPipelineDefinitionOutputTypeDef
 Required fields:
 
 - `validationErrors`:
-  `List`\[[ValidationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#validationerrortypedef)\]
+  `List`\[[ValidationErrorTypeDef](./type_defs.md#validationerrortypedef)\]
 - `validationWarnings`:
-  `List`\[[ValidationWarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#validationwarningtypedef)\]
+  `List`\[[ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)\]
 - `errored`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueryObjectsOutputTypeDef
 
@@ -290,7 +285,7 @@ Required fields:
 - `marker`: `str`
 - `hasMoreResults`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueryTypeDef
 
@@ -300,8 +295,7 @@ from mypy_boto3_datapipeline.type_defs import QueryTypeDef
 
 Optional fields:
 
-- `selectors`:
-  `List`\[[SelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#selectortypedef)\]
+- `selectors`: `List`\[[SelectorTypeDef](./type_defs.md#selectortypedef)\]
 
 ## ReportTaskProgressOutputTypeDef
 
@@ -313,7 +307,7 @@ Required fields:
 
 - `canceled`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReportTaskRunnerHeartbeatOutputTypeDef
 
@@ -325,12 +319,12 @@ Required fields:
 
 - `terminate`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_datapipeline.type_defs import ResponseMetadata
+from mypy_boto3_datapipeline.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -350,8 +344,7 @@ from mypy_boto3_datapipeline.type_defs import SelectorTypeDef
 Optional fields:
 
 - `fieldName`: `str`
-- `operator`:
-  [OperatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#operatortypedef)
+- `operator`: [OperatorTypeDef](./type_defs.md#operatortypedef)
 
 ## TagTypeDef
 
@@ -376,7 +369,7 @@ Optional fields:
 - `pipelineId`: `str`
 - `attemptId`: `str`
 - `objects`: `Dict`\[`str`,
-  [PipelineObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#pipelineobjecttypedef)\]
+  [PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
 
 ## ValidatePipelineDefinitionOutputTypeDef
 
@@ -387,12 +380,12 @@ from mypy_boto3_datapipeline.type_defs import ValidatePipelineDefinitionOutputTy
 Required fields:
 
 - `validationErrors`:
-  `List`\[[ValidationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#validationerrortypedef)\]
+  `List`\[[ValidationErrorTypeDef](./type_defs.md#validationerrortypedef)\]
 - `validationWarnings`:
-  `List`\[[ValidationWarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#validationwarningtypedef)\]
+  `List`\[[ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)\]
 - `errored`: `bool`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_datapipeline/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ValidationErrorTypeDef
 

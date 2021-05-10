@@ -1,6 +1,6 @@
 # Literals for boto3 DevopsGuru module
 
-> [Index](../README.md) > [DevopsGuru](./README.md) > Literals
+> [Index](..) > [DevopsGuru](.) > Literals
 
 Auto-generated documentation for
 [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)

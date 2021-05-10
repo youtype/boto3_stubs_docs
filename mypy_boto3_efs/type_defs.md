@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 EFS module
 
-> [Index](../README.md) > [EFS](./README.md) > Structures
+> [Index](..) > [EFS](.) > Typed dictionaries
 
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
@@ -39,18 +39,14 @@ Optional fields:
 
 - `ClientToken`: `str`
 - `Name`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AccessPointId`: `str`
 - `AccessPointArn`: `str`
 - `FileSystemId`: `str`
-- `PosixUser`:
-  [PosixUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#posixusertypedef)
-- `RootDirectory`:
-  [RootDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#rootdirectorytypedef)
+- `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
+- `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 - `OwnerId`: `str`
-- `LifeCycleState`:
-  [LifeCycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#lifecyclestate)
+- `LifeCycleState`: [LifeCycleState](./literals.md#lifecyclestate)
 
 ## BackupPolicyDescriptionTypeDef
 
@@ -60,8 +56,7 @@ from mypy_boto3_efs.type_defs import BackupPolicyDescriptionTypeDef
 
 Optional fields:
 
-- `BackupPolicy`:
-  [BackupPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicytypedef)
+- `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
 
 ## BackupPolicyTypeDef
 
@@ -71,8 +66,7 @@ from mypy_boto3_efs.type_defs import BackupPolicyTypeDef
 
 Required fields:
 
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 
 ## CreationInfoTypeDef
 
@@ -95,7 +89,7 @@ from mypy_boto3_efs.type_defs import DescribeAccessPointsResponseTypeDef
 Optional fields:
 
 - `AccessPoints`:
-  `List`\[[AccessPointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#accesspointdescriptiontypedef)\]
+  `List`\[[AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeFileSystemsResponseTypeDef
@@ -108,7 +102,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `FileSystems`:
-  `List`\[[FileSystemDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystemdescriptiontypedef)\]
+  `List`\[[FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef)\]
 - `NextMarker`: `str`
 
 ## DescribeMountTargetSecurityGroupsResponseTypeDef
@@ -131,7 +125,7 @@ Optional fields:
 
 - `Marker`: `str`
 - `MountTargets`:
-  `List`\[[MountTargetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#mounttargetdescriptiontypedef)\]
+  `List`\[[MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef)\]
 - `NextMarker`: `str`
 
 ## DescribeTagsResponseTypeDef
@@ -142,8 +136,7 @@ from mypy_boto3_efs.type_defs import DescribeTagsResponseTypeDef
 
 Required fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -162,15 +155,11 @@ Required fields:
 - `CreationToken`: `str`
 - `FileSystemId`: `str`
 - `CreationTime`: `datetime`
-- `LifeCycleState`:
-  [LifeCycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#lifecyclestate)
+- `LifeCycleState`: [LifeCycleState](./literals.md#lifecyclestate)
 - `NumberOfMountTargets`: `int`
-- `SizeInBytes`:
-  [FileSystemSizeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystemsizetypedef)
-- `PerformanceMode`:
-  [PerformanceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#performancemode)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+- `SizeInBytes`: [FileSystemSizeTypeDef](./type_defs.md#filesystemsizetypedef)
+- `PerformanceMode`: [PerformanceMode](./literals.md#performancemode)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -178,8 +167,7 @@ Optional fields:
 - `Name`: `str`
 - `Encrypted`: `bool`
 - `KmsKeyId`: `str`
-- `ThroughputMode`:
-  [ThroughputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#throughputmode)
+- `ThroughputMode`: [ThroughputMode](./literals.md#throughputmode)
 - `ProvisionedThroughputInMibps`: `float`
 - `AvailabilityZoneName`: `str`
 - `AvailabilityZoneId`: `str`
@@ -220,7 +208,7 @@ from mypy_boto3_efs.type_defs import LifecycleConfigurationDescriptionTypeDef
 Optional fields:
 
 - `LifecyclePolicies`:
-  `List`\[[LifecyclePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecyclepolicytypedef)\]
+  `List`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
 
 ## LifecyclePolicyTypeDef
 
@@ -230,8 +218,7 @@ from mypy_boto3_efs.type_defs import LifecyclePolicyTypeDef
 
 Optional fields:
 
-- `TransitionToIA`:
-  [TransitionToIARules](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#transitiontoiarules)
+- `TransitionToIA`: [TransitionToIARules](./literals.md#transitiontoiarules)
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -241,8 +228,7 @@ from mypy_boto3_efs.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## MountTargetDescriptionTypeDef
@@ -256,8 +242,7 @@ Required fields:
 - `MountTargetId`: `str`
 - `FileSystemId`: `str`
 - `SubnetId`: `str`
-- `LifeCycleState`:
-  [LifeCycleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#lifecyclestate)
+- `LifeCycleState`: [LifeCycleState](./literals.md#lifecyclestate)
 
 Optional fields:
 
@@ -304,8 +289,7 @@ from mypy_boto3_efs.type_defs import RootDirectoryTypeDef
 Optional fields:
 
 - `Path`: `str`
-- `CreationInfo`:
-  [CreationInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#creationinfotypedef)
+- `CreationInfo`: [CreationInfoTypeDef](./type_defs.md#creationinfotypedef)
 
 ## TagTypeDef
 

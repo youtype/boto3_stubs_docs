@@ -1,6 +1,6 @@
 # Paginators for boto3 GroundStation module
 
-> [Index](../README.md) > [GroundStation](./README.md) > Paginators
+> [Index](..) > [GroundStation](.) > Paginators
 
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
@@ -35,10 +35,10 @@ Boto3 documentation:
 Arguments for `ListConfigsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigsPaginator.paginate` returns
-`Iterator`\[[ListConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listconfigsresponsetypedef)\].
+`Iterator`\[[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef)\].
 
 ## ListContactsPaginator
 
@@ -61,17 +61,16 @@ Arguments for `ListContactsPaginator.paginate` method:
 
 - `endTime`: `datetime` *(required)*
 - `startTime`: `datetime` *(required)*
-- `statusList`:
-  `List`\[[ContactStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/literals.html#contactstatus)\]
+- `statusList`: `List`\[[ContactStatus](./literals.md#contactstatus)\]
   *(required)*
 - `groundStation`: `str`
 - `missionProfileArn`: `str`
 - `satelliteArn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContactsPaginator.paginate` returns
-`Iterator`\[[ListContactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listcontactsresponsetypedef)\].
+`Iterator`\[[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef)\].
 
 ## ListDataflowEndpointGroupsPaginator
 
@@ -93,10 +92,10 @@ Boto3 documentation:
 Arguments for `ListDataflowEndpointGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataflowEndpointGroupsPaginator.paginate` returns
-`Iterator`\[[ListDataflowEndpointGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listdataflowendpointgroupsresponsetypedef)\].
+`Iterator`\[[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)\].
 
 ## ListGroundStationsPaginator
 
@@ -119,10 +118,10 @@ Arguments for `ListGroundStationsPaginator.paginate` method:
 
 - `satelliteId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroundStationsPaginator.paginate` returns
-`Iterator`\[[ListGroundStationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listgroundstationsresponsetypedef)\].
+`Iterator`\[[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef)\].
 
 ## ListMissionProfilesPaginator
 
@@ -144,10 +143,10 @@ Boto3 documentation:
 Arguments for `ListMissionProfilesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMissionProfilesPaginator.paginate` returns
-`Iterator`\[[ListMissionProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listmissionprofilesresponsetypedef)\].
+`Iterator`\[[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef)\].
 
 ## ListSatellitesPaginator
 
@@ -169,7 +168,7 @@ Boto3 documentation:
 Arguments for `ListSatellitesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSatellitesPaginator.paginate` returns
-`Iterator`\[[ListSatellitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_groundstation/type_defs.html#listsatellitesresponsetypedef)\].
+`Iterator`\[[ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef)\].

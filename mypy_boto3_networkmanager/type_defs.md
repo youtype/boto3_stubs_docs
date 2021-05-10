@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 NetworkManager module
 
-> [Index](../README.md) > [NetworkManager](./README.md) > Structures
+> [Index](..) > [NetworkManager](.) > Typed dictionaries
 
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
@@ -77,7 +77,7 @@ from mypy_boto3_networkmanager.type_defs import AssociateCustomerGatewayResponse
 Optional fields:
 
 - `CustomerGatewayAssociation`:
-  [CustomerGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#customergatewayassociationtypedef)
+  [CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef)
 
 ## AssociateLinkResponseTypeDef
 
@@ -88,7 +88,7 @@ from mypy_boto3_networkmanager.type_defs import AssociateLinkResponseTypeDef
 Optional fields:
 
 - `LinkAssociation`:
-  [LinkAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linkassociationtypedef)
+  [LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef)
 
 ## AssociateTransitGatewayConnectPeerResponseTypeDef
 
@@ -99,7 +99,7 @@ from mypy_boto3_networkmanager.type_defs import AssociateTransitGatewayConnectPe
 Optional fields:
 
 - `TransitGatewayConnectPeerAssociation`:
-  [TransitGatewayConnectPeerAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayconnectpeerassociationtypedef)
+  [TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef)
 
 ## BandwidthTypeDef
 
@@ -129,10 +129,8 @@ Optional fields:
 - `ConnectedLinkId`: `str`
 - `Description`: `str`
 - `CreatedAt`: `datetime`
-- `State`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#connectionstate)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+- `State`: [ConnectionState](./literals.md#connectionstate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConnectionResponseTypeDef
 
@@ -142,8 +140,7 @@ from mypy_boto3_networkmanager.type_defs import CreateConnectionResponseTypeDef
 
 Optional fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 
 ## CreateDeviceResponseTypeDef
 
@@ -153,8 +150,7 @@ from mypy_boto3_networkmanager.type_defs import CreateDeviceResponseTypeDef
 
 Optional fields:
 
-- `Device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#devicetypedef)
+- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 
 ## CreateGlobalNetworkResponseTypeDef
 
@@ -164,8 +160,7 @@ from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkResponseTypeD
 
 Optional fields:
 
-- `GlobalNetwork`:
-  [GlobalNetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#globalnetworktypedef)
+- `GlobalNetwork`: [GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)
 
 ## CreateLinkResponseTypeDef
 
@@ -175,8 +170,7 @@ from mypy_boto3_networkmanager.type_defs import CreateLinkResponseTypeDef
 
 Optional fields:
 
-- `Link`:
-  [LinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linktypedef)
+- `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
 
 ## CreateSiteResponseTypeDef
 
@@ -186,8 +180,7 @@ from mypy_boto3_networkmanager.type_defs import CreateSiteResponseTypeDef
 
 Optional fields:
 
-- `Site`:
-  [SiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#sitetypedef)
+- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
 
 ## CustomerGatewayAssociationTypeDef
 
@@ -202,7 +195,7 @@ Optional fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `State`:
-  [CustomerGatewayAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#customergatewayassociationstate)
+  [CustomerGatewayAssociationState](./literals.md#customergatewayassociationstate)
 
 ## DeleteConnectionResponseTypeDef
 
@@ -212,8 +205,7 @@ from mypy_boto3_networkmanager.type_defs import DeleteConnectionResponseTypeDef
 
 Optional fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 
 ## DeleteDeviceResponseTypeDef
 
@@ -223,8 +215,7 @@ from mypy_boto3_networkmanager.type_defs import DeleteDeviceResponseTypeDef
 
 Optional fields:
 
-- `Device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#devicetypedef)
+- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 
 ## DeleteGlobalNetworkResponseTypeDef
 
@@ -234,8 +225,7 @@ from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkResponseTypeD
 
 Optional fields:
 
-- `GlobalNetwork`:
-  [GlobalNetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#globalnetworktypedef)
+- `GlobalNetwork`: [GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)
 
 ## DeleteLinkResponseTypeDef
 
@@ -245,8 +235,7 @@ from mypy_boto3_networkmanager.type_defs import DeleteLinkResponseTypeDef
 
 Optional fields:
 
-- `Link`:
-  [LinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linktypedef)
+- `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
 
 ## DeleteSiteResponseTypeDef
 
@@ -256,8 +245,7 @@ from mypy_boto3_networkmanager.type_defs import DeleteSiteResponseTypeDef
 
 Optional fields:
 
-- `Site`:
-  [SiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#sitetypedef)
+- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
 
 ## DeregisterTransitGatewayResponseTypeDef
 
@@ -268,7 +256,7 @@ from mypy_boto3_networkmanager.type_defs import DeregisterTransitGatewayResponse
 Optional fields:
 
 - `TransitGatewayRegistration`:
-  [TransitGatewayRegistrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayregistrationtypedef)
+  [TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef)
 
 ## DescribeGlobalNetworksResponseTypeDef
 
@@ -279,7 +267,7 @@ from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksResponseTy
 Optional fields:
 
 - `GlobalNetworks`:
-  `List`\[[GlobalNetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#globalnetworktypedef)\]
+  `List`\[[GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)\]
 - `NextToken`: `str`
 
 ## DeviceTypeDef
@@ -293,21 +281,17 @@ Optional fields:
 - `DeviceId`: `str`
 - `DeviceArn`: `str`
 - `GlobalNetworkId`: `str`
-- `AWSLocation`:
-  [AWSLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#awslocationtypedef)
+- `AWSLocation`: [AWSLocationTypeDef](./type_defs.md#awslocationtypedef)
 - `Description`: `str`
 - `Type`: `str`
 - `Vendor`: `str`
 - `Model`: `str`
 - `SerialNumber`: `str`
-- `Location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#locationtypedef)
+- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `SiteId`: `str`
 - `CreatedAt`: `datetime`
-- `State`:
-  [DeviceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#devicestate)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+- `State`: [DeviceState](./literals.md#devicestate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DisassociateCustomerGatewayResponseTypeDef
 
@@ -318,7 +302,7 @@ from mypy_boto3_networkmanager.type_defs import DisassociateCustomerGatewayRespo
 Optional fields:
 
 - `CustomerGatewayAssociation`:
-  [CustomerGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#customergatewayassociationtypedef)
+  [CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef)
 
 ## DisassociateLinkResponseTypeDef
 
@@ -329,7 +313,7 @@ from mypy_boto3_networkmanager.type_defs import DisassociateLinkResponseTypeDef
 Optional fields:
 
 - `LinkAssociation`:
-  [LinkAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linkassociationtypedef)
+  [LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef)
 
 ## DisassociateTransitGatewayConnectPeerResponseTypeDef
 
@@ -340,7 +324,7 @@ from mypy_boto3_networkmanager.type_defs import DisassociateTransitGatewayConnec
 Optional fields:
 
 - `TransitGatewayConnectPeerAssociation`:
-  [TransitGatewayConnectPeerAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayconnectpeerassociationtypedef)
+  [TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef)
 
 ## GetConnectionsResponseTypeDef
 
@@ -350,8 +334,7 @@ from mypy_boto3_networkmanager.type_defs import GetConnectionsResponseTypeDef
 
 Optional fields:
 
-- `Connections`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#connectiontypedef)\]
+- `Connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 
 ## GetCustomerGatewayAssociationsResponseTypeDef
@@ -363,7 +346,7 @@ from mypy_boto3_networkmanager.type_defs import GetCustomerGatewayAssociationsRe
 Optional fields:
 
 - `CustomerGatewayAssociations`:
-  `List`\[[CustomerGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#customergatewayassociationtypedef)\]
+  `List`\[[CustomerGatewayAssociationTypeDef](./type_defs.md#customergatewayassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetDevicesResponseTypeDef
@@ -374,8 +357,7 @@ from mypy_boto3_networkmanager.type_defs import GetDevicesResponseTypeDef
 
 Optional fields:
 
-- `Devices`:
-  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#devicetypedef)\]
+- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 - `NextToken`: `str`
 
 ## GetLinkAssociationsResponseTypeDef
@@ -387,7 +369,7 @@ from mypy_boto3_networkmanager.type_defs import GetLinkAssociationsResponseTypeD
 Optional fields:
 
 - `LinkAssociations`:
-  `List`\[[LinkAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linkassociationtypedef)\]
+  `List`\[[LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetLinksResponseTypeDef
@@ -398,8 +380,7 @@ from mypy_boto3_networkmanager.type_defs import GetLinksResponseTypeDef
 
 Optional fields:
 
-- `Links`:
-  `List`\[[LinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linktypedef)\]
+- `Links`: `List`\[[LinkTypeDef](./type_defs.md#linktypedef)\]
 - `NextToken`: `str`
 
 ## GetSitesResponseTypeDef
@@ -410,8 +391,7 @@ from mypy_boto3_networkmanager.type_defs import GetSitesResponseTypeDef
 
 Optional fields:
 
-- `Sites`:
-  `List`\[[SiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#sitetypedef)\]
+- `Sites`: `List`\[[SiteTypeDef](./type_defs.md#sitetypedef)\]
 - `NextToken`: `str`
 
 ## GetTransitGatewayConnectPeerAssociationsResponseTypeDef
@@ -423,7 +403,7 @@ from mypy_boto3_networkmanager.type_defs import GetTransitGatewayConnectPeerAsso
 Optional fields:
 
 - `TransitGatewayConnectPeerAssociations`:
-  `List`\[[TransitGatewayConnectPeerAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayconnectpeerassociationtypedef)\]
+  `List`\[[TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef)\]
 - `NextToken`: `str`
 
 ## GetTransitGatewayRegistrationsResponseTypeDef
@@ -435,7 +415,7 @@ from mypy_boto3_networkmanager.type_defs import GetTransitGatewayRegistrationsRe
 Optional fields:
 
 - `TransitGatewayRegistrations`:
-  `List`\[[TransitGatewayRegistrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayregistrationtypedef)\]
+  `List`\[[TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef)\]
 - `NextToken`: `str`
 
 ## GlobalNetworkTypeDef
@@ -450,10 +430,8 @@ Optional fields:
 - `GlobalNetworkArn`: `str`
 - `Description`: `str`
 - `CreatedAt`: `datetime`
-- `State`:
-  [GlobalNetworkState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#globalnetworkstate)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+- `State`: [GlobalNetworkState](./literals.md#globalnetworkstate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LinkAssociationTypeDef
 
@@ -467,7 +445,7 @@ Optional fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `LinkAssociationState`:
-  [LinkAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#linkassociationstate)
+  [LinkAssociationState](./literals.md#linkassociationstate)
 
 ## LinkTypeDef
 
@@ -483,14 +461,11 @@ Optional fields:
 - `SiteId`: `str`
 - `Description`: `str`
 - `Type`: `str`
-- `Bandwidth`:
-  [BandwidthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#bandwidthtypedef)
+- `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef)
 - `Provider`: `str`
 - `CreatedAt`: `datetime`
-- `State`:
-  [LinkState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#linkstate)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+- `State`: [LinkState](./literals.md#linkstate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -500,8 +475,7 @@ from mypy_boto3_networkmanager.type_defs import ListTagsForResourceResponseTypeD
 
 Optional fields:
 
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LocationTypeDef
 
@@ -536,7 +510,7 @@ from mypy_boto3_networkmanager.type_defs import RegisterTransitGatewayResponseTy
 Optional fields:
 
 - `TransitGatewayRegistration`:
-  [TransitGatewayRegistrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayregistrationtypedef)
+  [TransitGatewayRegistrationTypeDef](./type_defs.md#transitgatewayregistrationtypedef)
 
 ## SiteTypeDef
 
@@ -550,13 +524,10 @@ Optional fields:
 - `SiteArn`: `str`
 - `GlobalNetworkId`: `str`
 - `Description`: `str`
-- `Location`:
-  [LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#locationtypedef)
+- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `CreatedAt`: `datetime`
-- `State`:
-  [SiteState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#sitestate)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#tagtypedef)\]
+- `State`: [SiteState](./literals.md#sitestate)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -582,7 +553,7 @@ Optional fields:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `State`:
-  [TransitGatewayConnectPeerAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#transitgatewayconnectpeerassociationstate)
+  [TransitGatewayConnectPeerAssociationState](./literals.md#transitgatewayconnectpeerassociationstate)
 
 ## TransitGatewayRegistrationStateReasonTypeDef
 
@@ -593,7 +564,7 @@ from mypy_boto3_networkmanager.type_defs import TransitGatewayRegistrationStateR
 Optional fields:
 
 - `Code`:
-  [TransitGatewayRegistrationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/literals.html#transitgatewayregistrationstate)
+  [TransitGatewayRegistrationState](./literals.md#transitgatewayregistrationstate)
 - `Message`: `str`
 
 ## TransitGatewayRegistrationTypeDef
@@ -607,7 +578,7 @@ Optional fields:
 - `GlobalNetworkId`: `str`
 - `TransitGatewayArn`: `str`
 - `State`:
-  [TransitGatewayRegistrationStateReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#transitgatewayregistrationstatereasontypedef)
+  [TransitGatewayRegistrationStateReasonTypeDef](./type_defs.md#transitgatewayregistrationstatereasontypedef)
 
 ## UpdateConnectionResponseTypeDef
 
@@ -617,8 +588,7 @@ from mypy_boto3_networkmanager.type_defs import UpdateConnectionResponseTypeDef
 
 Optional fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 
 ## UpdateDeviceResponseTypeDef
 
@@ -628,8 +598,7 @@ from mypy_boto3_networkmanager.type_defs import UpdateDeviceResponseTypeDef
 
 Optional fields:
 
-- `Device`:
-  [DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#devicetypedef)
+- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 
 ## UpdateGlobalNetworkResponseTypeDef
 
@@ -639,8 +608,7 @@ from mypy_boto3_networkmanager.type_defs import UpdateGlobalNetworkResponseTypeD
 
 Optional fields:
 
-- `GlobalNetwork`:
-  [GlobalNetworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#globalnetworktypedef)
+- `GlobalNetwork`: [GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)
 
 ## UpdateLinkResponseTypeDef
 
@@ -650,8 +618,7 @@ from mypy_boto3_networkmanager.type_defs import UpdateLinkResponseTypeDef
 
 Optional fields:
 
-- `Link`:
-  [LinkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#linktypedef)
+- `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
 
 ## UpdateSiteResponseTypeDef
 
@@ -661,5 +628,4 @@ from mypy_boto3_networkmanager.type_defs import UpdateSiteResponseTypeDef
 
 Optional fields:
 
-- `Site`:
-  [SiteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#sitetypedef)
+- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)

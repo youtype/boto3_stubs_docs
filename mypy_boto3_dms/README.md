@@ -1,6 +1,6 @@
 # Type annotations for boto3 DatabaseMigrationService module
 
-> [Index](../README.md) > DatabaseMigrationService
+> [Index](..) > DatabaseMigrationService
 
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AppStream module
 
-> [Index](../README.md) > [AppStream](./README.md) > Structures
+> [Index](..) > [AppStream](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
@@ -80,7 +80,8 @@ from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef
 
 Required fields:
 
-- `EndpointType`: `Literal['STREAMING']`
+- `EndpointType`: `Literal['STREAMING']` (see
+  [AccessEndpointType](./literals.md#accessendpointtype))
 
 Optional fields:
 
@@ -137,7 +138,7 @@ from mypy_boto3_appstream.type_defs import BatchAssociateUserStackResultTypeDef
 Optional fields:
 
 - `errors`:
-  `List`\[[UserStackAssociationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#userstackassociationerrortypedef)\]
+  `List`\[[UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef)\]
 
 ## BatchDisassociateUserStackResultTypeDef
 
@@ -148,7 +149,7 @@ from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackResultTypeD
 Optional fields:
 
 - `errors`:
-  `List`\[[UserStackAssociationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#userstackassociationerrortypedef)\]
+  `List`\[[UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef)\]
 
 ## ComputeCapacityStatusTypeDef
 
@@ -195,7 +196,7 @@ from mypy_boto3_appstream.type_defs import CreateDirectoryConfigResultTypeDef
 Optional fields:
 
 - `DirectoryConfig`:
-  [DirectoryConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#directoryconfigtypedef)
+  [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
 
 ## CreateFleetResultTypeDef
 
@@ -205,8 +206,7 @@ from mypy_boto3_appstream.type_defs import CreateFleetResultTypeDef
 
 Optional fields:
 
-- `Fleet`:
-  [FleetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#fleettypedef)
+- `Fleet`: [FleetTypeDef](./type_defs.md#fleettypedef)
 
 ## CreateImageBuilderResultTypeDef
 
@@ -216,8 +216,7 @@ from mypy_boto3_appstream.type_defs import CreateImageBuilderResultTypeDef
 
 Optional fields:
 
-- `ImageBuilder`:
-  [ImageBuilderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagebuildertypedef)
+- `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
 
 ## CreateImageBuilderStreamingURLResultTypeDef
 
@@ -238,8 +237,7 @@ from mypy_boto3_appstream.type_defs import CreateStackResultTypeDef
 
 Optional fields:
 
-- `Stack`:
-  [StackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#stacktypedef)
+- `Stack`: [StackTypeDef](./type_defs.md#stacktypedef)
 
 ## CreateStreamingURLResultTypeDef
 
@@ -260,8 +258,7 @@ from mypy_boto3_appstream.type_defs import CreateUpdatedImageResultTypeDef
 
 Optional fields:
 
-- `image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagetypedef)
+- `image`: [ImageTypeDef](./type_defs.md#imagetypedef)
 - `canUpdateImage`: `bool`
 
 ## CreateUsageReportSubscriptionResultTypeDef
@@ -273,7 +270,8 @@ from mypy_boto3_appstream.type_defs import CreateUsageReportSubscriptionResultTy
 Optional fields:
 
 - `S3BucketName`: `str`
-- `Schedule`: `Literal['DAILY']`
+- `Schedule`: `Literal['DAILY']` (see
+  [UsageReportSchedule](./literals.md#usagereportschedule))
 
 ## DeleteImageBuilderResultTypeDef
 
@@ -283,8 +281,7 @@ from mypy_boto3_appstream.type_defs import DeleteImageBuilderResultTypeDef
 
 Optional fields:
 
-- `ImageBuilder`:
-  [ImageBuilderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagebuildertypedef)
+- `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
 
 ## DeleteImageResultTypeDef
 
@@ -294,8 +291,7 @@ from mypy_boto3_appstream.type_defs import DeleteImageResultTypeDef
 
 Optional fields:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagetypedef)
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
 
 ## DescribeDirectoryConfigsResultTypeDef
 
@@ -306,7 +302,7 @@ from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsResultTypeDef
 Optional fields:
 
 - `DirectoryConfigs`:
-  `List`\[[DirectoryConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#directoryconfigtypedef)\]
+  `List`\[[DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeFleetsResultTypeDef
@@ -317,8 +313,7 @@ from mypy_boto3_appstream.type_defs import DescribeFleetsResultTypeDef
 
 Optional fields:
 
-- `Fleets`:
-  `List`\[[FleetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#fleettypedef)\]
+- `Fleets`: `List`\[[FleetTypeDef](./type_defs.md#fleettypedef)\]
 - `NextToken`: `str`
 
 ## DescribeImageBuildersResultTypeDef
@@ -330,7 +325,7 @@ from mypy_boto3_appstream.type_defs import DescribeImageBuildersResultTypeDef
 Optional fields:
 
 - `ImageBuilders`:
-  `List`\[[ImageBuilderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagebuildertypedef)\]
+  `List`\[[ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)\]
 - `NextToken`: `str`
 
 ## DescribeImagePermissionsResultTypeDef
@@ -343,7 +338,7 @@ Optional fields:
 
 - `Name`: `str`
 - `SharedImagePermissionsList`:
-  `List`\[[SharedImagePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#sharedimagepermissionstypedef)\]
+  `List`\[[SharedImagePermissionsTypeDef](./type_defs.md#sharedimagepermissionstypedef)\]
 - `NextToken`: `str`
 
 ## DescribeImagesResultTypeDef
@@ -354,8 +349,7 @@ from mypy_boto3_appstream.type_defs import DescribeImagesResultTypeDef
 
 Optional fields:
 
-- `Images`:
-  `List`\[[ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagetypedef)\]
+- `Images`: `List`\[[ImageTypeDef](./type_defs.md#imagetypedef)\]
 - `NextToken`: `str`
 
 ## DescribeSessionsResultTypeDef
@@ -366,8 +360,7 @@ from mypy_boto3_appstream.type_defs import DescribeSessionsResultTypeDef
 
 Optional fields:
 
-- `Sessions`:
-  `List`\[[SessionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#sessiontypedef)\]
+- `Sessions`: `List`\[[SessionTypeDef](./type_defs.md#sessiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeStacksResultTypeDef
@@ -378,8 +371,7 @@ from mypy_boto3_appstream.type_defs import DescribeStacksResultTypeDef
 
 Optional fields:
 
-- `Stacks`:
-  `List`\[[StackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#stacktypedef)\]
+- `Stacks`: `List`\[[StackTypeDef](./type_defs.md#stacktypedef)\]
 - `NextToken`: `str`
 
 ## DescribeUsageReportSubscriptionsResultTypeDef
@@ -391,7 +383,7 @@ from mypy_boto3_appstream.type_defs import DescribeUsageReportSubscriptionsResul
 Optional fields:
 
 - `UsageReportSubscriptions`:
-  `List`\[[UsageReportSubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#usagereportsubscriptiontypedef)\]
+  `List`\[[UsageReportSubscriptionTypeDef](./type_defs.md#usagereportsubscriptiontypedef)\]
 - `NextToken`: `str`
 
 ## DescribeUserStackAssociationsResultTypeDef
@@ -403,7 +395,7 @@ from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsResultTy
 Optional fields:
 
 - `UserStackAssociations`:
-  `List`\[[UserStackAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#userstackassociationtypedef)\]
+  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
 - `NextToken`: `str`
 
 ## DescribeUsersResultTypeDef
@@ -414,8 +406,7 @@ from mypy_boto3_appstream.type_defs import DescribeUsersResultTypeDef
 
 Optional fields:
 
-- `Users`:
-  `List`\[[UserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#usertypedef)\]
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 - `NextToken`: `str`
 
 ## DirectoryConfigTypeDef
@@ -432,7 +423,7 @@ Optional fields:
 
 - `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
 - `ServiceAccountCredentials`:
-  [ServiceAccountCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#serviceaccountcredentialstypedef)
+  [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 - `CreatedTime`: `datetime`
 
 ## DomainJoinInfoTypeDef
@@ -454,8 +445,7 @@ from mypy_boto3_appstream.type_defs import FleetErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`:
-  [FleetErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#fleeterrorcode)
+- `ErrorCode`: [FleetErrorCode](./literals.md#fleeterrorcode)
 - `ErrorMessage`: `str`
 
 ## FleetTypeDef
@@ -470,9 +460,8 @@ Required fields:
 - `Name`: `str`
 - `InstanceType`: `str`
 - `ComputeCapacityStatus`:
-  [ComputeCapacityStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#computecapacitystatustypedef)
-- `State`:
-  [FleetState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#fleetstate)
+  [ComputeCapacityStatusTypeDef](./type_defs.md#computecapacitystatustypedef)
+- `State`: [FleetState](./literals.md#fleetstate)
 
 Optional fields:
 
@@ -480,22 +469,17 @@ Optional fields:
 - `Description`: `str`
 - `ImageName`: `str`
 - `ImageArn`: `str`
-- `FleetType`:
-  [FleetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#fleettype)
+- `FleetType`: [FleetType](./literals.md#fleettype)
 - `MaxUserDurationInSeconds`: `int`
 - `DisconnectTimeoutInSeconds`: `int`
-- `VpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#vpcconfigtypedef)
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `CreatedTime`: `datetime`
-- `FleetErrors`:
-  `List`\[[FleetErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#fleeterrortypedef)\]
+- `FleetErrors`: `List`\[[FleetErrorTypeDef](./type_defs.md#fleeterrortypedef)\]
 - `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`:
-  [DomainJoinInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#domainjoininfotypedef)
+- `DomainJoinInfo`: [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
-- `StreamView`:
-  [StreamView](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#streamview)
+- `StreamView`: [StreamView](./literals.md#streamview)
 
 ## ImageBuilderStateChangeReasonTypeDef
 
@@ -506,7 +490,7 @@ from mypy_boto3_appstream.type_defs import ImageBuilderStateChangeReasonTypeDef
 Optional fields:
 
 - `Code`:
-  [ImageBuilderStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#imagebuilderstatechangereasoncode)
+  [ImageBuilderStateChangeReasonCode](./literals.md#imagebuilderstatechangereasoncode)
 - `Message`: `str`
 
 ## ImageBuilderTypeDef
@@ -525,27 +509,23 @@ Optional fields:
 - `ImageArn`: `str`
 - `Description`: `str`
 - `DisplayName`: `str`
-- `VpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#vpcconfigtypedef)
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `InstanceType`: `str`
-- `Platform`:
-  [PlatformType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#platformtype)
+- `Platform`: [PlatformType](./literals.md#platformtype)
 - `IamRoleArn`: `str`
-- `State`:
-  [ImageBuilderState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#imagebuilderstate)
+- `State`: [ImageBuilderState](./literals.md#imagebuilderstate)
 - `StateChangeReason`:
-  [ImageBuilderStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagebuilderstatechangereasontypedef)
+  [ImageBuilderStateChangeReasonTypeDef](./type_defs.md#imagebuilderstatechangereasontypedef)
 - `CreatedTime`: `datetime`
 - `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`:
-  [DomainJoinInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#domainjoininfotypedef)
+- `DomainJoinInfo`: [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `NetworkAccessConfiguration`:
-  [NetworkAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#networkaccessconfigurationtypedef)
+  [NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef)
 - `ImageBuilderErrors`:
-  `List`\[[ResourceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#resourceerrortypedef)\]
+  `List`\[[ResourceErrorTypeDef](./type_defs.md#resourceerrortypedef)\]
 - `AppstreamAgentVersion`: `str`
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#accessendpointtypedef)\]
+  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 
 ## ImagePermissionsTypeDef
 
@@ -566,8 +546,7 @@ from mypy_boto3_appstream.type_defs import ImageStateChangeReasonTypeDef
 
 Optional fields:
 
-- `Code`:
-  [ImageStateChangeReasonCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#imagestatechangereasoncode)
+- `Code`: [ImageStateChangeReasonCode](./literals.md#imagestatechangereasoncode)
 - `Message`: `str`
 
 ## ImageTypeDef
@@ -585,26 +564,23 @@ Optional fields:
 - `Arn`: `str`
 - `BaseImageArn`: `str`
 - `DisplayName`: `str`
-- `State`:
-  [ImageState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#imagestate)
-- `Visibility`:
-  [VisibilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#visibilitytype)
+- `State`: [ImageState](./literals.md#imagestate)
+- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
 - `ImageBuilderSupported`: `bool`
 - `ImageBuilderName`: `str`
-- `Platform`:
-  [PlatformType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#platformtype)
+- `Platform`: [PlatformType](./literals.md#platformtype)
 - `Description`: `str`
 - `StateChangeReason`:
-  [ImageStateChangeReasonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagestatechangereasontypedef)
+  [ImageStateChangeReasonTypeDef](./type_defs.md#imagestatechangereasontypedef)
 - `Applications`:
-  `List`\[[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#applicationtypedef)\]
+  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
 - `CreatedTime`: `datetime`
 - `PublicBaseImageReleasedDate`: `datetime`
 - `AppstreamAgentVersion`: `str`
 - `ImagePermissions`:
-  [ImagePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagepermissionstypedef)
+  [ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef)
 - `ImageErrors`:
-  `List`\[[ResourceErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#resourceerrortypedef)\]
+  `List`\[[ResourceErrorTypeDef](./type_defs.md#resourceerrortypedef)\]
 
 ## LastReportGenerationExecutionErrorTypeDef
 
@@ -615,7 +591,7 @@ from mypy_boto3_appstream.type_defs import LastReportGenerationExecutionErrorTyp
 Optional fields:
 
 - `ErrorCode`:
-  [UsageReportExecutionErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#usagereportexecutionerrorcode)
+  [UsageReportExecutionErrorCode](./literals.md#usagereportexecutionerrorcode)
 - `ErrorMessage`: `str`
 
 ## ListAssociatedFleetsResultTypeDef
@@ -681,8 +657,7 @@ from mypy_boto3_appstream.type_defs import ResourceErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`:
-  [FleetErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#fleeterrorcode)
+- `ErrorCode`: [FleetErrorCode](./literals.md#fleeterrorcode)
 - `ErrorMessage`: `str`
 - `ErrorTimestamp`: `datetime`
 
@@ -709,19 +684,17 @@ Required fields:
 - `UserId`: `str`
 - `StackName`: `str`
 - `FleetName`: `str`
-- `State`:
-  [SessionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#sessionstate)
+- `State`: [SessionState](./literals.md#sessionstate)
 
 Optional fields:
 
 - `ConnectionState`:
-  [SessionConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#sessionconnectionstate)
+  [SessionConnectionState](./literals.md#sessionconnectionstate)
 - `StartTime`: `datetime`
 - `MaxExpirationTime`: `datetime`
-- `AuthenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#authenticationtype)
+- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
 - `NetworkAccessConfiguration`:
-  [NetworkAccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#networkaccessconfigurationtypedef)
+  [NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef)
 
 ## SharedImagePermissionsTypeDef
 
@@ -733,7 +706,7 @@ Required fields:
 
 - `sharedAccountId`: `str`
 - `imagePermissions`:
-  [ImagePermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagepermissionstypedef)
+  [ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef)
 
 ## StackErrorTypeDef
 
@@ -743,8 +716,7 @@ from mypy_boto3_appstream.type_defs import StackErrorTypeDef
 
 Optional fields:
 
-- `ErrorCode`:
-  [StackErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#stackerrorcode)
+- `ErrorCode`: [StackErrorCode](./literals.md#stackerrorcode)
 - `ErrorMessage`: `str`
 
 ## StackTypeDef
@@ -764,17 +736,16 @@ Optional fields:
 - `DisplayName`: `str`
 - `CreatedTime`: `datetime`
 - `StorageConnectors`:
-  `List`\[[StorageConnectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#storageconnectortypedef)\]
+  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
 - `RedirectURL`: `str`
 - `FeedbackURL`: `str`
-- `StackErrors`:
-  `List`\[[StackErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#stackerrortypedef)\]
+- `StackErrors`: `List`\[[StackErrorTypeDef](./type_defs.md#stackerrortypedef)\]
 - `UserSettings`:
-  `List`\[[UserSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#usersettingtypedef)\]
+  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
 - `ApplicationSettings`:
-  [ApplicationSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#applicationsettingsresponsetypedef)
+  [ApplicationSettingsResponseTypeDef](./type_defs.md#applicationsettingsresponsetypedef)
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#accessendpointtypedef)\]
+  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `List`\[`str`\]
 
 ## StartImageBuilderResultTypeDef
@@ -785,8 +756,7 @@ from mypy_boto3_appstream.type_defs import StartImageBuilderResultTypeDef
 
 Optional fields:
 
-- `ImageBuilder`:
-  [ImageBuilderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagebuildertypedef)
+- `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
 
 ## StopImageBuilderResultTypeDef
 
@@ -796,8 +766,7 @@ from mypy_boto3_appstream.type_defs import StopImageBuilderResultTypeDef
 
 Optional fields:
 
-- `ImageBuilder`:
-  [ImageBuilderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#imagebuildertypedef)
+- `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
 
 ## StorageConnectorTypeDef
 
@@ -807,8 +776,7 @@ from mypy_boto3_appstream.type_defs import StorageConnectorTypeDef
 
 Required fields:
 
-- `ConnectorType`:
-  [StorageConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#storageconnectortype)
+- `ConnectorType`: [StorageConnectorType](./literals.md#storageconnectortype)
 
 Optional fields:
 
@@ -824,7 +792,7 @@ from mypy_boto3_appstream.type_defs import UpdateDirectoryConfigResultTypeDef
 Optional fields:
 
 - `DirectoryConfig`:
-  [DirectoryConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#directoryconfigtypedef)
+  [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
 
 ## UpdateFleetResultTypeDef
 
@@ -834,8 +802,7 @@ from mypy_boto3_appstream.type_defs import UpdateFleetResultTypeDef
 
 Optional fields:
 
-- `Fleet`:
-  [FleetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#fleettypedef)
+- `Fleet`: [FleetTypeDef](./type_defs.md#fleettypedef)
 
 ## UpdateStackResultTypeDef
 
@@ -845,8 +812,7 @@ from mypy_boto3_appstream.type_defs import UpdateStackResultTypeDef
 
 Optional fields:
 
-- `Stack`:
-  [StackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#stacktypedef)
+- `Stack`: [StackTypeDef](./type_defs.md#stacktypedef)
 
 ## UsageReportSubscriptionTypeDef
 
@@ -857,10 +823,11 @@ from mypy_boto3_appstream.type_defs import UsageReportSubscriptionTypeDef
 Optional fields:
 
 - `S3BucketName`: `str`
-- `Schedule`: `Literal['DAILY']`
+- `Schedule`: `Literal['DAILY']` (see
+  [UsageReportSchedule](./literals.md#usagereportschedule))
 - `LastGeneratedReportDate`: `datetime`
 - `SubscriptionErrors`:
-  `List`\[[LastReportGenerationExecutionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#lastreportgenerationexecutionerrortypedef)\]
+  `List`\[[LastReportGenerationExecutionErrorTypeDef](./type_defs.md#lastreportgenerationexecutionerrortypedef)\]
 
 ## UserSettingTypeDef
 
@@ -870,10 +837,8 @@ from mypy_boto3_appstream.type_defs import UserSettingTypeDef
 
 Required fields:
 
-- `Action`:
-  [Action](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#action)
-- `Permission`:
-  [Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#permission)
+- `Action`: [Action](./literals.md#action)
+- `Permission`: [Permission](./literals.md#permission)
 
 ## UserStackAssociationErrorTypeDef
 
@@ -884,9 +849,9 @@ from mypy_boto3_appstream.type_defs import UserStackAssociationErrorTypeDef
 Optional fields:
 
 - `UserStackAssociation`:
-  [UserStackAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/type_defs.html#userstackassociationtypedef)
+  [UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)
 - `ErrorCode`:
-  [UserStackAssociationErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#userstackassociationerrorcode)
+  [UserStackAssociationErrorCode](./literals.md#userstackassociationerrorcode)
 - `ErrorMessage`: `str`
 
 ## UserStackAssociationTypeDef
@@ -899,8 +864,7 @@ Required fields:
 
 - `StackName`: `str`
 - `UserName`: `str`
-- `AuthenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#authenticationtype)
+- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
 
 Optional fields:
 
@@ -914,8 +878,7 @@ from mypy_boto3_appstream.type_defs import UserTypeDef
 
 Required fields:
 
-- `AuthenticationType`:
-  [AuthenticationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appstream/literals.html#authenticationtype)
+- `AuthenticationType`: [AuthenticationType](./literals.md#authenticationtype)
 
 Optional fields:
 

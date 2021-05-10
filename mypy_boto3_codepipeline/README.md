@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodePipeline module
 
-> [Index](../README.md) > CodePipeline
+> [Index](..) > CodePipeline
 
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
@@ -256,7 +256,7 @@ from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef, ...
 - [PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef)
 - [PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef)
 - [PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef)
 - [S3ArtifactLocationTypeDef](./type_defs.md#s3artifactlocationtypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)

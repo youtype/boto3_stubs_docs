@@ -1,6 +1,6 @@
 # LexRuntimeV2Client for boto3 LexRuntimeV2 module
 
-> [Index](../README.md) > [LexRuntimeV2](./README.md) > LexRuntimeV2Client
+> [Index](..) > [LexRuntimeV2](.) > LexRuntimeV2Client
 
 Auto-generated documentation for
 [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
@@ -89,7 +89,7 @@ Arguments:
 - `sessionId`: `str` *(required)*
 
 Returns
-[DeleteSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#deletesessionresponsetypedef).
+[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -122,8 +122,7 @@ Arguments:
 - `localeId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
 
-Returns
-[GetSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#getsessionresponsetypedef).
+Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
 ### put_session
 
@@ -138,16 +137,13 @@ Arguments:
 - `botAliasId`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
-- `sessionState`:
-  [SessionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#sessionstatetypedef)
+- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
   *(required)*
-- `messages`:
-  `List`\[[MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#messagetypedef)\]
+- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 - `responseContentType`: `str`
 
-Returns
-[PutSessionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#putsessionresponsetypedef).
+Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
 
 ### recognize_text
 
@@ -163,12 +159,11 @@ Arguments:
 - `localeId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
 - `text`: `str` *(required)*
-- `sessionState`:
-  [SessionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#sessionstatetypedef)
+- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[RecognizeTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#recognizetextresponsetypedef).
+[RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).
 
 ### recognize_utterance
 
@@ -191,4 +186,4 @@ Arguments:
 - `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 
 Returns
-[RecognizeUtteranceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_runtime/type_defs.html#recognizeutteranceresponsetypedef).
+[RecognizeUtteranceResponseTypeDef](./type_defs.md#recognizeutteranceresponsetypedef).

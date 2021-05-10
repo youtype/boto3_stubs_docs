@@ -1,6 +1,6 @@
 # Waiters for boto3 SES module
 
-> [Index](../README.md) > [SES](./README.md) > Waiters
+> [Index](..) > [SES](.) > Waiters
 
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
@@ -29,5 +29,4 @@ Boto3 documentation:
 Arguments for `IdentityExistsWaiter.wait` method:
 
 - `Identities`: `List`\[`str`\] *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ses/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

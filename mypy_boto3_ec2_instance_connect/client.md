@@ -1,7 +1,6 @@
 # EC2InstanceConnectClient for boto3 EC2InstanceConnect module
 
-> [Index](../README.md) > [EC2InstanceConnect](./README.md) >
-> EC2InstanceConnectClient
+> [Index](..) > [EC2InstanceConnect](.) > EC2InstanceConnectClient
 
 Auto-generated documentation for
 [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
@@ -107,7 +106,7 @@ Arguments:
 - `SerialPort`: `int`
 
 Returns
-[SendSerialConsoleSSHPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2_instance_connect/type_defs.html#sendserialconsolesshpublickeyresponsetypedef).
+[SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef).
 
 ### send_ssh_public_key
 
@@ -125,4 +124,4 @@ Arguments:
 - `AvailabilityZone`: `str` *(required)*
 
 Returns
-[SendSSHPublicKeyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ec2_instance_connect/type_defs.html#sendsshpublickeyresponsetypedef).
+[SendSSHPublicKeyResponseTypeDef](./type_defs.md#sendsshpublickeyresponsetypedef).

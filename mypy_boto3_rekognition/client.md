@@ -1,6 +1,6 @@
 # RekognitionClient for boto3 Rekognition module
 
-> [Index](../README.md) > [Rekognition](./README.md) > RekognitionClient
+> [Index](..) > [Rekognition](.) > RekognitionClient
 
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
@@ -141,18 +141,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `SourceImage`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
-- `TargetImage`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `SourceImage`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
+- `TargetImage`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `SimilarityThreshold`: `float`
-- `QualityFilter`:
-  [QualityFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#qualityfilter)
+- `QualityFilter`: [QualityFilter](./literals.md#qualityfilter)
 
 Returns
-[CompareFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#comparefacesresponsetypedef).
+[CompareFacesResponseTypeDef](./type_defs.md#comparefacesresponsetypedef).
 
 ### create_collection
 
@@ -167,7 +162,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createcollectionresponsetypedef).
+[CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
 
 ### create_project
 
@@ -181,7 +176,7 @@ Arguments:
 - `ProjectName`: `str` *(required)*
 
 Returns
-[CreateProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createprojectresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### create_project_version
 
@@ -195,19 +190,16 @@ Arguments:
 
 - `ProjectArn`: `str` *(required)*
 - `VersionName`: `str` *(required)*
-- `OutputConfig`:
-  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#outputconfigtypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
   *(required)*
-- `TrainingData`:
-  [TrainingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#trainingdatatypedef)
+- `TrainingData`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
   *(required)*
-- `TestingData`:
-  [TestingDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#testingdatatypedef)
+- `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
   *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createprojectversionresponsetypedef).
+[CreateProjectVersionResponseTypeDef](./type_defs.md#createprojectversionresponsetypedef).
 
 ### create_stream_processor
 
@@ -220,20 +212,20 @@ Boto3 documentation:
 Arguments:
 
 - `Input`:
-  [StreamProcessorInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessorinputtypedef)
+  [StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef)
   *(required)*
 - `Output`:
-  [StreamProcessorOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessoroutputtypedef)
+  [StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef)
   *(required)*
 - `Name`: `str` *(required)*
 - `Settings`:
-  [StreamProcessorSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#streamprocessorsettingstypedef)
+  [StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamProcessorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#createstreamprocessorresponsetypedef).
+[CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef).
 
 ### delete_collection
 
@@ -247,7 +239,7 @@ Arguments:
 - `CollectionId`: `str` *(required)*
 
 Returns
-[DeleteCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deletecollectionresponsetypedef).
+[DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef).
 
 ### delete_faces
 
@@ -262,7 +254,7 @@ Arguments:
 - `FaceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deletefacesresponsetypedef).
+[DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef).
 
 ### delete_project
 
@@ -276,7 +268,7 @@ Arguments:
 - `ProjectArn`: `str` *(required)*
 
 Returns
-[DeleteProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deleteprojectresponsetypedef).
+[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
 ### delete_project_version
 
@@ -291,7 +283,7 @@ Arguments:
 - `ProjectVersionArn`: `str` *(required)*
 
 Returns
-[DeleteProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#deleteprojectversionresponsetypedef).
+[DeleteProjectVersionResponseTypeDef](./type_defs.md#deleteprojectversionresponsetypedef).
 
 ### delete_stream_processor
 
@@ -319,7 +311,7 @@ Arguments:
 - `CollectionId`: `str` *(required)*
 
 Returns
-[DescribeCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describecollectionresponsetypedef).
+[DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef).
 
 ### describe_project_versions
 
@@ -337,7 +329,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeProjectVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describeprojectversionsresponsetypedef).
+[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef).
 
 ### describe_projects
 
@@ -352,7 +344,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describeprojectsresponsetypedef).
+[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef).
 
 ### describe_stream_processor
 
@@ -367,7 +359,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeStreamProcessorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#describestreamprocessorresponsetypedef).
+[DescribeStreamProcessorResponseTypeDef](./type_defs.md#describestreamprocessorresponsetypedef).
 
 ### detect_custom_labels
 
@@ -379,14 +371,12 @@ Boto3 documentation:
 Arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `MaxResults`: `int`
 - `MinConfidence`: `float`
 
 Returns
-[DetectCustomLabelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectcustomlabelsresponsetypedef).
+[DetectCustomLabelsResponseTypeDef](./type_defs.md#detectcustomlabelsresponsetypedef).
 
 ### detect_faces
 
@@ -397,14 +387,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
-- `Attributes`:
-  `List`\[[Attribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#attribute)\]
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
+- `Attributes`: `List`\[[Attribute](./literals.md#attribute)\]
 
 Returns
-[DetectFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectfacesresponsetypedef).
+[DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef).
 
 ### detect_labels
 
@@ -415,14 +402,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `MaxLabels`: `int`
 - `MinConfidence`: `float`
 
 Returns
-[DetectLabelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectlabelsresponsetypedef).
+[DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef).
 
 ### detect_moderation_labels
 
@@ -434,15 +419,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `MinConfidence`: `float`
 - `HumanLoopConfig`:
-  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#humanloopconfigtypedef)
+  [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
 Returns
-[DetectModerationLabelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectmoderationlabelsresponsetypedef).
+[DetectModerationLabelsResponseTypeDef](./type_defs.md#detectmoderationlabelsresponsetypedef).
 
 ### detect_protective_equipment
 
@@ -454,14 +437,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `SummarizationAttributes`:
-  [ProtectiveEquipmentSummarizationAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#protectiveequipmentsummarizationattributestypedef)
+  [ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef)
 
 Returns
-[DetectProtectiveEquipmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detectprotectiveequipmentresponsetypedef).
+[DetectProtectiveEquipmentResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponsetypedef).
 
 ### detect_text
 
@@ -472,14 +453,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
-- `Filters`:
-  [DetectTextFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detecttextfilterstypedef)
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
+- `Filters`: [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
 
-Returns
-[DetectTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#detecttextresponsetypedef).
+Returns [DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef).
 
 ### generate_presigned_url
 
@@ -510,7 +487,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetCelebrityInfoResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getcelebrityinforesponsetypedef).
+[GetCelebrityInfoResponseTypeDef](./type_defs.md#getcelebrityinforesponsetypedef).
 
 ### get_celebrity_recognition
 
@@ -526,10 +503,10 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `SortBy`:
-  [CelebrityRecognitionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#celebrityrecognitionsortby)
+  [CelebrityRecognitionSortBy](./literals.md#celebrityrecognitionsortby)
 
 Returns
-[GetCelebrityRecognitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getcelebrityrecognitionresponsetypedef).
+[GetCelebrityRecognitionResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponsetypedef).
 
 ### get_content_moderation
 
@@ -544,11 +521,10 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SortBy`:
-  [ContentModerationSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#contentmoderationsortby)
+- `SortBy`: [ContentModerationSortBy](./literals.md#contentmoderationsortby)
 
 Returns
-[GetContentModerationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getcontentmoderationresponsetypedef).
+[GetContentModerationResponseTypeDef](./type_defs.md#getcontentmoderationresponsetypedef).
 
 ### get_face_detection
 
@@ -564,7 +540,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetFaceDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getfacedetectionresponsetypedef).
+[GetFaceDetectionResponseTypeDef](./type_defs.md#getfacedetectionresponsetypedef).
 
 ### get_face_search
 
@@ -578,11 +554,10 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SortBy`:
-  [FaceSearchSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#facesearchsortby)
+- `SortBy`: [FaceSearchSortBy](./literals.md#facesearchsortby)
 
 Returns
-[GetFaceSearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getfacesearchresponsetypedef).
+[GetFaceSearchResponseTypeDef](./type_defs.md#getfacesearchresponsetypedef).
 
 ### get_label_detection
 
@@ -596,11 +571,10 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SortBy`:
-  [LabelDetectionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#labeldetectionsortby)
+- `SortBy`: [LabelDetectionSortBy](./literals.md#labeldetectionsortby)
 
 Returns
-[GetLabelDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getlabeldetectionresponsetypedef).
+[GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef).
 
 ### get_person_tracking
 
@@ -614,11 +588,10 @@ Arguments:
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SortBy`:
-  [PersonTrackingSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#persontrackingsortby)
+- `SortBy`: [PersonTrackingSortBy](./literals.md#persontrackingsortby)
 
 Returns
-[GetPersonTrackingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getpersontrackingresponsetypedef).
+[GetPersonTrackingResponseTypeDef](./type_defs.md#getpersontrackingresponsetypedef).
 
 ### get_segment_detection
 
@@ -635,7 +608,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSegmentDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#getsegmentdetectionresponsetypedef).
+[GetSegmentDetectionResponseTypeDef](./type_defs.md#getsegmentdetectionresponsetypedef).
 
 ### get_text_detection
 
@@ -651,7 +624,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#gettextdetectionresponsetypedef).
+[GetTextDetectionResponseTypeDef](./type_defs.md#gettextdetectionresponsetypedef).
 
 ### index_faces
 
@@ -663,18 +636,13 @@ Boto3 documentation:
 Arguments:
 
 - `CollectionId`: `str` *(required)*
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `ExternalImageId`: `str`
-- `DetectionAttributes`:
-  `List`\[[Attribute](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#attribute)\]
+- `DetectionAttributes`: `List`\[[Attribute](./literals.md#attribute)\]
 - `MaxFaces`: `int`
-- `QualityFilter`:
-  [QualityFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#qualityfilter)
+- `QualityFilter`: [QualityFilter](./literals.md#qualityfilter)
 
-Returns
-[IndexFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#indexfacesresponsetypedef).
+Returns [IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef).
 
 ### list_collections
 
@@ -689,7 +657,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCollectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listcollectionsresponsetypedef).
+[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef).
 
 ### list_faces
 
@@ -704,8 +672,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listfacesresponsetypedef).
+Returns [ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef).
 
 ### list_stream_processors
 
@@ -721,7 +688,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListStreamProcessorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#liststreamprocessorsresponsetypedef).
+[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -736,7 +703,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### recognize_celebrities
 
@@ -748,12 +715,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 
 Returns
-[RecognizeCelebritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#recognizecelebritiesresponsetypedef).
+[RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef).
 
 ### search_faces
 
@@ -770,7 +735,7 @@ Arguments:
 - `FaceMatchThreshold`: `float`
 
 Returns
-[SearchFacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#searchfacesresponsetypedef).
+[SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef).
 
 ### search_faces_by_image
 
@@ -783,16 +748,13 @@ Boto3 documentation:
 Arguments:
 
 - `CollectionId`: `str` *(required)*
-- `Image`:
-  [ImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#imagetypedef)
-  *(required)*
+- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `MaxFaces`: `int`
 - `FaceMatchThreshold`: `float`
-- `QualityFilter`:
-  [QualityFilter](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#qualityfilter)
+- `QualityFilter`: [QualityFilter](./literals.md#qualityfilter)
 
 Returns
-[SearchFacesByImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#searchfacesbyimageresponsetypedef).
+[SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef).
 
 ### start_celebrity_recognition
 
@@ -804,16 +766,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
 Returns
-[StartCelebrityRecognitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startcelebrityrecognitionresponsetypedef).
+[StartCelebrityRecognitionResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponsetypedef).
 
 ### start_content_moderation
 
@@ -825,17 +785,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `MinConfidence`: `float`
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
 Returns
-[StartContentModerationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startcontentmoderationresponsetypedef).
+[StartContentModerationResponseTypeDef](./type_defs.md#startcontentmoderationresponsetypedef).
 
 ### start_face_detection
 
@@ -846,18 +804,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
-- `FaceAttributes`:
-  [FaceAttributes](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#faceattributes)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
+- `FaceAttributes`: [FaceAttributes](./literals.md#faceattributes)
 - `JobTag`: `str`
 
 Returns
-[StartFaceDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startfacedetectionresponsetypedef).
+[StartFaceDetectionResponseTypeDef](./type_defs.md#startfacedetectionresponsetypedef).
 
 ### start_face_search
 
@@ -868,18 +823,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `CollectionId`: `str` *(required)*
 - `ClientRequestToken`: `str`
 - `FaceMatchThreshold`: `float`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
 Returns
-[StartFaceSearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startfacesearchresponsetypedef).
+[StartFaceSearchResponseTypeDef](./type_defs.md#startfacesearchresponsetypedef).
 
 ### start_label_detection
 
@@ -891,17 +844,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
 - `MinConfidence`: `float`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
 Returns
-[StartLabelDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startlabeldetectionresponsetypedef).
+[StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef).
 
 ### start_person_tracking
 
@@ -913,16 +864,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
 Returns
-[StartPersonTrackingResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startpersontrackingresponsetypedef).
+[StartPersonTrackingResponseTypeDef](./type_defs.md#startpersontrackingresponsetypedef).
 
 ### start_project_version
 
@@ -938,7 +887,7 @@ Arguments:
 - `MinInferenceUnits`: `int` *(required)*
 
 Returns
-[StartProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startprojectversionresponsetypedef).
+[StartProjectVersionResponseTypeDef](./type_defs.md#startprojectversionresponsetypedef).
 
 ### start_segment_detection
 
@@ -950,21 +899,17 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
-- `SegmentTypes`:
-  `List`\[[SegmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/literals.html#segmenttype)\]
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
+- `SegmentTypes`: `List`\[[SegmentType](./literals.md#segmenttype)\] *(required)*
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 - `Filters`:
-  [StartSegmentDetectionFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startsegmentdetectionfilterstypedef)
+  [StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef)
 
 Returns
-[StartSegmentDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#startsegmentdetectionresponsetypedef).
+[StartSegmentDetectionResponseTypeDef](./type_defs.md#startsegmentdetectionresponsetypedef).
 
 ### start_stream_processor
 
@@ -989,18 +934,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `Video`:
-  [VideoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#videotypedef)
-  *(required)*
+- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#notificationchanneltypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 - `Filters`:
-  [StartTextDetectionFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#starttextdetectionfilterstypedef)
+  [StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef)
 
 Returns
-[StartTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#starttextdetectionresponsetypedef).
+[StartTextDetectionResponseTypeDef](./type_defs.md#starttextdetectionresponsetypedef).
 
 ### stop_project_version
 
@@ -1014,7 +957,7 @@ Arguments:
 - `ProjectVersionArn`: `str` *(required)*
 
 Returns
-[StopProjectVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#stopprojectversionresponsetypedef).
+[StopProjectVersionResponseTypeDef](./type_defs.md#stopprojectversionresponsetypedef).
 
 ### stop_stream_processor
 

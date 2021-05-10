@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CodeGuruProfiler module
 
-> [Index](../README.md) > [CodeGuruProfiler](./README.md) > Structures
+> [Index](..) > [CodeGuruProfiler](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
@@ -56,7 +56,7 @@ from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRespons
 Optional fields:
 
 - `notificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#notificationconfigurationtypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 ## AgentConfigurationTypeDef
 
@@ -72,8 +72,7 @@ Required fields:
 Optional fields:
 
 - `agentParameters`:
-  `Dict`\[[AgentParameterField](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#agentparameterfield),
-  `str`\]
+  `Dict`\[[AgentParameterField](./literals.md#agentparameterfield), `str`\]
 
 ## AgentOrchestrationConfigTypeDef
 
@@ -93,8 +92,7 @@ from mypy_boto3_codeguruprofiler.type_defs import AggregatedProfileTimeTypeDef
 
 Optional fields:
 
-- `period`:
-  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
+- `period`: [AggregationPeriod](./literals.md#aggregationperiod)
 - `start`: `datetime`
 
 ## AnomalyInstanceTypeDef
@@ -111,8 +109,7 @@ Required fields:
 Optional fields:
 
 - `endTime`: `datetime`
-- `userFeedback`:
-  [UserFeedbackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#userfeedbacktypedef)
+- `userFeedback`: [UserFeedbackTypeDef](./type_defs.md#userfeedbacktypedef)
 
 ## AnomalyTypeDef
 
@@ -123,9 +120,8 @@ from mypy_boto3_codeguruprofiler.type_defs import AnomalyTypeDef
 Required fields:
 
 - `instances`:
-  `List`\[[AnomalyInstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#anomalyinstancetypedef)\]
-- `metric`:
-  [MetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#metrictypedef)
+  `List`\[[AnomalyInstanceTypeDef](./type_defs.md#anomalyinstancetypedef)\]
+- `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
 - `reason`: `str`
 
 ## BatchGetFrameMetricDataResponseTypeDef
@@ -138,14 +134,13 @@ Required fields:
 
 - `endTime`: `datetime`
 - `endTimes`:
-  `List`\[[TimestampStructureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#timestampstructuretypedef)\]
+  `List`\[[TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef)\]
 - `frameMetricData`:
-  `List`\[[FrameMetricDatumTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#framemetricdatumtypedef)\]
-- `resolution`:
-  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
+  `List`\[[FrameMetricDatumTypeDef](./type_defs.md#framemetricdatumtypedef)\]
+- `resolution`: [AggregationPeriod](./literals.md#aggregationperiod)
 - `startTime`: `datetime`
 - `unprocessedEndTimes`: `Dict`\[`str`,
-  `List`\[[TimestampStructureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#timestampstructuretypedef)\]\]
+  `List`\[[TimestampStructureTypeDef](./type_defs.md#timestampstructuretypedef)\]\]
 
 ## ChannelTypeDef
 
@@ -155,7 +150,8 @@ from mypy_boto3_codeguruprofiler.type_defs import ChannelTypeDef
 
 Required fields:
 
-- `eventPublishers`: `List`\[`Literal['AnomalyDetection']`\]
+- `eventPublishers`: `List`\[`Literal['AnomalyDetection']` (see
+  [EventPublisher](./literals.md#eventpublisher))\]
 - `uri`: `str`
 
 Optional fields:
@@ -171,7 +167,7 @@ from mypy_boto3_codeguruprofiler.type_defs import ConfigureAgentResponseTypeDef
 Required fields:
 
 - `configuration`:
-  [AgentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#agentconfigurationtypedef)
+  [AgentConfigurationTypeDef](./type_defs.md#agentconfigurationtypedef)
 
 ## CreateProfilingGroupResponseTypeDef
 
@@ -182,7 +178,7 @@ from mypy_boto3_codeguruprofiler.type_defs import CreateProfilingGroupResponseTy
 Required fields:
 
 - `profilingGroup`:
-  [ProfilingGroupDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#profilinggroupdescriptiontypedef)
+  [ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef)
 
 ## DescribeProfilingGroupResponseTypeDef
 
@@ -193,7 +189,7 @@ from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupResponse
 Required fields:
 
 - `profilingGroup`:
-  [ProfilingGroupDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#profilinggroupdescriptiontypedef)
+  [ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef)
 
 ## FindingsReportSummaryTypeDef
 
@@ -217,8 +213,7 @@ from mypy_boto3_codeguruprofiler.type_defs import FrameMetricDatumTypeDef
 
 Required fields:
 
-- `frameMetric`:
-  [FrameMetricTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#framemetrictypedef)
+- `frameMetric`: [FrameMetricTypeDef](./type_defs.md#framemetrictypedef)
 - `values`: `List`\[`float`\]
 
 ## FrameMetricTypeDef
@@ -231,7 +226,8 @@ Required fields:
 
 - `frameName`: `str`
 - `threadStates`: `List`\[`str`\]
-- `type`: `Literal['AggregatedRelativeTotalTime']`
+- `type`: `Literal['AggregatedRelativeTotalTime']` (see
+  [MetricType](./literals.md#metrictype))
 
 ## GetFindingsReportAccountSummaryResponseTypeDef
 
@@ -242,7 +238,7 @@ from mypy_boto3_codeguruprofiler.type_defs import GetFindingsReportAccountSummar
 Required fields:
 
 - `reportSummaries`:
-  `List`\[[FindingsReportSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#findingsreportsummarytypedef)\]
+  `List`\[[FindingsReportSummaryTypeDef](./type_defs.md#findingsreportsummarytypedef)\]
 
 Optional fields:
 
@@ -257,7 +253,7 @@ from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationRe
 Required fields:
 
 - `notificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#notificationconfigurationtypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 ## GetPolicyResponseTypeDef
 
@@ -293,13 +289,12 @@ from mypy_boto3_codeguruprofiler.type_defs import GetRecommendationsResponseType
 
 Required fields:
 
-- `anomalies`:
-  `List`\[[AnomalyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#anomalytypedef)\]
+- `anomalies`: `List`\[[AnomalyTypeDef](./type_defs.md#anomalytypedef)\]
 - `profileEndTime`: `datetime`
 - `profileStartTime`: `datetime`
 - `profilingGroupName`: `str`
 - `recommendations`:
-  `List`\[[RecommendationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#recommendationtypedef)\]
+  `List`\[[RecommendationTypeDef](./type_defs.md#recommendationtypedef)\]
 
 ## ListFindingsReportsResponseTypeDef
 
@@ -310,7 +305,7 @@ from mypy_boto3_codeguruprofiler.type_defs import ListFindingsReportsResponseTyp
 Required fields:
 
 - `findingsReportSummaries`:
-  `List`\[[FindingsReportSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#findingsreportsummarytypedef)\]
+  `List`\[[FindingsReportSummaryTypeDef](./type_defs.md#findingsreportsummarytypedef)\]
 
 Optional fields:
 
@@ -325,7 +320,7 @@ from mypy_boto3_codeguruprofiler.type_defs import ListProfileTimesResponseTypeDe
 Required fields:
 
 - `profileTimes`:
-  `List`\[[ProfileTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#profiletimetypedef)\]
+  `List`\[[ProfileTimeTypeDef](./type_defs.md#profiletimetypedef)\]
 
 Optional fields:
 
@@ -345,7 +340,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `profilingGroups`:
-  `List`\[[ProfilingGroupDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#profilinggroupdescriptiontypedef)\]
+  `List`\[[ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -379,7 +374,8 @@ Required fields:
 
 - `frameName`: `str`
 - `threadStates`: `List`\[`str`\]
-- `type`: `Literal['AggregatedRelativeTotalTime']`
+- `type`: `Literal['AggregatedRelativeTotalTime']` (see
+  [MetricType](./literals.md#metrictype))
 
 ## NotificationConfigurationTypeDef
 
@@ -389,8 +385,7 @@ from mypy_boto3_codeguruprofiler.type_defs import NotificationConfigurationTypeD
 
 Optional fields:
 
-- `channels`:
-  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#channeltypedef)\]
+- `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -439,14 +434,13 @@ from mypy_boto3_codeguruprofiler.type_defs import ProfilingGroupDescriptionTypeD
 Optional fields:
 
 - `agentOrchestrationConfig`:
-  [AgentOrchestrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#agentorchestrationconfigtypedef)
+  [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
 - `arn`: `str`
-- `computePlatform`:
-  [ComputePlatform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#computeplatform)
+- `computePlatform`: [ComputePlatform](./literals.md#computeplatform)
 - `createdAt`: `datetime`
 - `name`: `str`
 - `profilingStatus`:
-  [ProfilingStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#profilingstatustypedef)
+  [ProfilingStatusTypeDef](./type_defs.md#profilingstatustypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 
@@ -461,7 +455,7 @@ Optional fields:
 - `latestAgentOrchestratedAt`: `datetime`
 - `latestAgentProfileReportedAt`: `datetime`
 - `latestAggregatedProfile`:
-  [AggregatedProfileTimeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#aggregatedprofiletimetypedef)
+  [AggregatedProfileTimeTypeDef](./type_defs.md#aggregatedprofiletimetypedef)
 
 ## PutPermissionResponseTypeDef
 
@@ -485,11 +479,9 @@ Required fields:
 - `allMatchesCount`: `int`
 - `allMatchesSum`: `float`
 - `endTime`: `datetime`
-- `pattern`:
-  [PatternTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#patterntypedef)
+- `pattern`: [PatternTypeDef](./type_defs.md#patterntypedef)
 - `startTime`: `datetime`
-- `topMatches`:
-  `List`\[[MatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#matchtypedef)\]
+- `topMatches`: `List`\[[MatchTypeDef](./type_defs.md#matchtypedef)\]
 
 ## RemoveNotificationChannelResponseTypeDef
 
@@ -500,7 +492,7 @@ from mypy_boto3_codeguruprofiler.type_defs import RemoveNotificationChannelRespo
 Optional fields:
 
 - `notificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#notificationconfigurationtypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 ## RemovePermissionResponseTypeDef
 
@@ -532,7 +524,7 @@ from mypy_boto3_codeguruprofiler.type_defs import UpdateProfilingGroupResponseTy
 Required fields:
 
 - `profilingGroup`:
-  [ProfilingGroupDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#profilinggroupdescriptiontypedef)
+  [ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef)
 
 ## UserFeedbackTypeDef
 
@@ -542,5 +534,4 @@ from mypy_boto3_codeguruprofiler.type_defs import UserFeedbackTypeDef
 
 Required fields:
 
-- `type`:
-  [FeedbackType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#feedbacktype)
+- `type`: [FeedbackType](./literals.md#feedbacktype)

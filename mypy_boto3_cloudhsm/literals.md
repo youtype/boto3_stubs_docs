@@ -1,6 +1,6 @@
 # Literals for boto3 CloudHSM module
 
-> [Index](../README.md) > [CloudHSM](./README.md) > Literals
+> [Index](..) > [CloudHSM](.) > Literals
 
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)

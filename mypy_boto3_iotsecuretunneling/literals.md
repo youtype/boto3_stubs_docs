@@ -1,6 +1,6 @@
 # Literals for boto3 IoTSecureTunneling module
 
-> [Index](../README.md) > [IoTSecureTunneling](./README.md) > Literals
+> [Index](..) > [IoTSecureTunneling](.) > Literals
 
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)

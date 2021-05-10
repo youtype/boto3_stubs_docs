@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTDeviceAdvisor module
 
-> [Index](../README.md) > IoTDeviceAdvisor
+> [Index](..) > IoTDeviceAdvisor
 
 Auto-generated documentation for
 [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)

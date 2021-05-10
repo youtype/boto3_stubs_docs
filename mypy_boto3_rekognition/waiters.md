@@ -1,6 +1,6 @@
 # Waiters for boto3 Rekognition module
 
-> [Index](../README.md) > [Rekognition](./README.md) > Waiters
+> [Index](..) > [Rekognition](.) > Waiters
 
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
@@ -34,8 +34,7 @@ Arguments for `ProjectVersionRunningWaiter.wait` method:
 - `VersionNames`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ProjectVersionTrainingCompletedWaiter
 
@@ -60,5 +59,4 @@ Arguments for `ProjectVersionTrainingCompletedWaiter.wait` method:
 - `VersionNames`: `List`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rekognition/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

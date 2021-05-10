@@ -1,6 +1,6 @@
 # Paginators for boto3 Greengrass module
 
-> [Index](../README.md) > [Greengrass](./README.md) > Paginators
+> [Index](..) > [Greengrass](.) > Paginators
 
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
@@ -49,10 +49,10 @@ Arguments for `ListBulkDeploymentDetailedReportsPaginator.paginate` method:
 
 - `BulkDeploymentId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBulkDeploymentDetailedReportsPaginator.paginate` returns
-`Iterator`\[[ListBulkDeploymentDetailedReportsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listbulkdeploymentdetailedreportsresponsetypedef)\].
+`Iterator`\[[ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef)\].
 
 ## ListBulkDeploymentsPaginator
 
@@ -74,10 +74,10 @@ Boto3 documentation:
 Arguments for `ListBulkDeploymentsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBulkDeploymentsPaginator.paginate` returns
-`Iterator`\[[ListBulkDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listbulkdeploymentsresponsetypedef)\].
+`Iterator`\[[ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef)\].
 
 ## ListConnectorDefinitionVersionsPaginator
 
@@ -100,10 +100,10 @@ Arguments for `ListConnectorDefinitionVersionsPaginator.paginate` method:
 
 - `ConnectorDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConnectorDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListConnectorDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listconnectordefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef)\].
 
 ## ListConnectorDefinitionsPaginator
 
@@ -125,10 +125,10 @@ Boto3 documentation:
 Arguments for `ListConnectorDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConnectorDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListConnectorDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listconnectordefinitionsresponsetypedef)\].
+`Iterator`\[[ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef)\].
 
 ## ListCoreDefinitionVersionsPaginator
 
@@ -151,10 +151,10 @@ Arguments for `ListCoreDefinitionVersionsPaginator.paginate` method:
 
 - `CoreDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCoreDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListCoreDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listcoredefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef)\].
 
 ## ListCoreDefinitionsPaginator
 
@@ -176,10 +176,10 @@ Boto3 documentation:
 Arguments for `ListCoreDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCoreDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListCoreDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listcoredefinitionsresponsetypedef)\].
+`Iterator`\[[ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef)\].
 
 ## ListDeploymentsPaginator
 
@@ -202,10 +202,10 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 
 - `GroupId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listdeploymentsresponsetypedef)\].
+`Iterator`\[[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)\].
 
 ## ListDeviceDefinitionVersionsPaginator
 
@@ -228,10 +228,10 @@ Arguments for `ListDeviceDefinitionVersionsPaginator.paginate` method:
 
 - `DeviceDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListDeviceDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listdevicedefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef)\].
 
 ## ListDeviceDefinitionsPaginator
 
@@ -253,10 +253,10 @@ Boto3 documentation:
 Arguments for `ListDeviceDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListDeviceDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listdevicedefinitionsresponsetypedef)\].
+`Iterator`\[[ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef)\].
 
 ## ListFunctionDefinitionVersionsPaginator
 
@@ -279,10 +279,10 @@ Arguments for `ListFunctionDefinitionVersionsPaginator.paginate` method:
 
 - `FunctionDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListFunctionDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listfunctiondefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef)\].
 
 ## ListFunctionDefinitionsPaginator
 
@@ -304,10 +304,10 @@ Boto3 documentation:
 Arguments for `ListFunctionDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListFunctionDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listfunctiondefinitionsresponsetypedef)\].
+`Iterator`\[[ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef)\].
 
 ## ListGroupVersionsPaginator
 
@@ -330,10 +330,10 @@ Arguments for `ListGroupVersionsPaginator.paginate` method:
 
 - `GroupId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupVersionsPaginator.paginate` returns
-`Iterator`\[[ListGroupVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listgroupversionsresponsetypedef)\].
+`Iterator`\[[ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef)\].
 
 ## ListGroupsPaginator
 
@@ -354,10 +354,10 @@ Boto3 documentation:
 Arguments for `ListGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listgroupsresponsetypedef)\].
+`Iterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
 ## ListLoggerDefinitionVersionsPaginator
 
@@ -380,10 +380,10 @@ Arguments for `ListLoggerDefinitionVersionsPaginator.paginate` method:
 
 - `LoggerDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLoggerDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListLoggerDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listloggerdefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef)\].
 
 ## ListLoggerDefinitionsPaginator
 
@@ -405,10 +405,10 @@ Boto3 documentation:
 Arguments for `ListLoggerDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLoggerDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListLoggerDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listloggerdefinitionsresponsetypedef)\].
+`Iterator`\[[ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef)\].
 
 ## ListResourceDefinitionVersionsPaginator
 
@@ -431,10 +431,10 @@ Arguments for `ListResourceDefinitionVersionsPaginator.paginate` method:
 
 - `ResourceDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListResourceDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listresourcedefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef)\].
 
 ## ListResourceDefinitionsPaginator
 
@@ -456,10 +456,10 @@ Boto3 documentation:
 Arguments for `ListResourceDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListResourceDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listresourcedefinitionsresponsetypedef)\].
+`Iterator`\[[ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef)\].
 
 ## ListSubscriptionDefinitionVersionsPaginator
 
@@ -482,10 +482,10 @@ Arguments for `ListSubscriptionDefinitionVersionsPaginator.paginate` method:
 
 - `SubscriptionDefinitionId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscriptionDefinitionVersionsPaginator.paginate` returns
-`Iterator`\[[ListSubscriptionDefinitionVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listsubscriptiondefinitionversionsresponsetypedef)\].
+`Iterator`\[[ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef)\].
 
 ## ListSubscriptionDefinitionsPaginator
 
@@ -507,7 +507,7 @@ Boto3 documentation:
 Arguments for `ListSubscriptionDefinitionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscriptionDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListSubscriptionDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_greengrass/type_defs.html#listsubscriptiondefinitionsresponsetypedef)\].
+`Iterator`\[[ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef)\].

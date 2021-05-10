@@ -1,6 +1,6 @@
 # Type annotations for boto3 LicenseManager module
 
-> [Index](../README.md) > LicenseManager
+> [Index](..) > LicenseManager
 
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)

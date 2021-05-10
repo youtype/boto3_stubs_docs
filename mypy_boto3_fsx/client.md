@@ -1,6 +1,6 @@
 # FSxClient for boto3 FSx module
 
-> [Index](../README.md) > [FSx](./README.md) > FSxClient
+> [Index](..) > [FSx](.) > FSxClient
 
 Auto-generated documentation for
 [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
@@ -109,7 +109,7 @@ Arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[AssociateFileSystemAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#associatefilesystemaliasesresponsetypedef).
+[AssociateFileSystemAliasesResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponsetypedef).
 
 ### can_paginate
 
@@ -136,7 +136,7 @@ Arguments:
 - `TaskId`: `str` *(required)*
 
 Returns
-[CancelDataRepositoryTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#canceldatarepositorytaskresponsetypedef).
+[CancelDataRepositoryTaskResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponsetypedef).
 
 ### copy_backup
 
@@ -152,11 +152,9 @@ Arguments:
 - `SourceRegion`: `str`
 - `KmsKeyId`: `str`
 - `CopyTags`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CopyBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#copybackupresponsetypedef).
+Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 
 ### create_backup
 
@@ -169,11 +167,10 @@ Arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createbackupresponsetypedef).
+[CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
 
 ### create_data_repository_task
 
@@ -184,18 +181,17 @@ Boto3 documentation:
 
 Arguments:
 
-- `Type`: `Literal['EXPORT_TO_REPOSITORY']` *(required)*
+- `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
+  [DataRepositoryTaskType](./literals.md#datarepositorytasktype)) *(required)*
 - `FileSystemId`: `str` *(required)*
-- `Report`:
-  [CompletionReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#completionreporttypedef)
+- `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
   *(required)*
 - `Paths`: `List`\[`str`\]
 - `ClientRequestToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataRepositoryTaskResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createdatarepositorytaskresponsetypedef).
+[CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
 
 ### create_file_system
 
@@ -206,25 +202,21 @@ Boto3 documentation:
 
 Arguments:
 
-- `FileSystemType`:
-  [FileSystemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#filesystemtype)
-  *(required)*
+- `FileSystemType`: [FileSystemType](./literals.md#filesystemtype) *(required)*
 - `StorageCapacity`: `int` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
-- `StorageType`:
-  [StorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#storagetype)
+- `StorageType`: [StorageType](./literals.md#storagetype)
 - `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `WindowsConfiguration`:
-  [CreateFileSystemWindowsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createfilesystemwindowsconfigurationtypedef)
+  [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
-  [CreateFileSystemLustreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createfilesystemlustreconfigurationtypedef)
+  [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 
 Returns
-[CreateFileSystemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createfilesystemresponsetypedef).
+[CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
 
 ### create_file_system_from_backup
 
@@ -240,18 +232,16 @@ Arguments:
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WindowsConfiguration`:
-  [CreateFileSystemWindowsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createfilesystemwindowsconfigurationtypedef)
+  [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
-  [CreateFileSystemLustreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createfilesystemlustreconfigurationtypedef)
-- `StorageType`:
-  [StorageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/literals.html#storagetype)
+  [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
+- `StorageType`: [StorageType](./literals.md#storagetype)
 - `KmsKeyId`: `str`
 
 Returns
-[CreateFileSystemFromBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#createfilesystemfrombackupresponsetypedef).
+[CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
 
 ### delete_backup
 
@@ -266,7 +256,7 @@ Arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[DeleteBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#deletebackupresponsetypedef).
+[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
 ### delete_file_system
 
@@ -280,12 +270,12 @@ Arguments:
 - `FileSystemId`: `str` *(required)*
 - `ClientRequestToken`: `str`
 - `WindowsConfiguration`:
-  [DeleteFileSystemWindowsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#deletefilesystemwindowsconfigurationtypedef)
+  [DeleteFileSystemWindowsConfigurationTypeDef](./type_defs.md#deletefilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
-  [DeleteFileSystemLustreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#deletefilesystemlustreconfigurationtypedef)
+  [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
 
 Returns
-[DeleteFileSystemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#deletefilesystemresponsetypedef).
+[DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
 
 ### describe_backups
 
@@ -297,13 +287,12 @@ Boto3 documentation:
 Arguments:
 
 - `BackupIds`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeBackupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#describebackupsresponsetypedef).
+[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
 ### describe_data_repository_tasks
 
@@ -317,12 +306,12 @@ Arguments:
 
 - `TaskIds`: `List`\[`str`\]
 - `Filters`:
-  `List`\[[DataRepositoryTaskFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#datarepositorytaskfiltertypedef)\]
+  `List`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeDataRepositoryTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#describedatarepositorytasksresponsetypedef).
+[DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef).
 
 ### describe_file_system_aliases
 
@@ -339,7 +328,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFileSystemAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#describefilesystemaliasesresponsetypedef).
+[DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef).
 
 ### describe_file_systems
 
@@ -355,7 +344,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFileSystemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#describefilesystemsresponsetypedef).
+[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
 
 ### disassociate_file_system_aliases
 
@@ -372,7 +361,7 @@ Arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[DisassociateFileSystemAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#disassociatefilesystemaliasesresponsetypedef).
+[DisassociateFileSystemAliasesResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -404,7 +393,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -416,9 +405,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -449,12 +436,12 @@ Arguments:
 - `ClientRequestToken`: `str`
 - `StorageCapacity`: `int`
 - `WindowsConfiguration`:
-  [UpdateFileSystemWindowsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#updatefilesystemwindowsconfigurationtypedef)
+  [UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
-  [UpdateFileSystemLustreConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#updatefilesystemlustreconfigurationtypedef)
+  [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
 
 Returns
-[UpdateFileSystemResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_fsx/type_defs.html#updatefilesystemresponsetypedef).
+[UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
 
 ### get_paginator
 

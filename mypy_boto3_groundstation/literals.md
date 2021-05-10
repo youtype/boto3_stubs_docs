@@ -1,6 +1,6 @@
 # Literals for boto3 GroundStation module
 
-> [Index](../README.md) > [GroundStation](./README.md) > Literals
+> [Index](..) > [GroundStation](.) > Literals
 
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)

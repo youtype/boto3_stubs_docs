@@ -1,6 +1,6 @@
 # Paginators for boto3 Redshift module
 
-> [Index](../README.md) > [Redshift](./README.md) > Paginators
+> [Index](..) > [Redshift](.) > Paginators
 
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
@@ -57,10 +57,10 @@ Arguments for `DescribeClusterDbRevisionsPaginator.paginate` method:
 
 - `ClusterIdentifier`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterDbRevisionsPaginator.paginate` returns
-`Iterator`\[[ClusterDbRevisionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterdbrevisionsmessagetypedef)\].
+`Iterator`\[[ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef)\].
 
 ## DescribeClusterParameterGroupsPaginator
 
@@ -85,10 +85,10 @@ Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterParameterGroupsPaginator.paginate` returns
-`Iterator`\[[ClusterParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupsmessagetypedef)\].
+`Iterator`\[[ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef)\].
 
 ## DescribeClusterParametersPaginator
 
@@ -112,10 +112,10 @@ Arguments for `DescribeClusterParametersPaginator.paginate` method:
 - `ParameterGroupName`: `str` *(required)*
 - `Source`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterParametersPaginator.paginate` returns
-`Iterator`\[[ClusterParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterparametergroupdetailstypedef)\].
+`Iterator`\[[ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef)\].
 
 ## DescribeClusterSecurityGroupsPaginator
 
@@ -140,10 +140,10 @@ Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[ClusterSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersecuritygroupmessagetypedef)\].
+`Iterator`\[[ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef)\].
 
 ## DescribeClusterSnapshotsPaginator
 
@@ -174,12 +174,12 @@ Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
 - `TagValues`: `List`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotsortingentitytypedef)\]
+  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterSnapshotsPaginator.paginate` returns
-`Iterator`\[[SnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotmessagetypedef)\].
+`Iterator`\[[SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef)\].
 
 ## DescribeClusterSubnetGroupsPaginator
 
@@ -204,10 +204,10 @@ Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[ClusterSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersubnetgroupmessagetypedef)\].
+`Iterator`\[[ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef)\].
 
 ## DescribeClusterTracksPaginator
 
@@ -230,10 +230,10 @@ Arguments for `DescribeClusterTracksPaginator.paginate` method:
 
 - `MaintenanceTrackName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterTracksPaginator.paginate` returns
-`Iterator`\[[TrackListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tracklistmessagetypedef)\].
+`Iterator`\[[TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef)\].
 
 ## DescribeClusterVersionsPaginator
 
@@ -257,10 +257,10 @@ Arguments for `DescribeClusterVersionsPaginator.paginate` method:
 - `ClusterVersion`: `str`
 - `ClusterParameterGroupFamily`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterVersionsPaginator.paginate` returns
-`Iterator`\[[ClusterVersionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clusterversionsmessagetypedef)\].
+`Iterator`\[[ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef)\].
 
 ## DescribeClustersPaginator
 
@@ -285,10 +285,10 @@ Arguments for `DescribeClustersPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClustersPaginator.paginate` returns
-`Iterator`\[[ClustersMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#clustersmessagetypedef)\].
+`Iterator`\[[ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef)\].
 
 ## DescribeDefaultClusterParametersPaginator
 
@@ -311,10 +311,10 @@ Arguments for `DescribeDefaultClusterParametersPaginator.paginate` method:
 
 - `ParameterGroupFamily`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDefaultClusterParametersPaginator.paginate` returns
-`Iterator`\[[DescribeDefaultClusterParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describedefaultclusterparametersresulttypedef)\].
+`Iterator`\[[DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef)\].
 
 ## DescribeEndpointAccessPaginator
 
@@ -340,10 +340,10 @@ Arguments for `DescribeEndpointAccessPaginator.paginate` method:
 - `EndpointName`: `str`
 - `VpcId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointAccessPaginator.paginate` returns
-`Iterator`\[[EndpointAccessListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointaccesslisttypedef)\].
+`Iterator`\[[EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef)\].
 
 ## DescribeEndpointAuthorizationPaginator
 
@@ -368,10 +368,10 @@ Arguments for `DescribeEndpointAuthorizationPaginator.paginate` method:
 - `Account`: `str`
 - `Grantee`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointAuthorizationPaginator.paginate` returns
-`Iterator`\[[EndpointAuthorizationListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#endpointauthorizationlisttypedef)\].
+`Iterator`\[[EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef)\].
 
 ## DescribeEventSubscriptionsPaginator
 
@@ -396,10 +396,10 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[EventSubscriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsubscriptionsmessagetypedef)\].
+`Iterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -421,16 +421,15 @@ Boto3 documentation:
 Arguments for `DescribeEventsPaginator.paginate` method:
 
 - `SourceIdentifier`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#eventsmessagetypedef)\].
+`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
 ## DescribeHsmClientCertificatesPaginator
 
@@ -455,10 +454,10 @@ Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHsmClientCertificatesPaginator.paginate` returns
-`Iterator`\[[HsmClientCertificateMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmclientcertificatemessagetypedef)\].
+`Iterator`\[[HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef)\].
 
 ## DescribeHsmConfigurationsPaginator
 
@@ -483,10 +482,10 @@ Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHsmConfigurationsPaginator.paginate` returns
-`Iterator`\[[HsmConfigurationMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#hsmconfigurationmessagetypedef)\].
+`Iterator`\[[HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef)\].
 
 ## DescribeNodeConfigurationOptionsPaginator
 
@@ -507,19 +506,17 @@ Boto3 documentation:
 
 Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
 
-- `ActionType`:
-  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#actiontype)
-  *(required)*
+- `ActionType`: [ActionType](./literals.md#actiontype) *(required)*
 - `ClusterIdentifier`: `str`
 - `SnapshotIdentifier`: `str`
 - `OwnerAccount`: `str`
 - `Filters`:
-  `List`\[[NodeConfigurationOptionsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptionsfiltertypedef)\]
+  `List`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNodeConfigurationOptionsPaginator.paginate` returns
-`Iterator`\[[NodeConfigurationOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#nodeconfigurationoptionsmessagetypedef)\].
+`Iterator`\[[NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef)\].
 
 ## DescribeOrderableClusterOptionsPaginator
 
@@ -543,10 +540,10 @@ Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
 - `ClusterVersion`: `str`
 - `NodeType`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrderableClusterOptionsPaginator.paginate` returns
-`Iterator`\[[OrderableClusterOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#orderableclusteroptionsmessagetypedef)\].
+`Iterator`\[[OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef)\].
 
 ## DescribeReservedNodeOfferingsPaginator
 
@@ -569,10 +566,10 @@ Arguments for `DescribeReservedNodeOfferingsPaginator.paginate` method:
 
 - `ReservedNodeOfferingId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedNodeOfferingsPaginator.paginate` returns
-`Iterator`\[[ReservedNodeOfferingsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodeofferingsmessagetypedef)\].
+`Iterator`\[[ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef)\].
 
 ## DescribeReservedNodesPaginator
 
@@ -595,10 +592,10 @@ Arguments for `DescribeReservedNodesPaginator.paginate` method:
 
 - `ReservedNodeId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedNodesPaginator.paginate` returns
-`Iterator`\[[ReservedNodesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#reservednodesmessagetypedef)\].
+`Iterator`\[[ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -621,17 +618,17 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
 - `ScheduledActionName`: `str`
 - `TargetActionType`:
-  [ScheduledActionTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#scheduledactiontypevalues)
+  [ScheduledActionTypeValues](./literals.md#scheduledactiontypevalues)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Active`: `bool`
 - `Filters`:
-  `List`\[[ScheduledActionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactionfiltertypedef)\]
+  `List`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[ScheduledActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#scheduledactionsmessagetypedef)\].
+`Iterator`\[[ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef)\].
 
 ## DescribeSnapshotCopyGrantsPaginator
 
@@ -656,10 +653,10 @@ Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotCopyGrantsPaginator.paginate` returns
-`Iterator`\[[SnapshotCopyGrantMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotcopygrantmessagetypedef)\].
+`Iterator`\[[SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef)\].
 
 ## DescribeSnapshotSchedulesPaginator
 
@@ -685,10 +682,10 @@ Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotSchedulesPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotSchedulesOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#describesnapshotschedulesoutputmessagetypedef)\].
+`Iterator`\[[DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef)\].
 
 ## DescribeTableRestoreStatusPaginator
 
@@ -712,10 +709,10 @@ Arguments for `DescribeTableRestoreStatusPaginator.paginate` method:
 - `ClusterIdentifier`: `str`
 - `TableRestoreRequestId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTableRestoreStatusPaginator.paginate` returns
-`Iterator`\[[TableRestoreStatusMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#tablerestorestatusmessagetypedef)\].
+`Iterator`\[[TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -740,10 +737,10 @@ Arguments for `DescribeTagsPaginator.paginate` method:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[TaggedResourceListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#taggedresourcelistmessagetypedef)\].
+`Iterator`\[[TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef)\].
 
 ## DescribeUsageLimitsPaginator
 
@@ -766,15 +763,14 @@ Arguments for `DescribeUsageLimitsPaginator.paginate` method:
 
 - `UsageLimitId`: `str`
 - `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/literals.html#usagelimitfeaturetype)
+- `FeatureType`: [UsageLimitFeatureType](./literals.md#usagelimitfeaturetype)
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsageLimitsPaginator.paginate` returns
-`Iterator`\[[UsageLimitListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#usagelimitlisttypedef)\].
+`Iterator`\[[UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef)\].
 
 ## GetReservedNodeExchangeOfferingsPaginator
 
@@ -797,7 +793,7 @@ Arguments for `GetReservedNodeExchangeOfferingsPaginator.paginate` method:
 
 - `ReservedNodeId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReservedNodeExchangeOfferingsPaginator.paginate` returns
-`Iterator`\[[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#getreservednodeexchangeofferingsoutputmessagetypedef)\].
+`Iterator`\[[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef)\].

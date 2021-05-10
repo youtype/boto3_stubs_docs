@@ -1,6 +1,6 @@
 # Literals for boto3 RedshiftDataAPIService module
 
-> [Index](../README.md) > [RedshiftDataAPIService](./README.md) > Literals
+> [Index](..) > [RedshiftDataAPIService](.) > Literals
 
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)

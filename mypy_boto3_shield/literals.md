@@ -1,6 +1,6 @@
 # Literals for boto3 Shield module
 
-> [Index](../README.md) > [Shield](./README.md) > Literals
+> [Index](..) > [Shield](.) > Literals
 
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)

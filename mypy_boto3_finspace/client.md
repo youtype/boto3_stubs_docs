@@ -1,6 +1,6 @@
 # finspaceClient for boto3 finspace module
 
-> [Index](../README.md) > [finspace](./README.md) > finspaceClient
+> [Index](..) > [finspace](.) > finspaceClient
 
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
@@ -90,13 +90,12 @@ Arguments:
 - `description`: `str`
 - `kmsKeyId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
-- `federationMode`:
-  [FederationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/literals.html#federationmode)
+- `federationMode`: [FederationMode](./literals.md#federationmode)
 - `federationParameters`:
-  [FederationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#federationparameterstypedef)
+  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 
 Returns
-[CreateEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#createenvironmentresponsetypedef).
+[CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef).
 
 ### delete_environment
 
@@ -139,7 +138,7 @@ Arguments:
 - `environmentId`: `str` *(required)*
 
 Returns
-[GetEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#getenvironmentresponsetypedef).
+[GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef).
 
 ### list_environments
 
@@ -154,7 +153,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEnvironmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#listenvironmentsresponsetypedef).
+[ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -168,7 +167,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -210,10 +209,9 @@ Arguments:
 - `environmentId`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
-- `federationMode`:
-  [FederationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/literals.html#federationmode)
+- `federationMode`: [FederationMode](./literals.md#federationmode)
 - `federationParameters`:
-  [FederationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#federationparameterstypedef)
+  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 
 Returns
-[UpdateEnvironmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#updateenvironmentresponsetypedef).
+[UpdateEnvironmentResponseTypeDef](./type_defs.md#updateenvironmentresponsetypedef).

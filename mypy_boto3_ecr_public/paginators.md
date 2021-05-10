@@ -1,6 +1,6 @@
 # Paginators for boto3 ECRPublic module
 
-> [Index](../README.md) > [ECRPublic](./README.md) > Paginators
+> [Index](..) > [ECRPublic](.) > Paginators
 
 Auto-generated documentation for
 [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
@@ -35,10 +35,10 @@ Arguments for `DescribeImageTagsPaginator.paginate` method:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImageTagsPaginator.paginate` returns
-`Iterator`\[[DescribeImageTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#describeimagetagsresponsetypedef)\].
+`Iterator`\[[DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef)\].
 
 ## DescribeImagesPaginator
 
@@ -62,12 +62,12 @@ Arguments for `DescribeImagesPaginator.paginate` method:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#imageidentifiertypedef)\]
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImagesPaginator.paginate` returns
-`Iterator`\[[DescribeImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#describeimagesresponsetypedef)\].
+`Iterator`\[[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef)\].
 
 ## DescribeRegistriesPaginator
 
@@ -89,10 +89,10 @@ Boto3 documentation:
 Arguments for `DescribeRegistriesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRegistriesPaginator.paginate` returns
-`Iterator`\[[DescribeRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#describeregistriesresponsetypedef)\].
+`Iterator`\[[DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef)\].
 
 ## DescribeRepositoriesPaginator
 
@@ -116,7 +116,7 @@ Arguments for `DescribeRepositoriesPaginator.paginate` method:
 - `registryId`: `str`
 - `repositoryNames`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRepositoriesPaginator.paginate` returns
-`Iterator`\[[DescribeRepositoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr_public/type_defs.html#describerepositoriesresponsetypedef)\].
+`Iterator`\[[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef)\].

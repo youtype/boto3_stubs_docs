@@ -1,6 +1,6 @@
 # Literals for boto3 KinesisVideoMedia module
 
-> [Index](../README.md) > [KinesisVideoMedia](./README.md) > Literals
+> [Index](..) > [KinesisVideoMedia](.) > Literals
 
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)

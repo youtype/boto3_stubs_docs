@@ -1,6 +1,6 @@
 # Type annotations for boto3 Textract module
 
-> [Index](../README.md) > Textract
+> [Index](..) > Textract
 
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
@@ -107,7 +107,7 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentResponseTypeDef, ...
 - [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - [PointTypeDef](./type_defs.md#pointtypedef)
 - [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 - [StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef)
 - [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef)

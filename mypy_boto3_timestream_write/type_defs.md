@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 TimestreamWrite module
 
-> [Index](../README.md) > [TimestreamWrite](./README.md) > Structures
+> [Index](..) > [TimestreamWrite](.) > Typed dictionaries
 
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
@@ -34,8 +34,7 @@ from mypy_boto3_timestream_write.type_defs import CreateDatabaseResponseTypeDef
 
 Optional fields:
 
-- `Database`:
-  [DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#databasetypedef)
+- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 
 ## CreateTableResponseTypeDef
 
@@ -45,8 +44,7 @@ from mypy_boto3_timestream_write.type_defs import CreateTableResponseTypeDef
 
 Optional fields:
 
-- `Table`:
-  [TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tabletypedef)
+- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 
 ## DatabaseTypeDef
 
@@ -71,8 +69,7 @@ from mypy_boto3_timestream_write.type_defs import DescribeDatabaseResponseTypeDe
 
 Optional fields:
 
-- `Database`:
-  [DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#databasetypedef)
+- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -82,8 +79,7 @@ from mypy_boto3_timestream_write.type_defs import DescribeEndpointsResponseTypeD
 
 Required fields:
 
-- `Endpoints`:
-  `List`\[[EndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#endpointtypedef)\]
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 
 ## DescribeTableResponseTypeDef
 
@@ -93,8 +89,7 @@ from mypy_boto3_timestream_write.type_defs import DescribeTableResponseTypeDef
 
 Optional fields:
 
-- `Table`:
-  [TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tabletypedef)
+- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 
 ## DimensionTypeDef
 
@@ -109,7 +104,8 @@ Required fields:
 
 Optional fields:
 
-- `DimensionValueType`: `Literal['VARCHAR']`
+- `DimensionValueType`: `Literal['VARCHAR']` (see
+  [DimensionValueType](./literals.md#dimensionvaluetype))
 
 ## EndpointTypeDef
 
@@ -130,8 +126,7 @@ from mypy_boto3_timestream_write.type_defs import ListDatabasesResponseTypeDef
 
 Optional fields:
 
-- `Databases`:
-  `List`\[[DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#databasetypedef)\]
+- `Databases`: `List`\[[DatabaseTypeDef](./type_defs.md#databasetypedef)\]
 - `NextToken`: `str`
 
 ## ListTablesResponseTypeDef
@@ -142,8 +137,7 @@ from mypy_boto3_timestream_write.type_defs import ListTablesResponseTypeDef
 
 Optional fields:
 
-- `Tables`:
-  `List`\[[TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tabletypedef)\]
+- `Tables`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -154,8 +148,7 @@ from mypy_boto3_timestream_write.type_defs import ListTagsForResourceResponseTyp
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RecordTypeDef
 
@@ -165,15 +158,12 @@ from mypy_boto3_timestream_write.type_defs import RecordTypeDef
 
 Optional fields:
 
-- `Dimensions`:
-  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#dimensiontypedef)\]
+- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `MeasureName`: `str`
 - `MeasureValue`: `str`
-- `MeasureValueType`:
-  [MeasureValueType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/literals.html#measurevaluetype)
+- `MeasureValueType`: [MeasureValueType](./literals.md#measurevaluetype)
 - `Time`: `str`
-- `TimeUnit`:
-  [TimeUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/literals.html#timeunit)
+- `TimeUnit`: [TimeUnit](./literals.md#timeunit)
 - `Version`: `int`
 
 ## RetentionPropertiesTypeDef
@@ -198,10 +188,9 @@ Optional fields:
 - `Arn`: `str`
 - `TableName`: `str`
 - `DatabaseName`: `str`
-- `TableStatus`:
-  [TableStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/literals.html#tablestatus)
+- `TableStatus`: [TableStatus](./literals.md#tablestatus)
 - `RetentionProperties`:
-  [RetentionPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#retentionpropertiestypedef)
+  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
@@ -224,8 +213,7 @@ from mypy_boto3_timestream_write.type_defs import UpdateDatabaseResponseTypeDef
 
 Optional fields:
 
-- `Database`:
-  [DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#databasetypedef)
+- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 
 ## UpdateTableResponseTypeDef
 
@@ -235,5 +223,4 @@ from mypy_boto3_timestream_write.type_defs import UpdateTableResponseTypeDef
 
 Optional fields:
 
-- `Table`:
-  [TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_timestream_write/type_defs.html#tabletypedef)
+- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)

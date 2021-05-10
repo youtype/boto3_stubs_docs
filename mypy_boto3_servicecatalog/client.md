@@ -1,6 +1,6 @@
 # ServiceCatalogClient for boto3 ServiceCatalog module
 
-> [Index](../README.md) > [ServiceCatalog](./README.md) > ServiceCatalogClient
+> [Index](..) > [ServiceCatalog](.) > ServiceCatalogClient
 
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
@@ -156,8 +156,7 @@ Arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
-- `PortfolioShareType`:
-  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+- `PortfolioShareType`: [PortfolioShareType](./literals.md#portfoliosharetype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -188,7 +187,8 @@ Arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `PrincipalARN`: `str` *(required)*
-- `PrincipalType`: `Literal['IAM']` *(required)*
+- `PrincipalType`: `Literal['IAM']` (see
+  [PrincipalType](./literals.md#principaltype)) *(required)*
 - `AcceptLanguage`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -255,12 +255,12 @@ Boto3 documentation:
 Arguments:
 
 - `ServiceActionAssociations`:
-  `List`\[[ServiceActionAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionassociationtypedef)\]
+  `List`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
   *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#batchassociateserviceactionwithprovisioningartifactoutputtypedef).
+[BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputtypedef).
 
 ### batch_disassociate_service_action_from_provisioning_artifact
 
@@ -274,12 +274,12 @@ Boto3 documentation:
 Arguments:
 
 - `ServiceActionAssociations`:
-  `List`\[[ServiceActionAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#serviceactionassociationtypedef)\]
+  `List`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
   *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef).
+[BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef).
 
 ### can_paginate
 
@@ -308,12 +308,13 @@ Arguments:
 - `AcceptLanguage`: `str`
 - `TargetProductId`: `str`
 - `TargetProductName`: `str`
-- `SourceProvisioningArtifactIdentifiers`: `List`\[`Dict`\[`Literal['Id']`,
+- `SourceProvisioningArtifactIdentifiers`: `List`\[`Dict`\[`Literal['Id']` (see
+  [ProvisioningArtifactPropertyName](./literals.md#provisioningartifactpropertyname)),
   `str`\]\]
-- `CopyOptions`: `List`\[`Literal['CopyTags']`\]
+- `CopyOptions`: `List`\[`Literal['CopyTags']` (see
+  [CopyOption](./literals.md#copyoption))\]
 
-Returns
-[CopyProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#copyproductoutputtypedef).
+Returns [CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef).
 
 ### create_constraint
 
@@ -333,7 +334,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[CreateConstraintOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createconstraintoutputtypedef).
+[CreateConstraintOutputTypeDef](./type_defs.md#createconstraintoutputtypedef).
 
 ### create_portfolio
 
@@ -349,11 +350,10 @@ Arguments:
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createportfoliooutputtypedef).
+[CreatePortfolioOutputTypeDef](./type_defs.md#createportfoliooutputtypedef).
 
 ### create_portfolio_share
 
@@ -369,11 +369,11 @@ Arguments:
 - `AcceptLanguage`: `str`
 - `AccountId`: `str`
 - `OrganizationNode`:
-  [OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)
+  [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 - `ShareTagOptions`: `bool`
 
 Returns
-[CreatePortfolioShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createportfolioshareoutputtypedef).
+[CreatePortfolioShareOutputTypeDef](./type_defs.md#createportfolioshareoutputtypedef).
 
 ### create_product
 
@@ -386,11 +386,9 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Owner`: `str` *(required)*
-- `ProductType`:
-  [ProductType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#producttype)
-  *(required)*
+- `ProductType`: [ProductType](./literals.md#producttype) *(required)*
 - `ProvisioningArtifactParameters`:
-  [ProvisioningArtifactPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactpropertiestypedef)
+  [ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef)
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -399,11 +397,10 @@ Arguments:
 - `SupportDescription`: `str`
 - `SupportEmail`: `str`
 - `SupportUrl`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createproductoutputtypedef).
+[CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef).
 
 ### create_provisioned_product_plan
 
@@ -416,7 +413,9 @@ Boto3 documentation:
 Arguments:
 
 - `PlanName`: `str` *(required)*
-- `PlanType`: `Literal['CLOUDFORMATION']` *(required)*
+- `PlanType`: `Literal['CLOUDFORMATION']` (see
+  [ProvisionedProductPlanType](./literals.md#provisionedproductplantype))
+  *(required)*
 - `ProductId`: `str` *(required)*
 - `ProvisionedProductName`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -425,12 +424,11 @@ Arguments:
 - `NotificationArns`: `List`\[`str`\]
 - `PathId`: `str`
 - `ProvisioningParameters`:
-  `List`\[[UpdateProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningparametertypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+  `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProvisionedProductPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createprovisionedproductplanoutputtypedef).
+[CreateProvisionedProductPlanOutputTypeDef](./type_defs.md#createprovisionedproductplanoutputtypedef).
 
 ### create_provisioning_artifact
 
@@ -444,13 +442,13 @@ Arguments:
 
 - `ProductId`: `str` *(required)*
 - `Parameters`:
-  [ProvisioningArtifactPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningartifactpropertiestypedef)
+  [ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef)
   *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[CreateProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createprovisioningartifactoutputtypedef).
+[CreateProvisioningArtifactOutputTypeDef](./type_defs.md#createprovisioningartifactoutputtypedef).
 
 ### create_service_action
 
@@ -463,16 +461,18 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `DefinitionType`: `Literal['SSM_AUTOMATION']` *(required)*
+- `DefinitionType`: `Literal['SSM_AUTOMATION']` (see
+  [ServiceActionDefinitionType](./literals.md#serviceactiondefinitiontype))
+  *(required)*
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#serviceactiondefinitionkey),
+  `Dict`\[[ServiceActionDefinitionKey](./literals.md#serviceactiondefinitionkey),
   `str`\] *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `Description`: `str`
 - `AcceptLanguage`: `str`
 
 Returns
-[CreateServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createserviceactionoutputtypedef).
+[CreateServiceActionOutputTypeDef](./type_defs.md#createserviceactionoutputtypedef).
 
 ### create_tag_option
 
@@ -487,7 +487,7 @@ Arguments:
 - `Value`: `str` *(required)*
 
 Returns
-[CreateTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#createtagoptionoutputtypedef).
+[CreateTagOptionOutputTypeDef](./type_defs.md#createtagoptionoutputtypedef).
 
 ### delete_constraint
 
@@ -531,10 +531,10 @@ Arguments:
 - `AcceptLanguage`: `str`
 - `AccountId`: `str`
 - `OrganizationNode`:
-  [OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)
+  [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 
 Returns
-[DeletePortfolioShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#deleteportfolioshareoutputtypedef).
+[DeletePortfolioShareOutputTypeDef](./type_defs.md#deleteportfolioshareoutputtypedef).
 
 ### delete_product
 
@@ -624,7 +624,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeConstraintOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeconstraintoutputtypedef).
+[DescribeConstraintOutputTypeDef](./type_defs.md#describeconstraintoutputtypedef).
 
 ### describe_copy_product_status
 
@@ -640,7 +640,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeCopyProductStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describecopyproductstatusoutputtypedef).
+[DescribeCopyProductStatusOutputTypeDef](./type_defs.md#describecopyproductstatusoutputtypedef).
 
 ### describe_portfolio
 
@@ -656,7 +656,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribePortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeportfoliooutputtypedef).
+[DescribePortfolioOutputTypeDef](./type_defs.md#describeportfoliooutputtypedef).
 
 ### describe_portfolio_share_status
 
@@ -671,7 +671,7 @@ Arguments:
 - `PortfolioShareToken`: `str` *(required)*
 
 Returns
-[DescribePortfolioShareStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeportfoliosharestatusoutputtypedef).
+[DescribePortfolioShareStatusOutputTypeDef](./type_defs.md#describeportfoliosharestatusoutputtypedef).
 
 ### describe_portfolio_shares
 
@@ -684,14 +684,13 @@ Boto3 documentation:
 Arguments:
 
 - `PortfolioId`: `str` *(required)*
-- `Type`:
-  [DescribePortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#describeportfoliosharetype)
+- `Type`: [DescribePortfolioShareType](./literals.md#describeportfoliosharetype)
   *(required)*
 - `PageToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[DescribePortfolioSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeportfoliosharesoutputtypedef).
+[DescribePortfolioSharesOutputTypeDef](./type_defs.md#describeportfoliosharesoutputtypedef).
 
 ### describe_product
 
@@ -707,7 +706,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[DescribeProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeproductoutputtypedef).
+[DescribeProductOutputTypeDef](./type_defs.md#describeproductoutputtypedef).
 
 ### describe_product_as_admin
 
@@ -725,7 +724,7 @@ Arguments:
 - `SourcePortfolioId`: `str`
 
 Returns
-[DescribeProductAsAdminOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeproductasadminoutputtypedef).
+[DescribeProductAsAdminOutputTypeDef](./type_defs.md#describeproductasadminoutputtypedef).
 
 ### describe_product_view
 
@@ -741,7 +740,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeProductViewOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeproductviewoutputtypedef).
+[DescribeProductViewOutputTypeDef](./type_defs.md#describeproductviewoutputtypedef).
 
 ### describe_provisioned_product
 
@@ -758,7 +757,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[DescribeProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisionedproductoutputtypedef).
+[DescribeProvisionedProductOutputTypeDef](./type_defs.md#describeprovisionedproductoutputtypedef).
 
 ### describe_provisioned_product_plan
 
@@ -776,7 +775,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[DescribeProvisionedProductPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisionedproductplanoutputtypedef).
+[DescribeProvisionedProductPlanOutputTypeDef](./type_defs.md#describeprovisionedproductplanoutputtypedef).
 
 ### describe_provisioning_artifact
 
@@ -796,7 +795,7 @@ Arguments:
 - `Verbose`: `bool`
 
 Returns
-[DescribeProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisioningartifactoutputtypedef).
+[DescribeProvisioningArtifactOutputTypeDef](./type_defs.md#describeprovisioningartifactoutputtypedef).
 
 ### describe_provisioning_parameters
 
@@ -817,7 +816,7 @@ Arguments:
 - `PathName`: `str`
 
 Returns
-[DescribeProvisioningParametersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeprovisioningparametersoutputtypedef).
+[DescribeProvisioningParametersOutputTypeDef](./type_defs.md#describeprovisioningparametersoutputtypedef).
 
 ### describe_record
 
@@ -834,7 +833,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeRecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describerecordoutputtypedef).
+[DescribeRecordOutputTypeDef](./type_defs.md#describerecordoutputtypedef).
 
 ### describe_service_action
 
@@ -850,7 +849,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeserviceactionoutputtypedef).
+[DescribeServiceActionOutputTypeDef](./type_defs.md#describeserviceactionoutputtypedef).
 
 ### describe_service_action_execution_parameters
 
@@ -868,7 +867,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeServiceActionExecutionParametersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describeserviceactionexecutionparametersoutputtypedef).
+[DescribeServiceActionExecutionParametersOutputTypeDef](./type_defs.md#describeserviceactionexecutionparametersoutputtypedef).
 
 ### describe_tag_option
 
@@ -883,7 +882,7 @@ Arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#describetagoptionoutputtypedef).
+[DescribeTagOptionOutputTypeDef](./type_defs.md#describetagoptionoutputtypedef).
 
 ### disable_aws_organizations_access
 
@@ -1000,7 +999,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ExecuteProvisionedProductPlanOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#executeprovisionedproductplanoutputtypedef).
+[ExecuteProvisionedProductPlanOutputTypeDef](./type_defs.md#executeprovisionedproductplanoutputtypedef).
 
 ### execute_provisioned_product_service_action
 
@@ -1020,7 +1019,7 @@ Arguments:
 - `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 
 Returns
-[ExecuteProvisionedProductServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#executeprovisionedproductserviceactionoutputtypedef).
+[ExecuteProvisionedProductServiceActionOutputTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputtypedef).
 
 ### generate_presigned_url
 
@@ -1048,7 +1047,7 @@ Boto3 documentation:
 [ServiceCatalog.Client.get_aws_organizations_access_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
 
 Returns
-[GetAWSOrganizationsAccessStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#getawsorganizationsaccessstatusoutputtypedef).
+[GetAWSOrganizationsAccessStatusOutputTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputtypedef).
 
 ### get_provisioned_product_outputs
 
@@ -1068,7 +1067,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[GetProvisionedProductOutputsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#getprovisionedproductoutputsoutputtypedef).
+[GetProvisionedProductOutputsOutputTypeDef](./type_defs.md#getprovisionedproductoutputsoutputtypedef).
 
 ### import_as_provisioned_product
 
@@ -1088,7 +1087,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ImportAsProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#importasprovisionedproductoutputtypedef).
+[ImportAsProvisionedProductOutputTypeDef](./type_defs.md#importasprovisionedproductoutputtypedef).
 
 ### list_accepted_portfolio_shares
 
@@ -1103,11 +1102,10 @@ Arguments:
 - `AcceptLanguage`: `str`
 - `PageToken`: `str`
 - `PageSize`: `int`
-- `PortfolioShareType`:
-  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+- `PortfolioShareType`: [PortfolioShareType](./literals.md#portfoliosharetype)
 
 Returns
-[ListAcceptedPortfolioSharesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listacceptedportfoliosharesoutputtypedef).
+[ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef).
 
 ### list_budgets_for_resource
 
@@ -1125,7 +1123,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListBudgetsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listbudgetsforresourceoutputtypedef).
+[ListBudgetsForResourceOutputTypeDef](./type_defs.md#listbudgetsforresourceoutputtypedef).
 
 ### list_constraints_for_portfolio
 
@@ -1144,7 +1142,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListConstraintsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listconstraintsforportfoliooutputtypedef).
+[ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef).
 
 ### list_launch_paths
 
@@ -1161,7 +1159,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListLaunchPathsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listlaunchpathsoutputtypedef).
+[ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef).
 
 ### list_organization_portfolio_access
 
@@ -1175,14 +1173,13 @@ Arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `OrganizationNodeType`:
-  [OrganizationNodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#organizationnodetype)
-  *(required)*
+  [OrganizationNodeType](./literals.md#organizationnodetype) *(required)*
 - `AcceptLanguage`: `str`
 - `PageToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[ListOrganizationPortfolioAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listorganizationportfolioaccessoutputtypedef).
+[ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef).
 
 ### list_portfolio_access
 
@@ -1201,7 +1198,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[ListPortfolioAccessOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfolioaccessoutputtypedef).
+[ListPortfolioAccessOutputTypeDef](./type_defs.md#listportfolioaccessoutputtypedef).
 
 ### list_portfolios
 
@@ -1217,7 +1214,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[ListPortfoliosOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosoutputtypedef).
+[ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef).
 
 ### list_portfolios_for_product
 
@@ -1235,7 +1232,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[ListPortfoliosForProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listportfoliosforproductoutputtypedef).
+[ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef).
 
 ### list_principals_for_portfolio
 
@@ -1253,7 +1250,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListPrincipalsForPortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprincipalsforportfoliooutputtypedef).
+[ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef).
 
 ### list_provisioned_product_plans
 
@@ -1270,10 +1267,10 @@ Arguments:
 - `PageSize`: `int`
 - `PageToken`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 
 Returns
-[ListProvisionedProductPlansOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisionedproductplansoutputtypedef).
+[ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef).
 
 ### list_provisioning_artifacts
 
@@ -1289,7 +1286,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ListProvisioningArtifactsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisioningartifactsoutputtypedef).
+[ListProvisioningArtifactsOutputTypeDef](./type_defs.md#listprovisioningartifactsoutputtypedef).
 
 ### list_provisioning_artifacts_for_service_action
 
@@ -1308,7 +1305,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ListProvisioningArtifactsForServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listprovisioningartifactsforserviceactionoutputtypedef).
+[ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef).
 
 ### list_record_history
 
@@ -1322,14 +1319,14 @@ Arguments:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 - `SearchFilter`:
-  [ListRecordHistorySearchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistorysearchfiltertypedef)
+  [ListRecordHistorySearchFilterTypeDef](./type_defs.md#listrecordhistorysearchfiltertypedef)
 - `PageSize`: `int`
 - `PageToken`: `str`
 
 Returns
-[ListRecordHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listrecordhistoryoutputtypedef).
+[ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef).
 
 ### list_resources_for_tag_option
 
@@ -1347,7 +1344,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListResourcesForTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listresourcesfortagoptionoutputtypedef).
+[ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef).
 
 ### list_service_actions
 
@@ -1364,7 +1361,7 @@ Arguments:
 - `PageToken`: `str`
 
 Returns
-[ListServiceActionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsoutputtypedef).
+[ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef).
 
 ### list_service_actions_for_provisioning_artifact
 
@@ -1384,7 +1381,7 @@ Arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ListServiceActionsForProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listserviceactionsforprovisioningartifactoutputtypedef).
+[ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef).
 
 ### list_stack_instances_for_provisioned_product
 
@@ -1403,7 +1400,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[ListStackInstancesForProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#liststackinstancesforprovisionedproductoutputtypedef).
+[ListStackInstancesForProvisionedProductOutputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputtypedef).
 
 ### list_tag_options
 
@@ -1415,12 +1412,12 @@ Boto3 documentation:
 Arguments:
 
 - `Filters`:
-  [ListTagOptionsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsfilterstypedef)
+  [ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef)
 - `PageSize`: `int`
 - `PageToken`: `str`
 
 Returns
-[ListTagOptionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#listtagoptionsoutputtypedef).
+[ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef).
 
 ### provision_product
 
@@ -1441,15 +1438,14 @@ Arguments:
 - `PathId`: `str`
 - `PathName`: `str`
 - `ProvisioningParameters`:
-  `List`\[[ProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningparametertypedef)\]
+  `List`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 - `ProvisioningPreferences`:
-  [ProvisioningPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisioningpreferencestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+  [ProvisioningPreferencesTypeDef](./type_defs.md#provisioningpreferencestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationArns`: `List`\[`str`\]
 
 Returns
-[ProvisionProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#provisionproductoutputtypedef).
+[ProvisionProductOutputTypeDef](./type_defs.md#provisionproductoutputtypedef).
 
 ### reject_portfolio_share
 
@@ -1463,8 +1459,7 @@ Arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
-- `PortfolioShareType`:
-  [PortfolioShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#portfoliosharetype)
+- `PortfolioShareType`: [PortfolioShareType](./literals.md#portfoliosharetype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1480,12 +1475,12 @@ Arguments:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 - `PageSize`: `int`
 - `PageToken`: `str`
 
 Returns
-[ScanProvisionedProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#scanprovisionedproductsoutputtypedef).
+[ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef).
 
 ### search_products
 
@@ -1497,18 +1492,15 @@ Boto3 documentation:
 Arguments:
 
 - `AcceptLanguage`: `str`
-- `Filters`:
-  `Dict`\[[ProductViewFilterBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewfilterby),
+- `Filters`: `Dict`\[[ProductViewFilterBy](./literals.md#productviewfilterby),
   `List`\[`str`\]\]
 - `PageSize`: `int`
-- `SortBy`:
-  [ProductViewSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `SortBy`: [ProductViewSortBy](./literals.md#productviewsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PageToken`: `str`
 
 Returns
-[SearchProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchproductsoutputtypedef).
+[SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef).
 
 ### search_products_as_admin
 
@@ -1522,19 +1514,17 @@ Arguments:
 
 - `AcceptLanguage`: `str`
 - `PortfolioId`: `str`
-- `Filters`:
-  `Dict`\[[ProductViewFilterBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewfilterby),
+- `Filters`: `Dict`\[[ProductViewFilterBy](./literals.md#productviewfilterby),
   `List`\[`str`\]\]
-- `SortBy`:
-  [ProductViewSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#productviewsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `SortBy`: [ProductViewSortBy](./literals.md#productviewsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PageToken`: `str`
 - `PageSize`: `int`
-- `ProductSource`: `Literal['ACCOUNT']`
+- `ProductSource`: `Literal['ACCOUNT']` (see
+  [ProductSource](./literals.md#productsource))
 
 Returns
-[SearchProductsAsAdminOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchproductsasadminoutputtypedef).
+[SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef).
 
 ### search_provisioned_products
 
@@ -1548,16 +1538,17 @@ Arguments:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#accesslevelfiltertypedef)
-- `Filters`: `Dict`\[`Literal['SearchQuery']`, `List`\[`str`\]\]
+  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
+- `Filters`: `Dict`\[`Literal['SearchQuery']` (see
+  [ProvisionedProductViewFilterBy](./literals.md#provisionedproductviewfilterby)),
+  `List`\[`str`\]\]
 - `SortBy`: `str`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `PageSize`: `int`
 - `PageToken`: `str`
 
 Returns
-[SearchProvisionedProductsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#searchprovisionedproductsoutputtypedef).
+[SearchProvisionedProductsOutputTypeDef](./type_defs.md#searchprovisionedproductsoutputtypedef).
 
 ### terminate_provisioned_product
 
@@ -1577,7 +1568,7 @@ Arguments:
 - `RetainPhysicalResources`: `bool`
 
 Returns
-[TerminateProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#terminateprovisionedproductoutputtypedef).
+[TerminateProvisionedProductOutputTypeDef](./type_defs.md#terminateprovisionedproductoutputtypedef).
 
 ### update_constraint
 
@@ -1594,7 +1585,7 @@ Arguments:
 - `Parameters`: `str`
 
 Returns
-[UpdateConstraintOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateconstraintoutputtypedef).
+[UpdateConstraintOutputTypeDef](./type_defs.md#updateconstraintoutputtypedef).
 
 ### update_portfolio
 
@@ -1610,12 +1601,11 @@ Arguments:
 - `DisplayName`: `str`
 - `Description`: `str`
 - `ProviderName`: `str`
-- `AddTags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RemoveTags`: `List`\[`str`\]
 
 Returns
-[UpdatePortfolioOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateportfoliooutputtypedef).
+[UpdatePortfolioOutputTypeDef](./type_defs.md#updateportfoliooutputtypedef).
 
 ### update_portfolio_share
 
@@ -1631,11 +1621,11 @@ Arguments:
 - `AcceptLanguage`: `str`
 - `AccountId`: `str`
 - `OrganizationNode`:
-  [OrganizationNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#organizationnodetypedef)
+  [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 - `ShareTagOptions`: `bool`
 
 Returns
-[UpdatePortfolioShareOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateportfolioshareoutputtypedef).
+[UpdatePortfolioShareOutputTypeDef](./type_defs.md#updateportfolioshareoutputtypedef).
 
 ### update_product
 
@@ -1655,12 +1645,11 @@ Arguments:
 - `SupportDescription`: `str`
 - `SupportEmail`: `str`
 - `SupportUrl`: `str`
-- `AddTags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RemoveTags`: `List`\[`str`\]
 
 Returns
-[UpdateProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateproductoutputtypedef).
+[UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef).
 
 ### update_provisioned_product
 
@@ -1683,14 +1672,13 @@ Arguments:
 - `PathId`: `str`
 - `PathName`: `str`
 - `ProvisioningParameters`:
-  `List`\[[UpdateProvisioningParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningparametertypedef)\]
+  `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
 - `ProvisioningPreferences`:
-  [UpdateProvisioningPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningpreferencestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#tagtypedef)\]
+  [UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateProvisionedProductOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisionedproductoutputtypedef).
+[UpdateProvisionedProductOutputTypeDef](./type_defs.md#updateprovisionedproductoutputtypedef).
 
 ### update_provisioned_product_properties
 
@@ -1704,13 +1692,12 @@ Arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
 - `ProvisionedProductProperties`:
-  `Dict`\[[PropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#propertykey),
-  `str`\] *(required)*
+  `Dict`\[[PropertyKey](./literals.md#propertykey), `str`\] *(required)*
 - `IdempotencyToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[UpdateProvisionedProductPropertiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisionedproductpropertiesoutputtypedef).
+[UpdateProvisionedProductPropertiesOutputTypeDef](./type_defs.md#updateprovisionedproductpropertiesoutputtypedef).
 
 ### update_provisioning_artifact
 
@@ -1729,10 +1716,10 @@ Arguments:
 - `Description`: `str`
 - `Active`: `bool`
 - `Guidance`:
-  [ProvisioningArtifactGuidance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#provisioningartifactguidance)
+  [ProvisioningArtifactGuidance](./literals.md#provisioningartifactguidance)
 
 Returns
-[UpdateProvisioningArtifactOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateprovisioningartifactoutputtypedef).
+[UpdateProvisioningArtifactOutputTypeDef](./type_defs.md#updateprovisioningartifactoutputtypedef).
 
 ### update_service_action
 
@@ -1747,13 +1734,13 @@ Arguments:
 - `Id`: `str` *(required)*
 - `Name`: `str`
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/literals.html#serviceactiondefinitionkey),
+  `Dict`\[[ServiceActionDefinitionKey](./literals.md#serviceactiondefinitionkey),
   `str`\]
 - `Description`: `str`
 - `AcceptLanguage`: `str`
 
 Returns
-[UpdateServiceActionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updateserviceactionoutputtypedef).
+[UpdateServiceActionOutputTypeDef](./type_defs.md#updateserviceactionoutputtypedef).
 
 ### update_tag_option
 
@@ -1769,7 +1756,7 @@ Arguments:
 - `Active`: `bool`
 
 Returns
-[UpdateTagOptionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_servicecatalog/type_defs.html#updatetagoptionoutputtypedef).
+[UpdateTagOptionOutputTypeDef](./type_defs.md#updatetagoptionoutputtypedef).
 
 ### get_paginator
 

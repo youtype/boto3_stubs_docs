@@ -1,6 +1,6 @@
 # Literals for boto3 Greengrass module
 
-> [Index](../README.md) > [Greengrass](./README.md) > Literals
+> [Index](..) > [Greengrass](.) > Literals
 
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)

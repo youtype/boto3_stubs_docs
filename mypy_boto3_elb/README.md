@@ -1,6 +1,6 @@
 # Type annotations for boto3 ElasticLoadBalancing module
 
-> [Index](../README.md) > ElasticLoadBalancing
+> [Index](..) > ElasticLoadBalancing
 
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
@@ -191,7 +191,7 @@ from mypy_boto3_elb.type_defs import AccessLogTypeDef, ...
 - [PolicyTypeDescriptionTypeDef](./type_defs.md#policytypedescriptiontypedef)
 - [RegisterEndPointsOutputTypeDef](./type_defs.md#registerendpointsoutputtypedef)
 - [RemoveAvailabilityZonesOutputTypeDef](./type_defs.md#removeavailabilityzonesoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SourceSecurityGroupTypeDef](./type_defs.md#sourcesecuritygrouptypedef)
 - [TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)
 - [TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Polly module
 
-> [Index](../README.md) > [Polly](./README.md) > Structures
+> [Index](..) > [Polly](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
@@ -17,7 +17,7 @@ type annotations stubs module
   - [ListLexiconsOutputTypeDef](#listlexiconsoutputtypedef)
   - [ListSpeechSynthesisTasksOutputTypeDef](#listspeechsynthesistasksoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartSpeechSynthesisTaskOutputTypeDef](#startspeechsynthesistaskoutputtypedef)
   - [SynthesisTaskTypeDef](#synthesistasktypedef)
   - [SynthesizeSpeechOutputTypeDef](#synthesizespeechoutputtypedef)
@@ -31,11 +31,10 @@ from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
 
 Required fields:
 
-- `Voices`:
-  `List`\[[VoiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#voicetypedef)\]
+- `Voices`: `List`\[[VoiceTypeDef](./type_defs.md#voicetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetLexiconOutputTypeDef
 
@@ -45,12 +44,11 @@ from mypy_boto3_polly.type_defs import GetLexiconOutputTypeDef
 
 Required fields:
 
-- `Lexicon`:
-  [LexiconTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#lexicontypedef)
+- `Lexicon`: [LexiconTypeDef](./type_defs.md#lexicontypedef)
 - `LexiconAttributes`:
-  [LexiconAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#lexiconattributestypedef)
+  [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetSpeechSynthesisTaskOutputTypeDef
 
@@ -60,10 +58,9 @@ from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskOutputTypeDef
 
 Required fields:
 
-- `SynthesisTask`:
-  [SynthesisTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#synthesistasktypedef)
+- `SynthesisTask`: [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LexiconAttributesTypeDef
 
@@ -74,8 +71,7 @@ from mypy_boto3_polly.type_defs import LexiconAttributesTypeDef
 Optional fields:
 
 - `Alphabet`: `str`
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LastModified`: `datetime`
 - `LexiconArn`: `str`
 - `LexemesCount`: `int`
@@ -91,7 +87,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Attributes`:
-  [LexiconAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#lexiconattributestypedef)
+  [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
 
 ## LexiconTypeDef
 
@@ -113,10 +109,10 @@ from mypy_boto3_polly.type_defs import ListLexiconsOutputTypeDef
 Required fields:
 
 - `Lexicons`:
-  `List`\[[LexiconDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#lexicondescriptiontypedef)\]
+  `List`\[[LexiconDescriptionTypeDef](./type_defs.md#lexicondescriptiontypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListSpeechSynthesisTasksOutputTypeDef
 
@@ -128,9 +124,9 @@ Required fields:
 
 - `NextToken`: `str`
 - `SynthesisTasks`:
-  `List`\[[SynthesisTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#synthesistasktypedef)\]
+  `List`\[[SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -144,10 +140,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_polly.type_defs import ResponseMetadata
+from mypy_boto3_polly.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -166,10 +162,9 @@ from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskOutputTypeDef
 
 Required fields:
 
-- `SynthesisTask`:
-  [SynthesisTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#synthesistasktypedef)
+- `SynthesisTask`: [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SynthesisTaskTypeDef
 
@@ -179,28 +174,21 @@ from mypy_boto3_polly.type_defs import SynthesisTaskTypeDef
 
 Optional fields:
 
-- `Engine`:
-  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
+- `Engine`: [Engine](./literals.md#engine)
 - `TaskId`: `str`
-- `TaskStatus`:
-  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#taskstatus)
+- `TaskStatus`: [TaskStatus](./literals.md#taskstatus)
 - `TaskStatusReason`: `str`
 - `OutputUri`: `str`
 - `CreationTime`: `datetime`
 - `RequestCharacters`: `int`
 - `SnsTopicArn`: `str`
 - `LexiconNames`: `List`\[`str`\]
-- `OutputFormat`:
-  [OutputFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#outputformat)
+- `OutputFormat`: [OutputFormat](./literals.md#outputformat)
 - `SampleRate`: `str`
-- `SpeechMarkTypes`:
-  `List`\[[SpeechMarkType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#speechmarktype)\]
-- `TextType`:
-  [TextType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#texttype)
-- `VoiceId`:
-  [VoiceId](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#voiceid)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `SpeechMarkTypes`: `List`\[[SpeechMarkType](./literals.md#speechmarktype)\]
+- `TextType`: [TextType](./literals.md#texttype)
+- `VoiceId`: [VoiceId](./literals.md#voiceid)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 
 ## SynthesizeSpeechOutputTypeDef
 
@@ -214,7 +202,7 @@ Required fields:
 - `ContentType`: `str`
 - `RequestCharacters`: `int`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VoiceTypeDef
 
@@ -224,15 +212,10 @@ from mypy_boto3_polly.type_defs import VoiceTypeDef
 
 Optional fields:
 
-- `Gender`:
-  [Gender](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#gender)
-- `Id`:
-  [VoiceId](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#voiceid)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `Gender`: [Gender](./literals.md#gender)
+- `Id`: [VoiceId](./literals.md#voiceid)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `LanguageName`: `str`
 - `Name`: `str`
-- `AdditionalLanguageCodes`:
-  `List`\[[LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)\]
-- `SupportedEngines`:
-  `List`\[[Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)\]
+- `AdditionalLanguageCodes`: `List`\[[LanguageCode](./literals.md#languagecode)\]
+- `SupportedEngines`: `List`\[[Engine](./literals.md#engine)\]

@@ -1,6 +1,6 @@
 # Literals for boto3 ComprehendMedical module
 
-> [Index](../README.md) > [ComprehendMedical](./README.md) > Literals
+> [Index](..) > [ComprehendMedical](.) > Literals
 
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)

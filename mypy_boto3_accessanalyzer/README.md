@@ -1,6 +1,6 @@
 # Type annotations for boto3 AccessAnalyzer module
 
-> [Index](../README.md) > AccessAnalyzer
+> [Index](..) > AccessAnalyzer
 
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)

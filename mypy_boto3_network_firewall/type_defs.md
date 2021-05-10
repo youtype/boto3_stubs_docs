@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 NetworkFirewall module
 
-> [Index](../README.md) > [NetworkFirewall](./README.md) > Structures
+> [Index](..) > [NetworkFirewall](.) > Typed dictionaries
 
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
@@ -81,7 +81,7 @@ from mypy_boto3_network_firewall.type_defs import ActionDefinitionTypeDef
 Optional fields:
 
 - `PublishMetricAction`:
-  [PublishMetricActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#publishmetricactiontypedef)
+  [PublishMetricActionTypeDef](./type_defs.md#publishmetricactiontypedef)
 
 ## AddressTypeDef
 
@@ -117,7 +117,7 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#subnetmappingtypedef)\]
+  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `UpdateToken`: `str`
 
 ## AttachmentTypeDef
@@ -130,8 +130,7 @@ Optional fields:
 
 - `SubnetId`: `str`
 - `EndpointId`: `str`
-- `Status`:
-  [AttachmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#attachmentstatus)
+- `Status`: [AttachmentStatus](./literals.md#attachmentstatus)
 
 ## CreateFirewallPolicyResponseTypeDef
 
@@ -143,7 +142,7 @@ Required fields:
 
 - `UpdateToken`: `str`
 - `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicyresponsetypedef)
+  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
 
 ## CreateFirewallResponseTypeDef
 
@@ -153,10 +152,8 @@ from mypy_boto3_network_firewall.type_defs import CreateFirewallResponseTypeDef
 
 Optional fields:
 
-- `Firewall`:
-  [FirewallTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewalltypedef)
-- `FirewallStatus`:
-  [FirewallStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallstatustypedef)
+- `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
+- `FirewallStatus`: [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 
 ## CreateRuleGroupResponseTypeDef
 
@@ -168,7 +165,7 @@ Required fields:
 
 - `UpdateToken`: `str`
 - `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegroupresponsetypedef)
+  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
 
 ## CustomActionTypeDef
 
@@ -180,7 +177,7 @@ Required fields:
 
 - `ActionName`: `str`
 - `ActionDefinition`:
-  [ActionDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#actiondefinitiontypedef)
+  [ActionDefinitionTypeDef](./type_defs.md#actiondefinitiontypedef)
 
 ## DeleteFirewallPolicyResponseTypeDef
 
@@ -191,7 +188,7 @@ from mypy_boto3_network_firewall.type_defs import DeleteFirewallPolicyResponseTy
 Required fields:
 
 - `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicyresponsetypedef)
+  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
 
 ## DeleteFirewallResponseTypeDef
 
@@ -201,10 +198,8 @@ from mypy_boto3_network_firewall.type_defs import DeleteFirewallResponseTypeDef
 
 Optional fields:
 
-- `Firewall`:
-  [FirewallTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewalltypedef)
-- `FirewallStatus`:
-  [FirewallStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallstatustypedef)
+- `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
+- `FirewallStatus`: [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 
 ## DeleteRuleGroupResponseTypeDef
 
@@ -215,7 +210,7 @@ from mypy_boto3_network_firewall.type_defs import DeleteRuleGroupResponseTypeDef
 Required fields:
 
 - `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegroupresponsetypedef)
+  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
 
 ## DescribeFirewallPolicyResponseTypeDef
 
@@ -227,12 +222,11 @@ Required fields:
 
 - `UpdateToken`: `str`
 - `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicyresponsetypedef)
+  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
 
 Optional fields:
 
-- `FirewallPolicy`:
-  [FirewallPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicytypedef)
+- `FirewallPolicy`: [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
 
 ## DescribeFirewallResponseTypeDef
 
@@ -243,10 +237,8 @@ from mypy_boto3_network_firewall.type_defs import DescribeFirewallResponseTypeDe
 Optional fields:
 
 - `UpdateToken`: `str`
-- `Firewall`:
-  [FirewallTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewalltypedef)
-- `FirewallStatus`:
-  [FirewallStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallstatustypedef)
+- `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
+- `FirewallStatus`: [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 
 ## DescribeLoggingConfigurationResponseTypeDef
 
@@ -258,7 +250,7 @@ Optional fields:
 
 - `FirewallArn`: `str`
 - `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#loggingconfigurationtypedef)
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 
 ## DescribeResourcePolicyResponseTypeDef
 
@@ -280,12 +272,11 @@ Required fields:
 
 - `UpdateToken`: `str`
 - `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegroupresponsetypedef)
+  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
 
 Optional fields:
 
-- `RuleGroup`:
-  [RuleGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegrouptypedef)
+- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 
 ## DimensionTypeDef
 
@@ -308,7 +299,7 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#subnetmappingtypedef)\]
+  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `UpdateToken`: `str`
 
 ## FirewallMetadataTypeDef
@@ -348,10 +339,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `FirewallPolicyStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#resourcestatus)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+- `FirewallPolicyStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## FirewallPolicyTypeDef
 
@@ -367,11 +356,11 @@ Required fields:
 Optional fields:
 
 - `StatelessRuleGroupReferences`:
-  `List`\[[StatelessRuleGroupReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#statelessrulegroupreferencetypedef)\]
+  `List`\[[StatelessRuleGroupReferenceTypeDef](./type_defs.md#statelessrulegroupreferencetypedef)\]
 - `StatelessCustomActions`:
-  `List`\[[CustomActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#customactiontypedef)\]
+  `List`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
 - `StatefulRuleGroupReferences`:
-  `List`\[[StatefulRuleGroupReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#statefulrulegroupreferencetypedef)\]
+  `List`\[[StatefulRuleGroupReferenceTypeDef](./type_defs.md#statefulrulegroupreferencetypedef)\]
 
 ## FirewallStatusTypeDef
 
@@ -381,15 +370,14 @@ from mypy_boto3_network_firewall.type_defs import FirewallStatusTypeDef
 
 Required fields:
 
-- `Status`:
-  [FirewallStatusValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#firewallstatusvalue)
+- `Status`: [FirewallStatusValue](./literals.md#firewallstatusvalue)
 - `ConfigurationSyncStateSummary`:
-  [ConfigurationSyncState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#configurationsyncstate)
+  [ConfigurationSyncState](./literals.md#configurationsyncstate)
 
 Optional fields:
 
 - `SyncStates`: `Dict`\[`str`,
-  [SyncStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#syncstatetypedef)\]
+  [SyncStateTypeDef](./type_defs.md#syncstatetypedef)\]
 
 ## FirewallTypeDef
 
@@ -402,7 +390,7 @@ Required fields:
 - `FirewallPolicyArn`: `str`
 - `VpcId`: `str`
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#subnetmappingtypedef)\]
+  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `FirewallId`: `str`
 
 Optional fields:
@@ -413,8 +401,7 @@ Optional fields:
 - `SubnetChangeProtection`: `bool`
 - `FirewallPolicyChangeProtection`: `bool`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## HeaderTypeDef
 
@@ -424,12 +411,10 @@ from mypy_boto3_network_firewall.type_defs import HeaderTypeDef
 
 Required fields:
 
-- `Protocol`:
-  [StatefulRuleProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#statefulruleprotocol)
+- `Protocol`: [StatefulRuleProtocol](./literals.md#statefulruleprotocol)
 - `Source`: `str`
 - `SourcePort`: `str`
-- `Direction`:
-  [StatefulRuleDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#statefulruledirection)
+- `Direction`: [StatefulRuleDirection](./literals.md#statefulruledirection)
 - `Destination`: `str`
 - `DestinationPort`: `str`
 
@@ -453,7 +438,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `FirewallPolicies`:
-  `List`\[[FirewallPolicyMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicymetadatatypedef)\]
+  `List`\[[FirewallPolicyMetadataTypeDef](./type_defs.md#firewallpolicymetadatatypedef)\]
 
 ## ListFirewallsResponseTypeDef
 
@@ -465,7 +450,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `Firewalls`:
-  `List`\[[FirewallMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallmetadatatypedef)\]
+  `List`\[[FirewallMetadataTypeDef](./type_defs.md#firewallmetadatatypedef)\]
 
 ## ListRuleGroupsResponseTypeDef
 
@@ -477,7 +462,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `RuleGroups`:
-  `List`\[[RuleGroupMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegroupmetadatatypedef)\]
+  `List`\[[RuleGroupMetadataTypeDef](./type_defs.md#rulegroupmetadatatypedef)\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -488,8 +473,7 @@ from mypy_boto3_network_firewall.type_defs import ListTagsForResourceResponseTyp
 Optional fields:
 
 - `NextToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LogDestinationConfigTypeDef
 
@@ -499,10 +483,8 @@ from mypy_boto3_network_firewall.type_defs import LogDestinationConfigTypeDef
 
 Required fields:
 
-- `LogType`:
-  [LogType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#logtype)
-- `LogDestinationType`:
-  [LogDestinationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#logdestinationtype)
+- `LogType`: [LogType](./literals.md#logtype)
+- `LogDestinationType`: [LogDestinationType](./literals.md#logdestinationtype)
 - `LogDestination`: `Dict`\[`str`, `str`\]
 
 ## LoggingConfigurationTypeDef
@@ -514,7 +496,7 @@ from mypy_boto3_network_firewall.type_defs import LoggingConfigurationTypeDef
 Required fields:
 
 - `LogDestinationConfigs`:
-  `List`\[[LogDestinationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#logdestinationconfigtypedef)\]
+  `List`\[[LogDestinationConfigTypeDef](./type_defs.md#logdestinationconfigtypedef)\]
 
 ## MatchAttributesTypeDef
 
@@ -524,17 +506,13 @@ from mypy_boto3_network_firewall.type_defs import MatchAttributesTypeDef
 
 Optional fields:
 
-- `Sources`:
-  `List`\[[AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#addresstypedef)\]
-- `Destinations`:
-  `List`\[[AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#addresstypedef)\]
-- `SourcePorts`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#portrangetypedef)\]
+- `Sources`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
+- `Destinations`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
+- `SourcePorts`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `DestinationPorts`:
-  `List`\[[PortRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#portrangetypedef)\]
+  `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `Protocols`: `List`\[`int`\]
-- `TCPFlags`:
-  `List`\[[TCPFlagFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tcpflagfieldtypedef)\]
+- `TCPFlags`: `List`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -556,8 +534,7 @@ from mypy_boto3_network_firewall.type_defs import PerObjectStatusTypeDef
 
 Optional fields:
 
-- `SyncStatus`:
-  [PerObjectSyncStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#perobjectsyncstatus)
+- `SyncStatus`: [PerObjectSyncStatus](./literals.md#perobjectsyncstatus)
 - `UpdateToken`: `str`
 
 ## PortRangeTypeDef
@@ -589,8 +566,7 @@ from mypy_boto3_network_firewall.type_defs import PublishMetricActionTypeDef
 
 Required fields:
 
-- `Dimensions`:
-  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#dimensiontypedef)\]
+- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 ## RuleDefinitionTypeDef
 
@@ -601,7 +577,7 @@ from mypy_boto3_network_firewall.type_defs import RuleDefinitionTypeDef
 Required fields:
 
 - `MatchAttributes`:
-  [MatchAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#matchattributestypedef)
+  [MatchAttributesTypeDef](./type_defs.md#matchattributestypedef)
 - `Actions`: `List`\[`str`\]
 
 ## RuleGroupMetadataTypeDef
@@ -630,13 +606,10 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Type`:
-  [RuleGroupType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#rulegrouptype)
+- `Type`: [RuleGroupType](./literals.md#rulegrouptype)
 - `Capacity`: `int`
-- `RuleGroupStatus`:
-  [ResourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#resourcestatus)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#tagtypedef)\]
+- `RuleGroupStatus`: [ResourceStatus](./literals.md#resourcestatus)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RuleGroupTypeDef
 
@@ -646,13 +619,11 @@ from mypy_boto3_network_firewall.type_defs import RuleGroupTypeDef
 
 Required fields:
 
-- `RulesSource`:
-  [RulesSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulessourcetypedef)
+- `RulesSource`: [RulesSourceTypeDef](./type_defs.md#rulessourcetypedef)
 
 Optional fields:
 
-- `RuleVariables`:
-  [RuleVariablesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulevariablestypedef)
+- `RuleVariables`: [RuleVariablesTypeDef](./type_defs.md#rulevariablestypedef)
 
 ## RuleOptionTypeDef
 
@@ -676,10 +647,8 @@ from mypy_boto3_network_firewall.type_defs import RuleVariablesTypeDef
 
 Optional fields:
 
-- `IPSets`: `Dict`\[`str`,
-  [IPSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#ipsettypedef)\]
-- `PortSets`: `Dict`\[`str`,
-  [PortSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#portsettypedef)\]
+- `IPSets`: `Dict`\[`str`, [IPSetTypeDef](./type_defs.md#ipsettypedef)\]
+- `PortSets`: `Dict`\[`str`, [PortSetTypeDef](./type_defs.md#portsettypedef)\]
 
 ## RulesSourceListTypeDef
 
@@ -690,10 +659,8 @@ from mypy_boto3_network_firewall.type_defs import RulesSourceListTypeDef
 Required fields:
 
 - `Targets`: `List`\[`str`\]
-- `TargetTypes`:
-  `List`\[[TargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#targettype)\]
-- `GeneratedRulesType`:
-  [GeneratedRulesType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#generatedrulestype)
+- `TargetTypes`: `List`\[[TargetType](./literals.md#targettype)\]
+- `GeneratedRulesType`: [GeneratedRulesType](./literals.md#generatedrulestype)
 
 ## RulesSourceTypeDef
 
@@ -705,11 +672,11 @@ Optional fields:
 
 - `RulesString`: `str`
 - `RulesSourceList`:
-  [RulesSourceListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulessourcelisttypedef)
+  [RulesSourceListTypeDef](./type_defs.md#rulessourcelisttypedef)
 - `StatefulRules`:
-  `List`\[[StatefulRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#statefulruletypedef)\]
+  `List`\[[StatefulRuleTypeDef](./type_defs.md#statefulruletypedef)\]
 - `StatelessRulesAndCustomActions`:
-  [StatelessRulesAndCustomActionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#statelessrulesandcustomactionstypedef)
+  [StatelessRulesAndCustomActionsTypeDef](./type_defs.md#statelessrulesandcustomactionstypedef)
 
 ## StatefulRuleGroupReferenceTypeDef
 
@@ -729,12 +696,9 @@ from mypy_boto3_network_firewall.type_defs import StatefulRuleTypeDef
 
 Required fields:
 
-- `Action`:
-  [StatefulAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#statefulaction)
-- `Header`:
-  [HeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#headertypedef)
-- `RuleOptions`:
-  `List`\[[RuleOptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#ruleoptiontypedef)\]
+- `Action`: [StatefulAction](./literals.md#statefulaction)
+- `Header`: [HeaderTypeDef](./type_defs.md#headertypedef)
+- `RuleOptions`: `List`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
 
 ## StatelessRuleGroupReferenceTypeDef
 
@@ -755,8 +719,7 @@ from mypy_boto3_network_firewall.type_defs import StatelessRuleTypeDef
 
 Required fields:
 
-- `RuleDefinition`:
-  [RuleDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#ruledefinitiontypedef)
+- `RuleDefinition`: [RuleDefinitionTypeDef](./type_defs.md#ruledefinitiontypedef)
 - `Priority`: `int`
 
 ## StatelessRulesAndCustomActionsTypeDef
@@ -768,12 +731,12 @@ from mypy_boto3_network_firewall.type_defs import StatelessRulesAndCustomActions
 Required fields:
 
 - `StatelessRules`:
-  `List`\[[StatelessRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#statelessruletypedef)\]
+  `List`\[[StatelessRuleTypeDef](./type_defs.md#statelessruletypedef)\]
 
 Optional fields:
 
 - `CustomActions`:
-  `List`\[[CustomActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#customactiontypedef)\]
+  `List`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
 
 ## SubnetMappingTypeDef
 
@@ -793,10 +756,9 @@ from mypy_boto3_network_firewall.type_defs import SyncStateTypeDef
 
 Optional fields:
 
-- `Attachment`:
-  [AttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#attachmenttypedef)
+- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `Config`: `Dict`\[`str`,
-  [PerObjectStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#perobjectstatustypedef)\]
+  [PerObjectStatusTypeDef](./type_defs.md#perobjectstatustypedef)\]
 
 ## TCPFlagFieldTypeDef
 
@@ -806,13 +768,11 @@ from mypy_boto3_network_firewall.type_defs import TCPFlagFieldTypeDef
 
 Required fields:
 
-- `Flags`:
-  `List`\[[TCPFlag](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#tcpflag)\]
+- `Flags`: `List`\[[TCPFlag](./literals.md#tcpflag)\]
 
 Optional fields:
 
-- `Masks`:
-  `List`\[[TCPFlag](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/literals.html#tcpflag)\]
+- `Masks`: `List`\[[TCPFlag](./literals.md#tcpflag)\]
 
 ## TagTypeDef
 
@@ -874,7 +834,7 @@ Required fields:
 
 - `UpdateToken`: `str`
 - `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#firewallpolicyresponsetypedef)
+  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
 
 ## UpdateLoggingConfigurationResponseTypeDef
 
@@ -887,7 +847,7 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#loggingconfigurationtypedef)
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 
 ## UpdateRuleGroupResponseTypeDef
 
@@ -899,7 +859,7 @@ Required fields:
 
 - `UpdateToken`: `str`
 - `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_network_firewall/type_defs.html#rulegroupresponsetypedef)
+  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
 
 ## UpdateSubnetChangeProtectionResponseTypeDef
 

@@ -1,7 +1,6 @@
 # Typed dictionaries for boto3 ServerlessApplicationRepository module
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
-> Structures
+> [Index](..) > [ServerlessApplicationRepository](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
@@ -100,8 +99,7 @@ Optional fields:
 - `ReadmeUrl`: `str`
 - `SpdxLicenseId`: `str`
 - `VerifiedAuthorUrl`: `str`
-- `Version`:
-  [VersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#versiontypedef)
+- `Version`: [VersionTypeDef](./type_defs.md#versiontypedef)
 
 ## CreateApplicationVersionResponseTypeDef
 
@@ -114,9 +112,8 @@ Optional fields:
 - `ApplicationId`: `str`
 - `CreationTime`: `str`
 - `ParameterDefinitions`:
-  `List`\[[ParameterDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#parameterdefinitiontypedef)\]
-- `RequiredCapabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/literals.html#capability)\]
+  `List`\[[ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef)\]
+- `RequiredCapabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourcesSupported`: `bool`
 - `SemanticVersion`: `str`
 - `SourceCodeArchiveUrl`: `str`
@@ -148,8 +145,7 @@ Optional fields:
 - `CreationTime`: `str`
 - `ExpirationTime`: `str`
 - `SemanticVersion`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 - `TemplateId`: `str`
 - `TemplateUrl`: `str`
 
@@ -162,7 +158,7 @@ from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyResponseType
 Optional fields:
 
 - `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#applicationpolicystatementtypedef)\]
+  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
 
 ## GetApplicationResponseTypeDef
 
@@ -184,8 +180,7 @@ Optional fields:
 - `ReadmeUrl`: `str`
 - `SpdxLicenseId`: `str`
 - `VerifiedAuthorUrl`: `str`
-- `Version`:
-  [VersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#versiontypedef)
+- `Version`: [VersionTypeDef](./type_defs.md#versiontypedef)
 
 ## GetCloudFormationTemplateResponseTypeDef
 
@@ -199,8 +194,7 @@ Optional fields:
 - `CreationTime`: `str`
 - `ExpirationTime`: `str`
 - `SemanticVersion`: `str`
-- `Status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/literals.html#status)
+- `Status`: [Status](./literals.md#status)
 - `TemplateId`: `str`
 - `TemplateUrl`: `str`
 
@@ -213,7 +207,7 @@ from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesRespo
 Optional fields:
 
 - `Dependencies`:
-  `List`\[[ApplicationDependencySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#applicationdependencysummarytypedef)\]
+  `List`\[[ApplicationDependencySummaryTypeDef](./type_defs.md#applicationdependencysummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListApplicationVersionsResponseTypeDef
@@ -226,7 +220,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `Versions`:
-  `List`\[[VersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#versionsummarytypedef)\]
+  `List`\[[VersionSummaryTypeDef](./type_defs.md#versionsummarytypedef)\]
 
 ## ListApplicationsResponseTypeDef
 
@@ -237,7 +231,7 @@ from mypy_boto3_serverlessrepo.type_defs import ListApplicationsResponseTypeDef
 Optional fields:
 
 - `Applications`:
-  `List`\[[ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#applicationsummarytypedef)\]
+  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
 - `NextToken`: `str`
 
 ## PaginatorConfigTypeDef
@@ -297,7 +291,7 @@ from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyResponseType
 Optional fields:
 
 - `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#applicationpolicystatementtypedef)\]
+  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
 
 ## RollbackConfigurationTypeDef
 
@@ -309,7 +303,7 @@ Optional fields:
 
 - `MonitoringTimeInMinutes`: `int`
 - `RollbackTriggers`:
-  `List`\[[RollbackTriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#rollbacktriggertypedef)\]
+  `List`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
 
 ## RollbackTriggerTypeDef
 
@@ -353,8 +347,7 @@ Optional fields:
 - `ReadmeUrl`: `str`
 - `SpdxLicenseId`: `str`
 - `VerifiedAuthorUrl`: `str`
-- `Version`:
-  [VersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#versiontypedef)
+- `Version`: [VersionTypeDef](./type_defs.md#versiontypedef)
 
 ## VersionSummaryTypeDef
 
@@ -383,9 +376,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `CreationTime`: `str`
 - `ParameterDefinitions`:
-  `List`\[[ParameterDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/type_defs.html#parameterdefinitiontypedef)\]
-- `RequiredCapabilities`:
-  `List`\[[Capability](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_serverlessrepo/literals.html#capability)\]
+  `List`\[[ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef)\]
+- `RequiredCapabilities`: `List`\[[Capability](./literals.md#capability)\]
 - `ResourcesSupported`: `bool`
 - `SemanticVersion`: `str`
 - `TemplateUrl`: `str`

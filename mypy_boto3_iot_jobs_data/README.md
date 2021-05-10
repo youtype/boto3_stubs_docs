@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTJobsDataPlane module
 
-> [Index](../README.md) > IoTJobsDataPlane
+> [Index](..) > IoTJobsDataPlane
 
 Auto-generated documentation for
 [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)

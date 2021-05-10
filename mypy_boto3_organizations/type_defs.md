@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Organizations module
 
-> [Index](../README.md) > [Organizations](./README.md) > Structures
+> [Index](..) > [Organizations](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
@@ -75,8 +75,7 @@ from mypy_boto3_organizations.type_defs import AcceptHandshakeResponseTypeDef
 
 Optional fields:
 
-- `Handshake`:
-  [HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)
+- `Handshake`: [HandshakeTypeDef](./type_defs.md#handshaketypedef)
 
 ## AccountTypeDef
 
@@ -90,10 +89,8 @@ Optional fields:
 - `Arn`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Status`:
-  [AccountStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#accountstatus)
-- `JoinedMethod`:
-  [AccountJoinedMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#accountjoinedmethod)
+- `Status`: [AccountStatus](./literals.md#accountstatus)
+- `JoinedMethod`: [AccountJoinedMethod](./literals.md#accountjoinedmethod)
 - `JoinedTimestamp`: `datetime`
 
 ## CancelHandshakeResponseTypeDef
@@ -104,8 +101,7 @@ from mypy_boto3_organizations.type_defs import CancelHandshakeResponseTypeDef
 
 Optional fields:
 
-- `Handshake`:
-  [HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)
+- `Handshake`: [HandshakeTypeDef](./type_defs.md#handshaketypedef)
 
 ## ChildTypeDef
 
@@ -116,8 +112,7 @@ from mypy_boto3_organizations.type_defs import ChildTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`:
-  [ChildType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#childtype)
+- `Type`: [ChildType](./literals.md#childtype)
 
 ## CreateAccountResponseTypeDef
 
@@ -128,7 +123,7 @@ from mypy_boto3_organizations.type_defs import CreateAccountResponseTypeDef
 Optional fields:
 
 - `CreateAccountStatus`:
-  [CreateAccountStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createaccountstatustypedef)
+  [CreateAccountStatusTypeDef](./type_defs.md#createaccountstatustypedef)
 
 ## CreateAccountStatusTypeDef
 
@@ -140,14 +135,13 @@ Optional fields:
 
 - `Id`: `str`
 - `AccountName`: `str`
-- `State`:
-  [CreateAccountState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#createaccountstate)
+- `State`: [CreateAccountState](./literals.md#createaccountstate)
 - `RequestedTimestamp`: `datetime`
 - `CompletedTimestamp`: `datetime`
 - `AccountId`: `str`
 - `GovCloudAccountId`: `str`
 - `FailureReason`:
-  [CreateAccountFailureReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#createaccountfailurereason)
+  [CreateAccountFailureReason](./literals.md#createaccountfailurereason)
 
 ## CreateGovCloudAccountResponseTypeDef
 
@@ -158,7 +152,7 @@ from mypy_boto3_organizations.type_defs import CreateGovCloudAccountResponseType
 Optional fields:
 
 - `CreateAccountStatus`:
-  [CreateAccountStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createaccountstatustypedef)
+  [CreateAccountStatusTypeDef](./type_defs.md#createaccountstatustypedef)
 
 ## CreateOrganizationResponseTypeDef
 
@@ -168,8 +162,7 @@ from mypy_boto3_organizations.type_defs import CreateOrganizationResponseTypeDef
 
 Optional fields:
 
-- `Organization`:
-  [OrganizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#organizationtypedef)
+- `Organization`: [OrganizationTypeDef](./type_defs.md#organizationtypedef)
 
 ## CreateOrganizationalUnitResponseTypeDef
 
@@ -180,7 +173,7 @@ from mypy_boto3_organizations.type_defs import CreateOrganizationalUnitResponseT
 Optional fields:
 
 - `OrganizationalUnit`:
-  [OrganizationalUnitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#organizationalunittypedef)
+  [OrganizationalUnitTypeDef](./type_defs.md#organizationalunittypedef)
 
 ## CreatePolicyResponseTypeDef
 
@@ -190,8 +183,7 @@ from mypy_boto3_organizations.type_defs import CreatePolicyResponseTypeDef
 
 Optional fields:
 
-- `Policy`:
-  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policytypedef)
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 
 ## DeclineHandshakeResponseTypeDef
 
@@ -201,8 +193,7 @@ from mypy_boto3_organizations.type_defs import DeclineHandshakeResponseTypeDef
 
 Optional fields:
 
-- `Handshake`:
-  [HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)
+- `Handshake`: [HandshakeTypeDef](./type_defs.md#handshaketypedef)
 
 ## DelegatedAdministratorTypeDef
 
@@ -216,10 +207,8 @@ Optional fields:
 - `Arn`: `str`
 - `Email`: `str`
 - `Name`: `str`
-- `Status`:
-  [AccountStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#accountstatus)
-- `JoinedMethod`:
-  [AccountJoinedMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#accountjoinedmethod)
+- `Status`: [AccountStatus](./literals.md#accountstatus)
+- `JoinedMethod`: [AccountJoinedMethod](./literals.md#accountjoinedmethod)
 - `JoinedTimestamp`: `datetime`
 - `DelegationEnabledDate`: `datetime`
 
@@ -242,8 +231,7 @@ from mypy_boto3_organizations.type_defs import DescribeAccountResponseTypeDef
 
 Optional fields:
 
-- `Account`:
-  [AccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#accounttypedef)
+- `Account`: [AccountTypeDef](./type_defs.md#accounttypedef)
 
 ## DescribeCreateAccountStatusResponseTypeDef
 
@@ -254,7 +242,7 @@ from mypy_boto3_organizations.type_defs import DescribeCreateAccountStatusRespon
 Optional fields:
 
 - `CreateAccountStatus`:
-  [CreateAccountStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createaccountstatustypedef)
+  [CreateAccountStatusTypeDef](./type_defs.md#createaccountstatustypedef)
 
 ## DescribeEffectivePolicyResponseTypeDef
 
@@ -265,7 +253,7 @@ from mypy_boto3_organizations.type_defs import DescribeEffectivePolicyResponseTy
 Optional fields:
 
 - `EffectivePolicy`:
-  [EffectivePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#effectivepolicytypedef)
+  [EffectivePolicyTypeDef](./type_defs.md#effectivepolicytypedef)
 
 ## DescribeHandshakeResponseTypeDef
 
@@ -275,8 +263,7 @@ from mypy_boto3_organizations.type_defs import DescribeHandshakeResponseTypeDef
 
 Optional fields:
 
-- `Handshake`:
-  [HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)
+- `Handshake`: [HandshakeTypeDef](./type_defs.md#handshaketypedef)
 
 ## DescribeOrganizationResponseTypeDef
 
@@ -286,8 +273,7 @@ from mypy_boto3_organizations.type_defs import DescribeOrganizationResponseTypeD
 
 Optional fields:
 
-- `Organization`:
-  [OrganizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#organizationtypedef)
+- `Organization`: [OrganizationTypeDef](./type_defs.md#organizationtypedef)
 
 ## DescribeOrganizationalUnitResponseTypeDef
 
@@ -298,7 +284,7 @@ from mypy_boto3_organizations.type_defs import DescribeOrganizationalUnitRespons
 Optional fields:
 
 - `OrganizationalUnit`:
-  [OrganizationalUnitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#organizationalunittypedef)
+  [OrganizationalUnitTypeDef](./type_defs.md#organizationalunittypedef)
 
 ## DescribePolicyResponseTypeDef
 
@@ -308,8 +294,7 @@ from mypy_boto3_organizations.type_defs import DescribePolicyResponseTypeDef
 
 Optional fields:
 
-- `Policy`:
-  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policytypedef)
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 
 ## DisablePolicyTypeResponseTypeDef
 
@@ -319,8 +304,7 @@ from mypy_boto3_organizations.type_defs import DisablePolicyTypeResponseTypeDef
 
 Optional fields:
 
-- `Root`:
-  [RootTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#roottypedef)
+- `Root`: [RootTypeDef](./type_defs.md#roottypedef)
 
 ## EffectivePolicyTypeDef
 
@@ -333,8 +317,7 @@ Optional fields:
 - `PolicyContent`: `str`
 - `LastUpdatedTimestamp`: `datetime`
 - `TargetId`: `str`
-- `PolicyType`:
-  [EffectivePolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#effectivepolicytype)
+- `PolicyType`: [EffectivePolicyType](./literals.md#effectivepolicytype)
 
 ## EnableAllFeaturesResponseTypeDef
 
@@ -344,8 +327,7 @@ from mypy_boto3_organizations.type_defs import EnableAllFeaturesResponseTypeDef
 
 Optional fields:
 
-- `Handshake`:
-  [HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)
+- `Handshake`: [HandshakeTypeDef](./type_defs.md#handshaketypedef)
 
 ## EnablePolicyTypeResponseTypeDef
 
@@ -355,8 +337,7 @@ from mypy_boto3_organizations.type_defs import EnablePolicyTypeResponseTypeDef
 
 Optional fields:
 
-- `Root`:
-  [RootTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#roottypedef)
+- `Root`: [RootTypeDef](./type_defs.md#roottypedef)
 
 ## EnabledServicePrincipalTypeDef
 
@@ -377,8 +358,7 @@ from mypy_boto3_organizations.type_defs import HandshakeFilterTypeDef
 
 Optional fields:
 
-- `ActionType`:
-  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#actiontype)
+- `ActionType`: [ActionType](./literals.md#actiontype)
 - `ParentHandshakeId`: `str`
 
 ## HandshakePartyTypeDef
@@ -390,8 +370,7 @@ from mypy_boto3_organizations.type_defs import HandshakePartyTypeDef
 Required fields:
 
 - `Id`: `str`
-- `Type`:
-  [HandshakePartyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#handshakepartytype)
+- `Type`: [HandshakePartyType](./literals.md#handshakepartytype)
 
 ## HandshakeResourceTypeDef
 
@@ -402,10 +381,9 @@ from mypy_boto3_organizations.type_defs import HandshakeResourceTypeDef
 Optional fields:
 
 - `Value`: `str`
-- `Type`:
-  [HandshakeResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#handshakeresourcetype)
+- `Type`: [HandshakeResourceType](./literals.md#handshakeresourcetype)
 - `Resources`:
-  `List`\[[HandshakeResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakeresourcetypedef)\]
+  `List`\[[HandshakeResourceTypeDef](./type_defs.md#handshakeresourcetypedef)\]
 
 ## HandshakeTypeDef
 
@@ -418,15 +396,13 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `Parties`:
-  `List`\[[HandshakePartyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakepartytypedef)\]
-- `State`:
-  [HandshakeState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#handshakestate)
+  `List`\[[HandshakePartyTypeDef](./type_defs.md#handshakepartytypedef)\]
+- `State`: [HandshakeState](./literals.md#handshakestate)
 - `RequestedTimestamp`: `datetime`
 - `ExpirationTimestamp`: `datetime`
-- `Action`:
-  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#actiontype)
+- `Action`: [ActionType](./literals.md#actiontype)
 - `Resources`:
-  `List`\[[HandshakeResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshakeresourcetypedef)\]
+  `List`\[[HandshakeResourceTypeDef](./type_defs.md#handshakeresourcetypedef)\]
 
 ## InviteAccountToOrganizationResponseTypeDef
 
@@ -436,8 +412,7 @@ from mypy_boto3_organizations.type_defs import InviteAccountToOrganizationRespon
 
 Optional fields:
 
-- `Handshake`:
-  [HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)
+- `Handshake`: [HandshakeTypeDef](./type_defs.md#handshaketypedef)
 
 ## ListAWSServiceAccessForOrganizationResponseTypeDef
 
@@ -448,7 +423,7 @@ from mypy_boto3_organizations.type_defs import ListAWSServiceAccessForOrganizati
 Optional fields:
 
 - `EnabledServicePrincipals`:
-  `List`\[[EnabledServicePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#enabledserviceprincipaltypedef)\]
+  `List`\[[EnabledServicePrincipalTypeDef](./type_defs.md#enabledserviceprincipaltypedef)\]
 - `NextToken`: `str`
 
 ## ListAccountsForParentResponseTypeDef
@@ -459,8 +434,7 @@ from mypy_boto3_organizations.type_defs import ListAccountsForParentResponseType
 
 Optional fields:
 
-- `Accounts`:
-  `List`\[[AccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#accounttypedef)\]
+- `Accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
 - `NextToken`: `str`
 
 ## ListAccountsResponseTypeDef
@@ -471,8 +445,7 @@ from mypy_boto3_organizations.type_defs import ListAccountsResponseTypeDef
 
 Optional fields:
 
-- `Accounts`:
-  `List`\[[AccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#accounttypedef)\]
+- `Accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
 - `NextToken`: `str`
 
 ## ListChildrenResponseTypeDef
@@ -483,8 +456,7 @@ from mypy_boto3_organizations.type_defs import ListChildrenResponseTypeDef
 
 Optional fields:
 
-- `Children`:
-  `List`\[[ChildTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#childtypedef)\]
+- `Children`: `List`\[[ChildTypeDef](./type_defs.md#childtypedef)\]
 - `NextToken`: `str`
 
 ## ListCreateAccountStatusResponseTypeDef
@@ -496,7 +468,7 @@ from mypy_boto3_organizations.type_defs import ListCreateAccountStatusResponseTy
 Optional fields:
 
 - `CreateAccountStatuses`:
-  `List`\[[CreateAccountStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#createaccountstatustypedef)\]
+  `List`\[[CreateAccountStatusTypeDef](./type_defs.md#createaccountstatustypedef)\]
 - `NextToken`: `str`
 
 ## ListDelegatedAdministratorsResponseTypeDef
@@ -508,7 +480,7 @@ from mypy_boto3_organizations.type_defs import ListDelegatedAdministratorsRespon
 Optional fields:
 
 - `DelegatedAdministrators`:
-  `List`\[[DelegatedAdministratorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#delegatedadministratortypedef)\]
+  `List`\[[DelegatedAdministratorTypeDef](./type_defs.md#delegatedadministratortypedef)\]
 - `NextToken`: `str`
 
 ## ListDelegatedServicesForAccountResponseTypeDef
@@ -520,7 +492,7 @@ from mypy_boto3_organizations.type_defs import ListDelegatedServicesForAccountRe
 Optional fields:
 
 - `DelegatedServices`:
-  `List`\[[DelegatedServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#delegatedservicetypedef)\]
+  `List`\[[DelegatedServiceTypeDef](./type_defs.md#delegatedservicetypedef)\]
 - `NextToken`: `str`
 
 ## ListHandshakesForAccountResponseTypeDef
@@ -531,8 +503,7 @@ from mypy_boto3_organizations.type_defs import ListHandshakesForAccountResponseT
 
 Optional fields:
 
-- `Handshakes`:
-  `List`\[[HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)\]
+- `Handshakes`: `List`\[[HandshakeTypeDef](./type_defs.md#handshaketypedef)\]
 - `NextToken`: `str`
 
 ## ListHandshakesForOrganizationResponseTypeDef
@@ -543,8 +514,7 @@ from mypy_boto3_organizations.type_defs import ListHandshakesForOrganizationResp
 
 Optional fields:
 
-- `Handshakes`:
-  `List`\[[HandshakeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#handshaketypedef)\]
+- `Handshakes`: `List`\[[HandshakeTypeDef](./type_defs.md#handshaketypedef)\]
 - `NextToken`: `str`
 
 ## ListOrganizationalUnitsForParentResponseTypeDef
@@ -556,7 +526,7 @@ from mypy_boto3_organizations.type_defs import ListOrganizationalUnitsForParentR
 Optional fields:
 
 - `OrganizationalUnits`:
-  `List`\[[OrganizationalUnitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#organizationalunittypedef)\]
+  `List`\[[OrganizationalUnitTypeDef](./type_defs.md#organizationalunittypedef)\]
 - `NextToken`: `str`
 
 ## ListParentsResponseTypeDef
@@ -567,8 +537,7 @@ from mypy_boto3_organizations.type_defs import ListParentsResponseTypeDef
 
 Optional fields:
 
-- `Parents`:
-  `List`\[[ParentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#parenttypedef)\]
+- `Parents`: `List`\[[ParentTypeDef](./type_defs.md#parenttypedef)\]
 - `NextToken`: `str`
 
 ## ListPoliciesForTargetResponseTypeDef
@@ -580,7 +549,7 @@ from mypy_boto3_organizations.type_defs import ListPoliciesForTargetResponseType
 Optional fields:
 
 - `Policies`:
-  `List`\[[PolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policysummarytypedef)\]
+  `List`\[[PolicySummaryTypeDef](./type_defs.md#policysummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListPoliciesResponseTypeDef
@@ -592,7 +561,7 @@ from mypy_boto3_organizations.type_defs import ListPoliciesResponseTypeDef
 Optional fields:
 
 - `Policies`:
-  `List`\[[PolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policysummarytypedef)\]
+  `List`\[[PolicySummaryTypeDef](./type_defs.md#policysummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListRootsResponseTypeDef
@@ -603,8 +572,7 @@ from mypy_boto3_organizations.type_defs import ListRootsResponseTypeDef
 
 Optional fields:
 
-- `Roots`:
-  `List`\[[RootTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#roottypedef)\]
+- `Roots`: `List`\[[RootTypeDef](./type_defs.md#roottypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -615,8 +583,7 @@ from mypy_boto3_organizations.type_defs import ListTagsForResourceResponseTypeDe
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## ListTargetsForPolicyResponseTypeDef
@@ -628,7 +595,7 @@ from mypy_boto3_organizations.type_defs import ListTargetsForPolicyResponseTypeD
 Optional fields:
 
 - `Targets`:
-  `List`\[[PolicyTargetSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policytargetsummarytypedef)\]
+  `List`\[[PolicyTargetSummaryTypeDef](./type_defs.md#policytargetsummarytypedef)\]
 - `NextToken`: `str`
 
 ## OrganizationTypeDef
@@ -641,13 +608,12 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
-- `FeatureSet`:
-  [OrganizationFeatureSet](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#organizationfeatureset)
+- `FeatureSet`: [OrganizationFeatureSet](./literals.md#organizationfeatureset)
 - `MasterAccountArn`: `str`
 - `MasterAccountId`: `str`
 - `MasterAccountEmail`: `str`
 - `AvailablePolicyTypes`:
-  `List`\[[PolicyTypeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policytypesummarytypedef)\]
+  `List`\[[PolicyTypeSummaryTypeDef](./type_defs.md#policytypesummarytypedef)\]
 
 ## OrganizationalUnitTypeDef
 
@@ -682,8 +648,7 @@ from mypy_boto3_organizations.type_defs import ParentTypeDef
 Optional fields:
 
 - `Id`: `str`
-- `Type`:
-  [ParentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#parenttype)
+- `Type`: [ParentType](./literals.md#parenttype)
 
 ## PolicySummaryTypeDef
 
@@ -697,8 +662,7 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Type`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
+- `Type`: [PolicyType](./literals.md#policytype)
 - `AwsManaged`: `bool`
 
 ## PolicyTargetSummaryTypeDef
@@ -712,8 +676,7 @@ Optional fields:
 - `TargetId`: `str`
 - `Arn`: `str`
 - `Name`: `str`
-- `Type`:
-  [TargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#targettype)
+- `Type`: [TargetType](./literals.md#targettype)
 
 ## PolicyTypeDef
 
@@ -723,8 +686,7 @@ from mypy_boto3_organizations.type_defs import PolicyTypeDef
 
 Optional fields:
 
-- `PolicySummary`:
-  [PolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policysummarytypedef)
+- `PolicySummary`: [PolicySummaryTypeDef](./type_defs.md#policysummarytypedef)
 - `Content`: `str`
 
 ## PolicyTypeSummaryTypeDef
@@ -735,10 +697,8 @@ from mypy_boto3_organizations.type_defs import PolicyTypeSummaryTypeDef
 
 Optional fields:
 
-- `Type`:
-  [PolicyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytype)
-- `Status`:
-  [PolicyTypeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/literals.html#policytypestatus)
+- `Type`: [PolicyType](./literals.md#policytype)
+- `Status`: [PolicyTypeStatus](./literals.md#policytypestatus)
 
 ## RootTypeDef
 
@@ -752,7 +712,7 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `PolicyTypes`:
-  `List`\[[PolicyTypeSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policytypesummarytypedef)\]
+  `List`\[[PolicyTypeSummaryTypeDef](./type_defs.md#policytypesummarytypedef)\]
 
 ## TagTypeDef
 
@@ -774,7 +734,7 @@ from mypy_boto3_organizations.type_defs import UpdateOrganizationalUnitResponseT
 Optional fields:
 
 - `OrganizationalUnit`:
-  [OrganizationalUnitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#organizationalunittypedef)
+  [OrganizationalUnitTypeDef](./type_defs.md#organizationalunittypedef)
 
 ## UpdatePolicyResponseTypeDef
 
@@ -784,5 +744,4 @@ from mypy_boto3_organizations.type_defs import UpdatePolicyResponseTypeDef
 
 Optional fields:
 
-- `Policy`:
-  [PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_organizations/type_defs.html#policytypedef)
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)

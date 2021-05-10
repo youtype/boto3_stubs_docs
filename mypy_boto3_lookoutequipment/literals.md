@@ -1,6 +1,6 @@
 # Literals for boto3 LookoutEquipment module
 
-> [Index](../README.md) > [LookoutEquipment](./README.md) > Literals
+> [Index](..) > [LookoutEquipment](.) > Literals
 
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)

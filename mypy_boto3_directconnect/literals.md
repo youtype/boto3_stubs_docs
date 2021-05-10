@@ -1,6 +1,6 @@
 # Literals for boto3 DirectConnect module
 
-> [Index](../README.md) > [DirectConnect](./README.md) > Literals
+> [Index](..) > [DirectConnect](.) > Literals
 
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)

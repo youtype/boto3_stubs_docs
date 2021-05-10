@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Honeycode module
 
-> [Index](../README.md) > [Honeycode](./README.md) > Structures
+> [Index](..) > [Honeycode](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
@@ -60,7 +60,7 @@ Required fields:
 Optional fields:
 
 - `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#failedbatchitemtypedef)\]
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
 
 ## BatchDeleteTableRowsResultTypeDef
 
@@ -75,7 +75,7 @@ Required fields:
 Optional fields:
 
 - `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#failedbatchitemtypedef)\]
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
 
 ## BatchUpdateTableRowsResultTypeDef
 
@@ -90,7 +90,7 @@ Required fields:
 Optional fields:
 
 - `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#failedbatchitemtypedef)\]
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
 
 ## BatchUpsertTableRowsResultTypeDef
 
@@ -101,13 +101,13 @@ from mypy_boto3_honeycode.type_defs import BatchUpsertTableRowsResultTypeDef
 Required fields:
 
 - `rows`: `Dict`\[`str`,
-  [UpsertRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#upsertrowsresulttypedef)\]
+  [UpsertRowsResultTypeDef](./type_defs.md#upsertrowsresulttypedef)\]
 - `workbookCursor`: `int`
 
 Optional fields:
 
 - `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#failedbatchitemtypedef)\]
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
 
 ## CellInputTypeDef
 
@@ -128,8 +128,7 @@ from mypy_boto3_honeycode.type_defs import CellTypeDef
 Optional fields:
 
 - `formula`: `str`
-- `format`:
-  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#format)
+- `format`: [Format](./literals.md#format)
 - `rawValue`: `str`
 - `formattedValue`: `str`
 
@@ -142,8 +141,7 @@ from mypy_boto3_honeycode.type_defs import ColumnMetadataTypeDef
 Required fields:
 
 - `name`: `str`
-- `format`:
-  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#format)
+- `format`: [Format](./literals.md#format)
 
 ## CreateRowDataTypeDef
 
@@ -155,7 +153,7 @@ Required fields:
 
 - `batchItemId`: `str`
 - `cellsToCreate`: `Dict`\[`str`,
-  [CellInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#cellinputtypedef)\]
+  [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
 
 ## DataItemTypeDef
 
@@ -165,8 +163,7 @@ from mypy_boto3_honeycode.type_defs import DataItemTypeDef
 
 Optional fields:
 
-- `overrideFormat`:
-  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#format)
+- `overrideFormat`: [Format](./literals.md#format)
 - `rawValue`: `str`
 - `formattedValue`: `str`
 
@@ -185,7 +182,7 @@ Optional fields:
 - `hasHeaderRow`: `bool`
 - `ignoreEmptyRows`: `bool`
 - `dataCharacterEncoding`:
-  [ImportDataCharacterEncoding](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#importdatacharacterencoding)
+  [ImportDataCharacterEncoding](./literals.md#importdatacharacterencoding)
 
 ## DescribeTableDataImportJobResultTypeDef
 
@@ -195,11 +192,10 @@ from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobResultTypeD
 
 Required fields:
 
-- `jobStatus`:
-  [TableDataImportJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#tabledataimportjobstatus)
+- `jobStatus`: [TableDataImportJobStatus](./literals.md#tabledataimportjobstatus)
 - `message`: `str`
 - `jobMetadata`:
-  [TableDataImportJobMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#tabledataimportjobmetadatatypedef)
+  [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
 
 ## DestinationOptionsTypeDef
 
@@ -210,7 +206,7 @@ from mypy_boto3_honeycode.type_defs import DestinationOptionsTypeDef
 Optional fields:
 
 - `columnMap`: `Dict`\[`str`,
-  [SourceDataColumnPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#sourcedatacolumnpropertiestypedef)\]
+  [SourceDataColumnPropertiesTypeDef](./type_defs.md#sourcedatacolumnpropertiestypedef)\]
 
 ## FailedBatchItemTypeDef
 
@@ -245,8 +241,7 @@ from mypy_boto3_honeycode.type_defs import GetScreenDataResultTypeDef
 
 Required fields:
 
-- `results`: `Dict`\[`str`,
-  [ResultSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#resultsettypedef)\]
+- `results`: `Dict`\[`str`, [ResultSetTypeDef](./type_defs.md#resultsettypedef)\]
 - `workbookCursor`: `int`
 
 Optional fields:
@@ -272,7 +267,7 @@ from mypy_boto3_honeycode.type_defs import ImportDataSourceTypeDef
 Required fields:
 
 - `dataSourceConfig`:
-  [ImportDataSourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importdatasourceconfigtypedef)
+  [ImportDataSourceConfigTypeDef](./type_defs.md#importdatasourceconfigtypedef)
 
 ## ImportJobSubmitterTypeDef
 
@@ -294,9 +289,9 @@ from mypy_boto3_honeycode.type_defs import ImportOptionsTypeDef
 Optional fields:
 
 - `destinationOptions`:
-  [DestinationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#destinationoptionstypedef)
+  [DestinationOptionsTypeDef](./type_defs.md#destinationoptionstypedef)
 - `delimitedTextOptions`:
-  [DelimitedTextImportOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#delimitedtextimportoptionstypedef)
+  [DelimitedTextImportOptionsTypeDef](./type_defs.md#delimitedtextimportoptionstypedef)
 
 ## InvokeScreenAutomationResultTypeDef
 
@@ -317,7 +312,7 @@ from mypy_boto3_honeycode.type_defs import ListTableColumnsResultTypeDef
 Required fields:
 
 - `tableColumns`:
-  `List`\[[TableColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#tablecolumntypedef)\]
+  `List`\[[TableColumnTypeDef](./type_defs.md#tablecolumntypedef)\]
 
 Optional fields:
 
@@ -333,8 +328,7 @@ from mypy_boto3_honeycode.type_defs import ListTableRowsResultTypeDef
 Required fields:
 
 - `columnIds`: `List`\[`str`\]
-- `rows`:
-  `List`\[[TableRowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#tablerowtypedef)\]
+- `rows`: `List`\[[TableRowTypeDef](./type_defs.md#tablerowtypedef)\]
 - `workbookCursor`: `int`
 
 Optional fields:
@@ -350,8 +344,7 @@ from mypy_boto3_honeycode.type_defs import ListTablesResultTypeDef
 
 Required fields:
 
-- `tables`:
-  `List`\[[TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#tabletypedef)\]
+- `tables`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
 
 Optional fields:
 
@@ -379,8 +372,7 @@ from mypy_boto3_honeycode.type_defs import QueryTableRowsResultTypeDef
 Required fields:
 
 - `columnIds`: `List`\[`str`\]
-- `rows`:
-  `List`\[[TableRowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#tablerowtypedef)\]
+- `rows`: `List`\[[TableRowTypeDef](./type_defs.md#tablerowtypedef)\]
 - `workbookCursor`: `int`
 
 Optional fields:
@@ -395,8 +387,7 @@ from mypy_boto3_honeycode.type_defs import ResultRowTypeDef
 
 Required fields:
 
-- `dataItems`:
-  `List`\[[DataItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#dataitemtypedef)\]
+- `dataItems`: `List`\[[DataItemTypeDef](./type_defs.md#dataitemtypedef)\]
 
 Optional fields:
 
@@ -411,9 +402,8 @@ from mypy_boto3_honeycode.type_defs import ResultSetTypeDef
 Required fields:
 
 - `headers`:
-  `List`\[[ColumnMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#columnmetadatatypedef)\]
-- `rows`:
-  `List`\[[ResultRowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#resultrowtypedef)\]
+  `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
+- `rows`: `List`\[[ResultRowTypeDef](./type_defs.md#resultrowtypedef)\]
 
 ## SourceDataColumnPropertiesTypeDef
 
@@ -434,8 +424,7 @@ from mypy_boto3_honeycode.type_defs import StartTableDataImportJobResultTypeDef
 Required fields:
 
 - `jobId`: `str`
-- `jobStatus`:
-  [TableDataImportJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#tabledataimportjobstatus)
+- `jobStatus`: [TableDataImportJobStatus](./literals.md#tabledataimportjobstatus)
 
 ## TableColumnTypeDef
 
@@ -447,8 +436,7 @@ Optional fields:
 
 - `tableColumnId`: `str`
 - `tableColumnName`: `str`
-- `format`:
-  [Format](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#format)
+- `format`: [Format](./literals.md#format)
 
 ## TableDataImportJobMetadataTypeDef
 
@@ -459,12 +447,10 @@ from mypy_boto3_honeycode.type_defs import TableDataImportJobMetadataTypeDef
 Required fields:
 
 - `submitter`:
-  [ImportJobSubmitterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importjobsubmittertypedef)
+  [ImportJobSubmitterTypeDef](./type_defs.md#importjobsubmittertypedef)
 - `submitTime`: `datetime`
-- `importOptions`:
-  [ImportOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importoptionstypedef)
-- `dataSource`:
-  [ImportDataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#importdatasourcetypedef)
+- `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
+- `dataSource`: [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
 
 ## TableRowTypeDef
 
@@ -475,8 +461,7 @@ from mypy_boto3_honeycode.type_defs import TableRowTypeDef
 Required fields:
 
 - `rowId`: `str`
-- `cells`:
-  `List`\[[CellTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#celltypedef)\]
+- `cells`: `List`\[[CellTypeDef](./type_defs.md#celltypedef)\]
 
 ## TableTypeDef
 
@@ -499,7 +484,7 @@ Required fields:
 
 - `rowId`: `str`
 - `cellsToUpdate`: `Dict`\[`str`,
-  [CellInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#cellinputtypedef)\]
+  [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
 
 ## UpsertRowDataTypeDef
 
@@ -510,10 +495,9 @@ from mypy_boto3_honeycode.type_defs import UpsertRowDataTypeDef
 Required fields:
 
 - `batchItemId`: `str`
-- `filter`:
-  [FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#filtertypedef)
+- `filter`: [FilterTypeDef](./type_defs.md#filtertypedef)
 - `cellsToUpdate`: `Dict`\[`str`,
-  [CellInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#cellinputtypedef)\]
+  [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
 
 ## UpsertRowsResultTypeDef
 
@@ -524,8 +508,7 @@ from mypy_boto3_honeycode.type_defs import UpsertRowsResultTypeDef
 Required fields:
 
 - `rowIds`: `List`\[`str`\]
-- `upsertAction`:
-  [UpsertAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/literals.html#upsertaction)
+- `upsertAction`: [UpsertAction](./literals.md#upsertaction)
 
 ## VariableValueTypeDef
 

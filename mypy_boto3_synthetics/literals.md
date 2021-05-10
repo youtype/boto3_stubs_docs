@@ -1,6 +1,6 @@
 # Literals for boto3 Synthetics module
 
-> [Index](../README.md) > [Synthetics](./README.md) > Literals
+> [Index](..) > [Synthetics](.) > Literals
 
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)

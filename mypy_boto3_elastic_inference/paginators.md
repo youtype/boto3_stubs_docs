@@ -1,6 +1,6 @@
 # Paginators for boto3 ElasticInference module
 
-> [Index](../README.md) > [ElasticInference](./README.md) > Paginators
+> [Index](..) > [ElasticInference](.) > Paginators
 
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
@@ -30,10 +30,9 @@ Boto3 documentation:
 Arguments for `DescribeAcceleratorsPaginator.paginate` method:
 
 - `acceleratorIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAcceleratorsPaginator.paginate` returns
-`Iterator`\[[DescribeAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#describeacceleratorsresponsetypedef)\].
+`Iterator`\[[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef)\].

@@ -1,6 +1,6 @@
 # RDSClient for boto3 RDS module
 
-> [Index](../README.md) > [RDS](./README.md) > RDSClient
+> [Index](..) > [RDS](.) > RDSClient
 
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
@@ -345,7 +345,7 @@ Arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[AddSourceIdentifierToSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#addsourceidentifiertosubscriptionresulttypedef).
+[AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
 
 ### add_tags_to_resource
 
@@ -357,9 +357,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### apply_pending_maintenance_action
 
@@ -376,7 +374,7 @@ Arguments:
 - `OptInType`: `str` *(required)*
 
 Returns
-[ApplyPendingMaintenanceActionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#applypendingmaintenanceactionresulttypedef).
+[ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
 
 ### authorize_db_security_group_ingress
 
@@ -395,7 +393,7 @@ Arguments:
 - `EC2SecurityGroupOwnerId`: `str`
 
 Returns
-[AuthorizeDBSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#authorizedbsecuritygroupingressresulttypedef).
+[AuthorizeDBSecurityGroupIngressResultTypeDef](./type_defs.md#authorizedbsecuritygroupingressresulttypedef).
 
 ### backtrack_db_cluster
 
@@ -411,8 +409,7 @@ Arguments:
 - `Force`: `bool`
 - `UseEarliestTimeOnPointInTimeUnavailable`: `bool`
 
-Returns
-[DBClusterBacktrackTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterbacktracktypedef).
+Returns [DBClusterBacktrackTypeDef](./type_defs.md#dbclusterbacktracktypedef).
 
 ### can_paginate
 
@@ -438,8 +435,7 @@ Arguments:
 
 - `ExportTaskIdentifier`: `str` *(required)*
 
-Returns
-[ExportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#exporttasktypedef).
+Returns [ExportTaskTypeDef](./type_defs.md#exporttasktypedef).
 
 ### copy_db_cluster_parameter_group
 
@@ -454,11 +450,10 @@ Arguments:
 - `SourceDBClusterParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBClusterParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBClusterParameterGroupDescription`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyDBClusterParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#copydbclusterparametergroupresulttypedef).
+[CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
 
 ### copy_db_cluster_snapshot
 
@@ -474,12 +469,11 @@ Arguments:
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `CopyTags`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
 Returns
-[CopyDBClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#copydbclustersnapshotresulttypedef).
+[CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
 
 ### copy_db_parameter_group
 
@@ -493,11 +487,10 @@ Arguments:
 - `SourceDBParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBParameterGroupDescription`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyDBParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#copydbparametergroupresulttypedef).
+[CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef).
 
 ### copy_db_snapshot
 
@@ -511,8 +504,7 @@ Arguments:
 - `SourceDBSnapshotIdentifier`: `str` *(required)*
 - `TargetDBSnapshotIdentifier`: `str` *(required)*
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CopyTags`: `bool`
 - `PreSignedUrl`: `str`
 - `OptionGroupName`: `str`
@@ -520,7 +512,7 @@ Arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CopyDBSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#copydbsnapshotresulttypedef).
+[CopyDBSnapshotResultTypeDef](./type_defs.md#copydbsnapshotresulttypedef).
 
 ### copy_option_group
 
@@ -534,11 +526,10 @@ Arguments:
 - `SourceOptionGroupIdentifier`: `str` *(required)*
 - `TargetOptionGroupIdentifier`: `str` *(required)*
 - `TargetOptionGroupDescription`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyOptionGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#copyoptiongroupresulttypedef).
+[CopyOptionGroupResultTypeDef](./type_defs.md#copyoptiongroupresulttypedef).
 
 ### create_custom_availability_zone
 
@@ -556,7 +547,7 @@ Arguments:
 - `VpnTunnelOriginatorIP`: `str`
 
 Returns
-[CreateCustomAvailabilityZoneResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createcustomavailabilityzoneresulttypedef).
+[CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef).
 
 ### create_db_cluster
 
@@ -584,8 +575,7 @@ Arguments:
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `ReplicationSourceIdentifier`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
@@ -594,7 +584,7 @@ Arguments:
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `EngineMode`: `str`
 - `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#scalingconfigurationtypedef)
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
 - `DeletionProtection`: `bool`
 - `GlobalClusterIdentifier`: `str`
 - `EnableHttpEndpoint`: `bool`
@@ -605,7 +595,7 @@ Arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CreateDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbclusterresulttypedef).
+[CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
 
 ### create_db_cluster_endpoint
 
@@ -621,11 +611,9 @@ Arguments:
 - `EndpointType`: `str` *(required)*
 - `StaticMembers`: `List`\[`str`\]
 - `ExcludedMembers`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[DBClusterEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterendpointtypedef).
+Returns [DBClusterEndpointTypeDef](./type_defs.md#dbclusterendpointtypedef).
 
 ### create_db_cluster_parameter_group
 
@@ -640,11 +628,10 @@ Arguments:
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `DBParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbclusterparametergroupresulttypedef).
+[CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
 
 ### create_db_cluster_snapshot
 
@@ -657,11 +644,10 @@ Arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 - `DBClusterIdentifier`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbclustersnapshotresulttypedef).
+[CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
 
 ### create_db_instance
 
@@ -697,8 +683,7 @@ Arguments:
 - `CharacterSetName`: `str`
 - `NcharCharacterSetName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DBClusterIdentifier`: `str`
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
@@ -718,13 +703,13 @@ Arguments:
 - `PerformanceInsightsRetentionPeriod`: `int`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#processorfeaturetypedef)\]
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 - `EnableCustomerOwnedIp`: `bool`
 
 Returns
-[CreateDBInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbinstanceresulttypedef).
+[CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
 
 ### create_db_instance_read_replica
 
@@ -747,8 +732,7 @@ Arguments:
 - `OptionGroupName`: `str`
 - `DBParameterGroupName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DBSubnetGroupName`: `str`
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 - `StorageType`: `str`
@@ -763,18 +747,17 @@ Arguments:
 - `PerformanceInsightsRetentionPeriod`: `int`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#processorfeaturetypedef)\]
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DeletionProtection`: `bool`
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
-- `ReplicaMode`:
-  [ReplicaMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#replicamode)
+- `ReplicaMode`: [ReplicaMode](./literals.md#replicamode)
 - `MaxAllocatedStorage`: `int`
 - `SourceRegion`: `str`
 
 Returns
-[CreateDBInstanceReadReplicaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbinstancereadreplicaresulttypedef).
+[CreateDBInstanceReadReplicaResultTypeDef](./type_defs.md#createdbinstancereadreplicaresulttypedef).
 
 ### create_db_parameter_group
 
@@ -788,11 +771,10 @@ Arguments:
 - `DBParameterGroupName`: `str` *(required)*
 - `DBParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBParameterGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbparametergroupresulttypedef).
+[CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef).
 
 ### create_db_proxy
 
@@ -804,11 +786,8 @@ Boto3 documentation:
 Arguments:
 
 - `DBProxyName`: `str` *(required)*
-- `EngineFamily`:
-  [EngineFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#enginefamily)
-  *(required)*
-- `Auth`:
-  `List`\[[UserAuthConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#userauthconfigtypedef)\]
+- `EngineFamily`: [EngineFamily](./literals.md#enginefamily) *(required)*
+- `Auth`: `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `VpcSubnetIds`: `List`\[`str`\] *(required)*
@@ -816,11 +795,10 @@ Arguments:
 - `RequireTLS`: `bool`
 - `IdleClientTimeout`: `int`
 - `DebugLogging`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbproxyresponsetypedef).
+[CreateDBProxyResponseTypeDef](./type_defs.md#createdbproxyresponsetypedef).
 
 ### create_db_proxy_endpoint
 
@@ -836,12 +814,11 @@ Arguments:
 - `VpcSubnetIds`: `List`\[`str`\] *(required)*
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 - `TargetRole`:
-  [DBProxyEndpointTargetRole](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#dbproxyendpointtargetrole)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+  [DBProxyEndpointTargetRole](./literals.md#dbproxyendpointtargetrole)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBProxyEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbproxyendpointresponsetypedef).
+[CreateDBProxyEndpointResponseTypeDef](./type_defs.md#createdbproxyendpointresponsetypedef).
 
 ### create_db_security_group
 
@@ -854,11 +831,10 @@ Arguments:
 
 - `DBSecurityGroupName`: `str` *(required)*
 - `DBSecurityGroupDescription`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSecurityGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbsecuritygroupresulttypedef).
+[CreateDBSecurityGroupResultTypeDef](./type_defs.md#createdbsecuritygroupresulttypedef).
 
 ### create_db_snapshot
 
@@ -871,11 +847,10 @@ Arguments:
 
 - `DBSnapshotIdentifier`: `str` *(required)*
 - `DBInstanceIdentifier`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbsnapshotresulttypedef).
+[CreateDBSnapshotResultTypeDef](./type_defs.md#createdbsnapshotresulttypedef).
 
 ### create_db_subnet_group
 
@@ -889,11 +864,10 @@ Arguments:
 - `DBSubnetGroupName`: `str` *(required)*
 - `DBSubnetGroupDescription`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createdbsubnetgroupresulttypedef).
+[CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
 
 ### create_event_subscription
 
@@ -910,11 +884,10 @@ Arguments:
 - `EventCategories`: `List`\[`str`\]
 - `SourceIds`: `List`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createeventsubscriptionresulttypedef).
+[CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
 ### create_global_cluster
 
@@ -934,7 +907,7 @@ Arguments:
 - `StorageEncrypted`: `bool`
 
 Returns
-[CreateGlobalClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createglobalclusterresulttypedef).
+[CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
 
 ### create_option_group
 
@@ -949,11 +922,10 @@ Arguments:
 - `EngineName`: `str` *(required)*
 - `MajorEngineVersion`: `str` *(required)*
 - `OptionGroupDescription`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOptionGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#createoptiongroupresulttypedef).
+[CreateOptionGroupResultTypeDef](./type_defs.md#createoptiongroupresulttypedef).
 
 ### delete_custom_availability_zone
 
@@ -968,7 +940,7 @@ Arguments:
 - `CustomAvailabilityZoneId`: `str` *(required)*
 
 Returns
-[DeleteCustomAvailabilityZoneResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletecustomavailabilityzoneresulttypedef).
+[DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef).
 
 ### delete_db_cluster
 
@@ -984,7 +956,7 @@ Arguments:
 - `FinalDBSnapshotIdentifier`: `str`
 
 Returns
-[DeleteDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbclusterresulttypedef).
+[DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
 
 ### delete_db_cluster_endpoint
 
@@ -997,8 +969,7 @@ Arguments:
 
 - `DBClusterEndpointIdentifier`: `str` *(required)*
 
-Returns
-[DBClusterEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterendpointtypedef).
+Returns [DBClusterEndpointTypeDef](./type_defs.md#dbclusterendpointtypedef).
 
 ### delete_db_cluster_parameter_group
 
@@ -1024,7 +995,7 @@ Arguments:
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBClusterSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbclustersnapshotresulttypedef).
+[DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
 
 ### delete_db_instance
 
@@ -1041,7 +1012,7 @@ Arguments:
 - `DeleteAutomatedBackups`: `bool`
 
 Returns
-[DeleteDBInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbinstanceresulttypedef).
+[DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
 
 ### delete_db_instance_automated_backup
 
@@ -1057,7 +1028,7 @@ Arguments:
 - `DBInstanceAutomatedBackupsArn`: `str`
 
 Returns
-[DeleteDBInstanceAutomatedBackupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbinstanceautomatedbackupresulttypedef).
+[DeleteDBInstanceAutomatedBackupResultTypeDef](./type_defs.md#deletedbinstanceautomatedbackupresulttypedef).
 
 ### delete_db_parameter_group
 
@@ -1082,7 +1053,7 @@ Arguments:
 - `DBProxyName`: `str` *(required)*
 
 Returns
-[DeleteDBProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbproxyresponsetypedef).
+[DeleteDBProxyResponseTypeDef](./type_defs.md#deletedbproxyresponsetypedef).
 
 ### delete_db_proxy_endpoint
 
@@ -1096,7 +1067,7 @@ Arguments:
 - `DBProxyEndpointName`: `str` *(required)*
 
 Returns
-[DeleteDBProxyEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbproxyendpointresponsetypedef).
+[DeleteDBProxyEndpointResponseTypeDef](./type_defs.md#deletedbproxyendpointresponsetypedef).
 
 ### delete_db_security_group
 
@@ -1121,7 +1092,7 @@ Arguments:
 - `DBSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deletedbsnapshotresulttypedef).
+[DeleteDBSnapshotResultTypeDef](./type_defs.md#deletedbsnapshotresulttypedef).
 
 ### delete_db_subnet_group
 
@@ -1146,7 +1117,7 @@ Arguments:
 - `SubscriptionName`: `str` *(required)*
 
 Returns
-[DeleteEventSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deleteeventsubscriptionresulttypedef).
+[DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
 
 ### delete_global_cluster
 
@@ -1160,7 +1131,7 @@ Arguments:
 - `GlobalClusterIdentifier`: `str` *(required)*
 
 Returns
-[DeleteGlobalClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#deleteglobalclusterresulttypedef).
+[DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
 
 ### delete_installation_media
 
@@ -1173,8 +1144,7 @@ Arguments:
 
 - `InstallationMediaId`: `str` *(required)*
 
-Returns
-[InstallationMediaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#installationmediatypedef).
+Returns [InstallationMediaTypeDef](./type_defs.md#installationmediatypedef).
 
 ### delete_option_group
 
@@ -1211,7 +1181,7 @@ Boto3 documentation:
 [RDS.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes)
 
 Returns
-[AccountAttributesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#accountattributesmessagetypedef).
+[AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef).
 
 ### describe_certificates
 
@@ -1223,13 +1193,11 @@ Boto3 documentation:
 Arguments:
 
 - `CertificateIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[CertificateMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#certificatemessagetypedef).
+Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
 
 ### describe_custom_availability_zones
 
@@ -1242,13 +1210,12 @@ Boto3 documentation:
 Arguments:
 
 - `CustomAvailabilityZoneId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[CustomAvailabilityZoneMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#customavailabilityzonemessagetypedef).
+[CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef).
 
 ### describe_db_cluster_backtracks
 
@@ -1262,13 +1229,12 @@ Arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `BacktrackIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBClusterBacktrackMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterbacktrackmessagetypedef).
+[DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef).
 
 ### describe_db_cluster_endpoints
 
@@ -1282,13 +1248,12 @@ Arguments:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBClusterEndpointMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterendpointmessagetypedef).
+[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef).
 
 ### describe_db_cluster_parameter_groups
 
@@ -1301,13 +1266,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBClusterParameterGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterparametergroupsmessagetypedef).
+[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
 
 ### describe_db_cluster_parameters
 
@@ -1321,13 +1285,12 @@ Arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `Source`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterparametergroupdetailstypedef).
+[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
 
 ### describe_db_cluster_snapshot_attributes
 
@@ -1342,7 +1305,7 @@ Arguments:
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DescribeDBClusterSnapshotAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbclustersnapshotattributesresulttypedef).
+[DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
 
 ### describe_db_cluster_snapshots
 
@@ -1357,15 +1320,14 @@ Arguments:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
 - `IncludePublic`: `bool`
 
 Returns
-[DBClusterSnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclustersnapshotmessagetypedef).
+[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
 
 ### describe_db_clusters
 
@@ -1377,14 +1339,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBClusterIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
 
-Returns
-[DBClusterMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclustermessagetypedef).
+Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
 
 ### describe_db_engine_versions
 
@@ -1398,8 +1358,7 @@ Arguments:
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DefaultOnly`: `bool`
@@ -1408,7 +1367,7 @@ Arguments:
 - `IncludeAll`: `bool`
 
 Returns
-[DBEngineVersionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbengineversionmessagetypedef).
+[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
 
 ### describe_db_instance_automated_backups
 
@@ -1422,14 +1381,13 @@ Arguments:
 
 - `DbiResourceId`: `str`
 - `DBInstanceIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DBInstanceAutomatedBackupsArn`: `str`
 
 Returns
-[DBInstanceAutomatedBackupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbinstanceautomatedbackupmessagetypedef).
+[DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef).
 
 ### describe_db_instances
 
@@ -1441,13 +1399,11 @@ Boto3 documentation:
 Arguments:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[DBInstanceMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbinstancemessagetypedef).
+Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
 
 ### describe_db_log_files
 
@@ -1462,13 +1418,12 @@ Arguments:
 - `FilenameContains`: `str`
 - `FileLastWritten`: `int`
 - `FileSize`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DescribeDBLogFilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedblogfilesresponsetypedef).
+[DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef).
 
 ### describe_db_parameter_groups
 
@@ -1480,13 +1435,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBParameterGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBParameterGroupsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbparametergroupsmessagetypedef).
+[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef).
 
 ### describe_db_parameters
 
@@ -1499,13 +1453,12 @@ Arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `Source`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBParameterGroupDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbparametergroupdetailstypedef).
+[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef).
 
 ### describe_db_proxies
 
@@ -1517,13 +1470,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBProxyName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxiesresponsetypedef).
+[DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef).
 
 ### describe_db_proxy_endpoints
 
@@ -1536,13 +1488,12 @@ Arguments:
 
 - `DBProxyName`: `str`
 - `DBProxyEndpointName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxyEndpointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxyendpointsresponsetypedef).
+[DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef).
 
 ### describe_db_proxy_target_groups
 
@@ -1556,13 +1507,12 @@ Arguments:
 
 - `DBProxyName`: `str` *(required)*
 - `TargetGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxyTargetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxytargetgroupsresponsetypedef).
+[DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef).
 
 ### describe_db_proxy_targets
 
@@ -1575,13 +1525,12 @@ Arguments:
 
 - `DBProxyName`: `str` *(required)*
 - `TargetGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxyTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbproxytargetsresponsetypedef).
+[DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef).
 
 ### describe_db_security_groups
 
@@ -1593,13 +1542,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBSecurityGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBSecurityGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbsecuritygroupmessagetypedef).
+[DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef).
 
 ### describe_db_snapshot_attributes
 
@@ -1614,7 +1562,7 @@ Arguments:
 - `DBSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DescribeDBSnapshotAttributesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describedbsnapshotattributesresulttypedef).
+[DescribeDBSnapshotAttributesResultTypeDef](./type_defs.md#describedbsnapshotattributesresulttypedef).
 
 ### describe_db_snapshots
 
@@ -1628,16 +1576,14 @@ Arguments:
 - `DBInstanceIdentifier`: `str`
 - `DBSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
 - `IncludePublic`: `bool`
 - `DbiResourceId`: `str`
 
-Returns
-[DBSnapshotMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbsnapshotmessagetypedef).
+Returns [DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef).
 
 ### describe_db_subnet_groups
 
@@ -1649,13 +1595,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBSubnetGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DBSubnetGroupMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbsubnetgroupmessagetypedef).
+[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
 
 ### describe_engine_default_cluster_parameters
 
@@ -1668,13 +1613,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultClusterParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describeenginedefaultclusterparametersresulttypedef).
+[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
 
 ### describe_engine_default_parameters
 
@@ -1687,13 +1631,12 @@ Boto3 documentation:
 Arguments:
 
 - `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describeenginedefaultparametersresulttypedef).
+[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
 ### describe_event_categories
 
@@ -1705,11 +1648,10 @@ Boto3 documentation:
 Arguments:
 
 - `SourceType`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[EventCategoriesMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#eventcategoriesmessagetypedef).
+[EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
 
 ### describe_event_subscriptions
 
@@ -1721,13 +1663,12 @@ Boto3 documentation:
 Arguments:
 
 - `SubscriptionName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[EventSubscriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#eventsubscriptionsmessagetypedef).
+[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
 
 ### describe_events
 
@@ -1739,19 +1680,16 @@ Boto3 documentation:
 Arguments:
 
 - `SourceIdentifier`: `str`
-- `SourceType`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#sourcetype)
+- `SourceType`: [SourceType](./literals.md#sourcetype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Duration`: `int`
 - `EventCategories`: `List`\[`str`\]
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EventsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#eventsmessagetypedef).
+Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
 ### describe_export_tasks
 
@@ -1764,13 +1702,11 @@ Arguments:
 
 - `ExportTaskIdentifier`: `str`
 - `SourceArn`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
-Returns
-[ExportTasksMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#exporttasksmessagetypedef).
+Returns [ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef).
 
 ### describe_global_clusters
 
@@ -1782,13 +1718,12 @@ Boto3 documentation:
 Arguments:
 
 - `GlobalClusterIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[GlobalClustersMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#globalclustersmessagetypedef).
+[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
 
 ### describe_installation_media
 
@@ -1800,13 +1735,12 @@ Boto3 documentation:
 Arguments:
 
 - `InstallationMediaId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[InstallationMediaMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#installationmediamessagetypedef).
+[InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef).
 
 ### describe_option_group_options
 
@@ -1820,13 +1754,12 @@ Arguments:
 
 - `EngineName`: `str` *(required)*
 - `MajorEngineVersion`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[OptionGroupOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#optiongroupoptionsmessagetypedef).
+[OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef).
 
 ### describe_option_groups
 
@@ -1838,15 +1771,13 @@ Boto3 documentation:
 Arguments:
 
 - `OptionGroupName`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 - `EngineName`: `str`
 - `MajorEngineVersion`: `str`
 
-Returns
-[OptionGroupsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#optiongroupstypedef).
+Returns [OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef).
 
 ### describe_orderable_db_instance_options
 
@@ -1864,13 +1795,12 @@ Arguments:
 - `LicenseModel`: `str`
 - `AvailabilityZoneGroup`: `str`
 - `Vpc`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[OrderableDBInstanceOptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#orderabledbinstanceoptionsmessagetypedef).
+[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
 
 ### describe_pending_maintenance_actions
 
@@ -1883,13 +1813,12 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceIdentifier`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
 Returns
-[PendingMaintenanceActionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#pendingmaintenanceactionsmessagetypedef).
+[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
 
 ### describe_reserved_db_instances
 
@@ -1909,13 +1838,12 @@ Arguments:
 - `OfferingType`: `str`
 - `MultiAZ`: `bool`
 - `LeaseId`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[ReservedDBInstanceMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#reserveddbinstancemessagetypedef).
+[ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef).
 
 ### describe_reserved_db_instances_offerings
 
@@ -1933,13 +1861,12 @@ Arguments:
 - `ProductDescription`: `str`
 - `OfferingType`: `str`
 - `MultiAZ`: `bool`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
 Returns
-[ReservedDBInstancesOfferingMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#reserveddbinstancesofferingmessagetypedef).
+[ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef).
 
 ### describe_source_regions
 
@@ -1953,11 +1880,10 @@ Arguments:
 - `RegionName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[SourceRegionMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#sourceregionmessagetypedef).
+[SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef).
 
 ### describe_valid_db_instance_modifications
 
@@ -1972,7 +1898,7 @@ Arguments:
 - `DBInstanceIdentifier`: `str` *(required)*
 
 Returns
-[DescribeValidDBInstanceModificationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#describevaliddbinstancemodificationsresulttypedef).
+[DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef).
 
 ### download_db_log_file_portion
 
@@ -1989,7 +1915,7 @@ Arguments:
 - `NumberOfLines`: `int`
 
 Returns
-[DownloadDBLogFilePortionDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#downloaddblogfileportiondetailstypedef).
+[DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef).
 
 ### failover_db_cluster
 
@@ -2004,7 +1930,7 @@ Arguments:
 - `TargetDBInstanceIdentifier`: `str`
 
 Returns
-[FailoverDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#failoverdbclusterresulttypedef).
+[FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
 
 ### failover_global_cluster
 
@@ -2019,7 +1945,7 @@ Arguments:
 - `TargetDbClusterIdentifier`: `str` *(required)*
 
 Returns
-[FailoverGlobalClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#failoverglobalclusterresulttypedef).
+[FailoverGlobalClusterResultTypeDef](./type_defs.md#failoverglobalclusterresulttypedef).
 
 ### generate_db_auth_token
 
@@ -2068,8 +1994,7 @@ Arguments:
 - `EngineInstallationMediaPath`: `str` *(required)*
 - `OSInstallationMediaPath`: `str` *(required)*
 
-Returns
-[InstallationMediaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#installationmediatypedef).
+Returns [InstallationMediaTypeDef](./type_defs.md#installationmediatypedef).
 
 ### list_tags_for_resource
 
@@ -2081,11 +2006,9 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[TagListMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#taglistmessagetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### modify_certificates
 
@@ -2100,7 +2023,7 @@ Arguments:
 - `RemoveCustomerOverride`: `bool`
 
 Returns
-[ModifyCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifycertificatesresulttypedef).
+[ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef).
 
 ### modify_current_db_cluster_capacity
 
@@ -2118,7 +2041,7 @@ Arguments:
 - `TimeoutAction`: `str`
 
 Returns
-[DBClusterCapacityInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclustercapacityinfotypedef).
+[DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef).
 
 ### modify_db_cluster
 
@@ -2143,21 +2066,21 @@ Arguments:
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `BacktrackWindow`: `int`
 - `CloudwatchLogsExportConfiguration`:
-  [CloudwatchLogsExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#cloudwatchlogsexportconfigurationtypedef)
+  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `EngineVersion`: `str`
 - `AllowMajorVersionUpgrade`: `bool`
 - `DBInstanceParameterGroupName`: `str`
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
 - `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#scalingconfigurationtypedef)
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
 - `DeletionProtection`: `bool`
 - `EnableHttpEndpoint`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 - `EnableGlobalWriteForwarding`: `bool`
 
 Returns
-[ModifyDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbclusterresulttypedef).
+[ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
 
 ### modify_db_cluster_endpoint
 
@@ -2173,8 +2096,7 @@ Arguments:
 - `StaticMembers`: `List`\[`str`\]
 - `ExcludedMembers`: `List`\[`str`\]
 
-Returns
-[DBClusterEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterendpointtypedef).
+Returns [DBClusterEndpointTypeDef](./type_defs.md#dbclusterendpointtypedef).
 
 ### modify_db_cluster_parameter_group
 
@@ -2187,12 +2109,11 @@ Boto3 documentation:
 Arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
   *(required)*
 
 Returns
-[DBClusterParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterparametergroupnamemessagetypedef).
+[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
 ### modify_db_cluster_snapshot_attribute
 
@@ -2210,7 +2131,7 @@ Arguments:
 - `ValuesToRemove`: `List`\[`str`\]
 
 Returns
-[ModifyDBClusterSnapshotAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbclustersnapshotattributeresulttypedef).
+[ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
 
 ### modify_db_instance
 
@@ -2258,20 +2179,19 @@ Arguments:
 - `PerformanceInsightsKMSKeyId`: `str`
 - `PerformanceInsightsRetentionPeriod`: `int`
 - `CloudwatchLogsExportConfiguration`:
-  [CloudwatchLogsExportConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#cloudwatchlogsexportconfigurationtypedef)
+  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#processorfeaturetypedef)\]
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 - `CertificateRotationRestart`: `bool`
-- `ReplicaMode`:
-  [ReplicaMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#replicamode)
+- `ReplicaMode`: [ReplicaMode](./literals.md#replicamode)
 - `EnableCustomerOwnedIp`: `bool`
 - `AwsBackupRecoveryPointArn`: `str`
 
 Returns
-[ModifyDBInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbinstanceresulttypedef).
+[ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
 
 ### modify_db_parameter_group
 
@@ -2283,12 +2203,11 @@ Boto3 documentation:
 Arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
   *(required)*
 
 Returns
-[DBParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbparametergroupnamemessagetypedef).
+[DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
 
 ### modify_db_proxy
 
@@ -2301,8 +2220,7 @@ Arguments:
 
 - `DBProxyName`: `str` *(required)*
 - `NewDBProxyName`: `str`
-- `Auth`:
-  `List`\[[UserAuthConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#userauthconfigtypedef)\]
+- `Auth`: `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
 - `RequireTLS`: `bool`
 - `IdleClientTimeout`: `int`
 - `DebugLogging`: `bool`
@@ -2310,7 +2228,7 @@ Arguments:
 - `SecurityGroups`: `List`\[`str`\]
 
 Returns
-[ModifyDBProxyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbproxyresponsetypedef).
+[ModifyDBProxyResponseTypeDef](./type_defs.md#modifydbproxyresponsetypedef).
 
 ### modify_db_proxy_endpoint
 
@@ -2326,7 +2244,7 @@ Arguments:
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 
 Returns
-[ModifyDBProxyEndpointResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbproxyendpointresponsetypedef).
+[ModifyDBProxyEndpointResponseTypeDef](./type_defs.md#modifydbproxyendpointresponsetypedef).
 
 ### modify_db_proxy_target_group
 
@@ -2340,11 +2258,11 @@ Arguments:
 - `TargetGroupName`: `str` *(required)*
 - `DBProxyName`: `str` *(required)*
 - `ConnectionPoolConfig`:
-  [ConnectionPoolConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#connectionpoolconfigurationtypedef)
+  [ConnectionPoolConfigurationTypeDef](./type_defs.md#connectionpoolconfigurationtypedef)
 - `NewName`: `str`
 
 Returns
-[ModifyDBProxyTargetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbproxytargetgroupresponsetypedef).
+[ModifyDBProxyTargetGroupResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponsetypedef).
 
 ### modify_db_snapshot
 
@@ -2360,7 +2278,7 @@ Arguments:
 - `OptionGroupName`: `str`
 
 Returns
-[ModifyDBSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbsnapshotresulttypedef).
+[ModifyDBSnapshotResultTypeDef](./type_defs.md#modifydbsnapshotresulttypedef).
 
 ### modify_db_snapshot_attribute
 
@@ -2377,7 +2295,7 @@ Arguments:
 - `ValuesToRemove`: `List`\[`str`\]
 
 Returns
-[ModifyDBSnapshotAttributeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbsnapshotattributeresulttypedef).
+[ModifyDBSnapshotAttributeResultTypeDef](./type_defs.md#modifydbsnapshotattributeresulttypedef).
 
 ### modify_db_subnet_group
 
@@ -2393,7 +2311,7 @@ Arguments:
 - `DBSubnetGroupDescription`: `str`
 
 Returns
-[ModifyDBSubnetGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifydbsubnetgroupresulttypedef).
+[ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
 
 ### modify_event_subscription
 
@@ -2411,7 +2329,7 @@ Arguments:
 - `Enabled`: `bool`
 
 Returns
-[ModifyEventSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifyeventsubscriptionresulttypedef).
+[ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
 ### modify_global_cluster
 
@@ -2429,7 +2347,7 @@ Arguments:
 - `AllowMajorVersionUpgrade`: `bool`
 
 Returns
-[ModifyGlobalClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifyglobalclusterresulttypedef).
+[ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
 
 ### modify_option_group
 
@@ -2442,12 +2360,12 @@ Arguments:
 
 - `OptionGroupName`: `str` *(required)*
 - `OptionsToInclude`:
-  `List`\[[OptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#optionconfigurationtypedef)\]
+  `List`\[[OptionConfigurationTypeDef](./type_defs.md#optionconfigurationtypedef)\]
 - `OptionsToRemove`: `List`\[`str`\]
 - `ApplyImmediately`: `bool`
 
 Returns
-[ModifyOptionGroupResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#modifyoptiongroupresulttypedef).
+[ModifyOptionGroupResultTypeDef](./type_defs.md#modifyoptiongroupresulttypedef).
 
 ### promote_read_replica
 
@@ -2463,7 +2381,7 @@ Arguments:
 - `PreferredBackupWindow`: `str`
 
 Returns
-[PromoteReadReplicaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#promotereadreplicaresulttypedef).
+[PromoteReadReplicaResultTypeDef](./type_defs.md#promotereadreplicaresulttypedef).
 
 ### promote_read_replica_db_cluster
 
@@ -2478,7 +2396,7 @@ Arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[PromoteReadReplicaDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#promotereadreplicadbclusterresulttypedef).
+[PromoteReadReplicaDBClusterResultTypeDef](./type_defs.md#promotereadreplicadbclusterresulttypedef).
 
 ### purchase_reserved_db_instances_offering
 
@@ -2493,11 +2411,10 @@ Arguments:
 - `ReservedDBInstancesOfferingId`: `str` *(required)*
 - `ReservedDBInstanceId`: `str`
 - `DBInstanceCount`: `int`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PurchaseReservedDBInstancesOfferingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#purchasereserveddbinstancesofferingresulttypedef).
+[PurchaseReservedDBInstancesOfferingResultTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresulttypedef).
 
 ### reboot_db_instance
 
@@ -2512,7 +2429,7 @@ Arguments:
 - `ForceFailover`: `bool`
 
 Returns
-[RebootDBInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#rebootdbinstanceresulttypedef).
+[RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
 
 ### register_db_proxy_targets
 
@@ -2529,7 +2446,7 @@ Arguments:
 - `DBClusterIdentifiers`: `List`\[`str`\]
 
 Returns
-[RegisterDBProxyTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#registerdbproxytargetsresponsetypedef).
+[RegisterDBProxyTargetsResponseTypeDef](./type_defs.md#registerdbproxytargetsresponsetypedef).
 
 ### remove_from_global_cluster
 
@@ -2544,7 +2461,7 @@ Arguments:
 - `DbClusterIdentifier`: `str`
 
 Returns
-[RemoveFromGlobalClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#removefromglobalclusterresulttypedef).
+[RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
 
 ### remove_role_from_db_cluster
 
@@ -2586,7 +2503,7 @@ Arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[RemoveSourceIdentifierFromSubscriptionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#removesourceidentifierfromsubscriptionresulttypedef).
+[RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
 
 ### remove_tags_from_resource
 
@@ -2612,11 +2529,10 @@ Arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[DBClusterParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbclusterparametergroupnamemessagetypedef).
+[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
 ### reset_db_parameter_group
 
@@ -2629,11 +2545,10 @@ Arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
-- `Parameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#parametertypedef)\]
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[DBParameterGroupNameMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#dbparametergroupnamemessagetypedef).
+[DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
 
 ### restore_db_cluster_from_s3
 
@@ -2664,8 +2579,7 @@ Arguments:
 - `OptionGroupName`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
@@ -2678,7 +2592,7 @@ Arguments:
 - `DomainIAMRoleName`: `str`
 
 Returns
-[RestoreDBClusterFromS3ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#restoredbclusterfroms3resulttypedef).
+[RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef).
 
 ### restore_db_cluster_from_snapshot
 
@@ -2700,15 +2614,14 @@ Arguments:
 - `DatabaseName`: `str`
 - `OptionGroupName`: `str`
 - `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `BacktrackWindow`: `int`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `EngineMode`: `str`
 - `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#scalingconfigurationtypedef)
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
@@ -2716,7 +2629,7 @@ Arguments:
 - `DomainIAMRoleName`: `str`
 
 Returns
-[RestoreDBClusterFromSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#restoredbclusterfromsnapshotresulttypedef).
+[RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
 
 ### restore_db_cluster_to_point_in_time
 
@@ -2737,8 +2650,7 @@ Arguments:
 - `DBSubnetGroupName`: `str`
 - `OptionGroupName`: `str`
 - `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `BacktrackWindow`: `int`
@@ -2750,7 +2662,7 @@ Arguments:
 - `DomainIAMRoleName`: `str`
 
 Returns
-[RestoreDBClusterToPointInTimeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#restoredbclustertopointintimeresulttypedef).
+[RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
 
 ### restore_db_instance_from_db_snapshot
 
@@ -2776,8 +2688,7 @@ Arguments:
 - `Engine`: `str`
 - `Iops`: `int`
 - `OptionGroupName`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
 - `TdeCredentialPassword`: `str`
@@ -2788,14 +2699,14 @@ Arguments:
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#processorfeaturetypedef)\]
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DBParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `EnableCustomerOwnedIp`: `bool`
 
 Returns
-[RestoreDBInstanceFromDBSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#restoredbinstancefromdbsnapshotresulttypedef).
+[RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef).
 
 ### restore_db_instance_from_s3
 
@@ -2833,8 +2744,7 @@ Arguments:
 - `Iops`: `int`
 - `OptionGroupName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageType`: `str`
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
@@ -2848,13 +2758,13 @@ Arguments:
 - `PerformanceInsightsRetentionPeriod`: `int`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#processorfeaturetypedef)\]
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DeletionProtection`: `bool`
 - `MaxAllocatedStorage`: `int`
 
 Returns
-[RestoreDBInstanceFromS3ResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#restoredbinstancefroms3resulttypedef).
+[RestoreDBInstanceFromS3ResultTypeDef](./type_defs.md#restoredbinstancefroms3resulttypedef).
 
 ### restore_db_instance_to_point_in_time
 
@@ -2883,8 +2793,7 @@ Arguments:
 - `Iops`: `int`
 - `OptionGroupName`: `str`
 - `CopyTagsToSnapshot`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
 - `TdeCredentialPassword`: `str`
@@ -2894,7 +2803,7 @@ Arguments:
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[ProcessorFeatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#processorfeaturetypedef)\]
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `UseDefaultProcessorFeatures`: `bool`
 - `DBParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
@@ -2904,7 +2813,7 @@ Arguments:
 - `EnableCustomerOwnedIp`: `bool`
 
 Returns
-[RestoreDBInstanceToPointInTimeResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#restoredbinstancetopointintimeresulttypedef).
+[RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef).
 
 ### revoke_db_security_group_ingress
 
@@ -2923,7 +2832,7 @@ Arguments:
 - `EC2SecurityGroupOwnerId`: `str`
 
 Returns
-[RevokeDBSecurityGroupIngressResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#revokedbsecuritygroupingressresulttypedef).
+[RevokeDBSecurityGroupIngressResultTypeDef](./type_defs.md#revokedbsecuritygroupingressresulttypedef).
 
 ### start_activity_stream
 
@@ -2935,14 +2844,12 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Mode`:
-  [ActivityStreamMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/literals.html#activitystreammode)
-  *(required)*
+- `Mode`: [ActivityStreamMode](./literals.md#activitystreammode) *(required)*
 - `KmsKeyId`: `str` *(required)*
 - `ApplyImmediately`: `bool`
 
 Returns
-[StartActivityStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#startactivitystreamresponsetypedef).
+[StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef).
 
 ### start_db_cluster
 
@@ -2956,7 +2863,7 @@ Arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StartDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#startdbclusterresulttypedef).
+[StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
 
 ### start_db_instance
 
@@ -2970,7 +2877,7 @@ Arguments:
 - `DBInstanceIdentifier`: `str` *(required)*
 
 Returns
-[StartDBInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#startdbinstanceresulttypedef).
+[StartDBInstanceResultTypeDef](./type_defs.md#startdbinstanceresulttypedef).
 
 ### start_db_instance_automated_backups_replication
 
@@ -2989,7 +2896,7 @@ Arguments:
 - `SourceRegion`: `str`
 
 Returns
-[StartDBInstanceAutomatedBackupsReplicationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#startdbinstanceautomatedbackupsreplicationresulttypedef).
+[StartDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationresulttypedef).
 
 ### start_export_task
 
@@ -3008,8 +2915,7 @@ Arguments:
 - `S3Prefix`: `str`
 - `ExportOnly`: `List`\[`str`\]
 
-Returns
-[ExportTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#exporttasktypedef).
+Returns [ExportTaskTypeDef](./type_defs.md#exporttasktypedef).
 
 ### stop_activity_stream
 
@@ -3024,7 +2930,7 @@ Arguments:
 - `ApplyImmediately`: `bool`
 
 Returns
-[StopActivityStreamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#stopactivitystreamresponsetypedef).
+[StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef).
 
 ### stop_db_cluster
 
@@ -3038,7 +2944,7 @@ Arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StopDBClusterResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#stopdbclusterresulttypedef).
+[StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
 
 ### stop_db_instance
 
@@ -3053,7 +2959,7 @@ Arguments:
 - `DBSnapshotIdentifier`: `str`
 
 Returns
-[StopDBInstanceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#stopdbinstanceresulttypedef).
+[StopDBInstanceResultTypeDef](./type_defs.md#stopdbinstanceresulttypedef).
 
 ### stop_db_instance_automated_backups_replication
 
@@ -3068,7 +2974,7 @@ Arguments:
 - `SourceDBInstanceArn`: `str` *(required)*
 
 Returns
-[StopDBInstanceAutomatedBackupsReplicationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_rds/type_defs.html#stopdbinstanceautomatedbackupsreplicationresulttypedef).
+[StopDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationresulttypedef).
 
 ### get_paginator
 

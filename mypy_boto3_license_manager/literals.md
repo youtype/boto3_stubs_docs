@@ -1,6 +1,6 @@
 # Literals for boto3 LicenseManager module
 
-> [Index](../README.md) > [LicenseManager](./README.md) > Literals
+> [Index](..) > [LicenseManager](.) > Literals
 
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)

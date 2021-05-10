@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IoTJobsDataPlane module
 
-> [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Structures
+> [Index](..) > [IoTJobsDataPlane](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
@@ -24,8 +24,7 @@ from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseTypeD
 
 Optional fields:
 
-- `execution`:
-  [JobExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutiontypedef)
+- `execution`: [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
 
 ## GetPendingJobExecutionsResponseTypeDef
 
@@ -36,9 +35,9 @@ from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsResponseTy
 Optional fields:
 
 - `inProgressJobs`:
-  `List`\[[JobExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutionsummarytypedef)\]
+  `List`\[[JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)\]
 - `queuedJobs`:
-  `List`\[[JobExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutionsummarytypedef)\]
+  `List`\[[JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)\]
 
 ## JobExecutionStateTypeDef
 
@@ -48,8 +47,7 @@ from mypy_boto3_iot_jobs_data.type_defs import JobExecutionStateTypeDef
 
 Optional fields:
 
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/literals.html#jobexecutionstatus)
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
 - `statusDetails`: `Dict`\[`str`, `str`\]
 - `versionNumber`: `int`
 
@@ -78,8 +76,7 @@ Optional fields:
 
 - `jobId`: `str`
 - `thingName`: `str`
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/literals.html#jobexecutionstatus)
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
 - `statusDetails`: `Dict`\[`str`, `str`\]
 - `queuedAt`: `int`
 - `startedAt`: `int`
@@ -97,8 +94,7 @@ from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionRespo
 
 Optional fields:
 
-- `execution`:
-  [JobExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutiontypedef)
+- `execution`: [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
 
 ## UpdateJobExecutionResponseTypeDef
 
@@ -109,5 +105,5 @@ from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionResponseTypeDef
 Optional fields:
 
 - `executionState`:
-  [JobExecutionStateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#jobexecutionstatetypedef)
+  [JobExecutionStateTypeDef](./type_defs.md#jobexecutionstatetypedef)
 - `jobDocument`: `str`

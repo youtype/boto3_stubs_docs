@@ -1,7 +1,6 @@
 # Paginators for boto3 MarketplaceEntitlementService module
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) >
-> Paginators
+> [Index](..) > [MarketplaceEntitlementService](.) > Paginators
 
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
@@ -32,10 +31,10 @@ Arguments for `GetEntitlementsPaginator.paginate` method:
 
 - `ProductCode`: `str` *(required)*
 - `Filter`:
-  `Dict`\[[GetEntitlementFilterName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/literals.html#getentitlementfiltername),
+  `Dict`\[[GetEntitlementFilterName](./literals.md#getentitlementfiltername),
   `List`\[`str`\]\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetEntitlementsPaginator.paginate` returns
-`Iterator`\[[GetEntitlementsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_marketplace_entitlement/type_defs.html#getentitlementsresulttypedef)\].
+`Iterator`\[[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)\].

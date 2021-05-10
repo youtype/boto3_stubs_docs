@@ -1,6 +1,6 @@
 # Type annotations for boto3 ServiceDiscovery module
 
-> [Index](../README.md) > ServiceDiscovery
+> [Index](..) > ServiceDiscovery
 
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)

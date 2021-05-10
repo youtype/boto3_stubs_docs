@@ -1,6 +1,6 @@
 # Waiters for boto3 Route53 module
 
-> [Index](../README.md) > [Route53](./README.md) > Waiters
+> [Index](..) > [Route53](.) > Waiters
 
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
@@ -30,5 +30,4 @@ Boto3 documentation:
 Arguments for `ResourceRecordSetsChangedWaiter.wait` method:
 
 - `Id`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 IoTEventsData module
 
-> [Index](../README.md) > IoTEventsData
+> [Index](..) > IoTEventsData
 
 Auto-generated documentation for
 [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)

@@ -1,6 +1,6 @@
 # Waiters for boto3 EKS module
 
-> [Index](../README.md) > [EKS](./README.md) > Waiters
+> [Index](..) > [EKS](.) > Waiters
 
 Auto-generated documentation for
 [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
@@ -35,8 +35,7 @@ Arguments for `AddonActiveWaiter.wait` method:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## AddonDeletedWaiter
 
@@ -58,8 +57,7 @@ Arguments for `AddonDeletedWaiter.wait` method:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterActiveWaiter
 
@@ -80,8 +78,7 @@ Boto3 documentation:
 Arguments for `ClusterActiveWaiter.wait` method:
 
 - `name`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterDeletedWaiter
 
@@ -102,8 +99,7 @@ Boto3 documentation:
 Arguments for `ClusterDeletedWaiter.wait` method:
 
 - `name`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NodegroupActiveWaiter
 
@@ -125,8 +121,7 @@ Arguments for `NodegroupActiveWaiter.wait` method:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## NodegroupDeletedWaiter
 
@@ -148,5 +143,4 @@ Arguments for `NodegroupDeletedWaiter.wait` method:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_eks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

@@ -1,6 +1,6 @@
 # MTurkClient for boto3 MTurk module
 
-> [Index](../README.md) > [MTurk](./README.md) > MTurkClient
+> [Index](..) > [MTurk](.) > MTurkClient
 
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
@@ -186,18 +186,16 @@ Arguments:
 - `Question`: `str`
 - `RequesterAnnotation`: `str`
 - `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#qualificationrequirementtypedef)\]
+  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 - `UniqueRequestToken`: `str`
 - `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
-- `HITReviewPolicy`:
-  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
+  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
+- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITLayoutId`: `str`
 - `HITLayoutParameters`:
-  `List`\[[HITLayoutParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#hitlayoutparametertypedef)\]
+  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
-Returns
-[CreateHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createhitresponsetypedef).
+Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
 
 ### create_hit_type
 
@@ -215,10 +213,10 @@ Arguments:
 - `AutoApprovalDelayInSeconds`: `int`
 - `Keywords`: `str`
 - `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#qualificationrequirementtypedef)\]
+  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 
 Returns
-[CreateHITTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createhittyperesponsetypedef).
+[CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef).
 
 ### create_hit_with_hit_type
 
@@ -236,15 +234,14 @@ Arguments:
 - `RequesterAnnotation`: `str`
 - `UniqueRequestToken`: `str`
 - `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
-- `HITReviewPolicy`:
-  [ReviewPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#reviewpolicytypedef)
+  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
+- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITLayoutId`: `str`
 - `HITLayoutParameters`:
-  `List`\[[HITLayoutParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#hitlayoutparametertypedef)\]
+  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
 Returns
-[CreateHITWithHITTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createhitwithhittyperesponsetypedef).
+[CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef).
 
 ### create_qualification_type
 
@@ -258,8 +255,7 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Description`: `str` *(required)*
 - `QualificationTypeStatus`:
-  [QualificationTypeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationtypestatus)
-  *(required)*
+  [QualificationTypeStatus](./literals.md#qualificationtypestatus) *(required)*
 - `Keywords`: `str`
 - `RetryDelayInSeconds`: `int`
 - `Test`: `str`
@@ -269,7 +265,7 @@ Arguments:
 - `AutoGrantedValue`: `int`
 
 Returns
-[CreateQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#createqualificationtyperesponsetypedef).
+[CreateQualificationTypeResponseTypeDef](./type_defs.md#createqualificationtyperesponsetypedef).
 
 ### create_worker_block
 
@@ -365,7 +361,7 @@ Boto3 documentation:
 [MTurk.Client.get_account_balance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_account_balance)
 
 Returns
-[GetAccountBalanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getaccountbalanceresponsetypedef).
+[GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef).
 
 ### get_assignment
 
@@ -379,7 +375,7 @@ Arguments:
 - `AssignmentId`: `str` *(required)*
 
 Returns
-[GetAssignmentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getassignmentresponsetypedef).
+[GetAssignmentResponseTypeDef](./type_defs.md#getassignmentresponsetypedef).
 
 ### get_file_upload_url
 
@@ -394,7 +390,7 @@ Arguments:
 - `QuestionIdentifier`: `str` *(required)*
 
 Returns
-[GetFileUploadURLResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getfileuploadurlresponsetypedef).
+[GetFileUploadURLResponseTypeDef](./type_defs.md#getfileuploadurlresponsetypedef).
 
 ### get_hit
 
@@ -407,8 +403,7 @@ Arguments:
 
 - `HITId`: `str` *(required)*
 
-Returns
-[GetHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#gethitresponsetypedef).
+Returns [GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef).
 
 ### get_qualification_score
 
@@ -423,7 +418,7 @@ Arguments:
 - `WorkerId`: `str` *(required)*
 
 Returns
-[GetQualificationScoreResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getqualificationscoreresponsetypedef).
+[GetQualificationScoreResponseTypeDef](./type_defs.md#getqualificationscoreresponsetypedef).
 
 ### get_qualification_type
 
@@ -437,7 +432,7 @@ Arguments:
 - `QualificationTypeId`: `str` *(required)*
 
 Returns
-[GetQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#getqualificationtyperesponsetypedef).
+[GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef).
 
 ### list_assignments_for_hit
 
@@ -452,10 +447,10 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `AssignmentStatuses`:
-  `List`\[[AssignmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#assignmentstatus)\]
+  `List`\[[AssignmentStatus](./literals.md#assignmentstatus)\]
 
 Returns
-[ListAssignmentsForHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listassignmentsforhitresponsetypedef).
+[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef).
 
 ### list_bonus_payments
 
@@ -472,7 +467,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBonusPaymentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listbonuspaymentsresponsetypedef).
+[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef).
 
 ### list_hits
 
@@ -486,8 +481,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsresponsetypedef).
+Returns [ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef).
 
 ### list_hits_for_qualification_type
 
@@ -504,7 +498,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHITsForQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listhitsforqualificationtyperesponsetypedef).
+[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef).
 
 ### list_qualification_requests
 
@@ -521,7 +515,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQualificationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationrequestsresponsetypedef).
+[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef).
 
 ### list_qualification_types
 
@@ -539,7 +533,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQualificationTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listqualificationtypesresponsetypedef).
+[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef).
 
 ### list_review_policy_results_for_hit
 
@@ -552,15 +546,14 @@ Boto3 documentation:
 Arguments:
 
 - `HITId`: `str` *(required)*
-- `PolicyLevels`:
-  `List`\[[ReviewPolicyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#reviewpolicylevel)\]
+- `PolicyLevels`: `List`\[[ReviewPolicyLevel](./literals.md#reviewpolicylevel)\]
 - `RetrieveActions`: `bool`
 - `RetrieveResults`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListReviewPolicyResultsForHITResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listreviewpolicyresultsforhitresponsetypedef).
+[ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef).
 
 ### list_reviewable_hits
 
@@ -572,13 +565,12 @@ Boto3 documentation:
 Arguments:
 
 - `HITTypeId`: `str`
-- `Status`:
-  [ReviewableHITStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#reviewablehitstatus)
+- `Status`: [ReviewableHITStatus](./literals.md#reviewablehitstatus)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListReviewableHITsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listreviewablehitsresponsetypedef).
+[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef).
 
 ### list_worker_blocks
 
@@ -593,7 +585,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkerBlocksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerblocksresponsetypedef).
+[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef).
 
 ### list_workers_with_qualification_type
 
@@ -606,13 +598,12 @@ Boto3 documentation:
 Arguments:
 
 - `QualificationTypeId`: `str` *(required)*
-- `Status`:
-  [QualificationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationstatus)
+- `Status`: [QualificationStatus](./literals.md#qualificationstatus)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListWorkersWithQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#listworkerswithqualificationtyperesponsetypedef).
+[ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef).
 
 ### notify_workers
 
@@ -628,7 +619,7 @@ Arguments:
 - `WorkerIds`: `List`\[`str`\] *(required)*
 
 Returns
-[NotifyWorkersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#notifyworkersresponsetypedef).
+[NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef).
 
 ### reject_assignment
 
@@ -687,11 +678,9 @@ Boto3 documentation:
 Arguments:
 
 - `Notification`:
-  [NotificationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#notificationspecificationtypedef)
+  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
   *(required)*
-- `TestEventType`:
-  [EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#eventtype)
-  *(required)*
+- `TestEventType`: [EventType](./literals.md#eventtype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -749,7 +738,7 @@ Arguments:
 
 - `HITTypeId`: `str` *(required)*
 - `Notification`:
-  [NotificationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#notificationspecificationtypedef)
+  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
 - `Active`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -766,7 +755,7 @@ Arguments:
 - `QualificationTypeId`: `str` *(required)*
 - `Description`: `str`
 - `QualificationTypeStatus`:
-  [QualificationTypeStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/literals.html#qualificationtypestatus)
+  [QualificationTypeStatus](./literals.md#qualificationtypestatus)
 - `Test`: `str`
 - `AnswerKey`: `str`
 - `TestDurationInSeconds`: `int`
@@ -775,7 +764,7 @@ Arguments:
 - `AutoGrantedValue`: `int`
 
 Returns
-[UpdateQualificationTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mturk/type_defs.html#updatequalificationtyperesponsetypedef).
+[UpdateQualificationTypeResponseTypeDef](./type_defs.md#updatequalificationtyperesponsetypedef).
 
 ### get_paginator
 

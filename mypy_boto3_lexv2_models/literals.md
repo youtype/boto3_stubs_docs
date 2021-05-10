@@ -1,6 +1,6 @@
 # Literals for boto3 LexModelsV2 module
 
-> [Index](../README.md) > [LexModelsV2](./README.md) > Literals
+> [Index](..) > [LexModelsV2](.) > Literals
 
 Auto-generated documentation for
 [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)

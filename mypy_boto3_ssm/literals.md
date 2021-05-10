@@ -1,6 +1,6 @@
 # Literals for boto3 SSM module
 
-> [Index](../README.md) > [SSM](./README.md) > Literals
+> [Index](..) > [SSM](.) > Literals
 
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)

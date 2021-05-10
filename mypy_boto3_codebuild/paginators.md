@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeBuild module
 
-> [Index](../README.md) > [CodeBuild](./README.md) > Paginators
+> [Index](..) > [CodeBuild](.) > Paginators
 
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
@@ -41,17 +41,16 @@ Boto3 documentation:
 Arguments for `DescribeCodeCoveragesPaginator.paginate` method:
 
 - `reportArn`: `str` *(required)*
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `sortBy`:
-  [ReportCodeCoverageSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportcodecoveragesortbytype)
+  [ReportCodeCoverageSortByType](./literals.md#reportcodecoveragesortbytype)
 - `minLineCoveragePercentage`: `float`
 - `maxLineCoveragePercentage`: `float`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCodeCoveragesPaginator.paginate` returns
-`Iterator`\[[DescribeCodeCoveragesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#describecodecoveragesoutputtypedef)\].
+`Iterator`\[[DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef)\].
 
 ## DescribeTestCasesPaginator
 
@@ -73,13 +72,12 @@ Boto3 documentation:
 Arguments for `DescribeTestCasesPaginator.paginate` method:
 
 - `reportArn`: `str` *(required)*
-- `filter`:
-  [TestCaseFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#testcasefiltertypedef)
+- `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTestCasesPaginator.paginate` returns
-`Iterator`\[[DescribeTestCasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#describetestcasesoutputtypedef)\].
+`Iterator`\[[DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef)\].
 
 ## ListBuildBatchesPaginator
 
@@ -100,15 +98,13 @@ Boto3 documentation:
 
 Arguments for `ListBuildBatchesPaginator.paginate` method:
 
-- `filter`:
-  [BuildBatchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchfiltertypedef)
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBuildBatchesPaginator.paginate` returns
-`Iterator`\[[ListBuildBatchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildbatchesoutputtypedef)\].
+`Iterator`\[[ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef)\].
 
 ## ListBuildBatchesForProjectPaginator
 
@@ -130,15 +126,13 @@ Boto3 documentation:
 Arguments for `ListBuildBatchesForProjectPaginator.paginate` method:
 
 - `projectName`: `str`
-- `filter`:
-  [BuildBatchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchfiltertypedef)
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBuildBatchesForProjectPaginator.paginate` returns
-`Iterator`\[[ListBuildBatchesForProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildbatchesforprojectoutputtypedef)\].
+`Iterator`\[[ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef)\].
 
 ## ListBuildsPaginator
 
@@ -158,13 +152,12 @@ Boto3 documentation:
 
 Arguments for `ListBuildsPaginator.paginate` method:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBuildsPaginator.paginate` returns
-`Iterator`\[[ListBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildsoutputtypedef)\].
+`Iterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
 
 ## ListBuildsForProjectPaginator
 
@@ -186,13 +179,12 @@ Boto3 documentation:
 Arguments for `ListBuildsForProjectPaginator.paginate` method:
 
 - `projectName`: `str` *(required)*
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBuildsForProjectPaginator.paginate` returns
-`Iterator`\[[ListBuildsForProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildsforprojectoutputtypedef)\].
+`Iterator`\[[ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef)\].
 
 ## ListProjectsPaginator
 
@@ -213,15 +205,13 @@ Boto3 documentation:
 
 Arguments for `ListProjectsPaginator.paginate` method:
 
-- `sortBy`:
-  [ProjectSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#projectsortbytype)
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortBy`: [ProjectSortByType](./literals.md#projectsortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listprojectsoutputtypedef)\].
+`Iterator`\[[ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef)\].
 
 ## ListReportGroupsPaginator
 
@@ -242,15 +232,13 @@ Boto3 documentation:
 
 Arguments for `ListReportGroupsPaginator.paginate` method:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
-- `sortBy`:
-  [ReportGroupSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportgroupsortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortBy`: [ReportGroupSortByType](./literals.md#reportgroupsortbytype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReportGroupsPaginator.paginate` returns
-`Iterator`\[[ListReportGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listreportgroupsoutputtypedef)\].
+`Iterator`\[[ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef)\].
 
 ## ListReportsPaginator
 
@@ -270,15 +258,13 @@ Boto3 documentation:
 
 Arguments for `ListReportsPaginator.paginate` method:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
-- `filter`:
-  [ReportFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportfiltertypedef)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReportsPaginator.paginate` returns
-`Iterator`\[[ListReportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listreportsoutputtypedef)\].
+`Iterator`\[[ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef)\].
 
 ## ListReportsForReportGroupPaginator
 
@@ -300,15 +286,13 @@ Boto3 documentation:
 Arguments for `ListReportsForReportGroupPaginator.paginate` method:
 
 - `reportGroupArn`: `str` *(required)*
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
-- `filter`:
-  [ReportFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportfiltertypedef)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReportsForReportGroupPaginator.paginate` returns
-`Iterator`\[[ListReportsForReportGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listreportsforreportgroupoutputtypedef)\].
+`Iterator`\[[ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef)\].
 
 ## ListSharedProjectsPaginator
 
@@ -329,15 +313,13 @@ Boto3 documentation:
 
 Arguments for `ListSharedProjectsPaginator.paginate` method:
 
-- `sortBy`:
-  [SharedResourceSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sharedresourcesortbytype)
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortBy`: [SharedResourceSortByType](./literals.md#sharedresourcesortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSharedProjectsPaginator.paginate` returns
-`Iterator`\[[ListSharedProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listsharedprojectsoutputtypedef)\].
+`Iterator`\[[ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef)\].
 
 ## ListSharedReportGroupsPaginator
 
@@ -358,12 +340,10 @@ Boto3 documentation:
 
 Arguments for `ListSharedReportGroupsPaginator.paginate` method:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
-- `sortBy`:
-  [SharedResourceSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sharedresourcesortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortBy`: [SharedResourceSortByType](./literals.md#sharedresourcesortbytype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSharedReportGroupsPaginator.paginate` returns
-`Iterator`\[[ListSharedReportGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listsharedreportgroupsoutputtypedef)\].
+`Iterator`\[[ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef)\].

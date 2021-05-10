@@ -1,6 +1,6 @@
 # Type annotations for boto3 Appflow module
 
-> [Index](../README.md) > Appflow
+> [Index](..) > Appflow
 
 Auto-generated documentation for
 [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Cloud9 module
 
-> [Index](../README.md) > [Cloud9](./README.md) > Structures
+> [Index](..) > [Cloud9](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
@@ -41,7 +41,7 @@ from mypy_boto3_cloud9.type_defs import CreateEnvironmentMembershipResultTypeDef
 Required fields:
 
 - `membership`:
-  [EnvironmentMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#environmentmembertypedef)
+  [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
 
 ## DescribeEnvironmentMembershipsResultTypeDef
 
@@ -52,7 +52,7 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsResultType
 Optional fields:
 
 - `memberships`:
-  `List`\[[EnvironmentMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#environmentmembertypedef)\]
+  `List`\[[EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)\]
 - `nextToken`: `str`
 
 ## DescribeEnvironmentStatusResultTypeDef
@@ -63,8 +63,7 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusResultTypeDef
 
 Required fields:
 
-- `status`:
-  [EnvironmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#environmentstatus)
+- `status`: [EnvironmentStatus](./literals.md#environmentstatus)
 - `message`: `str`
 
 ## DescribeEnvironmentsResultTypeDef
@@ -76,7 +75,7 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsResultTypeDef
 Optional fields:
 
 - `environments`:
-  `List`\[[EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#environmenttypedef)\]
+  `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
 
 ## EnvironmentLifecycleTypeDef
 
@@ -87,7 +86,7 @@ from mypy_boto3_cloud9.type_defs import EnvironmentLifecycleTypeDef
 Optional fields:
 
 - `status`:
-  [EnvironmentLifecycleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#environmentlifecyclestatus)
+  [EnvironmentLifecycleStatus](./literals.md#environmentlifecyclestatus)
 - `reason`: `str`
 - `failureResource`: `str`
 
@@ -99,8 +98,7 @@ from mypy_boto3_cloud9.type_defs import EnvironmentMemberTypeDef
 
 Required fields:
 
-- `permissions`:
-  [Permissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#permissions)
+- `permissions`: [Permissions](./literals.md#permissions)
 - `userId`: `str`
 - `userArn`: `str`
 - `environmentId`: `str`
@@ -117,8 +115,7 @@ from mypy_boto3_cloud9.type_defs import EnvironmentTypeDef
 
 Required fields:
 
-- `type`:
-  [EnvironmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#environmenttype)
+- `type`: [EnvironmentType](./literals.md#environmenttype)
 - `arn`: `str`
 - `ownerArn`: `str`
 
@@ -127,12 +124,11 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `description`: `str`
-- `connectionType`:
-  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#connectiontype)
+- `connectionType`: [ConnectionType](./literals.md#connectiontype)
 - `lifecycle`:
-  [EnvironmentLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#environmentlifecycletypedef)
+  [EnvironmentLifecycleTypeDef](./type_defs.md#environmentlifecycletypedef)
 - `managedCredentialsStatus`:
-  [ManagedCredentialsStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#managedcredentialsstatus)
+  [ManagedCredentialsStatus](./literals.md#managedcredentialsstatus)
 
 ## ListEnvironmentsResultTypeDef
 
@@ -153,8 +149,7 @@ from mypy_boto3_cloud9.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -188,4 +183,4 @@ from mypy_boto3_cloud9.type_defs import UpdateEnvironmentMembershipResultTypeDef
 Optional fields:
 
 - `membership`:
-  [EnvironmentMemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#environmentmembertypedef)
+  [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)

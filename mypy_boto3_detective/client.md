@@ -1,6 +1,6 @@
 # DetectiveClient for boto3 Detective module
 
-> [Index](../README.md) > [Detective](./README.md) > DetectiveClient
+> [Index](..) > [Detective](.) > DetectiveClient
 
 Auto-generated documentation for
 [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
@@ -104,7 +104,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGraphResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#creategraphresponsetypedef).
+[CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef).
 
 ### create_members
 
@@ -116,14 +116,13 @@ Boto3 documentation:
 Arguments:
 
 - `GraphArn`: `str` *(required)*
-- `Accounts`:
-  `List`\[[AccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#accounttypedef)\]
+- `Accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
   *(required)*
 - `Message`: `str`
 - `DisableEmailNotification`: `bool`
 
 Returns
-[CreateMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#createmembersresponsetypedef).
+[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
 
 ### delete_graph
 
@@ -149,7 +148,7 @@ Arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#deletemembersresponsetypedef).
+[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
 ### disassociate_membership
 
@@ -191,8 +190,7 @@ Arguments:
 - `GraphArn`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
-Returns
-[GetMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#getmembersresponsetypedef).
+Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### list_graphs
 
@@ -206,8 +204,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListGraphsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listgraphsresponsetypedef).
+Returns [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef).
 
 ### list_invitations
 
@@ -222,7 +219,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listinvitationsresponsetypedef).
+[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
 ### list_members
 
@@ -238,7 +235,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMembersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listmembersresponsetypedef).
+[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -252,7 +249,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reject_invitation
 

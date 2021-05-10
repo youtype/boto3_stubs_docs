@@ -1,6 +1,6 @@
 # Type annotations for boto3 Schemas module
 
-> [Index](../README.md) > Schemas
+> [Index](..) > Schemas
 
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)

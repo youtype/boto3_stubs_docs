@@ -1,6 +1,6 @@
 # Waiters for boto3 ECR module
 
-> [Index](../README.md) > [ECR](./README.md) > Waiters
+> [Index](..) > [ECR](.) > Waiters
 
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
@@ -30,14 +30,12 @@ Boto3 documentation:
 Arguments for `ImageScanCompleteWaiter.wait` method:
 
 - `repositoryName`: `str` *(required)*
-- `imageId`:
-  [ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
   *(required)*
 - `registryId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## LifecyclePolicyPreviewCompleteWaiter
 
@@ -61,10 +59,9 @@ Arguments for `LifecyclePolicyPreviewCompleteWaiter.wait` method:
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#imageidentifiertypedef)\]
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filter`:
-  [LifecyclePolicyPreviewFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#lifecyclepolicypreviewfiltertypedef)
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ecr/type_defs.html#waiterconfigtypedef)
+  [LifecyclePolicyPreviewFilterTypeDef](./type_defs.md#lifecyclepolicypreviewfiltertypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

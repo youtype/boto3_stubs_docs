@@ -1,6 +1,6 @@
 # Type annotations for boto3 Mobile module
 
-> [Index](../README.md) > Mobile
+> [Index](..) > Mobile
 
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CloudDirectory module
 
-> [Index](../README.md) > CloudDirectory
+> [Index](..) > CloudDirectory
 
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)

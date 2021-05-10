@@ -1,6 +1,6 @@
 # Literals for boto3 Polly module
 
-> [Index](../README.md) > [Polly](./README.md) > Literals
+> [Index](..) > [Polly](.) > Literals
 
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)

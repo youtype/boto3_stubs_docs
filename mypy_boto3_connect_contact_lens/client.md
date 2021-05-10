@@ -1,7 +1,6 @@
 # ConnectContactLensClient for boto3 ConnectContactLens module
 
-> [Index](../README.md) > [ConnectContactLens](./README.md) >
-> ConnectContactLensClient
+> [Index](..) > [ConnectContactLens](.) > ConnectContactLensClient
 
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
@@ -103,4 +102,4 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRealtimeContactAnalysisSegmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_connect_contact_lens/type_defs.html#listrealtimecontactanalysissegmentsresponsetypedef).
+[ListRealtimeContactAnalysisSegmentsResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponsetypedef).

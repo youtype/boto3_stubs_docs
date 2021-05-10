@@ -1,6 +1,6 @@
 # Paginators for boto3 IoT1ClickProjects module
 
-> [Index](../README.md) > [IoT1ClickProjects](./README.md) > Paginators
+> [Index](..) > [IoT1ClickProjects](.) > Paginators
 
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
@@ -32,10 +32,10 @@ Arguments for `ListPlacementsPaginator.paginate` method:
 
 - `projectName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlacementsPaginator.paginate` returns
-`Iterator`\[[ListPlacementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listplacementsresponsetypedef)\].
+`Iterator`\[[ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -57,7 +57,7 @@ Boto3 documentation:
 Arguments for `ListProjectsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listprojectsresponsetypedef)\].
+`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].

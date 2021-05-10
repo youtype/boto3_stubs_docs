@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeGuruProfiler module
 
-> [Index](../README.md) > [CodeGuruProfiler](./README.md) > Paginators
+> [Index](..) > [CodeGuruProfiler](.) > Paginators
 
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
@@ -30,15 +30,12 @@ Boto3 documentation:
 Arguments for `ListProfileTimesPaginator.paginate` method:
 
 - `endTime`: `datetime` *(required)*
-- `period`:
-  [AggregationPeriod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#aggregationperiod)
-  *(required)*
+- `period`: [AggregationPeriod](./literals.md#aggregationperiod) *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `startTime`: `datetime` *(required)*
-- `orderBy`:
-  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/literals.html#orderby)
+- `orderBy`: [OrderBy](./literals.md#orderby)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProfileTimesPaginator.paginate` returns
-`Iterator`\[[ListProfileTimesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguruprofiler/type_defs.html#listprofiletimesresponsetypedef)\].
+`Iterator`\[[ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef)\].

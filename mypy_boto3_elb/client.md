@@ -1,7 +1,6 @@
 # ElasticLoadBalancingClient for boto3 ElasticLoadBalancing module
 
-> [Index](../README.md) > [ElasticLoadBalancing](./README.md) >
-> ElasticLoadBalancingClient
+> [Index](..) > [ElasticLoadBalancing](.) > ElasticLoadBalancingClient
 
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
@@ -112,9 +111,7 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -132,7 +129,7 @@ Arguments:
 - `SecurityGroups`: `List`\[`str`\] *(required)*
 
 Returns
-[ApplySecurityGroupsToLoadBalancerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#applysecuritygroupstoloadbalanceroutputtypedef).
+[ApplySecurityGroupsToLoadBalancerOutputTypeDef](./type_defs.md#applysecuritygroupstoloadbalanceroutputtypedef).
 
 ### attach_load_balancer_to_subnets
 
@@ -148,7 +145,7 @@ Arguments:
 - `Subnets`: `List`\[`str`\] *(required)*
 
 Returns
-[AttachLoadBalancerToSubnetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#attachloadbalancertosubnetsoutputtypedef).
+[AttachLoadBalancerToSubnetsOutputTypeDef](./type_defs.md#attachloadbalancertosubnetsoutputtypedef).
 
 ### can_paginate
 
@@ -173,12 +170,11 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `HealthCheck`:
-  [HealthCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#healthchecktypedef)
+- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
   *(required)*
 
 Returns
-[ConfigureHealthCheckOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#configurehealthcheckoutputtypedef).
+[ConfigureHealthCheckOutputTypeDef](./type_defs.md#configurehealthcheckoutputtypedef).
 
 ### create_app_cookie_stickiness_policy
 
@@ -222,18 +218,16 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Listeners`:
-  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#listenertypedef)\]
+- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
   *(required)*
 - `AvailabilityZones`: `List`\[`str`\]
 - `Subnets`: `List`\[`str`\]
 - `SecurityGroups`: `List`\[`str`\]
 - `Scheme`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAccessPointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#createaccesspointoutputtypedef).
+[CreateAccessPointOutputTypeDef](./type_defs.md#createaccesspointoutputtypedef).
 
 ### create_load_balancer_listeners
 
@@ -246,8 +240,7 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Listeners`:
-  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#listenertypedef)\]
+- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -265,7 +258,7 @@ Arguments:
 - `PolicyName`: `str` *(required)*
 - `PolicyTypeName`: `str` *(required)*
 - `PolicyAttributes`:
-  `List`\[[PolicyAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#policyattributetypedef)\]
+  `List`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -322,12 +315,11 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
   *(required)*
 
 Returns
-[DeregisterEndPointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#deregisterendpointsoutputtypedef).
+[DeregisterEndPointsOutputTypeDef](./type_defs.md#deregisterendpointsoutputtypedef).
 
 ### describe_account_limits
 
@@ -342,7 +334,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeAccountLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeaccountlimitsoutputtypedef).
+[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
 
 ### describe_instance_health
 
@@ -354,11 +346,10 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 Returns
-[DescribeEndPointStateOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeendpointstateoutputtypedef).
+[DescribeEndPointStateOutputTypeDef](./type_defs.md#describeendpointstateoutputtypedef).
 
 ### describe_load_balancer_attributes
 
@@ -373,7 +364,7 @@ Arguments:
 - `LoadBalancerName`: `str` *(required)*
 
 Returns
-[DescribeLoadBalancerAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeloadbalancerattributesoutputtypedef).
+[DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef).
 
 ### describe_load_balancer_policies
 
@@ -389,7 +380,7 @@ Arguments:
 - `PolicyNames`: `List`\[`str`\]
 
 Returns
-[DescribeLoadBalancerPoliciesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeloadbalancerpoliciesoutputtypedef).
+[DescribeLoadBalancerPoliciesOutputTypeDef](./type_defs.md#describeloadbalancerpoliciesoutputtypedef).
 
 ### describe_load_balancer_policy_types
 
@@ -404,7 +395,7 @@ Arguments:
 - `PolicyTypeNames`: `List`\[`str`\]
 
 Returns
-[DescribeLoadBalancerPolicyTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeloadbalancerpolicytypesoutputtypedef).
+[DescribeLoadBalancerPolicyTypesOutputTypeDef](./type_defs.md#describeloadbalancerpolicytypesoutputtypedef).
 
 ### describe_load_balancers
 
@@ -420,7 +411,7 @@ Arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeAccessPointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describeaccesspointsoutputtypedef).
+[DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef).
 
 ### describe_tags
 
@@ -433,8 +424,7 @@ Arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
 
-Returns
-[DescribeTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#describetagsoutputtypedef).
+Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
 ### detach_load_balancer_from_subnets
 
@@ -450,7 +440,7 @@ Arguments:
 - `Subnets`: `List`\[`str`\] *(required)*
 
 Returns
-[DetachLoadBalancerFromSubnetsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#detachloadbalancerfromsubnetsoutputtypedef).
+[DetachLoadBalancerFromSubnetsOutputTypeDef](./type_defs.md#detachloadbalancerfromsubnetsoutputtypedef).
 
 ### disable_availability_zones_for_load_balancer
 
@@ -466,7 +456,7 @@ Arguments:
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveAvailabilityZonesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#removeavailabilityzonesoutputtypedef).
+[RemoveAvailabilityZonesOutputTypeDef](./type_defs.md#removeavailabilityzonesoutputtypedef).
 
 ### enable_availability_zones_for_load_balancer
 
@@ -482,7 +472,7 @@ Arguments:
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 
 Returns
-[AddAvailabilityZonesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#addavailabilityzonesoutputtypedef).
+[AddAvailabilityZonesOutputTypeDef](./type_defs.md#addavailabilityzonesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -512,11 +502,11 @@ Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `LoadBalancerAttributes`:
-  [LoadBalancerAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#loadbalancerattributestypedef)
+  [LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef)
   *(required)*
 
 Returns
-[ModifyLoadBalancerAttributesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#modifyloadbalancerattributesoutputtypedef).
+[ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef).
 
 ### register_instances_with_load_balancer
 
@@ -529,12 +519,11 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`:
-  `List`\[[InstanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#instancetypedef)\]
+- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
   *(required)*
 
 Returns
-[RegisterEndPointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#registerendpointsoutputtypedef).
+[RegisterEndPointsOutputTypeDef](./type_defs.md#registerendpointsoutputtypedef).
 
 ### remove_tags
 
@@ -546,8 +535,7 @@ Boto3 documentation:
 Arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
-- `Tags`:
-  `List`\[[TagKeyOnlyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elb/type_defs.html#tagkeyonlytypedef)\]
+- `Tags`: `List`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

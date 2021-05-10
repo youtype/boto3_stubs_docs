@@ -1,6 +1,6 @@
 # Type annotations for boto3 SMSVoice module
 
-> [Index](../README.md) > SMSVoice
+> [Index](..) > SMSVoice
 
 Auto-generated documentation for
 [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)

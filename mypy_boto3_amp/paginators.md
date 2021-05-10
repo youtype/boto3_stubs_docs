@@ -1,6 +1,6 @@
 # Paginators for boto3 PrometheusService module
 
-> [Index](../README.md) > [PrometheusService](./README.md) > Paginators
+> [Index](..) > [PrometheusService](.) > Paginators
 
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
@@ -30,7 +30,7 @@ Arguments for `ListWorkspacesPaginator.paginate` method:
 
 - `alias`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkspacesPaginator.paginate` returns
-`Iterator`\[[ListWorkspacesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_amp/type_defs.html#listworkspacesresponsetypedef)\].
+`Iterator`\[[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef)\].

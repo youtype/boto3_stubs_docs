@@ -1,6 +1,6 @@
 # Type annotations for boto3 RedshiftDataAPIService module
 
-> [Index](../README.md) > RedshiftDataAPIService
+> [Index](..) > RedshiftDataAPIService
 
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
@@ -115,6 +115,6 @@ from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef, .
 - [ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)
 - [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StatementDataTypeDef](./type_defs.md#statementdatatypedef)
 - [TableMemberTypeDef](./type_defs.md#tablemembertypedef)

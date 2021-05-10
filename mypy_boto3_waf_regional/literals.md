@@ -1,6 +1,6 @@
 # Literals for boto3 WAFRegional module
 
-> [Index](../README.md) > [WAFRegional](./README.md) > Literals
+> [Index](..) > [WAFRegional](.) > Literals
 
 Auto-generated documentation for
 [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)

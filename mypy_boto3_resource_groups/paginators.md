@@ -1,6 +1,6 @@
 # Paginators for boto3 ResourceGroups module
 
-> [Index](../README.md) > [ResourceGroups](./README.md) > Paginators
+> [Index](..) > [ResourceGroups](.) > Paginators
 
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
@@ -34,12 +34,12 @@ Arguments for `ListGroupResourcesPaginator.paginate` method:
 - `GroupName`: `str`
 - `Group`: `str`
 - `Filters`:
-  `List`\[[ResourceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcefiltertypedef)\]
+  `List`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupResourcesPaginator.paginate` returns
-`Iterator`\[[ListGroupResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#listgroupresourcesoutputtypedef)\].
+`Iterator`\[[ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef)\].
 
 ## ListGroupsPaginator
 
@@ -60,13 +60,12 @@ Boto3 documentation:
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
-- `Filters`:
-  `List`\[[GroupFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#groupfiltertypedef)\]
+- `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroupsPaginator.paginate` returns
-`Iterator`\[[ListGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#listgroupsoutputtypedef)\].
+`Iterator`\[[ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef)\].
 
 ## SearchResourcesPaginator
 
@@ -87,11 +86,10 @@ Boto3 documentation:
 
 Arguments for `SearchResourcesPaginator.paginate` method:
 
-- `ResourceQuery`:
-  [ResourceQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#resourcequerytypedef)
+- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchResourcesPaginator.paginate` returns
-`Iterator`\[[SearchResourcesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_resource_groups/type_defs.html#searchresourcesoutputtypedef)\].
+`Iterator`\[[SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef)\].

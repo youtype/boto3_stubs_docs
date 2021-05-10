@@ -1,6 +1,6 @@
 # Type annotations for boto3 DynamoDBStreams module
 
-> [Index](../README.md) > DynamoDBStreams
+> [Index](..) > DynamoDBStreams
 
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
@@ -84,7 +84,7 @@ from mypy_boto3_dynamodbstreams.type_defs import AttributeValueTypeDef, ...
 - [KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)
 - [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)
 - [RecordTypeDef](./type_defs.md#recordtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SequenceNumberRangeTypeDef](./type_defs.md#sequencenumberrangetypedef)
 - [ShardTypeDef](./type_defs.md#shardtypedef)
 - [StreamDescriptionTypeDef](./type_defs.md#streamdescriptiontypedef)

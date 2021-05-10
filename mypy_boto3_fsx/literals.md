@@ -1,6 +1,6 @@
 # Literals for boto3 FSx module
 
-> [Index](../README.md) > [FSx](./README.md) > Literals
+> [Index](..) > [FSx](.) > Literals
 
 Auto-generated documentation for
 [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)

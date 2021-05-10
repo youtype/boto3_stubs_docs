@@ -1,6 +1,6 @@
 # Type annotations for boto3 EBS module
 
-> [Index](../README.md) > EBS
+> [Index](..) > EBS
 
 Auto-generated documentation for
 [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)

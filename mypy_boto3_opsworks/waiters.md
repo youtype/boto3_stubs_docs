@@ -1,6 +1,6 @@
 # Waiters for boto3 OpsWorks module
 
-> [Index](../README.md) > [OpsWorks](./README.md) > Waiters
+> [Index](..) > [OpsWorks](.) > Waiters
 
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
@@ -35,8 +35,7 @@ Arguments for `AppExistsWaiter.wait` method:
 
 - `StackId`: `str`
 - `AppIds`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## DeploymentSuccessfulWaiter
 
@@ -60,8 +59,7 @@ Arguments for `DeploymentSuccessfulWaiter.wait` method:
 - `StackId`: `str`
 - `AppId`: `str`
 - `DeploymentIds`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceOnlineWaiter
 
@@ -84,8 +82,7 @@ Arguments for `InstanceOnlineWaiter.wait` method:
 - `StackId`: `str`
 - `LayerId`: `str`
 - `InstanceIds`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceRegisteredWaiter
 
@@ -109,8 +106,7 @@ Arguments for `InstanceRegisteredWaiter.wait` method:
 - `StackId`: `str`
 - `LayerId`: `str`
 - `InstanceIds`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceStoppedWaiter
 
@@ -133,8 +129,7 @@ Arguments for `InstanceStoppedWaiter.wait` method:
 - `StackId`: `str`
 - `LayerId`: `str`
 - `InstanceIds`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceTerminatedWaiter
 
@@ -158,5 +153,4 @@ Arguments for `InstanceTerminatedWaiter.wait` method:
 - `StackId`: `str`
 - `LayerId`: `str`
 - `InstanceIds`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworks/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

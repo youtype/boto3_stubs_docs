@@ -1,7 +1,6 @@
 # WorkMailMessageFlowClient for boto3 WorkMailMessageFlow module
 
-> [Index](../README.md) > [WorkMailMessageFlow](./README.md) >
-> WorkMailMessageFlowClient
+> [Index](..) > [WorkMailMessageFlow](.) > WorkMailMessageFlowClient
 
 Auto-generated documentation for
 [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
@@ -98,7 +97,7 @@ Arguments:
 - `messageId`: `str` *(required)*
 
 Returns
-[GetRawMessageContentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmailmessageflow/type_defs.html#getrawmessagecontentresponsetypedef).
+[GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef).
 
 ### put_raw_message_content
 
@@ -111,8 +110,7 @@ Boto3 documentation:
 Arguments:
 
 - `messageId`: `str` *(required)*
-- `content`:
-  [RawMessageContentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmailmessageflow/type_defs.html#rawmessagecontenttypedef)
+- `content`: [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

@@ -1,6 +1,6 @@
 # CloudDirectoryClient for boto3 CloudDirectory module
 
-> [Index](../README.md) > [CloudDirectory](./README.md) > CloudDirectoryClient
+> [Index](..) > [CloudDirectory](.) > CloudDirectoryClient
 
 Auto-generated documentation for
 [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
@@ -161,14 +161,12 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryArn`: `str` *(required)*
-- `SchemaFacet`:
-  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+- `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
   *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
+  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -185,7 +183,7 @@ Arguments:
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[ApplySchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#applyschemaresponsetypedef).
+[ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef).
 
 ### attach_object
 
@@ -198,15 +196,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ParentReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `ChildReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `LinkName`: `str` *(required)*
 
 Returns
-[AttachObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attachobjectresponsetypedef).
+[AttachObjectResponseTypeDef](./type_defs.md#attachobjectresponsetypedef).
 
 ### attach_policy
 
@@ -219,11 +215,9 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `PolicyReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -238,14 +232,12 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `IndexReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `TargetReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns
-[AttachToIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attachtoindexresponsetypedef).
+[AttachToIndexResponseTypeDef](./type_defs.md#attachtoindexresponsetypedef).
 
 ### attach_typed_link
 
@@ -258,20 +250,18 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `SourceObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `TargetObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `TypedLinkFacet`:
-  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
+  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
   *(required)*
 - `Attributes`:
-  `List`\[[AttributeNameAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributenameandvaluetypedef)\]
+  `List`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
   *(required)*
 
 Returns
-[AttachTypedLinkResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attachtypedlinkresponsetypedef).
+[AttachTypedLinkResponseTypeDef](./type_defs.md#attachtypedlinkresponsetypedef).
 
 ### batch_read
 
@@ -284,13 +274,11 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `Operations`:
-  `List`\[[BatchReadOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchreadoperationtypedef)\]
+  `List`\[[BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef)\]
   *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
-Returns
-[BatchReadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchreadresponsetypedef).
+Returns [BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef).
 
 ### batch_write
 
@@ -303,11 +291,10 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `Operations`:
-  `List`\[[BatchWriteOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchwriteoperationtypedef)\]
+  `List`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
   *(required)*
 
-Returns
-[BatchWriteResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#batchwriteresponsetypedef).
+Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
 
 ### can_paginate
 
@@ -335,7 +322,7 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[CreateDirectoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#createdirectoryresponsetypedef).
+[CreateDirectoryResponseTypeDef](./type_defs.md#createdirectoryresponsetypedef).
 
 ### create_facet
 
@@ -349,11 +336,9 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Attributes`:
-  `List`\[[FacetAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facetattributetypedef)\]
-- `ObjectType`:
-  [ObjectType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#objecttype)
-- `FacetStyle`:
-  [FacetStyle](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#facetstyle)
+  `List`\[[FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)\]
+- `ObjectType`: [ObjectType](./literals.md#objecttype)
+- `FacetStyle`: [FacetStyle](./literals.md#facetstyle)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -368,15 +353,15 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `OrderedIndexedAttributeList`:
-  `List`\[[AttributeKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeytypedef)\]
+  `List`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
   *(required)*
 - `IsUnique`: `bool` *(required)*
 - `ParentReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `LinkName`: `str`
 
 Returns
-[CreateIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#createindexresponsetypedef).
+[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
 ### create_object
 
@@ -389,16 +374,15 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `SchemaFacets`:
-  `List`\[[SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)\]
-  *(required)*
+  `List`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\] *(required)*
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#attributekeyandvaluetypedef)\]
+  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 - `ParentReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `LinkName`: `str`
 
 Returns
-[CreateObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#createobjectresponsetypedef).
+[CreateObjectResponseTypeDef](./type_defs.md#createobjectresponsetypedef).
 
 ### create_schema
 
@@ -412,7 +396,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[CreateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#createschemaresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### create_typed_link_facet
 
@@ -425,8 +409,7 @@ Boto3 documentation:
 Arguments:
 
 - `SchemaArn`: `str` *(required)*
-- `Facet`:
-  [TypedLinkFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkfacettypedef)
+- `Facet`: [TypedLinkFacetTypeDef](./type_defs.md#typedlinkfacettypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -443,7 +426,7 @@ Arguments:
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[DeleteDirectoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#deletedirectoryresponsetypedef).
+[DeleteDirectoryResponseTypeDef](./type_defs.md#deletedirectoryresponsetypedef).
 
 ### delete_facet
 
@@ -470,8 +453,7 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -487,7 +469,7 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[DeleteSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#deleteschemaresponsetypedef).
+[DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
 
 ### delete_typed_link_facet
 
@@ -515,14 +497,12 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `IndexReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `TargetReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns
-[DetachFromIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#detachfromindexresponsetypedef).
+[DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef).
 
 ### detach_object
 
@@ -535,12 +515,11 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ParentReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `LinkName`: `str` *(required)*
 
 Returns
-[DetachObjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#detachobjectresponsetypedef).
+[DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef).
 
 ### detach_policy
 
@@ -553,11 +532,9 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `PolicyReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -572,7 +549,7 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `TypedLinkSpecifier`:
-  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
+  [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
 
 ### disable_directory
@@ -587,7 +564,7 @@ Arguments:
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[DisableDirectoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#disabledirectoryresponsetypedef).
+[DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef).
 
 ### enable_directory
 
@@ -601,7 +578,7 @@ Arguments:
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[EnableDirectoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#enabledirectoryresponsetypedef).
+[EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef).
 
 ### generate_presigned_url
 
@@ -633,7 +610,7 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[GetAppliedSchemaVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getappliedschemaversionresponsetypedef).
+[GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef).
 
 ### get_directory
 
@@ -647,7 +624,7 @@ Arguments:
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[GetDirectoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getdirectoryresponsetypedef).
+[GetDirectoryResponseTypeDef](./type_defs.md#getdirectoryresponsetypedef).
 
 ### get_facet
 
@@ -661,8 +638,7 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 
-Returns
-[GetFacetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getfacetresponsetypedef).
+Returns [GetFacetResponseTypeDef](./type_defs.md#getfacetresponsetypedef).
 
 ### get_link_attributes
 
@@ -676,14 +652,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `TypedLinkSpecifier`:
-  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
+  [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
 - `AttributeNames`: `List`\[`str`\] *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[GetLinkAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getlinkattributesresponsetypedef).
+[GetLinkAttributesResponseTypeDef](./type_defs.md#getlinkattributesresponsetypedef).
 
 ### get_object_attributes
 
@@ -697,17 +672,14 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
-- `SchemaFacet`:
-  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+- `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
   *(required)*
 - `AttributeNames`: `List`\[`str`\] *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[GetObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getobjectattributesresponsetypedef).
+[GetObjectAttributesResponseTypeDef](./type_defs.md#getobjectattributesresponsetypedef).
 
 ### get_object_information
 
@@ -721,13 +693,11 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[GetObjectInformationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getobjectinformationresponsetypedef).
+[GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef).
 
 ### get_schema_as_json
 
@@ -742,7 +712,7 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[GetSchemaAsJsonResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#getschemaasjsonresponsetypedef).
+[GetSchemaAsJsonResponseTypeDef](./type_defs.md#getschemaasjsonresponsetypedef).
 
 ### get_typed_link_facet_information
 
@@ -758,7 +728,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetTypedLinkFacetInformationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#gettypedlinkfacetinformationresponsetypedef).
+[GetTypedLinkFacetInformationResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponsetypedef).
 
 ### list_applied_schema_arns
 
@@ -776,7 +746,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAppliedSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listappliedschemaarnsresponsetypedef).
+[ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef).
 
 ### list_attached_indices
 
@@ -790,15 +760,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `TargetReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[ListAttachedIndicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listattachedindicesresponsetypedef).
+[ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef).
 
 ### list_development_schema_arns
 
@@ -814,7 +782,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDevelopmentSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listdevelopmentschemaarnsresponsetypedef).
+[ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef).
 
 ### list_directories
 
@@ -827,11 +795,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `state`:
-  [DirectoryState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#directorystate)
+- `state`: [DirectoryState](./literals.md#directorystate)
 
 Returns
-[ListDirectoriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listdirectoriesresponsetypedef).
+[ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef).
 
 ### list_facet_attributes
 
@@ -849,7 +816,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFacetAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listfacetattributesresponsetypedef).
+[ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef).
 
 ### list_facet_names
 
@@ -865,7 +832,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFacetNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listfacetnamesresponsetypedef).
+[ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef).
 
 ### list_incoming_typed_links
 
@@ -879,19 +846,17 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributerangetypedef)\]
+  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
-  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
+  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[ListIncomingTypedLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listincomingtypedlinksresponsetypedef).
+[ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef).
 
 ### list_index
 
@@ -904,17 +869,14 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `IndexReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `RangesOnIndexedValues`:
-  `List`\[[ObjectAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectattributerangetypedef)\]
+  `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
-Returns
-[ListIndexResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listindexresponsetypedef).
+Returns [ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef).
 
 ### list_managed_schema_arns
 
@@ -931,7 +893,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListManagedSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listmanagedschemaarnsresponsetypedef).
+[ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef).
 
 ### list_object_attributes
 
@@ -945,17 +907,14 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
-- `FacetFilter`:
-  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
+- `FacetFilter`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
 
 Returns
-[ListObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectattributesresponsetypedef).
+[ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef).
 
 ### list_object_children
 
@@ -969,15 +928,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[ListObjectChildrenResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectchildrenresponsetypedef).
+[ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef).
 
 ### list_object_parent_paths
 
@@ -991,13 +948,12 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListObjectParentPathsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectparentpathsresponsetypedef).
+[ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef).
 
 ### list_object_parents
 
@@ -1011,16 +967,14 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 - `IncludeAllLinksToEachParent`: `bool`
 
 Returns
-[ListObjectParentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectparentsresponsetypedef).
+[ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef).
 
 ### list_object_policies
 
@@ -1034,15 +988,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[ListObjectPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listobjectpoliciesresponsetypedef).
+[ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef).
 
 ### list_outgoing_typed_links
 
@@ -1056,19 +1008,17 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkattributerangetypedef)\]
+  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
-  [TypedLinkSchemaAndFacetNameTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkschemaandfacetnametypedef)
+  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[ListOutgoingTypedLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listoutgoingtypedlinksresponsetypedef).
+[ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef).
 
 ### list_policy_attachments
 
@@ -1082,15 +1032,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `PolicyReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#consistencylevel)
+- `ConsistencyLevel`: [ConsistencyLevel](./literals.md#consistencylevel)
 
 Returns
-[ListPolicyAttachmentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listpolicyattachmentsresponsetypedef).
+[ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef).
 
 ### list_published_schema_arns
 
@@ -1107,7 +1055,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPublishedSchemaArnsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listpublishedschemaarnsresponsetypedef).
+[ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1124,7 +1072,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_typed_link_facet_attributes
 
@@ -1142,7 +1090,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTypedLinkFacetAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listtypedlinkfacetattributesresponsetypedef).
+[ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef).
 
 ### list_typed_link_facet_names
 
@@ -1159,7 +1107,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTypedLinkFacetNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#listtypedlinkfacetnamesresponsetypedef).
+[ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef).
 
 ### lookup_policy
 
@@ -1172,13 +1120,12 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[LookupPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#lookuppolicyresponsetypedef).
+[LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef).
 
 ### publish_schema
 
@@ -1195,7 +1142,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[PublishSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#publishschemaresponsetypedef).
+[PublishSchemaResponseTypeDef](./type_defs.md#publishschemaresponsetypedef).
 
 ### put_schema_from_json
 
@@ -1211,7 +1158,7 @@ Arguments:
 - `Document`: `str` *(required)*
 
 Returns
-[PutSchemaFromJsonResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#putschemafromjsonresponsetypedef).
+[PutSchemaFromJsonResponseTypeDef](./type_defs.md#putschemafromjsonresponsetypedef).
 
 ### remove_facet_from_object
 
@@ -1224,12 +1171,10 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryArn`: `str` *(required)*
-- `SchemaFacet`:
-  [SchemaFacetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#schemafacettypedef)
+- `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
   *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1243,9 +1188,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1275,9 +1218,8 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `AttributeUpdates`:
-  `List`\[[FacetAttributeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#facetattributeupdatetypedef)\]
-- `ObjectType`:
-  [ObjectType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/literals.html#objecttype)
+  `List`\[[FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef)\]
+- `ObjectType`: [ObjectType](./literals.md#objecttype)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1293,10 +1235,10 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `TypedLinkSpecifier`:
-  [TypedLinkSpecifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkspecifiertypedef)
+  [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
 - `AttributeUpdates`:
-  `List`\[[LinkAttributeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#linkattributeupdatetypedef)\]
+  `List`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1313,14 +1255,13 @@ Arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
-  [ObjectReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectreferencetypedef)
-  *(required)*
+  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `AttributeUpdates`:
-  `List`\[[ObjectAttributeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#objectattributeupdatetypedef)\]
+  `List`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
   *(required)*
 
 Returns
-[UpdateObjectAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#updateobjectattributesresponsetypedef).
+[UpdateObjectAttributesResponseTypeDef](./type_defs.md#updateobjectattributesresponsetypedef).
 
 ### update_schema
 
@@ -1335,7 +1276,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[UpdateSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#updateschemaresponsetypedef).
+[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
 ### update_typed_link_facet
 
@@ -1350,7 +1291,7 @@ Arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `AttributeUpdates`:
-  `List`\[[TypedLinkFacetAttributeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#typedlinkfacetattributeupdatetypedef)\]
+  `List`\[[TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef)\]
   *(required)*
 - `IdentityAttributeOrder`: `List`\[`str`\] *(required)*
 
@@ -1371,7 +1312,7 @@ Arguments:
 - `DryRun`: `bool`
 
 Returns
-[UpgradeAppliedSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#upgradeappliedschemaresponsetypedef).
+[UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef).
 
 ### upgrade_published_schema
 
@@ -1389,7 +1330,7 @@ Arguments:
 - `DryRun`: `bool`
 
 Returns
-[UpgradePublishedSchemaResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_clouddirectory/type_defs.html#upgradepublishedschemaresponsetypedef).
+[UpgradePublishedSchemaResponseTypeDef](./type_defs.md#upgradepublishedschemaresponsetypedef).
 
 ### get_paginator
 

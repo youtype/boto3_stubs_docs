@@ -1,6 +1,6 @@
 # Type annotations for boto3 AutoScalingPlans module
 
-> [Index](../README.md) > AutoScalingPlans
+> [Index](..) > AutoScalingPlans
 
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)

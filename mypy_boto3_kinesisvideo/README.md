@@ -1,6 +1,6 @@
 # Type annotations for boto3 KinesisVideo module
 
-> [Index](../README.md) > KinesisVideo
+> [Index](..) > KinesisVideo
 
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
@@ -133,7 +133,7 @@ from mypy_boto3_kinesisvideo.type_defs import ChannelInfoTypeDef, ...
 - [ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResourceEndpointListItemTypeDef](./type_defs.md#resourceendpointlistitemtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
 - [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 - [StreamInfoTypeDef](./type_defs.md#streaminfotypedef)

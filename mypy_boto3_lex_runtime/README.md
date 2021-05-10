@@ -1,6 +1,6 @@
 # Type annotations for boto3 LexRuntimeService module
 
-> [Index](../README.md) > LexRuntimeService
+> [Index](..) > LexRuntimeService
 
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)

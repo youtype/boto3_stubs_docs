@@ -1,7 +1,6 @@
 # ApiGatewayManagementApiClient for boto3 ApiGatewayManagementApi module
 
-> [Index](../README.md) > [ApiGatewayManagementApi](./README.md) >
-> ApiGatewayManagementApiClient
+> [Index](..) > [ApiGatewayManagementApi](.) > ApiGatewayManagementApiClient
 
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
@@ -112,7 +111,7 @@ Arguments:
 - `ConnectionId`: `str` *(required)*
 
 Returns
-[GetConnectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewaymanagementapi/type_defs.html#getconnectionresponsetypedef).
+[GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
 
 ### post_to_connection
 

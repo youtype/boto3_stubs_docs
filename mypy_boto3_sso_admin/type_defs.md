@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SSOAdmin module
 
-> [Index](../README.md) > [SSOAdmin](./README.md) > Structures
+> [Index](..) > [SSOAdmin](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
@@ -53,7 +53,7 @@ Required fields:
 
 - `Key`: `str`
 - `Value`:
-  [AccessControlAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accesscontrolattributevaluetypedef)
+  [AccessControlAttributeValueTypeDef](./type_defs.md#accesscontrolattributevaluetypedef)
 
 ## AccessControlAttributeValueTypeDef
 
@@ -73,8 +73,7 @@ from mypy_boto3_sso_admin.type_defs import AccountAssignmentOperationStatusMetad
 
 Optional fields:
 
-- `Status`:
-  [StatusValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#statusvalues)
+- `Status`: [StatusValues](./literals.md#statusvalues)
 - `RequestId`: `str`
 - `CreatedDate`: `datetime`
 
@@ -86,15 +85,14 @@ from mypy_boto3_sso_admin.type_defs import AccountAssignmentOperationStatusTypeD
 
 Optional fields:
 
-- `Status`:
-  [StatusValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#statusvalues)
+- `Status`: [StatusValues](./literals.md#statusvalues)
 - `RequestId`: `str`
 - `FailureReason`: `str`
 - `TargetId`: `str`
-- `TargetType`: `Literal['AWS_ACCOUNT']`
+- `TargetType`: `Literal['AWS_ACCOUNT']` (see
+  [TargetType](./literals.md#targettype))
 - `PermissionSetArn`: `str`
-- `PrincipalType`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#principaltype)
+- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
 - `PrincipalId`: `str`
 - `CreatedDate`: `datetime`
 
@@ -108,8 +106,7 @@ Optional fields:
 
 - `AccountId`: `str`
 - `PermissionSetArn`: `str`
-- `PrincipalType`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#principaltype)
+- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
 - `PrincipalId`: `str`
 
 ## AttachedManagedPolicyTypeDef
@@ -132,7 +129,7 @@ from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentResponseTypeDe
 Optional fields:
 
 - `AccountAssignmentCreationStatus`:
-  [AccountAssignmentOperationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmentoperationstatustypedef)
+  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
 
 ## CreatePermissionSetResponseTypeDef
 
@@ -142,8 +139,7 @@ from mypy_boto3_sso_admin.type_defs import CreatePermissionSetResponseTypeDef
 
 Optional fields:
 
-- `PermissionSet`:
-  [PermissionSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#permissionsettypedef)
+- `PermissionSet`: [PermissionSetTypeDef](./type_defs.md#permissionsettypedef)
 
 ## DeleteAccountAssignmentResponseTypeDef
 
@@ -154,7 +150,7 @@ from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentResponseTypeDe
 Optional fields:
 
 - `AccountAssignmentDeletionStatus`:
-  [AccountAssignmentOperationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmentoperationstatustypedef)
+  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
 
 ## DescribeAccountAssignmentCreationStatusResponseTypeDef
 
@@ -165,7 +161,7 @@ from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStat
 Optional fields:
 
 - `AccountAssignmentCreationStatus`:
-  [AccountAssignmentOperationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmentoperationstatustypedef)
+  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
 
 ## DescribeAccountAssignmentDeletionStatusResponseTypeDef
 
@@ -176,7 +172,7 @@ from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStat
 Optional fields:
 
 - `AccountAssignmentDeletionStatus`:
-  [AccountAssignmentOperationStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmentoperationstatustypedef)
+  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
 
 ## DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef
 
@@ -187,10 +183,10 @@ from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttribut
 Optional fields:
 
 - `Status`:
-  [InstanceAccessControlAttributeConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#instanceaccesscontrolattributeconfigurationstatus)
+  [InstanceAccessControlAttributeConfigurationStatus](./literals.md#instanceaccesscontrolattributeconfigurationstatus)
 - `StatusReason`: `str`
 - `InstanceAccessControlAttributeConfiguration`:
-  [InstanceAccessControlAttributeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#instanceaccesscontrolattributeconfigurationtypedef)
+  [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
 
 ## DescribePermissionSetProvisioningStatusResponseTypeDef
 
@@ -201,7 +197,7 @@ from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStat
 Optional fields:
 
 - `PermissionSetProvisioningStatus`:
-  [PermissionSetProvisioningStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#permissionsetprovisioningstatustypedef)
+  [PermissionSetProvisioningStatusTypeDef](./type_defs.md#permissionsetprovisioningstatustypedef)
 
 ## DescribePermissionSetResponseTypeDef
 
@@ -211,8 +207,7 @@ from mypy_boto3_sso_admin.type_defs import DescribePermissionSetResponseTypeDef
 
 Optional fields:
 
-- `PermissionSet`:
-  [PermissionSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#permissionsettypedef)
+- `PermissionSet`: [PermissionSetTypeDef](./type_defs.md#permissionsettypedef)
 
 ## GetInlinePolicyForPermissionSetResponseTypeDef
 
@@ -233,7 +228,7 @@ from mypy_boto3_sso_admin.type_defs import InstanceAccessControlAttributeConfigu
 Required fields:
 
 - `AccessControlAttributes`:
-  `List`\[[AccessControlAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accesscontrolattributetypedef)\]
+  `List`\[[AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef)\]
 
 ## InstanceMetadataTypeDef
 
@@ -255,7 +250,7 @@ from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusRe
 Optional fields:
 
 - `AccountAssignmentsCreationStatus`:
-  `List`\[[AccountAssignmentOperationStatusMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmentoperationstatusmetadatatypedef)\]
+  `List`\[[AccountAssignmentOperationStatusMetadataTypeDef](./type_defs.md#accountassignmentoperationstatusmetadatatypedef)\]
 - `NextToken`: `str`
 
 ## ListAccountAssignmentDeletionStatusResponseTypeDef
@@ -267,7 +262,7 @@ from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusRe
 Optional fields:
 
 - `AccountAssignmentsDeletionStatus`:
-  `List`\[[AccountAssignmentOperationStatusMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmentoperationstatusmetadatatypedef)\]
+  `List`\[[AccountAssignmentOperationStatusMetadataTypeDef](./type_defs.md#accountassignmentoperationstatusmetadatatypedef)\]
 - `NextToken`: `str`
 
 ## ListAccountAssignmentsResponseTypeDef
@@ -279,7 +274,7 @@ from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsResponseTypeDef
 Optional fields:
 
 - `AccountAssignments`:
-  `List`\[[AccountAssignmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#accountassignmenttypedef)\]
+  `List`\[[AccountAssignmentTypeDef](./type_defs.md#accountassignmenttypedef)\]
 - `NextToken`: `str`
 
 ## ListAccountsForProvisionedPermissionSetResponseTypeDef
@@ -302,7 +297,7 @@ from mypy_boto3_sso_admin.type_defs import ListInstancesResponseTypeDef
 Optional fields:
 
 - `Instances`:
-  `List`\[[InstanceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#instancemetadatatypedef)\]
+  `List`\[[InstanceMetadataTypeDef](./type_defs.md#instancemetadatatypedef)\]
 - `NextToken`: `str`
 
 ## ListManagedPoliciesInPermissionSetResponseTypeDef
@@ -314,7 +309,7 @@ from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetRes
 Optional fields:
 
 - `AttachedManagedPolicies`:
-  `List`\[[AttachedManagedPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#attachedmanagedpolicytypedef)\]
+  `List`\[[AttachedManagedPolicyTypeDef](./type_defs.md#attachedmanagedpolicytypedef)\]
 - `NextToken`: `str`
 
 ## ListPermissionSetProvisioningStatusResponseTypeDef
@@ -326,7 +321,7 @@ from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusRe
 Optional fields:
 
 - `PermissionSetsProvisioningStatus`:
-  `List`\[[PermissionSetProvisioningStatusMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#permissionsetprovisioningstatusmetadatatypedef)\]
+  `List`\[[PermissionSetProvisioningStatusMetadataTypeDef](./type_defs.md#permissionsetprovisioningstatusmetadatatypedef)\]
 - `NextToken`: `str`
 
 ## ListPermissionSetsProvisionedToAccountResponseTypeDef
@@ -359,8 +354,7 @@ from mypy_boto3_sso_admin.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
 
 ## OperationStatusFilterTypeDef
@@ -371,8 +365,7 @@ from mypy_boto3_sso_admin.type_defs import OperationStatusFilterTypeDef
 
 Optional fields:
 
-- `Status`:
-  [StatusValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#statusvalues)
+- `Status`: [StatusValues](./literals.md#statusvalues)
 
 ## PaginatorConfigTypeDef
 
@@ -394,8 +387,7 @@ from mypy_boto3_sso_admin.type_defs import PermissionSetProvisioningStatusMetada
 
 Optional fields:
 
-- `Status`:
-  [StatusValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#statusvalues)
+- `Status`: [StatusValues](./literals.md#statusvalues)
 - `RequestId`: `str`
 - `CreatedDate`: `datetime`
 
@@ -407,8 +399,7 @@ from mypy_boto3_sso_admin.type_defs import PermissionSetProvisioningStatusTypeDe
 
 Optional fields:
 
-- `Status`:
-  [StatusValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/literals.html#statusvalues)
+- `Status`: [StatusValues](./literals.md#statusvalues)
 - `RequestId`: `str`
 - `AccountId`: `str`
 - `PermissionSetArn`: `str`
@@ -439,7 +430,7 @@ from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetResponseTypeDef
 Optional fields:
 
 - `PermissionSetProvisioningStatus`:
-  [PermissionSetProvisioningStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso_admin/type_defs.html#permissionsetprovisioningstatustypedef)
+  [PermissionSetProvisioningStatusTypeDef](./type_defs.md#permissionsetprovisioningstatustypedef)
 
 ## TagTypeDef
 

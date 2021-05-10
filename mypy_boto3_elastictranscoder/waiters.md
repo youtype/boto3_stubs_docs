@@ -1,6 +1,6 @@
 # Waiters for boto3 ElasticTranscoder module
 
-> [Index](../README.md) > [ElasticTranscoder](./README.md) > Waiters
+> [Index](..) > [ElasticTranscoder](.) > Waiters
 
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
@@ -30,5 +30,4 @@ Boto3 documentation:
 Arguments for `JobCompleteWaiter.wait` method:
 
 - `Id`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

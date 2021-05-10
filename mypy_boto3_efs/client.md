@@ -1,6 +1,6 @@
 # EFSClient for boto3 EFS module
 
-> [Index](../README.md) > [EFS](./README.md) > EFSClient
+> [Index](..) > [EFS](.) > EFSClient
 
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
@@ -126,15 +126,12 @@ Arguments:
 
 - `ClientToken`: `str` *(required)*
 - `FileSystemId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
-- `PosixUser`:
-  [PosixUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#posixusertypedef)
-- `RootDirectory`:
-  [RootDirectoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#rootdirectorytypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
+- `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 
 Returns
-[AccessPointDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#accesspointdescriptiontypedef).
+[AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef).
 
 ### create_file_system
 
@@ -146,20 +143,17 @@ Boto3 documentation:
 Arguments:
 
 - `CreationToken`: `str` *(required)*
-- `PerformanceMode`:
-  [PerformanceMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#performancemode)
+- `PerformanceMode`: [PerformanceMode](./literals.md#performancemode)
 - `Encrypted`: `bool`
 - `KmsKeyId`: `str`
-- `ThroughputMode`:
-  [ThroughputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#throughputmode)
+- `ThroughputMode`: [ThroughputMode](./literals.md#throughputmode)
 - `ProvisionedThroughputInMibps`: `float`
 - `AvailabilityZoneName`: `str`
 - `Backup`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[FileSystemDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystemdescriptiontypedef).
+[FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef).
 
 ### create_mount_target
 
@@ -176,7 +170,7 @@ Arguments:
 - `SecurityGroups`: `List`\[`str`\]
 
 Returns
-[MountTargetDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#mounttargetdescriptiontypedef).
+[MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef).
 
 ### create_tags
 
@@ -188,9 +182,7 @@ Boto3 documentation:
 Arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### delete_access_point
 
@@ -263,7 +255,7 @@ Arguments:
 - `FileSystemId`: `str`
 
 Returns
-[DescribeAccessPointsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describeaccesspointsresponsetypedef).
+[DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef).
 
 ### describe_backup_policy
 
@@ -277,7 +269,7 @@ Arguments:
 - `FileSystemId`: `str` *(required)*
 
 Returns
-[BackupPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicydescriptiontypedef).
+[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
 
 ### describe_file_system_policy
 
@@ -291,7 +283,7 @@ Arguments:
 - `FileSystemId`: `str` *(required)*
 
 Returns
-[FileSystemPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystempolicydescriptiontypedef).
+[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
 
 ### describe_file_systems
 
@@ -308,7 +300,7 @@ Arguments:
 - `FileSystemId`: `str`
 
 Returns
-[DescribeFileSystemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describefilesystemsresponsetypedef).
+[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
 
 ### describe_lifecycle_configuration
 
@@ -323,7 +315,7 @@ Arguments:
 - `FileSystemId`: `str` *(required)*
 
 Returns
-[LifecycleConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecycleconfigurationdescriptiontypedef).
+[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
 
 ### describe_mount_target_security_groups
 
@@ -338,7 +330,7 @@ Arguments:
 - `MountTargetId`: `str` *(required)*
 
 Returns
-[DescribeMountTargetSecurityGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describemounttargetsecuritygroupsresponsetypedef).
+[DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef).
 
 ### describe_mount_targets
 
@@ -356,7 +348,7 @@ Arguments:
 - `AccessPointId`: `str`
 
 Returns
-[DescribeMountTargetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describemounttargetsresponsetypedef).
+[DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef).
 
 ### describe_tags
 
@@ -372,7 +364,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#describetagsresponsetypedef).
+[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -404,7 +396,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### modify_mount_target_security_groups
 
@@ -429,12 +421,11 @@ Boto3 documentation:
 Arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `BackupPolicy`:
-  [BackupPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicytypedef)
+- `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
   *(required)*
 
 Returns
-[BackupPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#backuppolicydescriptiontypedef).
+[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
 
 ### put_file_system_policy
 
@@ -450,7 +441,7 @@ Arguments:
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 
 Returns
-[FileSystemPolicyDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystempolicydescriptiontypedef).
+[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
 
 ### put_lifecycle_configuration
 
@@ -463,11 +454,11 @@ Arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `LifecyclePolicies`:
-  `List`\[[LifecyclePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecyclepolicytypedef)\]
+  `List`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
   *(required)*
 
 Returns
-[LifecycleConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#lifecycleconfigurationdescriptiontypedef).
+[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
 
 ### tag_resource
 
@@ -479,9 +470,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -505,12 +494,11 @@ Boto3 documentation:
 Arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `ThroughputMode`:
-  [ThroughputMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/literals.html#throughputmode)
+- `ThroughputMode`: [ThroughputMode](./literals.md#throughputmode)
 - `ProvisionedThroughputInMibps`: `float`
 
 Returns
-[FileSystemDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_efs/type_defs.html#filesystemdescriptiontypedef).
+[FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef).
 
 ### get_paginator
 

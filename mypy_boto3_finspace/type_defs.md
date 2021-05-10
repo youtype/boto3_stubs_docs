@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 finspace module
 
-> [Index](../README.md) > [finspace](./README.md) > Structures
+> [Index](..) > [finspace](.) > Typed dictionaries
 
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
@@ -39,18 +39,16 @@ Optional fields:
 - `name`: `str`
 - `environmentId`: `str`
 - `awsAccountId`: `str`
-- `status`:
-  [EnvironmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/literals.html#environmentstatus)
+- `status`: [EnvironmentStatus](./literals.md#environmentstatus)
 - `environmentUrl`: `str`
 - `description`: `str`
 - `environmentArn`: `str`
 - `sageMakerStudioDomainUrl`: `str`
 - `kmsKeyId`: `str`
 - `dedicatedServiceAccountId`: `str`
-- `federationMode`:
-  [FederationMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/literals.html#federationmode)
+- `federationMode`: [FederationMode](./literals.md#federationmode)
 - `federationParameters`:
-  [FederationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#federationparameterstypedef)
+  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 
 ## FederationParametersTypeDef
 
@@ -75,8 +73,7 @@ from mypy_boto3_finspace.type_defs import GetEnvironmentResponseTypeDef
 
 Optional fields:
 
-- `environment`:
-  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#environmenttypedef)
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 ## ListEnvironmentsResponseTypeDef
 
@@ -87,7 +84,7 @@ from mypy_boto3_finspace.type_defs import ListEnvironmentsResponseTypeDef
 Optional fields:
 
 - `environments`:
-  `List`\[[EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#environmenttypedef)\]
+  `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -108,5 +105,4 @@ from mypy_boto3_finspace.type_defs import UpdateEnvironmentResponseTypeDef
 
 Optional fields:
 
-- `environment`:
-  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_finspace/type_defs.html#environmenttypedef)
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)

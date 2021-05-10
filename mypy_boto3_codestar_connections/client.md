@@ -1,7 +1,6 @@
 # CodeStarconnectionsClient for boto3 CodeStarconnections module
 
-> [Index](../README.md) > [CodeStarconnections](./README.md) >
-> CodeStarconnectionsClient
+> [Index](..) > [CodeStarconnections](.) > CodeStarconnectionsClient
 
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
@@ -91,14 +90,12 @@ Boto3 documentation:
 Arguments:
 
 - `ConnectionName`: `str` *(required)*
-- `ProviderType`:
-  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+- `ProviderType`: [ProviderType](./literals.md#providertype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `HostArn`: `str`
 
 Returns
-[CreateConnectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#createconnectionoutputtypedef).
+[CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef).
 
 ### create_host
 
@@ -110,17 +107,13 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `ProviderType`:
-  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
-  *(required)*
+- `ProviderType`: [ProviderType](./literals.md#providertype) *(required)*
 - `ProviderEndpoint`: `str` *(required)*
 - `VpcConfiguration`:
-  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#vpcconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateHostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#createhostoutputtypedef).
+Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
 
 ### delete_connection
 
@@ -179,7 +172,7 @@ Arguments:
 - `ConnectionArn`: `str` *(required)*
 
 Returns
-[GetConnectionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#getconnectionoutputtypedef).
+[GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef).
 
 ### get_host
 
@@ -192,8 +185,7 @@ Arguments:
 
 - `HostArn`: `str` *(required)*
 
-Returns
-[GetHostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#gethostoutputtypedef).
+Returns [GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef).
 
 ### list_connections
 
@@ -205,14 +197,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `ProviderTypeFilter`:
-  [ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/literals.html#providertype)
+- `ProviderTypeFilter`: [ProviderType](./literals.md#providertype)
 - `HostArnFilter`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListConnectionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#listconnectionsoutputtypedef).
+[ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef).
 
 ### list_hosts
 
@@ -226,8 +217,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListHostsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#listhostsoutputtypedef).
+Returns [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -242,7 +232,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### tag_resource
 
@@ -255,9 +245,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -288,6 +276,6 @@ Arguments:
 - `HostArn`: `str` *(required)*
 - `ProviderEndpoint`: `str`
 - `VpcConfiguration`:
-  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_connections/type_defs.html#vpcconfigurationtypedef)
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].

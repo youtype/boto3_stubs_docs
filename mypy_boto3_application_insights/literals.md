@@ -1,6 +1,6 @@
 # Literals for boto3 ApplicationInsights module
 
-> [Index](../README.md) > [ApplicationInsights](./README.md) > Literals
+> [Index](..) > [ApplicationInsights](.) > Literals
 
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)

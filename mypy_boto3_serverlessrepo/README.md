@@ -1,6 +1,6 @@
 # Type annotations for boto3 ServerlessApplicationRepository module
 
-> [Index](../README.md) > ServerlessApplicationRepository
+> [Index](..) > ServerlessApplicationRepository
 
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)

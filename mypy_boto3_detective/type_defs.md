@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Detective module
 
-> [Index](../README.md) > [Detective](./README.md) > Structures
+> [Index](..) > [Detective](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
@@ -50,10 +50,9 @@ from mypy_boto3_detective.type_defs import CreateMembersResponseTypeDef
 
 Optional fields:
 
-- `Members`:
-  `List`\[[MemberDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#memberdetailtypedef)\]
+- `Members`: `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -65,7 +64,7 @@ Optional fields:
 
 - `AccountIds`: `List`\[`str`\]
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## GetMembersResponseTypeDef
 
@@ -76,9 +75,9 @@ from mypy_boto3_detective.type_defs import GetMembersResponseTypeDef
 Optional fields:
 
 - `MemberDetails`:
-  `List`\[[MemberDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#memberdetailtypedef)\]
+  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## GraphTypeDef
 
@@ -99,8 +98,7 @@ from mypy_boto3_detective.type_defs import ListGraphsResponseTypeDef
 
 Optional fields:
 
-- `GraphList`:
-  `List`\[[GraphTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#graphtypedef)\]
+- `GraphList`: `List`\[[GraphTypeDef](./type_defs.md#graphtypedef)\]
 - `NextToken`: `str`
 
 ## ListInvitationsResponseTypeDef
@@ -112,7 +110,7 @@ from mypy_boto3_detective.type_defs import ListInvitationsResponseTypeDef
 Optional fields:
 
 - `Invitations`:
-  `List`\[[MemberDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#memberdetailtypedef)\]
+  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
 - `NextToken`: `str`
 
 ## ListMembersResponseTypeDef
@@ -124,7 +122,7 @@ from mypy_boto3_detective.type_defs import ListMembersResponseTypeDef
 Optional fields:
 
 - `MemberDetails`:
-  `List`\[[MemberDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/type_defs.html#memberdetailtypedef)\]
+  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -150,10 +148,8 @@ Optional fields:
 - `GraphArn`: `str`
 - `MasterId`: `str`
 - `AdministratorId`: `str`
-- `Status`:
-  [MemberStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/literals.html#memberstatus)
-- `DisabledReason`:
-  [MemberDisabledReason](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_detective/literals.html#memberdisabledreason)
+- `Status`: [MemberStatus](./literals.md#memberstatus)
+- `DisabledReason`: [MemberDisabledReason](./literals.md#memberdisabledreason)
 - `InvitedTime`: `datetime`
 - `UpdatedTime`: `datetime`
 - `VolumeUsageInBytes`: `int`

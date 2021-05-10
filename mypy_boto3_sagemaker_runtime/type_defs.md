@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SageMakerRuntime module
 
-> [Index](../README.md) > [SageMakerRuntime](./README.md) > Structures
+> [Index](..) > [SageMakerRuntime](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
@@ -9,7 +9,7 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 SageMakerRuntime module](#typed-dictionaries-for-boto3-sagemakerruntime-module)
   - [InvokeEndpointOutputTypeDef](#invokeendpointoutputtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## InvokeEndpointOutputTypeDef
 
@@ -24,12 +24,12 @@ Required fields:
 - `InvokedProductionVariant`: `str`
 - `CustomAttributes`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker_runtime/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_sagemaker_runtime.type_defs import ResponseMetadata
+from mypy_boto3_sagemaker_runtime.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:

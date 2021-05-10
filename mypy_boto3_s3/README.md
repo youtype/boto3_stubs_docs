@@ -1,6 +1,6 @@
 # Type annotations for boto3 S3 module
 
-> [Index](../README.md) > S3
+> [Index](..) > S3
 
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
@@ -159,7 +159,7 @@ S3Client [exceptions](./client.md#exceptions)
 ## S3ServiceResource
 
 Type annotations for `boto3.resource("s3")` as
-[S3ServiceResource](./service_resource.md)
+[S3ServiceResource](./service_resource.md#s3serviceresource)
 
 Can be used directly:
 
@@ -177,7 +177,7 @@ Can be used directly:
 from mypy_boto3_s3.service_resource import ServiceResourceBucketsCollection, ...
 ```
 
-- [ServiceResourceBucketsCollection](./service_resource.md#s3serviceresource.buckets)
+- [ServiceResourceBucketsCollection](./service_resource.md#s3serviceresourcebuckets)
 
 ### Resources
 
@@ -484,7 +484,7 @@ from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef, ...
 - [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 - [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
 - [RequestProgressTypeDef](./type_defs.md#requestprogresstypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef)
 - [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
 - [RoutingRuleTypeDef](./type_defs.md#routingruletypedef)

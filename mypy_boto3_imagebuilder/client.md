@@ -1,6 +1,6 @@
 # ImagebuilderClient for boto3 Imagebuilder module
 
-> [Index](../README.md) > [Imagebuilder](./README.md) > ImagebuilderClient
+> [Index](..) > [Imagebuilder](.) > ImagebuilderClient
 
 Auto-generated documentation for
 [Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#Imagebuilder)
@@ -141,7 +141,7 @@ Arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[CancelImageCreationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#cancelimagecreationresponsetypedef).
+[CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef).
 
 ### create_component
 
@@ -154,9 +154,7 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
-- `platform`:
-  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#platform)
-  *(required)*
+- `platform`: [Platform](./literals.md#platform) *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `changeDescription`: `str`
@@ -167,7 +165,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createcomponentresponsetypedef).
+[CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
 
 ### create_container_recipe
 
@@ -179,31 +177,31 @@ Boto3 documentation:
 
 Arguments:
 
-- `containerType`: `Literal['DOCKER']` *(required)*
+- `containerType`: `Literal['DOCKER']` (see
+  [ContainerType](./literals.md#containertype)) *(required)*
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
 - `components`:
-  `List`\[[ComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#componentconfigurationtypedef)\]
+  `List`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
   *(required)*
 - `parentImage`: `str` *(required)*
 - `targetRepository`:
-  [TargetContainerRepositoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#targetcontainerrepositorytypedef)
+  [TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef)
   *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `instanceConfiguration`:
-  [InstanceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#instanceconfigurationtypedef)
+  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
 - `dockerfileTemplateData`: `str`
 - `dockerfileTemplateUri`: `str`
-- `platformOverride`:
-  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#platform)
+- `platformOverride`: [Platform](./literals.md#platform)
 - `imageOsVersionOverride`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 - `workingDirectory`: `str`
 - `kmsKeyId`: `str`
 
 Returns
-[CreateContainerRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createcontainerreciperesponsetypedef).
+[CreateContainerRecipeResponseTypeDef](./type_defs.md#createcontainerreciperesponsetypedef).
 
 ### create_distribution_configuration
 
@@ -217,14 +215,14 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `distributions`:
-  `List`\[[DistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#distributiontypedef)\]
+  `List`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
   *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createdistributionconfigurationresponsetypedef).
+[CreateDistributionConfigurationResponseTypeDef](./type_defs.md#createdistributionconfigurationresponsetypedef).
 
 ### create_image
 
@@ -241,12 +239,12 @@ Arguments:
 - `containerRecipeArn`: `str`
 - `distributionConfigurationArn`: `str`
 - `imageTestsConfiguration`:
-  [ImageTestsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#imagetestsconfigurationtypedef)
+  [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
 - `enhancedImageMetadataEnabled`: `bool`
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createimageresponsetypedef).
+[CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
 
 ### create_image_pipeline
 
@@ -266,16 +264,14 @@ Arguments:
 - `containerRecipeArn`: `str`
 - `distributionConfigurationArn`: `str`
 - `imageTestsConfiguration`:
-  [ImageTestsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#imagetestsconfigurationtypedef)
+  [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
 - `enhancedImageMetadataEnabled`: `bool`
-- `schedule`:
-  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#scheduletypedef)
-- `status`:
-  [PipelineStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#pipelinestatus)
+- `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
+- `status`: [PipelineStatus](./literals.md#pipelinestatus)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createimagepipelineresponsetypedef).
+[CreateImagePipelineResponseTypeDef](./type_defs.md#createimagepipelineresponsetypedef).
 
 ### create_image_recipe
 
@@ -289,18 +285,18 @@ Arguments:
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
 - `components`:
-  `List`\[[ComponentConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#componentconfigurationtypedef)\]
+  `List`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
   *(required)*
 - `parentImage`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `blockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#instanceblockdevicemappingtypedef)\]
+  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
 - `workingDirectory`: `str`
 
 Returns
-[CreateImageRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createimagereciperesponsetypedef).
+[CreateImageRecipeResponseTypeDef](./type_defs.md#createimagereciperesponsetypedef).
 
 ### create_infrastructure_configuration
 
@@ -319,8 +315,7 @@ Arguments:
 - `instanceTypes`: `List`\[`str`\]
 - `securityGroupIds`: `List`\[`str`\]
 - `subnetId`: `str`
-- `logging`:
-  [LoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#loggingtypedef)
+- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `keyPair`: `str`
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
@@ -328,7 +323,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#createinfrastructureconfigurationresponsetypedef).
+[CreateInfrastructureConfigurationResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponsetypedef).
 
 ### delete_component
 
@@ -342,7 +337,7 @@ Arguments:
 - `componentBuildVersionArn`: `str` *(required)*
 
 Returns
-[DeleteComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deletecomponentresponsetypedef).
+[DeleteComponentResponseTypeDef](./type_defs.md#deletecomponentresponsetypedef).
 
 ### delete_container_recipe
 
@@ -357,7 +352,7 @@ Arguments:
 - `containerRecipeArn`: `str` *(required)*
 
 Returns
-[DeleteContainerRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deletecontainerreciperesponsetypedef).
+[DeleteContainerRecipeResponseTypeDef](./type_defs.md#deletecontainerreciperesponsetypedef).
 
 ### delete_distribution_configuration
 
@@ -372,7 +367,7 @@ Arguments:
 - `distributionConfigurationArn`: `str` *(required)*
 
 Returns
-[DeleteDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deletedistributionconfigurationresponsetypedef).
+[DeleteDistributionConfigurationResponseTypeDef](./type_defs.md#deletedistributionconfigurationresponsetypedef).
 
 ### delete_image
 
@@ -386,7 +381,7 @@ Arguments:
 - `imageBuildVersionArn`: `str` *(required)*
 
 Returns
-[DeleteImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteimageresponsetypedef).
+[DeleteImageResponseTypeDef](./type_defs.md#deleteimageresponsetypedef).
 
 ### delete_image_pipeline
 
@@ -401,7 +396,7 @@ Arguments:
 - `imagePipelineArn`: `str` *(required)*
 
 Returns
-[DeleteImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteimagepipelineresponsetypedef).
+[DeleteImagePipelineResponseTypeDef](./type_defs.md#deleteimagepipelineresponsetypedef).
 
 ### delete_image_recipe
 
@@ -415,7 +410,7 @@ Arguments:
 - `imageRecipeArn`: `str` *(required)*
 
 Returns
-[DeleteImageRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteimagereciperesponsetypedef).
+[DeleteImageRecipeResponseTypeDef](./type_defs.md#deleteimagereciperesponsetypedef).
 
 ### delete_infrastructure_configuration
 
@@ -430,7 +425,7 @@ Arguments:
 - `infrastructureConfigurationArn`: `str` *(required)*
 
 Returns
-[DeleteInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#deleteinfrastructureconfigurationresponsetypedef).
+[DeleteInfrastructureConfigurationResponseTypeDef](./type_defs.md#deleteinfrastructureconfigurationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -461,7 +456,7 @@ Arguments:
 - `componentBuildVersionArn`: `str` *(required)*
 
 Returns
-[GetComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcomponentresponsetypedef).
+[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
 
 ### get_component_policy
 
@@ -476,7 +471,7 @@ Arguments:
 - `componentArn`: `str` *(required)*
 
 Returns
-[GetComponentPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcomponentpolicyresponsetypedef).
+[GetComponentPolicyResponseTypeDef](./type_defs.md#getcomponentpolicyresponsetypedef).
 
 ### get_container_recipe
 
@@ -491,7 +486,7 @@ Arguments:
 - `containerRecipeArn`: `str` *(required)*
 
 Returns
-[GetContainerRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcontainerreciperesponsetypedef).
+[GetContainerRecipeResponseTypeDef](./type_defs.md#getcontainerreciperesponsetypedef).
 
 ### get_container_recipe_policy
 
@@ -506,7 +501,7 @@ Arguments:
 - `containerRecipeArn`: `str` *(required)*
 
 Returns
-[GetContainerRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getcontainerrecipepolicyresponsetypedef).
+[GetContainerRecipePolicyResponseTypeDef](./type_defs.md#getcontainerrecipepolicyresponsetypedef).
 
 ### get_distribution_configuration
 
@@ -521,7 +516,7 @@ Arguments:
 - `distributionConfigurationArn`: `str` *(required)*
 
 Returns
-[GetDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getdistributionconfigurationresponsetypedef).
+[GetDistributionConfigurationResponseTypeDef](./type_defs.md#getdistributionconfigurationresponsetypedef).
 
 ### get_image
 
@@ -534,8 +529,7 @@ Arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 
-Returns
-[GetImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimageresponsetypedef).
+Returns [GetImageResponseTypeDef](./type_defs.md#getimageresponsetypedef).
 
 ### get_image_pipeline
 
@@ -549,7 +543,7 @@ Arguments:
 - `imagePipelineArn`: `str` *(required)*
 
 Returns
-[GetImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagepipelineresponsetypedef).
+[GetImagePipelineResponseTypeDef](./type_defs.md#getimagepipelineresponsetypedef).
 
 ### get_image_policy
 
@@ -563,7 +557,7 @@ Arguments:
 - `imageArn`: `str` *(required)*
 
 Returns
-[GetImagePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagepolicyresponsetypedef).
+[GetImagePolicyResponseTypeDef](./type_defs.md#getimagepolicyresponsetypedef).
 
 ### get_image_recipe
 
@@ -577,7 +571,7 @@ Arguments:
 - `imageRecipeArn`: `str` *(required)*
 
 Returns
-[GetImageRecipeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagereciperesponsetypedef).
+[GetImageRecipeResponseTypeDef](./type_defs.md#getimagereciperesponsetypedef).
 
 ### get_image_recipe_policy
 
@@ -592,7 +586,7 @@ Arguments:
 - `imageRecipeArn`: `str` *(required)*
 
 Returns
-[GetImageRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getimagerecipepolicyresponsetypedef).
+[GetImageRecipePolicyResponseTypeDef](./type_defs.md#getimagerecipepolicyresponsetypedef).
 
 ### get_infrastructure_configuration
 
@@ -607,7 +601,7 @@ Arguments:
 - `infrastructureConfigurationArn`: `str` *(required)*
 
 Returns
-[GetInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#getinfrastructureconfigurationresponsetypedef).
+[GetInfrastructureConfigurationResponseTypeDef](./type_defs.md#getinfrastructureconfigurationresponsetypedef).
 
 ### import_component
 
@@ -620,13 +614,10 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
-- `type`:
-  [ComponentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#componenttype)
-  *(required)*
-- `format`: `Literal['SHELL']` *(required)*
-- `platform`:
-  [Platform](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#platform)
-  *(required)*
+- `type`: [ComponentType](./literals.md#componenttype) *(required)*
+- `format`: `Literal['SHELL']` (see
+  [ComponentFormat](./literals.md#componentformat)) *(required)*
+- `platform`: [Platform](./literals.md#platform) *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `changeDescription`: `str`
@@ -636,7 +627,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ImportComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#importcomponentresponsetypedef).
+[ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef).
 
 ### list_component_build_versions
 
@@ -653,7 +644,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentBuildVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listcomponentbuildversionsresponsetypedef).
+[ListComponentBuildVersionsResponseTypeDef](./type_defs.md#listcomponentbuildversionsresponsetypedef).
 
 ### list_components
 
@@ -664,16 +655,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `owner`:
-  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `owner`: [Ownership](./literals.md#ownership)
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listcomponentsresponsetypedef).
+[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
 ### list_container_recipes
 
@@ -685,15 +674,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `owner`:
-  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `owner`: [Ownership](./literals.md#ownership)
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListContainerRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listcontainerrecipesresponsetypedef).
+[ListContainerRecipesResponseTypeDef](./type_defs.md#listcontainerrecipesresponsetypedef).
 
 ### list_distribution_configurations
 
@@ -705,13 +692,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListDistributionConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listdistributionconfigurationsresponsetypedef).
+[ListDistributionConfigurationsResponseTypeDef](./type_defs.md#listdistributionconfigurationsresponsetypedef).
 
 ### list_image_build_versions
 
@@ -724,13 +710,12 @@ Boto3 documentation:
 Arguments:
 
 - `imageVersionArn`: `str` *(required)*
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListImageBuildVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagebuildversionsresponsetypedef).
+[ListImageBuildVersionsResponseTypeDef](./type_defs.md#listimagebuildversionsresponsetypedef).
 
 ### list_image_packages
 
@@ -746,7 +731,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImagePackagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagepackagesresponsetypedef).
+[ListImagePackagesResponseTypeDef](./type_defs.md#listimagepackagesresponsetypedef).
 
 ### list_image_pipeline_images
 
@@ -759,13 +744,12 @@ Boto3 documentation:
 Arguments:
 
 - `imagePipelineArn`: `str` *(required)*
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListImagePipelineImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagepipelineimagesresponsetypedef).
+[ListImagePipelineImagesResponseTypeDef](./type_defs.md#listimagepipelineimagesresponsetypedef).
 
 ### list_image_pipelines
 
@@ -777,13 +761,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListImagePipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagepipelinesresponsetypedef).
+[ListImagePipelinesResponseTypeDef](./type_defs.md#listimagepipelinesresponsetypedef).
 
 ### list_image_recipes
 
@@ -794,15 +777,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `owner`:
-  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `owner`: [Ownership](./literals.md#ownership)
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListImageRecipesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagerecipesresponsetypedef).
+[ListImageRecipesResponseTypeDef](./type_defs.md#listimagerecipesresponsetypedef).
 
 ### list_images
 
@@ -813,17 +794,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `owner`:
-  [Ownership](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#ownership)
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `owner`: [Ownership](./literals.md#ownership)
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `includeDeprecated`: `bool`
 
-Returns
-[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listimagesresponsetypedef).
+Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
 ### list_infrastructure_configurations
 
@@ -835,13 +813,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListInfrastructureConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listinfrastructureconfigurationsresponsetypedef).
+[ListInfrastructureConfigurationsResponseTypeDef](./type_defs.md#listinfrastructureconfigurationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -856,7 +833,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_component_policy
 
@@ -872,7 +849,7 @@ Arguments:
 - `policy`: `str` *(required)*
 
 Returns
-[PutComponentPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putcomponentpolicyresponsetypedef).
+[PutComponentPolicyResponseTypeDef](./type_defs.md#putcomponentpolicyresponsetypedef).
 
 ### put_container_recipe_policy
 
@@ -888,7 +865,7 @@ Arguments:
 - `policy`: `str` *(required)*
 
 Returns
-[PutContainerRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putcontainerrecipepolicyresponsetypedef).
+[PutContainerRecipePolicyResponseTypeDef](./type_defs.md#putcontainerrecipepolicyresponsetypedef).
 
 ### put_image_policy
 
@@ -903,7 +880,7 @@ Arguments:
 - `policy`: `str` *(required)*
 
 Returns
-[PutImagePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putimagepolicyresponsetypedef).
+[PutImagePolicyResponseTypeDef](./type_defs.md#putimagepolicyresponsetypedef).
 
 ### put_image_recipe_policy
 
@@ -919,7 +896,7 @@ Arguments:
 - `policy`: `str` *(required)*
 
 Returns
-[PutImageRecipePolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#putimagerecipepolicyresponsetypedef).
+[PutImageRecipePolicyResponseTypeDef](./type_defs.md#putimagerecipepolicyresponsetypedef).
 
 ### start_image_pipeline_execution
 
@@ -935,7 +912,7 @@ Arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[StartImagePipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#startimagepipelineexecutionresponsetypedef).
+[StartImagePipelineExecutionResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponsetypedef).
 
 ### tag_resource
 
@@ -977,13 +954,13 @@ Arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 - `distributions`:
-  `List`\[[DistributionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#distributiontypedef)\]
+  `List`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
   *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 
 Returns
-[UpdateDistributionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#updatedistributionconfigurationresponsetypedef).
+[UpdateDistributionConfigurationResponseTypeDef](./type_defs.md#updatedistributionconfigurationresponsetypedef).
 
 ### update_image_pipeline
 
@@ -1003,15 +980,13 @@ Arguments:
 - `containerRecipeArn`: `str`
 - `distributionConfigurationArn`: `str`
 - `imageTestsConfiguration`:
-  [ImageTestsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#imagetestsconfigurationtypedef)
+  [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
 - `enhancedImageMetadataEnabled`: `bool`
-- `schedule`:
-  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#scheduletypedef)
-- `status`:
-  [PipelineStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/literals.html#pipelinestatus)
+- `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
+- `status`: [PipelineStatus](./literals.md#pipelinestatus)
 
 Returns
-[UpdateImagePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#updateimagepipelineresponsetypedef).
+[UpdateImagePipelineResponseTypeDef](./type_defs.md#updateimagepipelineresponsetypedef).
 
 ### update_infrastructure_configuration
 
@@ -1030,12 +1005,11 @@ Arguments:
 - `instanceTypes`: `List`\[`str`\]
 - `securityGroupIds`: `List`\[`str`\]
 - `subnetId`: `str`
-- `logging`:
-  [LoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#loggingtypedef)
+- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `keyPair`: `str`
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
 - `resourceTags`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateInfrastructureConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_imagebuilder/type_defs.html#updateinfrastructureconfigurationresponsetypedef).
+[UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef).

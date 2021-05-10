@@ -1,6 +1,6 @@
 # Literals for boto3 ApplicationDiscoveryService module
 
-> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) > Literals
+> [Index](..) > [ApplicationDiscoveryService](.) > Literals
 
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)

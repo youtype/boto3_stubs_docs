@@ -1,6 +1,6 @@
 # Type annotations for boto3 PersonalizeEvents module
 
-> [Index](../README.md) > PersonalizeEvents
+> [Index](..) > PersonalizeEvents
 
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)

@@ -1,6 +1,6 @@
 # Waiters for boto3 Lambda module
 
-> [Index](../README.md) > [Lambda](./README.md) > Waiters
+> [Index](..) > [Lambda](.) > Waiters
 
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
@@ -32,8 +32,7 @@ Arguments for `FunctionActiveWaiter.wait` method:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## FunctionExistsWaiter
 
@@ -55,8 +54,7 @@ Arguments for `FunctionExistsWaiter.wait` method:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## FunctionUpdatedWaiter
 
@@ -78,5 +76,4 @@ Arguments for `FunctionUpdatedWaiter.wait` method:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lambda/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

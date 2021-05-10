@@ -1,6 +1,6 @@
 # Literals for boto3 MigrationHub module
 
-> [Index](../README.md) > [MigrationHub](./README.md) > Literals
+> [Index](..) > [MigrationHub](.) > Literals
 
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodeBuild module
 
-> [Index](../README.md) > CodeBuild
+> [Index](..) > CodeBuild
 
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
@@ -257,7 +257,7 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputTypeDef, ...
 - [ReportTypeDef](./type_defs.md#reporttypedef)
 - [ReportWithRawDataTypeDef](./type_defs.md#reportwithrawdatatypedef)
 - [ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RetryBuildBatchOutputTypeDef](./type_defs.md#retrybuildbatchoutputtypedef)
 - [RetryBuildOutputTypeDef](./type_defs.md#retrybuildoutputtypedef)
 - [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)

@@ -1,6 +1,6 @@
 # Literals for boto3 CodePipeline module
 
-> [Index](../README.md) > [CodePipeline](./README.md) > Literals
+> [Index](..) > [CodePipeline](.) > Literals
 
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)

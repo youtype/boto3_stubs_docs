@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 WorkMailMessageFlow module
 
-> [Index](../README.md) > [WorkMailMessageFlow](./README.md) > Structures
+> [Index](..) > [WorkMailMessageFlow](.) > Typed dictionaries
 
 Auto-generated documentation for
 [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
@@ -30,8 +30,7 @@ from mypy_boto3_workmailmessageflow.type_defs import RawMessageContentTypeDef
 
 Required fields:
 
-- `s3Reference`:
-  [S3ReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workmailmessageflow/type_defs.html#s3referencetypedef)
+- `s3Reference`: [S3ReferenceTypeDef](./type_defs.md#s3referencetypedef)
 
 ## S3ReferenceTypeDef
 

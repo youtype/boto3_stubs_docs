@@ -1,6 +1,6 @@
 # Type annotations for boto3 MarketplaceMetering module
 
-> [Index](../README.md) > MarketplaceMetering
+> [Index](..) > MarketplaceMetering
 
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)

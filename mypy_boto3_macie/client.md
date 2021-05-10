@@ -1,6 +1,6 @@
 # MacieClient for boto3 Macie module
 
-> [Index](../README.md) > [Macie](./README.md) > MacieClient
+> [Index](..) > [Macie](.) > MacieClient
 
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
@@ -81,12 +81,12 @@ Boto3 documentation:
 Arguments:
 
 - `s3Resources`:
-  `List`\[[S3ResourceClassificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourceclassificationtypedef)\]
+  `List`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
   *(required)*
 - `memberAccountId`: `str`
 
 Returns
-[AssociateS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#associates3resourcesresulttypedef).
+[AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef).
 
 ### can_paginate
 
@@ -123,12 +123,11 @@ Boto3 documentation:
 Arguments:
 
 - `associatedS3Resources`:
-  `List`\[[S3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourcetypedef)\]
-  *(required)*
+  `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\] *(required)*
 - `memberAccountId`: `str`
 
 Returns
-[DisassociateS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#disassociates3resourcesresulttypedef).
+[DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef).
 
 ### generate_presigned_url
 
@@ -159,7 +158,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListMemberAccountsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#listmemberaccountsresulttypedef).
+[ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef).
 
 ### list_s3_resources
 
@@ -175,7 +174,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#lists3resourcesresulttypedef).
+[ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef).
 
 ### update_s3_resources
 
@@ -187,12 +186,12 @@ Boto3 documentation:
 Arguments:
 
 - `s3ResourcesUpdate`:
-  `List`\[[S3ResourceClassificationUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourceclassificationupdatetypedef)\]
+  `List`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
   *(required)*
 - `memberAccountId`: `str`
 
 Returns
-[UpdateS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#updates3resourcesresulttypedef).
+[UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef).
 
 ### get_paginator
 

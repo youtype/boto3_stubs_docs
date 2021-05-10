@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ApiGatewayManagementApi module
 
-> [Index](../README.md) > [ApiGatewayManagementApi](./README.md) > Structures
+> [Index](..) > [ApiGatewayManagementApi](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
@@ -20,8 +20,7 @@ from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTy
 Optional fields:
 
 - `ConnectedAt`: `datetime`
-- `Identity`:
-  [IdentityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_apigatewaymanagementapi/type_defs.html#identitytypedef)
+- `Identity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `LastActiveAt`: `datetime`
 
 ## IdentityTypeDef

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DLM module
 
-> [Index](../README.md) > [DLM](./README.md) > Structures
+> [Index](..) > [DLM](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
@@ -40,7 +40,7 @@ Required fields:
 
 - `Name`: `str`
 - `CrossRegionCopy`:
-  `List`\[[CrossRegionCopyActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#crossregioncopyactiontypedef)\]
+  `List`\[[CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)\]
 
 ## CreateLifecyclePolicyResponseTypeDef
 
@@ -60,10 +60,10 @@ from mypy_boto3_dlm.type_defs import CreateRuleTypeDef
 
 Optional fields:
 
-- `Location`:
-  [LocationValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#locationvalues)
+- `Location`: [LocationValues](./literals.md#locationvalues)
 - `Interval`: `int`
-- `IntervalUnit`: `Literal['HOURS']`
+- `IntervalUnit`: `Literal['HOURS']` (see
+  [IntervalUnitValues](./literals.md#intervalunitvalues))
 - `Times`: `List`\[`str`\]
 - `CronExpression`: `str`
 
@@ -77,12 +77,12 @@ Required fields:
 
 - `Target`: `str`
 - `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
 Optional fields:
 
 - `RetainRule`:
-  [CrossRegionCopyRetainRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#crossregioncopyretainruletypedef)
+  [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
 
 ## CrossRegionCopyRetainRuleTypeDef
 
@@ -94,7 +94,7 @@ Optional fields:
 
 - `Interval`: `int`
 - `IntervalUnit`:
-  [RetentionIntervalUnitValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#retentionintervalunitvalues)
+  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
 
 ## CrossRegionCopyRuleTypeDef
 
@@ -113,7 +113,7 @@ Optional fields:
 - `CmkArn`: `str`
 - `CopyTags`: `bool`
 - `RetainRule`:
-  [CrossRegionCopyRetainRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#crossregioncopyretainruletypedef)
+  [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
 
 ## EncryptionConfigurationTypeDef
 
@@ -137,7 +137,8 @@ from mypy_boto3_dlm.type_defs import EventParametersTypeDef
 
 Required fields:
 
-- `EventType`: `Literal['shareSnapshot']`
+- `EventType`: `Literal['shareSnapshot']` (see
+  [EventTypeValues](./literals.md#eventtypevalues))
 - `SnapshotOwner`: `List`\[`str`\]
 - `DescriptionRegex`: `str`
 
@@ -149,12 +150,12 @@ from mypy_boto3_dlm.type_defs import EventSourceTypeDef
 
 Required fields:
 
-- `Type`: `Literal['MANAGED_CWE']`
+- `Type`: `Literal['MANAGED_CWE']` (see
+  [EventSourceValues](./literals.md#eventsourcevalues))
 
 Optional fields:
 
-- `Parameters`:
-  [EventParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#eventparameterstypedef)
+- `Parameters`: [EventParametersTypeDef](./type_defs.md#eventparameterstypedef)
 
 ## FastRestoreRuleTypeDef
 
@@ -171,7 +172,7 @@ Optional fields:
 - `Count`: `int`
 - `Interval`: `int`
 - `IntervalUnit`:
-  [RetentionIntervalUnitValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#retentionintervalunitvalues)
+  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
 
 ## GetLifecyclePoliciesResponseTypeDef
 
@@ -182,7 +183,7 @@ from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesResponseTypeDef
 Optional fields:
 
 - `Policies`:
-  `List`\[[LifecyclePolicySummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#lifecyclepolicysummarytypedef)\]
+  `List`\[[LifecyclePolicySummaryTypeDef](./type_defs.md#lifecyclepolicysummarytypedef)\]
 
 ## GetLifecyclePolicyResponseTypeDef
 
@@ -192,8 +193,7 @@ from mypy_boto3_dlm.type_defs import GetLifecyclePolicyResponseTypeDef
 
 Optional fields:
 
-- `Policy`:
-  [LifecyclePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#lifecyclepolicytypedef)
+- `Policy`: [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
 
 ## LifecyclePolicySummaryTypeDef
 
@@ -205,11 +205,9 @@ Optional fields:
 
 - `PolicyId`: `str`
 - `Description`: `str`
-- `State`:
-  [GettablePolicyStateValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#gettablepolicystatevalues)
+- `State`: [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
 - `Tags`: `Dict`\[`str`, `str`\]
-- `PolicyType`:
-  [PolicyTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#policytypevalues)
+- `PolicyType`: [PolicyTypeValues](./literals.md#policytypevalues)
 
 ## LifecyclePolicyTypeDef
 
@@ -221,14 +219,12 @@ Optional fields:
 
 - `PolicyId`: `str`
 - `Description`: `str`
-- `State`:
-  [GettablePolicyStateValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#gettablepolicystatevalues)
+- `State`: [GettablePolicyStateValues](./literals.md#gettablepolicystatevalues)
 - `StatusMessage`: `str`
 - `ExecutionRoleArn`: `str`
 - `DateCreated`: `datetime`
 - `DateModified`: `datetime`
-- `PolicyDetails`:
-  [PolicyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#policydetailstypedef)
+- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `PolicyArn`: `str`
 
@@ -261,22 +257,16 @@ from mypy_boto3_dlm.type_defs import PolicyDetailsTypeDef
 
 Optional fields:
 
-- `PolicyType`:
-  [PolicyTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#policytypevalues)
+- `PolicyType`: [PolicyTypeValues](./literals.md#policytypevalues)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#resourcetypevalues)\]
+  `List`\[[ResourceTypeValues](./literals.md#resourcetypevalues)\]
 - `ResourceLocations`:
-  `List`\[[ResourceLocationValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#resourcelocationvalues)\]
-- `TargetTags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#tagtypedef)\]
-- `Schedules`:
-  `List`\[[ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#scheduletypedef)\]
-- `Parameters`:
-  [ParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#parameterstypedef)
-- `EventSource`:
-  [EventSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#eventsourcetypedef)
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#actiontypedef)\]
+  `List`\[[ResourceLocationValues](./literals.md#resourcelocationvalues)\]
+- `TargetTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Schedules`: `List`\[[ScheduleTypeDef](./type_defs.md#scheduletypedef)\]
+- `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
+- `EventSource`: [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 ## RetainRuleTypeDef
 
@@ -289,7 +279,7 @@ Optional fields:
 - `Count`: `int`
 - `Interval`: `int`
 - `IntervalUnit`:
-  [RetentionIntervalUnitValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#retentionintervalunitvalues)
+  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
 
 ## ScheduleTypeDef
 
@@ -301,20 +291,15 @@ Optional fields:
 
 - `Name`: `str`
 - `CopyTags`: `bool`
-- `TagsToAdd`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#tagtypedef)\]
-- `VariableTags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#tagtypedef)\]
-- `CreateRule`:
-  [CreateRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#createruletypedef)
-- `RetainRule`:
-  [RetainRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#retainruletypedef)
+- `TagsToAdd`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VariableTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CreateRule`: [CreateRuleTypeDef](./type_defs.md#createruletypedef)
+- `RetainRule`: [RetainRuleTypeDef](./type_defs.md#retainruletypedef)
 - `FastRestoreRule`:
-  [FastRestoreRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#fastrestoreruletypedef)
+  [FastRestoreRuleTypeDef](./type_defs.md#fastrestoreruletypedef)
 - `CrossRegionCopyRules`:
-  `List`\[[CrossRegionCopyRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#crossregioncopyruletypedef)\]
-- `ShareRules`:
-  `List`\[[ShareRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/type_defs.html#shareruletypedef)\]
+  `List`\[[CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)\]
+- `ShareRules`: `List`\[[ShareRuleTypeDef](./type_defs.md#shareruletypedef)\]
 
 ## ShareRuleTypeDef
 
@@ -330,7 +315,7 @@ Optional fields:
 
 - `UnshareInterval`: `int`
 - `UnshareIntervalUnit`:
-  [RetentionIntervalUnitValues](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dlm/literals.html#retentionintervalunitvalues)
+  [RetentionIntervalUnitValues](./literals.md#retentionintervalunitvalues)
 
 ## TagTypeDef
 

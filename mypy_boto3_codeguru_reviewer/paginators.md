@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeGuruReviewer module
 
-> [Index](../README.md) > [CodeGuruReviewer](./README.md) > Paginators
+> [Index](..) > [CodeGuruReviewer](.) > Paginators
 
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
@@ -29,14 +29,13 @@ Boto3 documentation:
 
 Arguments for `ListRepositoryAssociationsPaginator.paginate` method:
 
-- `ProviderTypes`:
-  `List`\[[ProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#providertype)\]
+- `ProviderTypes`: `List`\[[ProviderType](./literals.md#providertype)\]
 - `States`:
-  `List`\[[RepositoryAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/literals.html#repositoryassociationstate)\]
+  `List`\[[RepositoryAssociationState](./literals.md#repositoryassociationstate)\]
 - `Names`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRepositoryAssociationsPaginator.paginate` returns
-`Iterator`\[[ListRepositoryAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeguru_reviewer/type_defs.html#listrepositoryassociationsresponsetypedef)\].
+`Iterator`\[[ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef)\].

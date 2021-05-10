@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SWF module
 
-> [Index](../README.md) > [SWF](./README.md) > Structures
+> [Index](..) > [SWF](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
@@ -71,7 +71,7 @@ type annotations stubs module
   - [RequestCancelExternalWorkflowExecutionFailedEventAttributesTypeDef](#requestcancelexternalworkflowexecutionfailedeventattributestypedef)
   - [RequestCancelExternalWorkflowExecutionInitiatedEventAttributesTypeDef](#requestcancelexternalworkflowexecutioninitiatedeventattributestypedef)
   - [ResourceTagTypeDef](#resourcetagtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RunTypeDef](#runtypedef)
   - [ScheduleActivityTaskDecisionAttributesTypeDef](#scheduleactivitytaskdecisionattributestypedef)
   - [ScheduleActivityTaskFailedEventAttributesTypeDef](#scheduleactivitytaskfailedeventattributestypedef)
@@ -181,11 +181,9 @@ from mypy_boto3_swf.type_defs import ActivityTaskScheduledEventAttributesTypeDef
 
 Required fields:
 
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 - `activityId`: `str`
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `decisionTaskCompletedEventId`: `int`
 
 Optional fields:
@@ -230,8 +228,7 @@ from mypy_boto3_swf.type_defs import ActivityTaskTimedOutEventAttributesTypeDef
 
 Required fields:
 
-- `timeoutType`:
-  [ActivityTaskTimeoutType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#activitytasktimeouttype)
+- `timeoutType`: [ActivityTaskTimeoutType](./literals.md#activitytasktimeouttype)
 - `scheduledEventId`: `int`
 - `startedEventId`: `int`
 
@@ -251,9 +248,8 @@ Required fields:
 - `activityId`: `str`
 - `startedEventId`: `int`
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 
 Optional fields:
 
@@ -269,8 +265,7 @@ Optional fields:
 
 - `defaultTaskStartToCloseTimeout`: `str`
 - `defaultTaskHeartbeatTimeout`: `str`
-- `defaultTaskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `defaultTaskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `defaultTaskPriority`: `str`
 - `defaultTaskScheduleToStartTimeout`: `str`
 - `defaultTaskScheduleToCloseTimeout`: `str`
@@ -283,10 +278,9 @@ from mypy_boto3_swf.type_defs import ActivityTypeDetailTypeDef
 
 Required fields:
 
-- `typeInfo`:
-  [ActivityTypeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypeinfotypedef)
+- `typeInfo`: [ActivityTypeInfoTypeDef](./type_defs.md#activitytypeinfotypedef)
 - `configuration`:
-  [ActivityTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypeconfigurationtypedef)
+  [ActivityTypeConfigurationTypeDef](./type_defs.md#activitytypeconfigurationtypedef)
 
 ## ActivityTypeInfoTypeDef
 
@@ -296,10 +290,8 @@ from mypy_boto3_swf.type_defs import ActivityTypeInfoTypeDef
 
 Required fields:
 
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
-- `status`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
+- `status`: [RegistrationStatus](./literals.md#registrationstatus)
 - `creationDate`: `datetime`
 
 Optional fields:
@@ -316,7 +308,7 @@ from mypy_boto3_swf.type_defs import ActivityTypeInfosTypeDef
 Required fields:
 
 - `typeInfos`:
-  `List`\[[ActivityTypeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypeinfotypedef)\]
+  `List`\[[ActivityTypeInfoTypeDef](./type_defs.md#activitytypeinfotypedef)\]
 
 Optional fields:
 
@@ -352,8 +344,7 @@ from mypy_boto3_swf.type_defs import CancelTimerFailedEventAttributesTypeDef
 Required fields:
 
 - `timerId`: `str`
-- `cause`:
-  [CancelTimerFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#canceltimerfailedcause)
+- `cause`: [CancelTimerFailedCause](./literals.md#canceltimerfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## CancelWorkflowExecutionDecisionAttributesTypeDef
@@ -375,7 +366,7 @@ from mypy_boto3_swf.type_defs import CancelWorkflowExecutionFailedEventAttribute
 Required fields:
 
 - `cause`:
-  [CancelWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#cancelworkflowexecutionfailedcause)
+  [CancelWorkflowExecutionFailedCause](./literals.md#cancelworkflowexecutionfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## ChildWorkflowExecutionCanceledEventAttributesTypeDef
@@ -387,9 +378,8 @@ from mypy_boto3_swf.type_defs import ChildWorkflowExecutionCanceledEventAttribut
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
@@ -406,9 +396,8 @@ from mypy_boto3_swf.type_defs import ChildWorkflowExecutionCompletedEventAttribu
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
@@ -425,9 +414,8 @@ from mypy_boto3_swf.type_defs import ChildWorkflowExecutionFailedEventAttributes
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
@@ -445,9 +433,8 @@ from mypy_boto3_swf.type_defs import ChildWorkflowExecutionStartedEventAttribute
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
 
 ## ChildWorkflowExecutionTerminatedEventAttributesTypeDef
@@ -459,9 +446,8 @@ from mypy_boto3_swf.type_defs import ChildWorkflowExecutionTerminatedEventAttrib
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
@@ -474,10 +460,10 @@ from mypy_boto3_swf.type_defs import ChildWorkflowExecutionTimedOutEventAttribut
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
-- `timeoutType`: `Literal['START_TO_CLOSE']`
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
+- `timeoutType`: `Literal['START_TO_CLOSE']` (see
+  [WorkflowExecutionTimeoutType](./literals.md#workflowexecutiontimeouttype))
 - `initiatedEventId`: `int`
 - `startedEventId`: `int`
 
@@ -489,8 +475,7 @@ from mypy_boto3_swf.type_defs import CloseStatusFilterTypeDef
 
 Required fields:
 
-- `status`:
-  [CloseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#closestatus)
+- `status`: [CloseStatus](./literals.md#closestatus)
 
 ## CompleteWorkflowExecutionDecisionAttributesTypeDef
 
@@ -511,7 +496,7 @@ from mypy_boto3_swf.type_defs import CompleteWorkflowExecutionFailedEventAttribu
 Required fields:
 
 - `cause`:
-  [CompleteWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#completeworkflowexecutionfailedcause)
+  [CompleteWorkflowExecutionFailedCause](./literals.md#completeworkflowexecutionfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## ContinueAsNewWorkflowExecutionDecisionAttributesTypeDef
@@ -524,12 +509,10 @@ Optional fields:
 
 - `input`: `str`
 - `executionStartToCloseTimeout`: `str`
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `taskPriority`: `str`
 - `taskStartToCloseTimeout`: `str`
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 - `tagList`: `List`\[`str`\]
 - `workflowTypeVersion`: `str`
 - `lambdaRole`: `str`
@@ -543,7 +526,7 @@ from mypy_boto3_swf.type_defs import ContinueAsNewWorkflowExecutionFailedEventAt
 Required fields:
 
 - `cause`:
-  [ContinueAsNewWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#continueasnewworkflowexecutionfailedcause)
+  [ContinueAsNewWorkflowExecutionFailedCause](./literals.md#continueasnewworkflowexecutionfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## DecisionTaskCompletedEventAttributesTypeDef
@@ -569,8 +552,7 @@ from mypy_boto3_swf.type_defs import DecisionTaskScheduledEventAttributesTypeDef
 
 Required fields:
 
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 
 Optional fields:
 
@@ -599,7 +581,8 @@ from mypy_boto3_swf.type_defs import DecisionTaskTimedOutEventAttributesTypeDef
 
 Required fields:
 
-- `timeoutType`: `Literal['START_TO_CLOSE']`
+- `timeoutType`: `Literal['START_TO_CLOSE']` (see
+  [DecisionTaskTimeoutType](./literals.md#decisiontasktimeouttype))
 - `scheduledEventId`: `int`
 - `startedEventId`: `int`
 
@@ -614,11 +597,9 @@ Required fields:
 - `taskToken`: `str`
 - `startedEventId`: `int`
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
-- `events`:
-  `List`\[[HistoryEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#historyeventtypedef)\]
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
+- `events`: `List`\[[HistoryEventTypeDef](./type_defs.md#historyeventtypedef)\]
 
 Optional fields:
 
@@ -633,37 +614,36 @@ from mypy_boto3_swf.type_defs import DecisionTypeDef
 
 Required fields:
 
-- `decisionType`:
-  [DecisionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#decisiontype)
+- `decisionType`: [DecisionType](./literals.md#decisiontype)
 
 Optional fields:
 
 - `scheduleActivityTaskDecisionAttributes`:
-  [ScheduleActivityTaskDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#scheduleactivitytaskdecisionattributestypedef)
+  [ScheduleActivityTaskDecisionAttributesTypeDef](./type_defs.md#scheduleactivitytaskdecisionattributestypedef)
 - `requestCancelActivityTaskDecisionAttributes`:
-  [RequestCancelActivityTaskDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#requestcancelactivitytaskdecisionattributestypedef)
+  [RequestCancelActivityTaskDecisionAttributesTypeDef](./type_defs.md#requestcancelactivitytaskdecisionattributestypedef)
 - `completeWorkflowExecutionDecisionAttributes`:
-  [CompleteWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#completeworkflowexecutiondecisionattributestypedef)
+  [CompleteWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#completeworkflowexecutiondecisionattributestypedef)
 - `failWorkflowExecutionDecisionAttributes`:
-  [FailWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#failworkflowexecutiondecisionattributestypedef)
+  [FailWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#failworkflowexecutiondecisionattributestypedef)
 - `cancelWorkflowExecutionDecisionAttributes`:
-  [CancelWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#cancelworkflowexecutiondecisionattributestypedef)
+  [CancelWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#cancelworkflowexecutiondecisionattributestypedef)
 - `continueAsNewWorkflowExecutionDecisionAttributes`:
-  [ContinueAsNewWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#continueasnewworkflowexecutiondecisionattributestypedef)
+  [ContinueAsNewWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#continueasnewworkflowexecutiondecisionattributestypedef)
 - `recordMarkerDecisionAttributes`:
-  [RecordMarkerDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#recordmarkerdecisionattributestypedef)
+  [RecordMarkerDecisionAttributesTypeDef](./type_defs.md#recordmarkerdecisionattributestypedef)
 - `startTimerDecisionAttributes`:
-  [StartTimerDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#starttimerdecisionattributestypedef)
+  [StartTimerDecisionAttributesTypeDef](./type_defs.md#starttimerdecisionattributestypedef)
 - `cancelTimerDecisionAttributes`:
-  [CancelTimerDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#canceltimerdecisionattributestypedef)
+  [CancelTimerDecisionAttributesTypeDef](./type_defs.md#canceltimerdecisionattributestypedef)
 - `signalExternalWorkflowExecutionDecisionAttributes`:
-  [SignalExternalWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#signalexternalworkflowexecutiondecisionattributestypedef)
+  [SignalExternalWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#signalexternalworkflowexecutiondecisionattributestypedef)
 - `requestCancelExternalWorkflowExecutionDecisionAttributes`:
-  [RequestCancelExternalWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#requestcancelexternalworkflowexecutiondecisionattributestypedef)
+  [RequestCancelExternalWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#requestcancelexternalworkflowexecutiondecisionattributestypedef)
 - `startChildWorkflowExecutionDecisionAttributes`:
-  [StartChildWorkflowExecutionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#startchildworkflowexecutiondecisionattributestypedef)
+  [StartChildWorkflowExecutionDecisionAttributesTypeDef](./type_defs.md#startchildworkflowexecutiondecisionattributestypedef)
 - `scheduleLambdaFunctionDecisionAttributes`:
-  [ScheduleLambdaFunctionDecisionAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#schedulelambdafunctiondecisionattributestypedef)
+  [ScheduleLambdaFunctionDecisionAttributesTypeDef](./type_defs.md#schedulelambdafunctiondecisionattributestypedef)
 
 ## DomainConfigurationTypeDef
 
@@ -683,10 +663,9 @@ from mypy_boto3_swf.type_defs import DomainDetailTypeDef
 
 Required fields:
 
-- `domainInfo`:
-  [DomainInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaininfotypedef)
+- `domainInfo`: [DomainInfoTypeDef](./type_defs.md#domaininfotypedef)
 - `configuration`:
-  [DomainConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domainconfigurationtypedef)
+  [DomainConfigurationTypeDef](./type_defs.md#domainconfigurationtypedef)
 
 ## DomainInfoTypeDef
 
@@ -697,8 +676,7 @@ from mypy_boto3_swf.type_defs import DomainInfoTypeDef
 Required fields:
 
 - `name`: `str`
-- `status`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `status`: [RegistrationStatus](./literals.md#registrationstatus)
 
 Optional fields:
 
@@ -713,8 +691,7 @@ from mypy_boto3_swf.type_defs import DomainInfosTypeDef
 
 Required fields:
 
-- `domainInfos`:
-  `List`\[[DomainInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#domaininfotypedef)\]
+- `domainInfos`: `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
 
 Optional fields:
 
@@ -743,7 +720,7 @@ from mypy_boto3_swf.type_defs import ExternalWorkflowExecutionCancelRequestedEve
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `initiatedEventId`: `int`
 
 ## ExternalWorkflowExecutionSignaledEventAttributesTypeDef
@@ -755,7 +732,7 @@ from mypy_boto3_swf.type_defs import ExternalWorkflowExecutionSignaledEventAttri
 Required fields:
 
 - `workflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `initiatedEventId`: `int`
 
 ## FailWorkflowExecutionDecisionAttributesTypeDef
@@ -778,7 +755,7 @@ from mypy_boto3_swf.type_defs import FailWorkflowExecutionFailedEventAttributesT
 Required fields:
 
 - `cause`:
-  [FailWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#failworkflowexecutionfailedcause)
+  [FailWorkflowExecutionFailedCause](./literals.md#failworkflowexecutionfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## HistoryEventTypeDef
@@ -790,120 +767,119 @@ from mypy_boto3_swf.type_defs import HistoryEventTypeDef
 Required fields:
 
 - `eventTimestamp`: `datetime`
-- `eventType`:
-  [EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#eventtype)
+- `eventType`: [EventType](./literals.md#eventtype)
 - `eventId`: `int`
 
 Optional fields:
 
 - `workflowExecutionStartedEventAttributes`:
-  [WorkflowExecutionStartedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionstartedeventattributestypedef)
+  [WorkflowExecutionStartedEventAttributesTypeDef](./type_defs.md#workflowexecutionstartedeventattributestypedef)
 - `workflowExecutionCompletedEventAttributes`:
-  [WorkflowExecutionCompletedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncompletedeventattributestypedef)
+  [WorkflowExecutionCompletedEventAttributesTypeDef](./type_defs.md#workflowexecutioncompletedeventattributestypedef)
 - `completeWorkflowExecutionFailedEventAttributes`:
-  [CompleteWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#completeworkflowexecutionfailedeventattributestypedef)
+  [CompleteWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#completeworkflowexecutionfailedeventattributestypedef)
 - `workflowExecutionFailedEventAttributes`:
-  [WorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionfailedeventattributestypedef)
+  [WorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#workflowexecutionfailedeventattributestypedef)
 - `failWorkflowExecutionFailedEventAttributes`:
-  [FailWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#failworkflowexecutionfailedeventattributestypedef)
+  [FailWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#failworkflowexecutionfailedeventattributestypedef)
 - `workflowExecutionTimedOutEventAttributes`:
-  [WorkflowExecutionTimedOutEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontimedouteventattributestypedef)
+  [WorkflowExecutionTimedOutEventAttributesTypeDef](./type_defs.md#workflowexecutiontimedouteventattributestypedef)
 - `workflowExecutionCanceledEventAttributes`:
-  [WorkflowExecutionCanceledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncanceledeventattributestypedef)
+  [WorkflowExecutionCanceledEventAttributesTypeDef](./type_defs.md#workflowexecutioncanceledeventattributestypedef)
 - `cancelWorkflowExecutionFailedEventAttributes`:
-  [CancelWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#cancelworkflowexecutionfailedeventattributestypedef)
+  [CancelWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#cancelworkflowexecutionfailedeventattributestypedef)
 - `workflowExecutionContinuedAsNewEventAttributes`:
-  [WorkflowExecutionContinuedAsNewEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncontinuedasneweventattributestypedef)
+  [WorkflowExecutionContinuedAsNewEventAttributesTypeDef](./type_defs.md#workflowexecutioncontinuedasneweventattributestypedef)
 - `continueAsNewWorkflowExecutionFailedEventAttributes`:
-  [ContinueAsNewWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#continueasnewworkflowexecutionfailedeventattributestypedef)
+  [ContinueAsNewWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#continueasnewworkflowexecutionfailedeventattributestypedef)
 - `workflowExecutionTerminatedEventAttributes`:
-  [WorkflowExecutionTerminatedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionterminatedeventattributestypedef)
+  [WorkflowExecutionTerminatedEventAttributesTypeDef](./type_defs.md#workflowexecutionterminatedeventattributestypedef)
 - `workflowExecutionCancelRequestedEventAttributes`:
-  [WorkflowExecutionCancelRequestedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioncancelrequestedeventattributestypedef)
+  [WorkflowExecutionCancelRequestedEventAttributesTypeDef](./type_defs.md#workflowexecutioncancelrequestedeventattributestypedef)
 - `decisionTaskScheduledEventAttributes`:
-  [DecisionTaskScheduledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontaskscheduledeventattributestypedef)
+  [DecisionTaskScheduledEventAttributesTypeDef](./type_defs.md#decisiontaskscheduledeventattributestypedef)
 - `decisionTaskStartedEventAttributes`:
-  [DecisionTaskStartedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontaskstartedeventattributestypedef)
+  [DecisionTaskStartedEventAttributesTypeDef](./type_defs.md#decisiontaskstartedeventattributestypedef)
 - `decisionTaskCompletedEventAttributes`:
-  [DecisionTaskCompletedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontaskcompletedeventattributestypedef)
+  [DecisionTaskCompletedEventAttributesTypeDef](./type_defs.md#decisiontaskcompletedeventattributestypedef)
 - `decisionTaskTimedOutEventAttributes`:
-  [DecisionTaskTimedOutEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#decisiontasktimedouteventattributestypedef)
+  [DecisionTaskTimedOutEventAttributesTypeDef](./type_defs.md#decisiontasktimedouteventattributestypedef)
 - `activityTaskScheduledEventAttributes`:
-  [ActivityTaskScheduledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskscheduledeventattributestypedef)
+  [ActivityTaskScheduledEventAttributesTypeDef](./type_defs.md#activitytaskscheduledeventattributestypedef)
 - `activityTaskStartedEventAttributes`:
-  [ActivityTaskStartedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskstartedeventattributestypedef)
+  [ActivityTaskStartedEventAttributesTypeDef](./type_defs.md#activitytaskstartedeventattributestypedef)
 - `activityTaskCompletedEventAttributes`:
-  [ActivityTaskCompletedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskcompletedeventattributestypedef)
+  [ActivityTaskCompletedEventAttributesTypeDef](./type_defs.md#activitytaskcompletedeventattributestypedef)
 - `activityTaskFailedEventAttributes`:
-  [ActivityTaskFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskfailedeventattributestypedef)
+  [ActivityTaskFailedEventAttributesTypeDef](./type_defs.md#activitytaskfailedeventattributestypedef)
 - `activityTaskTimedOutEventAttributes`:
-  [ActivityTaskTimedOutEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytasktimedouteventattributestypedef)
+  [ActivityTaskTimedOutEventAttributesTypeDef](./type_defs.md#activitytasktimedouteventattributestypedef)
 - `activityTaskCanceledEventAttributes`:
-  [ActivityTaskCanceledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskcanceledeventattributestypedef)
+  [ActivityTaskCanceledEventAttributesTypeDef](./type_defs.md#activitytaskcanceledeventattributestypedef)
 - `activityTaskCancelRequestedEventAttributes`:
-  [ActivityTaskCancelRequestedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytaskcancelrequestedeventattributestypedef)
+  [ActivityTaskCancelRequestedEventAttributesTypeDef](./type_defs.md#activitytaskcancelrequestedeventattributestypedef)
 - `workflowExecutionSignaledEventAttributes`:
-  [WorkflowExecutionSignaledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionsignaledeventattributestypedef)
+  [WorkflowExecutionSignaledEventAttributesTypeDef](./type_defs.md#workflowexecutionsignaledeventattributestypedef)
 - `markerRecordedEventAttributes`:
-  [MarkerRecordedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#markerrecordedeventattributestypedef)
+  [MarkerRecordedEventAttributesTypeDef](./type_defs.md#markerrecordedeventattributestypedef)
 - `recordMarkerFailedEventAttributes`:
-  [RecordMarkerFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#recordmarkerfailedeventattributestypedef)
+  [RecordMarkerFailedEventAttributesTypeDef](./type_defs.md#recordmarkerfailedeventattributestypedef)
 - `timerStartedEventAttributes`:
-  [TimerStartedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#timerstartedeventattributestypedef)
+  [TimerStartedEventAttributesTypeDef](./type_defs.md#timerstartedeventattributestypedef)
 - `timerFiredEventAttributes`:
-  [TimerFiredEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#timerfiredeventattributestypedef)
+  [TimerFiredEventAttributesTypeDef](./type_defs.md#timerfiredeventattributestypedef)
 - `timerCanceledEventAttributes`:
-  [TimerCanceledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#timercanceledeventattributestypedef)
+  [TimerCanceledEventAttributesTypeDef](./type_defs.md#timercanceledeventattributestypedef)
 - `startChildWorkflowExecutionInitiatedEventAttributes`:
-  [StartChildWorkflowExecutionInitiatedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#startchildworkflowexecutioninitiatedeventattributestypedef)
+  [StartChildWorkflowExecutionInitiatedEventAttributesTypeDef](./type_defs.md#startchildworkflowexecutioninitiatedeventattributestypedef)
 - `childWorkflowExecutionStartedEventAttributes`:
-  [ChildWorkflowExecutionStartedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#childworkflowexecutionstartedeventattributestypedef)
+  [ChildWorkflowExecutionStartedEventAttributesTypeDef](./type_defs.md#childworkflowexecutionstartedeventattributestypedef)
 - `childWorkflowExecutionCompletedEventAttributes`:
-  [ChildWorkflowExecutionCompletedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#childworkflowexecutioncompletedeventattributestypedef)
+  [ChildWorkflowExecutionCompletedEventAttributesTypeDef](./type_defs.md#childworkflowexecutioncompletedeventattributestypedef)
 - `childWorkflowExecutionFailedEventAttributes`:
-  [ChildWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#childworkflowexecutionfailedeventattributestypedef)
+  [ChildWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#childworkflowexecutionfailedeventattributestypedef)
 - `childWorkflowExecutionTimedOutEventAttributes`:
-  [ChildWorkflowExecutionTimedOutEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#childworkflowexecutiontimedouteventattributestypedef)
+  [ChildWorkflowExecutionTimedOutEventAttributesTypeDef](./type_defs.md#childworkflowexecutiontimedouteventattributestypedef)
 - `childWorkflowExecutionCanceledEventAttributes`:
-  [ChildWorkflowExecutionCanceledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#childworkflowexecutioncanceledeventattributestypedef)
+  [ChildWorkflowExecutionCanceledEventAttributesTypeDef](./type_defs.md#childworkflowexecutioncanceledeventattributestypedef)
 - `childWorkflowExecutionTerminatedEventAttributes`:
-  [ChildWorkflowExecutionTerminatedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#childworkflowexecutionterminatedeventattributestypedef)
+  [ChildWorkflowExecutionTerminatedEventAttributesTypeDef](./type_defs.md#childworkflowexecutionterminatedeventattributestypedef)
 - `signalExternalWorkflowExecutionInitiatedEventAttributes`:
-  [SignalExternalWorkflowExecutionInitiatedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#signalexternalworkflowexecutioninitiatedeventattributestypedef)
+  [SignalExternalWorkflowExecutionInitiatedEventAttributesTypeDef](./type_defs.md#signalexternalworkflowexecutioninitiatedeventattributestypedef)
 - `externalWorkflowExecutionSignaledEventAttributes`:
-  [ExternalWorkflowExecutionSignaledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#externalworkflowexecutionsignaledeventattributestypedef)
+  [ExternalWorkflowExecutionSignaledEventAttributesTypeDef](./type_defs.md#externalworkflowexecutionsignaledeventattributestypedef)
 - `signalExternalWorkflowExecutionFailedEventAttributes`:
-  [SignalExternalWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#signalexternalworkflowexecutionfailedeventattributestypedef)
+  [SignalExternalWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#signalexternalworkflowexecutionfailedeventattributestypedef)
 - `externalWorkflowExecutionCancelRequestedEventAttributes`:
-  [ExternalWorkflowExecutionCancelRequestedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#externalworkflowexecutioncancelrequestedeventattributestypedef)
+  [ExternalWorkflowExecutionCancelRequestedEventAttributesTypeDef](./type_defs.md#externalworkflowexecutioncancelrequestedeventattributestypedef)
 - `requestCancelExternalWorkflowExecutionInitiatedEventAttributes`:
-  [RequestCancelExternalWorkflowExecutionInitiatedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#requestcancelexternalworkflowexecutioninitiatedeventattributestypedef)
+  [RequestCancelExternalWorkflowExecutionInitiatedEventAttributesTypeDef](./type_defs.md#requestcancelexternalworkflowexecutioninitiatedeventattributestypedef)
 - `requestCancelExternalWorkflowExecutionFailedEventAttributes`:
-  [RequestCancelExternalWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#requestcancelexternalworkflowexecutionfailedeventattributestypedef)
+  [RequestCancelExternalWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#requestcancelexternalworkflowexecutionfailedeventattributestypedef)
 - `scheduleActivityTaskFailedEventAttributes`:
-  [ScheduleActivityTaskFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#scheduleactivitytaskfailedeventattributestypedef)
+  [ScheduleActivityTaskFailedEventAttributesTypeDef](./type_defs.md#scheduleactivitytaskfailedeventattributestypedef)
 - `requestCancelActivityTaskFailedEventAttributes`:
-  [RequestCancelActivityTaskFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#requestcancelactivitytaskfailedeventattributestypedef)
+  [RequestCancelActivityTaskFailedEventAttributesTypeDef](./type_defs.md#requestcancelactivitytaskfailedeventattributestypedef)
 - `startTimerFailedEventAttributes`:
-  [StartTimerFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#starttimerfailedeventattributestypedef)
+  [StartTimerFailedEventAttributesTypeDef](./type_defs.md#starttimerfailedeventattributestypedef)
 - `cancelTimerFailedEventAttributes`:
-  [CancelTimerFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#canceltimerfailedeventattributestypedef)
+  [CancelTimerFailedEventAttributesTypeDef](./type_defs.md#canceltimerfailedeventattributestypedef)
 - `startChildWorkflowExecutionFailedEventAttributes`:
-  [StartChildWorkflowExecutionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#startchildworkflowexecutionfailedeventattributestypedef)
+  [StartChildWorkflowExecutionFailedEventAttributesTypeDef](./type_defs.md#startchildworkflowexecutionfailedeventattributestypedef)
 - `lambdaFunctionScheduledEventAttributes`:
-  [LambdaFunctionScheduledEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#lambdafunctionscheduledeventattributestypedef)
+  [LambdaFunctionScheduledEventAttributesTypeDef](./type_defs.md#lambdafunctionscheduledeventattributestypedef)
 - `lambdaFunctionStartedEventAttributes`:
-  [LambdaFunctionStartedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#lambdafunctionstartedeventattributestypedef)
+  [LambdaFunctionStartedEventAttributesTypeDef](./type_defs.md#lambdafunctionstartedeventattributestypedef)
 - `lambdaFunctionCompletedEventAttributes`:
-  [LambdaFunctionCompletedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#lambdafunctioncompletedeventattributestypedef)
+  [LambdaFunctionCompletedEventAttributesTypeDef](./type_defs.md#lambdafunctioncompletedeventattributestypedef)
 - `lambdaFunctionFailedEventAttributes`:
-  [LambdaFunctionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#lambdafunctionfailedeventattributestypedef)
+  [LambdaFunctionFailedEventAttributesTypeDef](./type_defs.md#lambdafunctionfailedeventattributestypedef)
 - `lambdaFunctionTimedOutEventAttributes`:
-  [LambdaFunctionTimedOutEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#lambdafunctiontimedouteventattributestypedef)
+  [LambdaFunctionTimedOutEventAttributesTypeDef](./type_defs.md#lambdafunctiontimedouteventattributestypedef)
 - `scheduleLambdaFunctionFailedEventAttributes`:
-  [ScheduleLambdaFunctionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#schedulelambdafunctionfailedeventattributestypedef)
+  [ScheduleLambdaFunctionFailedEventAttributesTypeDef](./type_defs.md#schedulelambdafunctionfailedeventattributestypedef)
 - `startLambdaFunctionFailedEventAttributes`:
-  [StartLambdaFunctionFailedEventAttributesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#startlambdafunctionfailedeventattributestypedef)
+  [StartLambdaFunctionFailedEventAttributesTypeDef](./type_defs.md#startlambdafunctionfailedeventattributestypedef)
 
 ## HistoryTypeDef
 
@@ -913,8 +889,7 @@ from mypy_boto3_swf.type_defs import HistoryTypeDef
 
 Required fields:
 
-- `events`:
-  `List`\[[HistoryEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#historyeventtypedef)\]
+- `events`: `List`\[[HistoryEventTypeDef](./type_defs.md#historyeventtypedef)\]
 
 Optional fields:
 
@@ -992,7 +967,8 @@ Required fields:
 
 Optional fields:
 
-- `timeoutType`: `Literal['START_TO_CLOSE']`
+- `timeoutType`: `Literal['START_TO_CLOSE']` (see
+  [LambdaFunctionTimeoutType](./literals.md#lambdafunctiontimeouttype))
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1002,10 +978,9 @@ from mypy_boto3_swf.type_defs import ListTagsForResourceOutputTypeDef
 
 Required fields:
 
-- `tags`:
-  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#resourcetagtypedef)\]
+- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MarkerRecordedEventAttributesTypeDef
 
@@ -1071,7 +1046,8 @@ from mypy_boto3_swf.type_defs import RecordMarkerFailedEventAttributesTypeDef
 Required fields:
 
 - `markerName`: `str`
-- `cause`: `Literal['OPERATION_NOT_PERMITTED']`
+- `cause`: `Literal['OPERATION_NOT_PERMITTED']` (see
+  [RecordMarkerFailedCause](./literals.md#recordmarkerfailedcause))
 - `decisionTaskCompletedEventId`: `int`
 
 ## RequestCancelActivityTaskDecisionAttributesTypeDef
@@ -1094,7 +1070,7 @@ Required fields:
 
 - `activityId`: `str`
 - `cause`:
-  [RequestCancelActivityTaskFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#requestcancelactivitytaskfailedcause)
+  [RequestCancelActivityTaskFailedCause](./literals.md#requestcancelactivitytaskfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## RequestCancelExternalWorkflowExecutionDecisionAttributesTypeDef
@@ -1122,7 +1098,7 @@ Required fields:
 
 - `workflowId`: `str`
 - `cause`:
-  [RequestCancelExternalWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#requestcancelexternalworkflowexecutionfailedcause)
+  [RequestCancelExternalWorkflowExecutionFailedCause](./literals.md#requestcancelexternalworkflowexecutionfailedcause)
 - `initiatedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
 
@@ -1161,10 +1137,10 @@ Optional fields:
 
 - `value`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_swf.type_defs import ResponseMetadata
+from mypy_boto3_swf.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1193,8 +1169,7 @@ from mypy_boto3_swf.type_defs import ScheduleActivityTaskDecisionAttributesTypeD
 
 Required fields:
 
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 - `activityId`: `str`
 
 Optional fields:
@@ -1202,8 +1177,7 @@ Optional fields:
 - `control`: `str`
 - `input`: `str`
 - `scheduleToCloseTimeout`: `str`
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `taskPriority`: `str`
 - `scheduleToStartTimeout`: `str`
 - `startToCloseTimeout`: `str`
@@ -1217,11 +1191,10 @@ from mypy_boto3_swf.type_defs import ScheduleActivityTaskFailedEventAttributesTy
 
 Required fields:
 
-- `activityType`:
-  [ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#activitytypetypedef)
+- `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
 - `activityId`: `str`
 - `cause`:
-  [ScheduleActivityTaskFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#scheduleactivitytaskfailedcause)
+  [ScheduleActivityTaskFailedCause](./literals.md#scheduleactivitytaskfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## ScheduleLambdaFunctionDecisionAttributesTypeDef
@@ -1252,7 +1225,7 @@ Required fields:
 - `id`: `str`
 - `name`: `str`
 - `cause`:
-  [ScheduleLambdaFunctionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#schedulelambdafunctionfailedcause)
+  [ScheduleLambdaFunctionFailedCause](./literals.md#schedulelambdafunctionfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## SignalExternalWorkflowExecutionDecisionAttributesTypeDef
@@ -1282,7 +1255,7 @@ Required fields:
 
 - `workflowId`: `str`
 - `cause`:
-  [SignalExternalWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#signalexternalworkflowexecutionfailedcause)
+  [SignalExternalWorkflowExecutionFailedCause](./literals.md#signalexternalworkflowexecutionfailedcause)
 - `initiatedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
 
@@ -1317,8 +1290,7 @@ from mypy_boto3_swf.type_defs import StartChildWorkflowExecutionDecisionAttribut
 
 Required fields:
 
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `workflowId`: `str`
 
 Optional fields:
@@ -1326,12 +1298,10 @@ Optional fields:
 - `control`: `str`
 - `input`: `str`
 - `executionStartToCloseTimeout`: `str`
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `taskPriority`: `str`
 - `taskStartToCloseTimeout`: `str`
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 - `tagList`: `List`\[`str`\]
 - `lambdaRole`: `str`
 
@@ -1343,10 +1313,9 @@ from mypy_boto3_swf.type_defs import StartChildWorkflowExecutionFailedEventAttri
 
 Required fields:
 
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `cause`:
-  [StartChildWorkflowExecutionFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#startchildworkflowexecutionfailedcause)
+  [StartChildWorkflowExecutionFailedCause](./literals.md#startchildworkflowexecutionfailedcause)
 - `workflowId`: `str`
 - `initiatedEventId`: `int`
 - `decisionTaskCompletedEventId`: `int`
@@ -1364,13 +1333,10 @@ from mypy_boto3_swf.type_defs import StartChildWorkflowExecutionInitiatedEventAt
 Required fields:
 
 - `workflowId`: `str`
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `decisionTaskCompletedEventId`: `int`
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 
 Optional fields:
 
@@ -1391,7 +1357,8 @@ from mypy_boto3_swf.type_defs import StartLambdaFunctionFailedEventAttributesTyp
 Optional fields:
 
 - `scheduledEventId`: `int`
-- `cause`: `Literal['ASSUME_ROLE_FAILED']`
+- `cause`: `Literal['ASSUME_ROLE_FAILED']` (see
+  [StartLambdaFunctionFailedCause](./literals.md#startlambdafunctionfailedcause))
 - `message`: `str`
 
 ## StartTimerDecisionAttributesTypeDef
@@ -1418,8 +1385,7 @@ from mypy_boto3_swf.type_defs import StartTimerFailedEventAttributesTypeDef
 Required fields:
 
 - `timerId`: `str`
-- `cause`:
-  [StartTimerFailedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#starttimerfailedcause)
+- `cause`: [StartTimerFailedCause](./literals.md#starttimerfailedcause)
 - `decisionTaskCompletedEventId`: `int`
 
 ## TagFilterTypeDef
@@ -1490,9 +1456,10 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionCancelRequestedEventAttrib
 Optional fields:
 
 - `externalWorkflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `externalInitiatedEventId`: `int`
-- `cause`: `Literal['CHILD_POLICY_APPLIED']`
+- `cause`: `Literal['CHILD_POLICY_APPLIED']` (see
+  [WorkflowExecutionCancelRequestedCause](./literals.md#workflowexecutioncancelrequestedcause))
 
 ## WorkflowExecutionCanceledEventAttributesTypeDef
 
@@ -1532,10 +1499,8 @@ Required fields:
 
 - `taskStartToCloseTimeout`: `str`
 - `executionStartToCloseTimeout`: `str`
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 
 Optional fields:
 
@@ -1552,12 +1517,9 @@ Required fields:
 
 - `decisionTaskCompletedEventId`: `int`
 - `newExecutionRunId`: `str`
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
 Optional fields:
 
@@ -1591,11 +1553,11 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionDetailTypeDef
 Required fields:
 
 - `executionInfo`:
-  [WorkflowExecutionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfotypedef)
+  [WorkflowExecutionInfoTypeDef](./type_defs.md#workflowexecutioninfotypedef)
 - `executionConfiguration`:
-  [WorkflowExecutionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionconfigurationtypedef)
+  [WorkflowExecutionConfigurationTypeDef](./type_defs.md#workflowexecutionconfigurationtypedef)
 - `openCounts`:
-  [WorkflowExecutionOpenCountsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutionopencountstypedef)
+  [WorkflowExecutionOpenCountsTypeDef](./type_defs.md#workflowexecutionopencountstypedef)
 
 Optional fields:
 
@@ -1636,20 +1598,16 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionInfoTypeDef
 Required fields:
 
 - `execution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 - `startTimestamp`: `datetime`
-- `executionStatus`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#executionstatus)
+- `executionStatus`: [ExecutionStatus](./literals.md#executionstatus)
 
 Optional fields:
 
 - `closeTimestamp`: `datetime`
-- `closeStatus`:
-  [CloseStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#closestatus)
-- `parent`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+- `closeStatus`: [CloseStatus](./literals.md#closestatus)
+- `parent`: [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `tagList`: `List`\[`str`\]
 - `cancelRequested`: `bool`
 
@@ -1662,7 +1620,7 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionInfosTypeDef
 Required fields:
 
 - `executionInfos`:
-  `List`\[[WorkflowExecutionInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutioninfotypedef)\]
+  `List`\[[WorkflowExecutionInfoTypeDef](./type_defs.md#workflowexecutioninfotypedef)\]
 
 Optional fields:
 
@@ -1699,7 +1657,7 @@ Optional fields:
 
 - `input`: `str`
 - `externalWorkflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `externalInitiatedEventId`: `int`
 
 ## WorkflowExecutionStartedEventAttributesTypeDef
@@ -1710,12 +1668,9 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionStartedEventAttributesType
 
 Required fields:
 
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
-- `taskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
+- `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
 
 Optional fields:
 
@@ -1726,7 +1681,7 @@ Optional fields:
 - `tagList`: `List`\[`str`\]
 - `continuedExecutionRunId`: `str`
 - `parentWorkflowExecution`:
-  [WorkflowExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowexecutiontypedef)
+  [WorkflowExecutionTypeDef](./type_defs.md#workflowexecutiontypedef)
 - `parentInitiatedEventId`: `int`
 - `lambdaRole`: `str`
 
@@ -1738,15 +1693,14 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionTerminatedEventAttributesT
 
 Required fields:
 
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 
 Optional fields:
 
 - `reason`: `str`
 - `details`: `str`
 - `cause`:
-  [WorkflowExecutionTerminatedCause](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#workflowexecutionterminatedcause)
+  [WorkflowExecutionTerminatedCause](./literals.md#workflowexecutionterminatedcause)
 
 ## WorkflowExecutionTimedOutEventAttributesTypeDef
 
@@ -1756,9 +1710,9 @@ from mypy_boto3_swf.type_defs import WorkflowExecutionTimedOutEventAttributesTyp
 
 Required fields:
 
-- `timeoutType`: `Literal['START_TO_CLOSE']`
-- `childPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `timeoutType`: `Literal['START_TO_CLOSE']` (see
+  [WorkflowExecutionTimeoutType](./literals.md#workflowexecutiontimeouttype))
+- `childPolicy`: [ChildPolicy](./literals.md#childpolicy)
 
 ## WorkflowExecutionTypeDef
 
@@ -1781,11 +1735,9 @@ Optional fields:
 
 - `defaultTaskStartToCloseTimeout`: `str`
 - `defaultExecutionStartToCloseTimeout`: `str`
-- `defaultTaskList`:
-  [TaskListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#tasklisttypedef)
+- `defaultTaskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef)
 - `defaultTaskPriority`: `str`
-- `defaultChildPolicy`:
-  [ChildPolicy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#childpolicy)
+- `defaultChildPolicy`: [ChildPolicy](./literals.md#childpolicy)
 - `defaultLambdaRole`: `str`
 
 ## WorkflowTypeDetailTypeDef
@@ -1796,10 +1748,9 @@ from mypy_boto3_swf.type_defs import WorkflowTypeDetailTypeDef
 
 Required fields:
 
-- `typeInfo`:
-  [WorkflowTypeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypeinfotypedef)
+- `typeInfo`: [WorkflowTypeInfoTypeDef](./type_defs.md#workflowtypeinfotypedef)
 - `configuration`:
-  [WorkflowTypeConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypeconfigurationtypedef)
+  [WorkflowTypeConfigurationTypeDef](./type_defs.md#workflowtypeconfigurationtypedef)
 
 ## WorkflowTypeFilterTypeDef
 
@@ -1823,10 +1774,8 @@ from mypy_boto3_swf.type_defs import WorkflowTypeInfoTypeDef
 
 Required fields:
 
-- `workflowType`:
-  [WorkflowTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypetypedef)
-- `status`:
-  [RegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/literals.html#registrationstatus)
+- `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
+- `status`: [RegistrationStatus](./literals.md#registrationstatus)
 - `creationDate`: `datetime`
 
 Optional fields:
@@ -1843,7 +1792,7 @@ from mypy_boto3_swf.type_defs import WorkflowTypeInfosTypeDef
 Required fields:
 
 - `typeInfos`:
-  `List`\[[WorkflowTypeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_swf/type_defs.html#workflowtypeinfotypedef)\]
+  `List`\[[WorkflowTypeInfoTypeDef](./type_defs.md#workflowtypeinfotypedef)\]
 
 Optional fields:
 

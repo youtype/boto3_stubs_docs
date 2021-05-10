@@ -1,6 +1,6 @@
 # ShieldClient for boto3 Shield module
 
-> [Index](../README.md) > [Shield](./README.md) > ShieldClient
+> [Index](..) > [Shield](.) > ShieldClient
 
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
@@ -146,7 +146,7 @@ Boto3 documentation:
 Arguments:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#emergencycontacttypedef)\]
+  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -175,11 +175,10 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProtectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#createprotectionresponsetypedef).
+[CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef).
 
 ### create_protection_group
 
@@ -192,16 +191,13 @@ Arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 - `Aggregation`:
-  [ProtectionGroupAggregation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectiongroupaggregation)
+  [ProtectionGroupAggregation](./literals.md#protectiongroupaggregation)
   *(required)*
-- `Pattern`:
-  [ProtectionGroupPattern](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectiongrouppattern)
+- `Pattern`: [ProtectionGroupPattern](./literals.md#protectiongrouppattern)
   *(required)*
-- `ResourceType`:
-  [ProtectedResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectedresourcetype)
+- `ResourceType`: [ProtectedResourceType](./literals.md#protectedresourcetype)
 - `Members`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -261,7 +257,7 @@ Arguments:
 - `AttackId`: `str` *(required)*
 
 Returns
-[DescribeAttackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describeattackresponsetypedef).
+[DescribeAttackResponseTypeDef](./type_defs.md#describeattackresponsetypedef).
 
 ### describe_attack_statistics
 
@@ -272,7 +268,7 @@ Boto3 documentation:
 [Shield.Client.describe_attack_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack_statistics)
 
 Returns
-[DescribeAttackStatisticsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describeattackstatisticsresponsetypedef).
+[DescribeAttackStatisticsResponseTypeDef](./type_defs.md#describeattackstatisticsresponsetypedef).
 
 ### describe_drt_access
 
@@ -282,7 +278,7 @@ Boto3 documentation:
 [Shield.Client.describe_drt_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_drt_access)
 
 Returns
-[DescribeDRTAccessResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describedrtaccessresponsetypedef).
+[DescribeDRTAccessResponseTypeDef](./type_defs.md#describedrtaccessresponsetypedef).
 
 ### describe_emergency_contact_settings
 
@@ -293,7 +289,7 @@ Boto3 documentation:
 [Shield.Client.describe_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
 
 Returns
-[DescribeEmergencyContactSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describeemergencycontactsettingsresponsetypedef).
+[DescribeEmergencyContactSettingsResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponsetypedef).
 
 ### describe_protection
 
@@ -308,7 +304,7 @@ Arguments:
 - `ResourceArn`: `str`
 
 Returns
-[DescribeProtectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describeprotectionresponsetypedef).
+[DescribeProtectionResponseTypeDef](./type_defs.md#describeprotectionresponsetypedef).
 
 ### describe_protection_group
 
@@ -322,7 +318,7 @@ Arguments:
 - `ProtectionGroupId`: `str` *(required)*
 
 Returns
-[DescribeProtectionGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describeprotectiongroupresponsetypedef).
+[DescribeProtectionGroupResponseTypeDef](./type_defs.md#describeprotectiongroupresponsetypedef).
 
 ### describe_subscription
 
@@ -332,7 +328,7 @@ Boto3 documentation:
 [Shield.Client.describe_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_subscription)
 
 Returns
-[DescribeSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#describesubscriptionresponsetypedef).
+[DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef).
 
 ### disable_proactive_engagement
 
@@ -415,7 +411,7 @@ Boto3 documentation:
 [Shield.Client.get_subscription_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.get_subscription_state)
 
 Returns
-[GetSubscriptionStateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#getsubscriptionstateresponsetypedef).
+[GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef).
 
 ### list_attacks
 
@@ -427,15 +423,13 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArns`: `List`\[`str`\]
-- `StartTime`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#timerangetypedef)
-- `EndTime`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#timerangetypedef)
+- `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListAttacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listattacksresponsetypedef).
+[ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef).
 
 ### list_protection_groups
 
@@ -450,7 +444,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProtectionGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listprotectiongroupsresponsetypedef).
+[ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef).
 
 ### list_protections
 
@@ -465,7 +459,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProtectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listprotectionsresponsetypedef).
+[ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef).
 
 ### list_resources_in_protection_group
 
@@ -482,7 +476,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListResourcesInProtectionGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listresourcesinprotectiongroupresponsetypedef).
+[ListResourcesInProtectionGroupResponseTypeDef](./type_defs.md#listresourcesinprotectiongroupresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -496,7 +490,7 @@ Arguments:
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -508,9 +502,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -539,7 +531,7 @@ Boto3 documentation:
 Arguments:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#emergencycontacttypedef)\]
+  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -554,13 +546,11 @@ Arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 - `Aggregation`:
-  [ProtectionGroupAggregation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectiongroupaggregation)
+  [ProtectionGroupAggregation](./literals.md#protectiongroupaggregation)
   *(required)*
-- `Pattern`:
-  [ProtectionGroupPattern](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectiongrouppattern)
+- `Pattern`: [ProtectionGroupPattern](./literals.md#protectiongrouppattern)
   *(required)*
-- `ResourceType`:
-  [ProtectedResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectedresourcetype)
+- `ResourceType`: [ProtectedResourceType](./literals.md#protectedresourcetype)
 - `Members`: `List`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -574,8 +564,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `AutoRenew`:
-  [AutoRenew](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#autorenew)
+- `AutoRenew`: [AutoRenew](./literals.md#autorenew)
 
 Returns `Dict`\[`str`, `Any`\].
 

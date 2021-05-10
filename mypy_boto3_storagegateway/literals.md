@@ -1,6 +1,6 @@
 # Literals for boto3 StorageGateway module
 
-> [Index](../README.md) > [StorageGateway](./README.md) > Literals
+> [Index](..) > [StorageGateway](.) > Literals
 
 Auto-generated documentation for
 [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)

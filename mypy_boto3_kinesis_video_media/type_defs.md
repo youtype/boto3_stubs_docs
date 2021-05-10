@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 KinesisVideoMedia module
 
-> [Index](../README.md) > [KinesisVideoMedia](./README.md) > Structures
+> [Index](..) > [KinesisVideoMedia](.) > Typed dictionaries
 
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
@@ -9,7 +9,7 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 KinesisVideoMedia module](#typed-dictionaries-for-boto3-kinesisvideomedia-module)
   - [GetMediaOutputTypeDef](#getmediaoutputtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StartSelectorTypeDef](#startselectortypedef)
 
 ## GetMediaOutputTypeDef
@@ -23,12 +23,12 @@ Required fields:
 - `ContentType`: `str`
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_media/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_media.type_defs import ResponseMetadata
+from mypy_boto3_kinesis_video_media.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -47,8 +47,7 @@ from mypy_boto3_kinesis_video_media.type_defs import StartSelectorTypeDef
 
 Required fields:
 
-- `StartSelectorType`:
-  [StartSelectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_media/literals.html#startselectortype)
+- `StartSelectorType`: [StartSelectorType](./literals.md#startselectortype)
 
 Optional fields:
 

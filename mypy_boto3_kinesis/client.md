@@ -1,6 +1,6 @@
 # KinesisClient for boto3 Kinesis module
 
-> [Index](../README.md) > [Kinesis](./README.md) > KinesisClient
+> [Index](..) > [Kinesis](.) > KinesisClient
 
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
@@ -176,7 +176,7 @@ Boto3 documentation:
 [Kinesis.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_limits)
 
 Returns
-[DescribeLimitsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#describelimitsoutputtypedef).
+[DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
 
 ### describe_stream
 
@@ -192,7 +192,7 @@ Arguments:
 - `ExclusiveStartShardId`: `str`
 
 Returns
-[DescribeStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#describestreamoutputtypedef).
+[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
 ### describe_stream_consumer
 
@@ -208,7 +208,7 @@ Arguments:
 - `ConsumerARN`: `str`
 
 Returns
-[DescribeStreamConsumerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#describestreamconsumeroutputtypedef).
+[DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef).
 
 ### describe_stream_summary
 
@@ -222,7 +222,7 @@ Arguments:
 - `StreamName`: `str` *(required)*
 
 Returns
-[DescribeStreamSummaryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#describestreamsummaryoutputtypedef).
+[DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef).
 
 ### disable_enhanced_monitoring
 
@@ -235,12 +235,11 @@ Boto3 documentation:
 Arguments:
 
 - `StreamName`: `str` *(required)*
-- `ShardLevelMetrics`:
-  `List`\[[MetricsName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#metricsname)\]
+- `ShardLevelMetrics`: `List`\[[MetricsName](./literals.md#metricsname)\]
   *(required)*
 
 Returns
-[EnhancedMonitoringOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#enhancedmonitoringoutputtypedef).
+[EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
 ### enable_enhanced_monitoring
 
@@ -253,12 +252,11 @@ Boto3 documentation:
 Arguments:
 
 - `StreamName`: `str` *(required)*
-- `ShardLevelMetrics`:
-  `List`\[[MetricsName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#metricsname)\]
+- `ShardLevelMetrics`: `List`\[[MetricsName](./literals.md#metricsname)\]
   *(required)*
 
 Returns
-[EnhancedMonitoringOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#enhancedmonitoringoutputtypedef).
+[EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
 ### generate_presigned_url
 
@@ -288,8 +286,7 @@ Arguments:
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`
 
-Returns
-[GetRecordsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#getrecordsoutputtypedef).
+Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 
 ### get_shard_iterator
 
@@ -302,14 +299,13 @@ Arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardId`: `str` *(required)*
-- `ShardIteratorType`:
-  [ShardIteratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#sharditeratortype)
+- `ShardIteratorType`: [ShardIteratorType](./literals.md#sharditeratortype)
   *(required)*
 - `StartingSequenceNumber`: `str`
 - `Timestamp`: `datetime`
 
 Returns
-[GetShardIteratorOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#getsharditeratoroutputtypedef).
+[GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
 ### increase_stream_retention_period
 
@@ -338,11 +334,9 @@ Arguments:
 - `ExclusiveStartShardId`: `str`
 - `MaxResults`: `int`
 - `StreamCreationTimestamp`: `datetime`
-- `ShardFilter`:
-  [ShardFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#shardfiltertypedef)
+- `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
 
-Returns
-[ListShardsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#listshardsoutputtypedef).
+Returns [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef).
 
 ### list_stream_consumers
 
@@ -359,7 +353,7 @@ Arguments:
 - `StreamCreationTimestamp`: `datetime`
 
 Returns
-[ListStreamConsumersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#liststreamconsumersoutputtypedef).
+[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef).
 
 ### list_streams
 
@@ -373,8 +367,7 @@ Arguments:
 - `Limit`: `int`
 - `ExclusiveStartStreamName`: `str`
 
-Returns
-[ListStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#liststreamsoutputtypedef).
+Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
 ### list_tags_for_stream
 
@@ -390,7 +383,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#listtagsforstreamoutputtypedef).
+[ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
 ### merge_shards
 
@@ -420,8 +413,7 @@ Arguments:
 - `ExplicitHashKey`: `str`
 - `SequenceNumberForOrdering`: `str`
 
-Returns
-[PutRecordOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#putrecordoutputtypedef).
+Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
 ### put_records
 
@@ -433,12 +425,11 @@ Boto3 documentation:
 Arguments:
 
 - `Records`:
-  `List`\[[PutRecordsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#putrecordsrequestentrytypedef)\]
+  `List`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
   *(required)*
 - `StreamName`: `str` *(required)*
 
-Returns
-[PutRecordsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#putrecordsoutputtypedef).
+Returns [PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef).
 
 ### register_stream_consumer
 
@@ -453,7 +444,7 @@ Arguments:
 - `ConsumerName`: `str` *(required)*
 
 Returns
-[RegisterStreamConsumerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#registerstreamconsumeroutputtypedef).
+[RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef).
 
 ### remove_tags_from_stream
 
@@ -490,9 +481,7 @@ Boto3 documentation:
 Arguments:
 
 - `StreamName`: `str` *(required)*
-- `EncryptionType`:
-  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
-  *(required)*
+- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype) *(required)*
 - `KeyId`: `str` *(required)*
 
 ### stop_stream_encryption
@@ -505,9 +494,7 @@ Boto3 documentation:
 Arguments:
 
 - `StreamName`: `str` *(required)*
-- `EncryptionType`:
-  [EncryptionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/literals.html#encryptiontype)
-  *(required)*
+- `EncryptionType`: [EncryptionType](./literals.md#encryptiontype) *(required)*
 - `KeyId`: `str` *(required)*
 
 ### subscribe_to_shard
@@ -522,11 +509,10 @@ Arguments:
 - `ConsumerARN`: `str` *(required)*
 - `ShardId`: `str` *(required)*
 - `StartingPosition`:
-  [StartingPositionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#startingpositiontypedef)
-  *(required)*
+  [StartingPositionTypeDef](./type_defs.md#startingpositiontypedef) *(required)*
 
 Returns
-[SubscribeToShardOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#subscribetoshardoutputtypedef).
+[SubscribeToShardOutputTypeDef](./type_defs.md#subscribetoshardoutputtypedef).
 
 ### update_shard_count
 
@@ -539,10 +525,11 @@ Arguments:
 
 - `StreamName`: `str` *(required)*
 - `TargetShardCount`: `int` *(required)*
-- `ScalingType`: `Literal['UNIFORM_SCALING']` *(required)*
+- `ScalingType`: `Literal['UNIFORM_SCALING']` (see
+  [ScalingType](./literals.md#scalingtype)) *(required)*
 
 Returns
-[UpdateShardCountOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#updateshardcountoutputtypedef).
+[UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef).
 
 ### get_paginator
 

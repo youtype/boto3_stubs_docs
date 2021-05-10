@@ -1,6 +1,6 @@
 # Literals for boto3 MediaPackage module
 
-> [Index](../README.md) > [MediaPackage](./README.md) > Literals
+> [Index](..) > [MediaPackage](.) > Literals
 
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)

@@ -1,6 +1,6 @@
 # Paginators for boto3 Polly module
 
-> [Index](../README.md) > [Polly](./README.md) > Paginators
+> [Index](..) > [Polly](.) > Paginators
 
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
@@ -30,16 +30,14 @@ Boto3 documentation:
 
 Arguments for `DescribeVoicesPaginator.paginate` method:
 
-- `Engine`:
-  [Engine](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#engine)
-- `LanguageCode`:
-  [LanguageCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#languagecode)
+- `Engine`: [Engine](./literals.md#engine)
+- `LanguageCode`: [LanguageCode](./literals.md#languagecode)
 - `IncludeAdditionalLanguageCodes`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVoicesPaginator.paginate` returns
-`Iterator`\[[DescribeVoicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#describevoicesoutputtypedef)\].
+`Iterator`\[[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef)\].
 
 ## ListLexiconsPaginator
 
@@ -60,10 +58,10 @@ Boto3 documentation:
 Arguments for `ListLexiconsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLexiconsPaginator.paginate` returns
-`Iterator`\[[ListLexiconsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#listlexiconsoutputtypedef)\].
+`Iterator`\[[ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef)\].
 
 ## ListSpeechSynthesisTasksPaginator
 
@@ -84,10 +82,9 @@ Boto3 documentation:
 
 Arguments for `ListSpeechSynthesisTasksPaginator.paginate` method:
 
-- `Status`:
-  [TaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/literals.html#taskstatus)
+- `Status`: [TaskStatus](./literals.md#taskstatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSpeechSynthesisTasksPaginator.paginate` returns
-`Iterator`\[[ListSpeechSynthesisTasksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_polly/type_defs.html#listspeechsynthesistasksoutputtypedef)\].
+`Iterator`\[[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef)\].

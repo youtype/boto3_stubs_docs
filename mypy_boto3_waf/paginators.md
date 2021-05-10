@@ -1,6 +1,6 @@
 # Paginators for boto3 WAF module
 
-> [Index](../README.md) > [WAF](./README.md) > Paginators
+> [Index](..) > [WAF](.) > Paginators
 
 Auto-generated documentation for
 [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
@@ -46,10 +46,10 @@ Arguments for `GetRateBasedRuleManagedKeysPaginator.paginate` method:
 
 - `RuleId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRateBasedRuleManagedKeysPaginator.paginate` returns
-`Iterator`\[[GetRateBasedRuleManagedKeysResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#getratebasedrulemanagedkeysresponsetypedef)\].
+`Iterator`\[[GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef)\].
 
 ## ListActivatedRulesInRuleGroupPaginator
 
@@ -72,10 +72,10 @@ Arguments for `ListActivatedRulesInRuleGroupPaginator.paginate` method:
 
 - `RuleGroupId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActivatedRulesInRuleGroupPaginator.paginate` returns
-`Iterator`\[[ListActivatedRulesInRuleGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listactivatedrulesinrulegroupresponsetypedef)\].
+`Iterator`\[[ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef)\].
 
 ## ListByteMatchSetsPaginator
 
@@ -97,10 +97,10 @@ Boto3 documentation:
 Arguments for `ListByteMatchSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListByteMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListByteMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listbytematchsetsresponsetypedef)\].
+`Iterator`\[[ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef)\].
 
 ## ListGeoMatchSetsPaginator
 
@@ -122,10 +122,10 @@ Boto3 documentation:
 Arguments for `ListGeoMatchSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeoMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListGeoMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listgeomatchsetsresponsetypedef)\].
+`Iterator`\[[ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef)\].
 
 ## ListIPSetsPaginator
 
@@ -146,10 +146,10 @@ Boto3 documentation:
 Arguments for `ListIPSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIPSetsPaginator.paginate` returns
-`Iterator`\[[ListIPSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listipsetsresponsetypedef)\].
+`Iterator`\[[ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef)\].
 
 ## ListLoggingConfigurationsPaginator
 
@@ -171,10 +171,10 @@ Boto3 documentation:
 Arguments for `ListLoggingConfigurationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLoggingConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListLoggingConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listloggingconfigurationsresponsetypedef)\].
+`Iterator`\[[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef)\].
 
 ## ListRateBasedRulesPaginator
 
@@ -196,10 +196,10 @@ Boto3 documentation:
 Arguments for `ListRateBasedRulesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRateBasedRulesPaginator.paginate` returns
-`Iterator`\[[ListRateBasedRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listratebasedrulesresponsetypedef)\].
+`Iterator`\[[ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef)\].
 
 ## ListRegexMatchSetsPaginator
 
@@ -221,10 +221,10 @@ Boto3 documentation:
 Arguments for `ListRegexMatchSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegexMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListRegexMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listregexmatchsetsresponsetypedef)\].
+`Iterator`\[[ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef)\].
 
 ## ListRegexPatternSetsPaginator
 
@@ -246,10 +246,10 @@ Boto3 documentation:
 Arguments for `ListRegexPatternSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegexPatternSetsPaginator.paginate` returns
-`Iterator`\[[ListRegexPatternSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listregexpatternsetsresponsetypedef)\].
+`Iterator`\[[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef)\].
 
 ## ListRuleGroupsPaginator
 
@@ -270,10 +270,10 @@ Boto3 documentation:
 Arguments for `ListRuleGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRuleGroupsPaginator.paginate` returns
-`Iterator`\[[ListRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listrulegroupsresponsetypedef)\].
+`Iterator`\[[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)\].
 
 ## ListRulesPaginator
 
@@ -294,10 +294,10 @@ Boto3 documentation:
 Arguments for `ListRulesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRulesPaginator.paginate` returns
-`Iterator`\[[ListRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listrulesresponsetypedef)\].
+`Iterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
 
 ## ListSizeConstraintSetsPaginator
 
@@ -319,10 +319,10 @@ Boto3 documentation:
 Arguments for `ListSizeConstraintSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSizeConstraintSetsPaginator.paginate` returns
-`Iterator`\[[ListSizeConstraintSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listsizeconstraintsetsresponsetypedef)\].
+`Iterator`\[[ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef)\].
 
 ## ListSqlInjectionMatchSetsPaginator
 
@@ -344,10 +344,10 @@ Boto3 documentation:
 Arguments for `ListSqlInjectionMatchSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSqlInjectionMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListSqlInjectionMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listsqlinjectionmatchsetsresponsetypedef)\].
+`Iterator`\[[ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef)\].
 
 ## ListSubscribedRuleGroupsPaginator
 
@@ -369,10 +369,10 @@ Boto3 documentation:
 Arguments for `ListSubscribedRuleGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscribedRuleGroupsPaginator.paginate` returns
-`Iterator`\[[ListSubscribedRuleGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listsubscribedrulegroupsresponsetypedef)\].
+`Iterator`\[[ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef)\].
 
 ## ListWebACLsPaginator
 
@@ -393,10 +393,10 @@ Boto3 documentation:
 Arguments for `ListWebACLsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWebACLsPaginator.paginate` returns
-`Iterator`\[[ListWebACLsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listwebaclsresponsetypedef)\].
+`Iterator`\[[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef)\].
 
 ## ListXssMatchSetsPaginator
 
@@ -418,7 +418,7 @@ Boto3 documentation:
 Arguments for `ListXssMatchSetsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListXssMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListXssMatchSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_waf/type_defs.html#listxssmatchsetsresponsetypedef)\].
+`Iterator`\[[ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef)\].

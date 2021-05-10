@@ -1,6 +1,6 @@
 # AppflowClient for boto3 Appflow module
 
-> [Index](../README.md) > [Appflow](./README.md) > AppflowClient
+> [Index](..) > [Appflow](.) > AppflowClient
 
 Auto-generated documentation for
 [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
@@ -97,19 +97,15 @@ Boto3 documentation:
 Arguments:
 
 - `connectorProfileName`: `str` *(required)*
-- `connectorType`:
-  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
-  *(required)*
-- `connectionMode`:
-  [ConnectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectionmode)
-  *(required)*
+- `connectorType`: [ConnectorType](./literals.md#connectortype) *(required)*
+- `connectionMode`: [ConnectionMode](./literals.md#connectionmode) *(required)*
 - `connectorProfileConfig`:
-  [ConnectorProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofileconfigtypedef)
+  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
   *(required)*
 - `kmsArn`: `str`
 
 Returns
-[CreateConnectorProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#createconnectorprofileresponsetypedef).
+[CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef).
 
 ### create_flow
 
@@ -121,24 +117,19 @@ Boto3 documentation:
 Arguments:
 
 - `flowName`: `str` *(required)*
-- `triggerConfig`:
-  [TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#triggerconfigtypedef)
+- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
   *(required)*
 - `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourceflowconfigtypedef)
-  *(required)*
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) *(required)*
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationflowconfigtypedef)\]
+  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
   *(required)*
-- `tasks`:
-  `List`\[[TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#tasktypedef)\]
-  *(required)*
+- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
 - `description`: `str`
 - `kmsArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#createflowresponsetypedef).
+Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
 ### delete_connector_profile
 
@@ -179,12 +170,11 @@ Boto3 documentation:
 Arguments:
 
 - `connectorEntityName`: `str` *(required)*
-- `connectorType`:
-  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `connectorType`: [ConnectorType](./literals.md#connectortype)
 - `connectorProfileName`: `str`
 
 Returns
-[DescribeConnectorEntityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeconnectorentityresponsetypedef).
+[DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef).
 
 ### describe_connector_profiles
 
@@ -197,13 +187,12 @@ Boto3 documentation:
 Arguments:
 
 - `connectorProfileNames`: `List`\[`str`\]
-- `connectorType`:
-  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `connectorType`: [ConnectorType](./literals.md#connectortype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeConnectorProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeconnectorprofilesresponsetypedef).
+[DescribeConnectorProfilesResponseTypeDef](./type_defs.md#describeconnectorprofilesresponsetypedef).
 
 ### describe_connectors
 
@@ -214,12 +203,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `connectorTypes`:
-  `List`\[[ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)\]
+- `connectorTypes`: `List`\[[ConnectorType](./literals.md#connectortype)\]
 - `nextToken`: `str`
 
 Returns
-[DescribeConnectorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeconnectorsresponsetypedef).
+[DescribeConnectorsResponseTypeDef](./type_defs.md#describeconnectorsresponsetypedef).
 
 ### describe_flow
 
@@ -233,7 +221,7 @@ Arguments:
 - `flowName`: `str` *(required)*
 
 Returns
-[DescribeFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeflowresponsetypedef).
+[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
 
 ### describe_flow_execution_records
 
@@ -250,7 +238,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeFlowExecutionRecordsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#describeflowexecutionrecordsresponsetypedef).
+[DescribeFlowExecutionRecordsResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -278,12 +266,11 @@ Boto3 documentation:
 Arguments:
 
 - `connectorProfileName`: `str`
-- `connectorType`:
-  [ConnectorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectortype)
+- `connectorType`: [ConnectorType](./literals.md#connectortype)
 - `entitiesPath`: `str`
 
 Returns
-[ListConnectorEntitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#listconnectorentitiesresponsetypedef).
+[ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef).
 
 ### list_flows
 
@@ -297,8 +284,7 @@ Arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListFlowsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#listflowsresponsetypedef).
+Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -312,7 +298,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_flow
 
@@ -325,8 +311,7 @@ Arguments:
 
 - `flowName`: `str` *(required)*
 
-Returns
-[StartFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#startflowresponsetypedef).
+Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
 
 ### stop_flow
 
@@ -339,8 +324,7 @@ Arguments:
 
 - `flowName`: `str` *(required)*
 
-Returns
-[StopFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#stopflowresponsetypedef).
+Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 
 ### tag_resource
 
@@ -380,15 +364,13 @@ Boto3 documentation:
 Arguments:
 
 - `connectorProfileName`: `str` *(required)*
-- `connectionMode`:
-  [ConnectionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/literals.html#connectionmode)
-  *(required)*
+- `connectionMode`: [ConnectionMode](./literals.md#connectionmode) *(required)*
 - `connectorProfileConfig`:
-  [ConnectorProfileConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#connectorprofileconfigtypedef)
+  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
   *(required)*
 
 Returns
-[UpdateConnectorProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#updateconnectorprofileresponsetypedef).
+[UpdateConnectorProfileResponseTypeDef](./type_defs.md#updateconnectorprofileresponsetypedef).
 
 ### update_flow
 
@@ -400,18 +382,14 @@ Boto3 documentation:
 Arguments:
 
 - `flowName`: `str` *(required)*
-- `triggerConfig`:
-  [TriggerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#triggerconfigtypedef)
+- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
   *(required)*
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#destinationflowconfigtypedef)\]
+  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
   *(required)*
-- `tasks`:
-  `List`\[[TaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#tasktypedef)\]
-  *(required)*
+- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
 - `description`: `str`
 - `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#sourceflowconfigtypedef)
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 
-Returns
-[UpdateFlowResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appflow/type_defs.html#updateflowresponsetypedef).
+Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).

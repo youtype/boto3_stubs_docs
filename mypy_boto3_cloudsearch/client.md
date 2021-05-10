@@ -1,6 +1,6 @@
 # CloudSearchClient for boto3 CloudSearch module
 
-> [Index](../README.md) > [CloudSearch](./README.md) > CloudSearchClient
+> [Index](..) > [CloudSearch](.) > CloudSearchClient
 
 Auto-generated documentation for
 [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
@@ -93,7 +93,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[BuildSuggestersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#buildsuggestersresponsetypedef).
+[BuildSuggestersResponseTypeDef](./type_defs.md#buildsuggestersresponsetypedef).
 
 ### can_paginate
 
@@ -120,7 +120,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[CreateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#createdomainresponsetypedef).
+[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
 ### define_analysis_scheme
 
@@ -133,12 +133,11 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `AnalysisScheme`:
-  [AnalysisSchemeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#analysisschemetypedef)
+- `AnalysisScheme`: [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
   *(required)*
 
 Returns
-[DefineAnalysisSchemeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#defineanalysisschemeresponsetypedef).
+[DefineAnalysisSchemeResponseTypeDef](./type_defs.md#defineanalysisschemeresponsetypedef).
 
 ### define_expression
 
@@ -150,12 +149,11 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `Expression`:
-  [ExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#expressiontypedef)
+- `Expression`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
   *(required)*
 
 Returns
-[DefineExpressionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#defineexpressionresponsetypedef).
+[DefineExpressionResponseTypeDef](./type_defs.md#defineexpressionresponsetypedef).
 
 ### define_index_field
 
@@ -167,12 +165,11 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `IndexField`:
-  [IndexFieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexfieldtypedef)
+- `IndexField`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
   *(required)*
 
 Returns
-[DefineIndexFieldResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#defineindexfieldresponsetypedef).
+[DefineIndexFieldResponseTypeDef](./type_defs.md#defineindexfieldresponsetypedef).
 
 ### define_suggester
 
@@ -184,12 +181,10 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `Suggester`:
-  [SuggesterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#suggestertypedef)
-  *(required)*
+- `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef) *(required)*
 
 Returns
-[DefineSuggesterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#definesuggesterresponsetypedef).
+[DefineSuggesterResponseTypeDef](./type_defs.md#definesuggesterresponsetypedef).
 
 ### delete_analysis_scheme
 
@@ -205,7 +200,7 @@ Arguments:
 - `AnalysisSchemeName`: `str` *(required)*
 
 Returns
-[DeleteAnalysisSchemeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deleteanalysisschemeresponsetypedef).
+[DeleteAnalysisSchemeResponseTypeDef](./type_defs.md#deleteanalysisschemeresponsetypedef).
 
 ### delete_domain
 
@@ -219,7 +214,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deletedomainresponsetypedef).
+[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
 
 ### delete_expression
 
@@ -234,7 +229,7 @@ Arguments:
 - `ExpressionName`: `str` *(required)*
 
 Returns
-[DeleteExpressionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deleteexpressionresponsetypedef).
+[DeleteExpressionResponseTypeDef](./type_defs.md#deleteexpressionresponsetypedef).
 
 ### delete_index_field
 
@@ -249,7 +244,7 @@ Arguments:
 - `IndexFieldName`: `str` *(required)*
 
 Returns
-[DeleteIndexFieldResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deleteindexfieldresponsetypedef).
+[DeleteIndexFieldResponseTypeDef](./type_defs.md#deleteindexfieldresponsetypedef).
 
 ### delete_suggester
 
@@ -264,7 +259,7 @@ Arguments:
 - `SuggesterName`: `str` *(required)*
 
 Returns
-[DeleteSuggesterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#deletesuggesterresponsetypedef).
+[DeleteSuggesterResponseTypeDef](./type_defs.md#deletesuggesterresponsetypedef).
 
 ### describe_analysis_schemes
 
@@ -281,7 +276,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeAnalysisSchemesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeanalysisschemesresponsetypedef).
+[DescribeAnalysisSchemesResponseTypeDef](./type_defs.md#describeanalysisschemesresponsetypedef).
 
 ### describe_availability_options
 
@@ -297,7 +292,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeAvailabilityOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeavailabilityoptionsresponsetypedef).
+[DescribeAvailabilityOptionsResponseTypeDef](./type_defs.md#describeavailabilityoptionsresponsetypedef).
 
 ### describe_domain_endpoint_options
 
@@ -313,7 +308,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeDomainEndpointOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describedomainendpointoptionsresponsetypedef).
+[DescribeDomainEndpointOptionsResponseTypeDef](./type_defs.md#describedomainendpointoptionsresponsetypedef).
 
 ### describe_domains
 
@@ -327,7 +322,7 @@ Arguments:
 - `DomainNames`: `List`\[`str`\]
 
 Returns
-[DescribeDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describedomainsresponsetypedef).
+[DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
 
 ### describe_expressions
 
@@ -343,7 +338,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeExpressionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeexpressionsresponsetypedef).
+[DescribeExpressionsResponseTypeDef](./type_defs.md#describeexpressionsresponsetypedef).
 
 ### describe_index_fields
 
@@ -360,7 +355,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeIndexFieldsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeindexfieldsresponsetypedef).
+[DescribeIndexFieldsResponseTypeDef](./type_defs.md#describeindexfieldsresponsetypedef).
 
 ### describe_scaling_parameters
 
@@ -375,7 +370,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeScalingParametersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describescalingparametersresponsetypedef).
+[DescribeScalingParametersResponseTypeDef](./type_defs.md#describescalingparametersresponsetypedef).
 
 ### describe_service_access_policies
 
@@ -391,7 +386,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeServiceAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describeserviceaccesspoliciesresponsetypedef).
+[DescribeServiceAccessPoliciesResponseTypeDef](./type_defs.md#describeserviceaccesspoliciesresponsetypedef).
 
 ### describe_suggesters
 
@@ -407,7 +402,7 @@ Arguments:
 - `Deployed`: `bool`
 
 Returns
-[DescribeSuggestersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#describesuggestersresponsetypedef).
+[DescribeSuggestersResponseTypeDef](./type_defs.md#describesuggestersresponsetypedef).
 
 ### generate_presigned_url
 
@@ -438,7 +433,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[IndexDocumentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#indexdocumentsresponsetypedef).
+[IndexDocumentsResponseTypeDef](./type_defs.md#indexdocumentsresponsetypedef).
 
 ### list_domain_names
 
@@ -448,7 +443,7 @@ Boto3 documentation:
 [CloudSearch.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
 
 Returns
-[ListDomainNamesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#listdomainnamesresponsetypedef).
+[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 
 ### update_availability_options
 
@@ -464,7 +459,7 @@ Arguments:
 - `MultiAZ`: `bool` *(required)*
 
 Returns
-[UpdateAvailabilityOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updateavailabilityoptionsresponsetypedef).
+[UpdateAvailabilityOptionsResponseTypeDef](./type_defs.md#updateavailabilityoptionsresponsetypedef).
 
 ### update_domain_endpoint_options
 
@@ -478,11 +473,11 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#domainendpointoptionstypedef)
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
   *(required)*
 
 Returns
-[UpdateDomainEndpointOptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updatedomainendpointoptionsresponsetypedef).
+[UpdateDomainEndpointOptionsResponseTypeDef](./type_defs.md#updatedomainendpointoptionsresponsetypedef).
 
 ### update_scaling_parameters
 
@@ -496,11 +491,11 @@ Arguments:
 
 - `DomainName`: `str` *(required)*
 - `ScalingParameters`:
-  [ScalingParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#scalingparameterstypedef)
+  [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
   *(required)*
 
 Returns
-[UpdateScalingParametersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updatescalingparametersresponsetypedef).
+[UpdateScalingParametersResponseTypeDef](./type_defs.md#updatescalingparametersresponsetypedef).
 
 ### update_service_access_policies
 
@@ -516,4 +511,4 @@ Arguments:
 - `AccessPolicies`: `str` *(required)*
 
 Returns
-[UpdateServiceAccessPoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudsearch/type_defs.html#updateserviceaccesspoliciesresponsetypedef).
+[UpdateServiceAccessPoliciesResponseTypeDef](./type_defs.md#updateserviceaccesspoliciesresponsetypedef).

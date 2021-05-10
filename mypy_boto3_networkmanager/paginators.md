@@ -1,6 +1,6 @@
 # Paginators for boto3 NetworkManager module
 
-> [Index](../README.md) > [NetworkManager](./README.md) > Paginators
+> [Index](..) > [NetworkManager](.) > Paginators
 
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
@@ -39,10 +39,10 @@ Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
 
 - `GlobalNetworkIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalNetworksPaginator.paginate` returns
-`Iterator`\[[DescribeGlobalNetworksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#describeglobalnetworksresponsetypedef)\].
+`Iterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
 
 ## GetConnectionsPaginator
 
@@ -67,10 +67,10 @@ Arguments for `GetConnectionsPaginator.paginate` method:
 - `ConnectionIds`: `List`\[`str`\]
 - `DeviceId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectionsPaginator.paginate` returns
-`Iterator`\[[GetConnectionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getconnectionsresponsetypedef)\].
+`Iterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
 
 ## GetCustomerGatewayAssociationsPaginator
 
@@ -94,10 +94,10 @@ Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
 - `GlobalNetworkId`: `str` *(required)*
 - `CustomerGatewayArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCustomerGatewayAssociationsPaginator.paginate` returns
-`Iterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getcustomergatewayassociationsresponsetypedef)\].
+`Iterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)\].
 
 ## GetDevicesPaginator
 
@@ -122,10 +122,10 @@ Arguments for `GetDevicesPaginator.paginate` method:
 - `DeviceIds`: `List`\[`str`\]
 - `SiteId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevicesPaginator.paginate` returns
-`Iterator`\[[GetDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getdevicesresponsetypedef)\].
+`Iterator`\[[GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)\].
 
 ## GetLinkAssociationsPaginator
 
@@ -150,10 +150,10 @@ Arguments for `GetLinkAssociationsPaginator.paginate` method:
 - `DeviceId`: `str`
 - `LinkId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLinkAssociationsPaginator.paginate` returns
-`Iterator`\[[GetLinkAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getlinkassociationsresponsetypedef)\].
+`Iterator`\[[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)\].
 
 ## GetLinksPaginator
 
@@ -180,10 +180,10 @@ Arguments for `GetLinksPaginator.paginate` method:
 - `Type`: `str`
 - `Provider`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLinksPaginator.paginate` returns
-`Iterator`\[[GetLinksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getlinksresponsetypedef)\].
+`Iterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
 
 ## GetSitesPaginator
 
@@ -207,10 +207,10 @@ Arguments for `GetSitesPaginator.paginate` method:
 - `GlobalNetworkId`: `str` *(required)*
 - `SiteIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSitesPaginator.paginate` returns
-`Iterator`\[[GetSitesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#getsitesresponsetypedef)\].
+`Iterator`\[[GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)\].
 
 ## GetTransitGatewayConnectPeerAssociationsPaginator
 
@@ -235,10 +235,10 @@ method:
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayConnectPeerArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayConnectPeerAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
 
 ## GetTransitGatewayRegistrationsPaginator
 
@@ -262,7 +262,7 @@ Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayArns`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRegistrationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_networkmanager/type_defs.html#gettransitgatewayregistrationsresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].

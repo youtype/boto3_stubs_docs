@@ -1,6 +1,6 @@
 # QLDBSessionClient for boto3 QLDBSession module
 
-> [Index](../README.md) > [QLDBSession](./README.md) > QLDBSessionClient
+> [Index](..) > [QLDBSession](.) > QLDBSessionClient
 
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
@@ -96,16 +96,14 @@ Arguments:
 
 - `SessionToken`: `str`
 - `StartSession`:
-  [StartSessionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#startsessionrequesttypedef)
+  [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
 - `StartTransaction`: `Dict`\[`str`, `Any`\]
 - `EndSession`: `Dict`\[`str`, `Any`\]
 - `CommitTransaction`:
-  [CommitTransactionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#committransactionrequesttypedef)
+  [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
 - `AbortTransaction`: `Dict`\[`str`, `Any`\]
 - `ExecuteStatement`:
-  [ExecuteStatementRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#executestatementrequesttypedef)
-- `FetchPage`:
-  [FetchPageRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#fetchpagerequesttypedef)
+  [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
+- `FetchPage`: [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
 
-Returns
-[SendCommandResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_qldb_session/type_defs.html#sendcommandresulttypedef).
+Returns [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef).

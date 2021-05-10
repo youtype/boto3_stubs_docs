@@ -1,6 +1,6 @@
 # Paginators for boto3 MigrationHub module
 
-> [Index](../README.md) > [MigrationHub](./README.md) > Paginators
+> [Index](..) > [MigrationHub](.) > Paginators
 
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
@@ -35,10 +35,10 @@ Arguments for `ListApplicationStatesPaginator.paginate` method:
 
 - `ApplicationIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationStatesPaginator.paginate` returns
-`Iterator`\[[ListApplicationStatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listapplicationstatesresulttypedef)\].
+`Iterator`\[[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)\].
 
 ## ListCreatedArtifactsPaginator
 
@@ -62,10 +62,10 @@ Arguments for `ListCreatedArtifactsPaginator.paginate` method:
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCreatedArtifactsPaginator.paginate` returns
-`Iterator`\[[ListCreatedArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listcreatedartifactsresulttypedef)\].
+`Iterator`\[[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)\].
 
 ## ListDiscoveredResourcesPaginator
 
@@ -89,10 +89,10 @@ Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDiscoveredResourcesPaginator.paginate` returns
-`Iterator`\[[ListDiscoveredResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listdiscoveredresourcesresulttypedef)\].
+`Iterator`\[[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)\].
 
 ## ListMigrationTasksPaginator
 
@@ -115,10 +115,10 @@ Arguments for `ListMigrationTasksPaginator.paginate` method:
 
 - `ResourceName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMigrationTasksPaginator.paginate` returns
-`Iterator`\[[ListMigrationTasksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listmigrationtasksresulttypedef)\].
+`Iterator`\[[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)\].
 
 ## ListProgressUpdateStreamsPaginator
 
@@ -140,7 +140,7 @@ Boto3 documentation:
 Arguments for `ListProgressUpdateStreamsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProgressUpdateStreamsPaginator.paginate` returns
-`Iterator`\[[ListProgressUpdateStreamsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgh/type_defs.html#listprogressupdatestreamsresulttypedef)\].
+`Iterator`\[[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef)\].

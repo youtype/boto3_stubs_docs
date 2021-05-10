@@ -1,6 +1,6 @@
 # Type annotations for boto3 Inspector module
 
-> [Index](../README.md) > Inspector
+> [Index](..) > Inspector
 
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)

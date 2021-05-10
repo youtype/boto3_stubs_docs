@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 GuardDuty module
 
-> [Index](../README.md) > [GuardDuty](./README.md) > Structures
+> [Index](..) > [GuardDuty](.) > Typed dictionaries
 
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
@@ -160,7 +160,7 @@ from mypy_boto3_guardduty.type_defs import AccountLevelPermissionsTypeDef
 Optional fields:
 
 - `BlockPublicAccess`:
-  [BlockPublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#blockpublicaccesstypedef)
+  [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
 
 ## ActionTypeDef
 
@@ -172,13 +172,13 @@ Optional fields:
 
 - `ActionType`: `str`
 - `AwsApiCallAction`:
-  [AwsApiCallActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#awsapicallactiontypedef)
+  [AwsApiCallActionTypeDef](./type_defs.md#awsapicallactiontypedef)
 - `DnsRequestAction`:
-  [DnsRequestActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#dnsrequestactiontypedef)
+  [DnsRequestActionTypeDef](./type_defs.md#dnsrequestactiontypedef)
 - `NetworkConnectionAction`:
-  [NetworkConnectionActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#networkconnectionactiontypedef)
+  [NetworkConnectionActionTypeDef](./type_defs.md#networkconnectionactiontypedef)
 - `PortProbeAction`:
-  [PortProbeActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#portprobeactiontypedef)
+  [PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef)
 
 ## AdminAccountTypeDef
 
@@ -189,8 +189,7 @@ from mypy_boto3_guardduty.type_defs import AdminAccountTypeDef
 Optional fields:
 
 - `AdminAccountId`: `str`
-- `AdminStatus`:
-  [AdminStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#adminstatus)
+- `AdminStatus`: [AdminStatus](./literals.md#adminstatus)
 
 ## AwsApiCallActionTypeDef
 
@@ -202,11 +201,10 @@ Optional fields:
 
 - `Api`: `str`
 - `CallerType`: `str`
-- `DomainDetails`:
-  [DomainDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#domaindetailstypedef)
+- `DomainDetails`: [DomainDetailsTypeDef](./type_defs.md#domaindetailstypedef)
 - `ErrorCode`: `str`
 - `RemoteIpDetails`:
-  [RemoteIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#remoteipdetailstypedef)
+  [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - `ServiceName`: `str`
 
 ## BlockPublicAccessTypeDef
@@ -231,11 +229,10 @@ from mypy_boto3_guardduty.type_defs import BucketLevelPermissionsTypeDef
 Optional fields:
 
 - `AccessControlList`:
-  [AccessControlListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#accesscontrollisttypedef)
-- `BucketPolicy`:
-  [BucketPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#bucketpolicytypedef)
+  [AccessControlListTypeDef](./type_defs.md#accesscontrollisttypedef)
+- `BucketPolicy`: [BucketPolicyTypeDef](./type_defs.md#bucketpolicytypedef)
 - `BlockPublicAccess`:
-  [BlockPublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#blockpublicaccesstypedef)
+  [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
 
 ## BucketPolicyTypeDef
 
@@ -266,8 +263,7 @@ from mypy_boto3_guardduty.type_defs import CloudTrailConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`:
-  [DataSourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#datasourcestatus)
+- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
 
 ## ConditionTypeDef
 
@@ -340,7 +336,7 @@ from mypy_boto3_guardduty.type_defs import CreateMembersResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## CreatePublishingDestinationResponseTypeDef
 
@@ -370,8 +366,7 @@ from mypy_boto3_guardduty.type_defs import DNSLogsConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`:
-  [DataSourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#datasourcestatus)
+- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
 
 ## DataSourceConfigurationsResultTypeDef
 
@@ -382,13 +377,13 @@ from mypy_boto3_guardduty.type_defs import DataSourceConfigurationsResultTypeDef
 Required fields:
 
 - `CloudTrail`:
-  [CloudTrailConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#cloudtrailconfigurationresulttypedef)
+  [CloudTrailConfigurationResultTypeDef](./type_defs.md#cloudtrailconfigurationresulttypedef)
 - `DNSLogs`:
-  [DNSLogsConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#dnslogsconfigurationresulttypedef)
+  [DNSLogsConfigurationResultTypeDef](./type_defs.md#dnslogsconfigurationresulttypedef)
 - `FlowLogs`:
-  [FlowLogsConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#flowlogsconfigurationresulttypedef)
+  [FlowLogsConfigurationResultTypeDef](./type_defs.md#flowlogsconfigurationresulttypedef)
 - `S3Logs`:
-  [S3LogsConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#s3logsconfigurationresulttypedef)
+  [S3LogsConfigurationResultTypeDef](./type_defs.md#s3logsconfigurationresulttypedef)
 
 ## DataSourceConfigurationsTypeDef
 
@@ -399,7 +394,7 @@ from mypy_boto3_guardduty.type_defs import DataSourceConfigurationsTypeDef
 Optional fields:
 
 - `S3Logs`:
-  [S3LogsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#s3logsconfigurationtypedef)
+  [S3LogsConfigurationTypeDef](./type_defs.md#s3logsconfigurationtypedef)
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -410,7 +405,7 @@ from mypy_boto3_guardduty.type_defs import DeclineInvitationsResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## DefaultServerSideEncryptionTypeDef
 
@@ -432,7 +427,7 @@ from mypy_boto3_guardduty.type_defs import DeleteInvitationsResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -443,7 +438,7 @@ from mypy_boto3_guardduty.type_defs import DeleteMembersResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
@@ -459,7 +454,7 @@ Required fields:
 Optional fields:
 
 - `DataSources`:
-  [OrganizationDataSourceConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#organizationdatasourceconfigurationsresulttypedef)
+  [OrganizationDataSourceConfigurationsResultTypeDef](./type_defs.md#organizationdatasourceconfigurationsresulttypedef)
 
 ## DescribePublishingDestinationResponseTypeDef
 
@@ -470,12 +465,12 @@ from mypy_boto3_guardduty.type_defs import DescribePublishingDestinationResponse
 Required fields:
 
 - `DestinationId`: `str`
-- `DestinationType`: `Literal['S3']`
-- `Status`:
-  [PublishingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#publishingstatus)
+- `DestinationType`: `Literal['S3']` (see
+  [DestinationType](./literals.md#destinationtype))
+- `Status`: [PublishingStatus](./literals.md#publishingstatus)
 - `PublishingFailureStartTimestamp`: `int`
 - `DestinationProperties`:
-  [DestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#destinationpropertiestypedef)
+  [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
 
 ## DestinationPropertiesTypeDef
 
@@ -497,9 +492,9 @@ from mypy_boto3_guardduty.type_defs import DestinationTypeDef
 Required fields:
 
 - `DestinationId`: `str`
-- `DestinationType`: `Literal['S3']`
-- `Status`:
-  [PublishingStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#publishingstatus)
+- `DestinationType`: `Literal['S3']` (see
+  [DestinationType](./literals.md#destinationtype))
+- `Status`: [PublishingStatus](./literals.md#publishingstatus)
 
 ## DisassociateMembersResponseTypeDef
 
@@ -510,7 +505,7 @@ from mypy_boto3_guardduty.type_defs import DisassociateMembersResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## DnsRequestActionTypeDef
 
@@ -541,7 +536,7 @@ from mypy_boto3_guardduty.type_defs import EvidenceTypeDef
 Optional fields:
 
 - `ThreatIntelligenceDetails`:
-  `List`\[[ThreatIntelligenceDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#threatintelligencedetailtypedef)\]
+  `List`\[[ThreatIntelligenceDetailTypeDef](./type_defs.md#threatintelligencedetailtypedef)\]
 
 ## FindingCriteriaTypeDef
 
@@ -552,7 +547,7 @@ from mypy_boto3_guardduty.type_defs import FindingCriteriaTypeDef
 Optional fields:
 
 - `Criterion`: `Dict`\[`str`,
-  [ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#conditiontypedef)\]
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## FindingStatisticsTypeDef
 
@@ -577,8 +572,7 @@ Required fields:
 - `CreatedAt`: `str`
 - `Id`: `str`
 - `Region`: `str`
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#resourcetypedef)
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
 - `SchemaVersion`: `str`
 - `Severity`: `float`
 - `Type`: `str`
@@ -589,8 +583,7 @@ Optional fields:
 - `Confidence`: `float`
 - `Description`: `str`
 - `Partition`: `str`
-- `Service`:
-  [ServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#servicetypedef)
+- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `Title`: `str`
 
 ## FlowLogsConfigurationResultTypeDef
@@ -601,8 +594,7 @@ from mypy_boto3_guardduty.type_defs import FlowLogsConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`:
-  [DataSourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#datasourcestatus)
+- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
 
 ## GeoLocationTypeDef
 
@@ -624,17 +616,16 @@ from mypy_boto3_guardduty.type_defs import GetDetectorResponseTypeDef
 Required fields:
 
 - `ServiceRole`: `str`
-- `Status`:
-  [DetectorStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#detectorstatus)
+- `Status`: [DetectorStatus](./literals.md#detectorstatus)
 
 Optional fields:
 
 - `CreatedAt`: `str`
 - `FindingPublishingFrequency`:
-  [FindingPublishingFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#findingpublishingfrequency)
+  [FindingPublishingFrequency](./literals.md#findingpublishingfrequency)
 - `UpdatedAt`: `str`
 - `DataSources`:
-  [DataSourceConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationsresulttypedef)
+  [DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## GetFilterResponseTypeDef
@@ -646,10 +637,9 @@ from mypy_boto3_guardduty.type_defs import GetFilterResponseTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Action`:
-  [FilterAction](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#filteraction)
+- `Action`: [FilterAction](./literals.md#filteraction)
 - `FindingCriteria`:
-  [FindingCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingcriteriatypedef)
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
 Optional fields:
 
@@ -665,8 +655,7 @@ from mypy_boto3_guardduty.type_defs import GetFindingsResponseTypeDef
 
 Required fields:
 
-- `Findings`:
-  `List`\[[FindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingtypedef)\]
+- `Findings`: `List`\[[FindingTypeDef](./type_defs.md#findingtypedef)\]
 
 ## GetFindingsStatisticsResponseTypeDef
 
@@ -677,7 +666,7 @@ from mypy_boto3_guardduty.type_defs import GetFindingsStatisticsResponseTypeDef
 Required fields:
 
 - `FindingStatistics`:
-  [FindingStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#findingstatisticstypedef)
+  [FindingStatisticsTypeDef](./type_defs.md#findingstatisticstypedef)
 
 ## GetIPSetResponseTypeDef
 
@@ -688,11 +677,9 @@ from mypy_boto3_guardduty.type_defs import GetIPSetResponseTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Format`:
-  [IpSetFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#ipsetformat)
+- `Format`: [IpSetFormat](./literals.md#ipsetformat)
 - `Location`: `str`
-- `Status`:
-  [IpSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#ipsetstatus)
+- `Status`: [IpSetStatus](./literals.md#ipsetstatus)
 
 Optional fields:
 
@@ -716,8 +703,7 @@ from mypy_boto3_guardduty.type_defs import GetMasterAccountResponseTypeDef
 
 Required fields:
 
-- `Master`:
-  [MasterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#mastertypedef)
+- `Master`: [MasterTypeDef](./type_defs.md#mastertypedef)
 
 ## GetMemberDetectorsResponseTypeDef
 
@@ -728,9 +714,9 @@ from mypy_boto3_guardduty.type_defs import GetMemberDetectorsResponseTypeDef
 Required fields:
 
 - `MemberDataSourceConfigurations`:
-  `List`\[[MemberDataSourceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#memberdatasourceconfigurationtypedef)\]
+  `List`\[[MemberDataSourceConfigurationTypeDef](./type_defs.md#memberdatasourceconfigurationtypedef)\]
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## GetMembersResponseTypeDef
 
@@ -740,10 +726,9 @@ from mypy_boto3_guardduty.type_defs import GetMembersResponseTypeDef
 
 Required fields:
 
-- `Members`:
-  `List`\[[MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#membertypedef)\]
+- `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## GetThreatIntelSetResponseTypeDef
 
@@ -754,11 +739,9 @@ from mypy_boto3_guardduty.type_defs import GetThreatIntelSetResponseTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Format`:
-  [ThreatIntelSetFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#threatintelsetformat)
+- `Format`: [ThreatIntelSetFormat](./literals.md#threatintelsetformat)
 - `Location`: `str`
-- `Status`:
-  [ThreatIntelSetStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#threatintelsetstatus)
+- `Status`: [ThreatIntelSetStatus](./literals.md#threatintelsetstatus)
 
 Optional fields:
 
@@ -773,7 +756,7 @@ from mypy_boto3_guardduty.type_defs import GetUsageStatisticsResponseTypeDef
 Optional fields:
 
 - `UsageStatistics`:
-  [UsageStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usagestatisticstypedef)
+  [UsageStatisticsTypeDef](./type_defs.md#usagestatisticstypedef)
 - `NextToken`: `str`
 
 ## IamInstanceProfileTypeDef
@@ -797,7 +780,7 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `IamInstanceProfile`:
-  [IamInstanceProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#iaminstanceprofiletypedef)
+  [IamInstanceProfileTypeDef](./type_defs.md#iaminstanceprofiletypedef)
 - `ImageDescription`: `str`
 - `ImageId`: `str`
 - `InstanceId`: `str`
@@ -806,12 +789,11 @@ Optional fields:
 - `OutpostArn`: `str`
 - `LaunchTime`: `str`
 - `NetworkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#networkinterfacetypedef)\]
+  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 - `Platform`: `str`
 - `ProductCodes`:
-  `List`\[[ProductCodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#productcodetypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#tagtypedef)\]
+  `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## InvitationTypeDef
 
@@ -835,7 +817,7 @@ from mypy_boto3_guardduty.type_defs import InviteMembersResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## ListDetectorsResponseTypeDef
 
@@ -901,8 +883,7 @@ from mypy_boto3_guardduty.type_defs import ListInvitationsResponseTypeDef
 
 Optional fields:
 
-- `Invitations`:
-  `List`\[[InvitationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#invitationtypedef)\]
+- `Invitations`: `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `NextToken`: `str`
 
 ## ListMembersResponseTypeDef
@@ -913,8 +894,7 @@ from mypy_boto3_guardduty.type_defs import ListMembersResponseTypeDef
 
 Optional fields:
 
-- `Members`:
-  `List`\[[MemberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#membertypedef)\]
+- `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
 - `NextToken`: `str`
 
 ## ListOrganizationAdminAccountsResponseTypeDef
@@ -926,7 +906,7 @@ from mypy_boto3_guardduty.type_defs import ListOrganizationAdminAccountsResponse
 Optional fields:
 
 - `AdminAccounts`:
-  `List`\[[AdminAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#adminaccounttypedef)\]
+  `List`\[[AdminAccountTypeDef](./type_defs.md#adminaccounttypedef)\]
 - `NextToken`: `str`
 
 ## ListPublishingDestinationsResponseTypeDef
@@ -938,7 +918,7 @@ from mypy_boto3_guardduty.type_defs import ListPublishingDestinationsResponseTyp
 Required fields:
 
 - `Destinations`:
-  `List`\[[DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#destinationtypedef)\]
+  `List`\[[DestinationTypeDef](./type_defs.md#destinationtypedef)\]
 
 Optional fields:
 
@@ -1012,7 +992,7 @@ Required fields:
 
 - `AccountId`: `str`
 - `DataSources`:
-  [DataSourceConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#datasourceconfigurationsresulttypedef)
+  [DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef)
 
 ## MemberTypeDef
 
@@ -1044,14 +1024,13 @@ Optional fields:
 - `Blocked`: `bool`
 - `ConnectionDirection`: `str`
 - `LocalPortDetails`:
-  [LocalPortDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#localportdetailstypedef)
+  [LocalPortDetailsTypeDef](./type_defs.md#localportdetailstypedef)
 - `Protocol`: `str`
-- `LocalIpDetails`:
-  [LocalIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#localipdetailstypedef)
+- `LocalIpDetails`: [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
 - `RemoteIpDetails`:
-  [RemoteIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#remoteipdetailstypedef)
+  [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - `RemotePortDetails`:
-  [RemotePortDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#remoteportdetailstypedef)
+  [RemotePortDetailsTypeDef](./type_defs.md#remoteportdetailstypedef)
 
 ## NetworkInterfaceTypeDef
 
@@ -1066,11 +1045,11 @@ Optional fields:
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#privateipaddressdetailstypedef)\]
+  `List`\[[PrivateIpAddressDetailsTypeDef](./type_defs.md#privateipaddressdetailstypedef)\]
 - `PublicDnsName`: `str`
 - `PublicIp`: `str`
 - `SecurityGroups`:
-  `List`\[[SecurityGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#securitygrouptypedef)\]
+  `List`\[[SecurityGroupTypeDef](./type_defs.md#securitygrouptypedef)\]
 - `SubnetId`: `str`
 - `VpcId`: `str`
 
@@ -1083,7 +1062,7 @@ from mypy_boto3_guardduty.type_defs import OrganizationDataSourceConfigurationsR
 Required fields:
 
 - `S3Logs`:
-  [OrganizationS3LogsConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#organizations3logsconfigurationresulttypedef)
+  [OrganizationS3LogsConfigurationResultTypeDef](./type_defs.md#organizations3logsconfigurationresulttypedef)
 
 ## OrganizationDataSourceConfigurationsTypeDef
 
@@ -1094,7 +1073,7 @@ from mypy_boto3_guardduty.type_defs import OrganizationDataSourceConfigurationsT
 Optional fields:
 
 - `S3Logs`:
-  [OrganizationS3LogsConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#organizations3logsconfigurationtypedef)
+  [OrganizationS3LogsConfigurationTypeDef](./type_defs.md#organizations3logsconfigurationtypedef)
 
 ## OrganizationS3LogsConfigurationResultTypeDef
 
@@ -1160,9 +1139,9 @@ from mypy_boto3_guardduty.type_defs import PermissionConfigurationTypeDef
 Optional fields:
 
 - `BucketLevelPermissions`:
-  [BucketLevelPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#bucketlevelpermissionstypedef)
+  [BucketLevelPermissionsTypeDef](./type_defs.md#bucketlevelpermissionstypedef)
 - `AccountLevelPermissions`:
-  [AccountLevelPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#accountlevelpermissionstypedef)
+  [AccountLevelPermissionsTypeDef](./type_defs.md#accountlevelpermissionstypedef)
 
 ## PortProbeActionTypeDef
 
@@ -1174,7 +1153,7 @@ Optional fields:
 
 - `Blocked`: `bool`
 - `PortProbeDetails`:
-  `List`\[[PortProbeDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#portprobedetailtypedef)\]
+  `List`\[[PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef)\]
 
 ## PortProbeDetailTypeDef
 
@@ -1185,11 +1164,10 @@ from mypy_boto3_guardduty.type_defs import PortProbeDetailTypeDef
 Optional fields:
 
 - `LocalPortDetails`:
-  [LocalPortDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#localportdetailstypedef)
-- `LocalIpDetails`:
-  [LocalIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#localipdetailstypedef)
+  [LocalPortDetailsTypeDef](./type_defs.md#localportdetailstypedef)
+- `LocalIpDetails`: [LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef)
 - `RemoteIpDetails`:
-  [RemoteIpDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#remoteipdetailstypedef)
+  [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 
 ## PrivateIpAddressDetailsTypeDef
 
@@ -1222,7 +1200,7 @@ from mypy_boto3_guardduty.type_defs import PublicAccessTypeDef
 Optional fields:
 
 - `PermissionConfiguration`:
-  [PermissionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#permissionconfigurationtypedef)
+  [PermissionConfigurationTypeDef](./type_defs.md#permissionconfigurationtypedef)
 - `EffectivePermission`: `str`
 
 ## RemoteIpDetailsTypeDef
@@ -1233,15 +1211,11 @@ from mypy_boto3_guardduty.type_defs import RemoteIpDetailsTypeDef
 
 Optional fields:
 
-- `City`:
-  [CityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#citytypedef)
-- `Country`:
-  [CountryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#countrytypedef)
-- `GeoLocation`:
-  [GeoLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#geolocationtypedef)
+- `City`: [CityTypeDef](./type_defs.md#citytypedef)
+- `Country`: [CountryTypeDef](./type_defs.md#countrytypedef)
+- `GeoLocation`: [GeoLocationTypeDef](./type_defs.md#geolocationtypedef)
 - `IpAddressV4`: `str`
-- `Organization`:
-  [OrganizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#organizationtypedef)
+- `Organization`: [OrganizationTypeDef](./type_defs.md#organizationtypedef)
 
 ## RemotePortDetailsTypeDef
 
@@ -1263,11 +1237,11 @@ from mypy_boto3_guardduty.type_defs import ResourceTypeDef
 Optional fields:
 
 - `AccessKeyDetails`:
-  [AccessKeyDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#accesskeydetailstypedef)
+  [AccessKeyDetailsTypeDef](./type_defs.md#accesskeydetailstypedef)
 - `S3BucketDetails`:
-  `List`\[[S3BucketDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#s3bucketdetailtypedef)\]
+  `List`\[[S3BucketDetailTypeDef](./type_defs.md#s3bucketdetailtypedef)\]
 - `InstanceDetails`:
-  [InstanceDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#instancedetailstypedef)
+  [InstanceDetailsTypeDef](./type_defs.md#instancedetailstypedef)
 - `ResourceType`: `str`
 
 ## S3BucketDetailTypeDef
@@ -1282,14 +1256,11 @@ Optional fields:
 - `Name`: `str`
 - `Type`: `str`
 - `CreatedAt`: `datetime`
-- `Owner`:
-  [OwnerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#ownertypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#tagtypedef)\]
+- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DefaultServerSideEncryption`:
-  [DefaultServerSideEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#defaultserversideencryptiontypedef)
-- `PublicAccess`:
-  [PublicAccessTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#publicaccesstypedef)
+  [DefaultServerSideEncryptionTypeDef](./type_defs.md#defaultserversideencryptiontypedef)
+- `PublicAccess`: [PublicAccessTypeDef](./type_defs.md#publicaccesstypedef)
 
 ## S3LogsConfigurationResultTypeDef
 
@@ -1299,8 +1270,7 @@ from mypy_boto3_guardduty.type_defs import S3LogsConfigurationResultTypeDef
 
 Required fields:
 
-- `Status`:
-  [DataSourceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#datasourcestatus)
+- `Status`: [DataSourceStatus](./literals.md#datasourcestatus)
 
 ## S3LogsConfigurationTypeDef
 
@@ -1331,10 +1301,8 @@ from mypy_boto3_guardduty.type_defs import ServiceTypeDef
 
 Optional fields:
 
-- `Action`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#actiontypedef)
-- `Evidence`:
-  [EvidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#evidencetypedef)
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `Evidence`: [EvidenceTypeDef](./type_defs.md#evidencetypedef)
 - `Archived`: `bool`
 - `Count`: `int`
 - `DetectorId`: `str`
@@ -1353,8 +1321,7 @@ from mypy_boto3_guardduty.type_defs import SortCriteriaTypeDef
 Optional fields:
 
 - `AttributeName`: `str`
-- `OrderBy`:
-  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#orderby)
+- `OrderBy`: [OrderBy](./literals.md#orderby)
 
 ## StartMonitoringMembersResponseTypeDef
 
@@ -1365,7 +1332,7 @@ from mypy_boto3_guardduty.type_defs import StartMonitoringMembersResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## StopMonitoringMembersResponseTypeDef
 
@@ -1376,7 +1343,7 @@ from mypy_boto3_guardduty.type_defs import StopMonitoringMembersResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## TagTypeDef
 
@@ -1441,7 +1408,7 @@ from mypy_boto3_guardduty.type_defs import UpdateMemberDetectorsResponseTypeDef
 Required fields:
 
 - `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#unprocessedaccounttypedef)\]
+  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 
 ## UsageAccountResultTypeDef
 
@@ -1452,8 +1419,7 @@ from mypy_boto3_guardduty.type_defs import UsageAccountResultTypeDef
 Optional fields:
 
 - `AccountId`: `str`
-- `Total`:
-  [TotalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#totaltypedef)
+- `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
 
 ## UsageCriteriaTypeDef
 
@@ -1463,8 +1429,7 @@ from mypy_boto3_guardduty.type_defs import UsageCriteriaTypeDef
 
 Required fields:
 
-- `DataSources`:
-  `List`\[[DataSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#datasource)\]
+- `DataSources`: `List`\[[DataSource](./literals.md#datasource)\]
 
 Optional fields:
 
@@ -1479,10 +1444,8 @@ from mypy_boto3_guardduty.type_defs import UsageDataSourceResultTypeDef
 
 Optional fields:
 
-- `DataSource`:
-  [DataSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/literals.html#datasource)
-- `Total`:
-  [TotalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#totaltypedef)
+- `DataSource`: [DataSource](./literals.md#datasource)
+- `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
 
 ## UsageResourceResultTypeDef
 
@@ -1493,8 +1456,7 @@ from mypy_boto3_guardduty.type_defs import UsageResourceResultTypeDef
 Optional fields:
 
 - `Resource`: `str`
-- `Total`:
-  [TotalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#totaltypedef)
+- `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
 
 ## UsageStatisticsTypeDef
 
@@ -1505,10 +1467,10 @@ from mypy_boto3_guardduty.type_defs import UsageStatisticsTypeDef
 Optional fields:
 
 - `SumByAccount`:
-  `List`\[[UsageAccountResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usageaccountresulttypedef)\]
+  `List`\[[UsageAccountResultTypeDef](./type_defs.md#usageaccountresulttypedef)\]
 - `SumByDataSource`:
-  `List`\[[UsageDataSourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usagedatasourceresulttypedef)\]
+  `List`\[[UsageDataSourceResultTypeDef](./type_defs.md#usagedatasourceresulttypedef)\]
 - `SumByResource`:
-  `List`\[[UsageResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usageresourceresulttypedef)\]
+  `List`\[[UsageResourceResultTypeDef](./type_defs.md#usageresourceresulttypedef)\]
 - `TopResources`:
-  `List`\[[UsageResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_guardduty/type_defs.html#usageresourceresulttypedef)\]
+  `List`\[[UsageResourceResultTypeDef](./type_defs.md#usageresourceresulttypedef)\]

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Glue module
 
-> [Index](../README.md) > [Glue](./README.md) > Structures
+> [Index](..) > [Glue](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
@@ -291,7 +291,7 @@ Optional fields:
 - `Timeout`: `int`
 - `SecurityConfiguration`: `str`
 - `NotificationProperty`:
-  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `CrawlerName`: `str`
 
 ## BackfillErrorTypeDef
@@ -302,10 +302,9 @@ from mypy_boto3_glue.type_defs import BackfillErrorTypeDef
 
 Optional fields:
 
-- `Code`:
-  [BackfillErrorCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#backfillerrorcode)
+- `Code`: [BackfillErrorCode](./literals.md#backfillerrorcode)
 - `Partitions`:
-  `List`\[[PartitionValueListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionvaluelisttypedef)\]
+  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
 
 ## BatchCreatePartitionResponseTypeDef
 
@@ -316,7 +315,7 @@ from mypy_boto3_glue.type_defs import BatchCreatePartitionResponseTypeDef
 Optional fields:
 
 - `Errors`:
-  `List`\[[PartitionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionerrortypedef)\]
+  `List`\[[PartitionErrorTypeDef](./type_defs.md#partitionerrortypedef)\]
 
 ## BatchDeleteConnectionResponseTypeDef
 
@@ -328,7 +327,7 @@ Optional fields:
 
 - `Succeeded`: `List`\[`str`\]
 - `Errors`: `Dict`\[`str`,
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)\]
+  [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 
 ## BatchDeletePartitionResponseTypeDef
 
@@ -339,7 +338,7 @@ from mypy_boto3_glue.type_defs import BatchDeletePartitionResponseTypeDef
 Optional fields:
 
 - `Errors`:
-  `List`\[[PartitionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionerrortypedef)\]
+  `List`\[[PartitionErrorTypeDef](./type_defs.md#partitionerrortypedef)\]
 
 ## BatchDeleteTableResponseTypeDef
 
@@ -349,8 +348,7 @@ from mypy_boto3_glue.type_defs import BatchDeleteTableResponseTypeDef
 
 Optional fields:
 
-- `Errors`:
-  `List`\[[TableErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableerrortypedef)\]
+- `Errors`: `List`\[[TableErrorTypeDef](./type_defs.md#tableerrortypedef)\]
 
 ## BatchDeleteTableVersionResponseTypeDef
 
@@ -361,7 +359,7 @@ from mypy_boto3_glue.type_defs import BatchDeleteTableVersionResponseTypeDef
 Optional fields:
 
 - `Errors`:
-  `List`\[[TableVersionErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableversionerrortypedef)\]
+  `List`\[[TableVersionErrorTypeDef](./type_defs.md#tableversionerrortypedef)\]
 
 ## BatchGetCrawlersResponseTypeDef
 
@@ -371,8 +369,7 @@ from mypy_boto3_glue.type_defs import BatchGetCrawlersResponseTypeDef
 
 Optional fields:
 
-- `Crawlers`:
-  `List`\[[CrawlerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertypedef)\]
+- `Crawlers`: `List`\[[CrawlerTypeDef](./type_defs.md#crawlertypedef)\]
 - `CrawlersNotFound`: `List`\[`str`\]
 
 ## BatchGetDevEndpointsResponseTypeDef
@@ -384,7 +381,7 @@ from mypy_boto3_glue.type_defs import BatchGetDevEndpointsResponseTypeDef
 Optional fields:
 
 - `DevEndpoints`:
-  `List`\[[DevEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#devendpointtypedef)\]
+  `List`\[[DevEndpointTypeDef](./type_defs.md#devendpointtypedef)\]
 - `DevEndpointsNotFound`: `List`\[`str`\]
 
 ## BatchGetJobsResponseTypeDef
@@ -395,8 +392,7 @@ from mypy_boto3_glue.type_defs import BatchGetJobsResponseTypeDef
 
 Optional fields:
 
-- `Jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobtypedef)\]
+- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `JobsNotFound`: `List`\[`str`\]
 
 ## BatchGetPartitionResponseTypeDef
@@ -407,10 +403,9 @@ from mypy_boto3_glue.type_defs import BatchGetPartitionResponseTypeDef
 
 Optional fields:
 
-- `Partitions`:
-  `List`\[[PartitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitiontypedef)\]
+- `Partitions`: `List`\[[PartitionTypeDef](./type_defs.md#partitiontypedef)\]
 - `UnprocessedKeys`:
-  `List`\[[PartitionValueListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionvaluelisttypedef)\]
+  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
 
 ## BatchGetTriggersResponseTypeDef
 
@@ -420,8 +415,7 @@ from mypy_boto3_glue.type_defs import BatchGetTriggersResponseTypeDef
 
 Optional fields:
 
-- `Triggers`:
-  `List`\[[TriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggertypedef)\]
+- `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
 - `TriggersNotFound`: `List`\[`str`\]
 
 ## BatchGetWorkflowsResponseTypeDef
@@ -432,8 +426,7 @@ from mypy_boto3_glue.type_defs import BatchGetWorkflowsResponseTypeDef
 
 Optional fields:
 
-- `Workflows`:
-  `List`\[[WorkflowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowtypedef)\]
+- `Workflows`: `List`\[[WorkflowTypeDef](./type_defs.md#workflowtypedef)\]
 - `MissingWorkflows`: `List`\[`str`\]
 
 ## BatchStopJobRunErrorTypeDef
@@ -446,8 +439,7 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobRunId`: `str`
-- `ErrorDetail`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## BatchStopJobRunResponseTypeDef
 
@@ -458,9 +450,9 @@ from mypy_boto3_glue.type_defs import BatchStopJobRunResponseTypeDef
 Optional fields:
 
 - `SuccessfulSubmissions`:
-  `List`\[[BatchStopJobRunSuccessfulSubmissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchstopjobrunsuccessfulsubmissiontypedef)\]
+  `List`\[[BatchStopJobRunSuccessfulSubmissionTypeDef](./type_defs.md#batchstopjobrunsuccessfulsubmissiontypedef)\]
 - `Errors`:
-  `List`\[[BatchStopJobRunErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchstopjobrunerrortypedef)\]
+  `List`\[[BatchStopJobRunErrorTypeDef](./type_defs.md#batchstopjobrunerrortypedef)\]
 
 ## BatchStopJobRunSuccessfulSubmissionTypeDef
 
@@ -482,8 +474,7 @@ from mypy_boto3_glue.type_defs import BatchUpdatePartitionFailureEntryTypeDef
 Optional fields:
 
 - `PartitionValueList`: `List`\[`str`\]
-- `ErrorDetail`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## BatchUpdatePartitionRequestEntryTypeDef
 
@@ -494,8 +485,7 @@ from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestEntryTypeDef
 Required fields:
 
 - `PartitionValueList`: `List`\[`str`\]
-- `PartitionInput`:
-  [PartitionInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitioninputtypedef)
+- `PartitionInput`: [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
 
 ## BatchUpdatePartitionResponseTypeDef
 
@@ -506,7 +496,7 @@ from mypy_boto3_glue.type_defs import BatchUpdatePartitionResponseTypeDef
 Optional fields:
 
 - `Errors`:
-  `List`\[[BatchUpdatePartitionFailureEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#batchupdatepartitionfailureentrytypedef)\]
+  `List`\[[BatchUpdatePartitionFailureEntryTypeDef](./type_defs.md#batchupdatepartitionfailureentrytypedef)\]
 
 ## BinaryColumnStatisticsDataTypeDef
 
@@ -542,8 +532,7 @@ Optional fields:
 
 - `TransformId`: `str`
 - `TaskRunId`: `str`
-- `Status`:
-  [TaskStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#taskstatustype)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 
 ## CatalogEntryTypeDef
 
@@ -598,14 +587,10 @@ from mypy_boto3_glue.type_defs import ClassifierTypeDef
 
 Optional fields:
 
-- `GrokClassifier`:
-  [GrokClassifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#grokclassifiertypedef)
-- `XMLClassifier`:
-  [XMLClassifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#xmlclassifiertypedef)
-- `JsonClassifier`:
-  [JsonClassifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jsonclassifiertypedef)
-- `CsvClassifier`:
-  [CsvClassifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#csvclassifiertypedef)
+- `GrokClassifier`: [GrokClassifierTypeDef](./type_defs.md#grokclassifiertypedef)
+- `XMLClassifier`: [XMLClassifierTypeDef](./type_defs.md#xmlclassifiertypedef)
+- `JsonClassifier`: [JsonClassifierTypeDef](./type_defs.md#jsonclassifiertypedef)
+- `CsvClassifier`: [CsvClassifierTypeDef](./type_defs.md#csvclassifiertypedef)
 
 ## CloudWatchEncryptionTypeDef
 
@@ -616,7 +601,7 @@ from mypy_boto3_glue.type_defs import CloudWatchEncryptionTypeDef
 Optional fields:
 
 - `CloudWatchEncryptionMode`:
-  [CloudWatchEncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#cloudwatchencryptionmode)
+  [CloudWatchEncryptionMode](./literals.md#cloudwatchencryptionmode)
 - `KmsKeyArn`: `str`
 
 ## CodeGenEdgeTypeDef
@@ -659,8 +644,7 @@ Required fields:
 
 - `Id`: `str`
 - `NodeType`: `str`
-- `Args`:
-  `List`\[[CodeGenNodeArgTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodeargtypedef)\]
+- `Args`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 
 Optional fields:
 
@@ -675,8 +659,7 @@ from mypy_boto3_glue.type_defs import ColumnErrorTypeDef
 Optional fields:
 
 - `ColumnName`: `str`
-- `Error`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## ColumnImportanceTypeDef
 
@@ -697,25 +680,24 @@ from mypy_boto3_glue.type_defs import ColumnStatisticsDataTypeDef
 
 Required fields:
 
-- `Type`:
-  [ColumnStatisticsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#columnstatisticstype)
+- `Type`: [ColumnStatisticsType](./literals.md#columnstatisticstype)
 
 Optional fields:
 
 - `BooleanColumnStatisticsData`:
-  [BooleanColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#booleancolumnstatisticsdatatypedef)
+  [BooleanColumnStatisticsDataTypeDef](./type_defs.md#booleancolumnstatisticsdatatypedef)
 - `DateColumnStatisticsData`:
-  [DateColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#datecolumnstatisticsdatatypedef)
+  [DateColumnStatisticsDataTypeDef](./type_defs.md#datecolumnstatisticsdatatypedef)
 - `DecimalColumnStatisticsData`:
-  [DecimalColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#decimalcolumnstatisticsdatatypedef)
+  [DecimalColumnStatisticsDataTypeDef](./type_defs.md#decimalcolumnstatisticsdatatypedef)
 - `DoubleColumnStatisticsData`:
-  [DoubleColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#doublecolumnstatisticsdatatypedef)
+  [DoubleColumnStatisticsDataTypeDef](./type_defs.md#doublecolumnstatisticsdatatypedef)
 - `LongColumnStatisticsData`:
-  [LongColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#longcolumnstatisticsdatatypedef)
+  [LongColumnStatisticsDataTypeDef](./type_defs.md#longcolumnstatisticsdatatypedef)
 - `StringColumnStatisticsData`:
-  [StringColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#stringcolumnstatisticsdatatypedef)
+  [StringColumnStatisticsDataTypeDef](./type_defs.md#stringcolumnstatisticsdatatypedef)
 - `BinaryColumnStatisticsData`:
-  [BinaryColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#binarycolumnstatisticsdatatypedef)
+  [BinaryColumnStatisticsDataTypeDef](./type_defs.md#binarycolumnstatisticsdatatypedef)
 
 ## ColumnStatisticsErrorTypeDef
 
@@ -726,9 +708,8 @@ from mypy_boto3_glue.type_defs import ColumnStatisticsErrorTypeDef
 Optional fields:
 
 - `ColumnStatistics`:
-  [ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)
-- `Error`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+  [ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)
+- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## ColumnStatisticsTypeDef
 
@@ -742,7 +723,7 @@ Required fields:
 - `ColumnType`: `str`
 - `AnalyzedTime`: `datetime`
 - `StatisticsData`:
-  [ColumnStatisticsDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticsdatatypedef)
+  [ColumnStatisticsDataTypeDef](./type_defs.md#columnstatisticsdatatypedef)
 
 ## ColumnTypeDef
 
@@ -768,13 +749,12 @@ from mypy_boto3_glue.type_defs import ConditionTypeDef
 
 Optional fields:
 
-- `LogicalOperator`: `Literal['EQUALS']`
+- `LogicalOperator`: `Literal['EQUALS']` (see
+  [LogicalOperator](./literals.md#logicaloperator))
 - `JobName`: `str`
-- `State`:
-  [JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#jobrunstate)
+- `State`: [JobRunState](./literals.md#jobrunstate)
 - `CrawlerName`: `str`
-- `CrawlState`:
-  [CrawlState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#crawlstate)
+- `CrawlState`: [CrawlState](./literals.md#crawlstate)
 
 ## ConfusionMatrixTypeDef
 
@@ -798,18 +778,16 @@ from mypy_boto3_glue.type_defs import ConnectionInputTypeDef
 Required fields:
 
 - `Name`: `str`
-- `ConnectionType`:
-  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#connectiontype)
+- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
 - `ConnectionProperties`:
-  `Dict`\[[ConnectionPropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#connectionpropertykey),
-  `str`\]
+  `Dict`\[[ConnectionPropertyKey](./literals.md#connectionpropertykey), `str`\]
 
 Optional fields:
 
 - `Description`: `str`
 - `MatchCriteria`: `List`\[`str`\]
 - `PhysicalConnectionRequirements`:
-  [PhysicalConnectionRequirementsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#physicalconnectionrequirementstypedef)
+  [PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef)
 
 ## ConnectionPasswordEncryptionTypeDef
 
@@ -835,14 +813,12 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `ConnectionType`:
-  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#connectiontype)
+- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
 - `MatchCriteria`: `List`\[`str`\]
 - `ConnectionProperties`:
-  `Dict`\[[ConnectionPropertyKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#connectionpropertykey),
-  `str`\]
+  `Dict`\[[ConnectionPropertyKey](./literals.md#connectionpropertykey), `str`\]
 - `PhysicalConnectionRequirements`:
-  [PhysicalConnectionRequirementsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#physicalconnectionrequirementstypedef)
+  [PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef)
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `LastUpdatedBy`: `str`
@@ -865,8 +841,7 @@ from mypy_boto3_glue.type_defs import CrawlTypeDef
 
 Optional fields:
 
-- `State`:
-  [CrawlState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#crawlstate)
+- `State`: [CrawlState](./literals.md#crawlstate)
 - `StartedOn`: `datetime`
 - `CompletedOn`: `datetime`
 - `ErrorMessage`: `str`
@@ -898,8 +873,7 @@ from mypy_boto3_glue.type_defs import CrawlerNodeDetailsTypeDef
 
 Optional fields:
 
-- `Crawls`:
-  `List`\[[CrawlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawltypedef)\]
+- `Crawls`: `List`\[[CrawlTypeDef](./type_defs.md#crawltypedef)\]
 
 ## CrawlerTargetsTypeDef
 
@@ -909,16 +883,14 @@ from mypy_boto3_glue.type_defs import CrawlerTargetsTypeDef
 
 Optional fields:
 
-- `S3Targets`:
-  `List`\[[S3TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#s3targettypedef)\]
-- `JdbcTargets`:
-  `List`\[[JdbcTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jdbctargettypedef)\]
+- `S3Targets`: `List`\[[S3TargetTypeDef](./type_defs.md#s3targettypedef)\]
+- `JdbcTargets`: `List`\[[JdbcTargetTypeDef](./type_defs.md#jdbctargettypedef)\]
 - `MongoDBTargets`:
-  `List`\[[MongoDBTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#mongodbtargettypedef)\]
+  `List`\[[MongoDBTargetTypeDef](./type_defs.md#mongodbtargettypedef)\]
 - `DynamoDBTargets`:
-  `List`\[[DynamoDBTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#dynamodbtargettypedef)\]
+  `List`\[[DynamoDBTargetTypeDef](./type_defs.md#dynamodbtargettypedef)\]
 - `CatalogTargets`:
-  `List`\[[CatalogTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogtargettypedef)\]
+  `List`\[[CatalogTargetTypeDef](./type_defs.md#catalogtargettypedef)\]
 
 ## CrawlerTypeDef
 
@@ -930,27 +902,22 @@ Optional fields:
 
 - `Name`: `str`
 - `Role`: `str`
-- `Targets`:
-  [CrawlerTargetsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertargetstypedef)
+- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
 - `DatabaseName`: `str`
 - `Description`: `str`
 - `Classifiers`: `List`\[`str`\]
-- `RecrawlPolicy`:
-  [RecrawlPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#recrawlpolicytypedef)
+- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemachangepolicytypedef)
+  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
 - `LineageConfiguration`:
-  [LineageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#lineageconfigurationtypedef)
-- `State`:
-  [CrawlerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#crawlerstate)
+  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
+- `State`: [CrawlerState](./literals.md#crawlerstate)
 - `TablePrefix`: `str`
-- `Schedule`:
-  [ScheduleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#scheduletypedef)
+- `Schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `CrawlElapsedTime`: `int`
 - `CreationTime`: `datetime`
 - `LastUpdated`: `datetime`
-- `LastCrawl`:
-  [LastCrawlInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#lastcrawlinfotypedef)
+- `LastCrawl`: [LastCrawlInfoTypeDef](./type_defs.md#lastcrawlinfotypedef)
 - `Version`: `int`
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
@@ -969,8 +936,7 @@ Optional fields:
 
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
-- `ContainsHeader`:
-  [CsvHeaderOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#csvheaderoption)
+- `ContainsHeader`: [CsvHeaderOption](./literals.md#csvheaderoption)
 - `Header`: `List`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
@@ -991,8 +957,7 @@ Optional fields:
 - `YarnEndpointAddress`: `str`
 - `ZeppelinRemoteSparkInterpreterPort`: `int`
 - `NumberOfNodes`: `int`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `GlueVersion`: `str`
 - `NumberOfWorkers`: `int`
 - `AvailabilityZone`: `str`
@@ -1077,18 +1042,15 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaArn`: `str`
 - `Description`: `str`
-- `DataFormat`: `Literal['AVRO']`
-- `Compatibility`:
-  [Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#compatibility)
+- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
+- `Compatibility`: [Compatibility](./literals.md#compatibility)
 - `SchemaCheckpoint`: `int`
 - `LatestSchemaVersion`: `int`
 - `NextSchemaVersion`: `int`
-- `SchemaStatus`:
-  [SchemaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemastatus)
+- `SchemaStatus`: [SchemaStatus](./literals.md#schemastatus)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `SchemaVersionId`: `str`
-- `SchemaVersionStatus`:
-  [SchemaVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemaversionstatus)
+- `SchemaVersionStatus`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
 
 ## CreateScriptResponseTypeDef
 
@@ -1164,8 +1126,7 @@ Optional fields:
 - `Version`: `int`
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
-- `ContainsHeader`:
-  [CsvHeaderOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#csvheaderoption)
+- `ContainsHeader`: [CsvHeaderOption](./literals.md#csvheaderoption)
 - `Header`: `List`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
@@ -1179,9 +1140,9 @@ from mypy_boto3_glue.type_defs import DataCatalogEncryptionSettingsTypeDef
 Optional fields:
 
 - `EncryptionAtRest`:
-  [EncryptionAtRestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#encryptionatresttypedef)
+  [EncryptionAtRestTypeDef](./type_defs.md#encryptionatresttypedef)
 - `ConnectionPasswordEncryption`:
-  [ConnectionPasswordEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectionpasswordencryptiontypedef)
+  [ConnectionPasswordEncryptionTypeDef](./type_defs.md#connectionpasswordencryptiontypedef)
 
 ## DataLakePrincipalTypeDef
 
@@ -1220,9 +1181,9 @@ Optional fields:
 - `LocationUri`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `CreateTableDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#principalpermissionstypedef)\]
+  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
 - `TargetDatabase`:
-  [DatabaseIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databaseidentifiertypedef)
+  [DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef)
 
 ## DatabaseTypeDef
 
@@ -1241,9 +1202,9 @@ Optional fields:
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `CreateTime`: `datetime`
 - `CreateTableDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#principalpermissionstypedef)\]
+  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
 - `TargetDatabase`:
-  [DatabaseIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databaseidentifiertypedef)
+  [DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef)
 - `CatalogId`: `str`
 
 ## DateColumnStatisticsDataTypeDef
@@ -1275,10 +1236,8 @@ Required fields:
 
 Optional fields:
 
-- `MinimumValue`:
-  [DecimalNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#decimalnumbertypedef)
-- `MaximumValue`:
-  [DecimalNumberTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#decimalnumbertypedef)
+- `MinimumValue`: [DecimalNumberTypeDef](./type_defs.md#decimalnumbertypedef)
+- `MaximumValue`: [DecimalNumberTypeDef](./type_defs.md#decimalnumbertypedef)
 
 ## DecimalNumberTypeDef
 
@@ -1321,8 +1280,7 @@ Optional fields:
 
 - `RegistryName`: `str`
 - `RegistryArn`: `str`
-- `Status`:
-  [RegistryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#registrystatus)
+- `Status`: [RegistryStatus](./literals.md#registrystatus)
 
 ## DeleteSchemaResponseTypeDef
 
@@ -1334,8 +1292,7 @@ Optional fields:
 
 - `SchemaArn`: `str`
 - `SchemaName`: `str`
-- `Status`:
-  [SchemaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemastatus)
+- `Status`: [SchemaStatus](./literals.md#schemastatus)
 
 ## DeleteSchemaVersionsResponseTypeDef
 
@@ -1346,7 +1303,7 @@ from mypy_boto3_glue.type_defs import DeleteSchemaVersionsResponseTypeDef
 Optional fields:
 
 - `SchemaVersionErrors`:
-  `List`\[[SchemaVersionErrorItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionerroritemtypedef)\]
+  `List`\[[SchemaVersionErrorItemTypeDef](./type_defs.md#schemaversionerroritemtypedef)\]
 
 ## DeleteTriggerResponseTypeDef
 
@@ -1396,8 +1353,7 @@ Optional fields:
 - `ZeppelinRemoteSparkInterpreterPort`: `int`
 - `PublicAddress`: `str`
 - `Status`: `str`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `GlueVersion`: `str`
 - `NumberOfWorkers`: `int`
 - `NumberOfNodes`: `int`
@@ -1462,7 +1418,7 @@ from mypy_boto3_glue.type_defs import EncryptionAtRestTypeDef
 Required fields:
 
 - `CatalogEncryptionMode`:
-  [CatalogEncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#catalogencryptionmode)
+  [CatalogEncryptionMode](./literals.md#catalogencryptionmode)
 
 Optional fields:
 
@@ -1477,11 +1433,11 @@ from mypy_boto3_glue.type_defs import EncryptionConfigurationTypeDef
 Optional fields:
 
 - `S3Encryption`:
-  `List`\[[S3EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#s3encryptiontypedef)\]
+  `List`\[[S3EncryptionTypeDef](./type_defs.md#s3encryptiontypedef)\]
 - `CloudWatchEncryption`:
-  [CloudWatchEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#cloudwatchencryptiontypedef)
+  [CloudWatchEncryptionTypeDef](./type_defs.md#cloudwatchencryptiontypedef)
 - `JobBookmarksEncryption`:
-  [JobBookmarksEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobbookmarksencryptiontypedef)
+  [JobBookmarksEncryptionTypeDef](./type_defs.md#jobbookmarksencryptiontypedef)
 
 ## ErrorDetailTypeDef
 
@@ -1513,12 +1469,13 @@ from mypy_boto3_glue.type_defs import EvaluationMetricsTypeDef
 
 Required fields:
 
-- `TransformType`: `Literal['FIND_MATCHES']`
+- `TransformType`: `Literal['FIND_MATCHES']` (see
+  [TransformType](./literals.md#transformtype))
 
 Optional fields:
 
 - `FindMatchesMetrics`:
-  [FindMatchesMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#findmatchesmetricstypedef)
+  [FindMatchesMetricsTypeDef](./type_defs.md#findmatchesmetricstypedef)
 
 ## ExecutionPropertyTypeDef
 
@@ -1553,9 +1510,9 @@ Optional fields:
 - `Recall`: `float`
 - `F1`: `float`
 - `ConfusionMatrix`:
-  [ConfusionMatrixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#confusionmatrixtypedef)
+  [ConfusionMatrixTypeDef](./type_defs.md#confusionmatrixtypedef)
 - `ColumnImportances`:
-  `List`\[[ColumnImportanceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnimportancetypedef)\]
+  `List`\[[ColumnImportanceTypeDef](./type_defs.md#columnimportancetypedef)\]
 
 ## FindMatchesParametersTypeDef
 
@@ -1591,7 +1548,7 @@ from mypy_boto3_glue.type_defs import GetCatalogImportStatusResponseTypeDef
 Optional fields:
 
 - `ImportStatus`:
-  [CatalogImportStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#catalogimportstatustypedef)
+  [CatalogImportStatusTypeDef](./type_defs.md#catalogimportstatustypedef)
 
 ## GetClassifierResponseTypeDef
 
@@ -1601,8 +1558,7 @@ from mypy_boto3_glue.type_defs import GetClassifierResponseTypeDef
 
 Optional fields:
 
-- `Classifier`:
-  [ClassifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#classifiertypedef)
+- `Classifier`: [ClassifierTypeDef](./type_defs.md#classifiertypedef)
 
 ## GetClassifiersResponseTypeDef
 
@@ -1612,8 +1568,7 @@ from mypy_boto3_glue.type_defs import GetClassifiersResponseTypeDef
 
 Optional fields:
 
-- `Classifiers`:
-  `List`\[[ClassifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#classifiertypedef)\]
+- `Classifiers`: `List`\[[ClassifierTypeDef](./type_defs.md#classifiertypedef)\]
 - `NextToken`: `str`
 
 ## GetColumnStatisticsForPartitionResponseTypeDef
@@ -1625,9 +1580,8 @@ from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionResponseTyp
 Optional fields:
 
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)\]
-- `Errors`:
-  `List`\[[ColumnErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnerrortypedef)\]
+  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+- `Errors`: `List`\[[ColumnErrorTypeDef](./type_defs.md#columnerrortypedef)\]
 
 ## GetColumnStatisticsForTableResponseTypeDef
 
@@ -1638,9 +1592,8 @@ from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableResponseTypeDef
 Optional fields:
 
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticstypedef)\]
-- `Errors`:
-  `List`\[[ColumnErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnerrortypedef)\]
+  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+- `Errors`: `List`\[[ColumnErrorTypeDef](./type_defs.md#columnerrortypedef)\]
 
 ## GetConnectionResponseTypeDef
 
@@ -1650,8 +1603,7 @@ from mypy_boto3_glue.type_defs import GetConnectionResponseTypeDef
 
 Optional fields:
 
-- `Connection`:
-  [ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectiontypedef)
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 
 ## GetConnectionsFilterTypeDef
 
@@ -1662,8 +1614,7 @@ from mypy_boto3_glue.type_defs import GetConnectionsFilterTypeDef
 Optional fields:
 
 - `MatchCriteria`: `List`\[`str`\]
-- `ConnectionType`:
-  [ConnectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#connectiontype)
+- `ConnectionType`: [ConnectionType](./literals.md#connectiontype)
 
 ## GetConnectionsResponseTypeDef
 
@@ -1674,7 +1625,7 @@ from mypy_boto3_glue.type_defs import GetConnectionsResponseTypeDef
 Optional fields:
 
 - `ConnectionList`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectiontypedef)\]
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
 
 ## GetCrawlerMetricsResponseTypeDef
@@ -1686,7 +1637,7 @@ from mypy_boto3_glue.type_defs import GetCrawlerMetricsResponseTypeDef
 Optional fields:
 
 - `CrawlerMetricsList`:
-  `List`\[[CrawlerMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlermetricstypedef)\]
+  `List`\[[CrawlerMetricsTypeDef](./type_defs.md#crawlermetricstypedef)\]
 - `NextToken`: `str`
 
 ## GetCrawlerResponseTypeDef
@@ -1697,8 +1648,7 @@ from mypy_boto3_glue.type_defs import GetCrawlerResponseTypeDef
 
 Optional fields:
 
-- `Crawler`:
-  [CrawlerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertypedef)
+- `Crawler`: [CrawlerTypeDef](./type_defs.md#crawlertypedef)
 
 ## GetCrawlersResponseTypeDef
 
@@ -1708,8 +1658,7 @@ from mypy_boto3_glue.type_defs import GetCrawlersResponseTypeDef
 
 Optional fields:
 
-- `Crawlers`:
-  `List`\[[CrawlerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlertypedef)\]
+- `Crawlers`: `List`\[[CrawlerTypeDef](./type_defs.md#crawlertypedef)\]
 - `NextToken`: `str`
 
 ## GetDataCatalogEncryptionSettingsResponseTypeDef
@@ -1721,7 +1670,7 @@ from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsResponseTy
 Optional fields:
 
 - `DataCatalogEncryptionSettings`:
-  [DataCatalogEncryptionSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#datacatalogencryptionsettingstypedef)
+  [DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef)
 
 ## GetDatabaseResponseTypeDef
 
@@ -1731,8 +1680,7 @@ from mypy_boto3_glue.type_defs import GetDatabaseResponseTypeDef
 
 Optional fields:
 
-- `Database`:
-  [DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databasetypedef)
+- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 
 ## GetDatabasesResponseTypeDef
 
@@ -1742,8 +1690,7 @@ from mypy_boto3_glue.type_defs import GetDatabasesResponseTypeDef
 
 Required fields:
 
-- `DatabaseList`:
-  `List`\[[DatabaseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#databasetypedef)\]
+- `DatabaseList`: `List`\[[DatabaseTypeDef](./type_defs.md#databasetypedef)\]
 
 Optional fields:
 
@@ -1757,10 +1704,8 @@ from mypy_boto3_glue.type_defs import GetDataflowGraphResponseTypeDef
 
 Optional fields:
 
-- `DagNodes`:
-  `List`\[[CodeGenNodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodetypedef)\]
-- `DagEdges`:
-  `List`\[[CodeGenEdgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegenedgetypedef)\]
+- `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
+- `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
 
 ## GetDevEndpointResponseTypeDef
 
@@ -1770,8 +1715,7 @@ from mypy_boto3_glue.type_defs import GetDevEndpointResponseTypeDef
 
 Optional fields:
 
-- `DevEndpoint`:
-  [DevEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#devendpointtypedef)
+- `DevEndpoint`: [DevEndpointTypeDef](./type_defs.md#devendpointtypedef)
 
 ## GetDevEndpointsResponseTypeDef
 
@@ -1782,7 +1726,7 @@ from mypy_boto3_glue.type_defs import GetDevEndpointsResponseTypeDef
 Optional fields:
 
 - `DevEndpoints`:
-  `List`\[[DevEndpointTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#devendpointtypedef)\]
+  `List`\[[DevEndpointTypeDef](./type_defs.md#devendpointtypedef)\]
 - `NextToken`: `str`
 
 ## GetJobBookmarkResponseTypeDef
@@ -1794,7 +1738,7 @@ from mypy_boto3_glue.type_defs import GetJobBookmarkResponseTypeDef
 Optional fields:
 
 - `JobBookmarkEntry`:
-  [JobBookmarkEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobbookmarkentrytypedef)
+  [JobBookmarkEntryTypeDef](./type_defs.md#jobbookmarkentrytypedef)
 
 ## GetJobResponseTypeDef
 
@@ -1804,8 +1748,7 @@ from mypy_boto3_glue.type_defs import GetJobResponseTypeDef
 
 Optional fields:
 
-- `Job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobtypedef)
+- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## GetJobRunResponseTypeDef
 
@@ -1815,8 +1758,7 @@ from mypy_boto3_glue.type_defs import GetJobRunResponseTypeDef
 
 Optional fields:
 
-- `JobRun`:
-  [JobRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobruntypedef)
+- `JobRun`: [JobRunTypeDef](./type_defs.md#jobruntypedef)
 
 ## GetJobRunsResponseTypeDef
 
@@ -1826,8 +1768,7 @@ from mypy_boto3_glue.type_defs import GetJobRunsResponseTypeDef
 
 Optional fields:
 
-- `JobRuns`:
-  `List`\[[JobRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobruntypedef)\]
+- `JobRuns`: `List`\[[JobRunTypeDef](./type_defs.md#jobruntypedef)\]
 - `NextToken`: `str`
 
 ## GetJobsResponseTypeDef
@@ -1838,8 +1779,7 @@ from mypy_boto3_glue.type_defs import GetJobsResponseTypeDef
 
 Optional fields:
 
-- `Jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobtypedef)\]
+- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextToken`: `str`
 
 ## GetMLTaskRunResponseTypeDef
@@ -1852,11 +1792,10 @@ Optional fields:
 
 - `TransformId`: `str`
 - `TaskRunId`: `str`
-- `Status`:
-  [TaskStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#taskstatustype)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 - `LogGroupName`: `str`
 - `Properties`:
-  [TaskRunPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskrunpropertiestypedef)
+  [TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef)
 - `ErrorString`: `str`
 - `StartedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
@@ -1871,8 +1810,7 @@ from mypy_boto3_glue.type_defs import GetMLTaskRunsResponseTypeDef
 
 Optional fields:
 
-- `TaskRuns`:
-  `List`\[[TaskRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskruntypedef)\]
+- `TaskRuns`: `List`\[[TaskRunTypeDef](./type_defs.md#taskruntypedef)\]
 - `NextToken`: `str`
 
 ## GetMLTransformResponseTypeDef
@@ -1886,29 +1824,26 @@ Optional fields:
 - `TransformId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`:
-  [TransformStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#transformstatustype)
+- `Status`: [TransformStatusType](./literals.md#transformstatustype)
 - `CreatedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gluetabletypedef)\]
+  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
 - `Parameters`:
-  [TransformParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformparameterstypedef)
+  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
 - `EvaluationMetrics`:
-  [EvaluationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#evaluationmetricstypedef)
+  [EvaluationMetricsTypeDef](./type_defs.md#evaluationmetricstypedef)
 - `LabelCount`: `int`
-- `Schema`:
-  `List`\[[SchemaColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemacolumntypedef)\]
+- `Schema`: `List`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
 - `Role`: `str`
 - `GlueVersion`: `str`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
 - `TransformEncryption`:
-  [TransformEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformencryptiontypedef)
+  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
 ## GetMLTransformsResponseTypeDef
 
@@ -1918,8 +1853,7 @@ from mypy_boto3_glue.type_defs import GetMLTransformsResponseTypeDef
 
 Required fields:
 
-- `Transforms`:
-  `List`\[[MLTransformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#mltransformtypedef)\]
+- `Transforms`: `List`\[[MLTransformTypeDef](./type_defs.md#mltransformtypedef)\]
 
 Optional fields:
 
@@ -1933,8 +1867,7 @@ from mypy_boto3_glue.type_defs import GetMappingResponseTypeDef
 
 Required fields:
 
-- `Mapping`:
-  `List`\[[MappingEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#mappingentrytypedef)\]
+- `Mapping`: `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
 
 ## GetPartitionIndexesResponseTypeDef
 
@@ -1945,7 +1878,7 @@ from mypy_boto3_glue.type_defs import GetPartitionIndexesResponseTypeDef
 Optional fields:
 
 - `PartitionIndexDescriptorList`:
-  `List`\[[PartitionIndexDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitionindexdescriptortypedef)\]
+  `List`\[[PartitionIndexDescriptorTypeDef](./type_defs.md#partitionindexdescriptortypedef)\]
 - `NextToken`: `str`
 
 ## GetPartitionResponseTypeDef
@@ -1956,8 +1889,7 @@ from mypy_boto3_glue.type_defs import GetPartitionResponseTypeDef
 
 Optional fields:
 
-- `Partition`:
-  [PartitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitiontypedef)
+- `Partition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
 
 ## GetPartitionsResponseTypeDef
 
@@ -1967,8 +1899,7 @@ from mypy_boto3_glue.type_defs import GetPartitionsResponseTypeDef
 
 Optional fields:
 
-- `Partitions`:
-  `List`\[[PartitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#partitiontypedef)\]
+- `Partitions`: `List`\[[PartitionTypeDef](./type_defs.md#partitiontypedef)\]
 - `NextToken`: `str`
 
 ## GetPlanResponseTypeDef
@@ -1993,8 +1924,7 @@ Optional fields:
 - `RegistryName`: `str`
 - `RegistryArn`: `str`
 - `Description`: `str`
-- `Status`:
-  [RegistryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#registrystatus)
+- `Status`: [RegistryStatus](./literals.md#registrystatus)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -2007,7 +1937,7 @@ from mypy_boto3_glue.type_defs import GetResourcePoliciesResponseTypeDef
 Optional fields:
 
 - `GetResourcePoliciesResponseList`:
-  `List`\[[GluePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gluepolicytypedef)\]
+  `List`\[[GluePolicyTypeDef](./type_defs.md#gluepolicytypedef)\]
 - `NextToken`: `str`
 
 ## GetResourcePolicyResponseTypeDef
@@ -2033,9 +1963,8 @@ Optional fields:
 
 - `SchemaVersionId`: `str`
 - `SchemaArn`: `str`
-- `DataFormat`: `Literal['AVRO']`
-- `Status`:
-  [SchemaVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemaversionstatus)
+- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
+- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
 - `CreatedTime`: `str`
 
 ## GetSchemaResponseTypeDef
@@ -2051,14 +1980,12 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaArn`: `str`
 - `Description`: `str`
-- `DataFormat`: `Literal['AVRO']`
-- `Compatibility`:
-  [Compatibility](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#compatibility)
+- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
+- `Compatibility`: [Compatibility](./literals.md#compatibility)
 - `SchemaCheckpoint`: `int`
 - `LatestSchemaVersion`: `int`
 - `NextSchemaVersion`: `int`
-- `SchemaStatus`:
-  [SchemaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemastatus)
+- `SchemaStatus`: [SchemaStatus](./literals.md#schemastatus)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -2072,11 +1999,10 @@ Optional fields:
 
 - `SchemaVersionId`: `str`
 - `SchemaDefinition`: `str`
-- `DataFormat`: `Literal['AVRO']`
+- `DataFormat`: `Literal['AVRO']` (see [DataFormat](./literals.md#dataformat))
 - `SchemaArn`: `str`
 - `VersionNumber`: `int`
-- `Status`:
-  [SchemaVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemaversionstatus)
+- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
 - `CreatedTime`: `str`
 
 ## GetSchemaVersionsDiffResponseTypeDef
@@ -2098,7 +2024,7 @@ from mypy_boto3_glue.type_defs import GetSecurityConfigurationResponseTypeDef
 Optional fields:
 
 - `SecurityConfiguration`:
-  [SecurityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#securityconfigurationtypedef)
+  [SecurityConfigurationTypeDef](./type_defs.md#securityconfigurationtypedef)
 
 ## GetSecurityConfigurationsResponseTypeDef
 
@@ -2109,7 +2035,7 @@ from mypy_boto3_glue.type_defs import GetSecurityConfigurationsResponseTypeDef
 Optional fields:
 
 - `SecurityConfigurations`:
-  `List`\[[SecurityConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#securityconfigurationtypedef)\]
+  `List`\[[SecurityConfigurationTypeDef](./type_defs.md#securityconfigurationtypedef)\]
 - `NextToken`: `str`
 
 ## GetTableResponseTypeDef
@@ -2120,8 +2046,7 @@ from mypy_boto3_glue.type_defs import GetTableResponseTypeDef
 
 Optional fields:
 
-- `Table`:
-  [TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tabletypedef)
+- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 
 ## GetTableVersionResponseTypeDef
 
@@ -2131,8 +2056,7 @@ from mypy_boto3_glue.type_defs import GetTableVersionResponseTypeDef
 
 Optional fields:
 
-- `TableVersion`:
-  [TableVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableversiontypedef)
+- `TableVersion`: [TableVersionTypeDef](./type_defs.md#tableversiontypedef)
 
 ## GetTableVersionsResponseTypeDef
 
@@ -2143,7 +2067,7 @@ from mypy_boto3_glue.type_defs import GetTableVersionsResponseTypeDef
 Optional fields:
 
 - `TableVersions`:
-  `List`\[[TableVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableversiontypedef)\]
+  `List`\[[TableVersionTypeDef](./type_defs.md#tableversiontypedef)\]
 - `NextToken`: `str`
 
 ## GetTablesResponseTypeDef
@@ -2154,8 +2078,7 @@ from mypy_boto3_glue.type_defs import GetTablesResponseTypeDef
 
 Optional fields:
 
-- `TableList`:
-  `List`\[[TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tabletypedef)\]
+- `TableList`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
 - `NextToken`: `str`
 
 ## GetTagsResponseTypeDef
@@ -2176,8 +2099,7 @@ from mypy_boto3_glue.type_defs import GetTriggerResponseTypeDef
 
 Optional fields:
 
-- `Trigger`:
-  [TriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggertypedef)
+- `Trigger`: [TriggerTypeDef](./type_defs.md#triggertypedef)
 
 ## GetTriggersResponseTypeDef
 
@@ -2187,8 +2109,7 @@ from mypy_boto3_glue.type_defs import GetTriggersResponseTypeDef
 
 Optional fields:
 
-- `Triggers`:
-  `List`\[[TriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggertypedef)\]
+- `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
 - `NextToken`: `str`
 
 ## GetUserDefinedFunctionResponseTypeDef
@@ -2200,7 +2121,7 @@ from mypy_boto3_glue.type_defs import GetUserDefinedFunctionResponseTypeDef
 Optional fields:
 
 - `UserDefinedFunction`:
-  [UserDefinedFunctionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#userdefinedfunctiontypedef)
+  [UserDefinedFunctionTypeDef](./type_defs.md#userdefinedfunctiontypedef)
 
 ## GetUserDefinedFunctionsResponseTypeDef
 
@@ -2211,7 +2132,7 @@ from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsResponseTypeDef
 Optional fields:
 
 - `UserDefinedFunctions`:
-  `List`\[[UserDefinedFunctionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#userdefinedfunctiontypedef)\]
+  `List`\[[UserDefinedFunctionTypeDef](./type_defs.md#userdefinedfunctiontypedef)\]
 - `NextToken`: `str`
 
 ## GetWorkflowResponseTypeDef
@@ -2222,8 +2143,7 @@ from mypy_boto3_glue.type_defs import GetWorkflowResponseTypeDef
 
 Optional fields:
 
-- `Workflow`:
-  [WorkflowTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowtypedef)
+- `Workflow`: [WorkflowTypeDef](./type_defs.md#workflowtypedef)
 
 ## GetWorkflowRunPropertiesResponseTypeDef
 
@@ -2243,8 +2163,7 @@ from mypy_boto3_glue.type_defs import GetWorkflowRunResponseTypeDef
 
 Optional fields:
 
-- `Run`:
-  [WorkflowRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowruntypedef)
+- `Run`: [WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)
 
 ## GetWorkflowRunsResponseTypeDef
 
@@ -2254,8 +2173,7 @@ from mypy_boto3_glue.type_defs import GetWorkflowRunsResponseTypeDef
 
 Optional fields:
 
-- `Runs`:
-  `List`\[[WorkflowRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowruntypedef)\]
+- `Runs`: `List`\[[WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)\]
 - `NextToken`: `str`
 
 ## GluePolicyTypeDef
@@ -2354,7 +2272,7 @@ from mypy_boto3_glue.type_defs import JobBookmarksEncryptionTypeDef
 Optional fields:
 
 - `JobBookmarksEncryptionMode`:
-  [JobBookmarksEncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#jobbookmarksencryptionmode)
+  [JobBookmarksEncryptionMode](./literals.md#jobbookmarksencryptionmode)
 - `KmsKeyArn`: `str`
 
 ## JobCommandTypeDef
@@ -2377,8 +2295,7 @@ from mypy_boto3_glue.type_defs import JobNodeDetailsTypeDef
 
 Optional fields:
 
-- `JobRuns`:
-  `List`\[[JobRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobruntypedef)\]
+- `JobRuns`: `List`\[[JobRunTypeDef](./type_defs.md#jobruntypedef)\]
 
 ## JobRunTypeDef
 
@@ -2396,23 +2313,21 @@ Optional fields:
 - `StartedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `CompletedOn`: `datetime`
-- `JobRunState`:
-  [JobRunState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#jobrunstate)
+- `JobRunState`: [JobRunState](./literals.md#jobrunstate)
 - `Arguments`: `Dict`\[`str`, `str`\]
 - `ErrorMessage`: `str`
 - `PredecessorRuns`:
-  `List`\[[PredecessorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#predecessortypedef)\]
+  `List`\[[PredecessorTypeDef](./type_defs.md#predecessortypedef)\]
 - `AllocatedCapacity`: `int`
 - `ExecutionTime`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `SecurityConfiguration`: `str`
 - `LogGroupName`: `str`
 - `NotificationProperty`:
-  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
 
 ## JobTypeDef
@@ -2430,23 +2345,20 @@ Optional fields:
 - `CreatedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#executionpropertytypedef)
-- `Command`:
-  [JobCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobcommandtypedef)
+  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
+- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
 - `DefaultArguments`: `Dict`\[`str`, `str`\]
 - `NonOverridableArguments`: `Dict`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectionslisttypedef)
+- `Connections`: [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `SecurityConfiguration`: `str`
 - `NotificationProperty`:
-  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
 
 ## JobUpdateTypeDef
@@ -2461,23 +2373,20 @@ Optional fields:
 - `LogUri`: `str`
 - `Role`: `str`
 - `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#executionpropertytypedef)
-- `Command`:
-  [JobCommandTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobcommandtypedef)
+  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
+- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
 - `DefaultArguments`: `Dict`\[`str`, `str`\]
 - `NonOverridableArguments`: `Dict`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#connectionslisttypedef)
+- `Connections`: [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `SecurityConfiguration`: `str`
 - `NotificationProperty`:
-  [NotificationPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#notificationpropertytypedef)
+  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
 
 ## JsonClassifierTypeDef
@@ -2526,8 +2435,7 @@ from mypy_boto3_glue.type_defs import LastCrawlInfoTypeDef
 
 Optional fields:
 
-- `Status`:
-  [LastCrawlStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#lastcrawlstatus)
+- `Status`: [LastCrawlStatus](./literals.md#lastcrawlstatus)
 - `ErrorMessage`: `str`
 - `LogGroup`: `str`
 - `LogStream`: `str`
@@ -2543,7 +2451,7 @@ from mypy_boto3_glue.type_defs import LineageConfigurationTypeDef
 Optional fields:
 
 - `CrawlerLineageSettings`:
-  [CrawlerLineageSettings](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#crawlerlineagesettings)
+  [CrawlerLineageSettings](./literals.md#crawlerlineagesettings)
 
 ## ListCrawlersResponseTypeDef
 
@@ -2601,7 +2509,7 @@ from mypy_boto3_glue.type_defs import ListRegistriesResponseTypeDef
 Optional fields:
 
 - `Registries`:
-  `List`\[[RegistryListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#registrylistitemtypedef)\]
+  `List`\[[RegistryListItemTypeDef](./type_defs.md#registrylistitemtypedef)\]
 - `NextToken`: `str`
 
 ## ListSchemaVersionsResponseTypeDef
@@ -2613,7 +2521,7 @@ from mypy_boto3_glue.type_defs import ListSchemaVersionsResponseTypeDef
 Optional fields:
 
 - `Schemas`:
-  `List`\[[SchemaVersionListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaversionlistitemtypedef)\]
+  `List`\[[SchemaVersionListItemTypeDef](./type_defs.md#schemaversionlistitemtypedef)\]
 - `NextToken`: `str`
 
 ## ListSchemasResponseTypeDef
@@ -2625,7 +2533,7 @@ from mypy_boto3_glue.type_defs import ListSchemasResponseTypeDef
 Optional fields:
 
 - `Schemas`:
-  `List`\[[SchemaListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemalistitemtypedef)\]
+  `List`\[[SchemaListItemTypeDef](./type_defs.md#schemalistitemtypedef)\]
 - `NextToken`: `str`
 
 ## ListTriggersResponseTypeDef
@@ -2658,12 +2566,10 @@ from mypy_boto3_glue.type_defs import LocationTypeDef
 
 Optional fields:
 
-- `Jdbc`:
-  `List`\[[CodeGenNodeArgTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodeargtypedef)\]
-- `S3`:
-  `List`\[[CodeGenNodeArgTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodeargtypedef)\]
+- `Jdbc`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+- `S3`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 - `DynamoDB`:
-  `List`\[[CodeGenNodeArgTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#codegennodeargtypedef)\]
+  `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 
 ## LongColumnStatisticsDataTypeDef
 
@@ -2692,29 +2598,26 @@ Optional fields:
 - `TransformId`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `Status`:
-  [TransformStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#transformstatustype)
+- `Status`: [TransformStatusType](./literals.md#transformstatustype)
 - `CreatedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
 - `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#gluetabletypedef)\]
+  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
 - `Parameters`:
-  [TransformParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformparameterstypedef)
+  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
 - `EvaluationMetrics`:
-  [EvaluationMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#evaluationmetricstypedef)
+  [EvaluationMetricsTypeDef](./type_defs.md#evaluationmetricstypedef)
 - `LabelCount`: `int`
-- `Schema`:
-  `List`\[[SchemaColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemacolumntypedef)\]
+- `Schema`: `List`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
 - `Role`: `str`
 - `GlueVersion`: `str`
 - `MaxCapacity`: `float`
-- `WorkerType`:
-  [WorkerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workertype)
+- `WorkerType`: [WorkerType](./literals.md#workertype)
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
 - `TransformEncryption`:
-  [TransformEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#transformencryptiontypedef)
+  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
 ## MLUserDataEncryptionTypeDef
 
@@ -2725,7 +2628,7 @@ from mypy_boto3_glue.type_defs import MLUserDataEncryptionTypeDef
 Required fields:
 
 - `MlUserDataEncryptionMode`:
-  [MLUserDataEncryptionModeString](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#mluserdataencryptionmodestring)
+  [MLUserDataEncryptionModeString](./literals.md#mluserdataencryptionmodestring)
 
 Optional fields:
 
@@ -2757,7 +2660,7 @@ Optional fields:
 - `MetadataValue`: `str`
 - `CreatedTime`: `str`
 - `OtherMetadataValueList`:
-  `List`\[[OtherMetadataValueListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#othermetadatavaluelistitemtypedef)\]
+  `List`\[[OtherMetadataValueListItemTypeDef](./type_defs.md#othermetadatavaluelistitemtypedef)\]
 
 ## MetadataKeyValuePairTypeDef
 
@@ -2790,16 +2693,14 @@ from mypy_boto3_glue.type_defs import NodeTypeDef
 
 Optional fields:
 
-- `Type`:
-  [NodeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#nodetype)
+- `Type`: [NodeType](./literals.md#nodetype)
 - `Name`: `str`
 - `UniqueId`: `str`
 - `TriggerDetails`:
-  [TriggerNodeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggernodedetailstypedef)
-- `JobDetails`:
-  [JobNodeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobnodedetailstypedef)
+  [TriggerNodeDetailsTypeDef](./type_defs.md#triggernodedetailstypedef)
+- `JobDetails`: [JobNodeDetailsTypeDef](./type_defs.md#jobnodedetailstypedef)
 - `CrawlerDetails`:
-  [CrawlerNodeDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#crawlernodedetailstypedef)
+  [CrawlerNodeDetailsTypeDef](./type_defs.md#crawlernodedetailstypedef)
 
 ## NotificationPropertyTypeDef
 
@@ -2854,8 +2755,7 @@ from mypy_boto3_glue.type_defs import PartitionErrorTypeDef
 Optional fields:
 
 - `PartitionValues`: `List`\[`str`\]
-- `ErrorDetail`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## PartitionIndexDescriptorTypeDef
 
@@ -2867,14 +2767,13 @@ Required fields:
 
 - `IndexName`: `str`
 - `Keys`:
-  `List`\[[KeySchemaElementTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#keyschemaelementtypedef)\]
-- `IndexStatus`:
-  [PartitionIndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#partitionindexstatus)
+  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+- `IndexStatus`: [PartitionIndexStatus](./literals.md#partitionindexstatus)
 
 Optional fields:
 
 - `BackfillErrors`:
-  `List`\[[BackfillErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#backfillerrortypedef)\]
+  `List`\[[BackfillErrorTypeDef](./type_defs.md#backfillerrortypedef)\]
 
 ## PartitionIndexTypeDef
 
@@ -2898,7 +2797,7 @@ Optional fields:
 - `Values`: `List`\[`str`\]
 - `LastAccessTime`: `datetime`
 - `StorageDescriptor`:
-  [StorageDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#storagedescriptortypedef)
+  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `LastAnalyzedTime`: `datetime`
 
@@ -2916,7 +2815,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastAccessTime`: `datetime`
 - `StorageDescriptor`:
-  [StorageDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#storagedescriptortypedef)
+  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `LastAnalyzedTime`: `datetime`
 - `CatalogId`: `str`
@@ -2962,10 +2861,8 @@ from mypy_boto3_glue.type_defs import PredicateTypeDef
 
 Optional fields:
 
-- `Logical`:
-  [Logical](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#logical)
-- `Conditions`:
-  `List`\[[ConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#conditiontypedef)\]
+- `Logical`: [Logical](./literals.md#logical)
+- `Conditions`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## PrincipalPermissionsTypeDef
 
@@ -2976,9 +2873,8 @@ from mypy_boto3_glue.type_defs import PrincipalPermissionsTypeDef
 Optional fields:
 
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#datalakeprincipaltypedef)
-- `Permissions`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#permission)\]
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
+- `Permissions`: `List`\[[Permission](./literals.md#permission)\]
 
 ## PropertyPredicateTypeDef
 
@@ -2990,8 +2886,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
-- `Comparator`:
-  [Comparator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#comparator)
+- `Comparator`: [Comparator](./literals.md#comparator)
 
 ## PutResourcePolicyResponseTypeDef
 
@@ -3029,7 +2924,7 @@ from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataResponseTypeDef
 Optional fields:
 
 - `MetadataInfoMap`: `Dict`\[`str`,
-  [MetadataInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#metadatainfotypedef)\]
+  [MetadataInfoTypeDef](./type_defs.md#metadatainfotypedef)\]
 - `SchemaVersionId`: `str`
 - `NextToken`: `str`
 
@@ -3041,8 +2936,7 @@ from mypy_boto3_glue.type_defs import RecrawlPolicyTypeDef
 
 Optional fields:
 
-- `RecrawlBehavior`:
-  [RecrawlBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#recrawlbehavior)
+- `RecrawlBehavior`: [RecrawlBehavior](./literals.md#recrawlbehavior)
 
 ## RegisterSchemaVersionResponseTypeDef
 
@@ -3054,8 +2948,7 @@ Optional fields:
 
 - `SchemaVersionId`: `str`
 - `VersionNumber`: `int`
-- `Status`:
-  [SchemaVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemaversionstatus)
+- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
 
 ## RegistryIdTypeDef
 
@@ -3079,8 +2972,7 @@ Optional fields:
 - `RegistryName`: `str`
 - `RegistryArn`: `str`
 - `Description`: `str`
-- `Status`:
-  [RegistryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#registrystatus)
+- `Status`: [RegistryStatus](./literals.md#registrystatus)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -3110,7 +3002,7 @@ from mypy_boto3_glue.type_defs import ResetJobBookmarkResponseTypeDef
 Optional fields:
 
 - `JobBookmarkEntry`:
-  [JobBookmarkEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#jobbookmarkentrytypedef)
+  [JobBookmarkEntryTypeDef](./type_defs.md#jobbookmarkentrytypedef)
 
 ## ResourceUriTypeDef
 
@@ -3120,8 +3012,7 @@ from mypy_boto3_glue.type_defs import ResourceUriTypeDef
 
 Optional fields:
 
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#resourcetype)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype)
 - `Uri`: `str`
 
 ## ResumeWorkflowRunResponseTypeDef
@@ -3143,8 +3034,7 @@ from mypy_boto3_glue.type_defs import S3EncryptionTypeDef
 
 Optional fields:
 
-- `S3EncryptionMode`:
-  [S3EncryptionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#s3encryptionmode)
+- `S3EncryptionMode`: [S3EncryptionMode](./literals.md#s3encryptionmode)
 - `KmsKeyArn`: `str`
 
 ## S3TargetTypeDef
@@ -3168,8 +3058,7 @@ from mypy_boto3_glue.type_defs import ScheduleTypeDef
 Optional fields:
 
 - `ScheduleExpression`: `str`
-- `State`:
-  [ScheduleState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schedulestate)
+- `State`: [ScheduleState](./literals.md#schedulestate)
 
 ## SchemaChangePolicyTypeDef
 
@@ -3179,10 +3068,8 @@ from mypy_boto3_glue.type_defs import SchemaChangePolicyTypeDef
 
 Optional fields:
 
-- `UpdateBehavior`:
-  [UpdateBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#updatebehavior)
-- `DeleteBehavior`:
-  [DeleteBehavior](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#deletebehavior)
+- `UpdateBehavior`: [UpdateBehavior](./literals.md#updatebehavior)
+- `DeleteBehavior`: [DeleteBehavior](./literals.md#deletebehavior)
 
 ## SchemaColumnTypeDef
 
@@ -3219,8 +3106,7 @@ Optional fields:
 - `SchemaName`: `str`
 - `SchemaArn`: `str`
 - `Description`: `str`
-- `SchemaStatus`:
-  [SchemaStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemastatus)
+- `SchemaStatus`: [SchemaStatus](./literals.md#schemastatus)
 - `CreatedTime`: `str`
 - `UpdatedTime`: `str`
 
@@ -3232,8 +3118,7 @@ from mypy_boto3_glue.type_defs import SchemaReferenceTypeDef
 
 Optional fields:
 
-- `SchemaId`:
-  [SchemaIdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemaidtypedef)
+- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionId`: `str`
 - `SchemaVersionNumber`: `int`
 
@@ -3246,8 +3131,7 @@ from mypy_boto3_glue.type_defs import SchemaVersionErrorItemTypeDef
 Optional fields:
 
 - `VersionNumber`: `int`
-- `ErrorDetails`:
-  [ErrorDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailstypedef)
+- `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
 
 ## SchemaVersionListItemTypeDef
 
@@ -3260,8 +3144,7 @@ Optional fields:
 - `SchemaArn`: `str`
 - `SchemaVersionId`: `str`
 - `VersionNumber`: `int`
-- `Status`:
-  [SchemaVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#schemaversionstatus)
+- `Status`: [SchemaVersionStatus](./literals.md#schemaversionstatus)
 - `CreatedTime`: `str`
 
 ## SchemaVersionNumberTypeDef
@@ -3284,8 +3167,7 @@ from mypy_boto3_glue.type_defs import SearchTablesResponseTypeDef
 Optional fields:
 
 - `NextToken`: `str`
-- `TableList`:
-  `List`\[[TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tabletypedef)\]
+- `TableList`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
 
 ## SecurityConfigurationTypeDef
 
@@ -3298,7 +3180,7 @@ Optional fields:
 - `Name`: `str`
 - `CreatedTimeStamp`: `datetime`
 - `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#encryptionconfigurationtypedef)
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
 ## SegmentTypeDef
 
@@ -3344,8 +3226,7 @@ from mypy_boto3_glue.type_defs import SortCriterionTypeDef
 Optional fields:
 
 - `FieldName`: `str`
-- `Sort`:
-  [Sort](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#sort)
+- `Sort`: [Sort](./literals.md#sort)
 
 ## StartExportLabelsTaskRunResponseTypeDef
 
@@ -3435,24 +3316,20 @@ from mypy_boto3_glue.type_defs import StorageDescriptorTypeDef
 
 Optional fields:
 
-- `Columns`:
-  `List`\[[ColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columntypedef)\]
+- `Columns`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `Location`: `str`
 - `InputFormat`: `str`
 - `OutputFormat`: `str`
 - `Compressed`: `bool`
 - `NumberOfBuckets`: `int`
-- `SerdeInfo`:
-  [SerDeInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#serdeinfotypedef)
+- `SerdeInfo`: [SerDeInfoTypeDef](./type_defs.md#serdeinfotypedef)
 - `BucketColumns`: `List`\[`str`\]
-- `SortColumns`:
-  `List`\[[OrderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#ordertypedef)\]
+- `SortColumns`: `List`\[[OrderTypeDef](./type_defs.md#ordertypedef)\]
 - `Parameters`: `Dict`\[`str`, `str`\]
-- `SkewedInfo`:
-  [SkewedInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#skewedinfotypedef)
+- `SkewedInfo`: [SkewedInfoTypeDef](./type_defs.md#skewedinfotypedef)
 - `StoredAsSubDirectories`: `bool`
 - `SchemaReference`:
-  [SchemaReferenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemareferencetypedef)
+  [SchemaReferenceTypeDef](./type_defs.md#schemareferencetypedef)
 
 ## StringColumnStatisticsDataTypeDef
 
@@ -3476,8 +3353,7 @@ from mypy_boto3_glue.type_defs import TableErrorTypeDef
 Optional fields:
 
 - `TableName`: `str`
-- `ErrorDetail`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## TableIdentifierTypeDef
 
@@ -3509,15 +3385,13 @@ Optional fields:
 - `LastAnalyzedTime`: `datetime`
 - `Retention`: `int`
 - `StorageDescriptor`:
-  [StorageDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#storagedescriptortypedef)
-- `PartitionKeys`:
-  `List`\[[ColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columntypedef)\]
+  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
+- `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `ViewOriginalText`: `str`
 - `ViewExpandedText`: `str`
 - `TableType`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
-- `TargetTable`:
-  [TableIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableidentifiertypedef)
+- `TargetTable`: [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 
 ## TableTypeDef
 
@@ -3540,17 +3414,15 @@ Optional fields:
 - `LastAnalyzedTime`: `datetime`
 - `Retention`: `int`
 - `StorageDescriptor`:
-  [StorageDescriptorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#storagedescriptortypedef)
-- `PartitionKeys`:
-  `List`\[[ColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columntypedef)\]
+  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
+- `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `ViewOriginalText`: `str`
 - `ViewExpandedText`: `str`
 - `TableType`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `CreatedBy`: `str`
 - `IsRegisteredWithLakeFormation`: `bool`
-- `TargetTable`:
-  [TableIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tableidentifiertypedef)
+- `TargetTable`: [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 - `CatalogId`: `str`
 
 ## TableVersionErrorTypeDef
@@ -3563,8 +3435,7 @@ Optional fields:
 
 - `TableName`: `str`
 - `VersionId`: `str`
-- `ErrorDetail`:
-  [ErrorDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#errordetailtypedef)
+- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 
 ## TableVersionTypeDef
 
@@ -3574,8 +3445,7 @@ from mypy_boto3_glue.type_defs import TableVersionTypeDef
 
 Optional fields:
 
-- `Table`:
-  [TableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#tabletypedef)
+- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 - `VersionId`: `str`
 
 ## TaskRunFilterCriteriaTypeDef
@@ -3586,10 +3456,8 @@ from mypy_boto3_glue.type_defs import TaskRunFilterCriteriaTypeDef
 
 Optional fields:
 
-- `TaskRunType`:
-  [TaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#tasktype)
-- `Status`:
-  [TaskStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#taskstatustype)
+- `TaskRunType`: [TaskType](./literals.md#tasktype)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 - `StartedBefore`: `datetime`
 - `StartedAfter`: `datetime`
 
@@ -3601,16 +3469,15 @@ from mypy_boto3_glue.type_defs import TaskRunPropertiesTypeDef
 
 Optional fields:
 
-- `TaskType`:
-  [TaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#tasktype)
+- `TaskType`: [TaskType](./literals.md#tasktype)
 - `ImportLabelsTaskRunProperties`:
-  [ImportLabelsTaskRunPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#importlabelstaskrunpropertiestypedef)
+  [ImportLabelsTaskRunPropertiesTypeDef](./type_defs.md#importlabelstaskrunpropertiestypedef)
 - `ExportLabelsTaskRunProperties`:
-  [ExportLabelsTaskRunPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#exportlabelstaskrunpropertiestypedef)
+  [ExportLabelsTaskRunPropertiesTypeDef](./type_defs.md#exportlabelstaskrunpropertiestypedef)
 - `LabelingSetGenerationTaskRunProperties`:
-  [LabelingSetGenerationTaskRunPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#labelingsetgenerationtaskrunpropertiestypedef)
+  [LabelingSetGenerationTaskRunPropertiesTypeDef](./type_defs.md#labelingsetgenerationtaskrunpropertiestypedef)
 - `FindMatchesTaskRunProperties`:
-  [FindMatchesTaskRunPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#findmatchestaskrunpropertiestypedef)
+  [FindMatchesTaskRunPropertiesTypeDef](./type_defs.md#findmatchestaskrunpropertiestypedef)
 
 ## TaskRunSortCriteriaTypeDef
 
@@ -3620,10 +3487,8 @@ from mypy_boto3_glue.type_defs import TaskRunSortCriteriaTypeDef
 
 Required fields:
 
-- `Column`:
-  [TaskRunSortColumnType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#taskrunsortcolumntype)
-- `SortDirection`:
-  [SortDirectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#sortdirectiontype)
+- `Column`: [TaskRunSortColumnType](./literals.md#taskrunsortcolumntype)
+- `SortDirection`: [SortDirectionType](./literals.md#sortdirectiontype)
 
 ## TaskRunTypeDef
 
@@ -3635,11 +3500,10 @@ Optional fields:
 
 - `TransformId`: `str`
 - `TaskRunId`: `str`
-- `Status`:
-  [TaskStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#taskstatustype)
+- `Status`: [TaskStatusType](./literals.md#taskstatustype)
 - `LogGroupName`: `str`
 - `Properties`:
-  [TaskRunPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#taskrunpropertiestypedef)
+  [TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef)
 - `ErrorString`: `str`
 - `StartedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
@@ -3655,7 +3519,7 @@ from mypy_boto3_glue.type_defs import TransformEncryptionTypeDef
 Optional fields:
 
 - `MlUserDataEncryption`:
-  [MLUserDataEncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#mluserdataencryptiontypedef)
+  [MLUserDataEncryptionTypeDef](./type_defs.md#mluserdataencryptiontypedef)
 - `TaskRunSecurityConfigurationName`: `str`
 
 ## TransformFilterCriteriaTypeDef
@@ -3667,16 +3531,15 @@ from mypy_boto3_glue.type_defs import TransformFilterCriteriaTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `TransformType`: `Literal['FIND_MATCHES']`
-- `Status`:
-  [TransformStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#transformstatustype)
+- `TransformType`: `Literal['FIND_MATCHES']` (see
+  [TransformType](./literals.md#transformtype))
+- `Status`: [TransformStatusType](./literals.md#transformstatustype)
 - `GlueVersion`: `str`
 - `CreatedBefore`: `datetime`
 - `CreatedAfter`: `datetime`
 - `LastModifiedBefore`: `datetime`
 - `LastModifiedAfter`: `datetime`
-- `Schema`:
-  `List`\[[SchemaColumnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#schemacolumntypedef)\]
+- `Schema`: `List`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
 
 ## TransformParametersTypeDef
 
@@ -3686,12 +3549,13 @@ from mypy_boto3_glue.type_defs import TransformParametersTypeDef
 
 Required fields:
 
-- `TransformType`: `Literal['FIND_MATCHES']`
+- `TransformType`: `Literal['FIND_MATCHES']` (see
+  [TransformType](./literals.md#transformtype))
 
 Optional fields:
 
 - `FindMatchesParameters`:
-  [FindMatchesParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#findmatchesparameterstypedef)
+  [FindMatchesParametersTypeDef](./type_defs.md#findmatchesparameterstypedef)
 
 ## TransformSortCriteriaTypeDef
 
@@ -3701,10 +3565,8 @@ from mypy_boto3_glue.type_defs import TransformSortCriteriaTypeDef
 
 Required fields:
 
-- `Column`:
-  [TransformSortColumnType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#transformsortcolumntype)
-- `SortDirection`:
-  [SortDirectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#sortdirectiontype)
+- `Column`: [TransformSortColumnType](./literals.md#transformsortcolumntype)
+- `SortDirection`: [SortDirectionType](./literals.md#sortdirectiontype)
 
 ## TriggerNodeDetailsTypeDef
 
@@ -3714,8 +3576,7 @@ from mypy_boto3_glue.type_defs import TriggerNodeDetailsTypeDef
 
 Optional fields:
 
-- `Trigger`:
-  [TriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggertypedef)
+- `Trigger`: [TriggerTypeDef](./type_defs.md#triggertypedef)
 
 ## TriggerTypeDef
 
@@ -3728,16 +3589,12 @@ Optional fields:
 - `Name`: `str`
 - `WorkflowName`: `str`
 - `Id`: `str`
-- `Type`:
-  [TriggerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#triggertype)
-- `State`:
-  [TriggerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#triggerstate)
+- `Type`: [TriggerType](./literals.md#triggertype)
+- `State`: [TriggerState](./literals.md#triggerstate)
 - `Description`: `str`
 - `Schedule`: `str`
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#actiontypedef)\]
-- `Predicate`:
-  [PredicateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#predicatetypedef)
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 
 ## TriggerUpdateTypeDef
 
@@ -3750,10 +3607,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Schedule`: `str`
-- `Actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#actiontypedef)\]
-- `Predicate`:
-  [PredicateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#predicatetypedef)
+- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 
 ## UpdateColumnStatisticsForPartitionResponseTypeDef
 
@@ -3764,7 +3619,7 @@ from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionResponse
 Optional fields:
 
 - `Errors`:
-  `List`\[[ColumnStatisticsErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticserrortypedef)\]
+  `List`\[[ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef)\]
 
 ## UpdateColumnStatisticsForTableResponseTypeDef
 
@@ -3775,7 +3630,7 @@ from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableResponseType
 Optional fields:
 
 - `Errors`:
-  `List`\[[ColumnStatisticsErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#columnstatisticserrortypedef)\]
+  `List`\[[ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef)\]
 
 ## UpdateCsvClassifierRequestTypeDef
 
@@ -3791,8 +3646,7 @@ Optional fields:
 
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
-- `ContainsHeader`:
-  [CsvHeaderOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#csvheaderoption)
+- `ContainsHeader`: [CsvHeaderOption](./literals.md#csvheaderoption)
 - `Header`: `List`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
@@ -3878,8 +3732,7 @@ from mypy_boto3_glue.type_defs import UpdateTriggerResponseTypeDef
 
 Optional fields:
 
-- `Trigger`:
-  [TriggerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#triggertypedef)
+- `Trigger`: [TriggerTypeDef](./type_defs.md#triggertypedef)
 
 ## UpdateWorkflowResponseTypeDef
 
@@ -3917,10 +3770,9 @@ Optional fields:
 - `FunctionName`: `str`
 - `ClassName`: `str`
 - `OwnerName`: `str`
-- `OwnerType`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#principaltype)
+- `OwnerType`: [PrincipalType](./literals.md#principaltype)
 - `ResourceUris`:
-  `List`\[[ResourceUriTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#resourceuritypedef)\]
+  `List`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
 
 ## UserDefinedFunctionTypeDef
 
@@ -3934,11 +3786,10 @@ Optional fields:
 - `DatabaseName`: `str`
 - `ClassName`: `str`
 - `OwnerName`: `str`
-- `OwnerType`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#principaltype)
+- `OwnerType`: [PrincipalType](./literals.md#principaltype)
 - `CreateTime`: `datetime`
 - `ResourceUris`:
-  `List`\[[ResourceUriTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#resourceuritypedef)\]
+  `List`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
 - `CatalogId`: `str`
 
 ## WorkflowGraphTypeDef
@@ -3949,10 +3800,8 @@ from mypy_boto3_glue.type_defs import WorkflowGraphTypeDef
 
 Optional fields:
 
-- `Nodes`:
-  `List`\[[NodeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#nodetypedef)\]
-- `Edges`:
-  `List`\[[EdgeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#edgetypedef)\]
+- `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
+- `Edges`: `List`\[[EdgeTypeDef](./type_defs.md#edgetypedef)\]
 
 ## WorkflowRunStatisticsTypeDef
 
@@ -3983,13 +3832,11 @@ Optional fields:
 - `WorkflowRunProperties`: `Dict`\[`str`, `str`\]
 - `StartedOn`: `datetime`
 - `CompletedOn`: `datetime`
-- `Status`:
-  [WorkflowRunStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/literals.html#workflowrunstatus)
+- `Status`: [WorkflowRunStatus](./literals.md#workflowrunstatus)
 - `ErrorMessage`: `str`
 - `Statistics`:
-  [WorkflowRunStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowrunstatisticstypedef)
-- `Graph`:
-  [WorkflowGraphTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowgraphtypedef)
+  [WorkflowRunStatisticsTypeDef](./type_defs.md#workflowrunstatisticstypedef)
+- `Graph`: [WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef)
 
 ## WorkflowTypeDef
 
@@ -4004,10 +3851,8 @@ Optional fields:
 - `DefaultRunProperties`: `Dict`\[`str`, `str`\]
 - `CreatedOn`: `datetime`
 - `LastModifiedOn`: `datetime`
-- `LastRun`:
-  [WorkflowRunTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowruntypedef)
-- `Graph`:
-  [WorkflowGraphTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_glue/type_defs.html#workflowgraphtypedef)
+- `LastRun`: [WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)
+- `Graph`: [WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef)
 - `MaxConcurrentRuns`: `int`
 
 ## XMLClassifierTypeDef

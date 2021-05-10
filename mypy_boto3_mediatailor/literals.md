@@ -1,6 +1,6 @@
 # Literals for boto3 MediaTailor module
 
-> [Index](../README.md) > [MediaTailor](./README.md) > Literals
+> [Index](..) > [MediaTailor](.) > Literals
 
 Auto-generated documentation for
 [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)

@@ -1,6 +1,6 @@
 # DataExchangeClient for boto3 DataExchange module
 
-> [Index](../README.md) > [DataExchange](./README.md) > DataExchangeClient
+> [Index](..) > [DataExchange](.) > DataExchangeClient
 
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
@@ -111,13 +111,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `AssetType`: `Literal['S3_SNAPSHOT']` *(required)*
+- `AssetType`: `Literal['S3_SNAPSHOT']` (see
+  [AssetType](./literals.md#assettype)) *(required)*
 - `Description`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDataSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#createdatasetresponsetypedef).
+[CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_job
 
@@ -128,15 +129,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Details`:
-  [RequestDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#requestdetailstypedef)
+- `Details`: [RequestDetailsTypeDef](./type_defs.md#requestdetailstypedef)
   *(required)*
-- `Type`:
-  [TypeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/literals.html#typetype)
-  *(required)*
+- `Type`: [TypeType](./literals.md#typetype) *(required)*
 
-Returns
-[CreateJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#createjobresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_revision
 
@@ -152,7 +149,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#createrevisionresponsetypedef).
+[CreateRevisionResponseTypeDef](./type_defs.md#createrevisionresponsetypedef).
 
 ### delete_asset
 
@@ -220,8 +217,7 @@ Arguments:
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
 
-Returns
-[GetAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getassetresponsetypedef).
+Returns [GetAssetResponseTypeDef](./type_defs.md#getassetresponsetypedef).
 
 ### get_data_set
 
@@ -234,8 +230,7 @@ Arguments:
 
 - `DataSetId`: `str` *(required)*
 
-Returns
-[GetDataSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getdatasetresponsetypedef).
+Returns [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
 
 ### get_job
 
@@ -248,8 +243,7 @@ Arguments:
 
 - `JobId`: `str` *(required)*
 
-Returns
-[GetJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getjobresponsetypedef).
+Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
 ### get_revision
 
@@ -264,7 +258,7 @@ Arguments:
 - `RevisionId`: `str` *(required)*
 
 Returns
-[GetRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#getrevisionresponsetypedef).
+[GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
 
 ### list_data_set_revisions
 
@@ -281,7 +275,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDataSetRevisionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listdatasetrevisionsresponsetypedef).
+[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef).
 
 ### list_data_sets
 
@@ -297,7 +291,7 @@ Arguments:
 - `Origin`: `str`
 
 Returns
-[ListDataSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listdatasetsresponsetypedef).
+[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_jobs
 
@@ -313,8 +307,7 @@ Arguments:
 - `NextToken`: `str`
 - `RevisionId`: `str`
 
-Returns
-[ListJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listjobsresponsetypedef).
+Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_revision_assets
 
@@ -332,7 +325,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRevisionAssetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listrevisionassetsresponsetypedef).
+[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -347,7 +340,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_job
 
@@ -401,7 +394,7 @@ Arguments:
 - `RevisionId`: `str` *(required)*
 
 Returns
-[UpdateAssetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#updateassetresponsetypedef).
+[UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
 
 ### update_data_set
 
@@ -417,7 +410,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[UpdateDataSetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#updatedatasetresponsetypedef).
+[UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
 ### update_revision
 
@@ -434,7 +427,7 @@ Arguments:
 - `Finalized`: `bool`
 
 Returns
-[UpdateRevisionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_dataexchange/type_defs.html#updaterevisionresponsetypedef).
+[UpdateRevisionResponseTypeDef](./type_defs.md#updaterevisionresponsetypedef).
 
 ### get_paginator
 

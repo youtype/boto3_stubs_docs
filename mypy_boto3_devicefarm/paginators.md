@@ -1,6 +1,6 @@
 # Paginators for boto3 DeviceFarm module
 
-> [Index](../README.md) > [DeviceFarm](./README.md) > Paginators
+> [Index](..) > [DeviceFarm](.) > Paginators
 
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
@@ -49,10 +49,10 @@ Boto3 documentation:
 Arguments for `GetOfferingStatusPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOfferingStatusPaginator.paginate` returns
-`Iterator`\[[GetOfferingStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#getofferingstatusresulttypedef)\].
+`Iterator`\[[GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef)\].
 
 ## ListArtifactsPaginator
 
@@ -74,14 +74,12 @@ Boto3 documentation:
 Arguments for `ListArtifactsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [ArtifactCategory](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#artifactcategory)
-  *(required)*
+- `type`: [ArtifactCategory](./literals.md#artifactcategory) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListArtifactsPaginator.paginate` returns
-`Iterator`\[[ListArtifactsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listartifactsresulttypedef)\].
+`Iterator`\[[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef)\].
 
 ## ListDeviceInstancesPaginator
 
@@ -103,10 +101,10 @@ Boto3 documentation:
 Arguments for `ListDeviceInstancesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceInstancesPaginator.paginate` returns
-`Iterator`\[[ListDeviceInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listdeviceinstancesresulttypedef)\].
+`Iterator`\[[ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef)\].
 
 ## ListDevicePoolsPaginator
 
@@ -128,13 +126,12 @@ Boto3 documentation:
 Arguments for `ListDevicePoolsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [DevicePoolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#devicepooltype)
+- `type`: [DevicePoolType](./literals.md#devicepooltype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicePoolsPaginator.paginate` returns
-`Iterator`\[[ListDevicePoolsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listdevicepoolsresulttypedef)\].
+`Iterator`\[[ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef)\].
 
 ## ListDevicesPaginator
 
@@ -156,13 +153,12 @@ Boto3 documentation:
 Arguments for `ListDevicesPaginator.paginate` method:
 
 - `arn`: `str`
-- `filters`:
-  `List`\[[DeviceFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#devicefiltertypedef)\]
+- `filters`: `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listdevicesresulttypedef)\].
+`Iterator`\[[ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef)\].
 
 ## ListInstanceProfilesPaginator
 
@@ -184,10 +180,10 @@ Boto3 documentation:
 Arguments for `ListInstanceProfilesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstanceProfilesPaginator.paginate` returns
-`Iterator`\[[ListInstanceProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listinstanceprofilesresulttypedef)\].
+`Iterator`\[[ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef)\].
 
 ## ListJobsPaginator
 
@@ -209,10 +205,10 @@ Arguments for `ListJobsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listjobsresulttypedef)\].
+`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].
 
 ## ListNetworkProfilesPaginator
 
@@ -234,13 +230,12 @@ Boto3 documentation:
 Arguments for `ListNetworkProfilesPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [NetworkProfileType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#networkprofiletype)
+- `type`: [NetworkProfileType](./literals.md#networkprofiletype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNetworkProfilesPaginator.paginate` returns
-`Iterator`\[[ListNetworkProfilesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listnetworkprofilesresulttypedef)\].
+`Iterator`\[[ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef)\].
 
 ## ListOfferingPromotionsPaginator
 
@@ -262,10 +257,10 @@ Boto3 documentation:
 Arguments for `ListOfferingPromotionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOfferingPromotionsPaginator.paginate` returns
-`Iterator`\[[ListOfferingPromotionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listofferingpromotionsresulttypedef)\].
+`Iterator`\[[ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef)\].
 
 ## ListOfferingTransactionsPaginator
 
@@ -287,10 +282,10 @@ Boto3 documentation:
 Arguments for `ListOfferingTransactionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOfferingTransactionsPaginator.paginate` returns
-`Iterator`\[[ListOfferingTransactionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listofferingtransactionsresulttypedef)\].
+`Iterator`\[[ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef)\].
 
 ## ListOfferingsPaginator
 
@@ -312,10 +307,10 @@ Boto3 documentation:
 Arguments for `ListOfferingsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOfferingsPaginator.paginate` returns
-`Iterator`\[[ListOfferingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listofferingsresulttypedef)\].
+`Iterator`\[[ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef)\].
 
 ## ListProjectsPaginator
 
@@ -338,10 +333,10 @@ Arguments for `ListProjectsPaginator.paginate` method:
 
 - `arn`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listprojectsresulttypedef)\].
+`Iterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
 
 ## ListRemoteAccessSessionsPaginator
 
@@ -364,10 +359,10 @@ Arguments for `ListRemoteAccessSessionsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRemoteAccessSessionsPaginator.paginate` returns
-`Iterator`\[[ListRemoteAccessSessionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listremoteaccesssessionsresulttypedef)\].
+`Iterator`\[[ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef)\].
 
 ## ListRunsPaginator
 
@@ -389,10 +384,10 @@ Arguments for `ListRunsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRunsPaginator.paginate` returns
-`Iterator`\[[ListRunsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listrunsresulttypedef)\].
+`Iterator`\[[ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef)\].
 
 ## ListSamplesPaginator
 
@@ -415,10 +410,10 @@ Arguments for `ListSamplesPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSamplesPaginator.paginate` returns
-`Iterator`\[[ListSamplesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listsamplesresulttypedef)\].
+`Iterator`\[[ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef)\].
 
 ## ListSuitesPaginator
 
@@ -440,10 +435,10 @@ Arguments for `ListSuitesPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSuitesPaginator.paginate` returns
-`Iterator`\[[ListSuitesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listsuitesresulttypedef)\].
+`Iterator`\[[ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef)\].
 
 ## ListTestsPaginator
 
@@ -465,10 +460,10 @@ Arguments for `ListTestsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTestsPaginator.paginate` returns
-`Iterator`\[[ListTestsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listtestsresulttypedef)\].
+`Iterator`\[[ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef)\].
 
 ## ListUniqueProblemsPaginator
 
@@ -491,10 +486,10 @@ Arguments for `ListUniqueProblemsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUniqueProblemsPaginator.paginate` returns
-`Iterator`\[[ListUniqueProblemsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listuniqueproblemsresulttypedef)\].
+`Iterator`\[[ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef)\].
 
 ## ListUploadsPaginator
 
@@ -516,13 +511,12 @@ Boto3 documentation:
 Arguments for `ListUploadsPaginator.paginate` method:
 
 - `arn`: `str` *(required)*
-- `type`:
-  [UploadType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/literals.html#uploadtype)
+- `type`: [UploadType](./literals.md#uploadtype)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUploadsPaginator.paginate` returns
-`Iterator`\[[ListUploadsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listuploadsresulttypedef)\].
+`Iterator`\[[ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef)\].
 
 ## ListVPCEConfigurationsPaginator
 
@@ -544,7 +538,7 @@ Boto3 documentation:
 Arguments for `ListVPCEConfigurationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVPCEConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListVPCEConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devicefarm/type_defs.html#listvpceconfigurationsresulttypedef)\].
+`Iterator`\[[ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef)\].

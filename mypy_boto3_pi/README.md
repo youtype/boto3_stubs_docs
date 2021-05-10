@@ -1,6 +1,6 @@
 # Type annotations for boto3 PI module
 
-> [Index](../README.md) > PI
+> [Index](..) > PI
 
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)

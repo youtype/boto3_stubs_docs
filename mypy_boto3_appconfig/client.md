@@ -1,6 +1,6 @@
 # AppConfigClient for boto3 AppConfig module
 
-> [Index](../README.md) > [AppConfig](./README.md) > AppConfigClient
+> [Index](..) > [AppConfig](.) > AppConfigClient
 
 Auto-generated documentation for
 [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
@@ -113,8 +113,7 @@ Arguments:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#applicationtypedef).
+Returns [ApplicationTypeDef](./type_defs.md#applicationtypedef).
 
 ### create_configuration_profile
 
@@ -131,12 +130,11 @@ Arguments:
 - `LocationUri`: `str` *(required)*
 - `Description`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`:
-  `List`\[[ValidatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#validatortypedef)\]
+- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ConfigurationProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#configurationprofiletypedef).
+[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### create_deployment_strategy
 
@@ -151,17 +149,13 @@ Arguments:
 - `Name`: `str` *(required)*
 - `DeploymentDurationInMinutes`: `int` *(required)*
 - `GrowthFactor`: `float` *(required)*
-- `ReplicateTo`:
-  [ReplicateTo](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#replicateto)
-  *(required)*
+- `ReplicateTo`: [ReplicateTo](./literals.md#replicateto) *(required)*
 - `Description`: `str`
 - `FinalBakeTimeInMinutes`: `int`
-- `GrowthType`:
-  [GrowthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#growthtype)
+- `GrowthType`: [GrowthType](./literals.md#growthtype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[DeploymentStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentstrategytypedef).
+Returns [DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef).
 
 ### create_environment
 
@@ -175,12 +169,10 @@ Arguments:
 - `ApplicationId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `Monitors`:
-  `List`\[[MonitorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#monitortypedef)\]
+- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#environmenttypedef).
+Returns [EnvironmentTypeDef](./type_defs.md#environmenttypedef).
 
 ### create_hosted_configuration_version
 
@@ -200,7 +192,7 @@ Arguments:
 - `LatestVersionNumber`: `int`
 
 Returns
-[HostedConfigurationVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#hostedconfigurationversiontypedef).
+[HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
 
 ### delete_application
 
@@ -291,8 +283,7 @@ Arguments:
 
 - `ApplicationId`: `str` *(required)*
 
-Returns
-[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#applicationtypedef).
+Returns [ApplicationTypeDef](./type_defs.md#applicationtypedef).
 
 ### get_configuration
 
@@ -309,8 +300,7 @@ Arguments:
 - `ClientId`: `str` *(required)*
 - `ClientConfigurationVersion`: `str`
 
-Returns
-[ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#configurationtypedef).
+Returns [ConfigurationTypeDef](./type_defs.md#configurationtypedef).
 
 ### get_configuration_profile
 
@@ -326,7 +316,7 @@ Arguments:
 - `ConfigurationProfileId`: `str` *(required)*
 
 Returns
-[ConfigurationProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#configurationprofiletypedef).
+[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### get_deployment
 
@@ -341,8 +331,7 @@ Arguments:
 - `EnvironmentId`: `str` *(required)*
 - `DeploymentNumber`: `int` *(required)*
 
-Returns
-[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymenttypedef).
+Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### get_deployment_strategy
 
@@ -356,8 +345,7 @@ Arguments:
 
 - `DeploymentStrategyId`: `str` *(required)*
 
-Returns
-[DeploymentStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentstrategytypedef).
+Returns [DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef).
 
 ### get_environment
 
@@ -371,8 +359,7 @@ Arguments:
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
 
-Returns
-[EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#environmenttypedef).
+Returns [EnvironmentTypeDef](./type_defs.md#environmenttypedef).
 
 ### get_hosted_configuration_version
 
@@ -389,7 +376,7 @@ Arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[HostedConfigurationVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#hostedconfigurationversiontypedef).
+[HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
 
 ### list_applications
 
@@ -403,8 +390,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ApplicationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#applicationstypedef).
+Returns [ApplicationsTypeDef](./type_defs.md#applicationstypedef).
 
 ### list_configuration_profiles
 
@@ -421,7 +407,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ConfigurationProfilesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#configurationprofilestypedef).
+[ConfigurationProfilesTypeDef](./type_defs.md#configurationprofilestypedef).
 
 ### list_deployment_strategies
 
@@ -437,7 +423,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DeploymentStrategiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentstrategiestypedef).
+[DeploymentStrategiesTypeDef](./type_defs.md#deploymentstrategiestypedef).
 
 ### list_deployments
 
@@ -453,8 +439,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[DeploymentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentstypedef).
+Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
 
 ### list_environments
 
@@ -469,8 +454,7 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[EnvironmentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#environmentstypedef).
+Returns [EnvironmentsTypeDef](./type_defs.md#environmentstypedef).
 
 ### list_hosted_configuration_versions
 
@@ -488,7 +472,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[HostedConfigurationVersionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#hostedconfigurationversionstypedef).
+[HostedConfigurationVersionsTypeDef](./type_defs.md#hostedconfigurationversionstypedef).
 
 ### list_tags_for_resource
 
@@ -501,8 +485,7 @@ Arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[ResourceTagsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#resourcetagstypedef).
+Returns [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef).
 
 ### start_deployment
 
@@ -521,8 +504,7 @@ Arguments:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymenttypedef).
+Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### stop_deployment
 
@@ -537,8 +519,7 @@ Arguments:
 - `EnvironmentId`: `str` *(required)*
 - `DeploymentNumber`: `int` *(required)*
 
-Returns
-[DeploymentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymenttypedef).
+Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
 ### tag_resource
 
@@ -577,8 +558,7 @@ Arguments:
 - `Name`: `str`
 - `Description`: `str`
 
-Returns
-[ApplicationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#applicationtypedef).
+Returns [ApplicationTypeDef](./type_defs.md#applicationtypedef).
 
 ### update_configuration_profile
 
@@ -595,11 +575,10 @@ Arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`:
-  `List`\[[ValidatorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#validatortypedef)\]
+- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 
 Returns
-[ConfigurationProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#configurationprofiletypedef).
+[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
 ### update_deployment_strategy
 
@@ -616,11 +595,9 @@ Arguments:
 - `DeploymentDurationInMinutes`: `int`
 - `FinalBakeTimeInMinutes`: `int`
 - `GrowthFactor`: `float`
-- `GrowthType`:
-  [GrowthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/literals.html#growthtype)
+- `GrowthType`: [GrowthType](./literals.md#growthtype)
 
-Returns
-[DeploymentStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#deploymentstrategytypedef).
+Returns [DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef).
 
 ### update_environment
 
@@ -635,11 +612,9 @@ Arguments:
 - `EnvironmentId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `Monitors`:
-  `List`\[[MonitorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#monitortypedef)\]
+- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
 
-Returns
-[EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appconfig/type_defs.html#environmenttypedef).
+Returns [EnvironmentTypeDef](./type_defs.md#environmenttypedef).
 
 ### validate_configuration
 

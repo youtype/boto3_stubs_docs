@@ -1,6 +1,6 @@
 # Type annotations for boto3 Support module
 
-> [Index](../README.md) > Support
+> [Index](..) > Support
 
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)

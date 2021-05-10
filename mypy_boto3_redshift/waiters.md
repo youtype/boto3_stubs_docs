@@ -1,6 +1,6 @@
 # Waiters for boto3 Redshift module
 
-> [Index](../README.md) > [Redshift](./README.md) > Waiters
+> [Index](..) > [Redshift](.) > Waiters
 
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
@@ -37,8 +37,7 @@ Arguments for `ClusterAvailableWaiter.wait` method:
 - `Marker`: `str`
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterDeletedWaiter
 
@@ -63,8 +62,7 @@ Arguments for `ClusterDeletedWaiter.wait` method:
 - `Marker`: `str`
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterRestoredWaiter
 
@@ -89,8 +87,7 @@ Arguments for `ClusterRestoredWaiter.wait` method:
 - `Marker`: `str`
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SnapshotAvailableWaiter
 
@@ -123,6 +120,5 @@ Arguments for `SnapshotAvailableWaiter.wait` method:
 - `TagValues`: `List`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#snapshotsortingentitytypedef)\]
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_redshift/type_defs.html#waiterconfigtypedef)
+  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

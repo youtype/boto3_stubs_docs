@@ -1,6 +1,6 @@
 # Paginators for boto3 MWAA module
 
-> [Index](../README.md) > [MWAA](./README.md) > Paginators
+> [Index](..) > [MWAA](.) > Paginators
 
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
@@ -29,7 +29,7 @@ Boto3 documentation:
 Arguments for `ListEnvironmentsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#listenvironmentsoutputtypedef)\].
+`Iterator`\[[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)\].

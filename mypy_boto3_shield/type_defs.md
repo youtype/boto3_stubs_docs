@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Shield module
 
-> [Index](../README.md) > [Shield](./README.md) > Structures
+> [Index](..) > [Shield](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
@@ -59,15 +59,14 @@ Optional fields:
 - `AttackId`: `str`
 - `ResourceArn`: `str`
 - `SubResources`:
-  `List`\[[SubResourceSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#subresourcesummarytypedef)\]
+  `List`\[[SubResourceSummaryTypeDef](./type_defs.md#subresourcesummarytypedef)\]
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `AttackCounters`:
-  `List`\[[SummarizedCounterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#summarizedcountertypedef)\]
+  `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
 - `AttackProperties`:
-  `List`\[[AttackPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackpropertytypedef)\]
-- `Mitigations`:
-  `List`\[[MitigationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#mitigationtypedef)\]
+  `List`\[[AttackPropertyTypeDef](./type_defs.md#attackpropertytypedef)\]
+- `Mitigations`: `List`\[[MitigationTypeDef](./type_defs.md#mitigationtypedef)\]
 
 ## AttackPropertyTypeDef
 
@@ -77,14 +76,12 @@ from mypy_boto3_shield.type_defs import AttackPropertyTypeDef
 
 Optional fields:
 
-- `AttackLayer`:
-  [AttackLayer](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#attacklayer)
+- `AttackLayer`: [AttackLayer](./literals.md#attacklayer)
 - `AttackPropertyIdentifier`:
-  [AttackPropertyIdentifier](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#attackpropertyidentifier)
+  [AttackPropertyIdentifier](./literals.md#attackpropertyidentifier)
 - `TopContributors`:
-  `List`\[[ContributorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#contributortypedef)\]
-- `Unit`:
-  [Unit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#unit)
+  `List`\[[ContributorTypeDef](./type_defs.md#contributortypedef)\]
+- `Unit`: [Unit](./literals.md#unit)
 - `Total`: `int`
 
 ## AttackStatisticsDataItemTypeDef
@@ -99,8 +96,7 @@ Required fields:
 
 Optional fields:
 
-- `AttackVolume`:
-  [AttackVolumeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackvolumetypedef)
+- `AttackVolume`: [AttackVolumeTypeDef](./type_defs.md#attackvolumetypedef)
 
 ## AttackSummaryTypeDef
 
@@ -115,7 +111,7 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `AttackVectors`:
-  `List`\[[AttackVectorDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackvectordescriptiontypedef)\]
+  `List`\[[AttackVectorDescriptionTypeDef](./type_defs.md#attackvectordescriptiontypedef)\]
 
 ## AttackVectorDescriptionTypeDef
 
@@ -146,11 +142,11 @@ from mypy_boto3_shield.type_defs import AttackVolumeTypeDef
 Optional fields:
 
 - `BitsPerSecond`:
-  [AttackVolumeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackvolumestatisticstypedef)
+  [AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef)
 - `PacketsPerSecond`:
-  [AttackVolumeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackvolumestatisticstypedef)
+  [AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef)
 - `RequestsPerSecond`:
-  [AttackVolumeStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackvolumestatisticstypedef)
+  [AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef)
 
 ## ContributorTypeDef
 
@@ -181,8 +177,7 @@ from mypy_boto3_shield.type_defs import DescribeAttackResponseTypeDef
 
 Optional fields:
 
-- `Attack`:
-  [AttackDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackdetailtypedef)
+- `Attack`: [AttackDetailTypeDef](./type_defs.md#attackdetailtypedef)
 
 ## DescribeAttackStatisticsResponseTypeDef
 
@@ -192,10 +187,9 @@ from mypy_boto3_shield.type_defs import DescribeAttackStatisticsResponseTypeDef
 
 Required fields:
 
-- `TimeRange`:
-  [TimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#timerangetypedef)
+- `TimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `DataItems`:
-  `List`\[[AttackStatisticsDataItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attackstatisticsdataitemtypedef)\]
+  `List`\[[AttackStatisticsDataItemTypeDef](./type_defs.md#attackstatisticsdataitemtypedef)\]
 
 ## DescribeDRTAccessResponseTypeDef
 
@@ -217,7 +211,7 @@ from mypy_boto3_shield.type_defs import DescribeEmergencyContactSettingsResponse
 Optional fields:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#emergencycontacttypedef)\]
+  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 ## DescribeProtectionGroupResponseTypeDef
 
@@ -228,7 +222,7 @@ from mypy_boto3_shield.type_defs import DescribeProtectionGroupResponseTypeDef
 Required fields:
 
 - `ProtectionGroup`:
-  [ProtectionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiongrouptypedef)
+  [ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)
 
 ## DescribeProtectionResponseTypeDef
 
@@ -238,8 +232,7 @@ from mypy_boto3_shield.type_defs import DescribeProtectionResponseTypeDef
 
 Optional fields:
 
-- `Protection`:
-  [ProtectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiontypedef)
+- `Protection`: [ProtectionTypeDef](./type_defs.md#protectiontypedef)
 
 ## DescribeSubscriptionResponseTypeDef
 
@@ -249,8 +242,7 @@ from mypy_boto3_shield.type_defs import DescribeSubscriptionResponseTypeDef
 
 Optional fields:
 
-- `Subscription`:
-  [SubscriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#subscriptiontypedef)
+- `Subscription`: [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
 
 ## EmergencyContactTypeDef
 
@@ -275,8 +267,7 @@ from mypy_boto3_shield.type_defs import GetSubscriptionStateResponseTypeDef
 
 Required fields:
 
-- `SubscriptionState`:
-  [SubscriptionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#subscriptionstate)
+- `SubscriptionState`: [SubscriptionState](./literals.md#subscriptionstate)
 
 ## LimitTypeDef
 
@@ -298,7 +289,7 @@ from mypy_boto3_shield.type_defs import ListAttacksResponseTypeDef
 Optional fields:
 
 - `AttackSummaries`:
-  `List`\[[AttackSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#attacksummarytypedef)\]
+  `List`\[[AttackSummaryTypeDef](./type_defs.md#attacksummarytypedef)\]
 - `NextToken`: `str`
 
 ## ListProtectionGroupsResponseTypeDef
@@ -310,7 +301,7 @@ from mypy_boto3_shield.type_defs import ListProtectionGroupsResponseTypeDef
 Required fields:
 
 - `ProtectionGroups`:
-  `List`\[[ProtectionGroupTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiongrouptypedef)\]
+  `List`\[[ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)\]
 
 Optional fields:
 
@@ -324,8 +315,7 @@ from mypy_boto3_shield.type_defs import ListProtectionsResponseTypeDef
 
 Optional fields:
 
-- `Protections`:
-  `List`\[[ProtectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiontypedef)\]
+- `Protections`: `List`\[[ProtectionTypeDef](./type_defs.md#protectiontypedef)\]
 - `NextToken`: `str`
 
 ## ListResourcesInProtectionGroupResponseTypeDef
@@ -350,8 +340,7 @@ from mypy_boto3_shield.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## MitigationTypeDef
 
@@ -395,7 +384,7 @@ Required fields:
 
 - `MaxProtectionGroups`: `int`
 - `PatternTypeLimits`:
-  [ProtectionGroupPatternTypeLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiongrouppatterntypelimitstypedef)
+  [ProtectionGroupPatternTypeLimitsTypeDef](./type_defs.md#protectiongrouppatterntypelimitstypedef)
 
 ## ProtectionGroupPatternTypeLimitsTypeDef
 
@@ -406,7 +395,7 @@ from mypy_boto3_shield.type_defs import ProtectionGroupPatternTypeLimitsTypeDef
 Required fields:
 
 - `ArbitraryPatternLimits`:
-  [ProtectionGroupArbitraryPatternLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiongrouparbitrarypatternlimitstypedef)
+  [ProtectionGroupArbitraryPatternLimitsTypeDef](./type_defs.md#protectiongrouparbitrarypatternlimitstypedef)
 
 ## ProtectionGroupTypeDef
 
@@ -418,15 +407,13 @@ Required fields:
 
 - `ProtectionGroupId`: `str`
 - `Aggregation`:
-  [ProtectionGroupAggregation](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectiongroupaggregation)
-- `Pattern`:
-  [ProtectionGroupPattern](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectiongrouppattern)
+  [ProtectionGroupAggregation](./literals.md#protectiongroupaggregation)
+- `Pattern`: [ProtectionGroupPattern](./literals.md#protectiongrouppattern)
 - `Members`: `List`\[`str`\]
 
 Optional fields:
 
-- `ResourceType`:
-  [ProtectedResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#protectedresourcetype)
+- `ResourceType`: [ProtectedResourceType](./literals.md#protectedresourcetype)
 - `ProtectionGroupArn`: `str`
 
 ## ProtectionLimitsTypeDef
@@ -438,7 +425,7 @@ from mypy_boto3_shield.type_defs import ProtectionLimitsTypeDef
 Required fields:
 
 - `ProtectedResourceTypeLimits`:
-  `List`\[[LimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#limittypedef)\]
+  `List`\[[LimitTypeDef](./type_defs.md#limittypedef)\]
 
 ## ProtectionTypeDef
 
@@ -462,13 +449,12 @@ from mypy_boto3_shield.type_defs import SubResourceSummaryTypeDef
 
 Optional fields:
 
-- `Type`:
-  [SubResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#subresourcetype)
+- `Type`: [SubResourceType](./literals.md#subresourcetype)
 - `Id`: `str`
 - `AttackVectors`:
-  `List`\[[SummarizedAttackVectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#summarizedattackvectortypedef)\]
+  `List`\[[SummarizedAttackVectorTypeDef](./type_defs.md#summarizedattackvectortypedef)\]
 - `Counters`:
-  `List`\[[SummarizedCounterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#summarizedcountertypedef)\]
+  `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
 
 ## SubscriptionLimitsTypeDef
 
@@ -479,9 +465,9 @@ from mypy_boto3_shield.type_defs import SubscriptionLimitsTypeDef
 Required fields:
 
 - `ProtectionLimits`:
-  [ProtectionLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectionlimitstypedef)
+  [ProtectionLimitsTypeDef](./type_defs.md#protectionlimitstypedef)
 - `ProtectionGroupLimits`:
-  [ProtectionGroupLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#protectiongrouplimitstypedef)
+  [ProtectionGroupLimitsTypeDef](./type_defs.md#protectiongrouplimitstypedef)
 
 ## SubscriptionTypeDef
 
@@ -492,19 +478,17 @@ from mypy_boto3_shield.type_defs import SubscriptionTypeDef
 Required fields:
 
 - `SubscriptionLimits`:
-  [SubscriptionLimitsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#subscriptionlimitstypedef)
+  [SubscriptionLimitsTypeDef](./type_defs.md#subscriptionlimitstypedef)
 
 Optional fields:
 
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `TimeCommitmentInSeconds`: `int`
-- `AutoRenew`:
-  [AutoRenew](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#autorenew)
-- `Limits`:
-  `List`\[[LimitTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#limittypedef)\]
+- `AutoRenew`: [AutoRenew](./literals.md#autorenew)
+- `Limits`: `List`\[[LimitTypeDef](./type_defs.md#limittypedef)\]
 - `ProactiveEngagementStatus`:
-  [ProactiveEngagementStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/literals.html#proactiveengagementstatus)
+  [ProactiveEngagementStatus](./literals.md#proactiveengagementstatus)
 - `SubscriptionArn`: `str`
 
 ## SummarizedAttackVectorTypeDef
@@ -520,7 +504,7 @@ Required fields:
 Optional fields:
 
 - `VectorCounters`:
-  `List`\[[SummarizedCounterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_shield/type_defs.html#summarizedcountertypedef)\]
+  `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
 
 ## SummarizedCounterTypeDef
 

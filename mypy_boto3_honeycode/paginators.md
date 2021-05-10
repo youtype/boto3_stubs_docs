@@ -1,6 +1,6 @@
 # Paginators for boto3 Honeycode module
 
-> [Index](../README.md) > [Honeycode](./README.md) > Paginators
+> [Index](..) > [Honeycode](.) > Paginators
 
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
@@ -35,10 +35,10 @@ Arguments for `ListTableColumnsPaginator.paginate` method:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTableColumnsPaginator.paginate` returns
-`Iterator`\[[ListTableColumnsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablecolumnsresulttypedef)\].
+`Iterator`\[[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef)\].
 
 ## ListTableRowsPaginator
 
@@ -63,10 +63,10 @@ Arguments for `ListTableRowsPaginator.paginate` method:
 - `tableId`: `str` *(required)*
 - `rowIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTableRowsPaginator.paginate` returns
-`Iterator`\[[ListTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablerowsresulttypedef)\].
+`Iterator`\[[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef)\].
 
 ## ListTablesPaginator
 
@@ -88,10 +88,10 @@ Arguments for `ListTablesPaginator.paginate` method:
 
 - `workbookId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTablesPaginator.paginate` returns
-`Iterator`\[[ListTablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#listtablesresulttypedef)\].
+`Iterator`\[[ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef)\].
 
 ## QueryTableRowsPaginator
 
@@ -114,11 +114,9 @@ Arguments for `QueryTableRowsPaginator.paginate` method:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
-- `filterFormula`:
-  [FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#filtertypedef)
-  *(required)*
+- `filterFormula`: [FilterTypeDef](./type_defs.md#filtertypedef) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryTableRowsPaginator.paginate` returns
-`Iterator`\[[QueryTableRowsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_honeycode/type_defs.html#querytablerowsresulttypedef)\].
+`Iterator`\[[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef)\].

@@ -1,6 +1,6 @@
 # Type annotations for boto3 SMS module
 
-> [Index](../README.md) > SMS
+> [Index](..) > SMS
 
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
@@ -175,7 +175,7 @@ from mypy_boto3_sms.type_defs import AppSummaryTypeDef, ...
 - [ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef)
 - [ReplicationRunStageDetailsTypeDef](./type_defs.md#replicationrunstagedetailstypedef)
 - [ReplicationRunTypeDef](./type_defs.md#replicationruntypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [SSMOutputTypeDef](./type_defs.md#ssmoutputtypedef)
 - [SSMValidationParametersTypeDef](./type_defs.md#ssmvalidationparameterstypedef)

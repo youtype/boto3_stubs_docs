@@ -1,6 +1,6 @@
 # Literals for boto3 CloudHSMV2 module
 
-> [Index](../README.md) > [CloudHSMV2](./README.md) > Literals
+> [Index](..) > [CloudHSMV2](.) > Literals
 
 Auto-generated documentation for
 [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)

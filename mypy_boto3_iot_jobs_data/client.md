@@ -1,7 +1,6 @@
 # IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module
 
-> [Index](../README.md) > [IoTJobsDataPlane](./README.md) >
-> IoTJobsDataPlaneClient
+> [Index](..) > [IoTJobsDataPlane](.) > IoTJobsDataPlaneClient
 
 Auto-generated documentation for
 [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
@@ -89,7 +88,7 @@ Arguments:
 - `executionNumber`: `int`
 
 Returns
-[DescribeJobExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#describejobexecutionresponsetypedef).
+[DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -121,7 +120,7 @@ Arguments:
 - `thingName`: `str` *(required)*
 
 Returns
-[GetPendingJobExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#getpendingjobexecutionsresponsetypedef).
+[GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef).
 
 ### start_next_pending_job_execution
 
@@ -138,7 +137,7 @@ Arguments:
 - `stepTimeoutInMinutes`: `int`
 
 Returns
-[StartNextPendingJobExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#startnextpendingjobexecutionresponsetypedef).
+[StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef).
 
 ### update_job_execution
 
@@ -152,9 +151,7 @@ Arguments:
 
 - `jobId`: `str` *(required)*
 - `thingName`: `str` *(required)*
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/literals.html#jobexecutionstatus)
-  *(required)*
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus) *(required)*
 - `statusDetails`: `Dict`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 - `expectedVersion`: `int`
@@ -163,4 +160,4 @@ Arguments:
 - `executionNumber`: `int`
 
 Returns
-[UpdateJobExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot_jobs_data/type_defs.html#updatejobexecutionresponsetypedef).
+[UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef).

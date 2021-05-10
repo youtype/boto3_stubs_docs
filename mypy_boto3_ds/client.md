@@ -1,7 +1,6 @@
 # DirectoryServiceClient for boto3 DirectoryService module
 
-> [Index](../README.md) > [DirectoryService](./README.md) >
-> DirectoryServiceClient
+> [Index](..) > [DirectoryService](.) > DirectoryServiceClient
 
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
@@ -158,7 +157,7 @@ Arguments:
 - `SharedDirectoryId`: `str` *(required)*
 
 Returns
-[AcceptSharedDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#acceptshareddirectoryresulttypedef).
+[AcceptSharedDirectoryResultTypeDef](./type_defs.md#acceptshareddirectoryresulttypedef).
 
 ### add_ip_routes
 
@@ -170,8 +169,7 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `IpRoutes`:
-  `List`\[[IpRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#iproutetypedef)\]
+- `IpRoutes`: `List`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
   *(required)*
 - `UpdateSecurityGroupForDirectoryControllers`: `bool`
 
@@ -189,7 +187,7 @@ Arguments:
 - `DirectoryId`: `str` *(required)*
 - `RegionName`: `str` *(required)*
 - `VPCSettings`:
-  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
+  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -204,9 +202,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -248,19 +244,16 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Password`: `str` *(required)*
-- `Size`:
-  [DirectorySize](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorysize)
-  *(required)*
+- `Size`: [DirectorySize](./literals.md#directorysize) *(required)*
 - `ConnectSettings`:
-  [DirectoryConnectSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryconnectsettingstypedef)
+  [DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef)
   *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ConnectDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#connectdirectoryresulttypedef).
+[ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
 
 ### create_alias
 
@@ -274,8 +267,7 @@ Arguments:
 - `DirectoryId`: `str` *(required)*
 - `Alias`: `str` *(required)*
 
-Returns
-[CreateAliasResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createaliasresulttypedef).
+Returns [CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef).
 
 ### create_computer
 
@@ -291,10 +283,10 @@ Arguments:
 - `Password`: `str` *(required)*
 - `OrganizationalUnitDistinguishedName`: `str`
 - `ComputerAttributes`:
-  `List`\[[AttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#attributetypedef)\]
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
-[CreateComputerResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createcomputerresulttypedef).
+[CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
 
 ### create_conditional_forwarder
 
@@ -322,18 +314,15 @@ Arguments:
 
 - `Name`: `str` *(required)*
 - `Password`: `str` *(required)*
-- `Size`:
-  [DirectorySize](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directorysize)
-  *(required)*
+- `Size`: [DirectorySize](./literals.md#directorysize) *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
 - `VpcSettings`:
-  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createdirectoryresulttypedef).
+[CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
 
 ### create_log_subscription
 
@@ -361,17 +350,15 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Password`: `str` *(required)*
 - `VpcSettings`:
-  [DirectoryVpcSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#directoryvpcsettingstypedef)
+  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
   *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
-- `Edition`:
-  [DirectoryEdition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#directoryedition)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#tagtypedef)\]
+- `Edition`: [DirectoryEdition](./literals.md#directoryedition)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMicrosoftADResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createmicrosoftadresulttypedef).
+[CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
 
 ### create_snapshot
 
@@ -386,7 +373,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[CreateSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createsnapshotresulttypedef).
+[CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
 
 ### create_trust
 
@@ -400,17 +387,12 @@ Arguments:
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
 - `TrustPassword`: `str` *(required)*
-- `TrustDirection`:
-  [TrustDirection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#trustdirection)
-  *(required)*
-- `TrustType`:
-  [TrustType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#trusttype)
+- `TrustDirection`: [TrustDirection](./literals.md#trustdirection) *(required)*
+- `TrustType`: [TrustType](./literals.md#trusttype)
 - `ConditionalForwarderIpAddrs`: `List`\[`str`\]
-- `SelectiveAuth`:
-  [SelectiveAuth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#selectiveauth)
+- `SelectiveAuth`: [SelectiveAuth](./literals.md#selectiveauth)
 
-Returns
-[CreateTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#createtrustresulttypedef).
+Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 
 ### delete_conditional_forwarder
 
@@ -438,7 +420,7 @@ Arguments:
 - `DirectoryId`: `str` *(required)*
 
 Returns
-[DeleteDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#deletedirectoryresulttypedef).
+[DeleteDirectoryResultTypeDef](./type_defs.md#deletedirectoryresulttypedef).
 
 ### delete_log_subscription
 
@@ -465,7 +447,7 @@ Arguments:
 - `SnapshotId`: `str` *(required)*
 
 Returns
-[DeleteSnapshotResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#deletesnapshotresulttypedef).
+[DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
 
 ### delete_trust
 
@@ -479,8 +461,7 @@ Arguments:
 - `TrustId`: `str` *(required)*
 - `DeleteAssociatedConditionalForwarder`: `bool`
 
-Returns
-[DeleteTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#deletetrustresulttypedef).
+Returns [DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef).
 
 ### deregister_certificate
 
@@ -523,7 +504,7 @@ Arguments:
 - `CertificateId`: `str` *(required)*
 
 Returns
-[DescribeCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describecertificateresulttypedef).
+[DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef).
 
 ### describe_conditional_forwarders
 
@@ -539,7 +520,7 @@ Arguments:
 - `RemoteDomainNames`: `List`\[`str`\]
 
 Returns
-[DescribeConditionalForwardersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeconditionalforwardersresulttypedef).
+[DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
 
 ### describe_directories
 
@@ -555,7 +536,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describedirectoriesresulttypedef).
+[DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef).
 
 ### describe_domain_controllers
 
@@ -572,7 +553,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeDomainControllersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describedomaincontrollersresulttypedef).
+[DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef).
 
 ### describe_event_topics
 
@@ -587,7 +568,7 @@ Arguments:
 - `TopicNames`: `List`\[`str`\]
 
 Returns
-[DescribeEventTopicsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeeventtopicsresulttypedef).
+[DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
 
 ### describe_ldaps_settings
 
@@ -599,12 +580,12 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']`
+- `Type`: `Literal['Client']` (see [LDAPSType](./literals.md#ldapstype))
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[DescribeLDAPSSettingsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeldapssettingsresulttypedef).
+[DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef).
 
 ### describe_regions
 
@@ -620,7 +601,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRegionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeregionsresulttypedef).
+[DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
 
 ### describe_shared_directories
 
@@ -637,7 +618,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeSharedDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeshareddirectoriesresulttypedef).
+[DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef).
 
 ### describe_snapshots
 
@@ -654,7 +635,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describesnapshotsresulttypedef).
+[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
 
 ### describe_trusts
 
@@ -671,7 +652,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeTrustsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describetrustsresulttypedef).
+[DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef).
 
 ### disable_client_authentication
 
@@ -683,7 +664,9 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['SmartCard']` *(required)*
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationType](./literals.md#clientauthenticationtype))
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -697,7 +680,8 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` *(required)*
+- `Type`: `Literal['Client']` (see [LDAPSType](./literals.md#ldapstype))
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -739,7 +723,9 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['SmartCard']` *(required)*
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationType](./literals.md#clientauthenticationtype))
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -753,7 +739,8 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` *(required)*
+- `Type`: `Literal['Client']` (see [LDAPSType](./literals.md#ldapstype))
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -767,8 +754,7 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `RadiusSettings`:
-  [RadiusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#radiussettingstypedef)
+- `RadiusSettings`: [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -812,7 +798,7 @@ Boto3 documentation:
 [DirectoryService.Client.get_directory_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
 
 Returns
-[GetDirectoryLimitsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#getdirectorylimitsresulttypedef).
+[GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef).
 
 ### get_snapshot_limits
 
@@ -826,7 +812,7 @@ Arguments:
 - `DirectoryId`: `str` *(required)*
 
 Returns
-[GetSnapshotLimitsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#getsnapshotlimitsresulttypedef).
+[GetSnapshotLimitsResultTypeDef](./type_defs.md#getsnapshotlimitsresulttypedef).
 
 ### list_certificates
 
@@ -842,7 +828,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListCertificatesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listcertificatesresulttypedef).
+[ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef).
 
 ### list_ip_routes
 
@@ -857,8 +843,7 @@ Arguments:
 - `NextToken`: `str`
 - `Limit`: `int`
 
-Returns
-[ListIpRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listiproutesresulttypedef).
+Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
 
 ### list_log_subscriptions
 
@@ -874,7 +859,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListLogSubscriptionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listlogsubscriptionsresulttypedef).
+[ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef).
 
 ### list_schema_extensions
 
@@ -890,7 +875,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListSchemaExtensionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listschemaextensionsresulttypedef).
+[ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef).
 
 ### list_tags_for_resource
 
@@ -906,7 +891,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### register_certificate
 
@@ -919,13 +904,12 @@ Arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `CertificateData`: `str` *(required)*
-- `Type`:
-  [CertificateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#certificatetype)
+- `Type`: [CertificateType](./literals.md#certificatetype)
 - `ClientCertAuthSettings`:
-  [ClientCertAuthSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#clientcertauthsettingstypedef)
+  [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
 Returns
-[RegisterCertificateResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#registercertificateresulttypedef).
+[RegisterCertificateResultTypeDef](./type_defs.md#registercertificateresulttypedef).
 
 ### register_event_topic
 
@@ -953,7 +937,7 @@ Arguments:
 - `SharedDirectoryId`: `str` *(required)*
 
 Returns
-[RejectSharedDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#rejectshareddirectoryresulttypedef).
+[RejectSharedDirectoryResultTypeDef](./type_defs.md#rejectshareddirectoryresulttypedef).
 
 ### remove_ip_routes
 
@@ -1034,16 +1018,13 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `ShareTarget`:
-  [ShareTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#sharetargettypedef)
+- `ShareTarget`: [ShareTargetTypeDef](./type_defs.md#sharetargettypedef)
   *(required)*
-- `ShareMethod`:
-  [ShareMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#sharemethod)
-  *(required)*
+- `ShareMethod`: [ShareMethod](./literals.md#sharemethod) *(required)*
 - `ShareNotes`: `str`
 
 Returns
-[ShareDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#sharedirectoryresulttypedef).
+[ShareDirectoryResultTypeDef](./type_defs.md#sharedirectoryresulttypedef).
 
 ### start_schema_extension
 
@@ -1060,7 +1041,7 @@ Arguments:
 - `Description`: `str` *(required)*
 
 Returns
-[StartSchemaExtensionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#startschemaextensionresulttypedef).
+[StartSchemaExtensionResultTypeDef](./type_defs.md#startschemaextensionresulttypedef).
 
 ### unshare_directory
 
@@ -1072,12 +1053,11 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `UnshareTarget`:
-  [UnshareTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#unsharetargettypedef)
+- `UnshareTarget`: [UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef)
   *(required)*
 
 Returns
-[UnshareDirectoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#unsharedirectoryresulttypedef).
+[UnshareDirectoryResultTypeDef](./type_defs.md#unsharedirectoryresulttypedef).
 
 ### update_conditional_forwarder
 
@@ -1119,8 +1099,7 @@ Boto3 documentation:
 Arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `RadiusSettings`:
-  [RadiusSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#radiussettingstypedef)
+- `RadiusSettings`: [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1135,11 +1114,9 @@ Boto3 documentation:
 Arguments:
 
 - `TrustId`: `str` *(required)*
-- `SelectiveAuth`:
-  [SelectiveAuth](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/literals.html#selectiveauth)
+- `SelectiveAuth`: [SelectiveAuth](./literals.md#selectiveauth)
 
-Returns
-[UpdateTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#updatetrustresulttypedef).
+Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 
 ### verify_trust
 
@@ -1152,8 +1129,7 @@ Arguments:
 
 - `TrustId`: `str` *(required)*
 
-Returns
-[VerifyTrustResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#verifytrustresulttypedef).
+Returns [VerifyTrustResultTypeDef](./type_defs.md#verifytrustresulttypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Paginators for boto3 DirectoryService module
 
-> [Index](../README.md) > [DirectoryService](./README.md) > Paginators
+> [Index](..) > [DirectoryService](.) > Paginators
 
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
@@ -39,10 +39,10 @@ Arguments for `DescribeDirectoriesPaginator.paginate` method:
 
 - `DirectoryIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDirectoriesPaginator.paginate` returns
-`Iterator`\[[DescribeDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describedirectoriesresulttypedef)\].
+`Iterator`\[[DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef)\].
 
 ## DescribeDomainControllersPaginator
 
@@ -66,10 +66,10 @@ Arguments for `DescribeDomainControllersPaginator.paginate` method:
 - `DirectoryId`: `str` *(required)*
 - `DomainControllerIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDomainControllersPaginator.paginate` returns
-`Iterator`\[[DescribeDomainControllersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describedomaincontrollersresulttypedef)\].
+`Iterator`\[[DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef)\].
 
 ## DescribeSharedDirectoriesPaginator
 
@@ -93,10 +93,10 @@ Arguments for `DescribeSharedDirectoriesPaginator.paginate` method:
 - `OwnerDirectoryId`: `str` *(required)*
 - `SharedDirectoryIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSharedDirectoriesPaginator.paginate` returns
-`Iterator`\[[DescribeSharedDirectoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describeshareddirectoriesresulttypedef)\].
+`Iterator`\[[DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef)\].
 
 ## DescribeSnapshotsPaginator
 
@@ -119,10 +119,10 @@ Arguments for `DescribeSnapshotsPaginator.paginate` method:
 - `DirectoryId`: `str`
 - `SnapshotIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotsPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describesnapshotsresulttypedef)\].
+`Iterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
 
 ## DescribeTrustsPaginator
 
@@ -145,10 +145,10 @@ Arguments for `DescribeTrustsPaginator.paginate` method:
 - `DirectoryId`: `str`
 - `TrustIds`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTrustsPaginator.paginate` returns
-`Iterator`\[[DescribeTrustsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#describetrustsresulttypedef)\].
+`Iterator`\[[DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef)\].
 
 ## ListIpRoutesPaginator
 
@@ -170,10 +170,10 @@ Arguments for `ListIpRoutesPaginator.paginate` method:
 
 - `DirectoryId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIpRoutesPaginator.paginate` returns
-`Iterator`\[[ListIpRoutesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listiproutesresulttypedef)\].
+`Iterator`\[[ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef)\].
 
 ## ListLogSubscriptionsPaginator
 
@@ -196,10 +196,10 @@ Arguments for `ListLogSubscriptionsPaginator.paginate` method:
 
 - `DirectoryId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLogSubscriptionsPaginator.paginate` returns
-`Iterator`\[[ListLogSubscriptionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listlogsubscriptionsresulttypedef)\].
+`Iterator`\[[ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef)\].
 
 ## ListSchemaExtensionsPaginator
 
@@ -222,10 +222,10 @@ Arguments for `ListSchemaExtensionsPaginator.paginate` method:
 
 - `DirectoryId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemaExtensionsPaginator.paginate` returns
-`Iterator`\[[ListSchemaExtensionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listschemaextensionsresulttypedef)\].
+`Iterator`\[[ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -248,7 +248,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `ResourceId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ds/type_defs.html#listtagsforresourceresulttypedef)\].
+`Iterator`\[[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)\].

@@ -1,7 +1,6 @@
 # LookoutEquipmentClient for boto3 LookoutEquipment module
 
-> [Index](../README.md) > [LookoutEquipment](./README.md) >
-> LookoutEquipmentClient
+> [Index](..) > [LookoutEquipment](.) > LookoutEquipmentClient
 
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
@@ -101,16 +100,14 @@ Boto3 documentation:
 Arguments:
 
 - `DatasetName`: `str` *(required)*
-- `DatasetSchema`:
-  [DatasetSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datasetschematypedef)
+- `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `ServerSideKmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#createdatasetresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_inference_scheduler
 
@@ -124,24 +121,22 @@ Arguments:
 
 - `ModelName`: `str` *(required)*
 - `InferenceSchedulerName`: `str` *(required)*
-- `DataUploadFrequency`:
-  [DataUploadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datauploadfrequency)
+- `DataUploadFrequency`: [DataUploadFrequency](./literals.md#datauploadfrequency)
   *(required)*
 - `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputconfigurationtypedef)
+  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
   *(required)*
 - `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceoutputconfigurationtypedef)
+  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
 - `DataDelayOffsetInMinutes`: `int`
 - `ServerSideKmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#createinferenceschedulerresponsetypedef).
+[CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef).
 
 ### create_model
 
@@ -155,23 +150,21 @@ Arguments:
 - `ModelName`: `str` *(required)*
 - `DatasetName`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
-- `DatasetSchema`:
-  [DatasetSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datasetschematypedef)
+- `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
 - `LabelsInputConfiguration`:
-  [LabelsInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#labelsinputconfigurationtypedef)
+  [LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef)
 - `TrainingDataStartTime`: `datetime`
 - `TrainingDataEndTime`: `datetime`
 - `EvaluationDataStartTime`: `datetime`
 - `EvaluationDataEndTime`: `datetime`
 - `RoleArn`: `str`
 - `DataPreProcessingConfiguration`:
-  [DataPreProcessingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#datapreprocessingconfigurationtypedef)
+  [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
 - `ServerSideKmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#createmodelresponsetypedef).
+[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
 ### delete_dataset
 
@@ -220,7 +213,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeDataIngestionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describedataingestionjobresponsetypedef).
+[DescribeDataIngestionJobResponseTypeDef](./type_defs.md#describedataingestionjobresponsetypedef).
 
 ### describe_dataset
 
@@ -235,7 +228,7 @@ Arguments:
 - `DatasetName`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describedatasetresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_inference_scheduler
 
@@ -250,7 +243,7 @@ Arguments:
 - `InferenceSchedulerName`: `str` *(required)*
 
 Returns
-[DescribeInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describeinferenceschedulerresponsetypedef).
+[DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef).
 
 ### describe_model
 
@@ -264,7 +257,7 @@ Arguments:
 - `ModelName`: `str` *(required)*
 
 Returns
-[DescribeModelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#describemodelresponsetypedef).
+[DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
 ### generate_presigned_url
 
@@ -296,11 +289,10 @@ Arguments:
 - `DatasetName`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Status`:
-  [IngestionJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#ingestionjobstatus)
+- `Status`: [IngestionJobStatus](./literals.md#ingestionjobstatus)
 
 Returns
-[ListDataIngestionJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listdataingestionjobsresponsetypedef).
+[ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef).
 
 ### list_datasets
 
@@ -316,7 +308,7 @@ Arguments:
 - `DatasetNameBeginsWith`: `str`
 
 Returns
-[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listdatasetsresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_inference_executions
 
@@ -333,11 +325,10 @@ Arguments:
 - `MaxResults`: `int`
 - `DataStartTimeAfter`: `datetime`
 - `DataEndTimeBefore`: `datetime`
-- `Status`:
-  [InferenceExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#inferenceexecutionstatus)
+- `Status`: [InferenceExecutionStatus](./literals.md#inferenceexecutionstatus)
 
 Returns
-[ListInferenceExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listinferenceexecutionsresponsetypedef).
+[ListInferenceExecutionsResponseTypeDef](./type_defs.md#listinferenceexecutionsresponsetypedef).
 
 ### list_inference_schedulers
 
@@ -355,7 +346,7 @@ Arguments:
 - `ModelName`: `str`
 
 Returns
-[ListInferenceSchedulersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listinferenceschedulersresponsetypedef).
+[ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef).
 
 ### list_models
 
@@ -368,13 +359,11 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Status`:
-  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#modelstatus)
+- `Status`: [ModelStatus](./literals.md#modelstatus)
 - `ModelNameBeginsWith`: `str`
 - `DatasetNameBeginsWith`: `str`
 
-Returns
-[ListModelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listmodelsresponsetypedef).
+Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -389,7 +378,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_data_ingestion_job
 
@@ -403,13 +392,13 @@ Arguments:
 
 - `DatasetName`: `str` *(required)*
 - `IngestionInputConfiguration`:
-  [IngestionInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#ingestioninputconfigurationtypedef)
+  [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
 
 Returns
-[StartDataIngestionJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#startdataingestionjobresponsetypedef).
+[StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef).
 
 ### start_inference_scheduler
 
@@ -424,7 +413,7 @@ Arguments:
 - `InferenceSchedulerName`: `str` *(required)*
 
 Returns
-[StartInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#startinferenceschedulerresponsetypedef).
+[StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef).
 
 ### stop_inference_scheduler
 
@@ -439,7 +428,7 @@ Arguments:
 - `InferenceSchedulerName`: `str` *(required)*
 
 Returns
-[StopInferenceSchedulerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#stopinferenceschedulerresponsetypedef).
+[StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef).
 
 ### tag_resource
 
@@ -451,9 +440,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -483,10 +470,9 @@ Arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 - `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`:
-  [DataUploadFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/literals.html#datauploadfrequency)
+- `DataUploadFrequency`: [DataUploadFrequency](./literals.md#datauploadfrequency)
 - `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceinputconfigurationtypedef)
+  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
 - `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lookoutequipment/type_defs.html#inferenceoutputconfigurationtypedef)
+  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
 - `RoleArn`: `str`

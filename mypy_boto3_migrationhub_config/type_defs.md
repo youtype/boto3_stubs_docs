@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MigrationHubConfig module
 
-> [Index](../README.md) > [MigrationHubConfig](./README.md) > Structures
+> [Index](..) > [MigrationHubConfig](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
@@ -23,7 +23,7 @@ from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlResu
 Optional fields:
 
 - `HomeRegionControl`:
-  [HomeRegionControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#homeregioncontroltypedef)
+  [HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)
 
 ## DescribeHomeRegionControlsResultTypeDef
 
@@ -34,7 +34,7 @@ from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsR
 Optional fields:
 
 - `HomeRegionControls`:
-  `List`\[[HomeRegionControlTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#homeregioncontroltypedef)\]
+  `List`\[[HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)\]
 - `NextToken`: `str`
 
 ## GetHomeRegionResultTypeDef
@@ -57,8 +57,7 @@ Optional fields:
 
 - `ControlId`: `str`
 - `HomeRegion`: `str`
-- `Target`:
-  [TargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_migrationhub_config/type_defs.html#targettypedef)
+- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
 - `RequestedTime`: `datetime`
 
 ## TargetTypeDef
@@ -69,7 +68,7 @@ from mypy_boto3_migrationhub_config.type_defs import TargetTypeDef
 
 Required fields:
 
-- `Type`: `Literal['ACCOUNT']`
+- `Type`: `Literal['ACCOUNT']` (see [TargetType](./literals.md#targettype))
 
 Optional fields:
 

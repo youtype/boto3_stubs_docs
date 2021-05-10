@@ -1,6 +1,6 @@
 # Literals for boto3 OpsWorks module
 
-> [Index](../README.md) > [OpsWorks](./README.md) > Literals
+> [Index](..) > [OpsWorks](.) > Literals
 
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)

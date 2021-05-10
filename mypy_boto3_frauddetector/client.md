@@ -1,6 +1,6 @@
 # FraudDetectorClient for boto3 FraudDetector module
 
-> [Index](../README.md) > [FraudDetector](./README.md) > FraudDetectorClient
+> [Index](..) > [FraudDetector](.) > FraudDetectorClient
 
 Auto-generated documentation for
 [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
@@ -122,13 +122,12 @@ Boto3 documentation:
 Arguments:
 
 - `variableEntries`:
-  `List`\[[VariableEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#variableentrytypedef)\]
+  `List`\[[VariableEntryTypeDef](./type_defs.md#variableentrytypedef)\]
   *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[BatchCreateVariableResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#batchcreatevariableresulttypedef).
+[BatchCreateVariableResultTypeDef](./type_defs.md#batchcreatevariableresulttypedef).
 
 ### batch_get_variable
 
@@ -142,7 +141,7 @@ Arguments:
 - `names`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetVariableResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#batchgetvariableresulttypedef).
+[BatchGetVariableResultTypeDef](./type_defs.md#batchgetvariableresulttypedef).
 
 ### can_paginate
 
@@ -188,8 +187,7 @@ Arguments:
 - `detectorName`: `str` *(required)*
 - `iamRoleArn`: `str` *(required)*
 - `detectorVersion`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -204,20 +202,16 @@ Boto3 documentation:
 Arguments:
 
 - `detectorId`: `str` *(required)*
-- `rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)\]
-  *(required)*
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 - `description`: `str`
 - `externalModelEndpoints`: `List`\[`str`\]
 - `modelVersions`:
-  `List`\[[ModelVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelversiontypedef)\]
-- `ruleExecutionMode`:
-  [RuleExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#ruleexecutionmode)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+  `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
+- `ruleExecutionMode`: [RuleExecutionMode](./literals.md#ruleexecutionmode)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDetectorVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#createdetectorversionresulttypedef).
+[CreateDetectorVersionResultTypeDef](./type_defs.md#createdetectorversionresulttypedef).
 
 ### create_model
 
@@ -229,11 +223,11 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 - `eventTypeName`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -248,18 +242,19 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
-- `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
+- `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
+  [TrainingDataSourceEnum](./literals.md#trainingdatasourceenum)) *(required)*
 - `trainingDataSchema`:
-  [TrainingDataSchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#trainingdataschematypedef)
+  [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
   *(required)*
 - `externalEventsDetail`:
-  [ExternalEventsDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#externaleventsdetailtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+  [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#createmodelversionresulttypedef).
+[CreateModelVersionResultTypeDef](./type_defs.md#createmodelversionresulttypedef).
 
 ### create_rule
 
@@ -273,14 +268,13 @@ Arguments:
 - `ruleId`: `str` *(required)*
 - `detectorId`: `str` *(required)*
 - `expression`: `str` *(required)*
-- `language`: `Literal['DETECTORPL']` *(required)*
+- `language`: `Literal['DETECTORPL']` (see [Language](./literals.md#language))
+  *(required)*
 - `outcomes`: `List`\[`str`\] *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRuleResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#createruleresulttypedef).
+Returns [CreateRuleResultTypeDef](./type_defs.md#createruleresulttypedef).
 
 ### create_variable
 
@@ -292,17 +286,12 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `dataType`:
-  [DataType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#datatype)
-  *(required)*
-- `dataSource`:
-  [DataSource](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#datasource)
-  *(required)*
+- `dataType`: [DataType](./literals.md#datatype) *(required)*
+- `dataSource`: [DataSource](./literals.md#datasource) *(required)*
 - `defaultValue`: `str` *(required)*
 - `description`: `str`
 - `variableType`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -425,7 +414,8 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -440,7 +430,8 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 - `modelVersionNumber`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -467,9 +458,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `rule`:
-  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)
-  *(required)*
+- `rule`: [RuleTypeDef](./type_defs.md#ruletypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -500,7 +489,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeDetectorResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#describedetectorresulttypedef).
+[DescribeDetectorResultTypeDef](./type_defs.md#describedetectorresulttypedef).
 
 ### describe_model_versions
 
@@ -514,12 +503,13 @@ Arguments:
 
 - `modelId`: `str`
 - `modelVersionNumber`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum))
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[DescribeModelVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#describemodelversionsresulttypedef).
+[DescribeModelVersionsResultTypeDef](./type_defs.md#describemodelversionsresulttypedef).
 
 ### generate_presigned_url
 
@@ -553,7 +543,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[GetBatchPredictionJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getbatchpredictionjobsresulttypedef).
+[GetBatchPredictionJobsResultTypeDef](./type_defs.md#getbatchpredictionjobsresulttypedef).
 
 ### get_detector_version
 
@@ -569,7 +559,7 @@ Arguments:
 - `detectorVersionId`: `str` *(required)*
 
 Returns
-[GetDetectorVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getdetectorversionresulttypedef).
+[GetDetectorVersionResultTypeDef](./type_defs.md#getdetectorversionresulttypedef).
 
 ### get_detectors
 
@@ -584,8 +574,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetDetectorsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getdetectorsresulttypedef).
+Returns [GetDetectorsResultTypeDef](./type_defs.md#getdetectorsresulttypedef).
 
 ### get_entity_types
 
@@ -601,7 +590,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEntityTypesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getentitytypesresulttypedef).
+[GetEntityTypesResultTypeDef](./type_defs.md#getentitytypesresulttypedef).
 
 ### get_event_prediction
 
@@ -616,17 +605,16 @@ Arguments:
 - `detectorId`: `str` *(required)*
 - `eventId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
-- `entities`:
-  `List`\[[EntityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#entitytypedef)\]
+- `entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
   *(required)*
 - `eventTimestamp`: `str` *(required)*
 - `eventVariables`: `Dict`\[`str`, `str`\] *(required)*
 - `detectorVersionId`: `str`
 - `externalModelEndpointDataBlobs`: `Dict`\[`str`,
-  [ModelEndpointDataBlobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelendpointdatablobtypedef)\]
+  [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)\]
 
 Returns
-[GetEventPredictionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#geteventpredictionresulttypedef).
+[GetEventPredictionResultTypeDef](./type_defs.md#geteventpredictionresulttypedef).
 
 ### get_event_types
 
@@ -642,7 +630,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEventTypesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#geteventtypesresulttypedef).
+[GetEventTypesResultTypeDef](./type_defs.md#geteventtypesresulttypedef).
 
 ### get_external_models
 
@@ -659,7 +647,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetExternalModelsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getexternalmodelsresulttypedef).
+[GetExternalModelsResultTypeDef](./type_defs.md#getexternalmodelsresulttypedef).
 
 ### get_kms_encryption_key
 
@@ -670,7 +658,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_kms_encryption_key)
 
 Returns
-[GetKMSEncryptionKeyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getkmsencryptionkeyresulttypedef).
+[GetKMSEncryptionKeyResultTypeDef](./type_defs.md#getkmsencryptionkeyresulttypedef).
 
 ### get_labels
 
@@ -685,8 +673,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetLabelsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getlabelsresulttypedef).
+Returns [GetLabelsResultTypeDef](./type_defs.md#getlabelsresulttypedef).
 
 ### get_model_version
 
@@ -698,11 +685,12 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 - `modelVersionNumber`: `str` *(required)*
 
 Returns
-[GetModelVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getmodelversionresulttypedef).
+[GetModelVersionResultTypeDef](./type_defs.md#getmodelversionresulttypedef).
 
 ### get_models
 
@@ -714,12 +702,12 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']`
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum))
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetModelsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getmodelsresulttypedef).
+Returns [GetModelsResultTypeDef](./type_defs.md#getmodelsresulttypedef).
 
 ### get_outcomes
 
@@ -734,8 +722,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetOutcomesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getoutcomesresulttypedef).
+Returns [GetOutcomesResultTypeDef](./type_defs.md#getoutcomesresulttypedef).
 
 ### get_rules
 
@@ -752,8 +739,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getrulesresulttypedef).
+Returns [GetRulesResultTypeDef](./type_defs.md#getrulesresulttypedef).
 
 ### get_variables
 
@@ -768,8 +754,7 @@ Arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetVariablesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#getvariablesresulttypedef).
+Returns [GetVariablesResultTypeDef](./type_defs.md#getvariablesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -786,7 +771,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### put_detector
 
@@ -800,8 +785,7 @@ Arguments:
 - `detectorId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -816,8 +800,7 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -835,8 +818,7 @@ Arguments:
 - `entityTypes`: `List`\[`str`\] *(required)*
 - `description`: `str`
 - `labels`: `List`\[`str`\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -850,19 +832,18 @@ Boto3 documentation:
 Arguments:
 
 - `modelEndpoint`: `str` *(required)*
-- `modelSource`: `Literal['SAGEMAKER']` *(required)*
+- `modelSource`: `Literal['SAGEMAKER']` (see
+  [ModelSource](./literals.md#modelsource)) *(required)*
 - `invokeModelEndpointRoleArn`: `str` *(required)*
 - `inputConfiguration`:
-  [ModelInputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelinputconfigurationtypedef)
+  [ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef)
   *(required)*
 - `outputConfiguration`:
-  [ModelOutputConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modeloutputconfigurationtypedef)
+  [ModelOutputConfigurationTypeDef](./type_defs.md#modeloutputconfigurationtypedef)
   *(required)*
-- `modelEndpointStatus`:
-  [ModelEndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#modelendpointstatus)
+- `modelEndpointStatus`: [ModelEndpointStatus](./literals.md#modelendpointstatus)
   *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -891,8 +872,7 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -907,8 +887,7 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -922,9 +901,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -955,14 +932,11 @@ Arguments:
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
 - `externalModelEndpoints`: `List`\[`str`\] *(required)*
-- `rules`:
-  `List`\[[RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)\]
-  *(required)*
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 - `description`: `str`
 - `modelVersions`:
-  `List`\[[ModelVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#modelversiontypedef)\]
-- `ruleExecutionMode`:
-  [RuleExecutionMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#ruleexecutionmode)
+  `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
+- `ruleExecutionMode`: [RuleExecutionMode](./literals.md#ruleexecutionmode)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -994,8 +968,7 @@ Arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
-- `status`:
-  [DetectorVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#detectorversionstatus)
+- `status`: [DetectorVersionStatus](./literals.md#detectorversionstatus)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1010,7 +983,8 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1026,15 +1000,15 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 - `majorVersionNumber`: `str` *(required)*
 - `externalEventsDetail`:
-  [ExternalEventsDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#externaleventsdetailtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+  [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateModelVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#updatemodelversionresulttypedef).
+[UpdateModelVersionResultTypeDef](./type_defs.md#updatemodelversionresulttypedef).
 
 ### update_model_version_status
 
@@ -1047,11 +1021,10 @@ Boto3 documentation:
 Arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` *(required)*
+- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
+  [ModelTypeEnum](./literals.md#modeltypeenum)) *(required)*
 - `modelVersionNumber`: `str` *(required)*
-- `status`:
-  [ModelVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/literals.html#modelversionstatus)
-  *(required)*
+- `status`: [ModelVersionStatus](./literals.md#modelversionstatus) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1065,9 +1038,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `rule`:
-  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)
-  *(required)*
+- `rule`: [RuleTypeDef](./type_defs.md#ruletypedef) *(required)*
 - `description`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1082,18 +1053,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `rule`:
-  [RuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#ruletypedef)
-  *(required)*
+- `rule`: [RuleTypeDef](./type_defs.md#ruletypedef) *(required)*
 - `expression`: `str` *(required)*
-- `language`: `Literal['DETECTORPL']` *(required)*
+- `language`: `Literal['DETECTORPL']` (see [Language](./literals.md#language))
+  *(required)*
 - `outcomes`: `List`\[`str`\] *(required)*
 - `description`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateRuleVersionResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_frauddetector/type_defs.html#updateruleversionresulttypedef).
+[UpdateRuleVersionResultTypeDef](./type_defs.md#updateruleversionresulttypedef).
 
 ### update_variable
 

@@ -1,6 +1,6 @@
 # Paginators for boto3 ElasticBeanstalk module
 
-> [Index](../README.md) > [ElasticBeanstalk](./README.md) > Paginators
+> [Index](..) > [ElasticBeanstalk](.) > Paginators
 
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
@@ -36,10 +36,10 @@ Arguments for `DescribeApplicationVersionsPaginator.paginate` method:
 - `ApplicationName`: `str`
 - `VersionLabels`: `List`\[`str`\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeApplicationVersionsPaginator.paginate` returns
-`Iterator`\[[ApplicationVersionDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#applicationversiondescriptionsmessagetypedef)\].
+`Iterator`\[[ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef)\].
 
 ## DescribeEnvironmentManagedActionHistoryPaginator
 
@@ -64,10 +64,10 @@ method:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentManagedActionHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeEnvironmentManagedActionHistoryResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#describeenvironmentmanagedactionhistoryresulttypedef)\].
+`Iterator`\[[DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef)\].
 
 ## DescribeEnvironmentsPaginator
 
@@ -95,10 +95,10 @@ Arguments for `DescribeEnvironmentsPaginator.paginate` method:
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentsPaginator.paginate` returns
-`Iterator`\[[EnvironmentDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#environmentdescriptionsmessagetypedef)\].
+`Iterator`\[[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -126,15 +126,14 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 - `EnvironmentName`: `str`
 - `PlatformArn`: `str`
 - `RequestId`: `str`
-- `Severity`:
-  [EventSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/literals.html#eventseverity)
+- `Severity`: [EventSeverity](./literals.md#eventseverity)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventDescriptionsMessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#eventdescriptionsmessagetypedef)\].
+`Iterator`\[[EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef)\].
 
 ## ListPlatformVersionsPaginator
 
@@ -156,9 +155,9 @@ Boto3 documentation:
 Arguments for `ListPlatformVersionsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PlatformFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#platformfiltertypedef)\]
+  `List`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlatformVersionsPaginator.paginate` returns
-`Iterator`\[[ListPlatformVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elasticbeanstalk/type_defs.html#listplatformversionsresulttypedef)\].
+`Iterator`\[[ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef)\].

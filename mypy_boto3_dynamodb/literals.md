@@ -1,6 +1,6 @@
 # Literals for boto3 DynamoDB module
 
-> [Index](../README.md) > [DynamoDB](./README.md) > Literals
+> [Index](..) > [DynamoDB](.) > Literals
 
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)

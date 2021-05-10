@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeStarNotifications module
 
-> [Index](../README.md) > [CodeStarNotifications](./README.md) > Paginators
+> [Index](..) > [CodeStarNotifications](.) > Paginators
 
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
@@ -32,12 +32,12 @@ Boto3 documentation:
 Arguments for `ListEventTypesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ListEventTypesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listeventtypesfiltertypedef)\]
+  `List`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventTypesPaginator.paginate` returns
-`Iterator`\[[ListEventTypesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listeventtypesresulttypedef)\].
+`Iterator`\[[ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef)\].
 
 ## ListNotificationRulesPaginator
 
@@ -59,12 +59,12 @@ Boto3 documentation:
 Arguments for `ListNotificationRulesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ListNotificationRulesFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listnotificationrulesfiltertypedef)\]
+  `List`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotificationRulesPaginator.paginate` returns
-`Iterator`\[[ListNotificationRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listnotificationrulesresulttypedef)\].
+`Iterator`\[[ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef)\].
 
 ## ListTargetsPaginator
 
@@ -86,9 +86,9 @@ Boto3 documentation:
 Arguments for `ListTargetsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ListTargetsFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listtargetsfiltertypedef)\]
+  `List`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsPaginator.paginate` returns
-`Iterator`\[[ListTargetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codestar_notifications/type_defs.html#listtargetsresulttypedef)\].
+`Iterator`\[[ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef)\].

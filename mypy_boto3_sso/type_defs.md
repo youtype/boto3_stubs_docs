@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SSO module
 
-> [Index](../README.md) > [SSO](./README.md) > Structures
+> [Index](..) > [SSO](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
@@ -37,7 +37,7 @@ from mypy_boto3_sso.type_defs import GetRoleCredentialsResponseTypeDef
 Optional fields:
 
 - `roleCredentials`:
-  [RoleCredentialsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#rolecredentialstypedef)
+  [RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef)
 
 ## ListAccountRolesResponseTypeDef
 
@@ -48,8 +48,7 @@ from mypy_boto3_sso.type_defs import ListAccountRolesResponseTypeDef
 Optional fields:
 
 - `nextToken`: `str`
-- `roleList`:
-  `List`\[[RoleInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#roleinfotypedef)\]
+- `roleList`: `List`\[[RoleInfoTypeDef](./type_defs.md#roleinfotypedef)\]
 
 ## ListAccountsResponseTypeDef
 
@@ -61,7 +60,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `accountList`:
-  `List`\[[AccountInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sso/type_defs.html#accountinfotypedef)\]
+  `List`\[[AccountInfoTypeDef](./type_defs.md#accountinfotypedef)\]
 
 ## PaginatorConfigTypeDef
 

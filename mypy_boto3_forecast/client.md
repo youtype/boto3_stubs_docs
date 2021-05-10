@@ -1,6 +1,6 @@
 # ForecastServiceClient for boto3 ForecastService module
 
-> [Index](../README.md) > [ForecastService](./README.md) > ForecastServiceClient
+> [Index](..) > [ForecastService](.) > ForecastServiceClient
 
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
@@ -113,23 +113,16 @@ Boto3 documentation:
 Arguments:
 
 - `DatasetName`: `str` *(required)*
-- `Domain`:
-  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#domain)
-  *(required)*
-- `DatasetType`:
-  [DatasetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#datasettype)
-  *(required)*
-- `Schema`:
-  [SchemaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#schematypedef)
-  *(required)*
+- `Domain`: [Domain](./literals.md#domain) *(required)*
+- `DatasetType`: [DatasetType](./literals.md#datasettype) *(required)*
+- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef) *(required)*
 - `DataFrequency`: `str`
 - `EncryptionConfig`:
-  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#encryptionconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createdatasetresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_dataset_group
 
@@ -141,15 +134,12 @@ Boto3 documentation:
 Arguments:
 
 - `DatasetGroupName`: `str` *(required)*
-- `Domain`:
-  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/literals.html#domain)
-  *(required)*
+- `Domain`: [Domain](./literals.md#domain) *(required)*
 - `DatasetArns`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createdatasetgroupresponsetypedef).
+[CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
 
 ### create_dataset_import_job
 
@@ -163,18 +153,16 @@ Arguments:
 
 - `DatasetImportJobName`: `str` *(required)*
 - `DatasetArn`: `str` *(required)*
-- `DataSource`:
-  [DataSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datasourcetypedef)
+- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
   *(required)*
 - `TimestampFormat`: `str`
 - `TimeZone`: `str`
 - `UseGeolocationForTimeZone`: `bool`
 - `GeolocationFormat`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createdatasetimportjobresponsetypedef).
+[CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
 
 ### create_forecast
 
@@ -188,11 +176,10 @@ Arguments:
 - `ForecastName`: `str` *(required)*
 - `PredictorArn`: `str` *(required)*
 - `ForecastTypes`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateForecastResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createforecastresponsetypedef).
+[CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef).
 
 ### create_forecast_export_job
 
@@ -206,14 +193,12 @@ Arguments:
 
 - `ForecastExportJobName`: `str` *(required)*
 - `ForecastArn`: `str` *(required)*
-- `Destination`:
-  [DataDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datadestinationtypedef)
+- `Destination`: [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateForecastExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createforecastexportjobresponsetypedef).
+[CreateForecastExportJobResponseTypeDef](./type_defs.md#createforecastexportjobresponsetypedef).
 
 ### create_predictor
 
@@ -227,10 +212,9 @@ Arguments:
 - `PredictorName`: `str` *(required)*
 - `ForecastHorizon`: `int` *(required)*
 - `InputDataConfig`:
-  [InputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#inputdataconfigtypedef)
-  *(required)*
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 - `FeaturizationConfig`:
-  [FeaturizationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#featurizationconfigtypedef)
+  [FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef)
   *(required)*
 - `AlgorithmArn`: `str`
 - `ForecastTypes`: `List`\[`str`\]
@@ -238,16 +222,15 @@ Arguments:
 - `PerformHPO`: `bool`
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `EvaluationParameters`:
-  [EvaluationParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#evaluationparameterstypedef)
+  [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
 - `HPOConfig`:
-  [HyperParameterTuningJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#hyperparametertuningjobconfigtypedef)
+  [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
 - `EncryptionConfig`:
-  [EncryptionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#encryptionconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePredictorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createpredictorresponsetypedef).
+[CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef).
 
 ### create_predictor_backtest_export_job
 
@@ -261,14 +244,12 @@ Arguments:
 
 - `PredictorBacktestExportJobName`: `str` *(required)*
 - `PredictorArn`: `str` *(required)*
-- `Destination`:
-  [DataDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#datadestinationtypedef)
+- `Destination`: [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePredictorBacktestExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#createpredictorbacktestexportjobresponsetypedef).
+[CreatePredictorBacktestExportJobResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponsetypedef).
 
 ### delete_dataset
 
@@ -373,7 +354,7 @@ Arguments:
 - `DatasetArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describedatasetresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_dataset_group
 
@@ -387,7 +368,7 @@ Arguments:
 - `DatasetGroupArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describedatasetgroupresponsetypedef).
+[DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
 
 ### describe_dataset_import_job
 
@@ -402,7 +383,7 @@ Arguments:
 - `DatasetImportJobArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetImportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describedatasetimportjobresponsetypedef).
+[DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
 
 ### describe_forecast
 
@@ -416,7 +397,7 @@ Arguments:
 - `ForecastArn`: `str` *(required)*
 
 Returns
-[DescribeForecastResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describeforecastresponsetypedef).
+[DescribeForecastResponseTypeDef](./type_defs.md#describeforecastresponsetypedef).
 
 ### describe_forecast_export_job
 
@@ -431,7 +412,7 @@ Arguments:
 - `ForecastExportJobArn`: `str` *(required)*
 
 Returns
-[DescribeForecastExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describeforecastexportjobresponsetypedef).
+[DescribeForecastExportJobResponseTypeDef](./type_defs.md#describeforecastexportjobresponsetypedef).
 
 ### describe_predictor
 
@@ -445,7 +426,7 @@ Arguments:
 - `PredictorArn`: `str` *(required)*
 
 Returns
-[DescribePredictorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describepredictorresponsetypedef).
+[DescribePredictorResponseTypeDef](./type_defs.md#describepredictorresponsetypedef).
 
 ### describe_predictor_backtest_export_job
 
@@ -460,7 +441,7 @@ Arguments:
 - `PredictorBacktestExportJobArn`: `str` *(required)*
 
 Returns
-[DescribePredictorBacktestExportJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#describepredictorbacktestexportjobresponsetypedef).
+[DescribePredictorBacktestExportJobResponseTypeDef](./type_defs.md#describepredictorbacktestexportjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -490,7 +471,7 @@ Arguments:
 - `PredictorArn`: `str` *(required)*
 
 Returns
-[GetAccuracyMetricsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#getaccuracymetricsresponsetypedef).
+[GetAccuracyMetricsResponseTypeDef](./type_defs.md#getaccuracymetricsresponsetypedef).
 
 ### list_dataset_groups
 
@@ -505,7 +486,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatasetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listdatasetgroupsresponsetypedef).
+[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
 
 ### list_dataset_import_jobs
 
@@ -519,11 +500,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListDatasetImportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listdatasetimportjobsresponsetypedef).
+[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
 
 ### list_datasets
 
@@ -538,7 +518,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatasetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listdatasetsresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_forecast_export_jobs
 
@@ -552,11 +532,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListForecastExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listforecastexportjobsresponsetypedef).
+[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef).
 
 ### list_forecasts
 
@@ -569,11 +548,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListForecastsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listforecastsresponsetypedef).
+[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef).
 
 ### list_predictor_backtest_export_jobs
 
@@ -587,11 +565,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListPredictorBacktestExportJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listpredictorbacktestexportjobsresponsetypedef).
+[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef).
 
 ### list_predictors
 
@@ -604,11 +581,10 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[ListPredictorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listpredictorsresponsetypedef).
+[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -622,7 +598,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### stop_resource
 
@@ -645,9 +621,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecast/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

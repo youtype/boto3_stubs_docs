@@ -1,6 +1,6 @@
 # Literals for boto3 ManagedBlockchain module
 
-> [Index](../README.md) > [ManagedBlockchain](./README.md) > Literals
+> [Index](..) > [ManagedBlockchain](.) > Literals
 
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)

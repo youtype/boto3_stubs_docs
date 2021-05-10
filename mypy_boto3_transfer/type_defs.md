@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Transfer module
 
-> [Index](../README.md) > [Transfer](./README.md) > Structures
+> [Index](..) > [Transfer](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
@@ -64,7 +64,7 @@ from mypy_boto3_transfer.type_defs import DescribeSecurityPolicyResponseTypeDef
 Required fields:
 
 - `SecurityPolicy`:
-  [DescribedSecurityPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#describedsecuritypolicytypedef)
+  [DescribedSecurityPolicyTypeDef](./type_defs.md#describedsecuritypolicytypedef)
 
 ## DescribeServerResponseTypeDef
 
@@ -74,8 +74,7 @@ from mypy_boto3_transfer.type_defs import DescribeServerResponseTypeDef
 
 Required fields:
 
-- `Server`:
-  [DescribedServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#describedservertypedef)
+- `Server`: [DescribedServerTypeDef](./type_defs.md#describedservertypedef)
 
 ## DescribeUserResponseTypeDef
 
@@ -86,8 +85,7 @@ from mypy_boto3_transfer.type_defs import DescribeUserResponseTypeDef
 Required fields:
 
 - `ServerId`: `str`
-- `User`:
-  [DescribedUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#describedusertypedef)
+- `User`: [DescribedUserTypeDef](./type_defs.md#describedusertypedef)
 
 ## DescribedSecurityPolicyTypeDef
 
@@ -120,26 +118,21 @@ Required fields:
 Optional fields:
 
 - `Certificate`: `str`
-- `Domain`:
-  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#domain)
+- `Domain`: [Domain](./literals.md#domain)
 - `EndpointDetails`:
-  [EndpointDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#endpointdetailstypedef)
-- `EndpointType`:
-  [EndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#endpointtype)
+  [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
+- `EndpointType`: [EndpointType](./literals.md#endpointtype)
 - `HostKeyFingerprint`: `str`
 - `IdentityProviderDetails`:
-  [IdentityProviderDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#identityproviderdetailstypedef)
+  [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `IdentityProviderType`:
-  [IdentityProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#identityprovidertype)
+  [IdentityProviderType](./literals.md#identityprovidertype)
 - `LoggingRole`: `str`
-- `Protocols`:
-  `List`\[[ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#protocoltype)\]
+- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `ServerId`: `str`
-- `State`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#state)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#tagtypedef)\]
+- `State`: [State](./literals.md#state)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserCount`: `int`
 
 ## DescribedUserTypeDef
@@ -156,17 +149,14 @@ Optional fields:
 
 - `HomeDirectory`: `str`
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#homedirectorymapentrytypedef)\]
-- `HomeDirectoryType`:
-  [HomeDirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#homedirectorytype)
+  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+- `HomeDirectoryType`: [HomeDirectoryType](./literals.md#homedirectorytype)
 - `Policy`: `str`
-- `PosixProfile`:
-  [PosixProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#posixprofiletypedef)
+- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
 - `SshPublicKeys`:
-  `List`\[[SshPublicKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#sshpublickeytypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#tagtypedef)\]
+  `List`\[[SshPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserName`: `str`
 
 ## EndpointDetailsTypeDef
@@ -239,8 +229,7 @@ from mypy_boto3_transfer.type_defs import ListServersResponseTypeDef
 
 Required fields:
 
-- `Servers`:
-  `List`\[[ListedServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listedservertypedef)\]
+- `Servers`: `List`\[[ListedServerTypeDef](./type_defs.md#listedservertypedef)\]
 
 Optional fields:
 
@@ -256,8 +245,7 @@ Optional fields:
 
 - `Arn`: `str`
 - `NextToken`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ListUsersResponseTypeDef
 
@@ -268,8 +256,7 @@ from mypy_boto3_transfer.type_defs import ListUsersResponseTypeDef
 Required fields:
 
 - `ServerId`: `str`
-- `Users`:
-  `List`\[[ListedUserTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/type_defs.html#listedusertypedef)\]
+- `Users`: `List`\[[ListedUserTypeDef](./type_defs.md#listedusertypedef)\]
 
 Optional fields:
 
@@ -287,16 +274,13 @@ Required fields:
 
 Optional fields:
 
-- `Domain`:
-  [Domain](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#domain)
+- `Domain`: [Domain](./literals.md#domain)
 - `IdentityProviderType`:
-  [IdentityProviderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#identityprovidertype)
-- `EndpointType`:
-  [EndpointType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#endpointtype)
+  [IdentityProviderType](./literals.md#identityprovidertype)
+- `EndpointType`: [EndpointType](./literals.md#endpointtype)
 - `LoggingRole`: `str`
 - `ServerId`: `str`
-- `State`:
-  [State](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#state)
+- `State`: [State](./literals.md#state)
 - `UserCount`: `int`
 
 ## ListedUserTypeDef
@@ -312,8 +296,7 @@ Required fields:
 Optional fields:
 
 - `HomeDirectory`: `str`
-- `HomeDirectoryType`:
-  [HomeDirectoryType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_transfer/literals.html#homedirectorytype)
+- `HomeDirectoryType`: [HomeDirectoryType](./literals.md#homedirectorytype)
 - `Role`: `str`
 - `SshPublicKeyCount`: `int`
 - `UserName`: `str`

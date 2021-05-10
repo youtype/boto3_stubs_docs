@@ -1,6 +1,6 @@
 # Type annotations for boto3 WAF module
 
-> [Index](../README.md) > WAF
+> [Index](..) > WAF
 
 Auto-generated documentation for
 [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)

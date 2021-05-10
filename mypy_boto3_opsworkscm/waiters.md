@@ -1,6 +1,6 @@
 # Waiters for boto3 OpsWorksCM module
 
-> [Index](../README.md) > [OpsWorksCM](./README.md) > Waiters
+> [Index](..) > [OpsWorksCM](.) > Waiters
 
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
@@ -31,5 +31,4 @@ Arguments for `NodeAssociatedWaiter.wait` method:
 
 - `NodeAssociationStatusToken`: `str` *(required)*
 - `ServerName`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

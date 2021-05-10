@@ -1,6 +1,6 @@
 # Type annotations for boto3 MarketplaceCatalog module
 
-> [Index](../README.md) > MarketplaceCatalog
+> [Index](..) > MarketplaceCatalog
 
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)

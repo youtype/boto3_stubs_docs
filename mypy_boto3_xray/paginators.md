@@ -1,6 +1,6 @@
 # Paginators for boto3 XRay module
 
-> [Index](../README.md) > [XRay](./README.md) > Paginators
+> [Index](..) > [XRay](.) > Paginators
 
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
@@ -37,10 +37,10 @@ Arguments for `BatchGetTracesPaginator.paginate` method:
 
 - `TraceIds`: `List`\[`str`\] *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `BatchGetTracesPaginator.paginate` returns
-`Iterator`\[[BatchGetTracesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#batchgettracesresulttypedef)\].
+`Iterator`\[[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef)\].
 
 ## GetGroupsPaginator
 
@@ -61,10 +61,10 @@ Boto3 documentation:
 Arguments for `GetGroupsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupsPaginator.paginate` returns
-`Iterator`\[[GetGroupsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getgroupsresulttypedef)\].
+`Iterator`\[[GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef)\].
 
 ## GetSamplingRulesPaginator
 
@@ -86,10 +86,10 @@ Boto3 documentation:
 Arguments for `GetSamplingRulesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSamplingRulesPaginator.paginate` returns
-`Iterator`\[[GetSamplingRulesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getsamplingrulesresulttypedef)\].
+`Iterator`\[[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef)\].
 
 ## GetSamplingStatisticSummariesPaginator
 
@@ -111,10 +111,10 @@ Boto3 documentation:
 Arguments for `GetSamplingStatisticSummariesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSamplingStatisticSummariesPaginator.paginate` returns
-`Iterator`\[[GetSamplingStatisticSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getsamplingstatisticsummariesresulttypedef)\].
+`Iterator`\[[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef)\].
 
 ## GetServiceGraphPaginator
 
@@ -139,10 +139,10 @@ Arguments for `GetServiceGraphPaginator.paginate` method:
 - `GroupName`: `str`
 - `GroupARN`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServiceGraphPaginator.paginate` returns
-`Iterator`\[[GetServiceGraphResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#getservicegraphresulttypedef)\].
+`Iterator`\[[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef)\].
 
 ## GetTimeSeriesServiceStatisticsPaginator
 
@@ -171,10 +171,10 @@ Arguments for `GetTimeSeriesServiceStatisticsPaginator.paginate` method:
 - `Period`: `int`
 - `ForecastStatistics`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTimeSeriesServiceStatisticsPaginator.paginate` returns
-`Iterator`\[[GetTimeSeriesServiceStatisticsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#gettimeseriesservicestatisticsresulttypedef)\].
+`Iterator`\[[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef)\].
 
 ## GetTraceGraphPaginator
 
@@ -196,10 +196,10 @@ Arguments for `GetTraceGraphPaginator.paginate` method:
 
 - `TraceIds`: `List`\[`str`\] *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTraceGraphPaginator.paginate` returns
-`Iterator`\[[GetTraceGraphResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#gettracegraphresulttypedef)\].
+`Iterator`\[[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef)\].
 
 ## GetTraceSummariesPaginator
 
@@ -222,14 +222,13 @@ Arguments for `GetTraceSummariesPaginator.paginate` method:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
-- `TimeRangeType`:
-  [TimeRangeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/literals.html#timerangetype)
+- `TimeRangeType`: [TimeRangeType](./literals.md#timerangetype)
 - `Sampling`: `bool`
 - `SamplingStrategy`:
-  [SamplingStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#samplingstrategytypedef)
+  [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
 - `FilterExpression`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTraceSummariesPaginator.paginate` returns
-`Iterator`\[[GetTraceSummariesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_xray/type_defs.html#gettracesummariesresulttypedef)\].
+`Iterator`\[[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef)\].

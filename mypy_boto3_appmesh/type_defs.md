@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AppMesh module
 
-> [Index](../README.md) > [AppMesh](./README.md) > Structures
+> [Index](..) > [AppMesh](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
@@ -95,7 +95,7 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PortMappingTypeDef](#portmappingtypedef)
   - [ResourceMetadataTypeDef](#resourcemetadatatypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RouteDataTypeDef](#routedatatypedef)
   - [RouteRefTypeDef](#routereftypedef)
   - [RouteSpecTypeDef](#routespectypedef)
@@ -181,8 +181,7 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef
 
 Optional fields:
 
-- `file`:
-  [FileAccessLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#fileaccesslogtypedef)
+- `file`: [FileAccessLogTypeDef](./type_defs.md#fileaccesslogtypedef)
 
 ## AwsCloudMapInstanceAttributeTypeDef
 
@@ -209,7 +208,7 @@ Required fields:
 Optional fields:
 
 - `attributes`:
-  `List`\[[AwsCloudMapInstanceAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#awscloudmapinstanceattributetypedef)\]
+  `List`\[[AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef)\]
 
 ## BackendDefaultsTypeDef
 
@@ -219,8 +218,7 @@ from mypy_boto3_appmesh.type_defs import BackendDefaultsTypeDef
 
 Optional fields:
 
-- `clientPolicy`:
-  [ClientPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#clientpolicytypedef)
+- `clientPolicy`: [ClientPolicyTypeDef](./type_defs.md#clientpolicytypedef)
 
 ## BackendTypeDef
 
@@ -231,7 +229,7 @@ from mypy_boto3_appmesh.type_defs import BackendTypeDef
 Optional fields:
 
 - `virtualService`:
-  [VirtualServiceBackendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicebackendtypedef)
+  [VirtualServiceBackendTypeDef](./type_defs.md#virtualservicebackendtypedef)
 
 ## ClientPolicyTlsTypeDef
 
@@ -242,12 +240,12 @@ from mypy_boto3_appmesh.type_defs import ClientPolicyTlsTypeDef
 Required fields:
 
 - `validation`:
-  [TlsValidationContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontexttypedef)
+  [TlsValidationContextTypeDef](./type_defs.md#tlsvalidationcontexttypedef)
 
 Optional fields:
 
 - `certificate`:
-  [ClientTlsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#clienttlscertificatetypedef)
+  [ClientTlsCertificateTypeDef](./type_defs.md#clienttlscertificatetypedef)
 - `enforce`: `bool`
 - `ports`: `List`\[`int`\]
 
@@ -259,8 +257,7 @@ from mypy_boto3_appmesh.type_defs import ClientPolicyTypeDef
 
 Optional fields:
 
-- `tls`:
-  [ClientPolicyTlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#clientpolicytlstypedef)
+- `tls`: [ClientPolicyTlsTypeDef](./type_defs.md#clientpolicytlstypedef)
 
 ## ClientTlsCertificateTypeDef
 
@@ -271,9 +268,9 @@ from mypy_boto3_appmesh.type_defs import ClientTlsCertificateTypeDef
 Optional fields:
 
 - `file`:
-  [ListenerTlsFileCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlsfilecertificatetypedef)
+  [ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef)
 - `sds`:
-  [ListenerTlsSdsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlssdscertificatetypedef)
+  [ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef)
 
 ## CreateGatewayRouteOutputTypeDef
 
@@ -284,9 +281,9 @@ from mypy_boto3_appmesh.type_defs import CreateGatewayRouteOutputTypeDef
 Required fields:
 
 - `gatewayRoute`:
-  [GatewayRouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutedatatypedef)
+  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateMeshOutputTypeDef
 
@@ -296,10 +293,9 @@ from mypy_boto3_appmesh.type_defs import CreateMeshOutputTypeDef
 
 Required fields:
 
-- `mesh`:
-  [MeshDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshdatatypedef)
+- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateRouteOutputTypeDef
 
@@ -309,10 +305,9 @@ from mypy_boto3_appmesh.type_defs import CreateRouteOutputTypeDef
 
 Required fields:
 
-- `route`:
-  [RouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routedatatypedef)
+- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateVirtualGatewayOutputTypeDef
 
@@ -323,9 +318,9 @@ from mypy_boto3_appmesh.type_defs import CreateVirtualGatewayOutputTypeDef
 Required fields:
 
 - `virtualGateway`:
-  [VirtualGatewayDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaydatatypedef)
+  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateVirtualNodeOutputTypeDef
 
@@ -335,10 +330,9 @@ from mypy_boto3_appmesh.type_defs import CreateVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodedatatypedef)
+- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateVirtualRouterOutputTypeDef
 
@@ -349,9 +343,9 @@ from mypy_boto3_appmesh.type_defs import CreateVirtualRouterOutputTypeDef
 Required fields:
 
 - `virtualRouter`:
-  [VirtualRouterDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterdatatypedef)
+  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateVirtualServiceOutputTypeDef
 
@@ -362,9 +356,9 @@ from mypy_boto3_appmesh.type_defs import CreateVirtualServiceOutputTypeDef
 Required fields:
 
 - `virtualService`:
-  [VirtualServiceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicedatatypedef)
+  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteGatewayRouteOutputTypeDef
 
@@ -375,9 +369,9 @@ from mypy_boto3_appmesh.type_defs import DeleteGatewayRouteOutputTypeDef
 Required fields:
 
 - `gatewayRoute`:
-  [GatewayRouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutedatatypedef)
+  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteMeshOutputTypeDef
 
@@ -387,10 +381,9 @@ from mypy_boto3_appmesh.type_defs import DeleteMeshOutputTypeDef
 
 Required fields:
 
-- `mesh`:
-  [MeshDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshdatatypedef)
+- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteRouteOutputTypeDef
 
@@ -400,10 +393,9 @@ from mypy_boto3_appmesh.type_defs import DeleteRouteOutputTypeDef
 
 Required fields:
 
-- `route`:
-  [RouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routedatatypedef)
+- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteVirtualGatewayOutputTypeDef
 
@@ -414,9 +406,9 @@ from mypy_boto3_appmesh.type_defs import DeleteVirtualGatewayOutputTypeDef
 Required fields:
 
 - `virtualGateway`:
-  [VirtualGatewayDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaydatatypedef)
+  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteVirtualNodeOutputTypeDef
 
@@ -426,10 +418,9 @@ from mypy_boto3_appmesh.type_defs import DeleteVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodedatatypedef)
+- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteVirtualRouterOutputTypeDef
 
@@ -440,9 +431,9 @@ from mypy_boto3_appmesh.type_defs import DeleteVirtualRouterOutputTypeDef
 Required fields:
 
 - `virtualRouter`:
-  [VirtualRouterDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterdatatypedef)
+  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteVirtualServiceOutputTypeDef
 
@@ -453,9 +444,9 @@ from mypy_boto3_appmesh.type_defs import DeleteVirtualServiceOutputTypeDef
 Required fields:
 
 - `virtualService`:
-  [VirtualServiceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicedatatypedef)
+  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeGatewayRouteOutputTypeDef
 
@@ -466,9 +457,9 @@ from mypy_boto3_appmesh.type_defs import DescribeGatewayRouteOutputTypeDef
 Required fields:
 
 - `gatewayRoute`:
-  [GatewayRouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutedatatypedef)
+  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeMeshOutputTypeDef
 
@@ -478,10 +469,9 @@ from mypy_boto3_appmesh.type_defs import DescribeMeshOutputTypeDef
 
 Required fields:
 
-- `mesh`:
-  [MeshDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshdatatypedef)
+- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeRouteOutputTypeDef
 
@@ -491,10 +481,9 @@ from mypy_boto3_appmesh.type_defs import DescribeRouteOutputTypeDef
 
 Required fields:
 
-- `route`:
-  [RouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routedatatypedef)
+- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeVirtualGatewayOutputTypeDef
 
@@ -505,9 +494,9 @@ from mypy_boto3_appmesh.type_defs import DescribeVirtualGatewayOutputTypeDef
 Required fields:
 
 - `virtualGateway`:
-  [VirtualGatewayDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaydatatypedef)
+  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeVirtualNodeOutputTypeDef
 
@@ -517,10 +506,9 @@ from mypy_boto3_appmesh.type_defs import DescribeVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodedatatypedef)
+- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeVirtualRouterOutputTypeDef
 
@@ -531,9 +519,9 @@ from mypy_boto3_appmesh.type_defs import DescribeVirtualRouterOutputTypeDef
 Required fields:
 
 - `virtualRouter`:
-  [VirtualRouterDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterdatatypedef)
+  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeVirtualServiceOutputTypeDef
 
@@ -544,9 +532,9 @@ from mypy_boto3_appmesh.type_defs import DescribeVirtualServiceOutputTypeDef
 Required fields:
 
 - `virtualService`:
-  [VirtualServiceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicedatatypedef)
+  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DnsServiceDiscoveryTypeDef
 
@@ -566,8 +554,7 @@ from mypy_boto3_appmesh.type_defs import DurationTypeDef
 
 Optional fields:
 
-- `unit`:
-  [DurationUnit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#durationunit)
+- `unit`: [DurationUnit](./literals.md#durationunit)
 - `value`: `int`
 
 ## EgressFilterTypeDef
@@ -578,8 +565,7 @@ from mypy_boto3_appmesh.type_defs import EgressFilterTypeDef
 
 Required fields:
 
-- `type`:
-  [EgressFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#egressfiltertype)
+- `type`: [EgressFilterType](./literals.md#egressfiltertype)
 
 ## FileAccessLogTypeDef
 
@@ -601,12 +587,9 @@ Required fields:
 
 - `gatewayRouteName`: `str`
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
-- `spec`:
-  [GatewayRouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutespectypedef)
-- `status`:
-  [GatewayRouteStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutestatustypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
+- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
+- `status`: [GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef)
 - `virtualGatewayName`: `str`
 
 ## GatewayRouteRefTypeDef
@@ -635,12 +618,9 @@ from mypy_boto3_appmesh.type_defs import GatewayRouteSpecTypeDef
 
 Optional fields:
 
-- `grpcRoute`:
-  [GrpcGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcgatewayroutetypedef)
-- `http2Route`:
-  [HttpGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httpgatewayroutetypedef)
-- `httpRoute`:
-  [HttpGatewayRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httpgatewayroutetypedef)
+- `grpcRoute`: [GrpcGatewayRouteTypeDef](./type_defs.md#grpcgatewayroutetypedef)
+- `http2Route`: [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
+- `httpRoute`: [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
 
 ## GatewayRouteStatusTypeDef
 
@@ -650,8 +630,7 @@ from mypy_boto3_appmesh.type_defs import GatewayRouteStatusTypeDef
 
 Required fields:
 
-- `status`:
-  [GatewayRouteStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#gatewayroutestatuscode)
+- `status`: [GatewayRouteStatusCode](./literals.md#gatewayroutestatuscode)
 
 ## GatewayRouteTargetTypeDef
 
@@ -662,7 +641,7 @@ from mypy_boto3_appmesh.type_defs import GatewayRouteTargetTypeDef
 Required fields:
 
 - `virtualService`:
-  [GatewayRouteVirtualServiceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutevirtualservicetypedef)
+  [GatewayRouteVirtualServiceTypeDef](./type_defs.md#gatewayroutevirtualservicetypedef)
 
 ## GatewayRouteVirtualServiceTypeDef
 
@@ -682,8 +661,7 @@ from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteActionTypeDef
 
 Required fields:
 
-- `target`:
-  [GatewayRouteTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutetargettypedef)
+- `target`: [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
 
 ## GrpcGatewayRouteMatchTypeDef
 
@@ -704,9 +682,9 @@ from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteTypeDef
 Required fields:
 
 - `action`:
-  [GrpcGatewayRouteActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcgatewayrouteactiontypedef)
+  [GrpcGatewayRouteActionTypeDef](./type_defs.md#grpcgatewayrouteactiontypedef)
 - `match`:
-  [GrpcGatewayRouteMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcgatewayroutematchtypedef)
+  [GrpcGatewayRouteMatchTypeDef](./type_defs.md#grpcgatewayroutematchtypedef)
 
 ## GrpcRetryPolicyTypeDef
 
@@ -717,15 +695,15 @@ from mypy_boto3_appmesh.type_defs import GrpcRetryPolicyTypeDef
 Required fields:
 
 - `maxRetries`: `int`
-- `perRetryTimeout`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
+- `perRetryTimeout`: [DurationTypeDef](./type_defs.md#durationtypedef)
 
 Optional fields:
 
 - `grpcRetryEvents`:
-  `List`\[[GrpcRetryPolicyEvent](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#grpcretrypolicyevent)\]
+  `List`\[[GrpcRetryPolicyEvent](./literals.md#grpcretrypolicyevent)\]
 - `httpRetryEvents`: `List`\[`str`\]
-- `tcpRetryEvents`: `List`\[`Literal['connection-error']`\]
+- `tcpRetryEvents`: `List`\[`Literal['connection-error']` (see
+  [TcpRetryPolicyEvent](./literals.md#tcpretrypolicyevent))\]
 
 ## GrpcRouteActionTypeDef
 
@@ -736,7 +714,7 @@ from mypy_boto3_appmesh.type_defs import GrpcRouteActionTypeDef
 Required fields:
 
 - `weightedTargets`:
-  `List`\[[WeightedTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#weightedtargettypedef)\]
+  `List`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
 
 ## GrpcRouteMatchTypeDef
 
@@ -747,7 +725,7 @@ from mypy_boto3_appmesh.type_defs import GrpcRouteMatchTypeDef
 Optional fields:
 
 - `metadata`:
-  `List`\[[GrpcRouteMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcroutemetadatatypedef)\]
+  `List`\[[GrpcRouteMetadataTypeDef](./type_defs.md#grpcroutemetadatatypedef)\]
 - `methodName`: `str`
 - `serviceName`: `str`
 
@@ -761,8 +739,7 @@ Optional fields:
 
 - `exact`: `str`
 - `prefix`: `str`
-- `range`:
-  [MatchRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#matchrangetypedef)
+- `range`: [MatchRangeTypeDef](./type_defs.md#matchrangetypedef)
 - `regex`: `str`
 - `suffix`: `str`
 
@@ -780,7 +757,7 @@ Optional fields:
 
 - `invert`: `bool`
 - `match`:
-  [GrpcRouteMetadataMatchMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcroutemetadatamatchmethodtypedef)
+  [GrpcRouteMetadataMatchMethodTypeDef](./type_defs.md#grpcroutemetadatamatchmethodtypedef)
 
 ## GrpcRouteTypeDef
 
@@ -790,17 +767,13 @@ from mypy_boto3_appmesh.type_defs import GrpcRouteTypeDef
 
 Required fields:
 
-- `action`:
-  [GrpcRouteActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcrouteactiontypedef)
-- `match`:
-  [GrpcRouteMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcroutematchtypedef)
+- `action`: [GrpcRouteActionTypeDef](./type_defs.md#grpcrouteactiontypedef)
+- `match`: [GrpcRouteMatchTypeDef](./type_defs.md#grpcroutematchtypedef)
 
 Optional fields:
 
-- `retryPolicy`:
-  [GrpcRetryPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcretrypolicytypedef)
-- `timeout`:
-  [GrpcTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpctimeouttypedef)
+- `retryPolicy`: [GrpcRetryPolicyTypeDef](./type_defs.md#grpcretrypolicytypedef)
+- `timeout`: [GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef)
 
 ## GrpcTimeoutTypeDef
 
@@ -810,10 +783,8 @@ from mypy_boto3_appmesh.type_defs import GrpcTimeoutTypeDef
 
 Optional fields:
 
-- `idle`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
-- `perRequest`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
+- `idle`: [DurationTypeDef](./type_defs.md#durationtypedef)
+- `perRequest`: [DurationTypeDef](./type_defs.md#durationtypedef)
 
 ## HeaderMatchMethodTypeDef
 
@@ -825,8 +796,7 @@ Optional fields:
 
 - `exact`: `str`
 - `prefix`: `str`
-- `range`:
-  [MatchRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#matchrangetypedef)
+- `range`: [MatchRangeTypeDef](./type_defs.md#matchrangetypedef)
 - `regex`: `str`
 - `suffix`: `str`
 
@@ -840,8 +810,7 @@ Required fields:
 
 - `healthyThreshold`: `int`
 - `intervalMillis`: `int`
-- `protocol`:
-  [PortProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#portprotocol)
+- `protocol`: [PortProtocol](./literals.md#portprotocol)
 - `timeoutMillis`: `int`
 - `unhealthyThreshold`: `int`
 
@@ -858,8 +827,7 @@ from mypy_boto3_appmesh.type_defs import HttpGatewayRouteActionTypeDef
 
 Required fields:
 
-- `target`:
-  [GatewayRouteTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutetargettypedef)
+- `target`: [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
 
 ## HttpGatewayRouteMatchTypeDef
 
@@ -880,9 +848,9 @@ from mypy_boto3_appmesh.type_defs import HttpGatewayRouteTypeDef
 Required fields:
 
 - `action`:
-  [HttpGatewayRouteActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httpgatewayrouteactiontypedef)
+  [HttpGatewayRouteActionTypeDef](./type_defs.md#httpgatewayrouteactiontypedef)
 - `match`:
-  [HttpGatewayRouteMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httpgatewayroutematchtypedef)
+  [HttpGatewayRouteMatchTypeDef](./type_defs.md#httpgatewayroutematchtypedef)
 
 ## HttpRetryPolicyTypeDef
 
@@ -893,13 +861,13 @@ from mypy_boto3_appmesh.type_defs import HttpRetryPolicyTypeDef
 Required fields:
 
 - `maxRetries`: `int`
-- `perRetryTimeout`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
+- `perRetryTimeout`: [DurationTypeDef](./type_defs.md#durationtypedef)
 
 Optional fields:
 
 - `httpRetryEvents`: `List`\[`str`\]
-- `tcpRetryEvents`: `List`\[`Literal['connection-error']`\]
+- `tcpRetryEvents`: `List`\[`Literal['connection-error']` (see
+  [TcpRetryPolicyEvent](./literals.md#tcpretrypolicyevent))\]
 
 ## HttpRouteActionTypeDef
 
@@ -910,7 +878,7 @@ from mypy_boto3_appmesh.type_defs import HttpRouteActionTypeDef
 Required fields:
 
 - `weightedTargets`:
-  `List`\[[WeightedTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#weightedtargettypedef)\]
+  `List`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
 
 ## HttpRouteHeaderTypeDef
 
@@ -925,8 +893,7 @@ Required fields:
 Optional fields:
 
 - `invert`: `bool`
-- `match`:
-  [HeaderMatchMethodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#headermatchmethodtypedef)
+- `match`: [HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef)
 
 ## HttpRouteMatchTypeDef
 
@@ -941,11 +908,9 @@ Required fields:
 Optional fields:
 
 - `headers`:
-  `List`\[[HttpRouteHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httprouteheadertypedef)\]
-- `method`:
-  [HttpMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#httpmethod)
-- `scheme`:
-  [HttpScheme](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#httpscheme)
+  `List`\[[HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)\]
+- `method`: [HttpMethod](./literals.md#httpmethod)
+- `scheme`: [HttpScheme](./literals.md#httpscheme)
 
 ## HttpRouteTypeDef
 
@@ -955,17 +920,13 @@ from mypy_boto3_appmesh.type_defs import HttpRouteTypeDef
 
 Required fields:
 
-- `action`:
-  [HttpRouteActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httprouteactiontypedef)
-- `match`:
-  [HttpRouteMatchTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httproutematchtypedef)
+- `action`: [HttpRouteActionTypeDef](./type_defs.md#httprouteactiontypedef)
+- `match`: [HttpRouteMatchTypeDef](./type_defs.md#httproutematchtypedef)
 
 Optional fields:
 
-- `retryPolicy`:
-  [HttpRetryPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httpretrypolicytypedef)
-- `timeout`:
-  [HttpTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httptimeouttypedef)
+- `retryPolicy`: [HttpRetryPolicyTypeDef](./type_defs.md#httpretrypolicytypedef)
+- `timeout`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
 
 ## HttpTimeoutTypeDef
 
@@ -975,10 +936,8 @@ from mypy_boto3_appmesh.type_defs import HttpTimeoutTypeDef
 
 Optional fields:
 
-- `idle`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
-- `perRequest`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
+- `idle`: [DurationTypeDef](./type_defs.md#durationtypedef)
+- `perRequest`: [DurationTypeDef](./type_defs.md#durationtypedef)
 
 ## ListGatewayRoutesOutputTypeDef
 
@@ -989,10 +948,10 @@ from mypy_boto3_appmesh.type_defs import ListGatewayRoutesOutputTypeDef
 Required fields:
 
 - `gatewayRoutes`:
-  `List`\[[GatewayRouteRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutereftypedef)\]
+  `List`\[[GatewayRouteRefTypeDef](./type_defs.md#gatewayroutereftypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListMeshesOutputTypeDef
 
@@ -1002,11 +961,10 @@ from mypy_boto3_appmesh.type_defs import ListMeshesOutputTypeDef
 
 Required fields:
 
-- `meshes`:
-  `List`\[[MeshRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshreftypedef)\]
+- `meshes`: `List`\[[MeshRefTypeDef](./type_defs.md#meshreftypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListRoutesOutputTypeDef
 
@@ -1017,10 +975,9 @@ from mypy_boto3_appmesh.type_defs import ListRoutesOutputTypeDef
 Required fields:
 
 - `nextToken`: `str`
-- `routes`:
-  `List`\[[RouteRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routereftypedef)\]
+- `routes`: `List`\[[RouteRefTypeDef](./type_defs.md#routereftypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1031,10 +988,9 @@ from mypy_boto3_appmesh.type_defs import ListTagsForResourceOutputTypeDef
 Required fields:
 
 - `nextToken`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListVirtualGatewaysOutputTypeDef
 
@@ -1046,9 +1002,9 @@ Required fields:
 
 - `nextToken`: `str`
 - `virtualGateways`:
-  `List`\[[VirtualGatewayRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayreftypedef)\]
+  `List`\[[VirtualGatewayRefTypeDef](./type_defs.md#virtualgatewayreftypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListVirtualNodesOutputTypeDef
 
@@ -1060,9 +1016,9 @@ Required fields:
 
 - `nextToken`: `str`
 - `virtualNodes`:
-  `List`\[[VirtualNodeRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodereftypedef)\]
+  `List`\[[VirtualNodeRefTypeDef](./type_defs.md#virtualnodereftypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListVirtualRoutersOutputTypeDef
 
@@ -1074,9 +1030,9 @@ Required fields:
 
 - `nextToken`: `str`
 - `virtualRouters`:
-  `List`\[[VirtualRouterRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterreftypedef)\]
+  `List`\[[VirtualRouterRefTypeDef](./type_defs.md#virtualrouterreftypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListVirtualServicesOutputTypeDef
 
@@ -1088,9 +1044,9 @@ Required fields:
 
 - `nextToken`: `str`
 - `virtualServices`:
-  `List`\[[VirtualServiceRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicereftypedef)\]
+  `List`\[[VirtualServiceRefTypeDef](./type_defs.md#virtualservicereftypedef)\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListenerTimeoutTypeDef
 
@@ -1100,14 +1056,10 @@ from mypy_boto3_appmesh.type_defs import ListenerTimeoutTypeDef
 
 Optional fields:
 
-- `grpc`:
-  [GrpcTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpctimeouttypedef)
-- `http`:
-  [HttpTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httptimeouttypedef)
-- `http2`:
-  [HttpTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httptimeouttypedef)
-- `tcp`:
-  [TcpTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tcptimeouttypedef)
+- `grpc`: [GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef)
+- `http`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
+- `http2`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
+- `tcp`: [TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef)
 
 ## ListenerTlsAcmCertificateTypeDef
 
@@ -1128,11 +1080,11 @@ from mypy_boto3_appmesh.type_defs import ListenerTlsCertificateTypeDef
 Optional fields:
 
 - `acm`:
-  [ListenerTlsAcmCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlsacmcertificatetypedef)
+  [ListenerTlsAcmCertificateTypeDef](./type_defs.md#listenertlsacmcertificatetypedef)
 - `file`:
-  [ListenerTlsFileCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlsfilecertificatetypedef)
+  [ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef)
 - `sds`:
-  [ListenerTlsSdsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlssdscertificatetypedef)
+  [ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef)
 
 ## ListenerTlsFileCertificateTypeDef
 
@@ -1164,14 +1116,13 @@ from mypy_boto3_appmesh.type_defs import ListenerTlsTypeDef
 Required fields:
 
 - `certificate`:
-  [ListenerTlsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlscertificatetypedef)
-- `mode`:
-  [ListenerTlsMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#listenertlsmode)
+  [ListenerTlsCertificateTypeDef](./type_defs.md#listenertlscertificatetypedef)
+- `mode`: [ListenerTlsMode](./literals.md#listenertlsmode)
 
 Optional fields:
 
 - `validation`:
-  [ListenerTlsValidationContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlsvalidationcontexttypedef)
+  [ListenerTlsValidationContextTypeDef](./type_defs.md#listenertlsvalidationcontexttypedef)
 
 ## ListenerTlsValidationContextTrustTypeDef
 
@@ -1182,9 +1133,9 @@ from mypy_boto3_appmesh.type_defs import ListenerTlsValidationContextTrustTypeDe
 Optional fields:
 
 - `file`:
-  [TlsValidationContextFileTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontextfiletrusttypedef)
+  [TlsValidationContextFileTrustTypeDef](./type_defs.md#tlsvalidationcontextfiletrusttypedef)
 - `sds`:
-  [TlsValidationContextSdsTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontextsdstrusttypedef)
+  [TlsValidationContextSdsTrustTypeDef](./type_defs.md#tlsvalidationcontextsdstrusttypedef)
 
 ## ListenerTlsValidationContextTypeDef
 
@@ -1195,12 +1146,12 @@ from mypy_boto3_appmesh.type_defs import ListenerTlsValidationContextTypeDef
 Required fields:
 
 - `trust`:
-  [ListenerTlsValidationContextTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlsvalidationcontexttrusttypedef)
+  [ListenerTlsValidationContextTrustTypeDef](./type_defs.md#listenertlsvalidationcontexttrusttypedef)
 
 Optional fields:
 
 - `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#subjectalternativenamestypedef)
+  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
 
 ## ListenerTypeDef
 
@@ -1210,21 +1161,18 @@ from mypy_boto3_appmesh.type_defs import ListenerTypeDef
 
 Required fields:
 
-- `portMapping`:
-  [PortMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#portmappingtypedef)
+- `portMapping`: [PortMappingTypeDef](./type_defs.md#portmappingtypedef)
 
 Optional fields:
 
 - `connectionPool`:
-  [VirtualNodeConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodeconnectionpooltypedef)
+  [VirtualNodeConnectionPoolTypeDef](./type_defs.md#virtualnodeconnectionpooltypedef)
 - `healthCheck`:
-  [HealthCheckPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#healthcheckpolicytypedef)
+  [HealthCheckPolicyTypeDef](./type_defs.md#healthcheckpolicytypedef)
 - `outlierDetection`:
-  [OutlierDetectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#outlierdetectiontypedef)
-- `timeout`:
-  [ListenerTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertimeouttypedef)
-- `tls`:
-  [ListenerTlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertlstypedef)
+  [OutlierDetectionTypeDef](./type_defs.md#outlierdetectiontypedef)
+- `timeout`: [ListenerTimeoutTypeDef](./type_defs.md#listenertimeouttypedef)
+- `tls`: [ListenerTlsTypeDef](./type_defs.md#listenertlstypedef)
 
 ## LoggingTypeDef
 
@@ -1234,8 +1182,7 @@ from mypy_boto3_appmesh.type_defs import LoggingTypeDef
 
 Optional fields:
 
-- `accessLog`:
-  [AccessLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#accesslogtypedef)
+- `accessLog`: [AccessLogTypeDef](./type_defs.md#accesslogtypedef)
 
 ## MatchRangeTypeDef
 
@@ -1257,12 +1204,9 @@ from mypy_boto3_appmesh.type_defs import MeshDataTypeDef
 Required fields:
 
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
-- `spec`:
-  [MeshSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshspectypedef)
-- `status`:
-  [MeshStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshstatustypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
+- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
+- `status`: [MeshStatusTypeDef](./type_defs.md#meshstatustypedef)
 
 ## MeshRefTypeDef
 
@@ -1288,8 +1232,7 @@ from mypy_boto3_appmesh.type_defs import MeshSpecTypeDef
 
 Optional fields:
 
-- `egressFilter`:
-  [EgressFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#egressfiltertypedef)
+- `egressFilter`: [EgressFilterTypeDef](./type_defs.md#egressfiltertypedef)
 
 ## MeshStatusTypeDef
 
@@ -1299,8 +1242,7 @@ from mypy_boto3_appmesh.type_defs import MeshStatusTypeDef
 
 Optional fields:
 
-- `status`:
-  [MeshStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#meshstatuscode)
+- `status`: [MeshStatusCode](./literals.md#meshstatuscode)
 
 ## OutlierDetectionTypeDef
 
@@ -1310,10 +1252,8 @@ from mypy_boto3_appmesh.type_defs import OutlierDetectionTypeDef
 
 Required fields:
 
-- `baseEjectionDuration`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
-- `interval`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
+- `baseEjectionDuration`: [DurationTypeDef](./type_defs.md#durationtypedef)
+- `interval`: [DurationTypeDef](./type_defs.md#durationtypedef)
 - `maxEjectionPercent`: `int`
 - `maxServerErrors`: `int`
 
@@ -1338,8 +1278,7 @@ from mypy_boto3_appmesh.type_defs import PortMappingTypeDef
 Required fields:
 
 - `port`: `int`
-- `protocol`:
-  [PortProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#portprotocol)
+- `protocol`: [PortProtocol](./literals.md#portprotocol)
 
 ## ResourceMetadataTypeDef
 
@@ -1357,10 +1296,10 @@ Required fields:
 - `uid`: `str`
 - `version`: `int`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_appmesh.type_defs import ResponseMetadata
+from mypy_boto3_appmesh.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1380,13 +1319,10 @@ from mypy_boto3_appmesh.type_defs import RouteDataTypeDef
 Required fields:
 
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
 - `routeName`: `str`
-- `spec`:
-  [RouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routespectypedef)
-- `status`:
-  [RouteStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routestatustypedef)
+- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef)
+- `status`: [RouteStatusTypeDef](./type_defs.md#routestatustypedef)
 - `virtualRouterName`: `str`
 
 ## RouteRefTypeDef
@@ -1415,15 +1351,11 @@ from mypy_boto3_appmesh.type_defs import RouteSpecTypeDef
 
 Optional fields:
 
-- `grpcRoute`:
-  [GrpcRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#grpcroutetypedef)
-- `http2Route`:
-  [HttpRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httproutetypedef)
-- `httpRoute`:
-  [HttpRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#httproutetypedef)
+- `grpcRoute`: [GrpcRouteTypeDef](./type_defs.md#grpcroutetypedef)
+- `http2Route`: [HttpRouteTypeDef](./type_defs.md#httproutetypedef)
+- `httpRoute`: [HttpRouteTypeDef](./type_defs.md#httproutetypedef)
 - `priority`: `int`
-- `tcpRoute`:
-  [TcpRouteTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tcproutetypedef)
+- `tcpRoute`: [TcpRouteTypeDef](./type_defs.md#tcproutetypedef)
 
 ## RouteStatusTypeDef
 
@@ -1433,8 +1365,7 @@ from mypy_boto3_appmesh.type_defs import RouteStatusTypeDef
 
 Required fields:
 
-- `status`:
-  [RouteStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#routestatuscode)
+- `status`: [RouteStatusCode](./literals.md#routestatuscode)
 
 ## ServiceDiscoveryTypeDef
 
@@ -1445,9 +1376,8 @@ from mypy_boto3_appmesh.type_defs import ServiceDiscoveryTypeDef
 Optional fields:
 
 - `awsCloudMap`:
-  [AwsCloudMapServiceDiscoveryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#awscloudmapservicediscoverytypedef)
-- `dns`:
-  [DnsServiceDiscoveryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#dnsservicediscoverytypedef)
+  [AwsCloudMapServiceDiscoveryTypeDef](./type_defs.md#awscloudmapservicediscoverytypedef)
+- `dns`: [DnsServiceDiscoveryTypeDef](./type_defs.md#dnsservicediscoverytypedef)
 
 ## SubjectAlternativeNameMatchersTypeDef
 
@@ -1468,7 +1398,7 @@ from mypy_boto3_appmesh.type_defs import SubjectAlternativeNamesTypeDef
 Required fields:
 
 - `match`:
-  [SubjectAlternativeNameMatchersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#subjectalternativenamematcherstypedef)
+  [SubjectAlternativeNameMatchersTypeDef](./type_defs.md#subjectalternativenamematcherstypedef)
 
 ## TagRefTypeDef
 
@@ -1490,7 +1420,7 @@ from mypy_boto3_appmesh.type_defs import TcpRouteActionTypeDef
 Required fields:
 
 - `weightedTargets`:
-  `List`\[[WeightedTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#weightedtargettypedef)\]
+  `List`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
 
 ## TcpRouteTypeDef
 
@@ -1500,13 +1430,11 @@ from mypy_boto3_appmesh.type_defs import TcpRouteTypeDef
 
 Required fields:
 
-- `action`:
-  [TcpRouteActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tcprouteactiontypedef)
+- `action`: [TcpRouteActionTypeDef](./type_defs.md#tcprouteactiontypedef)
 
 Optional fields:
 
-- `timeout`:
-  [TcpTimeoutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tcptimeouttypedef)
+- `timeout`: [TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef)
 
 ## TcpTimeoutTypeDef
 
@@ -1516,8 +1444,7 @@ from mypy_boto3_appmesh.type_defs import TcpTimeoutTypeDef
 
 Optional fields:
 
-- `idle`:
-  [DurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#durationtypedef)
+- `idle`: [DurationTypeDef](./type_defs.md#durationtypedef)
 
 ## TlsValidationContextAcmTrustTypeDef
 
@@ -1558,11 +1485,11 @@ from mypy_boto3_appmesh.type_defs import TlsValidationContextTrustTypeDef
 Optional fields:
 
 - `acm`:
-  [TlsValidationContextAcmTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontextacmtrusttypedef)
+  [TlsValidationContextAcmTrustTypeDef](./type_defs.md#tlsvalidationcontextacmtrusttypedef)
 - `file`:
-  [TlsValidationContextFileTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontextfiletrusttypedef)
+  [TlsValidationContextFileTrustTypeDef](./type_defs.md#tlsvalidationcontextfiletrusttypedef)
 - `sds`:
-  [TlsValidationContextSdsTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontextsdstrusttypedef)
+  [TlsValidationContextSdsTrustTypeDef](./type_defs.md#tlsvalidationcontextsdstrusttypedef)
 
 ## TlsValidationContextTypeDef
 
@@ -1573,12 +1500,12 @@ from mypy_boto3_appmesh.type_defs import TlsValidationContextTypeDef
 Required fields:
 
 - `trust`:
-  [TlsValidationContextTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tlsvalidationcontexttrusttypedef)
+  [TlsValidationContextTrustTypeDef](./type_defs.md#tlsvalidationcontexttrusttypedef)
 
 Optional fields:
 
 - `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#subjectalternativenamestypedef)
+  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
 
 ## UpdateGatewayRouteOutputTypeDef
 
@@ -1589,9 +1516,9 @@ from mypy_boto3_appmesh.type_defs import UpdateGatewayRouteOutputTypeDef
 Required fields:
 
 - `gatewayRoute`:
-  [GatewayRouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutedatatypedef)
+  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateMeshOutputTypeDef
 
@@ -1601,10 +1528,9 @@ from mypy_boto3_appmesh.type_defs import UpdateMeshOutputTypeDef
 
 Required fields:
 
-- `mesh`:
-  [MeshDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshdatatypedef)
+- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateRouteOutputTypeDef
 
@@ -1614,10 +1540,9 @@ from mypy_boto3_appmesh.type_defs import UpdateRouteOutputTypeDef
 
 Required fields:
 
-- `route`:
-  [RouteDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routedatatypedef)
+- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateVirtualGatewayOutputTypeDef
 
@@ -1628,9 +1553,9 @@ from mypy_boto3_appmesh.type_defs import UpdateVirtualGatewayOutputTypeDef
 Required fields:
 
 - `virtualGateway`:
-  [VirtualGatewayDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaydatatypedef)
+  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateVirtualNodeOutputTypeDef
 
@@ -1640,10 +1565,9 @@ from mypy_boto3_appmesh.type_defs import UpdateVirtualNodeOutputTypeDef
 
 Required fields:
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodedatatypedef)
+- `virtualNode`: [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateVirtualRouterOutputTypeDef
 
@@ -1654,9 +1578,9 @@ from mypy_boto3_appmesh.type_defs import UpdateVirtualRouterOutputTypeDef
 Required fields:
 
 - `virtualRouter`:
-  [VirtualRouterDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterdatatypedef)
+  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateVirtualServiceOutputTypeDef
 
@@ -1667,9 +1591,9 @@ from mypy_boto3_appmesh.type_defs import UpdateVirtualServiceOutputTypeDef
 Required fields:
 
 - `virtualService`:
-  [VirtualServiceDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicedatatypedef)
+  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VirtualGatewayAccessLogTypeDef
 
@@ -1680,7 +1604,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayAccessLogTypeDef
 Optional fields:
 
 - `file`:
-  [VirtualGatewayFileAccessLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayfileaccesslogtypedef)
+  [VirtualGatewayFileAccessLogTypeDef](./type_defs.md#virtualgatewayfileaccesslogtypedef)
 
 ## VirtualGatewayBackendDefaultsTypeDef
 
@@ -1691,7 +1615,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayBackendDefaultsTypeDef
 Optional fields:
 
 - `clientPolicy`:
-  [VirtualGatewayClientPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayclientpolicytypedef)
+  [VirtualGatewayClientPolicyTypeDef](./type_defs.md#virtualgatewayclientpolicytypedef)
 
 ## VirtualGatewayClientPolicyTlsTypeDef
 
@@ -1702,12 +1626,12 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayClientPolicyTlsTypeDef
 Required fields:
 
 - `validation`:
-  [VirtualGatewayTlsValidationContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontexttypedef)
+  [VirtualGatewayTlsValidationContextTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttypedef)
 
 Optional fields:
 
 - `certificate`:
-  [VirtualGatewayClientTlsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayclienttlscertificatetypedef)
+  [VirtualGatewayClientTlsCertificateTypeDef](./type_defs.md#virtualgatewayclienttlscertificatetypedef)
 - `enforce`: `bool`
 - `ports`: `List`\[`int`\]
 
@@ -1720,7 +1644,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayClientPolicyTypeDef
 Optional fields:
 
 - `tls`:
-  [VirtualGatewayClientPolicyTlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayclientpolicytlstypedef)
+  [VirtualGatewayClientPolicyTlsTypeDef](./type_defs.md#virtualgatewayclientpolicytlstypedef)
 
 ## VirtualGatewayClientTlsCertificateTypeDef
 
@@ -1731,9 +1655,9 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayClientTlsCertificateTypeD
 Optional fields:
 
 - `file`:
-  [VirtualGatewayListenerTlsFileCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlsfilecertificatetypedef)
+  [VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef)
 - `sds`:
-  [VirtualGatewayListenerTlsSdsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlssdscertificatetypedef)
+  [VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef)
 
 ## VirtualGatewayConnectionPoolTypeDef
 
@@ -1744,11 +1668,11 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayConnectionPoolTypeDef
 Optional fields:
 
 - `grpc`:
-  [VirtualGatewayGrpcConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaygrpcconnectionpooltypedef)
+  [VirtualGatewayGrpcConnectionPoolTypeDef](./type_defs.md#virtualgatewaygrpcconnectionpooltypedef)
 - `http`:
-  [VirtualGatewayHttpConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayhttpconnectionpooltypedef)
+  [VirtualGatewayHttpConnectionPoolTypeDef](./type_defs.md#virtualgatewayhttpconnectionpooltypedef)
 - `http2`:
-  [VirtualGatewayHttp2ConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayhttp2connectionpooltypedef)
+  [VirtualGatewayHttp2ConnectionPoolTypeDef](./type_defs.md#virtualgatewayhttp2connectionpooltypedef)
 
 ## VirtualGatewayDataTypeDef
 
@@ -1759,12 +1683,10 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayDataTypeDef
 Required fields:
 
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
-- `spec`:
-  [VirtualGatewaySpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayspectypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
+- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
 - `status`:
-  [VirtualGatewayStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaystatustypedef)
+  [VirtualGatewayStatusTypeDef](./type_defs.md#virtualgatewaystatustypedef)
 - `virtualGatewayName`: `str`
 
 ## VirtualGatewayFileAccessLogTypeDef
@@ -1798,7 +1720,7 @@ Required fields:
 - `healthyThreshold`: `int`
 - `intervalMillis`: `int`
 - `protocol`:
-  [VirtualGatewayPortProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualgatewayportprotocol)
+  [VirtualGatewayPortProtocol](./literals.md#virtualgatewayportprotocol)
 - `timeoutMillis`: `int`
 - `unhealthyThreshold`: `int`
 
@@ -1850,11 +1772,11 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsCertificateTyp
 Optional fields:
 
 - `acm`:
-  [VirtualGatewayListenerTlsAcmCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlsacmcertificatetypedef)
+  [VirtualGatewayListenerTlsAcmCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsacmcertificatetypedef)
 - `file`:
-  [VirtualGatewayListenerTlsFileCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlsfilecertificatetypedef)
+  [VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef)
 - `sds`:
-  [VirtualGatewayListenerTlsSdsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlssdscertificatetypedef)
+  [VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef)
 
 ## VirtualGatewayListenerTlsFileCertificateTypeDef
 
@@ -1886,14 +1808,14 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsTypeDef
 Required fields:
 
 - `certificate`:
-  [VirtualGatewayListenerTlsCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlscertificatetypedef)
+  [VirtualGatewayListenerTlsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlscertificatetypedef)
 - `mode`:
-  [VirtualGatewayListenerTlsMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualgatewaylistenertlsmode)
+  [VirtualGatewayListenerTlsMode](./literals.md#virtualgatewaylistenertlsmode)
 
 Optional fields:
 
 - `validation`:
-  [VirtualGatewayListenerTlsValidationContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlsvalidationcontexttypedef)
+  [VirtualGatewayListenerTlsValidationContextTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttypedef)
 
 ## VirtualGatewayListenerTlsValidationContextTrustTypeDef
 
@@ -1904,9 +1826,9 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsValidationCont
 Optional fields:
 
 - `file`:
-  [VirtualGatewayTlsValidationContextFileTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontextfiletrusttypedef)
+  [VirtualGatewayTlsValidationContextFileTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextfiletrusttypedef)
 - `sds`:
-  [VirtualGatewayTlsValidationContextSdsTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontextsdstrusttypedef)
+  [VirtualGatewayTlsValidationContextSdsTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextsdstrusttypedef)
 
 ## VirtualGatewayListenerTlsValidationContextTypeDef
 
@@ -1917,12 +1839,12 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsValidationCont
 Required fields:
 
 - `trust`:
-  [VirtualGatewayListenerTlsValidationContextTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlsvalidationcontexttrusttypedef)
+  [VirtualGatewayListenerTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttrusttypedef)
 
 Optional fields:
 
 - `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#subjectalternativenamestypedef)
+  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
 
 ## VirtualGatewayListenerTypeDef
 
@@ -1933,16 +1855,16 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTypeDef
 Required fields:
 
 - `portMapping`:
-  [VirtualGatewayPortMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayportmappingtypedef)
+  [VirtualGatewayPortMappingTypeDef](./type_defs.md#virtualgatewayportmappingtypedef)
 
 Optional fields:
 
 - `connectionPool`:
-  [VirtualGatewayConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayconnectionpooltypedef)
+  [VirtualGatewayConnectionPoolTypeDef](./type_defs.md#virtualgatewayconnectionpooltypedef)
 - `healthCheck`:
-  [VirtualGatewayHealthCheckPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayhealthcheckpolicytypedef)
+  [VirtualGatewayHealthCheckPolicyTypeDef](./type_defs.md#virtualgatewayhealthcheckpolicytypedef)
 - `tls`:
-  [VirtualGatewayListenerTlsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertlstypedef)
+  [VirtualGatewayListenerTlsTypeDef](./type_defs.md#virtualgatewaylistenertlstypedef)
 
 ## VirtualGatewayLoggingTypeDef
 
@@ -1953,7 +1875,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayLoggingTypeDef
 Optional fields:
 
 - `accessLog`:
-  [VirtualGatewayAccessLogTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayaccesslogtypedef)
+  [VirtualGatewayAccessLogTypeDef](./type_defs.md#virtualgatewayaccesslogtypedef)
 
 ## VirtualGatewayPortMappingTypeDef
 
@@ -1965,7 +1887,7 @@ Required fields:
 
 - `port`: `int`
 - `protocol`:
-  [VirtualGatewayPortProtocol](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualgatewayportprotocol)
+  [VirtualGatewayPortProtocol](./literals.md#virtualgatewayportprotocol)
 
 ## VirtualGatewayRefTypeDef
 
@@ -1993,14 +1915,14 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewaySpecTypeDef
 Required fields:
 
 - `listeners`:
-  `List`\[[VirtualGatewayListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaylistenertypedef)\]
+  `List`\[[VirtualGatewayListenerTypeDef](./type_defs.md#virtualgatewaylistenertypedef)\]
 
 Optional fields:
 
 - `backendDefaults`:
-  [VirtualGatewayBackendDefaultsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaybackenddefaultstypedef)
+  [VirtualGatewayBackendDefaultsTypeDef](./type_defs.md#virtualgatewaybackenddefaultstypedef)
 - `logging`:
-  [VirtualGatewayLoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayloggingtypedef)
+  [VirtualGatewayLoggingTypeDef](./type_defs.md#virtualgatewayloggingtypedef)
 
 ## VirtualGatewayStatusTypeDef
 
@@ -2010,8 +1932,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayStatusTypeDef
 
 Required fields:
 
-- `status`:
-  [VirtualGatewayStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualgatewaystatuscode)
+- `status`: [VirtualGatewayStatusCode](./literals.md#virtualgatewaystatuscode)
 
 ## VirtualGatewayTlsValidationContextAcmTrustTypeDef
 
@@ -2052,11 +1973,11 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextTrust
 Optional fields:
 
 - `acm`:
-  [VirtualGatewayTlsValidationContextAcmTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontextacmtrusttypedef)
+  [VirtualGatewayTlsValidationContextAcmTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextacmtrusttypedef)
 - `file`:
-  [VirtualGatewayTlsValidationContextFileTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontextfiletrusttypedef)
+  [VirtualGatewayTlsValidationContextFileTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextfiletrusttypedef)
 - `sds`:
-  [VirtualGatewayTlsValidationContextSdsTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontextsdstrusttypedef)
+  [VirtualGatewayTlsValidationContextSdsTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextsdstrusttypedef)
 
 ## VirtualGatewayTlsValidationContextTypeDef
 
@@ -2067,12 +1988,12 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextTypeD
 Required fields:
 
 - `trust`:
-  [VirtualGatewayTlsValidationContextTrustTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewaytlsvalidationcontexttrusttypedef)
+  [VirtualGatewayTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttrusttypedef)
 
 Optional fields:
 
 - `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#subjectalternativenamestypedef)
+  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
 
 ## VirtualNodeConnectionPoolTypeDef
 
@@ -2083,13 +2004,13 @@ from mypy_boto3_appmesh.type_defs import VirtualNodeConnectionPoolTypeDef
 Optional fields:
 
 - `grpc`:
-  [VirtualNodeGrpcConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodegrpcconnectionpooltypedef)
+  [VirtualNodeGrpcConnectionPoolTypeDef](./type_defs.md#virtualnodegrpcconnectionpooltypedef)
 - `http`:
-  [VirtualNodeHttpConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodehttpconnectionpooltypedef)
+  [VirtualNodeHttpConnectionPoolTypeDef](./type_defs.md#virtualnodehttpconnectionpooltypedef)
 - `http2`:
-  [VirtualNodeHttp2ConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodehttp2connectionpooltypedef)
+  [VirtualNodeHttp2ConnectionPoolTypeDef](./type_defs.md#virtualnodehttp2connectionpooltypedef)
 - `tcp`:
-  [VirtualNodeTcpConnectionPoolTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodetcpconnectionpooltypedef)
+  [VirtualNodeTcpConnectionPoolTypeDef](./type_defs.md#virtualnodetcpconnectionpooltypedef)
 
 ## VirtualNodeDataTypeDef
 
@@ -2100,12 +2021,9 @@ from mypy_boto3_appmesh.type_defs import VirtualNodeDataTypeDef
 Required fields:
 
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
-- `spec`:
-  [VirtualNodeSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodespectypedef)
-- `status`:
-  [VirtualNodeStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodestatustypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
+- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
+- `status`: [VirtualNodeStatusTypeDef](./type_defs.md#virtualnodestatustypedef)
 - `virtualNodeName`: `str`
 
 ## VirtualNodeGrpcConnectionPoolTypeDef
@@ -2178,15 +2096,12 @@ from mypy_boto3_appmesh.type_defs import VirtualNodeSpecTypeDef
 Optional fields:
 
 - `backendDefaults`:
-  [BackendDefaultsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#backenddefaultstypedef)
-- `backends`:
-  `List`\[[BackendTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#backendtypedef)\]
-- `listeners`:
-  `List`\[[ListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listenertypedef)\]
-- `logging`:
-  [LoggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#loggingtypedef)
+  [BackendDefaultsTypeDef](./type_defs.md#backenddefaultstypedef)
+- `backends`: `List`\[[BackendTypeDef](./type_defs.md#backendtypedef)\]
+- `listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `serviceDiscovery`:
-  [ServiceDiscoveryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#servicediscoverytypedef)
+  [ServiceDiscoveryTypeDef](./type_defs.md#servicediscoverytypedef)
 
 ## VirtualNodeStatusTypeDef
 
@@ -2196,8 +2111,7 @@ from mypy_boto3_appmesh.type_defs import VirtualNodeStatusTypeDef
 
 Required fields:
 
-- `status`:
-  [VirtualNodeStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualnodestatuscode)
+- `status`: [VirtualNodeStatusCode](./literals.md#virtualnodestatuscode)
 
 ## VirtualNodeTcpConnectionPoolTypeDef
 
@@ -2218,12 +2132,10 @@ from mypy_boto3_appmesh.type_defs import VirtualRouterDataTypeDef
 Required fields:
 
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
-- `spec`:
-  [VirtualRouterSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterspectypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
+- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
 - `status`:
-  [VirtualRouterStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterstatustypedef)
+  [VirtualRouterStatusTypeDef](./type_defs.md#virtualrouterstatustypedef)
 - `virtualRouterName`: `str`
 
 ## VirtualRouterListenerTypeDef
@@ -2234,8 +2146,7 @@ from mypy_boto3_appmesh.type_defs import VirtualRouterListenerTypeDef
 
 Required fields:
 
-- `portMapping`:
-  [PortMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#portmappingtypedef)
+- `portMapping`: [PortMappingTypeDef](./type_defs.md#portmappingtypedef)
 
 ## VirtualRouterRefTypeDef
 
@@ -2273,7 +2184,7 @@ from mypy_boto3_appmesh.type_defs import VirtualRouterSpecTypeDef
 Optional fields:
 
 - `listeners`:
-  `List`\[[VirtualRouterListenerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterlistenertypedef)\]
+  `List`\[[VirtualRouterListenerTypeDef](./type_defs.md#virtualrouterlistenertypedef)\]
 
 ## VirtualRouterStatusTypeDef
 
@@ -2283,8 +2194,7 @@ from mypy_boto3_appmesh.type_defs import VirtualRouterStatusTypeDef
 
 Required fields:
 
-- `status`:
-  [VirtualRouterStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualrouterstatuscode)
+- `status`: [VirtualRouterStatusCode](./literals.md#virtualrouterstatuscode)
 
 ## VirtualServiceBackendTypeDef
 
@@ -2298,8 +2208,7 @@ Required fields:
 
 Optional fields:
 
-- `clientPolicy`:
-  [ClientPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#clientpolicytypedef)
+- `clientPolicy`: [ClientPolicyTypeDef](./type_defs.md#clientpolicytypedef)
 
 ## VirtualServiceDataTypeDef
 
@@ -2310,12 +2219,10 @@ from mypy_boto3_appmesh.type_defs import VirtualServiceDataTypeDef
 Required fields:
 
 - `meshName`: `str`
-- `metadata`:
-  [ResourceMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#resourcemetadatatypedef)
-- `spec`:
-  [VirtualServiceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicespectypedef)
+- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
+- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
 - `status`:
-  [VirtualServiceStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicestatustypedef)
+  [VirtualServiceStatusTypeDef](./type_defs.md#virtualservicestatustypedef)
 - `virtualServiceName`: `str`
 
 ## VirtualServiceProviderTypeDef
@@ -2327,9 +2234,9 @@ from mypy_boto3_appmesh.type_defs import VirtualServiceProviderTypeDef
 Optional fields:
 
 - `virtualNode`:
-  [VirtualNodeServiceProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodeserviceprovidertypedef)
+  [VirtualNodeServiceProviderTypeDef](./type_defs.md#virtualnodeserviceprovidertypedef)
 - `virtualRouter`:
-  [VirtualRouterServiceProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterserviceprovidertypedef)
+  [VirtualRouterServiceProviderTypeDef](./type_defs.md#virtualrouterserviceprovidertypedef)
 
 ## VirtualServiceRefTypeDef
 
@@ -2357,7 +2264,7 @@ from mypy_boto3_appmesh.type_defs import VirtualServiceSpecTypeDef
 Optional fields:
 
 - `provider`:
-  [VirtualServiceProviderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualserviceprovidertypedef)
+  [VirtualServiceProviderTypeDef](./type_defs.md#virtualserviceprovidertypedef)
 
 ## VirtualServiceStatusTypeDef
 
@@ -2367,8 +2274,7 @@ from mypy_boto3_appmesh.type_defs import VirtualServiceStatusTypeDef
 
 Required fields:
 
-- `status`:
-  [VirtualServiceStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/literals.html#virtualservicestatuscode)
+- `status`: [VirtualServiceStatusCode](./literals.md#virtualservicestatuscode)
 
 ## WeightedTargetTypeDef
 

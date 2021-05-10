@@ -1,6 +1,6 @@
 # Type annotations for boto3 XRay module
 
-> [Index](../README.md) > XRay
+> [Index](..) > XRay
 
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)

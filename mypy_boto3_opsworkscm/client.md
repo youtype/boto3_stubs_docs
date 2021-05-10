@@ -1,6 +1,6 @@
 # OpsWorksCMClient for boto3 OpsWorksCM module
 
-> [Index](../README.md) > [OpsWorksCM](./README.md) > OpsWorksCMClient
+> [Index](..) > [OpsWorksCM](.) > OpsWorksCMClient
 
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
@@ -87,11 +87,11 @@ Arguments:
 - `ServerName`: `str` *(required)*
 - `NodeName`: `str` *(required)*
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
   *(required)*
 
 Returns
-[AssociateNodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#associatenoderesponsetypedef).
+[AssociateNodeResponseTypeDef](./type_defs.md#associatenoderesponsetypedef).
 
 ### can_paginate
 
@@ -117,11 +117,10 @@ Arguments:
 
 - `ServerName`: `str` *(required)*
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#createbackupresponsetypedef).
+[CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
 
 ### create_server
 
@@ -145,19 +144,18 @@ Arguments:
 - `EngineModel`: `str`
 - `EngineVersion`: `str`
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 - `BackupRetentionCount`: `int`
 - `KeyPair`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `PreferredBackupWindow`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `SubnetIds`: `List`\[`str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `BackupId`: `str`
 
 Returns
-[CreateServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#createserverresponsetypedef).
+[CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
 
 ### delete_backup
 
@@ -194,7 +192,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes)
 
 Returns
-[DescribeAccountAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describeaccountattributesresponsetypedef).
+[DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
 
 ### describe_backups
 
@@ -211,7 +209,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeBackupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describebackupsresponsetypedef).
+[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
 ### describe_events
 
@@ -227,7 +225,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describeeventsresponsetypedef).
+[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
 ### describe_node_association_status
 
@@ -243,7 +241,7 @@ Arguments:
 - `ServerName`: `str` *(required)*
 
 Returns
-[DescribeNodeAssociationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describenodeassociationstatusresponsetypedef).
+[DescribeNodeAssociationStatusResponseTypeDef](./type_defs.md#describenodeassociationstatusresponsetypedef).
 
 ### describe_servers
 
@@ -259,7 +257,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#describeserversresponsetypedef).
+[DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef).
 
 ### disassociate_node
 
@@ -273,10 +271,10 @@ Arguments:
 - `ServerName`: `str` *(required)*
 - `NodeName`: `str` *(required)*
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
-[DisassociateNodeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#disassociatenoderesponsetypedef).
+[DisassociateNodeResponseTypeDef](./type_defs.md#disassociatenoderesponsetypedef).
 
 ### export_server_engine_attribute
 
@@ -291,10 +289,10 @@ Arguments:
 - `ExportAttributeName`: `str` *(required)*
 - `ServerName`: `str` *(required)*
 - `InputAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
-[ExportServerEngineAttributeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#exportserverengineattributeresponsetypedef).
+[ExportServerEngineAttributeResponseTypeDef](./type_defs.md#exportserverengineattributeresponsetypedef).
 
 ### generate_presigned_url
 
@@ -328,7 +326,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### restore_server
 
@@ -357,10 +355,10 @@ Arguments:
 
 - `ServerName`: `str` *(required)*
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#engineattributetypedef)\]
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
-[StartMaintenanceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#startmaintenanceresponsetypedef).
+[StartMaintenanceResponseTypeDef](./type_defs.md#startmaintenanceresponsetypedef).
 
 ### tag_resource
 
@@ -372,9 +370,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -408,7 +404,7 @@ Arguments:
 - `PreferredBackupWindow`: `str`
 
 Returns
-[UpdateServerResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#updateserverresponsetypedef).
+[UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
 
 ### update_server_engine_attributes
 
@@ -425,7 +421,7 @@ Arguments:
 - `AttributeValue`: `str`
 
 Returns
-[UpdateServerEngineAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_opsworkscm/type_defs.html#updateserverengineattributesresponsetypedef).
+[UpdateServerEngineAttributesResponseTypeDef](./type_defs.md#updateserverengineattributesresponsetypedef).
 
 ### get_paginator
 

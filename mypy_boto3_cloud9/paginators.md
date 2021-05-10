@@ -1,6 +1,6 @@
 # Paginators for boto3 Cloud9 module
 
-> [Index](../README.md) > [Cloud9](./README.md) > Paginators
+> [Index](..) > [Cloud9](.) > Paginators
 
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
@@ -32,13 +32,12 @@ Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
 
 - `userArn`: `str`
 - `environmentId`: `str`
-- `permissions`:
-  `List`\[[Permissions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/literals.html#permissions)\]
+- `permissions`: `List`\[[Permissions](./literals.md#permissions)\]
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentMembershipsPaginator.paginate` returns
-`Iterator`\[[DescribeEnvironmentMembershipsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#describeenvironmentmembershipsresulttypedef)\].
+`Iterator`\[[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)\].
 
 ## ListEnvironmentsPaginator
 
@@ -60,7 +59,7 @@ Boto3 documentation:
 Arguments for `ListEnvironmentsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloud9/type_defs.html#listenvironmentsresulttypedef)\].
+`Iterator`\[[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)\].

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 MWAA module
 
-> [Index](../README.md) > [MWAA](./README.md) > Structures
+> [Index](..) > [MWAA](.) > Typed dictionaries
 
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
@@ -24,7 +24,7 @@ type annotations stubs module
   - [ModuleLoggingConfigurationTypeDef](#moduleloggingconfigurationtypedef)
   - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StatisticSetTypeDef](#statisticsettypedef)
   - [UpdateEnvironmentOutputTypeDef](#updateenvironmentoutputtypedef)
   - [UpdateErrorTypeDef](#updateerrortypedef)
@@ -51,7 +51,7 @@ Required fields:
 
 - `Arn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateWebLoginTokenResponseTypeDef
 
@@ -91,26 +91,23 @@ Optional fields:
 - `EnvironmentClass`: `str`
 - `ExecutionRoleArn`: `str`
 - `KmsKey`: `str`
-- `LastUpdate`:
-  [LastUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#lastupdatetypedef)
+- `LastUpdate`: [LastUpdateTypeDef](./type_defs.md#lastupdatetypedef)
 - `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#loggingconfigurationtypedef)
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - `MaxWorkers`: `int`
 - `MinWorkers`: `int`
 - `Name`: `str`
 - `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#networkconfigurationtypedef)
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `PluginsS3ObjectVersion`: `str`
 - `PluginsS3Path`: `str`
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
 - `ServiceRoleArn`: `str`
 - `SourceBucketArn`: `str`
-- `Status`:
-  [EnvironmentStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#environmentstatus)
+- `Status`: [EnvironmentStatus](./literals.md#environmentstatus)
 - `Tags`: `Dict`\[`str`, `str`\]
-- `WebserverAccessMode`:
-  [WebserverAccessMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#webserveraccessmode)
+- `WebserverAccessMode`: [WebserverAccessMode](./literals.md#webserveraccessmode)
 - `WebserverUrl`: `str`
 - `WeeklyMaintenanceWindowStart`: `str`
 
@@ -122,10 +119,9 @@ from mypy_boto3_mwaa.type_defs import GetEnvironmentOutputTypeDef
 
 Required fields:
 
-- `Environment`:
-  [EnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#environmenttypedef)
+- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LastUpdateTypeDef
 
@@ -136,10 +132,8 @@ from mypy_boto3_mwaa.type_defs import LastUpdateTypeDef
 Optional fields:
 
 - `CreatedAt`: `datetime`
-- `Error`:
-  [UpdateErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#updateerrortypedef)
-- `Status`:
-  [UpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#updatestatus)
+- `Error`: [UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)
+- `Status`: [UpdateStatus](./literals.md#updatestatus)
 
 ## ListEnvironmentsOutputTypeDef
 
@@ -152,7 +146,7 @@ Required fields:
 - `Environments`: `List`\[`str`\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -164,7 +158,7 @@ Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingConfigurationInputTypeDef
 
@@ -175,15 +169,15 @@ from mypy_boto3_mwaa.type_defs import LoggingConfigurationInputTypeDef
 Optional fields:
 
 - `DagProcessingLogs`:
-  [ModuleLoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationinputtypedef)
+  [ModuleLoggingConfigurationInputTypeDef](./type_defs.md#moduleloggingconfigurationinputtypedef)
 - `SchedulerLogs`:
-  [ModuleLoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationinputtypedef)
+  [ModuleLoggingConfigurationInputTypeDef](./type_defs.md#moduleloggingconfigurationinputtypedef)
 - `TaskLogs`:
-  [ModuleLoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationinputtypedef)
+  [ModuleLoggingConfigurationInputTypeDef](./type_defs.md#moduleloggingconfigurationinputtypedef)
 - `WebserverLogs`:
-  [ModuleLoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationinputtypedef)
+  [ModuleLoggingConfigurationInputTypeDef](./type_defs.md#moduleloggingconfigurationinputtypedef)
 - `WorkerLogs`:
-  [ModuleLoggingConfigurationInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationinputtypedef)
+  [ModuleLoggingConfigurationInputTypeDef](./type_defs.md#moduleloggingconfigurationinputtypedef)
 
 ## LoggingConfigurationTypeDef
 
@@ -194,15 +188,15 @@ from mypy_boto3_mwaa.type_defs import LoggingConfigurationTypeDef
 Optional fields:
 
 - `DagProcessingLogs`:
-  [ModuleLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationtypedef)
+  [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - `SchedulerLogs`:
-  [ModuleLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationtypedef)
+  [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - `TaskLogs`:
-  [ModuleLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationtypedef)
+  [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - `WebserverLogs`:
-  [ModuleLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationtypedef)
+  [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - `WorkerLogs`:
-  [ModuleLoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#moduleloggingconfigurationtypedef)
+  [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 
 ## MetricDatumTypeDef
 
@@ -217,12 +211,9 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`:
-  `List`\[[DimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#dimensiontypedef)\]
-- `StatisticValues`:
-  [StatisticSetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#statisticsettypedef)
-- `Unit`:
-  [Unit](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#unit)
+- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `StatisticValues`: [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
+- `Unit`: [Unit](./literals.md#unit)
 - `Value`: `float`
 
 ## ModuleLoggingConfigurationInputTypeDef
@@ -234,8 +225,7 @@ from mypy_boto3_mwaa.type_defs import ModuleLoggingConfigurationInputTypeDef
 Required fields:
 
 - `Enabled`: `bool`
-- `LogLevel`:
-  [LoggingLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#logginglevel)
+- `LogLevel`: [LoggingLevel](./literals.md#logginglevel)
 
 ## ModuleLoggingConfigurationTypeDef
 
@@ -247,8 +237,7 @@ Optional fields:
 
 - `CloudWatchLogGroupArn`: `str`
 - `Enabled`: `bool`
-- `LogLevel`:
-  [LoggingLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/literals.html#logginglevel)
+- `LogLevel`: [LoggingLevel](./literals.md#logginglevel)
 
 ## NetworkConfigurationTypeDef
 
@@ -273,10 +262,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import ResponseMetadata
+from mypy_boto3_mwaa.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -310,7 +299,7 @@ Required fields:
 
 - `Arn`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mwaa/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateErrorTypeDef
 

@@ -1,7 +1,6 @@
 # ElasticInferenceClient for boto3 ElasticInference module
 
-> [Index](../README.md) > [ElasticInference](./README.md) >
-> ElasticInferenceClient
+> [Index](..) > [ElasticInference](.) > ElasticInferenceClient
 
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
@@ -82,13 +81,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `locationType`:
-  [LocationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/literals.html#locationtype)
-  *(required)*
+- `locationType`: [LocationType](./literals.md#locationtype) *(required)*
 - `acceleratorTypes`: `List`\[`str`\]
 
 Returns
-[DescribeAcceleratorOfferingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#describeacceleratorofferingsresponsetypedef).
+[DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef).
 
 ### describe_accelerator_types
 
@@ -99,7 +96,7 @@ Boto3 documentation:
 [ElasticInference.Client.describe_accelerator_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
 
 Returns
-[DescribeAcceleratorTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#describeacceleratortypesresponsetypedef).
+[DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
 
 ### describe_accelerators
 
@@ -112,13 +109,12 @@ Boto3 documentation:
 Arguments:
 
 - `acceleratorIds`: `List`\[`str`\]
-- `filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#filtertypedef)\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeAcceleratorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#describeacceleratorsresponsetypedef).
+[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -150,7 +146,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastic_inference/type_defs.html#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### tag_resource
 

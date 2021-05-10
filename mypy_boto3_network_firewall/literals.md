@@ -1,6 +1,6 @@
 # Literals for boto3 NetworkFirewall module
 
-> [Index](../README.md) > [NetworkFirewall](./README.md) > Literals
+> [Index](..) > [NetworkFirewall](.) > Literals
 
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)

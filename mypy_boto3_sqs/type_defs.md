@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SQS module
 
-> [Index](../README.md) > [SQS](./README.md) > Structures
+> [Index](..) > [SQS](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
@@ -81,9 +81,9 @@ from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultTypeDef
 Required fields:
 
 - `Successful`:
-  `List`\[[ChangeMessageVisibilityBatchResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#changemessagevisibilitybatchresultentrytypedef)\]
+  `List`\[[ChangeMessageVisibilityBatchResultEntryTypeDef](./type_defs.md#changemessagevisibilitybatchresultentrytypedef)\]
 - `Failed`:
-  `List`\[[BatchResultErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#batchresulterrorentrytypedef)\]
+  `List`\[[BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)\]
 
 ## CreateQueueResultTypeDef
 
@@ -125,9 +125,9 @@ from mypy_boto3_sqs.type_defs import DeleteMessageBatchResultTypeDef
 Required fields:
 
 - `Successful`:
-  `List`\[[DeleteMessageBatchResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#deletemessagebatchresultentrytypedef)\]
+  `List`\[[DeleteMessageBatchResultEntryTypeDef](./type_defs.md#deletemessagebatchresultentrytypedef)\]
 - `Failed`:
-  `List`\[[BatchResultErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#batchresulterrorentrytypedef)\]
+  `List`\[[BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)\]
 
 ## GetQueueAttributesResultTypeDef
 
@@ -137,8 +137,7 @@ from mypy_boto3_sqs.type_defs import GetQueueAttributesResultTypeDef
 
 Optional fields:
 
-- `Attributes`:
-  `Dict`\[[QueueAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#queueattributename),
+- `Attributes`: `Dict`\[[QueueAttributeName](./literals.md#queueattributename),
   `str`\]
 
 ## GetQueueUrlResultTypeDef
@@ -233,11 +232,11 @@ Optional fields:
 - `MD5OfBody`: `str`
 - `Body`: `str`
 - `Attributes`:
-  `Dict`\[[MessageSystemAttributeName](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/literals.html#messagesystemattributename),
+  `Dict`\[[MessageSystemAttributeName](./literals.md#messagesystemattributename),
   `str`\]
 - `MD5OfMessageAttributes`: `str`
 - `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messageattributevaluetypedef)\]
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -259,8 +258,7 @@ from mypy_boto3_sqs.type_defs import ReceiveMessageResultTypeDef
 
 Optional fields:
 
-- `Messages`:
-  `List`\[[MessageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messagetypedef)\]
+- `Messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 
 ## SendMessageBatchRequestEntryTypeDef
 
@@ -277,9 +275,10 @@ Optional fields:
 
 - `DelaySeconds`: `int`
 - `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']`,
-  [MessageSystemAttributeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#messagesystemattributevaluetypedef)\]
+  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
+- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+  [MessageSystemAttributeNameForSends](./literals.md#messagesystemattributenameforsends)),
+  [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
@@ -310,9 +309,9 @@ from mypy_boto3_sqs.type_defs import SendMessageBatchResultTypeDef
 Required fields:
 
 - `Successful`:
-  `List`\[[SendMessageBatchResultEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#sendmessagebatchresultentrytypedef)\]
+  `List`\[[SendMessageBatchResultEntryTypeDef](./type_defs.md#sendmessagebatchresultentrytypedef)\]
 - `Failed`:
-  `List`\[[BatchResultErrorEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sqs/type_defs.html#batchresulterrorentrytypedef)\]
+  `List`\[[BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)\]
 
 ## SendMessageResultTypeDef
 

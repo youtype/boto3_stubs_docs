@@ -1,6 +1,6 @@
 # Paginators for boto3 Macie module
 
-> [Index](../README.md) > [Macie](./README.md) > Paginators
+> [Index](..) > [Macie](.) > Paginators
 
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
@@ -31,10 +31,10 @@ Boto3 documentation:
 Arguments for `ListMemberAccountsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMemberAccountsPaginator.paginate` returns
-`Iterator`\[[ListMemberAccountsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#listmemberaccountsresulttypedef)\].
+`Iterator`\[[ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef)\].
 
 ## ListS3ResourcesPaginator
 
@@ -57,7 +57,7 @@ Arguments for `ListS3ResourcesPaginator.paginate` method:
 
 - `memberAccountId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListS3ResourcesPaginator.paginate` returns
-`Iterator`\[[ListS3ResourcesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#lists3resourcesresulttypedef)\].
+`Iterator`\[[ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef)\].

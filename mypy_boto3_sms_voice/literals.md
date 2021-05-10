@@ -1,6 +1,6 @@
 # Literals for boto3 SMSVoice module
 
-> [Index](../README.md) > [SMSVoice](./README.md) > Literals
+> [Index](..) > [SMSVoice](.) > Literals
 
 Auto-generated documentation for
 [SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#SMSVoice)

@@ -1,6 +1,6 @@
 # Paginators for boto3 Kinesis module
 
-> [Index](../README.md) > [Kinesis](./README.md) > Paginators
+> [Index](..) > [Kinesis](.) > Paginators
 
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
@@ -34,10 +34,10 @@ Arguments for `DescribeStreamPaginator.paginate` method:
 
 - `StreamName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStreamPaginator.paginate` returns
-`Iterator`\[[DescribeStreamOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#describestreamoutputtypedef)\].
+`Iterator`\[[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)\].
 
 ## ListShardsPaginator
 
@@ -60,13 +60,12 @@ Arguments for `ListShardsPaginator.paginate` method:
 - `StreamName`: `str`
 - `ExclusiveStartShardId`: `str`
 - `StreamCreationTimestamp`: `datetime`
-- `ShardFilter`:
-  [ShardFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#shardfiltertypedef)
+- `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListShardsPaginator.paginate` returns
-`Iterator`\[[ListShardsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#listshardsoutputtypedef)\].
+`Iterator`\[[ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)\].
 
 ## ListStreamConsumersPaginator
 
@@ -90,10 +89,10 @@ Arguments for `ListStreamConsumersPaginator.paginate` method:
 - `StreamARN`: `str` *(required)*
 - `StreamCreationTimestamp`: `datetime`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamConsumersPaginator.paginate` returns
-`Iterator`\[[ListStreamConsumersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#liststreamconsumersoutputtypedef)\].
+`Iterator`\[[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)\].
 
 ## ListStreamsPaginator
 
@@ -114,7 +113,7 @@ Boto3 documentation:
 Arguments for `ListStreamsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis/type_defs.html#liststreamsoutputtypedef)\].
+`Iterator`\[[ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)\].

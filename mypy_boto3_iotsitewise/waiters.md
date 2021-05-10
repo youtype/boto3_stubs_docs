@@ -1,6 +1,6 @@
 # Waiters for boto3 IoTSiteWise module
 
-> [Index](../README.md) > [IoTSiteWise](./README.md) > Waiters
+> [Index](..) > [IoTSiteWise](.) > Waiters
 
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
@@ -34,8 +34,7 @@ Boto3 documentation:
 Arguments for `AssetActiveWaiter.wait` method:
 
 - `assetId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## AssetModelActiveWaiter
 
@@ -57,8 +56,7 @@ Boto3 documentation:
 Arguments for `AssetModelActiveWaiter.wait` method:
 
 - `assetModelId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## AssetModelNotExistsWaiter
 
@@ -80,8 +78,7 @@ Boto3 documentation:
 Arguments for `AssetModelNotExistsWaiter.wait` method:
 
 - `assetModelId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## AssetNotExistsWaiter
 
@@ -103,8 +100,7 @@ Boto3 documentation:
 Arguments for `AssetNotExistsWaiter.wait` method:
 
 - `assetId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## PortalActiveWaiter
 
@@ -125,8 +121,7 @@ Boto3 documentation:
 Arguments for `PortalActiveWaiter.wait` method:
 
 - `portalId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## PortalNotExistsWaiter
 
@@ -148,5 +143,4 @@ Boto3 documentation:
 Arguments for `PortalNotExistsWaiter.wait` method:
 
 - `portalId`: `str` *(required)*
-- `WaiterConfig`:
-  [WaiterConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotsitewise/type_defs.html#waiterconfigtypedef)
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

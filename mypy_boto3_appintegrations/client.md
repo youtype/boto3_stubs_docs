@@ -1,7 +1,6 @@
 # AppIntegrationsServiceClient for boto3 AppIntegrationsService module
 
-> [Index](../README.md) > [AppIntegrationsService](./README.md) >
-> AppIntegrationsServiceClient
+> [Index](..) > [AppIntegrationsService](.) > AppIntegrationsServiceClient
 
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
@@ -89,8 +88,7 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `EventFilter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#eventfiltertypedef)
+- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
   *(required)*
 - `EventBridgeBus`: `str` *(required)*
 - `Description`: `str`
@@ -98,7 +96,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateEventIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#createeventintegrationresponsetypedef).
+[CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef).
 
 ### delete_event_integration
 
@@ -144,7 +142,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetEventIntegrationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#geteventintegrationresponsetypedef).
+[GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef).
 
 ### list_event_integration_associations
 
@@ -161,7 +159,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventIntegrationAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#listeventintegrationassociationsresponsetypedef).
+[ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef).
 
 ### list_event_integrations
 
@@ -177,7 +175,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventIntegrationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#listeventintegrationsresponsetypedef).
+[ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -192,7 +190,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 

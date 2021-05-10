@@ -1,6 +1,6 @@
 # Paginators for boto3 SNS module
 
-> [Index](../README.md) > [SNS](./README.md) > Paginators
+> [Index](..) > [SNS](.) > Paginators
 
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
@@ -36,10 +36,10 @@ Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
 
 - `PlatformApplicationArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointsByPlatformApplicationPaginator.paginate` returns
-`Iterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listendpointsbyplatformapplicationresponsetypedef)\].
+`Iterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)\].
 
 ## ListPhoneNumbersOptedOutPaginator
 
@@ -61,10 +61,10 @@ Boto3 documentation:
 Arguments for `ListPhoneNumbersOptedOutPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPhoneNumbersOptedOutPaginator.paginate` returns
-`Iterator`\[[ListPhoneNumbersOptedOutResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listphonenumbersoptedoutresponsetypedef)\].
+`Iterator`\[[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef)\].
 
 ## ListPlatformApplicationsPaginator
 
@@ -86,10 +86,10 @@ Boto3 documentation:
 Arguments for `ListPlatformApplicationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlatformApplicationsPaginator.paginate` returns
-`Iterator`\[[ListPlatformApplicationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listplatformapplicationsresponsetypedef)\].
+`Iterator`\[[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)\].
 
 ## ListSubscriptionsPaginator
 
@@ -110,10 +110,10 @@ Boto3 documentation:
 Arguments for `ListSubscriptionsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscriptionsPaginator.paginate` returns
-`Iterator`\[[ListSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsresponsetypedef)\].
+`Iterator`\[[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef)\].
 
 ## ListSubscriptionsByTopicPaginator
 
@@ -136,10 +136,10 @@ Arguments for `ListSubscriptionsByTopicPaginator.paginate` method:
 
 - `TopicArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscriptionsByTopicPaginator.paginate` returns
-`Iterator`\[[ListSubscriptionsByTopicResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listsubscriptionsbytopicresponsetypedef)\].
+`Iterator`\[[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef)\].
 
 ## ListTopicsPaginator
 
@@ -160,7 +160,7 @@ Boto3 documentation:
 Arguments for `ListTopicsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicsPaginator.paginate` returns
-`Iterator`\[[ListTopicsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sns/type_defs.html#listtopicsresponsetypedef)\].
+`Iterator`\[[ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef)\].

@@ -1,6 +1,6 @@
 # SFNClient for boto3 SFN module
 
-> [Index](../README.md) > [SFN](./README.md) > SFNClient
+> [Index](..) > [SFN](.) > SFNClient
 
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
@@ -119,11 +119,10 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateActivityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#createactivityoutputtypedef).
+[CreateActivityOutputTypeDef](./type_defs.md#createactivityoutputtypedef).
 
 ### create_state_machine
 
@@ -138,17 +137,15 @@ Arguments:
 - `name`: `str` *(required)*
 - `definition`: `str` *(required)*
 - `roleArn`: `str` *(required)*
-- `type`:
-  [StateMachineType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#statemachinetype)
+- `type`: [StateMachineType](./literals.md#statemachinetype)
 - `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#loggingconfigurationtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `tracingConfiguration`:
-  [TracingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tracingconfigurationtypedef)
+  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
 
 Returns
-[CreateStateMachineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#createstatemachineoutputtypedef).
+[CreateStateMachineOutputTypeDef](./type_defs.md#createstatemachineoutputtypedef).
 
 ### delete_activity
 
@@ -189,7 +186,7 @@ Arguments:
 - `activityArn`: `str` *(required)*
 
 Returns
-[DescribeActivityOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describeactivityoutputtypedef).
+[DescribeActivityOutputTypeDef](./type_defs.md#describeactivityoutputtypedef).
 
 ### describe_execution
 
@@ -203,7 +200,7 @@ Arguments:
 - `executionArn`: `str` *(required)*
 
 Returns
-[DescribeExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describeexecutionoutputtypedef).
+[DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef).
 
 ### describe_state_machine
 
@@ -218,7 +215,7 @@ Arguments:
 - `stateMachineArn`: `str` *(required)*
 
 Returns
-[DescribeStateMachineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describestatemachineoutputtypedef).
+[DescribeStateMachineOutputTypeDef](./type_defs.md#describestatemachineoutputtypedef).
 
 ### describe_state_machine_for_execution
 
@@ -233,7 +230,7 @@ Arguments:
 - `executionArn`: `str` *(required)*
 
 Returns
-[DescribeStateMachineForExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#describestatemachineforexecutionoutputtypedef).
+[DescribeStateMachineForExecutionOutputTypeDef](./type_defs.md#describestatemachineforexecutionoutputtypedef).
 
 ### generate_presigned_url
 
@@ -265,7 +262,7 @@ Arguments:
 - `workerName`: `str`
 
 Returns
-[GetActivityTaskOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#getactivitytaskoutputtypedef).
+[GetActivityTaskOutputTypeDef](./type_defs.md#getactivitytaskoutputtypedef).
 
 ### get_execution_history
 
@@ -284,7 +281,7 @@ Arguments:
 - `includeExecutionData`: `bool`
 
 Returns
-[GetExecutionHistoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#getexecutionhistoryoutputtypedef).
+[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef).
 
 ### list_activities
 
@@ -299,7 +296,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListActivitiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listactivitiesoutputtypedef).
+[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef).
 
 ### list_executions
 
@@ -311,13 +308,12 @@ Boto3 documentation:
 Arguments:
 
 - `stateMachineArn`: `str` *(required)*
-- `statusFilter`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/literals.html#executionstatus)
+- `statusFilter`: [ExecutionStatus](./literals.md#executionstatus)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listexecutionsoutputtypedef).
+[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef).
 
 ### list_state_machines
 
@@ -333,7 +329,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListStateMachinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#liststatemachinesoutputtypedef).
+[ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -348,7 +344,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### send_task_failure
 
@@ -408,7 +404,7 @@ Arguments:
 - `traceHeader`: `str`
 
 Returns
-[StartExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#startexecutionoutputtypedef).
+[StartExecutionOutputTypeDef](./type_defs.md#startexecutionoutputtypedef).
 
 ### start_sync_execution
 
@@ -426,7 +422,7 @@ Arguments:
 - `traceHeader`: `str`
 
 Returns
-[StartSyncExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#startsyncexecutionoutputtypedef).
+[StartSyncExecutionOutputTypeDef](./type_defs.md#startsyncexecutionoutputtypedef).
 
 ### stop_execution
 
@@ -442,7 +438,7 @@ Arguments:
 - `cause`: `str`
 
 Returns
-[StopExecutionOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#stopexecutionoutputtypedef).
+[StopExecutionOutputTypeDef](./type_defs.md#stopexecutionoutputtypedef).
 
 ### tag_resource
 
@@ -454,9 +450,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -488,12 +482,12 @@ Arguments:
 - `definition`: `str`
 - `roleArn`: `str`
 - `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#loggingconfigurationtypedef)
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - `tracingConfiguration`:
-  [TracingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#tracingconfigurationtypedef)
+  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
 
 Returns
-[UpdateStateMachineOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_stepfunctions/type_defs.html#updatestatemachineoutputtypedef).
+[UpdateStateMachineOutputTypeDef](./type_defs.md#updatestatemachineoutputtypedef).
 
 ### get_paginator
 

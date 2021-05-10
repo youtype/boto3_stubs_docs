@@ -1,6 +1,6 @@
 # Literals for boto3 IoTWireless module
 
-> [Index](../README.md) > [IoTWireless](./README.md) > Literals
+> [Index](..) > [IoTWireless](.) > Literals
 
 Auto-generated documentation for
 [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)

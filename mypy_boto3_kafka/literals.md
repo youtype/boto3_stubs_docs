@@ -1,6 +1,6 @@
 # Literals for boto3 Kafka module
 
-> [Index](../README.md) > [Kafka](./README.md) > Literals
+> [Index](..) > [Kafka](.) > Literals
 
 Auto-generated documentation for
 [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)

@@ -1,6 +1,6 @@
 # Paginators for boto3 DevopsGuru module
 
-> [Index](../README.md) > [DevopsGuru](./README.md) > Paginators
+> [Index](..) > [DevopsGuru](.) > Paginators
 
 Auto-generated documentation for
 [DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru)
@@ -38,13 +38,12 @@ Boto3 documentation:
 Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
 
 - `ResourceCollectionType`:
-  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
-  *(required)*
+  [ResourceCollectionType](./literals.md#resourcecollectiontype) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourceCollectionHealthPaginator.paginate` returns
-`Iterator`\[[DescribeResourceCollectionHealthResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#describeresourcecollectionhealthresponsetypedef)\].
+`Iterator`\[[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef)\].
 
 ## GetCostEstimationPaginator
 
@@ -66,10 +65,10 @@ Boto3 documentation:
 Arguments for `GetCostEstimationPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCostEstimationPaginator.paginate` returns
-`Iterator`\[[GetCostEstimationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getcostestimationresponsetypedef)\].
+`Iterator`\[[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef)\].
 
 ## GetResourceCollectionPaginator
 
@@ -91,13 +90,12 @@ Boto3 documentation:
 Arguments for `GetResourceCollectionPaginator.paginate` method:
 
 - `ResourceCollectionType`:
-  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
-  *(required)*
+  [ResourceCollectionType](./literals.md#resourcecollectiontype) *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceCollectionPaginator.paginate` returns
-`Iterator`\[[GetResourceCollectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getresourcecollectionresponsetypedef)\].
+`Iterator`\[[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef)\].
 
 ## ListAnomaliesForInsightPaginator
 
@@ -119,13 +117,12 @@ Boto3 documentation:
 Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
 
 - `InsightId`: `str` *(required)*
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `StartTimeRange`: [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAnomaliesForInsightPaginator.paginate` returns
-`Iterator`\[[ListAnomaliesForInsightResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listanomaliesforinsightresponsetypedef)\].
+`Iterator`\[[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef)\].
 
 ## ListEventsPaginator
 
@@ -146,14 +143,13 @@ Boto3 documentation:
 
 Arguments for `ListEventsPaginator.paginate` method:
 
-- `Filters`:
-  [ListEventsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsfilterstypedef)
+- `Filters`: [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventsPaginator.paginate` returns
-`Iterator`\[[ListEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listeventsresponsetypedef)\].
+`Iterator`\[[ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef)\].
 
 ## ListInsightsPaginator
 
@@ -175,13 +171,13 @@ Boto3 documentation:
 Arguments for `ListInsightsPaginator.paginate` method:
 
 - `StatusFilter`:
-  [ListInsightsStatusFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsstatusfiltertypedef)
+  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
   *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInsightsPaginator.paginate` returns
-`Iterator`\[[ListInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listinsightsresponsetypedef)\].
+`Iterator`\[[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef)\].
 
 ## ListNotificationChannelsPaginator
 
@@ -203,10 +199,10 @@ Boto3 documentation:
 Arguments for `ListNotificationChannelsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotificationChannelsPaginator.paginate` returns
-`Iterator`\[[ListNotificationChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listnotificationchannelsresponsetypedef)\].
+`Iterator`\[[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)\].
 
 ## ListRecommendationsPaginator
 
@@ -228,13 +224,12 @@ Boto3 documentation:
 Arguments for `ListRecommendationsPaginator.paginate` method:
 
 - `InsightId`: `str` *(required)*
-- `Locale`:
-  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#locale)
+- `Locale`: [Locale](./literals.md#locale)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecommendationsPaginator.paginate` returns
-`Iterator`\[[ListRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listrecommendationsresponsetypedef)\].
+`Iterator`\[[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)\].
 
 ## SearchInsightsPaginator
 
@@ -255,16 +250,13 @@ Boto3 documentation:
 
 Arguments for `SearchInsightsPaginator.paginate` method:
 
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#starttimerangetypedef)
+- `StartTimeRange`: [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
   *(required)*
-- `Type`:
-  [InsightType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#insighttype)
-  *(required)*
+- `Type`: [InsightType](./literals.md#insighttype) *(required)*
 - `Filters`:
-  [SearchInsightsFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsfilterstypedef)
+  [SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchInsightsPaginator.paginate` returns
-`Iterator`\[[SearchInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsresponsetypedef)\].
+`Iterator`\[[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)\].

@@ -1,6 +1,6 @@
 # Paginators for boto3 Lightsail module
 
-> [Index](../README.md) > [Lightsail](./README.md) > Paginators
+> [Index](..) > [Lightsail](.) > Paginators
 
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
@@ -49,10 +49,10 @@ Boto3 documentation:
 Arguments for `GetActiveNamesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetActiveNamesPaginator.paginate` returns
-`Iterator`\[[GetActiveNamesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getactivenamesresulttypedef)\].
+`Iterator`\[[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef)\].
 
 ## GetBlueprintsPaginator
 
@@ -75,10 +75,10 @@ Arguments for `GetBlueprintsPaginator.paginate` method:
 
 - `includeInactive`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBlueprintsPaginator.paginate` returns
-`Iterator`\[[GetBlueprintsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getblueprintsresulttypedef)\].
+`Iterator`\[[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef)\].
 
 ## GetBundlesPaginator
 
@@ -100,10 +100,10 @@ Arguments for `GetBundlesPaginator.paginate` method:
 
 - `includeInactive`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBundlesPaginator.paginate` returns
-`Iterator`\[[GetBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getbundlesresulttypedef)\].
+`Iterator`\[[GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef)\].
 
 ## GetCloudFormationStackRecordsPaginator
 
@@ -125,10 +125,10 @@ Boto3 documentation:
 Arguments for `GetCloudFormationStackRecordsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCloudFormationStackRecordsPaginator.paginate` returns
-`Iterator`\[[GetCloudFormationStackRecordsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getcloudformationstackrecordsresulttypedef)\].
+`Iterator`\[[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef)\].
 
 ## GetDiskSnapshotsPaginator
 
@@ -150,10 +150,10 @@ Boto3 documentation:
 Arguments for `GetDiskSnapshotsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDiskSnapshotsPaginator.paginate` returns
-`Iterator`\[[GetDiskSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksnapshotsresulttypedef)\].
+`Iterator`\[[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef)\].
 
 ## GetDisksPaginator
 
@@ -174,10 +174,10 @@ Boto3 documentation:
 Arguments for `GetDisksPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDisksPaginator.paginate` returns
-`Iterator`\[[GetDisksResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdisksresulttypedef)\].
+`Iterator`\[[GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef)\].
 
 ## GetDomainsPaginator
 
@@ -198,10 +198,10 @@ Boto3 documentation:
 Arguments for `GetDomainsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDomainsPaginator.paginate` returns
-`Iterator`\[[GetDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getdomainsresulttypedef)\].
+`Iterator`\[[GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef)\].
 
 ## GetExportSnapshotRecordsPaginator
 
@@ -223,10 +223,10 @@ Boto3 documentation:
 Arguments for `GetExportSnapshotRecordsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetExportSnapshotRecordsPaginator.paginate` returns
-`Iterator`\[[GetExportSnapshotRecordsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getexportsnapshotrecordsresulttypedef)\].
+`Iterator`\[[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef)\].
 
 ## GetInstanceSnapshotsPaginator
 
@@ -248,10 +248,10 @@ Boto3 documentation:
 Arguments for `GetInstanceSnapshotsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInstanceSnapshotsPaginator.paginate` returns
-`Iterator`\[[GetInstanceSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesnapshotsresulttypedef)\].
+`Iterator`\[[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef)\].
 
 ## GetInstancesPaginator
 
@@ -273,10 +273,10 @@ Boto3 documentation:
 Arguments for `GetInstancesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInstancesPaginator.paginate` returns
-`Iterator`\[[GetInstancesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getinstancesresulttypedef)\].
+`Iterator`\[[GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef)\].
 
 ## GetKeyPairsPaginator
 
@@ -298,10 +298,10 @@ Boto3 documentation:
 Arguments for `GetKeyPairsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetKeyPairsPaginator.paginate` returns
-`Iterator`\[[GetKeyPairsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getkeypairsresulttypedef)\].
+`Iterator`\[[GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef)\].
 
 ## GetLoadBalancersPaginator
 
@@ -323,10 +323,10 @@ Boto3 documentation:
 Arguments for `GetLoadBalancersPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLoadBalancersPaginator.paginate` returns
-`Iterator`\[[GetLoadBalancersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getloadbalancersresulttypedef)\].
+`Iterator`\[[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef)\].
 
 ## GetOperationsPaginator
 
@@ -348,10 +348,10 @@ Boto3 documentation:
 Arguments for `GetOperationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOperationsPaginator.paginate` returns
-`Iterator`\[[GetOperationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getoperationsresulttypedef)\].
+`Iterator`\[[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef)\].
 
 ## GetRelationalDatabaseBlueprintsPaginator
 
@@ -373,10 +373,10 @@ Boto3 documentation:
 Arguments for `GetRelationalDatabaseBlueprintsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseBlueprintsPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseBlueprintsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseblueprintsresulttypedef)\].
+`Iterator`\[[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef)\].
 
 ## GetRelationalDatabaseBundlesPaginator
 
@@ -398,10 +398,10 @@ Boto3 documentation:
 Arguments for `GetRelationalDatabaseBundlesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseBundlesPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseBundlesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasebundlesresulttypedef)\].
+`Iterator`\[[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef)\].
 
 ## GetRelationalDatabaseEventsPaginator
 
@@ -425,10 +425,10 @@ Arguments for `GetRelationalDatabaseEventsPaginator.paginate` method:
 - `relationalDatabaseName`: `str` *(required)*
 - `durationInMinutes`: `int`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseEventsPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseEventsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseeventsresulttypedef)\].
+`Iterator`\[[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef)\].
 
 ## GetRelationalDatabaseParametersPaginator
 
@@ -451,10 +451,10 @@ Arguments for `GetRelationalDatabaseParametersPaginator.paginate` method:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseParametersPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseParametersResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabaseparametersresulttypedef)\].
+`Iterator`\[[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef)\].
 
 ## GetRelationalDatabaseSnapshotsPaginator
 
@@ -476,10 +476,10 @@ Boto3 documentation:
 Arguments for `GetRelationalDatabaseSnapshotsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseSnapshotsPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseSnapshotsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesnapshotsresulttypedef)\].
+`Iterator`\[[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef)\].
 
 ## GetRelationalDatabasesPaginator
 
@@ -501,10 +501,10 @@ Boto3 documentation:
 Arguments for `GetRelationalDatabasesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabasesPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabasesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getrelationaldatabasesresulttypedef)\].
+`Iterator`\[[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef)\].
 
 ## GetStaticIpsPaginator
 
@@ -526,7 +526,7 @@ Boto3 documentation:
 Arguments for `GetStaticIpsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetStaticIpsPaginator.paginate` returns
-`Iterator`\[[GetStaticIpsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lightsail/type_defs.html#getstaticipsresulttypedef)\].
+`Iterator`\[[GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef)\].

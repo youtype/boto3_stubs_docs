@@ -1,7 +1,6 @@
 # IoT1ClickProjectsClient for boto3 IoT1ClickProjects module
 
-> [Index](../README.md) > [IoT1ClickProjects](./README.md) >
-> IoT1ClickProjectsClient
+> [Index](..) > [IoT1ClickProjects](.) > IoT1ClickProjectsClient
 
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
@@ -130,7 +129,7 @@ Arguments:
 - `projectName`: `str` *(required)*
 - `description`: `str`
 - `placementTemplate`:
-  [PlacementTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementtemplatetypedef)
+  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -178,7 +177,7 @@ Arguments:
 - `projectName`: `str` *(required)*
 
 Returns
-[DescribePlacementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#describeplacementresponsetypedef).
+[DescribePlacementResponseTypeDef](./type_defs.md#describeplacementresponsetypedef).
 
 ### describe_project
 
@@ -193,7 +192,7 @@ Arguments:
 - `projectName`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#describeprojectresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
 ### disassociate_device_from_placement
 
@@ -242,7 +241,7 @@ Arguments:
 - `placementName`: `str` *(required)*
 
 Returns
-[GetDevicesInPlacementResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#getdevicesinplacementresponsetypedef).
+[GetDevicesInPlacementResponseTypeDef](./type_defs.md#getdevicesinplacementresponsetypedef).
 
 ### list_placements
 
@@ -259,7 +258,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPlacementsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listplacementsresponsetypedef).
+[ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef).
 
 ### list_projects
 
@@ -274,7 +273,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListProjectsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listprojectsresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -289,7 +288,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -349,7 +348,7 @@ Arguments:
 - `projectName`: `str` *(required)*
 - `description`: `str`
 - `placementTemplate`:
-  [PlacementTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot1click_projects/type_defs.html#placementtemplatetypedef)
+  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 WAFV2 module
 
-> [Index](../README.md) > WAFV2
+> [Index](..) > WAFV2
 
 Auto-generated documentation for
 [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)

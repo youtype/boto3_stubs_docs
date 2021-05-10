@@ -1,6 +1,6 @@
 # Type annotations for boto3 PinpointSMSVoice module
 
-> [Index](../README.md) > PinpointSMSVoice
+> [Index](..) > PinpointSMSVoice
 
 Auto-generated documentation for
 [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice)

@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 CloudHSM module
 
-> [Index](../README.md) > [CloudHSM](./README.md) > Structures
+> [Index](..) > [CloudHSM](.) > Typed dictionaries
 
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
@@ -117,8 +117,7 @@ Optional fields:
 - `Label`: `str`
 - `LastModifiedTimestamp`: `str`
 - `PartitionSerialList`: `List`\[`str`\]
-- `State`:
-  [CloudHsmObjectState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/literals.html#cloudhsmobjectstate)
+- `State`: [CloudHsmObjectState](./literals.md#cloudhsmobjectstate)
 
 ## DescribeHsmResponseTypeDef
 
@@ -129,13 +128,13 @@ from mypy_boto3_cloudhsm.type_defs import DescribeHsmResponseTypeDef
 Optional fields:
 
 - `HsmArn`: `str`
-- `Status`:
-  [HsmStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/literals.html#hsmstatus)
+- `Status`: [HsmStatus](./literals.md#hsmstatus)
 - `StatusDetails`: `str`
 - `AvailabilityZone`: `str`
 - `EniId`: `str`
 - `EniIp`: `str`
-- `SubscriptionType`: `Literal['PRODUCTION']`
+- `SubscriptionType`: `Literal['PRODUCTION']` (see
+  [SubscriptionType](./literals.md#subscriptiontype))
 - `SubscriptionStartDate`: `str`
 - `SubscriptionEndDate`: `str`
 - `VpcId`: `str`
@@ -234,8 +233,7 @@ from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceResponseTypeDef
 
 Required fields:
 
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsm/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ModifyHapgResponseTypeDef
 

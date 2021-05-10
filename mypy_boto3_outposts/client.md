@@ -1,6 +1,6 @@
 # OutpostsClient for boto3 Outposts module
 
-> [Index](../README.md) > [Outposts](./README.md) > OutpostsClient
+> [Index](..) > [Outposts](.) > OutpostsClient
 
 Auto-generated documentation for
 [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
@@ -93,7 +93,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateOutpostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#createoutpostoutputtypedef).
+[CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
 
 ### delete_outpost
 
@@ -148,8 +148,7 @@ Arguments:
 
 - `OutpostId`: `str` *(required)*
 
-Returns
-[GetOutpostOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#getoutpostoutputtypedef).
+Returns [GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef).
 
 ### get_outpost_instance_types
 
@@ -166,7 +165,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetOutpostInstanceTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#getoutpostinstancetypesoutputtypedef).
+[GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef).
 
 ### list_outposts
 
@@ -180,8 +179,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListOutpostsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#listoutpostsoutputtypedef).
+Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
 ### list_sites
 
@@ -195,8 +193,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListSitesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#listsitesoutputtypedef).
+Returns [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -210,7 +207,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_outposts/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 

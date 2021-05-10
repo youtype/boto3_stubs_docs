@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IoTFleetHub module
 
-> [Index](../README.md) > [IoTFleetHub](./README.md) > Structures
+> [Index](..) > [IoTFleetHub](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
@@ -32,8 +32,7 @@ Optional fields:
 - `applicationDescription`: `str`
 - `applicationCreationDate`: `int`
 - `applicationLastUpdateDate`: `int`
-- `applicationState`:
-  [ApplicationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/literals.html#applicationstate)
+- `applicationState`: [ApplicationState](./literals.md#applicationstate)
 
 ## CreateApplicationResponseTypeDef
 
@@ -58,8 +57,7 @@ Required fields:
 - `applicationArn`: `str`
 - `applicationName`: `str`
 - `applicationUrl`: `str`
-- `applicationState`:
-  [ApplicationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/literals.html#applicationstate)
+- `applicationState`: [ApplicationState](./literals.md#applicationstate)
 - `applicationCreationDate`: `int`
 - `applicationLastUpdateDate`: `int`
 - `roleArn`: `str`
@@ -80,7 +78,7 @@ from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseTypeDef
 Optional fields:
 
 - `applicationSummaries`:
-  `List`\[[ApplicationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iotfleethub/type_defs.html#applicationsummarytypedef)\]
+  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef

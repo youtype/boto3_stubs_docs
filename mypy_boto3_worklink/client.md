@@ -1,6 +1,6 @@
 # WorkLinkClient for boto3 WorkLink module
 
-> [Index](../README.md) > [WorkLink](./README.md) > WorkLinkClient
+> [Index](..) > [WorkLink](.) > WorkLinkClient
 
 Auto-generated documentation for
 [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
@@ -114,11 +114,13 @@ Boto3 documentation:
 Arguments:
 
 - `FleetArn`: `str` *(required)*
-- `AuthorizationProviderType`: `Literal['SAML']` *(required)*
+- `AuthorizationProviderType`: `Literal['SAML']` (see
+  [AuthorizationProviderType](./literals.md#authorizationprovidertype))
+  *(required)*
 - `DomainName`: `str`
 
 Returns
-[AssociateWebsiteAuthorizationProviderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#associatewebsiteauthorizationproviderresponsetypedef).
+[AssociateWebsiteAuthorizationProviderResponseTypeDef](./type_defs.md#associatewebsiteauthorizationproviderresponsetypedef).
 
 ### associate_website_certificate_authority
 
@@ -135,7 +137,7 @@ Arguments:
 - `DisplayName`: `str`
 
 Returns
-[AssociateWebsiteCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#associatewebsitecertificateauthorityresponsetypedef).
+[AssociateWebsiteCertificateAuthorityResponseTypeDef](./type_defs.md#associatewebsitecertificateauthorityresponsetypedef).
 
 ### can_paginate
 
@@ -165,7 +167,7 @@ Arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#createfleetresponsetypedef).
+[CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
 
 ### delete_fleet
 
@@ -193,7 +195,7 @@ Arguments:
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeAuditStreamConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describeauditstreamconfigurationresponsetypedef).
+[DescribeAuditStreamConfigurationResponseTypeDef](./type_defs.md#describeauditstreamconfigurationresponsetypedef).
 
 ### describe_company_network_configuration
 
@@ -208,7 +210,7 @@ Arguments:
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeCompanyNetworkConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describecompanynetworkconfigurationresponsetypedef).
+[DescribeCompanyNetworkConfigurationResponseTypeDef](./type_defs.md#describecompanynetworkconfigurationresponsetypedef).
 
 ### describe_device
 
@@ -223,7 +225,7 @@ Arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[DescribeDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describedeviceresponsetypedef).
+[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
 ### describe_device_policy_configuration
 
@@ -238,7 +240,7 @@ Arguments:
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeDevicePolicyConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describedevicepolicyconfigurationresponsetypedef).
+[DescribeDevicePolicyConfigurationResponseTypeDef](./type_defs.md#describedevicepolicyconfigurationresponsetypedef).
 
 ### describe_domain
 
@@ -253,7 +255,7 @@ Arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describedomainresponsetypedef).
+[DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
 
 ### describe_fleet_metadata
 
@@ -267,7 +269,7 @@ Arguments:
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeFleetMetadataResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describefleetmetadataresponsetypedef).
+[DescribeFleetMetadataResponseTypeDef](./type_defs.md#describefleetmetadataresponsetypedef).
 
 ### describe_identity_provider_configuration
 
@@ -282,7 +284,7 @@ Arguments:
 - `FleetArn`: `str` *(required)*
 
 Returns
-[DescribeIdentityProviderConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describeidentityproviderconfigurationresponsetypedef).
+[DescribeIdentityProviderConfigurationResponseTypeDef](./type_defs.md#describeidentityproviderconfigurationresponsetypedef).
 
 ### describe_website_certificate_authority
 
@@ -298,7 +300,7 @@ Arguments:
 - `WebsiteCaId`: `str` *(required)*
 
 Returns
-[DescribeWebsiteCertificateAuthorityResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#describewebsitecertificateauthorityresponsetypedef).
+[DescribeWebsiteCertificateAuthorityResponseTypeDef](./type_defs.md#describewebsitecertificateauthorityresponsetypedef).
 
 ### disassociate_domain
 
@@ -374,7 +376,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#listdevicesresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_domains
 
@@ -390,7 +392,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#listdomainsresponsetypedef).
+[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
 ### list_fleets
 
@@ -404,8 +406,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#listfleetsresponsetypedef).
+Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -419,7 +420,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_website_authorization_providers
 
@@ -436,7 +437,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWebsiteAuthorizationProvidersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#listwebsiteauthorizationprovidersresponsetypedef).
+[ListWebsiteAuthorizationProvidersResponseTypeDef](./type_defs.md#listwebsiteauthorizationprovidersresponsetypedef).
 
 ### list_website_certificate_authorities
 
@@ -453,7 +454,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListWebsiteCertificateAuthoritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_worklink/type_defs.html#listwebsitecertificateauthoritiesresponsetypedef).
+[ListWebsiteCertificateAuthoritiesResponseTypeDef](./type_defs.md#listwebsitecertificateauthoritiesresponsetypedef).
 
 ### restore_domain_access
 
@@ -613,7 +614,8 @@ Boto3 documentation:
 Arguments:
 
 - `FleetArn`: `str` *(required)*
-- `IdentityProviderType`: `Literal['SAML']` *(required)*
+- `IdentityProviderType`: `Literal['SAML']` (see
+  [IdentityProviderType](./literals.md#identityprovidertype)) *(required)*
 - `IdentityProviderSamlMetadata`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

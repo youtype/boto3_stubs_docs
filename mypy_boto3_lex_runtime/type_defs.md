@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 LexRuntimeService module
 
-> [Index](../README.md) > [LexRuntimeService](./README.md) > Structures
+> [Index](..) > [LexRuntimeService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
@@ -45,7 +45,7 @@ Required fields:
 
 - `name`: `str`
 - `timeToLive`:
-  [ActiveContextTimeToLiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#activecontexttimetolivetypedef)
+  [ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef)
 - `parameters`: `Dict`\[`str`, `str`\]
 
 ## ButtonTypeDef
@@ -80,19 +80,16 @@ from mypy_boto3_lex_runtime.type_defs import DialogActionTypeDef
 
 Required fields:
 
-- `type`:
-  [DialogActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#dialogactiontype)
+- `type`: [DialogActionType](./literals.md#dialogactiontype)
 
 Optional fields:
 
 - `intentName`: `str`
 - `slots`: `Dict`\[`str`, `str`\]
 - `slotToElicit`: `str`
-- `fulfillmentState`:
-  [FulfillmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#fulfillmentstate)
+- `fulfillmentState`: [FulfillmentState](./literals.md#fulfillmentstate)
 - `message`: `str`
-- `messageFormat`:
-  [MessageFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#messageformattype)
+- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
 
 ## GenericAttachmentTypeDef
 
@@ -106,8 +103,7 @@ Optional fields:
 - `subTitle`: `str`
 - `attachmentLinkUrl`: `str`
 - `imageUrl`: `str`
-- `buttons`:
-  `List`\[[ButtonTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#buttontypedef)\]
+- `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
 
 ## GetSessionResponseTypeDef
 
@@ -118,13 +114,12 @@ from mypy_boto3_lex_runtime.type_defs import GetSessionResponseTypeDef
 Optional fields:
 
 - `recentIntentSummaryView`:
-  `List`\[[IntentSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#intentsummarytypedef)\]
+  `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
 - `sessionAttributes`: `Dict`\[`str`, `str`\]
 - `sessionId`: `str`
-- `dialogAction`:
-  [DialogActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#dialogactiontypedef)
+- `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#activecontexttypedef)\]
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 ## IntentConfidenceTypeDef
 
@@ -144,18 +139,15 @@ from mypy_boto3_lex_runtime.type_defs import IntentSummaryTypeDef
 
 Required fields:
 
-- `dialogActionType`:
-  [DialogActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#dialogactiontype)
+- `dialogActionType`: [DialogActionType](./literals.md#dialogactiontype)
 
 Optional fields:
 
 - `intentName`: `str`
 - `checkpointLabel`: `str`
 - `slots`: `Dict`\[`str`, `str`\]
-- `confirmationStatus`:
-  [ConfirmationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#confirmationstatus)
-- `fulfillmentState`:
-  [FulfillmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#fulfillmentstate)
+- `confirmationStatus`: [ConfirmationStatus](./literals.md#confirmationstatus)
+- `fulfillmentState`: [FulfillmentState](./literals.md#fulfillmentstate)
 - `slotToElicit`: `str`
 
 ## PostContentResponseTypeDef
@@ -175,10 +167,8 @@ Optional fields:
 - `sentimentResponse`: `str`
 - `message`: `str`
 - `encodedMessage`: `str`
-- `messageFormat`:
-  [MessageFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#messageformattype)
-- `dialogState`:
-  [DialogState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#dialogstate)
+- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
+- `dialogState`: [DialogState](./literals.md#dialogstate)
 - `slotToElicit`: `str`
 - `inputTranscript`: `str`
 - `encodedInputTranscript`: `str`
@@ -197,25 +187,22 @@ Optional fields:
 
 - `intentName`: `str`
 - `nluIntentConfidence`:
-  [IntentConfidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#intentconfidencetypedef)
+  [IntentConfidenceTypeDef](./type_defs.md#intentconfidencetypedef)
 - `alternativeIntents`:
-  `List`\[[PredictedIntentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#predictedintenttypedef)\]
+  `List`\[[PredictedIntentTypeDef](./type_defs.md#predictedintenttypedef)\]
 - `slots`: `Dict`\[`str`, `str`\]
 - `sessionAttributes`: `Dict`\[`str`, `str`\]
 - `message`: `str`
 - `sentimentResponse`:
-  [SentimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#sentimentresponsetypedef)
-- `messageFormat`:
-  [MessageFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#messageformattype)
-- `dialogState`:
-  [DialogState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#dialogstate)
+  [SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef)
+- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
+- `dialogState`: [DialogState](./literals.md#dialogstate)
 - `slotToElicit`: `str`
-- `responseCard`:
-  [ResponseCardTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#responsecardtypedef)
+- `responseCard`: [ResponseCardTypeDef](./type_defs.md#responsecardtypedef)
 - `sessionId`: `str`
 - `botVersion`: `str`
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#activecontexttypedef)\]
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 ## PredictedIntentTypeDef
 
@@ -227,7 +214,7 @@ Optional fields:
 
 - `intentName`: `str`
 - `nluIntentConfidence`:
-  [IntentConfidenceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#intentconfidencetypedef)
+  [IntentConfidenceTypeDef](./type_defs.md#intentconfidencetypedef)
 - `slots`: `Dict`\[`str`, `str`\]
 
 ## PutSessionResponseTypeDef
@@ -244,10 +231,8 @@ Optional fields:
 - `sessionAttributes`: `str`
 - `message`: `str`
 - `encodedMessage`: `str`
-- `messageFormat`:
-  [MessageFormatType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#messageformattype)
-- `dialogState`:
-  [DialogState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/literals.html#dialogstate)
+- `messageFormat`: [MessageFormatType](./literals.md#messageformattype)
+- `dialogState`: [DialogState](./literals.md#dialogstate)
 - `slotToElicit`: `str`
 - `audioStream`: `StreamingBody`
 - `sessionId`: `str`
@@ -262,9 +247,10 @@ from mypy_boto3_lex_runtime.type_defs import ResponseCardTypeDef
 Optional fields:
 
 - `version`: `str`
-- `contentType`: `Literal['application/vnd.amazonaws.card.generic']`
+- `contentType`: `Literal['application/vnd.amazonaws.card.generic']` (see
+  [ContentType](./literals.md#contenttype))
 - `genericAttachments`:
-  `List`\[[GenericAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lex_runtime/type_defs.html#genericattachmenttypedef)\]
+  `List`\[[GenericAttachmentTypeDef](./type_defs.md#genericattachmenttypedef)\]
 
 ## SentimentResponseTypeDef
 

@@ -1,6 +1,6 @@
 # TextractClient for boto3 Textract module
 
-> [Index](../README.md) > [Textract](./README.md) > TextractClient
+> [Index](..) > [Textract](.) > TextractClient
 
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
@@ -77,17 +77,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Document`:
-  [DocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documenttypedef)
-  *(required)*
-- `FeatureTypes`:
-  `List`\[[FeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#featuretype)\]
-  *(required)*
+- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
+- `FeatureTypes`: `List`\[[FeatureType](./literals.md#featuretype)\] *(required)*
 - `HumanLoopConfig`:
-  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#humanloopconfigtypedef)
+  [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
 Returns
-[AnalyzeDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#analyzedocumentresponsetypedef).
+[AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef).
 
 ### can_paginate
 
@@ -111,12 +107,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `Document`:
-  [DocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documenttypedef)
-  *(required)*
+- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
 
 Returns
-[DetectDocumentTextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#detectdocumenttextresponsetypedef).
+[DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef).
 
 ### generate_presigned_url
 
@@ -148,7 +142,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDocumentAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#getdocumentanalysisresponsetypedef).
+[GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef).
 
 ### get_document_text_detection
 
@@ -165,7 +159,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDocumentTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#getdocumenttextdetectionresponsetypedef).
+[GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef).
 
 ### start_document_analysis
 
@@ -177,21 +171,17 @@ Boto3 documentation:
 Arguments:
 
 - `DocumentLocation`:
-  [DocumentLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentlocationtypedef)
-  *(required)*
-- `FeatureTypes`:
-  `List`\[[FeatureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/literals.html#featuretype)\]
-  *(required)*
+  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) *(required)*
+- `FeatureTypes`: `List`\[[FeatureType](./literals.md#featuretype)\] *(required)*
 - `ClientRequestToken`: `str`
 - `JobTag`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#notificationchanneltypedef)
-- `OutputConfig`:
-  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#outputconfigtypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `KMSKeyId`: `str`
 
 Returns
-[StartDocumentAnalysisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#startdocumentanalysisresponsetypedef).
+[StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef).
 
 ### start_document_text_detection
 
@@ -204,15 +194,13 @@ Boto3 documentation:
 Arguments:
 
 - `DocumentLocation`:
-  [DocumentLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#documentlocationtypedef)
-  *(required)*
+  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) *(required)*
 - `ClientRequestToken`: `str`
 - `JobTag`: `str`
 - `NotificationChannel`:
-  [NotificationChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#notificationchanneltypedef)
-- `OutputConfig`:
-  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#outputconfigtypedef)
+  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `KMSKeyId`: `str`
 
 Returns
-[StartDocumentTextDetectionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_textract/type_defs.html#startdocumenttextdetectionresponsetypedef).
+[StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef).

@@ -1,6 +1,6 @@
 # Type annotations for boto3 AppRegistry module
 
-> [Index](../README.md) > AppRegistry
+> [Index](..) > AppRegistry
 
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)

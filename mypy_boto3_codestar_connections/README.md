@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodeStarconnections module
 
-> [Index](../README.md) > CodeStarconnections
+> [Index](..) > CodeStarconnections
 
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
@@ -90,6 +90,6 @@ from mypy_boto3_codestar_connections.type_defs import ConnectionTypeDef, ...
 - [ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef)
 - [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)

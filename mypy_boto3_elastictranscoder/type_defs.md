@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 ElasticTranscoder module
 
-> [Index](../README.md) > [ElasticTranscoder](./README.md) > Structures
+> [Index](..) > [ElasticTranscoder](.) > Typed dictionaries
 
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
@@ -45,7 +45,7 @@ type annotations stubs module
   - [ReadJobResponseTypeDef](#readjobresponsetypedef)
   - [ReadPipelineResponseTypeDef](#readpipelineresponsetypedef)
   - [ReadPresetResponseTypeDef](#readpresetresponsetypedef)
-  - [ResponseMetadata](#responsemetadata)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TestRoleResponseTypeDef](#testroleresponsetypedef)
   - [ThumbnailsTypeDef](#thumbnailstypedef)
   - [TimeSpanTypeDef](#timespantypedef)
@@ -71,8 +71,7 @@ Optional fields:
 - `SizingPolicy`: `str`
 - `PaddingPolicy`: `str`
 - `AlbumArtFormat`: `str`
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
 ## AudioCodecOptionsTypeDef
 
@@ -101,7 +100,7 @@ Optional fields:
 - `Channels`: `str`
 - `AudioPackingMode`: `str`
 - `CodecOptions`:
-  [AudioCodecOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#audiocodecoptionstypedef)
+  [AudioCodecOptionsTypeDef](./type_defs.md#audiocodecoptionstypedef)
 
 ## CaptionFormatTypeDef
 
@@ -113,8 +112,7 @@ Optional fields:
 
 - `Format`: `str`
 - `Pattern`: `str`
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
 ## CaptionSourceTypeDef
 
@@ -128,8 +126,7 @@ Optional fields:
 - `Language`: `str`
 - `TimeOffset`: `str`
 - `Label`: `str`
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
 ## CaptionsTypeDef
 
@@ -141,9 +138,9 @@ Optional fields:
 
 - `MergePolicy`: `str`
 - `CaptionSources`:
-  `List`\[[CaptionSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#captionsourcetypedef)\]
+  `List`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
 - `CaptionFormats`:
-  `List`\[[CaptionFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#captionformattypedef)\]
+  `List`\[[CaptionFormatTypeDef](./type_defs.md#captionformattypedef)\]
 
 ## ClipTypeDef
 
@@ -153,8 +150,7 @@ from mypy_boto3_elastictranscoder.type_defs import ClipTypeDef
 
 Optional fields:
 
-- `TimeSpan`:
-  [TimeSpanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#timespantypedef)
+- `TimeSpan`: [TimeSpanTypeDef](./type_defs.md#timespantypedef)
 
 ## CreateJobOutputTypeDef
 
@@ -166,23 +162,18 @@ Required fields:
 
 - `Key`: `str`
 - `ThumbnailPattern`: `str`
-- `ThumbnailEncryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+- `ThumbnailEncryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `Rotate`: `str`
 - `PresetId`: `str`
 - `SegmentDuration`: `str`
 - `Watermarks`:
-  `List`\[[JobWatermarkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobwatermarktypedef)\]
-- `AlbumArt`:
-  [JobAlbumArtTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobalbumarttypedef)
-- `Composition`:
-  `List`\[[ClipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#cliptypedef)\]
-- `Captions`:
-  [CaptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#captionstypedef)
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+  `List`\[[JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)\]
+- `AlbumArt`: [JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef)
+- `Composition`: `List`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
+- `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateJobPlaylistTypeDef
 
@@ -196,9 +187,8 @@ Optional fields:
 - `Format`: `str`
 - `OutputKeys`: `List`\[`str`\]
 - `HlsContentProtection`:
-  [HlsContentProtectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#hlscontentprotectiontypedef)
-- `PlayReadyDrm`:
-  [PlayReadyDrmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#playreadydrmtypedef)
+  [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
+- `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
 
 ## CreateJobResponseTypeDef
 
@@ -208,8 +198,7 @@ from mypy_boto3_elastictranscoder.type_defs import CreateJobResponseTypeDef
 
 Optional fields:
 
-- `Job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobtypedef)
+- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## CreatePipelineResponseTypeDef
 
@@ -219,10 +208,8 @@ from mypy_boto3_elastictranscoder.type_defs import CreatePipelineResponseTypeDef
 
 Optional fields:
 
-- `Pipeline`:
-  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelinetypedef)
-- `Warnings`:
-  `List`\[[WarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#warningtypedef)\]
+- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
+- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
 
 ## CreatePresetResponseTypeDef
 
@@ -232,8 +219,7 @@ from mypy_boto3_elastictranscoder.type_defs import CreatePresetResponseTypeDef
 
 Optional fields:
 
-- `Preset`:
-  [PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#presettypedef)
+- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 - `Warning`: `str`
 
 ## DetectedPropertiesTypeDef
@@ -288,7 +274,7 @@ Optional fields:
 
 - `MergePolicy`: `str`
 - `CaptionSources`:
-  `List`\[[CaptionSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#captionsourcetypedef)\]
+  `List`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
 
 ## JobAlbumArtTypeDef
 
@@ -299,8 +285,7 @@ from mypy_boto3_elastictranscoder.type_defs import JobAlbumArtTypeDef
 Optional fields:
 
 - `MergePolicy`: `str`
-- `Artwork`:
-  `List`\[[ArtworkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#artworktypedef)\]
+- `Artwork`: `List`\[[ArtworkTypeDef](./type_defs.md#artworktypedef)\]
 
 ## JobInputTypeDef
 
@@ -316,14 +301,11 @@ Optional fields:
 - `AspectRatio`: `str`
 - `Interlaced`: `str`
 - `Container`: `str`
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
-- `TimeSpan`:
-  [TimeSpanTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#timespantypedef)
-- `InputCaptions`:
-  [InputCaptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#inputcaptionstypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
+- `TimeSpan`: [TimeSpanTypeDef](./type_defs.md#timespantypedef)
+- `InputCaptions`: [InputCaptionsTypeDef](./type_defs.md#inputcaptionstypedef)
 - `DetectedProperties`:
-  [DetectedPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#detectedpropertiestypedef)
+  [DetectedPropertiesTypeDef](./type_defs.md#detectedpropertiestypedef)
 
 ## JobOutputTypeDef
 
@@ -336,8 +318,7 @@ Required fields:
 - `Id`: `str`
 - `Key`: `str`
 - `ThumbnailPattern`: `str`
-- `ThumbnailEncryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+- `ThumbnailEncryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `Rotate`: `str`
 - `PresetId`: `str`
 - `SegmentDuration`: `str`
@@ -350,18 +331,14 @@ Required fields:
 - `FileSize`: `int`
 - `DurationMillis`: `int`
 - `Watermarks`:
-  `List`\[[JobWatermarkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobwatermarktypedef)\]
-- `AlbumArt`:
-  [JobAlbumArtTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobalbumarttypedef)
-- `Composition`:
-  `List`\[[ClipTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#cliptypedef)\]
-- `Captions`:
-  [CaptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#captionstypedef)
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+  `List`\[[JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)\]
+- `AlbumArt`: [JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef)
+- `Composition`: `List`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
+- `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `AppliedColorSpaceConversion`: `str`
 - `ResponseMetadata`:
-  [ResponseMetadata](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#responsemetadata)
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## JobTypeDef
 
@@ -374,21 +351,15 @@ Optional fields:
 - `Id`: `str`
 - `Arn`: `str`
 - `PipelineId`: `str`
-- `Input`:
-  [JobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobinputtypedef)
-- `Inputs`:
-  `List`\[[JobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobinputtypedef)\]
-- `Output`:
-  [JobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#joboutputtypedef)
-- `Outputs`:
-  `List`\[[JobOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#joboutputtypedef)\]
+- `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
+- `Inputs`: `List`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
+- `Output`: [JobOutputTypeDef](./type_defs.md#joboutputtypedef)
+- `Outputs`: `List`\[[JobOutputTypeDef](./type_defs.md#joboutputtypedef)\]
 - `OutputKeyPrefix`: `str`
-- `Playlists`:
-  `List`\[[PlaylistTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#playlisttypedef)\]
+- `Playlists`: `List`\[[PlaylistTypeDef](./type_defs.md#playlisttypedef)\]
 - `Status`: `str`
 - `UserMetadata`: `Dict`\[`str`, `str`\]
-- `Timing`:
-  [TimingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#timingtypedef)
+- `Timing`: [TimingTypeDef](./type_defs.md#timingtypedef)
 
 ## JobWatermarkTypeDef
 
@@ -400,8 +371,7 @@ Optional fields:
 
 - `PresetWatermarkId`: `str`
 - `InputKey`: `str`
-- `Encryption`:
-  [EncryptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#encryptiontypedef)
+- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
 ## ListJobsByPipelineResponseTypeDef
 
@@ -411,8 +381,7 @@ from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineResponseTyp
 
 Optional fields:
 
-- `Jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobtypedef)\]
+- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextPageToken`: `str`
 
 ## ListJobsByStatusResponseTypeDef
@@ -423,8 +392,7 @@ from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusResponseTypeD
 
 Optional fields:
 
-- `Jobs`:
-  `List`\[[JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobtypedef)\]
+- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextPageToken`: `str`
 
 ## ListPipelinesResponseTypeDef
@@ -435,8 +403,7 @@ from mypy_boto3_elastictranscoder.type_defs import ListPipelinesResponseTypeDef
 
 Optional fields:
 
-- `Pipelines`:
-  `List`\[[PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelinetypedef)\]
+- `Pipelines`: `List`\[[PipelineTypeDef](./type_defs.md#pipelinetypedef)\]
 - `NextPageToken`: `str`
 
 ## ListPresetsResponseTypeDef
@@ -447,8 +414,7 @@ from mypy_boto3_elastictranscoder.type_defs import ListPresetsResponseTypeDef
 
 Optional fields:
 
-- `Presets`:
-  `List`\[[PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#presettypedef)\]
+- `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
 - `NextPageToken`: `str`
 
 ## NotificationsTypeDef
@@ -498,8 +464,7 @@ Optional fields:
 
 - `Bucket`: `str`
 - `StorageClass`: `str`
-- `Permissions`:
-  `List`\[[PermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#permissiontypedef)\]
+- `Permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 
 ## PipelineTypeDef
 
@@ -517,12 +482,11 @@ Optional fields:
 - `OutputBucket`: `str`
 - `Role`: `str`
 - `AwsKmsKeyArn`: `str`
-- `Notifications`:
-  [NotificationsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#notificationstypedef)
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
 - `ContentConfig`:
-  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 - `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelineoutputconfigtypedef)
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
 ## PlayReadyDrmTypeDef
 
@@ -551,9 +515,8 @@ Optional fields:
 - `Format`: `str`
 - `OutputKeys`: `List`\[`str`\]
 - `HlsContentProtection`:
-  [HlsContentProtectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#hlscontentprotectiontypedef)
-- `PlayReadyDrm`:
-  [PlayReadyDrmTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#playreadydrmtypedef)
+  [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
+- `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
 - `Status`: `str`
 - `StatusDetail`: `str`
 
@@ -570,12 +533,9 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Container`: `str`
-- `Audio`:
-  [AudioParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#audioparameterstypedef)
-- `Video`:
-  [VideoParametersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#videoparameterstypedef)
-- `Thumbnails`:
-  [ThumbnailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#thumbnailstypedef)
+- `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
+- `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
+- `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
 - `Type`: `str`
 
 ## PresetWatermarkTypeDef
@@ -605,8 +565,7 @@ from mypy_boto3_elastictranscoder.type_defs import ReadJobResponseTypeDef
 
 Optional fields:
 
-- `Job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#jobtypedef)
+- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## ReadPipelineResponseTypeDef
 
@@ -616,10 +575,8 @@ from mypy_boto3_elastictranscoder.type_defs import ReadPipelineResponseTypeDef
 
 Optional fields:
 
-- `Pipeline`:
-  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelinetypedef)
-- `Warnings`:
-  `List`\[[WarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#warningtypedef)\]
+- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
+- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
 
 ## ReadPresetResponseTypeDef
 
@@ -629,13 +586,12 @@ from mypy_boto3_elastictranscoder.type_defs import ReadPresetResponseTypeDef
 
 Optional fields:
 
-- `Preset`:
-  [PresetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#presettypedef)
+- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 
-## ResponseMetadata
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ResponseMetadata
+from mypy_boto3_elastictranscoder.type_defs import ResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -705,8 +661,7 @@ from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineNotificationsRe
 
 Optional fields:
 
-- `Pipeline`:
-  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelinetypedef)
+- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 
 ## UpdatePipelineResponseTypeDef
 
@@ -716,10 +671,8 @@ from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineResponseTypeDef
 
 Optional fields:
 
-- `Pipeline`:
-  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelinetypedef)
-- `Warnings`:
-  `List`\[[WarningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#warningtypedef)\]
+- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
+- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
 
 ## UpdatePipelineStatusResponseTypeDef
 
@@ -729,8 +682,7 @@ from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineStatusResponseT
 
 Optional fields:
 
-- `Pipeline`:
-  [PipelineTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#pipelinetypedef)
+- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 
 ## VideoParametersTypeDef
 
@@ -755,7 +707,7 @@ Optional fields:
 - `SizingPolicy`: `str`
 - `PaddingPolicy`: `str`
 - `Watermarks`:
-  `List`\[[PresetWatermarkTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_elastictranscoder/type_defs.html#presetwatermarktypedef)\]
+  `List`\[[PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef)\]
 
 ## WaiterConfigTypeDef
 

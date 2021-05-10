@@ -1,6 +1,6 @@
 # Type annotations for boto3 AutoScaling module
 
-> [Index](../README.md) > AutoScaling
+> [Index](..) > AutoScaling
 
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)

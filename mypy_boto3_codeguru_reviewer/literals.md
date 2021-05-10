@@ -1,6 +1,6 @@
 # Literals for boto3 CodeGuruReviewer module
 
-> [Index](../README.md) > [CodeGuruReviewer](./README.md) > Literals
+> [Index](..) > [CodeGuruReviewer](.) > Literals
 
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)

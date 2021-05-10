@@ -1,6 +1,6 @@
 # ConfigServiceClient for boto3 ConfigService module
 
-> [Index](../README.md) > [ConfigService](./README.md) > ConfigServiceClient
+> [Index](..) > [ConfigService](.) > ConfigServiceClient
 
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
@@ -200,11 +200,11 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceIdentifiers`:
-  `List`\[[AggregateResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateresourceidentifiertypedef)\]
+  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
   *(required)*
 
 Returns
-[BatchGetAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#batchgetaggregateresourceconfigresponsetypedef).
+[BatchGetAggregateResourceConfigResponseTypeDef](./type_defs.md#batchgetaggregateresourceconfigresponsetypedef).
 
 ### batch_get_resource_config
 
@@ -216,11 +216,10 @@ Boto3 documentation:
 Arguments:
 
 - `resourceKeys`:
-  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
-  *(required)*
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\] *(required)*
 
 Returns
-[BatchGetResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#batchgetresourceconfigresponsetypedef).
+[BatchGetResourceConfigResponseTypeDef](./type_defs.md#batchgetresourceconfigresponsetypedef).
 
 ### can_paginate
 
@@ -382,11 +381,11 @@ Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationexceptionresourcekeytypedef)\]
+  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 
 Returns
-[DeleteRemediationExceptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#deleteremediationexceptionsresponsetypedef).
+[DeleteRemediationExceptionsResponseTypeDef](./type_defs.md#deleteremediationexceptionsresponsetypedef).
 
 ### delete_resource_config
 
@@ -437,7 +436,7 @@ Arguments:
 - `deliveryChannelName`: `str` *(required)*
 
 Returns
-[DeliverConfigSnapshotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#deliverconfigsnapshotresponsetypedef).
+[DeliverConfigSnapshotResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponsetypedef).
 
 ### describe_aggregate_compliance_by_config_rules
 
@@ -451,12 +450,12 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [ConfigRuleComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configrulecompliancefilterstypedef)
+  [ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregateComplianceByConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconfigrulesresponsetypedef).
+[DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef).
 
 ### describe_aggregate_compliance_by_conformance_packs
 
@@ -471,12 +470,12 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [AggregateConformancePackComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateconformancepackcompliancefilterstypedef)
+  [AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregateComplianceByConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregatecompliancebyconformancepacksresponsetypedef).
+[DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef).
 
 ### describe_aggregation_authorizations
 
@@ -492,7 +491,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregationAuthorizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeaggregationauthorizationsresponsetypedef).
+[DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef).
 
 ### describe_compliance_by_config_rule
 
@@ -505,12 +504,11 @@ Boto3 documentation:
 Arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\]
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `NextToken`: `str`
 
 Returns
-[DescribeComplianceByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyconfigruleresponsetypedef).
+[DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef).
 
 ### describe_compliance_by_resource
 
@@ -524,13 +522,12 @@ Arguments:
 
 - `ResourceType`: `str`
 - `ResourceId`: `str`
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeComplianceByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describecompliancebyresourceresponsetypedef).
+[DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef).
 
 ### describe_config_rule_evaluation_status
 
@@ -547,7 +544,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigRuleEvaluationStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigruleevaluationstatusresponsetypedef).
+[DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef).
 
 ### describe_config_rules
 
@@ -562,7 +559,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigrulesresponsetypedef).
+[DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef).
 
 ### describe_configuration_aggregator_sources_status
 
@@ -577,12 +574,12 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#aggregatedsourcestatustype)\]
+  `List`\[[AggregatedSourceStatusType](./literals.md#aggregatedsourcestatustype)\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
 Returns
-[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsourcesstatusresponsetypedef).
+[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef).
 
 ### describe_configuration_aggregators
 
@@ -599,7 +596,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigurationAggregatorsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationaggregatorsresponsetypedef).
+[DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef).
 
 ### describe_configuration_recorder_status
 
@@ -614,7 +611,7 @@ Arguments:
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
 Returns
-[DescribeConfigurationRecorderStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationrecorderstatusresponsetypedef).
+[DescribeConfigurationRecorderStatusResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponsetypedef).
 
 ### describe_configuration_recorders
 
@@ -629,7 +626,7 @@ Arguments:
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
 Returns
-[DescribeConfigurationRecordersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconfigurationrecordersresponsetypedef).
+[DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef).
 
 ### describe_conformance_pack_compliance
 
@@ -643,12 +640,12 @@ Arguments:
 
 - `ConformancePackName`: `str` *(required)*
 - `Filters`:
-  [ConformancePackComplianceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackcompliancefilterstypedef)
+  [ConformancePackComplianceFiltersTypeDef](./type_defs.md#conformancepackcompliancefilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePackComplianceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepackcomplianceresponsetypedef).
+[DescribeConformancePackComplianceResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponsetypedef).
 
 ### describe_conformance_pack_status
 
@@ -665,7 +662,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePackStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepackstatusresponsetypedef).
+[DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef).
 
 ### describe_conformance_packs
 
@@ -682,7 +679,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeconformancepacksresponsetypedef).
+[DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef).
 
 ### describe_delivery_channel_status
 
@@ -697,7 +694,7 @@ Arguments:
 - `DeliveryChannelNames`: `List`\[`str`\]
 
 Returns
-[DescribeDeliveryChannelStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describedeliverychannelstatusresponsetypedef).
+[DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef).
 
 ### describe_delivery_channels
 
@@ -712,7 +709,7 @@ Arguments:
 - `DeliveryChannelNames`: `List`\[`str`\]
 
 Returns
-[DescribeDeliveryChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describedeliverychannelsresponsetypedef).
+[DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef).
 
 ### describe_organization_config_rule_statuses
 
@@ -729,7 +726,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConfigRuleStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconfigrulestatusesresponsetypedef).
+[DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef).
 
 ### describe_organization_config_rules
 
@@ -746,7 +743,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConfigRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconfigrulesresponsetypedef).
+[DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef).
 
 ### describe_organization_conformance_pack_statuses
 
@@ -764,7 +761,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConformancePackStatusesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconformancepackstatusesresponsetypedef).
+[DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef).
 
 ### describe_organization_conformance_packs
 
@@ -781,7 +778,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConformancePacksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeorganizationconformancepacksresponsetypedef).
+[DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef).
 
 ### describe_pending_aggregation_requests
 
@@ -797,7 +794,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribePendingAggregationRequestsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describependingaggregationrequestsresponsetypedef).
+[DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef).
 
 ### describe_remediation_configurations
 
@@ -812,7 +809,7 @@ Arguments:
 - `ConfigRuleNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeRemediationConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationconfigurationsresponsetypedef).
+[DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef).
 
 ### describe_remediation_exceptions
 
@@ -826,12 +823,12 @@ Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationexceptionresourcekeytypedef)\]
+  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeRemediationExceptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationexceptionsresponsetypedef).
+[DescribeRemediationExceptionsResponseTypeDef](./type_defs.md#describeremediationexceptionsresponsetypedef).
 
 ### describe_remediation_execution_status
 
@@ -845,12 +842,12 @@ Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeRemediationExecutionStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeremediationexecutionstatusresponsetypedef).
+[DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef).
 
 ### describe_retention_configurations
 
@@ -866,7 +863,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRetentionConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#describeretentionconfigurationsresponsetypedef).
+[DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -899,13 +896,12 @@ Arguments:
 - `ConfigRuleName`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 - `AwsRegion`: `str` *(required)*
-- `ComplianceType`:
-  [ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)
+- `ComplianceType`: [ComplianceType](./literals.md#compliancetype)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregatecompliancedetailsbyconfigruleresponsetypedef).
+[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef).
 
 ### get_aggregate_config_rule_compliance_summary
 
@@ -919,14 +915,14 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [ConfigRuleComplianceSummaryFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configrulecompliancesummaryfilterstypedef)
+  [ConfigRuleComplianceSummaryFiltersTypeDef](./type_defs.md#configrulecompliancesummaryfilterstypedef)
 - `GroupByKey`:
-  [ConfigRuleComplianceSummaryGroupKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#configrulecompliancesummarygroupkey)
+  [ConfigRuleComplianceSummaryGroupKey](./literals.md#configrulecompliancesummarygroupkey)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetAggregateConfigRuleComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregateconfigrulecompliancesummaryresponsetypedef).
+[GetAggregateConfigRuleComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryresponsetypedef).
 
 ### get_aggregate_conformance_pack_compliance_summary
 
@@ -941,14 +937,14 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [AggregateConformancePackComplianceSummaryFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateconformancepackcompliancesummaryfilterstypedef)
+  [AggregateConformancePackComplianceSummaryFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancesummaryfilterstypedef)
 - `GroupByKey`:
-  [AggregateConformancePackComplianceSummaryGroupKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#aggregateconformancepackcompliancesummarygroupkey)
+  [AggregateConformancePackComplianceSummaryGroupKey](./literals.md#aggregateconformancepackcompliancesummarygroupkey)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetAggregateConformancePackComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregateconformancepackcompliancesummaryresponsetypedef).
+[GetAggregateConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryresponsetypedef).
 
 ### get_aggregate_discovered_resource_counts
 
@@ -962,14 +958,13 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
-  [ResourceCountFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcecountfilterstypedef)
-- `GroupByKey`:
-  [ResourceCountGroupKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcecountgroupkey)
+  [ResourceCountFiltersTypeDef](./type_defs.md#resourcecountfilterstypedef)
+- `GroupByKey`: [ResourceCountGroupKey](./literals.md#resourcecountgroupkey)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetAggregateDiscoveredResourceCountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregatediscoveredresourcecountsresponsetypedef).
+[GetAggregateDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponsetypedef).
 
 ### get_aggregate_resource_config
 
@@ -983,11 +978,11 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceIdentifier`:
-  [AggregateResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#aggregateresourceidentifiertypedef)
+  [AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)
   *(required)*
 
 Returns
-[GetAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getaggregateresourceconfigresponsetypedef).
+[GetAggregateResourceConfigResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponsetypedef).
 
 ### get_compliance_details_by_config_rule
 
@@ -1000,13 +995,12 @@ Boto3 documentation:
 Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetComplianceDetailsByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyconfigruleresponsetypedef).
+[GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef).
 
 ### get_compliance_details_by_resource
 
@@ -1020,12 +1014,11 @@ Arguments:
 
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
-- `ComplianceTypes`:
-  `List`\[[ComplianceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#compliancetype)\]
+- `ComplianceTypes`: `List`\[[ComplianceType](./literals.md#compliancetype)\]
 - `NextToken`: `str`
 
 Returns
-[GetComplianceDetailsByResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancedetailsbyresourceresponsetypedef).
+[GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef).
 
 ### get_compliance_summary_by_config_rule
 
@@ -1036,7 +1029,7 @@ Boto3 documentation:
 [ConfigService.Client.get_compliance_summary_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
 
 Returns
-[GetComplianceSummaryByConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancesummarybyconfigruleresponsetypedef).
+[GetComplianceSummaryByConfigRuleResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponsetypedef).
 
 ### get_compliance_summary_by_resource_type
 
@@ -1051,7 +1044,7 @@ Arguments:
 - `ResourceTypes`: `List`\[`str`\]
 
 Returns
-[GetComplianceSummaryByResourceTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getcompliancesummarybyresourcetyperesponsetypedef).
+[GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef).
 
 ### get_conformance_pack_compliance_details
 
@@ -1065,12 +1058,12 @@ Arguments:
 
 - `ConformancePackName`: `str` *(required)*
 - `Filters`:
-  [ConformancePackEvaluationFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackevaluationfilterstypedef)
+  [ConformancePackEvaluationFiltersTypeDef](./type_defs.md#conformancepackevaluationfilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetConformancePackComplianceDetailsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getconformancepackcompliancedetailsresponsetypedef).
+[GetConformancePackComplianceDetailsResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponsetypedef).
 
 ### get_conformance_pack_compliance_summary
 
@@ -1087,7 +1080,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConformancePackComplianceSummaryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getconformancepackcompliancesummaryresponsetypedef).
+[GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef).
 
 ### get_discovered_resource_counts
 
@@ -1104,7 +1097,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[GetDiscoveredResourceCountsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getdiscoveredresourcecountsresponsetypedef).
+[GetDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponsetypedef).
 
 ### get_organization_config_rule_detailed_status
 
@@ -1118,12 +1111,12 @@ Arguments:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 - `Filters`:
-  [StatusDetailFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#statusdetailfilterstypedef)
+  [StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getorganizationconfigruledetailedstatusresponsetypedef).
+[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef).
 
 ### get_organization_conformance_pack_detailed_status
 
@@ -1138,12 +1131,12 @@ Arguments:
 
 - `OrganizationConformancePackName`: `str` *(required)*
 - `Filters`:
-  [OrganizationResourceDetailedStatusFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationresourcedetailedstatusfilterstypedef)
+  [OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetOrganizationConformancePackDetailedStatusResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getorganizationconformancepackdetailedstatusresponsetypedef).
+[GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef).
 
 ### get_resource_config_history
 
@@ -1155,19 +1148,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
-  *(required)*
+- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `resourceId`: `str` *(required)*
 - `laterTime`: `datetime`
 - `earlierTime`: `datetime`
-- `chronologicalOrder`:
-  [ChronologicalOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#chronologicalorder)
+- `chronologicalOrder`: [ChronologicalOrder](./literals.md#chronologicalorder)
 - `limit`: `int`
 - `nextToken`: `str`
 
 Returns
-[GetResourceConfigHistoryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getresourceconfighistoryresponsetypedef).
+[GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef).
 
 ### get_stored_query
 
@@ -1181,7 +1171,7 @@ Arguments:
 - `QueryName`: `str` *(required)*
 
 Returns
-[GetStoredQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#getstoredqueryresponsetypedef).
+[GetStoredQueryResponseTypeDef](./type_defs.md#getstoredqueryresponsetypedef).
 
 ### list_aggregate_discovered_resources
 
@@ -1194,16 +1184,13 @@ Boto3 documentation:
 Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
-- `ResourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
-  *(required)*
-- `Filters`:
-  [ResourceFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcefilterstypedef)
+- `ResourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
+- `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListAggregateDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listaggregatediscoveredresourcesresponsetypedef).
+[ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef).
 
 ### list_discovered_resources
 
@@ -1214,9 +1201,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/literals.html#resourcetype)
-  *(required)*
+- `resourceType`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `resourceIds`: `List`\[`str`\]
 - `resourceName`: `str`
 - `limit`: `int`
@@ -1224,7 +1209,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDiscoveredResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listdiscoveredresourcesresponsetypedef).
+[ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef).
 
 ### list_stored_queries
 
@@ -1239,7 +1224,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListStoredQueriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#liststoredqueriesresponsetypedef).
+[ListStoredQueriesResponseTypeDef](./type_defs.md#liststoredqueriesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1255,7 +1240,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_aggregation_authorization
 
@@ -1269,11 +1254,10 @@ Arguments:
 
 - `AuthorizedAccountId`: `str` *(required)*
 - `AuthorizedAwsRegion`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutAggregationAuthorizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putaggregationauthorizationresponsetypedef).
+[PutAggregationAuthorizationResponseTypeDef](./type_defs.md#putaggregationauthorizationresponsetypedef).
 
 ### put_config_rule
 
@@ -1284,11 +1268,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `ConfigRule`:
-  [ConfigRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configruletypedef)
+- `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### put_configuration_aggregator
 
@@ -1302,14 +1284,13 @@ Arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `AccountAggregationSources`:
-  `List`\[[AccountAggregationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#accountaggregationsourcetypedef)\]
+  `List`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
 - `OrganizationAggregationSource`:
-  [OrganizationAggregationSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationaggregationsourcetypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+  [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutConfigurationAggregatorResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putconfigurationaggregatorresponsetypedef).
+[PutConfigurationAggregatorResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponsetypedef).
 
 ### put_configuration_recorder
 
@@ -1322,7 +1303,7 @@ Boto3 documentation:
 Arguments:
 
 - `ConfigurationRecorder`:
-  [ConfigurationRecorderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#configurationrecordertypedef)
+  [ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)
   *(required)*
 
 ### put_conformance_pack
@@ -1340,10 +1321,10 @@ Arguments:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackinputparametertypedef)\]
+  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
 Returns
-[PutConformancePackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putconformancepackresponsetypedef).
+[PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef).
 
 ### put_delivery_channel
 
@@ -1355,8 +1336,7 @@ Boto3 documentation:
 Arguments:
 
 - `DeliveryChannel`:
-  [DeliveryChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#deliverychanneltypedef)
-  *(required)*
+  [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef) *(required)*
 
 ### put_evaluations
 
@@ -1368,12 +1348,11 @@ Boto3 documentation:
 Arguments:
 
 - `ResultToken`: `str` *(required)*
-- `Evaluations`:
-  `List`\[[EvaluationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#evaluationtypedef)\]
+- `Evaluations`: `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `TestMode`: `bool`
 
 Returns
-[PutEvaluationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putevaluationsresponsetypedef).
+[PutEvaluationsResponseTypeDef](./type_defs.md#putevaluationsresponsetypedef).
 
 ### put_external_evaluation
 
@@ -1386,7 +1365,7 @@ Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ExternalEvaluation`:
-  [ExternalEvaluationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#externalevaluationtypedef)
+  [ExternalEvaluationTypeDef](./type_defs.md#externalevaluationtypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1403,13 +1382,13 @@ Arguments:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 - `OrganizationManagedRuleMetadata`:
-  [OrganizationManagedRuleMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationmanagedrulemetadatatypedef)
+  [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
 - `OrganizationCustomRuleMetadata`:
-  [OrganizationCustomRuleMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#organizationcustomrulemetadatatypedef)
+  [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
 - `ExcludedAccounts`: `List`\[`str`\]
 
 Returns
-[PutOrganizationConfigRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putorganizationconfigruleresponsetypedef).
+[PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).
 
 ### put_organization_conformance_pack
 
@@ -1427,11 +1406,11 @@ Arguments:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#conformancepackinputparametertypedef)\]
+  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 - `ExcludedAccounts`: `List`\[`str`\]
 
 Returns
-[PutOrganizationConformancePackResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putorganizationconformancepackresponsetypedef).
+[PutOrganizationConformancePackResponseTypeDef](./type_defs.md#putorganizationconformancepackresponsetypedef).
 
 ### put_remediation_configurations
 
@@ -1444,11 +1423,11 @@ Boto3 documentation:
 Arguments:
 
 - `RemediationConfigurations`:
-  `List`\[[RemediationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationconfigurationtypedef)\]
+  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
   *(required)*
 
 Returns
-[PutRemediationConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putremediationconfigurationsresponsetypedef).
+[PutRemediationConfigurationsResponseTypeDef](./type_defs.md#putremediationconfigurationsresponsetypedef).
 
 ### put_remediation_exceptions
 
@@ -1462,13 +1441,13 @@ Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#remediationexceptionresourcekeytypedef)\]
+  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 - `Message`: `str`
 - `ExpirationTime`: `datetime`
 
 Returns
-[PutRemediationExceptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putremediationexceptionsresponsetypedef).
+[PutRemediationExceptionsResponseTypeDef](./type_defs.md#putremediationexceptionsresponsetypedef).
 
 ### put_resource_config
 
@@ -1499,7 +1478,7 @@ Arguments:
 - `RetentionPeriodInDays`: `int` *(required)*
 
 Returns
-[PutRetentionConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putretentionconfigurationresponsetypedef).
+[PutRetentionConfigurationResponseTypeDef](./type_defs.md#putretentionconfigurationresponsetypedef).
 
 ### put_stored_query
 
@@ -1510,14 +1489,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `StoredQuery`:
-  [StoredQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#storedquerytypedef)
+- `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutStoredQueryResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#putstoredqueryresponsetypedef).
+[PutStoredQueryResponseTypeDef](./type_defs.md#putstoredqueryresponsetypedef).
 
 ### select_aggregate_resource_config
 
@@ -1536,7 +1513,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[SelectAggregateResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#selectaggregateresourceconfigresponsetypedef).
+[SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef).
 
 ### select_resource_config
 
@@ -1552,7 +1529,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[SelectResourceConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#selectresourceconfigresponsetypedef).
+[SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef).
 
 ### start_config_rules_evaluation
 
@@ -1592,11 +1569,10 @@ Arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#resourcekeytypedef)\]
-  *(required)*
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\] *(required)*
 
 Returns
-[StartRemediationExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#startremediationexecutionresponsetypedef).
+[StartRemediationExecutionResponseTypeDef](./type_defs.md#startremediationexecutionresponsetypedef).
 
 ### stop_configuration_recorder
 
@@ -1620,9 +1596,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_config/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 

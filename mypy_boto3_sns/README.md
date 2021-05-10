@@ -1,6 +1,6 @@
 # Type annotations for boto3 SNS module
 
-> [Index](../README.md) > SNS
+> [Index](..) > SNS
 
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
@@ -103,7 +103,7 @@ SNSClient [exceptions](./client.md#exceptions)
 ## SNSServiceResource
 
 Type annotations for `boto3.resource("sns")` as
-[SNSServiceResource](./service_resource.md)
+[SNSServiceResource](./service_resource.md#snsserviceresource)
 
 Can be used directly:
 
@@ -121,9 +121,9 @@ Can be used directly:
 from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection, ...
 ```
 
-- [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresource.platform-applications)
-- [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresource.subscriptions)
-- [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresource.topics)
+- [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresourceplatform-applications)
+- [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresourcesubscriptions)
+- [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresourcetopics)
 
 ### Resources
 

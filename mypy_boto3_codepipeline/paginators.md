@@ -1,6 +1,6 @@
 # Paginators for boto3 CodePipeline module
 
-> [Index](../README.md) > [CodePipeline](./README.md) > Paginators
+> [Index](..) > [CodePipeline](.) > Paginators
 
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
@@ -36,12 +36,12 @@ Arguments for `ListActionExecutionsPaginator.paginate` method:
 
 - `pipelineName`: `str` *(required)*
 - `filter`:
-  [ActionExecutionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#actionexecutionfiltertypedef)
+  [ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActionExecutionsPaginator.paginate` returns
-`Iterator`\[[ListActionExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listactionexecutionsoutputtypedef)\].
+`Iterator`\[[ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef)\].
 
 ## ListActionTypesPaginator
 
@@ -62,14 +62,13 @@ Boto3 documentation:
 
 Arguments for `ListActionTypesPaginator.paginate` method:
 
-- `actionOwnerFilter`:
-  [ActionOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/literals.html#actionowner)
+- `actionOwnerFilter`: [ActionOwner](./literals.md#actionowner)
 - `regionFilter`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActionTypesPaginator.paginate` returns
-`Iterator`\[[ListActionTypesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listactiontypesoutputtypedef)\].
+`Iterator`\[[ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef)\].
 
 ## ListPipelineExecutionsPaginator
 
@@ -92,10 +91,10 @@ Arguments for `ListPipelineExecutionsPaginator.paginate` method:
 
 - `pipelineName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineExecutionsPaginator.paginate` returns
-`Iterator`\[[ListPipelineExecutionsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listpipelineexecutionsoutputtypedef)\].
+`Iterator`\[[ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -117,10 +116,10 @@ Boto3 documentation:
 Arguments for `ListPipelinesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listpipelinesoutputtypedef)\].
+`Iterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -143,10 +142,10 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 
 - `resourceArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
 
 ## ListWebhooksPaginator
 
@@ -168,7 +167,7 @@ Boto3 documentation:
 Arguments for `ListWebhooksPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWebhooksPaginator.paginate` returns
-`Iterator`\[[ListWebhooksOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codepipeline/type_defs.html#listwebhooksoutputtypedef)\].
+`Iterator`\[[ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef)\].

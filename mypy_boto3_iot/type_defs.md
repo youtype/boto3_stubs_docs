@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 IoT module
 
-> [Index](../README.md) > [IoT](./README.md) > Structures
+> [Index](..) > [IoT](.) > Typed dictionaries
 
 Auto-generated documentation for
 [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
@@ -351,7 +351,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef
 Required fields:
 
 - `criteriaList`:
-  `List`\[[AbortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#abortcriteriatypedef)\]
+  `List`\[[AbortCriteriaTypeDef](./type_defs.md#abortcriteriatypedef)\]
 
 ## AbortCriteriaTypeDef
 
@@ -361,9 +361,8 @@ from mypy_boto3_iot.type_defs import AbortCriteriaTypeDef
 
 Required fields:
 
-- `failureType`:
-  [JobExecutionFailureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionfailuretype)
-- `action`: `Literal['CANCEL']`
+- `failureType`: [JobExecutionFailureType](./literals.md#jobexecutionfailuretype)
+- `action`: `Literal['CANCEL']` (see [AbortAction](./literals.md#abortaction))
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
@@ -375,48 +374,34 @@ from mypy_boto3_iot.type_defs import ActionTypeDef
 
 Optional fields:
 
-- `dynamoDB`:
-  [DynamoDBActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#dynamodbactiontypedef)
-- `dynamoDBv2`:
-  [DynamoDBv2ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#dynamodbv2actiontypedef)
-- `lambda`:
-  [LambdaActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#lambdaactiontypedef)
-- `sns`:
-  [SnsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#snsactiontypedef)
-- `sqs`:
-  [SqsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#sqsactiontypedef)
-- `kinesis`:
-  [KinesisActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#kinesisactiontypedef)
-- `republish`:
-  [RepublishActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#republishactiontypedef)
-- `s3`:
-  [S3ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#s3actiontypedef)
-- `firehose`:
-  [FirehoseActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#firehoseactiontypedef)
+- `dynamoDB`: [DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef)
+- `dynamoDBv2`: [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
+- `lambda`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
+- `sns`: [SnsActionTypeDef](./type_defs.md#snsactiontypedef)
+- `sqs`: [SqsActionTypeDef](./type_defs.md#sqsactiontypedef)
+- `kinesis`: [KinesisActionTypeDef](./type_defs.md#kinesisactiontypedef)
+- `republish`: [RepublishActionTypeDef](./type_defs.md#republishactiontypedef)
+- `s3`: [S3ActionTypeDef](./type_defs.md#s3actiontypedef)
+- `firehose`: [FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef)
 - `cloudwatchMetric`:
-  [CloudwatchMetricActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#cloudwatchmetricactiontypedef)
+  [CloudwatchMetricActionTypeDef](./type_defs.md#cloudwatchmetricactiontypedef)
 - `cloudwatchAlarm`:
-  [CloudwatchAlarmActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#cloudwatchalarmactiontypedef)
+  [CloudwatchAlarmActionTypeDef](./type_defs.md#cloudwatchalarmactiontypedef)
 - `cloudwatchLogs`:
-  [CloudwatchLogsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#cloudwatchlogsactiontypedef)
+  [CloudwatchLogsActionTypeDef](./type_defs.md#cloudwatchlogsactiontypedef)
 - `elasticsearch`:
-  [ElasticsearchActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#elasticsearchactiontypedef)
-- `salesforce`:
-  [SalesforceActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#salesforceactiontypedef)
+  [ElasticsearchActionTypeDef](./type_defs.md#elasticsearchactiontypedef)
+- `salesforce`: [SalesforceActionTypeDef](./type_defs.md#salesforceactiontypedef)
 - `iotAnalytics`:
-  [IotAnalyticsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#iotanalyticsactiontypedef)
-- `iotEvents`:
-  [IotEventsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#ioteventsactiontypedef)
+  [IotAnalyticsActionTypeDef](./type_defs.md#iotanalyticsactiontypedef)
+- `iotEvents`: [IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef)
 - `iotSiteWise`:
-  [IotSiteWiseActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#iotsitewiseactiontypedef)
+  [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
 - `stepFunctions`:
-  [StepFunctionsActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#stepfunctionsactiontypedef)
-- `timestream`:
-  [TimestreamActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#timestreamactiontypedef)
-- `http`:
-  [HttpActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#httpactiontypedef)
-- `kafka`:
-  [KafkaActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#kafkaactiontypedef)
+  [StepFunctionsActionTypeDef](./type_defs.md#stepfunctionsactiontypedef)
+- `timestream`: [TimestreamActionTypeDef](./type_defs.md#timestreamactiontypedef)
+- `http`: [HttpActionTypeDef](./type_defs.md#httpactiontypedef)
+- `kafka`: [KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef)
 
 ## ActiveViolationTypeDef
 
@@ -429,12 +414,10 @@ Optional fields:
 - `violationId`: `str`
 - `thingName`: `str`
 - `securityProfileName`: `str`
-- `behavior`:
-  [BehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#behaviortypedef)
-- `lastViolationValue`:
-  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metricvaluetypedef)
+- `behavior`: [BehaviorTypeDef](./type_defs.md#behaviortypedef)
+- `lastViolationValue`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - `violationEventAdditionalInfo`:
-  [ViolationEventAdditionalInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#violationeventadditionalinfotypedef)
+  [ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef)
 - `lastViolationTime`: `datetime`
 - `violationStartTime`: `datetime`
 
@@ -471,8 +454,7 @@ from mypy_boto3_iot.type_defs import AllowedTypeDef
 
 Optional fields:
 
-- `policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policytypedef)\]
+- `policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 
 ## AssetPropertyTimestampTypeDef
 
@@ -497,9 +479,9 @@ from mypy_boto3_iot.type_defs import AssetPropertyValueTypeDef
 Required fields:
 
 - `value`:
-  [AssetPropertyVariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#assetpropertyvarianttypedef)
+  [AssetPropertyVariantTypeDef](./type_defs.md#assetpropertyvarianttypedef)
 - `timestamp`:
-  [AssetPropertyTimestampTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#assetpropertytimestamptypedef)
+  [AssetPropertyTimestampTypeDef](./type_defs.md#assetpropertytimestamptypedef)
 
 Optional fields:
 
@@ -559,8 +541,7 @@ from mypy_boto3_iot.type_defs import AuditCheckDetailsTypeDef
 
 Optional fields:
 
-- `checkRunStatus`:
-  [AuditCheckRunStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditcheckrunstatus)
+- `checkRunStatus`: [AuditCheckRunStatus](./literals.md#auditcheckrunstatus)
 - `checkCompliant`: `bool`
 - `totalResourcesCount`: `int`
 - `nonCompliantResourcesCount`: `int`
@@ -581,12 +562,11 @@ Optional fields:
 - `checkName`: `str`
 - `taskStartTime`: `datetime`
 - `findingTime`: `datetime`
-- `severity`:
-  [AuditFindingSeverity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditfindingseverity)
+- `severity`: [AuditFindingSeverity](./literals.md#auditfindingseverity)
 - `nonCompliantResource`:
-  [NonCompliantResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#noncompliantresourcetypedef)
+  [NonCompliantResourceTypeDef](./type_defs.md#noncompliantresourcetypedef)
 - `relatedResources`:
-  `List`\[[RelatedResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#relatedresourcetypedef)\]
+  `List`\[[RelatedResourceTypeDef](./type_defs.md#relatedresourcetypedef)\]
 - `reasonForNonCompliance`: `str`
 - `reasonForNonComplianceCode`: `str`
 - `isSuppressed`: `bool`
@@ -604,7 +584,7 @@ Optional fields:
 - `actionName`: `str`
 - `actionId`: `str`
 - `status`:
-  [AuditMitigationActionsExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionsexecutionstatus)
+  [AuditMitigationActionsExecutionStatus](./literals.md#auditmitigationactionsexecutionstatus)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `errorCode`: `str`
@@ -621,7 +601,7 @@ Optional fields:
 - `taskId`: `str`
 - `startTime`: `datetime`
 - `taskStatus`:
-  [AuditMitigationActionsTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionstaskstatus)
+  [AuditMitigationActionsTaskStatus](./literals.md#auditmitigationactionstaskstatus)
 
 ## AuditMitigationActionsTaskTargetTypeDef
 
@@ -657,7 +637,7 @@ Required fields:
 
 - `checkName`: `str`
 - `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 
 Optional fields:
 
@@ -674,10 +654,8 @@ from mypy_boto3_iot.type_defs import AuditTaskMetadataTypeDef
 Optional fields:
 
 - `taskId`: `str`
-- `taskStatus`:
-  [AuditTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittaskstatus)
-- `taskType`:
-  [AuditTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittasktype)
+- `taskStatus`: [AuditTaskStatus](./literals.md#audittaskstatus)
+- `taskType`: [AuditTaskType](./literals.md#audittasktype)
 
 ## AuthInfoTypeDef
 
@@ -691,8 +669,7 @@ Required fields:
 
 Optional fields:
 
-- `actionType`:
-  [ActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#actiontype)
+- `actionType`: [ActionType](./literals.md#actiontype)
 
 ## AuthResultTypeDef
 
@@ -702,14 +679,10 @@ from mypy_boto3_iot.type_defs import AuthResultTypeDef
 
 Optional fields:
 
-- `authInfo`:
-  [AuthInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#authinfotypedef)
-- `allowed`:
-  [AllowedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#allowedtypedef)
-- `denied`:
-  [DeniedTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#deniedtypedef)
-- `authDecision`:
-  [AuthDecision](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#authdecision)
+- `authInfo`: [AuthInfoTypeDef](./type_defs.md#authinfotypedef)
+- `allowed`: [AllowedTypeDef](./type_defs.md#allowedtypedef)
+- `denied`: [DeniedTypeDef](./type_defs.md#deniedtypedef)
+- `authDecision`: [AuthDecision](./literals.md#authdecision)
 - `missingContextValues`: `List`\[`str`\]
 
 ## AuthorizerConfigTypeDef
@@ -736,8 +709,7 @@ Optional fields:
 - `authorizerFunctionArn`: `str`
 - `tokenKeyName`: `str`
 - `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
-- `status`:
-  [AuthorizerStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#authorizerstatus)
+- `status`: [AuthorizerStatus](./literals.md#authorizerstatus)
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
 - `signingDisabled`: `bool`
@@ -762,7 +734,7 @@ from mypy_boto3_iot.type_defs import AwsJobAbortConfigTypeDef
 Required fields:
 
 - `abortCriteriaList`:
-  `List`\[[AwsJobAbortCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#awsjobabortcriteriatypedef)\]
+  `List`\[[AwsJobAbortCriteriaTypeDef](./type_defs.md#awsjobabortcriteriatypedef)\]
 
 ## AwsJobAbortCriteriaTypeDef
 
@@ -773,8 +745,9 @@ from mypy_boto3_iot.type_defs import AwsJobAbortCriteriaTypeDef
 Required fields:
 
 - `failureType`:
-  [AwsJobAbortCriteriaFailureType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#awsjobabortcriteriafailuretype)
-- `action`: `Literal['CANCEL']`
+  [AwsJobAbortCriteriaFailureType](./literals.md#awsjobabortcriteriafailuretype)
+- `action`: `Literal['CANCEL']` (see
+  [AwsJobAbortCriteriaAbortAction](./literals.md#awsjobabortcriteriaabortaction))
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
@@ -788,7 +761,7 @@ Optional fields:
 
 - `maximumPerMinute`: `int`
 - `exponentialRate`:
-  [AwsJobExponentialRolloutRateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#awsjobexponentialrolloutratetypedef)
+  [AwsJobExponentialRolloutRateTypeDef](./type_defs.md#awsjobexponentialrolloutratetypedef)
 
 ## AwsJobExponentialRolloutRateTypeDef
 
@@ -801,7 +774,7 @@ Required fields:
 - `baseRatePerMinute`: `int`
 - `incrementFactor`: `float`
 - `rateIncreaseCriteria`:
-  [AwsJobRateIncreaseCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#awsjobrateincreasecriteriatypedef)
+  [AwsJobRateIncreaseCriteriaTypeDef](./type_defs.md#awsjobrateincreasecriteriatypedef)
 
 ## AwsJobPresignedUrlConfigTypeDef
 
@@ -842,17 +815,15 @@ from mypy_boto3_iot.type_defs import BehaviorCriteriaTypeDef
 
 Optional fields:
 
-- `comparisonOperator`:
-  [ComparisonOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#comparisonoperator)
-- `value`:
-  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metricvaluetypedef)
+- `comparisonOperator`: [ComparisonOperator](./literals.md#comparisonoperator)
+- `value`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - `durationSeconds`: `int`
 - `consecutiveDatapointsToAlarm`: `int`
 - `consecutiveDatapointsToClear`: `int`
 - `statisticalThreshold`:
-  [StatisticalThresholdTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#statisticalthresholdtypedef)
+  [StatisticalThresholdTypeDef](./type_defs.md#statisticalthresholdtypedef)
 - `mlDetectionConfig`:
-  [MachineLearningDetectionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#machinelearningdetectionconfigtypedef)
+  [MachineLearningDetectionConfigTypeDef](./type_defs.md#machinelearningdetectionconfigtypedef)
 
 ## BehaviorModelTrainingSummaryTypeDef
 
@@ -865,8 +836,7 @@ Optional fields:
 - `securityProfileName`: `str`
 - `behaviorName`: `str`
 - `trainingDataCollectionStartDate`: `datetime`
-- `modelStatus`:
-  [ModelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#modelstatus)
+- `modelStatus`: [ModelStatus](./literals.md#modelstatus)
 - `datapointsCollectionPercentage`: `float`
 - `lastModelRefreshDate`: `datetime`
 
@@ -884,9 +854,8 @@ Optional fields:
 
 - `metric`: `str`
 - `metricDimension`:
-  [MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metricdimensiontypedef)
-- `criteria`:
-  [BehaviorCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#behaviorcriteriatypedef)
+  [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
+- `criteria`: [BehaviorCriteriaTypeDef](./type_defs.md#behaviorcriteriatypedef)
 - `suppressAlerts`: `bool`
 
 ## BillingGroupMetadataTypeDef
@@ -919,18 +888,17 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateId`: `str`
-- `status`:
-  [CACertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#cacertificatestatus)
+- `status`: [CACertificateStatus](./literals.md#cacertificatestatus)
 - `certificatePem`: `str`
 - `ownedBy`: `str`
 - `creationDate`: `datetime`
 - `autoRegistrationStatus`:
-  [AutoRegistrationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#autoregistrationstatus)
+  [AutoRegistrationStatus](./literals.md#autoregistrationstatus)
 - `lastModifiedDate`: `datetime`
 - `customerVersion`: `int`
 - `generationId`: `str`
 - `validity`:
-  [CertificateValidityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#certificatevaliditytypedef)
+  [CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef)
 
 ## CACertificateTypeDef
 
@@ -942,8 +910,7 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateId`: `str`
-- `status`:
-  [CACertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#cacertificatestatus)
+- `status`: [CACertificateStatus](./literals.md#cacertificatestatus)
 - `creationDate`: `datetime`
 
 ## CancelJobResponseTypeDef
@@ -969,21 +936,18 @@ Optional fields:
 - `certificateArn`: `str`
 - `certificateId`: `str`
 - `caCertificateId`: `str`
-- `status`:
-  [CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#certificatestatus)
+- `status`: [CertificateStatus](./literals.md#certificatestatus)
 - `certificatePem`: `str`
 - `ownedBy`: `str`
 - `previousOwnedBy`: `str`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
 - `customerVersion`: `int`
-- `transferData`:
-  [TransferDataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#transferdatatypedef)
+- `transferData`: [TransferDataTypeDef](./type_defs.md#transferdatatypedef)
 - `generationId`: `str`
 - `validity`:
-  [CertificateValidityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#certificatevaliditytypedef)
-- `certificateMode`:
-  [CertificateMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#certificatemode)
+  [CertificateValidityTypeDef](./type_defs.md#certificatevaliditytypedef)
+- `certificateMode`: [CertificateMode](./literals.md#certificatemode)
 
 ## CertificateTypeDef
 
@@ -995,10 +959,8 @@ Optional fields:
 
 - `certificateArn`: `str`
 - `certificateId`: `str`
-- `status`:
-  [CertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#certificatestatus)
-- `certificateMode`:
-  [CertificateMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#certificatemode)
+- `status`: [CertificateStatus](./literals.md#certificatestatus)
+- `certificateMode`: [CertificateMode](./literals.md#certificatemode)
 - `creationDate`: `datetime`
 
 ## CertificateValidityTypeDef
@@ -1085,9 +1047,9 @@ Optional fields:
 
 - `awsSignerJobId`: `str`
 - `startSigningJobParameter`:
-  [StartSigningJobParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#startsigningjobparametertypedef)
+  [StartSigningJobParameterTypeDef](./type_defs.md#startsigningjobparametertypedef)
 - `customCodeSigning`:
-  [CustomCodeSigningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#customcodesigningtypedef)
+  [CustomCodeSigningTypeDef](./type_defs.md#customcodesigningtypedef)
 
 ## ConfigurationTypeDef
 
@@ -1205,8 +1167,7 @@ Optional fields:
 - `certificateArn`: `str`
 - `certificateId`: `str`
 - `certificatePem`: `str`
-- `keyPair`:
-  [KeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#keypairtypedef)
+- `keyPair`: [KeyPairTypeDef](./type_defs.md#keypairtypedef)
 
 ## CreateMitigationActionResponseTypeDef
 
@@ -1231,8 +1192,7 @@ Optional fields:
 - `awsIotJobId`: `str`
 - `otaUpdateArn`: `str`
 - `awsIotJobArn`: `str`
-- `otaUpdateStatus`:
-  [OTAUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#otaupdatestatus)
+- `otaUpdateStatus`: [OTAUpdateStatus](./literals.md#otaupdatestatus)
 
 ## CreatePolicyResponseTypeDef
 
@@ -1270,8 +1230,7 @@ Optional fields:
 
 - `certificateId`: `str`
 - `certificatePem`: `str`
-- `keyPair`:
-  [KeyPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#keypairtypedef)
+- `keyPair`: [KeyPairTypeDef](./type_defs.md#keypairtypedef)
 - `expiration`: `datetime`
 
 ## CreateProvisioningTemplateResponseTypeDef
@@ -1389,7 +1348,7 @@ from mypy_boto3_iot.type_defs import CreateTopicRuleDestinationResponseTypeDef
 Optional fields:
 
 - `topicRuleDestination`:
-  [TopicRuleDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#topicruledestinationtypedef)
+  [TopicRuleDestinationTypeDef](./type_defs.md#topicruledestinationtypedef)
 
 ## CustomCodeSigningTypeDef
 
@@ -1400,9 +1359,9 @@ from mypy_boto3_iot.type_defs import CustomCodeSigningTypeDef
 Optional fields:
 
 - `signature`:
-  [CodeSigningSignatureTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#codesigningsignaturetypedef)
+  [CodeSigningSignatureTypeDef](./type_defs.md#codesigningsignaturetypedef)
 - `certificateChain`:
-  [CodeSigningCertificateChainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#codesigningcertificatechaintypedef)
+  [CodeSigningCertificateChainTypeDef](./type_defs.md#codesigningcertificatechaintypedef)
 - `hashAlgorithm`: `str`
 - `signatureAlgorithm`: `str`
 
@@ -1414,10 +1373,8 @@ from mypy_boto3_iot.type_defs import DeniedTypeDef
 
 Optional fields:
 
-- `implicitDeny`:
-  [ImplicitDenyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#implicitdenytypedef)
-- `explicitDeny`:
-  [ExplicitDenyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#explicitdenytypedef)
+- `implicitDeny`: [ImplicitDenyTypeDef](./type_defs.md#implicitdenytypedef)
+- `explicitDeny`: [ExplicitDenyTypeDef](./type_defs.md#explicitdenytypedef)
 
 ## DescribeAccountAuditConfigurationResponseTypeDef
 
@@ -1428,10 +1385,11 @@ from mypy_boto3_iot.type_defs import DescribeAccountAuditConfigurationResponseTy
 Optional fields:
 
 - `roleArn`: `str`
-- `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']`,
-  [AuditNotificationTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditnotificationtargettypedef)\]
+- `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']` (see
+  [AuditNotificationType](./literals.md#auditnotificationtype)),
+  [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
 - `auditCheckConfigurations`: `Dict`\[`str`,
-  [AuditCheckConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditcheckconfigurationtypedef)\]
+  [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
 
 ## DescribeAuditFindingResponseTypeDef
 
@@ -1441,8 +1399,7 @@ from mypy_boto3_iot.type_defs import DescribeAuditFindingResponseTypeDef
 
 Optional fields:
 
-- `finding`:
-  [AuditFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditfindingtypedef)
+- `finding`: [AuditFindingTypeDef](./type_defs.md#auditfindingtypedef)
 
 ## DescribeAuditMitigationActionsTaskResponseTypeDef
 
@@ -1453,16 +1410,16 @@ from mypy_boto3_iot.type_defs import DescribeAuditMitigationActionsTaskResponseT
 Optional fields:
 
 - `taskStatus`:
-  [AuditMitigationActionsTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditmitigationactionstaskstatus)
+  [AuditMitigationActionsTaskStatus](./literals.md#auditmitigationactionstaskstatus)
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `taskStatistics`: `Dict`\[`str`,
-  [TaskStatisticsForAuditCheckTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#taskstatisticsforauditchecktypedef)\]
+  [TaskStatisticsForAuditCheckTypeDef](./type_defs.md#taskstatisticsforauditchecktypedef)\]
 - `target`:
-  [AuditMitigationActionsTaskTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditmitigationactionstasktargettypedef)
+  [AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef)
 - `auditCheckToActionsMapping`: `Dict`\[`str`, `List`\[`str`\]\]
 - `actionsDefinition`:
-  `List`\[[MitigationActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#mitigationactiontypedef)\]
+  `List`\[[MitigationActionTypeDef](./type_defs.md#mitigationactiontypedef)\]
 
 ## DescribeAuditSuppressionResponseTypeDef
 
@@ -1474,7 +1431,7 @@ Optional fields:
 
 - `checkName`: `str`
 - `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `expirationDate`: `datetime`
 - `suppressIndefinitely`: `bool`
 - `description`: `str`
@@ -1487,16 +1444,13 @@ from mypy_boto3_iot.type_defs import DescribeAuditTaskResponseTypeDef
 
 Optional fields:
 
-- `taskStatus`:
-  [AuditTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittaskstatus)
-- `taskType`:
-  [AuditTaskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#audittasktype)
+- `taskStatus`: [AuditTaskStatus](./literals.md#audittaskstatus)
+- `taskType`: [AuditTaskType](./literals.md#audittasktype)
 - `taskStartTime`: `datetime`
-- `taskStatistics`:
-  [TaskStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#taskstatisticstypedef)
+- `taskStatistics`: [TaskStatisticsTypeDef](./type_defs.md#taskstatisticstypedef)
 - `scheduledAuditName`: `str`
 - `auditDetails`: `Dict`\[`str`,
-  [AuditCheckDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditcheckdetailstypedef)\]
+  [AuditCheckDetailsTypeDef](./type_defs.md#auditcheckdetailstypedef)\]
 
 ## DescribeAuthorizerResponseTypeDef
 
@@ -1507,7 +1461,7 @@ from mypy_boto3_iot.type_defs import DescribeAuthorizerResponseTypeDef
 Optional fields:
 
 - `authorizerDescription`:
-  [AuthorizerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#authorizerdescriptiontypedef)
+  [AuthorizerDescriptionTypeDef](./type_defs.md#authorizerdescriptiontypedef)
 
 ## DescribeBillingGroupResponseTypeDef
 
@@ -1522,9 +1476,9 @@ Optional fields:
 - `billingGroupArn`: `str`
 - `version`: `int`
 - `billingGroupProperties`:
-  [BillingGroupPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#billinggrouppropertiestypedef)
+  [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
 - `billingGroupMetadata`:
-  [BillingGroupMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#billinggroupmetadatatypedef)
+  [BillingGroupMetadataTypeDef](./type_defs.md#billinggroupmetadatatypedef)
 
 ## DescribeCACertificateResponseTypeDef
 
@@ -1535,9 +1489,9 @@ from mypy_boto3_iot.type_defs import DescribeCACertificateResponseTypeDef
 Optional fields:
 
 - `certificateDescription`:
-  [CACertificateDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#cacertificatedescriptiontypedef)
+  [CACertificateDescriptionTypeDef](./type_defs.md#cacertificatedescriptiontypedef)
 - `registrationConfig`:
-  [RegistrationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#registrationconfigtypedef)
+  [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
 
 ## DescribeCertificateResponseTypeDef
 
@@ -1548,7 +1502,7 @@ from mypy_boto3_iot.type_defs import DescribeCertificateResponseTypeDef
 Optional fields:
 
 - `certificateDescription`:
-  [CertificateDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#certificatedescriptiontypedef)
+  [CertificateDescriptionTypeDef](./type_defs.md#certificatedescriptiontypedef)
 
 ## DescribeCustomMetricResponseTypeDef
 
@@ -1560,8 +1514,7 @@ Optional fields:
 
 - `metricName`: `str`
 - `metricArn`: `str`
-- `metricType`:
-  [CustomMetricType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#custommetrictype)
+- `metricType`: [CustomMetricType](./literals.md#custommetrictype)
 - `displayName`: `str`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -1575,7 +1528,7 @@ from mypy_boto3_iot.type_defs import DescribeDefaultAuthorizerResponseTypeDef
 Optional fields:
 
 - `authorizerDescription`:
-  [AuthorizerDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#authorizerdescriptiontypedef)
+  [AuthorizerDescriptionTypeDef](./type_defs.md#authorizerdescriptiontypedef)
 
 ## DescribeDetectMitigationActionsTaskResponseTypeDef
 
@@ -1586,7 +1539,7 @@ from mypy_boto3_iot.type_defs import DescribeDetectMitigationActionsTaskResponse
 Optional fields:
 
 - `taskSummary`:
-  [DetectMitigationActionsTaskSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#detectmitigationactionstasksummarytypedef)
+  [DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef)
 
 ## DescribeDimensionResponseTypeDef
 
@@ -1598,7 +1551,8 @@ Optional fields:
 
 - `name`: `str`
 - `arn`: `str`
-- `type`: `Literal['TOPIC_FILTER']`
+- `type`: `Literal['TOPIC_FILTER']` (see
+  [DimensionType](./literals.md#dimensiontype))
 - `stringValues`: `List`\[`str`\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -1615,15 +1569,13 @@ Optional fields:
 - `domainConfigurationArn`: `str`
 - `domainName`: `str`
 - `serverCertificates`:
-  `List`\[[ServerCertificateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#servercertificatesummarytypedef)\]
+  `List`\[[ServerCertificateSummaryTypeDef](./type_defs.md#servercertificatesummarytypedef)\]
 - `authorizerConfig`:
-  [AuthorizerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#authorizerconfigtypedef)
+  [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
 - `domainConfigurationStatus`:
-  [DomainConfigurationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#domainconfigurationstatus)
-- `serviceType`:
-  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#servicetype)
-- `domainType`:
-  [DomainType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#domaintype)
+  [DomainConfigurationStatus](./literals.md#domainconfigurationstatus)
+- `serviceType`: [ServiceType](./literals.md#servicetype)
+- `domainType`: [DomainType](./literals.md#domaintype)
 - `lastStatusChangeDate`: `datetime`
 
 ## DescribeEndpointResponseTypeDef
@@ -1644,9 +1596,8 @@ from mypy_boto3_iot.type_defs import DescribeEventConfigurationsResponseTypeDef
 
 Optional fields:
 
-- `eventConfigurations`:
-  `Dict`\[[EventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#eventtype),
-  [ConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#configurationtypedef)\]
+- `eventConfigurations`: `Dict`\[[EventType](./literals.md#eventtype),
+  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
 
@@ -1659,8 +1610,7 @@ from mypy_boto3_iot.type_defs import DescribeIndexResponseTypeDef
 Optional fields:
 
 - `indexName`: `str`
-- `indexStatus`:
-  [IndexStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#indexstatus)
+- `indexStatus`: [IndexStatus](./literals.md#indexstatus)
 - `schema`: `str`
 
 ## DescribeJobExecutionResponseTypeDef
@@ -1671,8 +1621,7 @@ from mypy_boto3_iot.type_defs import DescribeJobExecutionResponseTypeDef
 
 Optional fields:
 
-- `execution`:
-  [JobExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutiontypedef)
+- `execution`: [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
 
 ## DescribeJobResponseTypeDef
 
@@ -1683,8 +1632,7 @@ from mypy_boto3_iot.type_defs import DescribeJobResponseTypeDef
 Optional fields:
 
 - `documentSource`: `str`
-- `job`:
-  [JobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobtypedef)
+- `job`: [JobTypeDef](./type_defs.md#jobtypedef)
 
 ## DescribeMitigationActionResponseTypeDef
 
@@ -1695,13 +1643,12 @@ from mypy_boto3_iot.type_defs import DescribeMitigationActionResponseTypeDef
 Optional fields:
 
 - `actionName`: `str`
-- `actionType`:
-  [MitigationActionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#mitigationactiontype)
+- `actionType`: [MitigationActionType](./literals.md#mitigationactiontype)
 - `actionArn`: `str`
 - `actionId`: `str`
 - `roleArn`: `str`
 - `actionParams`:
-  [MitigationActionParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#mitigationactionparamstypedef)
+  [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
 
@@ -1723,7 +1670,7 @@ Optional fields:
 - `enabled`: `bool`
 - `provisioningRoleArn`: `str`
 - `preProvisioningHook`:
-  [ProvisioningHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#provisioninghooktypedef)
+  [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
 
 ## DescribeProvisioningTemplateVersionResponseTypeDef
 
@@ -1747,7 +1694,7 @@ from mypy_boto3_iot.type_defs import DescribeRoleAliasResponseTypeDef
 Optional fields:
 
 - `roleAliasDescription`:
-  [RoleAliasDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#rolealiasdescriptiontypedef)
+  [RoleAliasDescriptionTypeDef](./type_defs.md#rolealiasdescriptiontypedef)
 
 ## DescribeScheduledAuditResponseTypeDef
 
@@ -1757,11 +1704,9 @@ from mypy_boto3_iot.type_defs import DescribeScheduledAuditResponseTypeDef
 
 Optional fields:
 
-- `frequency`:
-  [AuditFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditfrequency)
+- `frequency`: [AuditFrequency](./literals.md#auditfrequency)
 - `dayOfMonth`: `str`
-- `dayOfWeek`:
-  [DayOfWeek](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#dayofweek)
+- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
 - `targetCheckNames`: `List`\[`str`\]
 - `scheduledAuditName`: `str`
 - `scheduledAuditArn`: `str`
@@ -1777,13 +1722,13 @@ Optional fields:
 - `securityProfileName`: `str`
 - `securityProfileArn`: `str`
 - `securityProfileDescription`: `str`
-- `behaviors`:
-  `List`\[[BehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']`,
-  [AlertTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#alerttargettypedef)\]
+- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+  [AlertTargetType](./literals.md#alerttargettype)),
+  [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
 - `additionalMetricsToRetain`: `List`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metrictoretaintypedef)\]
+  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
 - `version`: `int`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -1796,8 +1741,7 @@ from mypy_boto3_iot.type_defs import DescribeStreamResponseTypeDef
 
 Optional fields:
 
-- `streamInfo`:
-  [StreamInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#streaminfotypedef)
+- `streamInfo`: [StreamInfoTypeDef](./type_defs.md#streaminfotypedef)
 
 ## DescribeThingGroupResponseTypeDef
 
@@ -1812,14 +1756,13 @@ Optional fields:
 - `thingGroupArn`: `str`
 - `version`: `int`
 - `thingGroupProperties`:
-  [ThingGroupPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thinggrouppropertiestypedef)
+  [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
 - `thingGroupMetadata`:
-  [ThingGroupMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thinggroupmetadatatypedef)
+  [ThingGroupMetadataTypeDef](./type_defs.md#thinggroupmetadatatypedef)
 - `indexName`: `str`
 - `queryString`: `str`
 - `queryVersion`: `str`
-- `status`:
-  [DynamicGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#dynamicgroupstatus)
+- `status`: [DynamicGroupStatus](./literals.md#dynamicgroupstatus)
 
 ## DescribeThingRegistrationTaskResponseTypeDef
 
@@ -1836,8 +1779,7 @@ Optional fields:
 - `inputFileBucket`: `str`
 - `inputFileKey`: `str`
 - `roleArn`: `str`
-- `status`:
-  [Status](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#status)
+- `status`: [Status](./literals.md#status)
 - `message`: `str`
 - `successCount`: `int`
 - `failureCount`: `int`
@@ -1872,9 +1814,9 @@ Optional fields:
 - `thingTypeId`: `str`
 - `thingTypeArn`: `str`
 - `thingTypeProperties`:
-  [ThingTypePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingtypepropertiestypedef)
+  [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
 - `thingTypeMetadata`:
-  [ThingTypeMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingtypemetadatatypedef)
+  [ThingTypeMetadataTypeDef](./type_defs.md#thingtypemetadatatypedef)
 
 ## DestinationTypeDef
 
@@ -1884,8 +1826,7 @@ from mypy_boto3_iot.type_defs import DestinationTypeDef
 
 Optional fields:
 
-- `s3Destination`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#s3destinationtypedef)
+- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
 ## DetectMitigationActionExecutionTypeDef
 
@@ -1902,7 +1843,7 @@ Optional fields:
 - `executionStartDate`: `datetime`
 - `executionEndDate`: `datetime`
 - `status`:
-  [DetectMitigationActionExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#detectmitigationactionexecutionstatus)
+  [DetectMitigationActionExecutionStatus](./literals.md#detectmitigationactionexecutionstatus)
 - `errorCode`: `str`
 - `message`: `str`
 
@@ -1928,19 +1869,19 @@ Optional fields:
 
 - `taskId`: `str`
 - `taskStatus`:
-  [DetectMitigationActionsTaskStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#detectmitigationactionstaskstatus)
+  [DetectMitigationActionsTaskStatus](./literals.md#detectmitigationactionstaskstatus)
 - `taskStartTime`: `datetime`
 - `taskEndTime`: `datetime`
 - `target`:
-  [DetectMitigationActionsTaskTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#detectmitigationactionstasktargettypedef)
+  [DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef)
 - `violationEventOccurrenceRange`:
-  [ViolationEventOccurrenceRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#violationeventoccurrencerangetypedef)
+  [ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef)
 - `onlyActiveViolationsIncluded`: `bool`
 - `suppressedAlertsIncluded`: `bool`
 - `actionsDefinition`:
-  `List`\[[MitigationActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#mitigationactiontypedef)\]
+  `List`\[[MitigationActionTypeDef](./type_defs.md#mitigationactiontypedef)\]
 - `taskStatistics`:
-  [DetectMitigationActionsTaskStatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#detectmitigationactionstaskstatisticstypedef)
+  [DetectMitigationActionsTaskStatisticsTypeDef](./type_defs.md#detectmitigationactionstaskstatisticstypedef)
 
 ## DetectMitigationActionsTaskTargetTypeDef
 
@@ -1964,8 +1905,7 @@ Optional fields:
 
 - `domainConfigurationName`: `str`
 - `domainConfigurationArn`: `str`
-- `serviceType`:
-  [ServiceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#servicetype)
+- `serviceType`: [ServiceType](./literals.md#servicetype)
 
 ## DynamoDBActionTypeDef
 
@@ -1983,12 +1923,10 @@ Required fields:
 Optional fields:
 
 - `operation`: `str`
-- `hashKeyType`:
-  [DynamoKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#dynamokeytype)
+- `hashKeyType`: [DynamoKeyType](./literals.md#dynamokeytype)
 - `rangeKeyField`: `str`
 - `rangeKeyValue`: `str`
-- `rangeKeyType`:
-  [DynamoKeyType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#dynamokeytype)
+- `rangeKeyType`: [DynamoKeyType](./literals.md#dynamokeytype)
 - `payloadField`: `str`
 
 ## DynamoDBv2ActionTypeDef
@@ -2000,8 +1938,7 @@ from mypy_boto3_iot.type_defs import DynamoDBv2ActionTypeDef
 Required fields:
 
 - `roleArn`: `str`
-- `putItem`:
-  [PutItemInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#putiteminputtypedef)
+- `putItem`: [PutItemInputTypeDef](./type_defs.md#putiteminputtypedef)
 
 ## EffectivePolicyTypeDef
 
@@ -2038,8 +1975,7 @@ from mypy_boto3_iot.type_defs import EnableIoTLoggingParamsTypeDef
 Required fields:
 
 - `roleArnForLogging`: `str`
-- `logLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#loglevel)
+- `logLevel`: [LogLevel](./literals.md#loglevel)
 
 ## ErrorInfoTypeDef
 
@@ -2060,8 +1996,7 @@ from mypy_boto3_iot.type_defs import ExplicitDenyTypeDef
 
 Optional fields:
 
-- `policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policytypedef)\]
+- `policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 
 ## ExponentialRolloutRateTypeDef
 
@@ -2074,7 +2009,7 @@ Required fields:
 - `baseRatePerMinute`: `int`
 - `incrementFactor`: `float`
 - `rateIncreaseCriteria`:
-  [RateIncreaseCriteriaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#rateincreasecriteriatypedef)
+  [RateIncreaseCriteriaTypeDef](./type_defs.md#rateincreasecriteriatypedef)
 
 ## FieldTypeDef
 
@@ -2085,8 +2020,7 @@ from mypy_boto3_iot.type_defs import FieldTypeDef
 Optional fields:
 
 - `name`: `str`
-- `type`:
-  [FieldType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#fieldtype)
+- `type`: [FieldType](./literals.md#fieldtype)
 
 ## FileLocationTypeDef
 
@@ -2096,10 +2030,8 @@ from mypy_boto3_iot.type_defs import FileLocationTypeDef
 
 Optional fields:
 
-- `stream`:
-  [StreamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#streamtypedef)
-- `s3Location`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#s3locationtypedef)
+- `stream`: [StreamTypeDef](./type_defs.md#streamtypedef)
+- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
 ## FirehoseActionTypeDef
 
@@ -2126,7 +2058,7 @@ from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseTy
 Optional fields:
 
 - `summaries`:
-  `List`\[[BehaviorModelTrainingSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#behaviormodeltrainingsummarytypedef)\]
+  `List`\[[BehaviorModelTrainingSummaryTypeDef](./type_defs.md#behaviormodeltrainingsummarytypedef)\]
 - `nextToken`: `str`
 
 ## GetCardinalityResponseTypeDef
@@ -2148,7 +2080,7 @@ from mypy_boto3_iot.type_defs import GetEffectivePoliciesResponseTypeDef
 Optional fields:
 
 - `effectivePolicies`:
-  `List`\[[EffectivePolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#effectivepolicytypedef)\]
+  `List`\[[EffectivePolicyTypeDef](./type_defs.md#effectivepolicytypedef)\]
 
 ## GetIndexingConfigurationResponseTypeDef
 
@@ -2159,9 +2091,9 @@ from mypy_boto3_iot.type_defs import GetIndexingConfigurationResponseTypeDef
 Optional fields:
 
 - `thingIndexingConfiguration`:
-  [ThingIndexingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingindexingconfigurationtypedef)
+  [ThingIndexingConfigurationTypeDef](./type_defs.md#thingindexingconfigurationtypedef)
 - `thingGroupIndexingConfiguration`:
-  [ThingGroupIndexingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thinggroupindexingconfigurationtypedef)
+  [ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef)
 
 ## GetJobDocumentResponseTypeDef
 
@@ -2182,8 +2114,7 @@ from mypy_boto3_iot.type_defs import GetLoggingOptionsResponseTypeDef
 Optional fields:
 
 - `roleArn`: `str`
-- `logLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#loglevel)
+- `logLevel`: [LogLevel](./literals.md#loglevel)
 
 ## GetOTAUpdateResponseTypeDef
 
@@ -2193,8 +2124,7 @@ from mypy_boto3_iot.type_defs import GetOTAUpdateResponseTypeDef
 
 Optional fields:
 
-- `otaUpdateInfo`:
-  [OTAUpdateInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#otaupdateinfotypedef)
+- `otaUpdateInfo`: [OTAUpdateInfoTypeDef](./type_defs.md#otaupdateinfotypedef)
 
 ## GetPercentilesResponseTypeDef
 
@@ -2205,7 +2135,7 @@ from mypy_boto3_iot.type_defs import GetPercentilesResponseTypeDef
 Optional fields:
 
 - `percentiles`:
-  `List`\[[PercentPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#percentpairtypedef)\]
+  `List`\[[PercentPairTypeDef](./type_defs.md#percentpairtypedef)\]
 
 ## GetPolicyResponseTypeDef
 
@@ -2258,8 +2188,7 @@ from mypy_boto3_iot.type_defs import GetStatisticsResponseTypeDef
 
 Optional fields:
 
-- `statistics`:
-  [StatisticsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#statisticstypedef)
+- `statistics`: [StatisticsTypeDef](./type_defs.md#statisticstypedef)
 
 ## GetTopicRuleDestinationResponseTypeDef
 
@@ -2270,7 +2199,7 @@ from mypy_boto3_iot.type_defs import GetTopicRuleDestinationResponseTypeDef
 Optional fields:
 
 - `topicRuleDestination`:
-  [TopicRuleDestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#topicruledestinationtypedef)
+  [TopicRuleDestinationTypeDef](./type_defs.md#topicruledestinationtypedef)
 
 ## GetTopicRuleResponseTypeDef
 
@@ -2281,8 +2210,7 @@ from mypy_boto3_iot.type_defs import GetTopicRuleResponseTypeDef
 Optional fields:
 
 - `ruleArn`: `str`
-- `rule`:
-  [TopicRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#topicruletypedef)
+- `rule`: [TopicRuleTypeDef](./type_defs.md#topicruletypedef)
 
 ## GetV2LoggingOptionsResponseTypeDef
 
@@ -2293,8 +2221,7 @@ from mypy_boto3_iot.type_defs import GetV2LoggingOptionsResponseTypeDef
 Optional fields:
 
 - `roleArn`: `str`
-- `defaultLogLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#loglevel)
+- `defaultLogLevel`: [LogLevel](./literals.md#loglevel)
 - `disableAllLogs`: `bool`
 
 ## GroupNameAndArnTypeDef
@@ -2333,9 +2260,8 @@ Optional fields:
 
 - `confirmationUrl`: `str`
 - `headers`:
-  `List`\[[HttpActionHeaderTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#httpactionheadertypedef)\]
-- `auth`:
-  [HttpAuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#httpauthorizationtypedef)
+  `List`\[[HttpActionHeaderTypeDef](./type_defs.md#httpactionheadertypedef)\]
+- `auth`: [HttpAuthorizationTypeDef](./type_defs.md#httpauthorizationtypedef)
 
 ## HttpAuthorizationTypeDef
 
@@ -2345,8 +2271,7 @@ from mypy_boto3_iot.type_defs import HttpAuthorizationTypeDef
 
 Optional fields:
 
-- `sigv4`:
-  [SigV4AuthorizationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#sigv4authorizationtypedef)
+- `sigv4`: [SigV4AuthorizationTypeDef](./type_defs.md#sigv4authorizationtypedef)
 
 ## HttpContextTypeDef
 
@@ -2397,8 +2322,7 @@ from mypy_boto3_iot.type_defs import ImplicitDenyTypeDef
 
 Optional fields:
 
-- `policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policytypedef)\]
+- `policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 
 ## IotAnalyticsActionTypeDef
 
@@ -2438,7 +2362,7 @@ from mypy_boto3_iot.type_defs import IotSiteWiseActionTypeDef
 Required fields:
 
 - `putAssetPropertyValueEntries`:
-  `List`\[[PutAssetPropertyValueEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#putassetpropertyvalueentrytypedef)\]
+  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
 - `roleArn`: `str`
 
 ## JobExecutionStatusDetailsTypeDef
@@ -2461,7 +2385,7 @@ Optional fields:
 
 - `thingArn`: `str`
 - `jobExecutionSummary`:
-  [JobExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutionsummarytypedef)
+  [JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)
 
 ## JobExecutionSummaryForThingTypeDef
 
@@ -2473,7 +2397,7 @@ Optional fields:
 
 - `jobId`: `str`
 - `jobExecutionSummary`:
-  [JobExecutionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutionsummarytypedef)
+  [JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)
 
 ## JobExecutionSummaryTypeDef
 
@@ -2483,8 +2407,7 @@ from mypy_boto3_iot.type_defs import JobExecutionSummaryTypeDef
 
 Optional fields:
 
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionstatus)
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
 - `queuedAt`: `datetime`
 - `startedAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
@@ -2499,11 +2422,10 @@ from mypy_boto3_iot.type_defs import JobExecutionTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `status`:
-  [JobExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobexecutionstatus)
+- `status`: [JobExecutionStatus](./literals.md#jobexecutionstatus)
 - `forceCanceled`: `bool`
 - `statusDetails`:
-  [JobExecutionStatusDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutionstatusdetailstypedef)
+  [JobExecutionStatusDetailsTypeDef](./type_defs.md#jobexecutionstatusdetailstypedef)
 - `thingArn`: `str`
 - `queuedAt`: `datetime`
 - `startedAt`: `datetime`
@@ -2522,7 +2444,7 @@ Optional fields:
 
 - `maximumPerMinute`: `int`
 - `exponentialRate`:
-  [ExponentialRolloutRateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#exponentialrolloutratetypedef)
+  [ExponentialRolloutRateTypeDef](./type_defs.md#exponentialrolloutratetypedef)
 
 ## JobProcessDetailsTypeDef
 
@@ -2553,10 +2475,8 @@ Optional fields:
 - `jobArn`: `str`
 - `jobId`: `str`
 - `thingGroupId`: `str`
-- `targetSelection`:
-  [TargetSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#targetselection)
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobstatus)
+- `targetSelection`: [TargetSelection](./literals.md#targetselection)
+- `status`: [JobStatus](./literals.md#jobstatus)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `completedAt`: `datetime`
@@ -2571,28 +2491,24 @@ Optional fields:
 
 - `jobArn`: `str`
 - `jobId`: `str`
-- `targetSelection`:
-  [TargetSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#targetselection)
-- `status`:
-  [JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#jobstatus)
+- `targetSelection`: [TargetSelection](./literals.md#targetselection)
+- `status`: [JobStatus](./literals.md#jobstatus)
 - `forceCanceled`: `bool`
 - `reasonCode`: `str`
 - `comment`: `str`
 - `targets`: `List`\[`str`\]
 - `description`: `str`
 - `presignedUrlConfig`:
-  [PresignedUrlConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#presignedurlconfigtypedef)
+  [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
 - `jobExecutionsRolloutConfig`:
-  [JobExecutionsRolloutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutionsrolloutconfigtypedef)
-- `abortConfig`:
-  [AbortConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#abortconfigtypedef)
+  [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
+- `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `completedAt`: `datetime`
 - `jobProcessDetails`:
-  [JobProcessDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobprocessdetailstypedef)
-- `timeoutConfig`:
-  [TimeoutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#timeoutconfigtypedef)
+  [JobProcessDetailsTypeDef](./type_defs.md#jobprocessdetailstypedef)
+- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
 
 ## KafkaActionTypeDef
@@ -2657,7 +2573,7 @@ from mypy_boto3_iot.type_defs import ListActiveViolationsResponseTypeDef
 Optional fields:
 
 - `activeViolations`:
-  `List`\[[ActiveViolationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#activeviolationtypedef)\]
+  `List`\[[ActiveViolationTypeDef](./type_defs.md#activeviolationtypedef)\]
 - `nextToken`: `str`
 
 ## ListAttachedPoliciesResponseTypeDef
@@ -2668,8 +2584,7 @@ from mypy_boto3_iot.type_defs import ListAttachedPoliciesResponseTypeDef
 
 Optional fields:
 
-- `policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policytypedef)\]
+- `policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 - `nextMarker`: `str`
 
 ## ListAuditFindingsResponseTypeDef
@@ -2680,8 +2595,7 @@ from mypy_boto3_iot.type_defs import ListAuditFindingsResponseTypeDef
 
 Optional fields:
 
-- `findings`:
-  `List`\[[AuditFindingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditfindingtypedef)\]
+- `findings`: `List`\[[AuditFindingTypeDef](./type_defs.md#auditfindingtypedef)\]
 - `nextToken`: `str`
 
 ## ListAuditMitigationActionsExecutionsResponseTypeDef
@@ -2693,7 +2607,7 @@ from mypy_boto3_iot.type_defs import ListAuditMitigationActionsExecutionsRespons
 Optional fields:
 
 - `actionsExecutions`:
-  `List`\[[AuditMitigationActionExecutionMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditmitigationactionexecutionmetadatatypedef)\]
+  `List`\[[AuditMitigationActionExecutionMetadataTypeDef](./type_defs.md#auditmitigationactionexecutionmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListAuditMitigationActionsTasksResponseTypeDef
@@ -2705,7 +2619,7 @@ from mypy_boto3_iot.type_defs import ListAuditMitigationActionsTasksResponseType
 Optional fields:
 
 - `tasks`:
-  `List`\[[AuditMitigationActionsTaskMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditmitigationactionstaskmetadatatypedef)\]
+  `List`\[[AuditMitigationActionsTaskMetadataTypeDef](./type_defs.md#auditmitigationactionstaskmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListAuditSuppressionsResponseTypeDef
@@ -2717,7 +2631,7 @@ from mypy_boto3_iot.type_defs import ListAuditSuppressionsResponseTypeDef
 Optional fields:
 
 - `suppressions`:
-  `List`\[[AuditSuppressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#auditsuppressiontypedef)\]
+  `List`\[[AuditSuppressionTypeDef](./type_defs.md#auditsuppressiontypedef)\]
 - `nextToken`: `str`
 
 ## ListAuditTasksResponseTypeDef
@@ -2729,7 +2643,7 @@ from mypy_boto3_iot.type_defs import ListAuditTasksResponseTypeDef
 Optional fields:
 
 - `tasks`:
-  `List`\[[AuditTaskMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#audittaskmetadatatypedef)\]
+  `List`\[[AuditTaskMetadataTypeDef](./type_defs.md#audittaskmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListAuthorizersResponseTypeDef
@@ -2741,7 +2655,7 @@ from mypy_boto3_iot.type_defs import ListAuthorizersResponseTypeDef
 Optional fields:
 
 - `authorizers`:
-  `List`\[[AuthorizerSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#authorizersummarytypedef)\]
+  `List`\[[AuthorizerSummaryTypeDef](./type_defs.md#authorizersummarytypedef)\]
 - `nextMarker`: `str`
 
 ## ListBillingGroupsResponseTypeDef
@@ -2753,7 +2667,7 @@ from mypy_boto3_iot.type_defs import ListBillingGroupsResponseTypeDef
 Optional fields:
 
 - `billingGroups`:
-  `List`\[[GroupNameAndArnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#groupnameandarntypedef)\]
+  `List`\[[GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef)\]
 - `nextToken`: `str`
 
 ## ListCACertificatesResponseTypeDef
@@ -2765,7 +2679,7 @@ from mypy_boto3_iot.type_defs import ListCACertificatesResponseTypeDef
 Optional fields:
 
 - `certificates`:
-  `List`\[[CACertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#cacertificatetypedef)\]
+  `List`\[[CACertificateTypeDef](./type_defs.md#cacertificatetypedef)\]
 - `nextMarker`: `str`
 
 ## ListCertificatesByCAResponseTypeDef
@@ -2777,7 +2691,7 @@ from mypy_boto3_iot.type_defs import ListCertificatesByCAResponseTypeDef
 Optional fields:
 
 - `certificates`:
-  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#certificatetypedef)\]
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `nextMarker`: `str`
 
 ## ListCertificatesResponseTypeDef
@@ -2789,7 +2703,7 @@ from mypy_boto3_iot.type_defs import ListCertificatesResponseTypeDef
 Optional fields:
 
 - `certificates`:
-  `List`\[[CertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#certificatetypedef)\]
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `nextMarker`: `str`
 
 ## ListCustomMetricsResponseTypeDef
@@ -2812,7 +2726,7 @@ from mypy_boto3_iot.type_defs import ListDetectMitigationActionsExecutionsRespon
 Optional fields:
 
 - `actionsExecutions`:
-  `List`\[[DetectMitigationActionExecutionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#detectmitigationactionexecutiontypedef)\]
+  `List`\[[DetectMitigationActionExecutionTypeDef](./type_defs.md#detectmitigationactionexecutiontypedef)\]
 - `nextToken`: `str`
 
 ## ListDetectMitigationActionsTasksResponseTypeDef
@@ -2824,7 +2738,7 @@ from mypy_boto3_iot.type_defs import ListDetectMitigationActionsTasksResponseTyp
 Optional fields:
 
 - `tasks`:
-  `List`\[[DetectMitigationActionsTaskSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#detectmitigationactionstasksummarytypedef)\]
+  `List`\[[DetectMitigationActionsTaskSummaryTypeDef](./type_defs.md#detectmitigationactionstasksummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListDimensionsResponseTypeDef
@@ -2847,7 +2761,7 @@ from mypy_boto3_iot.type_defs import ListDomainConfigurationsResponseTypeDef
 Optional fields:
 
 - `domainConfigurations`:
-  `List`\[[DomainConfigurationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#domainconfigurationsummarytypedef)\]
+  `List`\[[DomainConfigurationSummaryTypeDef](./type_defs.md#domainconfigurationsummarytypedef)\]
 - `nextMarker`: `str`
 
 ## ListIndicesResponseTypeDef
@@ -2870,7 +2784,7 @@ from mypy_boto3_iot.type_defs import ListJobExecutionsForJobResponseTypeDef
 Optional fields:
 
 - `executionSummaries`:
-  `List`\[[JobExecutionSummaryForJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutionsummaryforjobtypedef)\]
+  `List`\[[JobExecutionSummaryForJobTypeDef](./type_defs.md#jobexecutionsummaryforjobtypedef)\]
 - `nextToken`: `str`
 
 ## ListJobExecutionsForThingResponseTypeDef
@@ -2882,7 +2796,7 @@ from mypy_boto3_iot.type_defs import ListJobExecutionsForThingResponseTypeDef
 Optional fields:
 
 - `executionSummaries`:
-  `List`\[[JobExecutionSummaryForThingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobexecutionsummaryforthingtypedef)\]
+  `List`\[[JobExecutionSummaryForThingTypeDef](./type_defs.md#jobexecutionsummaryforthingtypedef)\]
 - `nextToken`: `str`
 
 ## ListJobsResponseTypeDef
@@ -2893,8 +2807,7 @@ from mypy_boto3_iot.type_defs import ListJobsResponseTypeDef
 
 Optional fields:
 
-- `jobs`:
-  `List`\[[JobSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#jobsummarytypedef)\]
+- `jobs`: `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListMitigationActionsResponseTypeDef
@@ -2906,7 +2819,7 @@ from mypy_boto3_iot.type_defs import ListMitigationActionsResponseTypeDef
 Optional fields:
 
 - `actionIdentifiers`:
-  `List`\[[MitigationActionIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#mitigationactionidentifiertypedef)\]
+  `List`\[[MitigationActionIdentifierTypeDef](./type_defs.md#mitigationactionidentifiertypedef)\]
 - `nextToken`: `str`
 
 ## ListOTAUpdatesResponseTypeDef
@@ -2918,7 +2831,7 @@ from mypy_boto3_iot.type_defs import ListOTAUpdatesResponseTypeDef
 Optional fields:
 
 - `otaUpdates`:
-  `List`\[[OTAUpdateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#otaupdatesummarytypedef)\]
+  `List`\[[OTAUpdateSummaryTypeDef](./type_defs.md#otaupdatesummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListOutgoingCertificatesResponseTypeDef
@@ -2930,7 +2843,7 @@ from mypy_boto3_iot.type_defs import ListOutgoingCertificatesResponseTypeDef
 Optional fields:
 
 - `outgoingCertificates`:
-  `List`\[[OutgoingCertificateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#outgoingcertificatetypedef)\]
+  `List`\[[OutgoingCertificateTypeDef](./type_defs.md#outgoingcertificatetypedef)\]
 - `nextMarker`: `str`
 
 ## ListPoliciesResponseTypeDef
@@ -2941,8 +2854,7 @@ from mypy_boto3_iot.type_defs import ListPoliciesResponseTypeDef
 
 Optional fields:
 
-- `policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policytypedef)\]
+- `policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 - `nextMarker`: `str`
 
 ## ListPolicyPrincipalsResponseTypeDef
@@ -2965,7 +2877,7 @@ from mypy_boto3_iot.type_defs import ListPolicyVersionsResponseTypeDef
 Optional fields:
 
 - `policyVersions`:
-  `List`\[[PolicyVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policyversiontypedef)\]
+  `List`\[[PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)\]
 
 ## ListPrincipalPoliciesResponseTypeDef
 
@@ -2975,8 +2887,7 @@ from mypy_boto3_iot.type_defs import ListPrincipalPoliciesResponseTypeDef
 
 Optional fields:
 
-- `policies`:
-  `List`\[[PolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policytypedef)\]
+- `policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
 - `nextMarker`: `str`
 
 ## ListPrincipalThingsResponseTypeDef
@@ -2999,7 +2910,7 @@ from mypy_boto3_iot.type_defs import ListProvisioningTemplateVersionsResponseTyp
 Optional fields:
 
 - `versions`:
-  `List`\[[ProvisioningTemplateVersionSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#provisioningtemplateversionsummarytypedef)\]
+  `List`\[[ProvisioningTemplateVersionSummaryTypeDef](./type_defs.md#provisioningtemplateversionsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListProvisioningTemplatesResponseTypeDef
@@ -3011,7 +2922,7 @@ from mypy_boto3_iot.type_defs import ListProvisioningTemplatesResponseTypeDef
 Optional fields:
 
 - `templates`:
-  `List`\[[ProvisioningTemplateSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#provisioningtemplatesummarytypedef)\]
+  `List`\[[ProvisioningTemplateSummaryTypeDef](./type_defs.md#provisioningtemplatesummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListRoleAliasesResponseTypeDef
@@ -3034,7 +2945,7 @@ from mypy_boto3_iot.type_defs import ListScheduledAuditsResponseTypeDef
 Optional fields:
 
 - `scheduledAudits`:
-  `List`\[[ScheduledAuditMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#scheduledauditmetadatatypedef)\]
+  `List`\[[ScheduledAuditMetadataTypeDef](./type_defs.md#scheduledauditmetadatatypedef)\]
 - `nextToken`: `str`
 
 ## ListSecurityProfilesForTargetResponseTypeDef
@@ -3046,7 +2957,7 @@ from mypy_boto3_iot.type_defs import ListSecurityProfilesForTargetResponseTypeDe
 Optional fields:
 
 - `securityProfileTargetMappings`:
-  `List`\[[SecurityProfileTargetMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#securityprofiletargetmappingtypedef)\]
+  `List`\[[SecurityProfileTargetMappingTypeDef](./type_defs.md#securityprofiletargetmappingtypedef)\]
 - `nextToken`: `str`
 
 ## ListSecurityProfilesResponseTypeDef
@@ -3058,7 +2969,7 @@ from mypy_boto3_iot.type_defs import ListSecurityProfilesResponseTypeDef
 Optional fields:
 
 - `securityProfileIdentifiers`:
-  `List`\[[SecurityProfileIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#securityprofileidentifiertypedef)\]
+  `List`\[[SecurityProfileIdentifierTypeDef](./type_defs.md#securityprofileidentifiertypedef)\]
 - `nextToken`: `str`
 
 ## ListStreamsResponseTypeDef
@@ -3070,7 +2981,7 @@ from mypy_boto3_iot.type_defs import ListStreamsResponseTypeDef
 Optional fields:
 
 - `streams`:
-  `List`\[[StreamSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#streamsummarytypedef)\]
+  `List`\[[StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -3081,8 +2992,7 @@ from mypy_boto3_iot.type_defs import ListTagsForResourceResponseTypeDef
 
 Optional fields:
 
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `nextToken`: `str`
 
 ## ListTargetsForPolicyResponseTypeDef
@@ -3105,7 +3015,7 @@ from mypy_boto3_iot.type_defs import ListTargetsForSecurityProfileResponseTypeDe
 Optional fields:
 
 - `securityProfileTargets`:
-  `List`\[[SecurityProfileTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#securityprofiletargettypedef)\]
+  `List`\[[SecurityProfileTargetTypeDef](./type_defs.md#securityprofiletargettypedef)\]
 - `nextToken`: `str`
 
 ## ListThingGroupsForThingResponseTypeDef
@@ -3117,7 +3027,7 @@ from mypy_boto3_iot.type_defs import ListThingGroupsForThingResponseTypeDef
 Optional fields:
 
 - `thingGroups`:
-  `List`\[[GroupNameAndArnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#groupnameandarntypedef)\]
+  `List`\[[GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef)\]
 - `nextToken`: `str`
 
 ## ListThingGroupsResponseTypeDef
@@ -3129,7 +3039,7 @@ from mypy_boto3_iot.type_defs import ListThingGroupsResponseTypeDef
 Optional fields:
 
 - `thingGroups`:
-  `List`\[[GroupNameAndArnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#groupnameandarntypedef)\]
+  `List`\[[GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef)\]
 - `nextToken`: `str`
 
 ## ListThingPrincipalsResponseTypeDef
@@ -3152,8 +3062,7 @@ from mypy_boto3_iot.type_defs import ListThingRegistrationTaskReportsResponseTyp
 Optional fields:
 
 - `resourceLinks`: `List`\[`str`\]
-- `reportType`:
-  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#reporttype)
+- `reportType`: [ReportType](./literals.md#reporttype)
 - `nextToken`: `str`
 
 ## ListThingRegistrationTasksResponseTypeDef
@@ -3176,7 +3085,7 @@ from mypy_boto3_iot.type_defs import ListThingTypesResponseTypeDef
 Optional fields:
 
 - `thingTypes`:
-  `List`\[[ThingTypeDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingtypedefinitiontypedef)\]
+  `List`\[[ThingTypeDefinitionTypeDef](./type_defs.md#thingtypedefinitiontypedef)\]
 - `nextToken`: `str`
 
 ## ListThingsInBillingGroupResponseTypeDef
@@ -3210,7 +3119,7 @@ from mypy_boto3_iot.type_defs import ListThingsResponseTypeDef
 Optional fields:
 
 - `things`:
-  `List`\[[ThingAttributeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingattributetypedef)\]
+  `List`\[[ThingAttributeTypeDef](./type_defs.md#thingattributetypedef)\]
 - `nextToken`: `str`
 
 ## ListTopicRuleDestinationsResponseTypeDef
@@ -3222,7 +3131,7 @@ from mypy_boto3_iot.type_defs import ListTopicRuleDestinationsResponseTypeDef
 Optional fields:
 
 - `destinationSummaries`:
-  `List`\[[TopicRuleDestinationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#topicruledestinationsummarytypedef)\]
+  `List`\[[TopicRuleDestinationSummaryTypeDef](./type_defs.md#topicruledestinationsummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListTopicRulesResponseTypeDef
@@ -3234,7 +3143,7 @@ from mypy_boto3_iot.type_defs import ListTopicRulesResponseTypeDef
 Optional fields:
 
 - `rules`:
-  `List`\[[TopicRuleListItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#topicrulelistitemtypedef)\]
+  `List`\[[TopicRuleListItemTypeDef](./type_defs.md#topicrulelistitemtypedef)\]
 - `nextToken`: `str`
 
 ## ListV2LoggingLevelsResponseTypeDef
@@ -3246,7 +3155,7 @@ from mypy_boto3_iot.type_defs import ListV2LoggingLevelsResponseTypeDef
 Optional fields:
 
 - `logTargetConfigurations`:
-  `List`\[[LogTargetConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#logtargetconfigurationtypedef)\]
+  `List`\[[LogTargetConfigurationTypeDef](./type_defs.md#logtargetconfigurationtypedef)\]
 - `nextToken`: `str`
 
 ## ListViolationEventsResponseTypeDef
@@ -3258,7 +3167,7 @@ from mypy_boto3_iot.type_defs import ListViolationEventsResponseTypeDef
 Optional fields:
 
 - `violationEvents`:
-  `List`\[[ViolationEventTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#violationeventtypedef)\]
+  `List`\[[ViolationEventTypeDef](./type_defs.md#violationeventtypedef)\]
 - `nextToken`: `str`
 
 ## LogTargetConfigurationTypeDef
@@ -3269,10 +3178,8 @@ from mypy_boto3_iot.type_defs import LogTargetConfigurationTypeDef
 
 Optional fields:
 
-- `logTarget`:
-  [LogTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#logtargettypedef)
-- `logLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#loglevel)
+- `logTarget`: [LogTargetTypeDef](./type_defs.md#logtargettypedef)
+- `logLevel`: [LogLevel](./literals.md#loglevel)
 
 ## LogTargetTypeDef
 
@@ -3282,8 +3189,7 @@ from mypy_boto3_iot.type_defs import LogTargetTypeDef
 
 Required fields:
 
-- `targetType`:
-  [LogTargetType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#logtargettype)
+- `targetType`: [LogTargetType](./literals.md#logtargettype)
 
 Optional fields:
 
@@ -3301,8 +3207,7 @@ Required fields:
 
 Optional fields:
 
-- `logLevel`:
-  [LogLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#loglevel)
+- `logLevel`: [LogLevel](./literals.md#loglevel)
 
 ## MachineLearningDetectionConfigTypeDef
 
@@ -3312,8 +3217,7 @@ from mypy_boto3_iot.type_defs import MachineLearningDetectionConfigTypeDef
 
 Required fields:
 
-- `confidenceLevel`:
-  [ConfidenceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#confidencelevel)
+- `confidenceLevel`: [ConfidenceLevel](./literals.md#confidencelevel)
 
 ## MetricDimensionTypeDef
 
@@ -3327,8 +3231,7 @@ Required fields:
 
 Optional fields:
 
-- `operator`:
-  [DimensionValueOperator](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#dimensionvalueoperator)
+- `operator`: [DimensionValueOperator](./literals.md#dimensionvalueoperator)
 
 ## MetricToRetainTypeDef
 
@@ -3343,7 +3246,7 @@ Required fields:
 Optional fields:
 
 - `metricDimension`:
-  [MetricDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metricdimensiontypedef)
+  [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
 
 ## MetricValueTypeDef
 
@@ -3381,17 +3284,17 @@ from mypy_boto3_iot.type_defs import MitigationActionParamsTypeDef
 Optional fields:
 
 - `updateDeviceCertificateParams`:
-  [UpdateDeviceCertificateParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#updatedevicecertificateparamstypedef)
+  [UpdateDeviceCertificateParamsTypeDef](./type_defs.md#updatedevicecertificateparamstypedef)
 - `updateCACertificateParams`:
-  [UpdateCACertificateParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#updatecacertificateparamstypedef)
+  [UpdateCACertificateParamsTypeDef](./type_defs.md#updatecacertificateparamstypedef)
 - `addThingsToThingGroupParams`:
-  [AddThingsToThingGroupParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#addthingstothinggroupparamstypedef)
+  [AddThingsToThingGroupParamsTypeDef](./type_defs.md#addthingstothinggroupparamstypedef)
 - `replaceDefaultPolicyVersionParams`:
-  [ReplaceDefaultPolicyVersionParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#replacedefaultpolicyversionparamstypedef)
+  [ReplaceDefaultPolicyVersionParamsTypeDef](./type_defs.md#replacedefaultpolicyversionparamstypedef)
 - `enableIoTLoggingParams`:
-  [EnableIoTLoggingParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#enableiotloggingparamstypedef)
+  [EnableIoTLoggingParamsTypeDef](./type_defs.md#enableiotloggingparamstypedef)
 - `publishFindingToSnsParams`:
-  [PublishFindingToSnsParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#publishfindingtosnsparamstypedef)
+  [PublishFindingToSnsParamsTypeDef](./type_defs.md#publishfindingtosnsparamstypedef)
 
 ## MitigationActionTypeDef
 
@@ -3405,7 +3308,7 @@ Optional fields:
 - `id`: `str`
 - `roleArn`: `str`
 - `actionParams`:
-  [MitigationActionParamsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#mitigationactionparamstypedef)
+  [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
 
 ## MqttContextTypeDef
 
@@ -3427,10 +3330,9 @@ from mypy_boto3_iot.type_defs import NonCompliantResourceTypeDef
 
 Optional fields:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `additionalInfo`: `Dict`\[`str`, `str`\]
 
 ## OTAUpdateFileTypeDef
@@ -3444,10 +3346,8 @@ Optional fields:
 - `fileName`: `str`
 - `fileType`: `int`
 - `fileVersion`: `str`
-- `fileLocation`:
-  [FileLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#filelocationtypedef)
-- `codeSigning`:
-  [CodeSigningTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#codesigningtypedef)
+- `fileLocation`: [FileLocationTypeDef](./type_defs.md#filelocationtypedef)
+- `codeSigning`: [CodeSigningTypeDef](./type_defs.md#codesigningtypedef)
 - `attributes`: `Dict`\[`str`, `str`\]
 
 ## OTAUpdateInfoTypeDef
@@ -3464,22 +3364,18 @@ Optional fields:
 - `lastModifiedDate`: `datetime`
 - `description`: `str`
 - `targets`: `List`\[`str`\]
-- `protocols`:
-  `List`\[[ProtocolType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#protocoltype)\]
+- `protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `awsJobExecutionsRolloutConfig`:
-  [AwsJobExecutionsRolloutConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#awsjobexecutionsrolloutconfigtypedef)
+  [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
 - `awsJobPresignedUrlConfig`:
-  [AwsJobPresignedUrlConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#awsjobpresignedurlconfigtypedef)
-- `targetSelection`:
-  [TargetSelection](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#targetselection)
+  [AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef)
+- `targetSelection`: [TargetSelection](./literals.md#targetselection)
 - `otaUpdateFiles`:
-  `List`\[[OTAUpdateFileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#otaupdatefiletypedef)\]
-- `otaUpdateStatus`:
-  [OTAUpdateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#otaupdatestatus)
+  `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
+- `otaUpdateStatus`: [OTAUpdateStatus](./literals.md#otaupdatestatus)
 - `awsIotJobId`: `str`
 - `awsIotJobArn`: `str`
-- `errorInfo`:
-  [ErrorInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#errorinfotypedef)
+- `errorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
 - `additionalParameters`: `Dict`\[`str`, `str`\]
 
 ## OTAUpdateSummaryTypeDef
@@ -3637,7 +3533,7 @@ from mypy_boto3_iot.type_defs import PutAssetPropertyValueEntryTypeDef
 Required fields:
 
 - `propertyValues`:
-  `List`\[[AssetPropertyValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#assetpropertyvaluetypedef)\]
+  `List`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
 
 Optional fields:
 
@@ -3730,10 +3626,9 @@ from mypy_boto3_iot.type_defs import RelatedResourceTypeDef
 
 Optional fields:
 
-- `resourceType`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#resourcetype)
+- `resourceType`: [ResourceType](./literals.md#resourcetype)
 - `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#resourceidentifiertypedef)
+  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `additionalInfo`: `Dict`\[`str`, `str`\]
 
 ## ReplaceDefaultPolicyVersionParamsTypeDef
@@ -3744,7 +3639,8 @@ from mypy_boto3_iot.type_defs import ReplaceDefaultPolicyVersionParamsTypeDef
 
 Required fields:
 
-- `templateName`: `Literal['BLANK_POLICY']`
+- `templateName`: `Literal['BLANK_POLICY']` (see
+  [PolicyTemplateName](./literals.md#policytemplatename))
 
 ## RepublishActionTypeDef
 
@@ -3774,7 +3670,7 @@ Optional fields:
 - `cognitoIdentityPoolId`: `str`
 - `clientId`: `str`
 - `policyVersionIdentifier`:
-  [PolicyVersionIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#policyversionidentifiertypedef)
+  [PolicyVersionIdentifierTypeDef](./type_defs.md#policyversionidentifiertypedef)
 - `account`: `str`
 - `iamRoleArn`: `str`
 - `roleAliasArn`: `str`
@@ -3809,8 +3705,7 @@ Required fields:
 
 Optional fields:
 
-- `cannedAcl`:
-  [CannedAccessControlList](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#cannedaccesscontrollist)
+- `cannedAcl`: [CannedAccessControlList](./literals.md#cannedaccesscontrollist)
 
 ## S3DestinationTypeDef
 
@@ -3856,11 +3751,9 @@ Optional fields:
 
 - `scheduledAuditName`: `str`
 - `scheduledAuditArn`: `str`
-- `frequency`:
-  [AuditFrequency](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#auditfrequency)
+- `frequency`: [AuditFrequency](./literals.md#auditfrequency)
 - `dayOfMonth`: `str`
-- `dayOfWeek`:
-  [DayOfWeek](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#dayofweek)
+- `dayOfWeek`: [DayOfWeek](./literals.md#dayofweek)
 
 ## SearchIndexResponseTypeDef
 
@@ -3871,10 +3764,9 @@ from mypy_boto3_iot.type_defs import SearchIndexResponseTypeDef
 Optional fields:
 
 - `nextToken`: `str`
-- `things`:
-  `List`\[[ThingDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingdocumenttypedef)\]
+- `things`: `List`\[[ThingDocumentTypeDef](./type_defs.md#thingdocumenttypedef)\]
 - `thingGroups`:
-  `List`\[[ThingGroupDocumentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thinggroupdocumenttypedef)\]
+  `List`\[[ThingGroupDocumentTypeDef](./type_defs.md#thinggroupdocumenttypedef)\]
 
 ## SecurityProfileIdentifierTypeDef
 
@@ -3896,9 +3788,9 @@ from mypy_boto3_iot.type_defs import SecurityProfileTargetMappingTypeDef
 Optional fields:
 
 - `securityProfileIdentifier`:
-  [SecurityProfileIdentifierTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#securityprofileidentifiertypedef)
+  [SecurityProfileIdentifierTypeDef](./type_defs.md#securityprofileidentifiertypedef)
 - `target`:
-  [SecurityProfileTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#securityprofiletargettypedef)
+  [SecurityProfileTargetTypeDef](./type_defs.md#securityprofiletargettypedef)
 
 ## SecurityProfileTargetTypeDef
 
@@ -3920,7 +3812,7 @@ Optional fields:
 
 - `serverCertificateArn`: `str`
 - `serverCertificateStatus`:
-  [ServerCertificateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#servercertificatestatus)
+  [ServerCertificateStatus](./literals.md#servercertificatestatus)
 - `serverCertificateStatusDetail`: `str`
 
 ## SetDefaultAuthorizerResponseTypeDef
@@ -3971,8 +3863,7 @@ Required fields:
 
 Optional fields:
 
-- `messageFormat`:
-  [MessageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#messageformat)
+- `messageFormat`: [MessageFormat](./literals.md#messageformat)
 
 ## SqsActionTypeDef
 
@@ -4028,10 +3919,9 @@ from mypy_boto3_iot.type_defs import StartSigningJobParameterTypeDef
 Optional fields:
 
 - `signingProfileParameter`:
-  [SigningProfileParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#signingprofileparametertypedef)
+  [SigningProfileParameterTypeDef](./type_defs.md#signingprofileparametertypedef)
 - `signingProfileName`: `str`
-- `destination`:
-  [DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#destinationtypedef)
+- `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
 
 ## StartThingRegistrationTaskResponseTypeDef
 
@@ -4094,8 +3984,7 @@ from mypy_boto3_iot.type_defs import StreamFileTypeDef
 Optional fields:
 
 - `fileId`: `int`
-- `s3Location`:
-  [S3LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#s3locationtypedef)
+- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
 ## StreamInfoTypeDef
 
@@ -4109,8 +3998,7 @@ Optional fields:
 - `streamArn`: `str`
 - `streamVersion`: `int`
 - `description`: `str`
-- `files`:
-  `List`\[[StreamFileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#streamfiletypedef)\]
+- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `roleArn`: `str`
@@ -4191,8 +4079,7 @@ from mypy_boto3_iot.type_defs import TestAuthorizationResponseTypeDef
 
 Optional fields:
 
-- `authResults`:
-  `List`\[[AuthResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#authresulttypedef)\]
+- `authResults`: `List`\[[AuthResultTypeDef](./type_defs.md#authresulttypedef)\]
 
 ## TestInvokeAuthorizerResponseTypeDef
 
@@ -4248,7 +4135,7 @@ Optional fields:
 - `attributes`: `Dict`\[`str`, `str`\]
 - `shadow`: `str`
 - `connectivity`:
-  [ThingConnectivityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingconnectivitytypedef)
+  [ThingConnectivityTypeDef](./type_defs.md#thingconnectivitytypedef)
 
 ## ThingGroupDocumentTypeDef
 
@@ -4273,14 +4160,12 @@ from mypy_boto3_iot.type_defs import ThingGroupIndexingConfigurationTypeDef
 Required fields:
 
 - `thingGroupIndexingMode`:
-  [ThingGroupIndexingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#thinggroupindexingmode)
+  [ThingGroupIndexingMode](./literals.md#thinggroupindexingmode)
 
 Optional fields:
 
-- `managedFields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#fieldtypedef)\]
-- `customFields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#fieldtypedef)\]
+- `managedFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+- `customFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 ## ThingGroupMetadataTypeDef
 
@@ -4292,7 +4177,7 @@ Optional fields:
 
 - `parentGroupName`: `str`
 - `rootToParentThingGroups`:
-  `List`\[[GroupNameAndArnTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#groupnameandarntypedef)\]
+  `List`\[[GroupNameAndArnTypeDef](./type_defs.md#groupnameandarntypedef)\]
 - `creationDate`: `datetime`
 
 ## ThingGroupPropertiesTypeDef
@@ -4305,7 +4190,7 @@ Optional fields:
 
 - `thingGroupDescription`: `str`
 - `attributePayload`:
-  [AttributePayloadTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#attributepayloadtypedef)
+  [AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef)
 
 ## ThingIndexingConfigurationTypeDef
 
@@ -4315,17 +4200,14 @@ from mypy_boto3_iot.type_defs import ThingIndexingConfigurationTypeDef
 
 Required fields:
 
-- `thingIndexingMode`:
-  [ThingIndexingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#thingindexingmode)
+- `thingIndexingMode`: [ThingIndexingMode](./literals.md#thingindexingmode)
 
 Optional fields:
 
 - `thingConnectivityIndexingMode`:
-  [ThingConnectivityIndexingMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#thingconnectivityindexingmode)
-- `managedFields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#fieldtypedef)\]
-- `customFields`:
-  `List`\[[FieldTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#fieldtypedef)\]
+  [ThingConnectivityIndexingMode](./literals.md#thingconnectivityindexingmode)
+- `managedFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+- `customFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
 ## ThingTypeDefinitionTypeDef
 
@@ -4338,9 +4220,9 @@ Optional fields:
 - `thingTypeName`: `str`
 - `thingTypeArn`: `str`
 - `thingTypeProperties`:
-  [ThingTypePropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingtypepropertiestypedef)
+  [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
 - `thingTypeMetadata`:
-  [ThingTypeMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#thingtypemetadatatypedef)
+  [ThingTypeMetadataTypeDef](./type_defs.md#thingtypemetadatatypedef)
 
 ## ThingTypeMetadataTypeDef
 
@@ -4387,12 +4269,12 @@ Required fields:
 - `databaseName`: `str`
 - `tableName`: `str`
 - `dimensions`:
-  `List`\[[TimestreamDimensionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#timestreamdimensiontypedef)\]
+  `List`\[[TimestreamDimensionTypeDef](./type_defs.md#timestreamdimensiontypedef)\]
 
 Optional fields:
 
 - `timestamp`:
-  [TimestreamTimestampTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#timestreamtimestamptypedef)
+  [TimestreamTimestampTypeDef](./type_defs.md#timestreamtimestamptypedef)
 
 ## TimestreamDimensionTypeDef
 
@@ -4435,9 +4317,9 @@ from mypy_boto3_iot.type_defs import TopicRuleDestinationConfigurationTypeDef
 Optional fields:
 
 - `httpUrlConfiguration`:
-  [HttpUrlDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#httpurldestinationconfigurationtypedef)
+  [HttpUrlDestinationConfigurationTypeDef](./type_defs.md#httpurldestinationconfigurationtypedef)
 - `vpcConfiguration`:
-  [VpcDestinationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#vpcdestinationconfigurationtypedef)
+  [VpcDestinationConfigurationTypeDef](./type_defs.md#vpcdestinationconfigurationtypedef)
 
 ## TopicRuleDestinationSummaryTypeDef
 
@@ -4449,14 +4331,14 @@ Optional fields:
 
 - `arn`: `str`
 - `status`:
-  [TopicRuleDestinationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#topicruledestinationstatus)
+  [TopicRuleDestinationStatus](./literals.md#topicruledestinationstatus)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `statusReason`: `str`
 - `httpUrlSummary`:
-  [HttpUrlDestinationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#httpurldestinationsummarytypedef)
+  [HttpUrlDestinationSummaryTypeDef](./type_defs.md#httpurldestinationsummarytypedef)
 - `vpcDestinationSummary`:
-  [VpcDestinationSummaryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#vpcdestinationsummarytypedef)
+  [VpcDestinationSummaryTypeDef](./type_defs.md#vpcdestinationsummarytypedef)
 
 ## TopicRuleDestinationTypeDef
 
@@ -4468,14 +4350,14 @@ Optional fields:
 
 - `arn`: `str`
 - `status`:
-  [TopicRuleDestinationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#topicruledestinationstatus)
+  [TopicRuleDestinationStatus](./literals.md#topicruledestinationstatus)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `statusReason`: `str`
 - `httpUrlProperties`:
-  [HttpUrlDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#httpurldestinationpropertiestypedef)
+  [HttpUrlDestinationPropertiesTypeDef](./type_defs.md#httpurldestinationpropertiestypedef)
 - `vpcProperties`:
-  [VpcDestinationPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#vpcdestinationpropertiestypedef)
+  [VpcDestinationPropertiesTypeDef](./type_defs.md#vpcdestinationpropertiestypedef)
 
 ## TopicRuleListItemTypeDef
 
@@ -4500,16 +4382,14 @@ from mypy_boto3_iot.type_defs import TopicRulePayloadTypeDef
 Required fields:
 
 - `sql`: `str`
-- `actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#actiontypedef)\]
+- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
 - `description`: `str`
 - `ruleDisabled`: `bool`
 - `awsIotSqlVersion`: `str`
-- `errorAction`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#actiontypedef)
+- `errorAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
 
 ## TopicRuleTypeDef
 
@@ -4523,12 +4403,10 @@ Optional fields:
 - `sql`: `str`
 - `description`: `str`
 - `createdAt`: `datetime`
-- `actions`:
-  `List`\[[ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#actiontypedef)\]
+- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `ruleDisabled`: `bool`
 - `awsIotSqlVersion`: `str`
-- `errorAction`:
-  [ActionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#actiontypedef)
+- `errorAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
 
 ## TransferCertificateResponseTypeDef
 
@@ -4583,7 +4461,8 @@ from mypy_boto3_iot.type_defs import UpdateCACertificateParamsTypeDef
 
 Required fields:
 
-- `action`: `Literal['DEACTIVATE']`
+- `action`: `Literal['DEACTIVATE']` (see
+  [CACertificateUpdateAction](./literals.md#cacertificateupdateaction))
 
 ## UpdateCustomMetricResponseTypeDef
 
@@ -4595,8 +4474,7 @@ Optional fields:
 
 - `metricName`: `str`
 - `metricArn`: `str`
-- `metricType`:
-  [CustomMetricType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#custommetrictype)
+- `metricType`: [CustomMetricType](./literals.md#custommetrictype)
 - `displayName`: `str`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -4609,7 +4487,8 @@ from mypy_boto3_iot.type_defs import UpdateDeviceCertificateParamsTypeDef
 
 Required fields:
 
-- `action`: `Literal['DEACTIVATE']`
+- `action`: `Literal['DEACTIVATE']` (see
+  [DeviceCertificateUpdateAction](./literals.md#devicecertificateupdateaction))
 
 ## UpdateDimensionResponseTypeDef
 
@@ -4621,7 +4500,8 @@ Optional fields:
 
 - `name`: `str`
 - `arn`: `str`
-- `type`: `Literal['TOPIC_FILTER']`
+- `type`: `Literal['TOPIC_FILTER']` (see
+  [DimensionType](./literals.md#dimensiontype))
 - `stringValues`: `List`\[`str`\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -4690,13 +4570,13 @@ Optional fields:
 - `securityProfileName`: `str`
 - `securityProfileArn`: `str`
 - `securityProfileDescription`: `str`
-- `behaviors`:
-  `List`\[[BehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']`,
-  [AlertTargetTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#alerttargettypedef)\]
+- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+  [AlertTargetType](./literals.md#alerttargettype)),
+  [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
 - `additionalMetricsToRetain`: `List`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metrictoretaintypedef)\]
+  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
 - `version`: `int`
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
@@ -4734,7 +4614,7 @@ Optional fields:
 
 - `valid`: `bool`
 - `validationErrors`:
-  `List`\[[ValidationErrorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#validationerrortypedef)\]
+  `List`\[[ValidationErrorTypeDef](./type_defs.md#validationerrortypedef)\]
 
 ## ValidationErrorTypeDef
 
@@ -4754,8 +4634,7 @@ from mypy_boto3_iot.type_defs import ViolationEventAdditionalInfoTypeDef
 
 Optional fields:
 
-- `confidenceLevel`:
-  [ConfidenceLevel](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#confidencelevel)
+- `confidenceLevel`: [ConfidenceLevel](./literals.md#confidencelevel)
 
 ## ViolationEventOccurrenceRangeTypeDef
 
@@ -4779,14 +4658,11 @@ Optional fields:
 - `violationId`: `str`
 - `thingName`: `str`
 - `securityProfileName`: `str`
-- `behavior`:
-  [BehaviorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#behaviortypedef)
-- `metricValue`:
-  [MetricValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#metricvaluetypedef)
+- `behavior`: [BehaviorTypeDef](./type_defs.md#behaviortypedef)
+- `metricValue`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - `violationEventAdditionalInfo`:
-  [ViolationEventAdditionalInfoTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/type_defs.html#violationeventadditionalinfotypedef)
-- `violationEventType`:
-  [ViolationEventType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_iot/literals.html#violationeventtype)
+  [ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef)
+- `violationEventType`: [ViolationEventType](./literals.md#violationeventtype)
 - `violationEventTime`: `datetime`
 
 ## VpcDestinationConfigurationTypeDef

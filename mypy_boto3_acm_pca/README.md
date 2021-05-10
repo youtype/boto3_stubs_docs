@@ -1,6 +1,6 @@
 # Type annotations for boto3 ACMPCA module
 
-> [Index](../README.md) > ACMPCA
+> [Index](..) > ACMPCA
 
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)

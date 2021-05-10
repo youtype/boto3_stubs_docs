@@ -1,6 +1,6 @@
 # CloudHSMV2Client for boto3 CloudHSMV2 module
 
-> [Index](../README.md) > [CloudHSMV2](./README.md) > CloudHSMV2Client
+> [Index](..) > [CloudHSMV2](.) > CloudHSMV2Client
 
 Auto-generated documentation for
 [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
@@ -94,11 +94,10 @@ Arguments:
 
 - `DestinationRegion`: `str` *(required)*
 - `BackupId`: `str` *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyBackupToRegionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#copybackuptoregionresponsetypedef).
+[CopyBackupToRegionResponseTypeDef](./type_defs.md#copybackuptoregionresponsetypedef).
 
 ### create_cluster
 
@@ -112,13 +111,12 @@ Arguments:
 - `HsmType`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `BackupRetentionPolicy`:
-  [BackupRetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backupretentionpolicytypedef)
+  [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
 - `SourceBackupId`: `str`
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#createclusterresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_hsm
 
@@ -133,8 +131,7 @@ Arguments:
 - `AvailabilityZone`: `str` *(required)*
 - `IpAddress`: `str`
 
-Returns
-[CreateHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#createhsmresponsetypedef).
+Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
 ### delete_backup
 
@@ -148,7 +145,7 @@ Arguments:
 - `BackupId`: `str` *(required)*
 
 Returns
-[DeleteBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#deletebackupresponsetypedef).
+[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
 ### delete_cluster
 
@@ -162,7 +159,7 @@ Arguments:
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#deleteclusterresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_hsm
 
@@ -178,8 +175,7 @@ Arguments:
 - `EniId`: `str`
 - `EniIp`: `str`
 
-Returns
-[DeleteHsmResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#deletehsmresponsetypedef).
+Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 
 ### describe_backups
 
@@ -196,7 +192,7 @@ Arguments:
 - `SortAscending`: `bool`
 
 Returns
-[DescribeBackupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#describebackupsresponsetypedef).
+[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
 ### describe_clusters
 
@@ -212,7 +208,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeClustersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#describeclustersresponsetypedef).
+[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
 ### generate_presigned_url
 
@@ -245,7 +241,7 @@ Arguments:
 - `TrustAnchor`: `str` *(required)*
 
 Returns
-[InitializeClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#initializeclusterresponsetypedef).
+[InitializeClusterResponseTypeDef](./type_defs.md#initializeclusterresponsetypedef).
 
 ### list_tags
 
@@ -260,8 +256,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#listtagsresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### modify_backup_attributes
 
@@ -277,7 +272,7 @@ Arguments:
 - `NeverExpires`: `bool` *(required)*
 
 Returns
-[ModifyBackupAttributesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#modifybackupattributesresponsetypedef).
+[ModifyBackupAttributesResponseTypeDef](./type_defs.md#modifybackupattributesresponsetypedef).
 
 ### modify_cluster
 
@@ -289,12 +284,12 @@ Boto3 documentation:
 Arguments:
 
 - `BackupRetentionPolicy`:
-  [BackupRetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#backupretentionpolicytypedef)
+  [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
   *(required)*
 - `ClusterId`: `str` *(required)*
 
 Returns
-[ModifyClusterResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#modifyclusterresponsetypedef).
+[ModifyClusterResponseTypeDef](./type_defs.md#modifyclusterresponsetypedef).
 
 ### restore_backup
 
@@ -308,7 +303,7 @@ Arguments:
 - `BackupId`: `str` *(required)*
 
 Returns
-[RestoreBackupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#restorebackupresponsetypedef).
+[RestoreBackupResponseTypeDef](./type_defs.md#restorebackupresponsetypedef).
 
 ### tag_resource
 
@@ -320,9 +315,7 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagList`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_cloudhsmv2/type_defs.html#tagtypedef)\]
-  *(required)*
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

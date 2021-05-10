@@ -1,6 +1,6 @@
 # Type annotations for boto3 Polly module
 
-> [Index](../README.md) > Polly
+> [Index](..) > Polly
 
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
@@ -128,7 +128,7 @@ from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef, ...
 - [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef)
 - [ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef)
 - [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
 - [SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef)

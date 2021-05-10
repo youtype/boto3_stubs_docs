@@ -1,6 +1,6 @@
 # Type annotations for boto3 MediaStore module
 
-> [Index](../README.md) > MediaStore
+> [Index](..) > MediaStore
 
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
@@ -121,5 +121,5 @@ from mypy_boto3_mediastore.type_defs import ContainerTypeDef, ...
 - [MetricPolicyRuleTypeDef](./type_defs.md#metricpolicyruletypedef)
 - [MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)

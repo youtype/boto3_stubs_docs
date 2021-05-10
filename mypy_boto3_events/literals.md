@@ -1,6 +1,6 @@
 # Literals for boto3 EventBridge module
 
-> [Index](../README.md) > [EventBridge](./README.md) > Literals
+> [Index](..) > [EventBridge](.) > Literals
 
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)

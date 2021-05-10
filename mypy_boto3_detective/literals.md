@@ -1,6 +1,6 @@
 # Literals for boto3 Detective module
 
-> [Index](../README.md) > [Detective](./README.md) > Literals
+> [Index](..) > [Detective](.) > Literals
 
 Auto-generated documentation for
 [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)

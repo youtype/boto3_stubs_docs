@@ -1,6 +1,6 @@
 # Paginators for boto3 Route53 module
 
-> [Index](../README.md) > [Route53](./README.md) > Paginators
+> [Index](..) > [Route53](.) > Paginators
 
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
@@ -34,10 +34,10 @@ Boto3 documentation:
 Arguments for `ListHealthChecksPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHealthChecksPaginator.paginate` returns
-`Iterator`\[[ListHealthChecksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listhealthchecksresponsetypedef)\].
+`Iterator`\[[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)\].
 
 ## ListHostedZonesPaginator
 
@@ -60,10 +60,10 @@ Arguments for `ListHostedZonesPaginator.paginate` method:
 
 - `DelegationSetId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHostedZonesPaginator.paginate` returns
-`Iterator`\[[ListHostedZonesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listhostedzonesresponsetypedef)\].
+`Iterator`\[[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)\].
 
 ## ListQueryLoggingConfigsPaginator
 
@@ -86,10 +86,10 @@ Arguments for `ListQueryLoggingConfigsPaginator.paginate` method:
 
 - `HostedZoneId`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueryLoggingConfigsPaginator.paginate` returns
-`Iterator`\[[ListQueryLoggingConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listqueryloggingconfigsresponsetypedef)\].
+`Iterator`\[[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)\].
 
 ## ListResourceRecordSetsPaginator
 
@@ -112,10 +112,10 @@ Arguments for `ListResourceRecordSetsPaginator.paginate` method:
 
 - `HostedZoneId`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceRecordSetsPaginator.paginate` returns
-`Iterator`\[[ListResourceRecordSetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listresourcerecordsetsresponsetypedef)\].
+`Iterator`\[[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)\].
 
 ## ListVPCAssociationAuthorizationsPaginator
 
@@ -139,7 +139,7 @@ Arguments for `ListVPCAssociationAuthorizationsPaginator.paginate` method:
 - `HostedZoneId`: `str` *(required)*
 - `MaxResults`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVPCAssociationAuthorizationsPaginator.paginate` returns
-`Iterator`\[[ListVPCAssociationAuthorizationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_route53/type_defs.html#listvpcassociationauthorizationsresponsetypedef)\].
+`Iterator`\[[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef)\].

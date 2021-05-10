@@ -1,6 +1,6 @@
 # Literals for boto3 IoTSiteWise module
 
-> [Index](../README.md) > [IoTSiteWise](./README.md) > Literals
+> [Index](..) > [IoTSiteWise](.) > Literals
 
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)

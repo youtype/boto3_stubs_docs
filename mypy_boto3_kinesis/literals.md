@@ -1,6 +1,6 @@
 # Literals for boto3 Kinesis module
 
-> [Index](../README.md) > [Kinesis](./README.md) > Literals
+> [Index](..) > [Kinesis](.) > Literals
 
 Auto-generated documentation for
 [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)

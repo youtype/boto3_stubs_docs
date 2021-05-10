@@ -1,6 +1,6 @@
 # MediaTailorClient for boto3 MediaTailor module
 
-> [Index](../README.md) > [MediaTailor](./README.md) > MediaTailorClient
+> [Index](..) > [MediaTailor](.) > MediaTailorClient
 
 Auto-generated documentation for
 [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
@@ -105,13 +105,14 @@ Arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#requestoutputitemtypedef)\]
+  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
-- `PlaybackMode`: `Literal['LOOP']` *(required)*
+- `PlaybackMode`: `Literal['LOOP']` (see
+  [PlaybackMode](./literals.md#playbackmode)) *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#createchannelresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_program
 
@@ -125,15 +126,14 @@ Arguments:
 - `ChannelName`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
 - `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#scheduleconfigurationtypedef)
+  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
-- `AdBreaks`:
-  `List`\[[AdBreakTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#adbreaktypedef)\]
+- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 Returns
-[CreateProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#createprogramresponsetypedef).
+[CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
 
 ### create_source_location
 
@@ -146,17 +146,17 @@ Boto3 documentation:
 Arguments:
 
 - `HttpConfiguration`:
-  [HttpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httpconfigurationtypedef)
+  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `AccessConfiguration`:
-  [AccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#accessconfigurationtypedef)
+  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#defaultsegmentdeliveryconfigurationtypedef)
+  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSourceLocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#createsourcelocationresponsetypedef).
+[CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
 
 ### create_vod_source
 
@@ -168,14 +168,14 @@ Boto3 documentation:
 Arguments:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httppackageconfigurationtypedef)\]
+  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateVodSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#createvodsourceresponsetypedef).
+[CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
 
 ### delete_channel
 
@@ -272,7 +272,7 @@ Arguments:
 - `ChannelName`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#describechannelresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_program
 
@@ -287,7 +287,7 @@ Arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DescribeProgramResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#describeprogramresponsetypedef).
+[DescribeProgramResponseTypeDef](./type_defs.md#describeprogramresponsetypedef).
 
 ### describe_source_location
 
@@ -302,7 +302,7 @@ Arguments:
 - `SourceLocationName`: `str` *(required)*
 
 Returns
-[DescribeSourceLocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#describesourcelocationresponsetypedef).
+[DescribeSourceLocationResponseTypeDef](./type_defs.md#describesourcelocationresponsetypedef).
 
 ### describe_vod_source
 
@@ -317,7 +317,7 @@ Arguments:
 - `VodSourceName`: `str` *(required)*
 
 Returns
-[DescribeVodSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#describevodsourceresponsetypedef).
+[DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -348,7 +348,7 @@ Arguments:
 - `ChannelName`: `str` *(required)*
 
 Returns
-[GetChannelPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#getchannelpolicyresponsetypedef).
+[GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef).
 
 ### get_channel_schedule
 
@@ -365,7 +365,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[GetChannelScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#getchannelscheduleresponsetypedef).
+[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef).
 
 ### get_playback_configuration
 
@@ -380,7 +380,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetPlaybackConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#getplaybackconfigurationresponsetypedef).
+[GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
 
 ### list_channels
 
@@ -395,7 +395,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listchannelsresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_playback_configurations
 
@@ -411,7 +411,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlaybackConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listplaybackconfigurationsresponsetypedef).
+[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef).
 
 ### list_source_locations
 
@@ -427,7 +427,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSourceLocationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listsourcelocationsresponsetypedef).
+[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -442,7 +442,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_vod_sources
 
@@ -458,7 +458,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListVodSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listvodsourcesresponsetypedef).
+[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef).
 
 ### put_channel_policy
 
@@ -486,18 +486,17 @@ Arguments:
 
 - `AdDecisionServerUrl`: `str`
 - `AvailSuppression`:
-  [AvailSuppressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#availsuppressiontypedef)
-- `Bumper`:
-  [BumperTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#bumpertypedef)
+  [AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef)
+- `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
 - `CdnConfiguration`:
-  [CdnConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#cdnconfigurationtypedef)
+  [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
 - `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
 - `DashConfiguration`:
-  [DashConfigurationForPutTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#dashconfigurationforputtypedef)
+  [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
 - `LivePreRollConfiguration`:
-  [LivePreRollConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#liveprerollconfigurationtypedef)
+  [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
 - `ManifestProcessingRules`:
-  [ManifestProcessingRulesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#manifestprocessingrulestypedef)
+  [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `SlateAdUrl`: `str`
@@ -506,7 +505,7 @@ Arguments:
 - `VideoContentSourceUrl`: `str`
 
 Returns
-[PutPlaybackConfigurationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#putplaybackconfigurationresponsetypedef).
+[PutPlaybackConfigurationResponseTypeDef](./type_defs.md#putplaybackconfigurationresponsetypedef).
 
 ### start_channel
 
@@ -569,11 +568,11 @@ Arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#requestoutputitemtypedef)\]
+  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
 
 Returns
-[UpdateChannelResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#updatechannelresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_source_location
 
@@ -586,16 +585,16 @@ Boto3 documentation:
 Arguments:
 
 - `HttpConfiguration`:
-  [HttpConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httpconfigurationtypedef)
+  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `AccessConfiguration`:
-  [AccessConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#accessconfigurationtypedef)
+  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#defaultsegmentdeliveryconfigurationtypedef)
+  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
 
 Returns
-[UpdateSourceLocationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#updatesourcelocationresponsetypedef).
+[UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef).
 
 ### update_vod_source
 
@@ -607,13 +606,13 @@ Boto3 documentation:
 Arguments:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#httppackageconfigurationtypedef)\]
+  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
 
 Returns
-[UpdateVodSourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#updatevodsourceresponsetypedef).
+[UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef).
 
 ### get_paginator
 

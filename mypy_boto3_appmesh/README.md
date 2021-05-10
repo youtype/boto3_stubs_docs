@@ -1,6 +1,6 @@
 # Type annotations for boto3 AppMesh module
 
-> [Index](../README.md) > AppMesh
+> [Index](..) > AppMesh
 
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
@@ -243,7 +243,7 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PortMappingTypeDef](./type_defs.md#portmappingtypedef)
 - [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RouteDataTypeDef](./type_defs.md#routedatatypedef)
 - [RouteRefTypeDef](./type_defs.md#routereftypedef)
 - [RouteSpecTypeDef](./type_defs.md#routespectypedef)

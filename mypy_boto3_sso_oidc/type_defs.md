@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 SSOOIDC module
 
-> [Index](../README.md) > [SSOOIDC](./README.md) > Structures
+> [Index](..) > [SSOOIDC](.) > Typed dictionaries
 
 Auto-generated documentation for
 [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)

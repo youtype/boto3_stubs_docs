@@ -1,6 +1,6 @@
 # Literals for boto3 Personalize module
 
-> [Index](../README.md) > [Personalize](./README.md) > Literals
+> [Index](..) > [Personalize](.) > Literals
 
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)

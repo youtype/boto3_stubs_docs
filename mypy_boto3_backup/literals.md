@@ -1,6 +1,6 @@
 # Literals for boto3 Backup module
 
-> [Index](../README.md) > [Backup](./README.md) > Literals
+> [Index](..) > [Backup](.) > Literals
 
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)

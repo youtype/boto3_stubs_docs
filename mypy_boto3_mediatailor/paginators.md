@@ -1,6 +1,6 @@
 # Paginators for boto3 MediaTailor module
 
-> [Index](../README.md) > [MediaTailor](./README.md) > Paginators
+> [Index](..) > [MediaTailor](.) > Paginators
 
 Auto-generated documentation for
 [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
@@ -36,10 +36,10 @@ Arguments for `GetChannelSchedulePaginator.paginate` method:
 - `ChannelName`: `str` *(required)*
 - `DurationMinutes`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetChannelSchedulePaginator.paginate` returns
-`Iterator`\[[GetChannelScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#getchannelscheduleresponsetypedef)\].
+`Iterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
 
 ## ListChannelsPaginator
 
@@ -61,10 +61,10 @@ Boto3 documentation:
 Arguments for `ListChannelsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listchannelsresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListPlaybackConfigurationsPaginator
 
@@ -86,10 +86,10 @@ Boto3 documentation:
 Arguments for `ListPlaybackConfigurationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaybackConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListPlaybackConfigurationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listplaybackconfigurationsresponsetypedef)\].
+`Iterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
 
 ## ListSourceLocationsPaginator
 
@@ -111,10 +111,10 @@ Boto3 documentation:
 Arguments for `ListSourceLocationsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSourceLocationsPaginator.paginate` returns
-`Iterator`\[[ListSourceLocationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listsourcelocationsresponsetypedef)\].
+`Iterator`\[[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)\].
 
 ## ListVodSourcesPaginator
 
@@ -137,7 +137,7 @@ Arguments for `ListVodSourcesPaginator.paginate` method:
 
 - `SourceLocationName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVodSourcesPaginator.paginate` returns
-`Iterator`\[[ListVodSourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediatailor/type_defs.html#listvodsourcesresponsetypedef)\].
+`Iterator`\[[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)\].

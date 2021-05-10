@@ -1,6 +1,6 @@
 # Literals for boto3 LexModelBuildingService module
 
-> [Index](../README.md) > [LexModelBuildingService](./README.md) > Literals
+> [Index](..) > [LexModelBuildingService](.) > Literals
 
 Auto-generated documentation for
 [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)

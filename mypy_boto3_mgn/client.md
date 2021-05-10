@@ -1,6 +1,6 @@
 # mgnClient for boto3 mgn module
 
-> [Index](../README.md) > [mgn](./README.md) > mgnClient
+> [Index](..) > [mgn](.) > mgnClient
 
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
@@ -105,12 +105,11 @@ Boto3 documentation:
 Arguments:
 
 - `lifeCycle`:
-  [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#changeserverlifecyclestatesourceserverlifecycletypedef)
+  [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef)
   *(required)*
 - `sourceServerID`: `str` *(required)*
 
-Returns
-[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
+Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 
 ### create_replication_configuration_template
 
@@ -126,13 +125,13 @@ Arguments:
 - `bandwidthThrottling`: `int` *(required)*
 - `createPublicIP`: `bool` *(required)*
 - `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+  [ReplicationConfigurationDataPlaneRouting](./literals.md#replicationconfigurationdataplanerouting)
   *(required)*
 - `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+  [ReplicationConfigurationDefaultLargeStagingDiskType](./literals.md#replicationconfigurationdefaultlargestagingdisktype)
   *(required)*
 - `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
+  [ReplicationConfigurationEbsEncryption](./literals.md#replicationconfigurationebsencryption)
   *(required)*
 - `replicationServerInstanceType`: `str` *(required)*
 - `replicationServersSecurityGroupsIDs`: `List`\[`str`\] *(required)*
@@ -143,7 +142,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ReplicationConfigurationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtemplatetypedef).
+[ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef).
 
 ### delete_job
 
@@ -199,7 +198,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobLogItemsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejoblogitemsresponsetypedef).
+[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef).
 
 ### describe_jobs
 
@@ -211,13 +210,13 @@ Boto3 documentation:
 Arguments:
 
 - `filters`:
-  [DescribeJobsRequestFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejobsrequestfilterstypedef)
+  [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
   *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describejobsresponsetypedef).
+[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
 ### describe_replication_configuration_templates
 
@@ -234,7 +233,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeReplicationConfigurationTemplatesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describereplicationconfigurationtemplatesresponsetypedef).
+[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef).
 
 ### describe_source_servers
 
@@ -246,13 +245,13 @@ Boto3 documentation:
 Arguments:
 
 - `filters`:
-  [DescribeSourceServersRequestFiltersTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describesourceserversrequestfilterstypedef)
+  [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
   *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[DescribeSourceServersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#describesourceserversresponsetypedef).
+[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
 
 ### disconnect_from_service
 
@@ -265,8 +264,7 @@ Arguments:
 
 - `sourceServerID`: `str` *(required)*
 
-Returns
-[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
+Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 
 ### finalize_cutover
 
@@ -279,8 +277,7 @@ Arguments:
 
 - `sourceServerID`: `str` *(required)*
 
-Returns
-[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
+Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 
 ### generate_presigned_url
 
@@ -310,7 +307,7 @@ Arguments:
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[LaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#launchconfigurationtypedef).
+[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
 
 ### get_replication_configuration
 
@@ -325,7 +322,7 @@ Arguments:
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtypedef).
+[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
 ### initialize_service
 
@@ -348,7 +345,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### mark_as_archived
 
@@ -361,8 +358,7 @@ Arguments:
 
 - `sourceServerID`: `str` *(required)*
 
-Returns
-[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
+Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 
 ### retry_data_replication
 
@@ -375,8 +371,7 @@ Arguments:
 
 - `sourceServerID`: `str` *(required)*
 
-Returns
-[SourceServerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#sourceservertypedef).
+Returns [SourceServerTypeDef](./type_defs.md#sourceservertypedef).
 
 ### start_cutover
 
@@ -391,7 +386,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartCutoverResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#startcutoverresponsetypedef).
+[StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef).
 
 ### start_test
 
@@ -405,8 +400,7 @@ Arguments:
 - `sourceServerIDs`: `List`\[`str`\] *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[StartTestResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#starttestresponsetypedef).
+Returns [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef).
 
 ### tag_resource
 
@@ -433,7 +427,7 @@ Arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[TerminateTargetInstancesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#terminatetargetinstancesresponsetypedef).
+[TerminateTargetInstancesResponseTypeDef](./type_defs.md#terminatetargetinstancesresponsetypedef).
 
 ### untag_resource
 
@@ -459,16 +453,14 @@ Arguments:
 - `sourceServerID`: `str` *(required)*
 - `copyPrivateIp`: `bool`
 - `copyTags`: `bool`
-- `launchDisposition`:
-  [LaunchDisposition](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#launchdisposition)
-- `licensing`:
-  [LicensingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#licensingtypedef)
+- `launchDisposition`: [LaunchDisposition](./literals.md#launchdisposition)
+- `licensing`: [LicensingTypeDef](./type_defs.md#licensingtypedef)
 - `name`: `str`
 - `targetInstanceTypeRightSizingMethod`:
-  [TargetInstanceTypeRightSizingMethod](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#targetinstancetyperightsizingmethod)
+  [TargetInstanceTypeRightSizingMethod](./literals.md#targetinstancetyperightsizingmethod)
 
 Returns
-[LaunchConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#launchconfigurationtypedef).
+[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
 
 ### update_replication_configuration
 
@@ -485,15 +477,15 @@ Arguments:
 - `bandwidthThrottling`: `int`
 - `createPublicIP`: `bool`
 - `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+  [ReplicationConfigurationDataPlaneRouting](./literals.md#replicationconfigurationdataplanerouting)
 - `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+  [ReplicationConfigurationDefaultLargeStagingDiskType](./literals.md#replicationconfigurationdefaultlargestagingdisktype)
 - `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
+  [ReplicationConfigurationEbsEncryption](./literals.md#replicationconfigurationebsencryption)
 - `ebsEncryptionKeyArn`: `str`
 - `name`: `str`
 - `replicatedDisks`:
-  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationreplicateddisktypedef)\]
+  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
 - `replicationServerInstanceType`: `str`
 - `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
 - `stagingAreaSubnetId`: `str`
@@ -501,7 +493,7 @@ Arguments:
 - `useDedicatedReplicationServer`: `bool`
 
 Returns
-[ReplicationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtypedef).
+[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
 ### update_replication_configuration_template
 
@@ -519,11 +511,11 @@ Arguments:
 - `bandwidthThrottling`: `int`
 - `createPublicIP`: `bool`
 - `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRouting](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdataplanerouting)
+  [ReplicationConfigurationDataPlaneRouting](./literals.md#replicationconfigurationdataplanerouting)
 - `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationdefaultlargestagingdisktype)
+  [ReplicationConfigurationDefaultLargeStagingDiskType](./literals.md#replicationconfigurationdefaultlargestagingdisktype)
 - `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/literals.html#replicationconfigurationebsencryption)
+  [ReplicationConfigurationEbsEncryption](./literals.md#replicationconfigurationebsencryption)
 - `ebsEncryptionKeyArn`: `str`
 - `replicationServerInstanceType`: `str`
 - `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
@@ -532,7 +524,7 @@ Arguments:
 - `useDedicatedReplicationServer`: `bool`
 
 Returns
-[ReplicationConfigurationTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mgn/type_defs.html#replicationconfigurationtemplatetypedef).
+[ReplicationConfigurationTemplateTypeDef](./type_defs.md#replicationconfigurationtemplatetypedef).
 
 ### get_paginator
 

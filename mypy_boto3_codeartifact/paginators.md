@@ -1,6 +1,6 @@
 # Paginators for boto3 CodeArtifact module
 
-> [Index](../README.md) > [CodeArtifact](./README.md) > Paginators
+> [Index](..) > [CodeArtifact](.) > Paginators
 
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
@@ -35,10 +35,10 @@ Boto3 documentation:
 Arguments for `ListDomainsPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[ListDomainsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listdomainsresulttypedef)\].
+`Iterator`\[[ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)\].
 
 ## ListPackageVersionAssetsPaginator
 
@@ -61,18 +61,16 @@ Arguments for `ListPackageVersionAssetsPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
-- `format`:
-  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
-  *(required)*
+- `format`: [PackageFormat](./literals.md#packageformat) *(required)*
 - `package`: `str` *(required)*
 - `packageVersion`: `str` *(required)*
 - `domainOwner`: `str`
 - `namespace`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackageVersionAssetsPaginator.paginate` returns
-`Iterator`\[[ListPackageVersionAssetsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackageversionassetsresulttypedef)\].
+`Iterator`\[[ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef)\].
 
 ## ListPackageVersionsPaginator
 
@@ -95,20 +93,18 @@ Arguments for `ListPackageVersionsPaginator.paginate` method:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
-- `format`:
-  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
-  *(required)*
+- `format`: [PackageFormat](./literals.md#packageformat) *(required)*
 - `package`: `str` *(required)*
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `status`:
-  [PackageVersionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageversionstatus)
-- `sortBy`: `Literal['PUBLISHED_TIME']`
+- `status`: [PackageVersionStatus](./literals.md#packageversionstatus)
+- `sortBy`: `Literal['PUBLISHED_TIME']` (see
+  [PackageVersionSortType](./literals.md#packageversionsorttype))
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackageVersionsPaginator.paginate` returns
-`Iterator`\[[ListPackageVersionsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackageversionsresulttypedef)\].
+`Iterator`\[[ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef)\].
 
 ## ListPackagesPaginator
 
@@ -132,15 +128,14 @@ Arguments for `ListPackagesPaginator.paginate` method:
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
 - `domainOwner`: `str`
-- `format`:
-  [PackageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/literals.html#packageformat)
+- `format`: [PackageFormat](./literals.md#packageformat)
 - `namespace`: `str`
 - `packagePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackagesPaginator.paginate` returns
-`Iterator`\[[ListPackagesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listpackagesresulttypedef)\].
+`Iterator`\[[ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef)\].
 
 ## ListRepositoriesPaginator
 
@@ -163,10 +158,10 @@ Arguments for `ListRepositoriesPaginator.paginate` method:
 
 - `repositoryPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRepositoriesPaginator.paginate` returns
-`Iterator`\[[ListRepositoriesResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listrepositoriesresulttypedef)\].
+`Iterator`\[[ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef)\].
 
 ## ListRepositoriesInDomainPaginator
 
@@ -192,7 +187,7 @@ Arguments for `ListRepositoriesInDomainPaginator.paginate` method:
 - `administratorAccount`: `str`
 - `repositoryPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRepositoriesInDomainPaginator.paginate` returns
-`Iterator`\[[ListRepositoriesInDomainResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codeartifact/type_defs.html#listrepositoriesindomainresulttypedef)\].
+`Iterator`\[[ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef)\].

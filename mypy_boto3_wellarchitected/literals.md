@@ -1,6 +1,6 @@
 # Literals for boto3 WellArchitected module
 
-> [Index](../README.md) > [WellArchitected](./README.md) > Literals
+> [Index](..) > [WellArchitected](.) > Literals
 
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)

@@ -1,6 +1,6 @@
 # MediaStoreClient for boto3 MediaStore module
 
-> [Index](../README.md) > [MediaStore](./README.md) > MediaStoreClient
+> [Index](..) > [MediaStore](.) > MediaStoreClient
 
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
@@ -99,11 +99,10 @@ Boto3 documentation:
 Arguments:
 
 - `ContainerName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContainerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#createcontaineroutputtypedef).
+[CreateContainerOutputTypeDef](./type_defs.md#createcontaineroutputtypedef).
 
 ### delete_container
 
@@ -184,7 +183,7 @@ Arguments:
 - `ContainerName`: `str`
 
 Returns
-[DescribeContainerOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#describecontaineroutputtypedef).
+[DescribeContainerOutputTypeDef](./type_defs.md#describecontaineroutputtypedef).
 
 ### generate_presigned_url
 
@@ -215,7 +214,7 @@ Arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetContainerPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getcontainerpolicyoutputtypedef).
+[GetContainerPolicyOutputTypeDef](./type_defs.md#getcontainerpolicyoutputtypedef).
 
 ### get_cors_policy
 
@@ -229,7 +228,7 @@ Arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetCorsPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getcorspolicyoutputtypedef).
+[GetCorsPolicyOutputTypeDef](./type_defs.md#getcorspolicyoutputtypedef).
 
 ### get_lifecycle_policy
 
@@ -243,7 +242,7 @@ Arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetLifecyclePolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getlifecyclepolicyoutputtypedef).
+[GetLifecyclePolicyOutputTypeDef](./type_defs.md#getlifecyclepolicyoutputtypedef).
 
 ### get_metric_policy
 
@@ -257,7 +256,7 @@ Arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetMetricPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#getmetricpolicyoutputtypedef).
+[GetMetricPolicyOutputTypeDef](./type_defs.md#getmetricpolicyoutputtypedef).
 
 ### list_containers
 
@@ -272,7 +271,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContainersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#listcontainersoutputtypedef).
+[ListContainersOutputTypeDef](./type_defs.md#listcontainersoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -287,7 +286,7 @@ Arguments:
 - `Resource`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### put_container_policy
 
@@ -313,8 +312,7 @@ Boto3 documentation:
 Arguments:
 
 - `ContainerName`: `str` *(required)*
-- `CorsPolicy`:
-  `List`\[[CorsRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#corsruletypedef)\]
+- `CorsPolicy`: `List`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -343,8 +341,7 @@ Boto3 documentation:
 Arguments:
 
 - `ContainerName`: `str` *(required)*
-- `MetricPolicy`:
-  [MetricPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#metricpolicytypedef)
+- `MetricPolicy`: [MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef)
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -385,9 +382,7 @@ Boto3 documentation:
 Arguments:
 
 - `Resource`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_mediastore/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -1,6 +1,6 @@
 # LexModelsV2Client for boto3 LexModelsV2 module
 
-> [Index](../README.md) > [LexModelsV2](./README.md) > LexModelsV2Client
+> [Index](..) > [LexModelsV2](.) > LexModelsV2Client
 
 Auto-generated documentation for
 [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
@@ -109,7 +109,7 @@ Arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[BuildBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#buildbotlocaleresponsetypedef).
+[BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef).
 
 ### can_paginate
 
@@ -135,16 +135,14 @@ Arguments:
 
 - `botName`: `str` *(required)*
 - `roleArn`: `str` *(required)*
-- `dataPrivacy`:
-  [DataPrivacyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dataprivacytypedef)
+- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
   *(required)*
 - `idleSessionTTLInSeconds`: `int` *(required)*
 - `description`: `str`
 - `botTags`: `Dict`\[`str`, `str`\]
 - `testBotAliasTags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotresponsetypedef).
+Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 
 ### create_bot_alias
 
@@ -160,15 +158,15 @@ Arguments:
 - `description`: `str`
 - `botVersion`: `str`
 - `botAliasLocaleSettings`: `Dict`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botaliaslocalesettingstypedef)\]
+  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#conversationlogsettingstypedef)
+  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sentimentanalysissettingstypedef)
+  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotaliasresponsetypedef).
+[CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef).
 
 ### create_bot_locale
 
@@ -184,11 +182,10 @@ Arguments:
 - `localeId`: `str` *(required)*
 - `nluIntentConfidenceThreshold`: `float` *(required)*
 - `description`: `str`
-- `voiceSettings`:
-  [VoiceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#voicesettingstypedef)
+- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
 Returns
-[CreateBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotlocaleresponsetypedef).
+[CreateBotLocaleResponseTypeDef](./type_defs.md#createbotlocaleresponsetypedef).
 
 ### create_bot_version
 
@@ -201,12 +198,12 @@ Arguments:
 
 - `botId`: `str` *(required)*
 - `botVersionLocaleSpecification`: `Dict`\[`str`,
-  [BotVersionLocaleDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botversionlocaledetailstypedef)\]
+  [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
   *(required)*
 - `description`: `str`
 
 Returns
-[CreateBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createbotversionresponsetypedef).
+[CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
 
 ### create_intent
 
@@ -224,24 +221,24 @@ Arguments:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sampleutterancetypedef)\]
+  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dialogcodehooksettingstypedef)
+  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#fulfillmentcodehooksettingstypedef)
+  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
 - `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentconfirmationsettingtypedef)
+  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
 - `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentclosingsettingtypedef)
+  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#inputcontexttypedef)\]
+  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#outputcontexttypedef)\]
+  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
-  [KendraConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#kendraconfigurationtypedef)
+  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
 Returns
-[CreateIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createintentresponsetypedef).
+[CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef).
 
 ### create_slot
 
@@ -255,7 +252,7 @@ Arguments:
 - `slotName`: `str` *(required)*
 - `slotTypeId`: `str` *(required)*
 - `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueelicitationsettingtypedef)
+  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
   *(required)*
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
@@ -263,10 +260,9 @@ Arguments:
 - `intentId`: `str` *(required)*
 - `description`: `str`
 - `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#obfuscationsettingtypedef)
+  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 
-Returns
-[CreateSlotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createslotresponsetypedef).
+Returns [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef).
 
 ### create_slot_type
 
@@ -279,18 +275,18 @@ Arguments:
 
 - `slotTypeName`: `str` *(required)*
 - `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueselectionsettingtypedef)
+  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
   *(required)*
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypevaluetypedef)\]
+  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 Returns
-[CreateSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#createslottyperesponsetypedef).
+[CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef).
 
 ### delete_bot
 
@@ -304,8 +300,7 @@ Arguments:
 - `botId`: `str` *(required)*
 - `skipResourceInUseCheck`: `bool`
 
-Returns
-[DeleteBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotresponsetypedef).
+Returns [DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef).
 
 ### delete_bot_alias
 
@@ -321,7 +316,7 @@ Arguments:
 - `skipResourceInUseCheck`: `bool`
 
 Returns
-[DeleteBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotaliasresponsetypedef).
+[DeleteBotAliasResponseTypeDef](./type_defs.md#deletebotaliasresponsetypedef).
 
 ### delete_bot_locale
 
@@ -337,7 +332,7 @@ Arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DeleteBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotlocaleresponsetypedef).
+[DeleteBotLocaleResponseTypeDef](./type_defs.md#deletebotlocaleresponsetypedef).
 
 ### delete_bot_version
 
@@ -353,7 +348,7 @@ Arguments:
 - `skipResourceInUseCheck`: `bool`
 
 Returns
-[DeleteBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#deletebotversionresponsetypedef).
+[DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef).
 
 ### delete_intent
 
@@ -411,7 +406,7 @@ Arguments:
 - `botId`: `str` *(required)*
 
 Returns
-[DescribeBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotresponsetypedef).
+[DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef).
 
 ### describe_bot_alias
 
@@ -426,7 +421,7 @@ Arguments:
 - `botId`: `str` *(required)*
 
 Returns
-[DescribeBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotaliasresponsetypedef).
+[DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef).
 
 ### describe_bot_locale
 
@@ -442,7 +437,7 @@ Arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DescribeBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotlocaleresponsetypedef).
+[DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef).
 
 ### describe_bot_version
 
@@ -458,7 +453,7 @@ Arguments:
 - `botVersion`: `str` *(required)*
 
 Returns
-[DescribeBotVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describebotversionresponsetypedef).
+[DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef).
 
 ### describe_intent
 
@@ -475,7 +470,7 @@ Arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DescribeIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describeintentresponsetypedef).
+[DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef).
 
 ### describe_slot
 
@@ -493,7 +488,7 @@ Arguments:
 - `intentId`: `str` *(required)*
 
 Returns
-[DescribeSlotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describeslotresponsetypedef).
+[DescribeSlotResponseTypeDef](./type_defs.md#describeslotresponsetypedef).
 
 ### describe_slot_type
 
@@ -510,7 +505,7 @@ Arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DescribeSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#describeslottyperesponsetypedef).
+[DescribeSlotTypeResponseTypeDef](./type_defs.md#describeslottyperesponsetypedef).
 
 ### generate_presigned_url
 
@@ -543,7 +538,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBotAliasesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotaliasesresponsetypedef).
+[ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef).
 
 ### list_bot_locales
 
@@ -556,15 +551,14 @@ Arguments:
 
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
-- `sortBy`:
-  [BotLocaleSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botlocalesortbytypedef)
+- `sortBy`: [BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef)
 - `filters`:
-  `List`\[[BotLocaleFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botlocalefiltertypedef)\]
+  `List`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListBotLocalesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotlocalesresponsetypedef).
+[ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef).
 
 ### list_bot_versions
 
@@ -576,13 +570,12 @@ Boto3 documentation:
 Arguments:
 
 - `botId`: `str` *(required)*
-- `sortBy`:
-  [BotVersionSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botversionsortbytypedef)
+- `sortBy`: [BotVersionSortByTypeDef](./type_defs.md#botversionsortbytypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListBotVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotversionsresponsetypedef).
+[ListBotVersionsResponseTypeDef](./type_defs.md#listbotversionsresponsetypedef).
 
 ### list_bots
 
@@ -593,15 +586,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortBy`:
-  [BotSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botsortbytypedef)
-- `filters`:
-  `List`\[[BotFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botfiltertypedef)\]
+- `sortBy`: [BotSortByTypeDef](./type_defs.md#botsortbytypedef)
+- `filters`: `List`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListBotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbotsresponsetypedef).
+Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
 
 ### list_built_in_intents
 
@@ -615,12 +605,12 @@ Arguments:
 
 - `localeId`: `str` *(required)*
 - `sortBy`:
-  [BuiltInIntentSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#builtinintentsortbytypedef)
+  [BuiltInIntentSortByTypeDef](./type_defs.md#builtinintentsortbytypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListBuiltInIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbuiltinintentsresponsetypedef).
+[ListBuiltInIntentsResponseTypeDef](./type_defs.md#listbuiltinintentsresponsetypedef).
 
 ### list_built_in_slot_types
 
@@ -634,12 +624,12 @@ Arguments:
 
 - `localeId`: `str` *(required)*
 - `sortBy`:
-  [BuiltInSlotTypeSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#builtinslottypesortbytypedef)
+  [BuiltInSlotTypeSortByTypeDef](./type_defs.md#builtinslottypesortbytypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListBuiltInSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listbuiltinslottypesresponsetypedef).
+[ListBuiltInSlotTypesResponseTypeDef](./type_defs.md#listbuiltinslottypesresponsetypedef).
 
 ### list_intents
 
@@ -653,15 +643,13 @@ Arguments:
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
-- `sortBy`:
-  [IntentSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentsortbytypedef)
-- `filters`:
-  `List`\[[IntentFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentfiltertypedef)\]
+- `sortBy`: [IntentSortByTypeDef](./type_defs.md#intentsortbytypedef)
+- `filters`: `List`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListIntentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listintentsresponsetypedef).
+[ListIntentsResponseTypeDef](./type_defs.md#listintentsresponsetypedef).
 
 ### list_slot_types
 
@@ -675,15 +663,14 @@ Arguments:
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
-- `sortBy`:
-  [SlotTypeSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypesortbytypedef)
+- `sortBy`: [SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef)
 - `filters`:
-  `List`\[[SlotTypeFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypefiltertypedef)\]
+  `List`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListSlotTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listslottypesresponsetypedef).
+[ListSlotTypesResponseTypeDef](./type_defs.md#listslottypesresponsetypedef).
 
 ### list_slots
 
@@ -698,15 +685,12 @@ Arguments:
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `intentId`: `str` *(required)*
-- `sortBy`:
-  [SlotSortByTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotsortbytypedef)
-- `filters`:
-  `List`\[[SlotFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotfiltertypedef)\]
+- `sortBy`: [SlotSortByTypeDef](./type_defs.md#slotsortbytypedef)
+- `filters`: `List`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListSlotsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listslotsresponsetypedef).
+Returns [ListSlotsResponseTypeDef](./type_defs.md#listslotsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -721,7 +705,7 @@ Arguments:
 - `resourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -763,14 +747,12 @@ Arguments:
 - `botId`: `str` *(required)*
 - `botName`: `str` *(required)*
 - `roleArn`: `str` *(required)*
-- `dataPrivacy`:
-  [DataPrivacyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dataprivacytypedef)
+- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
   *(required)*
 - `idleSessionTTLInSeconds`: `int` *(required)*
 - `description`: `str`
 
-Returns
-[UpdateBotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updatebotresponsetypedef).
+Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
 
 ### update_bot_alias
 
@@ -787,14 +769,14 @@ Arguments:
 - `description`: `str`
 - `botVersion`: `str`
 - `botAliasLocaleSettings`: `Dict`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#botaliaslocalesettingstypedef)\]
+  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#conversationlogsettingstypedef)
+  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sentimentanalysissettingstypedef)
+  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
 
 Returns
-[UpdateBotAliasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updatebotaliasresponsetypedef).
+[UpdateBotAliasResponseTypeDef](./type_defs.md#updatebotaliasresponsetypedef).
 
 ### update_bot_locale
 
@@ -810,11 +792,10 @@ Arguments:
 - `localeId`: `str` *(required)*
 - `nluIntentConfidenceThreshold`: `float` *(required)*
 - `description`: `str`
-- `voiceSettings`:
-  [VoiceSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#voicesettingstypedef)
+- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
 Returns
-[UpdateBotLocaleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updatebotlocaleresponsetypedef).
+[UpdateBotLocaleResponseTypeDef](./type_defs.md#updatebotlocaleresponsetypedef).
 
 ### update_intent
 
@@ -833,26 +814,26 @@ Arguments:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#sampleutterancetypedef)\]
+  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#dialogcodehooksettingstypedef)
+  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#fulfillmentcodehooksettingstypedef)
+  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
 - `slotPriorities`:
-  `List`\[[SlotPriorityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotprioritytypedef)\]
+  `List`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
 - `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentconfirmationsettingtypedef)
+  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
 - `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#intentclosingsettingtypedef)
+  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#inputcontexttypedef)\]
+  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#outputcontexttypedef)\]
+  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
-  [KendraConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#kendraconfigurationtypedef)
+  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
 Returns
-[UpdateIntentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updateintentresponsetypedef).
+[UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef).
 
 ### update_slot
 
@@ -867,7 +848,7 @@ Arguments:
 - `slotName`: `str` *(required)*
 - `slotTypeId`: `str` *(required)*
 - `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueelicitationsettingtypedef)
+  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
   *(required)*
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
@@ -875,10 +856,9 @@ Arguments:
 - `intentId`: `str` *(required)*
 - `description`: `str`
 - `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#obfuscationsettingtypedef)
+  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 
-Returns
-[UpdateSlotResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updateslotresponsetypedef).
+Returns [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef).
 
 ### update_slot_type
 
@@ -892,15 +872,15 @@ Arguments:
 - `slotTypeId`: `str` *(required)*
 - `slotTypeName`: `str` *(required)*
 - `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slotvalueselectionsettingtypedef)
+  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
   *(required)*
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#slottypevaluetypedef)\]
+  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 Returns
-[UpdateSlotTypeResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lexv2_models/type_defs.html#updateslottyperesponsetypedef).
+[UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).

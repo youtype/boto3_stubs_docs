@@ -1,6 +1,6 @@
 # AutoScalingClient for boto3 AutoScaling module
 
-> [Index](../README.md) > [AutoScaling](./README.md) > AutoScalingClient
+> [Index](..) > [AutoScaling](.) > AutoScalingClient
 
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
@@ -174,7 +174,7 @@ Arguments:
 - `ScheduledActionNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteScheduledActionAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#batchdeletescheduledactionanswertypedef).
+[BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef).
 
 ### batch_put_scheduled_update_group_action
 
@@ -188,11 +188,11 @@ Arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScheduledUpdateGroupActions`:
-  `List`\[[ScheduledUpdateGroupActionRequestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scheduledupdategroupactionrequesttypedef)\]
+  `List`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
   *(required)*
 
 Returns
-[BatchPutScheduledUpdateGroupActionAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#batchputscheduledupdategroupactionanswertypedef).
+[BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef).
 
 ### can_paginate
 
@@ -220,7 +220,7 @@ Arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 
 Returns
-[CancelInstanceRefreshAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#cancelinstancerefreshanswertypedef).
+[CancelInstanceRefreshAnswerTypeDef](./type_defs.md#cancelinstancerefreshanswertypedef).
 
 ### complete_lifecycle_action
 
@@ -255,9 +255,9 @@ Arguments:
 - `MaxSize`: `int` *(required)*
 - `LaunchConfigurationName`: `str`
 - `LaunchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `MixedInstancesPolicy`:
-  [MixedInstancesPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#mixedinstancespolicytypedef)
+  [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
 - `InstanceId`: `str`
 - `DesiredCapacity`: `int`
 - `DefaultCooldown`: `int`
@@ -272,9 +272,8 @@ Arguments:
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `CapacityRebalance`: `bool`
 - `LifecycleHookSpecificationList`:
-  `List`\[[LifecycleHookSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#lifecyclehookspecificationtypedef)\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagtypedef)\]
+  `List`\[[LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 
@@ -300,16 +299,16 @@ Arguments:
 - `KernelId`: `str`
 - `RamdiskId`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#blockdevicemappingtypedef)\]
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `InstanceMonitoring`:
-  [InstanceMonitoringTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancemonitoringtypedef)
+  [InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)
 - `SpotPrice`: `str`
 - `IamInstanceProfile`: `str`
 - `EbsOptimized`: `bool`
 - `AssociatePublicIpAddress`: `bool`
 - `PlacementTenancy`: `str`
 - `MetadataOptions`:
-  [InstanceMetadataOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#instancemetadataoptionstypedef)
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
 ### create_or_update_tags
 
@@ -321,9 +320,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### delete_auto_scaling_group
 
@@ -412,9 +409,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### delete_warm_pool
 
@@ -439,7 +434,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits)
 
 Returns
-[DescribeAccountLimitsAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeaccountlimitsanswertypedef).
+[DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef).
 
 ### describe_adjustment_types
 
@@ -450,7 +445,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_adjustment_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types)
 
 Returns
-[DescribeAdjustmentTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeadjustmenttypesanswertypedef).
+[DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef).
 
 ### describe_auto_scaling_groups
 
@@ -467,7 +462,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[AutoScalingGroupsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinggroupstypetypedef).
+[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef).
 
 ### describe_auto_scaling_instances
 
@@ -484,7 +479,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[AutoScalingInstancesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#autoscalinginstancestypetypedef).
+[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef).
 
 ### describe_auto_scaling_notification_types
 
@@ -495,7 +490,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_auto_scaling_notification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types)
 
 Returns
-[DescribeAutoScalingNotificationTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeautoscalingnotificationtypesanswertypedef).
+[DescribeAutoScalingNotificationTypesAnswerTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswertypedef).
 
 ### describe_instance_refreshes
 
@@ -513,7 +508,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeInstanceRefreshesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeinstancerefreshesanswertypedef).
+[DescribeInstanceRefreshesAnswerTypeDef](./type_defs.md#describeinstancerefreshesanswertypedef).
 
 ### describe_launch_configurations
 
@@ -530,7 +525,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[LaunchConfigurationsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchconfigurationstypetypedef).
+[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef).
 
 ### describe_lifecycle_hook_types
 
@@ -541,7 +536,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_lifecycle_hook_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types)
 
 Returns
-[DescribeLifecycleHookTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describelifecyclehooktypesanswertypedef).
+[DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef).
 
 ### describe_lifecycle_hooks
 
@@ -557,7 +552,7 @@ Arguments:
 - `LifecycleHookNames`: `List`\[`str`\]
 
 Returns
-[DescribeLifecycleHooksAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describelifecyclehooksanswertypedef).
+[DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef).
 
 ### describe_load_balancer_target_groups
 
@@ -574,7 +569,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeLoadBalancerTargetGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeloadbalancertargetgroupsresponsetypedef).
+[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef).
 
 ### describe_load_balancers
 
@@ -591,7 +586,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeLoadBalancersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeloadbalancersresponsetypedef).
+[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef).
 
 ### describe_metric_collection_types
 
@@ -602,7 +597,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_metric_collection_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types)
 
 Returns
-[DescribeMetricCollectionTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describemetriccollectiontypesanswertypedef).
+[DescribeMetricCollectionTypesAnswerTypeDef](./type_defs.md#describemetriccollectiontypesanswertypedef).
 
 ### describe_notification_configurations
 
@@ -619,7 +614,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeNotificationConfigurationsAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describenotificationconfigurationsanswertypedef).
+[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef).
 
 ### describe_policies
 
@@ -636,8 +631,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-Returns
-[PoliciesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#policiestypetypedef).
+Returns [PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef).
 
 ### describe_scaling_activities
 
@@ -655,8 +649,7 @@ Arguments:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-Returns
-[ActivitiesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitiestypetypedef).
+Returns [ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef).
 
 ### describe_scaling_process_types
 
@@ -666,8 +659,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.describe_scaling_process_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
 
-Returns
-[ProcessesTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#processestypetypedef).
+Returns [ProcessesTypeTypeDef](./type_defs.md#processestypetypedef).
 
 ### describe_scheduled_actions
 
@@ -687,7 +679,7 @@ Arguments:
 - `MaxRecords`: `int`
 
 Returns
-[ScheduledActionsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#scheduledactionstypetypedef).
+[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef).
 
 ### describe_tags
 
@@ -698,13 +690,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `Filters`:
-  `List`\[[FilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#filtertypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-Returns
-[TagsTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#tagstypetypedef).
+Returns [TagsTypeTypeDef](./type_defs.md#tagstypetypedef).
 
 ### describe_termination_policy_types
 
@@ -715,7 +705,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_termination_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types)
 
 Returns
-[DescribeTerminationPolicyTypesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describeterminationpolicytypesanswertypedef).
+[DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef).
 
 ### describe_warm_pool
 
@@ -731,7 +721,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWarmPoolAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#describewarmpoolanswertypedef).
+[DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef).
 
 ### detach_instances
 
@@ -747,7 +737,7 @@ Arguments:
 - `InstanceIds`: `List`\[`str`\]
 
 Returns
-[DetachInstancesAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#detachinstancesanswertypedef).
+[DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef).
 
 ### detach_load_balancer_target_groups
 
@@ -819,8 +809,7 @@ Arguments:
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
 - `InstanceIds`: `List`\[`str`\]
 
-Returns
-[EnterStandbyAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#enterstandbyanswertypedef).
+Returns [EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef).
 
 ### execute_policy
 
@@ -849,8 +838,7 @@ Arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `InstanceIds`: `List`\[`str`\]
 
-Returns
-[ExitStandbyAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#exitstandbyanswertypedef).
+Returns [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef).
 
 ### generate_presigned_url
 
@@ -922,14 +910,13 @@ Arguments:
 - `Cooldown`: `int`
 - `MetricAggregationType`: `str`
 - `StepAdjustments`:
-  `List`\[[StepAdjustmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#stepadjustmenttypedef)\]
+  `List`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
 - `EstimatedInstanceWarmup`: `int`
 - `TargetTrackingConfiguration`:
-  [TargetTrackingConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#targettrackingconfigurationtypedef)
+  [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
 - `Enabled`: `bool`
 
-Returns
-[PolicyARNTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#policyarntypetypedef).
+Returns [PolicyARNTypeTypeDef](./type_defs.md#policyarntypetypedef).
 
 ### put_scheduled_update_group_action
 
@@ -964,8 +951,7 @@ Arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `MaxGroupPreparedCapacity`: `int`
 - `MinSize`: `int`
-- `PoolState`:
-  [WarmPoolState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/literals.html#warmpoolstate)
+- `PoolState`: [WarmPoolState](./literals.md#warmpoolstate)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1051,12 +1037,13 @@ Boto3 documentation:
 Arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `Strategy`: `Literal['Rolling']`
+- `Strategy`: `Literal['Rolling']` (see
+  [RefreshStrategy](./literals.md#refreshstrategy))
 - `Preferences`:
-  [RefreshPreferencesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#refreshpreferencestypedef)
+  [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
 
 Returns
-[StartInstanceRefreshAnswerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#startinstancerefreshanswertypedef).
+[StartInstanceRefreshAnswerTypeDef](./type_defs.md#startinstancerefreshanswertypedef).
 
 ### suspend_processes
 
@@ -1083,8 +1070,7 @@ Arguments:
 - `InstanceId`: `str` *(required)*
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
 
-Returns
-[ActivityTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#activitytypetypedef).
+Returns [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef).
 
 ### update_auto_scaling_group
 
@@ -1099,9 +1085,9 @@ Arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `LaunchConfigurationName`: `str`
 - `LaunchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#launchtemplatespecificationtypedef)
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `MixedInstancesPolicy`:
-  [MixedInstancesPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_autoscaling/type_defs.html#mixedinstancespolicytypedef)
+  [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
 - `MinSize`: `int`
 - `MaxSize`: `int`
 - `DesiredCapacity`: `int`

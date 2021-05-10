@@ -1,6 +1,6 @@
 # AppMeshClient for boto3 AppMesh module
 
-> [Index](../README.md) > [AppMesh](./README.md) > AppMeshClient
+> [Index](..) > [AppMesh](.) > AppMeshClient
 
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
@@ -121,17 +121,15 @@ Arguments:
 
 - `gatewayRouteName`: `str` *(required)*
 - `meshName`: `str` *(required)*
-- `spec`:
-  [GatewayRouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutespectypedef)
+- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
   *(required)*
 - `virtualGatewayName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#creategatewayrouteoutputtypedef).
+[CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef).
 
 ### create_mesh
 
@@ -144,13 +142,10 @@ Arguments:
 
 - `meshName`: `str` *(required)*
 - `clientToken`: `str`
-- `spec`:
-  [MeshSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshspectypedef)
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
-Returns
-[CreateMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createmeshoutputtypedef).
+Returns [CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef).
 
 ### create_route
 
@@ -163,17 +158,13 @@ Arguments:
 
 - `meshName`: `str` *(required)*
 - `routeName`: `str` *(required)*
-- `spec`:
-  [RouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routespectypedef)
-  *(required)*
+- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef) *(required)*
 - `virtualRouterName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
-Returns
-[CreateRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createrouteoutputtypedef).
+Returns [CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef).
 
 ### create_virtual_gateway
 
@@ -185,17 +176,15 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualGatewaySpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayspectypedef)
+- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
   *(required)*
 - `virtualGatewayName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualgatewayoutputtypedef).
+[CreateVirtualGatewayOutputTypeDef](./type_defs.md#createvirtualgatewayoutputtypedef).
 
 ### create_virtual_node
 
@@ -207,17 +196,15 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualNodeSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodespectypedef)
+- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
   *(required)*
 - `virtualNodeName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualnodeoutputtypedef).
+[CreateVirtualNodeOutputTypeDef](./type_defs.md#createvirtualnodeoutputtypedef).
 
 ### create_virtual_router
 
@@ -229,17 +216,15 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualRouterSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterspectypedef)
+- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
   *(required)*
 - `virtualRouterName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualrouteroutputtypedef).
+[CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef).
 
 ### create_virtual_service
 
@@ -251,17 +236,15 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualServiceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicespectypedef)
+- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
   *(required)*
 - `virtualServiceName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns
-[CreateVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#createvirtualserviceoutputtypedef).
+[CreateVirtualServiceOutputTypeDef](./type_defs.md#createvirtualserviceoutputtypedef).
 
 ### delete_gateway_route
 
@@ -278,7 +261,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletegatewayrouteoutputtypedef).
+[DeleteGatewayRouteOutputTypeDef](./type_defs.md#deletegatewayrouteoutputtypedef).
 
 ### delete_mesh
 
@@ -291,8 +274,7 @@ Arguments:
 
 - `meshName`: `str` *(required)*
 
-Returns
-[DeleteMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletemeshoutputtypedef).
+Returns [DeleteMeshOutputTypeDef](./type_defs.md#deletemeshoutputtypedef).
 
 ### delete_route
 
@@ -308,8 +290,7 @@ Arguments:
 - `virtualRouterName`: `str` *(required)*
 - `meshOwner`: `str`
 
-Returns
-[DeleteRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deleterouteoutputtypedef).
+Returns [DeleteRouteOutputTypeDef](./type_defs.md#deleterouteoutputtypedef).
 
 ### delete_virtual_gateway
 
@@ -325,7 +306,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualgatewayoutputtypedef).
+[DeleteVirtualGatewayOutputTypeDef](./type_defs.md#deletevirtualgatewayoutputtypedef).
 
 ### delete_virtual_node
 
@@ -341,7 +322,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualnodeoutputtypedef).
+[DeleteVirtualNodeOutputTypeDef](./type_defs.md#deletevirtualnodeoutputtypedef).
 
 ### delete_virtual_router
 
@@ -357,7 +338,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualrouteroutputtypedef).
+[DeleteVirtualRouterOutputTypeDef](./type_defs.md#deletevirtualrouteroutputtypedef).
 
 ### delete_virtual_service
 
@@ -373,7 +354,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DeleteVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#deletevirtualserviceoutputtypedef).
+[DeleteVirtualServiceOutputTypeDef](./type_defs.md#deletevirtualserviceoutputtypedef).
 
 ### describe_gateway_route
 
@@ -390,7 +371,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describegatewayrouteoutputtypedef).
+[DescribeGatewayRouteOutputTypeDef](./type_defs.md#describegatewayrouteoutputtypedef).
 
 ### describe_mesh
 
@@ -404,8 +385,7 @@ Arguments:
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
 
-Returns
-[DescribeMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describemeshoutputtypedef).
+Returns [DescribeMeshOutputTypeDef](./type_defs.md#describemeshoutputtypedef).
 
 ### describe_route
 
@@ -422,7 +402,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describerouteoutputtypedef).
+[DescribeRouteOutputTypeDef](./type_defs.md#describerouteoutputtypedef).
 
 ### describe_virtual_gateway
 
@@ -438,7 +418,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualgatewayoutputtypedef).
+[DescribeVirtualGatewayOutputTypeDef](./type_defs.md#describevirtualgatewayoutputtypedef).
 
 ### describe_virtual_node
 
@@ -454,7 +434,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualnodeoutputtypedef).
+[DescribeVirtualNodeOutputTypeDef](./type_defs.md#describevirtualnodeoutputtypedef).
 
 ### describe_virtual_router
 
@@ -470,7 +450,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualrouteroutputtypedef).
+[DescribeVirtualRouterOutputTypeDef](./type_defs.md#describevirtualrouteroutputtypedef).
 
 ### describe_virtual_service
 
@@ -486,7 +466,7 @@ Arguments:
 - `meshOwner`: `str`
 
 Returns
-[DescribeVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#describevirtualserviceoutputtypedef).
+[DescribeVirtualServiceOutputTypeDef](./type_defs.md#describevirtualserviceoutputtypedef).
 
 ### generate_presigned_url
 
@@ -520,7 +500,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListGatewayRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listgatewayroutesoutputtypedef).
+[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef).
 
 ### list_meshes
 
@@ -534,8 +514,7 @@ Arguments:
 - `limit`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListMeshesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listmeshesoutputtypedef).
+Returns [ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef).
 
 ### list_routes
 
@@ -552,8 +531,7 @@ Arguments:
 - `meshOwner`: `str`
 - `nextToken`: `str`
 
-Returns
-[ListRoutesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listroutesoutputtypedef).
+Returns [ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -569,7 +547,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_virtual_gateways
 
@@ -586,7 +564,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualGatewaysOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualgatewaysoutputtypedef).
+[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef).
 
 ### list_virtual_nodes
 
@@ -603,7 +581,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualNodesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualnodesoutputtypedef).
+[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef).
 
 ### list_virtual_routers
 
@@ -620,7 +598,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualRoutersOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualroutersoutputtypedef).
+[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef).
 
 ### list_virtual_services
 
@@ -637,7 +615,7 @@ Arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualServicesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#listvirtualservicesoutputtypedef).
+[ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef).
 
 ### tag_resource
 
@@ -649,9 +627,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagRefTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#tagreftypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -680,15 +656,14 @@ Arguments:
 
 - `gatewayRouteName`: `str` *(required)*
 - `meshName`: `str` *(required)*
-- `spec`:
-  [GatewayRouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#gatewayroutespectypedef)
+- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
   *(required)*
 - `virtualGatewayName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
 Returns
-[UpdateGatewayRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updategatewayrouteoutputtypedef).
+[UpdateGatewayRouteOutputTypeDef](./type_defs.md#updategatewayrouteoutputtypedef).
 
 ### update_mesh
 
@@ -701,11 +676,9 @@ Arguments:
 
 - `meshName`: `str` *(required)*
 - `clientToken`: `str`
-- `spec`:
-  [MeshSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#meshspectypedef)
+- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
 
-Returns
-[UpdateMeshOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatemeshoutputtypedef).
+Returns [UpdateMeshOutputTypeDef](./type_defs.md#updatemeshoutputtypedef).
 
 ### update_route
 
@@ -718,15 +691,12 @@ Arguments:
 
 - `meshName`: `str` *(required)*
 - `routeName`: `str` *(required)*
-- `spec`:
-  [RouteSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#routespectypedef)
-  *(required)*
+- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef) *(required)*
 - `virtualRouterName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
-Returns
-[UpdateRouteOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updaterouteoutputtypedef).
+Returns [UpdateRouteOutputTypeDef](./type_defs.md#updaterouteoutputtypedef).
 
 ### update_virtual_gateway
 
@@ -738,15 +708,14 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualGatewaySpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualgatewayspectypedef)
+- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
   *(required)*
 - `virtualGatewayName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualGatewayOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualgatewayoutputtypedef).
+[UpdateVirtualGatewayOutputTypeDef](./type_defs.md#updatevirtualgatewayoutputtypedef).
 
 ### update_virtual_node
 
@@ -758,15 +727,14 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualNodeSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualnodespectypedef)
+- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
   *(required)*
 - `virtualNodeName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualNodeOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualnodeoutputtypedef).
+[UpdateVirtualNodeOutputTypeDef](./type_defs.md#updatevirtualnodeoutputtypedef).
 
 ### update_virtual_router
 
@@ -778,15 +746,14 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualRouterSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualrouterspectypedef)
+- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
   *(required)*
 - `virtualRouterName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualRouterOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualrouteroutputtypedef).
+[UpdateVirtualRouterOutputTypeDef](./type_defs.md#updatevirtualrouteroutputtypedef).
 
 ### update_virtual_service
 
@@ -798,15 +765,14 @@ Boto3 documentation:
 Arguments:
 
 - `meshName`: `str` *(required)*
-- `spec`:
-  [VirtualServiceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#virtualservicespectypedef)
+- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
   *(required)*
 - `virtualServiceName`: `str` *(required)*
 - `clientToken`: `str`
 - `meshOwner`: `str`
 
 Returns
-[UpdateVirtualServiceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appmesh/type_defs.html#updatevirtualserviceoutputtypedef).
+[UpdateVirtualServiceOutputTypeDef](./type_defs.md#updatevirtualserviceoutputtypedef).
 
 ### get_paginator
 

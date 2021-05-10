@@ -1,6 +1,6 @@
 # Type annotations for boto3 GlueDataBrew module
 
-> [Index](../README.md) > GlueDataBrew
+> [Index](..) > GlueDataBrew
 
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
@@ -203,7 +203,7 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionResponseTypeDe
 - [RecipeStepTypeDef](./type_defs.md#recipesteptypedef)
 - [RecipeTypeDef](./type_defs.md#recipetypedef)
 - [RecipeVersionErrorDetailTypeDef](./type_defs.md#recipeversionerrordetailtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [SampleTypeDef](./type_defs.md#sampletypedef)
 - [ScheduleTypeDef](./type_defs.md#scheduletypedef)

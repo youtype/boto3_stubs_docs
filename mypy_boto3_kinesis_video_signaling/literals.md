@@ -1,6 +1,6 @@
 # Literals for boto3 KinesisVideoSignalingChannels module
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > Literals
+> [Index](..) > [KinesisVideoSignalingChannels](.) > Literals
 
 Auto-generated documentation for
 [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)

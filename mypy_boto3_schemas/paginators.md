@@ -1,6 +1,6 @@
 # Paginators for boto3 Schemas module
 
-> [Index](../README.md) > [Schemas](./README.md) > Paginators
+> [Index](..) > [Schemas](.) > Paginators
 
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
@@ -36,10 +36,10 @@ Arguments for `ListDiscoverersPaginator.paginate` method:
 - `DiscovererIdPrefix`: `str`
 - `SourceArnPrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDiscoverersPaginator.paginate` returns
-`Iterator`\[[ListDiscoverersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listdiscoverersresponsetypedef)\].
+`Iterator`\[[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef)\].
 
 ## ListRegistriesPaginator
 
@@ -63,10 +63,10 @@ Arguments for `ListRegistriesPaginator.paginate` method:
 - `RegistryNamePrefix`: `str`
 - `Scope`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegistriesPaginator.paginate` returns
-`Iterator`\[[ListRegistriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listregistriesresponsetypedef)\].
+`Iterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
 
 ## ListSchemaVersionsPaginator
 
@@ -90,10 +90,10 @@ Arguments for `ListSchemaVersionsPaginator.paginate` method:
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemaVersionsPaginator.paginate` returns
-`Iterator`\[[ListSchemaVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listschemaversionsresponsetypedef)\].
+`Iterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
 
 ## ListSchemasPaginator
 
@@ -116,10 +116,10 @@ Arguments for `ListSchemasPaginator.paginate` method:
 - `RegistryName`: `str` *(required)*
 - `SchemaNamePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemasPaginator.paginate` returns
-`Iterator`\[[ListSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#listschemasresponsetypedef)\].
+`Iterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
 
 ## SearchSchemasPaginator
 
@@ -142,7 +142,7 @@ Arguments for `SearchSchemasPaginator.paginate` method:
 - `Keywords`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSchemasPaginator.paginate` returns
-`Iterator`\[[SearchSchemasResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_schemas/type_defs.html#searchschemasresponsetypedef)\].
+`Iterator`\[[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef)\].

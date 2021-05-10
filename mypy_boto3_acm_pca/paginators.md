@@ -1,6 +1,6 @@
 # Paginators for boto3 ACMPCA module
 
-> [Index](../README.md) > [ACMPCA](./README.md) > Paginators
+> [Index](..) > [ACMPCA](.) > Paginators
 
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
@@ -31,13 +31,12 @@ Boto3 documentation:
 
 Arguments for `ListCertificateAuthoritiesPaginator.paginate` method:
 
-- `ResourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#resourceowner)
+- `ResourceOwner`: [ResourceOwner](./literals.md#resourceowner)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificateAuthoritiesPaginator.paginate` returns
-`Iterator`\[[ListCertificateAuthoritiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listcertificateauthoritiesresponsetypedef)\].
+`Iterator`\[[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef)\].
 
 ## ListPermissionsPaginator
 
@@ -60,10 +59,10 @@ Arguments for `ListPermissionsPaginator.paginate` method:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionsPaginator.paginate` returns
-`Iterator`\[[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listpermissionsresponsetypedef)\].
+`Iterator`\[[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -85,7 +84,7 @@ Arguments for `ListTagsPaginator.paginate` method:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#listtagsresponsetypedef)\].
+`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].

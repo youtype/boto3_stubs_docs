@@ -1,6 +1,6 @@
 # RAMClient for boto3 RAM module
 
-> [Index](../README.md) > [RAM](./README.md) > RAMClient
+> [Index](..) > [RAM](.) > RAMClient
 
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
@@ -108,7 +108,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[AcceptResourceShareInvitationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#acceptresourceshareinvitationresponsetypedef).
+[AcceptResourceShareInvitationResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponsetypedef).
 
 ### associate_resource_share
 
@@ -125,7 +125,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[AssociateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#associateresourceshareresponsetypedef).
+[AssociateResourceShareResponseTypeDef](./type_defs.md#associateresourceshareresponsetypedef).
 
 ### associate_resource_share_permission
 
@@ -143,7 +143,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[AssociateResourceSharePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#associateresourcesharepermissionresponsetypedef).
+[AssociateResourceSharePermissionResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponsetypedef).
 
 ### can_paginate
 
@@ -170,14 +170,13 @@ Arguments:
 - `name`: `str` *(required)*
 - `resourceArns`: `List`\[`str`\]
 - `principals`: `List`\[`str`\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `allowExternalPrincipals`: `bool`
 - `clientToken`: `str`
 - `permissionArns`: `List`\[`str`\]
 
 Returns
-[CreateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#createresourceshareresponsetypedef).
+[CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
 
 ### delete_resource_share
 
@@ -192,7 +191,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#deleteresourceshareresponsetypedef).
+[DeleteResourceShareResponseTypeDef](./type_defs.md#deleteresourceshareresponsetypedef).
 
 ### disassociate_resource_share
 
@@ -209,7 +208,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[DisassociateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#disassociateresourceshareresponsetypedef).
+[DisassociateResourceShareResponseTypeDef](./type_defs.md#disassociateresourceshareresponsetypedef).
 
 ### disassociate_resource_share_permission
 
@@ -226,7 +225,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[DisassociateResourceSharePermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#disassociateresourcesharepermissionresponsetypedef).
+[DisassociateResourceSharePermissionResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponsetypedef).
 
 ### enable_sharing_with_aws_organization
 
@@ -237,7 +236,7 @@ Boto3 documentation:
 [RAM.Client.enable_sharing_with_aws_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
 
 Returns
-[EnableSharingWithAwsOrganizationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#enablesharingwithawsorganizationresponsetypedef).
+[EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -268,7 +267,7 @@ Arguments:
 - `permissionVersion`: `int`
 
 Returns
-[GetPermissionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getpermissionresponsetypedef).
+[GetPermissionResponseTypeDef](./type_defs.md#getpermissionresponsetypedef).
 
 ### get_resource_policies
 
@@ -285,7 +284,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourcepoliciesresponsetypedef).
+[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
 
 ### get_resource_share_associations
 
@@ -298,18 +297,18 @@ Boto3 documentation:
 Arguments:
 
 - `associationType`:
-  [ResourceShareAssociationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationtype)
+  [ResourceShareAssociationType](./literals.md#resourceshareassociationtype)
   *(required)*
 - `resourceShareArns`: `List`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
-  [ResourceShareAssociationStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceshareassociationstatus)
+  [ResourceShareAssociationStatus](./literals.md#resourceshareassociationstatus)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[GetResourceShareAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourceshareassociationsresponsetypedef).
+[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef).
 
 ### get_resource_share_invitations
 
@@ -327,7 +326,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourceShareInvitationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourceshareinvitationsresponsetypedef).
+[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef).
 
 ### get_resource_shares
 
@@ -338,20 +337,16 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
-  *(required)*
+- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
 - `resourceShareArns`: `List`\[`str`\]
-- `resourceShareStatus`:
-  [ResourceShareStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourcesharestatus)
+- `resourceShareStatus`: [ResourceShareStatus](./literals.md#resourcesharestatus)
 - `name`: `str`
-- `tagFilters`:
-  `List`\[[TagFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagfiltertypedef)\]
+- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[GetResourceSharesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#getresourcesharesresponsetypedef).
+[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef).
 
 ### list_pending_invitation_resources
 
@@ -368,7 +363,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPendingInvitationResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listpendinginvitationresourcesresponsetypedef).
+[ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
 
 ### list_permissions
 
@@ -384,7 +379,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listpermissionsresponsetypedef).
+[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
 ### list_principals
 
@@ -395,9 +390,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
-  *(required)*
+- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
 - `resourceArn`: `str`
 - `principals`: `List`\[`str`\]
 - `resourceType`: `str`
@@ -406,7 +399,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPrincipalsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listprincipalsresponsetypedef).
+[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef).
 
 ### list_resource_share_permissions
 
@@ -423,7 +416,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourceSharePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcesharepermissionsresponsetypedef).
+[ListResourceSharePermissionsResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponsetypedef).
 
 ### list_resource_types
 
@@ -438,7 +431,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourceTypesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcetypesresponsetypedef).
+[ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef).
 
 ### list_resources
 
@@ -449,9 +442,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `resourceOwner`:
-  [ResourceOwner](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/literals.html#resourceowner)
-  *(required)*
+- `resourceOwner`: [ResourceOwner](./literals.md#resourceowner) *(required)*
 - `principal`: `str`
 - `resourceType`: `str`
 - `resourceArns`: `List`\[`str`\]
@@ -460,7 +451,7 @@ Arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#listresourcesresponsetypedef).
+[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### promote_resource_share_created_from_policy
 
@@ -475,7 +466,7 @@ Arguments:
 - `resourceShareArn`: `str` *(required)*
 
 Returns
-[PromoteResourceShareCreatedFromPolicyResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#promoteresourcesharecreatedfrompolicyresponsetypedef).
+[PromoteResourceShareCreatedFromPolicyResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponsetypedef).
 
 ### reject_resource_share_invitation
 
@@ -491,7 +482,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[RejectResourceShareInvitationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#rejectresourceshareinvitationresponsetypedef).
+[RejectResourceShareInvitationResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponsetypedef).
 
 ### tag_resource
 
@@ -503,9 +494,7 @@ Boto3 documentation:
 Arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#tagtypedef)\]
-  *(required)*
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -538,7 +527,7 @@ Arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateResourceShareResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ram/type_defs.html#updateresourceshareresponsetypedef).
+[UpdateResourceShareResponseTypeDef](./type_defs.md#updateresourceshareresponsetypedef).
 
 ### get_paginator
 

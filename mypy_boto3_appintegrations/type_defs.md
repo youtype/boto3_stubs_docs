@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 AppIntegrationsService module
 
-> [Index](../README.md) > [AppIntegrationsService](./README.md) > Structures
+> [Index](..) > [AppIntegrationsService](.) > Typed dictionaries
 
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
@@ -63,8 +63,7 @@ Optional fields:
 - `EventIntegrationArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
-- `EventFilter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#eventfiltertypedef)
+- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `EventBridgeBus`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
@@ -80,8 +79,7 @@ Optional fields:
 - `Description`: `str`
 - `EventIntegrationArn`: `str`
 - `EventBridgeBus`: `str`
-- `EventFilter`:
-  [EventFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#eventfiltertypedef)
+- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListEventIntegrationAssociationsResponseTypeDef
@@ -93,7 +91,7 @@ from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociation
 Optional fields:
 
 - `EventIntegrationAssociations`:
-  `List`\[[EventIntegrationAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#eventintegrationassociationtypedef)\]
+  `List`\[[EventIntegrationAssociationTypeDef](./type_defs.md#eventintegrationassociationtypedef)\]
 - `NextToken`: `str`
 
 ## ListEventIntegrationsResponseTypeDef
@@ -105,7 +103,7 @@ from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsResponseTy
 Optional fields:
 
 - `EventIntegrations`:
-  `List`\[[EventIntegrationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_appintegrations/type_defs.html#eventintegrationtypedef)\]
+  `List`\[[EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef)\]
 - `NextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef

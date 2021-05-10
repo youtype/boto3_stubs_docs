@@ -1,6 +1,6 @@
 # Type annotations for boto3 CostandUsageReportService module
 
-> [Index](../README.md) > CostandUsageReportService
+> [Index](..) > CostandUsageReportService
 
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)

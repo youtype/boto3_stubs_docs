@@ -1,6 +1,6 @@
 # Paginators for boto3 CloudWatchLogs module
 
-> [Index](../README.md) > [CloudWatchLogs](./README.md) > Paginators
+> [Index](..) > [CloudWatchLogs](.) > Paginators
 
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
@@ -39,10 +39,10 @@ Arguments for `DescribeDestinationsPaginator.paginate` method:
 
 - `DestinationNamePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDestinationsPaginator.paginate` returns
-`Iterator`\[[DescribeDestinationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describedestinationsresponsetypedef)\].
+`Iterator`\[[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)\].
 
 ## DescribeExportTasksPaginator
 
@@ -64,13 +64,12 @@ Boto3 documentation:
 Arguments for `DescribeExportTasksPaginator.paginate` method:
 
 - `taskId`: `str`
-- `statusCode`:
-  [ExportTaskStatusCode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#exporttaskstatuscode)
+- `statusCode`: [ExportTaskStatusCode](./literals.md#exporttaskstatuscode)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportTasksResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describeexporttasksresponsetypedef)\].
+`Iterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
 
 ## DescribeLogGroupsPaginator
 
@@ -93,10 +92,10 @@ Arguments for `DescribeLogGroupsPaginator.paginate` method:
 
 - `logGroupNamePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLogGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLogGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describeloggroupsresponsetypedef)\].
+`Iterator`\[[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)\].
 
 ## DescribeLogStreamsPaginator
 
@@ -119,14 +118,13 @@ Arguments for `DescribeLogStreamsPaginator.paginate` method:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamNamePrefix`: `str`
-- `orderBy`:
-  [OrderBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#orderby)
+- `orderBy`: [OrderBy](./literals.md#orderby)
 - `descending`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLogStreamsPaginator.paginate` returns
-`Iterator`\[[DescribeLogStreamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describelogstreamsresponsetypedef)\].
+`Iterator`\[[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)\].
 
 ## DescribeMetricFiltersPaginator
 
@@ -152,10 +150,10 @@ Arguments for `DescribeMetricFiltersPaginator.paginate` method:
 - `metricName`: `str`
 - `metricNamespace`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMetricFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeMetricFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describemetricfiltersresponsetypedef)\].
+`Iterator`\[[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)\].
 
 ## DescribeQueriesPaginator
 
@@ -176,13 +174,12 @@ Boto3 documentation:
 Arguments for `DescribeQueriesPaginator.paginate` method:
 
 - `logGroupName`: `str`
-- `status`:
-  [QueryStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/literals.html#querystatus)
+- `status`: [QueryStatus](./literals.md#querystatus)
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeQueriesPaginator.paginate` returns
-`Iterator`\[[DescribeQueriesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describequeriesresponsetypedef)\].
+`Iterator`\[[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)\].
 
 ## DescribeResourcePoliciesPaginator
 
@@ -204,10 +201,10 @@ Boto3 documentation:
 Arguments for `DescribeResourcePoliciesPaginator.paginate` method:
 
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeResourcePoliciesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describeresourcepoliciesresponsetypedef)\].
+`Iterator`\[[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)\].
 
 ## DescribeSubscriptionFiltersPaginator
 
@@ -231,10 +228,10 @@ Arguments for `DescribeSubscriptionFiltersPaginator.paginate` method:
 - `logGroupName`: `str` *(required)*
 - `filterNamePrefix`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubscriptionFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeSubscriptionFiltersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#describesubscriptionfiltersresponsetypedef)\].
+`Iterator`\[[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)\].
 
 ## FilterLogEventsPaginator
 
@@ -262,7 +259,7 @@ Arguments for `FilterLogEventsPaginator.paginate` method:
 - `filterPattern`: `str`
 - `interleaved`: `bool`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `FilterLogEventsPaginator.paginate` returns
-`Iterator`\[[FilterLogEventsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_logs/type_defs.html#filterlogeventsresponsetypedef)\].
+`Iterator`\[[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef)\].

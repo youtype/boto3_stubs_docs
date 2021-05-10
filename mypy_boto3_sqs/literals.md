@@ -1,6 +1,6 @@
 # Literals for boto3 SQS module
 
-> [Index](../README.md) > [SQS](./README.md) > Literals
+> [Index](..) > [SQS](.) > Literals
 
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)

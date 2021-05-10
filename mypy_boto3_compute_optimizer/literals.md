@@ -1,6 +1,6 @@
 # Literals for boto3 ComputeOptimizer module
 
-> [Index](../README.md) > [ComputeOptimizer](./README.md) > Literals
+> [Index](..) > [ComputeOptimizer](.) > Literals
 
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)

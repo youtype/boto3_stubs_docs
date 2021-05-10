@@ -1,6 +1,6 @@
 # Type annotations for boto3 Glacier module
 
-> [Index](../README.md) > Glacier
+> [Index](..) > Glacier
 
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
@@ -90,7 +90,7 @@ GlacierClient [exceptions](./client.md#exceptions)
 ## GlacierServiceResource
 
 Type annotations for `boto3.resource("glacier")` as
-[GlacierServiceResource](./service_resource.md)
+[GlacierServiceResource](./service_resource.md#glacierserviceresource)
 
 Can be used directly:
 
@@ -108,7 +108,7 @@ Can be used directly:
 from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection, ...
 ```
 
-- [ServiceResourceVaultsCollection](./service_resource.md#glacierserviceresource.vaults)
+- [ServiceResourceVaultsCollection](./service_resource.md#glacierserviceresourcevaults)
 
 ### Resources
 
@@ -230,7 +230,7 @@ from mypy_boto3_glacier.type_defs import ArchiveCreationOutputTypeDef, ...
 - [PartListElementTypeDef](./type_defs.md#partlistelementtypedef)
 - [ProvisionedCapacityDescriptionTypeDef](./type_defs.md#provisionedcapacitydescriptiontypedef)
 - [PurchaseProvisionedCapacityOutputTypeDef](./type_defs.md#purchaseprovisionedcapacityoutputtypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
 - [UploadListElementTypeDef](./type_defs.md#uploadlistelementtypedef)

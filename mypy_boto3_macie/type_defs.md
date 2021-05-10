@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Macie module
 
-> [Index](../README.md) > [Macie](./README.md) > Structures
+> [Index](..) > [Macie](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
@@ -31,7 +31,7 @@ from mypy_boto3_macie.type_defs import AssociateS3ResourcesResultTypeDef
 Optional fields:
 
 - `failedS3Resources`:
-  `List`\[[FailedS3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#faileds3resourcetypedef)\]
+  `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]
 
 ## ClassificationTypeTypeDef
 
@@ -42,8 +42,9 @@ from mypy_boto3_macie.type_defs import ClassificationTypeTypeDef
 Required fields:
 
 - `oneTime`:
-  [S3OneTimeClassificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/literals.html#s3onetimeclassificationtype)
-- `continuous`: `Literal['FULL']`
+  [S3OneTimeClassificationType](./literals.md#s3onetimeclassificationtype)
+- `continuous`: `Literal['FULL']` (see
+  [S3ContinuousClassificationType](./literals.md#s3continuousclassificationtype))
 
 ## ClassificationTypeUpdateTypeDef
 
@@ -54,8 +55,9 @@ from mypy_boto3_macie.type_defs import ClassificationTypeUpdateTypeDef
 Optional fields:
 
 - `oneTime`:
-  [S3OneTimeClassificationType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/literals.html#s3onetimeclassificationtype)
-- `continuous`: `Literal['FULL']`
+  [S3OneTimeClassificationType](./literals.md#s3onetimeclassificationtype)
+- `continuous`: `Literal['FULL']` (see
+  [S3ContinuousClassificationType](./literals.md#s3continuousclassificationtype))
 
 ## DisassociateS3ResourcesResultTypeDef
 
@@ -66,7 +68,7 @@ from mypy_boto3_macie.type_defs import DisassociateS3ResourcesResultTypeDef
 Optional fields:
 
 - `failedS3Resources`:
-  `List`\[[FailedS3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#faileds3resourcetypedef)\]
+  `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]
 
 ## FailedS3ResourceTypeDef
 
@@ -76,8 +78,7 @@ from mypy_boto3_macie.type_defs import FailedS3ResourceTypeDef
 
 Optional fields:
 
-- `failedItem`:
-  [S3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourcetypedef)
+- `failedItem`: [S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
@@ -90,7 +91,7 @@ from mypy_boto3_macie.type_defs import ListMemberAccountsResultTypeDef
 Optional fields:
 
 - `memberAccounts`:
-  `List`\[[MemberAccountTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#memberaccounttypedef)\]
+  `List`\[[MemberAccountTypeDef](./type_defs.md#memberaccounttypedef)\]
 - `nextToken`: `str`
 
 ## ListS3ResourcesResultTypeDef
@@ -102,7 +103,7 @@ from mypy_boto3_macie.type_defs import ListS3ResourcesResultTypeDef
 Optional fields:
 
 - `s3Resources`:
-  `List`\[[S3ResourceClassificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#s3resourceclassificationtypedef)\]
+  `List`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
 - `nextToken`: `str`
 
 ## MemberAccountTypeDef
@@ -137,7 +138,7 @@ Required fields:
 
 - `bucketName`: `str`
 - `classificationType`:
-  [ClassificationTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#classificationtypetypedef)
+  [ClassificationTypeTypeDef](./type_defs.md#classificationtypetypedef)
 
 Optional fields:
 
@@ -153,7 +154,7 @@ Required fields:
 
 - `bucketName`: `str`
 - `classificationTypeUpdate`:
-  [ClassificationTypeUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#classificationtypeupdatetypedef)
+  [ClassificationTypeUpdateTypeDef](./type_defs.md#classificationtypeupdatetypedef)
 
 Optional fields:
 
@@ -182,4 +183,4 @@ from mypy_boto3_macie.type_defs import UpdateS3ResourcesResultTypeDef
 Optional fields:
 
 - `failedS3Resources`:
-  `List`\[[FailedS3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_macie/type_defs.html#faileds3resourcetypedef)\]
+  `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]

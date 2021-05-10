@@ -1,6 +1,6 @@
 # Type annotations for boto3 Macie module
 
-> [Index](../README.md) > Macie
+> [Index](..) > Macie
 
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)

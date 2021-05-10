@@ -1,6 +1,6 @@
 # Literals for boto3 LakeFormation module
 
-> [Index](../README.md) > [LakeFormation](./README.md) > Literals
+> [Index](..) > [LakeFormation](.) > Literals
 
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)

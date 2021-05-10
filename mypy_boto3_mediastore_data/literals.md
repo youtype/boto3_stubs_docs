@@ -1,6 +1,6 @@
 # Literals for boto3 MediaStoreData module
 
-> [Index](../README.md) > [MediaStoreData](./README.md) > Literals
+> [Index](..) > [MediaStoreData](.) > Literals
 
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)

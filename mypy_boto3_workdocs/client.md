@@ -1,6 +1,6 @@
 # WorkDocsClient for boto3 WorkDocs module
 
-> [Index](../README.md) > [WorkDocs](./README.md) > WorkDocsClient
+> [Index](..) > [WorkDocs](.) > WorkDocsClient
 
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
@@ -142,7 +142,7 @@ Arguments:
 - `AuthenticationToken`: `str`
 
 Returns
-[ActivateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#activateuserresponsetypedef).
+[ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef).
 
 ### add_resource_permissions
 
@@ -156,14 +156,14 @@ Arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Principals`:
-  `List`\[[SharePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#shareprincipaltypedef)\]
+  `List`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
   *(required)*
 - `AuthenticationToken`: `str`
 - `NotificationOptions`:
-  [NotificationOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#notificationoptionstypedef)
+  [NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef)
 
 Returns
-[AddResourcePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#addresourcepermissionsresponsetypedef).
+[AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef).
 
 ### can_paginate
 
@@ -193,12 +193,11 @@ Arguments:
 - `AuthenticationToken`: `str`
 - `ParentId`: `str`
 - `ThreadId`: `str`
-- `Visibility`:
-  [CommentVisibilityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#commentvisibilitytype)
+- `Visibility`: [CommentVisibilityType](./literals.md#commentvisibilitytype)
 - `NotifyCollaborators`: `bool`
 
 Returns
-[CreateCommentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createcommentresponsetypedef).
+[CreateCommentResponseTypeDef](./type_defs.md#createcommentresponsetypedef).
 
 ### create_custom_metadata
 
@@ -230,7 +229,7 @@ Arguments:
 - `Name`: `str`
 
 Returns
-[CreateFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createfolderresponsetypedef).
+[CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
 
 ### create_labels
 
@@ -259,11 +258,14 @@ Arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Endpoint`: `str` *(required)*
-- `Protocol`: `Literal['HTTPS']` *(required)*
-- `SubscriptionType`: `Literal['ALL']` *(required)*
+- `Protocol`: `Literal['HTTPS']` (see
+  [SubscriptionProtocolType](./literals.md#subscriptionprotocoltype))
+  *(required)*
+- `SubscriptionType`: `Literal['ALL']` (see
+  [SubscriptionType](./literals.md#subscriptiontype)) *(required)*
 
 Returns
-[CreateNotificationSubscriptionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createnotificationsubscriptionresponsetypedef).
+[CreateNotificationSubscriptionResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponsetypedef).
 
 ### create_user
 
@@ -281,12 +283,10 @@ Arguments:
 - `OrganizationId`: `str`
 - `EmailAddress`: `str`
 - `TimeZoneId`: `str`
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#storageruletypetypedef)
+- `StorageRule`: [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 - `AuthenticationToken`: `str`
 
-Returns
-[CreateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#createuserresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### deactivate_user
 
@@ -429,7 +429,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeActivitiesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeactivitiesresponsetypedef).
+[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef).
 
 ### describe_comments
 
@@ -447,7 +447,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeCommentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describecommentsresponsetypedef).
+[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef).
 
 ### describe_document_versions
 
@@ -467,7 +467,7 @@ Arguments:
 - `Fields`: `str`
 
 Returns
-[DescribeDocumentVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describedocumentversionsresponsetypedef).
+[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef).
 
 ### describe_folder_contents
 
@@ -481,18 +481,15 @@ Arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
-- `Sort`:
-  [ResourceSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcesorttype)
-- `Order`:
-  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
+- `Sort`: [ResourceSortType](./literals.md#resourcesorttype)
+- `Order`: [OrderType](./literals.md#ordertype)
 - `Limit`: `int`
 - `Marker`: `str`
-- `Type`:
-  [FolderContentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#foldercontenttype)
+- `Type`: [FolderContentType](./literals.md#foldercontenttype)
 - `Include`: `str`
 
 Returns
-[DescribeFolderContentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describefoldercontentsresponsetypedef).
+[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef).
 
 ### describe_groups
 
@@ -510,7 +507,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describegroupsresponsetypedef).
+[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef).
 
 ### describe_notification_subscriptions
 
@@ -527,7 +524,7 @@ Arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeNotificationSubscriptionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describenotificationsubscriptionsresponsetypedef).
+[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef).
 
 ### describe_resource_permissions
 
@@ -546,7 +543,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeResourcePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeresourcepermissionsresponsetypedef).
+[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef).
 
 ### describe_root_folders
 
@@ -562,7 +559,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeRootFoldersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describerootfoldersresponsetypedef).
+[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef).
 
 ### describe_users
 
@@ -577,18 +574,15 @@ Arguments:
 - `OrganizationId`: `str`
 - `UserIds`: `str`
 - `Query`: `str`
-- `Include`:
-  [UserFilterType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#userfiltertype)
-- `Order`:
-  [OrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#ordertype)
-- `Sort`:
-  [UserSortType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usersorttype)
+- `Include`: [UserFilterType](./literals.md#userfiltertype)
+- `Order`: [OrderType](./literals.md#ordertype)
+- `Sort`: [UserSortType](./literals.md#usersorttype)
 - `Marker`: `str`
 - `Limit`: `int`
 - `Fields`: `str`
 
 Returns
-[DescribeUsersResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#describeusersresponsetypedef).
+[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
 
 ### generate_presigned_url
 
@@ -618,7 +612,7 @@ Arguments:
 - `AuthenticationToken`: `str` *(required)*
 
 Returns
-[GetCurrentUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getcurrentuserresponsetypedef).
+[GetCurrentUserResponseTypeDef](./type_defs.md#getcurrentuserresponsetypedef).
 
 ### get_document
 
@@ -634,7 +628,7 @@ Arguments:
 - `IncludeCustomMetadata`: `bool`
 
 Returns
-[GetDocumentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getdocumentresponsetypedef).
+[GetDocumentResponseTypeDef](./type_defs.md#getdocumentresponsetypedef).
 
 ### get_document_path
 
@@ -652,7 +646,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[GetDocumentPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getdocumentpathresponsetypedef).
+[GetDocumentPathResponseTypeDef](./type_defs.md#getdocumentpathresponsetypedef).
 
 ### get_document_version
 
@@ -670,7 +664,7 @@ Arguments:
 - `IncludeCustomMetadata`: `bool`
 
 Returns
-[GetDocumentVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getdocumentversionresponsetypedef).
+[GetDocumentVersionResponseTypeDef](./type_defs.md#getdocumentversionresponsetypedef).
 
 ### get_folder
 
@@ -685,8 +679,7 @@ Arguments:
 - `AuthenticationToken`: `str`
 - `IncludeCustomMetadata`: `bool`
 
-Returns
-[GetFolderResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getfolderresponsetypedef).
+Returns [GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef).
 
 ### get_folder_path
 
@@ -704,7 +697,7 @@ Arguments:
 - `Marker`: `str`
 
 Returns
-[GetFolderPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getfolderpathresponsetypedef).
+[GetFolderPathResponseTypeDef](./type_defs.md#getfolderpathresponsetypedef).
 
 ### get_resources
 
@@ -717,12 +710,13 @@ Arguments:
 
 - `AuthenticationToken`: `str`
 - `UserId`: `str`
-- `CollectionType`: `Literal['SHARED_WITH_ME']`
+- `CollectionType`: `Literal['SHARED_WITH_ME']` (see
+  [ResourceCollectionType](./literals.md#resourcecollectiontype))
 - `Limit`: `int`
 - `Marker`: `str`
 
 Returns
-[GetResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#getresourcesresponsetypedef).
+[GetResourcesResponseTypeDef](./type_defs.md#getresourcesresponsetypedef).
 
 ### initiate_document_version_upload
 
@@ -744,7 +738,7 @@ Arguments:
 - `DocumentSizeInBytes`: `int`
 
 Returns
-[InitiateDocumentVersionUploadResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#initiatedocumentversionuploadresponsetypedef).
+[InitiateDocumentVersionUploadResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponsetypedef).
 
 ### remove_all_resource_permissions
 
@@ -772,8 +766,7 @@ Arguments:
 - `ResourceId`: `str` *(required)*
 - `PrincipalId`: `str` *(required)*
 - `AuthenticationToken`: `str`
-- `PrincipalType`:
-  [PrincipalType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#principaltype)
+- `PrincipalType`: [PrincipalType](./literals.md#principaltype)
 
 ### update_document
 
@@ -788,8 +781,7 @@ Arguments:
 - `AuthenticationToken`: `str`
 - `Name`: `str`
 - `ParentFolderId`: `str`
-- `ResourceState`:
-  [ResourceStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcestatetype)
+- `ResourceState`: [ResourceStateType](./literals.md#resourcestatetype)
 
 ### update_document_version
 
@@ -803,7 +795,8 @@ Arguments:
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
 - `AuthenticationToken`: `str`
-- `VersionStatus`: `Literal['ACTIVE']`
+- `VersionStatus`: `Literal['ACTIVE']` (see
+  [DocumentVersionStatus](./literals.md#documentversionstatus))
 
 ### update_folder
 
@@ -818,8 +811,7 @@ Arguments:
 - `AuthenticationToken`: `str`
 - `Name`: `str`
 - `ParentFolderId`: `str`
-- `ResourceState`:
-  [ResourceStateType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#resourcestatetype)
+- `ResourceState`: [ResourceStateType](./literals.md#resourcestatetype)
 
 ### update_user
 
@@ -834,18 +826,13 @@ Arguments:
 - `AuthenticationToken`: `str`
 - `GivenName`: `str`
 - `Surname`: `str`
-- `Type`:
-  [UserType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#usertype)
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#storageruletypetypedef)
+- `Type`: [UserType](./literals.md#usertype)
+- `StorageRule`: [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 - `TimeZoneId`: `str`
-- `Locale`:
-  [LocaleType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#localetype)
-- `GrantPoweruserPrivileges`:
-  [BooleanEnumType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/literals.html#booleanenumtype)
+- `Locale`: [LocaleType](./literals.md#localetype)
+- `GrantPoweruserPrivileges`: [BooleanEnumType](./literals.md#booleanenumtype)
 
-Returns
-[UpdateUserResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_workdocs/type_defs.html#updateuserresponsetypedef).
+Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 
 ### get_paginator
 

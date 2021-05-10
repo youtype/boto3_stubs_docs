@@ -1,6 +1,6 @@
 # CodeBuildClient for boto3 CodeBuild module
 
-> [Index](../README.md) > [CodeBuild](./README.md) > CodeBuildClient
+> [Index](..) > [CodeBuild](.) > CodeBuildClient
 
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
@@ -110,7 +110,7 @@ Arguments:
 - `ids`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchdeletebuildsoutputtypedef).
+[BatchDeleteBuildsOutputTypeDef](./type_defs.md#batchdeletebuildsoutputtypedef).
 
 ### batch_get_build_batches
 
@@ -125,7 +125,7 @@ Arguments:
 - `ids`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetBuildBatchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchgetbuildbatchesoutputtypedef).
+[BatchGetBuildBatchesOutputTypeDef](./type_defs.md#batchgetbuildbatchesoutputtypedef).
 
 ### batch_get_builds
 
@@ -139,7 +139,7 @@ Arguments:
 - `ids`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchgetbuildsoutputtypedef).
+[BatchGetBuildsOutputTypeDef](./type_defs.md#batchgetbuildsoutputtypedef).
 
 ### batch_get_projects
 
@@ -153,7 +153,7 @@ Arguments:
 - `names`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchgetprojectsoutputtypedef).
+[BatchGetProjectsOutputTypeDef](./type_defs.md#batchgetprojectsoutputtypedef).
 
 ### batch_get_report_groups
 
@@ -168,7 +168,7 @@ Arguments:
 - `reportGroupArns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetReportGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchgetreportgroupsoutputtypedef).
+[BatchGetReportGroupsOutputTypeDef](./type_defs.md#batchgetreportgroupsoutputtypedef).
 
 ### batch_get_reports
 
@@ -182,7 +182,7 @@ Arguments:
 - `reportArns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetReportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#batchgetreportsoutputtypedef).
+[BatchGetReportsOutputTypeDef](./type_defs.md#batchgetreportsoutputtypedef).
 
 ### can_paginate
 
@@ -207,44 +207,38 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `source`:
-  [ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
   *(required)*
-- `artifacts`:
-  [ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)
+- `artifacts`: [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
   *(required)*
 - `environment`:
-  [ProjectEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectenvironmenttypedef)
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
   *(required)*
 - `serviceRole`: `str` *(required)*
 - `description`: `str`
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)\]
-- `cache`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#tagtypedef)\]
-- `vpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#vpcconfigtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `badgeEnabled`: `bool`
-- `logsConfig`:
-  [LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logsconfigtypedef)
+- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectfilesystemlocationtypedef)\]
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectbuildbatchconfigtypedef)
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
 Returns
-[CreateProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#createprojectoutputtypedef).
+[CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
 ### create_report_group
 
@@ -256,17 +250,14 @@ Boto3 documentation:
 Arguments:
 
 - `name`: `str` *(required)*
-- `type`:
-  [ReportType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reporttype)
-  *(required)*
+- `type`: [ReportType](./literals.md#reporttype) *(required)*
 - `exportConfig`:
-  [ReportExportConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportexportconfigtypedef)
+  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
   *(required)*
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateReportGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#createreportgroupoutputtypedef).
+[CreateReportGroupOutputTypeDef](./type_defs.md#createreportgroupoutputtypedef).
 
 ### create_webhook
 
@@ -280,12 +271,11 @@ Arguments:
 - `projectName`: `str` *(required)*
 - `branchFilter`: `str`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#webhookfiltertypedef)\]\]
-- `buildType`:
-  [WebhookBuildType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#webhookbuildtype)
+  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+- `buildType`: [WebhookBuildType](./literals.md#webhookbuildtype)
 
 Returns
-[CreateWebhookOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#createwebhookoutputtypedef).
+[CreateWebhookOutputTypeDef](./type_defs.md#createwebhookoutputtypedef).
 
 ### delete_build_batch
 
@@ -299,7 +289,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[DeleteBuildBatchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#deletebuildbatchoutputtypedef).
+[DeleteBuildBatchOutputTypeDef](./type_defs.md#deletebuildbatchoutputtypedef).
 
 ### delete_project
 
@@ -367,7 +357,7 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns
-[DeleteSourceCredentialsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#deletesourcecredentialsoutputtypedef).
+[DeleteSourceCredentialsOutputTypeDef](./type_defs.md#deletesourcecredentialsoutputtypedef).
 
 ### delete_webhook
 
@@ -395,15 +385,14 @@ Arguments:
 - `reportArn`: `str` *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `sortBy`:
-  [ReportCodeCoverageSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportcodecoveragesortbytype)
+  [ReportCodeCoverageSortByType](./literals.md#reportcodecoveragesortbytype)
 - `minLineCoveragePercentage`: `float`
 - `maxLineCoveragePercentage`: `float`
 
 Returns
-[DescribeCodeCoveragesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#describecodecoveragesoutputtypedef).
+[DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef).
 
 ### describe_test_cases
 
@@ -417,11 +406,10 @@ Arguments:
 - `reportArn`: `str` *(required)*
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filter`:
-  [TestCaseFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#testcasefiltertypedef)
+- `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
 
 Returns
-[DescribeTestCasesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#describetestcasesoutputtypedef).
+[DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -450,12 +438,12 @@ Arguments:
 
 - `reportGroupArn`: `str` *(required)*
 - `trendField`:
-  [ReportGroupTrendFieldType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportgrouptrendfieldtype)
+  [ReportGroupTrendFieldType](./literals.md#reportgrouptrendfieldtype)
   *(required)*
 - `numOfReports`: `int`
 
 Returns
-[GetReportGroupTrendOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#getreportgrouptrendoutputtypedef).
+[GetReportGroupTrendOutputTypeDef](./type_defs.md#getreportgrouptrendoutputtypedef).
 
 ### get_resource_policy
 
@@ -469,7 +457,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[GetResourcePolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#getresourcepolicyoutputtypedef).
+[GetResourcePolicyOutputTypeDef](./type_defs.md#getresourcepolicyoutputtypedef).
 
 ### import_source_credentials
 
@@ -482,17 +470,13 @@ Boto3 documentation:
 Arguments:
 
 - `token`: `str` *(required)*
-- `serverType`:
-  [ServerType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#servertype)
-  *(required)*
-- `authType`:
-  [AuthType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#authtype)
-  *(required)*
+- `serverType`: [ServerType](./literals.md#servertype) *(required)*
+- `authType`: [AuthType](./literals.md#authtype) *(required)*
 - `username`: `str`
 - `shouldOverwrite`: `bool`
 
 Returns
-[ImportSourceCredentialsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#importsourcecredentialsoutputtypedef).
+[ImportSourceCredentialsOutputTypeDef](./type_defs.md#importsourcecredentialsoutputtypedef).
 
 ### invalidate_project_cache
 
@@ -517,15 +501,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `filter`:
-  [BuildBatchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchfiltertypedef)
+- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
 - `maxResults`: `int`
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `nextToken`: `str`
 
 Returns
-[ListBuildBatchesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildbatchesoutputtypedef).
+[ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef).
 
 ### list_build_batches_for_project
 
@@ -538,15 +520,13 @@ Boto3 documentation:
 Arguments:
 
 - `projectName`: `str`
-- `filter`:
-  [BuildBatchFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildbatchfiltertypedef)
+- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
 - `maxResults`: `int`
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `nextToken`: `str`
 
 Returns
-[ListBuildBatchesForProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildbatchesforprojectoutputtypedef).
+[ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef).
 
 ### list_builds
 
@@ -557,12 +537,10 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `nextToken`: `str`
 
-Returns
-[ListBuildsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildsoutputtypedef).
+Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
 
 ### list_builds_for_project
 
@@ -575,12 +553,11 @@ Boto3 documentation:
 Arguments:
 
 - `projectName`: `str` *(required)*
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `nextToken`: `str`
 
 Returns
-[ListBuildsForProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listbuildsforprojectoutputtypedef).
+[ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef).
 
 ### list_curated_environment_images
 
@@ -591,7 +568,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_curated_environment_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_curated_environment_images)
 
 Returns
-[ListCuratedEnvironmentImagesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listcuratedenvironmentimagesoutputtypedef).
+[ListCuratedEnvironmentImagesOutputTypeDef](./type_defs.md#listcuratedenvironmentimagesoutputtypedef).
 
 ### list_projects
 
@@ -602,14 +579,11 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortBy`:
-  [ProjectSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#projectsortbytype)
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortBy`: [ProjectSortByType](./literals.md#projectsortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `nextToken`: `str`
 
-Returns
-[ListProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listprojectsoutputtypedef).
+Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
 ### list_report_groups
 
@@ -620,15 +594,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
-- `sortBy`:
-  [ReportGroupSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#reportgroupsortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortBy`: [ReportGroupSortByType](./literals.md#reportgroupsortbytype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListReportGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listreportgroupsoutputtypedef).
+[ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef).
 
 ### list_reports
 
@@ -639,15 +611,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filter`:
-  [ReportFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportfiltertypedef)
+- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
-Returns
-[ListReportsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listreportsoutputtypedef).
+Returns [ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef).
 
 ### list_reports_for_report_group
 
@@ -661,14 +630,12 @@ Arguments:
 
 - `reportGroupArn`: `str` *(required)*
 - `nextToken`: `str`
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `maxResults`: `int`
-- `filter`:
-  [ReportFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportfiltertypedef)
+- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
 Returns
-[ListReportsForReportGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listreportsforreportgroupoutputtypedef).
+[ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef).
 
 ### list_shared_projects
 
@@ -679,15 +646,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortBy`:
-  [SharedResourceSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sharedresourcesortbytype)
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
+- `sortBy`: [SharedResourceSortByType](./literals.md#sharedresourcesortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListSharedProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listsharedprojectsoutputtypedef).
+[ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef).
 
 ### list_shared_report_groups
 
@@ -699,15 +664,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `sortOrder`:
-  [SortOrderType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sortordertype)
-- `sortBy`:
-  [SharedResourceSortByType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sharedresourcesortbytype)
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `sortBy`: [SharedResourceSortByType](./literals.md#sharedresourcesortbytype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListSharedReportGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listsharedreportgroupsoutputtypedef).
+[ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef).
 
 ### list_source_credentials
 
@@ -718,7 +681,7 @@ Boto3 documentation:
 [CodeBuild.Client.list_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_source_credentials)
 
 Returns
-[ListSourceCredentialsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#listsourcecredentialsoutputtypedef).
+[ListSourceCredentialsOutputTypeDef](./type_defs.md#listsourcecredentialsoutputtypedef).
 
 ### put_resource_policy
 
@@ -733,7 +696,7 @@ Arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[PutResourcePolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#putresourcepolicyoutputtypedef).
+[PutResourcePolicyOutputTypeDef](./type_defs.md#putresourcepolicyoutputtypedef).
 
 ### retry_build
 
@@ -747,8 +710,7 @@ Arguments:
 - `id`: `str`
 - `idempotencyToken`: `str`
 
-Returns
-[RetryBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#retrybuildoutputtypedef).
+Returns [RetryBuildOutputTypeDef](./type_defs.md#retrybuildoutputtypedef).
 
 ### retry_build_batch
 
@@ -761,11 +723,10 @@ Arguments:
 
 - `id`: `str`
 - `idempotencyToken`: `str`
-- `retryType`:
-  [RetryBuildBatchType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#retrybuildbatchtype)
+- `retryType`: [RetryBuildBatchType](./literals.md#retrybuildbatchtype)
 
 Returns
-[RetryBuildBatchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#retrybuildbatchoutputtypedef).
+[RetryBuildBatchOutputTypeDef](./type_defs.md#retrybuildbatchoutputtypedef).
 
 ### start_build
 
@@ -778,53 +739,46 @@ Arguments:
 
 - `projectName`: `str` *(required)*
 - `secondarySourcesOverride`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourcesVersionOverride`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `sourceVersion`: `str`
 - `artifactsOverride`:
-  [ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifactsOverride`:
-  `List`\[[ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)\]
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `environmentVariablesOverride`:
-  `List`\[[EnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#environmentvariabletypedef)\]
-- `sourceTypeOverride`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sourcetype)
+  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+- `sourceTypeOverride`: [SourceType](./literals.md#sourcetype)
 - `sourceLocationOverride`: `str`
-- `sourceAuthOverride`:
-  [SourceAuthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#sourceauthtypedef)
+- `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
 - `gitCloneDepthOverride`: `int`
 - `gitSubmodulesConfigOverride`:
-  [GitSubmodulesConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#gitsubmodulesconfigtypedef)
+  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
 - `buildspecOverride`: `str`
 - `insecureSslOverride`: `bool`
 - `reportBuildStatusOverride`: `bool`
 - `buildStatusConfigOverride`:
-  [BuildStatusConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#buildstatusconfigtypedef)
-- `environmentTypeOverride`:
-  [EnvironmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#environmenttype)
+  [BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef)
+- `environmentTypeOverride`: [EnvironmentType](./literals.md#environmenttype)
 - `imageOverride`: `str`
-- `computeTypeOverride`:
-  [ComputeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#computetype)
+- `computeTypeOverride`: [ComputeType](./literals.md#computetype)
 - `certificateOverride`: `str`
-- `cacheOverride`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+- `cacheOverride`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `serviceRoleOverride`: `str`
 - `privilegedModeOverride`: `bool`
 - `timeoutInMinutesOverride`: `int`
 - `queuedTimeoutInMinutesOverride`: `int`
 - `encryptionKeyOverride`: `str`
 - `idempotencyToken`: `str`
-- `logsConfigOverride`:
-  [LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logsconfigtypedef)
+- `logsConfigOverride`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `registryCredentialOverride`:
-  [RegistryCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#registrycredentialtypedef)
+  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
 - `imagePullCredentialsTypeOverride`:
-  [ImagePullCredentialsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#imagepullcredentialstype)
+  [ImagePullCredentialsType](./literals.md#imagepullcredentialstype)
 - `debugSessionEnabled`: `bool`
 
-Returns
-[StartBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#startbuildoutputtypedef).
+Returns [StartBuildOutputTypeDef](./type_defs.md#startbuildoutputtypedef).
 
 ### start_build_batch
 
@@ -837,53 +791,47 @@ Arguments:
 
 - `projectName`: `str` *(required)*
 - `secondarySourcesOverride`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `secondarySourcesVersionOverride`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
 - `sourceVersion`: `str`
 - `artifactsOverride`:
-  [ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifactsOverride`:
-  `List`\[[ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)\]
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
 - `environmentVariablesOverride`:
-  `List`\[[EnvironmentVariableTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#environmentvariabletypedef)\]
-- `sourceTypeOverride`:
-  [SourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#sourcetype)
+  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+- `sourceTypeOverride`: [SourceType](./literals.md#sourcetype)
 - `sourceLocationOverride`: `str`
-- `sourceAuthOverride`:
-  [SourceAuthTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#sourceauthtypedef)
+- `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
 - `gitCloneDepthOverride`: `int`
 - `gitSubmodulesConfigOverride`:
-  [GitSubmodulesConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#gitsubmodulesconfigtypedef)
+  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
 - `buildspecOverride`: `str`
 - `insecureSslOverride`: `bool`
 - `reportBuildBatchStatusOverride`: `bool`
-- `environmentTypeOverride`:
-  [EnvironmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#environmenttype)
+- `environmentTypeOverride`: [EnvironmentType](./literals.md#environmenttype)
 - `imageOverride`: `str`
-- `computeTypeOverride`:
-  [ComputeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#computetype)
+- `computeTypeOverride`: [ComputeType](./literals.md#computetype)
 - `certificateOverride`: `str`
-- `cacheOverride`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+- `cacheOverride`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `serviceRoleOverride`: `str`
 - `privilegedModeOverride`: `bool`
 - `buildTimeoutInMinutesOverride`: `int`
 - `queuedTimeoutInMinutesOverride`: `int`
 - `encryptionKeyOverride`: `str`
 - `idempotencyToken`: `str`
-- `logsConfigOverride`:
-  [LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logsconfigtypedef)
+- `logsConfigOverride`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `registryCredentialOverride`:
-  [RegistryCredentialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#registrycredentialtypedef)
+  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
 - `imagePullCredentialsTypeOverride`:
-  [ImagePullCredentialsType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#imagepullcredentialstype)
+  [ImagePullCredentialsType](./literals.md#imagepullcredentialstype)
 - `buildBatchConfigOverride`:
-  [ProjectBuildBatchConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectbuildbatchconfigtypedef)
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `debugSessionEnabled`: `bool`
 
 Returns
-[StartBuildBatchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#startbuildbatchoutputtypedef).
+[StartBuildBatchOutputTypeDef](./type_defs.md#startbuildbatchoutputtypedef).
 
 ### stop_build
 
@@ -896,8 +844,7 @@ Arguments:
 
 - `id`: `str` *(required)*
 
-Returns
-[StopBuildOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#stopbuildoutputtypedef).
+Returns [StopBuildOutputTypeDef](./type_defs.md#stopbuildoutputtypedef).
 
 ### stop_build_batch
 
@@ -911,7 +858,7 @@ Arguments:
 - `id`: `str` *(required)*
 
 Returns
-[StopBuildBatchOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#stopbuildbatchoutputtypedef).
+[StopBuildBatchOutputTypeDef](./type_defs.md#stopbuildbatchoutputtypedef).
 
 ### update_project
 
@@ -924,40 +871,34 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `source`:
-  [ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
 - `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourcetypedef)\]
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
 - `sourceVersion`: `str`
 - `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectsourceversiontypedef)\]
-- `artifacts`:
-  [ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `artifacts`: [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
 - `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectartifactstypedef)\]
-- `cache`:
-  [ProjectCacheTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectcachetypedef)
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
 - `environment`:
-  [ProjectEnvironmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectenvironmenttypedef)
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
 - `serviceRole`: `str`
 - `timeoutInMinutes`: `int`
 - `queuedTimeoutInMinutes`: `int`
 - `encryptionKey`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#tagtypedef)\]
-- `vpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#vpcconfigtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `badgeEnabled`: `bool`
-- `logsConfig`:
-  [LogsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#logsconfigtypedef)
+- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
 - `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectfilesystemlocationtypedef)\]
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
 - `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#projectbuildbatchconfigtypedef)
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
 Returns
-[UpdateProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#updateprojectoutputtypedef).
+[UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef).
 
 ### update_report_group
 
@@ -970,12 +911,11 @@ Arguments:
 
 - `arn`: `str` *(required)*
 - `exportConfig`:
-  [ReportExportConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#reportexportconfigtypedef)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#tagtypedef)\]
+  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateReportGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#updatereportgroupoutputtypedef).
+[UpdateReportGroupOutputTypeDef](./type_defs.md#updatereportgroupoutputtypedef).
 
 ### update_webhook
 
@@ -990,12 +930,11 @@ Arguments:
 - `branchFilter`: `str`
 - `rotateSecret`: `bool`
 - `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#webhookfiltertypedef)\]\]
-- `buildType`:
-  [WebhookBuildType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/literals.html#webhookbuildtype)
+  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+- `buildType`: [WebhookBuildType](./literals.md#webhookbuildtype)
 
 Returns
-[UpdateWebhookOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_codebuild/type_defs.html#updatewebhookoutputtypedef).
+[UpdateWebhookOutputTypeDef](./type_defs.md#updatewebhookoutputtypedef).
 
 ### get_paginator
 

@@ -1,6 +1,6 @@
 # Type annotations for boto3 CodeCommit module
 
-> [Index](../README.md) > CodeCommit
+> [Index](..) > CodeCommit
 
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
@@ -475,7 +475,7 @@ from mypy_boto3_codecommit.type_defs import ApprovalRuleEventMetadataTypeDef, ..
 - [RepositoryNameIdPairTypeDef](./type_defs.md#repositorynameidpairtypedef)
 - [RepositoryTriggerExecutionFailureTypeDef](./type_defs.md#repositorytriggerexecutionfailuretypedef)
 - [RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)
-- [ResponseMetadata](./type_defs.md#responsemetadata)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)
 - [SourceFileSpecifierTypeDef](./type_defs.md#sourcefilespecifiertypedef)
 - [SubModuleTypeDef](./type_defs.md#submoduletypedef)

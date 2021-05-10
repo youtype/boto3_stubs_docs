@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Snowball module
 
-> [Index](../README.md) > [Snowball](./README.md) > Structures
+> [Index](..) > [Snowball](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
@@ -84,8 +84,7 @@ from mypy_boto3_snowball.type_defs import ClusterListEntryTypeDef
 Optional fields:
 
 - `ClusterId`: `str`
-- `ClusterState`:
-  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#clusterstate)
+- `ClusterState`: [ClusterState](./literals.md#clusterstate)
 - `CreationDate`: `datetime`
 - `Description`: `str`
 
@@ -101,23 +100,16 @@ Optional fields:
 - `Description`: `str`
 - `KmsKeyARN`: `str`
 - `RoleARN`: `str`
-- `ClusterState`:
-  [ClusterState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#clusterstate)
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobtype)
-- `SnowballType`:
-  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `ClusterState`: [ClusterState](./literals.md#clusterstate)
+- `JobType`: [JobType](./literals.md#jobtype)
+- `SnowballType`: [SnowballType](./literals.md#snowballtype)
 - `CreationDate`: `datetime`
-- `Resources`:
-  [JobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobresourcetypedef)
+- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `AddressId`: `str`
-- `ShippingOption`:
-  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
-- `Notification`:
-  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
+- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ForwardingAddressId`: `str`
-- `TaxDocuments`:
-  [TaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#taxdocumentstypedef)
+- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 
 ## CompatibleImageTypeDef
 
@@ -178,8 +170,7 @@ from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelResultTypeDef
 
 Optional fields:
 
-- `Status`:
-  [ShippingLabelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippinglabelstatus)
+- `Status`: [ShippingLabelStatus](./literals.md#shippinglabelstatus)
 
 ## DataTransferTypeDef
 
@@ -202,8 +193,7 @@ from mypy_boto3_snowball.type_defs import DescribeAddressResultTypeDef
 
 Optional fields:
 
-- `Address`:
-  [AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#addresstypedef)
+- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
 
 ## DescribeAddressesResultTypeDef
 
@@ -213,8 +203,7 @@ from mypy_boto3_snowball.type_defs import DescribeAddressesResultTypeDef
 
 Optional fields:
 
-- `Addresses`:
-  `List`\[[AddressTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#addresstypedef)\]
+- `Addresses`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
 - `NextToken`: `str`
 
 ## DescribeClusterResultTypeDef
@@ -226,7 +215,7 @@ from mypy_boto3_snowball.type_defs import DescribeClusterResultTypeDef
 Optional fields:
 
 - `ClusterMetadata`:
-  [ClusterMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#clustermetadatatypedef)
+  [ClusterMetadataTypeDef](./type_defs.md#clustermetadatatypedef)
 
 ## DescribeJobResultTypeDef
 
@@ -236,10 +225,9 @@ from mypy_boto3_snowball.type_defs import DescribeJobResultTypeDef
 
 Optional fields:
 
-- `JobMetadata`:
-  [JobMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobmetadatatypedef)
+- `JobMetadata`: [JobMetadataTypeDef](./type_defs.md#jobmetadatatypedef)
 - `SubJobMetadata`:
-  `List`\[[JobMetadataTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobmetadatatypedef)\]
+  `List`\[[JobMetadataTypeDef](./type_defs.md#jobmetadatatypedef)\]
 
 ## DescribeReturnShippingLabelResultTypeDef
 
@@ -249,8 +237,7 @@ from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelResultTypeD
 
 Optional fields:
 
-- `Status`:
-  [ShippingLabelStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippinglabelstatus)
+- `Status`: [ShippingLabelStatus](./literals.md#shippinglabelstatus)
 - `ExpirationDate`: `datetime`
 
 ## DeviceConfigurationTypeDef
@@ -262,7 +249,7 @@ from mypy_boto3_snowball.type_defs import DeviceConfigurationTypeDef
 Optional fields:
 
 - `SnowconeDeviceConfiguration`:
-  [SnowconeDeviceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#snowconedeviceconfigurationtypedef)
+  [SnowconeDeviceConfigurationTypeDef](./type_defs.md#snowconedeviceconfigurationtypedef)
 
 ## Ec2AmiResourceTypeDef
 
@@ -348,13 +335,10 @@ from mypy_boto3_snowball.type_defs import JobListEntryTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `JobState`:
-  [JobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobstate)
+- `JobState`: [JobState](./literals.md#jobstate)
 - `IsMaster`: `bool`
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobtype)
-- `SnowballType`:
-  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `JobType`: [JobType](./literals.md#jobtype)
+- `SnowballType`: [SnowballType](./literals.md#snowballtype)
 - `CreationDate`: `datetime`
 - `Description`: `str`
 
@@ -379,35 +363,28 @@ from mypy_boto3_snowball.type_defs import JobMetadataTypeDef
 Optional fields:
 
 - `JobId`: `str`
-- `JobState`:
-  [JobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobstate)
-- `JobType`:
-  [JobType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobtype)
-- `SnowballType`:
-  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `JobState`: [JobState](./literals.md#jobstate)
+- `JobType`: [JobType](./literals.md#jobtype)
+- `SnowballType`: [SnowballType](./literals.md#snowballtype)
 - `CreationDate`: `datetime`
-- `Resources`:
-  [JobResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#jobresourcetypedef)
+- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - `Description`: `str`
 - `KmsKeyARN`: `str`
 - `RoleARN`: `str`
 - `AddressId`: `str`
 - `ShippingDetails`:
-  [ShippingDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#shippingdetailstypedef)
+  [ShippingDetailsTypeDef](./type_defs.md#shippingdetailstypedef)
 - `SnowballCapacityPreference`:
-  [SnowballCapacity](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballcapacity)
-- `Notification`:
-  [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
+  [SnowballCapacity](./literals.md#snowballcapacity)
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `DataTransferProgress`:
-  [DataTransferTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#datatransfertypedef)
-- `JobLogInfo`:
-  [JobLogsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#joblogstypedef)
+  [DataTransferTypeDef](./type_defs.md#datatransfertypedef)
+- `JobLogInfo`: [JobLogsTypeDef](./type_defs.md#joblogstypedef)
 - `ClusterId`: `str`
 - `ForwardingAddressId`: `str`
-- `TaxDocuments`:
-  [TaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#taxdocumentstypedef)
+- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - `DeviceConfiguration`:
-  [DeviceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#deviceconfigurationtypedef)
+  [DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef)
 - `LongTermPricingId`: `str`
 
 ## JobResourceTypeDef
@@ -418,12 +395,11 @@ from mypy_boto3_snowball.type_defs import JobResourceTypeDef
 
 Optional fields:
 
-- `S3Resources`:
-  `List`\[[S3ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#s3resourcetypedef)\]
+- `S3Resources`: `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
 - `LambdaResources`:
-  `List`\[[LambdaResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#lambdaresourcetypedef)\]
+  `List`\[[LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)\]
 - `Ec2AmiResources`:
-  `List`\[[Ec2AmiResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#ec2amiresourcetypedef)\]
+  `List`\[[Ec2AmiResourceTypeDef](./type_defs.md#ec2amiresourcetypedef)\]
 
 ## KeyRangeTypeDef
 
@@ -446,7 +422,7 @@ Optional fields:
 
 - `LambdaArn`: `str`
 - `EventTriggers`:
-  `List`\[[EventTriggerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#eventtriggerdefinitiontypedef)\]
+  `List`\[[EventTriggerDefinitionTypeDef](./type_defs.md#eventtriggerdefinitiontypedef)\]
 
 ## ListClusterJobsResultTypeDef
 
@@ -457,7 +433,7 @@ from mypy_boto3_snowball.type_defs import ListClusterJobsResultTypeDef
 Optional fields:
 
 - `JobListEntries`:
-  `List`\[[JobListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#joblistentrytypedef)\]
+  `List`\[[JobListEntryTypeDef](./type_defs.md#joblistentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListClustersResultTypeDef
@@ -469,7 +445,7 @@ from mypy_boto3_snowball.type_defs import ListClustersResultTypeDef
 Optional fields:
 
 - `ClusterListEntries`:
-  `List`\[[ClusterListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#clusterlistentrytypedef)\]
+  `List`\[[ClusterListEntryTypeDef](./type_defs.md#clusterlistentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListCompatibleImagesResultTypeDef
@@ -481,7 +457,7 @@ from mypy_boto3_snowball.type_defs import ListCompatibleImagesResultTypeDef
 Optional fields:
 
 - `CompatibleImages`:
-  `List`\[[CompatibleImageTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#compatibleimagetypedef)\]
+  `List`\[[CompatibleImageTypeDef](./type_defs.md#compatibleimagetypedef)\]
 - `NextToken`: `str`
 
 ## ListJobsResultTypeDef
@@ -493,7 +469,7 @@ from mypy_boto3_snowball.type_defs import ListJobsResultTypeDef
 Optional fields:
 
 - `JobListEntries`:
-  `List`\[[JobListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#joblistentrytypedef)\]
+  `List`\[[JobListEntryTypeDef](./type_defs.md#joblistentrytypedef)\]
 - `NextToken`: `str`
 
 ## ListLongTermPricingResultTypeDef
@@ -505,7 +481,7 @@ from mypy_boto3_snowball.type_defs import ListLongTermPricingResultTypeDef
 Optional fields:
 
 - `LongTermPricingEntries`:
-  `List`\[[LongTermPricingListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#longtermpricinglistentrytypedef)\]
+  `List`\[[LongTermPricingListEntryTypeDef](./type_defs.md#longtermpricinglistentrytypedef)\]
 - `NextToken`: `str`
 
 ## LongTermPricingListEntryTypeDef
@@ -519,14 +495,12 @@ Optional fields:
 - `LongTermPricingId`: `str`
 - `LongTermPricingEndDate`: `datetime`
 - `LongTermPricingStartDate`: `datetime`
-- `LongTermPricingType`:
-  [LongTermPricingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#longtermpricingtype)
+- `LongTermPricingType`: [LongTermPricingType](./literals.md#longtermpricingtype)
 - `CurrentActiveJob`: `str`
 - `ReplacementJob`: `str`
 - `IsLongTermPricingAutoRenew`: `bool`
 - `LongTermPricingStatus`: `str`
-- `SnowballType`:
-  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `SnowballType`: [SnowballType](./literals.md#snowballtype)
 - `JobIds`: `List`\[`str`\]
 
 ## NotificationTypeDef
@@ -538,8 +512,7 @@ from mypy_boto3_snowball.type_defs import NotificationTypeDef
 Optional fields:
 
 - `SnsTopicARN`: `str`
-- `JobStatesToNotify`:
-  `List`\[[JobState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#jobstate)\]
+- `JobStatesToNotify`: `List`\[[JobState](./literals.md#jobstate)\]
 - `NotifyAll`: `bool`
 
 ## PaginatorConfigTypeDef
@@ -563,8 +536,7 @@ from mypy_boto3_snowball.type_defs import S3ResourceTypeDef
 Optional fields:
 
 - `BucketArn`: `str`
-- `KeyRange`:
-  [KeyRangeTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#keyrangetypedef)
+- `KeyRange`: [KeyRangeTypeDef](./type_defs.md#keyrangetypedef)
 
 ## ShipmentTypeDef
 
@@ -585,12 +557,9 @@ from mypy_boto3_snowball.type_defs import ShippingDetailsTypeDef
 
 Optional fields:
 
-- `ShippingOption`:
-  [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
-- `InboundShipment`:
-  [ShipmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#shipmenttypedef)
-- `OutboundShipment`:
-  [ShipmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#shipmenttypedef)
+- `ShippingOption`: [ShippingOption](./literals.md#shippingoption)
+- `InboundShipment`: [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
+- `OutboundShipment`: [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
 
 ## SnowconeDeviceConfigurationTypeDef
 
@@ -601,7 +570,7 @@ from mypy_boto3_snowball.type_defs import SnowconeDeviceConfigurationTypeDef
 Optional fields:
 
 - `WirelessConnection`:
-  [WirelessConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#wirelessconnectiontypedef)
+  [WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef)
 
 ## TaxDocumentsTypeDef
 
@@ -611,8 +580,7 @@ from mypy_boto3_snowball.type_defs import TaxDocumentsTypeDef
 
 Optional fields:
 
-- `IND`:
-  [INDTaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#indtaxdocumentstypedef)
+- `IND`: [INDTaxDocumentsTypeDef](./type_defs.md#indtaxdocumentstypedef)
 
 ## WirelessConnectionTypeDef
 

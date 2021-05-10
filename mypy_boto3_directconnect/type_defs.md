@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 DirectConnect module
 
-> [Index](../README.md) > [DirectConnect](./README.md) > Structures
+> [Index](..) > [DirectConnect](.) > Typed dictionaries
 
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
@@ -80,7 +80,7 @@ from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssocia
 Optional fields:
 
 - `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationtypedef)
+  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
 
 ## AllocateTransitVirtualInterfaceResultTypeDef
 
@@ -91,7 +91,7 @@ from mypy_boto3_directconnect.type_defs import AllocateTransitVirtualInterfaceRe
 Optional fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef)
+  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 
 ## AssociateMacSecKeyResponseTypeDef
 
@@ -102,8 +102,7 @@ from mypy_boto3_directconnect.type_defs import AssociateMacSecKeyResponseTypeDef
 Optional fields:
 
 - `connectionId`: `str`
-- `macSecKeys`:
-  `List`\[[MacSecKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#macseckeytypedef)\]
+- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 
 ## AssociatedGatewayTypeDef
 
@@ -114,8 +113,7 @@ from mypy_boto3_directconnect.type_defs import AssociatedGatewayTypeDef
 Optional fields:
 
 - `id`: `str`
-- `type`:
-  [GatewayType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#gatewaytype)
+- `type`: [GatewayType](./literals.md#gatewaytype)
 - `ownerAccount`: `str`
 - `region`: `str`
 
@@ -130,14 +128,11 @@ Optional fields:
 - `bgpPeerId`: `str`
 - `asn`: `int`
 - `authKey`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `bgpPeerState`:
-  [BGPPeerState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#bgppeerstate)
-- `bgpStatus`:
-  [BGPStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#bgpstatus)
+- `bgpPeerState`: [BGPPeerState](./literals.md#bgppeerstate)
+- `bgpStatus`: [BGPStatus](./literals.md#bgpstatus)
 - `awsDeviceV2`: `str`
 
 ## ConfirmConnectionResponseTypeDef
@@ -148,8 +143,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmConnectionResponseTypeDef
 
 Optional fields:
 
-- `connectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#connectionstate)
+- `connectionState`: [ConnectionState](./literals.md#connectionstate)
 
 ## ConfirmPrivateVirtualInterfaceResponseTypeDef
 
@@ -160,7 +154,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceRes
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#virtualinterfacestate)
+  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
 
 ## ConfirmPublicVirtualInterfaceResponseTypeDef
 
@@ -171,7 +165,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceResp
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#virtualinterfacestate)
+  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
 
 ## ConfirmTransitVirtualInterfaceResponseTypeDef
 
@@ -182,7 +176,7 @@ from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceRes
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#virtualinterfacestate)
+  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
 
 ## ConnectionTypeDef
 
@@ -195,8 +189,7 @@ Optional fields:
 - `ownerAccount`: `str`
 - `connectionId`: `str`
 - `connectionName`: `str`
-- `connectionState`:
-  [ConnectionState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#connectionstate)
+- `connectionState`: [ConnectionState](./literals.md#connectionstate)
 - `region`: `str`
 - `location`: `str`
 - `bandwidth`: `str`
@@ -208,15 +201,13 @@ Optional fields:
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
 - `hasLogicalRedundancy`:
-  [HasLogicalRedundancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#haslogicalredundancy)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+  [HasLogicalRedundancy](./literals.md#haslogicalredundancy)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `macSecCapable`: `bool`
 - `portEncryptionStatus`: `str`
 - `encryptionMode`: `str`
-- `macSecKeys`:
-  `List`\[[MacSecKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#macseckeytypedef)\]
+- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 
 ## ConnectionsTypeDef
 
@@ -226,8 +217,7 @@ from mypy_boto3_directconnect.type_defs import ConnectionsTypeDef
 
 Optional fields:
 
-- `connections`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef)\]
+- `connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 
 ## CreateBGPPeerResponseTypeDef
 
@@ -238,7 +228,7 @@ from mypy_boto3_directconnect.type_defs import CreateBGPPeerResponseTypeDef
 Optional fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef)
+  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 
 ## CreateDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -249,7 +239,7 @@ from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssocia
 Optional fields:
 
 - `directConnectGatewayAssociationProposal`:
-  [DirectConnectGatewayAssociationProposalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationproposaltypedef)
+  [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
 
 ## CreateDirectConnectGatewayAssociationResultTypeDef
 
@@ -260,7 +250,7 @@ from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssocia
 Optional fields:
 
 - `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationtypedef)
+  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
 
 ## CreateDirectConnectGatewayResultTypeDef
 
@@ -271,7 +261,7 @@ from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayResultT
 Optional fields:
 
 - `directConnectGateway`:
-  [DirectConnectGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewaytypedef)
+  [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
 
 ## CreateTransitVirtualInterfaceResultTypeDef
 
@@ -282,7 +272,7 @@ from mypy_boto3_directconnect.type_defs import CreateTransitVirtualInterfaceResu
 Optional fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef)
+  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 
 ## DeleteBGPPeerResponseTypeDef
 
@@ -293,7 +283,7 @@ from mypy_boto3_directconnect.type_defs import DeleteBGPPeerResponseTypeDef
 Optional fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef)
+  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 
 ## DeleteDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -304,7 +294,7 @@ from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssocia
 Optional fields:
 
 - `directConnectGatewayAssociationProposal`:
-  [DirectConnectGatewayAssociationProposalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationproposaltypedef)
+  [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
 
 ## DeleteDirectConnectGatewayAssociationResultTypeDef
 
@@ -315,7 +305,7 @@ from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssocia
 Optional fields:
 
 - `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationtypedef)
+  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
 
 ## DeleteDirectConnectGatewayResultTypeDef
 
@@ -326,7 +316,7 @@ from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayResultT
 Optional fields:
 
 - `directConnectGateway`:
-  [DirectConnectGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewaytypedef)
+  [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
 
 ## DeleteInterconnectResponseTypeDef
 
@@ -336,8 +326,7 @@ from mypy_boto3_directconnect.type_defs import DeleteInterconnectResponseTypeDef
 
 Optional fields:
 
-- `interconnectState`:
-  [InterconnectState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#interconnectstate)
+- `interconnectState`: [InterconnectState](./literals.md#interconnectstate)
 
 ## DeleteVirtualInterfaceResponseTypeDef
 
@@ -348,7 +337,7 @@ from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceResponseTyp
 Optional fields:
 
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#virtualinterfacestate)
+  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
 
 ## DescribeConnectionLoaResponseTypeDef
 
@@ -358,8 +347,7 @@ from mypy_boto3_directconnect.type_defs import DescribeConnectionLoaResponseType
 
 Optional fields:
 
-- `loa`:
-  [LoaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#loatypedef)
+- `loa`: [LoaTypeDef](./type_defs.md#loatypedef)
 
 ## DescribeDirectConnectGatewayAssociationProposalsResultTypeDef
 
@@ -370,7 +358,7 @@ from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssoc
 Optional fields:
 
 - `directConnectGatewayAssociationProposals`:
-  `List`\[[DirectConnectGatewayAssociationProposalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationproposaltypedef)\]
+  `List`\[[DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)\]
 - `nextToken`: `str`
 
 ## DescribeDirectConnectGatewayAssociationsResultTypeDef
@@ -382,7 +370,7 @@ from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssoc
 Optional fields:
 
 - `directConnectGatewayAssociations`:
-  `List`\[[DirectConnectGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationtypedef)\]
+  `List`\[[DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)\]
 - `nextToken`: `str`
 
 ## DescribeDirectConnectGatewayAttachmentsResultTypeDef
@@ -394,7 +382,7 @@ from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttac
 Optional fields:
 
 - `directConnectGatewayAttachments`:
-  `List`\[[DirectConnectGatewayAttachmentTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayattachmenttypedef)\]
+  `List`\[[DirectConnectGatewayAttachmentTypeDef](./type_defs.md#directconnectgatewayattachmenttypedef)\]
 - `nextToken`: `str`
 
 ## DescribeDirectConnectGatewaysResultTypeDef
@@ -406,7 +394,7 @@ from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysResu
 Optional fields:
 
 - `directConnectGateways`:
-  `List`\[[DirectConnectGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewaytypedef)\]
+  `List`\[[DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)\]
 - `nextToken`: `str`
 
 ## DescribeInterconnectLoaResponseTypeDef
@@ -417,8 +405,7 @@ from mypy_boto3_directconnect.type_defs import DescribeInterconnectLoaResponseTy
 
 Optional fields:
 
-- `loa`:
-  [LoaTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#loatypedef)
+- `loa`: [LoaTypeDef](./type_defs.md#loatypedef)
 
 ## DescribeTagsResponseTypeDef
 
@@ -429,7 +416,7 @@ from mypy_boto3_directconnect.type_defs import DescribeTagsResponseTypeDef
 Optional fields:
 
 - `resourceTags`:
-  `List`\[[ResourceTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#resourcetagtypedef)\]
+  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 ## DirectConnectGatewayAssociationProposalTypeDef
 
@@ -443,13 +430,13 @@ Optional fields:
 - `directConnectGatewayId`: `str`
 - `directConnectGatewayOwnerAccount`: `str`
 - `proposalState`:
-  [DirectConnectGatewayAssociationProposalState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#directconnectgatewayassociationproposalstate)
+  [DirectConnectGatewayAssociationProposalState](./literals.md#directconnectgatewayassociationproposalstate)
 - `associatedGateway`:
-  [AssociatedGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#associatedgatewaytypedef)
+  [AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef)
 - `existingAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `requestedAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## DirectConnectGatewayAssociationTypeDef
 
@@ -462,13 +449,13 @@ Optional fields:
 - `directConnectGatewayId`: `str`
 - `directConnectGatewayOwnerAccount`: `str`
 - `associationState`:
-  [DirectConnectGatewayAssociationState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#directconnectgatewayassociationstate)
+  [DirectConnectGatewayAssociationState](./literals.md#directconnectgatewayassociationstate)
 - `stateChangeError`: `str`
 - `associatedGateway`:
-  [AssociatedGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#associatedgatewaytypedef)
+  [AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef)
 - `associationId`: `str`
 - `allowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `virtualGatewayId`: `str`
 - `virtualGatewayRegion`: `str`
 - `virtualGatewayOwnerAccount`: `str`
@@ -486,9 +473,9 @@ Optional fields:
 - `virtualInterfaceRegion`: `str`
 - `virtualInterfaceOwnerAccount`: `str`
 - `attachmentState`:
-  [DirectConnectGatewayAttachmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#directconnectgatewayattachmentstate)
+  [DirectConnectGatewayAttachmentState](./literals.md#directconnectgatewayattachmentstate)
 - `attachmentType`:
-  [DirectConnectGatewayAttachmentType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#directconnectgatewayattachmenttype)
+  [DirectConnectGatewayAttachmentType](./literals.md#directconnectgatewayattachmenttype)
 - `stateChangeError`: `str`
 
 ## DirectConnectGatewayTypeDef
@@ -504,7 +491,7 @@ Optional fields:
 - `amazonSideAsn`: `int`
 - `ownerAccount`: `str`
 - `directConnectGatewayState`:
-  [DirectConnectGatewayState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#directconnectgatewaystate)
+  [DirectConnectGatewayState](./literals.md#directconnectgatewaystate)
 - `stateChangeError`: `str`
 
 ## DisassociateMacSecKeyResponseTypeDef
@@ -516,8 +503,7 @@ from mypy_boto3_directconnect.type_defs import DisassociateMacSecKeyResponseType
 Optional fields:
 
 - `connectionId`: `str`
-- `macSecKeys`:
-  `List`\[[MacSecKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#macseckeytypedef)\]
+- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 
 ## InterconnectTypeDef
 
@@ -529,8 +515,7 @@ Optional fields:
 
 - `interconnectId`: `str`
 - `interconnectName`: `str`
-- `interconnectState`:
-  [InterconnectState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#interconnectstate)
+- `interconnectState`: [InterconnectState](./literals.md#interconnectstate)
 - `region`: `str`
 - `location`: `str`
 - `bandwidth`: `str`
@@ -540,9 +525,8 @@ Optional fields:
 - `jumboFrameCapable`: `bool`
 - `awsDeviceV2`: `str`
 - `hasLogicalRedundancy`:
-  [HasLogicalRedundancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#haslogicalredundancy)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+  [HasLogicalRedundancy](./literals.md#haslogicalredundancy)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
 ## InterconnectsTypeDef
@@ -554,7 +538,7 @@ from mypy_boto3_directconnect.type_defs import InterconnectsTypeDef
 Optional fields:
 
 - `interconnects`:
-  `List`\[[InterconnectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#interconnecttypedef)\]
+  `List`\[[InterconnectTypeDef](./type_defs.md#interconnecttypedef)\]
 
 ## LagTypeDef
 
@@ -569,26 +553,22 @@ Optional fields:
 - `lagId`: `str`
 - `ownerAccount`: `str`
 - `lagName`: `str`
-- `lagState`:
-  [LagState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#lagstate)
+- `lagState`: [LagState](./literals.md#lagstate)
 - `location`: `str`
 - `region`: `str`
 - `minimumLinks`: `int`
 - `awsDevice`: `str`
 - `awsDeviceV2`: `str`
-- `connections`:
-  `List`\[[ConnectionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#connectiontypedef)\]
+- `connections`: `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `allowsHostedConnections`: `bool`
 - `jumboFrameCapable`: `bool`
 - `hasLogicalRedundancy`:
-  [HasLogicalRedundancy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#haslogicalredundancy)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+  [HasLogicalRedundancy](./literals.md#haslogicalredundancy)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `macSecCapable`: `bool`
 - `encryptionMode`: `str`
-- `macSecKeys`:
-  `List`\[[MacSecKeyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#macseckeytypedef)\]
+- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
 
 ## LagsTypeDef
 
@@ -598,8 +578,7 @@ from mypy_boto3_directconnect.type_defs import LagsTypeDef
 
 Optional fields:
 
-- `lags`:
-  `List`\[[LagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#lagtypedef)\]
+- `lags`: `List`\[[LagTypeDef](./type_defs.md#lagtypedef)\]
 
 ## ListVirtualInterfaceTestHistoryResponseTypeDef
 
@@ -610,7 +589,7 @@ from mypy_boto3_directconnect.type_defs import ListVirtualInterfaceTestHistoryRe
 Optional fields:
 
 - `virtualInterfaceTestHistory`:
-  `List`\[[VirtualInterfaceTestHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetesthistorytypedef)\]
+  `List`\[[VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)\]
 - `nextToken`: `str`
 
 ## LoaTypeDef
@@ -622,7 +601,8 @@ from mypy_boto3_directconnect.type_defs import LoaTypeDef
 Optional fields:
 
 - `loaContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `loaContentType`: `Literal['application/pdf']`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentType](./literals.md#loacontenttype))
 
 ## LocationTypeDef
 
@@ -647,8 +627,7 @@ from mypy_boto3_directconnect.type_defs import LocationsTypeDef
 
 Optional fields:
 
-- `locations`:
-  `List`\[[LocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#locationtypedef)\]
+- `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
 
 ## MacSecKeyTypeDef
 
@@ -673,8 +652,7 @@ Optional fields:
 
 - `asn`: `int`
 - `authKey`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
 
@@ -695,11 +673,9 @@ Optional fields:
 - `mtu`: `int`
 - `authKey`: `str`
 - `amazonAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `customerAddress`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPrivateVirtualInterfaceTypeDef
 
@@ -719,12 +695,10 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPublicVirtualInterfaceAllocationTypeDef
 
@@ -743,12 +717,10 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPublicVirtualInterfaceTypeDef
 
@@ -767,12 +739,10 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceAllocationTypeDef
 
@@ -789,10 +759,8 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceTypeDef
 
@@ -809,11 +777,9 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `directConnectGatewayId`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -836,8 +802,7 @@ from mypy_boto3_directconnect.type_defs import ResourceTagTypeDef
 Optional fields:
 
 - `resourceArn`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RouteFilterPrefixTypeDef
 
@@ -858,7 +823,7 @@ from mypy_boto3_directconnect.type_defs import StartBgpFailoverTestResponseTypeD
 Optional fields:
 
 - `virtualInterfaceTest`:
-  [VirtualInterfaceTestHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetesthistorytypedef)
+  [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
 
 ## StopBgpFailoverTestResponseTypeDef
 
@@ -869,7 +834,7 @@ from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestResponseTypeDe
 Optional fields:
 
 - `virtualInterfaceTest`:
-  [VirtualInterfaceTestHistoryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetesthistorytypedef)
+  [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
 
 ## TagTypeDef
 
@@ -894,7 +859,7 @@ from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayAssocia
 Optional fields:
 
 - `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#directconnectgatewayassociationtypedef)
+  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
 
 ## VirtualGatewayTypeDef
 
@@ -916,7 +881,7 @@ from mypy_boto3_directconnect.type_defs import VirtualGatewaysTypeDef
 Optional fields:
 
 - `virtualGateways`:
-  `List`\[[VirtualGatewayTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualgatewaytypedef)\]
+  `List`\[[VirtualGatewayTypeDef](./type_defs.md#virtualgatewaytypedef)\]
 
 ## VirtualInterfaceTestHistoryTypeDef
 
@@ -955,23 +920,20 @@ Optional fields:
 - `authKey`: `str`
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
-- `addressFamily`:
-  [AddressFamily](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#addressfamily)
+- `addressFamily`: [AddressFamily](./literals.md#addressfamily)
 - `virtualInterfaceState`:
-  [VirtualInterfaceState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/literals.html#virtualinterfacestate)
+  [VirtualInterfaceState](./literals.md#virtualinterfacestate)
 - `customerRouterConfig`: `str`
 - `mtu`: `int`
 - `jumboFrameCapable`: `bool`
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#routefilterprefixtypedef)\]
-- `bgpPeers`:
-  `List`\[[BGPPeerTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#bgppeertypedef)\]
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `bgpPeers`: `List`\[[BGPPeerTypeDef](./type_defs.md#bgppeertypedef)\]
 - `region`: `str`
 - `awsDeviceV2`: `str`
-- `tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#tagtypedef)\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VirtualInterfacesTypeDef
 
@@ -982,4 +944,4 @@ from mypy_boto3_directconnect.type_defs import VirtualInterfacesTypeDef
 Optional fields:
 
 - `virtualInterfaces`:
-  `List`\[[VirtualInterfaceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_directconnect/type_defs.html#virtualinterfacetypedef)\]
+  `List`\[[VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)\]

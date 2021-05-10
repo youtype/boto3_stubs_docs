@@ -1,7 +1,6 @@
 # KinesisVideoArchivedMediaClient for boto3 KinesisVideoArchivedMedia module
 
-> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) >
-> KinesisVideoArchivedMediaClient
+> [Index](..) > [KinesisVideoArchivedMedia](.) > KinesisVideoArchivedMediaClient
 
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
@@ -106,13 +105,12 @@ Boto3 documentation:
 Arguments:
 
 - `ClipFragmentSelector`:
-  [ClipFragmentSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#clipfragmentselectortypedef)
+  [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
   *(required)*
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-Returns
-[GetClipOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#getclipoutputtypedef).
+Returns [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef).
 
 ### get_dash_streaming_session_url
 
@@ -127,19 +125,18 @@ Arguments:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
-- `PlaybackMode`:
-  [DASHPlaybackMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#dashplaybackmode)
+- `PlaybackMode`: [DASHPlaybackMode](./literals.md#dashplaybackmode)
 - `DisplayFragmentTimestamp`:
-  [DASHDisplayFragmentTimestamp](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#dashdisplayfragmenttimestamp)
+  [DASHDisplayFragmentTimestamp](./literals.md#dashdisplayfragmenttimestamp)
 - `DisplayFragmentNumber`:
-  [DASHDisplayFragmentNumber](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#dashdisplayfragmentnumber)
+  [DASHDisplayFragmentNumber](./literals.md#dashdisplayfragmentnumber)
 - `DASHFragmentSelector`:
-  [DASHFragmentSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#dashfragmentselectortypedef)
+  [DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef)
 - `Expires`: `int`
 - `MaxManifestFragmentResults`: `int`
 
 Returns
-[GetDASHStreamingSessionURLOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#getdashstreamingsessionurloutputtypedef).
+[GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef).
 
 ### get_hls_streaming_session_url
 
@@ -154,21 +151,18 @@ Arguments:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
-- `PlaybackMode`:
-  [HLSPlaybackMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#hlsplaybackmode)
+- `PlaybackMode`: [HLSPlaybackMode](./literals.md#hlsplaybackmode)
 - `HLSFragmentSelector`:
-  [HLSFragmentSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#hlsfragmentselectortypedef)
-- `ContainerFormat`:
-  [ContainerFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#containerformat)
-- `DiscontinuityMode`:
-  [HLSDiscontinuityMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#hlsdiscontinuitymode)
+  [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
+- `ContainerFormat`: [ContainerFormat](./literals.md#containerformat)
+- `DiscontinuityMode`: [HLSDiscontinuityMode](./literals.md#hlsdiscontinuitymode)
 - `DisplayFragmentTimestamp`:
-  [HLSDisplayFragmentTimestamp](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/literals.html#hlsdisplayfragmenttimestamp)
+  [HLSDisplayFragmentTimestamp](./literals.md#hlsdisplayfragmenttimestamp)
 - `Expires`: `int`
 - `MaxMediaPlaylistFragmentResults`: `int`
 
 Returns
-[GetHLSStreamingSessionURLOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#gethlsstreamingsessionurloutputtypedef).
+[GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef).
 
 ### get_media_for_fragment_list
 
@@ -186,7 +180,7 @@ Arguments:
 - `StreamARN`: `str`
 
 Returns
-[GetMediaForFragmentListOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#getmediaforfragmentlistoutputtypedef).
+[GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef).
 
 ### list_fragments
 
@@ -203,10 +197,10 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `FragmentSelector`:
-  [FragmentSelectorTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#fragmentselectortypedef)
+  [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
 
 Returns
-[ListFragmentsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesis_video_archived_media/type_defs.html#listfragmentsoutputtypedef).
+[ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef).
 
 ### get_paginator
 

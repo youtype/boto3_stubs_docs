@@ -1,6 +1,6 @@
 # Typed dictionaries for boto3 Signer module
 
-> [Index](../README.md) > [Signer](./README.md) > Structures
+> [Index](..) > [Signer](.) > Typed dictionaries
 
 Auto-generated documentation for
 [Signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#Signer)
@@ -62,28 +62,25 @@ from mypy_boto3_signer.type_defs import DescribeSigningJobResponseTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `source`:
-  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#sourcetypedef)
+- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `signingMaterial`:
-  [SigningMaterialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingmaterialtypedef)
+  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
 - `platformId`: `str`
 - `platformDisplayName`: `str`
 - `profileName`: `str`
 - `profileVersion`: `str`
 - `overrides`:
-  [SigningPlatformOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingplatformoverridestypedef)
+  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
 - `signingParameters`: `Dict`\[`str`, `str`\]
 - `createdAt`: `datetime`
 - `completedAt`: `datetime`
 - `signatureExpiresAt`: `datetime`
 - `requestedBy`: `str`
-- `status`:
-  [SigningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingstatus)
+- `status`: [SigningStatus](./literals.md#signingstatus)
 - `statusReason`: `str`
 - `revocationRecord`:
-  [SigningJobRevocationRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingjobrevocationrecordtypedef)
-- `signedObject`:
-  [SignedObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signedobjecttypedef)
+  [SigningJobRevocationRecordTypeDef](./type_defs.md#signingjobrevocationrecordtypedef)
+- `signedObject`: [SignedObjectTypeDef](./type_defs.md#signedobjecttypedef)
 - `jobOwner`: `str`
 - `jobInvoker`: `str`
 
@@ -95,8 +92,7 @@ from mypy_boto3_signer.type_defs import DestinationTypeDef
 
 Optional fields:
 
-- `s3`:
-  [S3DestinationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#s3destinationtypedef)
+- `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 
 ## EncryptionAlgorithmOptionsTypeDef
 
@@ -107,9 +103,8 @@ from mypy_boto3_signer.type_defs import EncryptionAlgorithmOptionsTypeDef
 Required fields:
 
 - `allowedValues`:
-  `List`\[[EncryptionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#encryptionalgorithm)\]
-- `defaultValue`:
-  [EncryptionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#encryptionalgorithm)
+  `List`\[[EncryptionAlgorithm](./literals.md#encryptionalgorithm)\]
+- `defaultValue`: [EncryptionAlgorithm](./literals.md#encryptionalgorithm)
 
 ## GetSigningPlatformResponseTypeDef
 
@@ -123,11 +118,11 @@ Optional fields:
 - `displayName`: `str`
 - `partner`: `str`
 - `target`: `str`
-- `category`: `Literal['AWSIoT']`
+- `category`: `Literal['AWSIoT']` (see [Category](./literals.md#category))
 - `signingConfiguration`:
-  [SigningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingconfigurationtypedef)
+  [SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef)
 - `signingImageFormat`:
-  [SigningImageFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingimageformattypedef)
+  [SigningImageFormatTypeDef](./type_defs.md#signingimageformattypedef)
 - `maxSizeInMB`: `int`
 - `revocationSupported`: `bool`
 
@@ -143,18 +138,17 @@ Optional fields:
 - `profileVersion`: `str`
 - `profileVersionArn`: `str`
 - `revocationRecord`:
-  [SigningProfileRevocationRecordTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingprofilerevocationrecordtypedef)
+  [SigningProfileRevocationRecordTypeDef](./type_defs.md#signingprofilerevocationrecordtypedef)
 - `signingMaterial`:
-  [SigningMaterialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingmaterialtypedef)
+  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
 - `platformId`: `str`
 - `platformDisplayName`: `str`
 - `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signaturevalidityperiodtypedef)
+  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
 - `overrides`:
-  [SigningPlatformOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingplatformoverridestypedef)
+  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
 - `signingParameters`: `Dict`\[`str`, `str`\]
-- `status`:
-  [SigningProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingprofilestatus)
+- `status`: [SigningProfileStatus](./literals.md#signingprofilestatus)
 - `statusReason`: `str`
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
@@ -167,10 +161,8 @@ from mypy_boto3_signer.type_defs import HashAlgorithmOptionsTypeDef
 
 Required fields:
 
-- `allowedValues`:
-  `List`\[[HashAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#hashalgorithm)\]
-- `defaultValue`:
-  [HashAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#hashalgorithm)
+- `allowedValues`: `List`\[[HashAlgorithm](./literals.md#hashalgorithm)\]
+- `defaultValue`: [HashAlgorithm](./literals.md#hashalgorithm)
 
 ## ListProfilePermissionsResponseTypeDef
 
@@ -182,8 +174,7 @@ Optional fields:
 
 - `revisionId`: `str`
 - `policySizeBytes`: `int`
-- `permissions`:
-  `List`\[[PermissionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#permissiontypedef)\]
+- `permissions`: `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `nextToken`: `str`
 
 ## ListSigningJobsResponseTypeDef
@@ -194,8 +185,7 @@ from mypy_boto3_signer.type_defs import ListSigningJobsResponseTypeDef
 
 Optional fields:
 
-- `jobs`:
-  `List`\[[SigningJobTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingjobtypedef)\]
+- `jobs`: `List`\[[SigningJobTypeDef](./type_defs.md#signingjobtypedef)\]
 - `nextToken`: `str`
 
 ## ListSigningPlatformsResponseTypeDef
@@ -207,7 +197,7 @@ from mypy_boto3_signer.type_defs import ListSigningPlatformsResponseTypeDef
 Optional fields:
 
 - `platforms`:
-  `List`\[[SigningPlatformTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingplatformtypedef)\]
+  `List`\[[SigningPlatformTypeDef](./type_defs.md#signingplatformtypedef)\]
 - `nextToken`: `str`
 
 ## ListSigningProfilesResponseTypeDef
@@ -219,7 +209,7 @@ from mypy_boto3_signer.type_defs import ListSigningProfilesResponseTypeDef
 Optional fields:
 
 - `profiles`:
-  `List`\[[SigningProfileTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingprofiletypedef)\]
+  `List`\[[SigningProfileTypeDef](./type_defs.md#signingprofiletypedef)\]
 - `nextToken`: `str`
 
 ## ListTagsForResourceResponseTypeDef
@@ -322,8 +312,7 @@ from mypy_boto3_signer.type_defs import SignatureValidityPeriodTypeDef
 Optional fields:
 
 - `value`: `int`
-- `type`:
-  [ValidityType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#validitytype)
+- `type`: [ValidityType](./literals.md#validitytype)
 
 ## SignedObjectTypeDef
 
@@ -333,8 +322,7 @@ from mypy_boto3_signer.type_defs import SignedObjectTypeDef
 
 Optional fields:
 
-- `s3`:
-  [S3SignedObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#s3signedobjecttypedef)
+- `s3`: [S3SignedObjectTypeDef](./type_defs.md#s3signedobjecttypedef)
 
 ## SigningConfigurationOverridesTypeDef
 
@@ -344,10 +332,8 @@ from mypy_boto3_signer.type_defs import SigningConfigurationOverridesTypeDef
 
 Optional fields:
 
-- `encryptionAlgorithm`:
-  [EncryptionAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#encryptionalgorithm)
-- `hashAlgorithm`:
-  [HashAlgorithm](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#hashalgorithm)
+- `encryptionAlgorithm`: [EncryptionAlgorithm](./literals.md#encryptionalgorithm)
+- `hashAlgorithm`: [HashAlgorithm](./literals.md#hashalgorithm)
 
 ## SigningConfigurationTypeDef
 
@@ -358,9 +344,9 @@ from mypy_boto3_signer.type_defs import SigningConfigurationTypeDef
 Required fields:
 
 - `encryptionAlgorithmOptions`:
-  [EncryptionAlgorithmOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#encryptionalgorithmoptionstypedef)
+  [EncryptionAlgorithmOptionsTypeDef](./type_defs.md#encryptionalgorithmoptionstypedef)
 - `hashAlgorithmOptions`:
-  [HashAlgorithmOptionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#hashalgorithmoptionstypedef)
+  [HashAlgorithmOptionsTypeDef](./type_defs.md#hashalgorithmoptionstypedef)
 
 ## SigningImageFormatTypeDef
 
@@ -370,10 +356,8 @@ from mypy_boto3_signer.type_defs import SigningImageFormatTypeDef
 
 Required fields:
 
-- `supportedFormats`:
-  `List`\[[ImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#imageformat)\]
-- `defaultFormat`:
-  [ImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#imageformat)
+- `supportedFormats`: `List`\[[ImageFormat](./literals.md#imageformat)\]
+- `defaultFormat`: [ImageFormat](./literals.md#imageformat)
 
 ## SigningJobRevocationRecordTypeDef
 
@@ -396,15 +380,12 @@ from mypy_boto3_signer.type_defs import SigningJobTypeDef
 Optional fields:
 
 - `jobId`: `str`
-- `source`:
-  [SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#sourcetypedef)
-- `signedObject`:
-  [SignedObjectTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signedobjecttypedef)
+- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
+- `signedObject`: [SignedObjectTypeDef](./type_defs.md#signedobjecttypedef)
 - `signingMaterial`:
-  [SigningMaterialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingmaterialtypedef)
+  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
 - `createdAt`: `datetime`
-- `status`:
-  [SigningStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingstatus)
+- `status`: [SigningStatus](./literals.md#signingstatus)
 - `isRevoked`: `bool`
 - `profileName`: `str`
 - `profileVersion`: `str`
@@ -433,9 +414,8 @@ from mypy_boto3_signer.type_defs import SigningPlatformOverridesTypeDef
 Optional fields:
 
 - `signingConfiguration`:
-  [SigningConfigurationOverridesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingconfigurationoverridestypedef)
-- `signingImageFormat`:
-  [ImageFormat](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#imageformat)
+  [SigningConfigurationOverridesTypeDef](./type_defs.md#signingconfigurationoverridestypedef)
+- `signingImageFormat`: [ImageFormat](./literals.md#imageformat)
 
 ## SigningPlatformTypeDef
 
@@ -449,11 +429,11 @@ Optional fields:
 - `displayName`: `str`
 - `partner`: `str`
 - `target`: `str`
-- `category`: `Literal['AWSIoT']`
+- `category`: `Literal['AWSIoT']` (see [Category](./literals.md#category))
 - `signingConfiguration`:
-  [SigningConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingconfigurationtypedef)
+  [SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef)
 - `signingImageFormat`:
-  [SigningImageFormatTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingimageformattypedef)
+  [SigningImageFormatTypeDef](./type_defs.md#signingimageformattypedef)
 - `maxSizeInMB`: `int`
 - `revocationSupported`: `bool`
 
@@ -481,14 +461,13 @@ Optional fields:
 - `profileVersion`: `str`
 - `profileVersionArn`: `str`
 - `signingMaterial`:
-  [SigningMaterialTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signingmaterialtypedef)
+  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
 - `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#signaturevalidityperiodtypedef)
+  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
 - `platformId`: `str`
 - `platformDisplayName`: `str`
 - `signingParameters`: `Dict`\[`str`, `str`\]
-- `status`:
-  [SigningProfileStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/literals.html#signingprofilestatus)
+- `status`: [SigningProfileStatus](./literals.md#signingprofilestatus)
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -500,8 +479,7 @@ from mypy_boto3_signer.type_defs import SourceTypeDef
 
 Optional fields:
 
-- `s3`:
-  [S3SourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_signer/type_defs.html#s3sourcetypedef)
+- `s3`: [S3SourceTypeDef](./type_defs.md#s3sourcetypedef)
 
 ## StartSigningJobResponseTypeDef
 

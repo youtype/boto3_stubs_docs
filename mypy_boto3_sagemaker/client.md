@@ -1,6 +1,6 @@
 # SageMakerClient for boto3 SageMaker module
 
-> [Index](../README.md) > [SageMaker](./README.md) > SageMakerClient
+> [Index](..) > [SageMaker](.) > SageMakerClient
 
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
@@ -298,11 +298,10 @@ Arguments:
 
 - `SourceArn`: `str` *(required)*
 - `DestinationArn`: `str` *(required)*
-- `AssociationType`:
-  [AssociationEdgeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#associationedgetype)
+- `AssociationType`: [AssociationEdgeType](./literals.md#associationedgetype)
 
 Returns
-[AddAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#addassociationresponsetypedef).
+[AddAssociationResponseTypeDef](./type_defs.md#addassociationresponsetypedef).
 
 ### add_tags
 
@@ -314,12 +313,9 @@ Boto3 documentation:
 Arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-Returns
-[AddTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#addtagsoutputtypedef).
+Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 
 ### associate_trial_component
 
@@ -335,7 +331,7 @@ Arguments:
 - `TrialName`: `str` *(required)*
 
 Returns
-[AssociateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#associatetrialcomponentresponsetypedef).
+[AssociateTrialComponentResponseTypeDef](./type_defs.md#associatetrialcomponentresponsetypedef).
 
 ### can_paginate
 
@@ -360,21 +356,18 @@ Boto3 documentation:
 Arguments:
 
 - `ActionName`: `str` *(required)*
-- `Source`:
-  [ActionSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#actionsourcetypedef)
+- `Source`: [ActionSourceTypeDef](./type_defs.md#actionsourcetypedef)
   *(required)*
 - `ActionType`: `str` *(required)*
 - `Description`: `str`
-- `Status`:
-  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#actionstatus)
+- `Status`: [ActionStatus](./literals.md#actionstatus)
 - `Properties`: `Dict`\[`str`, `str`\]
 - `MetadataProperties`:
-  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createactionresponsetypedef).
+[CreateActionResponseTypeDef](./type_defs.md#createactionresponsetypedef).
 
 ### create_algorithm
 
@@ -387,19 +380,18 @@ Arguments:
 
 - `AlgorithmName`: `str` *(required)*
 - `TrainingSpecification`:
-  [TrainingSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trainingspecificationtypedef)
+  [TrainingSpecificationTypeDef](./type_defs.md#trainingspecificationtypedef)
   *(required)*
 - `AlgorithmDescription`: `str`
 - `InferenceSpecification`:
-  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+  [InferenceSpecificationTypeDef](./type_defs.md#inferencespecificationtypedef)
 - `ValidationSpecification`:
-  [AlgorithmValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmvalidationspecificationtypedef)
+  [AlgorithmValidationSpecificationTypeDef](./type_defs.md#algorithmvalidationspecificationtypedef)
 - `CertifyForMarketplace`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAlgorithmOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createalgorithmoutputtypedef).
+[CreateAlgorithmOutputTypeDef](./type_defs.md#createalgorithmoutputtypedef).
 
 ### create_app
 
@@ -412,17 +404,12 @@ Arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
-- `AppType`:
-  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
-  *(required)*
+- `AppType`: [AppType](./literals.md#apptype) *(required)*
 - `AppName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
-- `ResourceSpec`:
-  [ResourceSpecTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourcespectypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResourceSpec`: [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 
-Returns
-[CreateAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createappresponsetypedef).
+Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
 ### create_app_image_config
 
@@ -435,13 +422,12 @@ Boto3 documentation:
 Arguments:
 
 - `AppImageConfigName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KernelGatewayImageConfig`:
-  [KernelGatewayImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayimageconfigtypedef)
+  [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
 Returns
-[CreateAppImageConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createappimageconfigresponsetypedef).
+[CreateAppImageConfigResponseTypeDef](./type_defs.md#createappimageconfigresponsetypedef).
 
 ### create_artifact
 
@@ -452,19 +438,17 @@ Boto3 documentation:
 
 Arguments:
 
-- `Source`:
-  [ArtifactSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypedef)
+- `Source`: [ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef)
   *(required)*
 - `ArtifactType`: `str` *(required)*
 - `ArtifactName`: `str`
 - `Properties`: `Dict`\[`str`, `str`\]
 - `MetadataProperties`:
-  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createartifactresponsetypedef).
+[CreateArtifactResponseTypeDef](./type_defs.md#createartifactresponsetypedef).
 
 ### create_auto_ml_job
 
@@ -477,26 +461,24 @@ Arguments:
 
 - `AutoMLJobName`: `str` *(required)*
 - `InputDataConfig`:
-  `List`\[[AutoMLChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automlchanneltypedef)\]
+  `List`\[[AutoMLChannelTypeDef](./type_defs.md#automlchanneltypedef)\]
   *(required)*
 - `OutputDataConfig`:
-  [AutoMLOutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automloutputdataconfigtypedef)
+  [AutoMLOutputDataConfigTypeDef](./type_defs.md#automloutputdataconfigtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
-- `ProblemType`:
-  [ProblemType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#problemtype)
+- `ProblemType`: [ProblemType](./literals.md#problemtype)
 - `AutoMLJobObjective`:
-  [AutoMLJobObjectiveTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobobjectivetypedef)
+  [AutoMLJobObjectiveTypeDef](./type_defs.md#automljobobjectivetypedef)
 - `AutoMLJobConfig`:
-  [AutoMLJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#automljobconfigtypedef)
+  [AutoMLJobConfigTypeDef](./type_defs.md#automljobconfigtypedef)
 - `GenerateCandidateDefinitionsOnly`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ModelDeployConfig`:
-  [ModelDeployConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modeldeployconfigtypedef)
+  [ModelDeployConfigTypeDef](./type_defs.md#modeldeployconfigtypedef)
 
 Returns
-[CreateAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createautomljobresponsetypedef).
+[CreateAutoMLJobResponseTypeDef](./type_defs.md#createautomljobresponsetypedef).
 
 ### create_code_repository
 
@@ -508,14 +490,11 @@ Boto3 documentation:
 Arguments:
 
 - `CodeRepositoryName`: `str` *(required)*
-- `GitConfig`:
-  [GitConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#gitconfigtypedef)
-  *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `GitConfig`: [GitConfigTypeDef](./type_defs.md#gitconfigtypedef) *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCodeRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createcoderepositoryoutputtypedef).
+[CreateCodeRepositoryOutputTypeDef](./type_defs.md#createcoderepositoryoutputtypedef).
 
 ### create_compilation_job
 
@@ -528,20 +507,17 @@ Arguments:
 
 - `CompilationJobName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `InputConfig`:
-  [InputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inputconfigtypedef)
+- `InputConfig`: [InputConfigTypeDef](./type_defs.md#inputconfigtypedef)
   *(required)*
-- `OutputConfig`:
-  [OutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputconfigtypedef)
+- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
   *(required)*
 - `StoppingCondition`:
-  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
+  [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCompilationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createcompilationjobresponsetypedef).
+[CreateCompilationJobResponseTypeDef](./type_defs.md#createcompilationjobresponsetypedef).
 
 ### create_context
 
@@ -553,17 +529,15 @@ Boto3 documentation:
 Arguments:
 
 - `ContextName`: `str` *(required)*
-- `Source`:
-  [ContextSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#contextsourcetypedef)
+- `Source`: [ContextSourceTypeDef](./type_defs.md#contextsourcetypedef)
   *(required)*
 - `ContextType`: `str` *(required)*
 - `Description`: `str`
 - `Properties`: `Dict`\[`str`, `str`\]
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createcontextresponsetypedef).
+[CreateContextResponseTypeDef](./type_defs.md#createcontextresponsetypedef).
 
 ### create_data_quality_job_definition
 
@@ -577,29 +551,28 @@ Arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `DataQualityAppSpecification`:
-  [DataQualityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualityappspecificationtypedef)
+  [DataQualityAppSpecificationTypeDef](./type_defs.md#dataqualityappspecificationtypedef)
   *(required)*
 - `DataQualityJobInput`:
-  [DataQualityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualityjobinputtypedef)
+  [DataQualityJobInputTypeDef](./type_defs.md#dataqualityjobinputtypedef)
   *(required)*
 - `DataQualityJobOutputConfig`:
-  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  [MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef)
   *(required)*
 - `JobResources`:
-  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  [MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `DataQualityBaselineConfig`:
-  [DataQualityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataqualitybaselineconfigtypedef)
+  [DataQualityBaselineConfigTypeDef](./type_defs.md#dataqualitybaselineconfigtypedef)
 - `NetworkConfig`:
-  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+  [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
-  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createdataqualityjobdefinitionresponsetypedef).
+[CreateDataQualityJobDefinitionResponseTypeDef](./type_defs.md#createdataqualityjobdefinitionresponsetypedef).
 
 ### create_device_fleet
 
@@ -612,12 +585,10 @@ Arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 - `OutputConfig`:
-  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
-  *(required)*
+  [EdgeOutputConfigTypeDef](./type_defs.md#edgeoutputconfigtypedef) *(required)*
 - `RoleArn`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### create_domain
 
@@ -629,23 +600,19 @@ Boto3 documentation:
 Arguments:
 
 - `DomainName`: `str` *(required)*
-- `AuthMode`:
-  [AuthMode](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#authmode)
-  *(required)*
+- `AuthMode`: [AuthMode](./literals.md#authmode) *(required)*
 - `DefaultUserSettings`:
-  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
-  *(required)*
+  [UserSettingsTypeDef](./type_defs.md#usersettingstypedef) *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `VpcId`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AppNetworkAccessType`:
-  [AppNetworkAccessType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appnetworkaccesstype)
+  [AppNetworkAccessType](./literals.md#appnetworkaccesstype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
 - `KmsKeyId`: `str`
 
 Returns
-[CreateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createdomainresponsetypedef).
+[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
 ### create_edge_packaging_job
 
@@ -663,11 +630,9 @@ Arguments:
 - `ModelVersion`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `OutputConfig`:
-  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
-  *(required)*
+  [EdgeOutputConfigTypeDef](./type_defs.md#edgeoutputconfigtypedef) *(required)*
 - `ResourceKey`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### create_endpoint
 
@@ -680,11 +645,10 @@ Arguments:
 
 - `EndpointName`: `str` *(required)*
 - `EndpointConfigName`: `str` *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createendpointoutputtypedef).
+[CreateEndpointOutputTypeDef](./type_defs.md#createendpointoutputtypedef).
 
 ### create_endpoint_config
 
@@ -697,16 +661,15 @@ Arguments:
 
 - `EndpointConfigName`: `str` *(required)*
 - `ProductionVariants`:
-  `List`\[[ProductionVariantTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#productionvarianttypedef)\]
+  `List`\[[ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef)\]
   *(required)*
 - `DataCaptureConfig`:
-  [DataCaptureConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#datacaptureconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 
 Returns
-[CreateEndpointConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createendpointconfigoutputtypedef).
+[CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef).
 
 ### create_experiment
 
@@ -720,11 +683,10 @@ Arguments:
 - `ExperimentName`: `str` *(required)*
 - `DisplayName`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createexperimentresponsetypedef).
+[CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
 
 ### create_feature_group
 
@@ -739,19 +701,18 @@ Arguments:
 - `RecordIdentifierFeatureName`: `str` *(required)*
 - `EventTimeFeatureName`: `str` *(required)*
 - `FeatureDefinitions`:
-  `List`\[[FeatureDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#featuredefinitiontypedef)\]
+  `List`\[[FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef)\]
   *(required)*
 - `OnlineStoreConfig`:
-  [OnlineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#onlinestoreconfigtypedef)
+  [OnlineStoreConfigTypeDef](./type_defs.md#onlinestoreconfigtypedef)
 - `OfflineStoreConfig`:
-  [OfflineStoreConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#offlinestoreconfigtypedef)
+  [OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFeatureGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createfeaturegroupresponsetypedef).
+[CreateFeatureGroupResponseTypeDef](./type_defs.md#createfeaturegroupresponsetypedef).
 
 ### create_flow_definition
 
@@ -764,21 +725,19 @@ Arguments:
 
 - `FlowDefinitionName`: `str` *(required)*
 - `HumanLoopConfig`:
-  [HumanLoopConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopconfigtypedef)
-  *(required)*
+  [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) *(required)*
 - `OutputConfig`:
-  [FlowDefinitionOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#flowdefinitionoutputconfigtypedef)
+  [FlowDefinitionOutputConfigTypeDef](./type_defs.md#flowdefinitionoutputconfigtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `HumanLoopRequestSource`:
-  [HumanLoopRequestSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanlooprequestsourcetypedef)
+  [HumanLoopRequestSourceTypeDef](./type_defs.md#humanlooprequestsourcetypedef)
 - `HumanLoopActivationConfig`:
-  [HumanLoopActivationConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humanloopactivationconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [HumanLoopActivationConfigTypeDef](./type_defs.md#humanloopactivationconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFlowDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createflowdefinitionresponsetypedef).
+[CreateFlowDefinitionResponseTypeDef](./type_defs.md#createflowdefinitionresponsetypedef).
 
 ### create_human_task_ui
 
@@ -790,14 +749,12 @@ Boto3 documentation:
 Arguments:
 
 - `HumanTaskUiName`: `str` *(required)*
-- `UiTemplate`:
-  [UiTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#uitemplatetypedef)
+- `UiTemplate`: [UiTemplateTypeDef](./type_defs.md#uitemplatetypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHumanTaskUiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createhumantaskuiresponsetypedef).
+[CreateHumanTaskUiResponseTypeDef](./type_defs.md#createhumantaskuiresponsetypedef).
 
 ### create_hyper_parameter_tuning_job
 
@@ -811,19 +768,18 @@ Arguments:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
 - `HyperParameterTuningJobConfig`:
-  [HyperParameterTuningJobConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobconfigtypedef)
+  [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
   *(required)*
 - `TrainingJobDefinition`:
-  [HyperParameterTrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobdefinitiontypedef)
+  [HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)
 - `TrainingJobDefinitions`:
-  `List`\[[HyperParameterTrainingJobDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertrainingjobdefinitiontypedef)\]
+  `List`\[[HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)\]
 - `WarmStartConfig`:
-  [HyperParameterTuningJobWarmStartConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#hyperparametertuningjobwarmstartconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createhyperparametertuningjobresponsetypedef).
+[CreateHyperParameterTuningJobResponseTypeDef](./type_defs.md#createhyperparametertuningjobresponsetypedef).
 
 ### create_image
 
@@ -838,11 +794,10 @@ Arguments:
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
 - `DisplayName`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createimageresponsetypedef).
+[CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
 
 ### create_image_version
 
@@ -858,7 +813,7 @@ Arguments:
 - `ImageName`: `str` *(required)*
 
 Returns
-[CreateImageVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createimageversionresponsetypedef).
+[CreateImageVersionResponseTypeDef](./type_defs.md#createimageversionresponsetypedef).
 
 ### create_labeling_job
 
@@ -872,25 +827,23 @@ Arguments:
 - `LabelingJobName`: `str` *(required)*
 - `LabelAttributeName`: `str` *(required)*
 - `InputConfig`:
-  [LabelingJobInputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobinputconfigtypedef)
+  [LabelingJobInputConfigTypeDef](./type_defs.md#labelingjobinputconfigtypedef)
   *(required)*
 - `OutputConfig`:
-  [LabelingJobOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjoboutputconfigtypedef)
+  [LabelingJobOutputConfigTypeDef](./type_defs.md#labelingjoboutputconfigtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `HumanTaskConfig`:
-  [HumanTaskConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#humantaskconfigtypedef)
-  *(required)*
+  [HumanTaskConfigTypeDef](./type_defs.md#humantaskconfigtypedef) *(required)*
 - `LabelCategoryConfigS3Uri`: `str`
 - `StoppingConditions`:
-  [LabelingJobStoppingConditionsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobstoppingconditionstypedef)
+  [LabelingJobStoppingConditionsTypeDef](./type_defs.md#labelingjobstoppingconditionstypedef)
 - `LabelingJobAlgorithmsConfig`:
-  [LabelingJobAlgorithmsConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#labelingjobalgorithmsconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [LabelingJobAlgorithmsConfigTypeDef](./type_defs.md#labelingjobalgorithmsconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateLabelingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createlabelingjobresponsetypedef).
+[CreateLabelingJobResponseTypeDef](./type_defs.md#createlabelingjobresponsetypedef).
 
 ### create_model
 
@@ -904,19 +857,16 @@ Arguments:
 - `ModelName`: `str` *(required)*
 - `ExecutionRoleArn`: `str` *(required)*
 - `PrimaryContainer`:
-  [ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#containerdefinitiontypedef)
+  [ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)
 - `Containers`:
-  `List`\[[ContainerDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#containerdefinitiontypedef)\]
+  `List`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
 - `InferenceExecutionConfig`:
-  [InferenceExecutionConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferenceexecutionconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
-- `VpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
+  [InferenceExecutionConfigTypeDef](./type_defs.md#inferenceexecutionconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 
-Returns
-[CreateModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodeloutputtypedef).
+Returns [CreateModelOutputTypeDef](./type_defs.md#createmodeloutputtypedef).
 
 ### create_model_bias_job_definition
 
@@ -930,29 +880,28 @@ Arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `ModelBiasAppSpecification`:
-  [ModelBiasAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasappspecificationtypedef)
+  [ModelBiasAppSpecificationTypeDef](./type_defs.md#modelbiasappspecificationtypedef)
   *(required)*
 - `ModelBiasJobInput`:
-  [ModelBiasJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasjobinputtypedef)
+  [ModelBiasJobInputTypeDef](./type_defs.md#modelbiasjobinputtypedef)
   *(required)*
 - `ModelBiasJobOutputConfig`:
-  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  [MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef)
   *(required)*
 - `JobResources`:
-  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  [MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `ModelBiasBaselineConfig`:
-  [ModelBiasBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelbiasbaselineconfigtypedef)
+  [ModelBiasBaselineConfigTypeDef](./type_defs.md#modelbiasbaselineconfigtypedef)
 - `NetworkConfig`:
-  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+  [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
-  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelBiasJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelbiasjobdefinitionresponsetypedef).
+[CreateModelBiasJobDefinitionResponseTypeDef](./type_defs.md#createmodelbiasjobdefinitionresponsetypedef).
 
 ### create_model_explainability_job_definition
 
@@ -966,29 +915,28 @@ Arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `ModelExplainabilityAppSpecification`:
-  [ModelExplainabilityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilityappspecificationtypedef)
+  [ModelExplainabilityAppSpecificationTypeDef](./type_defs.md#modelexplainabilityappspecificationtypedef)
   *(required)*
 - `ModelExplainabilityJobInput`:
-  [ModelExplainabilityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilityjobinputtypedef)
+  [ModelExplainabilityJobInputTypeDef](./type_defs.md#modelexplainabilityjobinputtypedef)
   *(required)*
 - `ModelExplainabilityJobOutputConfig`:
-  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  [MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef)
   *(required)*
 - `JobResources`:
-  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  [MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `ModelExplainabilityBaselineConfig`:
-  [ModelExplainabilityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelexplainabilitybaselineconfigtypedef)
+  [ModelExplainabilityBaselineConfigTypeDef](./type_defs.md#modelexplainabilitybaselineconfigtypedef)
 - `NetworkConfig`:
-  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+  [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
-  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelExplainabilityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelexplainabilityjobdefinitionresponsetypedef).
+[CreateModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionresponsetypedef).
 
 ### create_model_package
 
@@ -1003,24 +951,21 @@ Arguments:
 - `ModelPackageGroupName`: `str`
 - `ModelPackageDescription`: `str`
 - `InferenceSpecification`:
-  [InferenceSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#inferencespecificationtypedef)
+  [InferenceSpecificationTypeDef](./type_defs.md#inferencespecificationtypedef)
 - `ValidationSpecification`:
-  [ModelPackageValidationSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelpackagevalidationspecificationtypedef)
+  [ModelPackageValidationSpecificationTypeDef](./type_defs.md#modelpackagevalidationspecificationtypedef)
 - `SourceAlgorithmSpecification`:
-  [SourceAlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourcealgorithmspecificationtypedef)
+  [SourceAlgorithmSpecificationTypeDef](./type_defs.md#sourcealgorithmspecificationtypedef)
 - `CertifyForMarketplace`: `bool`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
-- `ModelApprovalStatus`:
-  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
 - `MetadataProperties`:
-  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
-- `ModelMetrics`:
-  [ModelMetricsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelmetricstypedef)
+  [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `ModelMetrics`: [ModelMetricsTypeDef](./type_defs.md#modelmetricstypedef)
 - `ClientToken`: `str`
 
 Returns
-[CreateModelPackageOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelpackageoutputtypedef).
+[CreateModelPackageOutputTypeDef](./type_defs.md#createmodelpackageoutputtypedef).
 
 ### create_model_package_group
 
@@ -1034,11 +979,10 @@ Arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
 - `ModelPackageGroupDescription`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelPackageGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelpackagegroupoutputtypedef).
+[CreateModelPackageGroupOutputTypeDef](./type_defs.md#createmodelpackagegroupoutputtypedef).
 
 ### create_model_quality_job_definition
 
@@ -1052,29 +996,28 @@ Arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `ModelQualityAppSpecification`:
-  [ModelQualityAppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualityappspecificationtypedef)
+  [ModelQualityAppSpecificationTypeDef](./type_defs.md#modelqualityappspecificationtypedef)
   *(required)*
 - `ModelQualityJobInput`:
-  [ModelQualityJobInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualityjobinputtypedef)
+  [ModelQualityJobInputTypeDef](./type_defs.md#modelqualityjobinputtypedef)
   *(required)*
 - `ModelQualityJobOutputConfig`:
-  [MonitoringOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringoutputconfigtypedef)
+  [MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef)
   *(required)*
 - `JobResources`:
-  [MonitoringResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringresourcestypedef)
+  [MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `ModelQualityBaselineConfig`:
-  [ModelQualityBaselineConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelqualitybaselineconfigtypedef)
+  [ModelQualityBaselineConfigTypeDef](./type_defs.md#modelqualitybaselineconfigtypedef)
 - `NetworkConfig`:
-  [MonitoringNetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringnetworkconfigtypedef)
+  [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
-  [MonitoringStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringstoppingconditiontypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmodelqualityjobdefinitionresponsetypedef).
+[CreateModelQualityJobDefinitionResponseTypeDef](./type_defs.md#createmodelqualityjobdefinitionresponsetypedef).
 
 ### create_monitoring_schedule
 
@@ -1088,13 +1031,12 @@ Arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
 - `MonitoringScheduleConfig`:
-  [MonitoringScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduleconfigtypedef)
+  [MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef)
   *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMonitoringScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createmonitoringscheduleresponsetypedef).
+[CreateMonitoringScheduleResponseTypeDef](./type_defs.md#createmonitoringscheduleresponsetypedef).
 
 ### create_notebook_instance
 
@@ -1107,28 +1049,24 @@ Boto3 documentation:
 Arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#instancetype)
-  *(required)*
+- `InstanceType`: [InstanceType](./literals.md#instancetype) *(required)*
 - `RoleArn`: `str` *(required)*
 - `SubnetId`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 - `KmsKeyId`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `LifecycleConfigName`: `str`
 - `DirectInternetAccess`:
-  [DirectInternetAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#directinternetaccess)
+  [DirectInternetAccess](./literals.md#directinternetaccess)
 - `VolumeSizeInGB`: `int`
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstanceacceleratortype)\]
+  `List`\[[NotebookInstanceAcceleratorType](./literals.md#notebookinstanceacceleratortype)\]
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
-- `RootAccess`:
-  [RootAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#rootaccess)
+- `RootAccess`: [RootAccess](./literals.md#rootaccess)
 
 Returns
-[CreateNotebookInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createnotebookinstanceoutputtypedef).
+[CreateNotebookInstanceOutputTypeDef](./type_defs.md#createnotebookinstanceoutputtypedef).
 
 ### create_notebook_instance_lifecycle_config
 
@@ -1142,12 +1080,12 @@ Arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 - `OnCreate`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 Returns
-[CreateNotebookInstanceLifecycleConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createnotebookinstancelifecycleconfigoutputtypedef).
+[CreateNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#createnotebookinstancelifecycleconfigoutputtypedef).
 
 ### create_pipeline
 
@@ -1164,11 +1102,10 @@ Arguments:
 - `RoleArn`: `str` *(required)*
 - `PipelineDisplayName`: `str`
 - `PipelineDescription`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createpipelineresponsetypedef).
+[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
 ### create_presigned_domain_url
 
@@ -1186,7 +1123,7 @@ Arguments:
 - `ExpiresInSeconds`: `int`
 
 Returns
-[CreatePresignedDomainUrlResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createpresigneddomainurlresponsetypedef).
+[CreatePresignedDomainUrlResponseTypeDef](./type_defs.md#createpresigneddomainurlresponsetypedef).
 
 ### create_presigned_notebook_instance_url
 
@@ -1202,7 +1139,7 @@ Arguments:
 - `SessionExpirationDurationInSeconds`: `int`
 
 Returns
-[CreatePresignedNotebookInstanceUrlOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createpresignednotebookinstanceurloutputtypedef).
+[CreatePresignedNotebookInstanceUrlOutputTypeDef](./type_defs.md#createpresignednotebookinstanceurloutputtypedef).
 
 ### create_processing_job
 
@@ -1215,28 +1152,25 @@ Arguments:
 
 - `ProcessingJobName`: `str` *(required)*
 - `ProcessingResources`:
-  [ProcessingResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingresourcestypedef)
+  [ProcessingResourcesTypeDef](./type_defs.md#processingresourcestypedef)
   *(required)*
 - `AppSpecification`:
-  [AppSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#appspecificationtypedef)
-  *(required)*
+  [AppSpecificationTypeDef](./type_defs.md#appspecificationtypedef) *(required)*
 - `RoleArn`: `str` *(required)*
 - `ProcessingInputs`:
-  `List`\[[ProcessingInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processinginputtypedef)\]
+  `List`\[[ProcessingInputTypeDef](./type_defs.md#processinginputtypedef)\]
 - `ProcessingOutputConfig`:
-  [ProcessingOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingoutputconfigtypedef)
+  [ProcessingOutputConfigTypeDef](./type_defs.md#processingoutputconfigtypedef)
 - `StoppingCondition`:
-  [ProcessingStoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#processingstoppingconditiontypedef)
+  [ProcessingStoppingConditionTypeDef](./type_defs.md#processingstoppingconditiontypedef)
 - `Environment`: `Dict`\[`str`, `str`\]
-- `NetworkConfig`:
-  [NetworkConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#networkconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `NetworkConfig`: [NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ExperimentConfig`:
-  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+  [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
 Returns
-[CreateProcessingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createprocessingjobresponsetypedef).
+[CreateProcessingJobResponseTypeDef](./type_defs.md#createprocessingjobresponsetypedef).
 
 ### create_project
 
@@ -1249,14 +1183,13 @@ Arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ServiceCatalogProvisioningDetails`:
-  [ServiceCatalogProvisioningDetailsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#servicecatalogprovisioningdetailstypedef)
+  [ServiceCatalogProvisioningDetailsTypeDef](./type_defs.md#servicecatalogprovisioningdetailstypedef)
   *(required)*
 - `ProjectDescription`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createprojectoutputtypedef).
+[CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
 ### create_training_job
 
@@ -1269,48 +1202,41 @@ Arguments:
 
 - `TrainingJobName`: `str` *(required)*
 - `AlgorithmSpecification`:
-  [AlgorithmSpecificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#algorithmspecificationtypedef)
+  [AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `OutputDataConfig`:
-  [OutputDataConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#outputdataconfigtypedef)
-  *(required)*
-- `ResourceConfig`:
-  [ResourceConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#resourceconfigtypedef)
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) *(required)*
+- `ResourceConfig`: [ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef)
   *(required)*
 - `StoppingCondition`:
-  [StoppingConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppingconditiontypedef)
+  [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
   *(required)*
 - `HyperParameters`: `Dict`\[`str`, `str`\]
-- `InputDataConfig`:
-  `List`\[[ChannelTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#channeltypedef)\]
-- `VpcConfig`:
-  [VpcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#vpcconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableManagedSpotTraining`: `bool`
 - `CheckpointConfig`:
-  [CheckpointConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#checkpointconfigtypedef)
+  [CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef)
 - `DebugHookConfig`:
-  [DebugHookConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debughookconfigtypedef)
+  [DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef)
 - `DebugRuleConfigurations`:
-  `List`\[[DebugRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#debugruleconfigurationtypedef)\]
+  `List`\[[DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef)\]
 - `TensorBoardOutputConfig`:
-  [TensorBoardOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tensorboardoutputconfigtypedef)
+  [TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef)
 - `ExperimentConfig`:
-  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
-- `ProfilerConfig`:
-  [ProfilerConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerconfigtypedef)
+  [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
+- `ProfilerConfig`: [ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef)
 - `ProfilerRuleConfigurations`:
-  `List`\[[ProfilerRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleconfigurationtypedef)\]
+  `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 - `Environment`: `Dict`\[`str`, `str`\]
-- `RetryStrategy`:
-  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retrystrategytypedef)
+- `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 
 Returns
-[CreateTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrainingjobresponsetypedef).
+[CreateTrainingJobResponseTypeDef](./type_defs.md#createtrainingjobresponsetypedef).
 
 ### create_transform_job
 
@@ -1323,31 +1249,26 @@ Arguments:
 
 - `TransformJobName`: `str` *(required)*
 - `ModelName`: `str` *(required)*
-- `TransformInput`:
-  [TransformInputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transforminputtypedef)
+- `TransformInput`: [TransformInputTypeDef](./type_defs.md#transforminputtypedef)
   *(required)*
 - `TransformOutput`:
-  [TransformOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformoutputtypedef)
-  *(required)*
+  [TransformOutputTypeDef](./type_defs.md#transformoutputtypedef) *(required)*
 - `TransformResources`:
-  [TransformResourcesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#transformresourcestypedef)
+  [TransformResourcesTypeDef](./type_defs.md#transformresourcestypedef)
   *(required)*
 - `MaxConcurrentTransforms`: `int`
 - `ModelClientConfig`:
-  [ModelClientConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modelclientconfigtypedef)
+  [ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
-- `BatchStrategy`:
-  [BatchStrategy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#batchstrategy)
+- `BatchStrategy`: [BatchStrategy](./literals.md#batchstrategy)
 - `Environment`: `Dict`\[`str`, `str`\]
-- `DataProcessing`:
-  [DataProcessingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#dataprocessingtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `DataProcessing`: [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ExperimentConfig`:
-  [ExperimentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#experimentconfigtypedef)
+  [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
 Returns
-[CreateTransformJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtransformjobresponsetypedef).
+[CreateTransformJobResponseTypeDef](./type_defs.md#createtransformjobresponsetypedef).
 
 ### create_trial
 
@@ -1362,12 +1283,11 @@ Arguments:
 - `ExperimentName`: `str` *(required)*
 - `DisplayName`: `str`
 - `MetadataProperties`:
-  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrialresponsetypedef).
+[CreateTrialResponseTypeDef](./type_defs.md#createtrialresponsetypedef).
 
 ### create_trial_component
 
@@ -1381,22 +1301,21 @@ Arguments:
 - `TrialComponentName`: `str` *(required)*
 - `DisplayName`: `str`
 - `Status`:
-  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
+  [TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Parameters`: `Dict`\[`str`,
-  [TrialComponentParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentparametervaluetypedef)\]
+  [TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef)\]
 - `InputArtifacts`: `Dict`\[`str`,
-  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+  [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `OutputArtifacts`: `Dict`\[`str`,
-  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+  [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `MetadataProperties`:
-  [MetadataPropertiesTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#metadatapropertiestypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrialcomponentresponsetypedef).
+[CreateTrialComponentResponseTypeDef](./type_defs.md#createtrialcomponentresponsetypedef).
 
 ### create_user_profile
 
@@ -1411,13 +1330,11 @@ Arguments:
 - `UserProfileName`: `str` *(required)*
 - `SingleSignOnUserIdentifier`: `str`
 - `SingleSignOnUserValue`: `str`
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
-- `UserSettings`:
-  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
-[CreateUserProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createuserprofileresponsetypedef).
+[CreateUserProfileResponseTypeDef](./type_defs.md#createuserprofileresponsetypedef).
 
 ### create_workforce
 
@@ -1429,17 +1346,13 @@ Boto3 documentation:
 Arguments:
 
 - `WorkforceName`: `str` *(required)*
-- `CognitoConfig`:
-  [CognitoConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#cognitoconfigtypedef)
-- `OidcConfig`:
-  [OidcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#oidcconfigtypedef)
-- `SourceIpConfig`:
-  [SourceIpConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourceipconfigtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `CognitoConfig`: [CognitoConfigTypeDef](./type_defs.md#cognitoconfigtypedef)
+- `OidcConfig`: [OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef)
+- `SourceIpConfig`: [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkforceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createworkforceresponsetypedef).
+[CreateWorkforceResponseTypeDef](./type_defs.md#createworkforceresponsetypedef).
 
 ### create_workteam
 
@@ -1452,17 +1365,16 @@ Arguments:
 
 - `WorkteamName`: `str` *(required)*
 - `MemberDefinitions`:
-  `List`\[[MemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#memberdefinitiontypedef)\]
+  `List`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
   *(required)*
 - `Description`: `str` *(required)*
 - `WorkforceName`: `str`
 - `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notificationconfigurationtypedef)
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createworkteamresponsetypedef).
+[CreateWorkteamResponseTypeDef](./type_defs.md#createworkteamresponsetypedef).
 
 ### delete_action
 
@@ -1476,7 +1388,7 @@ Arguments:
 - `ActionName`: `str` *(required)*
 
 Returns
-[DeleteActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteactionresponsetypedef).
+[DeleteActionResponseTypeDef](./type_defs.md#deleteactionresponsetypedef).
 
 ### delete_algorithm
 
@@ -1500,9 +1412,7 @@ Arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
-- `AppType`:
-  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
-  *(required)*
+- `AppType`: [AppType](./literals.md#apptype) *(required)*
 - `AppName`: `str` *(required)*
 
 ### delete_app_image_config
@@ -1527,11 +1437,10 @@ Boto3 documentation:
 Arguments:
 
 - `ArtifactArn`: `str`
-- `Source`:
-  [ArtifactSourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#artifactsourcetypedef)
+- `Source`: [ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef)
 
 Returns
-[DeleteArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteartifactresponsetypedef).
+[DeleteArtifactResponseTypeDef](./type_defs.md#deleteartifactresponsetypedef).
 
 ### delete_association
 
@@ -1546,7 +1455,7 @@ Arguments:
 - `DestinationArn`: `str` *(required)*
 
 Returns
-[DeleteAssociationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteassociationresponsetypedef).
+[DeleteAssociationResponseTypeDef](./type_defs.md#deleteassociationresponsetypedef).
 
 ### delete_code_repository
 
@@ -1571,7 +1480,7 @@ Arguments:
 - `ContextName`: `str` *(required)*
 
 Returns
-[DeleteContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletecontextresponsetypedef).
+[DeleteContextResponseTypeDef](./type_defs.md#deletecontextresponsetypedef).
 
 ### delete_data_quality_job_definition
 
@@ -1607,7 +1516,7 @@ Arguments:
 
 - `DomainId`: `str` *(required)*
 - `RetentionPolicy`:
-  [RetentionPolicyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retentionpolicytypedef)
+  [RetentionPolicyTypeDef](./type_defs.md#retentionpolicytypedef)
 
 ### delete_endpoint
 
@@ -1643,7 +1552,7 @@ Arguments:
 - `ExperimentName`: `str` *(required)*
 
 Returns
-[DeleteExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteexperimentresponsetypedef).
+[DeleteExperimentResponseTypeDef](./type_defs.md#deleteexperimentresponsetypedef).
 
 ### delete_feature_group
 
@@ -1840,7 +1749,7 @@ Arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[DeletePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletepipelineresponsetypedef).
+[DeletePipelineResponseTypeDef](./type_defs.md#deletepipelineresponsetypedef).
 
 ### delete_project
 
@@ -1879,7 +1788,7 @@ Arguments:
 - `TrialName`: `str` *(required)*
 
 Returns
-[DeleteTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletetrialresponsetypedef).
+[DeleteTrialResponseTypeDef](./type_defs.md#deletetrialresponsetypedef).
 
 ### delete_trial_component
 
@@ -1893,7 +1802,7 @@ Arguments:
 - `TrialComponentName`: `str` *(required)*
 
 Returns
-[DeleteTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deletetrialcomponentresponsetypedef).
+[DeleteTrialComponentResponseTypeDef](./type_defs.md#deletetrialcomponentresponsetypedef).
 
 ### delete_user_profile
 
@@ -1932,7 +1841,7 @@ Arguments:
 - `WorkteamName`: `str` *(required)*
 
 Returns
-[DeleteWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deleteworkteamresponsetypedef).
+[DeleteWorkteamResponseTypeDef](./type_defs.md#deleteworkteamresponsetypedef).
 
 ### deregister_devices
 
@@ -1958,7 +1867,7 @@ Arguments:
 - `ActionName`: `str` *(required)*
 
 Returns
-[DescribeActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeactionresponsetypedef).
+[DescribeActionResponseTypeDef](./type_defs.md#describeactionresponsetypedef).
 
 ### describe_algorithm
 
@@ -1972,7 +1881,7 @@ Arguments:
 - `AlgorithmName`: `str` *(required)*
 
 Returns
-[DescribeAlgorithmOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describealgorithmoutputtypedef).
+[DescribeAlgorithmOutputTypeDef](./type_defs.md#describealgorithmoutputtypedef).
 
 ### describe_app
 
@@ -1985,13 +1894,11 @@ Arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
-- `AppType`:
-  [AppType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#apptype)
-  *(required)*
+- `AppType`: [AppType](./literals.md#apptype) *(required)*
 - `AppName`: `str` *(required)*
 
 Returns
-[DescribeAppResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeappresponsetypedef).
+[DescribeAppResponseTypeDef](./type_defs.md#describeappresponsetypedef).
 
 ### describe_app_image_config
 
@@ -2006,7 +1913,7 @@ Arguments:
 - `AppImageConfigName`: `str` *(required)*
 
 Returns
-[DescribeAppImageConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeappimageconfigresponsetypedef).
+[DescribeAppImageConfigResponseTypeDef](./type_defs.md#describeappimageconfigresponsetypedef).
 
 ### describe_artifact
 
@@ -2020,7 +1927,7 @@ Arguments:
 - `ArtifactArn`: `str` *(required)*
 
 Returns
-[DescribeArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeartifactresponsetypedef).
+[DescribeArtifactResponseTypeDef](./type_defs.md#describeartifactresponsetypedef).
 
 ### describe_auto_ml_job
 
@@ -2034,7 +1941,7 @@ Arguments:
 - `AutoMLJobName`: `str` *(required)*
 
 Returns
-[DescribeAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeautomljobresponsetypedef).
+[DescribeAutoMLJobResponseTypeDef](./type_defs.md#describeautomljobresponsetypedef).
 
 ### describe_code_repository
 
@@ -2049,7 +1956,7 @@ Arguments:
 - `CodeRepositoryName`: `str` *(required)*
 
 Returns
-[DescribeCodeRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describecoderepositoryoutputtypedef).
+[DescribeCodeRepositoryOutputTypeDef](./type_defs.md#describecoderepositoryoutputtypedef).
 
 ### describe_compilation_job
 
@@ -2064,7 +1971,7 @@ Arguments:
 - `CompilationJobName`: `str` *(required)*
 
 Returns
-[DescribeCompilationJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describecompilationjobresponsetypedef).
+[DescribeCompilationJobResponseTypeDef](./type_defs.md#describecompilationjobresponsetypedef).
 
 ### describe_context
 
@@ -2078,7 +1985,7 @@ Arguments:
 - `ContextName`: `str` *(required)*
 
 Returns
-[DescribeContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describecontextresponsetypedef).
+[DescribeContextResponseTypeDef](./type_defs.md#describecontextresponsetypedef).
 
 ### describe_data_quality_job_definition
 
@@ -2093,7 +2000,7 @@ Arguments:
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeDataQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedataqualityjobdefinitionresponsetypedef).
+[DescribeDataQualityJobDefinitionResponseTypeDef](./type_defs.md#describedataqualityjobdefinitionresponsetypedef).
 
 ### describe_device
 
@@ -2109,7 +2016,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDeviceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedeviceresponsetypedef).
+[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
 ### describe_device_fleet
 
@@ -2123,7 +2030,7 @@ Arguments:
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[DescribeDeviceFleetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedevicefleetresponsetypedef).
+[DescribeDeviceFleetResponseTypeDef](./type_defs.md#describedevicefleetresponsetypedef).
 
 ### describe_domain
 
@@ -2137,7 +2044,7 @@ Arguments:
 - `DomainId`: `str` *(required)*
 
 Returns
-[DescribeDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describedomainresponsetypedef).
+[DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
 
 ### describe_edge_packaging_job
 
@@ -2152,7 +2059,7 @@ Arguments:
 - `EdgePackagingJobName`: `str` *(required)*
 
 Returns
-[DescribeEdgePackagingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeedgepackagingjobresponsetypedef).
+[DescribeEdgePackagingJobResponseTypeDef](./type_defs.md#describeedgepackagingjobresponsetypedef).
 
 ### describe_endpoint
 
@@ -2166,7 +2073,7 @@ Arguments:
 - `EndpointName`: `str` *(required)*
 
 Returns
-[DescribeEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeendpointoutputtypedef).
+[DescribeEndpointOutputTypeDef](./type_defs.md#describeendpointoutputtypedef).
 
 ### describe_endpoint_config
 
@@ -2181,7 +2088,7 @@ Arguments:
 - `EndpointConfigName`: `str` *(required)*
 
 Returns
-[DescribeEndpointConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeendpointconfigoutputtypedef).
+[DescribeEndpointConfigOutputTypeDef](./type_defs.md#describeendpointconfigoutputtypedef).
 
 ### describe_experiment
 
@@ -2195,7 +2102,7 @@ Arguments:
 - `ExperimentName`: `str` *(required)*
 
 Returns
-[DescribeExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeexperimentresponsetypedef).
+[DescribeExperimentResponseTypeDef](./type_defs.md#describeexperimentresponsetypedef).
 
 ### describe_feature_group
 
@@ -2210,7 +2117,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFeatureGroupResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describefeaturegroupresponsetypedef).
+[DescribeFeatureGroupResponseTypeDef](./type_defs.md#describefeaturegroupresponsetypedef).
 
 ### describe_flow_definition
 
@@ -2225,7 +2132,7 @@ Arguments:
 - `FlowDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeFlowDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeflowdefinitionresponsetypedef).
+[DescribeFlowDefinitionResponseTypeDef](./type_defs.md#describeflowdefinitionresponsetypedef).
 
 ### describe_human_task_ui
 
@@ -2239,7 +2146,7 @@ Arguments:
 - `HumanTaskUiName`: `str` *(required)*
 
 Returns
-[DescribeHumanTaskUiResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describehumantaskuiresponsetypedef).
+[DescribeHumanTaskUiResponseTypeDef](./type_defs.md#describehumantaskuiresponsetypedef).
 
 ### describe_hyper_parameter_tuning_job
 
@@ -2254,7 +2161,7 @@ Arguments:
 - `HyperParameterTuningJobName`: `str` *(required)*
 
 Returns
-[DescribeHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describehyperparametertuningjobresponsetypedef).
+[DescribeHyperParameterTuningJobResponseTypeDef](./type_defs.md#describehyperparametertuningjobresponsetypedef).
 
 ### describe_image
 
@@ -2268,7 +2175,7 @@ Arguments:
 - `ImageName`: `str` *(required)*
 
 Returns
-[DescribeImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeimageresponsetypedef).
+[DescribeImageResponseTypeDef](./type_defs.md#describeimageresponsetypedef).
 
 ### describe_image_version
 
@@ -2283,7 +2190,7 @@ Arguments:
 - `Version`: `int`
 
 Returns
-[DescribeImageVersionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeimageversionresponsetypedef).
+[DescribeImageVersionResponseTypeDef](./type_defs.md#describeimageversionresponsetypedef).
 
 ### describe_labeling_job
 
@@ -2297,7 +2204,7 @@ Arguments:
 - `LabelingJobName`: `str` *(required)*
 
 Returns
-[DescribeLabelingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describelabelingjobresponsetypedef).
+[DescribeLabelingJobResponseTypeDef](./type_defs.md#describelabelingjobresponsetypedef).
 
 ### describe_model
 
@@ -2311,7 +2218,7 @@ Arguments:
 - `ModelName`: `str` *(required)*
 
 Returns
-[DescribeModelOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodeloutputtypedef).
+[DescribeModelOutputTypeDef](./type_defs.md#describemodeloutputtypedef).
 
 ### describe_model_bias_job_definition
 
@@ -2326,7 +2233,7 @@ Arguments:
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeModelBiasJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelbiasjobdefinitionresponsetypedef).
+[DescribeModelBiasJobDefinitionResponseTypeDef](./type_defs.md#describemodelbiasjobdefinitionresponsetypedef).
 
 ### describe_model_explainability_job_definition
 
@@ -2342,7 +2249,7 @@ Arguments:
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeModelExplainabilityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelexplainabilityjobdefinitionresponsetypedef).
+[DescribeModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#describemodelexplainabilityjobdefinitionresponsetypedef).
 
 ### describe_model_package
 
@@ -2356,7 +2263,7 @@ Arguments:
 - `ModelPackageName`: `str` *(required)*
 
 Returns
-[DescribeModelPackageOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelpackageoutputtypedef).
+[DescribeModelPackageOutputTypeDef](./type_defs.md#describemodelpackageoutputtypedef).
 
 ### describe_model_package_group
 
@@ -2371,7 +2278,7 @@ Arguments:
 - `ModelPackageGroupName`: `str` *(required)*
 
 Returns
-[DescribeModelPackageGroupOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelpackagegroupoutputtypedef).
+[DescribeModelPackageGroupOutputTypeDef](./type_defs.md#describemodelpackagegroupoutputtypedef).
 
 ### describe_model_quality_job_definition
 
@@ -2386,7 +2293,7 @@ Arguments:
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeModelQualityJobDefinitionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemodelqualityjobdefinitionresponsetypedef).
+[DescribeModelQualityJobDefinitionResponseTypeDef](./type_defs.md#describemodelqualityjobdefinitionresponsetypedef).
 
 ### describe_monitoring_schedule
 
@@ -2401,7 +2308,7 @@ Arguments:
 - `MonitoringScheduleName`: `str` *(required)*
 
 Returns
-[DescribeMonitoringScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describemonitoringscheduleresponsetypedef).
+[DescribeMonitoringScheduleResponseTypeDef](./type_defs.md#describemonitoringscheduleresponsetypedef).
 
 ### describe_notebook_instance
 
@@ -2416,7 +2323,7 @@ Arguments:
 - `NotebookInstanceName`: `str` *(required)*
 
 Returns
-[DescribeNotebookInstanceOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describenotebookinstanceoutputtypedef).
+[DescribeNotebookInstanceOutputTypeDef](./type_defs.md#describenotebookinstanceoutputtypedef).
 
 ### describe_notebook_instance_lifecycle_config
 
@@ -2431,7 +2338,7 @@ Arguments:
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 
 Returns
-[DescribeNotebookInstanceLifecycleConfigOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describenotebookinstancelifecycleconfigoutputtypedef).
+[DescribeNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#describenotebookinstancelifecycleconfigoutputtypedef).
 
 ### describe_pipeline
 
@@ -2445,7 +2352,7 @@ Arguments:
 - `PipelineName`: `str` *(required)*
 
 Returns
-[DescribePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describepipelineresponsetypedef).
+[DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
 
 ### describe_pipeline_definition_for_execution
 
@@ -2460,7 +2367,7 @@ Arguments:
 - `PipelineExecutionArn`: `str` *(required)*
 
 Returns
-[DescribePipelineDefinitionForExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describepipelinedefinitionforexecutionresponsetypedef).
+[DescribePipelineDefinitionForExecutionResponseTypeDef](./type_defs.md#describepipelinedefinitionforexecutionresponsetypedef).
 
 ### describe_pipeline_execution
 
@@ -2475,7 +2382,7 @@ Arguments:
 - `PipelineExecutionArn`: `str` *(required)*
 
 Returns
-[DescribePipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describepipelineexecutionresponsetypedef).
+[DescribePipelineExecutionResponseTypeDef](./type_defs.md#describepipelineexecutionresponsetypedef).
 
 ### describe_processing_job
 
@@ -2490,7 +2397,7 @@ Arguments:
 - `ProcessingJobName`: `str` *(required)*
 
 Returns
-[DescribeProcessingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeprocessingjobresponsetypedef).
+[DescribeProcessingJobResponseTypeDef](./type_defs.md#describeprocessingjobresponsetypedef).
 
 ### describe_project
 
@@ -2504,7 +2411,7 @@ Arguments:
 - `ProjectName`: `str` *(required)*
 
 Returns
-[DescribeProjectOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeprojectoutputtypedef).
+[DescribeProjectOutputTypeDef](./type_defs.md#describeprojectoutputtypedef).
 
 ### describe_subscribed_workteam
 
@@ -2519,7 +2426,7 @@ Arguments:
 - `WorkteamArn`: `str` *(required)*
 
 Returns
-[DescribeSubscribedWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describesubscribedworkteamresponsetypedef).
+[DescribeSubscribedWorkteamResponseTypeDef](./type_defs.md#describesubscribedworkteamresponsetypedef).
 
 ### describe_training_job
 
@@ -2533,7 +2440,7 @@ Arguments:
 - `TrainingJobName`: `str` *(required)*
 
 Returns
-[DescribeTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetrainingjobresponsetypedef).
+[DescribeTrainingJobResponseTypeDef](./type_defs.md#describetrainingjobresponsetypedef).
 
 ### describe_transform_job
 
@@ -2547,7 +2454,7 @@ Arguments:
 - `TransformJobName`: `str` *(required)*
 
 Returns
-[DescribeTransformJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetransformjobresponsetypedef).
+[DescribeTransformJobResponseTypeDef](./type_defs.md#describetransformjobresponsetypedef).
 
 ### describe_trial
 
@@ -2561,7 +2468,7 @@ Arguments:
 - `TrialName`: `str` *(required)*
 
 Returns
-[DescribeTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetrialresponsetypedef).
+[DescribeTrialResponseTypeDef](./type_defs.md#describetrialresponsetypedef).
 
 ### describe_trial_component
 
@@ -2576,7 +2483,7 @@ Arguments:
 - `TrialComponentName`: `str` *(required)*
 
 Returns
-[DescribeTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describetrialcomponentresponsetypedef).
+[DescribeTrialComponentResponseTypeDef](./type_defs.md#describetrialcomponentresponsetypedef).
 
 ### describe_user_profile
 
@@ -2591,7 +2498,7 @@ Arguments:
 - `UserProfileName`: `str` *(required)*
 
 Returns
-[DescribeUserProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeuserprofileresponsetypedef).
+[DescribeUserProfileResponseTypeDef](./type_defs.md#describeuserprofileresponsetypedef).
 
 ### describe_workforce
 
@@ -2605,7 +2512,7 @@ Arguments:
 - `WorkforceName`: `str` *(required)*
 
 Returns
-[DescribeWorkforceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeworkforceresponsetypedef).
+[DescribeWorkforceResponseTypeDef](./type_defs.md#describeworkforceresponsetypedef).
 
 ### describe_workteam
 
@@ -2619,7 +2526,7 @@ Arguments:
 - `WorkteamName`: `str` *(required)*
 
 Returns
-[DescribeWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#describeworkteamresponsetypedef).
+[DescribeWorkteamResponseTypeDef](./type_defs.md#describeworkteamresponsetypedef).
 
 ### disable_sagemaker_servicecatalog_portfolio
 
@@ -2645,7 +2552,7 @@ Arguments:
 - `TrialName`: `str` *(required)*
 
 Returns
-[DisassociateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#disassociatetrialcomponentresponsetypedef).
+[DisassociateTrialComponentResponseTypeDef](./type_defs.md#disassociatetrialcomponentresponsetypedef).
 
 ### enable_sagemaker_servicecatalog_portfolio
 
@@ -2686,7 +2593,7 @@ Arguments:
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[GetDeviceFleetReportResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getdevicefleetreportresponsetypedef).
+[GetDeviceFleetReportResponseTypeDef](./type_defs.md#getdevicefleetreportresponsetypedef).
 
 ### get_model_package_group_policy
 
@@ -2701,7 +2608,7 @@ Arguments:
 - `ModelPackageGroupName`: `str` *(required)*
 
 Returns
-[GetModelPackageGroupPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getmodelpackagegrouppolicyoutputtypedef).
+[GetModelPackageGroupPolicyOutputTypeDef](./type_defs.md#getmodelpackagegrouppolicyoutputtypedef).
 
 ### get_sagemaker_servicecatalog_portfolio_status
 
@@ -2713,7 +2620,7 @@ Boto3 documentation:
 [SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status)
 
 Returns
-[GetSagemakerServicecatalogPortfolioStatusOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getsagemakerservicecatalogportfoliostatusoutputtypedef).
+[GetSagemakerServicecatalogPortfolioStatusOutputTypeDef](./type_defs.md#getsagemakerservicecatalogportfoliostatusoutputtypedef).
 
 ### get_search_suggestions
 
@@ -2724,14 +2631,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Resource`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#resourcetype)
-  *(required)*
+- `Resource`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `SuggestionQuery`:
-  [SuggestionQueryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#suggestionquerytypedef)
+  [SuggestionQueryTypeDef](./type_defs.md#suggestionquerytypedef)
 
 Returns
-[GetSearchSuggestionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#getsearchsuggestionsresponsetypedef).
+[GetSearchSuggestionsResponseTypeDef](./type_defs.md#getsearchsuggestionsresponsetypedef).
 
 ### list_actions
 
@@ -2746,15 +2651,13 @@ Arguments:
 - `ActionType`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortActionsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortactionsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortActionsBy](./literals.md#sortactionsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListActionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listactionsresponsetypedef).
+[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
 
 ### list_algorithms
 
@@ -2770,13 +2673,11 @@ Arguments:
 - `MaxResults`: `int`
 - `NameContains`: `str`
 - `NextToken`: `str`
-- `SortBy`:
-  [AlgorithmSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#algorithmsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [AlgorithmSortBy](./literals.md#algorithmsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListAlgorithmsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listalgorithmsoutputtypedef).
+[ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef).
 
 ### list_app_image_configs
 
@@ -2794,13 +2695,11 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 - `ModifiedTimeBefore`: `datetime`
 - `ModifiedTimeAfter`: `datetime`
-- `SortBy`:
-  [AppImageConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#appimageconfigsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [AppImageConfigSortKey](./literals.md#appimageconfigsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListAppImageConfigsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listappimageconfigsresponsetypedef).
+[ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef).
 
 ### list_apps
 
@@ -2813,14 +2712,13 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
-- `SortBy`: `Literal['CreationTime']`
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortBy`: `Literal['CreationTime']` (see
+  [AppSortKey](./literals.md#appsortkey))
 - `DomainIdEquals`: `str`
 - `UserProfileNameEquals`: `str`
 
-Returns
-[ListAppsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listappsresponsetypedef).
+Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 
 ### list_artifacts
 
@@ -2835,14 +2733,14 @@ Arguments:
 - `ArtifactType`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`: `Literal['CreationTime']`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: `Literal['CreationTime']` (see
+  [SortArtifactsBy](./literals.md#sortartifactsby))
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListArtifactsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listartifactsresponsetypedef).
+[ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef).
 
 ### list_associations
 
@@ -2857,19 +2755,16 @@ Arguments:
 - `DestinationArn`: `str`
 - `SourceType`: `str`
 - `DestinationType`: `str`
-- `AssociationType`:
-  [AssociationEdgeType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#associationedgetype)
+- `AssociationType`: [AssociationEdgeType](./literals.md#associationedgetype)
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortAssociationsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortassociationsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortAssociationsBy](./literals.md#sortassociationsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListAssociationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listassociationsresponsetypedef).
+[ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef).
 
 ### list_auto_ml_jobs
 
@@ -2885,17 +2780,14 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [AutoMLJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automljobstatus)
-- `SortOrder`:
-  [AutoMLSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortorder)
-- `SortBy`:
-  [AutoMLSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortby)
+- `StatusEquals`: [AutoMLJobStatus](./literals.md#automljobstatus)
+- `SortOrder`: [AutoMLSortOrder](./literals.md#automlsortorder)
+- `SortBy`: [AutoMLSortBy](./literals.md#automlsortby)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListAutoMLJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listautomljobsresponsetypedef).
+[ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef).
 
 ### list_candidates_for_auto_ml_job
 
@@ -2908,18 +2800,15 @@ Boto3 documentation:
 Arguments:
 
 - `AutoMLJobName`: `str` *(required)*
-- `StatusEquals`:
-  [CandidateStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatestatus)
+- `StatusEquals`: [CandidateStatus](./literals.md#candidatestatus)
 - `CandidateNameEquals`: `str`
-- `SortOrder`:
-  [AutoMLSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#automlsortorder)
-- `SortBy`:
-  [CandidateSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#candidatesortby)
+- `SortOrder`: [AutoMLSortOrder](./literals.md#automlsortorder)
+- `SortBy`: [CandidateSortBy](./literals.md#candidatesortby)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListCandidatesForAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcandidatesforautomljobresponsetypedef).
+[ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef).
 
 ### list_code_repositories
 
@@ -2937,13 +2826,11 @@ Arguments:
 - `MaxResults`: `int`
 - `NameContains`: `str`
 - `NextToken`: `str`
-- `SortBy`:
-  [CodeRepositorySortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#coderepositorysortby)
-- `SortOrder`:
-  [CodeRepositorySortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#coderepositorysortorder)
+- `SortBy`: [CodeRepositorySortBy](./literals.md#coderepositorysortby)
+- `SortOrder`: [CodeRepositorySortOrder](./literals.md#coderepositorysortorder)
 
 Returns
-[ListCodeRepositoriesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcoderepositoriesoutputtypedef).
+[ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef).
 
 ### list_compilation_jobs
 
@@ -2961,15 +2848,12 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [CompilationJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#compilationjobstatus)
-- `SortBy`:
-  [ListCompilationJobsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listcompilationjobssortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [CompilationJobStatus](./literals.md#compilationjobstatus)
+- `SortBy`: [ListCompilationJobsSortBy](./literals.md#listcompilationjobssortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListCompilationJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcompilationjobsresponsetypedef).
+[ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef).
 
 ### list_contexts
 
@@ -2984,15 +2868,13 @@ Arguments:
 - `ContextType`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortContextsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortcontextsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortContextsBy](./literals.md#sortcontextsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListContextsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listcontextsresponsetypedef).
+[ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef).
 
 ### list_data_quality_job_definitions
 
@@ -3006,9 +2888,8 @@ Arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3016,7 +2897,7 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 
 Returns
-[ListDataQualityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdataqualityjobdefinitionsresponsetypedef).
+[ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef).
 
 ### list_device_fleets
 
@@ -3034,13 +2915,11 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `SortBy`:
-  [ListDeviceFleetsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listdevicefleetssortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [ListDeviceFleetsSortBy](./literals.md#listdevicefleetssortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListDeviceFleetsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdevicefleetsresponsetypedef).
+[ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef).
 
 ### list_devices
 
@@ -3058,7 +2937,7 @@ Arguments:
 - `DeviceFleetName`: `str`
 
 Returns
-[ListDevicesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdevicesresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_domains
 
@@ -3073,7 +2952,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDomainsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listdomainsresponsetypedef).
+[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
 ### list_edge_packaging_jobs
 
@@ -3093,15 +2972,13 @@ Arguments:
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
 - `ModelNameContains`: `str`
-- `StatusEquals`:
-  [EdgePackagingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#edgepackagingjobstatus)
+- `StatusEquals`: [EdgePackagingJobStatus](./literals.md#edgepackagingjobstatus)
 - `SortBy`:
-  [ListEdgePackagingJobsSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listedgepackagingjobssortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [ListEdgePackagingJobsSortBy](./literals.md#listedgepackagingjobssortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListEdgePackagingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listedgepackagingjobsresponsetypedef).
+[ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef).
 
 ### list_endpoint_configs
 
@@ -3112,10 +2989,8 @@ Boto3 documentation:
 
 Arguments:
 
-- `SortBy`:
-  [EndpointConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointconfigsortkey)
-- `SortOrder`:
-  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `SortBy`: [EndpointConfigSortKey](./literals.md#endpointconfigsortkey)
+- `SortOrder`: [OrderKey](./literals.md#orderkey)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3123,7 +2998,7 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 
 Returns
-[ListEndpointConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listendpointconfigsoutputtypedef).
+[ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef).
 
 ### list_endpoints
 
@@ -3134,10 +3009,8 @@ Boto3 documentation:
 
 Arguments:
 
-- `SortBy`:
-  [EndpointSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointsortkey)
-- `SortOrder`:
-  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `SortBy`: [EndpointSortKey](./literals.md#endpointsortkey)
+- `SortOrder`: [OrderKey](./literals.md#orderkey)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3145,11 +3018,10 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [EndpointStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#endpointstatus)
+- `StatusEquals`: [EndpointStatus](./literals.md#endpointstatus)
 
 Returns
-[ListEndpointsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listendpointsoutputtypedef).
+[ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef).
 
 ### list_experiments
 
@@ -3162,15 +3034,13 @@ Arguments:
 
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortExperimentsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortexperimentsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortExperimentsBy](./literals.md#sortexperimentsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListExperimentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listexperimentsresponsetypedef).
+[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
 ### list_feature_groups
 
@@ -3183,20 +3053,18 @@ Arguments:
 
 - `NameContains`: `str`
 - `FeatureGroupStatusEquals`:
-  [FeatureGroupStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupstatus)
+  [FeatureGroupStatus](./literals.md#featuregroupstatus)
 - `OfflineStoreStatusEquals`:
-  [OfflineStoreStatusValue](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#offlinestorestatusvalue)
+  [OfflineStoreStatusValue](./literals.md#offlinestorestatusvalue)
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [FeatureGroupSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupsortorder)
-- `SortBy`:
-  [FeatureGroupSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#featuregroupsortby)
+- `SortOrder`: [FeatureGroupSortOrder](./literals.md#featuregroupsortorder)
+- `SortBy`: [FeatureGroupSortBy](./literals.md#featuregroupsortby)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListFeatureGroupsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listfeaturegroupsresponsetypedef).
+[ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef).
 
 ### list_flow_definitions
 
@@ -3209,13 +3077,12 @@ Arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListFlowDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listflowdefinitionsresponsetypedef).
+[ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef).
 
 ### list_human_task_uis
 
@@ -3228,13 +3095,12 @@ Arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListHumanTaskUisResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listhumantaskuisresponsetypedef).
+[ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef).
 
 ### list_hyper_parameter_tuning_jobs
 
@@ -3249,19 +3115,18 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortBy`:
-  [HyperParameterTuningJobSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobsortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [HyperParameterTuningJobSortByOptions](./literals.md#hyperparametertuningjobsortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `StatusEquals`:
-  [HyperParameterTuningJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#hyperparametertuningjobstatus)
+  [HyperParameterTuningJobStatus](./literals.md#hyperparametertuningjobstatus)
 
 Returns
-[ListHyperParameterTuningJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listhyperparametertuningjobsresponsetypedef).
+[ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef).
 
 ### list_image_versions
 
@@ -3279,13 +3144,11 @@ Arguments:
 - `LastModifiedTimeBefore`: `datetime`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SortBy`:
-  [ImageVersionSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionsortby)
-- `SortOrder`:
-  [ImageVersionSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imageversionsortorder)
+- `SortBy`: [ImageVersionSortBy](./literals.md#imageversionsortby)
+- `SortOrder`: [ImageVersionSortOrder](./literals.md#imageversionsortorder)
 
 Returns
-[ListImageVersionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listimageversionsresponsetypedef).
+[ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef).
 
 ### list_images
 
@@ -3303,13 +3166,10 @@ Arguments:
 - `MaxResults`: `int`
 - `NameContains`: `str`
 - `NextToken`: `str`
-- `SortBy`:
-  [ImageSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagesortby)
-- `SortOrder`:
-  [ImageSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#imagesortorder)
+- `SortBy`: [ImageSortBy](./literals.md#imagesortby)
+- `SortOrder`: [ImageSortOrder](./literals.md#imagesortorder)
 
-Returns
-[ListImagesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listimagesresponsetypedef).
+Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
 ### list_labeling_jobs
 
@@ -3327,15 +3187,12 @@ Arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `NameContains`: `str`
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
-- `StatusEquals`:
-  [LabelingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#labelingjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `StatusEquals`: [LabelingJobStatus](./literals.md#labelingjobstatus)
 
 Returns
-[ListLabelingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listlabelingjobsresponsetypedef).
+[ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef).
 
 ### list_labeling_jobs_for_workteam
 
@@ -3353,12 +3210,12 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
 - `JobReferenceCodeContains`: `str`
-- `SortBy`: `Literal['CreationTime']`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: `Literal['CreationTime']` (see
+  [ListLabelingJobsForWorkteamSortByOptions](./literals.md#listlabelingjobsforworkteamsortbyoptions))
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListLabelingJobsForWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listlabelingjobsforworkteamresponsetypedef).
+[ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef).
 
 ### list_model_bias_job_definitions
 
@@ -3372,9 +3229,8 @@ Arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3382,7 +3238,7 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 
 Returns
-[ListModelBiasJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelbiasjobdefinitionsresponsetypedef).
+[ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef).
 
 ### list_model_explainability_job_definitions
 
@@ -3396,9 +3252,8 @@ Arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3406,7 +3261,7 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 
 Returns
-[ListModelExplainabilityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelexplainabilityjobdefinitionsresponsetypedef).
+[ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef).
 
 ### list_model_package_groups
 
@@ -3423,13 +3278,11 @@ Arguments:
 - `MaxResults`: `int`
 - `NameContains`: `str`
 - `NextToken`: `str`
-- `SortBy`:
-  [ModelPackageGroupSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagegroupsortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [ModelPackageGroupSortBy](./literals.md#modelpackagegroupsortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListModelPackageGroupsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelpackagegroupsoutputtypedef).
+[ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef).
 
 ### list_model_packages
 
@@ -3444,19 +3297,15 @@ Arguments:
 - `CreationTimeBefore`: `datetime`
 - `MaxResults`: `int`
 - `NameContains`: `str`
-- `ModelApprovalStatus`:
-  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
 - `ModelPackageGroupName`: `str`
-- `ModelPackageType`:
-  [ModelPackageType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagetype)
+- `ModelPackageType`: [ModelPackageType](./literals.md#modelpackagetype)
 - `NextToken`: `str`
-- `SortBy`:
-  [ModelPackageSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelpackagesortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [ModelPackageSortBy](./literals.md#modelpackagesortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListModelPackagesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelpackagesoutputtypedef).
+[ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef).
 
 ### list_model_quality_job_definitions
 
@@ -3470,9 +3319,8 @@ Arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringJobDefinitionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringjobdefinitionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringJobDefinitionSortKey](./literals.md#monitoringjobdefinitionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3480,7 +3328,7 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 
 Returns
-[ListModelQualityJobDefinitionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelqualityjobdefinitionsresponsetypedef).
+[ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef).
 
 ### list_models
 
@@ -3491,18 +3339,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `SortBy`:
-  [ModelSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelsortkey)
-- `SortOrder`:
-  [OrderKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#orderkey)
+- `SortBy`: [ModelSortKey](./literals.md#modelsortkey)
+- `SortOrder`: [OrderKey](./literals.md#orderkey)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 
-Returns
-[ListModelsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmodelsoutputtypedef).
+Returns [ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef).
 
 ### list_monitoring_executions
 
@@ -3517,9 +3362,8 @@ Arguments:
 - `MonitoringScheduleName`: `str`
 - `EndpointName`: `str`
 - `SortBy`:
-  [MonitoringExecutionSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringexecutionsortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [MonitoringExecutionSortKey](./literals.md#monitoringexecutionsortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ScheduledTimeBefore`: `datetime`
@@ -3528,14 +3372,12 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [ExecutionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#executionstatus)
+- `StatusEquals`: [ExecutionStatus](./literals.md#executionstatus)
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringTypeEquals`:
-  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
+- `MonitoringTypeEquals`: [MonitoringType](./literals.md#monitoringtype)
 
 Returns
-[ListMonitoringExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmonitoringexecutionsresponsetypedef).
+[ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef).
 
 ### list_monitoring_schedules
 
@@ -3548,10 +3390,8 @@ Boto3 documentation:
 Arguments:
 
 - `EndpointName`: `str`
-- `SortBy`:
-  [MonitoringScheduleSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringschedulesortkey)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [MonitoringScheduleSortKey](./literals.md#monitoringschedulesortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `NameContains`: `str`
@@ -3559,14 +3399,12 @@ Arguments:
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [ScheduleStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#schedulestatus)
+- `StatusEquals`: [ScheduleStatus](./literals.md#schedulestatus)
 - `MonitoringJobDefinitionName`: `str`
-- `MonitoringTypeEquals`:
-  [MonitoringType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#monitoringtype)
+- `MonitoringTypeEquals`: [MonitoringType](./literals.md#monitoringtype)
 
 Returns
-[ListMonitoringSchedulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listmonitoringschedulesresponsetypedef).
+[ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef).
 
 ### list_notebook_instance_lifecycle_configs
 
@@ -3581,9 +3419,9 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortBy`:
-  [NotebookInstanceLifecycleConfigSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancelifecycleconfigsortkey)
+  [NotebookInstanceLifecycleConfigSortKey](./literals.md#notebookinstancelifecycleconfigsortkey)
 - `SortOrder`:
-  [NotebookInstanceLifecycleConfigSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancelifecycleconfigsortorder)
+  [NotebookInstanceLifecycleConfigSortOrder](./literals.md#notebookinstancelifecycleconfigsortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
@@ -3591,7 +3429,7 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 
 Returns
-[ListNotebookInstanceLifecycleConfigsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listnotebookinstancelifecycleconfigsoutputtypedef).
+[ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef).
 
 ### list_notebook_instances
 
@@ -3605,23 +3443,21 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `SortBy`:
-  [NotebookInstanceSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancesortkey)
+- `SortBy`: [NotebookInstanceSortKey](./literals.md#notebookinstancesortkey)
 - `SortOrder`:
-  [NotebookInstanceSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancesortorder)
+  [NotebookInstanceSortOrder](./literals.md#notebookinstancesortorder)
 - `NameContains`: `str`
 - `CreationTimeBefore`: `datetime`
 - `CreationTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `LastModifiedTimeAfter`: `datetime`
-- `StatusEquals`:
-  [NotebookInstanceStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstancestatus)
+- `StatusEquals`: [NotebookInstanceStatus](./literals.md#notebookinstancestatus)
 - `NotebookInstanceLifecycleConfigNameContains`: `str`
 - `DefaultCodeRepositoryContains`: `str`
 - `AdditionalCodeRepositoryEquals`: `str`
 
 Returns
-[ListNotebookInstancesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listnotebookinstancesoutputtypedef).
+[ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef).
 
 ### list_pipeline_execution_steps
 
@@ -3636,11 +3472,10 @@ Arguments:
 - `PipelineExecutionArn`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListPipelineExecutionStepsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineexecutionstepsresponsetypedef).
+[ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef).
 
 ### list_pipeline_executions
 
@@ -3655,15 +3490,13 @@ Arguments:
 - `PipelineName`: `str` *(required)*
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortPipelineExecutionsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortpipelineexecutionsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortPipelineExecutionsBy](./literals.md#sortpipelineexecutionsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPipelineExecutionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineexecutionsresponsetypedef).
+[ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef).
 
 ### list_pipeline_parameters_for_execution
 
@@ -3680,7 +3513,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPipelineParametersForExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelineparametersforexecutionresponsetypedef).
+[ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef).
 
 ### list_pipelines
 
@@ -3694,15 +3527,13 @@ Arguments:
 - `PipelineNamePrefix`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortPipelinesBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortpipelinesby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortPipelinesBy](./literals.md#sortpipelinesby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPipelinesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listpipelinesresponsetypedef).
+[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
 ### list_processing_jobs
 
@@ -3718,17 +3549,14 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [ProcessingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#processingjobstatus)
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [ProcessingJobStatus](./literals.md#processingjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListProcessingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listprocessingjobsresponsetypedef).
+[ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef).
 
 ### list_projects
 
@@ -3744,13 +3572,10 @@ Arguments:
 - `MaxResults`: `int`
 - `NameContains`: `str`
 - `NextToken`: `str`
-- `SortBy`:
-  [ProjectSortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#projectsortby)
-- `SortOrder`:
-  [ProjectSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#projectsortorder)
+- `SortBy`: [ProjectSortBy](./literals.md#projectsortby)
+- `SortOrder`: [ProjectSortOrder](./literals.md#projectsortorder)
 
-Returns
-[ListProjectsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listprojectsoutputtypedef).
+Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
 ### list_subscribed_workteams
 
@@ -3767,7 +3592,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSubscribedWorkteamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listsubscribedworkteamsresponsetypedef).
+[ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef).
 
 ### list_tags
 
@@ -3782,8 +3607,7 @@ Arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtagsoutputtypedef).
+Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
 
 ### list_training_jobs
 
@@ -3801,15 +3625,12 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [TrainingJobStatus](./literals.md#trainingjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListTrainingJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrainingjobsresponsetypedef).
+[ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef).
 
 ### list_training_jobs_for_hyper_parameter_tuning_job
 
@@ -3825,15 +3646,12 @@ Arguments:
 - `HyperParameterTuningJobName`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `StatusEquals`:
-  [TrainingJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobstatus)
-- `SortBy`:
-  [TrainingJobSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#trainingjobsortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [TrainingJobStatus](./literals.md#trainingjobstatus)
+- `SortBy`: [TrainingJobSortByOptions](./literals.md#trainingjobsortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 
 Returns
-[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrainingjobsforhyperparametertuningjobresponsetypedef).
+[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef).
 
 ### list_transform_jobs
 
@@ -3849,17 +3667,14 @@ Arguments:
 - `LastModifiedTimeAfter`: `datetime`
 - `LastModifiedTimeBefore`: `datetime`
 - `NameContains`: `str`
-- `StatusEquals`:
-  [TransformJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#transformjobstatus)
-- `SortBy`:
-  [SortBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `StatusEquals`: [TransformJobStatus](./literals.md#transformjobstatus)
+- `SortBy`: [SortBy](./literals.md#sortby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListTransformJobsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtransformjobsresponsetypedef).
+[ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef).
 
 ### list_trial_components
 
@@ -3875,15 +3690,13 @@ Arguments:
 - `SourceArn`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortTrialComponentsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sorttrialcomponentsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortTrialComponentsBy](./literals.md#sorttrialcomponentsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListTrialComponentsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrialcomponentsresponsetypedef).
+[ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef).
 
 ### list_trials
 
@@ -3898,15 +3711,12 @@ Arguments:
 - `TrialComponentName`: `str`
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
-- `SortBy`:
-  [SortTrialsBy](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sorttrialsby)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+- `SortBy`: [SortTrialsBy](./literals.md#sorttrialsby)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListTrialsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listtrialsresponsetypedef).
+Returns [ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef).
 
 ### list_user_profiles
 
@@ -3919,15 +3729,13 @@ Arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
-- `SortBy`:
-  [UserProfileSortKey](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#userprofilesortkey)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
+- `SortBy`: [UserProfileSortKey](./literals.md#userprofilesortkey)
 - `DomainIdEquals`: `str`
 - `UserProfileNameContains`: `str`
 
 Returns
-[ListUserProfilesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listuserprofilesresponsetypedef).
+[ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef).
 
 ### list_workforces
 
@@ -3939,15 +3747,14 @@ Boto3 documentation:
 Arguments:
 
 - `SortBy`:
-  [ListWorkforcesSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listworkforcessortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [ListWorkforcesSortByOptions](./literals.md#listworkforcessortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListWorkforcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listworkforcesresponsetypedef).
+[ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef).
 
 ### list_workteams
 
@@ -3959,15 +3766,14 @@ Boto3 documentation:
 Arguments:
 
 - `SortBy`:
-  [ListWorkteamsSortByOptions](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#listworkteamssortbyoptions)
-- `SortOrder`:
-  [SortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#sortorder)
+  [ListWorkteamsSortByOptions](./literals.md#listworkteamssortbyoptions)
+- `SortOrder`: [SortOrder](./literals.md#sortorder)
 - `NameContains`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListWorkteamsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#listworkteamsresponsetypedef).
+[ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef).
 
 ### put_model_package_group_policy
 
@@ -3983,7 +3789,7 @@ Arguments:
 - `ResourcePolicy`: `str` *(required)*
 
 Returns
-[PutModelPackageGroupPolicyOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#putmodelpackagegrouppolicyoutputtypedef).
+[PutModelPackageGroupPolicyOutputTypeDef](./type_defs.md#putmodelpackagegrouppolicyoutputtypedef).
 
 ### register_devices
 
@@ -3995,11 +3801,8 @@ Boto3 documentation:
 Arguments:
 
 - `DeviceFleetName`: `str` *(required)*
-- `Devices`:
-  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicetypedef)\]
-  *(required)*
-- `Tags`:
-  `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\] *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### render_ui_template
 
@@ -4010,16 +3813,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Task`:
-  [RenderableTaskTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#renderabletasktypedef)
+- `Task`: [RenderableTaskTypeDef](./type_defs.md#renderabletasktypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
-- `UiTemplate`:
-  [UiTemplateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#uitemplatetypedef)
+- `UiTemplate`: [UiTemplateTypeDef](./type_defs.md#uitemplatetypedef)
 - `HumanTaskUiArn`: `str`
 
 Returns
-[RenderUiTemplateResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#renderuitemplateresponsetypedef).
+[RenderUiTemplateResponseTypeDef](./type_defs.md#renderuitemplateresponsetypedef).
 
 ### search
 
@@ -4030,19 +3831,15 @@ Boto3 documentation:
 
 Arguments:
 
-- `Resource`:
-  [ResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#resourcetype)
-  *(required)*
+- `Resource`: [ResourceType](./literals.md#resourcetype) *(required)*
 - `SearchExpression`:
-  [SearchExpressionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchexpressiontypedef)
+  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
 - `SortBy`: `str`
-- `SortOrder`:
-  [SearchSortOrder](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#searchsortorder)
+- `SortOrder`: [SearchSortOrder](./literals.md#searchsortorder)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[SearchResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#searchresponsetypedef).
+Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 
 ### start_monitoring_schedule
 
@@ -4082,11 +3879,11 @@ Arguments:
 - `ClientRequestToken`: `str` *(required)*
 - `PipelineExecutionDisplayName`: `str`
 - `PipelineParameters`:
-  `List`\[[ParameterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#parametertypedef)\]
+  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `PipelineExecutionDescription`: `str`
 
 Returns
-[StartPipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#startpipelineexecutionresponsetypedef).
+[StartPipelineExecutionResponseTypeDef](./type_defs.md#startpipelineexecutionresponsetypedef).
 
 ### stop_auto_ml_job
 
@@ -4182,7 +3979,7 @@ Arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[StopPipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#stoppipelineexecutionresponsetypedef).
+[StopPipelineExecutionResponseTypeDef](./type_defs.md#stoppipelineexecutionresponsetypedef).
 
 ### stop_processing_job
 
@@ -4228,13 +4025,12 @@ Arguments:
 
 - `ActionName`: `str` *(required)*
 - `Description`: `str`
-- `Status`:
-  [ActionStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#actionstatus)
+- `Status`: [ActionStatus](./literals.md#actionstatus)
 - `Properties`: `Dict`\[`str`, `str`\]
 - `PropertiesToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateActionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateactionresponsetypedef).
+[UpdateActionResponseTypeDef](./type_defs.md#updateactionresponsetypedef).
 
 ### update_app_image_config
 
@@ -4248,10 +4044,10 @@ Arguments:
 
 - `AppImageConfigName`: `str` *(required)*
 - `KernelGatewayImageConfig`:
-  [KernelGatewayImageConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#kernelgatewayimageconfigtypedef)
+  [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
 Returns
-[UpdateAppImageConfigResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateappimageconfigresponsetypedef).
+[UpdateAppImageConfigResponseTypeDef](./type_defs.md#updateappimageconfigresponsetypedef).
 
 ### update_artifact
 
@@ -4268,7 +4064,7 @@ Arguments:
 - `PropertiesToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateArtifactResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateartifactresponsetypedef).
+[UpdateArtifactResponseTypeDef](./type_defs.md#updateartifactresponsetypedef).
 
 ### update_code_repository
 
@@ -4281,10 +4077,10 @@ Arguments:
 
 - `CodeRepositoryName`: `str` *(required)*
 - `GitConfig`:
-  [GitConfigForUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#gitconfigforupdatetypedef)
+  [GitConfigForUpdateTypeDef](./type_defs.md#gitconfigforupdatetypedef)
 
 Returns
-[UpdateCodeRepositoryOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatecoderepositoryoutputtypedef).
+[UpdateCodeRepositoryOutputTypeDef](./type_defs.md#updatecoderepositoryoutputtypedef).
 
 ### update_context
 
@@ -4301,7 +4097,7 @@ Arguments:
 - `PropertiesToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateContextResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatecontextresponsetypedef).
+[UpdateContextResponseTypeDef](./type_defs.md#updatecontextresponsetypedef).
 
 ### update_device_fleet
 
@@ -4314,8 +4110,7 @@ Arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 - `OutputConfig`:
-  [EdgeOutputConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#edgeoutputconfigtypedef)
-  *(required)*
+  [EdgeOutputConfigTypeDef](./type_defs.md#edgeoutputconfigtypedef) *(required)*
 - `RoleArn`: `str`
 - `Description`: `str`
 
@@ -4329,9 +4124,7 @@ Boto3 documentation:
 Arguments:
 
 - `DeviceFleetName`: `str` *(required)*
-- `Devices`:
-  `List`\[[DeviceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#devicetypedef)\]
-  *(required)*
+- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\] *(required)*
 
 ### update_domain
 
@@ -4344,10 +4137,10 @@ Arguments:
 
 - `DomainId`: `str` *(required)*
 - `DefaultUserSettings`:
-  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+  [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
-[UpdateDomainResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatedomainresponsetypedef).
+[UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
 
 ### update_endpoint
 
@@ -4362,12 +4155,12 @@ Arguments:
 - `EndpointConfigName`: `str` *(required)*
 - `RetainAllVariantProperties`: `bool`
 - `ExcludeRetainedVariantProperties`:
-  `List`\[[VariantPropertyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#variantpropertytypedef)\]
+  `List`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
-  [DeploymentConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#deploymentconfigtypedef)
+  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 
 Returns
-[UpdateEndpointOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateendpointoutputtypedef).
+[UpdateEndpointOutputTypeDef](./type_defs.md#updateendpointoutputtypedef).
 
 ### update_endpoint_weights_and_capacities
 
@@ -4381,11 +4174,11 @@ Arguments:
 
 - `EndpointName`: `str` *(required)*
 - `DesiredWeightsAndCapacities`:
-  `List`\[[DesiredWeightAndCapacityTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#desiredweightandcapacitytypedef)\]
+  `List`\[[DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef)\]
   *(required)*
 
 Returns
-[UpdateEndpointWeightsAndCapacitiesOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateendpointweightsandcapacitiesoutputtypedef).
+[UpdateEndpointWeightsAndCapacitiesOutputTypeDef](./type_defs.md#updateendpointweightsandcapacitiesoutputtypedef).
 
 ### update_experiment
 
@@ -4401,7 +4194,7 @@ Arguments:
 - `Description`: `str`
 
 Returns
-[UpdateExperimentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateexperimentresponsetypedef).
+[UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef).
 
 ### update_image
 
@@ -4419,7 +4212,7 @@ Arguments:
 - `RoleArn`: `str`
 
 Returns
-[UpdateImageResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateimageresponsetypedef).
+[UpdateImageResponseTypeDef](./type_defs.md#updateimageresponsetypedef).
 
 ### update_model_package
 
@@ -4431,13 +4224,12 @@ Boto3 documentation:
 Arguments:
 
 - `ModelPackageArn`: `str` *(required)*
-- `ModelApprovalStatus`:
-  [ModelApprovalStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#modelapprovalstatus)
+- `ModelApprovalStatus`: [ModelApprovalStatus](./literals.md#modelapprovalstatus)
   *(required)*
 - `ApprovalDescription`: `str`
 
 Returns
-[UpdateModelPackageOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatemodelpackageoutputtypedef).
+[UpdateModelPackageOutputTypeDef](./type_defs.md#updatemodelpackageoutputtypedef).
 
 ### update_monitoring_schedule
 
@@ -4451,11 +4243,11 @@ Arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
 - `MonitoringScheduleConfig`:
-  [MonitoringScheduleConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#monitoringscheduleconfigtypedef)
+  [MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef)
   *(required)*
 
 Returns
-[UpdateMonitoringScheduleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatemonitoringscheduleresponsetypedef).
+[UpdateMonitoringScheduleResponseTypeDef](./type_defs.md#updatemonitoringscheduleresponsetypedef).
 
 ### update_notebook_instance
 
@@ -4468,8 +4260,7 @@ Boto3 documentation:
 Arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
-- `InstanceType`:
-  [InstanceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#instancetype)
+- `InstanceType`: [InstanceType](./literals.md#instancetype)
 - `RoleArn`: `str`
 - `LifecycleConfigName`: `str`
 - `DisassociateLifecycleConfig`: `bool`
@@ -4477,12 +4268,11 @@ Arguments:
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#notebookinstanceacceleratortype)\]
+  `List`\[[NotebookInstanceAcceleratorType](./literals.md#notebookinstanceacceleratortype)\]
 - `DisassociateAcceleratorTypes`: `bool`
 - `DisassociateDefaultCodeRepository`: `bool`
 - `DisassociateAdditionalCodeRepositories`: `bool`
-- `RootAccess`:
-  [RootAccess](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/literals.html#rootaccess)
+- `RootAccess`: [RootAccess](./literals.md#rootaccess)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -4498,9 +4288,9 @@ Arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 - `OnCreate`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notebookinstancelifecyclehooktypedef)\]
+  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -4520,7 +4310,7 @@ Arguments:
 - `RoleArn`: `str`
 
 Returns
-[UpdatePipelineResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatepipelineresponsetypedef).
+[UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
 
 ### update_pipeline_execution
 
@@ -4537,7 +4327,7 @@ Arguments:
 - `PipelineExecutionDisplayName`: `str`
 
 Returns
-[UpdatePipelineExecutionResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatepipelineexecutionresponsetypedef).
+[UpdatePipelineExecutionResponseTypeDef](./type_defs.md#updatepipelineexecutionresponsetypedef).
 
 ### update_training_job
 
@@ -4550,12 +4340,12 @@ Arguments:
 
 - `TrainingJobName`: `str` *(required)*
 - `ProfilerConfig`:
-  [ProfilerConfigForUpdateTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerconfigforupdatetypedef)
+  [ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef)
 - `ProfilerRuleConfigurations`:
-  `List`\[[ProfilerRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleconfigurationtypedef)\]
+  `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 
 Returns
-[UpdateTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatetrainingjobresponsetypedef).
+[UpdateTrainingJobResponseTypeDef](./type_defs.md#updatetrainingjobresponsetypedef).
 
 ### update_trial
 
@@ -4570,7 +4360,7 @@ Arguments:
 - `DisplayName`: `str`
 
 Returns
-[UpdateTrialResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatetrialresponsetypedef).
+[UpdateTrialResponseTypeDef](./type_defs.md#updatetrialresponsetypedef).
 
 ### update_trial_component
 
@@ -4584,21 +4374,21 @@ Arguments:
 - `TrialComponentName`: `str` *(required)*
 - `DisplayName`: `str`
 - `Status`:
-  [TrialComponentStatusTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentstatustypedef)
+  [TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Parameters`: `Dict`\[`str`,
-  [TrialComponentParameterValueTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentparametervaluetypedef)\]
+  [TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef)\]
 - `ParametersToRemove`: `List`\[`str`\]
 - `InputArtifacts`: `Dict`\[`str`,
-  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+  [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `InputArtifactsToRemove`: `List`\[`str`\]
 - `OutputArtifacts`: `Dict`\[`str`,
-  [TrialComponentArtifactTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#trialcomponentartifacttypedef)\]
+  [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `OutputArtifactsToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateTrialComponentResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updatetrialcomponentresponsetypedef).
+[UpdateTrialComponentResponseTypeDef](./type_defs.md#updatetrialcomponentresponsetypedef).
 
 ### update_user_profile
 
@@ -4611,11 +4401,10 @@ Arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
-- `UserSettings`:
-  [UserSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#usersettingstypedef)
+- `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
-[UpdateUserProfileResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateuserprofileresponsetypedef).
+[UpdateUserProfileResponseTypeDef](./type_defs.md#updateuserprofileresponsetypedef).
 
 ### update_workforce
 
@@ -4627,13 +4416,11 @@ Boto3 documentation:
 Arguments:
 
 - `WorkforceName`: `str` *(required)*
-- `SourceIpConfig`:
-  [SourceIpConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#sourceipconfigtypedef)
-- `OidcConfig`:
-  [OidcConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#oidcconfigtypedef)
+- `SourceIpConfig`: [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
+- `OidcConfig`: [OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef)
 
 Returns
-[UpdateWorkforceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateworkforceresponsetypedef).
+[UpdateWorkforceResponseTypeDef](./type_defs.md#updateworkforceresponsetypedef).
 
 ### update_workteam
 
@@ -4646,13 +4433,13 @@ Arguments:
 
 - `WorkteamName`: `str` *(required)*
 - `MemberDefinitions`:
-  `List`\[[MemberDefinitionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#memberdefinitiontypedef)\]
+  `List`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
 - `Description`: `str`
 - `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#notificationconfigurationtypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 Returns
-[UpdateWorkteamResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#updateworkteamresponsetypedef).
+[UpdateWorkteamResponseTypeDef](./type_defs.md#updateworkteamresponsetypedef).
 
 ### get_paginator
 

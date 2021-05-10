@@ -1,6 +1,6 @@
 # LakeFormationClient for boto3 LakeFormation module
 
-> [Index](../README.md) > [LakeFormation](./README.md) > LakeFormationClient
+> [Index](..) > [LakeFormation](.) > LakeFormationClient
 
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
@@ -90,16 +90,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-  *(required)*
-- `LFTags`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
+- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[AddLFTagsToResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#addlftagstoresourceresponsetypedef).
+[AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef).
 
 ### batch_grant_permissions
 
@@ -112,12 +109,12 @@ Boto3 documentation:
 Arguments:
 
 - `Entries`:
-  `List`\[[BatchPermissionsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsrequestentrytypedef)\]
+  `List`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[BatchGrantPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchgrantpermissionsresponsetypedef).
+[BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef).
 
 ### batch_revoke_permissions
 
@@ -130,12 +127,12 @@ Boto3 documentation:
 Arguments:
 
 - `Entries`:
-  `List`\[[BatchPermissionsRequestEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchpermissionsrequestentrytypedef)\]
+  `List`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[BatchRevokePermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#batchrevokepermissionsresponsetypedef).
+[BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef).
 
 ### can_paginate
 
@@ -205,7 +202,7 @@ Arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[DescribeResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#describeresourceresponsetypedef).
+[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -237,7 +234,7 @@ Arguments:
 - `CatalogId`: `str`
 
 Returns
-[GetDataLakeSettingsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#getdatalakesettingsresponsetypedef).
+[GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef).
 
 ### get_effective_permissions_for_path
 
@@ -255,7 +252,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEffectivePermissionsForPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#geteffectivepermissionsforpathresponsetypedef).
+[GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef).
 
 ### get_lf_tag
 
@@ -269,8 +266,7 @@ Arguments:
 - `TagKey`: `str` *(required)*
 - `CatalogId`: `str`
 
-Returns
-[GetLFTagResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#getlftagresponsetypedef).
+Returns [GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef).
 
 ### get_resource_lf_tags
 
@@ -282,14 +278,12 @@ Boto3 documentation:
 
 Arguments:
 
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-  *(required)*
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
 - `CatalogId`: `str`
 - `ShowAssignedLFTags`: `bool`
 
 Returns
-[GetResourceLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#getresourcelftagsresponsetypedef).
+[GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef).
 
 ### grant_permissions
 
@@ -301,17 +295,12 @@ Boto3 documentation:
 Arguments:
 
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
   *(required)*
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-  *(required)*
-- `Permissions`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
-  *(required)*
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
+- `Permissions`: `List`\[[Permission](./literals.md#permission)\] *(required)*
 - `CatalogId`: `str`
-- `PermissionsWithGrantOption`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -325,13 +314,11 @@ Boto3 documentation:
 Arguments:
 
 - `CatalogId`: `str`
-- `ResourceShareType`:
-  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#resourcesharetype)
+- `ResourceShareType`: [ResourceShareType](./literals.md#resourcesharetype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#listlftagsresponsetypedef).
+Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
 
 ### list_permissions
 
@@ -344,16 +331,14 @@ Arguments:
 
 - `CatalogId`: `str`
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
-- `ResourceType`:
-  [DataLakeResourceType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#datalakeresourcetype)
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
+- `ResourceType`: [DataLakeResourceType](./literals.md#datalakeresourcetype)
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPermissionsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#listpermissionsresponsetypedef).
+[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
 ### list_resources
 
@@ -365,12 +350,12 @@ Boto3 documentation:
 Arguments:
 
 - `FilterConditionList`:
-  `List`\[[FilterConditionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#filterconditiontypedef)\]
+  `List`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListResourcesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#listresourcesresponsetypedef).
+[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### put_data_lake_settings
 
@@ -383,8 +368,7 @@ Boto3 documentation:
 Arguments:
 
 - `DataLakeSettings`:
-  [DataLakeSettingsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakesettingstypedef)
-  *(required)*
+  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef) *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -414,16 +398,13 @@ Boto3 documentation:
 
 Arguments:
 
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-  *(required)*
-- `LFTags`:
-  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
+- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
 Returns
-[RemoveLFTagsFromResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#removelftagsfromresourceresponsetypedef).
+[RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef).
 
 ### revoke_permissions
 
@@ -435,17 +416,12 @@ Boto3 documentation:
 Arguments:
 
 - `Principal`:
-  [DataLakePrincipalTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#datalakeprincipaltypedef)
+  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
   *(required)*
-- `Resource`:
-  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
-  *(required)*
-- `Permissions`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
-  *(required)*
+- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
+- `Permissions`: `List`\[[Permission](./literals.md#permission)\] *(required)*
 - `CatalogId`: `str`
-- `PermissionsWithGrantOption`:
-  `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+- `PermissionsWithGrantOption`: `List`\[[Permission](./literals.md#permission)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -459,15 +435,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Expression`:
-  `List`\[[LFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagtypedef)\]
+- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `CatalogId`: `str`
 
 Returns
-[SearchDatabasesByLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#searchdatabasesbylftagsresponsetypedef).
+[SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef).
 
 ### search_tables_by_lf_tags
 
@@ -479,15 +454,14 @@ Boto3 documentation:
 
 Arguments:
 
-- `Expression`:
-  `List`\[[LFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagtypedef)\]
+- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `CatalogId`: `str`
 
 Returns
-[SearchTablesByLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#searchtablesbylftagsresponsetypedef).
+[SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef).
 
 ### update_lf_tag
 

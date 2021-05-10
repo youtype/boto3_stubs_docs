@@ -1,6 +1,6 @@
 # Literals for boto3 ConnectContactLens module
 
-> [Index](../README.md) > [ConnectContactLens](./README.md) > Literals
+> [Index](..) > [ConnectContactLens](.) > Literals
 
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)

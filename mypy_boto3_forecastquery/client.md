@@ -1,7 +1,6 @@
 # ForecastQueryServiceClient for boto3 ForecastQueryService module
 
-> [Index](../README.md) > [ForecastQueryService](./README.md) >
-> ForecastQueryServiceClient
+> [Index](..) > [ForecastQueryService](.) > ForecastQueryServiceClient
 
 Auto-generated documentation for
 [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
@@ -101,4 +100,4 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[QueryForecastResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_forecastquery/type_defs.html#queryforecastresponsetypedef).
+[QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef).

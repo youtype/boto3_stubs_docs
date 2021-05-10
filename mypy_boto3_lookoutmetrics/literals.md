@@ -1,6 +1,6 @@
 # Literals for boto3 LookoutMetrics module
 
-> [Index](../README.md) > [LookoutMetrics](./README.md) > Literals
+> [Index](..) > [LookoutMetrics](.) > Literals
 
 Auto-generated documentation for
 [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)

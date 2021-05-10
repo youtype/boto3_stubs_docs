@@ -1,6 +1,6 @@
 # Paginators for boto3 EventBridge module
 
-> [Index](../README.md) > [EventBridge](./README.md) > Paginators
+> [Index](..) > [EventBridge](.) > Paginators
 
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
@@ -34,10 +34,10 @@ Arguments for `ListRuleNamesByTargetPaginator.paginate` method:
 - `TargetArn`: `str` *(required)*
 - `EventBusName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRuleNamesByTargetPaginator.paginate` returns
-`Iterator`\[[ListRuleNamesByTargetResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listrulenamesbytargetresponsetypedef)\].
+`Iterator`\[[ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef)\].
 
 ## ListRulesPaginator
 
@@ -60,10 +60,10 @@ Arguments for `ListRulesPaginator.paginate` method:
 - `NamePrefix`: `str`
 - `EventBusName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRulesPaginator.paginate` returns
-`Iterator`\[[ListRulesResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listrulesresponsetypedef)\].
+`Iterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
 
 ## ListTargetsByRulePaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListTargetsByRulePaginator.paginate` method:
 - `Rule`: `str` *(required)*
 - `EventBusName`: `str`
 - `PaginationConfig`:
-  [PaginatorConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#paginatorconfigtypedef)
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsByRulePaginator.paginate` returns
-`Iterator`\[[ListTargetsByRuleResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_events/type_defs.html#listtargetsbyruleresponsetypedef)\].
+`Iterator`\[[ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef)\].

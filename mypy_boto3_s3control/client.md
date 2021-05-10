@@ -1,6 +1,6 @@
 # S3ControlClient for boto3 S3Control module
 
-> [Index](../README.md) > [S3Control](./README.md) > S3ControlClient
+> [Index](..) > [S3Control](.) > S3ControlClient
 
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
@@ -136,12 +136,12 @@ Arguments:
 - `Name`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 - `VpcConfiguration`:
-  [VpcConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#vpcconfigurationtypedef)
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
+  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 
 Returns
-[CreateAccessPointResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createaccesspointresulttypedef).
+[CreateAccessPointResultTypeDef](./type_defs.md#createaccesspointresulttypedef).
 
 ### create_access_point_for_object_lambda
 
@@ -156,11 +156,11 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Configuration`:
-  [ObjectLambdaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdaconfigurationtypedef)
+  [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
   *(required)*
 
 Returns
-[CreateAccessPointForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createaccesspointforobjectlambdaresulttypedef).
+[CreateAccessPointForObjectLambdaResultTypeDef](./type_defs.md#createaccesspointforobjectlambdaresulttypedef).
 
 ### create_bucket
 
@@ -172,10 +172,9 @@ Boto3 documentation:
 Arguments:
 
 - `Bucket`: `str` *(required)*
-- `ACL`:
-  [BucketCannedACL](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#bucketcannedacl)
+- `ACL`: [BucketCannedACL](./literals.md#bucketcannedacl)
 - `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createbucketconfigurationtypedef)
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -184,8 +183,7 @@ Arguments:
 - `ObjectLockEnabledForBucket`: `bool`
 - `OutpostId`: `str`
 
-Returns
-[CreateBucketResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createbucketresulttypedef).
+Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
 
 ### create_job
 
@@ -197,25 +195,19 @@ Boto3 documentation:
 Arguments:
 
 - `AccountId`: `str` *(required)*
-- `Operation`:
-  [JobOperationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#joboperationtypedef)
+- `Operation`: [JobOperationTypeDef](./type_defs.md#joboperationtypedef)
   *(required)*
-- `Report`:
-  [JobReportTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobreporttypedef)
-  *(required)*
+- `Report`: [JobReportTypeDef](./type_defs.md#jobreporttypedef) *(required)*
 - `ClientRequestToken`: `str` *(required)*
-- `Manifest`:
-  [JobManifestTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#jobmanifesttypedef)
+- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
   *(required)*
 - `Priority`: `int` *(required)*
 - `RoleArn`: `str` *(required)*
 - `ConfirmationRequired`: `bool`
 - `Description`: `str`
-- `Tags`:
-  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
+- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
-Returns
-[CreateJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#createjobresulttypedef).
+Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
 ### delete_access_point
 
@@ -384,8 +376,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
 
-Returns
-[DescribeJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#describejobresulttypedef).
+Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
 
 ### generate_presigned_url
 
@@ -416,7 +407,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointresulttypedef).
+[GetAccessPointResultTypeDef](./type_defs.md#getaccesspointresulttypedef).
 
 ### get_access_point_configuration_for_object_lambda
 
@@ -433,7 +424,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointConfigurationForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointconfigurationforobjectlambdaresulttypedef).
+[GetAccessPointConfigurationForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresulttypedef).
 
 ### get_access_point_for_object_lambda
 
@@ -449,7 +440,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointforobjectlambdaresulttypedef).
+[GetAccessPointForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointforobjectlambdaresulttypedef).
 
 ### get_access_point_policy
 
@@ -465,7 +456,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicyresulttypedef).
+[GetAccessPointPolicyResultTypeDef](./type_defs.md#getaccesspointpolicyresulttypedef).
 
 ### get_access_point_policy_for_object_lambda
 
@@ -481,7 +472,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicyforobjectlambdaresulttypedef).
+[GetAccessPointPolicyForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresulttypedef).
 
 ### get_access_point_policy_status
 
@@ -497,7 +488,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicystatusresulttypedef).
+[GetAccessPointPolicyStatusResultTypeDef](./type_defs.md#getaccesspointpolicystatusresulttypedef).
 
 ### get_access_point_policy_status_for_object_lambda
 
@@ -514,7 +505,7 @@ Arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getaccesspointpolicystatusforobjectlambdaresulttypedef).
+[GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdaresulttypedef).
 
 ### get_bucket
 
@@ -528,8 +519,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 
-Returns
-[GetBucketResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbucketresulttypedef).
+Returns [GetBucketResultTypeDef](./type_defs.md#getbucketresulttypedef).
 
 ### get_bucket_lifecycle_configuration
 
@@ -545,7 +535,7 @@ Arguments:
 - `Bucket`: `str` *(required)*
 
 Returns
-[GetBucketLifecycleConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbucketlifecycleconfigurationresulttypedef).
+[GetBucketLifecycleConfigurationResultTypeDef](./type_defs.md#getbucketlifecycleconfigurationresulttypedef).
 
 ### get_bucket_policy
 
@@ -560,7 +550,7 @@ Arguments:
 - `Bucket`: `str` *(required)*
 
 Returns
-[GetBucketPolicyResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbucketpolicyresulttypedef).
+[GetBucketPolicyResultTypeDef](./type_defs.md#getbucketpolicyresulttypedef).
 
 ### get_bucket_tagging
 
@@ -575,7 +565,7 @@ Arguments:
 - `Bucket`: `str` *(required)*
 
 Returns
-[GetBucketTaggingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getbuckettaggingresulttypedef).
+[GetBucketTaggingResultTypeDef](./type_defs.md#getbuckettaggingresulttypedef).
 
 ### get_job_tagging
 
@@ -590,7 +580,7 @@ Arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[GetJobTaggingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getjobtaggingresulttypedef).
+[GetJobTaggingResultTypeDef](./type_defs.md#getjobtaggingresulttypedef).
 
 ### get_public_access_block
 
@@ -605,7 +595,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetPublicAccessBlockOutputTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getpublicaccessblockoutputtypedef).
+[GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
 
 ### get_storage_lens_configuration
 
@@ -621,7 +611,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetStorageLensConfigurationResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getstoragelensconfigurationresulttypedef).
+[GetStorageLensConfigurationResultTypeDef](./type_defs.md#getstoragelensconfigurationresulttypedef).
 
 ### get_storage_lens_configuration_tagging
 
@@ -637,7 +627,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetStorageLensConfigurationTaggingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#getstoragelensconfigurationtaggingresulttypedef).
+[GetStorageLensConfigurationTaggingResultTypeDef](./type_defs.md#getstoragelensconfigurationtaggingresulttypedef).
 
 ### list_access_points
 
@@ -654,7 +644,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccessPointsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listaccesspointsresulttypedef).
+[ListAccessPointsResultTypeDef](./type_defs.md#listaccesspointsresulttypedef).
 
 ### list_access_points_for_object_lambda
 
@@ -671,7 +661,7 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccessPointsForObjectLambdaResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listaccesspointsforobjectlambdaresulttypedef).
+[ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef).
 
 ### list_jobs
 
@@ -683,13 +673,11 @@ Boto3 documentation:
 Arguments:
 
 - `AccountId`: `str` *(required)*
-- `JobStatuses`:
-  `List`\[[JobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#jobstatus)\]
+- `JobStatuses`: `List`\[[JobStatus](./literals.md#jobstatus)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listjobsresulttypedef).
+Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 
 ### list_regional_buckets
 
@@ -706,7 +694,7 @@ Arguments:
 - `OutpostId`: `str`
 
 Returns
-[ListRegionalBucketsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#listregionalbucketsresulttypedef).
+[ListRegionalBucketsResultTypeDef](./type_defs.md#listregionalbucketsresulttypedef).
 
 ### list_storage_lens_configurations
 
@@ -722,7 +710,7 @@ Arguments:
 - `NextToken`: `str`
 
 Returns
-[ListStorageLensConfigurationsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#liststoragelensconfigurationsresulttypedef).
+[ListStorageLensConfigurationsResultTypeDef](./type_defs.md#liststoragelensconfigurationsresulttypedef).
 
 ### put_access_point_configuration_for_object_lambda
 
@@ -738,7 +726,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Configuration`:
-  [ObjectLambdaConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#objectlambdaconfigurationtypedef)
+  [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
   *(required)*
 
 ### put_access_point_policy
@@ -782,7 +770,7 @@ Arguments:
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 - `LifecycleConfiguration`:
-  [LifecycleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#lifecycleconfigurationtypedef)
+  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 
 ### put_bucket_policy
 
@@ -809,9 +797,7 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
-- `Tagging`:
-  [TaggingTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#taggingtypedef)
-  *(required)*
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
 
 ### put_job_tagging
 
@@ -824,9 +810,7 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
-- `Tags`:
-  `List`\[[S3TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#s3tagtypedef)\]
-  *(required)*
+- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -841,7 +825,7 @@ Boto3 documentation:
 Arguments:
 
 - `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#publicaccessblockconfigurationtypedef)
+  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
   *(required)*
 - `AccountId`: `str` *(required)*
 
@@ -858,10 +842,9 @@ Arguments:
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 - `StorageLensConfiguration`:
-  [StorageLensConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelensconfigurationtypedef)
+  [StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef)
   *(required)*
-- `Tags`:
-  `List`\[[StorageLensTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelenstagtypedef)\]
+- `Tags`: `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
 ### put_storage_lens_configuration_tagging
 
@@ -875,8 +858,7 @@ Arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
-- `Tags`:
-  `List`\[[StorageLensTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#storagelenstagtypedef)\]
+- `Tags`: `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -895,7 +877,7 @@ Arguments:
 - `Priority`: `int` *(required)*
 
 Returns
-[UpdateJobPriorityResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#updatejobpriorityresulttypedef).
+[UpdateJobPriorityResultTypeDef](./type_defs.md#updatejobpriorityresulttypedef).
 
 ### update_job_status
 
@@ -908,13 +890,12 @@ Arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
-- `RequestedJobStatus`:
-  [RequestedJobStatus](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/literals.html#requestedjobstatus)
+- `RequestedJobStatus`: [RequestedJobStatus](./literals.md#requestedjobstatus)
   *(required)*
 - `StatusUpdateReason`: `str`
 
 Returns
-[UpdateJobStatusResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_s3control/type_defs.html#updatejobstatusresulttypedef).
+[UpdateJobStatusResultTypeDef](./type_defs.md#updatejobstatusresulttypedef).
 
 ### get_paginator
 
