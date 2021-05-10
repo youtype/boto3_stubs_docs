@@ -41,6 +41,7 @@ type annotations stubs module
   - [FirehoseTypeDef](#firehosetypedef)
   - [GetBootstrapBrokersResponseTypeDef](#getbootstrapbrokersresponsetypedef)
   - [GetCompatibleKafkaVersionsResponseTypeDef](#getcompatiblekafkaversionsresponsetypedef)
+  - [IamTypeDef](#iamtypedef)
   - [JmxExporterInfoTypeDef](#jmxexporterinfotypedef)
   - [JmxExporterTypeDef](#jmxexportertypedef)
   - [KafkaVersionTypeDef](#kafkaversiontypedef)
@@ -527,6 +528,7 @@ Optional fields:
 - `BootstrapBrokerString`: `str`
 - `BootstrapBrokerStringTls`: `str`
 - `BootstrapBrokerStringSaslScram`: `str`
+- `BootstrapBrokerStringSaslIam`: `str`
 
 ## GetCompatibleKafkaVersionsResponseTypeDef
 
@@ -538,6 +540,16 @@ Optional fields:
 
 - `CompatibleKafkaVersions`:
   `List`\[[CompatibleKafkaVersionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#compatiblekafkaversiontypedef)\]
+
+## IamTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import IamTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
 
 ## JmxExporterInfoTypeDef
 
@@ -830,6 +842,8 @@ Optional fields:
 
 - `Scram`:
   [ScramTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#scramtypedef)
+- `Iam`:
+  [IamTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kafka/type_defs.html#iamtypedef)
 
 ## ScramTypeDef
 

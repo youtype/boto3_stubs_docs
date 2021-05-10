@@ -21,6 +21,7 @@ type annotations stubs module
     - [describe_resource_collection_health](#describe_resource_collection_health)
     - [describe_service_integration](#describe_service_integration)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_cost_estimation](#get_cost_estimation)
     - [get_resource_collection](#get_resource_collection)
     - [list_anomalies_for_insight](#list_anomalies_for_insight)
     - [list_events](#list_events)
@@ -30,6 +31,7 @@ type annotations stubs module
     - [put_feedback](#put_feedback)
     - [remove_notification_channel](#remove_notification_channel)
     - [search_insights](#search_insights)
+    - [start_cost_estimation](#start_cost_estimation)
     - [update_resource_collection](#update_resource_collection)
     - [update_service_integration](#update_service_integration)
     - [get_paginator](#get_paginator)
@@ -184,7 +186,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `ResourceCollectionType`:
+  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
+  *(required)*
 - `NextToken`: `str`
 
 Returns
@@ -218,6 +222,20 @@ Arguments:
 
 Returns `str`.
 
+### get_cost_estimation
+
+Type annotations for `boto3.client("devops-guru").get_cost_estimation` method.
+
+Boto3 documentation:
+[DevopsGuru.Client.get_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.get_cost_estimation)
+
+Arguments:
+
+- `NextToken`: `str`
+
+Returns
+[GetCostEstimationResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#getcostestimationresponsetypedef).
+
 ### get_resource_collection
 
 Type annotations for `boto3.client("devops-guru").get_resource_collection`
@@ -228,7 +246,9 @@ Boto3 documentation:
 
 Arguments:
 
-- `ResourceCollectionType`: `Literal['AWS_CLOUD_FORMATION']` *(required)*
+- `ResourceCollectionType`:
+  [ResourceCollectionType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#resourcecollectiontype)
+  *(required)*
 - `NextToken`: `str`
 
 Returns
@@ -315,6 +335,8 @@ Arguments:
 
 - `InsightId`: `str` *(required)*
 - `NextToken`: `str`
+- `Locale`:
+  [Locale](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/literals.html#locale)
 
 Returns
 [ListRecommendationsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#listrecommendationsresponsetypedef).
@@ -370,6 +392,23 @@ Arguments:
 Returns
 [SearchInsightsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#searchinsightsresponsetypedef).
 
+### start_cost_estimation
+
+Type annotations for `boto3.client("devops-guru").start_cost_estimation`
+method.
+
+Boto3 documentation:
+[DevopsGuru.Client.start_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevopsGuru.Client.start_cost_estimation)
+
+Arguments:
+
+- `ResourceCollection`:
+  [CostEstimationResourceCollectionFilterTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_devops_guru/type_defs.html#costestimationresourcecollectionfiltertypedef)
+  *(required)*
+- `ClientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### update_resource_collection
 
 Type annotations for `boto3.client("devops-guru").update_resource_collection`
@@ -412,6 +451,8 @@ overloads.
 
 - `client.get_paginator("describe_resource_collection_health")` ->
   [DescribeResourceCollectionHealthPaginator](./paginators.md#describeresourcecollectionhealthpaginator)
+- `client.get_paginator("get_cost_estimation")` ->
+  [GetCostEstimationPaginator](./paginators.md#getcostestimationpaginator)
 - `client.get_paginator("get_resource_collection")` ->
   [GetResourceCollectionPaginator](./paginators.md#getresourcecollectionpaginator)
 - `client.get_paginator("list_anomalies_for_insight")` ->

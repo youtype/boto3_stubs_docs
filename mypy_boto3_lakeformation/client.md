@@ -11,20 +11,30 @@ type annotations stubs module
   - [LakeFormationClient](#lakeformationclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [add_lf_tags_to_resource](#add_lf_tags_to_resource)
     - [batch_grant_permissions](#batch_grant_permissions)
     - [batch_revoke_permissions](#batch_revoke_permissions)
     - [can_paginate](#can_paginate)
+    - [create_lf_tag](#create_lf_tag)
+    - [delete_lf_tag](#delete_lf_tag)
     - [deregister_resource](#deregister_resource)
     - [describe_resource](#describe_resource)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_data_lake_settings](#get_data_lake_settings)
     - [get_effective_permissions_for_path](#get_effective_permissions_for_path)
+    - [get_lf_tag](#get_lf_tag)
+    - [get_resource_lf_tags](#get_resource_lf_tags)
     - [grant_permissions](#grant_permissions)
+    - [list_lf_tags](#list_lf_tags)
     - [list_permissions](#list_permissions)
     - [list_resources](#list_resources)
     - [put_data_lake_settings](#put_data_lake_settings)
     - [register_resource](#register_resource)
+    - [remove_lf_tags_from_resource](#remove_lf_tags_from_resource)
     - [revoke_permissions](#revoke_permissions)
+    - [search_databases_by_lf_tags](#search_databases_by_lf_tags)
+    - [search_tables_by_lf_tags](#search_tables_by_lf_tags)
+    - [update_lf_tag](#update_lf_tag)
     - [update_resource](#update_resource)
 
 ## LakeFormationClient
@@ -51,21 +61,45 @@ static analysis directly:
 ```python
 from mypy_boto3_lakeformation.client import Exceptions
 
-def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
 Exceptions:
 
+- `Exceptions.AccessDeniedException`
 - `Exceptions.AlreadyExistsException`
 - `Exceptions.ClientError`
 - `Exceptions.ConcurrentModificationException`
 - `Exceptions.EntityNotFoundException`
+- `Exceptions.GlueEncryptionException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidInputException`
 - `Exceptions.OperationTimeoutException`
+- `Exceptions.ResourceNumberLimitExceededException`
 
 ## Methods
+
+### add_lf_tags_to_resource
+
+Type annotations for `boto3.client("lakeformation").add_lf_tags_to_resource`
+method.
+
+Boto3 documentation:
+[LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
+
+Arguments:
+
+- `Resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+  *(required)*
+- `LFTags`:
+  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[AddLFTagsToResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#addlftagstoresourceresponsetypedef).
 
 ### batch_grant_permissions
 
@@ -115,6 +149,35 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### create_lf_tag
+
+Type annotations for `boto3.client("lakeformation").create_lf_tag` method.
+
+Boto3 documentation:
+[LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
+
+Arguments:
+
+- `TagKey`: `str` *(required)*
+- `TagValues`: `List`\[`str`\] *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_lf_tag
+
+Type annotations for `boto3.client("lakeformation").delete_lf_tag` method.
+
+Boto3 documentation:
+[LakeFormation.Client.delete_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
+
+Arguments:
+
+- `TagKey`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_resource
 
@@ -194,6 +257,40 @@ Arguments:
 Returns
 [GetEffectivePermissionsForPathResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#geteffectivepermissionsforpathresponsetypedef).
 
+### get_lf_tag
+
+Type annotations for `boto3.client("lakeformation").get_lf_tag` method.
+
+Boto3 documentation:
+[LakeFormation.Client.get_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
+
+Arguments:
+
+- `TagKey`: `str` *(required)*
+- `CatalogId`: `str`
+
+Returns
+[GetLFTagResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#getlftagresponsetypedef).
+
+### get_resource_lf_tags
+
+Type annotations for `boto3.client("lakeformation").get_resource_lf_tags`
+method.
+
+Boto3 documentation:
+[LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
+
+Arguments:
+
+- `Resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+  *(required)*
+- `CatalogId`: `str`
+- `ShowAssignedLFTags`: `bool`
+
+Returns
+[GetResourceLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#getresourcelftagsresponsetypedef).
+
 ### grant_permissions
 
 Type annotations for `boto3.client("lakeformation").grant_permissions` method.
@@ -217,6 +314,24 @@ Arguments:
   `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+### list_lf_tags
+
+Type annotations for `boto3.client("lakeformation").list_lf_tags` method.
+
+Boto3 documentation:
+[LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
+
+Arguments:
+
+- `CatalogId`: `str`
+- `ResourceShareType`:
+  [ResourceShareType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#resourcesharetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#listlftagsresponsetypedef).
 
 ### list_permissions
 
@@ -289,6 +404,27 @@ Arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### remove_lf_tags_from_resource
+
+Type annotations for
+`boto3.client("lakeformation").remove_lf_tags_from_resource` method.
+
+Boto3 documentation:
+[LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
+
+Arguments:
+
+- `Resource`:
+  [ResourceTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#resourcetypedef)
+  *(required)*
+- `LFTags`:
+  `List`\[[LFTagPairTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagpairtypedef)\]
+  *(required)*
+- `CatalogId`: `str`
+
+Returns
+[RemoveLFTagsFromResourceResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#removelftagsfromresourceresponsetypedef).
+
 ### revoke_permissions
 
 Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
@@ -310,6 +446,62 @@ Arguments:
 - `CatalogId`: `str`
 - `PermissionsWithGrantOption`:
   `List`\[[Permission](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/literals.html#permission)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### search_databases_by_lf_tags
+
+Type annotations for
+`boto3.client("lakeformation").search_databases_by_lf_tags` method.
+
+Boto3 documentation:
+[LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
+
+Arguments:
+
+- `Expression`:
+  `List`\[[LFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagtypedef)\]
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CatalogId`: `str`
+
+Returns
+[SearchDatabasesByLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#searchdatabasesbylftagsresponsetypedef).
+
+### search_tables_by_lf_tags
+
+Type annotations for `boto3.client("lakeformation").search_tables_by_lf_tags`
+method.
+
+Boto3 documentation:
+[LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
+
+Arguments:
+
+- `Expression`:
+  `List`\[[LFTagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#lftagtypedef)\]
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CatalogId`: `str`
+
+Returns
+[SearchTablesByLFTagsResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_lakeformation/type_defs.html#searchtablesbylftagsresponsetypedef).
+
+### update_lf_tag
+
+Type annotations for `boto3.client("lakeformation").update_lf_tag` method.
+
+Boto3 documentation:
+[LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
+
+Arguments:
+
+- `TagKey`: `str` *(required)*
+- `CatalogId`: `str`
+- `TagValuesToDelete`: `List`\[`str`\]
+- `TagValuesToAdd`: `List`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

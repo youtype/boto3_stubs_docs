@@ -12,6 +12,8 @@ type annotations stubs module
   - [DataLakeResourceType](#datalakeresourcetype)
   - [FieldNameString](#fieldnamestring)
   - [Permission](#permission)
+  - [ResourceShareType](#resourcesharetype)
+  - [ResourceType](#resourcetype)
 
 ## ComparisonOperator
 
@@ -44,6 +46,10 @@ Values:
 - `CATALOG`
 - `DATA_LOCATION`
 - `DATABASE`
+- `LF_TAG`
+- `LF_TAG_POLICY`
+- `LF_TAG_POLICY_DATABASE`
+- `LF_TAG_POLICY_TABLE`
 - `TABLE`
 
 ## FieldNameString
@@ -68,11 +74,38 @@ Values:
 
 - `ALL`
 - `ALTER`
+- `ALTER_TAG`
+- `ASSOCIATE_TAG`
 - `CREATE_DATABASE`
 - `CREATE_TABLE`
+- `CREATE_TAG`
 - `DATA_LOCATION_ACCESS`
 - `DELETE`
+- `DELETE_TAG`
 - `DESCRIBE`
+- `DESCRIBE_TAG`
 - `DROP`
 - `INSERT`
 - `SELECT`
+
+## ResourceShareType
+
+```python
+from mypy_boto3_lakeformation.literals import ResourceShareType
+```
+
+Values:
+
+- `ALL`
+- `FOREIGN`
+
+## ResourceType
+
+```python
+from mypy_boto3_lakeformation.literals import ResourceType
+```
+
+Values:
+
+- `DATABASE`
+- `TABLE`

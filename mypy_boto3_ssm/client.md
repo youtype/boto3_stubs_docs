@@ -410,6 +410,7 @@ Arguments:
 - `SyncCompliance`:
   [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
 - `ApplyOnlyAtCronInterval`: `bool`
+- `CalendarNames`: `List`\[`str`\]
 - `TargetLocations`:
   `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
 
@@ -2497,6 +2498,7 @@ Arguments:
 - `SyncCompliance`:
   [AssociationSyncCompliance](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/literals.html#associationsynccompliance)
 - `ApplyOnlyAtCronInterval`: `bool`
+- `CalendarNames`: `List`\[`str`\]
 - `TargetLocations`:
   `List`\[[TargetLocationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_ssm/type_defs.html#targetlocationtypedef)\]
 

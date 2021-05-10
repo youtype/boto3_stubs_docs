@@ -106,6 +106,7 @@ type annotations stubs module
   - [ReferenceDataSourceTypeDef](#referencedatasourcetypedef)
   - [ReferenceDataSourceUpdateTypeDef](#referencedatasourceupdatetypedef)
   - [ResponseMetadata](#responsemetadata)
+  - [RollbackApplicationResponseTypeDef](#rollbackapplicationresponsetypedef)
   - [RunConfigurationDescriptionTypeDef](#runconfigurationdescriptiontypedef)
   - [RunConfigurationTypeDef](#runconfigurationtypedef)
   - [RunConfigurationUpdateTypeDef](#runconfigurationupdatetypedef)
@@ -349,6 +350,9 @@ Optional fields:
   `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#cloudwatchloggingoptiondescriptiontypedef)\]
 - `ApplicationMaintenanceConfigurationDescription`:
   [ApplicationMaintenanceConfigurationDescriptionTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationmaintenanceconfigurationdescriptiontypedef)
+- `ApplicationVersionUpdatedFrom`: `int`
+- `ApplicationVersionRolledBackFrom`: `int`
+- `ConditionalToken`: `str`
 
 ## ApplicationMaintenanceConfigurationDescriptionTypeDef
 
@@ -1476,6 +1480,17 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RollbackApplicationResponseTypeDef
+
+```python
+from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationResponseTypeDef
+```
+
+Required fields:
+
+- `ApplicationDetail`:
+  [ApplicationDetailTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_kinesisanalyticsv2/type_defs.html#applicationdetailtypedef)
 
 ## RunConfigurationDescriptionTypeDef
 

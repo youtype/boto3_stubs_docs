@@ -151,6 +151,8 @@ Optional fields:
 - `RevocationConfiguration`:
   [RevocationConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/type_defs.html#revocationconfigurationtypedef)
 - `RestorableUntil`: `datetime`
+- `KeyStorageSecurityStandard`:
+  [KeyStorageSecurityStandard](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_acm_pca/literals.html#keystoragesecuritystandard)
 
 ## CreateCertificateAuthorityAuditReportResponseTypeDef
 

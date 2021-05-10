@@ -15,6 +15,7 @@ type annotations stubs module
   - [CreateAddressResultTypeDef](#createaddressresulttypedef)
   - [CreateClusterResultTypeDef](#createclusterresulttypedef)
   - [CreateJobResultTypeDef](#createjobresulttypedef)
+  - [CreateLongTermPricingResultTypeDef](#createlongtermpricingresulttypedef)
   - [CreateReturnShippingLabelResultTypeDef](#createreturnshippinglabelresulttypedef)
   - [DataTransferTypeDef](#datatransfertypedef)
   - [DescribeAddressResultTypeDef](#describeaddressresulttypedef)
@@ -40,6 +41,8 @@ type annotations stubs module
   - [ListClustersResultTypeDef](#listclustersresulttypedef)
   - [ListCompatibleImagesResultTypeDef](#listcompatibleimagesresulttypedef)
   - [ListJobsResultTypeDef](#listjobsresulttypedef)
+  - [ListLongTermPricingResultTypeDef](#listlongtermpricingresulttypedef)
+  - [LongTermPricingListEntryTypeDef](#longtermpricinglistentrytypedef)
   - [NotificationTypeDef](#notificationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [S3ResourceTypeDef](#s3resourcetypedef)
@@ -156,6 +159,16 @@ from mypy_boto3_snowball.type_defs import CreateJobResultTypeDef
 Optional fields:
 
 - `JobId`: `str`
+
+## CreateLongTermPricingResultTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import CreateLongTermPricingResultTypeDef
+```
+
+Optional fields:
+
+- `LongTermPricingId`: `str`
 
 ## CreateReturnShippingLabelResultTypeDef
 
@@ -395,6 +408,7 @@ Optional fields:
   [TaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#taxdocumentstypedef)
 - `DeviceConfiguration`:
   [DeviceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#deviceconfigurationtypedef)
+- `LongTermPricingId`: `str`
 
 ## JobResourceTypeDef
 
@@ -481,6 +495,39 @@ Optional fields:
 - `JobListEntries`:
   `List`\[[JobListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#joblistentrytypedef)\]
 - `NextToken`: `str`
+
+## ListLongTermPricingResultTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import ListLongTermPricingResultTypeDef
+```
+
+Optional fields:
+
+- `LongTermPricingEntries`:
+  `List`\[[LongTermPricingListEntryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#longtermpricinglistentrytypedef)\]
+- `NextToken`: `str`
+
+## LongTermPricingListEntryTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import LongTermPricingListEntryTypeDef
+```
+
+Optional fields:
+
+- `LongTermPricingId`: `str`
+- `LongTermPricingEndDate`: `datetime`
+- `LongTermPricingStartDate`: `datetime`
+- `LongTermPricingType`:
+  [LongTermPricingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#longtermpricingtype)
+- `CurrentActiveJob`: `str`
+- `ReplacementJob`: `str`
+- `IsLongTermPricingAutoRenew`: `bool`
+- `LongTermPricingStatus`: `str`
+- `SnowballType`:
+  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+- `JobIds`: `List`\[`str`\]
 
 ## NotificationTypeDef
 

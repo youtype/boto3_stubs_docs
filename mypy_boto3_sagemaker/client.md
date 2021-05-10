@@ -492,6 +492,8 @@ Arguments:
 - `GenerateCandidateDefinitionsOnly`: `bool`
 - `Tags`:
   `List`\[[TagTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#tagtypedef)\]
+- `ModelDeployConfig`:
+  [ModelDeployConfigTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#modeldeployconfigtypedef)
 
 Returns
 [CreateAutoMLJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createautomljobresponsetypedef).
@@ -1304,6 +1306,8 @@ Arguments:
 - `ProfilerRuleConfigurations`:
   `List`\[[ProfilerRuleConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#profilerruleconfigurationtypedef)\]
 - `Environment`: `Dict`\[`str`, `str`\]
+- `RetryStrategy`:
+  [RetryStrategyTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#retrystrategytypedef)
 
 Returns
 [CreateTrainingJobResponseTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_sagemaker/type_defs.html#createtrainingjobresponsetypedef).

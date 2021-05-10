@@ -17,6 +17,7 @@ type annotations stubs module
     - [create_address](#create_address)
     - [create_cluster](#create_cluster)
     - [create_job](#create_job)
+    - [create_long_term_pricing](#create_long_term_pricing)
     - [create_return_shipping_label](#create_return_shipping_label)
     - [describe_address](#describe_address)
     - [describe_addresses](#describe_addresses)
@@ -32,9 +33,11 @@ type annotations stubs module
     - [list_clusters](#list_clusters)
     - [list_compatible_images](#list_compatible_images)
     - [list_jobs](#list_jobs)
+    - [list_long_term_pricing](#list_long_term_pricing)
     - [update_cluster](#update_cluster)
     - [update_job](#update_job)
     - [update_job_shipment_state](#update_job_shipment_state)
+    - [update_long_term_pricing](#update_long_term_pricing)
     - [get_paginator](#get_paginator)
 
 ## SnowballClient
@@ -154,13 +157,14 @@ Arguments:
   *(required)*
 - `AddressId`: `str` *(required)*
 - `RoleARN`: `str` *(required)*
+- `SnowballType`:
+  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+  *(required)*
 - `ShippingOption`:
   [ShippingOption](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shippingoption)
   *(required)*
 - `Description`: `str`
 - `KmsKeyARN`: `str`
-- `SnowballType`:
-  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
 - `Notification`:
   [NotificationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#notificationtypedef)
 - `ForwardingAddressId`: `str`
@@ -201,9 +205,30 @@ Arguments:
   [TaxDocumentsTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#taxdocumentstypedef)
 - `DeviceConfiguration`:
   [DeviceConfigurationTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#deviceconfigurationtypedef)
+- `LongTermPricingId`: `str`
 
 Returns
 [CreateJobResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#createjobresulttypedef).
+
+### create_long_term_pricing
+
+Type annotations for `boto3.client("snowball").create_long_term_pricing`
+method.
+
+Boto3 documentation:
+[Snowball.Client.create_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
+
+Arguments:
+
+- `LongTermPricingType`:
+  [LongTermPricingType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#longtermpricingtype)
+  *(required)*
+- `IsLongTermPricingAutoRenew`: `bool`
+- `SnowballType`:
+  [SnowballType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#snowballtype)
+
+Returns
+[CreateLongTermPricingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#createlongtermpricingresulttypedef).
 
 ### create_return_shipping_label
 
@@ -289,7 +314,7 @@ Boto3 documentation:
 
 Arguments:
 
-- `JobId`: `str`
+- `JobId`: `str` *(required)*
 
 Returns
 [DescribeReturnShippingLabelResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#describereturnshippinglabelresulttypedef).
@@ -423,6 +448,21 @@ Arguments:
 Returns
 [ListJobsResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listjobsresulttypedef).
 
+### list_long_term_pricing
+
+Type annotations for `boto3.client("snowball").list_long_term_pricing` method.
+
+Boto3 documentation:
+[Snowball.Client.list_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
+
+Arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListLongTermPricingResultTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/type_defs.html#listlongtermpricingresulttypedef).
+
 ### update_cluster
 
 Type annotations for `boto3.client("snowball").update_cluster` method.
@@ -485,6 +525,22 @@ Arguments:
 - `ShipmentState`:
   [ShipmentState](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_snowball/literals.html#shipmentstate)
   *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_long_term_pricing
+
+Type annotations for `boto3.client("snowball").update_long_term_pricing`
+method.
+
+Boto3 documentation:
+[Snowball.Client.update_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
+
+Arguments:
+
+- `LongTermPricingId`: `str` *(required)*
+- `ReplacementJob`: `str`
+- `IsLongTermPricingAutoRenew`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 

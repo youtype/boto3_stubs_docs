@@ -137,6 +137,7 @@ from mypy_boto3_acm_pca.literals import AccessMethodType, ...
 - [ExtendedKeyUsageType](./literals.md#extendedkeyusagetype)
 - [FailureReason](./literals.md#failurereason)
 - [KeyAlgorithm](./literals.md#keyalgorithm)
+- [KeyStorageSecurityStandard](./literals.md#keystoragesecuritystandard)
 - [ListCertificateAuthoritiesPaginatorName](./literals.md#listcertificateauthoritiespaginatorname)
 - [ListPermissionsPaginatorName](./literals.md#listpermissionspaginatorname)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)

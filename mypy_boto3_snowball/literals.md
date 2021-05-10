@@ -16,6 +16,7 @@ type annotations stubs module
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListCompatibleImagesPaginatorName](#listcompatibleimagespaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
+  - [LongTermPricingType](#longtermpricingtype)
   - [ShipmentState](#shipmentstate)
   - [ShippingLabelStatus](#shippinglabelstatus)
   - [ShippingOption](#shippingoption)
@@ -120,6 +121,17 @@ Values:
 
 - `list_jobs`
 
+## LongTermPricingType
+
+```python
+from mypy_boto3_snowball.literals import LongTermPricingType
+```
+
+Values:
+
+- `OneYear`
+- `ThreeYear`
+
 ## ShipmentState
 
 ```python
@@ -167,6 +179,7 @@ Values:
 
 - `NoPreference`
 - `T100`
+- `T14`
 - `T42`
 - `T50`
 - `T8`
@@ -186,4 +199,5 @@ Values:
 - `EDGE_CG`
 - `EDGE_S`
 - `SNC1_HDD`
+- `SNC1_SSD`
 - `STANDARD`

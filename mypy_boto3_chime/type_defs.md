@@ -147,6 +147,7 @@ type annotations stubs module
   - [ListRoomsResponseTypeDef](#listroomsresponsetypedef)
   - [ListSipMediaApplicationsResponseTypeDef](#listsipmediaapplicationsresponsetypedef)
   - [ListSipRulesResponseTypeDef](#listsiprulesresponsetypedef)
+  - [ListSupportedPhoneNumberCountriesResponseTypeDef](#listsupportedphonenumbercountriesresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [ListVoiceConnectorGroupsResponseTypeDef](#listvoiceconnectorgroupsresponsetypedef)
@@ -167,6 +168,7 @@ type annotations stubs module
   - [ParticipantTypeDef](#participanttypedef)
   - [PhoneNumberAssociationTypeDef](#phonenumberassociationtypedef)
   - [PhoneNumberCapabilitiesTypeDef](#phonenumbercapabilitiestypedef)
+  - [PhoneNumberCountryTypeDef](#phonenumbercountrytypedef)
   - [PhoneNumberErrorTypeDef](#phonenumbererrortypedef)
   - [PhoneNumberOrderTypeDef](#phonenumberordertypedef)
   - [PhoneNumberTypeDef](#phonenumbertypedef)
@@ -1905,6 +1907,17 @@ Optional fields:
   `List`\[[SipRuleTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#sipruletypedef)\]
 - `NextToken`: `str`
 
+## ListSupportedPhoneNumberCountriesResponseTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import ListSupportedPhoneNumberCountriesResponseTypeDef
+```
+
+Optional fields:
+
+- `PhoneNumberCountries`:
+  `List`\[[PhoneNumberCountryTypeDef](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/type_defs.html#phonenumbercountrytypedef)\]
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -2153,6 +2166,18 @@ Optional fields:
 - `InboundMMS`: `bool`
 - `OutboundMMS`: `bool`
 
+## PhoneNumberCountryTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import PhoneNumberCountryTypeDef
+```
+
+Optional fields:
+
+- `CountryCode`: `str`
+- `SupportedPhoneNumberTypes`:
+  `List`\[[PhoneNumberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumbertype)\]
+
 ## PhoneNumberErrorTypeDef
 
 ```python
@@ -2194,6 +2219,7 @@ Optional fields:
 
 - `PhoneNumberId`: `str`
 - `E164PhoneNumber`: `str`
+- `Country`: `str`
 - `Type`:
   [PhoneNumberType](https://vemel.github.io/boto3_stubs_docs/mypy_boto3_chime/literals.html#phonenumbertype)
 - `ProductType`:
@@ -2482,6 +2508,7 @@ from mypy_boto3_chime.type_defs import SearchAvailablePhoneNumbersResponseTypeDe
 Optional fields:
 
 - `E164PhoneNumbers`: `List`\[`str`\]
+- `NextToken`: `str`
 
 ## SendChannelMessageResponseTypeDef
 
